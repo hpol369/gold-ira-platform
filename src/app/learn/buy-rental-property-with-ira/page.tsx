@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
 export default function BuyRentalPropertyWithIraPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "Buy Rental Property with Your IRA: 2026 Guide", description: "Complete guide to buying rental property with your IRA. Learn the step-by-step process, financing options, and what to watch out for.", slug: "/learn/buy-rental-property-with-ira" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Buy Rental Property with IRA", url: "/learn/buy-rental-property-with-ira" }])} />
             {/* Hero Section */}
@@ -238,7 +238,7 @@ export default function BuyRentalPropertyWithIraPage() {
             <InContentCTA trackSource="learn-buy-rental-property-with-ira" />
 
             {/* Financing Options */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
@@ -246,7 +246,7 @@ export default function BuyRentalPropertyWithIraPage() {
                         </h2>
 
                         <div className="grid md:grid-cols-2 gap-6">
-                            <div className="bg-green-500/5 border border-green-500/20 rounded-2xl p-6">
+                            <div className="bg-[rgba(46,139,87,0.08)]0/5 border border-green-500/20 rounded-2xl p-6">
                                 <h3 className="text-xl font-bold text-green-700 mb-4 flex items-center gap-2">
                                     <CheckCircle2 className="w-6 h-6" />
                                     All Cash (Recommended)
@@ -269,7 +269,7 @@ export default function BuyRentalPropertyWithIraPage() {
                                 </ul>
                             </div>
 
-                            <div className="bg-amber-500/5 border border-amber-500/20 rounded-2xl p-6">
+                            <div className="bg-[#161828]0/5 border border-amber-500/20 rounded-2xl p-6">
                                 <h3 className="text-xl font-bold text-amber-700 mb-4 flex items-center gap-2">
                                     <AlertTriangle className="w-6 h-6" />
                                     Non-Recourse Loan
@@ -285,7 +285,7 @@ export default function BuyRentalPropertyWithIraPage() {
                                         "Fewer lender options available"
                                     ].map((item, index) => (
                                         <li key={index} className="flex items-center gap-2 text-[#A8A39A] text-sm">
-                                            <AlertTriangle className="w-4 h-4 text-amber-600" />
+                                            <AlertTriangle className="w-4 h-4 text-[#D4A94E]" />
                                             {item}
                                         </li>
                                     ))}
@@ -304,7 +304,7 @@ export default function BuyRentalPropertyWithIraPage() {
                             Common Mistakes to Avoid
                         </h2>
 
-                        <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-8">
+                        <div className="bg-[rgba(220,38,38,0.08)]0/5 border border-red-500/20 rounded-2xl p-8">
                             <div className="space-y-4">
                                 {[
                                     {
@@ -349,7 +349,7 @@ export default function BuyRentalPropertyWithIraPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6">

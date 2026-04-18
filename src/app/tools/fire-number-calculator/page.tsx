@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 
 export default function FIRENumberCalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18]text-[#F6F4EF]">
       <SchemaScript schema={articleSchema({ title: "FIRE Number Calculator - Calculate Your Financial Independence Number", description: "Free FIRE number calculator to determine exactly how much you need to retire early. Calculate your path to financial independence.", slug: "/tools/fire-number-calculator" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "FIRE Number Calculator", url: "/tools/fire-number-calculator" }])} />
       <Navbar />
       <FIRENumberCalculator />
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -259,7 +259,7 @@ export function FIRECalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-orange-500/20 text-orange-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-orange-500/30">
+        <div className="inline-flex items-center gap-2 bg-[rgba(183,121,31,0.08)]0/20 text-orange-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-orange-500/30">
           <Flame className="h-4 w-4" />
           Financial Independence Calculator
         </div>
@@ -277,7 +277,7 @@ export function FIRECalculator() {
           {/* Personal Information */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Calendar className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Personal Information</h3>
@@ -303,7 +303,7 @@ export function FIRECalculator() {
           {/* Income & Expenses */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <DollarSign className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Income & Expenses</h3>
@@ -370,7 +370,7 @@ export function FIRECalculator() {
           {/* Current Savings */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <PiggyBank className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Current Savings/Investments</h3>
@@ -400,7 +400,7 @@ export function FIRECalculator() {
           {/* Investment Assumptions */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-orange-500/20 rounded-lg border border-orange-500/30">
+              <div className="p-2 bg-[rgba(183,121,31,0.08)]0/20 rounded-lg border border-orange-500/30">
                 <TrendingUp className="h-5 w-5 text-orange-400" />
               </div>
               <h3 className="text-lg font-semibold">Investment Assumptions</h3>
@@ -546,9 +546,9 @@ export function FIRECalculator() {
           {/* Timeline Card */}
           <div className={`rounded-xl p-6 border ${
             calculations.hasReachedFIRE
-              ? 'bg-green-500/20 border-green-500/30'
+              ? 'bg-[rgba(46,139,87,0.08)]0/20 border-green-500/30'
               : calculations.yearsToFIRE < 100
-              ? 'bg-blue-500/20 border-blue-500/30'
+              ? 'bg-[#121423]0/20 border-blue-500/30'
               : 'bg-[rgba(220,38,38,0.1)] border-[#B22234]/30'
           }`}>
             <div className="flex items-center gap-3 mb-4">
@@ -698,7 +698,7 @@ export function FIRECalculator() {
                       <tr
                         key={index}
                         className={`border-b border-slate-800 ${
-                          proj.percentToFIRE >= 100 ? 'bg-green-500/10' : ''
+                          proj.percentToFIRE >= 100 ? 'bg-[rgba(46,139,87,0.08)]0/10' : ''
                         }`}
                       >
                         <td className="py-2 px-2">{proj.year}</td>
@@ -779,7 +779,7 @@ export function FIRECalculator() {
             className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-4 border border-[#2A2D42] hover:border-amber-500/50 transition-colors group"
           >
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <TrendingUp className="h-5 w-5 text-blue-600" />
               </div>
               <div>
@@ -797,7 +797,7 @@ export function FIRECalculator() {
             className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-4 border border-[#2A2D42] hover:border-amber-500/50 transition-colors group"
           >
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <Briefcase className="h-5 w-5 text-purple-700" />
               </div>
               <div>
@@ -833,7 +833,7 @@ export function FIRECalculator() {
             className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-4 border border-[#2A2D42] hover:border-amber-500/50 transition-colors group"
           >
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <PiggyBank className="h-5 w-5 text-green-600" />
               </div>
               <div>

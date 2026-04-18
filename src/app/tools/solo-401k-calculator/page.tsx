@@ -113,7 +113,7 @@ const faqSchema = {
 
 export default function Solo401kCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -122,7 +122,7 @@ export default function Solo401kCalculatorPage() {
       <Solo401kCalculator />
 
       {/* Important Facts */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -197,7 +197,7 @@ export default function Solo401kCalculatorPage() {
                       <td className="px-6 py-4 text-right text-green-600 font-semibold">Up to $46,000</td>
                       <td className="px-6 py-4 text-right text-green-600 font-semibold">Up to $46,000</td>
                     </tr>
-                    <tr className="bg-purple-500/10">
+                    <tr className="bg-[rgba(197,149,46,0.08)]">
                       <td className="px-6 py-4">
                         <div className="font-bold text-purple-700">Total Maximum</div>
                       </td>
@@ -218,7 +218,7 @@ export default function Solo401kCalculatorPage() {
       </section>
 
       {/* Self-Directed Gold Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="bg-[rgba(220,38,38,0.06)] rounded-xl p-8 border border-[#B22234]/30">

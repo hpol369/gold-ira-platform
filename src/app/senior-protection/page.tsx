@@ -33,7 +33,7 @@ export default function SeniorProtectionPage() {
   const articles = getAllSeniorProtectionArticles();
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Senior Protection Center | Scam Prevention & Financial Safety", description: "Protect yourself and loved ones from financial scams targeting seniors. Learn to identify grandparent scams, romance scams, and financial exploitation.", slug: "/senior-protection" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Senior Protection Center", url: "/senior-protection" }])} />
       <Navbar />
@@ -59,7 +59,7 @@ export default function SeniorProtectionPage() {
             </p>
 
             {/* Emergency Resources */}
-            <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-8 text-left">
+            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6 mb-8 text-left">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="h-5 w-5 text-red-600 flex-shrink-0 mt-1" />
                 <div>
@@ -148,7 +148,7 @@ export default function SeniorProtectionPage() {
       </section>
 
       {/* Emergency Contacts */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
             If You Suspect Fraud or Exploitation
@@ -176,13 +176,13 @@ export default function SeniorProtectionPage() {
             </div>
             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-amber-100 p-3 rounded-lg inline-block mb-4">
-                <AlertTriangle className="h-6 w-6 text-amber-600" />
+                <AlertTriangle className="h-6 w-6 text-[#D4A94E]" />
               </div>
               <h3 className="font-bold text-[#F6F4EF] mb-2">FTC Report Fraud</h3>
               <p className="text-[#A8A39A] text-sm mb-3">
                 Federal Trade Commission fraud reporting portal.
               </p>
-              <p className="text-sm text-amber-600 font-medium">reportfraud.ftc.gov</p>
+              <p className="text-sm text-[#D4A94E] font-medium">reportfraud.ftc.gov</p>
             </div>
           </div>
         </Container>
@@ -221,7 +221,7 @@ export default function SeniorProtectionPage() {
       </section>
 
       {/* Family Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
             <Users className="h-12 w-12 text-red-600 mx-auto mb-6" />

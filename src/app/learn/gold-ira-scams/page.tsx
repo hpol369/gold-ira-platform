@@ -107,7 +107,7 @@ const schema = {
 
 export default function GoldIraScamsPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -177,7 +177,7 @@ export default function GoldIraScamsPage() {
                         {/* Home Storage Scam */}
                         <section id="home-storage" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/10 rounded-lg text-red-600">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/10 rounded-lg text-red-600">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Scam #1: The &quot;Home Storage Gold IRA&quot;</h2>
@@ -189,7 +189,7 @@ export default function GoldIraScamsPage() {
                                 <strong>The Reality:</strong> This is <strong>illegal</strong> under IRS rules. The IRS requires precious metals in an IRA to be held by an approved custodian at an approved depository—not in your basement.
                             </p>
 
-                            <div className="bg-red-50 rounded-2xl p-6 border border-red-200 not-prose my-8">
+                            <div className="bg-[rgba(220,38,38,0.08)] rounded-2xl p-6 border border-red-200 not-prose my-8">
                                 <h4 className="font-bold text-red-700 text-lg mb-4 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
                                     The IRS Position on Home Storage
@@ -257,7 +257,7 @@ export default function GoldIraScamsPage() {
                                         <span className="font-medium text-[#F6F4EF]">Silver Eagles</span>
                                         <span className="text-[#D4A94E] font-bold">8-15% over spot</span>
                                     </div>
-                                    <div className="flex items-center justify-between p-3 bg-red-50 rounded-lg border border-red-200">
+                                    <div className="flex items-center justify-between p-3 bg-[rgba(220,38,38,0.08)] rounded-lg border border-red-200">
                                         <span className="font-medium text-red-700">Red Flag Territory</span>
                                         <span className="text-red-700 font-bold">15%+ over spot</span>
                                     </div>
@@ -312,7 +312,7 @@ export default function GoldIraScamsPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-200">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-200">
                                     <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" />
                                         Red Flags
@@ -326,7 +326,7 @@ export default function GoldIraScamsPage() {
                                         <li>• Using fear-based language</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-200">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]">
                                     <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         Green Flags
@@ -385,7 +385,7 @@ export default function GoldIraScamsPage() {
                         {/* Red Flags Checklist */}
                         <section id="red-flags" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/10 rounded-lg text-red-600">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/10 rounded-lg text-red-600">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Complete Red Flags Checklist</h2>
@@ -394,7 +394,7 @@ export default function GoldIraScamsPage() {
                                 Before working with any Gold IRA company, watch for these warning signs:
                             </p>
 
-                            <div className="bg-red-50 rounded-2xl p-6 border border-red-200 not-prose my-8">
+                            <div className="bg-[rgba(220,38,38,0.08)] rounded-2xl p-6 border border-red-200 not-prose my-8">
                                 <h4 className="font-bold text-red-700 text-lg mb-4">Run Away If You See:</h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
@@ -436,7 +436,7 @@ export default function GoldIraScamsPage() {
                         {/* How to Verify */}
                         <section id="how-to-verify" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/10 rounded-lg text-green-600">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/10 rounded-lg text-green-600">
                                     <Shield className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">How to Verify a Gold IRA Company</h2>

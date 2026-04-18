@@ -118,7 +118,7 @@ export default function MeltValueCalculatorPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -151,7 +151,7 @@ export default function MeltValueCalculatorPage() {
       </section>
 
       {/* Calculator Section */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-2xl p-6 md:p-8">
@@ -349,7 +349,7 @@ export default function MeltValueCalculatorPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -428,7 +428,7 @@ export default function MeltValueCalculatorPage() {
       </section>
 
       {/* Related Pages */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
@@ -469,7 +469,7 @@ export default function MeltValueCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

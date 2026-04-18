@@ -102,7 +102,7 @@ const companies = [
 
 export default function BestCryptoIRACompaniesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Hero Section */}
@@ -186,7 +186,7 @@ export default function BestCryptoIRACompaniesPage() {
             </section>
 
             {/* Individual Company Cards */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="space-y-8">
                         {companies.map((company) => (
@@ -319,7 +319,7 @@ export default function BestCryptoIRACompaniesPage() {
                                 <p className="text-[#A8A39A] text-sm">Number and variety of cryptocurrencies available, plus any additional assets like gold.</p>
                             </div>
                             <div className="bg-[#161828] p-6 rounded-xl border border-[#2A2D42]">
-                                <Shield className="w-8 h-8 text-purple-500 mb-3" />
+                                <Shield className="w-8 h-8 text-[#D4A94E] mb-3" />
                                 <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">Security & Trust (20%)</h3>
                                 <p className="text-[#A8A39A] text-sm">Custody solutions, insurance, BBB rating, and company track record.</p>
                             </div>
@@ -334,7 +334,7 @@ export default function BestCryptoIRACompaniesPage() {
             </section>
 
             {/* FAQ */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Frequently Asked Questions</h2>
@@ -389,7 +389,7 @@ export default function BestCryptoIRACompaniesPage() {
             </section>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"
@@ -400,7 +400,7 @@ export default function BestCryptoIRACompaniesPage() {
                 </Container>
             </section>
 
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/best-crypto-ira-companies" />
                 </Container>

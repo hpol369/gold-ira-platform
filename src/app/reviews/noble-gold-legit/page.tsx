@@ -58,7 +58,7 @@ const tocItems = [
 
 export default function NobleGoldLegitPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <header className="bg-[rgba(197,149,46,0.1)] text-white py-16 relative overflow-hidden">
                 <Container className="relative z-10">
@@ -101,7 +101,7 @@ export default function NobleGoldLegitPage() {
 
                                 {/* Verdict Section */}
                                 <section id="verdict" className="scroll-mt-32">
-                                    <div className="bg-green-50 p-8 rounded-2xl border border-green-100 not-prose">
+                                    <div className="bg-[rgba(46,139,87,0.08)] p-8 rounded-2xl border border-green-100 not-prose">
                                         <div className="flex items-center gap-4 mb-4">
                                             <ShieldCheck className="w-10 h-10 text-green-600" />
                                             <h2 className="text-2xl font-bold text-green-800 m-0">Verdict: Noble Gold is 100% Legit</h2>
@@ -177,8 +177,8 @@ export default function NobleGoldLegitPage() {
                                         <li><strong>Bait-and-switch:</strong> Some dealers advertise low prices then pressure customers into expensive numismatic coins. Noble Gold focuses on transparent bullion pricing.</li>
                                     </ul>
 
-                                    <div className="bg-amber-50 p-6 rounded-xl border border-amber-100 flex gap-4 not-prose my-6">
-                                        <AlertTriangle className="w-6 h-6 text-amber-600 shrink-0" />
+                                    <div className="bg-[#161828] p-6 rounded-xl border border-amber-100 flex gap-4 not-prose my-6">
+                                        <AlertTriangle className="w-6 h-6 text-[#D4A94E] shrink-0" />
                                         <div>
                                             <h4 className="font-bold text-amber-800">Red Flag Warning</h4>
                                             <p className="text-amber-700 text-sm">

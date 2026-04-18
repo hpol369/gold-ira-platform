@@ -80,7 +80,7 @@ const featuredArticles = [
 
 export default function AuthorPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <Navbar />
             <SchemaScript schema={personSchema} />
             <SchemaScript schema={breadcrumbs} />

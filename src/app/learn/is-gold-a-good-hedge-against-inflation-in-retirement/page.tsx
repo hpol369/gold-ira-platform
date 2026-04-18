@@ -210,7 +210,7 @@ export default function GoldInflationHedgePage() {
               <p className="text-[#D0CCC4] mb-4">
                 But history also shows long dry spells. From roughly 1980 to 2000, gold went through a long drought after its early-1980 peak. Inflation still existed during those years, but gold did not consistently protect investors who bought near the top. In real terms, many buyers waited a long time to recover.
               </p>
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 my-6">
+              <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-6">
                 <h3 className="font-bold text-amber-800 mb-2">The Big Lesson</h3>
                 <p className="text-[#D0CCC4]">
                   Gold may help over long cycles, but it can absolutely underperform for years at a time. That is why it works best as part of a broader plan, not the whole plan.
@@ -281,7 +281,7 @@ export default function GoldInflationHedgePage() {
                 </h2>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                   <h3 className="font-bold text-green-800 mb-3">This May Be for You If:</h3>
                   <ul className="space-y-2 text-[#D0CCC4] text-sm">
                     <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /> You want a small hedge against inflation and market stress</li>
@@ -290,7 +290,7 @@ export default function GoldInflationHedgePage() {
                     <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /> You are willing to keep your allocation moderate</li>
                   </ul>
                 </div>
-                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                   <h3 className="font-bold text-red-800 mb-3">This May Not Be for You If:</h3>
                   <ul className="space-y-2 text-[#D0CCC4] text-sm">
                     <li className="flex items-start gap-2"><AlertTriangle className="h-4 w-4 text-red-500 mt-0.5 shrink-0" /> You need steady dividends or interest</li>

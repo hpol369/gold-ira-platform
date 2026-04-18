@@ -66,7 +66,7 @@ function getRiskAssessment(
     return {
       level: "High Risk",
       color: "text-red-600",
-      bgColor: "bg-red-500/20 border-red-500/30",
+      bgColor: "bg-[rgba(220,38,38,0.08)]0/20 border-red-500/30",
       message:
         "Your savings may not last through retirement. Consider delaying retirement, reducing expenses, or finding additional income sources.",
     };
@@ -96,7 +96,7 @@ function getRiskAssessment(
     return {
       level: "Low Risk",
       color: "text-green-600",
-      bgColor: "bg-green-500/20 border-green-500/30",
+      bgColor: "bg-[rgba(46,139,87,0.08)]0/20 border-green-500/30",
       message:
         "Your retirement plan looks solid. Consider diversifying with inflation-protected assets like gold to maintain purchasing power.",
     };
@@ -105,7 +105,7 @@ function getRiskAssessment(
   return {
     level: "Moderate",
     color: "text-blue-600",
-    bgColor: "bg-blue-500/20 border-blue-500/30",
+    bgColor: "bg-[#121423]0/20 border-blue-500/30",
     message:
       "Your plan is reasonable but has some vulnerability. Consider ways to extend your runway and protect against inflation.",
   };
@@ -244,7 +244,7 @@ export default function RetirementCalculatorPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={breadcrumbs} />
 
@@ -292,7 +292,7 @@ export default function RetirementCalculatorPage() {
                             isActive
                               ? "bg-[#DC2626] text-white"
                               : isCompleted
-                              ? "bg-green-500text-[#F6F4EF]"
+                              ? "bg-[rgba(46,139,87,0.08)]0text-[#F6F4EF]"
                               : "bg-[#121423] text-[#A8A39A]"
                           }`}
                         >
@@ -315,7 +315,7 @@ export default function RetirementCalculatorPage() {
                         {index < steps.length - 1 && (
                           <div
                             className={`absolute h-0.5 top-5 -z-10 ${
-                              isCompleted ? "bg-green-500" : "bg-slate-700"
+                              isCompleted ? "bg-[rgba(46,139,87,0.08)]0" : "bg-slate-700"
                             }`}
                             style={{
                               left: `${(index + 0.5) * 25}%`,
@@ -396,7 +396,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setTotalSavings(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                              className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                             />
                             <div className="flex justify-between text-xs text-[#A8A39A] mt-2">
                               <span>$0</span>
@@ -419,7 +419,7 @@ export default function RetirementCalculatorPage() {
                                 className={`py-2 px-3 rounded-lg text-sm font-medium transition-all ${
                                   totalSavings === amount
                                     ? "bg-[#DC2626] text-white"
-                                    : "bg-[#121423] text-[#D0CCC4] hover:bg-slate-200"
+                                    : "bg-[#121423] text-[#D0CCC4] hover:bg-[#2A2D42]"
                                 }`}
                               >
                                 {formatCurrency(amount)}
@@ -475,7 +475,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setMonthlyExpenses(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                              className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                             />
                             <div className="flex justify-between text-xs text-[#A8A39A] mt-2">
                               <span>$2k</span>
@@ -496,7 +496,7 @@ export default function RetirementCalculatorPage() {
                               className={`py-2 px-3 rounded-lg text-sm font-medium transition-all ${
                                 monthlyExpenses === amount
                                   ? "bg-[#DC2626] text-white"
-                                  : "bg-[#121423] text-[#D0CCC4] hover:bg-slate-200"
+                                  : "bg-[#121423] text-[#D0CCC4] hover:bg-[#2A2D42]"
                               }`}
                             >
                               {formatCurrency(amount)}
@@ -505,7 +505,7 @@ export default function RetirementCalculatorPage() {
                         </div>
 
                         {/* Expense guidance */}
-                        <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-xl">
+                        <div className="mt-6 p-4 bg-[#121423] border border-blue-200 rounded-xl">
                           <div className="flex items-start gap-3">
                             <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                             <div className="text-sm text-[#D0CCC4]">
@@ -565,7 +565,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setCurrentAge(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234] mt-3"
+                              className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E] mt-3"
                             />
                           </div>
 
@@ -595,7 +595,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setRetirementAge(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234] mt-3"
+                              className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E] mt-3"
                             />
                           </div>
 
@@ -650,7 +650,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setSocialSecurity(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                              className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                             />
                             <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                               <span>$0</span>
@@ -677,7 +677,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setPension(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                              className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                             />
                             <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                               <span>$0</span>
@@ -704,7 +704,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setPartTimeIncome(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                              className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                             />
                             <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                               <span>$0</span>
@@ -731,7 +731,7 @@ export default function RetirementCalculatorPage() {
                               onChange={(e) =>
                                 setStockAllocation(Number(e.target.value))
                               }
-                              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                              className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                             />
                             <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                               <span>0% (All bonds)</span>
@@ -740,7 +740,7 @@ export default function RetirementCalculatorPage() {
                           </div>
 
                           {/* Total income summary */}
-                          <div className="bg-green-50 border border-green-200 rounded-xl p-4 mt-4">
+                          <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-4 mt-4">
                             <div className="flex items-center justify-between">
                               <span className="text-[#D0CCC4]">
                                 Total Monthly Income:
@@ -761,7 +761,7 @@ export default function RetirementCalculatorPage() {
                       {currentStep > 1 && (
                         <button
                           onClick={handleBack}
-                          className="px-6 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] font-medium hover:bg-slate-200 transition-all flex items-center gap-2"
+                          className="px-6 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] font-medium hover:bg-[#2A2D42] transition-all flex items-center gap-2"
                         >
                           <ArrowLeft className="h-4 w-4" />
                           Back
@@ -905,8 +905,8 @@ export default function RetirementCalculatorPage() {
                       <div
                         className={`rounded-xl p-4 ${
                           results.monthlyGap > 0
-                            ? "bg-red-50 border border-red-200"
-                            : "bg-green-50 border border-green-200"
+                            ? "bg-[rgba(220,38,38,0.08)] border border-red-200"
+                            : "bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]"
                         }`}
                       >
                         <div
@@ -939,7 +939,7 @@ export default function RetirementCalculatorPage() {
                     </div>
 
                     {/* Conservative Scenario */}
-                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
+                    <div className="bg-[#121423] border border-blue-200 rounded-xl p-4 mb-6">
                       <div className="flex items-start gap-3">
                         <Shield className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                         <div>
@@ -1086,7 +1086,7 @@ export default function RetirementCalculatorPage() {
                     {/* Start Over */}
                     <button
                       onClick={resetCalculator}
-                      className="w-full mt-6 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#A8A39A] font-medium hover:bg-slate-200 hover:text-[#F6F4EF] transition-all"
+                      className="w-full mt-6 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#A8A39A] font-medium hover:bg-[#2A2D42] hover:text-[#F6F4EF] transition-all"
                     >
                       Start Over with New Numbers
                     </button>
@@ -1196,7 +1196,7 @@ export default function RetirementCalculatorPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/tools/retirement-calculator" />
         </Container>

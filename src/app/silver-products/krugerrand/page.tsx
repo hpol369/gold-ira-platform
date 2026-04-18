@@ -112,7 +112,7 @@ const schema = {
 
 export default function SilverKrugerrandPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -188,7 +188,7 @@ export default function SilverKrugerrandPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
@@ -292,7 +292,7 @@ export default function SilverKrugerrandPage() {
                       <td className="p-4 text-[#D0CCC4]">$27.50 - $28.75</td>
                       <td className="p-4 text-green-400">Very High</td>
                     </tr>
-                    <tr className="bg-green-500/10">
+                    <tr className="bg-[rgba(46,139,87,0.08)]0/10">
                       <td className="p-4 font-semibold text-[#F6F4EF]">Silver Krugerrand</td>
                       <td className="p-4 text-green-400 font-bold">8-12%</td>
                       <td className="p-4 text-[#D0CCC4]">$27.00 - $28.00</td>
@@ -314,7 +314,7 @@ export default function SilverKrugerrandPage() {
                 </table>
               </div>
 
-              <div className="not-prose bg-green-500/10 border border-green-500/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
@@ -491,7 +491,7 @@ export default function SilverKrugerrandPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

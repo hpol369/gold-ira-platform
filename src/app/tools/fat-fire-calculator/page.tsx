@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 
 export default function FatFIRECalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18]text-[#F6F4EF]">
       <SchemaScript schema={articleSchema({ title: "Fat FIRE Calculator - Calculate Your Luxury Retirement Number", description: "Free Fat FIRE calculator to determine how much you need for a luxurious early retirement. Plan for the lifestyle you want without compromise.", slug: "/tools/fat-fire-calculator" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Fat FIRE Calculator", url: "/tools/fat-fire-calculator" }])} />
       <Navbar />
       <FatFIRECalculator />
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

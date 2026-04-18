@@ -102,7 +102,7 @@ const schema = {
 
 export default function SilverStackingGuidePage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             
             {/* Header */}
@@ -408,30 +408,30 @@ export default function SilverStackingGuidePage() {
 
                                 <div className="space-y-6">
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0">
+                                        <div className="w-12 h-12 rounded-lg bg-[#121423]0/20 flex items-center justify-center shrink-0">
                                             <Building2 className="w-6 h-6 text-blue-700" />
                                         </div>
                                         <div>
                                             <h5 className="font-bold text-[#F6F4EF] mb-1">Online Dealers</h5>
                                             <p className="text-[#D0CCC4] text-sm mb-2">Major dealers like JM Bullion, SD Bullion, APMEX, and Silver Gold Bull offer competitive pricing, wide selection, and regular sales. Best for: Largest selection, easy price comparison.</p>
                                             <div className="flex flex-wrap gap-2">
-                                                <span className="text-xs bg-green-500/20 text-green-700 px-2 py-1 rounded">Good prices</span>
-                                                <span className="text-xs bg-blue-500/20 text-blue-700 px-2 py-1 rounded">Large selection</span>
+                                                <span className="text-xs bg-[rgba(46,139,87,0.08)]0/20 text-green-700 px-2 py-1 rounded">Good prices</span>
+                                                <span className="text-xs bg-[#121423]0/20 text-blue-700 px-2 py-1 rounded">Large selection</span>
                                                 <span className="text-xs bg-[rgba(220,38,38,0.18)] text-[#D4A94E] px-2 py-1 rounded">Shipping costs</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center shrink-0">
+                                        <div className="w-12 h-12 rounded-lg bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center shrink-0">
                                             <Wallet className="w-6 h-6 text-green-700" />
                                         </div>
                                         <div>
                                             <h5 className="font-bold text-[#F6F4EF] mb-1">Local Coin Shops (LCS)</h5>
                                             <p className="text-[#D0CCC4] text-sm mb-2">Local dealers vary widely in pricing. Some are very competitive, others charge high premiums. Best for: No shipping, instant possession, building relationships.</p>
                                             <div className="flex flex-wrap gap-2">
-                                                <span className="text-xs bg-green-500/20 text-green-700 px-2 py-1 rounded">No shipping</span>
-                                                <span className="text-xs bg-green-500/20 text-green-700 px-2 py-1 rounded">See before buying</span>
+                                                <span className="text-xs bg-[rgba(46,139,87,0.08)]0/20 text-green-700 px-2 py-1 rounded">No shipping</span>
+                                                <span className="text-xs bg-[rgba(46,139,87,0.08)]0/20 text-green-700 px-2 py-1 rounded">See before buying</span>
                                                 <span className="text-xs bg-[rgba(220,38,38,0.18)] text-[#D4A94E] px-2 py-1 rounded">Prices vary</span>
                                             </div>
                                         </div>
@@ -445,8 +445,8 @@ export default function SilverStackingGuidePage() {
                                             <h5 className="font-bold text-[#F6F4EF] mb-1">eBay/Secondary Market</h5>
                                             <p className="text-[#D0CCC4] text-sm mb-2">Can find deals from other stackers, but requires caution about authenticity. Best for: Potential bargains, specific items, selling your stack.</p>
                                             <div className="flex flex-wrap gap-2">
-                                                <span className="text-xs bg-green-500/20 text-green-700 px-2 py-1 rounded">Potential deals</span>
-                                                <span className="text-xs bg-red-500/20 text-red-700 px-2 py-1 rounded">Counterfeit risk</span>
+                                                <span className="text-xs bg-[rgba(46,139,87,0.08)]0/20 text-green-700 px-2 py-1 rounded">Potential deals</span>
+                                                <span className="text-xs bg-[rgba(220,38,38,0.08)]0/20 text-red-700 px-2 py-1 rounded">Counterfeit risk</span>
                                                 <span className="text-xs bg-[rgba(220,38,38,0.18)] text-[#D4A94E] px-2 py-1 rounded">Buyer fees</span>
                                             </div>
                                         </div>

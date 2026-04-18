@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 
 export default function LeanFIRECalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18]text-[#F6F4EF]">
       <SchemaScript schema={articleSchema({ title: "Lean FIRE Calculator - Minimalist Early Retirement Calculator", description: "Free Lean FIRE calculator to plan minimalist early retirement. Calculate how much you need to retire with essential expenses only.", slug: "/tools/lean-fire-calculator" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Lean FIRE Calculator", url: "/tools/lean-fire-calculator" }])} />
       <Navbar />
       <LeanFIRECalculator />
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

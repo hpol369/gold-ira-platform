@@ -161,7 +161,7 @@ export function WEPCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-red-500/20 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-red-500/30">
+        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.08)]0/20 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-red-500/30">
           <Building className="h-4 w-4" />
           WEP Calculator
         </div>
@@ -180,7 +180,7 @@ export function WEPCalculator() {
           {/* Earnings History */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Briefcase className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Your Earnings History</h3>
@@ -203,7 +203,7 @@ export function WEPCalculator() {
                   max={40}
                   value={yearsSubstantialEarnings}
                   onChange={(e) => setYearsSubstantialEarnings(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>0 years</span>
@@ -243,7 +243,7 @@ export function WEPCalculator() {
           {/* Non-Covered Pension */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-orange-500/20 rounded-lg border border-orange-500/30">
+              <div className="p-2 bg-[rgba(183,121,31,0.08)]0/20 rounded-lg border border-orange-500/30">
                 <Building className="h-5 w-5 text-orange-400" />
               </div>
               <h3 className="text-lg font-semibold">Non-Covered Pension</h3>
@@ -292,7 +292,7 @@ export function WEPCalculator() {
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center justify-between mb-6">
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+                <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                   <Users className="h-5 w-5 text-purple-700" />
                 </div>
                 <h3 className="text-lg font-semibold">GPO (Spousal/Survivor Benefits)</h3>
@@ -310,7 +310,7 @@ export function WEPCalculator() {
 
             {showGPO && (
               <div className="space-y-4">
-                <div className="bg-purple-500/10 border border-purple-500/30 rounded-lg p-3 mb-4">
+                <div className="bg-[rgba(197,149,46,0.08)] border border-[rgba(197,149,46,0.32)] rounded-lg p-3 mb-4">
                   <p className="text-sm text-purple-800">
                     <strong>Government Pension Offset (GPO)</strong> reduces spousal or survivor
                     Social Security benefits by 2/3 of your government pension.
@@ -399,7 +399,7 @@ export function WEPCalculator() {
 
           {/* GPO Impact (if enabled) */}
           {showGPO && (
-            <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-6">
+            <div className="bg-[rgba(197,149,46,0.08)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
               <div className="flex items-center gap-3 mb-4">
                 <Users className="h-6 w-6 text-purple-700" />
                 <h3 className="text-lg font-semibold">GPO Impact on Spousal Benefits</h3>
@@ -427,7 +427,7 @@ export function WEPCalculator() {
               </div>
 
               {calculations.adjustedSpouseBenefit === 0 && (
-                <div className="mt-4 bg-red-500/20 rounded-lg p-3">
+                <div className="mt-4 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg p-3">
                   <p className="text-red-800 text-sm">
                     <AlertTriangle className="inline h-4 w-4 mr-1" />
                     GPO completely eliminates your spousal/survivor benefit.
@@ -490,7 +490,7 @@ export function WEPCalculator() {
                     {calculations.additionalYearsImpact.slice(0, 8).map((row, idx) => (
                       <tr
                         key={row.years}
-                        className={`border-b border-[#2A2D42] ${row.wepEliminated ? "bg-green-500/5" : ""}`}
+                        className={`border-b border-[#2A2D42] ${row.wepEliminated ? "bg-[rgba(46,139,87,0.08)]0/5" : ""}`}
                       >
                         <td className="py-2 px-2 text-[#D0CCC4]">+{row.years}</td>
                         <td className="py-2 px-2 text-right text-[#A8A39A]">{row.totalYears} yrs</td>

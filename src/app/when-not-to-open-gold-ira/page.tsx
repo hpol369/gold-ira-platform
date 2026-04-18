@@ -161,7 +161,7 @@ function SectionIcon({ icon: Icon }: { icon: React.ElementType }) {
 
 export default function WhenNotToOpenGoldIraPage() {
   return (
-    <main className="min-h-screen bg-white pb-24">
+    <main className="min-h-screen bg-[#0C0D18] pb-24">
       {/* Schema Scripts */}
       <SchemaScript schema={article} />
       <SchemaScript schema={faqSchemaData} />
@@ -173,7 +173,7 @@ export default function WhenNotToOpenGoldIraPage() {
         <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#B22234] via-[#000080] to-[#B22234]" />
         <Container className="relative z-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-red-50 px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-red-200">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.08)] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-red-200">
               <Shield className="h-3.5 w-3.5" />
               Honest Guide
             </div>
@@ -345,7 +345,7 @@ export default function WhenNotToOpenGoldIraPage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-[#2A2D42] bg-red-50">
+                  <tr className="border-b border-[#2A2D42] bg-[rgba(220,38,38,0.08)]">
                     <td className="px-4 py-3 font-medium text-[#F6F4EF]">$25,000</td>
                     <td className="px-4 py-3 text-center text-[#D0CCC4]">$300</td>
                     <td className="px-4 py-3 text-center font-semibold text-red-700">
@@ -353,7 +353,7 @@ export default function WhenNotToOpenGoldIraPage() {
                     </td>
                     <td className="px-4 py-3 text-center text-red-700">$3,000 (12%)</td>
                   </tr>
-                  <tr className="border-b border-[#2A2D42] bg-amber-50">
+                  <tr className="border-b border-[#2A2D42] bg-[#161828]">
                     <td className="px-4 py-3 font-medium text-[#F6F4EF]">$50,000</td>
                     <td className="px-4 py-3 text-center text-[#D0CCC4]">$300</td>
                     <td className="px-4 py-3 text-center font-semibold text-amber-700">
@@ -571,7 +571,7 @@ export default function WhenNotToOpenGoldIraPage() {
           {/* Red Flags Section                                            */}
           {/* ----------------------------------------------------------- */}
           <section className="mt-16" id="red-flags">
-            <div className="rounded-2xl border border-red-200 bg-red-50 p-6 md:p-8">
+            <div className="rounded-2xl border border-red-200 bg-[rgba(220,38,38,0.08)] p-6 md:p-8">
               <div className="flex items-center gap-3 mb-6">
                 <AlertTriangle className="h-6 w-6 text-[#D4A94E]" />
                 <h2 className="text-2xl font-serif font-bold text-[#D4A94E]">

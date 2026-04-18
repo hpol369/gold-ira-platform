@@ -150,7 +150,7 @@ export default function SocialSecurityCalculatorPage() {
     <>
       <Navbar />
       <SchemaScript schema={breadcrumbs} />
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-[#0C0D18]">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 overflow-hidden">
           <div className="absolute inset-0 bg-[#0C0D18]" />
@@ -162,7 +162,7 @@ export default function SocialSecurityCalculatorPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-500/10 text-green-600 border border-green-500/20 mb-4">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[rgba(46,139,87,0.08)]0/10 text-green-600 border border-green-500/20 mb-4">
                 Retirement Planning Tool
               </span>
               <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
@@ -195,7 +195,7 @@ export default function SocialSecurityCalculatorPage() {
                         <div
                           className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-colors ${
                             step >= s
-                              ? 'bg-green-500 text-[#F6F4EF]'
+                              ? 'bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF]'
                               : 'bg-slate-700 text-[#A8A39A]'
                           }`}
                         >
@@ -204,7 +204,7 @@ export default function SocialSecurityCalculatorPage() {
                         {s < 3 && (
                           <div
                             className={`w-16 h-1 mx-2 rounded transition-colors ${
-                              step > s ? 'bg-green-500' : 'bg-slate-700'
+                              step > s ? 'bg-[rgba(46,139,87,0.08)]0' : 'bg-slate-700'
                             }`}
                           />
                         )}
@@ -253,7 +253,7 @@ export default function SocialSecurityCalculatorPage() {
                               onClick={() => setBirthYear(year)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 birthYear === year
-                                  ? 'bg-green-500 text-[#F6F4EF]'
+                                  ? 'bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF]'
                                   : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
@@ -262,7 +262,7 @@ export default function SocialSecurityCalculatorPage() {
                           ))}
                         </div>
 
-                        <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-lg p-4">
                           <p className="text-green-800 text-sm">
                             <strong>Your Full Retirement Age:</strong> {calculations.fraYears} years
                             {calculations.fraMonths > 0 && ` and ${calculations.fraMonths} months`}
@@ -273,7 +273,7 @@ export default function SocialSecurityCalculatorPage() {
                       <div className="mt-8 flex justify-end">
                         <button
                           onClick={() => setStep(2)}
-                          className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                          className="px-8 py-3 bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -325,7 +325,7 @@ export default function SocialSecurityCalculatorPage() {
                               onClick={() => setEstimatedBenefitAtFRA(amount)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 estimatedBenefitAtFRA === amount
-                                  ? 'bg-green-500 text-[#F6F4EF]'
+                                  ? 'bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF]'
                                   : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
@@ -334,7 +334,7 @@ export default function SocialSecurityCalculatorPage() {
                           ))}
                         </div>
 
-                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <div className="bg-[#121423] border border-blue-200 rounded-lg p-4">
                           <p className="text-blue-800 text-sm">
                             <strong>Tip:</strong> The average Social Security benefit in 2024 is about $1,907/month.
                             Maximum benefit at FRA is approximately $3,822/month.
@@ -351,7 +351,7 @@ export default function SocialSecurityCalculatorPage() {
                         </button>
                         <button
                           onClick={() => setStep(3)}
-                          className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                          className="px-8 py-3 bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -401,7 +401,7 @@ export default function SocialSecurityCalculatorPage() {
                               onClick={() => setLifeExpectancy(age)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 lifeExpectancy === age
-                                  ? 'bg-green-500 text-[#F6F4EF]'
+                                  ? 'bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF]'
                                   : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
@@ -429,7 +429,7 @@ export default function SocialSecurityCalculatorPage() {
                         </button>
                         <button
                           onClick={handleCalculate}
-                          className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                          className="px-8 py-3 bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
                         >
                           Optimize Benefits
                         </button>
@@ -447,7 +447,7 @@ export default function SocialSecurityCalculatorPage() {
                 >
                   {/* Optimal Age Card */}
                   <div className="bg-gradient-to-b from-green-500/10 to-transparent border-2 border-green-500/30 rounded-2xl p-8 text-center">
-                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-500/20 text-green-600 mb-4">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[rgba(46,139,87,0.08)]0/20 text-green-600 mb-4">
                       Optimal Claiming Age
                     </span>
                     <div className="text-6xl font-bold text-green-600 mb-2">
@@ -575,7 +575,7 @@ export default function SocialSecurityCalculatorPage() {
                               <div className="flex-1 h-8 bg-slate-700 rounded-lg overflow-hidden relative">
                                 <div
                                   className={`h-full rounded-lg transition-all ${
-                                    isOptimal ? 'bg-green-500' : 'bg-[#0C0D18]0'
+                                    isOptimal ? 'bg-[rgba(46,139,87,0.08)]0' : 'bg-[#0C0D18]0'
                                   }`}
                                   style={{ width: `${percentage}%` }}
                                 />
@@ -652,7 +652,7 @@ export default function SocialSecurityCalculatorPage() {
                     </button>
                     <Link
                       href="/learn/social-security-bridge-strategy"
-                      className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors text-center"
+                      className="px-8 py-3 bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors text-center"
                     >
                       Learn Bridge Strategies
                     </Link>
@@ -758,7 +758,7 @@ export default function SocialSecurityCalculatorPage() {
             </div>
           </div>
         </section>
-        <section className="py-12 bg-white">
+        <section className="py-12 bg-[#0C0D18]">
           <Container>
             <AutoRelatedContent currentUrl="/tools/social-security-calculator" />
           </Container>

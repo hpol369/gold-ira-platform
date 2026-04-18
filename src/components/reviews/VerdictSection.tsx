@@ -41,7 +41,7 @@ export function VerdictSection({
         <div className="flex items-center gap-3 mb-6">
           <div className={cn(
             "p-3 rounded-xl",
-            isFeatured ? "bg-amber-500 text-white" : "bg-[rgba(197,149,46,0.1)] text-white"
+            isFeatured ? "bg-[#161828]0 text-white" : "bg-[rgba(197,149,46,0.1)] text-white"
           )}>
             <Award className="h-6 w-6" />
           </div>
@@ -64,7 +64,7 @@ export function VerdictSection({
           </div>
           {isFeatured && (
             <div className="ml-auto">
-              <div className="bg-amber-500 text-white px-4 py-2 rounded-lg font-bold text-sm">
+              <div className="bg-[#161828]0 text-white px-4 py-2 rounded-lg font-bold text-sm">
                 #1 RECOMMENDED
               </div>
             </div>

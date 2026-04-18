@@ -35,7 +35,7 @@ export default function RolloverPage() {
   const governmentProviders = getProvidersByType("government");
 
   return (
-    <main className="min-h-screen flex flex-col bg-white">
+    <main className="min-h-screen flex flex-col bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Gold IRA Rollover Guide 2026", description: "Complete guide to rolling over your 401k, IRA, TSP to a Gold IRA. Tax-free transfers step by step.", slug: "/rollover" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Gold IRA Rollover", url: "/rollover" }])} />
       <SchemaScript schema={faqSchema(getPageFAQs("rollover"))} />
@@ -61,7 +61,7 @@ export default function RolloverPage() {
       <header className="bg-[#0C0D18] py-16 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[rgba(220,38,38,0.06)] rounded-full blur-[150px]" />
-          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-slate-200/50 rounded-full blur-[100px]" />
+          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#2A2D42]/50 rounded-full blur-[100px]" />
         </div>
         <Container className="relative z-10">
           <div className="max-w-3xl">
@@ -120,7 +120,7 @@ export default function RolloverPage() {
       </section>
 
       {/* Account Types */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="flex items-center gap-3 mb-8">
             <div className="p-2 bg-blue-100 rounded-lg border border-blue-200">
@@ -162,7 +162,7 @@ export default function RolloverPage() {
       </section>
 
       {/* Employer Plans */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="flex items-center gap-3 mb-8">
             <div className="p-2 bg-green-100 rounded-lg border border-green-200">
@@ -188,7 +188,7 @@ export default function RolloverPage() {
           <Container>
             <div className="flex items-center gap-3 mb-8">
               <div className="p-2 bg-purple-100 rounded-lg border border-purple-200">
-                <Landmark className="h-5 w-5 text-purple-600" />
+                <Landmark className="h-5 w-5 text-[#D4A94E]" />
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-[#F6F4EF]">Government Plan Rollovers</h2>
@@ -206,7 +206,7 @@ export default function RolloverPage() {
       )}
 
       {/* How Rollovers Work */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4 text-center">
             How a Gold IRA Rollover Works
@@ -299,7 +299,7 @@ export default function RolloverPage() {
       </section>
 
       {/* 401k Provider Rollover Guides */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="flex items-center gap-3 mb-8">
             <div className="p-2 bg-amber-100 rounded-lg border border-amber-200">
@@ -408,7 +408,7 @@ export default function RolloverPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"
@@ -420,7 +420,7 @@ export default function RolloverPage() {
         </Container>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <FAQSection
             faqs={getPageFAQs("rollover")}
@@ -431,7 +431,7 @@ export default function RolloverPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/rollover" />
         </Container>

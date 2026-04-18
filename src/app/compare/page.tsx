@@ -152,7 +152,7 @@ export default function ComparePage() {
   const companies = getAllCompanies();
 
   return (
-    <main className="min-h-screen flex flex-col bg-white">
+    <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "Gold IRA Company Comparisons 2026", description: "Compare Gold IRA companies side-by-side. Fees, minimums, ratings, and pros/cons.", slug: "/compare" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Compare Companies", url: "/compare" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("compare"))} />
@@ -162,7 +162,7 @@ export default function ComparePage() {
       <header className="bg-[#0C0D18] py-16 md:py-20 relative overflow-hidden border-b border-[#2A2D42]">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[rgba(220,38,38,0.06)] rounded-full blur-[150px]" />
-          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-slate-200/50 rounded-full blur-[100px]" />
+          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#2A2D42]/50 rounded-full blur-[100px]" />
         </div>
         <Container className="relative z-10">
           <div className="max-w-3xl">
@@ -374,7 +374,7 @@ export default function ComparePage() {
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="flex items-center gap-3 mb-8">
-            <div className="p-2 bg-slate-200 rounded-lg border border-[#3F4460]">
+            <div className="p-2 bg-[#2A2D42] rounded-lg border border-[#3F4460]">
               <Scale className="h-5 w-5 text-[#D0CCC4]" />
             </div>
             <div>
@@ -405,7 +405,7 @@ export default function ComparePage() {
       </section>
 
       {/* Quick Comparison Table */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">Quick Company Overview</h2>
           <p className="text-[#D0CCC4] mb-8 max-w-2xl">
@@ -429,7 +429,7 @@ export default function ComparePage() {
                     <td className="p-4">
                       <div className="flex items-center gap-3">
                         <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                          index === 0 ? "bg-[#DC2626] text-white" : "bg-slate-200 text-[#D0CCC4]"
+                          index === 0 ? "bg-[#DC2626] text-white" : "bg-[#2A2D42] text-[#D0CCC4]"
                         }`}>
                           {index + 1}
                         </span>
@@ -486,7 +486,7 @@ export default function ComparePage() {
         </Container>
       </section>
 
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AnswerFirst
                         answer="When comparing Gold IRA companies, focus on four factors: minimum investment ($2,000 to $50,000), annual fees ($180-$325), BBB complaint history (0 to 30+), and buyback programs. Augusta Precious Metals ranks #1 for $50K+ investors due to zero BBB complaints and fee waivers up to 10 years. Noble Gold is best for smaller budgets at $2,000 minimum."
@@ -506,7 +506,7 @@ export default function ComparePage() {
                     />
                 </Container>
             </section>
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/compare" />
         </Container>

@@ -81,7 +81,7 @@ export function BestForSection({ company }: BestForSectionProps) {
       </div>
 
       {/* Main Best For */}
-      <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-6">
+      <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 mb-6">
         <p className="text-lg text-amber-900 font-medium">
           {company.bestFor}
         </p>

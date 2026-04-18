@@ -195,7 +195,7 @@ export function FeesComparison() {
                   step={5000}
                   value={accountSize}
                   onChange={(e) => setAccountSize(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>$25K</span>
@@ -215,7 +215,7 @@ export function FeesComparison() {
                   max={30}
                   value={yearsHeld}
                   onChange={(e) => setYearsHeld(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>1 year</span>
@@ -257,7 +257,7 @@ export function FeesComparison() {
                   key={calc.company.id}
                   className={`bg-[#0C0D18] border rounded-2xl p-6 ${
                     isLowest
-                      ? "border-green-500/30 bg-green-500/5"
+                      ? "border-green-500/30 bg-[rgba(46,139,87,0.08)]0/5"
                       : "border-[#2A2D42]"
                   }`}
                 >
@@ -266,7 +266,7 @@ export function FeesComparison() {
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-2">
                         {isLowest && (
-                          <span className="px-2 py-0.5 bg-green-500 text-[#F6F4EF] text-xs font-bold rounded">
+                          <span className="px-2 py-0.5 bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] text-xs font-bold rounded">
                             LOWEST COST
                           </span>
                         )}

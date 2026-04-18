@@ -64,7 +64,7 @@ export function LoadingAnalysis({ onComplete }: { onComplete: () => void }) {
             </div>
 
             {/* Progress Bar */}
-            <div className="w-full max-w-sm h-1 bg-slate-200 rounded-full overflow-hidden">
+            <div className="w-full max-w-sm h-1 bg-[#2A2D42] rounded-full overflow-hidden">
                 <motion.div
                     className="h-full bg-gradient-to-r from-[#B22234] to-emerald-500"
                     initial={{ width: 0 }}

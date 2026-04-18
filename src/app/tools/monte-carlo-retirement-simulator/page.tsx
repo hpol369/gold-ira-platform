@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function MonteCarloRetirementSimulatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18]text-[#F6F4EF]">
       <SchemaScript schema={articleSchema({ title: "Monte Carlo Retirement Calculator - Simulate Your Retirement Success", description: "Free Monte Carlo retirement simulator runs 1,000+ scenarios to calculate your retirement success probability. See how asset allocation affects your odds.", slug: "/tools/monte-carlo-retirement-simulator" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Monte Carlo Retirement Simulator", url: "/tools/monte-carlo-retirement-simulator" }])} />
       <Navbar />

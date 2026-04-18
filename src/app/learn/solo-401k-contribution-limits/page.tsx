@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function Solo401kContributionLimitsPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             {/* Hero Section */}
             <section className="relative py-16 md:py-24 overflow-hidden">
                 <div className="absolute inset-0 bg-[#0C0D18]"></div>
@@ -31,7 +31,7 @@ export default function Solo401kContributionLimitsPage() {
 
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-700 text-sm font-medium mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(197,149,46,0.08)] border border-purple-500/20 text-purple-700 text-sm font-medium mb-6">
                             <Calendar className="w-4 h-4" />
                             Updated for 2026 Tax Year
                         </div>
@@ -77,7 +77,7 @@ export default function Solo401kContributionLimitsPage() {
             />
 
             {/* 2026 Limits Breakdown */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#F6F4EF] mb-4 text-center">
@@ -110,7 +110,7 @@ export default function Solo401kContributionLimitsPage() {
                                         <span className="text-[#D0CCC4]">Catch-Up Contribution</span>
                                         <span className="text-[#A8A39A]">N/A</span>
                                     </div>
-                                    <div className="flex justify-between items-center py-3 bg-purple-500/10 rounded-lg px-4 -mx-4">
+                                    <div className="flex justify-between items-center py-3 bg-[rgba(197,149,46,0.08)] rounded-lg px-4 -mx-4">
                                         <span className="text-purple-800 font-semibold">Total Maximum</span>
                                         <span className="text-purple-700 font-bold text-xl">$70,000</span>
                                     </div>
@@ -150,7 +150,7 @@ export default function Solo401kContributionLimitsPage() {
                             </div>
                         </div>
 
-                        <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
+                        <div className="bg-[#161828]0/10 border border-amber-500/20 rounded-xl p-6">
                             <div className="flex items-start gap-3">
                                 <AlertCircle className="w-5 h-5 text-amber-700 flex-shrink-0 mt-0.5" />
                                 <div>
@@ -183,7 +183,7 @@ export default function Solo401kContributionLimitsPage() {
                         <div className="grid md:grid-cols-2 gap-8">
                             {/* Employee Deferral */}
                             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8">
-                                <div className="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center mb-6">
+                                <div className="w-14 h-14 rounded-2xl bg-[#121423]0/20 flex items-center justify-center mb-6">
                                     <DollarSign className="w-7 h-7 text-blue-700" />
                                 </div>
                                 <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">Employee Deferral</h3>
@@ -248,7 +248,7 @@ export default function Solo401kContributionLimitsPage() {
             </section>
 
             {/* Calculation Examples */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 justify-center mb-4">
@@ -265,7 +265,7 @@ export default function Solo401kContributionLimitsPage() {
                         <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8 mb-6">
                             <div className="flex items-center justify-between mb-6">
                                 <h3 className="text-xl font-bold text-[#F6F4EF]">Example 1: High-Income Consultant (Under 50)</h3>
-                                <span className="px-3 py-1 bg-green-500/20 text-green-700 text-sm rounded-full">Max Contribution</span>
+                                <span className="px-3 py-1 bg-[rgba(46,139,87,0.08)]0/20 text-green-700 text-sm rounded-full">Max Contribution</span>
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-8">
@@ -289,7 +289,7 @@ export default function Solo401kContributionLimitsPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-purple-500/10 rounded-xl p-6 flex flex-col justify-center">
+                                <div className="bg-[rgba(197,149,46,0.08)] rounded-xl p-6 flex flex-col justify-center">
                                     <div className="text-center">
                                         <div className="text-sm text-[#A8A39A] mb-1">Total Contribution</div>
                                         <div className="text-4xl font-bold text-purple-700 mb-2">$63,500</div>
@@ -333,7 +333,7 @@ export default function Solo401kContributionLimitsPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-purple-500/10 rounded-xl p-6 flex flex-col justify-center">
+                                <div className="bg-[rgba(197,149,46,0.08)] rounded-xl p-6 flex flex-col justify-center">
                                     <div className="text-center">
                                         <div className="text-sm text-[#A8A39A] mb-1">Total Contribution</div>
                                         <div className="text-4xl font-bold text-purple-700 mb-2">$46,000</div>
@@ -349,7 +349,7 @@ export default function Solo401kContributionLimitsPage() {
                         <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8">
                             <div className="flex items-center justify-between mb-6">
                                 <h3 className="text-xl font-bold text-[#F6F4EF]">Example 3: S-Corp Owner (Under 50)</h3>
-                                <span className="px-3 py-1 bg-blue-500/20 text-blue-700 text-sm rounded-full">W-2 Wages</span>
+                                <span className="px-3 py-1 bg-[#121423]0/20 text-blue-700 text-sm rounded-full">W-2 Wages</span>
                             </div>
 
                             <div className="grid md:grid-cols-2 gap-8">
@@ -373,7 +373,7 @@ export default function Solo401kContributionLimitsPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-purple-500/10 rounded-xl p-6 flex flex-col justify-center">
+                                <div className="bg-[rgba(197,149,46,0.08)] rounded-xl p-6 flex flex-col justify-center">
                                     <div className="text-center">
                                         <div className="text-sm text-[#A8A39A] mb-1">Total Contribution</div>
                                         <div className="text-4xl font-bold text-purple-700 mb-2">$53,500</div>
@@ -401,7 +401,7 @@ export default function Solo401kContributionLimitsPage() {
 
                         <div className="grid md:grid-cols-2 gap-8">
                             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8">
-                                <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mb-4">
+                                <div className="w-12 h-12 rounded-xl bg-[#121423]0/20 flex items-center justify-center mb-4">
                                     <Calendar className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Employee Deferral Deadline</h3>
@@ -425,7 +425,7 @@ export default function Solo401kContributionLimitsPage() {
                             </div>
                         </div>
 
-                        <div className="mt-8 bg-green-500/10 border border-green-500/20 rounded-xl p-6">
+                        <div className="mt-8 bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20 rounded-xl p-6">
                             <div className="flex items-start gap-3">
                                 <CheckCircle className="w-5 h-5 text-green-700 flex-shrink-0 mt-0.5" />
                                 <div>
@@ -443,7 +443,7 @@ export default function Solo401kContributionLimitsPage() {
             </section>
 
             {/* Solo 401k vs SEP IRA Comparison */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#F6F4EF] mb-4 text-center">
@@ -524,7 +524,7 @@ export default function Solo401kContributionLimitsPage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <LeadCaptureButton variant="default" source="solo-401k-limits" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                            <LeadCaptureButton variant="default" source="solo-401k-limits" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
                                 Get Free Solo 401k Guide <ArrowRight className="ml-2 w-5 h-5" />
                             </LeadCaptureButton>
                             <Link href="/solo-401k">

@@ -113,7 +113,7 @@ const faqSchema = {
 
 export default function PensionPresentValueCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -122,7 +122,7 @@ export default function PensionPresentValueCalculatorPage() {
       <PensionPresentValueCalculator />
 
       {/* Important Facts */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -211,10 +211,10 @@ export default function PensionPresentValueCalculatorPage() {
       </section>
 
       {/* Divorce Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-purple-500/10 border border-purple-500/20 rounded-xl p-8">
+            <div className="bg-[rgba(197,149,46,0.08)] border border-purple-500/20 rounded-xl p-8">
               <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4 flex items-center gap-3">
                 <Scale className="h-6 w-6 text-purple-700" />
                 Pension Present Value in Divorce

@@ -214,7 +214,7 @@ export default function Solo401kProvidersPage() {
     const selfDirectedProviders = providers.filter(p => p.type === "self-directed");
 
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             {/* Hero Section */}
             <section className="relative py-16 md:py-24 overflow-hidden">
                 <div className="absolute inset-0 bg-[#0C0D18]"></div>
@@ -222,7 +222,7 @@ export default function Solo401kProvidersPage() {
 
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-700 text-sm font-medium mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(197,149,46,0.08)] border border-purple-500/20 text-purple-700 text-sm font-medium mb-6">
                             <Award className="w-4 h-4" />
                             2026 Provider Comparison
                         </div>
@@ -274,7 +274,7 @@ export default function Solo401kProvidersPage() {
             />
 
             {/* Brokerage Providers */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="flex items-center gap-3 mb-4">
@@ -322,7 +322,7 @@ export default function Solo401kProvidersPage() {
             </section>
 
             {/* Feature Comparison Table */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-4 text-center">
@@ -400,7 +400,7 @@ export default function Solo401kProvidersPage() {
 
                         <div className="grid md:grid-cols-2 gap-6">
                             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-6">
-                                <div className="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center mb-4">
+                                <div className="w-12 h-12 rounded-xl bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center mb-4">
                                     <DollarSign className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Choose Free Brokerage If...</h3>
@@ -454,7 +454,7 @@ export default function Solo401kProvidersPage() {
             </section>
 
             {/* Our Recommendations */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
@@ -467,7 +467,7 @@ export default function Solo401kProvidersPage() {
                                 <div className="text-2xl font-bold text-[#F6F4EF] mb-2">Fidelity</div>
                                 <div className="flex justify-center gap-1 mb-4">
                                     {[1, 2, 3, 4, 5].map(i => (
-                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-[#D0CCC4]"}`} />
+                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-[#D4A94E]" : "text-[#D0CCC4]"}`} />
                                     ))}
                                 </div>
                                 <p className="text-[#A8A39A] text-sm">
@@ -480,7 +480,7 @@ export default function Solo401kProvidersPage() {
                                 <div className="text-2xl font-bold text-[#F6F4EF] mb-2">Rocket Dollar</div>
                                 <div className="flex justify-center gap-1 mb-4">
                                     {[1, 2, 3, 4, 5].map(i => (
-                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-[#D0CCC4]"}`} />
+                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-[#D4A94E]" : "text-[#D0CCC4]"}`} />
                                     ))}
                                 </div>
                                 <p className="text-[#A8A39A] text-sm">
@@ -493,7 +493,7 @@ export default function Solo401kProvidersPage() {
                                 <div className="text-2xl font-bold text-[#F6F4EF] mb-2">Vanguard</div>
                                 <div className="flex justify-center gap-1 mb-4">
                                     {[1, 2, 3, 4, 5].map(i => (
-                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-[#D0CCC4]"}`} />
+                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-[#D4A94E]" : "text-[#D0CCC4]"}`} />
                                     ))}
                                 </div>
                                 <p className="text-[#A8A39A] text-sm">
@@ -519,7 +519,7 @@ export default function Solo401kProvidersPage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <LeadCaptureButton variant="default" source="solo-providers" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                            <LeadCaptureButton variant="default" source="solo-providers" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
                                 Get Free Solo 401k Guide <ArrowRight className="ml-2 w-5 h-5" />
                             </LeadCaptureButton>
                             <Link href="/learn/solo-401k-contribution-limits">
@@ -587,7 +587,7 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
                 {/* Rank & Basic Info */}
                 <div className="flex items-start gap-4">
                     <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg ${
-                        rank === 1 ? "bg-amber-500/20 text-amber-700" : "bg-slate-200 text-[#A8A39A]"
+                        rank === 1 ? "bg-[#161828]0/20 text-amber-700" : "bg-[#2A2D42] text-[#A8A39A]"
                     }`}>
                         {rank}
                     </div>
@@ -600,9 +600,9 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
                                         key={i}
                                         className={`w-4 h-4 ${
                                             i <= Math.floor(provider.rating)
-                                                ? "text-amber-700 fill-amber-400"
+                                                ? "text-amber-700 fill-[#D4A94E]"
                                                 : i <= provider.rating
-                                                ? "text-amber-700 fill-amber-400/50"
+                                                ? "text-amber-700 fill-[#D4A94E]/50"
                                                 : "text-[#D0CCC4]"
                                         }`}
                                     />
@@ -612,7 +612,7 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
                             <span className={`text-xs px-2 py-0.5 rounded-full ${
                                 provider.type === "self-directed"
                                     ? "bg-purple-500/20 text-purple-700"
-                                    : "bg-blue-500/20 text-blue-700"
+                                    : "bg-[#121423]0/20 text-blue-700"
                             }`}>
                                 {provider.type === "self-directed" ? "Self-Directed" : "Brokerage"}
                             </span>

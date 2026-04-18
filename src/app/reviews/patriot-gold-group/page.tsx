@@ -93,7 +93,7 @@ const tocItems = [
 
 export default function PatriotGoldReviewPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <header className="bg-[rgba(197,149,46,0.1)] text-white py-16 relative overflow-hidden">
                 <Container className="relative z-10">
@@ -179,7 +179,7 @@ export default function PatriotGoldReviewPage() {
                                         Patriot Gold Group absorbs these fees for accounts above their qualifying threshold (typically $100k+). They make their money on the spread when you buy metals—which is transparent and disclosed upfront.
                                     </p>
 
-                                    <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 flex gap-4 not-prose my-6">
+                                    <div className="bg-[#121423] p-6 rounded-xl border border-blue-100 flex gap-4 not-prose my-6">
                                         <DollarSign className="w-6 h-6 text-blue-600 shrink-0" />
                                         <div>
                                             <h4 className="font-bold text-blue-800">What About Smaller Accounts?</h4>
@@ -194,7 +194,7 @@ export default function PatriotGoldReviewPage() {
                                 <section id="pros-cons" className="scroll-mt-32">
                                     <h2>Pros & Cons</h2>
                                     <div className="grid md:grid-cols-2 gap-8 not-prose">
-                                        <div className="bg-green-50 p-6 rounded-xl border border-green-100">
+                                        <div className="bg-[rgba(46,139,87,0.08)] p-6 rounded-xl border border-green-100">
                                             <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
                                                 <CheckCircle2 className="w-5 h-5" /> What We Like
                                             </h3>
@@ -217,7 +217,7 @@ export default function PatriotGoldReviewPage() {
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div className="bg-red-50 p-6 rounded-xl border border-red-100">
+                                        <div className="bg-[rgba(220,38,38,0.08)] p-6 rounded-xl border border-red-100">
                                             <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
                                                 <XCircle className="w-5 h-5" /> What Could Be Better
                                             </h3>

@@ -102,7 +102,7 @@ const bearishFactors = [
 
 export default function GoldPricePrediction2026Page() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "Gold Price Prediction 2026: Expert Forecasts & Analysis", description: "What will gold prices do in 2026? Expert predictions from major banks, analysts, and market factors driving gold. Updated analysis for investors.", slug: "/learn/gold-price-prediction-2026" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Gold Price Prediction 2026", url: "/learn/gold-price-prediction-2026" }])} />
 
@@ -224,7 +224,7 @@ export default function GoldPricePrediction2026Page() {
 
                             <div className="grid md:grid-cols-2 gap-6">
                                 {bullishFactors.map((factor, i) => (
-                                    <div key={i} className="bg-green-50 border border-green-200 rounded-xl p-6">
+                                    <div key={i} className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                                         <div className="flex items-center gap-3 mb-3">
                                             <factor.icon className="h-5 w-5 text-green-600" />
                                             <h3 className="font-bold text-[#F6F4EF]">{factor.title}</h3>
@@ -246,7 +246,7 @@ export default function GoldPricePrediction2026Page() {
 
                             <div className="grid md:grid-cols-3 gap-6">
                                 {bearishFactors.map((factor, i) => (
-                                    <div key={i} className="bg-red-50 border border-red-200 rounded-xl p-6">
+                                    <div key={i} className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                         <div className="flex items-center gap-3 mb-3">
                                             <factor.icon className="h-5 w-5 text-red-600" />
                                             <h3 className="font-bold text-[#F6F4EF]">{factor.title}</h3>

@@ -117,7 +117,7 @@ const documentarySeries = [
 
 export default function MikeMaloneyPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -129,7 +129,7 @@ export default function MikeMaloneyPage() {
                         <Link href="/silver-experts" className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Experts
                         </Link>
-                        <div className="inline-flex items-center gap-2 rounded-full bg-purple-500/20 px-4 py-1.5 text-sm font-semibold text-purple-700 mb-6 border border-purple-500/30 ml-4">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-purple-500/20 px-4 py-1.5 text-sm font-semibold text-purple-700 mb-6 border border-[rgba(197,149,46,0.32)] ml-4">
                             <Star className="w-4 h-4" />
                             Silver Expert Profile
                         </div>
@@ -291,7 +291,7 @@ export default function MikeMaloneyPage() {
                         {/* Silver Predictions */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-green-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg">
                                     <TrendingUp className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Maloney&apos;s Silver Predictions</h2>
@@ -349,7 +349,7 @@ export default function MikeMaloneyPage() {
                     {/* Sidebar */}
                     <aside className="lg:col-span-1 space-y-8">
                         {/* CTA Box */}
-                        <div className="bg-gradient-to-br from-purple-900/30 to-slate-800/50 border border-purple-500/30 rounded-xl p-6 sticky top-24">
+                        <div className="bg-gradient-to-br from-purple-900/30 to-slate-800/50 border border-[rgba(197,149,46,0.32)] rounded-xl p-6 sticky top-24">
                             <h3 className="text-xl font-bold font-serif text-[#F6F4EF] mb-4">
                                 Want to Follow the Experts Into Silver?
                             </h3>

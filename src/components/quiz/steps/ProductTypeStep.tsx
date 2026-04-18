@@ -118,15 +118,15 @@ export function ProductTypeStep({ onSelect }: ProductTypeStepProps) {
                            hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_40px_rgba(212,175,55,0.15)]
                            hover:border-amber-400/40 transition-all duration-300 cursor-pointer"
               >
-                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-amber-500/10
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-[#161828]0/10
                                 flex items-center justify-center
-                                group-hover:bg-amber-500/20 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]
+                                group-hover:bg-[#161828]0/20 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]
                                 transition-all duration-300">
-                  <IconComponent className="w-6 h-6 text-amber-400" />
+                  <IconComponent className="w-6 h-6 text-[#D4A94E]" />
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-semibold text-white group-hover:text-amber-400
+                  <h3 className="text-lg font-semibold text-white group-hover:text-[#D4A94E]
                                  transition-colors duration-300 mb-1">
                     {option.label}
                   </h3>
@@ -140,7 +140,7 @@ export function ProductTypeStep({ onSelect }: ProductTypeStepProps) {
                   <div className="w-6 h-6 rounded-full border-2 border-amber-500
                                   flex items-center justify-center
                                   shadow-[0_0_10px_rgba(212,175,55,0.4)]">
-                    <div className="w-3 h-3 rounded-full bg-amber-500" />
+                    <div className="w-3 h-3 rounded-full bg-[#161828]0" />
                   </div>
                 </div>
               </motion.button>

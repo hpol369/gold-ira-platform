@@ -96,7 +96,7 @@ const schema = {
 
 export default function PreciousMetalsIraRulesPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -156,7 +156,7 @@ export default function PreciousMetalsIraRulesPage() {
                         {/* Purity Standards */}
                         <section id="purity" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Fineness (Purity) Requirements</h2>
@@ -198,7 +198,7 @@ export default function PreciousMetalsIraRulesPage() {
                         {/* Storage Rules */}
                         <section id="storage-rules" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-amber-700">
                                     <Gavel className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Strict Storage Regulations</h2>

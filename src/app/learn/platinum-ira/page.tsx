@@ -96,7 +96,7 @@ const schema = {
 
 export default function PlatinumIraPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -169,7 +169,7 @@ export default function PlatinumIraPage() {
                         {/* Investment Case */}
                         <section id="investment-case" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Bull Case for Platinum</h2>
@@ -248,7 +248,7 @@ export default function PlatinumIraPage() {
                         {/* Risks */}
                         <section id="risks" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Risks</h2>

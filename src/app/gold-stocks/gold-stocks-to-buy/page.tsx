@@ -124,7 +124,7 @@ export default function GoldStocksToBuyPage() {
             </section>
 
             {/* Content */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] prose-a:text-[#D4A94E] max-w-none">
@@ -143,7 +143,7 @@ export default function GoldStocksToBuyPage() {
 
                             {/* What You're Really Looking For */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-[#161828] rounded-lg text-[#D4A94E]">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What You&apos;re Really Looking For</h2>
@@ -168,7 +168,7 @@ export default function GoldStocksToBuyPage() {
 
                             {/* The Problem with Gold Mining Stocks */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)] rounded-lg text-red-600">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Problem with Gold Mining Stocks</h2>
@@ -214,7 +214,7 @@ export default function GoldStocksToBuyPage() {
 
                             {/* The Problem with Gold ETFs */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-orange-50 rounded-lg text-orange-600">
+                                <div className="p-3 bg-[rgba(183,121,31,0.08)] rounded-lg text-orange-600">
                                     <FileCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Problem with Gold ETFs</h2>
@@ -242,7 +242,7 @@ export default function GoldStocksToBuyPage() {
 
                             {/* The Physical Gold Alternative */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)] rounded-lg text-green-600">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Physical Gold Alternative</h2>
@@ -266,7 +266,7 @@ export default function GoldStocksToBuyPage() {
 
                             {/* Comparison Table */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-[#121423] rounded-lg text-blue-600">
                                     <Scale className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What Each Option Actually Gives You</h2>
@@ -278,7 +278,7 @@ export default function GoldStocksToBuyPage() {
                                         <tr>
                                             <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">What You Want</th>
                                             <th className="p-4 border-b border-[#2A2D42] font-bold text-blue-600">Mining Stocks</th>
-                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-purple-600">Gold ETFs</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">Gold ETFs</th>
                                             <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">Physical Gold</th>
                                         </tr>
                                     </thead>
@@ -337,7 +337,7 @@ export default function GoldStocksToBuyPage() {
 
                             {/* How to Buy Physical Gold */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
+                                <div className="p-3 bg-purple-50 rounded-lg text-[#D4A94E]">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">How to Buy Physical Gold</h2>

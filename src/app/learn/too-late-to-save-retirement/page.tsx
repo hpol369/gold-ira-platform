@@ -134,7 +134,7 @@ const schema = {
 
 export default function TooLateToSaveRetirementPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -171,7 +171,7 @@ export default function TooLateToSaveRetirementPage() {
                         <p className="text-xl text-[#D0CCC4] leading-relaxed mb-6">
                             <span className="text-[#D4A94E] font-semibold">30 years of early mornings. Overtime. Skipped vacations.</span> Your $500K-$1M nest egg proves you did everything right. Now the only question is: how do you make sure Wall Street doesn&apos;t take it away in the final stretch?
                         </p>
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-700 font-semibold text-sm">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-700 font-semibold text-sm">
                             <Heart className="h-4 w-4" />
                             For Factory Workers, Nurses, Teachers, Union Members & Trades
                         </div>
@@ -197,7 +197,7 @@ export default function TooLateToSaveRetirementPage() {
                         {/* Hope Section */}
                         <section id="hope" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <Sparkles className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">First: You&apos;ve Already Won the Hard Part</h2>
@@ -214,19 +214,19 @@ export default function TooLateToSaveRetirementPage() {
                             <div className="bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
                                 <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">The Reality for Workers Like You</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
-                                    <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
+                                    <div className="bg-[rgba(46,139,87,0.08)]0/10 p-4 rounded-xl border border-green-500/20">
                                         <div className="text-3xl font-bold text-green-700 mb-2">$672K</div>
                                         <p className="text-sm text-[#A8A39A]">Average savings for disciplined blue-collar workers at 58. You&apos;re in good company.</p>
                                     </div>
-                                    <div className="bg-red-500/10 p-4 rounded-xl border border-red-500/20">
+                                    <div className="bg-[rgba(220,38,38,0.08)]0/10 p-4 rounded-xl border border-red-500/20">
                                         <div className="text-3xl font-bold text-red-700 mb-2">-57%</div>
                                         <p className="text-sm text-[#A8A39A]">How much the market dropped in 2008. Turning $672K into $289K overnight.</p>
                                     </div>
-                                    <div className="bg-amber-500/10 p-4 rounded-xl border border-amber-500/20">
+                                    <div className="bg-[#161828]0/10 p-4 rounded-xl border border-amber-500/20">
                                         <div className="text-3xl font-bold text-[#D4A94E] mb-2">5.5 yrs</div>
                                         <p className="text-sm text-[#A8A39A]">How long it took to recover. Can your body wait that long?</p>
                                     </div>
-                                    <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
+                                    <div className="bg-[rgba(46,139,87,0.08)]0/10 p-4 rounded-xl border border-green-500/20">
                                         <div className="text-3xl font-bold text-green-700 mb-2">+5.5%</div>
                                         <p className="text-sm text-[#A8A39A]">What gold did during that same 2008 crash. Protection when you need it most.</p>
                                     </div>
@@ -241,7 +241,7 @@ export default function TooLateToSaveRetirementPage() {
                         {/* Catch-Up Contributions */}
                         <section id="catch-up" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-[#D4A94E]">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Strategy #1: Catch-Up Contributions (Age 50+)</h2>
@@ -298,7 +298,7 @@ export default function TooLateToSaveRetirementPage() {
                         {/* Social Security Timing */}
                         <section id="social-security" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Strategy #2: Maximize Social Security Timing</h2>
@@ -311,7 +311,7 @@ export default function TooLateToSaveRetirementPage() {
                             <div className="bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
                                 <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">Claiming Age Impact (Example: $2,000/mo Full Retirement Benefit)</h4>
                                 <div className="space-y-4">
-                                    <div className="flex justify-between items-center p-3 bg-red-500/10 rounded-lg border border-red-500/20">
+                                    <div className="flex justify-between items-center p-3 bg-[rgba(220,38,38,0.08)]0/10 rounded-lg border border-red-500/20">
                                         <div>
                                             <span className="text-[#F6F4EF] font-semibold">Claim at 62</span>
                                             <span className="text-[#A8A39A] text-sm ml-2">(earliest)</span>
@@ -321,7 +321,7 @@ export default function TooLateToSaveRetirementPage() {
                                             <div className="text-xs text-red-700">30% reduction</div>
                                         </div>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-amber-500/10 rounded-lg border border-amber-500/20">
+                                    <div className="flex justify-between items-center p-3 bg-[#161828]0/10 rounded-lg border border-amber-500/20">
                                         <div>
                                             <span className="text-[#F6F4EF] font-semibold">Claim at 67</span>
                                             <span className="text-[#A8A39A] text-sm ml-2">(full retirement)</span>
@@ -331,7 +331,7 @@ export default function TooLateToSaveRetirementPage() {
                                             <div className="text-xs text-[#D4A94E]">full benefit</div>
                                         </div>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-green-500/10 rounded-lg border border-green-500/20">
+                                    <div className="flex justify-between items-center p-3 bg-[rgba(46,139,87,0.08)]0/10 rounded-lg border border-green-500/20">
                                         <div>
                                             <span className="text-[#F6F4EF] font-semibold">Claim at 70</span>
                                             <span className="text-[#A8A39A] text-sm ml-2">(maximum)</span>
@@ -410,7 +410,7 @@ export default function TooLateToSaveRetirementPage() {
                                         <span className="text-[#D0CCC4]">Working 20 hours/week at $25/hour</span>
                                         <span className="text-teal-400 font-bold">$26,000/year</span>
                                     </div>
-                                    <div className="p-4 bg-amber-500/10 rounded-lg border border-amber-500/20">
+                                    <div className="p-4 bg-[#161828]0/10 rounded-lg border border-amber-500/20">
                                         <p className="text-[#D0CCC4] text-sm">
                                             <strong className="text-[#D4A94E]">The Impact:</strong> Earning $20,000/year in retirement means you need <strong className="text-[#F6F4EF]">$500,000 LESS</strong> in savings (using 4% rule). That&apos;s life-changing for late savers.
                                         </p>
@@ -426,7 +426,7 @@ export default function TooLateToSaveRetirementPage() {
                         {/* Alternative Investments */}
                         <section id="alternative-investments" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-[#D4A94E]">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Strategy #5: Alternative Investments</h2>
@@ -460,7 +460,7 @@ export default function TooLateToSaveRetirementPage() {
 
                         {/* Mid-Article CTA */}
                         <div className="my-12 bg-[#0C0D18] rounded-2xl p-8 text-[#F6F4EF] text-center relative overflow-hidden not-prose border border-green-500/20">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-green-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(46,139,87,0.08)]0/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Curious Where You Stand?</h3>
                                 <p className="mb-6 text-green-200">Use our free tools to analyze your current situation and create a personalized plan.</p>
@@ -481,7 +481,7 @@ export default function TooLateToSaveRetirementPage() {
                         {/* Age-Specific Sections */}
                         <section id="age-50" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Starting at 50: Your 15-Year Sprint</h2>
@@ -567,7 +567,7 @@ export default function TooLateToSaveRetirementPage() {
 
                         <section id="age-60" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-[#D4A94E]">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Starting at 60: Your 5-7 Year Strategic Push</h2>
@@ -615,7 +615,7 @@ export default function TooLateToSaveRetirementPage() {
                         {/* Gold Protection Section */}
                         <section id="gold-protection" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-[#D4A94E]">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Protecting What You DO Save: The Gold IRA Advantage</h2>
@@ -757,7 +757,7 @@ export default function TooLateToSaveRetirementPage() {
                                     You&apos;ve read this far - that proves you&apos;re serious about your future. Now let&apos;s turn that intention into action.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <LeadCaptureButton variant="default" source="too-late-save-retirement" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                    <LeadCaptureButton variant="default" source="too-late-save-retirement" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
                                         Get Free Gold IRA Guide
                                         <ArrowRight className="ml-2 w-5 h-5" />
                                     </LeadCaptureButton>

@@ -96,7 +96,7 @@ const schema = {
 
 export default function GoldIraVsCryptoPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
@@ -193,7 +193,7 @@ export default function GoldIraVsCryptoPage() {
                             <p>
                                 Let&apos;s talk numbers. Because crypto bros love to show you the &quot;Bitcoin from $1 to $60,000&quot; chart. What they don&apos;t show you is the <strong>journey</strong>:
                             </p>
-                            <div className="not-prose my-8 p-6 bg-red-50 rounded-xl border border-red-100">
+                            <div className="not-prose my-8 p-6 bg-[rgba(220,38,38,0.08)] rounded-xl border border-red-100">
                                 <p className="font-bold text-red-800 mb-3">Bitcoin&apos;s Major Crashes:</p>
                                 <ul className="space-y-2 text-red-700">
                                     <li>• <strong>2011:</strong> -93% (from $32 to $2)</li>
@@ -251,7 +251,7 @@ export default function GoldIraVsCryptoPage() {
                                 Here&apos;s my honest take: it depends on what this money is <em>for</em>.
                             </p>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-amber-50 border border-amber-200">
+                                <div className="p-6 rounded-xl bg-[#161828] border border-[rgba(197,149,46,0.32)]">
                                     <h4 className="font-bold text-amber-800 mb-3">Consider Crypto If:</h4>
                                     <ul className="space-y-2 text-amber-700 text-sm">
                                         <li>• You&apos;re under 40 with decades to recover</li>
@@ -261,7 +261,7 @@ export default function GoldIraVsCryptoPage() {
                                         <li>• You treat it as speculation, not savings</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-200">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]">
                                     <h4 className="font-bold text-green-800 mb-3">Choose Gold If:</h4>
                                     <ul className="space-y-2 text-green-700 text-sm">
                                         <li>• This money needs to be there when you retire</li>

@@ -430,7 +430,7 @@ export function InheritedIRARMDCalculator() {
           {/* Beneficiary Type */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Users className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Beneficiary Information</h3>
@@ -467,7 +467,7 @@ export function InheritedIRARMDCalculator() {
                         value="rollover"
                         checked={spouseOption === "rollover"}
                         onChange={(e) => setSpouseOption(e.target.value as SpouseOption)}
-                        className="accent-amber-500"
+                        className="accent-[#C5952E]"
                       />
                       <div>
                         <span className="text-[#F6F4EF] font-medium">Spousal Rollover</span>
@@ -481,7 +481,7 @@ export function InheritedIRARMDCalculator() {
                         value="inherited"
                         checked={spouseOption === "inherited"}
                         onChange={(e) => setSpouseOption(e.target.value as SpouseOption)}
-                        className="accent-amber-500"
+                        className="accent-[#C5952E]"
                       />
                       <div>
                         <span className="text-[#F6F4EF] font-medium">Keep as Inherited IRA</span>
@@ -494,7 +494,7 @@ export function InheritedIRARMDCalculator() {
 
               {/* EDB Explanation */}
               {beneficiaryType === "edb" && (
-                <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-3">
+                <div className="bg-[#121423]0/10 border border-blue-500/30 rounded-lg p-3">
                   <p className="text-sm text-blue-800">
                     <strong>Eligible Designated Beneficiaries include:</strong>
                     <br />- Minor children (until age of majority)
@@ -515,7 +515,7 @@ export function InheritedIRARMDCalculator() {
                   max={90}
                   value={beneficiaryAge}
                   onChange={(e) => setBeneficiaryAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
             </div>
@@ -524,7 +524,7 @@ export function InheritedIRARMDCalculator() {
           {/* Growth & Tax Assumptions */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <TrendingDown className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Assumptions</h3>
@@ -542,7 +542,7 @@ export function InheritedIRARMDCalculator() {
                   step={0.5}
                   value={growthRate}
                   onChange={(e) => setGrowthRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
 
@@ -557,7 +557,7 @@ export function InheritedIRARMDCalculator() {
                   step={1}
                   value={taxRate}
                   onChange={(e) => setTaxRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
             </div>
@@ -648,7 +648,7 @@ export function InheritedIRARMDCalculator() {
                   {calculations.projections.map((proj, idx) => (
                     <tr
                       key={proj.year}
-                      className={`border-b border-[#2A2D42] ${idx === 0 ? "bg-amber-500/5" : ""}`}
+                      className={`border-b border-[#2A2D42] ${idx === 0 ? "bg-[#161828]0/5" : ""}`}
                     >
                       <td className="py-2 px-2 text-[#D0CCC4]">
                         {proj.year} (Age {proj.age})

@@ -78,7 +78,7 @@ export default function GoldcoLawsuitPage() {
             {/* Header */}
             <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-sm font-semibold text-[#F6F4EF] mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[#121423] border border-[#3F4460] text-sm font-semibold text-[#F6F4EF] mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <Gavel className="w-4 h-4" /> Legal Fact Check
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#F6F4EF]">
@@ -143,7 +143,7 @@ export default function GoldcoLawsuitPage() {
                         {/* Current Status */}
                         <section id="current-status" className="scroll-mt-32">
                             <h2>Current Status & Improvements</h2>
-                            <div className="bg-green-50 p-6 rounded-xl border border-green-100 not-prose">
+                            <div className="bg-[rgba(46,139,87,0.08)] p-6 rounded-xl border border-green-100 not-prose">
                                 <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
                                     <ShieldCheck className="w-5 h-5" /> Goldco Today
                                 </h3>

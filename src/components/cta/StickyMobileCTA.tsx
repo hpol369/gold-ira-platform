@@ -73,8 +73,8 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
             // Augusta review - Direct CTA
             <>
               <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-1.5 text-amber-600 text-xs font-bold">
-                  <Star className="h-3 w-3 fill-amber-500 text-amber-500" />
+                <div className="flex items-center gap-1.5 text-[#D4A94E] text-xs font-bold">
+                  <Star className="h-3 w-3 fill-[#D4A94E] text-[#D4A94E]" />
                   <span>Our #1 Pick</span>
                 </div>
                 <p className="text-[#F6F4EF] text-sm font-bold truncate">

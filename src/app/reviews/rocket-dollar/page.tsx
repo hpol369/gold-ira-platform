@@ -49,7 +49,7 @@ export default function RocketDollarReviewPage() {
     const affiliateLink = getTrackedLink(AFFILIATE_LINKS.rocketDollar, "review-rocket-dollar", "rocket-dollar");
 
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Hero */}
@@ -94,7 +94,7 @@ export default function RocketDollarReviewPage() {
                                 <h2 className="text-xl font-serif font-bold text-[#F6F4EF] mb-4">Rocket Dollar at a Glance</h2>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div className="flex items-center gap-3">
-                                        <Building2 className="w-5 h-5 text-purple-600" />
+                                        <Building2 className="w-5 h-5 text-[#D4A94E]" />
                                         <div>
                                             <p className="text-[#A8A39A] text-sm">Founded</p>
                                             <p className="text-[#F6F4EF] font-medium">{companyData.founded}</p>
@@ -139,7 +139,7 @@ export default function RocketDollarReviewPage() {
                             </div>
 
                             {/* Article */}
-                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-purple-600">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E]">
 
                                 <h2>What is Rocket Dollar?</h2>
                                 <p>
@@ -243,7 +243,7 @@ export default function RocketDollarReviewPage() {
                                     <span className="text-[#F6F4EF]">Precious Metals</span>
                                 </div>
                                 <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
-                                    <Building2 className="w-6 h-6 text-purple-600" />
+                                    <Building2 className="w-6 h-6 text-[#D4A94E]" />
                                     <span className="text-[#F6F4EF]">Private Equity & Startups</span>
                                 </div>
                             </div>

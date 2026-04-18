@@ -95,7 +95,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function Convert401kToGoldPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             <SchemaScript schema={howToSchema({
@@ -148,7 +148,7 @@ export default function Convert401kToGoldPage() {
                 <article className="max-w-3xl mx-auto">
 
                     {/* Direct Answer Box */}
-                    <div className="bg-green-50 rounded-2xl p-8 border border-green-200 mb-10">
+                    <div className="bg-[rgba(46,139,87,0.08)] rounded-2xl p-8 border border-green-200 mb-10">
                         <div className="flex items-start gap-4">
                             <div className="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0">
                                 <CheckCircle2 className="w-6 h-6" />
@@ -264,7 +264,7 @@ export default function Convert401kToGoldPage() {
                             Because the money stays within retirement accounts, the IRS doesn&apos;t consider it a withdrawal. No income tax. No early withdrawal penalty. It&apos;s simply moving your retirement savings from one account to another.
                         </p>
 
-                        <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20 not-prose my-8">
+                        <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-2xl p-6 border border-green-500/20 not-prose my-8">
                             <h4 className="font-bold text-green-700 text-lg mb-4 flex items-center gap-2">
                                 <CheckCircle2 className="w-5 h-5" />
                                 Direct Rollover = Tax-Free
@@ -291,7 +291,7 @@ export default function Convert401kToGoldPage() {
                         </p>
 
                         <div className="not-prose my-8">
-                            <Link href="/gold-ira-rules" className="flex items-center gap-4 p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42] hover:bg-slate-200 transition-colors group">
+                            <Link href="/gold-ira-rules" className="flex items-center gap-4 p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42] hover:bg-[#2A2D42] transition-colors group">
                                 <div className="w-12 h-12 rounded-full bg-[rgba(220,38,38,0.18)] text-[#D4A94E] flex items-center justify-center flex-shrink-0">
                                     <FileText className="w-6 h-6" />
                                 </div>
@@ -310,7 +310,7 @@ export default function Convert401kToGoldPage() {
                             <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Can I convert my 401k to gold?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
@@ -324,7 +324,7 @@ export default function Convert401kToGoldPage() {
                             <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">What&apos;s the difference between &quot;convert&quot; and &quot;rollover&quot;?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
@@ -338,7 +338,7 @@ export default function Convert401kToGoldPage() {
                             <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Why would I convert my 401k to gold?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
@@ -352,7 +352,7 @@ export default function Convert401kToGoldPage() {
                             <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Is there a penalty for converting?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
@@ -366,7 +366,7 @@ export default function Convert401kToGoldPage() {
                             <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">How much should I convert to gold?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>

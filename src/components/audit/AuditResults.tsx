@@ -16,7 +16,7 @@ export function AuditResults({ score, riskLabel, projectedLoss, primaryFear }: A
     const { openModal } = useLeadModal();
     const isHighRisk = score > 70;
     const scoreColor = isHighRisk ? "text-red-500" : "text-[#D4A94E]";
-    const barColor = isHighRisk ? "bg-red-500" : "bg-[#DC2626]";
+    const barColor = isHighRisk ? "bg-[rgba(220,38,38,0.08)]0" : "bg-[#DC2626]";
 
     return (
         <div className="py-8 w-full max-w-4xl mx-auto">
@@ -47,7 +47,7 @@ export function AuditResults({ score, riskLabel, projectedLoss, primaryFear }: A
                         <div className={`text-6xl font-serif font-bold ${scoreColor}`}>
                             {score}<span className="text-2xl text-[#A8A39A]">/100</span>
                         </div>
-                        <div className={`mt-2 px-3 py-1 rounded-full text-xs font-bold uppercase ${isHighRisk ? 'bg-red-500/20 text-red-600' : 'bg-[rgba(220,38,38,0.18)] text-[#D4A94E]'}`}>
+                        <div className={`mt-2 px-3 py-1 rounded-full text-xs font-bold uppercase ${isHighRisk ? 'bg-[rgba(220,38,38,0.08)]0/20 text-red-600' : 'bg-[rgba(220,38,38,0.18)] text-[#D4A94E]'}`}>
                             {riskLabel}
                         </div>
                     </div>
@@ -61,14 +61,14 @@ export function AuditResults({ score, riskLabel, projectedLoss, primaryFear }: A
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="bg-red-500/5 border border-red-500/20 rounded-2xl p-8"
+                    className="bg-[rgba(220,38,38,0.08)]0/5 border border-red-500/20 rounded-2xl p-8"
                 >
                     <div className="flex items-center gap-3 mb-6">
                         <AlertTriangle className="w-6 h-6 text-red-500" />
                         <h3 className="text-xl font-bold text-[#F6F4EF]">The Vulnerability</h3>
                     </div>
                     <div className="space-y-6">
-                        <div className="bg-red-500/10 rounded-xl p-4 border border-red-500/20">
+                        <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-xl p-4 border border-red-500/20">
                             <p className="text-sm text-red-600 mb-1 font-mono uppercase">Projected Loss (2030)</p>
                             <p className="text-3xl font-bold text-red-500">-{projectedLoss}</p>
                             <p className="text-xs text-red-500/70 mt-1">If purchasing power continues to decay at current CPI rates.</p>

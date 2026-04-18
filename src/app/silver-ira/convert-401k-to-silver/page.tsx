@@ -205,7 +205,7 @@ const faqJsonLd = {
 
 export default function Convert401kToSilverPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -223,7 +223,7 @@ export default function Convert401kToSilverPage() {
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-400/30 rounded-full text-green-800 font-semibold text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-400/30 rounded-full text-green-800 font-semibold text-sm mb-6">
                             <TrendingUp className="h-4 w-4" />
                             LOW COMPETITION KEYWORD
                         </div>
@@ -262,7 +262,7 @@ export default function Convert401kToSilverPage() {
                                 const Icon = benefit.icon;
                                 return (
                                     <div key={index} className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
-                                        <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/20 rounded-full flex items-center justify-center mx-auto mb-4">
                                             <Icon className="h-6 w-6 text-green-700" />
                                         </div>
                                         <h3 className="font-bold text-[#F6F4EF] mb-2">{benefit.benefit}</h3>
@@ -276,7 +276,7 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* Eligibility Section */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-4">Are You Eligible to Convert?</h2>
@@ -288,7 +288,7 @@ export default function Convert401kToSilverPage() {
                             {eligibilityScenarios.map((item, index) => (
                                 <div
                                     key={index}
-                                    className={`rounded-xl p-6 border ${item.eligible ? 'bg-green-500/10 border-green-500/30' : 'bg-red-500/10 border-red-500/30'}`}
+                                    className={`rounded-xl p-6 border ${item.eligible ? 'bg-[rgba(46,139,87,0.08)]0/10 border-green-500/30' : 'bg-[rgba(220,38,38,0.08)]0/10 border-red-500/30'}`}
                                 >
                                     <div className="flex items-start gap-4">
                                         {item.eligible ? (
@@ -299,7 +299,7 @@ export default function Convert401kToSilverPage() {
                                         <div>
                                             <div className="flex items-center gap-3 mb-2">
                                                 <h3 className="font-bold text-[#F6F4EF]">{item.scenario}</h3>
-                                                <span className={`px-2 py-0.5 rounded text-xs font-bold ${item.eligible ? 'bg-green-500 text-[#F6F4EF]' : 'bg-red-500 text-[#F6F4EF]'}`}>
+                                                <span className={`px-2 py-0.5 rounded text-xs font-bold ${item.eligible ? 'bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF]' : 'bg-[rgba(220,38,38,0.08)]0 text-[#F6F4EF]'}`}>
                                                     {item.eligible ? 'ELIGIBLE' : 'NOT ELIGIBLE'}
                                                 </span>
                                             </div>
@@ -353,7 +353,7 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* Common Mistakes */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-4">Common Mistakes to Avoid</h2>
@@ -363,7 +363,7 @@ export default function Convert401kToSilverPage() {
 
                         <div className="space-y-4">
                             {commonMistakes.map((item, index) => (
-                                <div key={index} className="bg-red-500/5 border border-red-500/20 rounded-xl p-6">
+                                <div key={index} className="bg-[rgba(220,38,38,0.08)]0/5 border border-red-500/20 rounded-xl p-6">
                                     <div className="flex items-start gap-4">
                                         <AlertTriangle className="h-6 w-6 text-red-700 flex-shrink-0 mt-1" />
                                         <div className="flex-1">
@@ -401,7 +401,7 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* Timeline */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">Expected Timeline</h2>
@@ -460,7 +460,7 @@ export default function Convert401kToSilverPage() {
             </section>
 
             {/* Related Pages */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">Related Resources</h2>
                     <div className="grid md:grid-cols-3 gap-6">

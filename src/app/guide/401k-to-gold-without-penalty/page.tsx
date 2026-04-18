@@ -118,7 +118,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function GoldWithoutPenaltyGuidePage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             <SchemaScript schema={howToSchema({
@@ -169,9 +169,9 @@ export default function GoldWithoutPenaltyGuidePage() {
                     <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-a:text-[#D4A94E] max-w-none">
 
                         {/* Direct Answer - Big and Clear */}
-                        <div className="bg-green-500/10 border-2 border-green-500/30 rounded-2xl p-8 mb-12 not-prose">
+                        <div className="bg-[rgba(46,139,87,0.08)]0/10 border-2 border-green-500/30 rounded-2xl p-8 mb-12 not-prose">
                             <div className="flex items-start gap-4">
-                                <div className="p-3 bg-green-500/20 rounded-full shrink-0">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-full shrink-0">
                                     <CheckCircle2 className="w-8 h-8 text-green-700" />
                                 </div>
                                 <div>
@@ -214,7 +214,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 <strong className="text-red-700">This is where people get into trouble.</strong>
                             </p>
 
-                            <div className="bg-red-500/10 rounded-xl p-6 border border-red-500/20 not-prose my-6">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-xl p-6 border border-red-500/20 not-prose my-6">
                                 <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
                                     Indirect Rollover Dangers
@@ -250,9 +250,9 @@ export default function GoldWithoutPenaltyGuidePage() {
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
                                 {/* Direct Rollover - Good */}
-                                <div className="bg-green-500/10 border-2 border-green-500/30 rounded-xl p-6">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 border-2 border-green-500/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-4">
-                                        <div className="p-2 bg-green-500/20 rounded-lg">
+                                        <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg">
                                             <CheckCircle2 className="w-6 h-6 text-green-700" />
                                         </div>
                                         <h3 className="text-xl font-bold text-[#F6F4EF] m-0">Direct Rollover</h3>
@@ -283,9 +283,9 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 </div>
 
                                 {/* Indirect Rollover - Bad */}
-                                <div className="bg-red-500/10 border-2 border-red-500/30 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 border-2 border-red-500/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-4">
-                                        <div className="p-2 bg-red-500/20 rounded-lg">
+                                        <div className="p-2 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                             <XCircle className="w-6 h-6 text-red-700" />
                                         </div>
                                         <h3 className="text-xl font-bold text-[#F6F4EF] m-0">Indirect Rollover</h3>
@@ -341,12 +341,12 @@ export default function GoldWithoutPenaltyGuidePage() {
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4 items-start bg-green-500/10 rounded-xl p-5 border border-green-500/30">
-                                    <div className="w-10 h-10 rounded-full bg-green-500 text-[#F6F4EF] flex items-center justify-center font-bold shrink-0">3</div>
+                                <div className="flex gap-4 items-start bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-5 border border-green-500/30">
+                                    <div className="w-10 h-10 rounded-full bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] flex items-center justify-center font-bold shrink-0">3</div>
                                     <div>
                                         <h4 className="font-bold text-[#F6F4EF] text-lg flex items-center gap-2">
                                             Request a DIRECT Rollover
-                                            <span className="text-xs bg-green-500/20 text-green-700 px-2 py-1 rounded">KEY STEP</span>
+                                            <span className="text-xs bg-[rgba(46,139,87,0.08)]0/20 text-green-700 px-2 py-1 rounded">KEY STEP</span>
                                         </h4>
                                         <p className="text-green-800 mt-1">This is the critical step. Specifically request a <strong>&quot;direct rollover&quot;</strong> or <strong>&quot;trustee-to-trustee transfer.&quot;</strong> Your new custodian sends the rollover request to your 401(k) administrator. Make sure funds are sent directly to your new IRA custodian, not to you personally.</p>
                                     </div>
@@ -408,7 +408,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Will I pay taxes on a 401k to gold rollover?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -422,7 +422,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What is the penalty for cashing out 401k early?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -436,7 +436,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What is a direct rollover?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -450,7 +450,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Can I do this if I&apos;m still employed?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -464,7 +464,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What if I miss the 60-day deadline?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -478,7 +478,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Is there a limit to how much I can rollover?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -492,7 +492,7 @@ export default function GoldWithoutPenaltyGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">How long does a tax-free rollover take?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>

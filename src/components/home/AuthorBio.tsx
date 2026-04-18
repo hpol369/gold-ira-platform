@@ -31,7 +31,7 @@ export function AuthorBio() {
               href="/author/thomas-richardson"
               className="group"
             >
-              <p className="text-amber-400 font-bold text-lg group-hover:text-amber-300 transition-colors">
+              <p className="text-[#D4A94E] font-bold text-lg group-hover:text-amber-300 transition-colors">
                 Thomas Richardson
               </p>
               <p className="text-white/50 text-sm">

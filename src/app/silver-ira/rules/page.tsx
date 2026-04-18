@@ -187,7 +187,7 @@ const faqJsonLd = {
 
 export default function SilverIraRulesPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -253,7 +253,7 @@ export default function SilverIraRulesPage() {
             </section>
 
             {/* Purity Requirements */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8">Silver Purity Requirements</h2>
@@ -271,7 +271,7 @@ export default function SilverIraRulesPage() {
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6">
-                            <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+                            <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6">
                                 <h3 className="font-bold text-green-700 mb-4 flex items-center gap-2">
                                     <CheckCircle2 className="h-5 w-5" /> IRS-Approved Silver Products
                                 </h3>
@@ -284,7 +284,7 @@ export default function SilverIraRulesPage() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-6">
                                 <h3 className="font-bold text-red-700 mb-4 flex items-center gap-2">
                                     <XCircle className="h-5 w-5" /> NOT Approved for IRAs
                                 </h3>
@@ -327,7 +327,7 @@ export default function SilverIraRulesPage() {
                             })}
                         </div>
 
-                        <div className="mt-8 bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <div className="mt-8 bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-6">
                             <div className="flex items-start gap-4">
                                 <AlertTriangle className="h-6 w-6 text-red-700 flex-shrink-0 mt-1" />
                                 <div>
@@ -345,7 +345,7 @@ export default function SilverIraRulesPage() {
             </section>
 
             {/* Contribution Limits */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">2026 Contribution Limits</h2>
@@ -370,7 +370,7 @@ export default function SilverIraRulesPage() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+                            <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6">
                                 <div className="flex items-center gap-2 mb-4">
                                     <DollarSign className="h-5 w-5 text-green-700" />
                                     <h3 className="font-bold text-[#F6F4EF]">Rollover Amounts</h3>
@@ -428,14 +428,14 @@ export default function SilverIraRulesPage() {
             </section>
 
             {/* Common Violations */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">Common Violations to Avoid</h2>
 
                         <div className="space-y-4">
                             {commonViolations.map((item, index) => (
-                                <div key={index} className="bg-red-500/5 border border-red-500/20 rounded-xl p-6">
+                                <div key={index} className="bg-[rgba(220,38,38,0.08)]0/5 border border-red-500/20 rounded-xl p-6">
                                     <div className="flex items-start gap-4">
                                         <AlertTriangle className="h-6 w-6 text-red-700 flex-shrink-0 mt-1" />
                                         <div className="flex-1">
@@ -473,7 +473,7 @@ export default function SilverIraRulesPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">Silver IRA Rules FAQs</h2>
@@ -519,7 +519,7 @@ export default function SilverIraRulesPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

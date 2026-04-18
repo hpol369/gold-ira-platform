@@ -150,7 +150,7 @@ export default function LearCapitalReviewPage() {
                                             <tr><td className="p-4 font-semibold text-[#F6F4EF]">Setup Fee</td><td className="p-4">$50-$100</td></tr>
                                             <tr><td className="p-4 font-semibold text-[#F6F4EF]">Annual Custodian Fee</td><td className="p-4">$75-$100</td></tr>
                                             <tr><td className="p-4 font-semibold text-[#F6F4EF]">Annual Storage Fee</td><td className="p-4">$100-$180</td></tr>
-                                            <tr className="bg-white/5"><td className="p-4 font-bold text-amber-400">Total Annual</td><td className="p-4 font-bold text-amber-400">$225-$280</td></tr>
+                                            <tr className="bg-white/5"><td className="p-4 font-bold text-[#D4A94E]">Total Annual</td><td className="p-4 font-bold text-[#D4A94E]">$225-$280</td></tr>
                                         </tbody>
                                     </table>
                                 </div>

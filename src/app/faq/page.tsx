@@ -54,7 +54,7 @@ export default function FAQPage() {
     : faqs;
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       {/* Hero Section */}
@@ -122,7 +122,7 @@ export default function FAQPage() {
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   !selectedCategory && !searchQuery
                     ? "bg-[#DC2626] text-white"
-                    : "bg-[#121423] text-[#A8A39A] hover:bg-slate-200 hover:text-[#F6F4EF]"
+                    : "bg-[#121423] text-[#A8A39A] hover:bg-[#2A2D42] hover:text-[#F6F4EF]"
                 }`}
               >
                 All Questions ({faqs.length})
@@ -139,7 +139,7 @@ export default function FAQPage() {
                     className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                       selectedCategory === category.id
                         ? "bg-[#DC2626] text-white"
-                        : "bg-[#121423] text-[#A8A39A] hover:bg-slate-200 hover:text-[#F6F4EF]"
+                        : "bg-[#121423] text-[#A8A39A] hover:bg-[#2A2D42] hover:text-[#F6F4EF]"
                     }`}
                   >
                     {category.name} ({count})
@@ -152,7 +152,7 @@ export default function FAQPage() {
       </section>
 
       {/* FAQ List */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             {searchQuery && (
@@ -188,7 +188,7 @@ export default function FAQPage() {
                     <p className="text-[#A8A39A] leading-relaxed">{faq.answer}</p>
                     {!searchQuery && !selectedCategory && (
                       <div className="mt-3">
-                        <span className="inline-block px-2 py-1 bg-slate-200 text-[#A8A39A] text-xs rounded">
+                        <span className="inline-block px-2 py-1 bg-[#2A2D42] text-[#A8A39A] text-xs rounded">
                           {faqCategories.find((c) => c.id === faq.category)?.name}
                         </span>
                       </div>
@@ -262,7 +262,7 @@ export default function FAQPage() {
       )}
 
       {/* Still Have Questions */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"
@@ -310,7 +310,7 @@ export default function FAQPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/faq" />
         </Container>

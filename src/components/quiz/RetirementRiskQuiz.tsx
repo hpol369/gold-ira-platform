@@ -34,25 +34,25 @@ type QuizState = "active" | "results";
 
 const colorMap: Record<string, { bg: string; text: string; border: string; badge: string }> = {
   green: {
-    bg: "bg-green-50",
+    bg: "bg-[rgba(46,139,87,0.08)]",
     text: "text-green-700",
     border: "border-green-300",
     badge: "bg-green-100 text-green-800 border-green-300",
   },
   amber: {
-    bg: "bg-amber-50",
+    bg: "bg-[#161828]",
     text: "text-amber-700",
     border: "border-amber-300",
     badge: "bg-amber-100 text-amber-800 border-amber-300",
   },
   orange: {
-    bg: "bg-orange-50",
+    bg: "bg-[rgba(183,121,31,0.08)]",
     text: "text-orange-700",
     border: "border-orange-300",
     badge: "bg-orange-100 text-orange-800 border-orange-300",
   },
   red: {
-    bg: "bg-red-50",
+    bg: "bg-[rgba(220,38,38,0.08)]",
     text: "text-red-700",
     border: "border-red-300",
     badge: "bg-red-100 text-red-800 border-red-300",

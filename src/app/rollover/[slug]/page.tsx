@@ -126,7 +126,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
     .slice(0, 6);
 
   return (
-    <main className="min-h-screen flex flex-col bg-white">
+    <main className="min-h-screen flex flex-col bg-[#0C0D18]">
       <Navbar />
 
       {/* Header */}
@@ -208,7 +208,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
       </section>
 
       {/* Main Content */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Main Column */}
@@ -279,7 +279,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
               </div>
 
               {/* Rollover Restrictions */}
-              <div className="bg-amber-50 rounded-xl p-6 border border-amber-200">
+              <div className="bg-[#161828] rounded-xl p-6 border border-amber-200">
                 <h3 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
                   <AlertTriangle className="h-5 w-5" />
                   Things to Know Before You Start
@@ -290,7 +290,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                 <ul className="space-y-3">
                   {accountType.rolloverRestrictions.map((restriction, index) => (
                     <li key={index} className="flex items-start gap-2 text-sm text-amber-800">
-                      <AlertTriangle className="h-4 w-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span>{restriction}</span>
                     </li>
                   ))}
@@ -331,7 +331,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                       <Link
                         key={provider.slug}
                         href={`/rollover/${provider.slug}`}
-                        className="group flex items-center justify-between p-3 bg-[#161828] rounded-lg hover:bg-amber-50 transition-colors border border-[#2A2D42]"
+                        className="group flex items-center justify-between p-3 bg-[#161828] rounded-lg hover:bg-[#161828] transition-colors border border-[#2A2D42]"
                       >
                         <div className="flex items-center gap-2">
                           <Building2 className="h-4 w-4 text-[#A8A39A] group-hover:text-[#D4A94E]" />
@@ -476,7 +476,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
 
       {/* Related Account Types */}
       {relatedAccountTypes.length > 0 && (
-        <section className="py-12 bg-white">
+        <section className="py-12 bg-[#0C0D18]">
           <Container>
             <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6">
               Related Account Types
@@ -518,7 +518,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl={`/rollover/${accountType.slug}`} />
         </Container>
@@ -546,7 +546,7 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
     .filter(Boolean);
 
   return (
-    <main className="min-h-screen flex flex-col bg-white">
+    <main className="min-h-screen flex flex-col bg-[#0C0D18]">
       <Navbar />
 
       {/* Header */}
@@ -636,7 +636,7 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
       </section>
 
       {/* Main Content */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Main Column */}
@@ -682,7 +682,7 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
                       <Link
                         key={accountType!.slug}
                         href={`/rollover/${accountType!.slug}-to-gold-ira`}
-                        className="group p-4 bg-[#161828] rounded-lg hover:bg-amber-50 transition-colors border border-[#2A2D42]"
+                        className="group p-4 bg-[#161828] rounded-lg hover:bg-[#161828] transition-colors border border-[#2A2D42]"
                       >
                         <div className="font-semibold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                           {accountType!.name}
@@ -767,7 +767,7 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
       )}
 
       {/* FAQ Section */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">
             Common Questions About {provider.name} Rollovers
@@ -825,7 +825,7 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl={`/rollover/${provider.slug}`} />
         </Container>

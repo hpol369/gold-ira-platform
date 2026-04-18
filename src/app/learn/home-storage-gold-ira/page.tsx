@@ -104,7 +104,7 @@ const schema = {
 
 export default function HomeStorageGoldIraPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -193,7 +193,7 @@ export default function HomeStorageGoldIraPage() {
                         {/* Why Illegal */}
                         <section id="why-illegal" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/10 rounded-lg text-amber-600">
+                                <div className="p-3 bg-[#161828]0/10 rounded-lg text-[#D4A94E]">
                                     <Scale className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Why Home Storage Isn&apos;t Legal</h2>
@@ -246,7 +246,7 @@ export default function HomeStorageGoldIraPage() {
                             <p>
                                 Let&apos;s say you have $100,000 in a Gold IRA and you move it to home storage. Here&apos;s what happens when the IRS catches up:
                             </p>
-                            <div className="not-prose my-8 p-6 bg-red-50 rounded-xl border border-red-200">
+                            <div className="not-prose my-8 p-6 bg-[rgba(220,38,38,0.08)] rounded-xl border border-red-200">
                                 <p className="font-bold text-red-700 mb-4">Example: $100,000 Home Storage IRA</p>
                                 <ul className="space-y-2 text-red-600">
                                     <li><strong>Federal Income Tax (25% bracket):</strong> $25,000</li>

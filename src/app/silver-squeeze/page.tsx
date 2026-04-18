@@ -104,7 +104,7 @@ const schema = {
 
 export default function SilverSqueezePage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
@@ -369,7 +369,7 @@ export default function SilverSqueezePage() {
                                 This isn&apos;t speculation or conspiracy theory. It&apos;s documented, admitted, and fined. In September 2020, JP Morgan agreed to pay <strong>$920 million</strong> to settle charges that it manipulated precious metals markets for nearly a decade.
                             </p>
 
-                            <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6 not-prose my-8">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20 rounded-xl p-6 not-prose my-8">
                                 <h4 className="font-bold text-red-700 text-lg mb-4 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
                                     Documented Manipulation Tactics
@@ -426,7 +426,7 @@ export default function SilverSqueezePage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20">
                                     <CheckCircle2 className="w-8 h-8 text-green-700 mb-4" />
                                     <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">DO: Physical Silver</h4>
                                     <ul className="space-y-2 text-sm text-[#D0CCC4]">
@@ -448,7 +448,7 @@ export default function SilverSqueezePage() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-8 h-8 text-red-700 mb-4" />
                                     <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">AVOID: Paper Silver</h4>
                                     <ul className="space-y-2 text-sm text-[#D0CCC4]">
@@ -654,7 +654,7 @@ export default function SilverSqueezePage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {/* Market Analysis */}
                         <Link href="/silver-squeeze/silver-supply-deficit" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] hover:border-[#3F4460] transition-all">
-                            <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center mb-4">
+                            <div className="w-10 h-10 rounded-lg bg-[rgba(220,38,38,0.08)]0/20 flex items-center justify-center mb-4">
                                 <TrendingUp className="w-5 h-5 text-red-700" />
                             </div>
                             <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Silver Supply Deficit</h3>
@@ -678,7 +678,7 @@ export default function SilverSqueezePage() {
                         </Link>
 
                         <Link href="/silver-squeeze/silver-manipulation" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] hover:border-[#3F4460] transition-all">
-                            <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center mb-4">
+                            <div className="w-10 h-10 rounded-lg bg-[rgba(220,38,38,0.08)]0/20 flex items-center justify-center mb-4">
                                 <AlertTriangle className="w-5 h-5 text-red-700" />
                             </div>
                             <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Silver Manipulation Exposed</h3>
@@ -686,7 +686,7 @@ export default function SilverSqueezePage() {
                         </Link>
 
                         <Link href="/silver-squeeze/banks-shorting-silver" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] hover:border-[#3F4460] transition-all">
-                            <div className="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center mb-4">
+                            <div className="w-10 h-10 rounded-lg bg-[#121423]0/20 flex items-center justify-center mb-4">
                                 <Building2 className="w-5 h-5 text-blue-700" />
                             </div>
                             <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Banks Shorting Silver</h3>
@@ -694,7 +694,7 @@ export default function SilverSqueezePage() {
                         </Link>
 
                         <Link href="/silver-squeeze/silver-backwardation" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] hover:border-[#3F4460] transition-all">
-                            <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center mb-4">
+                            <div className="w-10 h-10 rounded-lg bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center mb-4">
                                 <Scale className="w-5 h-5 text-green-700" />
                             </div>
                             <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Silver Backwardation</h3>
@@ -727,7 +727,7 @@ export default function SilverSqueezePage() {
                         </Link>
 
                         <Link href="/silver-squeeze/silver-shortage" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] hover:border-[#3F4460] transition-all">
-                            <div className="w-10 h-10 rounded-lg bg-red-500/20 flex items-center justify-center mb-4">
+                            <div className="w-10 h-10 rounded-lg bg-[rgba(220,38,38,0.08)]0/20 flex items-center justify-center mb-4">
                                 <AlertTriangle className="w-5 h-5 text-red-700" />
                             </div>
                             <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Silver Shortage 2026</h3>
@@ -735,7 +735,7 @@ export default function SilverSqueezePage() {
                         </Link>
 
                         <Link href="/silver-squeeze/silver-undervalued" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] hover:border-[#3F4460] transition-all">
-                            <div className="w-10 h-10 rounded-lg bg-green-500/20 flex items-center justify-center mb-4">
+                            <div className="w-10 h-10 rounded-lg bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center mb-4">
                                 <TrendingUp className="w-5 h-5 text-green-700" />
                             </div>
                             <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Is Silver Undervalued?</h3>

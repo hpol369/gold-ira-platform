@@ -330,7 +330,7 @@ export function CalPERSPensionCalculator() {
                   step={0.5}
                   value={serviceYears}
                   onChange={(e) => setServiceYears(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
 
@@ -346,7 +346,7 @@ export function CalPERSPensionCalculator() {
                   step={1}
                   value={retirementAge}
                   onChange={(e) => setRetirementAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
 
@@ -421,7 +421,7 @@ export function CalPERSPensionCalculator() {
                     </div>
 
                     {result.reciprocityNote && (
-                      <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                      <div className="mt-4 p-4 bg-[#121423] border border-blue-200 rounded-lg">
                         <div className="flex items-start gap-2">
                           <Scale className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                           <p className="text-blue-800 text-sm">{result.reciprocityNote}</p>
@@ -438,7 +438,7 @@ export function CalPERSPensionCalculator() {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-4 mb-4">
-                      <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                      <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-4">
                         <div className="text-green-600 text-sm mb-1">Optimal Retirement Age</div>
                         <div className="text-3xl font-bold text-[#F6F4EF]">{result.optimalAge}</div>
                         <div className="text-[#A8A39A] text-xs mt-1">Maximizes lifetime benefits to age 85</div>
@@ -469,7 +469,7 @@ export function CalPERSPensionCalculator() {
                               key={comp.age}
                               className={`border-b border-[#2A2D42] ${
                                 comp.age === retirementAge ? "bg-[rgba(220,38,38,0.1)]" :
-                                comp.age === result.optimalAge ? "bg-green-500/10" : ""
+                                comp.age === result.optimalAge ? "bg-[rgba(46,139,87,0.08)]0/10" : ""
                               }`}
                             >
                               <td className="py-2 px-3text-[#F6F4EF]">
@@ -496,7 +496,7 @@ export function CalPERSPensionCalculator() {
 
                     <div className={`p-4 rounded-xl ${
                       result.healthBenefitsEligible
-                        ? "bg-green-50 border border-green-200"
+                        ? "bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]"
                         : "bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30"
                     }`}>
                       {result.healthBenefitsEligible ? (

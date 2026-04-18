@@ -60,7 +60,7 @@ const faqs = [
 
 export default function UBITRulesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <SchemaScript
@@ -118,7 +118,7 @@ export default function UBITRulesPage() {
             </header>
 
             {/* What Triggers UBIT */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -137,7 +137,7 @@ export default function UBITRulesPage() {
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6">
-                            <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                 <h3 className="font-bold text-red-800 mb-4 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" /> Triggers UBIT
                                 </h3>
@@ -163,7 +163,7 @@ export default function UBITRulesPage() {
                                 </ul>
                             </div>
 
-                            <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                                 <h3 className="font-bold text-green-800 mb-4 flex items-center gap-2">
                                     <CheckCircle2 className="w-5 h-5" /> Exempt from UBIT
                                 </h3>
@@ -199,7 +199,7 @@ export default function UBITRulesPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
                             <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                                <DollarSign className="w-5 h-5 text-amber-600" />
+                                <DollarSign className="w-5 h-5 text-[#D4A94E]" />
                             </div>
                             <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                 UBIT Tax Rates for 2026
@@ -234,7 +234,7 @@ export default function UBITRulesPage() {
                                     </tr>
                                     <tr className="border-t border-[#2A2D42]">
                                         <td className="px-5 py-3 text-[#D0CCC4]">$3,151 - $11,450</td>
-                                        <td className="px-5 py-3 text-amber-600 font-medium">24%</td>
+                                        <td className="px-5 py-3 text-[#D4A94E] font-medium">24%</td>
                                         <td className="px-5 py-3 text-[#D0CCC4]">$215 + 24% of excess</td>
                                     </tr>
                                     <tr className="border-t border-[#2A2D42] bg-[#0C0D18]/50">
@@ -251,9 +251,9 @@ export default function UBITRulesPage() {
                             </table>
                         </div>
 
-                        <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mt-6">
+                        <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 mt-6">
                             <div className="flex items-start gap-3">
-                                <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                                <AlertTriangle className="w-5 h-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
                                 <p className="text-[#D0CCC4] text-sm">
                                     <strong>Important:</strong> The $1,000 standard deduction means small amounts of UBIT may not owe anything. But the trust tax rates are steep—income over $15,650 is taxed at 37%, compared to $609,350 for individual filers. This is why UBIT planning matters.
                                 </p>
@@ -264,7 +264,7 @@ export default function UBITRulesPage() {
             </section>
 
             {/* UDFI Calculation Example */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -380,7 +380,7 @@ export default function UBITRulesPage() {
             </section>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <AugustaCTA

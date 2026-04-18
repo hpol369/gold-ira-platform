@@ -284,7 +284,7 @@ export default function GoldIraRolloverChecklistPage() {
               <p className="text-[#D0CCC4] mb-4">
                 The IRS generally allows both direct and indirect rollovers, but direct rollovers are usually cleaner and safer. In a direct rollover, the money moves from one retirement account provider to another without you taking possession of the funds. That lowers the risk of missing deadlines or triggering taxes.
               </p>
-              <div className="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
+              <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6 my-6">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="h-5 w-5 text-red-600 mt-0.5 shrink-0" />
                   <div>

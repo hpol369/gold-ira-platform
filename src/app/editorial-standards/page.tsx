@@ -30,7 +30,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function EditorialStandardsPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={schema} />
       <SchemaScript schema={breadcrumbs} />
@@ -45,7 +45,7 @@ export default function EditorialStandardsPage() {
               <span className="text-[#D0CCC4]">Editorial Standards</span>
             </nav>
 
-            <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1.5 text-sm font-semibold text-blue-700 mb-6 border border-blue-200">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#121423] px-4 py-1.5 text-sm font-semibold text-blue-700 mb-6 border border-blue-200">
               <Scale className="h-4 w-4" />
               Trust &amp; Integrity
             </div>
@@ -105,7 +105,7 @@ export default function EditorialStandardsPage() {
           <p>
             All content is reviewed by our <Link href="/editorial-board">Editorial Board</Link> before publication. The fact-checking process includes:
           </p>
-          <div className="not-prose bg-green-50 rounded-xl p-6 border border-green-200 my-6">
+          <div className="not-prose bg-[rgba(46,139,87,0.08)] rounded-xl p-6 border border-green-200 my-6">
             <ul className="space-y-3">
               {[
                 "IRS rules verified against current publications (not outdated sources)",
@@ -139,7 +139,7 @@ export default function EditorialStandardsPage() {
 
           {/* Corrections Policy */}
           <div className="not-prose flex items-center gap-3 mb-4 mt-12">
-            <AlertTriangle className="h-6 w-6 text-amber-600" />
+            <AlertTriangle className="h-6 w-6 text-[#D4A94E]" />
             <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] m-0">Corrections Policy</h2>
           </div>
           <p>

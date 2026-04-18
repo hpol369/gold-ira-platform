@@ -88,7 +88,7 @@ export default async function CityPage({ params }: Props) {
     };
 
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
             <div className="flex-grow">
@@ -148,7 +148,7 @@ export default async function CityPage({ params }: Props) {
                                     <p className="text-xs text-[#A8A39A]">Median Income</p>
                                 </div>
                                 <div className="bg-[#0C0D18] rounded-xl p-4 border border-[#2A2D42] text-center">
-                                    <Building2 className="w-5 h-5 text-amber-600 mx-auto mb-1" />
+                                    <Building2 className="w-5 h-5 text-[#D4A94E] mx-auto mb-1" />
                                     <p className="text-2xl font-bold text-[#F6F4EF]">{cityData.medianAge}</p>
                                     <p className="text-xs text-[#A8A39A]">Median Age</p>
                                 </div>
@@ -165,7 +165,7 @@ export default async function CityPage({ params }: Props) {
                                 </p>
 
                                 {cityData.majorEmployers.length > 0 && (
-                                    <div className="bg-blue-50 p-6 rounded-xl border border-blue-200 not-prose my-6">
+                                    <div className="bg-[#121423] p-6 rounded-xl border border-blue-200 not-prose my-6">
                                         <h3 className="flex items-center gap-2 font-bold text-blue-700 text-lg mb-3">
                                             <Building2 className="w-5 h-5" /> Major Employers in {cityData.name}
                                         </h3>
@@ -186,12 +186,12 @@ export default async function CityPage({ params }: Props) {
                             {/* Section 2: State Tax Rules */}
                             <section className="mt-12">
                                 <h2>2. {cityData.stateName} Gold & Silver Tax Rules</h2>
-                                <div className={`not-prose p-6 rounded-xl border mb-6 ${stateData.taxFriendly ? 'bg-green-50 border-green-200' : 'bg-amber-50 border-amber-200'}`}>
+                                <div className={`not-prose p-6 rounded-xl border mb-6 ${stateData.taxFriendly ? 'bg-[rgba(46,139,87,0.08)] border-[rgba(46,139,87,0.32)]' : 'bg-[#161828] border-[rgba(197,149,46,0.32)]'}`}>
                                     <div className="flex items-center gap-3 mb-2">
                                         {stateData.taxFriendly ? (
                                             <CheckCircle2 className="w-6 h-6 text-green-600" />
                                         ) : (
-                                            <AlertTriangle className="w-6 h-6 text-amber-600" />
+                                            <AlertTriangle className="w-6 h-6 text-[#D4A94E]" />
                                         )}
                                         <h3 className={`font-bold text-lg ${stateData.taxFriendly ? 'text-green-700' : 'text-amber-700'}`}>
                                             {stateData.taxFriendly ? `${cityData.stateName}: Tax-Friendly for Gold` : `${cityData.stateName}: Sales Tax Applies to Gold`}
@@ -229,32 +229,32 @@ export default async function CityPage({ params }: Props) {
                                             <tr className="border-b border-[#2A2D42]">
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Pricing</td>
                                                 <td className="p-4 text-[#D0CCC4]">Higher overhead = higher premiums</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">Volume pricing = lower premiums</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">Volume pricing = lower premiums</td>
                                             </tr>
                                             <tr className="border-b border-[#2A2D42]">
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Sales Tax</td>
                                                 <td className="p-4 text-[#D0CCC4]">{stateData.taxFriendly ? 'Exempt in ' + cityData.stateName : 'Taxable in ' + cityData.stateName}</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">No sales tax (IRA purchase)</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">No sales tax (IRA purchase)</td>
                                             </tr>
                                             <tr className="border-b border-[#2A2D42]">
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Tax Benefits</td>
                                                 <td className="p-4 text-[#D0CCC4]">None (post-tax money)</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">Tax-deferred or tax-free (Roth)</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">Tax-deferred or tax-free (Roth)</td>
                                             </tr>
                                             <tr className="border-b border-[#2A2D42]">
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Selection</td>
                                                 <td className="p-4 text-[#D0CCC4]">Limited to current inventory</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">All IRS-approved bullion</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">All IRS-approved bullion</td>
                                             </tr>
                                             <tr className="border-b border-[#2A2D42]">
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Storage</td>
                                                 <td className="p-4 text-[#D0CCC4]">Your responsibility (risky)</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">Insured depository included</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">Insured depository included</td>
                                             </tr>
                                             <tr>
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Insurance</td>
                                                 <td className="p-4 text-[#D0CCC4]">Limited homeowner&apos;s coverage</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">Full Lloyd&apos;s of London coverage</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">Full Lloyd&apos;s of London coverage</td>
                                             </tr>
                                         </tbody>
                                     </table>

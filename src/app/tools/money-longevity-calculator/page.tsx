@@ -135,7 +135,7 @@ export default function MoneyLongevityCalculatorPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-[#0C0D18]">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 overflow-hidden">
           <div className="absolute inset-0 bg-[#0C0D18]" />
@@ -147,7 +147,7 @@ export default function MoneyLongevityCalculatorPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-purple-500/10 text-purple-700 border border-purple-500/20 mb-4">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[rgba(197,149,46,0.08)] text-purple-700 border border-purple-500/20 mb-4">
                 Retirement Planning Tool
               </span>
               <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
@@ -322,7 +322,7 @@ export default function MoneyLongevityCalculatorPage() {
                             step="250"
                             value={monthlyExpenses}
                             onChange={(e) => setMonthlyExpenses(Number(e.target.value))}
-                            className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-red-500"
+                            className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                           />
                           <div className="flex flex-wrap gap-2 justify-center">
                             {[3000, 4000, 5000, 6000, 8000].map((amount) => (
@@ -331,7 +331,7 @@ export default function MoneyLongevityCalculatorPage() {
                                 onClick={() => setMonthlyExpenses(amount)}
                                 className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                                   monthlyExpenses === amount
-                                    ? 'bg-red-500 text-[#F6F4EF]'
+                                    ? 'bg-[rgba(220,38,38,0.08)]0 text-[#F6F4EF]'
                                     : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                                 }`}
                               >
@@ -377,7 +377,7 @@ export default function MoneyLongevityCalculatorPage() {
                             step="250"
                             value={pension}
                             onChange={(e) => setPension(Number(e.target.value))}
-                            className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                            className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                           />
                         </div>
 
@@ -477,7 +477,7 @@ export default function MoneyLongevityCalculatorPage() {
                             step="0.5"
                             value={inflationRate}
                             onChange={(e) => setInflationRate(Number(e.target.value))}
-                            className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                            className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                           />
                           <div className="flex flex-wrap gap-2 justify-center">
                             {[2, 2.5, 3, 3.5, 4].map((rate) => (
@@ -496,7 +496,7 @@ export default function MoneyLongevityCalculatorPage() {
                           </div>
                         </div>
 
-                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <div className="bg-[#121423] border border-blue-200 rounded-lg p-4">
                           <p className="text-blue-800 text-sm">
                             <strong>Real Return:</strong> {(expectedReturn - inflationRate).toFixed(1)}% (return after inflation)<br />
                             <strong>Historical Average:</strong> S&P 500 has returned ~10% nominal, ~7% real
@@ -541,7 +541,7 @@ export default function MoneyLongevityCalculatorPage() {
                   }`}>
                     {calculations.yearsLasting === Infinity ? (
                       <>
-                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-500/20 text-green-600 mb-4">
+                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[rgba(46,139,87,0.08)]0/20 text-green-600 mb-4">
                           Excellent!
                         </span>
                         <div className="text-4xl font-bold text-green-600 mb-2">
@@ -555,10 +555,10 @@ export default function MoneyLongevityCalculatorPage() {
                       <>
                         <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 ${
                           calculations.ageWhenDepleted >= 95
-                            ? 'bg-green-500/20 text-green-600'
+                            ? 'bg-[rgba(46,139,87,0.08)]0/20 text-green-600'
                             : calculations.ageWhenDepleted >= 85
                               ? 'bg-[rgba(220,38,38,0.1)] text-[#D4A94E]'
-                              : 'bg-red-500/20 text-red-600'
+                              : 'bg-[rgba(220,38,38,0.08)]0/20 text-red-600'
                         }`}>
                           {calculations.ageWhenDepleted >= 95
                             ? 'On Track'
@@ -649,8 +649,8 @@ export default function MoneyLongevityCalculatorPage() {
                                   <div className="flex-1 h-6 bg-slate-700 rounded-lg overflow-hidden">
                                     <div
                                       className={`h-full rounded-lg transition-all ${
-                                        percentage > 50 ? 'bg-green-500' :
-                                        percentage > 25 ? 'bg-amber-500' : 'bg-red-500'
+                                        percentage > 50 ? 'bg-[rgba(46,139,87,0.08)]0' :
+                                        percentage > 25 ? 'bg-[#161828]0' : 'bg-[rgba(220,38,38,0.08)]0'
                                       }`}
                                       style={{ width: `${Math.max(2, percentage)}%` }}
                                     />

@@ -129,7 +129,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function GoldIraGuidePage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={howTo} />
             <SchemaScript schema={faqs} />
@@ -139,7 +139,7 @@ export default function GoldIraGuidePage() {
                 <div className="absolute inset-0 bg-primary-dark/50" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-slate-200 px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#2A2D42]">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#2A2D42] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#2A2D42]">
                             <span className="w-2 h-2 rounded-full bg-[#DC2626]"></span>
                             Updated for 2026 Tax Rules
                         </div>
@@ -257,7 +257,7 @@ export default function GoldIraGuidePage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4 p-6 rounded-xl bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42]">
-                                        <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-700 flex items-center justify-center font-bold shrink-0">
+                                        <div className="w-12 h-12 rounded-full bg-[rgba(46,139,87,0.08)]0/20 text-green-700 flex items-center justify-center font-bold shrink-0">
                                             <Lock className="w-6 h-6" />
                                         </div>
                                         <div>
@@ -584,28 +584,28 @@ export default function GoldIraGuidePage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Price Volatility</h4>
                                         <p className="text-sm text-red-800 mt-1">Gold prices can fluctuate significantly in the short term. While gold tends to hold value over decades, you could see your account value drop 20-30% during gold bear markets.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#161828]0/10 border border-amber-500/20">
                                     <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-amber-700">No Dividends or Interest</h4>
                                         <p className="text-sm text-amber-800 mt-1">Unlike stocks or bonds, gold generates no income. Your returns come solely from price appreciation. This makes gold better for preservation than growth.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#161828]0/10 border border-amber-500/20">
                                     <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-amber-700">Higher Fees Than Traditional IRAs</h4>
                                         <p className="text-sm text-amber-800 mt-1">Storage, insurance, and custodian fees add up. Make sure the benefits of holding gold outweigh these costs for your situation.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Scams and Unscrupulous Dealers</h4>
@@ -623,7 +623,7 @@ export default function GoldIraGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Can I physically hold the gold in my IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -637,7 +637,7 @@ export default function GoldIraGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What is the minimum investment for a gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -651,7 +651,7 @@ export default function GoldIraGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Can I rollover my 401(k) to a gold IRA without penalties?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -665,7 +665,7 @@ export default function GoldIraGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Is a gold IRA a good investment in 2026?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -679,7 +679,7 @@ export default function GoldIraGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What happens to my gold IRA when I retire?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -693,7 +693,7 @@ export default function GoldIraGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Which gold IRA company is the best?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -707,7 +707,7 @@ export default function GoldIraGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Are gold IRAs safe?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -730,7 +730,7 @@ export default function GoldIraGuidePage() {
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-slate-200">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#2A2D42]">
                                         <Link href="/reviews/augusta-precious-metals">Read Our #1 Pick</Link>
                                     </Button>
                                 </div>
@@ -748,19 +748,19 @@ export default function GoldIraGuidePage() {
                                 make it an attractive complement to gold in your precious metals portfolio.
                             </p>
                             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                                <Link href="/silver-ira" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-slate-200 transition-colors">
+                                <Link href="/silver-ira" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-[#2A2D42] transition-colors">
                                     <h4 className="font-bold text-[#F6F4EF] mb-1 group-hover:text-amber-700 transition-colors">Silver IRA Hub</h4>
                                     <p className="text-xs text-[#D0CCC4]">Complete silver retirement guide</p>
                                 </Link>
-                                <Link href="/silver-price" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-slate-200 transition-colors">
+                                <Link href="/silver-price" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-[#2A2D42] transition-colors">
                                     <h4 className="font-bold text-[#F6F4EF] mb-1 group-hover:text-amber-700 transition-colors">Silver Price Predictions</h4>
                                     <p className="text-xs text-[#D0CCC4]">2026-2040 expert forecasts</p>
                                 </Link>
-                                <Link href="/silver-products" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-slate-200 transition-colors">
+                                <Link href="/silver-products" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-[#2A2D42] transition-colors">
                                     <h4 className="font-bold text-[#F6F4EF] mb-1 group-hover:text-amber-700 transition-colors">Silver Products Guide</h4>
                                     <p className="text-xs text-[#D0CCC4]">Coins, bars & IRA-approved</p>
                                 </Link>
-                                <Link href="/silver-experts" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-slate-200 transition-colors">
+                                <Link href="/silver-experts" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-[#2A2D42] transition-colors">
                                     <h4 className="font-bold text-[#F6F4EF] mb-1 group-hover:text-amber-700 transition-colors">Silver Experts</h4>
                                     <p className="text-xs text-[#D0CCC4]">Top analysts & their views</p>
                                 </Link>
@@ -778,7 +778,7 @@ export default function GoldIraGuidePage() {
                 </Container>
             </section>
 
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/guide/gold-ira-guide" />
                 </Container>

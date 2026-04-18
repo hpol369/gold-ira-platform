@@ -119,8 +119,8 @@ export function DailyBrief() {
   }, []);
 
   const sentimentColors: Record<string, string> = {
-    bullish: "text-green-600 bg-green-50 border-green-200",
-    bearish: "text-[#D4A94E] bg-red-50 border-red-200",
+    bullish: "text-green-600 bg-[rgba(46,139,87,0.08)] border-[rgba(46,139,87,0.32)]",
+    bearish: "text-[#D4A94E] bg-[rgba(220,38,38,0.08)] border-[rgba(220,38,38,0.32)]",
     neutral: "text-[#D0CCC4] bg-[#0C0D18] border-[#2A2D42]",
   };
 

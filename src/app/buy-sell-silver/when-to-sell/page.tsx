@@ -222,7 +222,7 @@ const schema = {
 
 export default function WhenToSellPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -240,7 +240,7 @@ export default function WhenToSellPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
               <Clock className="h-4 w-4" />
               100 MONTHLY SEARCHES - DIFF 0 - $1.10 CPC
             </div>
@@ -273,7 +273,7 @@ export default function WhenToSellPage() {
       </section>
 
       {/* Good vs Bad Reasons */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
@@ -287,9 +287,9 @@ export default function WhenToSellPage() {
                   {goodReasonsToSell.map((item, index) => {
                     const Icon = item.icon;
                     return (
-                      <div key={index} className="bg-green-500/10 border border-green-500/30 rounded-xl p-5">
+                      <div key={index} className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-5">
                         <div className="flex items-start gap-3">
-                          <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <div className="w-10 h-10 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg flex items-center justify-center flex-shrink-0">
                             <Icon className="h-5 w-5 text-green-400" />
                           </div>
                           <div>
@@ -314,9 +314,9 @@ export default function WhenToSellPage() {
                 </h2>
                 <div className="space-y-4">
                   {badReasonsToSell.map((item, index) => (
-                    <div key={index} className="bg-red-500/10 border border-red-500/30 rounded-xl p-5">
+                    <div key={index} className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-5">
                       <div className="flex items-start gap-3">
-                        <div className="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <div className="w-10 h-10 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg flex items-center justify-center flex-shrink-0">
                           <XCircle className="h-5 w-5 text-red-400" />
                         </div>
                         <div>
@@ -371,7 +371,7 @@ export default function WhenToSellPage() {
       </section>
 
       {/* Exit Strategies */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4 flex items-center justify-center gap-2">
@@ -453,7 +453,7 @@ export default function WhenToSellPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
             Related Guides

@@ -168,7 +168,7 @@ export function RailroadRetirementCalculator() {
                     {s < 4 && (
                       <div
                         className={`w-12 h-1 mx-2 rounded transition-colors ${
-                          step > s ? "bg-amber-500" : "bg-slate-700"
+                          step > s ? "bg-[#161828]0" : "bg-slate-700"
                         }`}
                       />
                     )}
@@ -205,7 +205,7 @@ export function RailroadRetirementCalculator() {
                       step="1"
                       value={yearsOfService}
                       onChange={(e) => setYearsOfService(Number(e.target.value))}
-                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                      className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
 
                     <div className="flex justify-between text-sm text-[#A8A39A]">
@@ -280,7 +280,7 @@ export function RailroadRetirementCalculator() {
                       onChange={(e) =>
                         setAverageMonthlyEarnings(Number(e.target.value))
                       }
-                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                      className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
 
                     <div className="flex justify-between text-sm text-[#A8A39A]">
@@ -304,7 +304,7 @@ export function RailroadRetirementCalculator() {
                       ))}
                     </div>
 
-                    <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <div className="bg-[#121423] border border-blue-200 rounded-lg p-4">
                       <p className="text-blue-800 text-sm">
                         <strong>Tip:</strong> This is your average monthly compensation during
                         your highest-earning 60-month period, which is used to calculate your
@@ -359,7 +359,7 @@ export function RailroadRetirementCalculator() {
                       step="1"
                       value={retirementAge}
                       onChange={(e) => setRetirementAge(Number(e.target.value))}
-                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                      className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
 
                     <div className="flex justify-between text-sm text-[#A8A39A]">
@@ -386,7 +386,7 @@ export function RailroadRetirementCalculator() {
                     <div
                       className={`rounded-lg p-4 ${
                         yearsOfService >= 30
-                          ? "bg-green-50 border border-green-200"
+                          ? "bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]"
                           : "bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30"
                       }`}
                     >
@@ -452,7 +452,7 @@ export function RailroadRetirementCalculator() {
                         step="1"
                         value={spouseAge}
                         onChange={(e) => setSpouseAge(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                        className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex flex-wrap gap-2 justify-center">
                         {[55, 60, 62, 65, 67].map((age) => (
@@ -675,9 +675,9 @@ export function RailroadRetirementCalculator() {
                           {formatCurrency(calculations.ssOnlyEquivalent)}
                         </span>
                       </div>
-                      <div className="h-4 bg-slate-200 rounded-full overflow-hidden">
+                      <div className="h-4 bg-[#2A2D42] rounded-full overflow-hidden">
                         <div
-                          className="h-full bg-blue-500 rounded-full"
+                          className="h-full bg-[#121423]0 rounded-full"
                           style={{
                             width: `${
                               (calculations.ssOnlyEquivalent /
@@ -695,8 +695,8 @@ export function RailroadRetirementCalculator() {
                           {formatCurrency(calculations.totalMonthlyBenefit)}
                         </span>
                       </div>
-                      <div className="h-4 bg-slate-200 rounded-full overflow-hidden">
-                        <div className="h-full bg-amber-500 rounded-full w-full" />
+                      <div className="h-4 bg-[#2A2D42] rounded-full overflow-hidden">
+                        <div className="h-full bg-[#161828]0 rounded-full w-full" />
                       </div>
                     </div>
                   </div>
@@ -747,7 +747,7 @@ export function RailroadRetirementCalculator() {
               </div>
 
               {/* Important Notes */}
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+              <div className="bg-[#121423] border border-blue-200 rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-blue-600 mb-4">
                   Important Information
                 </h3>

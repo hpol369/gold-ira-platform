@@ -101,7 +101,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function GoldIraMinimumInvestmentPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             {/* Header */}
@@ -157,7 +157,7 @@ export default function GoldIraMinimumInvestmentPage() {
                         {/* Typical Minimums */}
                         <section id="typical-minimums" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <Wallet className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Typical Industry Minimums</h2>
@@ -205,7 +205,7 @@ export default function GoldIraMinimumInvestmentPage() {
                         {/* Small Account Problem */}
                         <section id="small-account-problem" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The "Fees Trap" for Small Accounts</h2>
@@ -216,7 +216,7 @@ export default function GoldIraMinimumInvestmentPage() {
                             <p>
                                 Most accounts have valid flat fees of ~$200/year for storage and maintenance.
                             </p>
-                            <div className="not-prose my-6 p-6 bg-red-500/10 rounded-xl border border-red-500/20">
+                            <div className="not-prose my-6 p-6 bg-[rgba(220,38,38,0.08)]0/10 rounded-xl border border-red-500/20">
                                 <p className="font-bold text-red-700">Fee Impact Example:</p>
                                 <ul className="mt-2 space-y-2 text-red-800">
                                     <li><strong>$100,000 Account:</strong> $200 fee = 0.2% (Negligible)</li>
@@ -273,7 +273,7 @@ export default function GoldIraMinimumInvestmentPage() {
                                     <details key={index} className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                         <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                                 <DollarSign className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>

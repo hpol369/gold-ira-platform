@@ -145,7 +145,7 @@ export function LeadCaptureForm() {
         {/* Name Row */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">First Name</label>
+            <label className="block text-xs font-bold text-[#D4A94E] uppercase tracking-wider mb-2">First Name</label>
             <input
               type="text"
               name="firstName"
@@ -157,7 +157,7 @@ export function LeadCaptureForm() {
             {errors.firstName && <p className={errorStyles}>{errors.firstName}</p>}
           </div>
           <div>
-            <label className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Last Name</label>
+            <label className="block text-xs font-bold text-[#D4A94E] uppercase tracking-wider mb-2">Last Name</label>
             <input
               type="text"
               name="lastName"
@@ -172,7 +172,7 @@ export function LeadCaptureForm() {
 
         {/* Email */}
         <div>
-          <label className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Email Address</label>
+          <label className="block text-xs font-bold text-[#D4A94E] uppercase tracking-wider mb-2">Email Address</label>
           <input
             type="email"
             name="email"
@@ -186,7 +186,7 @@ export function LeadCaptureForm() {
 
         {/* Phone */}
         <div>
-          <label className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Phone Number</label>
+          <label className="block text-xs font-bold text-[#D4A94E] uppercase tracking-wider mb-2">Phone Number</label>
           <input
             type="tel"
             name="phone"
@@ -200,7 +200,7 @@ export function LeadCaptureForm() {
 
         {/* Investment Amount */}
         <div>
-          <label className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Investment Amount</label>
+          <label className="block text-xs font-bold text-[#D4A94E] uppercase tracking-wider mb-2">Investment Amount</label>
           <select
             name="investmentAmount"
             value={formData.investmentAmount}
@@ -254,8 +254,8 @@ export function LeadCaptureForm() {
       </form>
 
       {/* Urgency */}
-      <div className="mt-6 p-4 bg-amber-500/10 border border-amber-500/20 rounded-lg text-center">
-        <p className="text-sm text-amber-400">
+      <div className="mt-6 p-4 bg-[#161828]0/10 border border-amber-500/20 rounded-lg text-center">
+        <p className="text-sm text-[#D4A94E]">
           <strong>Limited Time:</strong> Gold prices are at near all-time highs. Request your kit now to lock in current information.
         </p>
       </div>

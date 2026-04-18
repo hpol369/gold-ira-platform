@@ -113,7 +113,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function WealthPreservationStrategiesPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             {/* Header */}
@@ -175,7 +175,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* 1. Diversification */}
                         <section id="diversification" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <PieChart className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">1. True Diversification</h2>
@@ -221,7 +221,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* 2. Precious Metals */}
                         <section id="gold" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-amber-700">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">2. Precious Metals Allocation</h2>
@@ -251,7 +251,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* 3. Real Assets */}
                         <section id="real-assets" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">3. Real Asset Ownership</h2>
@@ -300,7 +300,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* 5. Asset Protection */}
                         <section id="asset-protection" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">5. Asset Protection</h2>
@@ -338,7 +338,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* 6. Inflation Defense */}
                         <section id="inflation" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
+                                <div className="p-3 bg-[rgba(183,121,31,0.08)]0/20 rounded-lg text-orange-400">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">6. Inflation Defense</h2>
@@ -412,7 +412,7 @@ export default function WealthPreservationStrategiesPage() {
                         {/* Framework */}
                         <section id="framework" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-amber-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Building Your Wealth Preservation Framework</h2>
@@ -461,7 +461,7 @@ export default function WealthPreservationStrategiesPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What is wealth preservation?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -475,7 +475,7 @@ export default function WealthPreservationStrategiesPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">How do wealthy families preserve wealth?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -489,7 +489,7 @@ export default function WealthPreservationStrategiesPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Is gold good for wealth preservation?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -512,7 +512,7 @@ export default function WealthPreservationStrategiesPage() {
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-slate-200">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#2A2D42]">
                                         <Link href="/why-gold/physical-gold-vs-paper">Physical vs Paper Gold</Link>
                                     </Button>
                                 </div>

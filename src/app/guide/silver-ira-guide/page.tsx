@@ -106,7 +106,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function SilverIraGuidePage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             
@@ -499,7 +499,7 @@ export default function SilverIraGuidePage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Higher Volatility</h4>

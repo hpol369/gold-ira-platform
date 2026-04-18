@@ -215,7 +215,7 @@ const schema = {
 
 export default function IraApprovedBarsPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -233,7 +233,7 @@ export default function IraApprovedBarsPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
             </Link>
-            <div className="inline-flex items-center gap-2 text-blue-400 text-sm font-medium mb-4 bg-blue-500/20 px-4 py-2 rounded-full border border-blue-500/30">
+            <div className="inline-flex items-center gap-2 text-blue-400 text-sm font-medium mb-4 bg-[#121423]0/20 px-4 py-2 rounded-full border border-blue-500/30">
               <Gem className="h-4 w-4" />
               IRS-APPROVED LIST
             </div>
@@ -265,19 +265,19 @@ export default function IraApprovedBarsPage() {
               IRS Purity Requirements for Silver Bars
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 text-center">
+              <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6 text-center">
                 <CheckCircle2 className="h-8 w-8 text-green-400 mx-auto mb-3" />
                 <h3 className="font-bold text-[#F6F4EF] mb-2">Minimum Requirement</h3>
                 <p className="text-2xl font-bold text-green-400 mb-2">.999 Fine</p>
                 <p className="text-sm text-[#D0CCC4]">99.9% pure silver</p>
               </div>
-              <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 text-center">
+              <div className="bg-[#121423]0/10 border border-blue-500/30 rounded-xl p-6 text-center">
                 <Award className="h-8 w-8 text-blue-400 mx-auto mb-3" />
                 <h3 className="font-bold text-[#F6F4EF] mb-2">Premium Option</h3>
                 <p className="text-2xl font-bold text-blue-400 mb-2">.9999 Fine</p>
                 <p className="text-sm text-[#D0CCC4]">99.99% pure (RCM bars)</p>
               </div>
-              <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6 text-center">
+              <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-6 text-center">
                 <XCircle className="h-8 w-8 text-red-400 mx-auto mb-3" />
                 <h3 className="font-bold text-[#F6F4EF] mb-2">NOT Allowed</h3>
                 <p className="text-2xl font-bold text-red-400 mb-2">&lt;.999</p>
@@ -315,7 +315,7 @@ export default function IraApprovedBarsPage() {
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="text-lg font-bold text-[#F6F4EF]">{bar.name}</h3>
                       {bar.recommended && (
-                        <span className="text-xs font-semibold text-green-400 bg-green-500/20 px-2 py-1 rounded">
+                        <span className="text-xs font-semibold text-green-400 bg-[rgba(46,139,87,0.08)]0/20 px-2 py-1 rounded">
                           RECOMMENDED
                         </span>
                       )}
@@ -381,7 +381,7 @@ export default function IraApprovedBarsPage() {
               <XCircle className="h-6 w-6 text-red-400" />
               What's NOT Allowed in a Silver IRA
             </h2>
-            <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+            <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-6">
               <ul className="space-y-3">
                 {notApproved.map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-[#D0CCC4]">

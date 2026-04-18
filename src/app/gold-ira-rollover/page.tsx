@@ -265,7 +265,7 @@ export default function GoldIRARolloverPage() {
 
                 <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 my-6">
                   <h3 className="font-bold text-[#F6F4EF] mb-3 flex items-center gap-2">
-                    <Coins className="h-5 w-5 text-amber-500" />
+                    <Coins className="h-5 w-5 text-[#D4A94E]" />
                     Quick Example
                   </h3>
                   <p className="text-[#D0CCC4] text-sm leading-relaxed">
@@ -287,7 +287,7 @@ export default function GoldIRARolloverPage() {
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   {/* Direct Rollover Card */}
-                  <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                  <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <CheckCircle2 className="h-6 w-6 text-green-600" />
                       <h3 className="font-bold text-green-900 text-lg">Direct Rollover</h3>
@@ -318,7 +318,7 @@ export default function GoldIRARolloverPage() {
                   </div>
 
                   {/* Indirect Rollover Card */}
-                  <div className="bg-orange-50 border border-orange-200 rounded-xl p-6">
+                  <div className="bg-[rgba(183,121,31,0.08)] border border-orange-200 rounded-xl p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <AlertTriangle className="h-6 w-6 text-orange-600" />
                       <h3 className="font-bold text-orange-900 text-lg">Indirect Rollover</h3>
@@ -555,7 +555,7 @@ export default function GoldIRARolloverPage() {
                   </p>
                 </Callout>
 
-                <div className="bg-green-50 border border-green-200 rounded-xl p-6 my-6">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6 my-6">
                   <h3 className="font-bold text-green-900 flex items-center gap-2 mb-3">
                     <CheckCircle2 className="h-5 w-5 text-green-600" />
                     The Bottom Line on Taxes

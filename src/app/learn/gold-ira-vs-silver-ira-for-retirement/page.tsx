@@ -214,7 +214,7 @@ export default function GoldIraVsSilverIraPage() {
                     <span><strong>Gold:</strong> Generally steadier, still volatile, but often less extreme</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-amber-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="h-5 w-5 text-[#D4A94E] mt-0.5 shrink-0" />
                     <span><strong>Silver:</strong> Usually cheaper per ounce, but price moves can be much wilder</span>
                   </li>
                 </ul>
@@ -240,7 +240,7 @@ export default function GoldIraVsSilverIraPage() {
                 The IRS has specific fineness requirements for precious metals held in an IRA. According to IRS Publication 590-A and industry guidance based on IRC rules:
               </p>
               <div className="grid md:grid-cols-2 gap-4 my-6">
-                <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-center">
+                <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 text-center">
                   <p className="text-3xl font-bold text-amber-700 mb-1">99.5%</p>
                   <p className="text-sm text-[#D0CCC4] font-medium">Gold Purity Requirement</p>
                 </div>
@@ -286,7 +286,7 @@ export default function GoldIraVsSilverIraPage() {
                 </h2>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                   <h3 className="font-bold text-green-800 mb-3">This May Be for You If:</h3>
                   <ul className="space-y-2 text-[#D0CCC4] text-sm">
                     <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /> You want a modest hedge outside stocks and bonds</li>
@@ -295,7 +295,7 @@ export default function GoldIraVsSilverIraPage() {
                     <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /> You are diversifying, not betting the farm</li>
                   </ul>
                 </div>
-                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                   <h3 className="font-bold text-red-800 mb-3">This May Not Be for You If:</h3>
                   <ul className="space-y-2 text-[#D0CCC4] text-sm">
                     <li className="flex items-start gap-2"><AlertTriangle className="h-4 w-4 text-red-500 mt-0.5 shrink-0" /> You need income from your retirement assets</li>

@@ -152,7 +152,7 @@ export default function RetirementSpendingCalculatorPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       {/* Hero Section */}
@@ -205,7 +205,7 @@ export default function RetirementSpendingCalculatorPage() {
                       step={100}
                       value={housing}
                       onChange={(e) => setHousing(Number(e.target.value))}
-                      className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                      className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
                   </div>
 
@@ -227,7 +227,7 @@ export default function RetirementSpendingCalculatorPage() {
                       step={50}
                       value={healthcare}
                       onChange={(e) => setHealthcare(Number(e.target.value))}
-                      className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-red-500"
+                      className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
                   </div>
 
@@ -295,7 +295,7 @@ export default function RetirementSpendingCalculatorPage() {
                       step={50}
                       value={entertainment}
                       onChange={(e) => setEntertainment(Number(e.target.value))}
-                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                      className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
                   </div>
 
@@ -342,7 +342,7 @@ export default function RetirementSpendingCalculatorPage() {
                       step={0.5}
                       value={inflationRate}
                       onChange={(e) => setInflationRate(Number(e.target.value))}
-                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                      className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
                     <div className="text-xs text-[#A8A39A] mt-1">
                       Historical average: 3.0%
@@ -368,7 +368,7 @@ export default function RetirementSpendingCalculatorPage() {
                       onChange={(e) =>
                         setYearsInRetirement(Number(e.target.value))
                       }
-                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                      className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
                   </div>
 
@@ -564,7 +564,7 @@ export default function RetirementSpendingCalculatorPage() {
                       {/* Reset Button */}
                       <button
                         onClick={resetCalculator}
-                        className="w-full py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#A8A39A] font-medium hover:bg-slate-200 hover:text-[#F6F4EF] transition-all"
+                        className="w-full py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#A8A39A] font-medium hover:bg-[#2A2D42] hover:text-[#F6F4EF] transition-all"
                       >
                         Calculate Different Scenario
                       </button>
@@ -638,7 +638,7 @@ export default function RetirementSpendingCalculatorPage() {
       </section>
 
       {/* Educational Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -652,7 +652,7 @@ export default function RetirementSpendingCalculatorPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center mb-4">
                   <Home className="h-6 w-6 text-blue-600" />
                 </div>
                 <h3 className="text-lg font-bold text-[#F6F4EF] mb-3">Housing</h3>
@@ -664,7 +664,7 @@ export default function RetirementSpendingCalculatorPage() {
               </div>
 
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
-                <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-[rgba(220,38,38,0.08)]0/20 rounded-xl flex items-center justify-center mb-4">
                   <Heart className="h-6 w-6 text-red-600" />
                 </div>
                 <h3 className="text-lg font-bold text-[#F6F4EF] mb-3">Healthcare</h3>
@@ -675,7 +675,7 @@ export default function RetirementSpendingCalculatorPage() {
               </div>
 
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
-                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/20 rounded-xl flex items-center justify-center mb-4">
                   <Utensils className="h-6 w-6 text-green-600" />
                 </div>
                 <h3 className="text-lg font-bold text-[#F6F4EF] mb-3">Food</h3>
@@ -686,7 +686,7 @@ export default function RetirementSpendingCalculatorPage() {
               </div>
             </div>
 
-            <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
+            <div className="mt-8 bg-[#121423] border border-blue-200 rounded-xl p-6">
               <div className="flex items-start gap-3">
                 <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                 <div>

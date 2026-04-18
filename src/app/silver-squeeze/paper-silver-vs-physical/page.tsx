@@ -59,7 +59,7 @@ const faqSchema = {
 
 export default function PaperSilverVsPhysicalPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             
 
             <script
@@ -133,7 +133,7 @@ export default function PaperSilverVsPhysicalPage() {
                         {/* Section 1: What Is Paper Silver? */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <FileWarning className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">What Is Paper Silver?</h2>
@@ -198,7 +198,7 @@ export default function PaperSilverVsPhysicalPage() {
                         {/* Section 2: What Is Physical Silver? */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-green-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg">
                                     <Coins className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">What Is Physical Silver?</h2>
@@ -256,7 +256,7 @@ export default function PaperSilverVsPhysicalPage() {
                         {/* Section 3: The 100:1 Leverage Problem */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <Scale className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">The 100:1 Leverage Problem</h2>
@@ -343,7 +343,7 @@ export default function PaperSilverVsPhysicalPage() {
                         {/* Section 5: Counterparty Risk Explained */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <AlertTriangle className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Counterparty Risk Explained</h2>
@@ -378,7 +378,7 @@ export default function PaperSilverVsPhysicalPage() {
                         {/* Section 6: Why Physical Silver in IRA Is Superior */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-green-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg">
                                     <Shield className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Why Physical Silver in IRA Is Superior</h2>

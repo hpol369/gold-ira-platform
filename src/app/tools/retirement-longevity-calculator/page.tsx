@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RetirementLongevityCalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18]text-[#F6F4EF]">
       <SchemaScript schema={articleSchema({ title: "Retirement Longevity Calculator - How Long Will Your Money Last?", description: "Free retirement longevity calculator shows exactly how long your savings will last. Calculate the impact of spending, returns, inflation, and Social Security.", slug: "/tools/retirement-longevity-calculator" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Retirement Longevity Calculator", url: "/tools/retirement-longevity-calculator" }])} />
       <Navbar />

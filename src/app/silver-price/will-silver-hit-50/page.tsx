@@ -99,7 +99,7 @@ const schema = {
 
 export default function WillSilverHit50Page() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
 
             {/* Header */}
@@ -110,7 +110,7 @@ export default function WillSilverHit50Page() {
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
                         <div className="flex items-center gap-3 mb-4">
-                            <span className="bg-green-500/20 text-green-700 text-xs font-bold px-3 py-1 rounded-full">LOW DIFFICULTY</span>
+                            <span className="bg-[rgba(46,139,87,0.08)]0/20 text-green-700 text-xs font-bold px-3 py-1 rounded-full">LOW DIFFICULTY</span>
                             <span className="text-[#D0CCC4] text-sm">60 monthly searches | Easy to rank</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
@@ -154,7 +154,7 @@ export default function WillSilverHit50Page() {
                         {/* Technical Levels */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Technical Levels: The Path to $50</h2>
@@ -182,8 +182,8 @@ export default function WillSilverHit50Page() {
                                                 }`}>{level.level}</td>
                                                 <td className="p-4">
                                                     <span className={`px-2 py-1 rounded text-xs font-bold ${
-                                                        level.type === 'Target' ? 'bg-green-500/20 text-green-700' :
-                                                        'bg-red-500/20 text-red-700'
+                                                        level.type === 'Target' ? 'bg-[rgba(46,139,87,0.08)]0/20 text-green-700' :
+                                                        'bg-[rgba(220,38,38,0.08)]0/20 text-red-700'
                                                     }`}>
                                                         {level.type}
                                                     </span>
@@ -236,8 +236,8 @@ export default function WillSilverHit50Page() {
                                             <h4 className="font-bold text-[#F6F4EF]">{item.catalyst}</h4>
                                             <div className="flex items-center gap-3">
                                                 <span className={`px-2 py-1 rounded text-xs font-bold ${
-                                                    item.impact === 'Very High' ? 'bg-green-500/30 text-green-700' :
-                                                    item.impact === 'High' ? 'bg-green-500/20 text-green-700' :
+                                                    item.impact === 'Very High' ? 'bg-[rgba(46,139,87,0.08)]0/30 text-green-700' :
+                                                    item.impact === 'High' ? 'bg-[rgba(46,139,87,0.08)]0/20 text-green-700' :
                                                     'bg-[rgba(220,38,38,0.18)] text-[#D4A94E]'
                                                 }`}>
                                                     {item.impact} Impact
@@ -258,7 +258,7 @@ export default function WillSilverHit50Page() {
                         {/* Timeline */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Timeline: When Could Silver Hit $50?</h2>
@@ -273,7 +273,7 @@ export default function WillSilverHit50Page() {
                                             <span className="text-xs text-[#D0CCC4]">20-25% probability</span>
                                         </div>
                                         <div className="w-full bg-[#121423] rounded-full h-3">
-                                            <div className="bg-green-500 h-3 rounded-full" style={{ width: '25%' }}></div>
+                                            <div className="bg-[rgba(46,139,87,0.08)]0 h-3 rounded-full" style={{ width: '25%' }}></div>
                                         </div>
                                         <p className="text-xs text-[#D0CCC4] mt-2">Requires: Fed cuts 3-4x, gold breaks $3,000, dollar weakness (DXY &lt; 95)</p>
                                     </div>
@@ -323,7 +323,7 @@ export default function WillSilverHit50Page() {
                                 <li><strong>Next targets:</strong> $60, $75, $100 would become reasonable targets.</li>
                             </ul>
 
-                            <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20 not-prose my-8">
+                            <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-2xl p-6 border border-green-500/20 not-prose my-8">
                                 <h4 className="font-bold text-green-700 mb-4">$50 as a Launch Pad</h4>
                                 <p className="text-[#D0CCC4] mb-4">In both 1980 and 2011, silver rallied sharply before hitting resistance near $50. The difference this time could be:</p>
                                 <ul className="space-y-2 text-sm text-[#D0CCC4]">

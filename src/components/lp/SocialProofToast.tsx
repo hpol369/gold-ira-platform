@@ -91,7 +91,7 @@ export default function SocialProofToast({ variant = "gold" }: SocialProofToastP
 
     if (!isVisible) return null;
 
-    const accentColor = variant === "gold" ? "text-amber-500" : "text-[#3F4460]";
+    const accentColor = variant === "gold" ? "text-[#D4A94E]" : "text-[#3F4460]";
 
     return (
         <div

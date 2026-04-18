@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function EditorialPolicyPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -73,7 +73,7 @@ export default function EditorialPolicyPage() {
                             <h2>What We Look For</h2>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex items-start gap-4 p-5 bg-green-50 border border-green-200 rounded-xl">
+                                <div className="flex items-start gap-4 p-5 bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl">
                                     <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                                     <div>
                                         <h4 className="font-bold text-green-700 mb-1">Green Flags</h4>
@@ -88,7 +88,7 @@ export default function EditorialPolicyPage() {
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-4 p-5 bg-red-50 border border-red-200 rounded-xl">
+                                <div className="flex items-start gap-4 p-5 bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl">
                                     <XCircle className="h-6 w-6 text-red-600 flex-shrink-0 mt-0.5" />
                                     <div>
                                         <h4 className="font-bold text-red-700 mb-1">Red Flags</h4>
@@ -131,8 +131,8 @@ export default function EditorialPolicyPage() {
                             </p>
 
                             <div className="not-prose my-8">
-                                <div className="flex items-start gap-4 p-5 bg-amber-50 border border-amber-200 rounded-xl">
-                                    <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                                <div className="flex items-start gap-4 p-5 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl">
+                                    <AlertTriangle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                                     <div>
                                         <h4 className="font-bold text-amber-700 mb-1">A Note About Sponsored Content</h4>
                                         <p className="text-sm text-amber-700">

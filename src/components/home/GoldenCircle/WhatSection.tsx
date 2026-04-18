@@ -135,7 +135,7 @@ export function WhatSection() {
                 {/* Left - Company Info */}
                 <div className="lg:w-3/5">
                   <div className="flex items-center gap-3 mb-6">
-                    <span className="px-3 py-1 bg-amber-500 text-white text-sm font-bold rounded-full shadow-sm">
+                    <span className="px-3 py-1 bg-[#161828]0 text-white text-sm font-bold rounded-full shadow-sm">
                       #1 Recommended
                     </span>
                     <span className="px-3 py-1 bg-white/10 text-white text-sm font-medium rounded-full whitespace-nowrap border border-white/10">

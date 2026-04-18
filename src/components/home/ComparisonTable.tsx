@@ -135,7 +135,7 @@ export function ComparisonTable() {
                                     <div>
                                         <h3 className="font-bold text-[#F6F4EF] text-base sm:text-lg leading-tight">{company.name}</h3>
                                         <div className="flex items-center gap-1 text-sm mt-1">
-                                            <span className={`font-bold ${company.rank === 1 ? 'text-[#D4A94E]' : 'text-amber-600'}`}>
+                                            <span className={`font-bold ${company.rank === 1 ? 'text-[#D4A94E]' : 'text-[#D4A94E]'}`}>
                                                 {company.rating}/5
                                             </span>
                                             <div className="flex">
@@ -143,7 +143,7 @@ export function ComparisonTable() {
                                                     <Star
                                                         key={i}
                                                         className={`w-3 h-3 ${i < Math.floor(company.rating)
-                                                                ? (company.rank === 1 ? 'fill-[#B22234] text-[#D4A94E]' : 'fill-amber-600 text-amber-600')
+                                                                ? (company.rank === 1 ? 'fill-[#B22234] text-[#D4A94E]' : 'fill-[#D4A94E] text-[#D4A94E]')
                                                                 : 'fill-slate-300 text-[#3F4460]'
                                                             }`}
                                                     />
@@ -156,7 +156,7 @@ export function ComparisonTable() {
 
                             <div className="mb-4 bg-[#0C0D18] p-3 rounded-lg border border-[#2A2D42] relative z-10">
                                 <span className={`inline-block px-2 py-0.5 rounded text-xs font-bold mb-2 ${company.badgeColor === 'gold' ? 'bg-[rgba(220,38,38,0.1)] text-[#D4A94E]' :
-                                        company.badgeColor === 'silver' ? 'bg-slate-200 text-[#D0CCC4]' :
+                                        company.badgeColor === 'silver' ? 'bg-[#2A2D42] text-[#D0CCC4]' :
                                             'bg-[rgba(197,149,46,0.08)] text-[#F6F4EF]'
                                     }`}>
                                     {company.bestForBadge}
@@ -220,7 +220,7 @@ export function ComparisonTable() {
                                     <td className="p-5 text-center align-middle">
                                         <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl mx-auto shadow-sm ${company.rank === 1
                                                 ? 'bg-[#DC2626] text-white ring-4 ring-[#B22234]/20'
-                                                : 'bg-slate-200 text-[#D0CCC4]'
+                                                : 'bg-[#2A2D42] text-[#D0CCC4]'
                                             }`}>
                                             {company.rank}
                                         </div>
@@ -256,7 +256,7 @@ export function ComparisonTable() {
                                                 <Star
                                                     key={i}
                                                     className={`w-3.5 h-3.5 ${i < Math.floor(company.rating)
-                                                            ? (company.rank === 1 ? 'fill-[#B22234] text-[#D4A94E]' : 'fill-amber-600 text-amber-600')
+                                                            ? (company.rank === 1 ? 'fill-[#B22234] text-[#D4A94E]' : 'fill-[#D4A94E] text-[#D4A94E]')
                                                             : 'fill-slate-300 text-[#3F4460]'
                                                         }`}
                                                 />

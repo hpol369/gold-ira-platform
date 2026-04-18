@@ -144,8 +144,8 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
                                 <p className="text-[#D0CCC4] text-lg leading-relaxed font-medium">
                                     In <span className="text-[#F6F4EF] font-bold">{years} years</span>, the difference between holding cash and holding gold could cost you <span className="text-[#D4A94E] font-black underline decoration-2 underline-offset-4">{formatCurrency(goldValue - cashValue)}</span>.
                                 </p>
-                                <div className="mt-8 p-4 bg-amber-50 rounded-xl border border-amber-100 flex items-start gap-3">
-                                    <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                                <div className="mt-8 p-4 bg-[#161828] rounded-xl border border-amber-100 flex items-start gap-3">
+                                    <AlertTriangle className="w-5 h-5 text-[#D4A94E] shrink-0 mt-0.5" />
                                     <p className="text-sm text-[#D0CCC4] font-medium">
                                         <strong className="text-amber-700">Inflation Alert:</strong> Cash guarantees a loss of purchasing power. The stats below show historic trends.
                                     </p>

@@ -33,7 +33,7 @@ export default function GrandchildrenPage() {
   const articles = getAllGrandchildrenArticles();
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Grandchildren Legacy Hub | Gift, Save & Invest for Grandkids", description: "Smart ways to gift money, set up trusts, and invest for your grandchildren's future. 529 plans, trust funds, and tax-efficient wealth transfer strategies.", slug: "/grandchildren" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Grandchildren Legacy Hub", url: "/grandchildren" }])} />
       <Navbar />
@@ -125,7 +125,7 @@ export default function GrandchildrenPage() {
       </section>
 
       {/* Strategies Overview */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
             Ways to Build Grandchildren&apos;s Wealth
@@ -153,7 +153,7 @@ export default function GrandchildrenPage() {
             </div>
             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-amber-100 p-3 rounded-lg inline-block mb-4">
-                <DollarSign className="h-6 w-6 text-amber-600" />
+                <DollarSign className="h-6 w-6 text-[#D4A94E]" />
               </div>
               <h3 className="font-bold text-[#F6F4EF] mb-2">Direct Gifts</h3>
               <p className="text-[#A8A39A] text-sm">
@@ -203,7 +203,7 @@ export default function GrandchildrenPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
             <Heart className="h-12 w-12 text-green-600 mx-auto mb-6" />

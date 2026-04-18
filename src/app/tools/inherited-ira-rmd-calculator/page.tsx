@@ -123,7 +123,7 @@ const faqSchema = {
 
 export default function InheritedIRARMDCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -132,7 +132,7 @@ export default function InheritedIRARMDCalculatorPage() {
       <InheritedIRARMDCalculator />
 
       {/* Key Rules Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -172,7 +172,7 @@ export default function InheritedIRARMDCalculatorPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center">
                 <Scale className="h-6 w-6 text-blue-600" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
@@ -271,7 +271,7 @@ export default function InheritedIRARMDCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -347,7 +347,7 @@ export default function InheritedIRARMDCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

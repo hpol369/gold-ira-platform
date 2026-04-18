@@ -225,7 +225,7 @@ const schema = {
 
 export default function IraApprovedCoinsPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -243,7 +243,7 @@ export default function IraApprovedCoinsPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
             </Link>
-            <div className="inline-flex items-center gap-2 text-green-400 text-sm font-medium mb-4 bg-green-500/20 px-4 py-2 rounded-full border border-green-500/30">
+            <div className="inline-flex items-center gap-2 text-green-400 text-sm font-medium mb-4 bg-[rgba(46,139,87,0.08)]0/20 px-4 py-2 rounded-full border border-green-500/30">
               <Coins className="h-4 w-4" />
               GOVERNMENT-MINTED COINS
             </div>
@@ -392,7 +392,7 @@ export default function IraApprovedCoinsPage() {
               <XCircle className="h-6 w-6 text-red-400" />
               Silver Coins NOT Allowed in IRAs
             </h2>
-            <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+            <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-6">
               <div className="space-y-4">
                 {notApprovedCoins.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">

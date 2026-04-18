@@ -115,7 +115,7 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function HeroBullionReviewPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={reviewSchema} />
             <SchemaScript schema={faqSchema} />
             <Navbar />
@@ -130,7 +130,7 @@ export default function HeroBullionReviewPage() {
                             <span>/</span>
                             <span>Hero Bullion</span>
                         </div>
-                        <div className="inline-block bg-purple-500/20 text-purple-700 text-sm font-bold px-3 py-1 rounded-full mb-4 border border-purple-500/30">
+                        <div className="inline-block bg-purple-500/20 text-purple-700 text-sm font-bold px-3 py-1 rounded-full mb-4 border border-[rgba(197,149,46,0.32)]">
                             High CPC Keyword: $2.50
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">

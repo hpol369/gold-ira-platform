@@ -36,10 +36,10 @@ const iconMap: Record<string, LucideIcon> = {
 
 const iconColorClasses: Record<IconColor, string> = {
   red: "text-red-600 bg-red-100",
-  amber: "text-amber-600 bg-amber-100",
+  amber: "text-[#D4A94E] bg-amber-100",
   green: "text-green-600 bg-green-100",
   blue: "text-blue-600 bg-blue-100",
-  purple: "text-purple-600 bg-purple-100",
+  purple: "text-[#D4A94E] bg-purple-100",
   slate: "text-[#D0CCC4] bg-[#121423]",
 };
 
@@ -109,10 +109,10 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
         )}
         {section.callout && (
           <div className={cn("p-4 rounded-lg border mb-4",
-            section.callout.type === "warning" ? "bg-amber-50 border-amber-200" :
-            section.callout.type === "tip" ? "bg-green-50 border-green-200" :
+            section.callout.type === "warning" ? "bg-[#161828] border-[rgba(197,149,46,0.32)]" :
+            section.callout.type === "tip" ? "bg-[rgba(46,139,87,0.08)] border-[rgba(46,139,87,0.32)]" :
             section.callout.type === "example" ? "bg-purple-50 border-purple-200" :
-            "bg-blue-50 border-blue-200"
+            "bg-[#121423] border-[rgba(59,130,246,0.32)]"
           )}>
             <p className={cn("font-medium mb-1",
               section.callout.type === "warning" ? "text-amber-800" :
@@ -179,7 +179,7 @@ export default async function GrandchildrenArticlePage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={articleSchema} />
       <SchemaScript schema={faqSchema} />
@@ -208,7 +208,7 @@ export default async function GrandchildrenArticlePage({ params }: PageProps) {
       </section>
 
       {/* Main Content */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="lg:grid lg:grid-cols-[280px_1fr] lg:gap-12">
             <aside className="hidden lg:block">
@@ -247,7 +247,7 @@ export default async function GrandchildrenArticlePage({ params }: PageProps) {
 
               {/* Tax Implications if exists */}
               {article.taxImplications && article.taxImplications.length > 0 && (
-                <div className="mb-12 bg-amber-50 border border-amber-200 rounded-xl p-6">
+                <div className="mb-12 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                   <h3 className="font-bold text-amber-700 mb-4 flex items-center gap-2">
                     <DollarSign className="h-5 w-5" /> Tax Implications
                   </h3>

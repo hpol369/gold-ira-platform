@@ -76,7 +76,7 @@ const faqs = [
 
 export default function ROBSvsSBALoanPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <SchemaScript
@@ -134,7 +134,7 @@ export default function ROBSvsSBALoanPage() {
             </header>
 
             {/* Comparison Table */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -254,7 +254,7 @@ export default function ROBSvsSBALoanPage() {
             </section>
 
             {/* Combined Strategy */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -272,7 +272,7 @@ export default function ROBSvsSBALoanPage() {
                             </p>
                         </div>
 
-                        <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                        <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                             <h3 className="font-bold text-green-800 mb-4">Example: Opening a Franchise</h3>
                             <div className="space-y-3 text-sm">
                                 <div className="flex justify-between border-b border-green-100 pb-2">
@@ -298,9 +298,9 @@ export default function ROBSvsSBALoanPage() {
                             </div>
                         </div>
 
-                        <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mt-6">
+                        <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 mt-6">
                             <div className="flex items-start gap-3">
-                                <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                                <AlertTriangle className="w-5 h-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
                                 <p className="text-[#D0CCC4] text-sm">
                                     <strong>Note:</strong> When combining ROBS with an SBA loan, the business must still be a C-corporation to satisfy ROBS requirements. The SBA loan adds a personal guarantee, but only for the loan portion—your remaining retirement funds are not at risk from the SBA guarantee.
                                 </p>
@@ -381,7 +381,7 @@ export default function ROBSvsSBALoanPage() {
             </section>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <AugustaCTA

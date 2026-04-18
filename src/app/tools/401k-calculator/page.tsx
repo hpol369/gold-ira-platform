@@ -274,7 +274,7 @@ export default function Calculator401kPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       {/* Schema Markup */}
       <script
         type="application/ld+json"
@@ -317,7 +317,7 @@ export default function Calculator401kPage() {
                 {/* Personal Information */}
                 <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-6 shadow-sm">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+                    <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                       <Calendar className="h-5 w-5 text-blue-600" />
                     </div>
                     <h2 className="text-lg font-semibold text-[#F6F4EF]">Your Age</h2>
@@ -338,7 +338,7 @@ export default function Calculator401kPage() {
                         max={70}
                         value={currentAge}
                         onChange={(e) => setCurrentAge(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                        className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                         <span>18</span>
@@ -360,7 +360,7 @@ export default function Calculator401kPage() {
                         max={75}
                         value={retirementAge}
                         onChange={(e) => setRetirementAge(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                        className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                         <span>{Math.max(currentAge + 1, 50)}</span>
@@ -380,7 +380,7 @@ export default function Calculator401kPage() {
                 {/* Current Balance & Contributions */}
                 <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-6 shadow-sm">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+                    <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                       <PiggyBank className="h-5 w-5 text-green-600" />
                     </div>
                     <h2 className="text-lg font-semibold text-[#F6F4EF]">Your 401(k)</h2>
@@ -403,7 +403,7 @@ export default function Calculator401kPage() {
                         step={5000}
                         value={currentBalance}
                         onChange={(e) => setCurrentBalance(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                        className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                         <span>$0</span>
@@ -427,7 +427,7 @@ export default function Calculator401kPage() {
                         step={5000}
                         value={annualSalary}
                         onChange={(e) => setAnnualSalary(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                        className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                         <span>$30k</span>
@@ -451,7 +451,7 @@ export default function Calculator401kPage() {
                         step={500}
                         value={annualContribution}
                         onChange={(e) => setAnnualContribution(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                        className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                         <span>$0</span>
@@ -468,7 +468,7 @@ export default function Calculator401kPage() {
                 {/* Employer Match */}
                 <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-6 shadow-sm">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+                    <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                       <Building2 className="h-5 w-5 text-purple-700" />
                     </div>
                     <h2 className="text-lg font-semibold text-[#F6F4EF]">Employer Match</h2>
@@ -491,7 +491,7 @@ export default function Calculator401kPage() {
                         step={5}
                         value={employerMatchPercent}
                         onChange={(e) => setEmployerMatchPercent(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                        className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                         <span>0%</span>
@@ -518,7 +518,7 @@ export default function Calculator401kPage() {
                         step={0.5}
                         value={employerMatchLimit}
                         onChange={(e) => setEmployerMatchLimit(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                        className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                         <span>0%</span>
@@ -566,7 +566,7 @@ export default function Calculator401kPage() {
                         step={0.5}
                         value={expectedReturn}
                         onChange={(e) => setExpectedReturn(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                        className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                         <span>Conservative (3%)</span>
@@ -589,7 +589,7 @@ export default function Calculator401kPage() {
                         step={0.5}
                         value={inflationRate}
                         onChange={(e) => setInflationRate(Number(e.target.value))}
-                        className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                        className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                         <span>Low (1%)</span>
@@ -640,7 +640,7 @@ export default function Calculator401kPage() {
                 {/* Monthly Income Card */}
                 <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-6 shadow-sm">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+                    <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                       <Clock className="h-5 w-5 text-green-600" />
                     </div>
                     <h3 className="text-lg font-semibold text-[#F6F4EF]">Monthly Retirement Income (4% Rule)</h3>
@@ -679,7 +679,7 @@ export default function Calculator401kPage() {
 
                     <div className="flex justify-between items-center p-3 bg-[#0C0D18] rounded-lg border border-[#2A2D42]">
                       <div className="flex items-center gap-3">
-                        <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-[rgba(46,139,87,0.08)]0"></div>
                         <span className="text-[#D0CCC4]">Your Total Contributions</span>
                       </div>
                       <span className="font-semibold text-green-600">+{formatFullCurrency(calculations.totalYourContributions)}</span>
@@ -687,7 +687,7 @@ export default function Calculator401kPage() {
 
                     <div className="flex justify-between items-center p-3 bg-[#0C0D18] rounded-lg border border-[#2A2D42]">
                       <div className="flex items-center gap-3">
-                        <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-[#121423]0"></div>
                         <span className="text-[#D0CCC4]">Total Employer Match</span>
                       </div>
                       <span className="font-semibold text-blue-600">+{formatFullCurrency(calculations.totalEmployerMatch)}</span>
@@ -695,10 +695,10 @@ export default function Calculator401kPage() {
 
                     <div className="flex justify-between items-center p-3 bg-[#0C0D18] rounded-lg border border-[#2A2D42]">
                       <div className="flex items-center gap-3">
-                        <div className="w-3 h-3 rounded-full bg-amber-500"></div>
+                        <div className="w-3 h-3 rounded-full bg-[#161828]0"></div>
                         <span className="text-[#D0CCC4]">Investment Growth</span>
                       </div>
-                      <span className="font-semibold text-amber-600">+{formatFullCurrency(calculations.totalInvestmentGrowth)}</span>
+                      <span className="font-semibold text-[#D4A94E]">+{formatFullCurrency(calculations.totalInvestmentGrowth)}</span>
                     </div>
 
                     <div className="flex justify-between items-center p-4 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg">
@@ -778,11 +778,11 @@ export default function Calculator401kPage() {
 
                   <div className="flex justify-center gap-6 mt-4">
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-full bg-amber-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-[#161828]0"></div>
                       <span className="text-sm text-[#A8A39A]">Nominal Balance</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 rounded-full bg-blue-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-[#121423]0"></div>
                       <span className="text-sm text-[#A8A39A]">Real Balance (Today's $)</span>
                     </div>
                   </div>
@@ -876,7 +876,7 @@ export default function Calculator401kPage() {
                               <td className="text-right py-2 px-2 text-blue-600">
                                 {index === 0 ? '-' : `+${formatCurrency(proj.employerMatch)}`}
                               </td>
-                              <td className="text-right py-2 px-2 text-amber-600">
+                              <td className="text-right py-2 px-2 text-[#D4A94E]">
                                 +{formatCurrency(proj.investmentGrowth)}
                               </td>
                               <td className="text-right py-2 px-2 font-semibold text-[#F6F4EF]">
@@ -953,7 +953,7 @@ export default function Calculator401kPage() {
       </section>
 
       {/* Understanding 401k Growth */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
@@ -981,7 +981,7 @@ export default function Calculator401kPage() {
                 <h3 className="text-xl font-semibold text-[#F6F4EF] mb-4">The Three Sources of Growth</h3>
                 <div className="space-y-4">
                   <div className="flex gap-4">
-                    <div className="w-3 h-3 rounded-full bg-green-500 mt-2 shrink-0"></div>
+                    <div className="w-3 h-3 rounded-full bg-[rgba(46,139,87,0.08)]0 mt-2 shrink-0"></div>
                     <div>
                       <h4 className="text-[#F6F4EF] font-semibold">Your Contributions</h4>
                       <p className="text-[#D0CCC4] text-sm">
@@ -990,7 +990,7 @@ export default function Calculator401kPage() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-3 h-3 rounded-full bg-blue-500 mt-2 shrink-0"></div>
+                    <div className="w-3 h-3 rounded-full bg-[#121423]0 mt-2 shrink-0"></div>
                     <div>
                       <h4 className="text-[#F6F4EF] font-semibold">Employer Match</h4>
                       <p className="text-[#D0CCC4] text-sm">
@@ -1000,7 +1000,7 @@ export default function Calculator401kPage() {
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-3 h-3 rounded-full bg-amber-500 mt-2 shrink-0"></div>
+                    <div className="w-3 h-3 rounded-full bg-[#161828]0 mt-2 shrink-0"></div>
                     <div>
                       <h4 className="text-[#F6F4EF] font-semibold">Investment Growth</h4>
                       <p className="text-[#D0CCC4] text-sm">
@@ -1025,7 +1025,7 @@ export default function Calculator401kPage() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+              <div className="bg-[#121423] border border-blue-200 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-blue-600 mb-4">Under Age 50</h3>
                 <div className="text-4xl font-bold text-[#F6F4EF] mb-2">$23,500</div>
                 <p className="text-[#D0CCC4]">
@@ -1035,7 +1035,7 @@ export default function Calculator401kPage() {
               </div>
 
               <div className="bg-purple-50 border border-purple-200 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-purple-600 mb-4">Age 50 and Over</h3>
+                <h3 className="text-xl font-bold text-[#D4A94E] mb-4">Age 50 and Over</h3>
                 <div className="text-4xl font-bold text-[#F6F4EF] mb-2">$31,000</div>
                 <p className="text-[#D0CCC4]">
                   Includes $7,500 catch-up contribution. If you're 50+, you can contribute an extra $7,500
@@ -1069,7 +1069,7 @@ export default function Calculator401kPage() {
       </section>
 
       {/* Employer Match Explained */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
@@ -1115,7 +1115,7 @@ export default function Calculator401kPage() {
               </div>
             </div>
 
-            <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
               <div className="flex items-start gap-4">
                 <CheckCircle2 className="h-6 w-6 text-green-600 shrink-0 mt-1" />
                 <div>
@@ -1177,7 +1177,7 @@ export default function Calculator401kPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-8 text-center">

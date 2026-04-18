@@ -214,7 +214,7 @@ export function GoldAllocationCalculator() {
           {/* Personal Information */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Calendar className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Personal Information</h3>
@@ -231,7 +231,7 @@ export function GoldAllocationCalculator() {
                   max="80"
                   value={currentAge}
                   onChange={(e) => setCurrentAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>25</span>
@@ -250,7 +250,7 @@ export function GoldAllocationCalculator() {
                   max="40"
                   value={yearsToRetirement}
                   onChange={(e) => setYearsToRetirement(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Retiring Now</span>
@@ -281,7 +281,7 @@ export function GoldAllocationCalculator() {
           {/* Risk Tolerance */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <Scale className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Risk Tolerance</h3>
@@ -295,7 +295,7 @@ export function GoldAllocationCalculator() {
                   className={`py-3 px-4 rounded-lg text-sm font-medium transition-all capitalize ${
                     riskTolerance === level
                       ? "bg-[#DC2626] text-white"
-                      : "bg-[#121423] text-[#D0CCC4] hover:bg-slate-200"
+                      : "bg-[#121423] text-[#D0CCC4] hover:bg-[#2A2D42]"
                   }`}
                 >
                   {level}
@@ -312,7 +312,7 @@ export function GoldAllocationCalculator() {
           {/* Investment Goal */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <Target className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Investment Goal</h3>
@@ -324,7 +324,7 @@ export function GoldAllocationCalculator() {
                 className={`py-3 px-4 rounded-lg text-sm font-medium transition-all flex flex-col items-center gap-1 ${
                   investmentGoal === "preservation"
                     ? "bg-[#DC2626] text-white"
-                    : "bg-[#121423] text-[#D0CCC4] hover:bg-slate-200"
+                    : "bg-[#121423] text-[#D0CCC4] hover:bg-[#2A2D42]"
                 }`}
               >
                 <Shield className="h-4 w-4" />
@@ -335,7 +335,7 @@ export function GoldAllocationCalculator() {
                 className={`py-3 px-4 rounded-lg text-sm font-medium transition-all flex flex-col items-center gap-1 ${
                   investmentGoal === "balanced"
                     ? "bg-[#DC2626] text-white"
-                    : "bg-[#121423] text-[#D0CCC4] hover:bg-slate-200"
+                    : "bg-[#121423] text-[#D0CCC4] hover:bg-[#2A2D42]"
                 }`}
               >
                 <Scale className="h-4 w-4" />
@@ -346,7 +346,7 @@ export function GoldAllocationCalculator() {
                 className={`py-3 px-4 rounded-lg text-sm font-medium transition-all flex flex-col items-center gap-1 ${
                   investmentGoal === "growth"
                     ? "bg-[#DC2626] text-white"
-                    : "bg-[#121423] text-[#D0CCC4] hover:bg-slate-200"
+                    : "bg-[#121423] text-[#D0CCC4] hover:bg-[#2A2D42]"
                 }`}
               >
                 <TrendingUp className="h-4 w-4" />
@@ -358,7 +358,7 @@ export function GoldAllocationCalculator() {
           {/* Concern Levels */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-red-500/20 rounded-lg border border-red-500/30">
+              <div className="p-2 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg border border-red-500/30">
                 <AlertTriangle className="h-5 w-5 text-red-600" />
               </div>
               <h3 className="text-lg font-semibold">Concern Levels</h3>
@@ -395,7 +395,7 @@ export function GoldAllocationCalculator() {
                   max="10"
                   value={crashConcern}
                   onChange={(e) => setCrashConcern(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-red-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Low Concern</span>
@@ -468,14 +468,14 @@ export function GoldAllocationCalculator() {
             {/* Legend */}
             <div className="grid grid-cols-2 gap-3">
               <div className="flex items-center gap-2 bg-[#0C0D18] rounded-lg p-3">
-                <div className="w-4 h-4 rounded bg-amber-500" />
+                <div className="w-4 h-4 rounded bg-[#161828]0" />
                 <div className="flex-1">
                   <div className="text-sm font-semibold text-[#D4A94E]">Gold {calculations.goldPercentage}%</div>
                   <div className="text-xs text-[#A8A39A]">{formatCurrency(goldAmount)}</div>
                 </div>
               </div>
               <div className="flex items-center gap-2 bg-[#0C0D18] rounded-lg p-3">
-                <div className="w-4 h-4 rounded bg-blue-500" />
+                <div className="w-4 h-4 rounded bg-[#121423]0" />
                 <div className="flex-1">
                   <div className="text-sm font-semibold text-blue-600">Stocks {calculations.stocksPercentage}%</div>
                   <div className="text-xs text-[#A8A39A]">{formatCurrency(stocksAmount)}</div>
@@ -537,9 +537,9 @@ export function GoldAllocationCalculator() {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <div className="flex-1 h-3 bg-slate-200 rounded-full overflow-hidden flex">
-                    <div className="h-full bg-amber-500" style={{ width: `${rayDalioAllWeather.gold}%` }} />
-                    <div className="h-full bg-blue-500" style={{ width: `${rayDalioAllWeather.stocks}%` }} />
+                  <div className="flex-1 h-3 bg-[#2A2D42] rounded-full overflow-hidden flex">
+                    <div className="h-full bg-[#161828]0" style={{ width: `${rayDalioAllWeather.gold}%` }} />
+                    <div className="h-full bg-[#121423]0" style={{ width: `${rayDalioAllWeather.stocks}%` }} />
                     <div className="h-full bg-emerald-500" style={{ width: `${rayDalioAllWeather.bonds}%` }} />
                     <div className="h-full bg-gray-500" style={{ width: `${rayDalioAllWeather.cash}%` }} />
                   </div>
@@ -569,9 +569,9 @@ export function GoldAllocationCalculator() {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <div className="flex-1 h-3 bg-slate-200 rounded-full overflow-hidden flex">
-                    <div className="h-full bg-amber-500" style={{ width: `${harryBrownePermanent.gold}%` }} />
-                    <div className="h-full bg-blue-500" style={{ width: `${harryBrownePermanent.stocks}%` }} />
+                  <div className="flex-1 h-3 bg-[#2A2D42] rounded-full overflow-hidden flex">
+                    <div className="h-full bg-[#161828]0" style={{ width: `${harryBrownePermanent.gold}%` }} />
+                    <div className="h-full bg-[#121423]0" style={{ width: `${harryBrownePermanent.stocks}%` }} />
                     <div className="h-full bg-emerald-500" style={{ width: `${harryBrownePermanent.bonds}%` }} />
                     <div className="h-full bg-gray-500" style={{ width: `${harryBrownePermanent.cash}%` }} />
                   </div>

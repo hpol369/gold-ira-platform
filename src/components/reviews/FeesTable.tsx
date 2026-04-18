@@ -55,7 +55,7 @@ export function FeesTable({
                 className={cn(
                   "border-b border-[#2A2D42] transition-colors",
                   isHighlighted
-                    ? "bg-blue-50"
+                    ? "bg-[#121423]"
                     : "hover:bg-[#121423]"
                 )}
               >

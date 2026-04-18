@@ -107,7 +107,7 @@ export function BaristaFIRECalculator() {
           <Coffee className="h-4 w-4" />
           FIRE Calculator
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[#161828] to-slate-400 bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#F6F4EF]">
           Barista FIRE Calculator
         </h1>
         <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
@@ -121,7 +121,7 @@ export function BaristaFIRECalculator() {
           {/* Financial Snapshot */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <DollarSign className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Financial Snapshot</h3>
@@ -184,7 +184,7 @@ export function BaristaFIRECalculator() {
           {/* Age & Assumptions */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Calendar className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Age & Assumptions</h3>
@@ -201,7 +201,7 @@ export function BaristaFIRECalculator() {
                   max="70"
                   value={currentAge}
                   onChange={(e) => setCurrentAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
 
@@ -215,7 +215,7 @@ export function BaristaFIRECalculator() {
                   max="80"
                   value={fullRetirementAge}
                   onChange={(e) => setFullRetirementAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
 
@@ -230,7 +230,7 @@ export function BaristaFIRECalculator() {
                   step="0.5"
                   value={expectedReturn}
                   onChange={(e) => setExpectedReturn(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
 
@@ -245,7 +245,7 @@ export function BaristaFIRECalculator() {
                   step="0.5"
                   value={withdrawalRate}
                   onChange={(e) => setWithdrawalRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
             </div>
@@ -257,7 +257,7 @@ export function BaristaFIRECalculator() {
           {/* Status Card */}
           <div className={`rounded-xl p-6 border ${
             calculations.canStartNow
-              ? 'bg-green-500/20 border-green-500/30'
+              ? 'bg-[rgba(46,139,87,0.08)]0/20 border-green-500/30'
               : 'bg-[rgba(220,38,38,0.1)] border-[#B22234]/30'
           }`}>
             <div className="flex items-center gap-3 mb-4">

@@ -118,7 +118,7 @@ const schema = {
 
 export default function SilverForecast2026Page() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
 
             {/* Header */}
@@ -129,7 +129,7 @@ export default function SilverForecast2026Page() {
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
                         <div className="flex items-center gap-3 mb-4">
-                            <span className="bg-red-500/20 text-red-700 text-xs font-bold px-3 py-1 rounded-full">HIGH VOLUME</span>
+                            <span className="bg-[rgba(220,38,38,0.08)]0/20 text-red-700 text-xs font-bold px-3 py-1 rounded-full">HIGH VOLUME</span>
                             <span className="text-[#D0CCC4] text-sm">1,200+ monthly searches</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
@@ -226,7 +226,7 @@ export default function SilverForecast2026Page() {
                         {/* Demand Analysis */}
                         <section id="demand-analysis" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <Factory className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Demand Analysis: The Green Revolution</h2>
@@ -253,7 +253,7 @@ export default function SilverForecast2026Page() {
                                                 <div className="text-xs text-[#D0CCC4]">2026 estimate</div>
                                             </div>
                                             <div className={`px-2 py-1 rounded text-xs font-bold ${
-                                                parseInt(item.growth) >= 20 ? 'bg-green-500/30 text-green-700' :
+                                                parseInt(item.growth) >= 20 ? 'bg-[rgba(46,139,87,0.08)]0/30 text-green-700' :
                                                 parseInt(item.growth) >= 10 ? 'bg-emerald-500/20 text-emerald-400' :
                                                 'bg-[rgba(220,38,38,0.1)] text-[#D0CCC4]'
                                             }`}>
@@ -308,7 +308,7 @@ export default function SilverForecast2026Page() {
                                             <span className="text-[#F6F4EF] font-bold">1,180M oz</span>
                                         </div>
                                         <div className="w-full bg-[#121423] rounded-full h-4">
-                                            <div className="bg-green-500 h-4 rounded-full" style={{ width: '98%' }}></div>
+                                            <div className="bg-[rgba(46,139,87,0.08)]0 h-4 rounded-full" style={{ width: '98%' }}></div>
                                         </div>
                                     </div>
                                     <div className="pt-4 border-t border-[#2A2D42]">
@@ -329,7 +329,7 @@ export default function SilverForecast2026Page() {
                         {/* Technical Analysis */}
                         <section id="technical-analysis" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Technical Analysis</h2>
@@ -374,7 +374,7 @@ export default function SilverForecast2026Page() {
 
                             <h3>Key Technical Levels</h3>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-5 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3">Resistance (Upside Targets)</h4>
                                     <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                         <li className="flex justify-between"><span>$35.00</span><span className="text-[#D0CCC4]">2024 high</span></li>
@@ -384,7 +384,7 @@ export default function SilverForecast2026Page() {
                                         <li className="flex justify-between"><span>$55.00</span><span className="text-[#D0CCC4]">Cup/handle target</span></li>
                                     </ul>
                                 </div>
-                                <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-xl p-5 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3">Support (Downside Risk)</h4>
                                     <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                         <li className="flex justify-between"><span>$30.00</span><span className="text-[#D0CCC4]">Psychological</span></li>
@@ -468,7 +468,7 @@ export default function SilverForecast2026Page() {
                         {/* Fed Policy */}
                         <section id="fed-policy" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Fed Policy Impact</h2>

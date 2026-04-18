@@ -168,7 +168,7 @@ export function CalSTRSCalculator() {
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-600 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#121423]0/20 border border-blue-500/30 rounded-full text-blue-600 font-semibold text-sm mb-6">
               <GraduationCap className="h-4 w-4" />
               CALSTRS CALCULATOR
             </div>
@@ -225,7 +225,7 @@ export function CalSTRSCalculator() {
                     onClick={() => setFormula("2at60")}
                     className={`p-4 rounded-xl border-2 text-left transition-all ${
                       formula === "2at60"
-                        ? "border-blue-500 bg-blue-500/10"
+                        ? "border-blue-500 bg-[#121423]0/10"
                         : "border-[#2A2D42] bg-[#0C0D18] hover:border-[#3F4460]"
                     }`}
                   >
@@ -236,7 +236,7 @@ export function CalSTRSCalculator() {
                     onClick={() => setFormula("2at62pepra")}
                     className={`p-4 rounded-xl border-2 text-left transition-all ${
                       formula === "2at62pepra"
-                        ? "border-blue-500 bg-blue-500/10"
+                        ? "border-blue-500 bg-[#121423]0/10"
                         : "border-[#2A2D42] bg-[#0C0D18] hover:border-[#3F4460]"
                     }`}
                   >
@@ -284,7 +284,7 @@ export function CalSTRSCalculator() {
                   step={0.5}
                   value={serviceYears}
                   onChange={(e) => setServiceYears(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>5 years</span>
@@ -305,7 +305,7 @@ export function CalSTRSCalculator() {
                   step={1}
                   value={retirementAge}
                   onChange={(e) => setRetirementAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Min: {formula === "2at60" ? 50 : 55}</span>
@@ -315,7 +315,7 @@ export function CalSTRSCalculator() {
               </div>
 
               {/* Age Factor Display */}
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6">
+              <div className="bg-[#121423] border border-blue-200 rounded-xl p-4 mb-6">
                 <div className="flex items-start gap-3">
                   <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                   <div>
@@ -346,7 +346,7 @@ export function CalSTRSCalculator() {
               {result ? (
                 <div className="space-y-6">
                   {/* Primary Result */}
-                  <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
+                  <div className="bg-[#121423] border border-blue-200 rounded-xl p-5">
                     <div className="flex items-center gap-2 text-blue-600 text-sm mb-2">
                       <Calendar className="h-4 w-4" />
                       ESTIMATED MONTHLY BENEFIT
@@ -487,7 +487,7 @@ export function CalSTRSCalculator() {
             <div className="grid md:grid-cols-2 gap-6">
               {/* 2% @ 60 Table */}
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl overflow-hidden">
-                <div className="bg-blue-500/10 p-4 border-b border-[#2A2D42]">
+                <div className="bg-[#121423]0/10 p-4 border-b border-[#2A2D42]">
                   <h4 className="text-[#F6F4EF] font-semibold">2% @ 60 (Classic Members)</h4>
                   <p className="text-[#D0CCC4] text-sm">For members hired before January 1, 2013</p>
                 </div>

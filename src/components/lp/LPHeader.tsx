@@ -39,7 +39,7 @@ export function LPHeader({
             href={`tel:${phone.replace(/[^0-9]/g, "")}`}
             className="inline-flex items-center gap-2 px-5 py-3 md:px-4 md:py-2 rounded-lg bg-white/5 border border-white/10 hover:bg-[#1E2134]/10 transition-colors min-h-[44px]"
           >
-            <Phone className="h-5 w-5 md:h-4 md:w-4 text-amber-400" />
+            <Phone className="h-5 w-5 md:h-4 md:w-4 text-[#D4A94E]" />
             <span className="text-white font-medium">
               <span className="hidden sm:inline">Call Now: </span>
               {phone}

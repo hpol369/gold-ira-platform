@@ -186,7 +186,7 @@ export default async function ComparisonPage({ params }: Props) {
           { name: `${companyA.name} vs ${companyB.name}`, url: `/compare/${comparison}` },
         ])}
       />
-      <main className="min-h-screen flex flex-col bg-white">
+      <main className="min-h-screen flex flex-col bg-[#0C0D18]">
         <Navbar />
 
         {/* Header */}
@@ -511,7 +511,7 @@ export default async function ComparisonPage({ params }: Props) {
         </section>
 
         {/* FAQ Section - GEO */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-[#0C0D18]">
           <Container>
             <div className="max-w-3xl mx-auto">
               <FAQSection

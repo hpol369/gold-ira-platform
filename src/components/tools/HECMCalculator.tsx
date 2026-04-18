@@ -229,7 +229,7 @@ export function HECMCalculator() {
           {/* Home Information */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Home className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Home Details</h3>
@@ -549,7 +549,7 @@ export function HECMCalculator() {
             </ul>
           </div>
 
-          <div className="bg-purple-500/10 backdrop-blur-sm rounded-xl p-6 border border-purple-500/30">
+          <div className="bg-[rgba(197,149,46,0.08)] backdrop-blur-sm rounded-xl p-6 border border-[rgba(197,149,46,0.32)]">
             <h3 className="text-xl font-bold text-purple-700 mb-4 flex items-center gap-2">
               <Building2 className="h-5 w-5" /> Proprietary Advantages
             </h3>

@@ -61,7 +61,7 @@ const historicalCrashes = [
 
 export default function CrashSimulatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Market Crash Simulator - Test Your Portfolio", description: "See how your retirement portfolio would perform in historical market crashes. Simulate 2008, COVID, and other crises to understand gold's protective power.", slug: "/tools/crash-simulator" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Market Crash Simulator", url: "/tools/crash-simulator" }])} />
       <Navbar />
@@ -145,7 +145,7 @@ export default function CrashSimulatorPage() {
       </section>
 
       {/* Why Use This Tool */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -222,7 +222,7 @@ export default function CrashSimulatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

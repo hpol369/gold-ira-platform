@@ -70,7 +70,7 @@ export default async function ThankYouPage({ searchParams }: ThankYouPageProps) 
       ];
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       <section className="relative pt-24 pb-16 overflow-hidden bg-[#0C0D18]">

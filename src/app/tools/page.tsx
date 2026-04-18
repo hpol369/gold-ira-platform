@@ -623,34 +623,34 @@ const categoryOrder: ToolCategory[] = [
 ];
 
 const colorClasses: Record<string, string> = {
-  red: "bg-red-500/20 text-red-700 border-red-500/30",
-  amber: "bg-amber-500/20 text-amber-700 border-amber-500/30",
-  green: "bg-green-500/20 text-green-700 border-green-500/30",
-  blue: "bg-blue-500/20 text-blue-700 border-blue-500/30",
-  purple: "bg-purple-500/20 text-purple-700 border-purple-500/30",
+  red: "bg-[rgba(220,38,38,0.08)]0/20 text-red-700 border-red-500/30",
+  amber: "bg-[#161828]0/20 text-amber-700 border-amber-500/30",
+  green: "bg-[rgba(46,139,87,0.08)]0/20 text-green-700 border-green-500/30",
+  blue: "bg-[#121423]0/20 text-blue-700 border-blue-500/30",
+  purple: "bg-purple-500/20 text-purple-700 border-[rgba(197,149,46,0.32)]",
   teal: "bg-teal-500/20 text-teal-400 border-teal-500/30",
-  orange: "bg-orange-500/20 text-orange-400 border-orange-500/30",
+  orange: "bg-[rgba(183,121,31,0.08)]0/20 text-orange-400 border-orange-500/30",
   slate: "bg-[#0C0D18]0/20 text-[#A8A39A] border-slate-500/30",
   cyan: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
-  violet: "bg-violet-500/20 text-violet-400 border-violet-500/30",
+  violet: "bg-violet-500/20 text-violet-400 border-[rgba(197,149,46,0.32)]",
 };
 
 const categoryHeaderColors: Record<string, string> = {
   amber: "text-amber-700 border-amber-500/30",
   blue: "text-blue-700 border-blue-500/30",
-  purple: "text-purple-700 border-purple-500/30",
+  purple: "text-purple-700 border-[rgba(197,149,46,0.32)]",
   green: "text-green-700 border-green-500/30",
   teal: "text-teal-400 border-teal-500/30",
   orange: "text-orange-400 border-orange-500/30",
   red: "text-red-700 border-red-500/30",
   slate: "text-[#A8A39A] border-slate-500/30",
   cyan: "text-cyan-400 border-cyan-500/30",
-  violet: "text-violet-400 border-violet-500/30",
+  violet: "text-violet-400 border-[rgba(197,149,46,0.32)]",
 };
 
 export default function ToolsPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Free Gold IRA Tools & Calculators", description: "Use our free tools to analyze your retirement portfolio. Crash simulator, wealth calculator, RMD calculator, and more to help you make informed decisions.", slug: "/tools" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools & Calculators", url: "/tools" }])} />
       <Navbar />
@@ -678,7 +678,7 @@ export default function ToolsPage() {
       </section>
 
       {/* Tools by Category */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto space-y-16">
             {categoryOrder.map((categoryKey) => {
@@ -729,7 +729,7 @@ export default function ToolsPage() {
                                   {tool.name}
                                 </h3>
                                 {!isAvailable && (
-                                  <span className="px-2 py-0.5 bg-slate-200 text-[#A8A39A] text-xs rounded-full shrink-0">
+                                  <span className="px-2 py-0.5 bg-[#2A2D42] text-[#A8A39A] text-xs rounded-full shrink-0">
                                     Coming Soon
                                   </span>
                                 )}
@@ -776,7 +776,7 @@ export default function ToolsPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/tools" />
         </Container>

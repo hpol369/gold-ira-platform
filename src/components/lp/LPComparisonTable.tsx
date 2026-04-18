@@ -102,14 +102,14 @@ export function LPComparisonTable({
                   className={cn(
                     "border-b border-white/5 transition-colors",
                     company.isWinner
-                      ? "bg-amber-500/10 hover:bg-amber-500/15"
+                      ? "bg-[#161828]0/10 hover:bg-[#161828]0/15"
                       : "hover:bg-[#1E2134]/5"
                   )}
                 >
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-2">
                       {company.isWinner && (
-                        <Award className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                        <Award className="h-5 w-5 text-[#D4A94E] flex-shrink-0" />
                       )}
                       {company.link ? (
                         <a
@@ -118,7 +118,7 @@ export function LPComparisonTable({
                           rel="noopener noreferrer"
                           className={cn(
                             "font-semibold hover:underline",
-                            company.isWinner ? "text-amber-400" : "text-white"
+                            company.isWinner ? "text-[#D4A94E]" : "text-white"
                           )}
                         >
                           {company.name}
@@ -127,7 +127,7 @@ export function LPComparisonTable({
                         <span
                           className={cn(
                             "font-semibold",
-                            company.isWinner ? "text-amber-400" : "text-white"
+                            company.isWinner ? "text-[#D4A94E]" : "text-white"
                           )}
                         >
                           {company.name}
@@ -137,7 +137,7 @@ export function LPComparisonTable({
                   </td>
                   <td className="text-center px-4 py-4">
                     <div className="flex items-center justify-center gap-1">
-                      <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
+                      <Star className="h-4 w-4 text-[#D4A94E] fill-[#D4A94E]" />
                       <span className="text-white font-medium">
                         {company.rating}
                       </span>
@@ -151,7 +151,7 @@ export function LPComparisonTable({
                   </td>
                   <td className="text-center px-4 py-4">
                     {company.isWinner ? (
-                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-500/20 text-amber-400 text-sm font-medium">
+                      <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#161828]0/20 text-[#D4A94E] text-sm font-medium">
                         <CheckCircle className="h-3.5 w-3.5" />
                         {company.highlight}
                       </span>
@@ -175,14 +175,14 @@ export function LPComparisonTable({
               className={cn(
                 "rounded-xl border p-4",
                 company.isWinner
-                  ? "border-amber-400/30 bg-amber-500/10"
+                  ? "border-amber-400/30 bg-[#161828]0/10"
                   : "border-white/10 bg-white/5"
               )}
             >
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-2">
                   {company.isWinner && (
-                    <Award className="h-5 w-5 text-amber-400" />
+                    <Award className="h-5 w-5 text-[#D4A94E]" />
                   )}
                   {company.link ? (
                     <a
@@ -191,7 +191,7 @@ export function LPComparisonTable({
                       rel="noopener noreferrer"
                       className={cn(
                         "font-semibold hover:underline",
-                        company.isWinner ? "text-amber-400" : "text-white"
+                        company.isWinner ? "text-[#D4A94E]" : "text-white"
                       )}
                     >
                       {company.name}
@@ -200,7 +200,7 @@ export function LPComparisonTable({
                     <span
                       className={cn(
                         "font-semibold",
-                        company.isWinner ? "text-amber-400" : "text-white"
+                        company.isWinner ? "text-[#D4A94E]" : "text-white"
                       )}
                     >
                       {company.name}
@@ -208,7 +208,7 @@ export function LPComparisonTable({
                   )}
                 </div>
                 <div className="flex items-center gap-1">
-                  <Star className="h-4 w-4 text-amber-400 fill-amber-400" />
+                  <Star className="h-4 w-4 text-[#D4A94E] fill-[#D4A94E]" />
                   <span className="text-white font-medium">{company.rating}</span>
                 </div>
               </div>
@@ -225,7 +225,7 @@ export function LPComparisonTable({
                 <div className="col-span-2 pt-2 border-t border-white/10">
                   <span className="text-[#A8A39A] text-xs">Highlight: </span>
                   {company.isWinner ? (
-                    <span className="text-amber-400 font-medium">
+                    <span className="text-[#D4A94E] font-medium">
                       {company.highlight}
                     </span>
                   ) : (
@@ -238,9 +238,9 @@ export function LPComparisonTable({
         </div>
 
         {/* Why Augusta callout */}
-        <div className="mt-8 p-6 rounded-xl border border-amber-400/20 bg-amber-500/5">
+        <div className="mt-8 p-6 rounded-xl border border-amber-400/20 bg-[#161828]0/5">
           <h3 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
-            <Award className="h-5 w-5 text-amber-400" />
+            <Award className="h-5 w-5 text-[#D4A94E]" />
             Why Augusta is Our #1 Pick
           </h3>
           <ul className="grid sm:grid-cols-2 gap-3">

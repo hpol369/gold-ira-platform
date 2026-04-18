@@ -286,7 +286,7 @@ export default function GoldIraForNursesPage() {
               {/* When It May or May Not Fit */}
               <h2 id="when-it-fits">When a Gold IRA May or May Not Fit</h2>
               <div className="grid md:grid-cols-2 gap-6 not-prose my-6">
-                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                   <h3 className="font-bold text-green-800 mb-3">May fit if Linda:</h3>
                   <ul className="space-y-2 text-[#D0CCC4]">
                     <li>Wants limited exposure to precious metals</li>
@@ -295,7 +295,7 @@ export default function GoldIraForNursesPage() {
                     <li>Is not sacrificing too much diversification</li>
                   </ul>
                 </div>
-                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                   <h3 className="font-bold text-red-800 mb-3">May not fit if she:</h3>
                   <ul className="space-y-2 text-[#D0CCC4]">
                     <li>Is reacting mainly out of fear</li>
@@ -320,7 +320,7 @@ export default function GoldIraForNursesPage() {
               {/* Who This Is For */}
               <h2 id="who-this-is-for">Who This Is For / Not For</h2>
               <div className="grid md:grid-cols-2 gap-6 not-prose my-6">
-                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                   <h3 className="font-bold text-green-800 mb-3">This is for:</h3>
                   <ul className="space-y-2 text-[#D0CCC4]">
                     <li>Nurses over 55 with a 403(b), 457(b), or pension</li>
@@ -328,7 +328,7 @@ export default function GoldIraForNursesPage() {
                     <li>Burned-out healthcare workers seeking a calmer retirement plan</li>
                   </ul>
                 </div>
-                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                   <h3 className="font-bold text-red-800 mb-3">This is not for:</h3>
                   <ul className="space-y-2 text-[#D0CCC4]">
                     <li>Readers looking for a guarantee against market loss</li>

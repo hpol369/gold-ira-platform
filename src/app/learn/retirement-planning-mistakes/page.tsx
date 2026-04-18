@@ -102,7 +102,7 @@ const schema = {
 
 export default function RetirementPlanningMistakesPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -171,7 +171,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 1. Starting Too Late */}
                         <section id="starting-late" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">1. Starting Too Late</h2>
@@ -219,7 +219,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 2. Over-Concentration */}
                         <section id="concentration" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
+                                <div className="p-3 bg-[rgba(183,121,31,0.08)]0/20 rounded-lg text-orange-400">
                                     <PieChart className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">2. Over-Concentration in Stocks</h2>
@@ -238,7 +238,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 3. Ignoring Inflation */}
                         <section id="inflation" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-[#D4A94E]">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">3. Ignoring Inflation</h2>
@@ -280,7 +280,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 5. Healthcare */}
                         <section id="healthcare" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">5. Underestimating Healthcare Costs</h2>
@@ -311,7 +311,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 6. Social Security */}
                         <section id="social-security" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">6. Claiming Social Security Too Early</h2>
@@ -346,7 +346,7 @@ export default function RetirementPlanningMistakesPage() {
                         {/* 8. Withdrawal Rate */}
                         <section id="withdrawal" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">8. Using the Wrong Withdrawal Rate</h2>

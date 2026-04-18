@@ -241,7 +241,7 @@ const schema = {
 
 export default function SilverProductsHubPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -280,7 +280,7 @@ export default function SilverProductsHubPage() {
       </section>
 
       {/* Product Categories */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -395,7 +395,7 @@ export default function SilverProductsHubPage() {
       </section>
 
       {/* Premium Comparison Quick Reference */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -488,7 +488,7 @@ export default function SilverProductsHubPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"
@@ -500,7 +500,7 @@ export default function SilverProductsHubPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/silver-products" />
         </Container>

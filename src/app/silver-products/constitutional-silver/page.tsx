@@ -98,7 +98,7 @@ const schema = {
 
 export default function ConstitutionalSilverPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -174,7 +174,7 @@ export default function ConstitutionalSilverPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
@@ -372,7 +372,7 @@ export default function ConstitutionalSilverPage() {
                 </div>
               </div>
 
-              <div className="not-prose bg-red-500/10 border border-red-500/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
                   <XCircle className="h-6 w-6 text-red-400 flex-shrink-0 mt-0.5" />
                   <div>
@@ -502,7 +502,7 @@ export default function ConstitutionalSilverPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

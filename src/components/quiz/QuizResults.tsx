@@ -63,11 +63,11 @@ function getProductTypeColor(productType: string): string {
     "gold-ira": "bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border-[#B22234]/30",
     "silver-ira": "bg-slate-400/20 text-[#D0CCC4] border-[#3F4460]/30",
     "precious-metals-ira": "bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border-[#B22234]/30",
-    "crypto-ira": "bg-blue-500/20 text-blue-600 border-blue-500/30",
+    "crypto-ira": "bg-[#121423]0/20 text-blue-600 border-blue-500/30",
     "real-estate-ira": "bg-teal-500/20 text-teal-600 border-teal-500/30",
-    "self-directed-ira": "bg-green-500/20 text-green-600 border-green-500/30",
-    "solo-401k": "bg-purple-500/20 text-purple-600 border-purple-500/30",
-    "robs-401k": "bg-orange-500/20 text-orange-600 border-orange-500/30",
+    "self-directed-ira": "bg-[rgba(46,139,87,0.08)]0/20 text-green-600 border-green-500/30",
+    "solo-401k": "bg-purple-500/20 text-[#D4A94E] border-[rgba(197,149,46,0.32)]",
+    "robs-401k": "bg-[rgba(183,121,31,0.08)]0/20 text-orange-600 border-orange-500/30",
   };
   return colors[productType] || "bg-[#0C0D18]0/20 text-[#A8A39A] border-slate-500/30";
 }

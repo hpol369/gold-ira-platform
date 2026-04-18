@@ -125,7 +125,7 @@ const schema = {
 
 export default function SilverForecast5YearsPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
 
             {/* Header */}
@@ -215,7 +215,7 @@ export default function SilverForecast5YearsPage() {
                         {/* Megatrends */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Megatrends Driving Silver Demand</h2>
@@ -228,7 +228,7 @@ export default function SilverForecast5YearsPage() {
                                 {megatrends.map((trend, idx) => (
                                     <div key={idx} className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
                                         <div className="flex items-start gap-4">
-                                            <div className="p-3 bg-green-500/20 rounded-lg text-green-700 shrink-0">
+                                            <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700 shrink-0">
                                                 <trend.icon className="w-6 h-6" />
                                             </div>
                                             <div className="flex-1">
@@ -244,7 +244,7 @@ export default function SilverForecast5YearsPage() {
                                                             <div className="text-xs text-[#D0CCC4]">2030</div>
                                                             <div className="text-sm font-bold text-green-700">{trend.by2030}</div>
                                                         </div>
-                                                        <span className="px-2 py-1 bg-green-500/20 rounded text-xs font-bold text-green-700">{trend.growth}</span>
+                                                        <span className="px-2 py-1 bg-[rgba(46,139,87,0.08)]0/20 rounded text-xs font-bold text-green-700">{trend.growth}</span>
                                                     </div>
                                                 </div>
                                                 <p className="text-sm text-[#D0CCC4]">{trend.details}</p>
@@ -262,7 +262,7 @@ export default function SilverForecast5YearsPage() {
                         {/* Supply Constraints */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <Pickaxe className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Supply Problem: Why Production Can&apos;t Keep Up</h2>
@@ -272,19 +272,19 @@ export default function SilverForecast5YearsPage() {
                             </p>
 
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-4">
-                                <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-xl p-5 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3">No Major New Mines</h4>
                                     <p className="text-sm text-[#D0CCC4]">It takes 10-15 years and $500M+ to develop a primary silver mine. There are no significant projects coming online before 2030 at the earliest.</p>
                                 </div>
-                                <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-xl p-5 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3">Byproduct Dependency</h4>
                                     <p className="text-sm text-[#D0CCC4]">70% of silver comes as a byproduct of zinc, copper, and lead mining. Silver supply is tied to base metal demand, not silver prices.</p>
                                 </div>
-                                <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-xl p-5 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3">Declining Ore Grades</h4>
                                     <p className="text-sm text-[#D0CCC4]">Average ore grades have fallen 30% over 20 years. Miners must process more rock to get the same silver, increasing costs and limiting production growth.</p>
                                 </div>
-                                <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-xl p-5 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3">ESG and Permitting</h4>
                                     <p className="text-sm text-[#D0CCC4]">Environmental regulations and permitting challenges make new mine development increasingly difficult and expensive.</p>
                                 </div>
@@ -349,7 +349,7 @@ export default function SilverForecast5YearsPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="bg-red-500/10 rounded-xl p-6 border border-red-500/20">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-xl p-6 border border-red-500/20">
                                     <div className="flex items-center justify-between mb-3">
                                         <h4 className="font-bold text-red-700 text-lg">Bear Case: $50-60</h4>
                                         <span className="text-xs text-[#D0CCC4]">20% probability</span>
@@ -367,7 +367,7 @@ export default function SilverForecast5YearsPage() {
                                     <p className="text-xs text-[#D0CCC4]">Base case represents 120-180% gains over 5 years.</p>
                                 </div>
 
-                                <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-6 border border-green-500/20">
                                     <div className="flex items-center justify-between mb-3">
                                         <h4 className="font-bold text-green-700 text-lg">Bull Case: $100-200+</h4>
                                         <span className="text-xs text-[#D0CCC4]">30% probability</span>

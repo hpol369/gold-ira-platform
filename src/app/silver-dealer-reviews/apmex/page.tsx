@@ -117,7 +117,7 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function APMEXReviewPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={reviewSchema} />
             <SchemaScript schema={faqSchema} />
             <Navbar />

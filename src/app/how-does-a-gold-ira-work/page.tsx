@@ -281,8 +281,8 @@ export default function HowDoesAGoldIRAWorkPage() {
 
                   {/* Player 3: Depository */}
                   <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 text-center">
-                    <div className="w-14 h-14 bg-amber-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Warehouse className="h-7 w-7 text-amber-600" />
+                    <div className="w-14 h-14 bg-[#161828]0/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Warehouse className="h-7 w-7 text-[#D4A94E]" />
                     </div>
                     <h3 className="font-bold text-[#F6F4EF] text-lg mb-2">
                       The Depository
@@ -345,7 +345,7 @@ export default function HowDoesAGoldIRAWorkPage() {
 
                 <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 my-6">
                   <h3 className="font-bold text-[#F6F4EF] mb-3 flex items-center gap-2">
-                    <Coins className="h-5 w-5 text-amber-500" />
+                    <Coins className="h-5 w-5 text-[#D4A94E]" />
                     Real-World Example
                   </h3>
                   <p className="text-[#D0CCC4] text-sm leading-relaxed">
@@ -399,8 +399,8 @@ export default function HowDoesAGoldIRAWorkPage() {
 
                 <div className="space-y-4 mb-6">
                   <div className="flex items-start gap-4 bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-5">
-                    <div className="w-10 h-10 bg-amber-500/10 rounded-lg flex items-center justify-center shrink-0">
-                      <Warehouse className="h-5 w-5 text-amber-600" />
+                    <div className="w-10 h-10 bg-[#161828]0/10 rounded-lg flex items-center justify-center shrink-0">
+                      <Warehouse className="h-5 w-5 text-[#D4A94E]" />
                     </div>
                     <div>
                       <h3 className="font-bold text-[#F6F4EF] mb-1">
@@ -439,7 +439,7 @@ export default function HowDoesAGoldIRAWorkPage() {
                   </div>
 
                   <div className="flex items-start gap-4 bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-5">
-                    <div className="w-10 h-10 bg-green-500/10 rounded-lg flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 bg-[rgba(46,139,87,0.08)]0/10 rounded-lg flex items-center justify-center shrink-0">
                       <ShieldCheck className="h-5 w-5 text-green-600" />
                     </div>
                     <div>
@@ -585,9 +585,9 @@ export default function HowDoesAGoldIRAWorkPage() {
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
+                  <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <Coins className="h-6 w-6 text-amber-600" />
+                      <Coins className="h-6 w-6 text-[#D4A94E]" />
                       <h3 className="font-bold text-amber-900 text-lg">
                         Take Physical Gold
                       </h3>
@@ -599,21 +599,21 @@ export default function HowDoesAGoldIRAWorkPage() {
                     </p>
                     <ul className="space-y-2 text-sm text-amber-800">
                       <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-amber-600 mt-0.5 shrink-0" />
+                        <CheckCircle2 className="h-4 w-4 text-[#D4A94E] mt-0.5 shrink-0" />
                         You get the exact metals you purchased (segregated)
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-amber-600 mt-0.5 shrink-0" />
+                        <CheckCircle2 className="h-4 w-4 text-[#D4A94E] mt-0.5 shrink-0" />
                         Full physical control of your asset
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-amber-600 mt-0.5 shrink-0" />
+                        <CheckCircle2 className="h-4 w-4 text-[#D4A94E] mt-0.5 shrink-0" />
                         Taxed as ordinary income (traditional IRA)
                       </li>
                     </ul>
                   </div>
 
-                  <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                  <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <Banknote className="h-6 w-6 text-green-600" />
                       <h3 className="font-bold text-green-900 text-lg">

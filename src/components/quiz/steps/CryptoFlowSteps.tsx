@@ -108,7 +108,7 @@ export function CryptoFlowSteps({ onAnswer, onBack }: FlowStepsProps) {
       {/* Progress Bar */}
       <div className="w-full h-2 bg-slate-700 rounded-full mb-6 overflow-hidden">
         <motion.div
-          className="h-full bg-blue-500"
+          className="h-full bg-[#121423]0"
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
           transition={{ duration: 0.4 }}
@@ -138,7 +138,7 @@ export function CryptoFlowSteps({ onAnswer, onBack }: FlowStepsProps) {
           transition={{ duration: 0.3 }}
         >
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-3 rounded-xl bg-blue-500/10 text-blue-400">
+            <div className="p-3 rounded-xl bg-[#121423]0/10 text-blue-400">
               {currentStep.icon}
             </div>
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-white">
@@ -165,7 +165,7 @@ export function CryptoFlowSteps({ onAnswer, onBack }: FlowStepsProps) {
                   )}
                 </div>
                 <div className="h-6 w-6 rounded-full border-2 border-white/20 group-hover:border-blue-500 flex items-center justify-center flex-shrink-0 ml-4">
-                  <div className="h-3 w-3 rounded-full bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="h-3 w-3 rounded-full bg-[#121423]0 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
               </button>
             ))}

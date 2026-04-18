@@ -69,7 +69,7 @@ const sources = [
 
 export default function FourOhOneKToGoldIRATaxRulesPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript
                 schema={articleSchema({
                     title: "401(k) to Gold IRA Tax Rules: What Triggers Taxes or Penalties?",
@@ -199,7 +199,7 @@ export default function FourOhOneKToGoldIRATaxRulesPage() {
                             </p>
 
                             {/* Withholding example box */}
-                            <div className="not-prose my-8 bg-amber-50 border border-amber-200 rounded-xl p-6">
+                            <div className="not-prose my-8 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                                 <h3 className="font-bold text-amber-900 mb-3">Example: $50,000 indirect rollover</h3>
                                 <ul className="space-y-2 text-sm text-amber-800">
                                     <li>You request a $50,000 indirect rollover</li>
@@ -290,7 +290,7 @@ export default function FourOhOneKToGoldIRATaxRulesPage() {
                         <section id="who-this-is-for" className="scroll-mt-24">
                             <h2>Who this is for / not for</h2>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-6">
-                                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                                     <h3 className="font-bold text-green-800 mb-3">This is for:</h3>
                                     <ul className="space-y-2 text-sm text-green-700">
                                         <li>Workers 55+ with an old 401(k)</li>
@@ -299,7 +299,7 @@ export default function FourOhOneKToGoldIRATaxRulesPage() {
                                         <li>Anyone needing a plain-English explanation of the 60-day rule</li>
                                     </ul>
                                 </div>
-                                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                     <h3 className="font-bold text-red-800 mb-3">This is not for:</h3>
                                     <ul className="space-y-2 text-sm text-red-700">
                                         <li>People assuming any withdrawal can be &quot;fixed later&quot;</li>

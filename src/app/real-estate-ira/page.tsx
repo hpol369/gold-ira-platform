@@ -111,7 +111,7 @@ export default function RealEstateIraPage() {
                 </Container>
             </section>
 
-            <main className="min-h-screen bg-white">
+            <main className="min-h-screen bg-[#0C0D18]">
                 {/* Hero Section */}
                 <section className="relative py-16 lg:py-24 overflow-hidden bg-[#0C0D18]">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(16,185,129,0.08),transparent_50%)]" />
@@ -296,7 +296,7 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* Pros and Cons */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-12 text-center">
                             Real Estate IRA: Pros and Cons
@@ -304,7 +304,7 @@ export default function RealEstateIraPage() {
 
                         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                             {/* Pros */}
-                            <div className="bg-green-50 border border-green-200 rounded-2xl p-8">
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-2xl p-8">
                                 <h3 className="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
                                     <CheckCircle2 className="w-6 h-6" />
                                     Advantages
@@ -328,7 +328,7 @@ export default function RealEstateIraPage() {
                             </div>
 
                             {/* Cons */}
-                            <div className="bg-red-50 border border-red-200 rounded-2xl p-8">
+                            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-2xl p-8">
                                 <h3 className="text-xl font-bold text-red-700 mb-6 flex items-center gap-2">
                                     <AlertTriangle className="w-6 h-6" />
                                     Challenges & Risks
@@ -444,14 +444,14 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* Key Rules */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-8 text-center">
                                 Critical Real Estate IRA Rules
                             </h2>
 
-                            <div className="bg-red-50 border border-red-200 rounded-2xl p-8 mb-8">
+                            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-2xl p-8 mb-8">
                                 <h3 className="text-xl font-bold text-red-700 mb-6 flex items-center gap-2">
                                     <AlertTriangle className="w-6 h-6" />
                                     Prohibited Transactions (AVOID THESE!)
@@ -473,7 +473,7 @@ export default function RealEstateIraPage() {
                                 </div>
                             </div>
 
-                            <div className="bg-green-50 border border-green-200 rounded-2xl p-8">
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-2xl p-8">
                                 <h3 className="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
                                     <CheckCircle2 className="w-6 h-6" />
                                     What You CAN Do
@@ -587,7 +587,7 @@ export default function RealEstateIraPage() {
                 </section>
 
                 {/* Related Content */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Related Resources

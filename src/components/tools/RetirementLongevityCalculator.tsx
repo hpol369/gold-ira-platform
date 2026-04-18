@@ -177,7 +177,7 @@ export function RetirementLongevityCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-green-500/20 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-green-500/30">
+        <div className="inline-flex items-center gap-2 bg-[rgba(46,139,87,0.08)]0/20 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-green-500/30">
           <Clock className="h-4 w-4" />
           Zero Competition Keyword
         </div>
@@ -196,7 +196,7 @@ export function RetirementLongevityCalculator() {
           {/* Current Savings */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <DollarSign className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Retirement Savings</h3>
@@ -239,7 +239,7 @@ export function RetirementLongevityCalculator() {
           {/* Monthly Withdrawal */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Wallet className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Monthly Expenses</h3>
@@ -271,7 +271,7 @@ export function RetirementLongevityCalculator() {
           {/* Income Sources */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <TrendingUp className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Guaranteed Income</h3>
@@ -370,7 +370,7 @@ export function RetirementLongevityCalculator() {
                   step="0.5"
                   value={inflationRate}
                   onChange={(e) => setInflationRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-red-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Low (1%)</span>
@@ -425,7 +425,7 @@ export function RetirementLongevityCalculator() {
 
           {/* Warning if at risk */}
           {calculations.isAtRisk && calculations.ageAtDepletion && calculations.ageAtDepletion < 95 && (
-            <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-4">
+            <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-4">
               <div className="flex items-start gap-3">
                 <AlertTriangle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
                 <div>
@@ -517,7 +517,7 @@ export function RetirementLongevityCalculator() {
             </h3>
 
             <div className="space-y-4">
-              <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4">
+              <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-lg p-4">
                 <div className="text-sm text-green-600 mb-1">Safe Monthly Withdrawal for 30 Years</div>
                 <div className="text-3xl font-bold text-green-600">
                   {formatFullCurrency(calculations.safeMonthlyWithdrawal)}
@@ -782,7 +782,7 @@ export function RetirementLongevityCalculator() {
             its purchasing power over long periods, making it an essential hedge for retirees.
           </p>
 
-          <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4 mb-6">
+          <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-lg p-4 mb-6">
             <div className="flex items-start gap-3">
               <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
               <div className="text-sm">

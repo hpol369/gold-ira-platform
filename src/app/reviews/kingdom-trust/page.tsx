@@ -46,7 +46,7 @@ const companyData = {
 
 export default function KingdomTrustReviewPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Hero Section */}
@@ -55,7 +55,7 @@ export default function KingdomTrustReviewPage() {
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-2 text-blue-200 text-sm font-bold uppercase tracking-wider mb-4">
-                            <span className="bg-blue-500/20 px-3 py-1 rounded-full">Crypto IRA Custodian Reviews</span>
+                            <span className="bg-[#121423]0/20 px-3 py-1 rounded-full">Crypto IRA Custodian Reviews</span>
                             <span className="text-white/50">|</span>
                             <span className="text-white/70">Updated January 2026</span>
                         </div>
@@ -120,7 +120,7 @@ export default function KingdomTrustReviewPage() {
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Lock className="w-5 h-5 text-purple-600" />
+                                        <Lock className="w-5 h-5 text-[#D4A94E]" />
                                         <div>
                                             <p className="text-[#A8A39A] text-sm">Specialty</p>
                                             <p className="text-[#F6F4EF] font-medium">{companyData.specialty}</p>
@@ -228,7 +228,7 @@ export default function KingdomTrustReviewPage() {
                                     <span className="text-[#F6F4EF]">200+ Altcoins</span>
                                 </div>
                                 <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
-                                    <Lock className="w-6 h-6 text-purple-600" />
+                                    <Lock className="w-6 h-6 text-[#D4A94E]" />
                                     <span className="text-[#F6F4EF]">Institutional Cold Storage</span>
                                 </div>
                             </div>

@@ -93,7 +93,7 @@ const schema = {
 
 export default function NobleVsBirchPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}

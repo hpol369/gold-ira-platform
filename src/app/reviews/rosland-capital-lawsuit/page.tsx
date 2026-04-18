@@ -51,7 +51,7 @@ const schema = {
 
 export default function RoslandLawsuitPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-[rgba(197,149,46,0.1)] text-white py-20 relative overflow-hidden">
@@ -98,8 +98,8 @@ export default function RoslandLawsuitPage() {
                         {/* The CFTC Settlement */}
                         <section id="cftc" className="scroll-mt-32">
                             <h2>The CFTC Settlement Explained</h2>
-                            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
-                                <AlertTriangle className="w-8 h-8 text-amber-600 shrink-0" />
+                            <div className="bg-[#161828] p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
+                                <AlertTriangle className="w-8 h-8 text-[#D4A94E] shrink-0" />
                                 <div>
                                     <h3 className="font-bold text-amber-900 text-lg mb-2">What Happened</h3>
                                     <p className="text-amber-800">
@@ -142,7 +142,7 @@ export default function RoslandLawsuitPage() {
                                     <div className="text-xs text-[#A8A39A] mt-1">Still Maintained</div>
                                 </div>
                                 <div className="bg-[#0C0D18] p-6 rounded-xl shadow-sm border border-amber-200 text-center">
-                                    <div className="text-4xl font-bold text-amber-600 mb-2">1</div>
+                                    <div className="text-4xl font-bold text-[#D4A94E] mb-2">1</div>
                                     <div className="text-sm text-[#D0CCC4]">CFTC Settlement</div>
                                     <div className="text-xs text-[#A8A39A] mt-1">Resolved</div>
                                 </div>
@@ -153,7 +153,7 @@ export default function RoslandLawsuitPage() {
                                 </div>
                             </div>
 
-                            <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 flex gap-4 not-prose my-6">
+                            <div className="bg-[#121423] p-6 rounded-xl border border-blue-100 flex gap-4 not-prose my-6">
                                 <ShieldCheck className="w-6 h-6 text-blue-600 shrink-0" />
                                 <div>
                                     <h4 className="font-bold text-blue-800">Current Status</h4>

@@ -83,11 +83,11 @@ function ComparisonTable({ current }: { current: RetirementAmountPage }) {
             return (
               <tr
                 key={row.slug}
-                className={`border-b border-[#2A2D42] ${isCurrent ? "bg-amber-50" : "hover:bg-[#121423]"} transition-colors`}
+                className={`border-b border-[#2A2D42] ${isCurrent ? "bg-[#161828]" : "hover:bg-[#121423]"} transition-colors`}
               >
                 <td className={`py-3 px-4 font-bold ${isCurrent ? "text-amber-700" : "text-[#F6F4EF]"}`}>
                   {row.amountShort}
-                  {isCurrent && <span className="ml-2 text-xs font-normal text-amber-600">(You are here)</span>}
+                  {isCurrent && <span className="ml-2 text-xs font-normal text-[#D4A94E]">(You are here)</span>}
                 </td>
                 <td className="py-3 px-4 text-[#D0CCC4]">{row.monthlyIncome4Pct}</td>
                 <td className="py-3 px-4 font-medium text-[#F6F4EF]">{row.withSocialSecurity62}/yr</td>
@@ -137,7 +137,7 @@ function StateComparisonTable({ page }: { page: RetirementAmountPage }) {
                       ? "text-red-600"
                       : state.verdict.includes("Very") || state.verdict.includes("Excellent")
                         ? "text-green-600"
-                        : "text-amber-600"
+                        : "text-[#D4A94E]"
                   }`}
                 >
                   {state.verdict}
@@ -196,7 +196,7 @@ export default async function RetirementAmountSubPage({
   ];
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <SchemaScript schema={breadcrumbs} />
       <SchemaScript schema={faqJsonLd} />
@@ -255,7 +255,7 @@ export default async function RetirementAmountSubPage({
         {/* Section 1: The Math */}
         <section className="mb-14 max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
-            <DollarSign className="h-7 w-7 text-amber-500" />
+            <DollarSign className="h-7 w-7 text-[#D4A94E]" />
             The Math: 4% Rule Applied to {page.amountFormatted}
           </h2>
           <div className="grid sm:grid-cols-3 gap-4 mb-6">
@@ -267,7 +267,7 @@ export default async function RetirementAmountSubPage({
               <p className="text-sm text-[#A8A39A] mb-1">Annual Income (4% Rule)</p>
               <p className="text-2xl font-bold text-[#F6F4EF]">{page.annualIncome4Pct}</p>
             </div>
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-center">
+            <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 text-center">
               <p className="text-sm text-amber-700 mb-1">Portfolio Longevity</p>
               <p className="text-2xl font-bold text-amber-800">{page.yearsMoneyLasts}</p>
             </div>
@@ -293,7 +293,7 @@ export default async function RetirementAmountSubPage({
                 <p className="text-xl font-bold text-red-600">{page.withSocialSecurity62}/yr</p>
                 <p className="text-xs text-[#A8A39A] mt-1">30% reduction</p>
               </div>
-              <div className="p-5 text-center bg-green-50">
+              <div className="p-5 text-center bg-[rgba(46,139,87,0.08)]">
                 <p className="text-sm text-green-700 mb-1">Claim at 67 (full)</p>
                 <p className="text-xl font-bold text-green-700">{page.withSocialSecurity67}/yr</p>
                 <p className="text-xs text-green-600 mt-1">Full benefit</p>
@@ -327,7 +327,7 @@ export default async function RetirementAmountSubPage({
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-6">
               Healthcare Costs Before Medicare
             </h2>
-            <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
+            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6 mb-6">
               <div className="flex gap-3">
                 <AlertTriangle className="h-6 w-6 text-red-500 flex-shrink-0 mt-0.5" />
                 <div>
@@ -349,7 +349,7 @@ export default async function RetirementAmountSubPage({
         {/* Section 4: State Comparisons */}
         <section className="mb-14 max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
-            <MapPin className="h-7 w-7 text-amber-500" />
+            <MapPin className="h-7 w-7 text-[#D4A94E]" />
             Where {page.amountFormatted} Goes Furthest
           </h2>
           <p className="text-[#D0CCC4] mb-6">
@@ -372,7 +372,7 @@ export default async function RetirementAmountSubPage({
             portfolio — even if markets fully recover later.
           </p>
           <div className="bg-slate-900 text-white rounded-xl p-6 mb-6">
-            <h3 className="font-bold text-amber-400 mb-4 text-lg">The 2008 Scenario Applied to {page.amountFormatted}</h3>
+            <h3 className="font-bold text-[#D4A94E] mb-4 text-lg">The 2008 Scenario Applied to {page.amountFormatted}</h3>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="bg-white/10 rounded-lg p-4">
                 <p className="text-sm text-[#3F4460] mb-1">100% Stocks Portfolio</p>
@@ -416,17 +416,17 @@ export default async function RetirementAmountSubPage({
             Inflation: The Silent Threat to {page.amountFormatted}
           </h2>
           <div className="grid sm:grid-cols-3 gap-4 mb-6">
-            <div className="bg-red-50 border border-red-200 rounded-xl p-5 text-center">
+            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5 text-center">
               <p className="text-sm text-red-600 mb-1">After 10 Years</p>
               <p className="text-xl font-bold text-red-700">{page.inflationErosion10yr}</p>
               <p className="text-xs text-red-500 mt-1">purchasing power</p>
             </div>
-            <div className="bg-red-50 border border-red-200 rounded-xl p-5 text-center">
+            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5 text-center">
               <p className="text-sm text-red-600 mb-1">After 20 Years</p>
               <p className="text-xl font-bold text-red-700">{page.inflationErosion20yr}</p>
               <p className="text-xs text-red-500 mt-1">purchasing power</p>
             </div>
-            <div className="bg-red-50 border border-red-200 rounded-xl p-5 text-center">
+            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5 text-center">
               <p className="text-sm text-red-600 mb-1">After 30 Years</p>
               <p className="text-xl font-bold text-red-700">{page.inflationErosion30yr}</p>
               <p className="text-xs text-red-500 mt-1">purchasing power</p>
@@ -444,7 +444,7 @@ export default async function RetirementAmountSubPage({
         {/* Section 7: Strategies */}
         <section className="mb-14 max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
-            <Lightbulb className="h-7 w-7 text-amber-500" />
+            <Lightbulb className="h-7 w-7 text-[#D4A94E]" />
             How to Make {page.amountFormatted} Last Longer
           </h2>
           <div className="space-y-4">
@@ -465,10 +465,10 @@ export default async function RetirementAmountSubPage({
         {/* Section 8: Case Study */}
         <section className="mb-14 max-w-4xl">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
-            <User className="h-7 w-7 text-amber-500" />
+            <User className="h-7 w-7 text-[#D4A94E]" />
             Real Example: {page.caseStudy.name}, Age {page.caseStudy.age}, Retired with {page.caseStudy.amount}
           </h2>
-          <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 md:p-8">
+          <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 md:p-8">
             <p className="text-sm text-amber-700 font-semibold mb-3 uppercase tracking-wide">
               {page.caseStudy.occupation}
             </p>
@@ -485,7 +485,7 @@ export default async function RetirementAmountSubPage({
         <section className="mb-14 max-w-4xl">
           <div className="bg-[rgba(197,149,46,0.1)] text-white rounded-2xl p-8 md:p-10">
             <div className="flex items-center gap-3 mb-4">
-              <Shield className="h-8 w-8 text-amber-400" />
+              <Shield className="h-8 w-8 text-[#D4A94E]" />
               <h2 className="text-2xl md:text-3xl font-serif font-bold">
                 How Gold Could Add 10+ Years to Your {page.amountFormatted}
               </h2>
@@ -592,7 +592,7 @@ export default async function RetirementAmountSubPage({
         </div>
       </Container>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl={`/is-enough-to-retire/${slug}`} />
         </Container>

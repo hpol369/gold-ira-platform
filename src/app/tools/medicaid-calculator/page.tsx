@@ -120,7 +120,7 @@ export default function MedicaidCalculatorPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-[#0C0D18]">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 overflow-hidden">
           <div className="absolute inset-0 bg-[#0C0D18]" />
@@ -414,7 +414,7 @@ export default function MedicaidCalculatorPage() {
                               step="100"
                               value={spouseIncome}
                               onChange={(e) => setSpouseIncome(Number(e.target.value))}
-                              className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                              className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                             />
                           </div>
                         )}
@@ -434,7 +434,7 @@ export default function MedicaidCalculatorPage() {
                             step="500"
                             value={nursingHomeCost}
                             onChange={(e) => setNursingHomeCost(Number(e.target.value))}
-                            className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-red-500"
+                            className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                           />
                           <p className="text-[#D0CCC4] text-sm text-center">
                             National average: ~$9,000/month for semi-private room
@@ -475,8 +475,8 @@ export default function MedicaidCalculatorPage() {
                   }`}>
                     <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 ${
                       calculations.isEligible
-                        ? 'bg-green-500/20 text-green-600'
-                        : 'bg-red-500/20 text-red-600'
+                        ? 'bg-[rgba(46,139,87,0.08)]0/20 text-green-600'
+                        : 'bg-[rgba(220,38,38,0.08)]0/20 text-red-600'
                     }`}>
                       {calculations.isEligible ? 'Likely Eligible' : 'Over Asset Limit'}
                     </span>
@@ -586,7 +586,7 @@ export default function MedicaidCalculatorPage() {
                   )}
 
                   {/* Important Warnings */}
-                  <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                  <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                     <h3 className="text-lg font-semibold text-red-600 mb-4">Important Warnings</h3>
                     <ul className="space-y-2 text-[#D0CCC4]">
                       <li className="flex items-start gap-2">

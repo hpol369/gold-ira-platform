@@ -23,7 +23,7 @@ const schema = {
 
 export default function ContactPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <Navbar />
             <SchemaScript schema={schema} />
 
@@ -151,7 +151,7 @@ export default function ContactPage() {
 
                         {/* Disclaimer */}
                         <FadeIn delay={0.5}>
-                            <div className="mt-12 p-6 bg-amber-50 border border-amber-200 rounded-xl">
+                            <div className="mt-12 p-6 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl">
                                 <p className="text-sm text-amber-700 leading-relaxed">
                                     <strong className="text-amber-800">Please note:</strong> We&apos;re an educational website, not a Gold IRA company. We can&apos;t help you set up an account, process rollovers, or provide personalized financial advice. For those services, you&apos;ll want to contact one of the companies in our <Link href="/reviews" className="underline hover:no-underline text-amber-800">reviews section</Link> directly.
                                 </p>

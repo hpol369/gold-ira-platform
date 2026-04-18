@@ -10,7 +10,7 @@ import { ArrowRight, TrendingUp, AlertTriangle, ShieldCheck, DollarSign } from "
 
 export default function RichDadStrategyPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "Why Savers Are Losers - Rich Dad Strategy", description: "Learn why the wealthy are moving millions into real assets. The Rich Dad strategy for protecting and growing your retirement wealth.", slug: "/rich-dad-strategy" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Rich Dad Strategy", url: "/rich-dad-strategy" }])} />
             <Navbar />
@@ -37,7 +37,7 @@ export default function RichDadStrategyPage() {
             </section>
 
             {/* The Problem: Paper Assets */}
-            <section className="py-20 bg-white">
+            <section className="py-20 bg-[#0C0D18]">
                 <Container>
                     <FadeIn delay={0.2}>
                         <div className="max-w-4xl mx-auto">
@@ -50,7 +50,7 @@ export default function RichDadStrategyPage() {
                                     <p>
                                         Your savings accounts and 401(k)s are made of "fiat currency" and paper promises. They are not real. When the government prints trillions of dollars (like they did in 2020-2024), the value of your labor and savings is stolen through inflation.
                                     </p>
-                                    <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                                    <div className="bg-[rgba(220,38,38,0.08)] border-l-4 border-red-500 p-6 rounded-r-lg">
                                         <h4 className="flex items-center gap-2 text-red-700 font-bold mb-2">
                                             <AlertTriangle className="h-5 w-5" />
                                             The Silent Thief
@@ -71,7 +71,7 @@ export default function RichDadStrategyPage() {
                                         <div className="w-8 h-[70%] bg-[#DC2626]/60 rounded-t-sm" />
                                         <div className="w-8 h-[50%] bg-[#DC2626]/40 rounded-t-sm" />
                                         <div className="w-8 h-[30%] bg-[rgba(220,38,38,0.18)] rounded-t-sm" />
-                                        <div className="w-8 h-[5%] bg-red-500 rounded-t-sm relative">
+                                        <div className="w-8 h-[5%] bg-[rgba(220,38,38,0.08)]0 rounded-t-sm relative">
                                             <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-bold text-red-600">2024</span>
                                         </div>
                                     </div>
@@ -128,7 +128,7 @@ export default function RichDadStrategyPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-24 bg-white">
+            <section className="py-24 bg-[#0C0D18]">
                 <Container>
                     <div className="bg-gradient-to-r from-[#000080] to-[#000060] rounded-3xl p-12 text-center text-white relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.18)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />

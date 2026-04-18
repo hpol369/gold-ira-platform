@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function IndirectVsDirectRolloverPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({
                 title: "Direct vs Indirect Rollover: Which Should You Choose?",
                 description: "Understand the critical differences between direct and indirect rollovers. Avoid the 20% withholding trap and 60-day deadline.",
@@ -72,7 +72,7 @@ export default function IndirectVsDirectRolloverPage() {
             </header>
 
             {/* Warning Banner */}
-            <section className="bg-red-50 border-b border-red-200 py-6">
+            <section className="bg-[rgba(220,38,38,0.08)] border-b border-red-200 py-6">
                 <Container>
                     <div className="flex items-center gap-4 max-w-4xl mx-auto">
                         <AlertTriangle className="h-8 w-8 text-red-600 shrink-0" />
@@ -87,7 +87,7 @@ export default function IndirectVsDirectRolloverPage() {
             <section className="py-12 bg-[#0C0D18] border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-green-500/10 border border-green-500/30 rounded-2xl p-8">
+                        <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-2xl p-8">
                             <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">The Short Answer</h2>
                             <p className="text-lg text-[#D0CCC4] mb-4">
                                 <strong className="text-green-600">Always choose a direct rollover (trustee-to-trustee transfer).</strong> Your money goes directly from one retirement account to another without you ever touching it. No withholding. No deadline. No risk.
@@ -113,7 +113,7 @@ export default function IndirectVsDirectRolloverPage() {
 
                             <div className="grid md:grid-cols-2 gap-8">
                                 {/* Direct Rollover */}
-                                <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
+                                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-2xl p-6">
                                     <div className="flex items-center gap-3 mb-6">
                                         <div className="p-2 bg-green-100 rounded-lg">
                                             <Shield className="h-6 w-6 text-green-600" />
@@ -123,7 +123,7 @@ export default function IndirectVsDirectRolloverPage() {
 
                                     <div className="space-y-4 mb-6">
                                         <div className="flex items-center gap-4">
-                                            <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center">
+                                            <div className="w-12 h-12 rounded-full bg-[#2A2D42] flex items-center justify-center">
                                                 <Building2 className="h-5 w-5 text-[#D0CCC4]" />
                                             </div>
                                             <div className="flex-1">
@@ -149,7 +149,7 @@ export default function IndirectVsDirectRolloverPage() {
                                 </div>
 
                                 {/* Indirect Rollover */}
-                                <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-2xl p-6">
                                     <div className="flex items-center gap-3 mb-6">
                                         <div className="p-2 bg-red-100 rounded-lg">
                                             <AlertTriangle className="h-6 w-6 text-red-600" />
@@ -159,7 +159,7 @@ export default function IndirectVsDirectRolloverPage() {
 
                                     <div className="space-y-4 mb-6">
                                         <div className="flex items-center gap-4">
-                                            <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center">
+                                            <div className="w-12 h-12 rounded-full bg-[#2A2D42] flex items-center justify-center">
                                                 <Building2 className="h-5 w-5 text-[#D0CCC4]" />
                                             </div>
                                             <div className="flex-1">
@@ -279,7 +279,7 @@ export default function IndirectVsDirectRolloverPage() {
                                         <span>Your 401(k) balance</span>
                                         <span className="font-bold text-[#F6F4EF]">$100,000</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-red-50 rounded-lg border border-red-200">
+                                    <div className="flex justify-between items-center p-3 bg-[rgba(220,38,38,0.08)] rounded-lg border border-red-200">
                                         <span>Mandatory 20% withholding</span>
                                         <span className="font-bold text-red-700">-$20,000</span>
                                     </div>
@@ -378,13 +378,13 @@ export default function IndirectVsDirectRolloverPage() {
                                 When contacting your 401(k) administrator or IRA custodian, use these exact phrases:
                             </p>
                             <div className="space-y-4">
-                                <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5">
                                     <p className="text-green-800 font-medium">&quot;I want to do a <strong className="text-green-700">direct rollover</strong> to my new IRA.&quot;</p>
                                 </div>
-                                <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5">
                                     <p className="text-green-800 font-medium">&quot;Please make the check payable to <strong className="text-green-700">[New Custodian Name] FBO [Your Name]</strong>.&quot;</p>
                                 </div>
-                                <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5">
                                     <p className="text-green-800 font-medium">&quot;I want a <strong className="text-green-700">trustee-to-trustee transfer</strong>.&quot;</p>
                                 </div>
                             </div>
@@ -395,7 +395,7 @@ export default function IndirectVsDirectRolloverPage() {
 
                         {/* Summary Box */}
                         <div className="mb-16">
-                            <div className="bg-green-50 border border-green-200 rounded-2xl p-8">
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-2xl p-8">
                                 <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 text-center">Bottom Line</h2>
                                 <div className="grid md:grid-cols-3 gap-6 text-center">
                                     <div>

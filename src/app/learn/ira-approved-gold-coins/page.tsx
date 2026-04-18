@@ -109,7 +109,7 @@ const schema = {
 
 export default function IraApprovedGoldCoinsPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -494,7 +494,7 @@ export default function IraApprovedGoldCoinsPage() {
                         {/* Not Allowed */}
                         <section id="not-allowed" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <XCircle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What&apos;s NOT Allowed</h2>
@@ -503,7 +503,7 @@ export default function IraApprovedGoldCoinsPage() {
                                 These products do NOT qualify for a Gold IRA:
                             </p>
 
-                            <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
                                 <h4 className="font-bold text-red-700 text-lg mb-4">Prohibited Products</h4>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
@@ -541,7 +541,7 @@ export default function IraApprovedGoldCoinsPage() {
                         {/* How to Choose */}
                         <section id="how-to-choose" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <Shield className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">How to Choose the Right Products</h2>

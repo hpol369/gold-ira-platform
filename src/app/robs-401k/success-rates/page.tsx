@@ -70,7 +70,7 @@ const faqs = [
 
 export default function ROBSSuccessRatesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <SchemaScript
@@ -128,7 +128,7 @@ export default function ROBSSuccessRatesPage() {
             </header>
 
             {/* Key Statistics */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -141,19 +141,19 @@ export default function ROBSSuccessRatesPage() {
                         </div>
 
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                            <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5 text-center">
                                 <div className="text-3xl font-bold text-green-700">~80%</div>
                                 <div className="text-sm text-[#D0CCC4] mt-1">Survive Year 1</div>
                             </div>
-                            <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 text-center">
+                            <div className="bg-[#121423] border border-blue-200 rounded-xl p-5 text-center">
                                 <div className="text-3xl font-bold text-blue-700">~65%</div>
                                 <div className="text-sm text-[#D0CCC4] mt-1">Survive Year 3</div>
                             </div>
-                            <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-center">
+                            <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 text-center">
                                 <div className="text-3xl font-bold text-amber-700">~50%</div>
                                 <div className="text-sm text-[#D0CCC4] mt-1">Survive Year 5</div>
                             </div>
-                            <div className="bg-red-50 border border-red-200 rounded-xl p-5 text-center">
+                            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5 text-center">
                                 <div className="text-3xl font-bold text-red-700">~35%</div>
                                 <div className="text-sm text-[#D0CCC4] mt-1">Survive Year 10</div>
                             </div>
@@ -208,7 +208,7 @@ export default function ROBSSuccessRatesPage() {
             </section>
 
             {/* Risk Factors */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -226,7 +226,7 @@ export default function ROBSSuccessRatesPage() {
                             </p>
                         </div>
 
-                        <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
+                        <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6 mb-6">
                             <h3 className="font-bold text-red-800 mb-4">What Failure Actually Looks Like</h3>
                             <div className="space-y-4">
                                 <div className="flex items-start gap-3">
@@ -322,7 +322,7 @@ export default function ROBSSuccessRatesPage() {
             </section>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <AugustaCTA

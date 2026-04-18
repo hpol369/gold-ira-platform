@@ -94,7 +94,7 @@ const custodians = [
 
 export default function RealEstateIraCustodiansPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "Best Real Estate IRA Custodians 2026: Top Providers", description: "Compare the best self-directed IRA custodians for real estate investing. Fees, features, and reviews of Rocket Dollar, Equity Trust, Entrust, and more.", slug: "/learn/real-estate-ira-custodians" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Real Estate IRA Custodians", url: "/learn/real-estate-ira-custodians" }])} />
             {/* Hero Section */}
@@ -183,7 +183,7 @@ export default function RealEstateIraCustodiansPage() {
                                             </td>
                                             <td className="p-4 text-center">
                                                 <div className="flex items-center justify-center gap-1">
-                                                    <Star className="w-4 h-4 text-[#D4A94E] fill-amber-400" />
+                                                    <Star className="w-4 h-4 text-[#D4A94E] fill-[#D4A94E]" />
                                                     <span className="text-[#F6F4EF]">{custodian.rating}</span>
                                                 </div>
                                             </td>
@@ -207,7 +207,7 @@ export default function RealEstateIraCustodiansPage() {
             </section>
 
             {/* Detailed Reviews */}
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8">Detailed Custodian Reviews</h2>
 
@@ -231,7 +231,7 @@ export default function RealEstateIraCustodiansPage() {
                                         <p className="text-[#A8A39A]">{custodian.description}</p>
                                     </div>
                                     <div className="flex items-center gap-2 bg-[#121423] px-4 py-2 rounded-lg">
-                                        <Star className="w-5 h-5 text-[#D4A94E] fill-amber-400" />
+                                        <Star className="w-5 h-5 text-[#D4A94E] fill-[#D4A94E]" />
                                         <span className="text-xl font-bold text-[#F6F4EF]">{custodian.rating}/5</span>
                                     </div>
                                 </div>
@@ -355,7 +355,7 @@ export default function RealEstateIraCustodiansPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6">

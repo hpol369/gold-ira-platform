@@ -123,7 +123,7 @@ export default async function GoldVsAssetPage({ params }: PageProps) {
   const assetFAQs = generateAssetFAQs(asset);
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       <SchemaScript
@@ -188,7 +188,7 @@ export default async function GoldVsAssetPage({ params }: PageProps) {
       </section>
 
       {/* Main Comparison Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
             {/* Gold Card - First (Winner Position) */}
@@ -486,7 +486,7 @@ export default async function GoldVsAssetPage({ params }: PageProps) {
       </section>
 
       {/* FAQ Section - GEO */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <FAQSection

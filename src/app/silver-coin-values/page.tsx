@@ -168,7 +168,7 @@ const schema = {
 
 export default function SilverCoinValuesHubPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -227,7 +227,7 @@ export default function SilverCoinValuesHubPage() {
       </section>
 
       {/* Featured Pages */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4">
@@ -274,7 +274,7 @@ export default function SilverCoinValuesHubPage() {
                             {page.volume} searches/mo
                           </span>
                           {page.difficulty <= 3 && (
-                            <span className="bg-green-500/20 text-green-400 px-2 py-0.5 rounded">
+                            <span className="bg-[rgba(46,139,87,0.08)]0/20 text-green-400 px-2 py-0.5 rounded">
                               Low Competition
                             </span>
                           )}
@@ -371,7 +371,7 @@ export default function SilverCoinValuesHubPage() {
       </section>
 
       {/* Grading Quick Guide */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -438,7 +438,7 @@ export default function SilverCoinValuesHubPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

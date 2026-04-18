@@ -214,7 +214,7 @@ export default function GoldIraRmdRulesPage() {
                 The IRS does not give Gold IRAs special treatment for the calculation itself.
                 The formula is the same as for other traditional IRAs:
               </p>
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 my-6 not-prose">
+              <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 my-6 not-prose">
                 <p className="font-bold text-[#F6F4EF] text-center">
                   Prior year-end account value &divide; Life expectancy factor (IRS Uniform Lifetime Table)
                 </p>
@@ -293,7 +293,7 @@ export default function GoldIraRmdRulesPage() {
                 penalty is generally <strong>25% of the missed amount</strong>. If corrected in a
                 timely way, it may be reduced to 10%.
               </p>
-              <div className="bg-red-50 border border-red-200 rounded-xl p-6 my-6 not-prose">
+              <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6 my-6 not-prose">
                 <p className="font-bold text-[#F6F4EF] mb-2">Example:</p>
                 <ul className="list-disc list-inside space-y-1 text-[#D0CCC4]">
                   <li>Required RMD: $6,000</li>
@@ -339,7 +339,7 @@ export default function GoldIraRmdRulesPage() {
               {/* Who This Is For */}
               <h2 id="who-this-is-for">Who This Is For / Not For</h2>
               <div className="grid md:grid-cols-2 gap-6 not-prose my-6">
-                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                   <h3 className="font-bold text-green-800 mb-3">This is for:</h3>
                   <ul className="space-y-2 text-[#D0CCC4]">
                     <li>Retirees age 73+ with a traditional Gold IRA</li>
@@ -347,7 +347,7 @@ export default function GoldIraRmdRulesPage() {
                     <li>Anyone wanting to understand cash vs in-kind RMDs</li>
                   </ul>
                 </div>
-                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                   <h3 className="font-bold text-red-800 mb-3">This is not for:</h3>
                   <ul className="space-y-2 text-[#D0CCC4]">
                     <li>People with only a Roth IRA</li>

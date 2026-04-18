@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function InflationProtectionPage() {
   return (
-    <main className="min-h-screen flex flex-col bg-white">
+    <main className="min-h-screen flex flex-col bg-[#0C0D18]">
       <Navbar />
 
       {/* Header */}
@@ -66,7 +66,7 @@ export default function InflationProtectionPage() {
       </header>
 
       {/* The Problem */}
-      <section className="py-16 bg-red-50 border-b border-red-200">
+      <section className="py-16 bg-[rgba(220,38,38,0.08)] border-b border-red-200">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6 text-center">
@@ -95,7 +95,7 @@ export default function InflationProtectionPage() {
                   </div>
                   <div className="flex justify-between">
                     <span>In 10 years</span>
-                    <span className="font-bold text-amber-600">$372,000 buying power</span>
+                    <span className="font-bold text-[#D4A94E]">$372,000 buying power</span>
                   </div>
                   <div className="flex justify-between">
                     <span>In 20 years</span>
@@ -154,7 +154,7 @@ export default function InflationProtectionPage() {
       </section>
 
       {/* Gold's Track Record */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6 text-center">
@@ -167,7 +167,7 @@ export default function InflationProtectionPage() {
 
             <div className="space-y-8">
               {/* The Suit Example */}
-              <div className="bg-amber-50 rounded-xl p-8 border border-amber-200">
+              <div className="bg-[#161828] rounded-xl p-8 border border-amber-200">
                 <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">
                   The Story That Says It All
                 </h3>
@@ -302,13 +302,13 @@ export default function InflationProtectionPage() {
       </section>
 
       {/* The Current Situation */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6 text-center">
               Why This Matters More Right Now
             </h2>
-            <div className="bg-red-50 rounded-xl p-8 border border-red-200 mb-8">
+            <div className="bg-[rgba(220,38,38,0.08)] rounded-xl p-8 border border-red-200 mb-8">
               <h3 className="text-xl font-bold text-red-700 mb-4">
                 What&apos;s Happening That Your Broker Won&apos;t Talk About
               </h3>
@@ -357,7 +357,7 @@ export default function InflationProtectionPage() {
       </section>
 
       {/* Take Action */}
-      <section className="py-16 bg-amber-50 border-y border-amber-200">
+      <section className="py-16 bg-[#161828] border-y border-amber-200">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">

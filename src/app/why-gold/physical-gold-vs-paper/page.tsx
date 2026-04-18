@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 
 export default function PhysicalGoldVsPaperPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Header */}
@@ -64,7 +64,7 @@ export default function PhysicalGoldVsPaperPage() {
             </header>
 
             {/* The Core Difference */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6 text-center">
@@ -78,7 +78,7 @@ export default function PhysicalGoldVsPaperPage() {
 
                         <div className="grid md:grid-cols-2 gap-8">
                             {/* Physical Gold */}
-                            <div className="bg-amber-50 rounded-xl p-8 border-2 border-amber-200">
+                            <div className="bg-[#161828] rounded-xl p-8 border-2 border-amber-200">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="w-12 h-12 rounded-full bg-[#DC2626] flex items-center justify-center">
                                         <Coins className="h-6 w-6 text-white" />
@@ -168,7 +168,7 @@ export default function PhysicalGoldVsPaperPage() {
                                     Your broker might mention these. They track the price of gold. Sound good?
                                     Read the fine print. You don&apos;t own gold. You own shares in a fund.
                                 </p>
-                                <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <div className="bg-[rgba(220,38,38,0.08)] p-4 rounded-lg border border-red-200">
                                     <h4 className="font-semibold text-red-700 text-sm mb-2">What they don&apos;t tell you:</h4>
                                     <ul className="text-sm text-red-600 space-y-1">
                                         <li>You own shares, not gold - big difference</li>
@@ -185,7 +185,7 @@ export default function PhysicalGoldVsPaperPage() {
                                     This is Vegas-style betting on gold prices. Speculators and traders use these.
                                     Not for someone protecting 30 years of savings.
                                 </p>
-                                <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <div className="bg-[rgba(220,38,38,0.08)] p-4 rounded-lg border border-red-200">
                                     <h4 className="font-semibold text-red-700 text-sm mb-2">The real problem:</h4>
                                     <ul className="text-sm text-red-600 space-y-1">
                                         <li>Leveraged gambling - you can lose more than you put in</li>
@@ -202,7 +202,7 @@ export default function PhysicalGoldVsPaperPage() {
                                     Shares in companies that dig gold out of the ground. Sounds like owning gold, right?
                                     Wrong. You own stock in a company, with all the risks that come with it.
                                 </p>
-                                <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <div className="bg-[rgba(220,38,38,0.08)] p-4 rounded-lg border border-red-200">
                                     <h4 className="font-semibold text-red-700 text-sm mb-2">Why it&apos;s not the same:</h4>
                                     <ul className="text-sm text-red-600 space-y-1">
                                         <li>Company stock, not gold - Enron was a company too</li>
@@ -219,7 +219,7 @@ export default function PhysicalGoldVsPaperPage() {
                                     A piece of paper that says &quot;you own gold&quot; stored somewhere. Banks used to
                                     issue these. Some still do. It&apos;s exactly what it sounds like - paper.
                                 </p>
-                                <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+                                <div className="bg-[rgba(220,38,38,0.08)] p-4 rounded-lg border border-red-200">
                                     <h4 className="font-semibold text-red-700 text-sm mb-2">The obvious problem:</h4>
                                     <ul className="text-sm text-red-600 space-y-1">
                                         <li>It&apos;s paper. A promise. From a bank.</li>
@@ -235,10 +235,10 @@ export default function PhysicalGoldVsPaperPage() {
             </section>
 
             {/* The Counterparty Risk Warning */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
+                        <div className="bg-[rgba(220,38,38,0.08)] border-2 border-red-200 rounded-2xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <AlertTriangle className="h-8 w-8 text-red-600" />
                                 <h2 className="text-2xl font-bold text-[#F6F4EF]">
@@ -334,7 +334,7 @@ export default function PhysicalGoldVsPaperPage() {
             </section>
 
             {/* Why Physical Gold for IRAs */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
@@ -374,7 +374,7 @@ export default function PhysicalGoldVsPaperPage() {
                             </div>
                         </div>
 
-                        <div className="mt-12 bg-amber-50 rounded-xl p-8 border border-amber-200">
+                        <div className="mt-12 bg-[#161828] rounded-xl p-8 border border-amber-200">
                             <div className="flex items-start gap-4">
                                 <Building2 className="h-8 w-8 text-[#D4A94E] flex-shrink-0 mt-1" />
                                 <div>
@@ -436,12 +436,12 @@ export default function PhysicalGoldVsPaperPage() {
                                     </tr>
                                     <tr>
                                         <td className="p-4 font-medium text-[#F6F4EF]">Trading Convenience</td>
-                                        <td className="p-4 text-amber-600">Less liquid, 1-3 day process</td>
+                                        <td className="p-4 text-[#D4A94E]">Less liquid, 1-3 day process</td>
                                         <td className="p-4 text-green-600">Instant trading</td>
                                     </tr>
                                     <tr>
                                         <td className="p-4 font-medium text-[#F6F4EF]">Annual Fees</td>
-                                        <td className="p-4 text-amber-600">Storage fees (~$100-300/yr)</td>
+                                        <td className="p-4 text-[#D4A94E]">Storage fees (~$100-300/yr)</td>
                                         <td className="p-4 text-green-600">Lower expense ratios</td>
                                     </tr>
                                 </tbody>
@@ -452,7 +452,7 @@ export default function PhysicalGoldVsPaperPage() {
             </section>
 
             {/* Bottom Line */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">
@@ -467,7 +467,7 @@ export default function PhysicalGoldVsPaperPage() {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/what-is-a-gold-ira"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#121423] text-[#F6F4EF] font-bold rounded-xl hover:bg-slate-200 transition-all border border-[#2A2D42]"
+                                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#121423] text-[#F6F4EF] font-bold rounded-xl hover:bg-[#2A2D42] transition-all border border-[#2A2D42]"
                             >
                                 How Gold IRAs Work
                             </Link>

@@ -111,7 +111,7 @@ export function CrashSimulator() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/30 rounded-full text-red-600 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.08)]0/20 border border-red-500/30 rounded-full text-red-600 font-semibold text-sm mb-6">
               <AlertTriangle className="h-4 w-4" />
               CRASH SIMULATOR
             </div>
@@ -160,7 +160,7 @@ export function CrashSimulator() {
                   max="50"
                   value={goldAllocation}
                   onChange={(e) => setGoldAllocation(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>0% (No Gold)</span>
@@ -231,7 +231,7 @@ export function CrashSimulator() {
                   </div>
 
                   {/* Without Gold */}
-                  <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                  <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-4">
                     <div className="flex items-center gap-2 text-red-600 text-sm mb-2">
                       <TrendingDown className="h-4 w-4" />
                       WITHOUT GOLD PROTECTION
@@ -245,7 +245,7 @@ export function CrashSimulator() {
                   </div>
 
                   {/* With Gold */}
-                  <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                  <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-4">
                     <div className="flex items-center gap-2 text-green-600 text-sm mb-2">
                       <Shield className="h-4 w-4" />
                       WITH {goldAllocation}% GOLD ALLOCATION

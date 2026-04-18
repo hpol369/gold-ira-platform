@@ -95,7 +95,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function Transfer401kToGoldPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             <SchemaScript schema={howToSchema({
@@ -148,7 +148,7 @@ export default function Transfer401kToGoldPage() {
                 <article className="max-w-3xl mx-auto">
 
                     {/* Direct Answer Box */}
-                    <div className="bg-green-50 rounded-2xl p-8 border border-green-200 mb-10">
+                    <div className="bg-[rgba(46,139,87,0.08)] rounded-2xl p-8 border border-green-200 mb-10">
                         <div className="flex items-start gap-4">
                             <div className="w-12 h-12 rounded-full bg-green-100 text-green-600 flex items-center justify-center flex-shrink-0">
                                 <CheckCircle2 className="w-6 h-6" />
@@ -217,7 +217,7 @@ export default function Transfer401kToGoldPage() {
                             <strong>No.</strong> As long as you do a <strong>direct rollover</strong> (money goes straight from your old account to your new account), there&apos;s no tax. The IRS sees it as moving money from one retirement account to another&mdash;not as a withdrawal.
                         </p>
 
-                        <div className="bg-green-50 rounded-2xl p-6 border border-green-200 not-prose my-8">
+                        <div className="bg-[rgba(46,139,87,0.08)] rounded-2xl p-6 border border-green-200 not-prose my-8">
                             <h4 className="font-bold text-[#F6F4EF] text-lg mb-4 flex items-center gap-2">
                                 <ShieldCheck className="w-5 h-5 text-green-600" />
                                 Tax-Free Transfer Checklist
@@ -264,7 +264,7 @@ export default function Transfer401kToGoldPage() {
                             <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Can I transfer my 401k to gold?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
@@ -278,7 +278,7 @@ export default function Transfer401kToGoldPage() {
                             <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Is &quot;transfer&quot; the same as &quot;rollover&quot;?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
@@ -292,7 +292,7 @@ export default function Transfer401kToGoldPage() {
                             <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Will I pay taxes on the transfer?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
@@ -306,7 +306,7 @@ export default function Transfer401kToGoldPage() {
                             <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">How long does the transfer take?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
@@ -320,7 +320,7 @@ export default function Transfer401kToGoldPage() {
                             <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                 <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Do I need to quit my job first?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>

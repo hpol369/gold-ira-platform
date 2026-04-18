@@ -161,7 +161,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function SilverStackingGuidePage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -254,7 +254,7 @@ export default function SilverStackingGuidePage() {
                             {/* Why Stack */}
                             <section id="why-stack" className="scroll-mt-32">
                                 <div className="flex items-center gap-4 mb-4 not-prose">
-                                    <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                    <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Why Stack Silver?</h2>
@@ -483,7 +483,7 @@ export default function SilverStackingGuidePage() {
                             {/* Common Mistakes */}
                             <section id="mistakes" className="scroll-mt-32">
                                 <div className="flex items-center gap-4 mb-4 not-prose">
-                                    <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                    <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                         <AlertTriangle className="w-6 h-6" />
                                     </div>
                                     <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Common Stacking Mistakes</h2>
@@ -491,7 +491,7 @@ export default function SilverStackingGuidePage() {
 
                                 <div className="space-y-4 not-prose my-8">
                                     {commonMistakes.map((item, index) => (
-                                        <div key={index} className="p-4 rounded-xl bg-red-50 border border-red-200">
+                                        <div key={index} className="p-4 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-200">
                                             <h4 className="font-bold text-red-600 mb-1">{item.mistake}</h4>
                                             <p className="text-sm text-[#D0CCC4]">{item.description}</p>
                                         </div>

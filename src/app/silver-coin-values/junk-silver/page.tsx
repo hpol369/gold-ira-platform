@@ -90,7 +90,7 @@ export default function JunkSilverValuePage() {
   const meltPerDollar = pricingExample.spotPrice * pricingExample.meltMultiplier;
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -207,7 +207,7 @@ export default function JunkSilverValuePage() {
       </section>
 
       {/* Pricing Calculator */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -335,7 +335,7 @@ export default function JunkSilverValuePage() {
       </section>
 
       {/* Why Junk Silver */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -417,7 +417,7 @@ export default function JunkSilverValuePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -480,7 +480,7 @@ export default function JunkSilverValuePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

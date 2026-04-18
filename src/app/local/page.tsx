@@ -41,7 +41,7 @@ export default function LocalPage() {
     };
 
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -106,7 +106,7 @@ export default function LocalPage() {
                 </section>
 
                 {/* All States Grid */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-2 text-center">
                             Select Your State
@@ -158,7 +158,7 @@ export default function LocalPage() {
                 </section>
 
                 {/* Tax-Friendly States Section */}
-                <section className="py-12 bg-green-50 border-y border-green-200">
+                <section className="py-12 bg-[rgba(46,139,87,0.08)] border-y border-green-200">
                     <Container>
                         <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-2">
                             <CheckCircle2 className="w-6 h-6 text-green-600 inline mr-2" />
@@ -182,10 +182,10 @@ export default function LocalPage() {
                 </section>
 
                 {/* Taxable States Section */}
-                <section className="py-12 bg-white">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
                         <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-2">
-                            <XCircle className="w-6 h-6 text-amber-600 inline mr-2" />
+                            <XCircle className="w-6 h-6 text-[#D4A94E] inline mr-2" />
                             States with Precious Metals Sales Tax
                         </h2>
                         <p className="text-[#D0CCC4] mb-6">

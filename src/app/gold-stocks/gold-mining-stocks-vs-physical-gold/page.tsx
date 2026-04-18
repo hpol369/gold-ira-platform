@@ -156,7 +156,7 @@ export default function GoldMiningStocksVsPhysicalGoldPage() {
             </section>
 
             {/* Content */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] prose-a:text-[#D4A94E] max-w-none">
@@ -180,7 +180,7 @@ export default function GoldMiningStocksVsPhysicalGoldPage() {
 
                             {/* How Mining Stocks Work */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-[#121423] rounded-lg text-blue-600">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">How Gold Mining Stocks Work</h2>
@@ -210,11 +210,11 @@ export default function GoldMiningStocksVsPhysicalGoldPage() {
                                         <span className="text-[#D0CCC4]">Gold Price: $1,500 | Cost: $1,200</span>
                                         <span className="font-semibold text-[#F6F4EF]">Profit: $300/oz</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg border border-green-200">
+                                    <div className="flex justify-between items-center p-3 bg-[rgba(46,139,87,0.08)] rounded-lg border border-green-200">
                                         <span className="text-[#D0CCC4]">Gold rises 10% to $1,650</span>
                                         <span className="font-semibold text-green-600">Profit: $450/oz (+50%)</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-red-50 rounded-lg border border-red-200">
+                                    <div className="flex justify-between items-center p-3 bg-[rgba(220,38,38,0.08)] rounded-lg border border-red-200">
                                         <span className="text-[#D0CCC4]">Gold falls 10% to $1,350</span>
                                         <span className="font-semibold text-red-600">Profit: $150/oz (-50%)</span>
                                     </div>
@@ -223,7 +223,7 @@ export default function GoldMiningStocksVsPhysicalGoldPage() {
 
                             {/* Mining Stock Risks */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-red-50 rounded-lg text-red-600">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)] rounded-lg text-red-600">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Mining Stock Risks (Beyond Gold Price)</h2>
@@ -276,7 +276,7 @@ export default function GoldMiningStocksVsPhysicalGoldPage() {
 
                             {/* How Physical Gold Works */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-[#161828] rounded-lg text-[#D4A94E]">
                                     <Gem className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">How Physical Gold Works</h2>
@@ -318,7 +318,7 @@ export default function GoldMiningStocksVsPhysicalGoldPage() {
 
                             {/* Main Comparison Table */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
+                                <div className="p-3 bg-purple-50 rounded-lg text-[#D4A94E]">
                                     <Scale className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Head-to-Head Comparison</h2>
@@ -389,7 +389,7 @@ export default function GoldMiningStocksVsPhysicalGoldPage() {
 
                             {/* Historical Performance During Crises */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)] rounded-lg text-green-600">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Historical Performance During Crises</h2>
@@ -481,7 +481,7 @@ export default function GoldMiningStocksVsPhysicalGoldPage() {
                             <div className="bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
                                 <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">Who Should Own What?</h4>
                                 <div className="space-y-4 text-sm">
-                                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                                    <div className="p-4 bg-[#121423] rounded-lg border border-blue-200">
                                         <p className="font-semibold text-blue-700 mb-2">Young Investor (20+ years to retirement)</p>
                                         <p className="text-[#D0CCC4]">Mining stocks can make sense as a small, speculative position. Time to recover from volatility.</p>
                                     </div>
@@ -489,11 +489,11 @@ export default function GoldMiningStocksVsPhysicalGoldPage() {
                                         <p className="font-semibold text-purple-700 mb-2">Mid-Career (10-20 years to retirement)</p>
                                         <p className="text-[#D0CCC4]">Consider both: physical gold for protection, small mining allocation for growth potential.</p>
                                     </div>
-                                    <div className="p-4 bg-amber-50 rounded-lg border border-amber-200">
+                                    <div className="p-4 bg-[#161828] rounded-lg border border-amber-200">
                                         <p className="font-semibold text-amber-700 mb-2">Near Retirement (5-10 years out)</p>
                                         <p className="text-[#D0CCC4]">Physical gold in a Gold IRA makes more sense. Can&apos;t afford mining stock volatility.</p>
                                     </div>
-                                    <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+                                    <div className="p-4 bg-[rgba(46,139,87,0.08)] rounded-lg border border-green-200">
                                         <p className="font-semibold text-green-700 mb-2">Retired</p>
                                         <p className="text-[#D0CCC4]">Physical gold for wealth preservation. Mining stocks generally too volatile for retirement portfolios.</p>
                                     </div>

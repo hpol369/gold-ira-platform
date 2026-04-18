@@ -234,11 +234,11 @@ const sdiraFlowQuestions: Question[] = [
 // ============================================
 
 const introOptions = [
-  { icon: Coins, label: "Gold IRA", color: "text-amber-400" },
+  { icon: Coins, label: "Gold IRA", color: "text-[#D4A94E]" },
   { icon: Bitcoin, label: "Crypto IRA", color: "text-blue-400" },
   { icon: Building, label: "Real Estate", color: "text-teal-400" },
   { icon: Store, label: "ROBS 401k", color: "text-orange-400" },
-  { icon: Briefcase, label: "Solo 401k", color: "text-purple-400" },
+  { icon: Briefcase, label: "Solo 401k", color: "text-[#D4A94E]" },
 ];
 
 // ============================================
@@ -695,7 +695,7 @@ export function UniversalQuiz() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.4 }}
-          className="inline-flex items-center gap-2 rounded-full bg-amber-500/10 px-4 py-1.5 text-sm font-semibold text-amber-400 mb-4
+          className="inline-flex items-center gap-2 rounded-full bg-[#161828]0/10 px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-4
                      border border-amber-400/20 shadow-[0_0_20px_rgba(212,175,55,0.15)]"
         >
           <Shield className="h-4 w-4" />
@@ -710,7 +710,7 @@ export function UniversalQuiz() {
                      [text-shadow:_0_2px_20px_rgba(0,0,0,0.5)]"
         >
           Find Your Perfect<br />
-          <span className="text-amber-400 [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">Retirement Account</span>
+          <span className="text-[#D4A94E] [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">Retirement Account</span>
         </motion.h1>
 
         <motion.p
@@ -817,22 +817,22 @@ export function UniversalQuiz() {
                     "hover:bg-[#1E2134]/[0.1] hover:-translate-y-2 hover:scale-[1.02]",
                     "hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_40px_rgba(212,175,55,0.15)]",
                     "hover:border-amber-400/40 transition-all duration-300 cursor-pointer",
-                    isSelected && "bg-amber-500/10 border-amber-400/50 shadow-[0_0_30px_rgba(212,175,55,0.2)]"
+                    isSelected && "bg-[#161828]0/10 border-amber-400/50 shadow-[0_0_30px_rgba(212,175,55,0.2)]"
                   )}
                 >
                   <span className={cn(
-                    "text-lg font-medium text-white group-hover:text-amber-400 transition-colors",
-                    isSelected && "text-amber-400"
+                    "text-lg font-medium text-white group-hover:text-[#D4A94E] transition-colors",
+                    isSelected && "text-[#D4A94E]"
                   )}>
                     {option.label}
                   </span>
                   <div className={cn(
                     "h-6 w-6 rounded-full border-2 border-white/20 group-hover:border-amber-500",
                     "flex items-center justify-center transition-all duration-300",
-                    isSelected && "border-amber-500 bg-amber-500/20"
+                    isSelected && "border-amber-500 bg-[#161828]0/20"
                   )}>
                     <div className={cn(
-                      "h-3 w-3 rounded-full bg-amber-500 transition-all duration-300",
+                      "h-3 w-3 rounded-full bg-[#161828]0 transition-all duration-300",
                       isSelected ? "opacity-100 scale-100" : "opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100"
                     )} />
                   </div>
@@ -870,7 +870,7 @@ export function UniversalQuiz() {
                      [text-shadow:_0_2px_20px_rgba(0,0,0,0.5)]"
         >
           Where should we send your<br />
-          <span className="text-amber-400 [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">personalized match?</span>
+          <span className="text-[#D4A94E] [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">personalized match?</span>
         </motion.h2>
 
         <motion.p
@@ -890,7 +890,7 @@ export function UniversalQuiz() {
           className="space-y-4 text-left"
         >
           <div>
-            <label htmlFor="quiz-firstName" className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">
+            <label htmlFor="quiz-firstName" className="block text-xs font-bold text-[#D4A94E] uppercase tracking-wider mb-2">
               First Name
             </label>
             <input
@@ -908,7 +908,7 @@ export function UniversalQuiz() {
             />
           </div>
           <div>
-            <label htmlFor="quiz-email" className="block text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">
+            <label htmlFor="quiz-email" className="block text-xs font-bold text-[#D4A94E] uppercase tracking-wider mb-2">
               Email
             </label>
             <input
@@ -1006,7 +1006,7 @@ export function UniversalQuiz() {
               }}
               className="absolute"
             >
-              <Sparkles className="h-4 w-4 text-amber-400/60" />
+              <Sparkles className="h-4 w-4 text-[#D4A94E]/60" />
             </motion.div>
           ))}
         </div>
@@ -1030,7 +1030,7 @@ export function UniversalQuiz() {
 
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4
                            [text-shadow:_0_2px_20px_rgba(0,0,0,0.5)]">
-              We Recommend: <span className="text-amber-400 [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">{recommendedCompany.name}</span>
+              We Recommend: <span className="text-[#D4A94E] [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">{recommendedCompany.name}</span>
             </h2>
             <p className="text-[#A8A39A] text-lg">{recommendedCompany.headline}</p>
           </motion.div>

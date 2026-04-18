@@ -78,7 +78,7 @@ export default function GoldVsStocksPage() {
             </section>
 
             {/* Content */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] prose-a:text-[#D4A94E] max-w-none">
@@ -96,7 +96,7 @@ export default function GoldVsStocksPage() {
 
                             {/* Head-to-Head */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-[#121423] rounded-lg text-blue-600">
                                     <Scale className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Real Comparison</h2>
@@ -153,7 +153,7 @@ export default function GoldVsStocksPage() {
 
                             {/* When Gold Wins */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-[#161828] rounded-lg text-[#D4A94E]">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">When Gold Saves Your Retirement</h2>
@@ -219,7 +219,7 @@ export default function GoldVsStocksPage() {
 
                             {/* When Stocks Win */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-[#121423] rounded-lg text-blue-600">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Let&apos;s Be Fair: When Stocks Do Better</h2>
@@ -255,7 +255,7 @@ export default function GoldVsStocksPage() {
 
                             {/* The Real Answer */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-green-50 rounded-lg text-green-600">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)] rounded-lg text-green-600">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Smart Move: Have Both</h2>
@@ -287,13 +287,13 @@ export default function GoldVsStocksPage() {
                                         <span className="text-[#D0CCC4]">85% Stocks / 15% Gold</span>
                                         <div className="text-right">
                                             <span className="font-semibold text-green-600 block">9.8% return</span>
-                                            <span className="text-xs text-amber-600">Worst crash: -40% (much better)</span>
+                                            <span className="text-xs text-[#D4A94E]">Worst crash: -40% (much better)</span>
                                         </div>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-[#161828] rounded-lg border border-[#2A2D42]">
                                         <span className="text-[#D0CCC4]">70% Stocks / 20% Bonds / 10% Gold</span>
                                         <div className="text-right">
-                                            <span className="font-semibold text-purple-600 block">9.4% return</span>
+                                            <span className="font-semibold text-[#D4A94E] block">9.4% return</span>
                                             <span className="text-xs text-green-600">Worst crash: -32% (you keep your plan)</span>
                                         </div>
                                     </div>
@@ -303,7 +303,7 @@ export default function GoldVsStocksPage() {
 
                             {/* How Much Gold */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-purple-50 rounded-lg text-purple-600">
+                                <div className="p-3 bg-purple-50 rounded-lg text-[#D4A94E]">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">How Much Gold Do You Need?</h2>

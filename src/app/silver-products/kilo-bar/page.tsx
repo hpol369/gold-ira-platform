@@ -108,7 +108,7 @@ const schema = {
 
 export default function SilverKiloBarPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -184,7 +184,7 @@ export default function SilverKiloBarPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
@@ -192,7 +192,7 @@ export default function SilverKiloBarPage() {
               {/* Why Kilo Bars */}
               <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-green-500/20 rounded-lg">
+                  <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg">
                     <Award className="h-6 w-6 text-green-400" />
                   </div>
                   <h2 className="text-2xl font-bold text-[#F6F4EF] m-0">Why Kilo Bars Are the Sweet Spot</h2>
@@ -311,7 +311,7 @@ export default function SilverKiloBarPage() {
                       <td className="p-4 text-[#D0CCC4]">$2,650-2,700</td>
                       <td className="p-4 text-[#D4A94E]">+$75-125</td>
                     </tr>
-                    <tr className="bg-green-500/10">
+                    <tr className="bg-[rgba(46,139,87,0.08)]0/10">
                       <td className="p-4 font-semibold text-[#F6F4EF]">Kilo Bars (3x)</td>
                       <td className="p-4 text-green-400 font-bold">4-5%</td>
                       <td className="p-4 text-[#D0CCC4]">$2,575-2,625</td>
@@ -383,7 +383,7 @@ export default function SilverKiloBarPage() {
                 IRA Eligibility
               </h2>
 
-              <div className="not-prose bg-green-500/10 border border-green-500/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
@@ -480,7 +480,7 @@ export default function SilverKiloBarPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -112,7 +112,7 @@ export default function SEPP72tCalculatorPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-[#0C0D18]">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 overflow-hidden">
           <div className="absolute inset-0 bg-[#0C0D18]" />
@@ -166,7 +166,7 @@ export default function SEPP72tCalculatorPage() {
                         {s < 3 && (
                           <div
                             className={`w-16 h-1 mx-2 rounded transition-colors ${
-                              step > s ? 'bg-[#DC2626]' : 'bg-slate-200'
+                              step > s ? 'bg-[#DC2626]' : 'bg-[#2A2D42]'
                             }`}
                           />
                         )}
@@ -202,7 +202,7 @@ export default function SEPP72tCalculatorPage() {
                           step="10000"
                           value={accountBalance}
                           onChange={(e) => setAccountBalance(Number(e.target.value))}
-                          className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                          className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                         />
 
                         <div className="flex justify-between text-sm text-[#A8A39A]">
@@ -265,7 +265,7 @@ export default function SEPP72tCalculatorPage() {
                           step="1"
                           value={age}
                           onChange={(e) => setAge(Number(e.target.value))}
-                          className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                          className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                         />
 
                         <div className="flex justify-between text-sm text-[#A8A39A]">
@@ -289,7 +289,7 @@ export default function SEPP72tCalculatorPage() {
                           ))}
                         </div>
 
-                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <div className="bg-[#121423] border border-blue-200 rounded-lg p-4">
                           <p className="text-blue-800 text-sm">
                             <strong>Note:</strong> At age {age}, you must continue SEPP distributions for at least{' '}
                             <strong>{calculations.minimumYears} years</strong> (until age {calculations.endAge})
@@ -340,7 +340,7 @@ export default function SEPP72tCalculatorPage() {
                           step="0.1"
                           value={interestRate}
                           onChange={(e) => setInterestRate(Number(e.target.value))}
-                          className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                          className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                         />
 
                         <div className="flex justify-between text-sm text-[#A8A39A]">
@@ -531,7 +531,7 @@ export default function SEPP72tCalculatorPage() {
                   </div>
 
                   {/* Important Rules */}
-                  <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                  <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                     <h3 className="text-lg font-semibold text-red-600 mb-4">
                       Important 72(t) Rules
                     </h3>

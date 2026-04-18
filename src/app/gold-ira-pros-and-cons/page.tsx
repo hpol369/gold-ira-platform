@@ -400,7 +400,7 @@ export default function GoldIraProsAndConsPage() {
                   return (
                     <div
                       key={pro.title}
-                      className="bg-green-50 border border-green-200 rounded-xl p-5 md:p-6"
+                      className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5 md:p-6"
                     >
                       <div className="flex items-start gap-4">
                         <div
@@ -422,7 +422,7 @@ export default function GoldIraProsAndConsPage() {
                 })}
               </div>
 
-              <div className="mt-8 bg-green-50 border border-green-200 rounded-xl p-5">
+              <div className="mt-8 bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5">
                 <p className="text-[#D0CCC4] leading-relaxed text-sm">
                   <strong className="text-[#F6F4EF]">Bottom line on the pros:</strong>{" "}
                   A Gold IRA is not a get-rich-quick scheme. It is a proven way
@@ -465,7 +465,7 @@ export default function GoldIraProsAndConsPage() {
                   return (
                     <div
                       key={con.title}
-                      className="bg-red-50 border border-red-200 rounded-xl p-5 md:p-6"
+                      className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5 md:p-6"
                     >
                       <div className="flex items-start gap-4">
                         <div
@@ -487,7 +487,7 @@ export default function GoldIraProsAndConsPage() {
                 })}
               </div>
 
-              <div className="mt-8 bg-red-50 border border-red-200 rounded-xl p-5">
+              <div className="mt-8 bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
                   <p className="text-[#D0CCC4] leading-relaxed text-sm">
@@ -541,7 +541,7 @@ export default function GoldIraProsAndConsPage() {
                 look:
               </p>
 
-              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+              <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                 <ul className="space-y-4">
                   {[
                     {
@@ -617,7 +617,7 @@ export default function GoldIraProsAndConsPage() {
                 Gold IRA if any of these apply:
               </p>
 
-              <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+              <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                 <ul className="space-y-4">
                   {[
                     {
@@ -666,7 +666,7 @@ export default function GoldIraProsAndConsPage() {
                 </ul>
               </div>
 
-              <div className="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-5">
+              <div className="mt-6 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                 <p className="text-[#D0CCC4] leading-relaxed text-sm">
                   <strong className="text-[#F6F4EF]">Straight talk:</strong> If
                   you see a Gold IRA company pressuring you to move all your
@@ -776,9 +776,9 @@ export default function GoldIraProsAndConsPage() {
                 </p>
               </div>
 
-              <div className="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-5">
+              <div className="mt-6 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                 <div className="flex items-start gap-3">
-                  <TrendingUp className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <TrendingUp className="w-5 h-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[#D0CCC4] leading-relaxed text-sm">
                       <strong className="text-[#F6F4EF]">
@@ -811,7 +811,7 @@ export default function GoldIraProsAndConsPage() {
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
-                  <ShieldCheck className="w-5 h-5 text-amber-600" />
+                  <ShieldCheck className="w-5 h-5 text-[#D4A94E]" />
                 </div>
                 <h2
                   id="verdict"

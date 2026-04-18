@@ -109,7 +109,7 @@ export function GoldFlowSteps({ onAnswer, onBack }: FlowStepsProps) {
       {/* Progress Bar */}
       <div className="w-full h-2 bg-slate-700 rounded-full mb-6 overflow-hidden">
         <motion.div
-          className="h-full bg-amber-500"
+          className="h-full bg-[#161828]0"
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
           transition={{ duration: 0.4 }}
@@ -139,7 +139,7 @@ export function GoldFlowSteps({ onAnswer, onBack }: FlowStepsProps) {
           transition={{ duration: 0.3 }}
         >
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-3 rounded-xl bg-amber-500/10 text-amber-400">
+            <div className="p-3 rounded-xl bg-[#161828]0/10 text-[#D4A94E]">
               {currentStep.icon}
             </div>
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-white">
@@ -156,7 +156,7 @@ export function GoldFlowSteps({ onAnswer, onBack }: FlowStepsProps) {
                 className="group relative flex items-center justify-between p-6 text-left rounded-xl border-2 border-white/10 hover:border-amber-500/50 hover:bg-[#1E2134]/10 transition-all duration-200 bg-white/5 backdrop-blur-sm"
               >
                 <div className="flex-1">
-                  <span className="block text-lg font-medium text-white group-hover:text-amber-400">
+                  <span className="block text-lg font-medium text-white group-hover:text-[#D4A94E]">
                     {option.label}
                   </span>
                   {option.description && (
@@ -166,7 +166,7 @@ export function GoldFlowSteps({ onAnswer, onBack }: FlowStepsProps) {
                   )}
                 </div>
                 <div className="h-6 w-6 rounded-full border-2 border-white/20 group-hover:border-amber-500 flex items-center justify-center flex-shrink-0 ml-4">
-                  <div className="h-3 w-3 rounded-full bg-amber-500 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="h-3 w-3 rounded-full bg-[#161828]0 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
               </button>
             ))}

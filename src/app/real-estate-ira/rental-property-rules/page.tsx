@@ -93,7 +93,7 @@ const faqs = [
 
 export default function RentalPropertyRulesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <SchemaScript
@@ -151,7 +151,7 @@ export default function RentalPropertyRulesPage() {
             </header>
 
             {/* Step-by-Step Process */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -199,7 +199,7 @@ export default function RentalPropertyRulesPage() {
                             </p>
                         </div>
 
-                        <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
+                        <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6 mb-6">
                             <h3 className="font-bold text-red-800 mb-4">You CANNOT:</h3>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div className="flex items-start gap-2">
@@ -237,9 +237,9 @@ export default function RentalPropertyRulesPage() {
                             </div>
                         </div>
 
-                        <div className="bg-amber-50 border border-amber-200 rounded-xl p-5">
+                        <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                             <div className="flex items-start gap-3">
-                                <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                                <AlertTriangle className="w-5 h-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
                                 <div>
                                     <p className="text-[#D0CCC4] text-sm font-bold mb-1">Disqualified Persons (IRC 4975)</p>
                                     <p className="text-[#D0CCC4] text-sm">
@@ -253,7 +253,7 @@ export default function RentalPropertyRulesPage() {
             </section>
 
             {/* Non-Recourse Lending */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -271,7 +271,7 @@ export default function RentalPropertyRulesPage() {
                             </p>
                         </div>
 
-                        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                        <div className="bg-[#121423] border border-blue-200 rounded-xl p-6">
                             <h3 className="font-bold text-[#F6F4EF] mb-4">Typical Non-Recourse Loan Terms for IRAs</h3>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div className="flex justify-between text-sm border-b border-blue-100 pb-2">
@@ -366,7 +366,7 @@ export default function RentalPropertyRulesPage() {
             </section>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <AugustaCTA

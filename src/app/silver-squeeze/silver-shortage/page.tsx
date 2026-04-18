@@ -94,7 +94,7 @@ const schema = {
 
 export default function SilverShortagePage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             
             {/* Header */}
@@ -102,7 +102,7 @@ export default function SilverShortagePage() {
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-900/10 via-transparent to-transparent" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-red-500/10 px-4 py-1.5 text-sm font-semibold text-red-700 mb-6 border border-red-500/20">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.08)]0/10 px-4 py-1.5 text-sm font-semibold text-red-700 mb-6 border border-red-500/20">
                             <AlertTriangle className="w-4 h-4" />
                             Supply Crisis Escalating
                         </div>
@@ -147,7 +147,7 @@ export default function SilverShortagePage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <TrendingDown className="w-8 h-8 text-red-700 mb-4" />
                                     <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">COMEX Inventory Drain</h4>
                                     <p className="text-sm text-[#D0CCC4]">COMEX registered silver (available for delivery) has declined dramatically from peak levels. The drain accelerated after the 2021 silver squeeze movement began.</p>
@@ -157,12 +157,12 @@ export default function SilverShortagePage() {
                                     <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Elevated Physical Premiums</h4>
                                     <p className="text-sm text-[#D0CCC4]">Physical silver consistently trades 15-30% above spot price. In a well-supplied market, premiums are typically 3-5%. The gap indicates physical scarcity.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-orange-500/10 border border-orange-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(183,121,31,0.08)]0/10 border border-orange-500/20">
                                     <Package className="w-8 h-8 text-orange-400 mb-4" />
                                     <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Dealer Sellouts</h4>
                                     <p className="text-sm text-[#D0CCC4]">Major dealers regularly report being sold out of popular products. Wait times for silver Eagles and other coins have extended to weeks or months during demand surges.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-purple-500/10 border border-purple-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(197,149,46,0.08)] border border-purple-500/20">
                                     <Factory className="w-8 h-8 text-purple-700 mb-4" />
                                     <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Mint Rationing</h4>
                                     <p className="text-sm text-[#D0CCC4]">The US Mint has implemented allocation programs for Silver Eagles, limiting how many dealers can purchase. This is a direct admission of insufficient supply.</p>
@@ -235,7 +235,7 @@ export default function SilverShortagePage() {
                                     </div>
 
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center shrink-0">
+                                        <div className="w-12 h-12 rounded-lg bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center shrink-0">
                                             <Car className="w-6 h-6 text-green-700" />
                                         </div>
                                         <div>
@@ -245,7 +245,7 @@ export default function SilverShortagePage() {
                                     </div>
 
                                     <div className="flex gap-4 items-start">
-                                        <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0">
+                                        <div className="w-12 h-12 rounded-lg bg-[#121423]0/20 flex items-center justify-center shrink-0">
                                             <Cpu className="w-6 h-6 text-blue-700" />
                                         </div>
                                         <div>

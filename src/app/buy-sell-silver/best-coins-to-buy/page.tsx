@@ -257,7 +257,7 @@ const schema = {
 
 export default function BestCoinsToBuyPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -275,7 +275,7 @@ export default function BestCoinsToBuyPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
               <Coins className="h-4 w-4" />
               400 MONTHLY SEARCHES - DIFF 0
             </div>
@@ -309,7 +309,7 @@ export default function BestCoinsToBuyPage() {
       </section>
 
       {/* Top Coins Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4">
@@ -416,7 +416,7 @@ export default function BestCoinsToBuyPage() {
             <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[rgba(46,139,87,0.08)]0/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-green-400 font-bold">1</span>
                   </div>
                   <div>
@@ -429,7 +429,7 @@ export default function BestCoinsToBuyPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-blue-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[#121423]0/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-blue-400 font-bold">2</span>
                   </div>
                   <div>
@@ -472,7 +472,7 @@ export default function BestCoinsToBuyPage() {
       </section>
 
       {/* Budget Options */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4 flex items-center justify-center gap-2">
@@ -540,7 +540,7 @@ export default function BestCoinsToBuyPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
             Related Guides

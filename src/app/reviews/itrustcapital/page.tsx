@@ -53,7 +53,7 @@ export default function ITrustCapitalReviewPage() {
     const affiliateLink = getTrackedLink(AFFILIATE_LINKS.itrustcapital, "review-itrustcapital", "itrustcapital");
 
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={reviewSchema({ itemName: "iTrustCapital", reviewBody: "iTrustCapital offers a unique combination of crypto and precious metals IRA investing with low fees and a modern digital platform. They are best for tech-savvy investors who want both Bitcoin and gold in their retirement account.", ratingValue: 4.2, url: "/reviews/itrustcapital" })} />
             <Navbar />
 
@@ -63,7 +63,7 @@ export default function ITrustCapitalReviewPage() {
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-2 text-blue-200 text-sm font-bold uppercase tracking-wider mb-4">
-                            <span className="bg-blue-500/20 px-3 py-1 rounded-full">Crypto IRA Reviews</span>
+                            <span className="bg-[#121423]0/20 px-3 py-1 rounded-full">Crypto IRA Reviews</span>
                             <span className="text-white/50">•</span>
                             <span className="text-white/70">Updated January 2026</span>
                         </div>
@@ -121,7 +121,7 @@ export default function ITrustCapitalReviewPage() {
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Clock className="w-5 h-5 text-purple-600" />
+                                        <Clock className="w-5 h-5 text-[#D4A94E]" />
                                         <div>
                                             <p className="text-[#A8A39A] text-sm">Monthly Fee</p>
                                             <p className="text-[#F6F4EF] font-medium">{companyData.monthlyFee}</p>
@@ -251,9 +251,9 @@ export default function ITrustCapitalReviewPage() {
                                     Rollovers typically take 1-3 weeks to complete. Once funded, you have full control to trade whenever you want—even nights and weekends when traditional markets are closed.
                                 </p>
 
-                                <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 not-prose my-8">
+                                <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 not-prose my-8">
                                     <div className="flex gap-4">
-                                        <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                                        <AlertTriangle className="w-6 h-6 text-[#D4A94E] flex-shrink-0 mt-1" />
                                         <div>
                                             <h4 className="font-bold text-amber-800 mb-2">Important: Tax Implications</h4>
                                             <p className="text-amber-700 text-sm">

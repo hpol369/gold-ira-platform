@@ -73,7 +73,7 @@ const faqs = [
 
 export default function BitcoinVsGoldIRAPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <SchemaScript
@@ -130,7 +130,7 @@ export default function BitcoinVsGoldIRAPage() {
             </header>
 
             {/* Comparison Table */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -154,7 +154,7 @@ export default function BitcoinVsGoldIRAPage() {
                                         </th>
                                         <th className="text-left px-4 py-3 text-[#F6F4EF] font-semibold border-b border-[#2A2D42]">
                                             <span className="flex items-center gap-1">
-                                                <Coins className="w-4 h-4 text-amber-500" /> Gold IRA
+                                                <Coins className="w-4 h-4 text-[#D4A94E]" /> Gold IRA
                                             </span>
                                         </th>
                                         <th className="text-left px-4 py-3 text-[#F6F4EF] font-semibold border-b border-[#2A2D42]">Notes</th>
@@ -215,7 +215,7 @@ export default function BitcoinVsGoldIRAPage() {
                                         24/7 liquidity and instant settlement
                                     </li>
                                 </ul>
-                                <div className="mt-4 bg-orange-50 border border-orange-200 rounded-lg p-3">
+                                <div className="mt-4 bg-[rgba(183,121,31,0.08)] border border-orange-200 rounded-lg p-3">
                                     <p className="text-[#D0CCC4] text-xs">
                                         <strong>Best for:</strong> Investors with 10+ year time horizons who can stomach major drawdowns and want asymmetric upside potential.
                                     </p>
@@ -226,7 +226,7 @@ export default function BitcoinVsGoldIRAPage() {
                             <div className="bg-[#161828] rounded-xl border border-amber-200 p-6">
                                 <div className="flex items-center gap-3 mb-4">
                                     <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                                        <Coins className="w-5 h-5 text-amber-600" />
+                                        <Coins className="w-5 h-5 text-[#D4A94E]" />
                                     </div>
                                     <h3 className="text-xl font-bold text-[#F6F4EF]">The Case for Gold</h3>
                                 </div>
@@ -252,7 +252,7 @@ export default function BitcoinVsGoldIRAPage() {
                                         Central banks globally increasing gold reserves
                                     </li>
                                 </ul>
-                                <div className="mt-4 bg-amber-50 border border-amber-200 rounded-lg p-3">
+                                <div className="mt-4 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-lg p-3">
                                     <p className="text-[#D0CCC4] text-xs">
                                         <strong>Best for:</strong> Investors approaching or in retirement who prioritize capital preservation and want protection against inflation and market crashes.
                                     </p>
@@ -264,7 +264,7 @@ export default function BitcoinVsGoldIRAPage() {
             </section>
 
             {/* The Verdict */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -295,21 +295,21 @@ export default function BitcoinVsGoldIRAPage() {
                                     <span className="w-32 text-sm font-medium text-[#D0CCC4]">Conservative</span>
                                     <div className="flex-1 flex gap-1 h-6">
                                         <div className="bg-amber-400 rounded-l-lg w-[90%] flex items-center justify-center text-xs font-bold text-white">90% Gold</div>
-                                        <div className="bg-orange-500 rounded-r-lg w-[10%] flex items-center justify-center text-xs font-bold text-white">10%</div>
+                                        <div className="bg-[rgba(183,121,31,0.08)]0 rounded-r-lg w-[10%] flex items-center justify-center text-xs font-bold text-white">10%</div>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
                                     <span className="w-32 text-sm font-medium text-[#D0CCC4]">Moderate</span>
                                     <div className="flex-1 flex gap-1 h-6">
                                         <div className="bg-amber-400 rounded-l-lg w-[70%] flex items-center justify-center text-xs font-bold text-white">70% Gold</div>
-                                        <div className="bg-orange-500 rounded-r-lg w-[30%] flex items-center justify-center text-xs font-bold text-white">30% BTC</div>
+                                        <div className="bg-[rgba(183,121,31,0.08)]0 rounded-r-lg w-[30%] flex items-center justify-center text-xs font-bold text-white">30% BTC</div>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
                                     <span className="w-32 text-sm font-medium text-[#D0CCC4]">Aggressive</span>
                                     <div className="flex-1 flex gap-1 h-6">
                                         <div className="bg-amber-400 rounded-l-lg w-[50%] flex items-center justify-center text-xs font-bold text-white">50% Gold</div>
-                                        <div className="bg-orange-500 rounded-r-lg w-[50%] flex items-center justify-center text-xs font-bold text-white">50% BTC</div>
+                                        <div className="bg-[rgba(183,121,31,0.08)]0 rounded-r-lg w-[50%] flex items-center justify-center text-xs font-bold text-white">50% BTC</div>
                                     </div>
                                 </div>
                             </div>
@@ -336,7 +336,7 @@ export default function BitcoinVsGoldIRAPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <FAQSection faqs={faqs} />

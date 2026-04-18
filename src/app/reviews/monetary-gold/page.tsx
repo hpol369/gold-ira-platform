@@ -101,7 +101,7 @@ export default function MonetaryGoldReviewPage() {
                                         Monetary Gold claims to operate with a leaner model. No TV ads. No William Devane. Just a basic website and word-of-mouth referrals. The savings, they say, go back to customers.
                                     </p>
 
-                                    <div className="bg-green-50 p-6 rounded-xl border border-green-100 flex gap-4 not-prose my-6">
+                                    <div className="bg-[rgba(46,139,87,0.08)] p-6 rounded-xl border border-green-100 flex gap-4 not-prose my-6">
                                         <DollarSign className="w-6 h-6 text-green-600 shrink-0" />
                                         <div>
                                             <h4 className="font-bold text-green-800">What This Means For You</h4>
@@ -137,7 +137,7 @@ export default function MonetaryGoldReviewPage() {
                                 <section id="pros-cons" className="scroll-mt-32">
                                     <h2>Pros & Cons</h2>
                                     <div className="grid md:grid-cols-2 gap-8 not-prose">
-                                        <div className="bg-green-50 p-6 rounded-xl border border-green-100">
+                                        <div className="bg-[rgba(46,139,87,0.08)] p-6 rounded-xl border border-green-100">
                                             <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
                                                 <CheckCircle2 className="w-5 h-5" /> What We Like
                                             </h3>
@@ -149,7 +149,7 @@ export default function MonetaryGoldReviewPage() {
                                                 <li>• No pushy sales tactics reported</li>
                                             </ul>
                                         </div>
-                                        <div className="bg-red-50 p-6 rounded-xl border border-red-100">
+                                        <div className="bg-[rgba(220,38,38,0.08)] p-6 rounded-xl border border-red-100">
                                             <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
                                                 <XCircle className="w-5 h-5" /> What Could Be Better
                                             </h3>

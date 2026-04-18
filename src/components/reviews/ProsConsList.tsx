@@ -54,7 +54,7 @@ export function ProsConsList({
   return (
     <div className={cn("grid md:grid-cols-2 gap-6", className)}>
       {/* Pros */}
-      <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+      <div className="bg-[rgba(46,139,87,0.08)] rounded-xl p-6 border border-green-200">
         <div className="flex items-center gap-2 text-green-800 font-bold text-lg mb-4">
           <div className="p-2 bg-green-100 rounded-lg">
             <ThumbsUp className="h-5 w-5" />
@@ -72,7 +72,7 @@ export function ProsConsList({
       </div>
 
       {/* Cons */}
-      <div className="bg-red-50 rounded-xl p-6 border border-red-200">
+      <div className="bg-[rgba(220,38,38,0.08)] rounded-xl p-6 border border-red-200">
         <div className="flex items-center gap-2 text-red-800 font-bold text-lg mb-4">
           <div className="p-2 bg-red-100 rounded-lg">
             <ThumbsDown className="h-5 w-5" />

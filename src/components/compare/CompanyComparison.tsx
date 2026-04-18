@@ -31,7 +31,7 @@ export function CompanyComparisonTable({
 
   const getWinnerClass = (winner: string, side: "A" | "B") => {
     if (!highlightWinner || winner === "tie") return "";
-    if (winner === side) return "bg-green-50 font-semibold text-green-900";
+    if (winner === side) return "bg-[rgba(46,139,87,0.08)] font-semibold text-green-900";
     return "";
   };
 

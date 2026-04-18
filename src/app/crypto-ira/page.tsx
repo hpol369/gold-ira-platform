@@ -70,7 +70,7 @@ const topProviders = [
 
 export default function CryptoIRAPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Answer-First GEO Block */}
@@ -126,7 +126,7 @@ export default function CryptoIRAPage() {
             </header>
 
             {/* What is a Crypto IRA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-6">What is a Crypto IRA?</h2>
@@ -178,7 +178,7 @@ export default function CryptoIRAPage() {
 
                         <div className="bg-[#161828] p-8 rounded-xl border border-[#2A2D42]">
                             <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                                <Clock className="w-6 h-6 text-purple-600" />
+                                <Clock className="w-6 h-6 text-[#D4A94E]" />
                             </div>
                             <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Long-Term Bet</h3>
                             <p className="text-[#A8A39A]">
@@ -190,7 +190,7 @@ export default function CryptoIRAPage() {
             </section>
 
             {/* Top Providers Comparison */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-4">Best Crypto IRA Companies</h2>
@@ -206,7 +206,7 @@ export default function CryptoIRAPage() {
                                 className={`relative bg-[#161828] rounded-xl border ${index === 0 ? 'border-amber-300' : 'border-[#2A2D42]'} overflow-hidden`}
                             >
                                 {index === 0 && (
-                                    <div className="absolute top-0 left-0 right-0 bg-amber-500 text-white text-center py-1 text-xs font-bold uppercase tracking-wide">
+                                    <div className="absolute top-0 left-0 right-0 bg-[#161828]0 text-white text-center py-1 text-xs font-bold uppercase tracking-wide">
                                         Our Top Pick
                                     </div>
                                 )}
@@ -215,7 +215,7 @@ export default function CryptoIRAPage() {
                                     <div className="flex items-center justify-between mb-4">
                                         <h3 className="text-xl font-bold text-[#F6F4EF]">{provider.name}</h3>
                                         <div className="flex items-center gap-1">
-                                            <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
+                                            <Star className="w-4 h-4 text-[#D4A94E] fill-[#D4A94E]" />
                                             <span className="text-[#F6F4EF] font-medium">{provider.rating}</span>
                                         </div>
                                     </div>
@@ -314,29 +314,29 @@ export default function CryptoIRAPage() {
             </section>
 
             {/* Important Considerations */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-amber-50 border border-amber-200 rounded-xl p-8 mb-12">
+                        <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-8 mb-12">
                             <div className="flex gap-4">
-                                <AlertTriangle className="w-8 h-8 text-amber-600 flex-shrink-0" />
+                                <AlertTriangle className="w-8 h-8 text-[#D4A94E] flex-shrink-0" />
                                 <div>
                                     <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Important Considerations</h3>
                                     <ul className="space-y-2 text-[#D0CCC4]">
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                                             <span><strong>Volatility:</strong> Crypto is highly volatile. Only invest what you can afford to hold long-term.</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                                             <span><strong>Not FDIC Insured:</strong> Crypto IRAs are not insured like bank deposits.</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                                             <span><strong>Early Withdrawal Penalties:</strong> Withdrawing before 59½ may trigger taxes and penalties.</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <CheckCircle2 className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                                            <CheckCircle2 className="w-5 h-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                                             <span><strong>Contribution Limits:</strong> IRA contribution limits apply ($7,000/year for 2026, $8,000 if 50+).</span>
                                         </li>
                                     </ul>
@@ -368,12 +368,12 @@ export default function CryptoIRAPage() {
                                     </tr>
                                     <tr>
                                         <td className="p-4 text-[#D0CCC4]">Withdrawal Access</td>
-                                        <td className="p-4 text-amber-600">After 59½ (penalty-free)</td>
+                                        <td className="p-4 text-[#D4A94E]">After 59½ (penalty-free)</td>
                                         <td className="p-4 text-green-600">Anytime</td>
                                     </tr>
                                     <tr>
                                         <td className="p-4 text-[#D0CCC4]">Contribution Limits</td>
-                                        <td className="p-4 text-amber-600">$7,000-$8,000/year</td>
+                                        <td className="p-4 text-[#D4A94E]">$7,000-$8,000/year</td>
                                         <td className="p-4 text-green-600">Unlimited</td>
                                     </tr>
                                     <tr>
@@ -432,7 +432,7 @@ export default function CryptoIRAPage() {
             </section>
 
             {/* Related Resources */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Related Resources</h2>
                     <div className="grid md:grid-cols-4 gap-6">
@@ -447,12 +447,12 @@ export default function CryptoIRAPage() {
                             <p className="text-[#A8A39A] text-sm">200+ crypto options with $0 minimum.</p>
                         </Link>
                         <Link href="/learn/bitcoin-ira" className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] hover:border-blue-300 transition-colors group">
-                            <Coins className="w-8 h-8 text-amber-500 mb-3" />
+                            <Coins className="w-8 h-8 text-[#D4A94E] mb-3" />
                             <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-blue-600 transition-colors">Bitcoin IRA Guide</h3>
                             <p className="text-[#A8A39A] text-sm">Everything about Bitcoin in retirement accounts.</p>
                         </Link>
                         <Link href="/compare/gold-ira-vs-crypto" className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] hover:border-blue-300 transition-colors group">
-                            <Scale className="w-8 h-8 text-purple-600 mb-3" />
+                            <Scale className="w-8 h-8 text-[#D4A94E] mb-3" />
                             <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-blue-600 transition-colors">Gold vs Crypto IRA</h3>
                             <p className="text-[#A8A39A] text-sm">Compare precious metals and crypto options.</p>
                         </Link>
@@ -493,7 +493,7 @@ export default function CryptoIRAPage() {
                 </Container>
             </section>
 
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/crypto-ira" />
                 </Container>

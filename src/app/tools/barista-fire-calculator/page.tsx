@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 
 export default function BaristaFIRECalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18]text-[#F6F4EF]">
       <SchemaScript schema={articleSchema({ title: "Barista FIRE Calculator - Calculate Part-Time Work FIRE Strategy", description: "Free Barista FIRE calculator to determine how part-time income can accelerate your financial independence. Find out how much you need with flexible work.", slug: "/tools/barista-fire-calculator" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Barista FIRE Calculator", url: "/tools/barista-fire-calculator" }])} />
       <Navbar />
       <BaristaFIRECalculator />
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -16,7 +16,7 @@ export default function Layout({
     children: React.ReactNode;
 }>) {
     return (
-        <div className={cn(inter.variable, playfair.variable, "antialiased min-h-screen bg-white text-slate-900 selection:bg-[#000080] selection:text-white")}>
+        <div className={cn(inter.variable, playfair.variable, "antialiased min-h-screen bg-[#0C0D18] text-slate-900 selection:bg-[#000080] selection:text-white")}>
 
             {/* 
         FORCE PATRIOT THEME VARIABLES 

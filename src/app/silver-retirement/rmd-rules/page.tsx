@@ -233,7 +233,7 @@ const schema = {
 
 export default function SilverIraRmdRulesPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -251,7 +251,7 @@ export default function SilverIraRmdRulesPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
             </Link>
-            <div className="inline-flex items-center gap-2 text-red-400 text-sm font-medium mb-4 bg-red-500/20 px-4 py-2 rounded-full border border-red-500/30">
+            <div className="inline-flex items-center gap-2 text-red-400 text-sm font-medium mb-4 bg-[rgba(220,38,38,0.08)]0/20 px-4 py-2 rounded-full border border-red-500/30">
               <AlertTriangle className="h-4 w-4" />
               REQUIRED READING
             </div>
@@ -354,7 +354,7 @@ export default function SilverIraRmdRulesPage() {
                     </span>
                   </div>
                 </div>
-                <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
+                <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-lg p-4">
                   <div className="text-center">
                     <div className="text-sm text-[#D0CCC4] mb-1">Required Minimum Distribution</div>
                     <div className="text-3xl font-bold text-red-400">
@@ -398,7 +398,7 @@ export default function SilverIraRmdRulesPage() {
                   className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6"
                 >
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="bg-red-500/20 p-3 rounded-lg">
+                    <div className="bg-[rgba(220,38,38,0.08)]0/20 p-3 rounded-lg">
                       <Icon className="h-6 w-6 text-red-400" />
                     </div>
                     <div>
@@ -407,7 +407,7 @@ export default function SilverIraRmdRulesPage() {
                     </div>
                   </div>
                   <div className="grid md:grid-cols-3 gap-4 mb-4">
-                    <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-3">
+                    <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-lg p-3">
                       <h4 className="text-xs font-semibold text-green-400 mb-2">Pros</h4>
                       <ul className="space-y-1 text-xs text-[#D0CCC4]">
                         {option.pros.map((pro, i) => (
@@ -418,7 +418,7 @@ export default function SilverIraRmdRulesPage() {
                         ))}
                       </ul>
                     </div>
-                    <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3">
+                    <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-lg p-3">
                       <h4 className="text-xs font-semibold text-red-400 mb-2">Cons</h4>
                       <ul className="space-y-1 text-xs text-[#D0CCC4]">
                         {option.cons.map((con, i) => (
@@ -481,7 +481,7 @@ export default function SilverIraRmdRulesPage() {
                   <span
                     className={`text-xs px-2 py-1 rounded ${
                       item.effectiveness === "High"
-                        ? "bg-green-500/20 text-green-400"
+                        ? "bg-[rgba(46,139,87,0.08)]0/20 text-green-400"
                         : "bg-[rgba(220,38,38,0.18)] text-[#D4A94E]"
                     }`}
                   >
@@ -508,7 +508,7 @@ export default function SilverIraRmdRulesPage() {
               {penalties.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-red-500/10 border border-red-500/30 rounded-xl p-4"
+                  className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-4"
                 >
                   <div className="flex items-start gap-4">
                     <div className="text-2xl font-bold text-red-400 flex-shrink-0">

@@ -79,7 +79,7 @@ export default function LearnPage() {
   const categories = Object.keys(categoryMeta) as ArticleCategory[];
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       {/* Hero Section */}
@@ -186,7 +186,7 @@ export default function LearnPage() {
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-lg bg-orange-500/20 text-orange-400">
+            <div className="p-2 rounded-lg bg-[rgba(183,121,31,0.08)]0/20 text-orange-400">
               <Flame className="h-5 w-5" />
             </div>
             <div>
@@ -277,7 +277,7 @@ export default function LearnPage() {
         <Container>
           <div className="flex items-center justify-between mb-6">
             <div className="flex items-center gap-3">
-              <div className="p-2 rounded-lg bg-blue-500/20 text-blue-700">
+              <div className="p-2 rounded-lg bg-[#121423]0/20 text-blue-700">
                 <RefreshCcw className="h-5 w-5" />
               </div>
               <div>
@@ -334,7 +334,7 @@ export default function LearnPage() {
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-lg bg-red-500/20 text-red-700">
+            <div className="p-2 rounded-lg bg-[rgba(220,38,38,0.08)]0/20 text-red-700">
               <AlertTriangle className="h-5 w-5" />
             </div>
             <div>
@@ -424,7 +424,7 @@ export default function LearnPage() {
       <section className="py-16">
         <Container>
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-lg bg-green-500/20 text-green-700">
+            <div className="p-2 rounded-lg bg-[rgba(46,139,87,0.08)]0/20 text-green-700">
               <Wallet className="h-5 w-5" />
             </div>
             <div>
@@ -508,7 +508,7 @@ export default function LearnPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Link
               href="/learn/railroad-retirement-calculator"
-              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-purple-500/30 transition-all"
+              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-[rgba(197,149,46,0.32)] transition-all"
             >
               <h4 className="font-medium text-[#F6F4EF] group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Railroad Retirement Calculator
@@ -517,7 +517,7 @@ export default function LearnPage() {
             </Link>
             <Link
               href="/learn/tier-1-vs-tier-2-railroad"
-              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-purple-500/30 transition-all"
+              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-[rgba(197,149,46,0.32)] transition-all"
             >
               <h4 className="font-medium text-[#F6F4EF] group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Tier 1 vs Tier 2 Railroad
@@ -526,7 +526,7 @@ export default function LearnPage() {
             </Link>
             <Link
               href="/learn/railroad-retirement-vs-social-security"
-              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-purple-500/30 transition-all"
+              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-[rgba(197,149,46,0.32)] transition-all"
             >
               <h4 className="font-medium text-[#F6F4EF] group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Railroad vs Social Security
@@ -535,7 +535,7 @@ export default function LearnPage() {
             </Link>
             <Link
               href="/learn/railroad-retirement-spouse-benefits"
-              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-purple-500/30 transition-all"
+              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-[rgba(197,149,46,0.32)] transition-all"
             >
               <h4 className="font-medium text-[#F6F4EF] group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Railroad Spouse Benefits
@@ -544,7 +544,7 @@ export default function LearnPage() {
             </Link>
             <Link
               href="/learn/railroad-retirement-survivor-benefits"
-              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-purple-500/30 transition-all"
+              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-[rgba(197,149,46,0.32)] transition-all"
             >
               <h4 className="font-medium text-[#F6F4EF] group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Railroad Survivor Benefits
@@ -553,7 +553,7 @@ export default function LearnPage() {
             </Link>
             <Link
               href="/learn/railroad-retirement-disability"
-              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-purple-500/30 transition-all"
+              className="group bg-[#161828] border border-[#2A2D42] rounded-lg p-4 hover:border-[rgba(197,149,46,0.32)] transition-all"
             >
               <h4 className="font-medium text-[#F6F4EF] group-hover:text-purple-700 transition-colors text-sm leading-snug">
                 Railroad Retirement Disability
@@ -712,7 +712,7 @@ export default function LearnPage() {
       <section className="py-16">
         <Container>
           <div className="flex items-center gap-3 mb-6">
-            <div className="p-2 rounded-lg bg-blue-500/20 text-blue-700">
+            <div className="p-2 rounded-lg bg-[#121423]0/20 text-blue-700">
               <FileText className="h-5 w-5" />
             </div>
             <div>

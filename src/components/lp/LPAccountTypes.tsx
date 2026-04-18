@@ -88,7 +88,7 @@ export function LPAccountTypes({
                   <CheckCircle className="h-5 w-5 text-green-400" />
                 </div>
                 <div className="mb-3">
-                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 text-amber-400">
+                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 text-[#D4A94E]">
                     <Icon className="h-5 w-5" />
                   </div>
                 </div>
@@ -103,9 +103,9 @@ export function LPAccountTypes({
 
         {/* Tax-Free Callout */}
         <div className="mt-10 text-center">
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 p-6 rounded-xl border border-green-400/20 bg-green-500/5">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 p-6 rounded-xl border border-green-400/20 bg-[rgba(46,139,87,0.08)]0/5">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center">
+              <div className="w-12 h-12 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center">
                 <CheckCircle className="h-6 w-6 text-green-400" />
               </div>
               <div className="text-left">

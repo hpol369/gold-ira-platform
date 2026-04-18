@@ -53,7 +53,7 @@ export function CalculatorEmailGate({
         </div>
         <div className="relative flex justify-center">
           <span className="bg-white px-4 text-sm font-medium text-[#A8A39A] flex items-center gap-1.5">
-            <Sparkles className="h-4 w-4 text-amber-500" />
+            <Sparkles className="h-4 w-4 text-[#D4A94E]" />
             Want deeper insights?
           </span>
         </div>
@@ -64,7 +64,7 @@ export function CalculatorEmailGate({
         className={cn(
           "rounded-2xl border transition-all duration-300",
           submitted
-            ? "border-green-200 bg-green-50/50"
+            ? "border-green-200 bg-[rgba(46,139,87,0.08)]/50"
             : "border-[#2A2D42] bg-[#0C0D18]"
         )}
       >

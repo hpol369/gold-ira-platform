@@ -114,7 +114,7 @@ const schema = {
 
 export default function GoldEtfVsPhysicalGoldPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
@@ -192,7 +192,7 @@ export default function GoldEtfVsPhysicalGoldPage() {
                             </ul>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <h4 className="font-bold text-green-700 mb-3">Gold ETF Advantages</h4>
                                     <ul className="space-y-2 text-sm text-green-600">
                                         <li>• <strong>Instant liquidity</strong> &mdash; Buy/sell during market hours</li>
@@ -202,7 +202,7 @@ export default function GoldEtfVsPhysicalGoldPage() {
                                         <li>• <strong>Fractional shares</strong> &mdash; Buy exact dollar amounts</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                                     <h4 className="font-bold text-red-700 mb-3">Gold ETF Disadvantages</h4>
                                     <ul className="space-y-2 text-sm text-red-600">
                                         <li>• <strong>No physical ownership</strong> &mdash; Just paper claims</li>
@@ -227,7 +227,7 @@ export default function GoldEtfVsPhysicalGoldPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <h4 className="font-bold text-green-700 mb-3">Physical Gold Advantages</h4>
                                     <ul className="space-y-2 text-sm text-green-600">
                                         <li>• <strong>True ownership</strong> &mdash; The gold is yours, period</li>
@@ -237,7 +237,7 @@ export default function GoldEtfVsPhysicalGoldPage() {
                                         <li>• <strong>5,000 year track record</strong> &mdash; Ultimate store of value</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                                     <h4 className="font-bold text-red-700 mb-3">Physical Gold Disadvantages</h4>
                                     <ul className="space-y-2 text-sm text-red-600">
                                         <li>• <strong>Storage requirements</strong> &mdash; Safe or vault needed</li>
@@ -399,7 +399,7 @@ export default function GoldEtfVsPhysicalGoldPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-[#161828] shadow-sm border border-[#2A2D42]">
-                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-[#D4A94E] flex items-center justify-center shrink-0">
                                         <DollarSign className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -419,21 +419,21 @@ export default function GoldEtfVsPhysicalGoldPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423] border border-[#3F4460]">
                                     <BarChart3 className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">You&apos;re actively trading gold</h4>
                                         <p className="text-sm text-blue-600 mt-1">If you&apos;re making short-term trades on gold price movements, ETFs offer instant execution and tight spreads.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423] border border-[#3F4460]">
                                     <DollarSign className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">You&apos;re investing small amounts</h4>
                                         <p className="text-sm text-blue-600 mt-1">With ETFs, you can invest $100 or $1,000. Physical gold requires larger minimum purchases (typically $1,500+).</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423] border border-[#3F4460]">
                                     <TrendingUp className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">You want portfolio convenience</h4>
@@ -451,28 +451,28 @@ export default function GoldEtfVsPhysicalGoldPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You want true crisis insurance</h4>
                                         <p className="text-sm text-green-600 mt-1">If banks close, markets halt, or digital systems fail&mdash;physical gold still works. It&apos;s protection that doesn&apos;t depend on the system functioning.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You&apos;re building long-term wealth</h4>
                                         <p className="text-sm text-green-600 mt-1">For holdings measured in years or decades, physical gold avoids the ongoing expense ratio drag of ETFs.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You want to eliminate counterparty risk</h4>
                                         <p className="text-sm text-green-600 mt-1">Physical gold has no counterparty. No fund sponsor, no custodian bank, no authorized participants. Just you and your metal.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You&apos;re protecting retirement savings</h4>

@@ -99,7 +99,7 @@ export default function AmericanBullionReviewPage() {
                                     This head start gave them deep expertise in navigating IRS rules. Their team includes people who've been doing Gold IRAs since the beginning, and that institutional knowledge shows in how smoothly they handle complex rollovers.
                                 </p>
 
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                <div className="bg-[#121423] p-6 rounded-xl border border-blue-100 not-prose my-8">
                                     <h4 className="font-bold text-[#F6F4EF] flex items-center gap-2 mb-2">
                                         <Info className="w-5 h-5 text-[#D4A94E]" /> Experience vs. Innovation
                                     </h4>

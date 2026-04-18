@@ -329,7 +329,7 @@ export default function CanYouLoseMoneyInGoldIraPage() {
               {/* Who This Is For */}
               <h2 id="who-this-is-for">Who This Is For / Not For</h2>
               <div className="grid md:grid-cols-2 gap-6 not-prose my-6">
-                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                   <h3 className="font-bold text-green-800 mb-3">This is for:</h3>
                   <ul className="space-y-2 text-[#D0CCC4]">
                     <li>Retirees worried about moving too much money into gold</li>
@@ -337,7 +337,7 @@ export default function CanYouLoseMoneyInGoldIraPage() {
                     <li>People wanting a realistic view of downside risks</li>
                   </ul>
                 </div>
-                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                   <h3 className="font-bold text-red-800 mb-3">This is not for:</h3>
                   <ul className="space-y-2 text-[#D0CCC4]">
                     <li>Readers looking for gold sales pitches</li>

@@ -123,7 +123,7 @@ const faqSchema = {
 
 export default function CharitableRemainderTrustCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -132,7 +132,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
       <CharitableRemainderTrustCalculator />
 
       {/* CRT Benefits Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -258,7 +258,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
       </section>
 
       {/* CRAT vs CRUT Deep Dive */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -266,7 +266,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
+              <div className="bg-[#121423]0/10 border border-blue-500/30 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-blue-600 mb-4">
                   CRAT (Charitable Remainder Annuity Trust)
                 </h3>
@@ -292,14 +292,14 @@ export default function CharitableRemainderTrustCalculatorPage() {
                     <span>Risk: Trust could be depleted if investments underperform</span>
                   </li>
                 </ul>
-                <div className="mt-4 p-3 bg-blue-500/10 rounded-lg">
+                <div className="mt-4 p-3 bg-[#121423]0/10 rounded-lg">
                   <p className="text-blue-800 text-xs">
                     <strong>Best for:</strong> Those wanting predictable income, older donors, or when funding with assets expected to have modest growth.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-6">
+              <div className="bg-[rgba(197,149,46,0.08)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                 <h3 className="text-xl font-bold text-purple-700 mb-4">
                   CRUT (Charitable Remainder Unitrust)
                 </h3>
@@ -325,7 +325,7 @@ export default function CharitableRemainderTrustCalculatorPage() {
                     <span>Income decreases in down market years</span>
                   </li>
                 </ul>
-                <div className="mt-4 p-3 bg-purple-500/10 rounded-lg">
+                <div className="mt-4 p-3 bg-[rgba(197,149,46,0.08)] rounded-lg">
                   <p className="text-purple-800 text-xs">
                     <strong>Best for:</strong> Younger donors, those wanting growth potential, long-term trusts, or when planning additional contributions.
                   </p>

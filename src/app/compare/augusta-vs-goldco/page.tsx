@@ -95,7 +95,7 @@ const schema = {
 
 export default function AugustaVsGoldcoPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -237,7 +237,7 @@ export default function AugustaVsGoldcoPage() {
                         <section id="pros-cons" className="scroll-mt-32">
                             <h2>Pros & Cons</h2>
                             <div className="grid md:grid-cols-2 gap-8 not-prose">
-                                <div className="bg-green-500/10 p-6 rounded-xl border border-green-500/30">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 p-6 rounded-xl border border-green-500/30">
                                     <h3 className="text-xl font-bold text-green-700 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Augusta Pros
                                     </h3>
@@ -247,7 +247,7 @@ export default function AugustaVsGoldcoPage() {
                                         <li>• Lifetime account support</li>
                                     </ul>
                                 </div>
-                                <div className="bg-blue-500/10 p-6 rounded-xl border border-blue-500/30">
+                                <div className="bg-[#121423]0/10 p-6 rounded-xl border border-blue-500/30">
                                     <h3 className="text-xl font-bold text-blue-700 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Goldco Pros
                                     </h3>

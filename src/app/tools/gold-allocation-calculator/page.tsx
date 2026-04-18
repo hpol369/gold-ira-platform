@@ -46,7 +46,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function GoldAllocationCalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18]text-[#F6F4EF]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
@@ -59,7 +59,7 @@ export default function GoldAllocationCalculatorPage() {
           <CalculatorCTA calculatorType="gold-allocation" trackSource="tools-gold-allocation-calculator" />
         </Container>
       </section>
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"
@@ -69,7 +69,7 @@ export default function GoldAllocationCalculatorPage() {
           />
         </Container>
       </section>
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/tools/gold-allocation-calculator" />
         </Container>

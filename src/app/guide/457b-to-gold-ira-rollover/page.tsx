@@ -100,7 +100,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function Page457bRolloverPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             <SchemaScript schema={howToSchema({
@@ -135,7 +135,7 @@ export default function Page457bRolloverPage() {
                 <div className="absolute inset-0 bg-primary-dark/50" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-slate-200 px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#2A2D42]">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#2A2D42] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#2A2D42]">
                             <Briefcase className="w-4 h-4" />
                             For Government Employees
                         </div>
@@ -196,7 +196,7 @@ export default function Page457bRolloverPage() {
                                 Here&apos;s what makes 457(b) plans special: <strong className="text-[#F6F4EF]">there is no 10% early withdrawal penalty</strong> for governmental 457(b) plans, regardless of your age.
                             </p>
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-6">
-                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3">401(k) / 403(b) / IRA</h4>
                                     <ul className="space-y-2 text-red-800 text-sm">
                                         <li>Withdraw before 59½ = 10% penalty</li>
@@ -204,7 +204,7 @@ export default function Page457bRolloverPage() {
                                         <li>Limited exceptions (hardship, etc.)</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3">Governmental 457(b)</h4>
                                     <ul className="space-y-2 text-green-800 text-sm">
                                         <li>Withdraw at any age = NO penalty</li>
@@ -225,7 +225,7 @@ export default function Page457bRolloverPage() {
                                 Your ability to roll over depends on your employment status and plan rules:
                             </p>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         You Can Roll Over If:
@@ -237,7 +237,7 @@ export default function Page457bRolloverPage() {
                                         <li>Your plan allows rollovers to IRAs</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         You Probably Can&apos;t If:
@@ -368,28 +368,28 @@ export default function Page457bRolloverPage() {
                         <section id="mistakes" className="scroll-mt-32">
                             <h2>Common Mistakes</h2>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Taking an indirect rollover</h4>
                                         <p className="text-sm text-red-800 mt-1">If the check is made out to you, 20% is withheld for taxes. Always request a direct trustee-to-trustee transfer.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Not realizing IRA rules apply after rollover</h4>
                                         <p className="text-sm text-red-800 mt-1">Your 457(b)&apos;s penalty-free withdrawals disappear once in an IRA. If you&apos;re under 59½ and might need the money, consider leaving some in the 457(b).</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Assuming all 457(b)s can roll over</h4>
                                         <p className="text-sm text-red-800 mt-1">Non-governmental 457(b) plans generally cannot be rolled to an IRA. Verify your plan type first.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Forgetting about your 401(a) or 403(b)</h4>
@@ -407,7 +407,7 @@ export default function Page457bRolloverPage() {
                                     <details key={index} className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                         <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                                 <RefreshCw className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
@@ -446,7 +446,7 @@ export default function Page457bRolloverPage() {
                 </Container>
             </section>
 
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/guide/457b-to-gold-ira-rollover" />
                 </Container>

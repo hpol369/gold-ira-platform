@@ -24,7 +24,7 @@ export function AnswerFirst({
     <div
       className={`rounded-xl p-5 md:p-6 ${
         isLight
-          ? "bg-amber-50 border border-amber-200"
+          ? "bg-[#161828] border border-[rgba(197,149,46,0.32)]"
           : "bg-white/5 backdrop-blur-xl border border-amber-500/20"
       } ${className}`}
     >
@@ -44,7 +44,7 @@ export function AnswerFirst({
                 isLight ? "text-[#D0CCC4]" : "text-[#3F4460]"
               }`}
             >
-              <span className="flex-shrink-0 mt-1 w-1.5 h-1.5 rounded-full bg-amber-500" />
+              <span className="flex-shrink-0 mt-1 w-1.5 h-1.5 rounded-full bg-[#161828]0" />
               <span>{fact}</span>
             </li>
           ))}

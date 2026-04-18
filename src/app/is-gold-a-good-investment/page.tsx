@@ -129,7 +129,7 @@ const recessionData = [
     event: "2022 Inflation Spike",
     period: "Jan 2022 - Sep 2022",
     gold: "-3.8%",
-    goldColor: "text-amber-600",
+    goldColor: "text-[#D4A94E]",
     sp500: "-23.9%",
     sp500Color: "text-red-600",
     notes: "Fed hiked rates aggressively; gold held better than stocks",
@@ -285,7 +285,7 @@ export default function IsGoldAGoodInvestmentPage() {
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
-                  <BarChart3 className="w-5 h-5 text-amber-600" />
+                  <BarChart3 className="w-5 h-5 text-[#D4A94E]" />
                 </div>
                 <h2
                   id="performance-comparison"
@@ -357,7 +357,7 @@ export default function IsGoldAGoodInvestmentPage() {
                 </p>
               </div>
 
-              <div className="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-5">
+              <div className="mt-6 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                 <p className="text-[#D0CCC4] leading-relaxed">
                   <strong className="text-[#F6F4EF]">The takeaway:</strong> Over
                   20 years, gold outperformed both the S&amp;P 500 and bonds.
@@ -472,7 +472,7 @@ export default function IsGoldAGoodInvestmentPage() {
                 will.
               </p>
 
-              <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-5">
+              <div className="mt-6 bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
                   <p className="text-[#D0CCC4] leading-relaxed text-sm">
@@ -516,7 +516,7 @@ export default function IsGoldAGoodInvestmentPage() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Should */}
-                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                   <h3 className="flex items-center gap-2 text-lg font-bold text-green-800 mb-4">
                     <CheckCircle2 className="w-5 h-5" />
                     Gold makes sense if you&hellip;
@@ -534,7 +534,7 @@ export default function IsGoldAGoodInvestmentPage() {
                         key={item}
                         className="flex items-start gap-2 text-sm text-green-800"
                       >
-                        <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-green-500 mt-2" />
+                        <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[rgba(46,139,87,0.08)]0 mt-2" />
                         {item}
                       </li>
                     ))}
@@ -542,7 +542,7 @@ export default function IsGoldAGoodInvestmentPage() {
                 </div>
 
                 {/* Shouldn't */}
-                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                   <h3 className="flex items-center gap-2 text-lg font-bold text-red-800 mb-4">
                     <XCircle className="w-5 h-5" />
                     Gold may not be right if you&hellip;
@@ -560,7 +560,7 @@ export default function IsGoldAGoodInvestmentPage() {
                         key={item}
                         className="flex items-start gap-2 text-sm text-red-800"
                       >
-                        <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-red-500 mt-2" />
+                        <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[rgba(220,38,38,0.08)]0 mt-2" />
                         {item}
                       </li>
                     ))}
@@ -607,7 +607,7 @@ export default function IsGoldAGoodInvestmentPage() {
                   ].map((item) => (
                     <div key={item.label}>
                       <p
-                        className={`text-2xl md:text-3xl font-bold ${item.highlight ? "text-amber-600" : "text-[#F6F4EF]"}`}
+                        className={`text-2xl md:text-3xl font-bold ${item.highlight ? "text-[#D4A94E]" : "text-[#F6F4EF]"}`}
                       >
                         {item.stat}
                         {item.unit && (
@@ -639,7 +639,7 @@ export default function IsGoldAGoodInvestmentPage() {
                 lose value over time, and gold does not.
               </p>
 
-              <div className="mt-6 bg-blue-50 border border-blue-200 rounded-xl p-5">
+              <div className="mt-6 bg-[#121423] border border-blue-200 rounded-xl p-5">
                 <p className="text-[#D0CCC4] leading-relaxed text-sm">
                   <strong className="text-[#F6F4EF]">Think about it this way:</strong>{" "}
                   If your neighbor told you gold was a good investment, you might
@@ -673,7 +673,7 @@ export default function IsGoldAGoodInvestmentPage() {
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center">
-                  <Building2 className="w-5 h-5 text-purple-600" />
+                  <Building2 className="w-5 h-5 text-[#D4A94E]" />
                 </div>
                 <h2
                   id="how-to-invest"
@@ -757,9 +757,9 @@ export default function IsGoldAGoodInvestmentPage() {
                 </p>
               </div>
 
-              <div className="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-5">
+              <div className="mt-6 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                 <div className="flex items-start gap-3">
-                  <TrendingUp className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <TrendingUp className="w-5 h-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-[#D0CCC4] leading-relaxed text-sm">
                       <strong className="text-[#F6F4EF]">
@@ -794,7 +794,7 @@ export default function IsGoldAGoodInvestmentPage() {
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
-                  <TrendingUp className="w-5 h-5 text-amber-600" />
+                  <TrendingUp className="w-5 h-5 text-[#D4A94E]" />
                 </div>
                 <h2
                   id="why-2026"

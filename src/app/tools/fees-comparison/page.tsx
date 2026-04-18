@@ -47,7 +47,7 @@ const feeWarnings = [
 
 export default function FeesComparisonPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Gold IRA Fees Comparison Tool 2025 | Compare Costs", description: "Compare Gold IRA fees across top companies. See setup fees, annual fees, storage costs, and total expenses over time. Free comparison tool.", slug: "/tools/fees-comparison" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Fees Comparison", url: "/tools/fees-comparison" }])} />
       <Navbar />
@@ -56,7 +56,7 @@ export default function FeesComparisonPage() {
       <FeesComparison />
 
       {/* Fee Warnings */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -73,10 +73,10 @@ export default function FeesComparisonPage() {
               {feeWarnings.map((warning, index) => (
                 <div
                   key={index}
-                  className="bg-red-500/5 border border-red-500/20 rounded-xl p-6"
+                  className="bg-[rgba(220,38,38,0.08)]0/5 border border-red-500/20 rounded-xl p-6"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg flex items-center justify-center flex-shrink-0">
                       <AlertTriangle className="h-5 w-5 text-red-600" />
                     </div>
                     <div>
@@ -131,7 +131,7 @@ export default function FeesComparisonPage() {
       </section>
 
       {/* The Real Cost */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <div className="w-16 h-16 bg-[rgba(220,38,38,0.1)] rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -178,7 +178,7 @@ export default function FeesComparisonPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

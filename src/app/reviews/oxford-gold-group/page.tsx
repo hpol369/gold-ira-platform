@@ -78,7 +78,7 @@ const tocItems = [
 
 export default function OxfordGoldGroupReviewPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <header className="bg-[rgba(197,149,46,0.1)] text-white py-16">
                 <Container>

@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function PreviewArticle() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <PatriotNavbar />
 
             <article className="py-20">
@@ -39,7 +39,7 @@ export default function PreviewArticle() {
                             <Calendar className="h-4 w-4" />
                             <span>Updated Jan 28, 2026</span>
                         </div>
-                        <div className="flex items-center gap-2 text-[#000080] bg-blue-50 px-2 py-1 rounded">
+                        <div className="flex items-center gap-2 text-[#000080] bg-[#121423] px-2 py-1 rounded">
                             <Clock className="h-4 w-4" />
                             <span>8 Min Read</span>
                         </div>

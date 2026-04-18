@@ -107,7 +107,7 @@ const schema = {
 
 export default function PSLVvsSLVPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -159,9 +159,9 @@ export default function PSLVvsSLVPage() {
             <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-8">At a Glance</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {/* PSLV Card */}
-              <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+              <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-green-500/20 rounded-lg">
+                  <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg">
                     <Shield className="h-6 w-6 text-green-400" />
                   </div>
                   <div>
@@ -231,7 +231,7 @@ export default function PSLVvsSLVPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
@@ -335,7 +335,7 @@ export default function PSLVvsSLVPage() {
               </p>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+                <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6">
                   <h3 className="text-lg font-bold text-green-400 mb-4">PSLV Advantages</h3>
                   <ul className="space-y-3 text-[#D0CCC4]">
                     <li className="flex items-start gap-3">
@@ -540,7 +540,7 @@ export default function PSLVvsSLVPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

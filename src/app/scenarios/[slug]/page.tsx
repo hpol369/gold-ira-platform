@@ -71,7 +71,7 @@ export default async function ScenarioPage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       {/* Hero Section */}
@@ -132,7 +132,7 @@ export default async function ScenarioPage({ params }: PageProps) {
       </section>
 
       {/* Warning Signals */}
-      <section className="py-12 bg-red-50 border-y border-red-200">
+      <section className="py-12 bg-[rgba(220,38,38,0.08)] border-y border-red-200">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-lg font-bold text-red-700 mb-4 flex items-center gap-2">
@@ -152,7 +152,7 @@ export default async function ScenarioPage({ params }: PageProps) {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             {/* Content Sections */}

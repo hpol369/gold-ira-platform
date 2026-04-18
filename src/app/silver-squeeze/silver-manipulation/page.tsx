@@ -59,7 +59,7 @@ const faqSchema = {
 
 export default function SilverManipulationPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             
 
             <script
@@ -72,7 +72,7 @@ export default function SilverManipulationPage() {
                 <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 via-slate-900 to-slate-900 z-0"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="inline-block py-1 px-3 rounded-full bg-red-500/20 text-red-700 border border-red-500/30 text-xs font-bold tracking-widest uppercase mb-4">
+                        <span className="inline-block py-1 px-3 rounded-full bg-[rgba(220,38,38,0.08)]0/20 text-red-700 border border-red-500/30 text-xs font-bold tracking-widest uppercase mb-4">
                             EXPOSE
                         </span>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
@@ -125,7 +125,7 @@ export default function SilverManipulationPage() {
                         {/* Section 1: The $920 Million Fine */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <Gavel className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">The $920 Million Fine: JP Morgan Caught Red-Handed</h2>
@@ -192,7 +192,7 @@ export default function SilverManipulationPage() {
                         {/* Section 3: Paper Silver vs Physical */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <FileWarning className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Paper Silver vs Physical: The 100:1 Leverage Problem</h2>
@@ -251,7 +251,7 @@ export default function SilverManipulationPage() {
                         {/* Section 5: CFTC Investigation History */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <Shield className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">CFTC Investigation History: 13 Years of &quot;Nothing to See Here&quot;</h2>
@@ -320,7 +320,7 @@ export default function SilverManipulationPage() {
                         {/* Section 7: How to Profit When Manipulation Ends */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-green-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg">
                                     <TrendingUp className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">How to Profit When Manipulation Ends</h2>

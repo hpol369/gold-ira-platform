@@ -21,7 +21,7 @@ export function RolloverSteps({ steps, providerName }: RolloverStepsProps) {
       <div className="space-y-4">
         {steps.map((step, index) => (
           <div key={index} className="flex gap-4">
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 text-amber-700 flex items-center justify-center font-bold text-sm border border-amber-500/30">
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#161828]0/20 text-amber-700 flex items-center justify-center font-bold text-sm border border-amber-500/30">
               {index + 1}
             </div>
             <div className="flex-1 pt-1">
@@ -43,7 +43,7 @@ export function TipsWarnings({ tips, warnings }: TipsWarningsProps) {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       {/* Tips */}
-      <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
+      <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-6 border border-green-500/20">
         <h3 className="font-bold text-green-700 mb-4 flex items-center gap-2">
           <Lightbulb className="h-5 w-5" />
           What Helps
@@ -59,7 +59,7 @@ export function TipsWarnings({ tips, warnings }: TipsWarningsProps) {
       </div>
 
       {/* Warnings */}
-      <div className="bg-amber-500/10 rounded-xl p-6 border border-amber-500/20">
+      <div className="bg-[#161828]0/10 rounded-xl p-6 border border-amber-500/20">
         <h3 className="font-bold text-amber-700 mb-4 flex items-center gap-2">
           <AlertTriangle className="h-5 w-5" />
           Things to Avoid

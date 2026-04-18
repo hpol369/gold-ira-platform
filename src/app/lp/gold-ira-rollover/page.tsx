@@ -59,7 +59,7 @@ export default function GoldIRARolloverPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
+        <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF] font-serif">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -117,7 +117,7 @@ export default function GoldIRARolloverPage() {
                             href={augustaLink("lp-gold-ira-rollover-hero")}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_10px_30px_rgba(197,149,46,0.28)] hover:shadow-[0_14px_40px_rgba(197,149,46,0.4)] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get My Free Rollover Checklist
                             <ArrowRight className="h-6 w-6" />
@@ -144,7 +144,7 @@ export default function GoldIRARolloverPage() {
             </section>
 
             {/* Which Account Do You Have? */}
-            <section className="py-16 bg-white font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         Which Account Do You Have?
@@ -243,7 +243,7 @@ export default function GoldIRARolloverPage() {
             </section>
 
             {/* Key Objections */}
-            <section className="py-16 bg-white font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-10">
                         Your Questions, Answered
@@ -286,19 +286,19 @@ export default function GoldIRARolloverPage() {
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                         <div>
-                            <div className="text-4xl font-black text-amber-400">A+</div>
+                            <div className="text-4xl font-black text-[#D4A94E]">A+</div>
                             <div className="text-sm text-[#3F4460] mt-1">BBB Rating</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-black text-amber-400">0</div>
+                            <div className="text-4xl font-black text-[#D4A94E]">0</div>
                             <div className="text-sm text-[#3F4460] mt-1">BBB Complaints</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-black text-amber-400">50K+</div>
+                            <div className="text-4xl font-black text-[#D4A94E]">50K+</div>
                             <div className="text-sm text-[#3F4460] mt-1">Americans Served</div>
                         </div>
                         <div>
-                            <div className="text-4xl font-black text-amber-400">$0</div>
+                            <div className="text-4xl font-black text-[#D4A94E]">$0</div>
                             <div className="text-sm text-[#3F4460] mt-1">Fees for 10 Years</div>
                         </div>
                     </div>
@@ -352,7 +352,7 @@ export default function GoldIRARolloverPage() {
                         href={augustaLink("lp-gold-ira-rollover-footer")}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_14px_40px_rgba(197,149,46,0.32)] hover:scale-105 transition-transform uppercase font-sans border-2 border-[rgba(197,149,46,0.5)]"
                     >
                         Get My Free Rollover Checklist
                     </a>

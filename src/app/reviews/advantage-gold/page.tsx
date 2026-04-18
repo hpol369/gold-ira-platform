@@ -133,7 +133,7 @@ export default function AdvantageGoldReviewPage() {
                                             <tr><td className="p-4 font-semibold">Setup Fee</td><td className="p-4">$50</td></tr>
                                             <tr><td className="p-4 font-semibold">Annual Custodian Fee</td><td className="p-4">$50</td></tr>
                                             <tr><td className="p-4 font-semibold">Annual Storage Fee</td><td className="p-4">$100</td></tr>
-                                            <tr className="bg-blue-50"><td className="p-4 font-bold text-[#F6F4EF]">Total Annual</td><td className="p-4 font-bold text-[#F6F4EF]">$150-$200</td></tr>
+                                            <tr className="bg-[#121423]"><td className="p-4 font-bold text-[#F6F4EF]">Total Annual</td><td className="p-4 font-bold text-[#F6F4EF]">$150-$200</td></tr>
                                         </tbody>
                                     </table>
                                 </div>

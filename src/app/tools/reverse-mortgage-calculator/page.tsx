@@ -114,7 +114,7 @@ const faqSchema = {
 
 export default function ReverseMortgageCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -123,7 +123,7 @@ export default function ReverseMortgageCalculatorPage() {
       <ReverseMortgageCalculator />
 
       {/* Important Facts */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -138,7 +138,7 @@ export default function ReverseMortgageCalculatorPage() {
                     className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
@@ -163,7 +163,7 @@ export default function ReverseMortgageCalculatorPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center">
                 <Calculator className="h-6 w-6 text-blue-600" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
@@ -183,7 +183,7 @@ export default function ReverseMortgageCalculatorPage() {
                 <p><strong className="text-[#F6F4EF]">Home Value:</strong> Appraised value or HECM limit ($1,149,825 for 2024), whichever is less.</p>
                 <p><strong className="text-[#F6F4EF]">Existing Mortgage:</strong> Must be paid off from proceeds, reducing available cash.</p>
               </div>
-              <div className="mt-4 p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+              <div className="mt-4 p-4 bg-[#121423]0/10 border border-blue-500/30 rounded-lg">
                 <p className="text-blue-600 font-medium mb-1">Example:</p>
                 <p className="text-[#D0CCC4] text-sm">
                   Age 75, $450,000 home, $50,000 mortgage, 6% rate: $450,000 x 52.7% - $50,000 - $17,000 = <strong className="text-[#F6F4EF]">$170,150 available</strong>
@@ -195,7 +195,7 @@ export default function ReverseMortgageCalculatorPage() {
       </section>
 
       {/* Comparison Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -320,7 +320,7 @@ export default function ReverseMortgageCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -44,7 +44,7 @@ export function CompanyRating({
         {Array.from({ length: fullStars }).map((_, i) => (
           <Star
             key={`full-${i}`}
-            className={cn(sizeClasses[size], "fill-amber-400 text-amber-400")}
+            className={cn(sizeClasses[size], "fill-[#D4A94E] text-[#D4A94E]")}
           />
         ))}
 
@@ -53,7 +53,7 @@ export function CompanyRating({
           <div className="relative">
             <Star className={cn(sizeClasses[size], "text-gray-300")} />
             <div className="absolute inset-0 overflow-hidden w-1/2">
-              <Star className={cn(sizeClasses[size], "fill-amber-400 text-amber-400")} />
+              <Star className={cn(sizeClasses[size], "fill-[#D4A94E] text-[#D4A94E]")} />
             </div>
           </div>
         )}

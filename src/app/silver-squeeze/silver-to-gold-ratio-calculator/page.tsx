@@ -197,7 +197,7 @@ export default function SilverToGoldRatioCalculatorPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
@@ -311,7 +311,7 @@ export default function SilverToGoldRatioCalculatorPage() {
               {/* Historical Comparison Card */}
               <div className="bg-[#0C0D18] backdrop-blur-xl rounded-2xl p-6 md:p-8 border border-[#2A2D42] shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+                  <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                     <History className="h-5 w-5 text-purple-700" />
                   </div>
                   <h2 className="text-xl font-semibold">
@@ -409,7 +409,7 @@ export default function SilverToGoldRatioCalculatorPage() {
               {/* Target Price Projections */}
               <div className="bg-[#0C0D18] backdrop-blur-xl rounded-2xl p-6 md:p-8 border border-[#2A2D42] shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+                  <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                     <Target className="h-5 w-5 text-green-700" />
                   </div>
                   <h2 className="text-xl font-semibold">
@@ -564,7 +564,7 @@ export default function SilverToGoldRatioCalculatorPage() {
           <div className="max-w-6xl mx-auto mb-16">
             <div className="bg-[#0C0D18] backdrop-blur-xl rounded-2xl p-6 md:p-8 border border-[#2A2D42] shadow-[0_8px_32px_rgba(0,0,0,0.3)]">
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+                <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                   <TrendingDown className="h-5 w-5 text-blue-700" />
                 </div>
                 <div>

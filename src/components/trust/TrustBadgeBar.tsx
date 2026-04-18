@@ -50,13 +50,13 @@ export function TrustBadgeBar({ variant = "light", className }: TrustBadgeBarPro
               <div
                 className={cn(
                   "p-1.5 rounded-lg",
-                  isDark ? "bg-amber-500/20" : "bg-amber-50"
+                  isDark ? "bg-[#161828]0/20" : "bg-[#161828]"
                 )}
               >
                 <Icon
                   className={cn(
                     "h-4 w-4",
-                    isDark ? "text-amber-400" : "text-amber-600"
+                    isDark ? "text-[#D4A94E]" : "text-[#D4A94E]"
                   )}
                 />
               </div>

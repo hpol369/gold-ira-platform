@@ -115,7 +115,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function WhatToDoWithOld401kPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             <section className="pt-8 pb-4 bg-white">
@@ -138,7 +138,7 @@ export default function WhatToDoWithOld401kPage() {
                 <div className="absolute inset-0 bg-primary-dark/50" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-slate-200 px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#2A2D42]">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#2A2D42] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#2A2D42]">
                             <span className="w-2 h-2 rounded-full bg-[#DC2626]"></span>
                             Updated for 2026
                         </div>
@@ -212,7 +212,7 @@ export default function WhatToDoWithOld401kPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
+                                <div className="p-4 bg-[rgba(46,139,87,0.08)]0/10 rounded-xl border border-green-500/20">
                                     <h4 className="font-semibold text-green-700 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
@@ -222,7 +222,7 @@ export default function WhatToDoWithOld401kPage() {
                                         <li>* May have good investment options</li>
                                     </ul>
                                 </div>
-                                <div className="p-4 bg-red-500/10 rounded-xl border border-red-500/20">
+                                <div className="p-4 bg-[rgba(220,38,38,0.08)]0/10 rounded-xl border border-red-500/20">
                                     <h4 className="font-semibold text-red-700 mb-2 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" /> Cons
                                     </h4>
@@ -243,7 +243,7 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 2: Roll to New Employer */}
                         <section id="rollover-new" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <RefreshCw className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Option 2: Roll to New Employer&apos;s 401(k)</h2>
@@ -253,7 +253,7 @@ export default function WhatToDoWithOld401kPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
+                                <div className="p-4 bg-[rgba(46,139,87,0.08)]0/10 rounded-xl border border-green-500/20">
                                     <h4 className="font-semibold text-green-700 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
@@ -264,7 +264,7 @@ export default function WhatToDoWithOld401kPage() {
                                         <li>* May have loan options</li>
                                     </ul>
                                 </div>
-                                <div className="p-4 bg-red-500/10 rounded-xl border border-red-500/20">
+                                <div className="p-4 bg-[rgba(220,38,38,0.08)]0/10 rounded-xl border border-red-500/20">
                                     <h4 className="font-semibold text-red-700 mb-2 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" /> Cons
                                     </h4>
@@ -291,7 +291,7 @@ export default function WhatToDoWithOld401kPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
+                                <div className="p-4 bg-[rgba(46,139,87,0.08)]0/10 rounded-xl border border-green-500/20">
                                     <h4 className="font-semibold text-green-700 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
@@ -302,7 +302,7 @@ export default function WhatToDoWithOld401kPage() {
                                         <li>* Easy to manage online</li>
                                     </ul>
                                 </div>
-                                <div className="p-4 bg-red-500/10 rounded-xl border border-red-500/20">
+                                <div className="p-4 bg-[rgba(220,38,38,0.08)]0/10 rounded-xl border border-red-500/20">
                                     <h4 className="font-semibold text-red-700 mb-2 flex items-center gap-2">
                                         <XCircle className="w-5 h-5" /> Cons
                                     </h4>
@@ -319,7 +319,7 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 4: Cash Out */}
                         <section id="cash-out" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Option 4: Cash It Out (Not Recommended)</h2>
@@ -328,7 +328,7 @@ export default function WhatToDoWithOld401kPage() {
                                 You can withdraw your 401(k) as cash. But this is almost always a <strong className="text-[#F6F4EF]">terrible idea</strong>.
                             </p>
 
-                            <div className="bg-red-500/10 border-2 border-red-500/20 rounded-xl p-6 not-prose my-6">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/10 border-2 border-red-500/20 rounded-xl p-6 not-prose my-6">
                                 <h4 className="font-bold text-red-700 mb-4">The True Cost of Cashing Out</h4>
                                 <p className="text-red-800 mb-4">If you cash out a $50,000 401(k) before age 59½:</p>
                                 <div className="space-y-2 text-sm">
@@ -344,7 +344,7 @@ export default function WhatToDoWithOld401kPage() {
                                         <span className="text-[#D0CCC4]">State income tax (~5%)</span>
                                         <span className="text-red-700 font-bold">-$2,500</span>
                                     </div>
-                                    <div className="flex justify-between p-2 bg-red-500/20 rounded font-bold">
+                                    <div className="flex justify-between p-2 bg-[rgba(220,38,38,0.08)]0/20 rounded font-bold">
                                         <span className="text-[#F6F4EF]">You actually receive</span>
                                         <span className="text-red-800">$30,500</span>
                                     </div>
@@ -372,7 +372,7 @@ export default function WhatToDoWithOld401kPage() {
                         {/* Option 5: Gold IRA */}
                         <section id="gold-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-amber-700">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Option 5: Roll to a Gold IRA</h2>
@@ -382,7 +382,7 @@ export default function WhatToDoWithOld401kPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                                <div className="p-4 bg-green-500/10 rounded-xl border border-green-500/20">
+                                <div className="p-4 bg-[rgba(46,139,87,0.08)]0/10 rounded-xl border border-green-500/20">
                                     <h4 className="font-semibold text-green-700 mb-2 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Pros
                                     </h4>
@@ -394,7 +394,7 @@ export default function WhatToDoWithOld401kPage() {
                                         <li>* 100% tax-free rollover</li>
                                     </ul>
                                 </div>
-                                <div className="p-4 bg-amber-500/10 rounded-xl border border-amber-500/20">
+                                <div className="p-4 bg-[#161828]0/10 rounded-xl border border-amber-500/20">
                                     <h4 className="font-semibold text-amber-700 mb-2 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" /> Considerations
                                     </h4>
@@ -449,13 +449,13 @@ export default function WhatToDoWithOld401kPage() {
                                             <td className="p-4">Stocks, bonds, ETFs, mutual funds</td>
                                             <td className="p-4">More control, lower fees</td>
                                         </tr>
-                                        <tr className="bg-red-500/10">
+                                        <tr className="bg-[rgba(220,38,38,0.08)]0/10">
                                             <td className="p-4 font-medium text-red-700">Cash Out</td>
                                             <td className="p-4 text-red-700">Taxes + 10% penalty</td>
                                             <td className="p-4">N/A (liquidated)</td>
                                             <td className="p-4">Emergencies only</td>
                                         </tr>
-                                        <tr className="bg-amber-500/10">
+                                        <tr className="bg-[#161828]0/10">
                                             <td className="p-4 font-medium text-amber-700">Gold IRA</td>
                                             <td className="p-4 text-green-700">None (direct rollover)</td>
                                             <td className="p-4">Physical gold, silver, platinum, palladium</td>
@@ -517,7 +517,7 @@ export default function WhatToDoWithOld401kPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What are my options for an old 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -531,7 +531,7 @@ export default function WhatToDoWithOld401kPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Can I rollover my old 401(k) to a Gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -545,7 +545,7 @@ export default function WhatToDoWithOld401kPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What happens if I do nothing with my old 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -559,7 +559,7 @@ export default function WhatToDoWithOld401kPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">How long do I have to rollover my 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -582,7 +582,7 @@ export default function WhatToDoWithOld401kPage() {
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-slate-200">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#2A2D42]">
                                         <Link href="/guide/401k-to-gold-rollover">Learn About Rollovers</Link>
                                     </Button>
                                 </div>

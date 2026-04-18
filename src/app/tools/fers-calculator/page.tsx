@@ -121,7 +121,7 @@ export default function FERSCalculatorPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen bg-[#0C0D18]">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 overflow-hidden">
           <div className="absolute inset-0 bg-[#0C0D18]" />
@@ -133,7 +133,7 @@ export default function FERSCalculatorPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-500/10 text-blue-600 border border-blue-500/20 mb-4">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#121423]0/10 text-blue-600 border border-blue-500/20 mb-4">
                 Federal Employee Tool
               </span>
               <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
@@ -166,7 +166,7 @@ export default function FERSCalculatorPage() {
                         <div
                           className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-colors ${
                             step >= s
-                              ? 'bg-blue-500 text-[#F6F4EF]'
+                              ? 'bg-[#121423]0 text-[#F6F4EF]'
                               : 'bg-slate-700 text-[#A8A39A]'
                           }`}
                         >
@@ -175,7 +175,7 @@ export default function FERSCalculatorPage() {
                         {s < 4 && (
                           <div
                             className={`w-12 h-1 mx-2 rounded transition-colors ${
-                              step > s ? 'bg-blue-500' : 'bg-slate-700'
+                              step > s ? 'bg-[#121423]0' : 'bg-slate-700'
                             }`}
                           />
                         )}
@@ -211,7 +211,7 @@ export default function FERSCalculatorPage() {
                           step="5000"
                           value={highThreeSalary}
                           onChange={(e) => setHighThreeSalary(Number(e.target.value))}
-                          className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                          className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                         />
 
                         <div className="flex justify-between text-sm text-[#A8A39A]">
@@ -226,7 +226,7 @@ export default function FERSCalculatorPage() {
                               onClick={() => setHighThreeSalary(amount)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 highThreeSalary === amount
-                                  ? 'bg-blue-500 text-[#F6F4EF]'
+                                  ? 'bg-[#121423]0 text-[#F6F4EF]'
                                   : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
@@ -239,7 +239,7 @@ export default function FERSCalculatorPage() {
                       <div className="mt-8 flex justify-end">
                         <button
                           onClick={() => setStep(2)}
-                          className="px-8 py-3 bg-blue-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                          className="px-8 py-3 bg-[#121423]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -276,7 +276,7 @@ export default function FERSCalculatorPage() {
                             step="1"
                             value={yearsOfService}
                             onChange={(e) => setYearsOfService(Number(e.target.value))}
-                            className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                            className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                           />
                           <div className="flex flex-wrap gap-2 justify-center">
                             {[10, 20, 25, 30, 35].map((y) => (
@@ -285,7 +285,7 @@ export default function FERSCalculatorPage() {
                                 onClick={() => setYearsOfService(y)}
                                 className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                                   yearsOfService === y
-                                    ? 'bg-blue-500 text-[#F6F4EF]'
+                                    ? 'bg-[#121423]0 text-[#F6F4EF]'
                                     : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                                 }`}
                               >
@@ -309,7 +309,7 @@ export default function FERSCalculatorPage() {
                             step="1"
                             value={retirementAge}
                             onChange={(e) => setRetirementAge(Number(e.target.value))}
-                            className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                            className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                           />
                           <div className="flex flex-wrap gap-2 justify-center">
                             {[57, 60, 62, 65, 67].map((a) => (
@@ -318,7 +318,7 @@ export default function FERSCalculatorPage() {
                                 onClick={() => setRetirementAge(a)}
                                 className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                                   retirementAge === a
-                                    ? 'bg-blue-500 text-[#F6F4EF]'
+                                    ? 'bg-[#121423]0 text-[#F6F4EF]'
                                     : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                                 }`}
                               >
@@ -332,10 +332,10 @@ export default function FERSCalculatorPage() {
                       {/* Eligibility Status */}
                       <div className={`mt-6 rounded-lg p-4 ${
                         calculations.canRetireImmediate
-                          ? 'bg-green-50 border border-green-200'
+                          ? 'bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]'
                           : calculations.canRetireMRAPlus10
                             ? 'bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30'
-                            : 'bg-red-50 border border-red-200'
+                            : 'bg-[rgba(220,38,38,0.08)] border border-red-200'
                       }`}>
                         <p className={`text-sm ${
                           calculations.canRetireImmediate
@@ -361,7 +361,7 @@ export default function FERSCalculatorPage() {
                         </button>
                         <button
                           onClick={() => setStep(3)}
-                          className="px-8 py-3 bg-blue-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                          className="px-8 py-3 bg-[#121423]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -397,7 +397,7 @@ export default function FERSCalculatorPage() {
                           step="25000"
                           value={tspBalance}
                           onChange={(e) => setTspBalance(Number(e.target.value))}
-                          className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                          className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                         />
 
                         <div className="flex justify-between text-sm text-[#A8A39A]">
@@ -412,7 +412,7 @@ export default function FERSCalculatorPage() {
                               onClick={() => setTspBalance(amount)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 tspBalance === amount
-                                  ? 'bg-blue-500 text-[#F6F4EF]'
+                                  ? 'bg-[#121423]0 text-[#F6F4EF]'
                                   : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
@@ -431,7 +431,7 @@ export default function FERSCalculatorPage() {
                         </button>
                         <button
                           onClick={() => setStep(4)}
-                          className="px-8 py-3 bg-blue-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                          className="px-8 py-3 bg-[#121423]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -458,7 +458,7 @@ export default function FERSCalculatorPage() {
                           onClick={() => setSurvivorBenefit('none')}
                           className={`w-full p-6 rounded-xl border-2 text-left transition-colors ${
                             survivorBenefit === 'none'
-                              ? 'border-blue-500 bg-blue-500/10'
+                              ? 'border-blue-500 bg-[#121423]0/10'
                               : 'border-slate-700 bg-[#0C0D18] hover:border-slate-600'
                           }`}
                         >
@@ -473,7 +473,7 @@ export default function FERSCalculatorPage() {
                           onClick={() => setSurvivorBenefit('partial')}
                           className={`w-full p-6 rounded-xl border-2 text-left transition-colors ${
                             survivorBenefit === 'partial'
-                              ? 'border-blue-500 bg-blue-500/10'
+                              ? 'border-blue-500 bg-[#121423]0/10'
                               : 'border-slate-700 bg-[#0C0D18] hover:border-slate-600'
                           }`}
                         >
@@ -488,7 +488,7 @@ export default function FERSCalculatorPage() {
                           onClick={() => setSurvivorBenefit('full')}
                           className={`w-full p-6 rounded-xl border-2 text-left transition-colors ${
                             survivorBenefit === 'full'
-                              ? 'border-blue-500 bg-blue-500/10'
+                              ? 'border-blue-500 bg-[#121423]0/10'
                               : 'border-slate-700 bg-[#0C0D18] hover:border-slate-600'
                           }`}
                         >
@@ -509,7 +509,7 @@ export default function FERSCalculatorPage() {
                         </button>
                         <button
                           onClick={handleCalculate}
-                          className="px-8 py-3 bg-blue-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-blue-400 transition-colors"
+                          className="px-8 py-3 bg-[#121423]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-blue-400 transition-colors"
                         >
                           Calculate FERS
                         </button>
@@ -618,11 +618,11 @@ export default function FERSCalculatorPage() {
                           {calculations.replacementRatio.toFixed(0)}%
                         </span>
                       </div>
-                      <div className="h-4 bg-slate-200 rounded-full overflow-hidden">
+                      <div className="h-4 bg-[#2A2D42] rounded-full overflow-hidden">
                         <div
                           className={`h-full rounded-full transition-all ${
-                            calculations.replacementRatio >= 80 ? 'bg-green-500' :
-                            calculations.replacementRatio >= 60 ? 'bg-amber-500' : 'bg-red-500'
+                            calculations.replacementRatio >= 80 ? 'bg-[rgba(46,139,87,0.08)]0' :
+                            calculations.replacementRatio >= 60 ? 'bg-[#161828]0' : 'bg-[rgba(220,38,38,0.08)]0'
                           }`}
                           style={{ width: `${Math.min(100, calculations.replacementRatio)}%` }}
                         />
@@ -686,7 +686,7 @@ export default function FERSCalculatorPage() {
                     </button>
                     <Link
                       href="/learn/fers-pension-gold-ira"
-                      className="px-8 py-3 bg-blue-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-blue-400 transition-colors text-center"
+                      className="px-8 py-3 bg-[#121423]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-blue-400 transition-colors text-center"
                     >
                       FERS & Gold IRA Guide
                     </Link>

@@ -153,7 +153,7 @@ const companyComparisons = [
 
 export default function ResourcesPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <Navbar />
             <SchemaScript schema={schema} />
 
@@ -299,7 +299,7 @@ export default function ResourcesPage() {
                         <FadeIn delay={0.2}>
                             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-6 md:p-8 mt-6">
                                 <div className="flex items-center gap-3 mb-6">
-                                    <div className="h-10 w-10 bg-slate-200 text-[#F6F4EF] rounded-full flex items-center justify-center">
+                                    <div className="h-10 w-10 bg-[#2A2D42] text-[#F6F4EF] rounded-full flex items-center justify-center">
                                         <Scale className="h-5 w-5" />
                                     </div>
                                     <h3 className="text-xl font-bold font-serif text-[#F6F4EF]">Company vs. Company</h3>

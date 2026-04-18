@@ -32,7 +32,7 @@ export function ComparisonTable({ optionAName, optionBName, rows }: ComparisonTa
                 <thead>
                     <tr className="bg-gray-50">
                         <th className="p-4 text-left font-bold text-primary w-1/3">Feature</th>
-                        <th className="p-4 font-bold text-primary w-1/3 bg-blue-50/50">{optionAName}</th>
+                        <th className="p-4 font-bold text-primary w-1/3 bg-[#121423]/50">{optionAName}</th>
                         <th className="p-4 font-bold text-primary w-1/3 bg-gold-50/20">{optionBName}</th>
                     </tr>
                 </thead>
@@ -40,10 +40,10 @@ export function ComparisonTable({ optionAName, optionBName, rows }: ComparisonTa
                     {rows.map((row, idx) => (
                         <tr key={idx} className="hover:bg-gray-50/50 transition-colors">
                             <td className="p-4 text-left font-medium text-[#D0CCC4]">{row.feature}</td>
-                            <td className={cn("p-4", row.winner === "A" ? "bg-green-50/30" : "")}>
+                            <td className={cn("p-4", row.winner === "A" ? "bg-[rgba(46,139,87,0.08)]/30" : "")}>
                                 {renderValue(row.optionA, row.winner === "A")}
                             </td>
-                            <td className={cn("p-4 border-l border-gray-50", row.winner === "B" ? "bg-green-50/30" : "")}>
+                            <td className={cn("p-4 border-l border-gray-50", row.winner === "B" ? "bg-[rgba(46,139,87,0.08)]/30" : "")}>
                                 {renderValue(row.optionB, row.winner === "B")}
                             </td>
                         </tr>

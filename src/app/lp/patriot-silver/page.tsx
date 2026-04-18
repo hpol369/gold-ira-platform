@@ -13,11 +13,11 @@ export const metadata: Metadata = {
 
 export default function PatriotSilverKitPage() {
     return (
-        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
+        <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF] font-serif">
             {/* Top Warning Bar - BLUE for Silver to distinguish from Gold page */}
             <div className="bg-[rgba(197,149,46,0.1)] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
                 <span className="flex items-center justify-center gap-2">
-                    <AlertTriangle className="h-4 w-4 text-amber-400" />
+                    <AlertTriangle className="h-4 w-4 text-[#D4A94E]" />
                     Silver Alert: Historic Disconnect Detected (80:1 Ratio)
                 </span>
             </div>
@@ -82,7 +82,7 @@ export default function PatriotSilverKitPage() {
             </section>
 
             {/* The Evidence Content */}
-            <section className="py-16 bg-white font-sans text-lg md:text-xl leading-relaxed text-[#F6F4EF]">
+            <section className="py-16 bg-[#0C0D18] font-sans text-lg md:text-xl leading-relaxed text-[#F6F4EF]">
                 <div className="max-w-3xl mx-auto px-4 prose prose-slate prose-lg">
                     <h2 className="text-3xl font-bold text-[#D4A94E] font-serif">The "Silver Squeeze" Is Coming...</h2>
 

@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function DesignConceptPage() {
     return (
-        <div className="min-h-screen bg-white text-[#F6F4EF] font-sans selection:bg-[rgba(197,149,46,0.1)] selection:text-white">
+        <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF] font-sans selection:bg-[rgba(197,149,46,0.1)] selection:text-white">
 
             {/* 
         1. TOP BAR (Trust & Contact) 
@@ -119,7 +119,7 @@ export default function DesignConceptPage() {
                                     <ShieldCheck className="h-4 w-4 text-emerald-600" /> 100% Tax-Free
                                 </span>
                                 <span className="flex items-center gap-1.5">
-                                    <Star className="h-4 w-4 text-amber-500 fill-amber-500" /> 4.9/5 Rating
+                                    <Star className="h-4 w-4 text-[#D4A94E] fill-[#D4A94E]" /> 4.9/5 Rating
                                 </span>
                             </div>
                         </div>
@@ -170,7 +170,7 @@ export default function DesignConceptPage() {
             {/* 
         5. "WHY" SECTION (Readability Focus)
       */}
-            <section className="py-24 bg-white">
+            <section className="py-24 bg-[#0C0D18]">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-center font-serif font-bold text-4xl text-[#F6F4EF] mb-8">
                         Is Your Retirement "Safe" in Paper Money?

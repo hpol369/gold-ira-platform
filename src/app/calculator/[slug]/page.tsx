@@ -80,7 +80,7 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                             <span className="text-sm font-semibold">A+ BBB Rating</span>
                         </div>
                         <div className="flex items-center gap-2 text-[#A8A39A]">
-                            <Award className="w-5 h-5 text-amber-500" />
+                            <Award className="w-5 h-5 text-[#D4A94E]" />
                             <span className="text-sm font-semibold">Money Magazine #1</span>
                         </div>
                         <div className="flex items-center gap-2 text-[#A8A39A]">
@@ -111,7 +111,7 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                                     Most retirement calculators assume your dollars will buy the same amount of groceries in 20 years as they do today.
                                 </p>
                                 <p className="text-lg text-[#3F4460] mb-6 leading-relaxed">
-                                    <strong className="text-amber-400">They are wrong.</strong>
+                                    <strong className="text-[#D4A94E]">They are wrong.</strong>
                                 </p>
                                 <p className="text-lg text-[#3F4460] mb-8 leading-relaxed">
                                     As the government prints more money, your {formattedAmount} stays numerically the same, but its <em>value</em> quietly disappears. This is why standard 401(k)s often fail to protect retirees.
@@ -121,24 +121,24 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                                 <div className="absolute -top-4 -left-4 bg-[#DC2626] text-white px-4 py-2 font-bold rounded-lg shadow-lg">
                                     The Solution
                                 </div>
-                                <h3 className="text-xl font-bold mb-4 text-amber-400">
+                                <h3 className="text-xl font-bold mb-4 text-[#D4A94E]">
                                     The Gold IRA Hedge
                                 </h3>
                                 <ul className="space-y-4">
                                     <li className="flex gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
+                                        <div className="w-6 h-6 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center shrink-0">
                                             <span className="text-green-500 font-bold">✓</span>
                                         </div>
                                         <span className="text-[#3F4460]">Zero Tax Consequences (Rollover)</span>
                                     </li>
                                     <li className="flex gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
+                                        <div className="w-6 h-6 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center shrink-0">
                                             <span className="text-green-500 font-bold">✓</span>
                                         </div>
                                         <span className="text-[#3F4460]">Moves in Opposite Direction of Dollar</span>
                                     </li>
                                     <li className="flex gap-3">
-                                        <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
+                                        <div className="w-6 h-6 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center shrink-0">
                                             <span className="text-green-500 font-bold">✓</span>
                                         </div>
                                         <span className="text-[#3F4460]">Physical Asset You Control</span>
@@ -167,7 +167,7 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                             {/* Testimonial 1 */}
                             <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
                                 <div className="flex gap-1 mb-3">
-                                    {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />)}
+                                    {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-[#D4A94E] fill-current" />)}
                                 </div>
                                 <p className="text-[#D0CCC4] text-sm mb-4 italic">
                                     "Finally someone who explained the inflation risk without trying to scare me into buying. Augusta educated me first."
@@ -184,7 +184,7 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                             {/* Testimonial 2 */}
                             <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
                                 <div className="flex gap-1 mb-3">
-                                    {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />)}
+                                    {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-[#D4A94E] fill-current" />)}
                                 </div>
                                 <p className="text-[#D0CCC4] text-sm mb-4 italic">
                                     "I had $1.2M in my 401k and was worried about a crash. The rollover took 3 weeks and I never paid a dime in taxes."
@@ -201,7 +201,7 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                             {/* Testimonial 3 - Joe Montana */}
                             <div className="bg-gradient-to-br from-[#000080] to-[#000060] rounded-xl p-6 text-white">
                                 <div className="flex gap-1 mb-3">
-                                    {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />)}
+                                    {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-[#D4A94E] fill-current" />)}
                                 </div>
                                 <p className="text-blue-100 text-sm mb-4 italic">
                                     "I know what it takes to prepare for the big game. That's why I chose Augusta for my retirement."

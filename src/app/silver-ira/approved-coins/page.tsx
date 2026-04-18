@@ -253,7 +253,7 @@ const faqJsonLd = {
 
 export default function ApprovedCoinsPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -312,7 +312,7 @@ export default function ApprovedCoinsPage() {
             </section>
 
             {/* Approved Coins */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-4">IRA-Approved Silver Coins</h2>
@@ -408,7 +408,7 @@ export default function ApprovedCoinsPage() {
             </section>
 
             {/* NOT Approved */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-4">Silver NOT Allowed in IRAs</h2>
@@ -418,7 +418,7 @@ export default function ApprovedCoinsPage() {
 
                         <div className="grid md:grid-cols-2 gap-4">
                             {notApproved.map((item, index) => (
-                                <div key={index} className="bg-red-500/10 border border-red-500/30 rounded-xl p-4">
+                                <div key={index} className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-4">
                                     <div className="flex items-start gap-3">
                                         <XCircle className="h-5 w-5 text-red-700 flex-shrink-0 mt-0.5" />
                                         <div>
@@ -470,7 +470,7 @@ export default function ApprovedCoinsPage() {
             </section>
 
             {/* Mid-page CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center bg-[#161828] rounded-2xl p-8 border border-[#2A2D42]">
                         <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">Ready to Add Silver to Your IRA?</h2>
@@ -512,7 +512,7 @@ export default function ApprovedCoinsPage() {
             </section>
 
             {/* Related Pages */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">Related Resources</h2>
                     <div className="grid md:grid-cols-3 gap-6">

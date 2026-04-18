@@ -112,7 +112,7 @@ export default function AcademyPage() {
   const totalDuration = modules.reduce((acc, m) => acc + parseInt(m.duration), 0);
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       {/* Hero Section */}
@@ -158,7 +158,7 @@ export default function AcademyPage() {
       </section>
 
       {/* Course Modules */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -275,7 +275,7 @@ export default function AcademyPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -116,7 +116,7 @@ export default function BirchGoldReviewPage() {
                                 <p>
                                     Here's the math that matters: On a $200,000 account, that $200 fee is basically 0.1%—excellent value. But on a $20,000 account, it's 1% of your money going to fees every year. Randy, a retired plumber from Wisconsin, did the math: "With my account size, Birch's flat fee saved me compared to companies that charge percentages. But my buddy with a smaller account went somewhere else."
                                 </p>
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                <div className="bg-[#121423] p-6 rounded-xl border border-blue-100 not-prose my-8">
                                     <h4 className="font-bold text-[#F6F4EF] flex items-center gap-2 mb-2">
                                         <Info className="w-5 h-5 text-secondary" /> Flat vs. Percentage Fees
                                     </h4>
@@ -182,12 +182,12 @@ export default function BirchGoldReviewPage() {
                     </div>
                 </Container>
             </div>
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <FAQSection faqs={getPageFAQs("reviews/birch-gold")} title="Birch Gold Group FAQ" className="max-w-3xl" includeSchema={false} />
                 </Container>
             </section>
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/reviews/birch-gold" />
                 </Container>

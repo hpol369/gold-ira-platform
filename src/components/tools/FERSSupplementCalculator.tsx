@@ -112,7 +112,7 @@ export function FERSSupplementCalculator() {
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-600 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#121423]0/20 border border-blue-500/30 rounded-full text-blue-600 font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               FERS SUPPLEMENT CALCULATOR
             </div>
@@ -160,7 +160,7 @@ export function FERSSupplementCalculator() {
                   step={1}
                   value={yearsOfService}
                   onChange={(e) => setYearsOfService(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>5 years</span>
@@ -181,7 +181,7 @@ export function FERSSupplementCalculator() {
                   step={1}
                   value={retirementAge}
                   onChange={(e) => setRetirementAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>55</span>
@@ -213,7 +213,7 @@ export function FERSSupplementCalculator() {
               {/* Eligibility Check */}
               <div className={`rounded-xl p-4 mb-6 ${
                 checkEligibility.eligible
-                  ? 'bg-green-50 border border-green-200'
+                  ? 'bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)]'
                   : 'bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30'
               }`}>
                 <div className="flex items-start gap-3">
@@ -254,7 +254,7 @@ export function FERSSupplementCalculator() {
                   {result.isEligible ? (
                     <>
                       {/* Monthly Supplement */}
-                      <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
+                      <div className="bg-[#121423] border border-blue-200 rounded-xl p-5">
                         <div className="flex items-center gap-2 text-blue-600 text-sm mb-2">
                           <DollarSign className="h-4 w-4" />
                           MONTHLY SUPPLEMENT AMOUNT
@@ -290,7 +290,7 @@ export function FERSSupplementCalculator() {
                       </div>
 
                       {/* Total Value */}
-                      <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                      <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5">
                         <div className="flex items-center gap-2 text-green-600 text-sm mb-2">
                           <TrendingUp className="h-4 w-4" />
                           TOTAL SUPPLEMENT VALUE
@@ -350,9 +350,9 @@ export function FERSSupplementCalculator() {
           </div>
 
           {/* Important Notes */}
-          <div className="mt-8 bg-blue-50 border border-blue-200 rounded-2xl p-6">
+          <div className="mt-8 bg-[#121423] border border-blue-200 rounded-2xl p-6">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center flex-shrink-0">
                 <Info className="h-6 w-6 text-blue-600" />
               </div>
               <div>

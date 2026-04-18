@@ -251,7 +251,7 @@ export default function WhenGoldIraDoesNotMakeSensePage() {
                     </h2>
                   </div>
                   <p className="text-[#D0CCC4] mb-4">{situation.content}</p>
-                  <div className="bg-green-50 border border-green-200 rounded-xl p-4">
+                  <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-4">
                     <p className="text-sm text-[#D0CCC4]">
                       <strong className="text-green-800">Alternative:</strong> {situation.alternative}
                     </p>
@@ -276,7 +276,7 @@ export default function WhenGoldIraDoesNotMakeSensePage() {
                 </h2>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                   <h3 className="font-bold text-green-800 mb-3">This Article Is For:</h3>
                   <ul className="space-y-2 text-[#D0CCC4] text-sm">
                     <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /> Retirees trying to avoid expensive mistakes</li>
@@ -284,7 +284,7 @@ export default function WhenGoldIraDoesNotMakeSensePage() {
                     <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /> Anyone worried about fees, liquidity, or complexity</li>
                   </ul>
                 </div>
-                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                   <h3 className="font-bold text-red-800 mb-3">This Article Is Not For:</h3>
                   <ul className="space-y-2 text-[#D0CCC4] text-sm">
                     <li className="flex items-start gap-2"><XCircle className="h-4 w-4 text-red-500 mt-0.5 shrink-0" /> People fully committed to physical metals no matter the cost</li>

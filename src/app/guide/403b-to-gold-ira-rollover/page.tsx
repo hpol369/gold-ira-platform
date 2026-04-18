@@ -91,7 +91,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function TsaRolloverPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             <SchemaScript schema={howToSchema({
@@ -185,7 +185,7 @@ export default function TsaRolloverPage() {
                                 Your ability to roll over depends on your situation:
                             </p>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         You Can Roll Over If:
@@ -196,7 +196,7 @@ export default function TsaRolloverPage() {
                                         <li>• You have funds from a <em>previous</em> employer&apos;s 403(b)</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         You Probably Can&apos;t If:
@@ -219,7 +219,7 @@ export default function TsaRolloverPage() {
                             <p>
                                 <strong className="text-[#F6F4EF]">Surrender charges</strong> are fees the insurance company charges if you move your money out before a certain period—typically 5-10 years. They can be as high as 7-8% of your balance in the early years.
                             </p>
-                            <div className="not-prose my-8 p-6 bg-amber-500/10 rounded-xl border border-amber-500/20">
+                            <div className="not-prose my-8 p-6 bg-[#161828]0/10 rounded-xl border border-amber-500/20">
                                 <p className="font-bold text-amber-700 mb-3">Typical Surrender Charge Schedule:</p>
                                 <ul className="space-y-1 text-amber-800 text-sm">
                                     <li>Year 1: 7% penalty</li>
@@ -300,28 +300,28 @@ export default function TsaRolloverPage() {
                         <section id="mistakes" className="scroll-mt-32">
                             <h2>Common Mistakes</h2>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Ignoring surrender charges</h4>
                                         <p className="text-sm text-red-800 mt-1">Call your vendor first. A surprise 7% surrender fee on $100,000 is $7,000 out of your pocket.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Taking an indirect rollover</h4>
                                         <p className="text-sm text-red-800 mt-1">If they mail you a check, 20% is withheld for taxes. Always request a direct transfer to your new IRA.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Contacting HR instead of the vendor</h4>
                                         <p className="text-sm text-red-800 mt-1">Your school district&apos;s HR usually can&apos;t help with rollovers. You need to contact the insurance company directly.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Not checking in-service rules</h4>
@@ -339,7 +339,7 @@ export default function TsaRolloverPage() {
                                     <details key={index} className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                         <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                                 <RefreshCw className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>

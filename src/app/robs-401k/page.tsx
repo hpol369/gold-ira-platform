@@ -105,7 +105,7 @@ export default function Robs401kPage() {
             />
 
             <Navbar />
-            <main className="min-h-screen bg-white">
+            <main className="min-h-screen bg-[#0C0D18]">
                 {/* Hero Section */}
                 <section className="relative py-16 lg:py-24 overflow-hidden bg-[#0C0D18]">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(249,115,22,0.08),transparent_50%)]" />
@@ -212,7 +212,7 @@ export default function Robs401kPage() {
                                         }
                                     ].map((item, index) => (
                                         <div key={index} className="flex gap-4">
-                                            <div className="flex-shrink-0 w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
+                                            <div className="flex-shrink-0 w-10 h-10 bg-[rgba(183,121,31,0.08)]0 rounded-full flex items-center justify-center text-white font-bold">
                                                 {item.step}
                                             </div>
                                             <div>
@@ -236,7 +236,7 @@ export default function Robs401kPage() {
 
                         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                             {/* Pros */}
-                            <div className="bg-green-50 border border-green-200 rounded-2xl p-8">
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-2xl p-8">
                                 <h3 className="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
                                     <CheckCircle2 className="w-6 h-6" />
                                     Advantages
@@ -260,7 +260,7 @@ export default function Robs401kPage() {
                             </div>
 
                             {/* Cons */}
-                            <div className="bg-red-50 border border-red-200 rounded-2xl p-8">
+                            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-2xl p-8">
                                 <h3 className="text-xl font-bold text-red-700 mb-6 flex items-center gap-2">
                                     <AlertTriangle className="w-6 h-6" />
                                     Risks & Considerations
@@ -287,7 +287,7 @@ export default function Robs401kPage() {
                 </section>
 
                 {/* Top ROBS Providers */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-4 text-center">
                             Best ROBS 401k Providers (2026)
@@ -299,7 +299,7 @@ export default function Robs401kPage() {
                         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                             {/* Guidant Financial */}
                             <div className="bg-[#0C0D18] border border-orange-300 rounded-2xl p-8 relative">
-                                <div className="absolute -top-3 left-6 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                <div className="absolute -top-3 left-6 bg-[rgba(183,121,31,0.08)]0 text-white text-xs font-bold px-3 py-1 rounded-full">
                                     RECOMMENDED
                                 </div>
                                 <h3 className="text-2xl font-bold text-[#F6F4EF] mb-2">Guidant Financial</h3>
@@ -443,7 +443,7 @@ export default function Robs401kPage() {
                 </section>
 
                 {/* ROBS Rules Section */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-8 text-center">
@@ -591,7 +591,7 @@ export default function Robs401kPage() {
                 </section>
 
                 {/* Related Content */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Related Resources

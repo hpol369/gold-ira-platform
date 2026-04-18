@@ -103,8 +103,8 @@ export default function ConversionsPage() {
       <main className="min-h-screen bg-slate-900 flex items-center justify-center">
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 max-w-sm w-full mx-4">
           <div className="text-center mb-6">
-            <div className="w-16 h-16 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Lock className="h-8 w-8 text-amber-400" />
+            <div className="w-16 h-16 bg-[#161828]0/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Lock className="h-8 w-8 text-[#D4A94E]" />
             </div>
             <h1 className="text-2xl font-bold text-white">Admin Access</h1>
             <p className="text-slate-400 text-sm mt-2">Enter PIN to continue</p>
@@ -128,7 +128,7 @@ export default function ConversionsPage() {
             )}
             <button
               type="submit"
-              className="w-full mt-4 px-4 py-3 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold rounded-xl transition-colors"
+              className="w-full mt-4 px-4 py-3 bg-[#161828]0 hover:bg-amber-600 text-slate-900 font-bold rounded-xl transition-colors"
             >
               Access Dashboard
             </button>
@@ -232,13 +232,13 @@ export default function ConversionsPage() {
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mb-8">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <Bell className="h-5 w-5 text-amber-400" />
+                <Bell className="h-5 w-5 text-[#D4A94E]" />
                 <span className="font-semibold text-white">Notification Status</span>
               </div>
               <button
                 onClick={sendTestNotification}
                 disabled={testingSent}
-                className="px-4 py-2 bg-amber-500 hover:bg-amber-600 disabled:bg-amber-500/50 text-slate-900 font-semibold rounded-lg transition-colors text-sm"
+                className="px-4 py-2 bg-[#161828]0 hover:bg-amber-600 disabled:bg-[#161828]0/50 text-slate-900 font-semibold rounded-lg transition-colors text-sm"
               >
                 {testingSent ? "Sent!" : "Send Test"}
               </button>
@@ -272,7 +272,7 @@ export default function ConversionsPage() {
           {/* Analytics Tools */}
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mb-8">
             <div className="flex items-center gap-3 mb-4">
-              <BarChart3 className="h-5 w-5 text-purple-400" />
+              <BarChart3 className="h-5 w-5 text-[#D4A94E]" />
               <span className="font-semibold text-white">Analytics & Tracking</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -284,8 +284,8 @@ export default function ConversionsPage() {
                 className="group bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 rounded-xl p-4 hover:border-purple-500/40 transition-all"
               >
                 <div className="flex items-center justify-between mb-2">
-                  <Eye className="h-6 w-6 text-purple-400" />
-                  <ExternalLink className="h-4 w-4 text-slate-500 group-hover:text-purple-400 transition-colors" />
+                  <Eye className="h-6 w-6 text-[#D4A94E]" />
+                  <ExternalLink className="h-4 w-4 text-slate-500 group-hover:text-[#D4A94E] transition-colors" />
                 </div>
                 <h3 className="font-semibold text-white">Microsoft Clarity</h3>
                 <p className="text-sm text-slate-400 mt-1">Session recordings & heatmaps</p>
@@ -325,17 +325,17 @@ export default function ConversionsPage() {
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-4 mb-8">
-            <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-6 text-center">
+            <div className="bg-[#121423]0/10 border border-blue-500/20 rounded-xl p-6 text-center">
               <Target className="h-8 w-8 text-blue-400 mx-auto mb-2" />
               <div className="text-3xl font-bold text-white">{stats.leads}</div>
               <div className="text-sm text-blue-300">Leads Captured</div>
             </div>
-            <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6 text-center">
-              <Star className="h-8 w-8 text-amber-400 mx-auto mb-2" />
+            <div className="bg-[#161828]0/10 border border-amber-500/20 rounded-xl p-6 text-center">
+              <Star className="h-8 w-8 text-[#D4A94E] mx-auto mb-2" />
               <div className="text-3xl font-bold text-white">{stats.qualified}</div>
               <div className="text-sm text-amber-300">Qualified Leads</div>
             </div>
-            <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6 text-center">
+            <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20 rounded-xl p-6 text-center">
               <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-2" />
               <div className="text-3xl font-bold text-white">{stats.trades}</div>
               <div className="text-sm text-green-300">Trades Completed</div>
@@ -417,7 +417,7 @@ export default function ConversionsPage() {
                   <div className="text-xs text-slate-400 mt-1">Sent</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-amber-400">{pipeline.emailsPending}</div>
+                  <div className="text-2xl font-bold text-[#D4A94E]">{pipeline.emailsPending}</div>
                   <div className="text-xs text-slate-400 mt-1">Pending</div>
                 </div>
                 <div className="text-center">
@@ -426,7 +426,7 @@ export default function ConversionsPage() {
                 </div>
               </div>
               {pipeline.emailsFailed > 0 && (
-                <div className="mt-3 p-2 bg-red-500/10 border border-red-500/20 rounded-lg">
+                <div className="mt-3 p-2 bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20 rounded-lg">
                   <p className="text-xs text-red-300">⚠ {pipeline.emailsFailed} failed emails — check Resend dashboard for bounces</p>
                 </div>
               )}
@@ -448,7 +448,7 @@ export default function ConversionsPage() {
               </div>
               <div>
                 <label className="text-xs text-slate-500 uppercase">Postback - Qualified Lead</label>
-                <code className="block bg-slate-800 text-amber-400 p-3 rounded-lg text-sm mt-1 overflow-x-auto select-all cursor-pointer">
+                <code className="block bg-slate-800 text-[#D4A94E] p-3 rounded-lg text-sm mt-1 overflow-x-auto select-all cursor-pointer">
                   https://richdadretirement.com/api/postback?type=qualified_lead
                 </code>
               </div>

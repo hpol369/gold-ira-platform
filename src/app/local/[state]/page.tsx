@@ -91,7 +91,7 @@ export default async function StatePage({ params }: Props) {
     };
 
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
             <div className="flex-grow">
@@ -129,12 +129,12 @@ export default async function StatePage({ params }: Props) {
                             </p>
 
                             {/* Tax Status Quick Box */}
-                            <div className={`not-prose p-6 rounded-xl border mb-8 ${stateData.taxFriendly ? 'bg-green-50 border-green-200' : 'bg-amber-50 border-amber-200'}`}>
+                            <div className={`not-prose p-6 rounded-xl border mb-8 ${stateData.taxFriendly ? 'bg-[rgba(46,139,87,0.08)] border-[rgba(46,139,87,0.32)]' : 'bg-[#161828] border-[rgba(197,149,46,0.32)]'}`}>
                                 <div className="flex items-center gap-3 mb-2">
                                     {stateData.taxFriendly ? (
                                         <CheckCircle2 className="w-6 h-6 text-green-600" />
                                     ) : (
-                                        <AlertTriangle className="w-6 h-6 text-amber-600" />
+                                        <AlertTriangle className="w-6 h-6 text-[#D4A94E]" />
                                     )}
                                     <h3 className={`font-bold text-lg ${stateData.taxFriendly ? 'text-green-700' : 'text-amber-700'}`}>
                                         {stateData.taxFriendly ? `${stateName}: Tax-Friendly for Gold` : `${stateName}: Sales Tax Applies`}
@@ -151,7 +151,7 @@ export default async function StatePage({ params }: Props) {
                             {/* Section 1: Local Laws */}
                             <section className="mt-12">
                                 <h2>1. Gold & Silver Tax Laws in {stateName}</h2>
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-200 not-prose">
+                                <div className="bg-[#121423] p-6 rounded-xl border border-blue-200 not-prose">
                                     <h3 className="flex items-center gap-2 font-bold text-blue-700 text-xl mb-3">
                                         <Building2 className="w-5 h-5" /> {stateName} Tax Rules
                                     </h3>
@@ -192,8 +192,8 @@ export default async function StatePage({ params }: Props) {
                                     <li><strong>No insurance coverage:</strong> Homeowner&apos;s policies typically cap precious metals at $200-$1,000</li>
                                 </ul>
 
-                                <div className="bg-amber-50 p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
-                                    <AlertTriangle className="w-8 h-8 text-amber-600 shrink-0" />
+                                <div className="bg-[#161828] p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
+                                    <AlertTriangle className="w-8 h-8 text-[#D4A94E] shrink-0" />
                                     <div>
                                         <h3 className="font-bold text-amber-700 mb-2">Storage Warning for {stateName} Residents</h3>
                                         <p className="text-amber-800 text-sm">
@@ -203,7 +203,7 @@ export default async function StatePage({ params }: Props) {
                                 </div>
 
                                 {content?.specialNote && (
-                                    <div className="bg-green-50 p-6 rounded-xl border border-green-200 not-prose my-6">
+                                    <div className="bg-[rgba(46,139,87,0.08)] p-6 rounded-xl border border-green-200 not-prose my-6">
                                         <h3 className="flex items-center gap-2 font-bold text-green-700 mb-2">
                                             <CheckCircle2 className="w-5 h-5" /> {stateName} Advantage
                                         </h3>
@@ -234,32 +234,32 @@ export default async function StatePage({ params }: Props) {
                                             <tr className="border-b border-[#2A2D42]">
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Pricing</td>
                                                 <td className="p-4 text-[#D0CCC4]">Higher overhead = Higher premiums</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">Volume pricing = Lower premiums</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">Volume pricing = Lower premiums</td>
                                             </tr>
                                             <tr className="border-b border-[#2A2D42]">
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Sales Tax</td>
                                                 <td className="p-4 text-[#D0CCC4]">{stateData.taxFriendly ? 'Exempt in ' + stateName : 'Taxable in ' + stateName}</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">No sales tax (IRA purchase)</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">No sales tax (IRA purchase)</td>
                                             </tr>
                                             <tr className="border-b border-[#2A2D42]">
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Tax Benefits</td>
                                                 <td className="p-4 text-[#D0CCC4]">None (post-tax money)</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">Tax-deferred or tax-free (Roth)</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">Tax-deferred or tax-free (Roth)</td>
                                             </tr>
                                             <tr className="border-b border-[#2A2D42]">
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Selection</td>
                                                 <td className="p-4 text-[#D0CCC4]">Limited to current inventory</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">All IRS-approved bullion</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">All IRS-approved bullion</td>
                                             </tr>
                                             <tr className="border-b border-[#2A2D42]">
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Storage</td>
                                                 <td className="p-4 text-[#D0CCC4]">Your responsibility (risky)</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">Insured depository included</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">Insured depository included</td>
                                             </tr>
                                             <tr>
                                                 <td className="p-4 font-medium text-[#F6F4EF]">Insurance</td>
                                                 <td className="p-4 text-[#D0CCC4]">Limited homeowner&apos;s coverage</td>
-                                                <td className="p-4 bg-green-50 font-semibold text-green-700">Full Lloyd&apos;s of London coverage</td>
+                                                <td className="p-4 bg-[rgba(46,139,87,0.08)] font-semibold text-green-700">Full Lloyd&apos;s of London coverage</td>
                                             </tr>
                                         </tbody>
                                     </table>

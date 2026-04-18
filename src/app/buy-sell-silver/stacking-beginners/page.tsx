@@ -227,7 +227,7 @@ const schema = {
 
 export default function StackingBeginnersPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -245,7 +245,7 @@ export default function StackingBeginnersPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
               <GraduationCap className="h-4 w-4" />
               DIFF 0 - EASY WIN KEYWORD
             </div>
@@ -274,14 +274,14 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* Getting Started Checklist */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8 flex items-center justify-center gap-2">
               <Target className="h-6 w-6 text-green-400" />
               Getting Started Checklist
             </h2>
-            <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 md:p-8">
+            <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6 md:p-8">
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="h-6 w-6 text-green-400 flex-shrink-0" />
@@ -358,7 +358,7 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* First Purchases */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4 flex items-center justify-center gap-2">
@@ -383,8 +383,8 @@ export default function StackingBeginnersPage() {
                         <div className="flex gap-2">
                           <span className="text-green-400 text-sm font-semibold">{purchase.budget}</span>
                           <span className={`text-xs px-2 py-0.5 rounded ${
-                            purchase.priority === "Essential" ? "bg-green-500/20 text-green-400" :
-                            purchase.priority === "Recommended" ? "bg-blue-500/20 text-blue-400" :
+                            purchase.priority === "Essential" ? "bg-[rgba(46,139,87,0.08)]0/20 text-green-400" :
+                            purchase.priority === "Recommended" ? "bg-[#121423]0/20 text-blue-400" :
                             purchase.priority === "Optional" ? "bg-[rgba(220,38,38,0.18)] text-[#D4A94E]" :
                             "bg-[rgba(220,38,38,0.1)] text-[#D0CCC4]"
                           }`}>
@@ -451,7 +451,7 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* Common Mistakes */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8 flex items-center justify-center gap-2">
@@ -460,7 +460,7 @@ export default function StackingBeginnersPage() {
             </h2>
             <div className="space-y-4">
               {commonMistakes.map((item, index) => (
-                <div key={index} className="bg-red-500/10 border border-red-500/30 rounded-xl p-5">
+                <div key={index} className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-5">
                   <h3 className="text-lg font-bold text-red-400 mb-2">{item.mistake}</h3>
                   <p className="text-[#D0CCC4] text-sm mb-2"><strong>Why it's bad:</strong> {item.why}</p>
                   <p className="text-green-400 text-sm"><strong>Fix:</strong> {item.fix}</p>
@@ -493,7 +493,7 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -545,7 +545,7 @@ export default function StackingBeginnersPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

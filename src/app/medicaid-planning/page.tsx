@@ -33,7 +33,7 @@ export default function MedicaidPlanningPage() {
   const articles = getAllMedicaidArticles();
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Medicaid Planning Guide | Protect Assets & Qualify for Care", description: "Learn how to protect your assets while qualifying for Medicaid long-term care. Irrevocable trusts, lookback periods, estate recovery, and legal strategies.", slug: "/medicaid-planning" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Medicaid Planning Guide", url: "/medicaid-planning" }])} />
       <Navbar />
@@ -59,9 +59,9 @@ export default function MedicaidPlanningPage() {
             </p>
 
             {/* Warning Note */}
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8 text-left">
+            <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 mb-8 text-left">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-1" />
+                <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-amber-800 font-medium mb-1">
                     The 5-Year Rule Is Critical
@@ -142,7 +142,7 @@ export default function MedicaidPlanningPage() {
       </section>
 
       {/* Key Concepts */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
             Key Medicaid Planning Concepts
@@ -150,7 +150,7 @@ export default function MedicaidPlanningPage() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-amber-100 p-3 rounded-lg inline-block mb-4">
-                <Clock className="h-6 w-6 text-amber-600" />
+                <Clock className="h-6 w-6 text-[#D4A94E]" />
               </div>
               <h3 className="font-bold text-[#F6F4EF] mb-2">5-Year Lookback</h3>
               <p className="text-[#A8A39A] text-sm">
@@ -220,7 +220,7 @@ export default function MedicaidPlanningPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">

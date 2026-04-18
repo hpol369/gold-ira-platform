@@ -70,7 +70,7 @@ export default function PreviewHome() {
             </section>
 
             {/* VALUE PROPS GRID */}
-            <section className="py-24 bg-white">
+            <section className="py-24 bg-[#0C0D18]">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-serif font-bold text-[#000080] mb-4">Why Smart Money is Moving to Gold</h2>

@@ -278,7 +278,7 @@ const faqJsonLd = {
 
 export default function SilverIraReviewsPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -339,7 +339,7 @@ export default function SilverIraReviewsPage() {
             </section>
 
             {/* Company Reviews */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto space-y-12">
                         {companyReviews.map((company, index) => (
@@ -358,7 +358,7 @@ export default function SilverIraReviewsPage() {
                                                         EDITOR'S CHOICE
                                                     </span>
                                                 )}
-                                                <span className="px-2 py-1 bg-green-500/20 text-green-700 text-xs font-bold rounded">
+                                                <span className="px-2 py-1 bg-[rgba(46,139,87,0.08)]0/20 text-green-700 text-xs font-bold rounded">
                                                     BBB: {company.bbbRating}
                                                 </span>
                                             </div>
@@ -426,7 +426,7 @@ export default function SilverIraReviewsPage() {
 
                                     {/* Pros & Cons */}
                                     <div className="grid md:grid-cols-2 gap-4 mb-6">
-                                        <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
+                                        <div className="bg-[rgba(46,139,87,0.08)]0/10 p-4 rounded-xl border border-green-500/20">
                                             <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                                 <ThumbsUp className="h-4 w-4" /> What We Like
                                             </h4>
@@ -439,7 +439,7 @@ export default function SilverIraReviewsPage() {
                                                 ))}
                                             </ul>
                                         </div>
-                                        <div className="bg-red-500/10 p-4 rounded-xl border border-red-500/20">
+                                        <div className="bg-[rgba(220,38,38,0.08)]0/10 p-4 rounded-xl border border-red-500/20">
                                             <h4 className="font-bold text-red-700 mb-3 flex items-center gap-2">
                                                 <ThumbsDown className="h-4 w-4" /> Room for Improvement
                                             </h4>
@@ -502,7 +502,7 @@ export default function SilverIraReviewsPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">Silver IRA Reviews FAQs</h2>
@@ -548,7 +548,7 @@ export default function SilverIraReviewsPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

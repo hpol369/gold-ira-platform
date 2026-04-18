@@ -235,7 +235,7 @@ export default function AugustaVsNoblePage() {
                                 <p>
                                     Both companies use IRS-approved depositories, but Noble Gold offers something Augusta doesn&apos;t: <strong>Texas-based storage</strong>.
                                 </p>
-                                <div className="not-prose bg-blue-500/10 p-6 rounded-xl border border-blue-500/30 my-6">
+                                <div className="not-prose bg-[#121423]0/10 p-6 rounded-xl border border-blue-500/30 my-6">
                                     <div className="flex items-center gap-3 mb-3">
                                         <Building2 className="w-6 h-6 text-blue-700" />
                                         <h4 className="font-bold text-blue-800">Noble Gold&apos;s Texas Advantage</h4>
@@ -251,7 +251,7 @@ export default function AugustaVsNoblePage() {
                                 <h2>Who Should Choose Which?</h2>
 
                                 <div className="not-prose grid md:grid-cols-2 gap-6 my-6">
-                                    <div className="bg-amber-500/10 p-6 rounded-xl border border-amber-500/30">
+                                    <div className="bg-[#161828]0/10 p-6 rounded-xl border border-amber-500/30">
                                         <h3 className="font-bold text-[#D4A94E] text-lg mb-3">Choose Augusta If:</h3>
                                         <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                             <li className="flex items-start gap-2">
@@ -272,12 +272,12 @@ export default function AugustaVsNoblePage() {
                                             </li>
                                         </ul>
                                         <div className="mt-4">
-                                            <LeadCaptureButton variant="default" source="compare-augusta-vs-noble" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-4 py-2 rounded-lg text-sm font-semibold inline-flex items-center">
+                                            <LeadCaptureButton variant="default" source="compare-augusta-vs-noble" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-4 py-2 rounded-lg text-sm font-semibold inline-flex items-center">
                                                 Get Augusta Free Kit <ArrowRight className="ml-2 w-4 h-4" />
                                             </LeadCaptureButton>
                                         </div>
                                     </div>
-                                    <div className="bg-blue-500/10 p-6 rounded-xl border border-blue-500/30">
+                                    <div className="bg-[#121423]0/10 p-6 rounded-xl border border-blue-500/30">
                                         <h3 className="font-bold text-blue-700 text-lg mb-3">Choose Noble Gold If:</h3>
                                         <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                             <li className="flex items-start gap-2">

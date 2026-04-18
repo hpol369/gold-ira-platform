@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 
 export default function CoastFIRECalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18]text-[#F6F4EF]">
       <SchemaScript schema={articleSchema({ title: "Coast FIRE Calculator - Calculate When You Can Stop Saving", description: "Free Coast FIRE calculator to determine when your retirement savings can grow on autopilot. Find out how much you need to coast to financial independence.", slug: "/tools/coast-fire-calculator" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Coast FIRE Calculator", url: "/tools/coast-fire-calculator" }])} />
       <Navbar />
       <CoastFIRECalculator />
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

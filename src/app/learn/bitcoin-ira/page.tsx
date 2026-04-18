@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function BitcoinIRAPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({
                 title: "What is a Bitcoin IRA? Complete Guide to Bitcoin Retirement Accounts",
                 description: "Learn what a Bitcoin IRA is, how it works, tax benefits, risks, and whether it's right for your retirement.",
@@ -131,7 +131,7 @@ export default function BitcoinIRAPage() {
             <InContentCTA trackSource="learn-bitcoin-ira" />
 
             {/* Main Content */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E]">
@@ -278,9 +278,9 @@ export default function BitcoinIRAPage() {
                         </div>
 
                         {/* Warning Box */}
-                        <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6 my-12">
+                        <div className="bg-[#161828]0/10 border border-amber-500/20 rounded-xl p-6 my-12">
                             <div className="flex gap-4">
-                                <AlertTriangle className="w-8 h-8 text-amber-600 flex-shrink-0" />
+                                <AlertTriangle className="w-8 h-8 text-[#D4A94E] flex-shrink-0" />
                                 <div>
                                     <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">Important Risks to Consider</h3>
                                     <ul className="space-y-2 text-[#D0CCC4] text-sm">

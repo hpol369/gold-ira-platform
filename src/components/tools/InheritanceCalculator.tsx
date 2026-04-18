@@ -198,7 +198,7 @@ export function InheritanceCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
+        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[rgba(197,149,46,0.32)]">
           <Gift className="h-4 w-4" />
           Inheritance Calculator
         </div>
@@ -216,7 +216,7 @@ export function InheritanceCalculator() {
           {/* Inheritance Details */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <Gift className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Inheritance Details</h3>
@@ -286,7 +286,7 @@ export function InheritanceCalculator() {
           {assetType === "inherited_ira" && (
             <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
               <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+                <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                   <Users className="h-5 w-5 text-blue-600" />
                 </div>
                 <h3 className="text-lg font-semibold">Beneficiary Type</h3>
@@ -303,7 +303,7 @@ export function InheritanceCalculator() {
                     onClick={() => setBeneficiaryType(option.value)}
                     className={`w-full p-4 rounded-lg border text-left transition-all ${
                       beneficiaryType === option.value
-                        ? "bg-blue-500/20 border-blue-500/50"
+                        ? "bg-[#121423]0/20 border-blue-500/50"
                         : "bg-[#0C0D18] border-slate-700 hover:border-slate-600"
                     }`}
                   >
@@ -318,7 +318,7 @@ export function InheritanceCalculator() {
           {/* Your Tax Info */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <Percent className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Your Tax Situation</h3>
@@ -388,7 +388,7 @@ export function InheritanceCalculator() {
         {/* Results Section */}
         <div className="space-y-6">
           {/* Main Results */}
-          <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-6 border border-purple-500/30">
+          <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-6 border border-[rgba(197,149,46,0.32)]">
             <h3 className="text-sm text-[#A8A39A] mb-2">After-Tax Value</h3>
             <div className="text-4xl font-bold text-purple-700 mb-4">
               {formatCurrency(calculations.afterTaxValue)}
@@ -465,7 +465,7 @@ export function InheritanceCalculator() {
           )}
 
           {assetType === "roth_ira" && (
-            <div className="bg-green-500/10 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
+            <div className="bg-[rgba(46,139,87,0.08)]0/10 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
               <div className="flex items-center gap-2 mb-4">
                 <ShieldCheck className="h-5 w-5 text-green-600" />
                 <h3 className="text-lg font-semibold text-green-600">Roth IRA Advantage</h3>
@@ -484,7 +484,7 @@ export function InheritanceCalculator() {
           )}
 
           {(assetType === "property" || assetType === "stocks") && calculations.stepUpBenefit > 0 && (
-            <div className="bg-green-500/10 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
+            <div className="bg-[rgba(46,139,87,0.08)]0/10 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
               <div className="flex items-center gap-2 mb-4">
                 <Scale className="h-5 w-5 text-green-600" />
                 <h3 className="text-lg font-semibold text-green-600">Step-Up in Basis Benefit</h3>
@@ -560,7 +560,7 @@ export function InheritanceCalculator() {
 
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
-            <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
+            <div className="w-10 h-10 bg-[#121423]0/20 rounded-lg flex items-center justify-center mb-4">
               <Clock className="h-5 w-5 text-blue-600" />
             </div>
             <h3 className="text-lg font-semibold text-[#F6F4EF] mb-2">1. Don&apos;t Rush</h3>
@@ -570,7 +570,7 @@ export function InheritanceCalculator() {
           </div>
 
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
-            <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
+            <div className="w-10 h-10 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg flex items-center justify-center mb-4">
               <FileText className="h-5 w-5 text-green-600" />
             </div>
             <h3 className="text-lg font-semibold text-[#F6F4EF] mb-2">2. Understand Tax Rules</h3>

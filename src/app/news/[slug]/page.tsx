@@ -171,7 +171,7 @@ export default async function NewsArticlePage({ params }: Props) {
     };
 
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={articleSchema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -233,7 +233,7 @@ export default async function NewsArticlePage({ params }: Props) {
             </section>
 
             {/* Article Content */}
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <div className="grid lg:grid-cols-12 gap-12">
                         {/* Main Content */}

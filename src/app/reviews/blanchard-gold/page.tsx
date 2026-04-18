@@ -52,7 +52,7 @@ const tocItems = [
 
 export default function BlanchardGoldReviewPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <header className="bg-[rgba(197,149,46,0.1)] text-white py-16">
                 <Container>
@@ -93,7 +93,7 @@ export default function BlanchardGoldReviewPage() {
                                         Founded in 1975—just one year after Americans could legally own gold again—Blanchard helped create this entire industry. James Blanchard III, the founder, was one of the people who fought to restore gold ownership rights. That&apos;s real pedigree. But after 50 years, does their expertise actually help regular folks like you protect their retirement savings?
                                     </p>
 
-                                    <div className="bg-blue-50 p-6 rounded-xl border border-blue-200 flex gap-4 not-prose my-6">
+                                    <div className="bg-[#121423] p-6 rounded-xl border border-blue-200 flex gap-4 not-prose my-6">
                                         <Landmark className="w-6 h-6 text-blue-600 shrink-0" />
                                         <div>
                                             <h4 className="font-bold text-blue-800">Historical Footnote</h4>
@@ -113,8 +113,8 @@ export default function BlanchardGoldReviewPage() {
                                         <strong>But here&apos;s the problem:</strong> For most folks looking to protect their retirement, rare coins are the wrong choice. Let us explain why.
                                     </p>
 
-                                    <div className="bg-amber-50 p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
-                                        <AlertTriangle className="w-6 h-6 text-amber-600 shrink-0" />
+                                    <div className="bg-[#161828] p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
+                                        <AlertTriangle className="w-6 h-6 text-[#D4A94E] shrink-0" />
                                         <div>
                                             <h4 className="font-bold text-amber-800">Numismatics vs. Bullion: The Key Difference</h4>
                                             <ul className="text-amber-700 text-sm mt-2 space-y-1">
@@ -141,7 +141,7 @@ export default function BlanchardGoldReviewPage() {
                                 <section id="pros-cons" className="scroll-mt-32">
                                     <h2>Pros & Cons</h2>
                                     <div className="grid md:grid-cols-2 gap-8 not-prose">
-                                        <div className="bg-green-50 p-6 rounded-xl border border-green-200">
+                                        <div className="bg-[rgba(46,139,87,0.08)] p-6 rounded-xl border border-green-200">
                                             <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
                                                 <CheckCircle2 className="w-5 h-5" /> Strengths
                                             </h3>
@@ -153,7 +153,7 @@ export default function BlanchardGoldReviewPage() {
                                                 <li>• Genuine educational resources (not just sales)</li>
                                             </ul>
                                         </div>
-                                        <div className="bg-red-50 p-6 rounded-xl border border-red-200">
+                                        <div className="bg-[rgba(220,38,38,0.08)] p-6 rounded-xl border border-red-200">
                                             <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
                                                 <XCircle className="w-5 h-5" /> Weaknesses
                                             </h3>

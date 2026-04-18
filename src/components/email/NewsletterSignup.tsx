@@ -146,7 +146,7 @@ export function NewsletterSignup({
           </div>
 
           {status === "success" ? (
-            <div className="flex items-center gap-2 text-green-600 bg-green-500/10 px-6 py-3 rounded-xl">
+            <div className="flex items-center gap-2 text-green-600 bg-[rgba(46,139,87,0.08)]0/10 px-6 py-3 rounded-xl">
               <CheckCircle2 className="h-5 w-5" />
               <span className="font-semibold">Check your inbox to confirm!</span>
             </div>
@@ -212,7 +212,7 @@ export function NewsletterSignup({
       </p>
 
       {status === "success" ? (
-        <div className="flex items-center justify-center gap-2 text-green-600 bg-green-500/10 px-6 py-4 rounded-xl">
+        <div className="flex items-center justify-center gap-2 text-green-600 bg-[rgba(46,139,87,0.08)]0/10 px-6 py-4 rounded-xl">
           <CheckCircle2 className="h-6 w-6" />
           <span className="font-semibold text-lg">Check your inbox to confirm your subscription.</span>
         </div>

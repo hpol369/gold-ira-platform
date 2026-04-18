@@ -116,7 +116,7 @@ const crisisPerformanceData = [
     event: "2022 Inflation Spike",
     period: "Jan 2022 - Sep 2022",
     gold: "-3.8%",
-    goldColor: "text-amber-600",
+    goldColor: "text-[#D4A94E]",
     sp500: "-23.9%",
     sp500Color: "text-red-600",
     notes: "Gold held far better than stocks during rate hikes",
@@ -351,7 +351,7 @@ export default function IsAGoldIraAGoodIdeaPage() {
                 ].map((item) => (
                   <div
                     key={item.num}
-                    className="bg-green-50 border border-green-200 rounded-xl p-5"
+                    className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5"
                   >
                     <h3 className="font-bold text-[#F6F4EF] mb-2">
                       <span className="inline-flex items-center justify-center w-7 h-7 rounded-full bg-green-100 text-green-700 text-sm font-bold mr-2">
@@ -436,7 +436,7 @@ export default function IsAGoldIraAGoodIdeaPage() {
                 ))}
               </div>
 
-              <div className="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-5">
+              <div className="mt-6 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                 <p className="text-[#D0CCC4] leading-relaxed text-sm">
                   <strong className="text-[#F6F4EF]">Bottom line:</strong> A
                   Gold IRA is a smart move for people in the right situation. If
@@ -464,7 +464,7 @@ export default function IsAGoldIraAGoodIdeaPage() {
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
-                  <BarChart3 className="w-5 h-5 text-amber-600" />
+                  <BarChart3 className="w-5 h-5 text-[#D4A94E]" />
                 </div>
                 <h2
                   id="gold-ira-returns"
@@ -537,7 +537,7 @@ export default function IsAGoldIraAGoodIdeaPage() {
                 </p>
               </div>
 
-              <div className="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-5">
+              <div className="mt-6 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                 <p className="text-[#D0CCC4] leading-relaxed">
                   <strong className="text-[#F6F4EF]">What this means for you:</strong>{" "}
                   If you had 15% of your retirement in a Gold IRA during 2008,
@@ -652,7 +652,7 @@ export default function IsAGoldIraAGoodIdeaPage() {
                 </p>
               </div>
 
-              <div className="mt-6 bg-red-50 border border-red-200 rounded-xl p-5">
+              <div className="mt-6 bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
                   <p className="text-[#D0CCC4] leading-relaxed text-sm">
@@ -732,7 +732,7 @@ export default function IsAGoldIraAGoodIdeaPage() {
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
-                  <Target className="w-5 h-5 text-amber-600" />
+                  <Target className="w-5 h-5 text-[#D4A94E]" />
                 </div>
                 <h2
                   id="bottom-line"
@@ -748,7 +748,7 @@ export default function IsAGoldIraAGoodIdeaPage() {
               </p>
 
               <div className="space-y-4">
-                <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5">
                   <h3 className="flex items-center gap-2 text-lg font-bold text-green-800 mb-3">
                     <CheckCircle2 className="w-5 h-5" />
                     Yes, open a Gold IRA if...
@@ -772,7 +772,7 @@ export default function IsAGoldIraAGoodIdeaPage() {
                   </ul>
                 </div>
 
-                <div className="bg-red-50 border border-red-200 rounded-xl p-5">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5">
                   <h3 className="flex items-center gap-2 text-lg font-bold text-red-800 mb-3">
                     <XCircle className="w-5 h-5" />
                     Hold off on a Gold IRA if...

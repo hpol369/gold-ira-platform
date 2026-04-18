@@ -130,7 +130,7 @@ const annualReturns: AnnualReturn[] = [
   { year: 2019, yearEndPrice: "$1,517", annualReturn: "+18.3%", returnColor: "text-green-600" },
   { year: 2020, yearEndPrice: "$1,898", annualReturn: "+25.1%", returnColor: "text-green-600" },
   { year: 2021, yearEndPrice: "$1,829", annualReturn: "-3.6%", returnColor: "text-red-600" },
-  { year: 2022, yearEndPrice: "$1,824", annualReturn: "-0.3%", returnColor: "text-amber-600" },
+  { year: 2022, yearEndPrice: "$1,824", annualReturn: "-0.3%", returnColor: "text-[#D4A94E]" },
   { year: 2023, yearEndPrice: "$2,063", annualReturn: "+13.1%", returnColor: "text-green-600" },
   { year: 2024, yearEndPrice: "$2,623", annualReturn: "+27.2%", returnColor: "text-green-600" },
   { year: 2025, yearEndPrice: "$2,710", annualReturn: "+3.3%", returnColor: "text-green-600" },
@@ -205,7 +205,7 @@ const crisisPerformance: CrisisPerformance[] = [
   { crisis: "2000\u201302 Dot-Com Bust", period: "Mar 2000\u2013Oct 2002", goldReturn: "+12.4%", goldColor: "text-green-600", sp500Return: "-44.7%", sp500Color: "text-red-600" },
   { crisis: "2008 Global Financial Crisis", period: "Sep 2008\u2013Mar 2009", goldReturn: "+25.0%", goldColor: "text-green-600", sp500Return: "-36.7%", sp500Color: "text-red-600" },
   { crisis: "2020 COVID-19 Crash", period: "Feb 2020\u2013Apr 2020", goldReturn: "+3.5%", goldColor: "text-green-600", sp500Return: "-19.6%", sp500Color: "text-red-600" },
-  { crisis: "2022 Inflation Spike", period: "Jan 2022\u2013Sep 2022", goldReturn: "-3.8%", goldColor: "text-amber-600", sp500Return: "-23.9%", sp500Color: "text-red-600" },
+  { crisis: "2022 Inflation Spike", period: "Jan 2022\u2013Sep 2022", goldReturn: "-3.8%", goldColor: "text-[#D4A94E]", sp500Return: "-23.9%", sp500Color: "text-red-600" },
 ];
 
 // --- Gold IRA costs ---
@@ -391,7 +391,7 @@ export default function GoldIRAStatisticsPage() {
                     >
                       <div className="flex justify-center mb-3">
                         <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
-                          <Icon className="w-5 h-5 text-amber-600" />
+                          <Icon className="w-5 h-5 text-[#D4A94E]" />
                         </div>
                       </div>
                       <p className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
@@ -419,7 +419,7 @@ export default function GoldIRAStatisticsPage() {
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
-                  <TrendingUp className="w-5 h-5 text-amber-600" />
+                  <TrendingUp className="w-5 h-5 text-[#D4A94E]" />
                 </div>
                 <h2
                   id="gold-price-performance"
@@ -551,7 +551,7 @@ export default function GoldIRAStatisticsPage() {
                           key={row.country}
                           className={`border-t border-[#2A2D42] even:bg-[#0C0D18] ${
                             row.country === "Global Net Total"
-                              ? "font-bold bg-amber-50"
+                              ? "font-bold bg-[#161828]"
                               : ""
                           }`}
                         >
@@ -688,7 +688,7 @@ export default function GoldIRAStatisticsPage() {
                 </p>
               </div>
 
-              <div className="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-5">
+              <div className="mt-6 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5">
                 <p className="text-[#D0CCC4] leading-relaxed">
                   <strong className="text-[#F6F4EF]">Key takeaway:</strong> Gold
                   has acted as a reliable portfolio hedge during the worst
@@ -709,7 +709,7 @@ export default function GoldIRAStatisticsPage() {
           <Container>
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-lg bg-slate-200 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-[#2A2D42] flex items-center justify-center">
                   <DollarSign className="w-5 h-5 text-[#D0CCC4]" />
                 </div>
                 <h2
@@ -769,7 +769,7 @@ export default function GoldIRAStatisticsPage() {
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center">
-                  <Quote className="w-5 h-5 text-purple-600" />
+                  <Quote className="w-5 h-5 text-[#D4A94E]" />
                 </div>
                 <h2
                   id="cite-this-data"

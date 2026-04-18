@@ -24,7 +24,7 @@ export function ValueProps() {
                         </p>
 
                         <div className="space-y-4">
-                            <div className="bg-red-50 border border-red-100 rounded-2xl p-6
+                            <div className="bg-[rgba(220,38,38,0.08)] border border-red-100 rounded-2xl p-6
                                            hover:-translate-y-1 hover:shadow-lg
                                            transition-all duration-300 flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-red-100 text-[#D4A94E] mt-1 shrink-0">
@@ -36,7 +36,7 @@ export function ValueProps() {
                                 </div>
                             </div>
 
-                            <div className="bg-green-50 border border-green-100 rounded-2xl p-6
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-green-100 rounded-2xl p-6
                                            hover:-translate-y-1 hover:shadow-lg
                                            transition-all duration-300 flex items-start gap-4">
                                 <div className="p-3 rounded-full bg-green-100 text-green-700 mt-1 shrink-0">
@@ -58,7 +58,7 @@ export function ValueProps() {
                             <div className="grid grid-cols-2 gap-8 text-center relative z-10">
                                 {/* Middle Class Chart */}
                                 <div className="flex flex-col items-center gap-4">
-                                    <div className="relative h-32 w-32 rounded-full bg-slate-200 border-4 border-[#3F4460] shadow-inner flex items-center justify-center overflow-hidden">
+                                    <div className="relative h-32 w-32 rounded-full bg-[#2A2D42] border-4 border-[#3F4460] shadow-inner flex items-center justify-center overflow-hidden">
                                         <div className="absolute inset-0 bg-slate-400 w-full h-full" style={{ clipPath: 'polygon(50% 50%, 0 0, 100% 0)' }}></div>
                                         <span className="relative z-10 font-bold text-[#D0CCC4] text-xs bg-white/80 px-2 py-1 rounded-full shadow-sm">95% Paper</span>
                                     </div>

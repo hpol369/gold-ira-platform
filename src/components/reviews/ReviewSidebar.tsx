@@ -26,14 +26,14 @@ export function ReviewSidebar({
         <div className="hidden lg:block sticky top-24 self-start w-80 p-6 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
             {/* Rating Header */}
             <div className="text-center mb-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-amber-500/20 text-amber-400 font-bold text-2xl mb-3">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#161828]0/20 text-[#D4A94E] font-bold text-2xl mb-3">
                     {rating}
                 </div>
                 <div className="flex justify-center gap-1 mb-2">
                     {[...Array(5)].map((_, i) => (
                         <Star
                             key={i}
-                            className={cn("w-5 h-5", i < Math.floor(rating) ? "fill-amber-400 text-amber-400" : "text-[#D0CCC4]")}
+                            className={cn("w-5 h-5", i < Math.floor(rating) ? "fill-[#D4A94E] text-[#D4A94E]" : "text-[#D0CCC4]")}
                         />
                     ))}
                 </div>
@@ -59,7 +59,7 @@ export function ReviewSidebar({
                 </div>
                 <div className="py-3">
                     <span className="text-sm text-[#A8A39A] block mb-1">Best For</span>
-                    <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-xs font-bold border border-green-500/30">
+                    <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[rgba(46,139,87,0.08)]0/20 text-green-400 text-xs font-bold border border-green-500/30">
                         <Award className="w-3 h-3" />
                         {bestFor}
                     </div>

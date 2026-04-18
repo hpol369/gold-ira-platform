@@ -175,7 +175,7 @@ const whySilverReasons = [
 
 export default function SilverIraHubPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "Silver IRA Hub: Complete Guide to Silver IRAs (2026)", description: "Everything you need to know about Silver IRAs. Compare companies, learn rules, understand rollovers, and find IRS-approved silver coins for your retirement.", slug: "/silver-ira" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Silver IRA Hub", url: "/silver-ira" }])} />
 
@@ -228,7 +228,7 @@ export default function SilverIraHubPage() {
             </section>
 
             {/* Why Silver Section */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] mb-4">Why Consider Silver for Your IRA?</h2>
@@ -302,7 +302,7 @@ export default function SilverIraHubPage() {
             </section>
 
             {/* Related Resources */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -356,7 +356,7 @@ export default function SilverIraHubPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"
@@ -368,7 +368,7 @@ export default function SilverIraHubPage() {
                 </Container>
             </section>
 
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/silver-ira" />
                 </Container>

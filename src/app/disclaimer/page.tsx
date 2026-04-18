@@ -55,7 +55,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function DisclaimerPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={schema} />
       <SchemaScript schema={breadcrumbs} />
@@ -72,7 +72,7 @@ export default function DisclaimerPage() {
               <span className="text-[#D0CCC4]">Disclaimer</span>
             </nav>
 
-            <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 px-4 py-1.5 text-sm font-semibold text-amber-700 mb-6 border border-amber-200">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#161828] px-4 py-1.5 text-sm font-semibold text-amber-700 mb-6 border border-amber-200">
               <AlertTriangle className="h-4 w-4" />
               Important Notice
             </div>
@@ -126,9 +126,9 @@ export default function DisclaimerPage() {
             illustrate past trends but should not be interpreted as predictions
             of future performance.
           </p>
-          <div className="not-prose bg-amber-50 rounded-xl p-6 border border-amber-200 my-6">
+          <div className="not-prose bg-[#161828] rounded-xl p-6 border border-amber-200 my-6">
             <div className="flex items-start gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#D0CCC4] m-0">
                 <strong>Important:</strong> All investments carry risk, including
                 the potential loss of principal. You could lose money investing

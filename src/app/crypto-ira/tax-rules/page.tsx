@@ -60,7 +60,7 @@ const faqs = [
 
 export default function CryptoIRATaxRulesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <SchemaScript
@@ -118,7 +118,7 @@ export default function CryptoIRATaxRulesPage() {
             </header>
 
             {/* IRS Classification */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -139,7 +139,7 @@ export default function CryptoIRATaxRulesPage() {
                             </p>
                         </div>
 
-                        <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mt-6">
+                        <div className="bg-[#121423] border border-blue-200 rounded-xl p-6 mt-6">
                             <h3 className="font-bold text-[#F6F4EF] mb-3">Key IRS Rules for Crypto in IRAs</h3>
                             <ul className="space-y-3">
                                 <li className="flex items-start gap-3 text-[#D0CCC4]">
@@ -221,7 +221,7 @@ export default function CryptoIRATaxRulesPage() {
                             </table>
                         </div>
 
-                        <div className="bg-green-50 border border-green-200 rounded-xl p-5 mt-6">
+                        <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5 mt-6">
                             <div className="flex items-start gap-3">
                                 <DollarSign className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
                                 <p className="text-[#D0CCC4] text-sm">
@@ -234,12 +234,12 @@ export default function CryptoIRATaxRulesPage() {
             </section>
 
             {/* UBIT */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
                             <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                                <AlertTriangle className="w-5 h-5 text-amber-600" />
+                                <AlertTriangle className="w-5 h-5 text-[#D4A94E]" />
                             </div>
                             <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                 UBIT: The Hidden Tax Risk for Staking and DeFi
@@ -253,7 +253,7 @@ export default function CryptoIRATaxRulesPage() {
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6 mt-8">
-                            <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                 <h3 className="font-bold text-red-800 mb-3">May Trigger UBIT</h3>
                                 <ul className="space-y-2">
                                     <li className="flex items-start gap-2 text-[#D0CCC4] text-sm">
@@ -275,7 +275,7 @@ export default function CryptoIRATaxRulesPage() {
                                 </ul>
                             </div>
 
-                            <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                                 <h3 className="font-bold text-green-800 mb-3">Generally UBIT-Free</h3>
                                 <ul className="space-y-2">
                                     <li className="flex items-start gap-2 text-[#D0CCC4] text-sm">
@@ -298,9 +298,9 @@ export default function CryptoIRATaxRulesPage() {
                             </div>
                         </div>
 
-                        <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mt-6">
+                        <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 mt-6">
                             <div className="flex items-start gap-3">
-                                <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                                <AlertTriangle className="w-5 h-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
                                 <p className="text-[#D0CCC4] text-sm">
                                     <strong>Tax Note:</strong> UBIT tax rates go up to 37% on unrelated business income over $1,000 per year. If your IRA earns UBIT, it must file Form 990-T and pay the tax from IRA funds. Most buy-and-hold crypto investors will not encounter UBIT.
                                 </p>
@@ -316,7 +316,7 @@ export default function CryptoIRATaxRulesPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
                             <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                <BookOpen className="w-5 h-5 text-purple-600" />
+                                <BookOpen className="w-5 h-5 text-[#D4A94E]" />
                             </div>
                             <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                 Reporting Requirements
@@ -352,7 +352,7 @@ export default function CryptoIRATaxRulesPage() {
 
                             <div className="bg-[#161828] rounded-xl border border-[#2A2D42] p-6">
                                 <h3 className="font-bold text-[#F6F4EF] mb-2 flex items-center gap-2">
-                                    <FileText className="w-5 h-5 text-amber-500" />
+                                    <FileText className="w-5 h-5 text-[#D4A94E]" />
                                     Form 990-T (UBIT Only)
                                 </h3>
                                 <p className="text-[#D0CCC4] text-sm">
@@ -365,7 +365,7 @@ export default function CryptoIRATaxRulesPage() {
             </section>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <AugustaCTA

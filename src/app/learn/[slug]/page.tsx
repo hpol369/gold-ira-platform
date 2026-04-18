@@ -179,10 +179,10 @@ const iconMap: Record<string, LucideIcon> = {
 
 // Color classes for icons
 const iconColorClasses: Record<IconColor, string> = {
-  red: "text-red-700 bg-red-500/20",
-  amber: "text-amber-700 bg-amber-500/20",
-  green: "text-green-700 bg-green-500/20",
-  blue: "text-blue-700 bg-blue-500/20",
+  red: "text-red-700 bg-[rgba(220,38,38,0.08)]0/20",
+  amber: "text-amber-700 bg-[#161828]0/20",
+  green: "text-green-700 bg-[rgba(46,139,87,0.08)]0/20",
+  blue: "text-blue-700 bg-[#121423]0/20",
   purple: "text-purple-700 bg-purple-500/20",
   slate: "text-[#A8A39A] bg-[#0C0D18]0/20",
 };
@@ -257,7 +257,7 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
             <ul className="space-y-3 mb-6">
               {section.bullets.map((bullet, i) => (
                 <li key={i} className="flex items-start gap-3 text-sm group">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-amber-500/20 flex items-center justify-center mt-0.5 group-hover:bg-amber-500/30 transition-colors">
+                  <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-[#161828]0/20 flex items-center justify-center mt-0.5 group-hover:bg-[#161828]0/30 transition-colors">
                     <ChevronRight className="h-4 w-4 text-amber-700" />
                   </span>
                   <span className="text-[#3F4460] pt-0.5">{bullet}</span>
@@ -329,14 +329,14 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
                 section.callout.type === 'info' && "border-blue-500/30",
                 section.callout.type === 'warning' && "border-amber-500/30",
                 section.callout.type === 'tip' && "border-green-500/30",
-                section.callout.type === 'example' && "border-purple-500/30"
+                section.callout.type === 'example' && "border-[rgba(197,149,46,0.32)]"
               )} />
               <div className="relative flex items-start gap-4">
                 <div className={cn(
                   "p-2 rounded-lg flex-shrink-0",
-                  section.callout.type === 'info' && "bg-blue-500/20",
-                  section.callout.type === 'warning' && "bg-amber-500/20",
-                  section.callout.type === 'tip' && "bg-green-500/20",
+                  section.callout.type === 'info' && "bg-[#121423]0/20",
+                  section.callout.type === 'warning' && "bg-[#161828]0/20",
+                  section.callout.type === 'tip' && "bg-[rgba(46,139,87,0.08)]0/20",
                   section.callout.type === 'example' && "bg-purple-500/20"
                 )}>
                   {section.callout.type === 'info' && <Info className="h-5 w-5 text-blue-700" />}
@@ -560,10 +560,10 @@ export default async function LearnArticlePage({ params }: PageProps) {
                   <div className="relative flex items-start gap-4">
                     <div className={cn(
                       "p-3 rounded-xl flex-shrink-0 shadow-lg",
-                      article.warningBox.type === 'red' && "bg-red-500/20",
-                      article.warningBox.type === 'amber' && "bg-amber-500/20",
-                      article.warningBox.type === 'blue' && "bg-blue-500/20",
-                      article.warningBox.type === 'green' && "bg-green-500/20"
+                      article.warningBox.type === 'red' && "bg-[rgba(220,38,38,0.08)]0/20",
+                      article.warningBox.type === 'amber' && "bg-[#161828]0/20",
+                      article.warningBox.type === 'blue' && "bg-[#121423]0/20",
+                      article.warningBox.type === 'green' && "bg-[rgba(46,139,87,0.08)]0/20"
                     )}>
                       <AlertTriangle className={cn(
                         "h-6 w-6",
@@ -591,7 +591,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
 
                 <div className="relative">
                   <h2 className="text-2xl font-serif font-bold text-white mb-4 flex items-center gap-3">
-                    <div className="p-2 rounded-xl bg-amber-500/20 shadow-lg ring-1 ring-amber-500/30">
+                    <div className="p-2 rounded-xl bg-[#161828]0/20 shadow-lg ring-1 ring-amber-500/30">
                       <Shield className="h-6 w-6 text-amber-700" />
                     </div>
                     {article.goldBridge.title}
@@ -602,8 +602,8 @@ export default async function LearnArticlePage({ params }: PageProps) {
                   <ul className="space-y-3 mb-6">
                     {article.goldBridge.bullets.map((bullet, i) => (
                       <li key={i} className="flex items-start gap-3 text-sm group">
-                        <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-amber-500/20 flex items-center justify-center mt-0.5
-                                         group-hover:bg-amber-500/30 transition-colors ring-1 ring-amber-500/20">
+                        <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-[#161828]0/20 flex items-center justify-center mt-0.5
+                                         group-hover:bg-[#161828]0/30 transition-colors ring-1 ring-amber-500/20">
                           <CheckCircle2 className="h-4 w-4 text-amber-700" />
                         </span>
                         <span className="text-[#3F4460] pt-0.5">{bullet}</span>
@@ -622,7 +622,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
               {article.faqs.length > 0 && (
                 <div className="mb-12">
                   <h2 className="text-2xl font-serif font-bold text-white mb-6 flex items-center gap-3">
-                    <div className="p-2 rounded-xl bg-amber-500/20 shadow-lg ring-1 ring-amber-500/30">
+                    <div className="p-2 rounded-xl bg-[#161828]0/20 shadow-lg ring-1 ring-amber-500/30">
                       <HelpCircle className="h-5 w-5 text-amber-700" />
                     </div>
                     Frequently Asked Questions
@@ -663,7 +663,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
               {relatedArticles.length > 0 && (
                 <div className="mb-12">
                   <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
-                    <div className="p-2 rounded-xl bg-blue-500/20 shadow-lg ring-1 ring-blue-500/30">
+                    <div className="p-2 rounded-xl bg-[#121423]0/20 shadow-lg ring-1 ring-blue-500/30">
                       <FileText className="h-5 w-5 text-blue-700" />
                     </div>
                     Related Articles
@@ -702,7 +702,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
               {article.relatedGuides.length > 0 && (
                 <div className="mb-12">
                   <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-                    <div className="p-1.5 rounded-lg bg-green-500/20 shadow-lg ring-1 ring-green-500/30">
+                    <div className="p-1.5 rounded-lg bg-[rgba(46,139,87,0.08)]0/20 shadow-lg ring-1 ring-green-500/30">
                       <FileText className="h-4 w-4 text-green-700" />
                     </div>
                     Helpful Guides
@@ -731,7 +731,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
               {article.relatedTools && article.relatedTools.length > 0 && (
                 <div className="mb-12">
                   <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-                    <div className="p-1.5 rounded-lg bg-amber-500/20 shadow-lg ring-1 ring-amber-500/30">
+                    <div className="p-1.5 rounded-lg bg-[#161828]0/20 shadow-lg ring-1 ring-amber-500/30">
                       <Calculator className="h-4 w-4 text-amber-700" />
                     </div>
                     Interactive Tools

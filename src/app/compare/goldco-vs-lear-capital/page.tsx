@@ -50,7 +50,7 @@ const schema = {
 
 export default function GoldcoVsLearPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
             <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
@@ -138,7 +138,7 @@ export default function GoldcoVsLearPage() {
                         <section id="pros-cons" className="scroll-mt-32">
                             <h2>Pros & Cons</h2>
                             <div className="grid md:grid-cols-2 gap-8 not-prose">
-                                <div className="bg-green-50 p-6 rounded-xl border border-green-100">
+                                <div className="bg-[rgba(46,139,87,0.08)] p-6 rounded-xl border border-green-100">
                                     <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Goldco Advantages
                                     </h3>
@@ -148,7 +148,7 @@ export default function GoldcoVsLearPage() {
                                         <li>• #1 Rated on most sites</li>
                                     </ul>
                                 </div>
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                                <div className="bg-[#121423] p-6 rounded-xl border border-blue-100">
                                     <h3 className="text-xl font-bold text-blue-800 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" /> Lear Capital Advantages
                                     </h3>

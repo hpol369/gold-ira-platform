@@ -49,7 +49,7 @@ export default function AltoIRAReviewPage() {
     const affiliateLink = getTrackedLink(AFFILIATE_LINKS.altoIra, "review-alto-ira", "alto-ira");
 
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Hero Section */}

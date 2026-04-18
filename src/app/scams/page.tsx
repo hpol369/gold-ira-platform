@@ -175,7 +175,7 @@ const schema = {
 
 export default function ScamsPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Gold IRA Scam Protection Center", description: "Protect yourself from Gold IRA scams. Investigate complaints, lawsuits, and red flags before investing.", slug: "/scams" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Scam Protection", url: "/scams" }])} />
       <SchemaScript schema={faqSchema(getPageFAQs("scams"))} />
@@ -201,7 +201,7 @@ export default function ScamsPage() {
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-[#0C0D18] relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-red-500/5 rounded-full blur-[150px]" />
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[rgba(220,38,38,0.08)]0/5 rounded-full blur-[150px]" />
           <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[rgba(220,38,38,0.06)] rounded-full blur-[100px]" />
         </div>
         <Container className="relative z-10">
@@ -247,7 +247,7 @@ export default function ScamsPage() {
       </section>
 
       {/* Scam Types */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -331,7 +331,7 @@ export default function ScamsPage() {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Red Flags */}
-              <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+              <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-6">
                   <XCircle className="h-6 w-6 text-red-600" />
                   <h3 className="text-xl font-bold text-red-600">
@@ -349,7 +349,7 @@ export default function ScamsPage() {
               </div>
 
               {/* Green Flags */}
-              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+              <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-6">
                   <CheckCircle2 className="h-6 w-6 text-green-600" />
                   <h3 className="text-xl font-bold text-green-600">
@@ -394,7 +394,7 @@ export default function ScamsPage() {
                   key={company.slug}
                   className={`bg-[#0C0D18] border rounded-xl p-6 ${
                     index === 0
-                      ? "border-green-300 bg-green-50/50"
+                      ? "border-green-300 bg-[rgba(46,139,87,0.08)]/50"
                       : "border-[#2A2D42]"
                   }`}
                 >
@@ -432,7 +432,7 @@ export default function ScamsPage() {
                       className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold transition-all ${
                         index === 0
                           ? "bg-[#DC2626] text-white hover:bg-[#8B1A28]"
-                          : "bg-slate-200 text-[#F6F4EF] hover:bg-slate-300"
+                          : "bg-[#2A2D42] text-[#F6F4EF] hover:bg-[#3F4460]"
                       }`}
                     >
                       View Full Review
@@ -510,7 +510,7 @@ export default function ScamsPage() {
       </section>
 
       {/* How We Verify */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -592,7 +592,7 @@ export default function ScamsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"
@@ -603,7 +603,7 @@ export default function ScamsPage() {
         </Container>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <FAQSection
             faqs={getPageFAQs("scams")}
@@ -614,7 +614,7 @@ export default function ScamsPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/scams" />
         </Container>

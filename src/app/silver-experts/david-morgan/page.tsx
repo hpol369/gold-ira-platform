@@ -102,7 +102,7 @@ const books = [
 
 export default function DavidMorganPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -114,7 +114,7 @@ export default function DavidMorganPage() {
                         <Link href="/silver-experts" className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Experts
                         </Link>
-                        <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/20 px-4 py-1.5 text-sm font-semibold text-blue-700 mb-6 border border-blue-500/30 ml-4">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#121423]0/20 px-4 py-1.5 text-sm font-semibold text-blue-700 mb-6 border border-blue-500/30 ml-4">
                             <BookOpen className="w-4 h-4" />
                             Silver Expert Profile
                         </div>
@@ -140,7 +140,7 @@ export default function DavidMorganPage() {
                         {/* Who Is David Morgan */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-blue-500/20 rounded-lg">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg">
                                     <BookOpen className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Who Is David Morgan?</h2>
@@ -187,7 +187,7 @@ export default function DavidMorganPage() {
                         {/* Analysis Methodology */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-blue-500/20 rounded-lg">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg">
                                     <BarChart3 className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">David Morgan&apos;s Analysis Methodology</h2>
@@ -225,7 +225,7 @@ export default function DavidMorganPage() {
                         {/* Key Quotes */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-blue-500/20 rounded-lg">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg">
                                     <Quote className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Key Quotes & Predictions</h2>
@@ -243,7 +243,7 @@ export default function DavidMorganPage() {
                         {/* Books and Resources */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-blue-500/20 rounded-lg">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg">
                                     <BookOpen className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Books & Resources</h2>
@@ -268,7 +268,7 @@ export default function DavidMorganPage() {
                         {/* Media Appearances */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-blue-500/20 rounded-lg">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg">
                                     <Mic className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Media Appearances</h2>
@@ -301,7 +301,7 @@ export default function DavidMorganPage() {
                         {/* Investment Philosophy */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-green-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg">
                                     <TrendingUp className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">David Morgan&apos;s Investment Philosophy</h2>

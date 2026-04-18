@@ -146,7 +146,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function RMDCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -156,7 +156,7 @@ export default function RMDCalculatorPage() {
       <RMDCalculator />
 
       {/* Important RMD Facts */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -216,7 +216,7 @@ export default function RMDCalculatorPage() {
                 <p><strong className="text-[#F6F4EF]">Step 2:</strong> Look up your age in the IRS Uniform Lifetime Table below.</p>
                 <p><strong className="text-[#F6F4EF]">Step 3:</strong> Divide your balance by the distribution period factor.</p>
               </div>
-              <div className="mt-4 p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
+              <div className="mt-4 p-4 bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-lg">
                 <p className="text-green-600 font-medium mb-1">Example Calculation:</p>
                 <p className="text-[#D0CCC4] text-sm">
                   Age 75 with $500,000 balance: $500,000 ÷ 24.6 = <strong className="text-[#F6F4EF]">$20,325 RMD</strong>
@@ -228,11 +228,11 @@ export default function RMDCalculatorPage() {
       </section>
 
       {/* RMD Table 2026 */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center">
                 <Table className="h-6 w-6 text-blue-600" />
               </div>
               <div>
@@ -330,7 +330,7 @@ export default function RMDCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -413,7 +413,7 @@ export default function RMDCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"
@@ -424,7 +424,7 @@ export default function RMDCalculatorPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/tools/rmd-calculator" />
         </Container>

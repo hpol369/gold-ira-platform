@@ -122,7 +122,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function InheritanceCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -132,7 +132,7 @@ export default function InheritanceCalculatorPage() {
       <InheritanceCalculator />
 
       {/* Important Facts */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -223,7 +223,7 @@ export default function InheritanceCalculatorPage() {
       </section>
 
       {/* Inherited IRA Strategy Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -256,7 +256,7 @@ export default function InheritanceCalculatorPage() {
                   Withdraw more in years when your income is lower (job change, sabbatical, early retirement) and less
                   in high-income years. Keep withdrawals below the next tax bracket threshold.
                 </p>
-                <div className="p-3 bg-green-500/10 rounded-lg">
+                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/10 rounded-lg">
                   <p className="text-sm text-green-600">
                     <strong>Pro tip:</strong> If you expect income to increase, front-load distributions in earlier years
                   </p>
@@ -316,7 +316,7 @@ export default function InheritanceCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -391,7 +391,7 @@ export default function InheritanceCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

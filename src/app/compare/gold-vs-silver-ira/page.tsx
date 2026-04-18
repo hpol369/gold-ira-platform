@@ -101,7 +101,7 @@ const schema = {
 
 export default function GoldVsSilverIraPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -187,7 +187,7 @@ export default function GoldVsSilverIraPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30">
                                     <h4 className="font-bold text-green-700 mb-3">Gold Strengths</h4>
                                     <ul className="space-y-2 text-sm text-green-800">
                                         <li>• Superior stability and crash protection</li>
@@ -197,7 +197,7 @@ export default function GoldVsSilverIraPage() {
                                         <li>• Less affected by economic downturns</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/30">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30">
                                     <h4 className="font-bold text-red-700 mb-3">Gold Weaknesses</h4>
                                     <ul className="space-y-2 text-sm text-red-800">
                                         <li>• Higher price per ounce (barrier to entry)</li>
@@ -221,7 +221,7 @@ export default function GoldVsSilverIraPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30">
                                     <h4 className="font-bold text-green-700 mb-3">Silver Strengths</h4>
                                     <ul className="space-y-2 text-sm text-green-800">
                                         <li>• Higher growth potential in bull markets</li>
@@ -231,7 +231,7 @@ export default function GoldVsSilverIraPage() {
                                         <li>• Potential for outsized gains</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/30">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30">
                                     <h4 className="font-bold text-red-700 mb-3">Silver Weaknesses</h4>
                                     <ul className="space-y-2 text-sm text-red-800">
                                         <li>• Higher volatility (bigger drops possible)</li>
@@ -291,7 +291,7 @@ export default function GoldVsSilverIraPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42]">
-                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-[#D4A94E] flex items-center justify-center shrink-0">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <div>

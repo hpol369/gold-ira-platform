@@ -92,7 +92,7 @@ const schema = {
 
 export default function CustodianComparisonPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -313,35 +313,35 @@ export default function CustodianComparisonPage() {
                     <h2>What to Look for in a Self-Directed IRA Custodian</h2>
 
                     <div className="not-prose my-8 space-y-4">
-                        <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-green-700">Asset type support</h4>
                                 <p className="text-sm text-green-600 mt-1">Make sure the custodian supports every asset type you want to invest in &mdash; now and in the future. Switching custodians is a hassle.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-green-700">Fee transparency</h4>
                                 <p className="text-sm text-green-600 mt-1">Get the full fee schedule in writing before you open an account. Ask about setup fees, annual fees, transaction fees, wire fees, and account closure fees.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-green-700">Processing speed</h4>
                                 <p className="text-sm text-green-600 mt-1">For real estate transactions, a slow custodian can kill a deal. Ask how long it takes to fund a purchase and process distributions.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-green-700">Customer support quality</h4>
                                 <p className="text-sm text-green-600 mt-1">Self-directed IRAs are complex. You want a custodian with knowledgeable staff who can answer questions quickly &mdash; not a call center reading scripts.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-green-700">Checkbook IRA LLC support</h4>

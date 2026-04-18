@@ -107,7 +107,7 @@ export default function RoslandCapitalReviewPage() {
 
                                 <section id="marketing" className="scroll-mt-32">
                                     <h2>The William Devane Factor</h2>
-                                    <div className="flex gap-4 items-start not-prose my-6 p-5 bg-blue-50 rounded-xl border border-blue-100">
+                                    <div className="flex gap-4 items-start not-prose my-6 p-5 bg-[#121423] rounded-xl border border-blue-100">
                                         <Tv className="w-6 h-6 text-blue-600 shrink-0 mt-1" />
                                         <div>
                                             <h4 className="font-bold text-blue-800 mb-2">Celebrity Endorsement Reality Check</h4>
@@ -137,7 +137,7 @@ export default function RoslandCapitalReviewPage() {
                                 <section id="pros-cons" className="scroll-mt-32">
                                     <h2>Pros & Cons</h2>
                                     <div className="grid md:grid-cols-2 gap-8 not-prose">
-                                        <div className="bg-green-50 p-6 rounded-xl border border-green-100">
+                                        <div className="bg-[rgba(46,139,87,0.08)] p-6 rounded-xl border border-green-100">
                                             <h3 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
                                                 <CheckCircle2 className="w-5 h-5" /> Strengths
                                             </h3>
@@ -149,7 +149,7 @@ export default function RoslandCapitalReviewPage() {
                                                 <li>• Recognizable, trusted brand</li>
                                             </ul>
                                         </div>
-                                        <div className="bg-red-50 p-6 rounded-xl border border-red-100">
+                                        <div className="bg-[rgba(220,38,38,0.08)] p-6 rounded-xl border border-red-100">
                                             <h3 className="text-xl font-bold text-red-800 mb-4 flex items-center gap-2">
                                                 <XCircle className="w-5 h-5" /> Weaknesses
                                             </h3>

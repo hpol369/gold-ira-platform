@@ -210,7 +210,7 @@ export function RMDCalculator() {
                   step={0.5}
                   value={growthRate}
                   onChange={(e) => setGrowthRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>0%</span>
@@ -301,7 +301,7 @@ export function RMDCalculator() {
                             <tr
                               key={proj.year}
                               className={`border-b border-[#2A2D42] ${
-                                idx === 0 ? "bg-amber-500/5" : ""
+                                idx === 0 ? "bg-[#161828]0/5" : ""
                               }`}
                             >
                               <td className="py-2 px-2 text-[#D0CCC4]">
@@ -347,9 +347,9 @@ export function RMDCalculator() {
           </div>
 
           {/* Roth IRA Tip */}
-          <div className="mt-8 bg-green-50 border border-green-200 rounded-2xl p-6">
+          <div className="mt-8 bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-2xl p-6">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/20 rounded-xl flex items-center justify-center flex-shrink-0">
                 <Info className="h-6 w-6 text-green-600" />
               </div>
               <div>

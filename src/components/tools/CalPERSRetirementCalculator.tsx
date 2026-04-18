@@ -302,7 +302,7 @@ export function CalPERSRetirementCalculator() {
                   step={0.5}
                   value={serviceYears}
                   onChange={(e) => setServiceYears(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>5 years</span>
@@ -323,7 +323,7 @@ export function CalPERSRetirementCalculator() {
                   step={1}
                   value={retirementAge}
                   onChange={(e) => setRetirementAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Min: {BENEFIT_FORMULAS[formula].minRetirementAge}</span>

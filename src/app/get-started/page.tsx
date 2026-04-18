@@ -115,7 +115,7 @@ function ProgressIndicator({ currentStep }: { currentStep: string }) {
                   isCompleted
                     ? "text-green-400"
                     : isActive
-                      ? "text-amber-400"
+                      ? "text-[#D4A94E]"
                       : "text-white/30"
                 }`}
               >
@@ -418,10 +418,10 @@ function GetStartedContent() {
       {/* Trust stats bar */}
       <div className="w-full py-2.5 border-b border-white/5 bg-white/[0.02]">
         <div className="max-w-2xl mx-auto flex flex-wrap justify-center gap-x-5 gap-y-1.5 px-4 text-white/50 text-[11px]">
-          <span className="flex items-center gap-1"><Users className="h-3 w-3 text-amber-400/60" />50,000+ Educated</span>
-          <span className="flex items-center gap-1"><Shield className="h-3 w-3 text-amber-400/60" />$2B+ Protected</span>
-          <span className="flex items-center gap-1"><Star className="h-3 w-3 text-amber-400/60" />4.9/5 Rating</span>
-          <span className="flex items-center gap-1"><Award className="h-3 w-3 text-amber-400/60" />A+ BBB Partners</span>
+          <span className="flex items-center gap-1"><Users className="h-3 w-3 text-[#D4A94E]/60" />50,000+ Educated</span>
+          <span className="flex items-center gap-1"><Shield className="h-3 w-3 text-[#D4A94E]/60" />$2B+ Protected</span>
+          <span className="flex items-center gap-1"><Star className="h-3 w-3 text-[#D4A94E]/60" />4.9/5 Rating</span>
+          <span className="flex items-center gap-1"><Award className="h-3 w-3 text-[#D4A94E]/60" />A+ BBB Partners</span>
         </div>
       </div>
 
@@ -441,8 +441,8 @@ function GetStartedContent() {
                 transition={{ duration: 0.3 }}
               >
                 <div className="text-center mb-10">
-                  <div className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/30 rounded-full px-4 py-1.5 mb-6">
-                    <Shield className="h-4 w-4 text-amber-400" />
+                  <div className="inline-flex items-center gap-2 bg-[#161828]0/20 border border-amber-500/30 rounded-full px-4 py-1.5 mb-6">
+                    <Shield className="h-4 w-4 text-[#D4A94E]" />
                     <span className="text-amber-300 text-sm font-medium">Free — No Obligation</span>
                   </div>
                   <h1 className="text-3xl md:text-5xl font-serif font-black text-white mb-4 leading-tight">
@@ -466,7 +466,7 @@ function GetStartedContent() {
                           }}
                           className="flex flex-col items-center gap-3 text-center px-5 py-6 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 hover:border-amber-400/50 text-white font-medium transition-all duration-200 active:scale-[0.98]"
                         >
-                          <Icon className="h-8 w-8 text-amber-400" />
+                          <Icon className="h-8 w-8 text-[#D4A94E]" />
                           <span className="text-lg font-bold">{option.label}</span>
                           <span className="text-white/50 text-xs leading-tight">{option.description}</span>
                         </button>
@@ -490,8 +490,8 @@ function GetStartedContent() {
                 transition={{ duration: 0.3 }}
               >
                 <div className="text-center mb-10">
-                  <div className="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/30 rounded-full px-4 py-1.5 mb-6">
-                    <Shield className="h-4 w-4 text-amber-400" />
+                  <div className="inline-flex items-center gap-2 bg-[#161828]0/20 border border-amber-500/30 rounded-full px-4 py-1.5 mb-6">
+                    <Shield className="h-4 w-4 text-[#D4A94E]" />
                     <span className="text-amber-300 text-sm font-medium">Free — No Obligation</span>
                   </div>
                   <h1 className="text-3xl md:text-5xl font-serif font-black text-white mb-4 leading-tight">
@@ -557,7 +557,7 @@ function GetStartedContent() {
                           onClick={() => selectConcern(option.value)}
                           className="flex items-center gap-3 text-left px-5 py-4 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 hover:border-amber-400/50 text-white font-medium transition-all duration-200 active:scale-[0.98]"
                         >
-                          <Icon className="h-5 w-5 text-amber-400 flex-shrink-0" />
+                          <Icon className="h-5 w-5 text-[#D4A94E] flex-shrink-0" />
                           {option.label}
                         </button>
                       );
@@ -580,7 +580,7 @@ function GetStartedContent() {
                 transition={{ duration: 0.3 }}
               >
                 <div className="text-center mb-8">
-                  <div className="inline-flex items-center gap-2 bg-green-500/20 border border-green-500/30 rounded-full px-4 py-1.5 mb-6">
+                  <div className="inline-flex items-center gap-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full px-4 py-1.5 mb-6">
                     <CheckCircle className="h-4 w-4 text-green-400" />
                     <span className="text-green-300 text-sm font-medium">Match Found</span>
                   </div>
@@ -591,8 +591,8 @@ function GetStartedContent() {
 
                 <div className="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-6 md:p-8 mb-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center">
-                      <Shield className="h-5 w-5 text-amber-400" />
+                    <div className="w-10 h-10 rounded-full bg-[#161828]0/20 flex items-center justify-center">
+                      <Shield className="h-5 w-5 text-[#D4A94E]" />
                     </div>
                     <div>
                       <p className="text-white font-bold">{result.companyName}</p>
@@ -614,7 +614,7 @@ function GetStartedContent() {
                 <div className="mt-6 bg-white/5 border border-white/10 rounded-xl p-4">
                   <div className="flex items-center gap-0.5 mb-2">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+                      <Star key={i} className="h-3.5 w-3.5 fill-[#D4A94E] text-[#D4A94E]" />
                     ))}
                   </div>
                   <p className="text-white/70 text-sm italic mb-2">
@@ -735,7 +735,7 @@ function GetStartedContent() {
                 transition={{ duration: 0.3 }}
                 className="text-center py-20"
               >
-                <Loader2 className="h-12 w-12 text-amber-400 animate-spin mx-auto mb-6" />
+                <Loader2 className="h-12 w-12 text-[#D4A94E] animate-spin mx-auto mb-6" />
                 <h2 className="text-2xl font-serif font-bold text-white">
                   Matching you with the best option...
                 </h2>
@@ -756,7 +756,7 @@ function GetStartedContent() {
                 {isAugustaResult ? (
                   /* Enhanced Augusta success screen */
                   <div className="text-center">
-                    <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-20 h-20 bg-[rgba(46,139,87,0.08)]0/20 rounded-full flex items-center justify-center mx-auto mb-6">
                       <CheckCircle className="h-10 w-10 text-green-400" />
                     </div>
 
@@ -815,7 +815,7 @@ function GetStartedContent() {
                 ) : (
                   /* Non-Augusta: simple redirect screen */
                   <>
-                    <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-16 h-16 bg-[rgba(46,139,87,0.08)]0/20 rounded-full flex items-center justify-center mx-auto mb-6">
                       <CheckCircle className="h-8 w-8 text-green-400" />
                     </div>
                     <h2 className="text-3xl font-serif font-bold text-white mb-4">

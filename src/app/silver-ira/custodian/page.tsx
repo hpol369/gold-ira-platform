@@ -228,7 +228,7 @@ const faqJsonLd = {
 
 export default function SilverIraCustodianPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -313,7 +313,7 @@ export default function SilverIraCustodianPage() {
             </section>
 
             {/* Top Custodians */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-4">Top Silver IRA Custodians</h2>
@@ -390,7 +390,7 @@ export default function SilverIraCustodianPage() {
                                             <div className="flex items-center gap-3 mb-2">
                                                 <h3 className="font-bold text-[#F6F4EF]">{item.criterion}</h3>
                                                 <span className={`px-2 py-0.5 rounded text-xs font-semibold ${
-                                                    item.importance === 'Critical' ? 'bg-red-500/20 text-red-700' :
+                                                    item.importance === 'Critical' ? 'bg-[rgba(220,38,38,0.08)]0/20 text-red-700' :
                                                     item.importance === 'High' ? 'bg-[rgba(220,38,38,0.18)] text-[#D4A94E]' :
                                                     'bg-[rgba(220,38,38,0.1)] text-[#D0CCC4]'
                                                 }`}>
@@ -408,7 +408,7 @@ export default function SilverIraCustodianPage() {
             </section>
 
             {/* Warning Signs */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-4">Red Flags to Avoid</h2>
@@ -418,7 +418,7 @@ export default function SilverIraCustodianPage() {
 
                         <div className="grid md:grid-cols-2 gap-4">
                             {warningSignsToAvoid.map((item, index) => (
-                                <div key={index} className="bg-red-500/5 border border-red-500/20 rounded-xl p-6">
+                                <div key={index} className="bg-[rgba(220,38,38,0.08)]0/5 border border-red-500/20 rounded-xl p-6">
                                     <div className="flex items-start gap-3">
                                         <AlertTriangle className="h-5 w-5 text-red-700 flex-shrink-0 mt-0.5" />
                                         <div>
@@ -452,7 +452,7 @@ export default function SilverIraCustodianPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">Silver IRA Custodian FAQs</h2>
@@ -498,7 +498,7 @@ export default function SilverIraCustodianPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

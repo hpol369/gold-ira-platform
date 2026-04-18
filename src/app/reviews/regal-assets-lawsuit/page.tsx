@@ -52,11 +52,11 @@ export default function RegalAssetsLawsuitPage() {
             <div className="flex-grow">
                 {/* Header / Hero for Review */}
                 <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-16 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-1/3 h-full bg-red-500/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
+                    <div className="absolute top-0 right-0 w-1/3 h-full bg-[rgba(220,38,38,0.08)]0/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
                             <div className="flex items-center gap-2 text-[#D4A94E] text-sm font-bold uppercase tracking-wider mb-4">
-                                <span className="bg-red-50 px-2 py-1 rounded border border-red-100 flex items-center gap-1">
+                                <span className="bg-[rgba(220,38,38,0.08)] px-2 py-1 rounded border border-red-100 flex items-center gap-1">
                                     <AlertTriangle className="w-4 h-4" /> Warning
                                 </span>
                                 <span>•</span>
@@ -82,7 +82,7 @@ export default function RegalAssetsLawsuitPage() {
                             <AuthorVerification />
 
                             {/* Warning Box instead of VerdictBox */}
-                            <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-6 my-8">
+                            <div className="bg-[rgba(220,38,38,0.08)] border-2 border-red-200 rounded-2xl p-6 my-8">
                                 <div className="flex items-start gap-4">
                                     <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center shrink-0">
                                         <ShieldAlert className="w-6 h-6 text-red-600" />
@@ -109,25 +109,25 @@ export default function RegalAssetsLawsuitPage() {
                                 <h2>Timeline of Collapse</h2>
 
                                 <div className="not-prose my-8 space-y-4">
-                                    <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                    <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                         <div className="font-bold text-green-800 shrink-0">2012-2020</div>
                                         <div className="text-green-700">
                                             <strong>The Golden Years:</strong> Regal Assets builds a stellar reputation. Industry awards, thousands of positive reviews, one of the most-recommended precious metals IRA companies. Marketing machine was formidable.
                                         </div>
                                     </div>
-                                    <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-100">
+                                    <div className="flex gap-4 p-5 rounded-xl bg-[#161828] border border-amber-100">
                                         <div className="font-bold text-amber-800 shrink-0">2021-2022</div>
                                         <div className="text-amber-700">
                                             <strong>Cracks Appear:</strong> Customer complaints increase. Reports of delayed shipments, poor communication, difficulty reaching representatives. BBB rating starts to slip.
                                         </div>
                                     </div>
-                                    <div className="flex gap-4 p-5 rounded-xl bg-orange-50 border border-orange-100">
+                                    <div className="flex gap-4 p-5 rounded-xl bg-[rgba(183,121,31,0.08)] border border-orange-100">
                                         <div className="font-bold text-orange-800 shrink-0">2023</div>
                                         <div className="text-orange-700">
                                             <strong>Rapid Deterioration:</strong> Website goes dark. Phone lines disconnect. Customers discover they can't reach anyone about accounts or metals. Lawsuits filed.
                                         </div>
                                     </div>
-                                    <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                                    <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                                         <div className="font-bold text-red-800 shrink-0">2024-Present</div>
                                         <div className="text-red-700">
                                             <strong>Aftermath:</strong> Company appears defunct. Former customers working with custodians and attorneys to recover assets. BBB rating revoked. What was once a success story becomes a cautionary tale.
@@ -140,7 +140,7 @@ export default function RegalAssetsLawsuitPage() {
                                     If you have or had an account with Regal Assets, here's what you need to know:
                                 </p>
 
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                <div className="bg-[#121423] p-6 rounded-xl border border-blue-100 not-prose my-8">
                                     <h4 className="font-bold text-[#F6F4EF] mb-4">Action Steps for Former Customers</h4>
                                     <ul className="space-y-3 text-[#D0CCC4]">
                                         <li className="flex items-start gap-2">

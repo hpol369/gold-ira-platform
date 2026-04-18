@@ -176,7 +176,7 @@ export function FatFIRECalculator() {
                   step="0.25"
                   value={withdrawalRate}
                   onChange={(e) => setWithdrawalRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Conservative (2%)</span>
@@ -189,7 +189,7 @@ export function FatFIRECalculator() {
           {/* Current Financial Situation */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <DollarSign className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Current Situation</h3>
@@ -241,7 +241,7 @@ export function FatFIRECalculator() {
                   step="5"
                   value={savingsRate}
                   onChange={(e) => setSavingsRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <p className="text-xs text-[#A8A39A] mt-1">
                   Annual savings: {formatFullCurrency(calculations.annualSavings)}
@@ -253,7 +253,7 @@ export function FatFIRECalculator() {
           {/* Age & Timeline */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Calendar className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Timeline</h3>
@@ -270,7 +270,7 @@ export function FatFIRECalculator() {
                   max="60"
                   value={currentAge}
                   onChange={(e) => setCurrentAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
 
@@ -284,7 +284,7 @@ export function FatFIRECalculator() {
                   max="70"
                   value={targetAge}
                   onChange={(e) => setTargetAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <p className="text-xs text-[#A8A39A] mt-1">
                   Years to FIRE: {calculations.yearsToFIRE}
@@ -302,7 +302,7 @@ export function FatFIRECalculator() {
                   step="0.5"
                   value={expectedReturn}
                   onChange={(e) => setExpectedReturn(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
             </div>
@@ -368,8 +368,8 @@ export function FatFIRECalculator() {
 
               <div className={`p-4 rounded-lg ${
                 calculations.willReachGoal
-                  ? 'bg-green-500/20 border border-green-500/30'
-                  : 'bg-orange-500/20 border border-orange-500/30'
+                  ? 'bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30'
+                  : 'bg-[rgba(183,121,31,0.08)]0/20 border border-orange-500/30'
               }`}>
                 <div className="text-sm font-semibold mb-1">
                   {calculations.willReachGoal ? 'On Track!' : 'Adjustment Needed'}

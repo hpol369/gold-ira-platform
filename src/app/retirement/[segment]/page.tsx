@@ -238,9 +238,9 @@ export default async function SegmentHubPage({ params }: PageProps) {
             </div>
 
             {/* ── Pain Point Callout ───────────────────────────────── */}
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-10">
+            <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 mb-10">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="w-5 h-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-amber-900 mb-1">
                     The Core Challenge

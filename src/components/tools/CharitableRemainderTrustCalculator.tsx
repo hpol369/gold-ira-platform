@@ -192,7 +192,7 @@ export function CharitableRemainderTrustCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
+        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[rgba(197,149,46,0.32)]">
           <Heart className="h-4 w-4" />
           CRT Calculator
         </div>
@@ -211,7 +211,7 @@ export function CharitableRemainderTrustCalculator() {
           {/* Contribution Details */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <Gift className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Contribution Details</h3>
@@ -293,7 +293,7 @@ export function CharitableRemainderTrustCalculator() {
           {/* Payout Settings */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <Percent className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Payout Settings</h3>
@@ -334,7 +334,7 @@ export function CharitableRemainderTrustCalculator() {
                     onClick={() => setTermType("life")}
                     className={`p-3 rounded-lg border text-sm font-medium transition-all ${
                       termType === "life"
-                        ? "bg-green-500/20 border-green-500 text-green-600"
+                        ? "bg-[rgba(46,139,87,0.08)]0/20 border-green-500 text-green-600"
                         : "bg-[#121423] border-slate-700 text-[#A8A39A] hover:border-slate-600"
                     }`}
                   >
@@ -344,7 +344,7 @@ export function CharitableRemainderTrustCalculator() {
                     onClick={() => setTermType("years")}
                     className={`p-3 rounded-lg border text-sm font-medium transition-all ${
                       termType === "years"
-                        ? "bg-green-500/20 border-green-500 text-green-600"
+                        ? "bg-[rgba(46,139,87,0.08)]0/20 border-green-500 text-green-600"
                         : "bg-[#121423] border-slate-700 text-[#A8A39A] hover:border-slate-600"
                     }`}
                   >
@@ -392,7 +392,7 @@ export function CharitableRemainderTrustCalculator() {
           {/* Tax & Growth Assumptions */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <TrendingUp className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Tax &amp; Growth Assumptions</h3>
@@ -472,7 +472,7 @@ export function CharitableRemainderTrustCalculator() {
         {/* Results Section */}
         <div className="space-y-6">
           {/* Tax Benefits Summary */}
-          <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-8 border border-purple-500/30">
+          <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-8 border border-[rgba(197,149,46,0.32)]">
             <div className="flex items-center gap-3 mb-6">
               <Shield className="h-10 w-10 text-purple-700" />
               <div>

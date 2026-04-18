@@ -125,7 +125,7 @@ export function CompanyCard({
         </div>
 
         {/* Best For */}
-        <div className="bg-blue-50 border border-blue-100 rounded-lg p-3 mb-4">
+        <div className="bg-[#121423] border border-[#3F4460] rounded-lg p-3 mb-4">
           <div className="text-xs font-semibold text-[#F6F4EF] mb-1 flex items-center gap-1">
             <TrendingUp className="h-3 w-3" />
             BEST FOR

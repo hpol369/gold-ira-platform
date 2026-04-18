@@ -116,7 +116,7 @@ const schema = {
 
 export default function SilverShortInterestPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-[#0C0D18] backdrop-blur-sm py-16 border-b border-[#2A2D42]">
@@ -163,7 +163,7 @@ export default function SilverShortInterestPage() {
                         {/* COT Reports */}
                         <section id="cot-reports" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <FileText className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">CFTC Commitment of Traders Reports</h2>
@@ -198,7 +198,7 @@ export default function SilverShortInterestPage() {
                         {/* Commercial Shorts */}
                         <section id="commercial-shorts" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Commercial Short Positions</h2>
@@ -327,7 +327,7 @@ export default function SilverShortInterestPage() {
                         {/* How to Track */}
                         <section id="how-to-track" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">How to Track COT Data</h2>

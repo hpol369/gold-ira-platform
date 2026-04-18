@@ -235,7 +235,7 @@ const schema = {
 
 export default function SilverVsBondsPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -394,7 +394,7 @@ export default function SilverVsBondsPage() {
                 Silver for Retirees
               </h2>
               <div className="space-y-4">
-                <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-4">
+                <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-4">
                   <h3 className="font-semibold text-green-400 mb-3">Pros</h3>
                   <ul className="space-y-2 text-sm">
                     {silverPros.map((pro, i) => (
@@ -405,7 +405,7 @@ export default function SilverVsBondsPage() {
                     ))}
                   </ul>
                 </div>
-                <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-4">
+                <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-4">
                   <h3 className="font-semibold text-red-400 mb-3">Cons</h3>
                   <ul className="space-y-2 text-sm">
                     {silverCons.map((con, i) => (
@@ -426,7 +426,7 @@ export default function SilverVsBondsPage() {
                 Bonds for Retirees
               </h2>
               <div className="space-y-4">
-                <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-4">
+                <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-4">
                   <h3 className="font-semibold text-green-400 mb-3">Pros</h3>
                   <ul className="space-y-2 text-sm">
                     {bondsPros.map((pro, i) => (
@@ -437,7 +437,7 @@ export default function SilverVsBondsPage() {
                     ))}
                   </ul>
                 </div>
-                <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-4">
+                <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-4">
                   <h3 className="font-semibold text-red-400 mb-3">Cons</h3>
                   <ul className="space-y-2 text-sm">
                     {bondsCons.map((con, i) => (
@@ -497,7 +497,7 @@ export default function SilverVsBondsPage() {
                   <div
                     className={`px-4 py-2 rounded-full font-bold text-sm ${
                       item.winner === "Silver"
-                        ? "bg-slate-200 text-[#D0CCC4]"
+                        ? "bg-[#2A2D42] text-[#D0CCC4]"
                         : "bg-teal-500/20 text-teal-600"
                     }`}
                   >

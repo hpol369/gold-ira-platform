@@ -28,7 +28,7 @@ export default function PreviewReview() {
                     <div className="flex items-center gap-8">
                         <div className="flex flex-col">
                             <span className="text-sm text-slate-500 uppercase font-bold tracking-wider">Our Rating</span>
-                            <div className="flex items-center gap-1 text-amber-400">
+                            <div className="flex items-center gap-1 text-[#D4A94E]">
                                 <Star className="h-6 w-6 fill-current" />
                                 <Star className="h-6 w-6 fill-current" />
                                 <Star className="h-6 w-6 fill-current" />
@@ -37,7 +37,7 @@ export default function PreviewReview() {
                                 <span className="text-slate-900 font-bold ml-2 text-xl">5.0/5</span>
                             </div>
                         </div>
-                        <div className="h-10 w-px bg-slate-200"></div>
+                        <div className="h-10 w-px bg-[#2A2D42]"></div>
                         <div className="flex flex-col">
                             <span className="text-sm text-slate-500 uppercase font-bold tracking-wider">Best For</span>
                             <span className="text-slate-900 font-bold">High Net Worth ($50k+)</span>

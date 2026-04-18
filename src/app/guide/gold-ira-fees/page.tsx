@@ -110,7 +110,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function GoldIraFeesGuidePage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             {/* Header */}
@@ -641,7 +641,7 @@ export default function GoldIraFeesGuidePage() {
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Get Personalized Recommendations <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-slate-200">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#2A2D42]">
                                         <Link href="/reviews">Compare All Companies</Link>
                                     </Button>
                                 </div>

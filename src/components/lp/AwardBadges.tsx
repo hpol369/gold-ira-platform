@@ -13,7 +13,7 @@ export function AwardBadges({ variant = "full", className }: AwardBadgesProps) {
     return (
       <div className={cn("flex flex-wrap justify-center gap-3", className)}>
         <div className="flex items-center gap-1.5 bg-amber-100 border border-amber-300 px-3 py-1.5 rounded-full">
-          <Award className="h-4 w-4 text-amber-600" />
+          <Award className="h-4 w-4 text-[#D4A94E]" />
           <span className="text-amber-800 font-semibold text-xs">
             Money Magazine&apos;s &quot;Best Overall&quot; 2024
           </span>
@@ -30,14 +30,14 @@ export function AwardBadges({ variant = "full", className }: AwardBadgesProps) {
 
   return (
     <div className={cn("flex flex-wrap justify-center gap-4", className)}>
-      <div className="flex items-center gap-2 bg-amber-50 border border-amber-200 px-4 py-2 rounded-lg">
-        <Award className="h-5 w-5 text-amber-600" />
+      <div className="flex items-center gap-2 bg-[#161828] border border-[rgba(197,149,46,0.32)] px-4 py-2 rounded-lg">
+        <Award className="h-5 w-5 text-[#D4A94E]" />
         <div>
-          <div className="text-xs text-amber-600 font-medium">MONEY MAGAZINE 2024</div>
+          <div className="text-xs text-[#D4A94E] font-medium">MONEY MAGAZINE 2024</div>
           <div className="text-sm font-bold text-amber-800">&quot;Best Overall Gold IRA&quot;</div>
         </div>
       </div>
-      <div className="flex items-center gap-2 bg-blue-50 border border-blue-200 px-4 py-2 rounded-lg">
+      <div className="flex items-center gap-2 bg-[#121423] border border-blue-200 px-4 py-2 rounded-lg">
         <Shield className="h-5 w-5 text-blue-600" />
         <div>
           <div className="text-xs text-blue-600 font-medium">INVESTOPEDIA 2024</div>
@@ -55,7 +55,7 @@ export function MoneyMagazineBadge({ className }: { className?: string }) {
       "inline-flex items-center gap-2 bg-amber-100 border border-amber-300 px-4 py-2 rounded-full",
       className
     )}>
-      <Award className="h-5 w-5 text-amber-600" />
+      <Award className="h-5 w-5 text-[#D4A94E]" />
       <span className="text-amber-800 font-semibold text-sm">
         Money Magazine&apos;s &quot;Best Overall&quot; 2024
       </span>

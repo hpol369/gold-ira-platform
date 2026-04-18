@@ -127,7 +127,7 @@ export default function GoldcoReviewPage() {
                                     <li><strong>Annual Fees:</strong> $175-$225 combined (custodian + storage)</li>
                                     <li><strong>Minimum Investment:</strong> $25,000</li>
                                 </ul>
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                <div className="bg-[#121423] p-6 rounded-xl border border-blue-100 not-prose my-8">
                                     <h4 className="font-bold text-[#F6F4EF] flex items-center gap-2 mb-2">
                                         <Info className="w-5 h-5 text-[#D4A94E]" /> About Silver Bonuses
                                     </h4>
@@ -185,12 +185,12 @@ export default function GoldcoReviewPage() {
                     </div>
                 </Container>
             </div>
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <FAQSection faqs={getPageFAQs("reviews/goldco")} title="Goldco FAQ" className="max-w-3xl" includeSchema={false} />
                 </Container>
             </section>
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/reviews/goldco" />
                 </Container>

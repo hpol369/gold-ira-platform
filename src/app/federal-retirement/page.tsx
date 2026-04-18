@@ -83,10 +83,10 @@ const spokeIcons: Record<string, typeof Building2> = {
 };
 
 const spokeColors: Record<string, string> = {
-  "fers-pension-and-gold": "text-amber-600 bg-amber-100",
+  "fers-pension-and-gold": "text-[#D4A94E] bg-amber-100",
   "tsp-to-gold-diversification": "text-blue-600 bg-blue-100",
   "fehb-retirement-healthcare": "text-green-600 bg-green-100",
-  "social-security-fairness-act": "text-purple-600 bg-purple-100",
+  "social-security-fairness-act": "text-[#D4A94E] bg-purple-100",
   "military-tsp-rollover": "text-red-600 bg-red-100",
 };
 
@@ -94,7 +94,7 @@ export default function FederalRetirementPage() {
   const articles = getAllFederalRetirementArticles();
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       <SchemaScript
@@ -182,7 +182,7 @@ export default function FederalRetirementPage() {
       </section>
 
       {/* Answer First */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <AnswerFirst
@@ -215,7 +215,7 @@ export default function FederalRetirementPage() {
             <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 bg-amber-100 rounded-lg">
-                  <DollarSign className="h-5 w-5 text-amber-600" />
+                  <DollarSign className="h-5 w-5 text-[#D4A94E]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#F6F4EF]">FERS Pension</h3>
               </div>
@@ -223,7 +223,7 @@ export default function FederalRetirementPage() {
                 1.1% &times; high-3 salary &times; years of service. Guaranteed income — but diet COLAs
                 mean it buys less every year.
               </p>
-              <div className="bg-red-50 border border-red-200 rounded-lg p-3">
+              <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-lg p-3">
                 <p className="text-xs text-red-700 font-medium">
                   Risk: Inflation erodes 25-35% of purchasing power over 20 years
                 </p>
@@ -248,7 +248,7 @@ export default function FederalRetirementPage() {
                 5 core funds (G, F, C, S, I). Solid for stocks and bonds — but zero
                 exposure to gold, silver, or precious metals.
               </p>
-              <div className="bg-red-50 border border-red-200 rounded-lg p-3">
+              <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-lg p-3">
                 <p className="text-xs text-red-700 font-medium">
                   Risk: 100% paper assets. No hedge against market crashes or dollar devaluation.
                 </p>
@@ -265,7 +265,7 @@ export default function FederalRetirementPage() {
             <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 bg-purple-100 rounded-lg">
-                  <Scale className="h-5 w-5 text-purple-600" />
+                  <Scale className="h-5 w-5 text-[#D4A94E]" />
                 </div>
                 <h3 className="text-lg font-bold text-[#F6F4EF]">Social Security</h3>
               </div>
@@ -273,7 +273,7 @@ export default function FederalRetirementPage() {
                 Full COLAs help, but the trust fund faces a 2033 shortfall. The Fairness
                 Act restored benefits for many federal retirees.
               </p>
-              <div className="bg-amber-50 border border-amber-200 rounded-lg p-3">
+              <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-lg p-3">
                 <p className="text-xs text-amber-700 font-medium">
                   Watch: Trust fund projected to be depleted by 2033 without Congressional action
                 </p>
@@ -379,7 +379,7 @@ export default function FederalRetirementPage() {
               className="group bg-[#161828] rounded-xl border border-[#2A2D42] p-6 hover:border-blue-300 hover:shadow-md transition-all"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 rounded-lg text-purple-600 bg-purple-100">
+                <div className="p-2 rounded-lg text-[#D4A94E] bg-purple-100">
                   <Building2 className="h-5 w-5" />
                 </div>
                 <span className="text-xs font-medium text-[#A8A39A] uppercase">
@@ -439,7 +439,7 @@ export default function FederalRetirementPage() {
       </section>
 
       {/* Why Federal Employees Choose Gold */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
@@ -471,7 +471,7 @@ export default function FederalRetirementPage() {
       />
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <FAQSection faqs={hubFAQs} title="Federal Retirement & Gold IRA FAQs" />
@@ -479,7 +479,7 @@ export default function FederalRetirementPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/federal-retirement" />
         </Container>

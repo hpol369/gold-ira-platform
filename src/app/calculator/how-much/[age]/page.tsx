@@ -78,7 +78,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
               <span className="text-sm font-semibold">A+ BBB Rating</span>
             </div>
             <div className="flex items-center gap-2 text-[#A8A39A]">
-              <Award className="w-5 h-5 text-amber-500" />
+              <Award className="w-5 h-5 text-[#D4A94E]" />
               <span className="text-sm font-semibold">Money Magazine #1</span>
             </div>
             <div className="flex items-center gap-2 text-[#A8A39A]">
@@ -97,7 +97,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
       <WealthCalculator initialAmount={data.defaultAmount} initialYears={data.timeHorizon} />
 
       {/* Age-Specific Challenges Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
@@ -112,7 +112,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
 
             <div className="grid md:grid-cols-2 gap-8">
               {/* Pain Points */}
-              <div className="bg-red-50 border border-red-200 rounded-2xl p-6 md:p-8">
+              <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-2xl p-6 md:p-8">
                 <div className="flex items-center gap-2 text-red-600 font-semibold mb-6">
                   <AlertTriangle className="h-5 w-5" />
                   CHALLENGES AT {data.age}
@@ -130,7 +130,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
               </div>
 
               {/* Benefits */}
-              <div className="bg-green-50 border border-green-200 rounded-2xl p-6 md:p-8">
+              <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-2xl p-6 md:p-8">
                 <div className="flex items-center gap-2 text-green-600 font-semibold mb-6">
                   <CheckCircle2 className="h-5 w-5" />
                   ADVANTAGES AT {data.age}
@@ -171,7 +171,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
                   groceries in {data.timeHorizon} years as they do today.
                 </p>
                 <p className="text-lg text-[#3F4460] mb-6 leading-relaxed">
-                  <strong className="text-amber-400">They are dangerously wrong.</strong>
+                  <strong className="text-[#D4A94E]">They are dangerously wrong.</strong>
                 </p>
                 <p className="text-lg text-[#3F4460] mb-8 leading-relaxed">
                   With {data.timeHorizon} years of retirement at {data.age}, inflation could cut
@@ -184,16 +184,16 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
                 <div className="absolute -top-4 -left-4 bg-[#DC2626] text-white px-4 py-2 font-bold rounded-lg shadow-lg">
                   The Solution
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-amber-400">The Gold IRA Hedge</h3>
+                <h3 className="text-xl font-bold mb-4 text-[#D4A94E]">The Gold IRA Hedge</h3>
                 <ul className="space-y-4">
                   <li className="flex gap-3">
-                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
+                    <div className="w-6 h-6 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center shrink-0">
                       <span className="text-green-500 font-bold">✓</span>
                     </div>
                     <span className="text-[#3F4460]">Zero Tax Consequences (Direct Rollover)</span>
                   </li>
                   <li className="flex gap-3">
-                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
+                    <div className="w-6 h-6 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center shrink-0">
                       <span className="text-green-500 font-bold">✓</span>
                     </div>
                     <span className="text-[#3F4460]">
@@ -201,13 +201,13 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
                     </span>
                   </li>
                   <li className="flex gap-3">
-                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
+                    <div className="w-6 h-6 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center shrink-0">
                       <span className="text-green-500 font-bold">✓</span>
                     </div>
                     <span className="text-[#3F4460]">Physical Asset You Own & Control</span>
                   </li>
                   <li className="flex gap-3">
-                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
+                    <div className="w-6 h-6 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center shrink-0">
                       <span className="text-green-500 font-bold">✓</span>
                     </div>
                     <span className="text-[#3F4460]">
@@ -239,7 +239,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
               <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
                 <div className="flex gap-1 mb-3">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
+                    <Star key={i} className="w-4 h-4 text-[#D4A94E] fill-current" />
                   ))}
                 </div>
                 <p className="text-[#D0CCC4] text-sm mb-4 italic">
@@ -261,7 +261,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
               <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
                 <div className="flex gap-1 mb-3">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
+                    <Star key={i} className="w-4 h-4 text-[#D4A94E] fill-current" />
                   ))}
                 </div>
                 <p className="text-[#D0CCC4] text-sm mb-4 italic">
@@ -283,7 +283,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
               <div className="bg-gradient-to-br from-[#000080] to-[#000060] rounded-xl p-6 text-white">
                 <div className="flex gap-1 mb-3">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
+                    <Star key={i} className="w-4 h-4 text-[#D4A94E] fill-current" />
                   ))}
                 </div>
                 <p className="text-blue-100 text-sm mb-4 italic">

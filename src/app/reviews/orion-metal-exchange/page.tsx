@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function OrionMetalExchangeReviewPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={reviewSchema({ itemName: "Orion Metal Exchange", reviewBody: "With the lowest minimum in the industry at just $5,000, Orion Metal Exchange has opened doors for smaller investors. We analyze their fees, real-time pricing, and customer reviews.", ratingValue: 4.4, url: "/reviews/orion-metal-exchange" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Orion Metal Exchange", url: "/reviews/orion-metal-exchange" }])} />
             <Navbar />

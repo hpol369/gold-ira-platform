@@ -228,7 +228,7 @@ const schema = {
 
 export default function TransferIraToSilverPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -444,7 +444,7 @@ export default function TransferIraToSilverPage() {
               Tax Advantages of Direct Transfers
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+              <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6">
                 <h3 className="font-bold text-green-400 mb-4 flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5" />
                   Direct Transfer (Recommended)
@@ -468,7 +468,7 @@ export default function TransferIraToSilverPage() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+              <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-6">
                 <h3 className="font-bold text-red-400 mb-4 flex items-center gap-2">
                   <AlertTriangle className="h-5 w-5" />
                   Indirect Rollover (Riskier)

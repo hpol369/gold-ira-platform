@@ -97,7 +97,7 @@ const topCustodians = [
 
 export default function SelfDirectedIRAPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Hero Section */}
@@ -137,7 +137,7 @@ export default function SelfDirectedIRAPage() {
             </header>
 
             {/* What is a Self-Directed IRA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-6">What is a Self-Directed IRA?</h2>
@@ -184,7 +184,7 @@ export default function SelfDirectedIRAPage() {
                                 <div className={`w-12 h-12 bg-${type.color}-100 rounded-lg flex items-center justify-center mb-4`}>
                                     <type.icon className={`w-6 h-6 text-${type.color}-600`} />
                                 </div>
-                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2 group-hover:text-purple-600 transition-colors">
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">
                                     {type.title}
                                 </h3>
                                 <p className="text-[#A8A39A] text-sm">{type.description}</p>
@@ -201,7 +201,7 @@ export default function SelfDirectedIRAPage() {
             </section>
 
             {/* Checkbook Control */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -258,7 +258,7 @@ export default function SelfDirectedIRAPage() {
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
-                                        <AlertTriangle className="w-6 h-6 text-amber-500 flex-shrink-0 mt-1" />
+                                        <AlertTriangle className="w-6 h-6 text-[#D4A94E] flex-shrink-0 mt-1" />
                                         <div>
                                             <p className="text-[#F6F4EF] font-medium">More Responsibility</p>
                                             <p className="text-[#A8A39A] text-sm">You must ensure IRS compliance</p>
@@ -296,7 +296,7 @@ export default function SelfDirectedIRAPage() {
                                     <div className="flex items-center justify-between mb-4">
                                         <h3 className="text-xl font-bold text-[#F6F4EF]">{custodian.name}</h3>
                                         <div className="flex items-center gap-1">
-                                            <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
+                                            <Star className="w-4 h-4 text-[#D4A94E] fill-[#D4A94E]" />
                                             <span className="text-[#F6F4EF] font-medium">{custodian.rating}</span>
                                         </div>
                                     </div>
@@ -338,10 +338,10 @@ export default function SelfDirectedIRAPage() {
             </section>
 
             {/* Prohibited Transactions */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-red-50 border border-red-200 rounded-xl p-8">
+                        <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-8">
                             <div className="flex gap-4">
                                 <AlertTriangle className="w-8 h-8 text-red-600 flex-shrink-0" />
                                 <div>
@@ -421,28 +421,28 @@ export default function SelfDirectedIRAPage() {
             </section>
 
             {/* Related Resources */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Related Resources</h2>
                     <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
                         <Link href="/learn/checkbook-ira" className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] hover:border-purple-400 transition-colors group">
-                            <Lock className="w-8 h-8 text-purple-600 mb-3" />
-                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-purple-600 transition-colors">Checkbook IRA Guide</h3>
+                            <Lock className="w-8 h-8 text-[#D4A94E] mb-3" />
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Checkbook IRA Guide</h3>
                             <p className="text-[#A8A39A] text-sm">Take direct control of your IRA investments.</p>
                         </Link>
                         <Link href="/learn/self-directed-roth-ira" className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] hover:border-purple-400 transition-colors group">
                             <Shield className="w-8 h-8 text-green-600 mb-3" />
-                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-purple-600 transition-colors">Self-Directed Roth IRA</h3>
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Self-Directed Roth IRA</h3>
                             <p className="text-[#A8A39A] text-sm">Tax-free growth on alternative investments.</p>
                         </Link>
                         <Link href="/crypto-ira" className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] hover:border-purple-400 transition-colors group">
                             <TrendingUp className="w-8 h-8 text-blue-600 mb-3" />
-                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-purple-600 transition-colors">Crypto IRA Guide</h3>
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Crypto IRA Guide</h3>
                             <p className="text-[#A8A39A] text-sm">Bitcoin and crypto in your retirement account.</p>
                         </Link>
                         <Link href="/best-gold-ira-companies" className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] hover:border-purple-400 transition-colors group">
-                            <Coins className="w-8 h-8 text-amber-500 mb-3" />
-                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-purple-600 transition-colors">Gold IRA Companies</h3>
+                            <Coins className="w-8 h-8 text-[#D4A94E] mb-3" />
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Gold IRA Companies</h3>
                             <p className="text-[#A8A39A] text-sm">Precious metals for your retirement.</p>
                         </Link>
                     </div>
@@ -482,7 +482,7 @@ export default function SelfDirectedIRAPage() {
                 </Container>
             </section>
 
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/self-directed-ira" />
                 </Container>

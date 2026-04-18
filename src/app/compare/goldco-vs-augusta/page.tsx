@@ -144,7 +144,7 @@ const schema = {
 
 export default function GoldcoVsAugustaPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -153,7 +153,7 @@ export default function GoldcoVsAugustaPage() {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,158,11,0.1),transparent_50%)]" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(59,130,246,0.1),transparent_50%)]" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-4 rounded-full bg-amber-500/10 border border-amber-500/30 text-sm font-semibold text-[#D4A94E] mb-6">
+                    <span className="inline-block py-1 px-4 rounded-full bg-[#161828]0/10 border border-amber-500/30 text-sm font-semibold text-[#D4A94E] mb-6">
                         Gold IRA Company Showdown
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
@@ -262,7 +262,7 @@ export default function GoldcoVsAugustaPage() {
                                 <strong>Augusta Precious Metals</strong> takes a fundamentally different approach. They prioritize education over sales, requiring every new client to complete a one-on-one webinar with their Director of Education (a Harvard-trained economist) before investing.
                             </p>
 
-                            <div className="not-prose my-8 bg-amber-500/10 backdrop-blur-sm rounded-xl p-6 border border-amber-500/30">
+                            <div className="not-prose my-8 bg-[#161828]0/10 backdrop-blur-sm rounded-xl p-6 border border-amber-500/30">
                                 <h3 className="text-lg font-bold text-[#D4A94E] mb-4 flex items-center gap-2">
                                     <Star className="w-5 h-5 text-[#D4A94E]" /> Augusta Key Facts
                                 </h3>
@@ -358,7 +358,7 @@ export default function GoldcoVsAugustaPage() {
                             <div className="not-prose grid md:grid-cols-2 gap-8 my-8">
                                 {/* Goldco Pros/Cons */}
                                 <div className="space-y-6">
-                                    <div className="bg-blue-500/10 p-6 rounded-xl border border-blue-500/30">
+                                    <div className="bg-[#121423]0/10 p-6 rounded-xl border border-blue-500/30">
                                         <h3 className="text-xl font-bold text-blue-700 mb-4 flex items-center gap-2">
                                             <CheckCircle2 className="w-5 h-5" /> Goldco Pros
                                         </h3>
@@ -370,7 +370,7 @@ export default function GoldcoVsAugustaPage() {
                                             <li>+ More aggressive marketing support</li>
                                         </ul>
                                     </div>
-                                    <div className="bg-red-500/10 p-6 rounded-xl border border-red-500/30">
+                                    <div className="bg-[rgba(220,38,38,0.08)]0/10 p-6 rounded-xl border border-red-500/30">
                                         <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
                                             <XCircle className="w-5 h-5" /> Goldco Cons
                                         </h3>
@@ -386,7 +386,7 @@ export default function GoldcoVsAugustaPage() {
 
                                 {/* Augusta Pros/Cons */}
                                 <div className="space-y-6">
-                                    <div className="bg-amber-500/10 p-6 rounded-xl border border-amber-500/30">
+                                    <div className="bg-[#161828]0/10 p-6 rounded-xl border border-amber-500/30">
                                         <h3 className="text-xl font-bold text-[#D4A94E] mb-4 flex items-center gap-2">
                                             <CheckCircle2 className="w-5 h-5" /> Augusta Pros
                                         </h3>
@@ -399,7 +399,7 @@ export default function GoldcoVsAugustaPage() {
                                             <li>+ Harvard economist webinars</li>
                                         </ul>
                                     </div>
-                                    <div className="bg-red-500/10 p-6 rounded-xl border border-red-500/30">
+                                    <div className="bg-[rgba(220,38,38,0.08)]0/10 p-6 rounded-xl border border-red-500/30">
                                         <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
                                             <XCircle className="w-5 h-5" /> Augusta Cons
                                         </h3>
@@ -469,7 +469,7 @@ export default function GoldcoVsAugustaPage() {
                                     </ul>
                                 </div>
 
-                                <div className="bg-amber-500/10 backdrop-blur-sm rounded-xl p-6 border border-amber-500/30">
+                                <div className="bg-[#161828]0/10 backdrop-blur-sm rounded-xl p-6 border border-amber-500/30">
                                     <h3 className="text-xl font-bold text-[#D4A94E] mb-4">Choose Augusta If:</h3>
                                     <ul className="space-y-3 text-[#D0CCC4]">
                                         <li>+ You have $50,000+ to invest</li>
@@ -486,7 +486,7 @@ export default function GoldcoVsAugustaPage() {
                         <div className="not-prose my-12 bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-8 border border-amber-500/30 text-center relative overflow-hidden">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.1)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <span className="inline-block py-1 px-3 rounded-full bg-green-500/20 border border-green-500/30 text-sm font-semibold text-green-700 mb-4">
+                                <span className="inline-block py-1 px-3 rounded-full bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 text-sm font-semibold text-green-700 mb-4">
                                     Our Recommendation
                                 </span>
                                 <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4 text-[#F6F4EF]">
@@ -495,7 +495,7 @@ export default function GoldcoVsAugustaPage() {
                                 <p className="mb-6 text-[#D0CCC4] max-w-2xl mx-auto">
                                     Request your free Gold IRA guide and learn how Augusta&apos;s education-first approach can help protect your retirement savings.
                                 </p>
-                                <LeadCaptureButton variant="default" source="goldco-vs-augusta" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                <LeadCaptureButton variant="default" source="goldco-vs-augusta" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
                                     Get Your Free Augusta Guide <ArrowRight className="ml-2 w-5 h-5" />
                                 </LeadCaptureButton>
                                 <p className="mt-4 text-xs text-[#A8A39A]">
@@ -570,7 +570,7 @@ export default function GoldcoVsAugustaPage() {
                             <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Still Have Questions?</h3>
                             <p className="mb-6 text-[#D0CCC4]">Take our free quiz to see which Gold IRA company best matches your investment goals.</p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <LeadCaptureButton variant="default" source="goldco-vs-augusta" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                <LeadCaptureButton variant="default" source="goldco-vs-augusta" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
                                     Get Augusta&apos;s Free Guide <ArrowRight className="ml-2 w-4 h-4" />
                                 </LeadCaptureButton>
                                 <Button variant="outline" size="lg" asChild>

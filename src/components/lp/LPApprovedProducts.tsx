@@ -43,7 +43,7 @@ export function LPApprovedProducts({ className }: LPApprovedProductsProps) {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* IRS Requirements */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-400 text-sm font-medium">
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-[#121423]0/20 border border-blue-400/30 text-blue-400 text-sm font-medium">
             <Info className="h-4 w-4" />
             IRS Requirements
           </div>
@@ -78,7 +78,7 @@ export function LPApprovedProducts({ className }: LPApprovedProductsProps) {
                         <div className="text-[#A8A39A] text-sm">{coin.country}</div>
                       )}
                     </div>
-                    <div className="text-amber-400 font-mono text-xs md:text-sm bg-amber-500/10 px-2 py-1 rounded">
+                    <div className="text-[#D4A94E] font-mono text-xs md:text-sm bg-[#161828]0/10 px-2 py-1 rounded">
                       {coin.purity}
                     </div>
                   </div>
@@ -103,7 +103,7 @@ export function LPApprovedProducts({ className }: LPApprovedProductsProps) {
                     className="flex items-center justify-between p-3 rounded-lg bg-white/5 hover:bg-[#1E2134]/[0.07] transition-colors"
                   >
                     <div className="text-white font-medium">{bar.name}</div>
-                    <div className="text-amber-400 font-mono text-xs md:text-sm bg-amber-500/10 px-2 py-1 rounded">
+                    <div className="text-[#D4A94E] font-mono text-xs md:text-sm bg-[#161828]0/10 px-2 py-1 rounded">
                       {bar.purity}
                     </div>
                   </div>
@@ -114,7 +114,7 @@ export function LPApprovedProducts({ className }: LPApprovedProductsProps) {
         </div>
 
         {/* What's Not Allowed */}
-        <div className="rounded-xl border border-red-400/20 bg-red-500/5 p-6">
+        <div className="rounded-xl border border-red-400/20 bg-[rgba(220,38,38,0.08)]0/5 p-6">
           <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
             <XCircle className="h-5 w-5 text-red-400" />
             What&apos;s NOT Allowed in a Silver IRA
@@ -133,8 +133,8 @@ export function LPApprovedProducts({ className }: LPApprovedProductsProps) {
         </div>
 
         {/* Storage Note */}
-        <div className="mt-6 p-4 rounded-lg border border-amber-400/20 bg-amber-500/5 flex items-start gap-3">
-          <Info className="h-5 w-5 text-amber-400 flex-shrink-0 mt-0.5" />
+        <div className="mt-6 p-4 rounded-lg border border-amber-400/20 bg-[#161828]0/5 flex items-start gap-3">
+          <Info className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
           <div className="text-[#3F4460] text-sm">
             <span className="text-white font-medium">Important:</span> All IRA silver must be stored in an IRS-approved depository. Home storage is not permitted. Augusta partners with Brink&apos;s and Delaware Depository for secure, insured storage.
           </div>

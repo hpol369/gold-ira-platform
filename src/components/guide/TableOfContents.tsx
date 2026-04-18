@@ -54,7 +54,7 @@ export function TableOfContents({ items, className }: TableOfContentsProps) {
                             href={`#${item.id}`}
                             className={cn(
                                 "block pl-4 py-1.5 text-sm transition-all duration-300",
-                                "hover:text-amber-400 hover:pl-5",
+                                "hover:text-[#D4A94E] hover:pl-5",
                                 activeId === item.id
                                     ? "border-l-2 border-amber-400 font-semibold text-white bg-amber-400/5 rounded-r-lg"
                                     : "border-l-2 border-transparent text-[#A8A39A]"

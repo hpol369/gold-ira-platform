@@ -44,7 +44,7 @@ const schema = {
 
 export default function SelfDirectedIraGoldPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             
             <SchemaScript schema={schema} />
             <SchemaScript schema={faqSchema([
@@ -168,7 +168,7 @@ export default function SelfDirectedIraGoldPage() {
                                             </div>
                                         </div>
                                         <div className="flex gap-4 p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42] shadow-sm">
-                                            <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-600 flex items-center justify-center font-bold shrink-0">
+                                            <div className="w-12 h-12 rounded-full bg-[rgba(46,139,87,0.08)]0/20 text-green-600 flex items-center justify-center font-bold shrink-0">
                                                 <Lock className="w-6 h-6" />
                                             </div>
                                             <div>

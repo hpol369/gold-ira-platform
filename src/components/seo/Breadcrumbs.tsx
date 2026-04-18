@@ -62,7 +62,7 @@ export function Breadcrumbs() {
                         ) : (
                             <Link
                                 href={item.href}
-                                className="hover:text-amber-400 hover:underline flex items-center transition-colors"
+                                className="hover:text-[#D4A94E] hover:underline flex items-center transition-colors"
                             >
                                 {index === 0 && <Home className="w-3 h-3 mr-1" />}
                                 {item.label}

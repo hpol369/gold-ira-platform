@@ -249,7 +249,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function IraApprovedSilverPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             
@@ -314,7 +314,7 @@ export default function IraApprovedSilverPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-4 not-prose my-8">
-                                <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-5">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-5">
                                     <div className="flex items-center gap-2 text-green-700 font-bold mb-3">
                                         <CheckCircle2 className="w-5 h-5" />
                                         Required
@@ -326,7 +326,7 @@ export default function IraApprovedSilverPage() {
                                         <li>• Purchased through your IRA custodian</li>
                                     </ul>
                                 </div>
-                                <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-5">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-5">
                                     <div className="flex items-center gap-2 text-red-700 font-bold mb-3">
                                         <XCircle className="w-5 h-5" />
                                         NOT Allowed
@@ -467,7 +467,7 @@ export default function IraApprovedSilverPage() {
                                             <span className="text-green-700 font-semibold">3-5%</span>
                                         </div>
                                         <div className="h-2 bg-[#121423] rounded-full">
-                                            <div className="h-2 bg-green-500 rounded-full" style={{ width: '15%' }}></div>
+                                            <div className="h-2 bg-[rgba(46,139,87,0.08)]0 rounded-full" style={{ width: '15%' }}></div>
                                         </div>
                                     </div>
                                     <div>
@@ -476,7 +476,7 @@ export default function IraApprovedSilverPage() {
                                             <span className="text-green-700 font-semibold">5-8%</span>
                                         </div>
                                         <div className="h-2 bg-[#121423] rounded-full">
-                                            <div className="h-2 bg-green-500 rounded-full" style={{ width: '25%' }}></div>
+                                            <div className="h-2 bg-[rgba(46,139,87,0.08)]0 rounded-full" style={{ width: '25%' }}></div>
                                         </div>
                                     </div>
                                     <div>
@@ -494,7 +494,7 @@ export default function IraApprovedSilverPage() {
                                             <span className="text-red-700 font-semibold">15-25%</span>
                                         </div>
                                         <div className="h-2 bg-[#121423] rounded-full">
-                                            <div className="h-2 bg-red-500 rounded-full" style={{ width: '70%' }}></div>
+                                            <div className="h-2 bg-[rgba(220,38,38,0.08)]0 rounded-full" style={{ width: '70%' }}></div>
                                         </div>
                                     </div>
                                 </div>
@@ -511,7 +511,7 @@ export default function IraApprovedSilverPage() {
 
                             <div className="space-y-3 not-prose my-8">
                                 {notAllowedSilver.map((item) => (
-                                    <div key={item.type} className="flex gap-4 p-4 rounded-xl bg-red-500/10 border border-red-500/20">
+                                    <div key={item.type} className="flex gap-4 p-4 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                         <XCircle className="w-5 h-5 text-red-700 shrink-0 mt-0.5" />
                                         <div>
                                             <h4 className="font-bold text-red-700">{item.type}</h4>

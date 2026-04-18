@@ -233,7 +233,7 @@ const schema = {
 
 export default function SilverForGrandchildrenPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -308,9 +308,9 @@ export default function SilverForGrandchildrenPage() {
             {giftStrategies.map((strategy, index) => {
               const Icon = strategy.icon;
               const colorClasses: Record<string, string> = {
-                green: "bg-green-500/20 text-green-400",
-                blue: "bg-blue-500/20 text-blue-400",
-                purple: "bg-purple-500/20 text-purple-400",
+                green: "bg-[rgba(46,139,87,0.08)]0/20 text-green-400",
+                blue: "bg-[#121423]0/20 text-blue-400",
+                purple: "bg-purple-500/20 text-[#D4A94E]",
                 amber: "bg-[rgba(220,38,38,0.18)] text-[#D4A94E]",
               };
 

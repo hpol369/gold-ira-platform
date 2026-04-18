@@ -93,8 +93,8 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
                 </button>
 
                 {/* Icon */}
-                <div className="mx-auto w-16 h-16 bg-amber-500/20 rounded-full flex items-center justify-center mb-6">
-                    <FileText className="h-8 w-8 text-amber-500" />
+                <div className="mx-auto w-16 h-16 bg-[#161828]0/20 rounded-full flex items-center justify-center mb-6">
+                    <FileText className="h-8 w-8 text-[#D4A94E]" />
                 </div>
 
                 {/* Headline */}
@@ -102,14 +102,14 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
                     Wait! Before You Go...
                 </h2>
                 <p className="text-lg text-white mb-6">
-                    Get our free <span className="text-amber-500 font-semibold">{title}</span>
+                    Get our free <span className="text-[#D4A94E] font-semibold">{title}</span>
                 </p>
 
                 {/* Bullet Points */}
                 <ul className="text-left space-y-3 mb-8">
                     {bullets.map((bullet, index) => (
                         <li key={index} className="flex items-start gap-3 text-[#3F4460]">
-                            <span className="text-amber-500 mt-1">•</span>
+                            <span className="text-[#D4A94E] mt-1">•</span>
                             <span>{bullet}</span>
                         </li>
                     ))}
@@ -119,7 +119,7 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
                 <TrackedLPLink
                     href={affiliateLink}
                     source={source}
-                    className="block w-full bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] font-bold py-4 px-6 rounded-lg transition-colors text-lg flex items-center justify-center gap-2"
+                    className="block w-full bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] font-bold py-4 px-6 rounded-lg transition-colors text-lg flex items-center justify-center gap-2"
                 >
                     Get Free Guide
                     <ArrowRight className="h-5 w-5" />

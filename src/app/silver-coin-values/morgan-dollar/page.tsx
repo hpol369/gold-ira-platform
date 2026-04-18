@@ -131,7 +131,7 @@ const keyDates = [
 
 export default function MorganDollarValuePage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -255,7 +255,7 @@ export default function MorganDollarValuePage() {
       </section>
 
       {/* Key Dates Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -364,7 +364,7 @@ export default function MorganDollarValuePage() {
       </section>
 
       {/* Mint Marks */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -434,7 +434,7 @@ export default function MorganDollarValuePage() {
       </section>
 
       {/* Related Pages */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
@@ -468,7 +468,7 @@ export default function MorganDollarValuePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

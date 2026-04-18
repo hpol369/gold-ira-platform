@@ -114,7 +114,7 @@ const faqSchema = {
 
 export default function HECMCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -123,7 +123,7 @@ export default function HECMCalculatorPage() {
       <HECMCalculator />
 
       {/* Important HECM Facts */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -203,7 +203,7 @@ export default function HECMCalculatorPage() {
       </section>
 
       {/* When to Choose Each Option */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -239,7 +239,7 @@ export default function HECMCalculatorPage() {
                 </ul>
               </div>
 
-              <div className="bg-purple-500/10 backdrop-blur-sm rounded-xl p-6 border border-purple-500/30">
+              <div className="bg-[rgba(197,149,46,0.08)] backdrop-blur-sm rounded-xl p-6 border border-[rgba(197,149,46,0.32)]">
                 <h3 className="text-xl font-bold text-purple-700 mb-4 flex items-center gap-2">
                   <Home className="h-5 w-5" /> Choose Proprietary If...
                 </h3>
@@ -347,7 +347,7 @@ export default function HECMCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

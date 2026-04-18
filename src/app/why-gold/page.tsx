@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
 export default function WhyGoldPage() {
   return (
-    <main className="min-h-screen flex flex-col bg-white">
+    <main className="min-h-screen flex flex-col bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Why Gold for Retirement? Inflation Protection & Portfolio Safety", description: "Why add gold to your retirement? Learn about inflation protection, portfolio diversification, and wealth preservation.", slug: "/why-gold" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Why Gold", url: "/why-gold" }])} />
       <SchemaScript schema={faqSchema(getPageFAQs("why-gold"))} />
@@ -112,7 +112,7 @@ export default function WhyGoldPage() {
       </section>
 
       {/* Main Reasons */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-12 text-center">
@@ -204,7 +204,7 @@ export default function WhyGoldPage() {
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center">
-                    <Shield className="h-7 w-7 text-purple-600" />
+                    <Shield className="h-7 w-7 text-[#D4A94E]" />
                   </div>
                 </div>
                 <div className="flex-1">
@@ -231,7 +231,7 @@ export default function WhyGoldPage() {
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 rounded-xl bg-amber-100 flex items-center justify-center">
-                    <Clock className="h-7 w-7 text-amber-600" />
+                    <Clock className="h-7 w-7 text-[#D4A94E]" />
                   </div>
                 </div>
                 <div className="flex-1">
@@ -329,7 +329,7 @@ export default function WhyGoldPage() {
       </section>
 
       {/* Who Should Consider */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
@@ -339,7 +339,7 @@ export default function WhyGoldPage() {
               Let&apos;s be honest: gold isn&apos;t for everyone. But if you recognize yourself below, it might be worth a conversation.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+              <div className="bg-[rgba(46,139,87,0.08)] rounded-xl p-6 border border-green-200">
                 <h3 className="font-bold text-green-700 mb-4 flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5" />
                   Gold Makes Sense If You:
@@ -367,7 +367,7 @@ export default function WhyGoldPage() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-amber-50 rounded-xl p-6 border border-amber-200">
+              <div className="bg-[#161828] rounded-xl p-6 border border-amber-200">
                 <h3 className="font-bold text-amber-700 mb-4 flex items-center gap-2">
                   <AlertTriangle className="h-5 w-5" />
                   Gold Probably Isn&apos;t Right If You:
@@ -425,7 +425,7 @@ export default function WhyGoldPage() {
       </section>
 
       {/* Related Content */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
             Learn More
@@ -507,7 +507,7 @@ export default function WhyGoldPage() {
         </Container>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <FAQSection
             faqs={getPageFAQs("why-gold")}
@@ -518,7 +518,7 @@ export default function WhyGoldPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/why-gold" />
         </Container>

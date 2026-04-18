@@ -29,7 +29,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function NobleGoldFeesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={breadcrumbs} />
             
 
@@ -143,7 +143,7 @@ export default function NobleGoldFeesPage() {
                                     <p className="text-[#D0CCC4] text-sm mb-4">
                                         Your physical gold must be stored at an IRS-approved depository. Noble Gold uses Delaware Depository, one of the most reputable facilities. This flat fee applies regardless of how much gold you hold.
                                     </p>
-                                    <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
+                                    <div className="bg-[#161828]0/10 border border-amber-500/20 rounded-lg p-4">
                                         <p className="text-amber-800 text-sm">
                                             <strong className="text-[#D4A94E]">Note:</strong> Some companies charge percentage-based storage (0.5% of holdings), which becomes much more expensive as your portfolio grows. Noble Gold&apos;s flat fee is an advantage for larger accounts.
                                         </p>
@@ -176,7 +176,7 @@ export default function NobleGoldFeesPage() {
                                     <p className="text-[#D0CCC4] text-sm mb-4">
                                         This is where the real cost is. Noble Gold (like all dealers) charges a spread—the difference between what you pay to buy gold and what they&apos;ll pay when you sell. This is typically 5-8% above spot price.
                                     </p>
-                                    <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
+                                    <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20 rounded-lg p-4">
                                         <p className="text-red-800 text-sm">
                                             <strong className="text-red-700">Important:</strong> Spreads are the largest cost in any Gold IRA and are often not clearly disclosed. Always ask for a price quote on specific products before purchasing.
                                         </p>
@@ -203,11 +203,11 @@ export default function NobleGoldFeesPage() {
                                         <span className="text-[#D0CCC4]">Storage Fee</span>
                                         <span className="font-bold text-[#F6F4EF]">$150</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-amber-500/10 rounded-lg border border-amber-500/30">
+                                    <div className="flex justify-between items-center p-3 bg-[#161828]0/10 rounded-lg border border-amber-500/30">
                                         <span className="text-amber-800 font-medium">First Year Total (excluding spreads)</span>
                                         <span className="font-bold text-[#D4A94E]">$310</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-green-500/10 rounded-lg border border-green-500/30">
+                                    <div className="flex justify-between items-center p-3 bg-[rgba(46,139,87,0.08)]0/10 rounded-lg border border-green-500/30">
                                         <span className="text-green-800 font-medium">Ongoing Annual Cost</span>
                                         <span className="font-bold text-green-700">$230/year</span>
                                     </div>
@@ -240,10 +240,10 @@ export default function NobleGoldFeesPage() {
                                             <td className="p-4">$150</td>
                                             <td className="p-4">$20,000</td>
                                         </tr>
-                                        <tr className="border-b border-white/5 bg-amber-500/5">
+                                        <tr className="border-b border-white/5 bg-[#161828]0/5">
                                             <td className="p-4 font-medium text-[#D4A94E]">
                                                 Augusta Precious Metals
-                                                <span className="ml-2 text-xs bg-amber-500 text-[#F6F4EF] px-2 py-0.5 rounded">Our #1</span>
+                                                <span className="ml-2 text-xs bg-[#161828]0 text-[#F6F4EF] px-2 py-0.5 rounded">Our #1</span>
                                             </td>
                                             <td className="p-4">$50</td>
                                             <td className="p-4">$80</td>
@@ -283,7 +283,7 @@ export default function NobleGoldFeesPage() {
                         <div className="mb-16">
                             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">Noble Gold Fees: Pros & Cons</h2>
                             <div className="grid md:grid-cols-2 gap-6">
-                                <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20 rounded-xl p-6">
                                     <h3 className="font-bold text-green-700 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="h-5 w-5" />
                                         Advantages
@@ -311,7 +311,7 @@ export default function NobleGoldFeesPage() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20 rounded-xl p-6">
                                     <h3 className="font-bold text-red-700 mb-4 flex items-center gap-2">
                                         <XCircle className="h-5 w-5" />
                                         Disadvantages
@@ -340,7 +340,7 @@ export default function NobleGoldFeesPage() {
 
                         {/* Recommendation */}
                         <div className="mb-16">
-                            <div className="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-8">
+                            <div className="bg-[#161828]0/10 border border-amber-500/30 rounded-2xl p-8">
                                 <div className="flex items-center gap-3 mb-4">
                                     <Award className="h-8 w-8 text-[#D4A94E]" />
                                     <h2 className="text-2xl font-bold text-[#F6F4EF]">Our Recommendation</h2>
@@ -349,10 +349,10 @@ export default function NobleGoldFeesPage() {
                                     Noble Gold&apos;s fees are competitive but not the lowest. Their $20,000 minimum makes them accessible to more investors than Augusta ($50,000 minimum). However, for serious retirement investors with $50,000+, we recommend <strong className="text-[#D4A94E]">Augusta Precious Metals</strong> for their superior education, lower storage fees, and transparent pricing.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <LeadCaptureButton variant="default" source="guide-noble-fees" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                    <LeadCaptureButton variant="default" source="guide-noble-fees" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
                                         Compare with Augusta <ArrowRight className="ml-2 h-4 w-4" />
                                     </LeadCaptureButton>
-                                    <Button variant="outline" size="lg" asChild className="border-white/20 text-[#F6F4EF] hover:bg-slate-200">
+                                    <Button variant="outline" size="lg" asChild className="border-white/20 text-[#F6F4EF] hover:bg-[#2A2D42]">
                                         <Link href="/reviews/noble-gold">
                                             Full Noble Gold Review
                                         </Link>

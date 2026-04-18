@@ -184,7 +184,7 @@ const schema = {
 
 export default function HowMuchSilverPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -202,13 +202,13 @@ export default function HowMuchSilverPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
             </Link>
-            <div className="inline-flex items-center gap-2 text-purple-400 text-sm font-medium mb-4 bg-purple-500/20 px-4 py-2 rounded-full border border-purple-500/30">
+            <div className="inline-flex items-center gap-2 text-[#D4A94E] text-sm font-medium mb-4 bg-purple-500/20 px-4 py-2 rounded-full border border-[rgba(197,149,46,0.32)]">
               <Scale className="h-4 w-4" />
               ALLOCATION GUIDE
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6">
               How Much Silver Should a{" "}
-              <span className="text-purple-400">Retiree Own?</span>
+              <span className="text-[#D4A94E]">Retiree Own?</span>
             </h1>
             <p className="text-xl text-[#D0CCC4] mb-8">
               Portfolio allocation guidelines, age-based strategies, and risk
@@ -233,8 +233,8 @@ export default function HowMuchSilverPage() {
             <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-4">
               The Quick Answer
             </h2>
-            <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-6">
-              <p className="text-3xl font-bold text-purple-400 mb-2">5-15%</p>
+            <div className="bg-[rgba(197,149,46,0.08)] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
+              <p className="text-3xl font-bold text-[#D4A94E] mb-2">5-15%</p>
               <p className="text-lg text-[#F6F4EF] mb-4">
                 of your total portfolio in precious metals (gold + silver combined)
               </p>
@@ -262,8 +262,8 @@ export default function HowMuchSilverPage() {
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {allocationProfiles.map((profile, index) => {
               const colorClasses: Record<string, string> = {
-                blue: "border-blue-500/30 bg-blue-500/10",
-                green: "border-green-500/30 bg-green-500/10",
+                blue: "border-blue-500/30 bg-[#121423]0/10",
+                green: "border-green-500/30 bg-[rgba(46,139,87,0.08)]0/10",
                 amber: "border-[#B22234]/30 bg-[rgba(220,38,38,0.1)]",
               };
               const textColors: Record<string, string> = {
@@ -324,7 +324,7 @@ export default function HowMuchSilverPage() {
                   {ageGuidelines.map((row, index) => (
                     <tr key={index} className={index % 2 === 0 ? "" : "bg-[#121423]"}>
                       <td className="p-4 font-semibold text-[#F6F4EF]">{row.age}</td>
-                      <td className="p-4 text-purple-400 font-semibold">{row.recommendation}</td>
+                      <td className="p-4 text-[#D4A94E] font-semibold">{row.recommendation}</td>
                       <td className="p-4 text-[#D0CCC4]">{row.silverNote}</td>
                       <td className="p-4 text-[#D0CCC4]">{row.reasoning}</td>
                     </tr>
@@ -352,7 +352,7 @@ export default function HowMuchSilverPage() {
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <div className="bg-purple-500/20 p-2 rounded-lg">
-                      <Icon className="h-5 w-5 text-purple-400" />
+                      <Icon className="h-5 w-5 text-[#D4A94E]" />
                     </div>
                     <h3 className="font-bold text-[#F6F4EF]">{item.factor}</h3>
                   </div>

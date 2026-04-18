@@ -116,7 +116,7 @@ const schema = {
 
 export default function SilverBackwardationPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-[#0C0D18] backdrop-blur-sm py-16 border-b border-[#2A2D42]">
@@ -163,7 +163,7 @@ export default function SilverBackwardationPage() {
                         {/* Contango */}
                         <section id="contango" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What Is Contango? (Normal Market)</h2>
@@ -208,7 +208,7 @@ export default function SilverBackwardationPage() {
                         {/* Backwardation */}
                         <section id="backwardation" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What Is Backwardation? (Abnormal Market)</h2>
@@ -217,7 +217,7 @@ export default function SilverBackwardationPage() {
                                 Backwardation is the opposite of contango. It occurs when <strong>spot prices are higher than futures prices</strong>. This is abnormal and signals something unusual in the market:
                             </p>
 
-                            <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/30 not-prose my-8">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-2xl p-6 border border-red-500/30 not-prose my-8">
                                 <h4 className="font-bold text-red-700 text-lg mb-4">Backwardation Example (Abnormal Market)</h4>
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center p-3 bg-[#0C0D18] rounded-lg">
@@ -290,7 +290,7 @@ export default function SilverBackwardationPage() {
                         {/* Historical Instances */}
                         <section id="historical-instances" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Historical Instances of Silver Backwardation</h2>
@@ -392,7 +392,7 @@ export default function SilverBackwardationPage() {
                         {/* Current Market */}
                         <section id="current-market" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Current Market Structure</h2>

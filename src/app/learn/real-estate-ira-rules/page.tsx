@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function RealEstateIraRulesPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "Real Estate IRA Rules 2026: IRS Requirements Guide", description: "Complete guide to real estate IRA rules. Learn about prohibited transactions, disqualified persons, UBIT, and how to stay IRS compliant with your SDIRA.", slug: "/learn/real-estate-ira-rules" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Real Estate IRA Rules", url: "/learn/real-estate-ira-rules" }])} />
             {/* Hero Section */}
@@ -101,7 +101,7 @@ export default function RealEstateIraRulesPage() {
                             Let me be direct: these are the rules that trip people up. Break any of these, and your entire IRA could be treated as a distribution—meaning you owe taxes on the full amount, plus penalties if you're under 59 1/2.
                         </p>
 
-                        <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-8">
+                        <div className="bg-[rgba(220,38,38,0.08)]0/5 border border-red-500/20 rounded-2xl p-8">
                             <h3 className="text-xl font-bold text-red-700 mb-6 flex items-center gap-2">
                                 <XCircle className="w-6 h-6" />
                                 You CANNOT Do These Things
@@ -157,7 +157,7 @@ export default function RealEstateIraRulesPage() {
             </section>
 
             {/* Disqualified Persons */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
@@ -187,7 +187,7 @@ export default function RealEstateIraRulesPage() {
                                 ))}
                             </div>
 
-                            <div className="mt-6 p-4 bg-amber-500/10 border border-amber-500/20 rounded-lg">
+                            <div className="mt-6 p-4 bg-[#161828]0/10 border border-amber-500/20 rounded-lg">
                                 <p className="text-[#D4A94E] text-sm">
                                     <strong>Note:</strong> Siblings, aunts, uncles, and cousins are NOT disqualified persons.
                                     Transactions with them are generally allowed (but consult a tax professional).
@@ -208,7 +208,7 @@ export default function RealEstateIraRulesPage() {
                             What You CAN Do
                         </h2>
 
-                        <div className="bg-green-500/5 border border-green-500/20 rounded-2xl p-8">
+                        <div className="bg-[rgba(46,139,87,0.08)]0/5 border border-green-500/20 rounded-2xl p-8">
                             <h3 className="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
                                 <CheckCircle2 className="w-6 h-6" />
                                 Permitted Activities
@@ -239,7 +239,7 @@ export default function RealEstateIraRulesPage() {
             </section>
 
             {/* UBIT Section */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
@@ -254,7 +254,7 @@ export default function RealEstateIraRulesPage() {
                             </p>
 
                             <div className="space-y-6">
-                                <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
+                                <div className="bg-[#161828]0/10 border border-amber-500/20 rounded-xl p-6">
                                     <h4 className="text-[#D4A94E] font-semibold mb-3 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         When UBIT Applies
@@ -271,7 +271,7 @@ export default function RealEstateIraRulesPage() {
                                     </ul>
                                 </div>
 
-                                <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20 rounded-xl p-6">
                                     <h4 className="text-green-700 font-semibold mb-3 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         When UBIT Does NOT Apply
@@ -332,8 +332,8 @@ export default function RealEstateIraRulesPage() {
                                 <div key={index} className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
                                     <div className="flex items-center gap-2 mb-3">
                                         <span className={`text-xs font-bold px-2 py-1 rounded ${item.severity === 'Critical'
-                                            ? 'bg-red-500/30 text-red-800'
-                                            : 'bg-red-500/20 text-red-700'
+                                            ? 'bg-[rgba(220,38,38,0.08)]0/30 text-red-800'
+                                            : 'bg-[rgba(220,38,38,0.08)]0/20 text-red-700'
                                             }`}>
                                             {item.severity}
                                         </span>
@@ -348,7 +348,7 @@ export default function RealEstateIraRulesPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6">

@@ -60,7 +60,7 @@ export default function ScenariosPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Economic Crisis Scenarios: Protect Your Wealth", description: "Prepare for economic uncertainty. Understand threats to your retirement: dollar collapse, hyperinflation, bank failures, and how to protect yourself.", slug: "/scenarios" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Economic Crisis Scenarios", url: "/scenarios" }])} />
       <Navbar />
@@ -113,7 +113,7 @@ export default function ScenariosPage() {
               <div className="text-sm text-[#A8A39A]">Dollar value lost since 1913</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-amber-600">5,000</div>
+              <div className="text-3xl font-bold text-[#D4A94E]">5,000</div>
               <div className="text-sm text-[#A8A39A]">Years gold has been money</div>
             </div>
           </div>
@@ -121,7 +121,7 @@ export default function ScenariosPage() {
       </section>
 
       {/* Scenarios Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
@@ -226,7 +226,7 @@ export default function ScenariosPage() {
       </section>
 
       {/* Rich Dad Quote */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <blockquote className="text-2xl md:text-3xl font-serif text-[#F6F4EF] italic mb-6">
@@ -249,7 +249,7 @@ export default function ScenariosPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/scenarios" />
         </Container>

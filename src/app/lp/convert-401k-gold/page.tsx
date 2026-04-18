@@ -64,7 +64,7 @@ export default function Convert401kGoldPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
+        <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF] font-serif">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -121,7 +121,7 @@ export default function Convert401kGoldPage() {
                         <LeadCaptureButton
                             variant="convert-401k"
                             source="lp-convert-401k-gold-hero"
-                            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_10px_30px_rgba(197,149,46,0.28)] hover:shadow-[0_14px_40px_rgba(197,149,46,0.4)] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Start My Tax-Free Rollover
                             <ArrowRight className="h-6 w-6" />
@@ -148,7 +148,7 @@ export default function Convert401kGoldPage() {
             </section>
 
             {/* 3-Step Process */}
-            <section className="py-16 bg-white font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         How It Works — 3 Simple Steps
@@ -242,7 +242,7 @@ export default function Convert401kGoldPage() {
             </section>
 
             {/* Why Augusta for Rollovers */}
-            <section className="py-16 bg-white font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         Why 50,000+ Americans Trust Augusta for Rollovers
@@ -304,7 +304,7 @@ export default function Convert401kGoldPage() {
                     <LeadCaptureButton
                         variant="convert-401k"
                         source="lp-convert-401k-gold-footer"
-                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_14px_40px_rgba(197,149,46,0.32)] hover:scale-105 transition-transform uppercase font-sans border-2 border-[rgba(197,149,46,0.5)]"
                     >
                         Start My Tax-Free Rollover
                     </LeadCaptureButton>

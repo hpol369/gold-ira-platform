@@ -33,7 +33,7 @@ export function SidebarAuditWidget({ trackSource, headline, body }: SidebarAudit
 
       <div className="relative z-10">
         <div className="flex items-center gap-2 mb-3">
-          <div className="p-2 rounded-lg bg-red-50">
+          <div className="p-2 rounded-lg bg-[rgba(220,38,38,0.08)]">
             <Shield className="h-5 w-5 text-[#D4A94E]" />
           </div>
           <h4 className="font-serif font-bold text-[#F6F4EF] text-sm">

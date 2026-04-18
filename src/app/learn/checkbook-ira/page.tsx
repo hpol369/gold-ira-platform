@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function CheckbookIRAPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({
                 title: "What is a Checkbook IRA? Complete Guide to Checkbook Control",
                 description: "Learn what a Checkbook IRA is, how it works, pros and cons, and whether checkbook control is right for your self-directed retirement investing.",
@@ -130,7 +130,7 @@ export default function CheckbookIRAPage() {
             <InContentCTA trackSource="learn-checkbook-ira" />
 
             {/* Main Content */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF]">
@@ -184,7 +184,7 @@ export default function CheckbookIRAPage() {
                                         <ArrowRight className="w-6 h-6 text-[#A8A39A] rotate-90" />
                                     </div>
                                     <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center">
+                                        <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/10 rounded-lg flex items-center justify-center">
                                             <Lock className="w-6 h-6 text-green-600" />
                                         </div>
                                         <div>
@@ -212,7 +212,7 @@ export default function CheckbookIRAPage() {
                                     <tr>
                                         <td className="p-4 text-[#D0CCC4]">Transaction Speed</td>
                                         <td className="p-4 text-green-600 font-medium">Instant (write a check)</td>
-                                        <td className="p-4 text-amber-600">Days to weeks</td>
+                                        <td className="p-4 text-[#D4A94E]">Days to weeks</td>
                                     </tr>
                                     <tr>
                                         <td className="p-4 text-[#D0CCC4]">Per-Transaction Fees</td>
@@ -226,12 +226,12 @@ export default function CheckbookIRAPage() {
                                     </tr>
                                     <tr>
                                         <td className="p-4 text-[#D0CCC4]">Setup Complexity</td>
-                                        <td className="p-4 text-amber-600">Moderate (LLC required)</td>
+                                        <td className="p-4 text-[#D4A94E]">Moderate (LLC required)</td>
                                         <td className="p-4 text-green-600 font-medium">Simple</td>
                                     </tr>
                                     <tr>
                                         <td className="p-4 text-[#D0CCC4]">Your Responsibility</td>
-                                        <td className="p-4 text-amber-600">Higher (manage LLC)</td>
+                                        <td className="p-4 text-[#D4A94E]">Higher (manage LLC)</td>
                                         <td className="p-4 text-green-600 font-medium">Lower</td>
                                     </tr>
                                     <tr>
@@ -248,7 +248,7 @@ export default function CheckbookIRAPage() {
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6 my-8">
-                            <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6">
+                            <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20 rounded-xl p-6">
                                 <h3 className="font-bold text-green-700 mb-4 flex items-center gap-2">
                                     <CheckCircle2 className="w-5 h-5" />
                                     Advantages
@@ -272,7 +272,7 @@ export default function CheckbookIRAPage() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20 rounded-xl p-6">
                                 <h3 className="font-bold text-red-700 mb-4 flex items-center gap-2">
                                     <XCircle className="w-5 h-5" />
                                     Disadvantages
@@ -390,7 +390,7 @@ export default function CheckbookIRAPage() {
             <section className="py-12 bg-gradient-to-r from-[#000080] to-[#000060]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <p className="text-amber-400 text-sm font-bold uppercase tracking-wider mb-3">Prefer a Simpler Approach?</p>
+                        <p className="text-[#D4A94E] text-sm font-bold uppercase tracking-wider mb-3">Prefer a Simpler Approach?</p>
                         <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
                             Just Want Gold in Your IRA? No LLC Needed.
                         </h2>

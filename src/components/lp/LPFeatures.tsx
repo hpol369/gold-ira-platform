@@ -26,7 +26,7 @@ export function LPFeatures({ headline, features, className }: LPFeaturesProps) {
                 "hover:border-green-400/30 transition-colors"
               )}
             >
-              <div className="h-6 w-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
+              <div className="h-6 w-6 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center flex-shrink-0">
                 <Check className="h-4 w-4 text-green-400" />
               </div>
               <span className="text-[#3F4460] text-base md:text-lg">{feature}</span>

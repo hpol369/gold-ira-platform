@@ -93,7 +93,7 @@ export default function BenetrendsReviewPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
             />
 
-            <main className="min-h-screen bg-white">
+            <main className="min-h-screen bg-[#0C0D18]">
                 {/* Hero Section */}
                 <section className="relative py-12 lg:py-16 overflow-hidden">
                     <div className="absolute inset-0 bg-[rgba(197,149,46,0.1)]" />
@@ -206,7 +206,7 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* Pros and Cons */}
-                <section className="py-12 bg-white">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
                         <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8">Benetrends: Pros and Cons</h2>
 
@@ -262,7 +262,7 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* Fees Breakdown */}
-                <section className="py-12 bg-white">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8">Benetrends Fees</h2>
@@ -294,7 +294,7 @@ export default function BenetrendsReviewPage() {
                                 </table>
                             </div>
 
-                            <div className="mt-6 bg-green-50 border border-green-200 rounded-xl p-4">
+                            <div className="mt-6 bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-4">
                                 <p className="text-green-700 text-sm flex items-center gap-2">
                                     <CheckCircle2 className="w-5 h-5" />
                                     <span>Benetrends&apos; fees are slightly lower than Guidant Financial, saving ~$120/year on administration.</span>
@@ -315,7 +315,7 @@ export default function BenetrendsReviewPage() {
                                     <thead>
                                         <tr className="border-b border-[#2A2D42]">
                                             <th className="text-left p-4 text-[#F6F4EF] font-semibold">Feature</th>
-                                            <th className="text-center p-4 text-[#F6F4EF] font-semibold bg-blue-50">Benetrends</th>
+                                            <th className="text-center p-4 text-[#F6F4EF] font-semibold bg-[#121423]">Benetrends</th>
                                             <th className="text-center p-4 text-[#D0CCC4] font-semibold">Guidant Financial</th>
                                         </tr>
                                     </thead>
@@ -333,7 +333,7 @@ export default function BenetrendsReviewPage() {
                                         ].map((row, index) => (
                                             <tr key={index} className="border-b border-[#2A2D42]">
                                                 <td className="p-4 text-[#F6F4EF]">{row.feature}</td>
-                                                <td className="p-4 text-center text-[#D0CCC4] bg-blue-50">{row.benetrends}</td>
+                                                <td className="p-4 text-center text-[#D0CCC4] bg-[#121423]">{row.benetrends}</td>
                                                 <td className="p-4 text-center text-[#A8A39A]">{row.guidant}</td>
                                             </tr>
                                         ))}
@@ -353,7 +353,7 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* Who Should Use */}
-                <section className="py-12 bg-white">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
@@ -361,7 +361,7 @@ export default function BenetrendsReviewPage() {
                             </h2>
 
                             <div className="grid md:grid-cols-2 gap-8">
-                                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                                     <h3 className="text-lg font-bold text-green-700 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         Ideal For
@@ -383,7 +383,7 @@ export default function BenetrendsReviewPage() {
                                     </ul>
                                 </div>
 
-                                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                     <h3 className="text-lg font-bold text-red-700 mb-4 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         May Not Be Ideal For
@@ -452,7 +452,7 @@ export default function BenetrendsReviewPage() {
                 </section>
 
                 {/* Final Verdict */}
-                <section className="py-12 bg-white">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
                             <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6">Our Verdict: Benetrends</h2>

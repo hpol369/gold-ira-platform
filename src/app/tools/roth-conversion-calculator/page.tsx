@@ -137,7 +137,7 @@ export default function RothConversionCalculatorPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={breadcrumbs} />
 
@@ -190,7 +190,7 @@ export default function RothConversionCalculatorPage() {
                       step={10000}
                       value={iraBalance}
                       onChange={(e) => setIraBalance(Number(e.target.value))}
-                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                      className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
                     <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                       <span>$50k</span>
@@ -218,7 +218,7 @@ export default function RothConversionCalculatorPage() {
                       onChange={(e) =>
                         setConversionAmount(Number(e.target.value))
                       }
-                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                      className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
                     <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                       <span>$10k</span>
@@ -248,7 +248,7 @@ export default function RothConversionCalculatorPage() {
                           className={`py-2 px-2 rounded-lg text-sm font-medium transition-all ${
                             currentTaxBracket === rate
                               ? "bg-[#DC2626] text-white"
-                              : "bg-[#121423] text-[#D0CCC4] hover:bg-slate-200"
+                              : "bg-[#121423] text-[#D0CCC4] hover:bg-[#2A2D42]"
                           }`}
                         >
                           {rate}%
@@ -276,7 +276,7 @@ export default function RothConversionCalculatorPage() {
                           className={`py-2 px-2 rounded-lg text-sm font-medium transition-all ${
                             retirementTaxBracket === rate
                               ? "bg-[#DC2626] text-white"
-                              : "bg-[#121423] text-[#D0CCC4] hover:bg-slate-200"
+                              : "bg-[#121423] text-[#D0CCC4] hover:bg-[#2A2D42]"
                           }`}
                         >
                           {rate}%
@@ -305,7 +305,7 @@ export default function RothConversionCalculatorPage() {
                       onChange={(e) =>
                         setYearsUntilRetirement(Number(e.target.value))
                       }
-                      className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                      className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                     />
                     <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                       <span>1 year</span>
@@ -338,7 +338,7 @@ export default function RothConversionCalculatorPage() {
                       <div
                         className={`rounded-2xl p-6 border ${
                           results.worthIt
-                            ? "bg-green-500/10 border-green-500/30"
+                            ? "bg-[rgba(46,139,87,0.08)]0/10 border-green-500/30"
                             : "bg-[rgba(220,38,38,0.1)] border-[#B22234]/30"
                         }`}
                       >
@@ -463,7 +463,7 @@ export default function RothConversionCalculatorPage() {
 
                       {/* Optimal Conversion Suggestion */}
                       {results.bracketAdvice && (
-                        <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
+                        <div className="bg-[#121423] border border-blue-200 rounded-xl p-5">
                           <div className="flex items-start gap-3">
                             <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                             <div>
@@ -506,7 +506,7 @@ export default function RothConversionCalculatorPage() {
                       {/* Reset Button */}
                       <button
                         onClick={resetCalculator}
-                        className="w-full py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#A8A39A] font-medium hover:bg-slate-200 hover:text-[#F6F4EF] transition-all"
+                        className="w-full py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#A8A39A] font-medium hover:bg-[#2A2D42] hover:text-[#F6F4EF] transition-all"
                       >
                         Calculate Different Scenario
                       </button>
@@ -581,7 +581,7 @@ export default function RothConversionCalculatorPage() {
       </section>
 
       {/* Educational Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -596,7 +596,7 @@ export default function RothConversionCalculatorPage() {
 
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
-                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/20 rounded-xl flex items-center justify-center mb-4">
                   <CheckCircle2 className="h-6 w-6 text-green-600" />
                 </div>
                 <h3 className="text-lg font-bold text-[#F6F4EF] mb-3">
@@ -626,7 +626,7 @@ export default function RothConversionCalculatorPage() {
               </div>
 
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center mb-4">
                   <Info className="h-6 w-6 text-blue-600" />
                 </div>
                 <h3 className="text-lg font-bold text-[#F6F4EF] mb-3">

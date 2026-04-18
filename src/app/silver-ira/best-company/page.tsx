@@ -163,7 +163,7 @@ const faqJsonLd = {
 
 export default function BestSilverIraCompanyPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -201,7 +201,7 @@ export default function BestSilverIraCompanyPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-gradient-to-br from-[#B22234]/20 to-[#8b1c2a]/10 border-2 border-[#B22234]/50 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden">
                             <div className="absolute top-4 right-4">
-                                <Award className="h-16 w-16 text-amber-500/30" />
+                                <Award className="h-16 w-16 text-[#D4A94E]/30" />
                             </div>
                             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#DC2626] text-[#F6F4EF] font-bold text-sm rounded-full mb-6">
                                 <Star className="h-4 w-4 fill-current" />
@@ -233,7 +233,7 @@ export default function BestSilverIraCompanyPage() {
             </section>
 
             {/* Why Augusta Wins */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-4">Why Augusta Wins for Silver IRAs</h2>
@@ -297,7 +297,7 @@ export default function BestSilverIraCompanyPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center bg-[#161828] rounded-2xl p-8 border border-[#2A2D42]">
                         <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">Not Sure If Augusta Is Right for You?</h2>
@@ -356,7 +356,7 @@ export default function BestSilverIraCompanyPage() {
             </section>
 
             {/* The Bottom Line */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-[#161828] rounded-2xl p-8 border border-[#2A2D42]">
@@ -406,7 +406,7 @@ export default function BestSilverIraCompanyPage() {
             </section>
 
             {/* Related Pages */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">Continue Your Research</h2>
                     <div className="grid md:grid-cols-3 gap-6">

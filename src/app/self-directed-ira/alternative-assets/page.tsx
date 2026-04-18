@@ -92,7 +92,7 @@ const schema = {
 
 export default function AlternativeAssetsPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -153,7 +153,7 @@ export default function AlternativeAssetsPage() {
                                     <td className="p-4 font-semibold text-[#F6F4EF]">Real Estate</td>
                                     <td className="p-4">$25,000+</td>
                                     <td className="p-4 text-green-600 font-medium">High (rent + appreciation)</td>
-                                    <td className="p-4 text-amber-600">High</td>
+                                    <td className="p-4 text-[#D4A94E]">High</td>
                                     <td className="p-4 text-red-500">Low</td>
                                 </tr>
                                 <tr>
@@ -167,7 +167,7 @@ export default function AlternativeAssetsPage() {
                                     <td className="p-4 font-semibold text-[#F6F4EF]">Cryptocurrency</td>
                                     <td className="p-4">$1,000+</td>
                                     <td className="p-4">Appreciation + staking</td>
-                                    <td className="p-4 text-amber-600">Medium</td>
+                                    <td className="p-4 text-[#D4A94E]">Medium</td>
                                     <td className="p-4 text-green-600">High</td>
                                 </tr>
                                 <tr>
@@ -181,14 +181,14 @@ export default function AlternativeAssetsPage() {
                                     <td className="p-4 font-semibold text-[#F6F4EF]">Tax Liens</td>
                                     <td className="p-4">$500+</td>
                                     <td className="p-4 text-green-600 font-medium">8-36% interest</td>
-                                    <td className="p-4 text-amber-600">Medium</td>
-                                    <td className="p-4 text-amber-600">Medium</td>
+                                    <td className="p-4 text-[#D4A94E]">Medium</td>
+                                    <td className="p-4 text-[#D4A94E]">Medium</td>
                                 </tr>
                                 <tr>
                                     <td className="p-4 font-semibold text-[#F6F4EF]">Promissory Notes</td>
                                     <td className="p-4">$5,000+</td>
                                     <td className="p-4">Interest income</td>
-                                    <td className="p-4 text-amber-600">Medium</td>
+                                    <td className="p-4 text-[#D4A94E]">Medium</td>
                                     <td className="p-4 text-red-500">Low</td>
                                 </tr>
                                 <tr>
@@ -225,7 +225,7 @@ export default function AlternativeAssetsPage() {
                     </ul>
 
                     <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                        <div className="p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <h4 className="font-bold text-green-700 mb-2 text-sm uppercase">Pros</h4>
                             <ul className="space-y-1.5 text-sm text-green-600">
                                 <li>&#8226; Steady rental income (tax-deferred or tax-free)</li>
@@ -234,7 +234,7 @@ export default function AlternativeAssetsPage() {
                                 <li>&#8226; Inflation hedge (rents rise with prices)</li>
                             </ul>
                         </div>
-                        <div className="p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <h4 className="font-bold text-red-700 mb-2 text-sm uppercase">Cons</h4>
                             <ul className="space-y-1.5 text-sm text-red-600">
                                 <li>&#8226; Illiquid (can&apos;t sell overnight)</li>
@@ -268,7 +268,7 @@ export default function AlternativeAssetsPage() {
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                        <div className="p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <h4 className="font-bold text-green-700 mb-2 text-sm uppercase">Pros</h4>
                             <ul className="space-y-1.5 text-sm text-green-600">
                                 <li>&#8226; Proven inflation hedge over millennia</li>
@@ -277,7 +277,7 @@ export default function AlternativeAssetsPage() {
                                 <li>&#8226; No counterparty risk</li>
                             </ul>
                         </div>
-                        <div className="p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <h4 className="font-bold text-red-700 mb-2 text-sm uppercase">Cons</h4>
                             <ul className="space-y-1.5 text-sm text-red-600">
                                 <li>&#8226; No income generation (no dividends/rent)</li>
@@ -318,7 +318,7 @@ export default function AlternativeAssetsPage() {
                     </ul>
 
                     <div className="grid md:grid-cols-2 gap-4 not-prose my-6">
-                        <div className="p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <h4 className="font-bold text-green-700 mb-2 text-sm uppercase">Pros</h4>
                             <ul className="space-y-1.5 text-sm text-green-600">
                                 <li>&#8226; Tax-free gains in a Roth IRA</li>
@@ -327,7 +327,7 @@ export default function AlternativeAssetsPage() {
                                 <li>&#8226; Portfolio diversification</li>
                             </ul>
                         </div>
-                        <div className="p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <h4 className="font-bold text-red-700 mb-2 text-sm uppercase">Cons</h4>
                             <ul className="space-y-1.5 text-sm text-red-600">
                                 <li>&#8226; Extreme volatility</li>

@@ -64,8 +64,8 @@ export function SpotPriceWidget({ metal = "gold", showTitle = true }: SpotPriceW
       <div className="bg-[#161828] border border-[#2A2D42] rounded-xl p-6 shadow-sm">
         {showTitle && <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">{metalLabel} Price Today</h3>}
         <div className="animate-pulse">
-          <div className="h-8 bg-slate-200 rounded w-32 mb-2"></div>
-          <div className="h-4 bg-slate-200 rounded w-24"></div>
+          <div className="h-8 bg-[#2A2D42] rounded w-32 mb-2"></div>
+          <div className="h-4 bg-[#2A2D42] rounded w-24"></div>
         </div>
       </div>
     );

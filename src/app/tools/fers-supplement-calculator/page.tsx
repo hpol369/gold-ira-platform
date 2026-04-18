@@ -122,7 +122,7 @@ const faqSchema = {
 
 export default function FERSSupplementCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -131,7 +131,7 @@ export default function FERSSupplementCalculatorPage() {
       <FERSSupplementCalculator />
 
       {/* Eligibility Requirements */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -146,7 +146,7 @@ export default function FERSSupplementCalculatorPage() {
                     className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
@@ -171,7 +171,7 @@ export default function FERSSupplementCalculatorPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center">
                 <Calculator className="h-6 w-6 text-blue-600" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
@@ -191,7 +191,7 @@ export default function FERSSupplementCalculatorPage() {
                 <p><strong className="text-[#F6F4EF]">Step 2:</strong> Find your estimated Social Security benefit at age 62 (from ssa.gov).</p>
                 <p><strong className="text-[#F6F4EF]">Step 3:</strong> Divide years of service by 40 and multiply by your SS estimate.</p>
               </div>
-              <div className="mt-4 p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
+              <div className="mt-4 p-4 bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-lg">
                 <p className="text-green-600 font-medium mb-1">Example Calculation:</p>
                 <p className="text-[#D0CCC4] text-sm">
                   30 years of service, $2,000 SS estimate: (30 / 40) x $2,000 = <strong className="text-[#F6F4EF]">$1,500/month</strong>
@@ -203,10 +203,10 @@ export default function FERSSupplementCalculatorPage() {
             <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
               <h3 className="text-lg font-semibold text-[#F6F4EF] mb-4">SRS Payment Timeline</h3>
               <div className="relative">
-                <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-blue-500/30"></div>
+                <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-[#121423]0/30"></div>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4 relative">
-                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 z-10">
+                    <div className="w-8 h-8 bg-[#121423]0 rounded-full flex items-center justify-center flex-shrink-0 z-10">
                       <span className="text-[#F6F4EF] text-sm font-bold">1</span>
                     </div>
                     <div>
@@ -215,7 +215,7 @@ export default function FERSSupplementCalculatorPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4 relative">
-                    <div className="w-8 h-8 bg-blue-500/50 rounded-full flex items-center justify-center flex-shrink-0 z-10">
+                    <div className="w-8 h-8 bg-[#121423]0/50 rounded-full flex items-center justify-center flex-shrink-0 z-10">
                       <span className="text-[#F6F4EF] text-sm font-bold">2</span>
                     </div>
                     <div>
@@ -240,7 +240,7 @@ export default function FERSSupplementCalculatorPage() {
       </section>
 
       {/* Gold Bridge Strategy */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="bg-[rgba(220,38,38,0.06)] border border-[#B22234]/30 rounded-2xl p-8">
@@ -329,7 +329,7 @@ export default function FERSSupplementCalculatorPage() {
       </section>
 
       {/* Related Tools */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -399,7 +399,7 @@ export default function FERSSupplementCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

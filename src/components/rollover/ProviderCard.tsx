@@ -19,7 +19,7 @@ export function ProviderCard({ provider, variant = "default" }: ProviderCardProp
         className="group flex items-center justify-between p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:border-amber-500/30 hover:bg-[#1E2134]/10 transition-all"
       >
         <div className="flex items-center gap-3">
-          <div className="p-2 bg-slate-700 rounded-lg group-hover:bg-amber-500/20 transition-colors border border-white/10">
+          <div className="p-2 bg-slate-700 rounded-lg group-hover:bg-[#161828]0/20 transition-colors border border-white/10">
             <Building2 className="h-5 w-5 text-[#A8A39A] group-hover:text-amber-700" />
           </div>
           <div>
@@ -41,7 +41,7 @@ export function ProviderCard({ provider, variant = "default" }: ProviderCardProp
     >
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
-          <div className="p-3 bg-slate-700 rounded-xl group-hover:bg-amber-500/20 transition-colors border border-white/10">
+          <div className="p-3 bg-slate-700 rounded-xl group-hover:bg-[#161828]0/20 transition-colors border border-white/10">
             <Building2 className="h-6 w-6 text-[#A8A39A] group-hover:text-amber-700" />
           </div>
           <div>
@@ -50,9 +50,9 @@ export function ProviderCard({ provider, variant = "default" }: ProviderCardProp
             </h3>
             <span className={cn(
               "text-xs font-medium px-2 py-0.5 rounded-full border",
-              provider.type === "brokerage" && "bg-blue-500/20 text-blue-700 border-blue-500/30",
-              provider.type === "employer" && "bg-green-500/20 text-green-700 border-green-500/30",
-              provider.type === "government" && "bg-purple-500/20 text-purple-700 border-purple-500/30"
+              provider.type === "brokerage" && "bg-[#121423]0/20 text-blue-700 border-blue-500/30",
+              provider.type === "employer" && "bg-[rgba(46,139,87,0.08)]0/20 text-green-700 border-green-500/30",
+              provider.type === "government" && "bg-purple-500/20 text-purple-700 border-[rgba(197,149,46,0.32)]"
             )}>
               {provider.type === "brokerage" ? "Brokerage" :
                provider.type === "employer" ? "Employer Plan" : "Government"}
@@ -119,9 +119,9 @@ export function AccountTypeCard({ accountType }: AccountTypeCardProps) {
       <div className="flex items-center justify-between">
         <span className={cn(
           "text-xs font-medium px-2 py-1 rounded-full border",
-          accountType.taxTreatment === "pre-tax" && "bg-blue-500/20 text-blue-700 border-blue-500/30",
-          accountType.taxTreatment === "post-tax" && "bg-green-500/20 text-green-700 border-green-500/30",
-          accountType.taxTreatment === "both" && "bg-purple-500/20 text-purple-700 border-purple-500/30"
+          accountType.taxTreatment === "pre-tax" && "bg-[#121423]0/20 text-blue-700 border-blue-500/30",
+          accountType.taxTreatment === "post-tax" && "bg-[rgba(46,139,87,0.08)]0/20 text-green-700 border-green-500/30",
+          accountType.taxTreatment === "both" && "bg-purple-500/20 text-purple-700 border-[rgba(197,149,46,0.32)]"
         )}>
           {accountType.taxTreatment === "pre-tax" ? "Pre-Tax" :
            accountType.taxTreatment === "post-tax" ? "Post-Tax (Roth)" : "Both Options"}

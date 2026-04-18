@@ -105,7 +105,7 @@ const schema = {
 
 export default function FractionalSilverPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -120,7 +120,7 @@ export default function FractionalSilverPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
               <Coins className="h-4 w-4" />
               250 MONTHLY SEARCHES - DIFFICULTY 0!
             </div>
@@ -181,7 +181,7 @@ export default function FractionalSilverPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
@@ -385,7 +385,7 @@ export default function FractionalSilverPage() {
                 <li><strong>Generic Fractional Rounds</strong> - Lowest cost but less recognizable</li>
               </ul>
 
-              <div className="not-prose bg-green-500/10 border border-green-500/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
@@ -466,7 +466,7 @@ export default function FractionalSilverPage() {
       </section>
 
       {/* Related Products */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">

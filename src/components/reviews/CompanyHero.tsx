@@ -139,7 +139,7 @@ export function CompanyHero({ company }: CompanyHeroProps) {
               <div className="mt-4">
                 <Link
                   href={`/compare/${company.slug}-vs-augusta-precious-metals`}
-                  className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-amber-600 text-sm font-medium transition-colors"
+                  className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#D4A94E] text-sm font-medium transition-colors"
                 >
                   Not sure? Compare {company.name} vs Augusta Precious Metals
                   <ArrowRight className="h-4 w-4" />

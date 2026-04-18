@@ -22,7 +22,7 @@ export default function AuditPage() {
             <div className="flex-grow flex flex-col justify-center py-12 relative overflow-hidden">
                 {/* Background Effects */}
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 right-1/4 w-[800px] h-[800px] bg-amber-500/5 rounded-full blur-[120px]" />
+                    <div className="absolute top-0 right-1/4 w-[800px] h-[800px] bg-[#161828]0/5 rounded-full blur-[120px]" />
                     <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-[100px]" />
                 </div>
 

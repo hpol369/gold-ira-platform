@@ -132,7 +132,7 @@ const faqs = [
 
 export default function BestCryptoIRACompaniesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <SchemaScript
@@ -189,7 +189,7 @@ export default function BestCryptoIRACompaniesPage() {
             </header>
 
             {/* Comparison Table */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -280,7 +280,7 @@ export default function BestCryptoIRACompaniesPage() {
                     <div className="max-w-4xl mx-auto space-y-12">
                         <div className="flex items-center gap-3 mb-4">
                             <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                                <Award className="w-5 h-5 text-amber-600" />
+                                <Award className="w-5 h-5 text-[#D4A94E]" />
                             </div>
                             <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                 Detailed Provider Reviews
@@ -337,12 +337,12 @@ export default function BestCryptoIRACompaniesPage() {
             </section>
 
             {/* How to Choose */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
                             <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                <Shield className="w-5 h-5 text-purple-600" />
+                                <Shield className="w-5 h-5 text-[#D4A94E]" />
                             </div>
                             <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                 How to Choose the Right Crypto IRA
@@ -356,7 +356,7 @@ export default function BestCryptoIRACompaniesPage() {
                         </div>
 
                         <div className="grid md:grid-cols-3 gap-6 mt-8">
-                            <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                                 <DollarSign className="w-8 h-8 text-green-600 mb-3" />
                                 <h3 className="font-bold text-[#F6F4EF] mb-2">Lowest Fees</h3>
                                 <p className="text-[#D0CCC4] text-sm mb-4">
@@ -365,7 +365,7 @@ export default function BestCryptoIRACompaniesPage() {
                                 <p className="text-green-700 font-semibold text-sm">Pick: iTrustCapital</p>
                             </div>
 
-                            <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                            <div className="bg-[#121423] border border-blue-200 rounded-xl p-6">
                                 <Coins className="w-8 h-8 text-blue-600 mb-3" />
                                 <h3 className="font-bold text-[#F6F4EF] mb-2">Most Crypto Options</h3>
                                 <p className="text-[#D0CCC4] text-sm mb-4">
@@ -374,8 +374,8 @@ export default function BestCryptoIRACompaniesPage() {
                                 <p className="text-blue-700 font-semibold text-sm">Pick: Alto IRA</p>
                             </div>
 
-                            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6">
-                                <TrendingUp className="w-8 h-8 text-amber-600 mb-3" />
+                            <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
+                                <TrendingUp className="w-8 h-8 text-[#D4A94E] mb-3" />
                                 <h3 className="font-bold text-[#F6F4EF] mb-2">Zero Trade Fees</h3>
                                 <p className="text-[#D0CCC4] text-sm mb-4">
                                     If you trade frequently and want to avoid per-trade fees, Bitcoin IRA&apos;s $0 trading fee model works well. Just be aware of the spread markup.
@@ -432,9 +432,9 @@ export default function BestCryptoIRACompaniesPage() {
                             </ul>
                         </div>
 
-                        <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mt-6">
+                        <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 mt-6">
                             <div className="flex items-start gap-3">
-                                <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                                <AlertTriangle className="w-5 h-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
                                 <p className="text-[#D0CCC4] text-sm">
                                     <strong>Important:</strong> Crypto IRA insurance typically covers theft and hacking of the custodian&apos;s systems. It does not protect against market losses. Cryptocurrency remains a volatile asset class and your investment can lose value.
                                 </p>
@@ -445,7 +445,7 @@ export default function BestCryptoIRACompaniesPage() {
             </section>
 
             {/* Augusta Bridge CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 md:p-8 text-center">
@@ -476,7 +476,7 @@ export default function BestCryptoIRACompaniesPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <AugustaCTA

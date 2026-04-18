@@ -135,7 +135,7 @@ const schema = {
 
 export default function Why401kLosingMoneyPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -207,7 +207,7 @@ export default function Why401kLosingMoneyPage() {
                         {/* Market Volatility */}
                         <section id="market-volatility" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #1: Market Volatility & Corrections</h2>
@@ -248,7 +248,7 @@ export default function Why401kLosingMoneyPage() {
                         {/* Hidden Fees */}
                         <section id="hidden-fees" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-[#D4A94E]">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #2: Hidden Fees Eating Your Returns</h2>
@@ -357,7 +357,7 @@ export default function Why401kLosingMoneyPage() {
                         {/* Over-Concentration */}
                         <section id="over-concentration" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
+                                <div className="p-3 bg-[rgba(183,121,31,0.08)]0/20 rounded-lg text-orange-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #4: Over-Concentration in Stocks</h2>
@@ -369,7 +369,7 @@ export default function Why401kLosingMoneyPage() {
                                 When you&apos;re 30, being aggressive with stocks makes sense. You have 30+ years to recover from downturns. But as you approach retirement, <strong>a single bad year can derail your entire retirement plan</strong>.
                             </p>
 
-                            <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
                                 <h4 className="font-bold text-red-700 text-lg mb-4">The Danger Zone</h4>
                                 <p className="text-red-800 mb-4">Consider someone retiring in 2008 with $1 million, 80% in stocks:</p>
                                 <div className="grid md:grid-cols-2 gap-4">
@@ -393,7 +393,7 @@ export default function Why401kLosingMoneyPage() {
                         {/* Target Date Fund Issues */}
                         <section id="target-date-issues" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <Target className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #5: Target Date Fund Issues</h2>
@@ -406,28 +406,28 @@ export default function Why401kLosingMoneyPage() {
 
                             <div className="space-y-4 not-prose my-8">
                                 <div className="flex gap-4 p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
-                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">1</div>
+                                    <div className="w-10 h-10 rounded-full bg-[rgba(220,38,38,0.08)]0/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">1</div>
                                     <div>
                                         <h4 className="font-bold text-[#F6F4EF]">Still Too Much Stock Exposure</h4>
                                         <p className="text-sm text-[#A8A39A] mt-1">Many target date funds still hold 40-50% stocks at the target date. That&apos;s a lot of risk when you&apos;re ready to retire.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
-                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">2</div>
+                                    <div className="w-10 h-10 rounded-full bg-[rgba(220,38,38,0.08)]0/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">2</div>
                                     <div>
                                         <h4 className="font-bold text-[#F6F4EF]">One-Size-Fits-All Approach</h4>
                                         <p className="text-sm text-[#A8A39A] mt-1">Your risk tolerance, other savings, and retirement plans are unique. Target date funds assume everyone with the same retirement year has identical needs.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
-                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">3</div>
+                                    <div className="w-10 h-10 rounded-full bg-[rgba(220,38,38,0.08)]0/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">3</div>
                                     <div>
                                         <h4 className="font-bold text-[#F6F4EF]">Hidden Fees</h4>
                                         <p className="text-sm text-[#A8A39A] mt-1">Many target date funds have higher expense ratios than simple index funds, especially those from major brokerages.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
-                                    <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">4</div>
+                                    <div className="w-10 h-10 rounded-full bg-[rgba(220,38,38,0.08)]0/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">4</div>
                                     <div>
                                         <h4 className="font-bold text-[#F6F4EF]">No Protection from Correlated Assets</h4>
                                         <p className="text-sm text-[#A8A39A] mt-1">Stocks and bonds sometimes fall together (like in 2022). Target date funds rarely include truly non-correlated assets like gold.</p>
@@ -442,9 +442,9 @@ export default function Why401kLosingMoneyPage() {
 
                         {/* Mid-Article CTA */}
                         <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-[#F6F4EF] text-center relative overflow-hidden not-prose border border-[#2A2D42]">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#161828]0/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <div className="inline-flex items-center gap-2 bg-amber-500/20 text-[#D4A94E] font-semibold text-sm px-4 py-2 rounded-full mb-4 border border-amber-500/30">
+                                <div className="inline-flex items-center gap-2 bg-[#161828]0/20 text-[#D4A94E] font-semibold text-sm px-4 py-2 rounded-full mb-4 border border-amber-500/30">
                                     <Calculator className="h-4 w-4" />
                                     FREE TOOL
                                 </div>
@@ -459,7 +459,7 @@ export default function Why401kLosingMoneyPage() {
                         {/* What You Can Do */}
                         <section id="what-to-do" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What You Can Do About It</h2>
@@ -490,7 +490,7 @@ export default function Why401kLosingMoneyPage() {
 
                             <div className="bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
                                 <div className="flex items-center gap-3 mb-4">
-                                    <div className="p-2 bg-amber-500/20 rounded-full text-[#D4A94E]">
+                                    <div className="p-2 bg-[#161828]0/20 rounded-full text-[#D4A94E]">
                                         <Coins className="w-5 h-5" />
                                     </div>
                                     <h4 className="font-bold text-[#F6F4EF] text-lg">Gold as Portfolio Protection</h4>
@@ -606,13 +606,13 @@ export default function Why401kLosingMoneyPage() {
 
                         {/* Final CTA */}
                         <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-[#F6F4EF] relative overflow-hidden not-prose border border-[#2A2D42]">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#161828]0/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
                                 <Clock className="w-12 h-12 text-[#D4A94E] mx-auto mb-4" />
                                 <h3 className="text-3xl font-serif font-bold mb-4 text-[#F6F4EF]">Take Control of Your Retirement</h3>
                                 <p className="mb-6 text-[#D0CCC4] max-w-xl mx-auto">Don&apos;t let market volatility derail your retirement plans. Learn how gold can provide the stability your portfolio needs.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <LeadCaptureButton variant="default" source="learn-why-401k" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                    <LeadCaptureButton variant="default" source="learn-why-401k" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
                                         Get Free Gold IRA Guide <ArrowRight className="ml-2 w-5 h-5" />
                                     </LeadCaptureButton>
                                     <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#1E2134]">

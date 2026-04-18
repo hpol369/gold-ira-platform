@@ -161,7 +161,7 @@ const faqSchema = {
 
 export default function SilverDealerReviewsPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <SchemaScript schema={faqSchema} />
             <Navbar />

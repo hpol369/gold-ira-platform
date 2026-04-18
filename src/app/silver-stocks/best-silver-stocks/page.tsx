@@ -120,7 +120,7 @@ export default function BestSilverStocksPage() {
             </section>
 
             {/* Content */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] prose-a:text-secondary max-w-none">
@@ -137,7 +137,7 @@ export default function BestSilverStocksPage() {
 
                             {/* Types of Silver Investments */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-[#121423] rounded-lg text-blue-600">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">4 Ways to Invest in Silver</h2>
@@ -198,7 +198,7 @@ export default function BestSilverStocksPage() {
                                         <tr>
                                             <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Factor</th>
                                             <th className="p-4 border-b border-[#2A2D42] font-bold text-blue-400">Mining Stocks</th>
-                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-purple-400">Silver ETFs</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">Silver ETFs</th>
                                             <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">Physical Silver</th>
                                         </tr>
                                     </thead>
@@ -257,7 +257,7 @@ export default function BestSilverStocksPage() {
 
                             {/* Pros and Cons of Mining Stocks */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-[#121423] rounded-lg text-blue-600">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">The Truth About Silver Mining Stocks</h2>
@@ -287,7 +287,7 @@ export default function BestSilverStocksPage() {
 
                             {/* Why Physical Silver for Long-Term */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-amber-50 rounded-lg text-amber-600">
+                                <div className="p-3 bg-[#161828] rounded-lg text-[#D4A94E]">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">Why Physical Silver Wins for Long-Term Investors</h2>
@@ -348,7 +348,7 @@ export default function BestSilverStocksPage() {
 
                             {/* When Stocks Might Make Sense */}
                             <div className="flex items-center gap-4 mb-4 mt-12 not-prose">
-                                <div className="p-3 bg-blue-50 rounded-lg text-blue-600">
+                                <div className="p-3 bg-[#121423] rounded-lg text-blue-600">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary m-0">When Silver Stocks Might Make Sense</h2>

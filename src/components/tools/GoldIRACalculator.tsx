@@ -211,7 +211,7 @@ export function GoldIRACalculator() {
           <Calculator className="h-4 w-4" />
           Gold IRA Calculator
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[#161828] to-slate-400 bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#F6F4EF]">
           Gold IRA Investment Calculator
         </h1>
         <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
@@ -261,7 +261,7 @@ export function GoldIRACalculator() {
                   max="25"
                   value={goldAllocation}
                   onChange={(e) => setGoldAllocation(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>5% (Conservative)</span>
@@ -280,7 +280,7 @@ export function GoldIRACalculator() {
                   max="40"
                   value={yearsToRetirement}
                   onChange={(e) => setYearsToRetirement(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
             </div>
@@ -289,7 +289,7 @@ export function GoldIRACalculator() {
           {/* Return Assumptions */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <TrendingUp className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Return Assumptions</h3>
@@ -307,7 +307,7 @@ export function GoldIRACalculator() {
                   step="0.5"
                   value={expectedStockReturn}
                   onChange={(e) => setExpectedStockReturn(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>4%</span>
@@ -327,7 +327,7 @@ export function GoldIRACalculator() {
                   step="0.5"
                   value={expectedGoldReturn}
                   onChange={(e) => setExpectedGoldReturn(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>2%</span>
@@ -347,7 +347,7 @@ export function GoldIRACalculator() {
                   step="0.5"
                   value={inflationRate}
                   onChange={(e) => setInflationRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-red-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
             </div>
@@ -359,7 +359,7 @@ export function GoldIRACalculator() {
           {/* Side-by-Side Comparison */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <BarChart3 className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">
@@ -401,7 +401,7 @@ export function GoldIRACalculator() {
             <div
               className={`text-center p-3 rounded-lg ${
                 calculations.difference >= 0
-                  ? "bg-green-500/10 border border-green-500/30"
+                  ? "bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30"
                   : "bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30"
               }`}
             >
@@ -424,7 +424,7 @@ export function GoldIRACalculator() {
           {/* Volatility & Risk Metrics */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <Shield className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">
@@ -547,7 +547,7 @@ export function GoldIRACalculator() {
                 <div className="w-20 text-xs text-[#A8A39A]">2008 Crisis</div>
                 <div className="flex-1 flex gap-1">
                   <div
-                    className="h-4 bg-red-500 rounded"
+                    className="h-4 bg-[rgba(220,38,38,0.08)]0 rounded"
                     style={{
                       width: `${Math.abs(historicalData.stocks[8]) * 1.5}%`,
                     }}
@@ -559,7 +559,7 @@ export function GoldIRACalculator() {
                 <div className="w-20 text-xs text-[#A8A39A]">Gold 2008</div>
                 <div className="flex-1 flex gap-1">
                   <div
-                    className="h-4 bg-amber-500 rounded"
+                    className="h-4 bg-[#161828]0 rounded"
                     style={{
                       width: `${Math.abs(historicalData.gold[8]) * 1.5}%`,
                     }}
@@ -571,7 +571,7 @@ export function GoldIRACalculator() {
                 <div className="w-20 text-xs text-[#A8A39A]">2022 Drop</div>
                 <div className="flex-1 flex gap-1">
                   <div
-                    className="h-4 bg-red-500 rounded"
+                    className="h-4 bg-[rgba(220,38,38,0.08)]0 rounded"
                     style={{
                       width: `${Math.abs(historicalData.stocks[22]) * 1.5}%`,
                     }}
@@ -591,7 +591,7 @@ export function GoldIRACalculator() {
               </div>
             </div>
 
-            <div className="mt-4 p-3 bg-green-500/10 border border-green-500/30 rounded-lg">
+            <div className="mt-4 p-3 bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-lg">
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-[#D0CCC4]">

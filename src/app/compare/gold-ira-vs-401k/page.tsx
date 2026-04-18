@@ -116,7 +116,7 @@ const schema = {
 
 export default function GoldIraVs401kPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -204,7 +204,7 @@ export default function GoldIraVs401kPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <h4 className="font-bold text-green-700 mb-3">401(k) Advantages</h4>
                                     <ul className="space-y-2 text-sm text-green-600">
                                         <li>• <strong>Employer matching</strong> — Free money (typically 3-6% of salary)</li>
@@ -214,7 +214,7 @@ export default function GoldIraVs401kPage() {
                                         <li>• <strong>Low fees</strong> — Typically 0.1-0.5% annually</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                                     <h4 className="font-bold text-red-700 mb-3">401(k) Disadvantages</h4>
                                     <ul className="space-y-2 text-sm text-red-600">
                                         <li>• <strong>Limited investment choices</strong> — Only plan-approved funds</li>
@@ -250,7 +250,7 @@ export default function GoldIraVs401kPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <h4 className="font-bold text-green-700 mb-3">Gold IRA Advantages</h4>
                                     <ul className="space-y-2 text-sm text-green-600">
                                         <li>• <strong>Inflation hedge</strong> — Gold maintains purchasing power</li>
@@ -260,7 +260,7 @@ export default function GoldIraVs401kPage() {
                                         <li>• <strong>Tax-free rollover</strong> — Move 401(k) funds penalty-free</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                                     <h4 className="font-bold text-red-700 mb-3">Gold IRA Disadvantages</h4>
                                     <ul className="space-y-2 text-sm text-red-600">
                                         <li>• <strong>No employer matching</strong> — No free money</li>
@@ -333,7 +333,7 @@ export default function GoldIraVs401kPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-[#161828] border border-[#2A2D42] shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-[#D4A94E] flex items-center justify-center shrink-0">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -344,7 +344,7 @@ export default function GoldIraVs401kPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-[#161828] border border-[#2A2D42] shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-amber-100 text-[#D4A94E] flex items-center justify-center shrink-0">
                                         <Lock className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -462,28 +462,28 @@ export default function GoldIraVs401kPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You&apos;ve got an old 401(k) from a previous job</h4>
                                         <p className="text-sm text-green-600 mt-1">That money sitting with your old employer? You can roll it into a Gold IRA with zero taxes or penalties. Most people don&apos;t know this.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You&apos;re within 10-15 years of retirement</h4>
                                         <p className="text-sm text-green-600 mt-1">This is when protection matters most. A crash at 35 is something you can recover from. At 58? That could push your retirement back 5-7 years.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You remember 2008 (and don&apos;t want to live through it again)</h4>
                                         <p className="text-sm text-green-600 mt-1">If watching your 401(k) drop 40% gave you chest pains, gold is worth considering. It tends to go up when stocks go down.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">Your current 401(k) options are garbage</h4>

@@ -60,7 +60,7 @@ export default function ProtectRetirementPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
+        <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF] font-serif">
             {/* FAQ Schema */}
             <script
                 type="application/ld+json"
@@ -116,7 +116,7 @@ export default function ProtectRetirementPage() {
                         <LeadCaptureButton
                             variant="protect"
                             source="lp-protect-retirement-hero"
-                            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_10px_30px_rgba(197,149,46,0.28)] hover:shadow-[0_14px_40px_rgba(197,149,46,0.4)] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             See How to Protect Your Retirement
                             <ArrowRight className="h-6 w-6" />
@@ -143,7 +143,7 @@ export default function ProtectRetirementPage() {
             </section>
 
             {/* Warning Signs Section */}
-            <section className="py-16 bg-white font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         3 Warning Signs You Can&apos;t Ignore
@@ -205,7 +205,7 @@ export default function ProtectRetirementPage() {
                                 <div className="text-xl font-bold text-[#D0CCC4]">S&P 500</div>
                                 <p className="text-[#A8A39A] mt-2 text-sm">Stocks crashed, taking retirement accounts with them</p>
                             </div>
-                            <div className="p-8 text-center bg-green-50/50">
+                            <div className="p-8 text-center bg-[rgba(46,139,87,0.08)]/50">
                                 <Shield className="h-12 w-12 text-green-600 mx-auto mb-4" />
                                 <div className="text-5xl font-black text-green-600 mb-2">+25%</div>
                                 <div className="text-xl font-bold text-[#D0CCC4]">Gold</div>
@@ -232,7 +232,7 @@ export default function ProtectRetirementPage() {
             </section>
 
             {/* Augusta CTA Section */}
-            <section className="py-16 bg-white font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         Augusta: Our #1 Choice for Retirement Protection
@@ -301,7 +301,7 @@ export default function ProtectRetirementPage() {
                     <LeadCaptureButton
                         variant="protect"
                         source="lp-protect-retirement-footer"
-                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_14px_40px_rgba(197,149,46,0.32)] hover:scale-105 transition-transform uppercase font-sans border-2 border-[rgba(197,149,46,0.5)]"
                     >
                         Protect Your Retirement Now
                     </LeadCaptureButton>

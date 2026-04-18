@@ -93,7 +93,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function FIRECalculatorPage() {
   return (
-    <div className="min-h-screen bg-white text-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationSchema) }}
@@ -120,7 +120,7 @@ export default function FIRECalculatorPage() {
           />
         </Container>
       </section>
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/tools/fire-calculator" />
         </Container>

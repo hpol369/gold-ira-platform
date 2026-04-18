@@ -105,10 +105,10 @@ const iconMap: Record<string, LucideIcon> = {
 // Color classes for icons - Light theme
 const iconColorClasses: Record<IconColor, string> = {
   red: "text-red-600 bg-red-100",
-  amber: "text-amber-600 bg-amber-100",
+  amber: "text-[#D4A94E] bg-amber-100",
   green: "text-green-600 bg-green-100",
   blue: "text-blue-600 bg-blue-100",
-  purple: "text-purple-600 bg-purple-100",
+  purple: "text-[#D4A94E] bg-purple-100",
   slate: "text-[#D0CCC4] bg-[#121423]",
 };
 
@@ -166,7 +166,7 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
           <ul className="space-y-2 mb-4">
             {section.bullets.map((bullet, i) => (
               <li key={i} className="flex items-start gap-2 text-sm">
-                <ChevronRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                <ChevronRight className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <span
                   className="text-[#D0CCC4]"
                   dangerouslySetInnerHTML={{
@@ -207,12 +207,12 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
             className={cn(
               "p-4 rounded-lg border mb-4",
               section.callout.type === "warning"
-                ? "bg-amber-50 border-amber-200"
+                ? "bg-[#161828] border-[rgba(197,149,46,0.32)]"
                 : section.callout.type === "tip"
-                ? "bg-green-50 border-green-200"
+                ? "bg-[rgba(46,139,87,0.08)] border-[rgba(46,139,87,0.32)]"
                 : section.callout.type === "example"
                 ? "bg-purple-50 border-purple-200"
-                : "bg-blue-50 border-blue-200"
+                : "bg-[#121423] border-[rgba(59,130,246,0.32)]"
             )}
           >
             <p
@@ -320,7 +320,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={articleSchema} />
       <SchemaScript schema={faqSchema} />
@@ -378,7 +378,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
             <div className="max-w-4xl">
               <div className="bg-purple-50 border border-purple-200 rounded-xl p-6">
                 <div className="flex items-start gap-3">
-                  <Heart className="h-5 w-5 text-purple-600 flex-shrink-0 mt-1" />
+                  <Heart className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-1" />
                   <div>
                     <p className="text-purple-800 font-medium mb-1">
                       {article.emotionalNote.title}
@@ -395,7 +395,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
       )}
 
       {/* Main Content */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="lg:grid lg:grid-cols-[280px_1fr] lg:gap-12">
             {/* Sidebar - Table of Contents */}
@@ -416,7 +416,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
               {article.timeline && article.timeline.length > 0 && (
                 <div className="mb-12">
                   <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
-                    <Clock className="h-6 w-6 text-purple-600" />
+                    <Clock className="h-6 w-6 text-[#D4A94E]" />
                     Timeline of Action Items
                   </h2>
                   <div className="space-y-6">
@@ -426,7 +426,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
                         className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6"
                       >
                         <h3 className="font-bold text-[#F6F4EF] mb-4 flex items-center gap-2">
-                          <Calendar className="h-5 w-5 text-purple-600" />
+                          <Calendar className="h-5 w-5 text-[#D4A94E]" />
                           {period.period}
                         </h3>
                         <ul className="space-y-2">
@@ -476,7 +476,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
               {article.faqs.length > 0 && (
                 <section className="my-12">
                   <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
-                    <HelpCircle className="h-6 w-6 text-purple-600" />
+                    <HelpCircle className="h-6 w-6 text-[#D4A94E]" />
                     Frequently Asked Questions
                   </h2>
                   <div className="space-y-4">
@@ -506,7 +506,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
                         href={`/widow-guide/${related.slug}`}
                         className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] hover:border-purple-300 rounded-lg p-4 transition-all group"
                       >
-                        <h3 className="font-medium text-[#F6F4EF] group-hover:text-purple-600 transition-colors">
+                        <h3 className="font-medium text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                           {related.title}
                         </h3>
                         <p className="text-sm text-[#A8A39A] mt-1 line-clamp-2">

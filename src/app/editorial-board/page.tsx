@@ -58,7 +58,7 @@ const reviewChecklist = [
 
 export default function EditorialBoardPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={orgSchema} />
       <SchemaScript schema={breadcrumbs} />
@@ -73,7 +73,7 @@ export default function EditorialBoardPage() {
               <span className="text-[#D0CCC4]">Editorial Board</span>
             </nav>
 
-            <div className="inline-flex items-center gap-2 rounded-full bg-green-50 px-4 py-1.5 text-sm font-semibold text-green-700 mb-6 border border-green-200">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(46,139,87,0.08)] px-4 py-1.5 text-sm font-semibold text-green-700 mb-6 border border-green-200">
               <ShieldCheck className="h-4 w-4" />
               Trust &amp; Transparency
             </div>
@@ -126,7 +126,7 @@ export default function EditorialBoardPage() {
           {/* What We Check */}
           <section className="mb-12">
             <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-4">What We Verify</h2>
-            <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+            <div className="bg-[rgba(46,139,87,0.08)] rounded-xl p-6 border border-green-200">
               <ul className="space-y-3">
                 {reviewChecklist.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">

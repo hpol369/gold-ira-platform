@@ -88,7 +88,7 @@ const schema = {
 
 export default function SilverAllTimeHighPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
 
             {/* Header */}
@@ -212,7 +212,7 @@ export default function SilverAllTimeHighPage() {
                         {/* 2011 Story */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">2011: The Post-Crisis Rally</h2>
@@ -264,7 +264,7 @@ export default function SilverAllTimeHighPage() {
                         {/* Inflation Adjusted */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Inflation-Adjusted All-Time High</h2>
@@ -285,7 +285,7 @@ export default function SilverAllTimeHighPage() {
                                             <span className="text-green-700 font-bold">$180+</span>
                                         </div>
                                         <div className="w-full bg-[#121423] rounded-full h-3">
-                                            <div className="bg-green-500 h-3 rounded-full" style={{ width: '100%' }}></div>
+                                            <div className="bg-[rgba(46,139,87,0.08)]0 h-3 rounded-full" style={{ width: '100%' }}></div>
                                         </div>
                                     </div>
                                     <div>
@@ -348,8 +348,8 @@ export default function SilverAllTimeHighPage() {
                                 <div className="space-y-4">
                                     <div className="flex items-center gap-4">
                                         <span className="text-green-700 font-bold w-24">Aggressive</span>
-                                        <div className="flex-1 bg-green-500/20 rounded-full h-8 relative">
-                                            <div className="absolute inset-y-0 left-0 w-1/3 bg-green-500 rounded-full"></div>
+                                        <div className="flex-1 bg-[rgba(46,139,87,0.08)]0/20 rounded-full h-8 relative">
+                                            <div className="absolute inset-y-0 left-0 w-1/3 bg-[rgba(46,139,87,0.08)]0 rounded-full"></div>
                                             <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-[#F6F4EF]">2026-2027</span>
                                         </div>
                                     </div>

@@ -47,7 +47,7 @@ const companyData = {
 
 export default function PreferredTrustReviewPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Hero Section */}
@@ -121,7 +121,7 @@ export default function PreferredTrustReviewPage() {
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Clock className="w-5 h-5 text-purple-600" />
+                                        <Clock className="w-5 h-5 text-[#D4A94E]" />
                                         <div>
                                             <p className="text-[#A8A39A] text-sm">Years in Business</p>
                                             <p className="text-[#F6F4EF] font-medium">17+ years</p>
@@ -269,7 +269,7 @@ export default function PreferredTrustReviewPage() {
                                     <span className="text-[#F6F4EF]">Private Equity & LLCs</span>
                                 </div>
                                 <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
-                                    <Shield className="w-6 h-6 text-purple-600" />
+                                    <Shield className="w-6 h-6 text-[#D4A94E]" />
                                     <span className="text-[#F6F4EF]">Promissory Notes & Loans</span>
                                 </div>
                             </div>

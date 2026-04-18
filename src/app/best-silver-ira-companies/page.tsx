@@ -172,7 +172,7 @@ const faqs = [
 
 export default function BestSilverIraCompaniesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "Best Silver IRA Companies of 2026", description: "Compare the best Silver IRA companies. Analysis of silver selection, premiums, storage options, and fees.", slug: "/best-silver-ira-companies" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Best Silver IRA Companies", url: "/best-silver-ira-companies" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("best-silver-ira-companies"))} />
@@ -310,7 +310,7 @@ export default function BestSilverIraCompaniesPage() {
 
                                         {/* Strengths & Considerations */}
                                         <div className="grid md:grid-cols-2 gap-4 mb-8">
-                                            <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
+                                            <div className="bg-[rgba(46,139,87,0.08)]0/10 p-4 rounded-xl border border-green-500/20">
                                                 <h4 className="font-bold text-green-400 mb-2 flex items-center gap-2">
                                                     <CheckCircle2 className="w-4 h-4" /> Strengths
                                                 </h4>
@@ -481,7 +481,7 @@ export default function BestSilverIraCompaniesPage() {
                     </Container>
                 </section>
             </div>
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <FAQSection
                         faqs={getPageFAQs("best-silver-ira-companies")}
@@ -491,7 +491,7 @@ export default function BestSilverIraCompaniesPage() {
                     />
                 </Container>
             </section>
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/best-silver-ira-companies" />
                 </Container>

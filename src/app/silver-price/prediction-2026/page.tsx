@@ -128,7 +128,7 @@ const schema = {
 
 export default function SilverPrediction2026Page() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
 
             {/* Header */}
@@ -139,7 +139,7 @@ export default function SilverPrediction2026Page() {
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
                         <div className="flex items-center gap-3 mb-4">
-                            <span className="bg-red-500/20 text-red-700 text-xs font-bold px-3 py-1 rounded-full">HIGH VOLUME</span>
+                            <span className="bg-[rgba(220,38,38,0.08)]0/20 text-red-700 text-xs font-bold px-3 py-1 rounded-full">HIGH VOLUME</span>
                             <span className="text-[#D0CCC4] text-sm">1,700+ monthly searches</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
@@ -185,7 +185,7 @@ export default function SilverPrediction2026Page() {
                         {/* Bank Forecasts */}
                         <section id="bank-forecasts" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Major Bank Forecasts for 2026</h2>
@@ -211,7 +211,7 @@ export default function SilverPrediction2026Page() {
                                                 <td className="p-4 text-green-700 font-bold text-lg">{forecast.target}</td>
                                                 <td className="p-4">
                                                     <span className={`px-2 py-1 rounded text-xs font-bold ${
-                                                        forecast.confidence === 'High' ? 'bg-green-500/20 text-green-700' :
+                                                        forecast.confidence === 'High' ? 'bg-[rgba(46,139,87,0.08)]0/20 text-green-700' :
                                                         'bg-[rgba(220,38,38,0.18)] text-[#D4A94E]'
                                                     }`}>
                                                         {forecast.confidence}
@@ -255,8 +255,8 @@ export default function SilverPrediction2026Page() {
                                                     <div className="text-xs text-[#D0CCC4]">{analyst.timeframe}</div>
                                                 </div>
                                                 <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-                                                    analyst.stance === 'Extremely Bullish' ? 'bg-green-500/30 text-green-700' :
-                                                    analyst.stance === 'Very Bullish' ? 'bg-green-500/20 text-green-700' :
+                                                    analyst.stance === 'Extremely Bullish' ? 'bg-[rgba(46,139,87,0.08)]0/30 text-green-700' :
+                                                    analyst.stance === 'Very Bullish' ? 'bg-[rgba(46,139,87,0.08)]0/20 text-green-700' :
                                                     'bg-emerald-500/20 text-emerald-400'
                                                 }`}>
                                                     {analyst.stance}
@@ -278,7 +278,7 @@ export default function SilverPrediction2026Page() {
                         {/* Bullish Case */}
                         <section id="bullish-case" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Bullish Case: Why Silver Could Soar</h2>
@@ -288,7 +288,7 @@ export default function SilverPrediction2026Page() {
                             </p>
 
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-4">
-                                <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-6 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3">Industrial Demand Explosion</h4>
                                     <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                         <li>Solar panel demand growing 25%+ annually</li>
@@ -297,7 +297,7 @@ export default function SilverPrediction2026Page() {
                                         <li>AI data centers need silver for conductivity</li>
                                     </ul>
                                 </div>
-                                <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-6 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3">Supply Constraints</h4>
                                     <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                         <li>Mine production has plateaued since 2016</li>
@@ -306,7 +306,7 @@ export default function SilverPrediction2026Page() {
                                         <li>Primary silver mines increasingly rare</li>
                                     </ul>
                                 </div>
-                                <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-6 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3">Monetary Factors</h4>
                                     <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                         <li>Fed rate cuts expected in 2026</li>
@@ -315,7 +315,7 @@ export default function SilverPrediction2026Page() {
                                         <li>De-dollarization accelerating globally</li>
                                     </ul>
                                 </div>
-                                <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-6 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3">Technical Breakout</h4>
                                     <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                         <li>Multi-year cup-and-handle formation</li>
@@ -330,7 +330,7 @@ export default function SilverPrediction2026Page() {
                         {/* Bearish Case */}
                         <section id="bearish-case" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Bearish Case: What Could Go Wrong</h2>
@@ -340,7 +340,7 @@ export default function SilverPrediction2026Page() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Fed Stays Hawkish</h4>
@@ -412,9 +412,9 @@ export default function SilverPrediction2026Page() {
                                                         <div className="w-20 bg-[#121423] rounded-full h-2">
                                                             <div
                                                                 className={`h-2 rounded-full ${
-                                                                    scenario.scenario === 'Bear Case' ? 'bg-red-500' :
+                                                                    scenario.scenario === 'Bear Case' ? 'bg-[rgba(220,38,38,0.08)]0' :
                                                                     scenario.scenario === 'Base Case' ? 'bg-[#DC2626]' :
-                                                                    scenario.scenario === 'Bull Case' ? 'bg-green-500' :
+                                                                    scenario.scenario === 'Bull Case' ? 'bg-[rgba(46,139,87,0.08)]0' :
                                                                     'bg-emerald-500'
                                                                 }`}
                                                                 style={{ width: scenario.probability }}
@@ -441,11 +441,11 @@ export default function SilverPrediction2026Page() {
                                     </div>
                                     <div className="ml-12 h-full relative">
                                         {/* Bear path */}
-                                        <div className="absolute bottom-1/4 left-0 right-0 h-0.5 bg-red-500/50" style={{ transform: 'rotate(5deg)' }}></div>
+                                        <div className="absolute bottom-1/4 left-0 right-0 h-0.5 bg-[rgba(220,38,38,0.08)]0/50" style={{ transform: 'rotate(5deg)' }}></div>
                                         {/* Base path */}
                                         <div className="absolute bottom-1/3 left-0 right-0 h-0.5 bg-[rgba(220,38,38,0.06)]0" style={{ transform: 'rotate(-10deg)' }}></div>
                                         {/* Bull path */}
-                                        <div className="absolute bottom-1/2 left-0 right-0 h-0.5 bg-green-500/50" style={{ transform: 'rotate(-15deg)' }}></div>
+                                        <div className="absolute bottom-1/2 left-0 right-0 h-0.5 bg-[rgba(46,139,87,0.08)]0/50" style={{ transform: 'rotate(-15deg)' }}></div>
                                         {/* Moonshot path */}
                                         <div className="absolute bottom-2/3 left-0 right-0 h-0.5 bg-emerald-500/50" style={{ transform: 'rotate(-25deg)' }}></div>
                                         {/* Current price marker */}
@@ -458,9 +458,9 @@ export default function SilverPrediction2026Page() {
                                     </div>
                                 </div>
                                 <div className="flex flex-wrap gap-4 mt-4 text-xs">
-                                    <div className="flex items-center gap-2"><span className="w-3 h-3 bg-red-500 rounded-full"></span> Bear Case</div>
+                                    <div className="flex items-center gap-2"><span className="w-3 h-3 bg-[rgba(220,38,38,0.08)]0 rounded-full"></span> Bear Case</div>
                                     <div className="flex items-center gap-2"><span className="w-3 h-3 bg-[#DC2626] rounded-full"></span> Base Case</div>
-                                    <div className="flex items-center gap-2"><span className="w-3 h-3 bg-green-500 rounded-full"></span> Bull Case</div>
+                                    <div className="flex items-center gap-2"><span className="w-3 h-3 bg-[rgba(46,139,87,0.08)]0 rounded-full"></span> Bull Case</div>
                                     <div className="flex items-center gap-2"><span className="w-3 h-3 bg-emerald-500 rounded-full"></span> Moonshot</div>
                                 </div>
                             </div>

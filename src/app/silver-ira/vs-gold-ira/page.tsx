@@ -252,7 +252,7 @@ const faqJsonLd = {
 
 export default function SilverVsGoldIraPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -331,7 +331,7 @@ export default function SilverVsGoldIraPage() {
             </section>
 
             {/* Advantages Sections */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="grid md:grid-cols-2 gap-8">
@@ -416,7 +416,7 @@ export default function SilverVsGoldIraPage() {
             </section>
 
             {/* Allocation Strategies */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-4">Recommended Allocation Strategies</h2>
@@ -432,9 +432,9 @@ export default function SilverVsGoldIraPage() {
                                             <div className="flex items-center gap-3 mb-2">
                                                 <h3 className="font-bold text-[#F6F4EF]">{item.strategy}</h3>
                                                 <span className={`px-2 py-0.5 rounded text-xs font-bold ${
-                                                    item.riskLevel === 'Lower' ? 'bg-green-500/20 text-green-700' :
+                                                    item.riskLevel === 'Lower' ? 'bg-[rgba(46,139,87,0.08)]0/20 text-green-700' :
                                                     item.riskLevel === 'Moderate' ? 'bg-[rgba(220,38,38,0.18)] text-[#D4A94E]' :
-                                                    item.riskLevel === 'Higher' ? 'bg-red-500/20 text-red-700' :
+                                                    item.riskLevel === 'Higher' ? 'bg-[rgba(220,38,38,0.08)]0/20 text-red-700' :
                                                     'bg-purple-500/20 text-purple-700'
                                                 }`}>
                                                     {item.riskLevel} Risk
@@ -493,7 +493,7 @@ export default function SilverVsGoldIraPage() {
             </section>
 
             {/* Mid-page CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center bg-[#161828] rounded-2xl p-8 border border-[#2A2D42]">
                         <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">Not Sure What Mix Is Right for You?</h2>
@@ -535,7 +535,7 @@ export default function SilverVsGoldIraPage() {
             </section>
 
             {/* Related Pages */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">Continue Your Research</h2>
                     <div className="grid md:grid-cols-3 gap-6">

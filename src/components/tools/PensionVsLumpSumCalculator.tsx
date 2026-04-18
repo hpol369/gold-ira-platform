@@ -197,7 +197,7 @@ export function PensionVsLumpSumCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-blue-500/20 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-blue-500/30">
+        <div className="inline-flex items-center gap-2 bg-[#121423]0/20 text-blue-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-blue-500/30">
           <Scale className="h-4 w-4" />
           Pension Decision Calculator
         </div>
@@ -215,7 +215,7 @@ export function PensionVsLumpSumCalculator() {
           {/* Pension Details */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <DollarSign className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Pension Details</h3>
@@ -276,7 +276,7 @@ export function PensionVsLumpSumCalculator() {
                   step="0.5"
                   value={colaPension}
                   onChange={(e) => setColaPension(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>0% (No COLA)</span>
@@ -290,7 +290,7 @@ export function PensionVsLumpSumCalculator() {
           {/* Personal Info */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <Calendar className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Personal Information</h3>
@@ -352,7 +352,7 @@ export function PensionVsLumpSumCalculator() {
           {/* Survivor Benefits */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <Users className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Survivor Benefits</h3>
@@ -425,7 +425,7 @@ export function PensionVsLumpSumCalculator() {
                   step="0.5"
                   value={expectedReturn}
                   onChange={(e) => setExpectedReturn(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Conservative (2%)</span>
@@ -445,7 +445,7 @@ export function PensionVsLumpSumCalculator() {
                   step="0.5"
                   value={inflationRate}
                   onChange={(e) => setInflationRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
             </div>
@@ -457,10 +457,10 @@ export function PensionVsLumpSumCalculator() {
           {/* Recommendation */}
           <div className={`rounded-xl p-6 border ${
             calculations.recommendation === "pension"
-              ? 'bg-blue-500/20 border-blue-500/30'
+              ? 'bg-[#121423]0/20 border-blue-500/30'
               : calculations.recommendation === "lumpsum"
               ? 'bg-[rgba(220,38,38,0.1)] border-[#B22234]/30'
-              : 'bg-purple-500/20 border-purple-500/30'
+              : 'bg-purple-500/20 border-[rgba(197,149,46,0.32)]'
           }`}>
             <div className="flex items-center gap-3 mb-4">
               {calculations.recommendation === "pension" ? (
@@ -540,7 +540,7 @@ export function PensionVsLumpSumCalculator() {
                 </div>
                 <div className="w-full bg-[#121423] rounded-full h-3">
                   <div
-                    className="h-full bg-blue-500 rounded-full"
+                    className="h-full bg-[#121423]0 rounded-full"
                     style={{ width: `${Math.min(100, (calculations.pensionPV / Math.max(calculations.pensionPV, lumpSumOffer)) * 100)}%` }}
                   />
                 </div>
@@ -555,7 +555,7 @@ export function PensionVsLumpSumCalculator() {
                 </div>
                 <div className="w-full bg-[#121423] rounded-full h-3">
                   <div
-                    className="h-full bg-amber-500 rounded-full"
+                    className="h-full bg-[#161828]0 rounded-full"
                     style={{ width: `${Math.min(100, (lumpSumOffer / Math.max(calculations.pensionPV, lumpSumOffer)) * 100)}%` }}
                   />
                 </div>

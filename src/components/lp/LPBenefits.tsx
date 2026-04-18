@@ -66,8 +66,8 @@ export function LPBenefits({ headline, benefits, className }: LPBenefitsProps) {
                   "transition-all duration-300"
                 )}
               >
-                <div className="h-12 w-12 rounded-lg bg-amber-500/20 flex items-center justify-center mb-4">
-                  <Icon className="h-6 w-6 text-amber-400" />
+                <div className="h-12 w-12 rounded-lg bg-[#161828]0/20 flex items-center justify-center mb-4">
+                  <Icon className="h-6 w-6 text-[#D4A94E]" />
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">
                   {benefit.title}

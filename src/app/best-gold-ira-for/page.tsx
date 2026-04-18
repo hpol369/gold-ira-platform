@@ -70,7 +70,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function BestGoldIRAForPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       {/* Hero Section */}
@@ -93,7 +93,7 @@ export default function BestGoldIRAForPage() {
       </section>
 
       {/* Categories */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto space-y-12">
             {audienceCategories.map((category) => {
@@ -163,7 +163,7 @@ export default function BestGoldIRAForPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

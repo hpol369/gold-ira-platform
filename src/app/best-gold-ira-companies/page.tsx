@@ -27,7 +27,7 @@ export const metadata = {
 
 export default function BestGoldIraCompaniesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "Best Gold IRA Companies of 2026", description: "Objective comparison of the top Gold IRA companies. Fees, minimums, ratings, and customer reviews analyzed.", slug: "/best-gold-ira-companies" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Best Gold IRA Companies", url: "/best-gold-ira-companies" }])} />
             <SchemaScript schema={faqSchema(getPageFAQs("best-gold-ira-companies"))} />
@@ -51,7 +51,7 @@ export default function BestGoldIraCompaniesPage() {
                 <header className="bg-[#0C0D18] text-[#F6F4EF] py-20 relative overflow-hidden">
                     <div className="absolute inset-0 pointer-events-none">
                         <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[rgba(220,38,38,0.06)] rounded-full blur-[150px]" />
-                        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-slate-300/20 rounded-full blur-[100px]" />
+                        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#3F4460]/20 rounded-full blur-[100px]" />
                     </div>
                     <Container className="relative z-10 text-center">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[rgba(220,38,38,0.1)] border border-[#B22234]/20 text-[#D4A94E] text-sm font-semibold mb-6">
@@ -125,7 +125,7 @@ export default function BestGoldIraCompaniesPage() {
                                         </div>
                                     </div>
                                     <div className="grid md:grid-cols-2 gap-4 mb-8">
-                                        <div className="bg-green-50 p-4 rounded-xl border border-green-200">
+                                        <div className="bg-[rgba(46,139,87,0.08)] p-4 rounded-xl border border-green-200">
                                             <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Why People Trust Them</h4>
                                             <ul className="text-sm space-y-1 text-[#A8A39A]">
                                                 <li>- They explain things without jargon</li>
@@ -133,7 +133,7 @@ export default function BestGoldIraCompaniesPage() {
                                                 <li>- No pressure to decide today</li>
                                             </ul>
                                         </div>
-                                        <div className="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                                        <div className="bg-[#161828] p-4 rounded-xl border border-amber-200">
                                             <h4 className="font-bold text-amber-700 mb-2 flex items-center gap-2">Good to Know</h4>
                                             <ul className="text-sm space-y-1 text-[#A8A39A]">
                                                 <li>- Need at least <span className="whitespace-nowrap">$50,000</span> to work with them</li>
@@ -184,7 +184,7 @@ export default function BestGoldIraCompaniesPage() {
                                         </div>
                                     </div>
                                     <div className="grid md:grid-cols-2 gap-4 mb-8">
-                                        <div className="bg-green-50 p-4 rounded-xl border border-green-200">
+                                        <div className="bg-[rgba(46,139,87,0.08)] p-4 rounded-xl border border-green-200">
                                             <h4 className="font-bold text-green-700 mb-2 flex items-center gap-2"><CheckCircle2 className="w-4 h-4" /> Why People Trust Them</h4>
                                             <ul className="text-sm space-y-1 text-[#A8A39A]">
                                                 <li>- No $50k minimum to get started</li>
@@ -192,7 +192,7 @@ export default function BestGoldIraCompaniesPage() {
                                                 <li>- Storage in Texas (closer to home for some)</li>
                                             </ul>
                                         </div>
-                                        <div className="bg-amber-50 p-4 rounded-xl border border-amber-200">
+                                        <div className="bg-[#161828] p-4 rounded-xl border border-amber-200">
                                             <h4 className="font-bold text-amber-700 mb-2 flex items-center gap-2">Good to Know</h4>
                                             <ul className="text-sm space-y-1 text-[#A8A39A]">
                                                 <li>- Fees are flat, so smaller accounts pay more %</li>
@@ -321,7 +321,7 @@ export default function BestGoldIraCompaniesPage() {
                     </Container>
                 </section>
             </div>
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <FAQSection
                         faqs={getPageFAQs("best-gold-ira-companies")}
@@ -331,7 +331,7 @@ export default function BestGoldIraCompaniesPage() {
                     />
                 </Container>
             </section>
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container className="max-w-4xl">
                     <SourcesSection
                         sources={[
@@ -343,7 +343,7 @@ export default function BestGoldIraCompaniesPage() {
                     />
                 </Container>
             </section>
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/best-gold-ira-companies" />
                 </Container>

@@ -59,7 +59,7 @@ export default function Robs401kRulesPage() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
             />
 
-            <main className="min-h-screen bg-white">
+            <main className="min-h-screen bg-[#0C0D18]">
                 {/* Hero Section */}
                 <section className="relative py-12 lg:py-16 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-[#0C0D18] via-white to-[#161828]" />
@@ -76,7 +76,7 @@ export default function Robs401kRulesPage() {
                         </nav>
 
                         <div className="max-w-4xl">
-                            <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/20 rounded-full px-4 py-2 mb-6">
+                            <div className="inline-flex items-center gap-2 bg-[rgba(183,121,31,0.08)]0/10 border border-orange-500/20 rounded-full px-4 py-2 mb-6">
                                 <Scale className="w-4 h-4 text-orange-400" />
                                 <span className="text-orange-400 text-sm font-medium">IRS Compliance Guide</span>
                             </div>
@@ -198,7 +198,7 @@ export default function Robs401kRulesPage() {
                 </section>
 
                 {/* Prohibited Transactions */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-4 text-center">
@@ -208,7 +208,7 @@ export default function Robs401kRulesPage() {
                                 These are the things that get people audited and penalized. Some seem like common sense; others trip up people who don't know the rules. Do any of these, and you could lose the tax benefits on your entire 401k.
                             </p>
 
-                            <div className="bg-red-500/5 border border-red-500/20 rounded-2xl p-8">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/5 border border-red-500/20 rounded-2xl p-8">
                                 <h3 className="text-xl font-bold text-red-700 mb-6 flex items-center gap-2">
                                     <AlertTriangle className="w-6 h-6" />
                                     You CANNOT Do These Things
@@ -273,7 +273,7 @@ export default function Robs401kRulesPage() {
                                 you can use them for legitimate business purposes.
                             </p>
 
-                            <div className="bg-green-500/5 border border-green-500/20 rounded-2xl p-8">
+                            <div className="bg-[rgba(46,139,87,0.08)]0/5 border border-green-500/20 rounded-2xl p-8">
                                 <h3 className="text-xl font-bold text-green-700 mb-6 flex items-center gap-2">
                                     <CheckCircle2 className="w-6 h-6" />
                                     Legitimate Business Uses
@@ -306,7 +306,7 @@ export default function Robs401kRulesPage() {
                 </section>
 
                 {/* Ongoing Compliance */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
@@ -401,7 +401,7 @@ export default function Robs401kRulesPage() {
                                     <div key={index} className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
                                         <div className="flex items-center gap-2 mb-3">
                                             <span className={`text-xs font-bold px-2 py-1 rounded ${item.severity === 'Severe'
-                                                    ? 'bg-red-500/20 text-red-700'
+                                                    ? 'bg-[rgba(220,38,38,0.08)]0/20 text-red-700'
                                                     : 'bg-yellow-500/20 text-yellow-400'
                                                 }`}>
                                                 {item.severity}
@@ -417,7 +417,7 @@ export default function Robs401kRulesPage() {
                 </section>
 
                 {/* Why Professional Help */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
                             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">

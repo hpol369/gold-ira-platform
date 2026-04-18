@@ -152,7 +152,7 @@ const faqJsonLd = {
 
 export default function SilverIraRolloverPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -282,12 +282,12 @@ export default function SilverIraRolloverPage() {
                             {rolloverTypes.map((type) => (
                                 <div
                                     key={type.type}
-                                    className={`rounded-xl p-6 border ${type.recommended ? 'bg-green-500/10 border-green-500/30' : 'bg-[#0C0D18] border-[#2A2D42]'}`}
+                                    className={`rounded-xl p-6 border ${type.recommended ? 'bg-[rgba(46,139,87,0.08)]0/10 border-green-500/30' : 'bg-[#0C0D18] border-[#2A2D42]'}`}
                                 >
                                     <div className="flex items-center gap-3 mb-4">
                                         <h3 className="text-xl font-bold text-[#F6F4EF]">{type.type}</h3>
                                         {type.recommended && (
-                                            <span className="px-2 py-1 bg-green-500 text-[#F6F4EF] text-xs font-bold rounded">
+                                            <span className="px-2 py-1 bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] text-xs font-bold rounded">
                                                 RECOMMENDED
                                             </span>
                                         )}
@@ -322,7 +322,7 @@ export default function SilverIraRolloverPage() {
                             ))}
                         </div>
 
-                        <div className="mt-8 bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <div className="mt-8 bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-xl p-6">
                             <div className="flex items-start gap-4">
                                 <AlertTriangle className="h-6 w-6 text-red-700 flex-shrink-0 mt-1" />
                                 <div>
@@ -340,7 +340,7 @@ export default function SilverIraRolloverPage() {
             </section>
 
             {/* Eligible Accounts */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-4">Accounts Eligible for Silver IRA Rollover</h2>
@@ -391,7 +391,7 @@ export default function SilverIraRolloverPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">Silver IRA Rollover FAQs</h2>
@@ -437,7 +437,7 @@ export default function SilverIraRolloverPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

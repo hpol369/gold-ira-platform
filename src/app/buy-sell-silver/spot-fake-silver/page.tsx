@@ -229,7 +229,7 @@ const schema = {
 
 export default function SpotFakeSilverPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -247,7 +247,7 @@ export default function SpotFakeSilverPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
               <Search className="h-4 w-4" />
               110 MONTHLY SEARCHES - DIFF 0
             </div>
@@ -281,7 +281,7 @@ export default function SpotFakeSilverPage() {
       </section>
 
       {/* Visual Checks */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4 flex items-center justify-center gap-2">
@@ -298,7 +298,7 @@ export default function SpotFakeSilverPage() {
                 return (
                   <div key={index} className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                      <div className="w-10 h-10 bg-[#121423]0/20 rounded-lg flex items-center justify-center">
                         <Icon className="h-5 w-5 text-blue-400" />
                       </div>
                       <h3 className="text-lg font-bold text-[#F6F4EF]">{item.check}</h3>
@@ -309,7 +309,7 @@ export default function SpotFakeSilverPage() {
                         <span className="text-green-400 font-semibold text-sm">What to Look For: </span>
                         <span className="text-[#D0CCC4] text-sm">{item.whatToLook}</span>
                       </div>
-                      <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3">
+                      <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-lg p-3">
                         <span className="text-red-400 font-semibold text-sm">Red Flag: </span>
                         <span className="text-[#D0CCC4] text-sm">{item.redFlag}</span>
                       </div>
@@ -388,7 +388,7 @@ export default function SpotFakeSilverPage() {
       </section>
 
       {/* Common Fakes */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8 flex items-center justify-center gap-2">
@@ -403,9 +403,9 @@ export default function SpotFakeSilverPage() {
                       <div className="flex items-center gap-3 mb-2">
                         <h3 className="text-lg font-bold text-[#F6F4EF]">{fake.type}</h3>
                         <span className={`text-xs px-2 py-1 rounded ${
-                          fake.prevalence === "Very Common" ? "bg-red-500/20 text-red-400" :
+                          fake.prevalence === "Very Common" ? "bg-[rgba(220,38,38,0.08)]0/20 text-red-400" :
                           fake.prevalence === "Common" || fake.prevalence === "Common Online" ? "bg-[rgba(220,38,38,0.18)] text-[#D4A94E]" :
-                          "bg-blue-500/20 text-blue-400"
+                          "bg-[#121423]0/20 text-blue-400"
                         }`}>
                           {fake.prevalence}
                         </span>
@@ -432,7 +432,7 @@ export default function SpotFakeSilverPage() {
               <Shield className="h-6 w-6 text-green-400" />
               Smart Buying Tips
             </h2>
-            <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-8">
+            <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-8">
               <ul className="grid md:grid-cols-2 gap-4">
                 {buyingTips.map((tip, index) => (
                   <li key={index} className="flex items-start gap-3 text-[#D0CCC4]">
@@ -447,7 +447,7 @@ export default function SpotFakeSilverPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -499,7 +499,7 @@ export default function SpotFakeSilverPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function PatriotGoldKitPage() {
     return (
-        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
+        <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF] font-serif">
             {/* Top Warning Bar */}
             <div className="bg-[#DC2626] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
                 <span className="flex items-center justify-center gap-2">
@@ -47,7 +47,7 @@ export default function PatriotGoldKitPage() {
                         <LeadCaptureButton
                             variant="default"
                             source="lp-us-gold-kit-hero"
-                            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_10px_30px_rgba(197,149,46,0.28)] hover:shadow-[0_14px_40px_rgba(197,149,46,0.4)] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get Your Free Gold Kit
                             <ArrowRight className="h-8 w-8" />
@@ -75,7 +75,7 @@ export default function PatriotGoldKitPage() {
             </section>
 
             {/* Global Instability Section */}
-            <section className="py-12 bg-red-50 border-y border-red-200 font-sans">
+            <section className="py-12 bg-[rgba(220,38,38,0.08)] border-y border-red-200 font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-2xl font-bold text-[#D4A94E] text-center mb-6 font-serif">2026: A World on Edge</h2>
                     <div className="grid md:grid-cols-3 gap-4 text-center">
@@ -96,13 +96,13 @@ export default function PatriotGoldKitPage() {
                         </div>
                     </div>
                     <p className="text-center mt-6 text-[#D0CCC4] font-semibold">
-                        When the world gets chaotic, smart money moves to <span className="text-amber-600">gold</span>.
+                        When the world gets chaotic, smart money moves to <span className="text-[#D4A94E]">gold</span>.
                     </p>
                 </div>
             </section>
 
             {/* The Warning Content */}
-            <section className="py-16 bg-white font-sans text-lg md:text-xl leading-relaxed text-[#F6F4EF]">
+            <section className="py-16 bg-[#0C0D18] font-sans text-lg md:text-xl leading-relaxed text-[#F6F4EF]">
                 <div className="max-w-3xl mx-auto px-4 prose prose-slate prose-lg">
                     <h2 className="text-3xl font-bold text-[#F6F4EF] font-serif">$38.45 Trillion in Debt. Who Pays?</h2>
                     <p>
@@ -141,7 +141,7 @@ export default function PatriotGoldKitPage() {
                     <LeadCaptureButton
                         variant="default"
                         source="lp-us-gold-kit-footer"
-                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_14px_40px_rgba(197,149,46,0.32)] hover:scale-105 transition-transform uppercase font-sans border-2 border-[rgba(197,149,46,0.5)]"
                     >
                         Send Me The Free Guide
                     </LeadCaptureButton>

@@ -196,7 +196,7 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function ComparisonPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <SchemaScript schema={faqSchema} />
             <Navbar />
@@ -298,7 +298,7 @@ export default function ComparisonPage() {
                         </div>
 
                         {/* Best for Beginners */}
-                        <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/10 border border-purple-500/30 rounded-xl p-6">
+                        <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/10 border border-[rgba(197,149,46,0.32)] rounded-xl p-6">
                             <div className="flex items-center gap-2 text-purple-700 font-semibold text-sm mb-4">
                                 <Users className="w-5 h-5" />
                                 BEST FOR BEGINNERS

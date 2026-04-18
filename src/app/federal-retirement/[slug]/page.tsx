@@ -83,10 +83,10 @@ const iconMap: Record<string, LucideIcon> = {
 // Color classes for icons
 const iconColorClasses: Record<IconColor, string> = {
   red: "text-red-600 bg-red-100",
-  amber: "text-amber-600 bg-amber-100",
+  amber: "text-[#D4A94E] bg-amber-100",
   green: "text-green-600 bg-green-100",
   blue: "text-blue-600 bg-blue-100",
-  purple: "text-purple-600 bg-purple-100",
+  purple: "text-[#D4A94E] bg-purple-100",
   slate: "text-[#D0CCC4] bg-[#121423]",
 };
 
@@ -193,11 +193,11 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
             className={cn(
               "p-4 rounded-lg border mb-4",
               section.callout.type === "warning"
-                ? "bg-amber-50 border-amber-200"
+                ? "bg-[#161828] border-[rgba(197,149,46,0.32)]"
                 : section.callout.type === "tip"
-                ? "bg-green-50 border-green-200"
+                ? "bg-[rgba(46,139,87,0.08)] border-[rgba(46,139,87,0.32)]"
                 : section.callout.type === "example"
-                ? "bg-blue-50 border-blue-200"
+                ? "bg-[#121423] border-[rgba(59,130,246,0.32)]"
                 : "bg-[#0C0D18] border-[#2A2D42]"
             )}
           >
@@ -272,7 +272,7 @@ export default async function FederalRetirementArticlePage({ params }: PageProps
   const answerFirstText = article.metaDescription;
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <TrustBar updateDate="2026-03-20" />
 
@@ -297,7 +297,7 @@ export default async function FederalRetirementArticlePage({ params }: PageProps
       <header className="bg-[#0C0D18] py-20 border-b border-[#2A2D42]">
         <Container>
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1.5 text-sm font-semibold text-blue-700 mb-6 border border-blue-200">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#121423] px-4 py-1.5 text-sm font-semibold text-blue-700 mb-6 border border-blue-200">
               <Building2 className="h-4 w-4" />
               Federal Retirement Guide
             </div>
@@ -453,7 +453,7 @@ export default async function FederalRetirementArticlePage({ params }: PageProps
         trackSource={`federal-retirement-${slug}`}
       />
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl={`/federal-retirement/${slug}`} />
         </Container>

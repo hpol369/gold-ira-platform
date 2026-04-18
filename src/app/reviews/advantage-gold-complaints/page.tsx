@@ -55,13 +55,13 @@ const schema = {
 
 export default function AdvantageGoldComplaintsPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-[rgba(197,149,46,0.1)] text-white py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[#000060]/50" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-green-500/20 border border-green-500/30 text-sm font-semibold text-green-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 text-sm font-semibold text-green-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <ShieldCheck className="w-4 h-4" /> Complaint Investigation
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
@@ -164,14 +164,14 @@ export default function AdvantageGoldComplaintsPage() {
                             <h2>Common Issues Reported</h2>
                             <div className="not-prose space-y-4 my-6">
                                 <div className="flex gap-4 p-4 bg-[#0C0D18] rounded-lg border border-[#2A2D42]">
-                                    <AlertTriangle className="w-6 h-6 text-amber-500 shrink-0" />
+                                    <AlertTriangle className="w-6 h-6 text-[#D4A94E] shrink-0" />
                                     <div>
                                         <h4 className="font-bold text-[#F6F4EF]">Premium Coins vs Bullion</h4>
                                         <p className="text-[#D0CCC4] text-sm">Some customers felt pushed towards &quot;premium&quot; coins with higher markups. <strong>Tip:</strong> Always ask for standard bullion if you want lowest premiums.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4 p-4 bg-[#0C0D18] rounded-lg border border-[#2A2D42]">
-                                    <Clock className="w-6 h-6 text-amber-500 shrink-0" />
+                                    <Clock className="w-6 h-6 text-[#D4A94E] shrink-0" />
                                     <div>
                                         <h4 className="font-bold text-[#F6F4EF]">Rollover Delays</h4>
                                         <p className="text-[#D0CCC4] text-sm">Some rollovers took 3+ weeks. This is usually the fault of the OLD custodian, not Advantage Gold.</p>

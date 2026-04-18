@@ -22,7 +22,7 @@ export function DeepWhySection() {
         >
           {/* Section Label */}
           <div className="text-center mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-amber-50 border border-amber-100 rounded-full text-amber-700 text-sm font-bold">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#161828] border border-amber-100 rounded-full text-amber-700 text-sm font-bold">
               <Heart className="h-4 w-4 fill-amber-700" />
               Why We Do This
             </span>
@@ -77,22 +77,22 @@ export function DeepWhySection() {
             {/* Values */}
             <div className="grid md:grid-cols-3 gap-8 mt-12 pt-10 border-t border-[#2A2D42]">
               <div className="text-center group">
-                <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-100 transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-[#121423] flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-100 transition-colors">
                   <Shield className="h-6 w-6 text-blue-600" />
                 </div>
                 <h4 className="font-bold text-[#F6F4EF] mb-2 text-lg">Education First</h4>
                 <p className="text-sm text-[#A8A39A] font-medium">We teach, we don't sell. Your decision should be informed, not pressured.</p>
               </div>
               <div className="text-center group">
-                <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mx-auto mb-4 group-hover:bg-green-100 transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-[rgba(46,139,87,0.08)] flex items-center justify-center mx-auto mb-4 group-hover:bg-green-100 transition-colors">
                   <Users className="h-6 w-6 text-green-600" />
                 </div>
                 <h4 className="font-bold text-[#F6F4EF] mb-2 text-lg">For Regular People</h4>
                 <p className="text-sm text-[#A8A39A] font-medium">We write for hardworking Americans, not Wall Street insiders.</p>
               </div>
               <div className="text-center group">
-                <div className="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-100 transition-colors">
-                  <Heart className="h-6 w-6 text-amber-600" />
+                <div className="w-12 h-12 rounded-xl bg-[#161828] flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-100 transition-colors">
+                  <Heart className="h-6 w-6 text-[#D4A94E]" />
                 </div>
                 <h4 className="font-bold text-[#F6F4EF] mb-2 text-lg">Your Interests First</h4>
                 <p className="text-sm text-[#A8A39A] font-medium">We only recommend companies we'd trust with our own family's retirement.</p>

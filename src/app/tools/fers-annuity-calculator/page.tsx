@@ -126,7 +126,7 @@ const faqSchema = {
 
 export default function FERSAnnuityCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -135,7 +135,7 @@ export default function FERSAnnuityCalculatorPage() {
       <FERSAnnuityCalculator />
 
       {/* Formula Reference */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -150,7 +150,7 @@ export default function FERSAnnuityCalculatorPage() {
                     className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
@@ -178,7 +178,7 @@ export default function FERSAnnuityCalculatorPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/20 rounded-xl flex items-center justify-center">
                 <CheckCircle2 className="h-6 w-6 text-green-600" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
@@ -197,25 +197,25 @@ export default function FERSAnnuityCalculatorPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5">
-                  <tr className="bg-green-500/5">
+                  <tr className="bg-[rgba(46,139,87,0.08)]0/5">
                     <td className="py-3 px-4 text-[#F6F4EF] font-medium">Immediate (MRA+30)</td>
                     <td className="py-3 px-4 text-[#D0CCC4]">MRA (56-57)</td>
                     <td className="py-3 px-4 text-[#D0CCC4]">30+ years</td>
                     <td className="py-3 px-4 text-green-600">None</td>
                   </tr>
-                  <tr className="bg-green-500/5">
+                  <tr className="bg-[rgba(46,139,87,0.08)]0/5">
                     <td className="py-3 px-4 text-[#F6F4EF] font-medium">Immediate (60+20)</td>
                     <td className="py-3 px-4 text-[#D0CCC4]">60+</td>
                     <td className="py-3 px-4 text-[#D0CCC4]">20+ years</td>
                     <td className="py-3 px-4 text-green-600">None</td>
                   </tr>
-                  <tr className="bg-blue-500/5">
+                  <tr className="bg-[#121423]0/5">
                     <td className="py-3 px-4 text-[#F6F4EF] font-medium">Immediate (62+5)</td>
                     <td className="py-3 px-4 text-[#D0CCC4]">62+</td>
                     <td className="py-3 px-4 text-[#D0CCC4]">5+ years</td>
                     <td className="py-3 px-4 text-blue-600">None (1.1% multiplier!)</td>
                   </tr>
-                  <tr className="bg-amber-500/5">
+                  <tr className="bg-[#161828]0/5">
                     <td className="py-3 px-4 text-[#F6F4EF] font-medium">MRA+10 (Early)</td>
                     <td className="py-3 px-4 text-[#D0CCC4]">MRA (56-57)</td>
                     <td className="py-3 px-4 text-[#D0CCC4]">10+ years</td>
@@ -231,7 +231,7 @@ export default function FERSAnnuityCalculatorPage() {
               </table>
             </div>
 
-            <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <div className="mt-6 bg-[#121423] border border-blue-200 rounded-lg p-4">
               <p className="text-blue-600 text-sm">
                 <strong>Note:</strong> Your Minimum Retirement Age (MRA) depends on your birth year.
                 For those born in 1970 or later, the MRA is 57. Earlier birth years have MRAs between 55-57.
@@ -242,7 +242,7 @@ export default function FERSAnnuityCalculatorPage() {
       </section>
 
       {/* COLA Information */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -330,7 +330,7 @@ export default function FERSAnnuityCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">

@@ -151,7 +151,7 @@ export function NUACalculator() {
                     <div
                       className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-colors ${
                         step >= s
-                          ? "bg-green-500text-[#F6F4EF]"
+                          ? "bg-[rgba(46,139,87,0.08)]0text-[#F6F4EF]"
                           : "bg-slate-700 text-[#A8A39A]"
                       }`}
                     >
@@ -160,7 +160,7 @@ export function NUACalculator() {
                     {s < 3 && (
                       <div
                         className={`w-16 h-1 mx-2 rounded transition-colors ${
-                          step > s ? "bg-green-500" : "bg-slate-700"
+                          step > s ? "bg-[rgba(46,139,87,0.08)]0" : "bg-slate-700"
                         }`}
                       />
                     )}
@@ -210,7 +210,7 @@ export function NUACalculator() {
                             onClick={() => setTotalShares(shares)}
                             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                               totalShares === shares
-                                ? "bg-green-500text-[#F6F4EF]"
+                                ? "bg-[rgba(46,139,87,0.08)]0text-[#F6F4EF]"
                                 : "bg-slate-700 text-[#D0CCC4] hover:bg-slate-600"
                             }`}
                           >
@@ -240,7 +240,7 @@ export function NUACalculator() {
                           onChange={(e) =>
                             setCostBasisPerShare(Number(e.target.value))
                           }
-                          className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                          className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                         />
                         <p className="text-[#A8A39A] text-xs text-center">
                           What you paid / was contributed
@@ -304,7 +304,7 @@ export function NUACalculator() {
                   <div className="mt-8 flex justify-end">
                     <button
                       onClick={() => setStep(2)}
-                      className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                      className="px-8 py-3 bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
                     >
                       Next Step
                     </button>
@@ -346,7 +346,7 @@ export function NUACalculator() {
                         onChange={(e) =>
                           setOrdinaryIncomeBracket(Number(e.target.value))
                         }
-                        className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-red-500"
+                        className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                       />
                       <div className="flex flex-wrap gap-2 justify-center">
                         {[12, 22, 24, 32, 35].map((rate) => (
@@ -355,7 +355,7 @@ export function NUACalculator() {
                             onClick={() => setOrdinaryIncomeBracket(rate)}
                             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                               ordinaryIncomeBracket === rate
-                                ? "bg-red-500text-[#F6F4EF]"
+                                ? "bg-[rgba(220,38,38,0.08)]0text-[#F6F4EF]"
                                 : "bg-slate-700 text-[#D0CCC4] hover:bg-slate-600"
                             }`}
                           >
@@ -382,7 +382,7 @@ export function NUACalculator() {
                             onClick={() => setLongTermCapGainsRate(rate)}
                             className={`px-6 py-3 rounded-xl text-lg font-medium transition-colors ${
                               longTermCapGainsRate === rate
-                                ? "bg-green-500text-[#F6F4EF]"
+                                ? "bg-[rgba(46,139,87,0.08)]0text-[#F6F4EF]"
                                 : "bg-slate-700 text-[#D0CCC4] hover:bg-slate-600"
                             }`}
                           >
@@ -396,7 +396,7 @@ export function NUACalculator() {
                       </p>
                     </div>
 
-                    <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                    <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-lg p-4">
                       <p className="text-green-800 text-sm">
                         <strong>NUA Advantage:</strong> The difference between your
                         ordinary income rate ({ordinaryIncomeBracket}%) and capital
@@ -418,7 +418,7 @@ export function NUACalculator() {
                     </button>
                     <button
                       onClick={() => setStep(3)}
-                      className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                      className="px-8 py-3 bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
                     >
                       Next Step
                     </button>
@@ -481,7 +481,7 @@ export function NUACalculator() {
                         Combined Tax Rates
                       </h3>
                       <div className="grid md:grid-cols-2 gap-6">
-                        <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-center">
+                        <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-lg p-4 text-center">
                           <p className="text-[#D0CCC4] text-sm mb-1">
                             Ordinary Income (Rollover)
                           </p>
@@ -489,7 +489,7 @@ export function NUACalculator() {
                             {ordinaryIncomeBracket + stateTaxRate}%
                           </p>
                         </div>
-                        <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
+                        <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-lg p-4 text-center">
                           <p className="text-[#D0CCC4] text-sm mb-1">
                             Long-Term Cap Gains (NUA)
                           </p>
@@ -510,7 +510,7 @@ export function NUACalculator() {
                     </button>
                     <button
                       onClick={handleCalculate}
-                      className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                      className="px-8 py-3 bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
                     >
                       Calculate NUA Strategy
                     </button>
@@ -537,7 +537,7 @@ export function NUACalculator() {
                 <span
                   className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 ${
                     calculations.taxSavings > 0
-                      ? "bg-green-500/20 text-green-600"
+                      ? "bg-[rgba(46,139,87,0.08)]0/20 text-green-600"
                       : "bg-[rgba(220,38,38,0.1)] text-[#D4A94E]"
                   }`}
                 >
@@ -574,13 +574,13 @@ export function NUACalculator() {
                   <div
                     className={`rounded-xl p-6 ${
                       calculations.recommendedStrategy === "nua"
-                        ? "bg-green-500/10 border-2 border-green-500/30 relative"
+                        ? "bg-[rgba(46,139,87,0.08)]0/10 border-2 border-green-500/30 relative"
                         : "bg-[#0C0D18] border border-slate-700"
                     }`}
                   >
                     {calculations.recommendedStrategy === "nua" && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                        <span className="bg-green-500 text-[#F6F4EF] text-xs font-bold px-3 py-1 rounded-full">
+                        <span className="bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] text-xs font-bold px-3 py-1 rounded-full">
                           RECOMMENDED
                         </span>
                       </div>
@@ -676,9 +676,9 @@ export function NUACalculator() {
                           {formatCurrency(calculations.nuaTotalTax)}
                         </span>
                       </div>
-                      <div className="h-4 bg-slate-200 rounded-full overflow-hidden">
+                      <div className="h-4 bg-[#2A2D42] rounded-full overflow-hidden">
                         <div
-                          className="h-full bg-green-500 rounded-full"
+                          className="h-full bg-[rgba(46,139,87,0.08)]0 rounded-full"
                           style={{
                             width: `${
                               (calculations.nuaTotalTax /
@@ -699,8 +699,8 @@ export function NUACalculator() {
                           {formatCurrency(calculations.rolloverTax)}
                         </span>
                       </div>
-                      <div className="h-4 bg-slate-200 rounded-full overflow-hidden">
-                        <div className="h-full bg-red-500 rounded-full w-full" />
+                      <div className="h-4 bg-[#2A2D42] rounded-full overflow-hidden">
+                        <div className="h-full bg-[rgba(220,38,38,0.08)]0 rounded-full w-full" />
                       </div>
                     </div>
                   </div>
@@ -731,7 +731,7 @@ export function NUACalculator() {
                       {formatCurrency(calculations.currentValue)}
                     </p>
                   </div>
-                  <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
+                  <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-lg p-4 text-center">
                     <p className="text-green-600 text-sm">Net Unrealized Appreciation</p>
                     <p className="text-xl font-bold text-[#F6F4EF]">
                       {formatCurrency(calculations.nua)}
@@ -822,7 +822,7 @@ export function NUACalculator() {
                 </button>
                 <Link
                   href="/guide/401k-to-gold-rollover"
-                  className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors text-center"
+                  className="px-8 py-3 bg-[rgba(46,139,87,0.08)]0 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors text-center"
                 >
                   401k Rollover Guide
                 </Link>

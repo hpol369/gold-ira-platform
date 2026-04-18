@@ -169,12 +169,12 @@ function formatDate(dateStr: string): string {
 
 function StatusBadge({ status }: { status: string }) {
   const colors: Record<string, string> = {
-    new: "bg-blue-500/20 text-blue-300 border-blue-500/30",
-    sent_to_augusta: "bg-amber-500/20 text-amber-300 border-amber-500/30",
-    qualified: "bg-green-500/20 text-green-300 border-green-500/30",
+    new: "bg-[#121423]0/20 text-blue-300 border-blue-500/30",
+    sent_to_augusta: "bg-[#161828]0/20 text-amber-300 border-amber-500/30",
+    qualified: "bg-[rgba(46,139,87,0.08)]0/20 text-green-300 border-green-500/30",
     converted: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
-    contacted: "bg-purple-500/20 text-purple-300 border-purple-500/30",
-    declined_call: "bg-red-500/20 text-red-300 border-red-500/30",
+    contacted: "bg-purple-500/20 text-purple-300 border-[rgba(197,149,46,0.32)]",
+    declined_call: "bg-[rgba(220,38,38,0.08)]0/20 text-red-300 border-red-500/30",
     unqualified: "bg-slate-500/20 text-slate-300 border-slate-500/30",
   };
 
@@ -192,7 +192,7 @@ function TierBadge({ tier }: { tier: string | null }) {
   return (
     <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium border ${
       isQualified
-        ? "bg-green-500/20 text-green-300 border-green-500/30"
+        ? "bg-[rgba(46,139,87,0.08)]0/20 text-green-300 border-green-500/30"
         : "bg-slate-500/20 text-slate-400 border-slate-500/30"
     }`}>
       {tier}
@@ -324,8 +324,8 @@ export default function DashboardPage() {
       <main className="min-h-screen bg-slate-900 flex items-center justify-center">
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 max-w-sm w-full mx-4">
           <div className="text-center mb-6">
-            <div className="w-16 h-16 bg-amber-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Lock className="h-8 w-8 text-amber-400" />
+            <div className="w-16 h-16 bg-[#161828]0/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Lock className="h-8 w-8 text-[#D4A94E]" />
             </div>
             <h1 className="text-2xl font-bold text-white">Lead Dashboard</h1>
             <p className="text-slate-400 text-sm mt-2">Enter PIN to continue</p>
@@ -347,7 +347,7 @@ export default function DashboardPage() {
             {pinError && <p className="text-red-400 text-sm text-center mt-2">Incorrect PIN</p>}
             <button
               type="submit"
-              className="w-full mt-4 px-4 py-3 bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold rounded-xl transition-colors"
+              className="w-full mt-4 px-4 py-3 bg-[#161828]0 hover:bg-amber-600 text-slate-900 font-bold rounded-xl transition-colors"
             >
               Access Dashboard
             </button>
@@ -360,7 +360,7 @@ export default function DashboardPage() {
   if (loading && !data) {
     return (
       <main className="min-h-screen bg-slate-900 flex items-center justify-center">
-        <RefreshCw className="h-8 w-8 text-amber-400 animate-spin" />
+        <RefreshCw className="h-8 w-8 text-[#D4A94E] animate-spin" />
       </main>
     );
   }
@@ -390,7 +390,7 @@ export default function DashboardPage() {
             <div className="flex items-center gap-3">
               <a
                 href="/admin/leads"
-                className="px-4 py-2 bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 rounded-lg transition-colors text-sm border border-blue-500/30 font-medium"
+                className="px-4 py-2 bg-[#121423]0/20 hover:bg-[#121423]0/30 text-blue-300 rounded-lg transition-colors text-sm border border-blue-500/30 font-medium"
               >
                 Lead Activity →
               </a>
@@ -403,7 +403,7 @@ export default function DashboardPage() {
               <button
                 onClick={fetchData}
                 disabled={loading}
-                className="flex items-center gap-2 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold rounded-lg transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-[#161828]0 hover:bg-amber-600 text-slate-900 font-semibold rounded-lg transition-colors"
               >
                 <RefreshCw className={`h-4 w-4 ${loading ? "animate-spin" : ""}`} />
                 Refresh
@@ -437,7 +437,7 @@ export default function DashboardPage() {
 
             <div className="bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/20 rounded-xl p-5">
               <div className="flex items-center gap-2 mb-2">
-                <Send className="h-4 w-4 text-amber-400" />
+                <Send className="h-4 w-4 text-[#D4A94E]" />
                 <span className="text-xs text-amber-300 uppercase font-medium">Sent to Augusta</span>
               </div>
               <div className="text-3xl font-bold text-white">{overview.augustaSubmitted}</div>
@@ -448,7 +448,7 @@ export default function DashboardPage() {
 
             <div className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 border border-purple-500/20 rounded-xl p-5">
               <div className="flex items-center gap-2 mb-2">
-                <DollarSign className="h-4 w-4 text-purple-400" />
+                <DollarSign className="h-4 w-4 text-[#D4A94E]" />
                 <span className="text-xs text-purple-300 uppercase font-medium">Revenue Potential</span>
               </div>
               <div className="text-2xl font-bold text-white">
@@ -542,7 +542,7 @@ export default function DashboardPage() {
             {/* Concern */}
             <div className="bg-white/5 border border-white/10 rounded-xl p-5">
               <div className="flex items-center gap-2 mb-4">
-                <AlertCircle className="h-4 w-4 text-amber-400" />
+                <AlertCircle className="h-4 w-4 text-[#D4A94E]" />
                 <h3 className="text-sm font-medium text-white">Primary Concern</h3>
               </div>
               <BreakdownBar data={breakdowns.concern} />
@@ -551,7 +551,7 @@ export default function DashboardPage() {
             {/* Lead Status */}
             <div className="bg-white/5 border border-white/10 rounded-xl p-5">
               <div className="flex items-center gap-2 mb-4">
-                <BarChart3 className="h-4 w-4 text-purple-400" />
+                <BarChart3 className="h-4 w-4 text-[#D4A94E]" />
                 <h3 className="text-sm font-medium text-white">Lead Status</h3>
               </div>
               <BreakdownBar
@@ -584,7 +584,7 @@ export default function DashboardPage() {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-slate-400">Pending</span>
-                  <span className="text-amber-400 font-medium">{emailSequences.pending}</span>
+                  <span className="text-[#D4A94E] font-medium">{emailSequences.pending}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-slate-400">Failed</span>
@@ -628,15 +628,15 @@ export default function DashboardPage() {
                 <a href="/admin/conversions" className="ml-auto text-xs text-slate-500 hover:text-slate-300">Details →</a>
               </div>
               <div className="grid grid-cols-3 gap-3 mb-4">
-                <div className="text-center p-3 bg-blue-500/10 rounded-lg border border-blue-500/20">
+                <div className="text-center p-3 bg-[#121423]0/10 rounded-lg border border-blue-500/20">
                   <div className="text-xl font-bold text-white">{postbacks.leadCapture}</div>
                   <div className="text-xs text-blue-300">Captured</div>
                 </div>
-                <div className="text-center p-3 bg-amber-500/10 rounded-lg border border-amber-500/20">
+                <div className="text-center p-3 bg-[#161828]0/10 rounded-lg border border-amber-500/20">
                   <div className="text-xl font-bold text-white">{postbacks.qualifiedLead}</div>
                   <div className="text-xs text-amber-300">Qualified</div>
                 </div>
-                <div className="text-center p-3 bg-green-500/10 rounded-lg border border-green-500/20">
+                <div className="text-center p-3 bg-[rgba(46,139,87,0.08)]0/10 rounded-lg border border-green-500/20">
                   <div className="text-xl font-bold text-white">{postbacks.tradeComplete}</div>
                   <div className="text-xs text-green-300">Traded</div>
                 </div>
@@ -648,7 +648,7 @@ export default function DashboardPage() {
                     <div key={i} className="flex items-center justify-between text-xs">
                       <span className={`font-medium ${
                         pb.type === "trade_complete" ? "text-green-400" :
-                        pb.type === "qualified_lead" ? "text-amber-400" : "text-blue-400"
+                        pb.type === "qualified_lead" ? "text-[#D4A94E]" : "text-blue-400"
                       }`}>
                         {pb.type.replace(/_/g, " ")}
                       </span>

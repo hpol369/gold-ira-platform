@@ -201,7 +201,7 @@ const schema = {
 
 export default function BestPlaceToSellPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -219,7 +219,7 @@ export default function BestPlaceToSellPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
               <DollarSign className="h-4 w-4" />
               500 MONTHLY SEARCHES - DIFF 0 - $1.40 CPC
             </div>
@@ -236,7 +236,7 @@ export default function BestPlaceToSellPage() {
       </section>
 
       {/* Quick Answer */}
-      <section className="py-8 bg-green-500/10 border-y border-green-500/30">
+      <section className="py-8 bg-[rgba(46,139,87,0.08)]0/10 border-y border-green-500/30">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-xl font-bold text-green-400 mb-4">Quick Answer</h2>
@@ -250,7 +250,7 @@ export default function BestPlaceToSellPage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -268,7 +268,7 @@ export default function BestPlaceToSellPage() {
                 </thead>
                 <tbody className="divide-y divide-[#2A2D42]">
                   {sellingOptions.map((option, index) => (
-                    <tr key={index} className={option.rating === 1 ? "bg-red-500/5" : ""}>
+                    <tr key={index} className={option.rating === 1 ? "bg-[rgba(220,38,38,0.08)]0/5" : ""}>
                       <td className="p-4 text-[#D0CCC4] font-semibold">{option.name}</td>
                       <td className="p-4 text-center">
                         <span className={`font-bold ${
@@ -320,7 +320,7 @@ export default function BestPlaceToSellPage() {
                   >
                     <div className="flex flex-col md:flex-row md:items-start gap-6">
                       <div className={`w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 ${
-                        isWarning ? "bg-red-500/20" : "bg-[rgba(220,38,38,0.1)]"
+                        isWarning ? "bg-[rgba(220,38,38,0.08)]0/20" : "bg-[rgba(220,38,38,0.1)]"
                       }`}>
                         <Icon className={`h-8 w-8 ${isWarning ? "text-red-400" : "text-[#D0CCC4]"}`} />
                       </div>
@@ -406,7 +406,7 @@ export default function BestPlaceToSellPage() {
       </section>
 
       {/* Tips for Maximum Value */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -504,7 +504,7 @@ export default function BestPlaceToSellPage() {
       </section>
 
       {/* Related Guides */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
             Related Guides

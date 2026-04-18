@@ -150,7 +150,7 @@ export function Solo401kCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
+        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[rgba(197,149,46,0.32)]">
           <Briefcase className="h-4 w-4" />
           Self-Employed Retirement Calculator
         </div>
@@ -168,7 +168,7 @@ export function Solo401kCalculator() {
           {/* Business Type */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <Building2 className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Business Type</h3>
@@ -207,7 +207,7 @@ export function Solo401kCalculator() {
           {/* Income */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <DollarSign className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Income</h3>
@@ -261,7 +261,7 @@ export function Solo401kCalculator() {
           {/* Personal Info */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <User className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Personal Info</h3>
@@ -272,7 +272,7 @@ export function Solo401kCalculator() {
                 <label className="text-sm text-[#A8A39A] mb-2 flex items-center gap-2">
                   Your Age: {age}
                   {isCatchUpEligible && (
-                    <span className="text-green-600 text-xs bg-green-500/20 px-2 py-0.5 rounded">
+                    <span className="text-green-600 text-xs bg-[rgba(46,139,87,0.08)]0/20 px-2 py-0.5 rounded">
                       Catch-up eligible
                     </span>
                   )}
@@ -283,7 +283,7 @@ export function Solo401kCalculator() {
                   max="75"
                   value={age}
                   onChange={(e) => setAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
 
@@ -297,7 +297,7 @@ export function Solo401kCalculator() {
                   max="37"
                   value={taxBracket}
                   onChange={(e) => setTaxBracket(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>10%</span>
@@ -360,7 +360,7 @@ export function Solo401kCalculator() {
         {/* Results Section */}
         <div className="space-y-6">
           {/* Main Result */}
-          <div className="bg-gradient-to-br from-purple-500/20 to-blue-500/20 backdrop-blur-sm rounded-xl p-8 border border-purple-500/30">
+          <div className="bg-gradient-to-br from-purple-500/20 to-blue-500/20 backdrop-blur-sm rounded-xl p-8 border border-[rgba(197,149,46,0.32)]">
             <div className="text-center mb-6">
               <div className="text-sm text-[#A8A39A] mb-2">Maximum Solo 401(k) Contribution</div>
               <div className="text-5xl font-bold text-purple-700">
@@ -403,7 +403,7 @@ export function Solo401kCalculator() {
             </h3>
 
             <div className="space-y-4">
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+              <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-lg p-4">
                 <div className="text-2xl font-bold text-green-600 mb-1">
                   {formatFullCurrency(calculations.taxSavings)}
                 </div>
@@ -460,7 +460,7 @@ export function Solo401kCalculator() {
                 </div>
                 <div className="w-full bg-[#121423] rounded-full h-3">
                   <div
-                    className="h-full bg-amber-500 rounded-full"
+                    className="h-full bg-[#161828]0 rounded-full"
                     style={{
                       width: `${(calculations.sepMaxContribution / calculations.totalMaxContribution) * 100}%`
                     }}
@@ -469,7 +469,7 @@ export function Solo401kCalculator() {
               </div>
 
               {calculations.solo401kAdvantage > 0 && (
-                <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-3">
+                <div className="bg-[rgba(197,149,46,0.08)] border border-purple-500/20 rounded-lg p-3">
                   <p className="text-sm text-purple-700">
                     <strong>Solo 401(k) Advantage:</strong>{" "}
                     {formatFullCurrency(calculations.solo401kAdvantage)} more per year vs SEP IRA
@@ -495,7 +495,7 @@ export function Solo401kCalculator() {
                 <div className="text-xs text-[#A8A39A]">At 7% annual return</div>
               </div>
 
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <div className="bg-[#121423] border border-blue-200 rounded-lg p-4">
                 <div className="text-sm text-[#A8A39A] mb-1">Annual contributions for 10 years</div>
                 <div className="text-2xl font-bold text-blue-600">
                   {formatCurrency(calculations.annualContributionFV)}

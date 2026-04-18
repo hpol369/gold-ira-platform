@@ -100,7 +100,7 @@ const schema = {
 
 export default function Is401kFDICInsuredPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -156,13 +156,13 @@ export default function Is401kFDICInsuredPage() {
                         {/* Direct Answer */}
                         <section id="answer" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <ShieldX className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Direct Answer: NO</h2>
                             </div>
 
-                            <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
                                 <div className="flex items-start gap-4">
                                     <AlertTriangle className="w-8 h-8 text-red-700 flex-shrink-0 mt-1" />
                                     <div>
@@ -219,7 +219,7 @@ export default function Is401kFDICInsuredPage() {
                         {/* ERISA Protection */}
                         <section id="erisa" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <Scale className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">ERISA Protection: Your Primary Safeguard</h2>
@@ -257,7 +257,7 @@ export default function Is401kFDICInsuredPage() {
                         {/* SIPC Coverage */}
                         <section id="sipc" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">SIPC Coverage: If Your Broker Fails</h2>
@@ -266,7 +266,7 @@ export default function Is401kFDICInsuredPage() {
                                 The Securities Investor Protection Corporation (SIPC) provides another layer of protection - specifically if the brokerage firm holding your 401(k) goes bankrupt.
                             </p>
 
-                            <div className="bg-blue-500/10 rounded-2xl p-6 border border-blue-500/20 not-prose my-8">
+                            <div className="bg-[#121423]0/10 rounded-2xl p-6 border border-blue-500/20 not-prose my-8">
                                 <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">SIPC Coverage Limits</h4>
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center p-3 bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-lg">
@@ -299,7 +299,7 @@ export default function Is401kFDICInsuredPage() {
                         {/* Employer Bankruptcy */}
                         <section id="employer-bankruptcy" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-[#D4A94E]">
                                     <Briefcase className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What Happens If Your Employer Goes Bankrupt?</h2>
@@ -308,7 +308,7 @@ export default function Is401kFDICInsuredPage() {
                                 This is a fear many workers have, especially after watching companies like Enron, Lehman Brothers, and others collapse. Here&apos;s the good news:
                             </p>
 
-                            <div className="bg-green-500/10 rounded-2xl p-6 border border-green-500/20 not-prose my-8">
+                            <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-2xl p-6 border border-green-500/20 not-prose my-8">
                                 <h4 className="font-bold text-green-700 text-xl mb-4">Your 401(k) Is Safe From Employer Bankruptcy</h4>
                                 <p className="text-green-800 mb-4">
                                     Thanks to ERISA, your 401(k) assets are held in a trust that is legally separate from your employer. When a company files for bankruptcy, creditors cannot touch employee retirement accounts.
@@ -385,7 +385,7 @@ export default function Is401kFDICInsuredPage() {
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Want Something You Can Actually Touch?</h3>
                                 <p className="mb-6 text-gray-200">A Gold IRA holds real gold in a vault with your name on it. Not paper, not promises, not computer numbers.</p>
-                                <LeadCaptureButton variant="default" source="is-401k-fdic-insured" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                <LeadCaptureButton variant="default" source="is-401k-fdic-insured" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
                                     Learn About Gold IRAs <ArrowRight className="ml-2 w-4 h-4" />
                                 </LeadCaptureButton>
                             </div>
@@ -394,7 +394,7 @@ export default function Is401kFDICInsuredPage() {
                         {/* What IS at Risk */}
                         <section id="market-risk" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What IS Actually at Risk: Market Losses</h2>
@@ -452,7 +452,7 @@ export default function Is401kFDICInsuredPage() {
                         {/* Gold IRA Protection */}
                         <section id="gold-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-[#D4A94E]">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Gold IRA: Tangible Asset Protection</h2>
@@ -461,7 +461,7 @@ export default function Is401kFDICInsuredPage() {
                                 A Gold IRA offers something that paper investments cannot: ownership of a physical, tangible asset that exists outside the paper financial system.
                             </p>
 
-                            <div className="bg-amber-500/10 rounded-2xl p-6 border border-amber-500/20 not-prose my-8">
+                            <div className="bg-[#161828]0/10 rounded-2xl p-6 border border-amber-500/20 not-prose my-8">
                                 <h4 className="font-bold text-[#D4A94E] text-xl mb-4">How Gold Provides Different Protection</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div className="space-y-3">
@@ -546,7 +546,7 @@ export default function Is401kFDICInsuredPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Is my IRA FDIC insured?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -560,7 +560,7 @@ export default function Is401kFDICInsuredPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What happens to my 401k if the stock market crashes?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -574,7 +574,7 @@ export default function Is401kFDICInsuredPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Is my 401k safe from bank failure?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -588,7 +588,7 @@ export default function Is401kFDICInsuredPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What protects my 401k from creditors?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -602,7 +602,7 @@ export default function Is401kFDICInsuredPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Is a Gold IRA safer than a 401k?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -622,10 +622,10 @@ export default function Is401kFDICInsuredPage() {
                                 <h3 className="text-3xl font-serif font-bold mb-4 text-[#F6F4EF]">Add Real Protection to What You&apos;ve Built</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">You didn&apos;t work 30 years to watch a crash wipe it out. Physical gold doesn&apos;t care what the stock market does.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <LeadCaptureButton variant="default" source="is-401k-fdic-insured" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                    <LeadCaptureButton variant="default" source="is-401k-fdic-insured" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
                                         Get Your Free Precious Metals Guide <ArrowRight className="ml-2 w-5 h-5" />
                                     </LeadCaptureButton>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-slate-200">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#2A2D42]">
                                         <Link href="/what-is-a-gold-ira">Learn About Gold IRAs</Link>
                                     </Button>
                                 </div>

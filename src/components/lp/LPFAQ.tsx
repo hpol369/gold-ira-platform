@@ -44,7 +44,7 @@ export function LPFAQ({ headline, faqs, className }: LPFAQProps) {
                 </span>
                 <ChevronDown
                   className={cn(
-                    "h-5 w-5 text-amber-400 flex-shrink-0 transition-transform duration-200",
+                    "h-5 w-5 text-[#D4A94E] flex-shrink-0 transition-transform duration-200",
                     openIndex === index && "rotate-180"
                   )}
                 />

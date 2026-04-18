@@ -245,7 +245,7 @@ export function QuizWizard() {
         <Container className="max-w-4xl min-h-[600px] flex flex-col justify-center">
             {/* Progress Bar */}
             {currentStepIndex > 0 && currentStepIndex < steps.length - 1 && (
-                <div className="w-full h-2 bg-slate-200 rounded-full mb-8 overflow-hidden">
+                <div className="w-full h-2 bg-[#2A2D42] rounded-full mb-8 overflow-hidden">
                     <motion.div
                         className="h-full bg-[#DC2626]"
                         initial={{ width: 0 }}

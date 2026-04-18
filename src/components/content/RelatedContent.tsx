@@ -161,10 +161,10 @@ export function AutoRelatedContent({
             href={link.url}
             className="group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 transition-colors"
           >
-            <span className="text-[#3F4460] group-hover:text-amber-400 font-medium transition-colors">
+            <span className="text-[#3F4460] group-hover:text-[#D4A94E] font-medium transition-colors">
               {link.title}
             </span>
-            <ArrowRight className="h-4 w-4 text-[#A8A39A] group-hover:text-amber-400 group-hover:translate-x-1 transition-all" />
+            <ArrowRight className="h-4 w-4 text-[#A8A39A] group-hover:text-[#D4A94E] group-hover:translate-x-1 transition-all" />
           </Link>
         ))}
       </div>

@@ -119,7 +119,7 @@ export default function ReviewsPage() {
                 <span>BBB Verified Ratings</span>
               </div>
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-[#2A2D42] shadow-sm text-[#D0CCC4]">
-                <Star className="h-4 w-4 text-amber-500" />
+                <Star className="h-4 w-4 text-[#D4A94E]" />
                 <span>Unbiased Analysis</span>
               </div>
             </div>
@@ -169,7 +169,7 @@ export default function ReviewsPage() {
       </section>
 
       {/* Reviews Grid */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="grid gap-4 max-w-4xl mx-auto">
             {companies.map((company, index) => (
@@ -218,7 +218,7 @@ export default function ReviewsPage() {
                   {/* Stats */}
                   <div className="flex items-center gap-6 text-sm">
                     <div className="flex items-center gap-1">
-                      <Star className={`w-4 h-4 fill-current ${company.rating >= 4.5 ? "text-amber-500" : "text-[#3F4460]"
+                      <Star className={`w-4 h-4 fill-current ${company.rating >= 4.5 ? "text-[#D4A94E]" : "text-[#3F4460]"
                         }`} />
                       <span className="font-bold text-[#F6F4EF]">{company.rating}</span>
                     </div>
@@ -263,7 +263,7 @@ export default function ReviewsPage() {
                   className="group p-4 bg-[#161828] rounded-xl border border-[#2A2D42] hover:border-[#B22234] hover:shadow-md transition-all"
                 >
                   <div className="flex items-start gap-3">
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${page.type === "warning" ? "bg-red-50 text-red-600" : "bg-amber-50 text-amber-600"
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${page.type === "warning" ? "bg-[rgba(220,38,38,0.08)] text-red-600" : "bg-[#161828] text-[#D4A94E]"
                       }`}>
                       <AlertTriangle className="w-4 h-4" />
                     </div>

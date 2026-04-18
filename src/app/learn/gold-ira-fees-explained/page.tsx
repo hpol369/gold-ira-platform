@@ -69,7 +69,7 @@ const sources = [
 
 export default function GoldIRAFeesExplainedPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript
                 schema={articleSchema({
                     title: "Gold IRA Fees Explained: Setup, Storage, Custodian, and Selling Costs",
@@ -335,7 +335,7 @@ export default function GoldIRAFeesExplainedPage() {
                         <section id="who-this-is-for" className="scroll-mt-24">
                             <h2>Who this is for / not for</h2>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-6">
-                                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                                     <h3 className="font-bold text-green-800 mb-3">This is for:</h3>
                                     <ul className="space-y-2 text-sm text-green-700">
                                         <li>Retirees comparing Gold IRA costs with other gold options</li>
@@ -344,7 +344,7 @@ export default function GoldIRAFeesExplainedPage() {
                                         <li>Anyone who wants to look past advertising and see the math</li>
                                     </ul>
                                 </div>
-                                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                     <h3 className="font-bold text-red-800 mb-3">This is not for:</h3>
                                     <ul className="space-y-2 text-sm text-red-700">
                                         <li>Investors unwilling to ask about markups and spreads</li>

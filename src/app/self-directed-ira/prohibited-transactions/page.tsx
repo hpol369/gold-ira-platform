@@ -92,7 +92,7 @@ const schema = {
 
 export default function ProhibitedTransactionsPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -138,35 +138,35 @@ export default function ProhibitedTransactionsPage() {
                     </p>
 
                     <div className="not-prose my-8 space-y-4">
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <Ban className="w-6 h-6 text-red-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-700">Sale, exchange, or lease between your IRA and a disqualified person</h4>
                                 <p className="text-sm text-red-600 mt-1">You cannot sell personal property to your IRA, buy IRA property for yourself, or lease IRA assets to/from any disqualified person.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <Ban className="w-6 h-6 text-red-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-700">Lending money or extending credit between your IRA and a disqualified person</h4>
                                 <p className="text-sm text-red-600 mt-1">Your IRA cannot lend money to you, your family, or your business. You also cannot use IRA assets as collateral for a personal loan.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <Ban className="w-6 h-6 text-red-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-700">Providing goods, services, or facilities between your IRA and a disqualified person</h4>
                                 <p className="text-sm text-red-600 mt-1">You cannot do repair work on IRA-owned property yourself. Your children cannot manage IRA assets. All services must come from unrelated third parties.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <Ban className="w-6 h-6 text-red-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-700">Using IRA income or assets for the benefit of a disqualified person</h4>
                                 <p className="text-sm text-red-600 mt-1">You cannot stay in an IRA-owned vacation home, use IRA-owned equipment, or receive any personal benefit from IRA assets before distribution.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <Ban className="w-6 h-6 text-red-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-700">Transfer of IRA income or assets to a disqualified person</h4>
@@ -212,21 +212,21 @@ export default function ProhibitedTransactionsPage() {
                     </p>
 
                     <div className="not-prose my-8 space-y-4">
-                        <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-200">
-                            <DollarSign className="w-6 h-6 text-amber-600 shrink-0 mt-1" />
+                        <div className="flex gap-4 p-5 rounded-xl bg-[#161828] border border-[rgba(197,149,46,0.32)]">
+                            <DollarSign className="w-6 h-6 text-[#D4A94E] shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-amber-800">First-Tier Penalty: 15% Excise Tax</h4>
                                 <p className="text-sm text-amber-700 mt-1">The IRS charges 15% of the &quot;amount involved&quot; for each year the prohibited transaction remains uncorrected. On a $100,000 deal, that&apos;s $15,000/year.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-200">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-200">
                             <AlertTriangle className="w-6 h-6 text-red-600 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-800">Second-Tier Penalty: 100% Excise Tax</h4>
                                 <p className="text-sm text-red-700 mt-1">If you don&apos;t correct the transaction within the taxable period, the penalty jumps to 100% of the amount involved. The IRS takes it all.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-200">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-200">
                             <AlertTriangle className="w-6 h-6 text-red-600 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-800">Nuclear Option: Full IRA Disqualification</h4>

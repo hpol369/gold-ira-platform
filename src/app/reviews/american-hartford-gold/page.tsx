@@ -116,7 +116,7 @@ export default function AmericanHartfordGoldReviewPage() {
                                 <p>
                                     The catch: like most companies in this business, they don't publish prices on their website. You have to call. Some folks find this annoying—they'd rather research on their own time. Annual fees run $150-$225, which is typical for the industry.
                                 </p>
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                <div className="bg-[#121423] p-6 rounded-xl border border-blue-100 not-prose my-8">
                                     <h4 className="font-bold text-[#F6F4EF] flex items-center gap-2 mb-2">
                                         <Info className="w-5 h-5 text-[#D4A94E]" /> About Price Guarantees
                                     </h4>
@@ -182,12 +182,12 @@ export default function AmericanHartfordGoldReviewPage() {
                     </div>
                 </Container>
             </div>
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <FAQSection faqs={getPageFAQs("reviews/american-hartford-gold")} title="American Hartford Gold FAQ" className="max-w-3xl" includeSchema={false} />
                 </Container>
             </section>
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/reviews/american-hartford-gold" />
                 </Container>

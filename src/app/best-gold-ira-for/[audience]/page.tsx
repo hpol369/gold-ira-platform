@@ -55,7 +55,7 @@ export default async function AudiencePage({ params }: PageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       {/* Hero Section */}
@@ -84,12 +84,12 @@ export default async function AudiencePage({ params }: PageProps) {
       </section>
 
       {/* Pain Points & Benefits */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               {/* Pain Points */}
-              <div className="bg-red-50 border border-red-200 rounded-2xl p-6 md:p-8">
+              <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-2xl p-6 md:p-8">
                 <div className="flex items-center gap-2 text-red-600 font-semibold mb-6">
                   <AlertTriangle className="h-5 w-5" />
                   CHALLENGES YOU FACE
@@ -109,7 +109,7 @@ export default async function AudiencePage({ params }: PageProps) {
               </div>
 
               {/* Benefits */}
-              <div className="bg-green-50 border border-green-200 rounded-2xl p-6 md:p-8">
+              <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-2xl p-6 md:p-8">
                 <div className="flex items-center gap-2 text-green-600 font-semibold mb-6">
                   <CheckCircle2 className="h-5 w-5" />
                   HOW GOLD HELPS
@@ -132,7 +132,7 @@ export default async function AudiencePage({ params }: PageProps) {
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 md:p-8">
+            <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-2xl p-6 md:p-8">
               <div className="flex items-center gap-2 text-amber-700 font-semibold mb-4">
                 <Lightbulb className="h-5 w-5" />
                 OUR ADVICE FOR {data.title.toUpperCase()}
@@ -146,7 +146,7 @@ export default async function AudiencePage({ params }: PageProps) {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
@@ -207,7 +207,7 @@ export default async function AudiencePage({ params }: PageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

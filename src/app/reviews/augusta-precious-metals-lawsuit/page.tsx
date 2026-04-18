@@ -54,13 +54,13 @@ const schema = {
 
 export default function AugustaLawsuitPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-[rgba(197,149,46,0.1)] text-white py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[#000060]/50" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-green-500/20 border border-green-500/30 text-sm font-semibold text-green-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 text-sm font-semibold text-green-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <ShieldCheck className="w-4 h-4" /> Legal Fact Check
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
@@ -124,8 +124,8 @@ export default function AugustaLawsuitPage() {
                                 <li><strong>Regal Assets</strong> – <Link href="/reviews/regal-assets-lawsuit">Collapsed entirely</Link> after failing to deliver customer metals.</li>
                             </ul>
 
-                            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
-                                <AlertTriangle className="w-6 h-6 text-amber-600 shrink-0" />
+                            <div className="bg-[#161828] p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
+                                <AlertTriangle className="w-6 h-6 text-[#D4A94E] shrink-0" />
                                 <div>
                                     <h4 className="font-bold text-amber-800">What Got Other Companies in Trouble</h4>
                                     <ul className="text-amber-700 text-sm mt-2 space-y-1">

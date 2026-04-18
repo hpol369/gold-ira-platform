@@ -142,16 +142,16 @@ function getStatusDotColor(status: string): string {
   switch (status) {
     case "converted":
     case "qualified":
-      return "bg-green-500";
+      return "bg-[rgba(46,139,87,0.08)]0";
     case "sent_to_augusta":
-      return "bg-blue-500";
+      return "bg-[#121423]0";
     case "new":
       return "bg-yellow-500";
     case "declined_call":
     case "unqualified":
       return "bg-slate-400";
     default:
-      return "bg-red-500";
+      return "bg-[rgba(220,38,38,0.08)]0";
   }
 }
 
@@ -293,7 +293,7 @@ function PipelineIcon({ status }: { status: PipelineStep["status"] }) {
     case "success":
       return <CheckCircle className="h-3.5 w-3.5 text-green-500 flex-shrink-0" />;
     case "pending":
-      return <Clock className="h-3.5 w-3.5 text-amber-400 flex-shrink-0" />;
+      return <Clock className="h-3.5 w-3.5 text-[#D4A94E] flex-shrink-0" />;
     case "failed":
       return <XCircle className="h-3.5 w-3.5 text-red-500 flex-shrink-0" />;
     case "skipped":
@@ -308,7 +308,7 @@ function PipelineIconCompact({ status }: { status: PipelineStep["status"] }) {
     case "success":
       return <span className="text-green-500 text-xs font-bold">&#10003;</span>;
     case "pending":
-      return <span className="text-amber-400 text-xs">&#9719;</span>;
+      return <span className="text-[#D4A94E] text-xs">&#9719;</span>;
     case "failed":
       return <span className="text-red-500 text-xs font-bold">&#10007;</span>;
     case "skipped":
@@ -338,8 +338,8 @@ function SystemHealthBar({ health }: { health: SystemHealth }) {
             key={key}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border ${
               ok
-                ? "bg-green-50 text-green-700 border-green-200"
-                : "bg-red-50 text-red-700 border-red-200"
+                ? "bg-[rgba(46,139,87,0.08)] text-[#86EFAC] border-[rgba(46,139,87,0.32)]"
+                : "bg-[rgba(220,38,38,0.08)] text-red-700 border-red-200"
             }`}
           >
             {ok ? (
@@ -422,7 +422,7 @@ function ActivityFeedIcon({ type }: { type: ActivityEvent["type"] }) {
     case "postback":
       return (
         <div className="w-7 h-7 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0">
-          <Bell className="h-3.5 w-3.5 text-amber-600" />
+          <Bell className="h-3.5 w-3.5 text-[#D4A94E]" />
         </div>
       );
   }
@@ -570,7 +570,7 @@ function LeadCard({
 
           {/* Deal range */}
           {lead.dealMin !== null && lead.dealMax !== null && (
-            <div className="flex items-center gap-2 mt-3 p-2 bg-green-50 rounded-lg border border-green-100">
+            <div className="flex items-center gap-2 mt-3 p-2 bg-[rgba(46,139,87,0.08)] rounded-lg border border-green-100">
               <DollarSign className="h-4 w-4 text-green-600" />
               <span className="text-sm font-medium text-green-800">
                 Deal Range: {formatCurrency(lead.dealMin)} &ndash; {formatCurrency(lead.dealMax)}
@@ -703,7 +703,7 @@ export default function LeadsActivityPage() {
       <main className="min-h-screen bg-slate-50 flex items-center justify-center">
         <div className="bg-white border border-slate-200 rounded-2xl p-8 max-w-sm w-full mx-4 shadow-lg">
           <div className="text-center mb-6">
-            <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 bg-[#121423] rounded-full flex items-center justify-center mx-auto mb-4">
               <Lock className="h-8 w-8 text-blue-600" />
             </div>
             <h1 className="text-2xl font-bold text-slate-900">Lead Activity</h1>
@@ -826,7 +826,7 @@ export default function LeadsActivityPage() {
             </a>
             <a
               href="/admin/leads"
-              className="px-3 py-1.5 text-sm font-semibold text-blue-700 bg-blue-50 rounded-lg"
+              className="px-3 py-1.5 text-sm font-semibold text-blue-700 bg-[#121423] rounded-lg"
             >
               Leads
             </a>

@@ -113,7 +113,7 @@ export default function RetirementRiskScorePage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-white pb-24">
+      <main className="min-h-screen bg-[#0C0D18] pb-24">
         {/* Schema Scripts */}
         <SchemaScript schema={article} />
         <SchemaScript schema={faqSchemaData} />
@@ -223,25 +223,25 @@ export default function RetirementRiskScorePage() {
 
               <h3>Score Ranges Explained</h3>
               <div className="not-prose grid gap-3 my-6">
-                <div className="flex items-center gap-3 bg-green-50 border border-green-200 rounded-lg px-4 py-3">
+                <div className="flex items-center gap-3 bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-lg px-4 py-3">
                   <span className="font-bold text-green-800 text-sm whitespace-nowrap">0 - 7</span>
                   <span className="text-green-700 text-sm">
                     <strong>Low Risk</strong> &mdash; Strong candidate for a Gold IRA
                   </span>
                 </div>
-                <div className="flex items-center gap-3 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3">
+                <div className="flex items-center gap-3 bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-lg px-4 py-3">
                   <span className="font-bold text-amber-800 text-sm whitespace-nowrap">8 - 14</span>
                   <span className="text-amber-700 text-sm">
                     <strong>Moderate Risk</strong> &mdash; Could work after addressing financial gaps
                   </span>
                 </div>
-                <div className="flex items-center gap-3 bg-orange-50 border border-orange-200 rounded-lg px-4 py-3">
+                <div className="flex items-center gap-3 bg-[rgba(183,121,31,0.08)] border border-orange-200 rounded-lg px-4 py-3">
                   <span className="font-bold text-orange-800 text-sm whitespace-nowrap">15 - 21</span>
                   <span className="text-orange-700 text-sm">
                     <strong>High Risk</strong> &mdash; Alternatives likely a better fit right now
                   </span>
                 </div>
-                <div className="flex items-center gap-3 bg-red-50 border border-red-200 rounded-lg px-4 py-3">
+                <div className="flex items-center gap-3 bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-lg px-4 py-3">
                   <span className="font-bold text-red-800 text-sm whitespace-nowrap">22 - 30</span>
                   <span className="text-red-700 text-sm">
                     <strong>Critical Risk</strong> &mdash; Focus on financial foundations first

@@ -15,7 +15,7 @@ export function PageHeader({ badge, badgeIcon: BadgeIcon, title, subtitle, child
             {/* Background Effects */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[rgba(197,149,46,0.06)] rounded-full blur-[150px]" />
-                <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-slate-200/50 rounded-full blur-[100px]" />
+                <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#2A2D42]/50 rounded-full blur-[100px]" />
             </div>
 
             <Container className="relative z-10">

@@ -40,13 +40,13 @@ export function LPHero({
     >
       {/* Background effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div className="absolute -top-20 -left-20 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-amber-500/10 rounded-full blur-[120px]" />
+        <div className="absolute -top-20 -left-20 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-[#161828]0/10 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 right-0 w-[250px] h-[250px] md:w-[500px] md:h-[500px] bg-slate-600/20 rounded-full blur-[100px]" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         {urgencyBadge && (
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-400 text-sm font-medium">
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-[#161828]0/20 border border-amber-400/30 text-[#D4A94E] text-sm font-medium">
             <Clock className="h-4 w-4" />
             {urgencyBadge}
           </div>

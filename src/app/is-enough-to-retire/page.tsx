@@ -53,7 +53,7 @@ const amounts = [
     withSS: "$33,756",
     verdict: "Tight — requires low-cost living + part-time income",
     color: "text-red-600",
-    bg: "bg-red-50",
+    bg: "bg-[rgba(220,38,38,0.08)]",
     border: "border-red-200",
   },
   {
@@ -63,8 +63,8 @@ const amounts = [
     annual: "$16,000",
     withSS: "$37,756",
     verdict: "Possible in low-cost areas with controlled spending",
-    color: "text-amber-600",
-    bg: "bg-amber-50",
+    color: "text-[#D4A94E]",
+    bg: "bg-[#161828]",
     border: "border-amber-200",
   },
   {
@@ -74,8 +74,8 @@ const amounts = [
     annual: "$20,000",
     withSS: "$41,756",
     verdict: "Comfortable in moderate-cost areas",
-    color: "text-amber-600",
-    bg: "bg-amber-50",
+    color: "text-[#D4A94E]",
+    bg: "bg-[#161828]",
     border: "border-amber-200",
   },
   {
@@ -86,7 +86,7 @@ const amounts = [
     withSS: "$45,756",
     verdict: "Solid — covers most areas with discipline",
     color: "text-green-600",
-    bg: "bg-green-50",
+    bg: "bg-[rgba(46,139,87,0.08)]",
     border: "border-green-200",
   },
   {
@@ -97,7 +97,7 @@ const amounts = [
     withSS: "$51,756",
     verdict: "Comfortable — above-average retirement income",
     color: "text-green-600",
-    bg: "bg-green-50",
+    bg: "bg-[rgba(46,139,87,0.08)]",
     border: "border-green-200",
   },
   {
@@ -108,7 +108,7 @@ const amounts = [
     withSS: "$53,756",
     verdict: "Strong position — flexibility for healthcare & travel",
     color: "text-green-600",
-    bg: "bg-green-50",
+    bg: "bg-[rgba(46,139,87,0.08)]",
     border: "border-green-200",
   },
   {
@@ -119,7 +119,7 @@ const amounts = [
     withSS: "$61,756",
     verdict: "Classic milestone — inflation is the real threat",
     color: "text-green-600",
-    bg: "bg-green-50",
+    bg: "bg-[rgba(46,139,87,0.08)]",
     border: "border-green-200",
   },
 ];
@@ -171,7 +171,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function IsEnoughToRetirePage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <SchemaScript schema={breadcrumbs} />
       <Navbar />
@@ -346,7 +346,7 @@ export default function IsEnoughToRetirePage() {
             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-lg bg-amber-100">
-                  <Shield className="h-5 w-5 text-amber-600" />
+                  <Shield className="h-5 w-5 text-[#D4A94E]" />
                 </div>
                 <h3 className="font-bold text-[#F6F4EF]">
                   Inflation Protection
@@ -441,7 +441,7 @@ export default function IsEnoughToRetirePage() {
         />
       </Container>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/is-enough-to-retire" />
         </Container>

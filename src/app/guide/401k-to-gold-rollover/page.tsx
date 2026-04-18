@@ -110,7 +110,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function RolloverGuidePage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             <SchemaScript schema={howToSchema({
@@ -303,7 +303,7 @@ export default function RolloverGuidePage() {
                             <div className="not-prose my-8">
                                 <div className="space-y-4">
                                     <div className="flex gap-4 p-6 rounded-xl bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42]">
-                                        <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-700 flex items-center justify-center font-bold shrink-0">
+                                        <div className="w-12 h-12 rounded-full bg-[rgba(46,139,87,0.08)]0/20 text-green-700 flex items-center justify-center font-bold shrink-0">
                                             <CheckCircle2 className="w-6 h-6" />
                                         </div>
                                         <div>
@@ -312,7 +312,7 @@ export default function RolloverGuidePage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4 p-6 rounded-xl bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42]">
-                                        <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-700 flex items-center justify-center font-bold shrink-0">
+                                        <div className="w-12 h-12 rounded-full bg-[rgba(46,139,87,0.08)]0/20 text-green-700 flex items-center justify-center font-bold shrink-0">
                                             <CheckCircle2 className="w-6 h-6" />
                                         </div>
                                         <div>
@@ -321,7 +321,7 @@ export default function RolloverGuidePage() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4 p-6 rounded-xl bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42]">
-                                        <div className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-700 flex items-center justify-center font-bold shrink-0">
+                                        <div className="w-12 h-12 rounded-full bg-[#161828]0/20 text-amber-700 flex items-center justify-center font-bold shrink-0">
                                             <AlertTriangle className="w-6 h-6" />
                                         </div>
                                         <div>
@@ -422,7 +422,7 @@ export default function RolloverGuidePage() {
                                 If you want to convert a traditional 401(k) to a Roth Gold IRA, you&apos;ll owe income taxes on the converted amount. This can make sense if you expect to be in a higher tax bracket in retirement or want tax-free withdrawals later.
                             </p>
 
-                            <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
+                            <div className="bg-[rgba(220,38,38,0.08)]0/10 rounded-2xl p-6 border border-red-500/20 not-prose my-8">
                                 <h4 className="font-bold text-red-700 text-lg mb-4 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
                                     Potential Tax Traps to Avoid
@@ -516,35 +516,35 @@ export default function RolloverGuidePage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Choosing Indirect Rollover</h4>
                                         <p className="text-sm text-red-800 mt-1">Unless you have a specific reason, always choose direct rollover. The 60-day deadline and 20% withholding create unnecessary risk and complications.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Falling for &quot;Home Storage&quot; Schemes</h4>
                                         <p className="text-sm text-red-800 mt-1">Some companies promote &quot;home storage gold IRAs.&quot; This is extremely risky and can trigger a full taxable distribution. Always use IRS-approved depositories.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#161828]0/10 border border-amber-500/20">
                                     <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-amber-700">Not Comparing Companies</h4>
                                         <p className="text-sm text-amber-800 mt-1">Fees and service vary dramatically between gold IRA companies. A few hours of research (or taking our quiz) can save you thousands over the life of your account.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#161828]0/10 border border-amber-500/20">
                                     <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-amber-700">Rolling Over Everything at Once</h4>
                                         <p className="text-sm text-amber-800 mt-1">Most advisors recommend keeping 10-20% of your portfolio in precious metals, not 100%. Consider rolling over a portion while maintaining diversification.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#161828]0/10 border border-amber-500/20">
                                     <AlertTriangle className="w-6 h-6 text-amber-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-amber-700">Ignoring Fees</h4>
@@ -602,7 +602,7 @@ export default function RolloverGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Can I rollover my 401(k) while still employed?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -616,7 +616,7 @@ export default function RolloverGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Will I pay taxes on a 401(k) to gold IRA rollover?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -630,7 +630,7 @@ export default function RolloverGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">How much of my 401(k) should I roll into gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -644,7 +644,7 @@ export default function RolloverGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Can I roll over a Roth 401(k) to a gold IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -658,7 +658,7 @@ export default function RolloverGuidePage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What&apos;s the minimum amount I can roll over?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -681,7 +681,7 @@ export default function RolloverGuidePage() {
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Find My Best Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-slate-200">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#2A2D42]">
                                         <Link href="/reviews">Compare All Companies</Link>
                                     </Button>
                                 </div>

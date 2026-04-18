@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function SelfDirectedRothIRAPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({
                 title: "Self-Directed Roth IRA Guide: Tax-Free Alternative Investments",
                 description: "Learn how a Self-Directed Roth IRA lets you invest in real estate, crypto, and gold completely tax-free.",
@@ -55,7 +55,7 @@ export default function SelfDirectedRothIRAPage() {
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-2 text-green-700 text-sm font-medium mb-4">
-                            <span className="bg-green-500/20 px-3 py-1 rounded-full">Self-Directed IRA</span>
+                            <span className="bg-[rgba(46,139,87,0.08)]0/20 px-3 py-1 rounded-full">Self-Directed IRA</span>
                             <span className="text-[#A8A39A]">•</span>
                             <span className="text-[#A8A39A]">Updated January 2026</span>
                         </div>
@@ -102,14 +102,14 @@ export default function SelfDirectedRothIRAPage() {
                     <div className="max-w-5xl mx-auto">
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="bg-[#0C0D18] backdrop-blur-sm p-6 rounded-xl border border-[#2A2D42] text-center">
-                                <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                                <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                                     <Shield className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">Tax-Free Growth</h3>
                                 <p className="text-[#A8A39A] text-sm">All qualified withdrawals are completely tax-free—including decades of gains.</p>
                             </div>
                             <div className="bg-[#0C0D18] backdrop-blur-sm p-6 rounded-xl border border-[#2A2D42] text-center">
-                                <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                                <div className="w-12 h-12 bg-[#121423]0/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                                     <TrendingUp className="w-6 h-6 text-blue-700" />
                                 </div>
                                 <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">Alternative Assets</h3>
@@ -130,7 +130,7 @@ export default function SelfDirectedRothIRAPage() {
             <InContentCTA trackSource="learn-self-directed-roth-ira" />
 
             {/* Main Content */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF]">
@@ -269,7 +269,7 @@ export default function SelfDirectedRothIRAPage() {
                         </div>
 
                         {/* Important Note */}
-                        <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6 my-8">
+                        <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20 rounded-xl p-6 my-8">
                             <div className="flex gap-4">
                                 <CheckCircle2 className="w-6 h-6 text-green-700 flex-shrink-0" />
                                 <div>
@@ -305,7 +305,7 @@ export default function SelfDirectedRothIRAPage() {
                                 </Button>
                             </div>
                             <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6">
-                                <span className="bg-blue-500/20 text-blue-700 text-xs font-bold px-2 py-1 rounded">CRYPTO FOCUSED</span>
+                                <span className="bg-[#121423]0/20 text-blue-700 text-xs font-bold px-2 py-1 rounded">CRYPTO FOCUSED</span>
                                 <h3 className="text-xl font-bold text-[#F6F4EF] mt-3 mb-2">iTrustCapital</h3>
                                 <p className="text-[#A8A39A] text-sm mb-4">Best for crypto investors. 1% trading fee, Roth supported.</p>
                                 <Button variant="outline" className="w-full border-white/20 text-[#F6F4EF] hover:bg-[#1E2134]/10" asChild>
@@ -355,7 +355,7 @@ export default function SelfDirectedRothIRAPage() {
             <section className="py-12 bg-gradient-to-r from-[#000080] to-[#000060]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <p className="text-amber-400 text-sm font-bold uppercase tracking-wider mb-3">Our #1 Recommended Company</p>
+                        <p className="text-[#D4A94E] text-sm font-bold uppercase tracking-wider mb-3">Our #1 Recommended Company</p>
                         <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
                             Want Gold in Your Self-Directed IRA?
                         </h2>

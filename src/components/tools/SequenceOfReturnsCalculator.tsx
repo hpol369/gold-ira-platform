@@ -141,7 +141,7 @@ export function SequenceOfReturnsCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-red-500/20 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-red-500/30">
+        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.08)]0/20 text-red-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-red-500/30">
           <ArrowUpDown className="h-4 w-4" />
           Zero Competition Keyword
         </div>
@@ -186,7 +186,7 @@ export function SequenceOfReturnsCalculator() {
           {/* Withdrawal Settings */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Calendar className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Annual Withdrawal</h3>
@@ -199,7 +199,7 @@ export function SequenceOfReturnsCalculator() {
                   className={`flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                     withdrawalType === "amount"
                       ? "bg-[#DC2626] text-white"
-                      : "bg-[#121423] text-[#D0CCC4] hover:bg-slate-200"
+                      : "bg-[#121423] text-[#D0CCC4] hover:bg-[#2A2D42]"
                   }`}
                 >
                   Fixed Amount
@@ -209,7 +209,7 @@ export function SequenceOfReturnsCalculator() {
                   className={`flex-1 py-2 px-4 rounded-lg text-sm font-medium transition-all ${
                     withdrawalType === "percentage"
                       ? "bg-[#DC2626] text-white"
-                      : "bg-[#121423] text-[#D0CCC4] hover:bg-slate-200"
+                      : "bg-[#121423] text-[#D0CCC4] hover:bg-[#2A2D42]"
                   }`}
                 >
                   Percentage
@@ -245,7 +245,7 @@ export function SequenceOfReturnsCalculator() {
                     step="0.5"
                     value={withdrawalPercentage}
                     onChange={(e) => setWithdrawalPercentage(Number(e.target.value))}
-                    className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                    className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                   />
                   <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                     <span>2%</span>
@@ -269,7 +269,7 @@ export function SequenceOfReturnsCalculator() {
                     setRetirementYears(newYears);
                     setBullYears(Math.min(bullYears, newYears - 1));
                   }}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
             </div>
@@ -278,7 +278,7 @@ export function SequenceOfReturnsCalculator() {
           {/* Return Scenarios */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <BarChart3 className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Return Scenarios</h3>
@@ -314,7 +314,7 @@ export function SequenceOfReturnsCalculator() {
                     step="1"
                     value={bearReturn}
                     onChange={(e) => setBearReturn(Number(e.target.value))}
-                    className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-red-500"
+                    className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                   />
                 </div>
               </div>
@@ -329,7 +329,7 @@ export function SequenceOfReturnsCalculator() {
                   max={retirementYears - 1}
                   value={bullYears}
                   onChange={(e) => setBullYears(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
 
@@ -358,7 +358,7 @@ export function SequenceOfReturnsCalculator() {
             </h3>
 
             <div className="grid grid-cols-2 gap-4 mb-6">
-              <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4">
+              <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-lg p-4">
                 <div className="flex items-center gap-2 text-sm text-green-600 mb-2">
                   <TrendingUp className="h-4 w-4" />
                   Bull Then Bear
@@ -373,7 +373,7 @@ export function SequenceOfReturnsCalculator() {
                 </p>
               </div>
 
-              <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
+              <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-lg p-4">
                 <div className="flex items-center gap-2 text-sm text-red-600 mb-2">
                   <TrendingDown className="h-4 w-4" />
                   Bear Then Bull
@@ -391,8 +391,8 @@ export function SequenceOfReturnsCalculator() {
 
             <div className={`rounded-lg p-4 ${
               calculations.difference > 0
-                ? "bg-green-500/10 border border-green-500/30"
-                : "bg-red-500/10 border border-red-500/30"
+                ? "bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30"
+                : "bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30"
             }`}>
               <div className="text-center">
                 <div className="text-sm text-[#A8A39A] mb-1">Difference</div>
@@ -439,12 +439,12 @@ export function SequenceOfReturnsCalculator() {
                   {calculations.yearData.filter((_, i) => i % Math.ceil(retirementYears / 10) === 0 || i === retirementYears - 1).map((data) => (
                     <div key={data.year} className="flex-1 flex gap-0.5">
                       <div
-                        className="flex-1 bg-green-500/50 rounded-t"
+                        className="flex-1 bg-[rgba(46,139,87,0.08)]0/50 rounded-t"
                         style={{ height: `${(data.bullThenBear / maxChartValue) * 100}%` }}
                         title={`Year ${data.year}: ${formatCurrency(data.bullThenBear)}`}
                       />
                       <div
-                        className="flex-1 bg-red-500/50 rounded-t"
+                        className="flex-1 bg-[rgba(220,38,38,0.08)]0/50 rounded-t"
                         style={{ height: `${(data.bearThenBull / maxChartValue) * 100}%` }}
                         title={`Year ${data.year}: ${formatCurrency(data.bearThenBull)}`}
                       />
@@ -456,11 +456,11 @@ export function SequenceOfReturnsCalculator() {
 
             <div className="flex justify-center gap-6 text-sm">
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-green-500/50 rounded" />
+                <div className="w-4 h-4 bg-[rgba(46,139,87,0.08)]0/50 rounded" />
                 <span className="text-[#A8A39A]">Bull Then Bear</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-red-500/50 rounded" />
+                <div className="w-4 h-4 bg-[rgba(220,38,38,0.08)]0/50 rounded" />
                 <span className="text-[#A8A39A]">Bear Then Bull</span>
               </div>
             </div>
@@ -552,7 +552,7 @@ export function SequenceOfReturnsCalculator() {
               </div>
             </div>
 
-            <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
+            <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-lg p-4">
               <h4 className="font-semibold text-red-600 mb-2 flex items-center gap-2">
                 <AlertTriangle className="h-4 w-4" />
                 The Real-World Example

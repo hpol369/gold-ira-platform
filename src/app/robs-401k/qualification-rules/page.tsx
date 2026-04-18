@@ -93,7 +93,7 @@ const faqs = [
 
 export default function ROBSQualificationRulesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <SchemaScript
@@ -151,7 +151,7 @@ export default function ROBSQualificationRulesPage() {
             </header>
 
             {/* How ROBS Works */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -200,7 +200,7 @@ export default function ROBSQualificationRulesPage() {
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6">
-                            <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                                 <h3 className="font-bold text-green-800 mb-3 flex items-center gap-2">
                                     <CheckCircle2 className="w-5 h-5" /> C-Corporation Advantages for ROBS
                                 </h3>
@@ -224,7 +224,7 @@ export default function ROBSQualificationRulesPage() {
                                 </ul>
                             </div>
 
-                            <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                 <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
                                     <Ban className="w-5 h-5" /> C-Corporation Challenges
                                 </h3>
@@ -253,12 +253,12 @@ export default function ROBSQualificationRulesPage() {
             </section>
 
             {/* IRS Compliance */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
                             <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                <Shield className="w-5 h-5 text-purple-600" />
+                                <Shield className="w-5 h-5 text-[#D4A94E]" />
                             </div>
                             <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                 IRS Compliance: The Ongoing Requirements
@@ -294,7 +294,7 @@ export default function ROBSQualificationRulesPage() {
 
                             <div className="bg-[#161828] rounded-xl border border-[#2A2D42] p-6">
                                 <h3 className="font-bold text-[#F6F4EF] mb-2 flex items-center gap-2">
-                                    <DollarSign className="w-5 h-5 text-amber-500" />
+                                    <DollarSign className="w-5 h-5 text-[#D4A94E]" />
                                     Annual Stock Valuation
                                 </h3>
                                 <p className="text-[#D0CCC4] text-sm">
@@ -331,7 +331,7 @@ export default function ROBSQualificationRulesPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <FAQSection faqs={faqs} />

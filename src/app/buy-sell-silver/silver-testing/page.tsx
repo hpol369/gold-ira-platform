@@ -258,7 +258,7 @@ const schema = {
 
 export default function SilverTestingPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -276,7 +276,7 @@ export default function SilverTestingPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Buy &amp; Sell Silver Guide
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
               <FlaskConical className="h-4 w-4" />
               300 MONTHLY SEARCHES - DIFF 0
             </div>
@@ -338,7 +338,7 @@ export default function SilverTestingPage() {
       </section>
 
       {/* Detailed Testing Methods */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -352,7 +352,7 @@ export default function SilverTestingPage() {
                     <div className="flex flex-col md:flex-row md:items-start gap-6">
                       <div className="flex items-center gap-4 md:w-64 flex-shrink-0">
                         <div className={`w-14 h-14 rounded-xl flex items-center justify-center ${
-                          method.destructive ? "bg-red-500/20" : "bg-blue-500/20"
+                          method.destructive ? "bg-[rgba(220,38,38,0.08)]0/20" : "bg-[#121423]0/20"
                         }`}>
                           <Icon className={`h-7 w-7 ${
                             method.destructive ? "text-red-400" : "text-blue-400"
@@ -404,13 +404,13 @@ export default function SilverTestingPage() {
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-4 mb-4">
-                          <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-3">
+                          <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-lg p-3">
                             <h4 className="text-sm font-semibold text-green-400 mb-1 flex items-center gap-1">
                               <CheckCircle2 className="h-3 w-3" /> Pass
                             </h4>
                             <p className="text-[#D0CCC4] text-sm">{method.passResult}</p>
                           </div>
-                          <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3">
+                          <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-lg p-3">
                             <h4 className="text-sm font-semibold text-red-400 mb-1 flex items-center gap-1">
                               <XCircle className="h-3 w-3" /> Fail
                             </h4>
@@ -469,7 +469,7 @@ export default function SilverTestingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -521,7 +521,7 @@ export default function SilverTestingPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

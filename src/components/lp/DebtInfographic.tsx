@@ -77,7 +77,7 @@ export default function DebtInfographic() {
                     </div>
 
                     <div className="text-center group hover:bg-[#1E2134]/5 p-2 rounded-lg transition-colors">
-                        <div className="flex items-center justify-center gap-1 text-amber-500 mb-2">
+                        <div className="flex items-center justify-center gap-1 text-[#D4A94E] mb-2">
                             <DollarSign className="h-5 w-5" />
                         </div>
                         <div className="text-2xl md:text-4xl font-black text-white tracking-tighter drop-shadow-lg">

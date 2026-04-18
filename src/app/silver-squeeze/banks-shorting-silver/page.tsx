@@ -59,7 +59,7 @@ const faqSchema = {
 
 export default function BanksShortingSilverPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             
 
             <script
@@ -163,7 +163,7 @@ export default function BanksShortingSilverPage() {
                         {/* Section 2: The Spoofing Conviction */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <TrendingDown className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">The Spoofing Conviction: Federal Crimes Admitted</h2>
@@ -250,7 +250,7 @@ export default function BanksShortingSilverPage() {
                         {/* Section 4: Why Banks Short Silver */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <Target className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Why Do Banks Short Silver?</h2>
@@ -327,7 +327,7 @@ export default function BanksShortingSilverPage() {
                         {/* Section 6: Protecting Yourself */}
                         <section className="bg-[#0C0D18] backdrop-blur border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-green-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg">
                                     <Shield className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Protecting Yourself from Bank Manipulation</h2>

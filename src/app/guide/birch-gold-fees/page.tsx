@@ -96,7 +96,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function BirchGoldFeesPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             
 
             {/* Schema Markup */}
@@ -210,7 +210,7 @@ export default function BirchGoldFeesPage() {
                                     <p className="text-[#D0CCC4] text-sm mb-4">
                                         This is the IRA custodian&apos;s fee for maintaining your account, handling paperwork, and providing quarterly statements. This is slightly higher than the industry average of $75-$80.
                                     </p>
-                                    <div className="bg-amber-500/10 border border-amber-500/20 rounded-lg p-4">
+                                    <div className="bg-[#161828]0/10 border border-amber-500/20 rounded-lg p-4">
                                         <p className="text-amber-800 text-sm">
                                             <strong className="text-[#D4A94E]">Note:</strong> Augusta Precious Metals charges only $80/year for annual maintenance—saving you $20 annually.
                                         </p>
@@ -229,7 +229,7 @@ export default function BirchGoldFeesPage() {
                                     <p className="text-[#D0CCC4] text-sm mb-4">
                                         Your physical gold must be stored at an IRS-approved depository. Birch Gold uses Delaware Depository, a reputable facility. This flat fee applies regardless of how much gold you hold.
                                     </p>
-                                    <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
+                                    <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20 rounded-lg p-4">
                                         <p className="text-red-800 text-sm">
                                             <strong className="text-red-700">Comparison:</strong> Augusta Precious Metals charges only $100/year for storage—saving you $50 annually on this fee alone.
                                         </p>
@@ -262,7 +262,7 @@ export default function BirchGoldFeesPage() {
                                     <p className="text-[#D0CCC4] text-sm mb-4">
                                         This is where the real cost is. Birch Gold (like all dealers) charges a spread—the difference between what you pay to buy gold and what they&apos;ll pay when you sell. This is typically 5-8% above spot price for gold coins.
                                     </p>
-                                    <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
+                                    <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20 rounded-lg p-4">
                                         <p className="text-red-800 text-sm">
                                             <strong className="text-red-700">Important:</strong> Spreads are the largest cost in any Gold IRA and are often not clearly disclosed. Always request a specific price quote before purchasing. Augusta is known for transparent, competitive pricing on spreads.
                                         </p>
@@ -289,7 +289,7 @@ export default function BirchGoldFeesPage() {
                                         <span className="text-[#D0CCC4]">Storage Fee</span>
                                         <span className="font-bold text-[#F6F4EF]">$150</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-amber-500/10 rounded-lg border border-amber-500/30">
+                                    <div className="flex justify-between items-center p-3 bg-[#161828]0/10 rounded-lg border border-amber-500/30">
                                         <span className="text-amber-800 font-medium">First Year Total (excluding spreads)</span>
                                         <span className="font-bold text-[#D4A94E]">$300</span>
                                     </div>
@@ -297,7 +297,7 @@ export default function BirchGoldFeesPage() {
                                         <span className="text-[#D0CCC4] font-medium">Ongoing Annual Cost (Birch Gold)</span>
                                         <span className="font-bold text-[#F6F4EF]">$250/year</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-green-500/10 rounded-lg border border-green-500/30">
+                                    <div className="flex justify-between items-center p-3 bg-[rgba(46,139,87,0.08)]0/10 rounded-lg border border-green-500/30">
                                         <span className="text-green-800 font-medium">Ongoing Annual Cost (Augusta)</span>
                                         <span className="font-bold text-green-700">$180/year</span>
                                     </div>
@@ -352,7 +352,7 @@ export default function BirchGoldFeesPage() {
                                             <td className="p-4">$50,000</td>
                                             <td className="p-4 text-[#D0CCC4]">—</td>
                                         </tr>
-                                        <tr className="bg-amber-500/5 border-b border-white/5">
+                                        <tr className="bg-[#161828]0/5 border-b border-white/5">
                                             <td className="p-4 font-bold text-[#D4A94E]">Total Annual Fees</td>
                                             <td className="p-4 font-bold">$250/year</td>
                                             <td className="p-4 font-bold text-green-700">$180/year</td>
@@ -370,7 +370,7 @@ export default function BirchGoldFeesPage() {
                         <div className="mb-16">
                             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">Birch Gold Fees: Pros & Cons</h2>
                             <div className="grid md:grid-cols-2 gap-6">
-                                <div className="bg-green-500/10 border border-green-500/20 rounded-xl p-6">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20 rounded-xl p-6">
                                     <h3 className="font-bold text-green-700 mb-4 flex items-center gap-2">
                                         <CheckCircle2 className="h-5 w-5" />
                                         Advantages
@@ -398,7 +398,7 @@ export default function BirchGoldFeesPage() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20 rounded-xl p-6">
                                     <h3 className="font-bold text-red-700 mb-4 flex items-center gap-2">
                                         <XCircle className="h-5 w-5" />
                                         Disadvantages
@@ -479,10 +479,10 @@ export default function BirchGoldFeesPage() {
                                     </li>
                                 </ul>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <LeadCaptureButton variant="default" source="birch-gold-fees" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                    <LeadCaptureButton variant="default" source="birch-gold-fees" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
                                         Get Free Augusta Consultation <ArrowRight className="ml-2 h-4 w-4" />
                                     </LeadCaptureButton>
-                                    <Button variant="outline" size="lg" asChild className="border-white/20 text-[#F6F4EF] hover:bg-slate-200">
+                                    <Button variant="outline" size="lg" asChild className="border-white/20 text-[#F6F4EF] hover:bg-[#2A2D42]">
                                         <Link href="/reviews/augusta-precious-metals">
                                             Read Full Augusta Review
                                         </Link>
@@ -520,7 +520,7 @@ export default function BirchGoldFeesPage() {
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">
                                     Augusta Precious Metals offers lower annual fees, transparent pricing, and world-class education. Get a free consultation to see exactly what you&apos;ll pay—no hidden costs.
                                 </p>
-                                <LeadCaptureButton variant="default" source="birch-gold-fees" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                <LeadCaptureButton variant="default" source="birch-gold-fees" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
                                     Get Free Fee Comparison <ArrowRight className="ml-2 w-5 h-5" />
                                 </LeadCaptureButton>
                             </div>

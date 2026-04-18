@@ -68,7 +68,7 @@ const comparisonData = [
 
 export default function GoldBullionVsCoinsPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "Gold Bullion vs Gold Coins: Which Is Better for Your IRA? (2026)", description: "Compare gold bullion bars vs gold coins for your IRA. Learn the pros, cons, premiums, and liquidity differences. Expert guide for retirement investors.", slug: "/learn/gold-bullion-vs-gold-coins" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Gold Bullion vs Gold Coins", url: "/learn/gold-bullion-vs-gold-coins" }])} />
 
@@ -244,7 +244,7 @@ export default function GoldBullionVsCoinsPage() {
                                     Gold Bullion Bars
                                 </h3>
                                 <div className="space-y-4">
-                                    <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                                    <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5">
                                         <h4 className="font-bold text-green-700 mb-3">Pros</h4>
                                         <ul className="space-y-2 text-green-800 text-sm">
                                             <li className="flex items-start gap-2">
@@ -265,7 +265,7 @@ export default function GoldBullionVsCoinsPage() {
                                             </li>
                                         </ul>
                                     </div>
-                                    <div className="bg-red-50 border border-red-200 rounded-xl p-5">
+                                    <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5">
                                         <h4 className="font-bold text-red-700 mb-3">Cons</h4>
                                         <ul className="space-y-2 text-red-800 text-sm">
                                             <li className="flex items-start gap-2">
@@ -296,7 +296,7 @@ export default function GoldBullionVsCoinsPage() {
                                     Gold Coins
                                 </h3>
                                 <div className="space-y-4">
-                                    <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                                    <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5">
                                         <h4 className="font-bold text-green-700 mb-3">Pros</h4>
                                         <ul className="space-y-2 text-green-800 text-sm">
                                             <li className="flex items-start gap-2">
@@ -321,7 +321,7 @@ export default function GoldBullionVsCoinsPage() {
                                             </li>
                                         </ul>
                                     </div>
-                                    <div className="bg-red-50 border border-red-200 rounded-xl p-5">
+                                    <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5">
                                         <h4 className="font-bold text-red-700 mb-3">Cons</h4>
                                         <ul className="space-y-2 text-red-800 text-sm">
                                             <li className="flex items-start gap-2">

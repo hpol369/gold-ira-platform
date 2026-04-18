@@ -184,7 +184,7 @@ const schema = {
 
 export default function SilverRetirementPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -291,13 +291,13 @@ export default function SilverRetirementPage() {
               const Icon = page.icon;
               const colorClasses: Record<string, string> = {
                 amber: "bg-[rgba(220,38,38,0.18)] text-[#D4A94E] border-[#B22234]/30",
-                blue: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-                green: "bg-green-500/20 text-green-400 border-green-500/30",
-                purple: "bg-purple-500/20 text-purple-400 border-purple-500/30",
+                blue: "bg-[#121423]0/20 text-blue-400 border-blue-500/30",
+                green: "bg-[rgba(46,139,87,0.08)]0/20 text-green-400 border-green-500/30",
+                purple: "bg-purple-500/20 text-[#D4A94E] border-[rgba(197,149,46,0.32)]",
                 teal: "bg-teal-500/20 text-teal-400 border-teal-500/30",
                 pink: "bg-pink-500/20 text-pink-400 border-pink-500/30",
-                orange: "bg-orange-500/20 text-orange-400 border-orange-500/30",
-                red: "bg-red-500/20 text-red-400 border-red-500/30",
+                orange: "bg-[rgba(183,121,31,0.08)]0/20 text-orange-400 border-orange-500/30",
+                red: "bg-[rgba(220,38,38,0.08)]0/20 text-red-400 border-red-500/30",
               };
               const iconColor = colorClasses[page.color] || colorClasses.amber;
 
@@ -451,7 +451,7 @@ export default function SilverRetirementPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/silver-retirement" />
         </Container>

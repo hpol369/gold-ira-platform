@@ -55,7 +55,7 @@ const schema = {
 
 export default function LearCapitalComplaintsPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-[rgba(197,149,46,0.1)] text-white py-20 relative overflow-hidden">
@@ -102,8 +102,8 @@ export default function LearCapitalComplaintsPage() {
                         {/* The Lawsuit */}
                         <section id="lawsuit-history" className="scroll-mt-32">
                             <h2>The NY Attorney General Lawsuit</h2>
-                            <div className="bg-amber-50 p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
-                                <AlertTriangle className="w-8 h-8 text-amber-600 shrink-0" />
+                            <div className="bg-[#161828] p-6 rounded-xl border border-amber-200 flex gap-4 not-prose my-6">
+                                <AlertTriangle className="w-8 h-8 text-[#D4A94E] shrink-0" />
                                 <div>
                                     <h3 className="font-bold text-amber-900 text-lg mb-2">What Actually Happened</h3>
                                     <p className="text-amber-800">

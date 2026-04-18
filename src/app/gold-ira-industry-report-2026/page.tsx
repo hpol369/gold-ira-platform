@@ -120,7 +120,7 @@ function SectionHeader({
   return (
     <div className="flex items-center gap-3 mb-6">
       <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center flex-shrink-0">
-        <Icon className="w-5 h-5 text-amber-600" />
+        <Icon className="w-5 h-5 text-[#D4A94E]" />
       </div>
       <h2
         id={id}
@@ -820,7 +820,7 @@ export default function GoldIRAIndustryReportPage() {
                             key={row.feeType}
                             className={`${
                               isTotal
-                                ? "bg-amber-50 font-semibold"
+                                ? "bg-[#161828] font-semibold"
                                 : i % 2 === 0
                                 ? "bg-white"
                                 : "bg-[#0C0D18]/50"
@@ -851,7 +851,7 @@ export default function GoldIRAIndustryReportPage() {
               <SourceNote text="CNBC Select Apr 2026; Yahoo Finance; Brighton Gold 2026 fee breakdown; Money.com Mar 2026" />
 
               {/* Fee context box */}
-              <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-5">
+              <div className="mt-8 bg-[#121423] border border-blue-200 rounded-xl p-5">
                 <h4 className="font-bold text-blue-900 mb-2">Putting Fees in Context</h4>
                 <p className="text-sm text-blue-800 leading-relaxed">
                   On a $100,000 Gold IRA, typical annual costs of $250&ndash;$300
@@ -907,7 +907,7 @@ export default function GoldIRAIndustryReportPage() {
                 {enforcementActions.map((action) => (
                   <div
                     key={action.target}
-                    className="bg-red-50 border border-red-200 rounded-xl p-5"
+                    className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5"
                   >
                     <div className="flex items-start gap-3">
                       <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
@@ -1058,7 +1058,7 @@ export default function GoldIRAIndustryReportPage() {
                             key={row.metric}
                             className={`${
                               isTotal
-                                ? "bg-amber-50 font-semibold"
+                                ? "bg-[#161828] font-semibold"
                                 : i % 2 === 0
                                 ? "bg-white"
                                 : "bg-[#0C0D18]/50"
@@ -1164,7 +1164,7 @@ export default function GoldIRAIndustryReportPage() {
                 </p>
                 <ul className="space-y-3 text-[#D0CCC4]">
                   <li className="flex items-start gap-2">
-                    <Scale className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    <Scale className="w-4 h-4 text-[#D4A94E] mt-1 flex-shrink-0" />
                     <span>
                       <strong>Gold price data</strong> sourced from MacroTrends
                       historical gold prices, which aggregates London Bullion
@@ -1172,7 +1172,7 @@ export default function GoldIRAIndustryReportPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Scale className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    <Scale className="w-4 h-4 text-[#D4A94E] mt-1 flex-shrink-0" />
                     <span>
                       <strong>Recession dates</strong> use official NBER Business
                       Cycle Dating Committee designations. Gold prices at
@@ -1181,7 +1181,7 @@ export default function GoldIRAIndustryReportPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Scale className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    <Scale className="w-4 h-4 text-[#D4A94E] mt-1 flex-shrink-0" />
                     <span>
                       <strong>IRA market data</strong> drawn from the Investment
                       Company Institute (ICI) Quarterly Retirement Market Data
@@ -1189,7 +1189,7 @@ export default function GoldIRAIndustryReportPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Scale className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    <Scale className="w-4 h-4 text-[#D4A94E] mt-1 flex-shrink-0" />
                     <span>
                       <strong>IRA balance data</strong> from Fidelity
                       Investments Q4 2024 reports. Retirement savings figures
@@ -1198,7 +1198,7 @@ export default function GoldIRAIndustryReportPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Scale className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    <Scale className="w-4 h-4 text-[#D4A94E] mt-1 flex-shrink-0" />
                     <span>
                       <strong>Fee data</strong> compiled from CNBC Select (April
                       2026), Yahoo Finance, Brighton Gold (2026 fee breakdown),
@@ -1206,7 +1206,7 @@ export default function GoldIRAIndustryReportPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Scale className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    <Scale className="w-4 h-4 text-[#D4A94E] mt-1 flex-shrink-0" />
                     <span>
                       <strong>Supply and demand data</strong> from World Gold
                       Council Gold Demand Trends reports (Full Year 2024 and
@@ -1214,7 +1214,7 @@ export default function GoldIRAIndustryReportPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Scale className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    <Scale className="w-4 h-4 text-[#D4A94E] mt-1 flex-shrink-0" />
                     <span>
                       <strong>Consumer protection data</strong> from CFTC
                       enforcement press releases, SEC filings, and Better
@@ -1222,7 +1222,7 @@ export default function GoldIRAIndustryReportPage() {
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Scale className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    <Scale className="w-4 h-4 text-[#D4A94E] mt-1 flex-shrink-0" />
                     <span>
                       <strong>Contribution limits</strong> from IRS.gov
                       Publication 590-A and Fidelity Investments.

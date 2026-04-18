@@ -21,7 +21,7 @@ export function Hero() {
                     {/* Warning Badge */}
                     <div
                         style={{ animation: "fadeInUp 0.5s ease-out both" }}
-                        className="inline-flex items-center gap-2 bg-red-50 border border-red-100 text-[#D4A94E] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide mb-8 shadow-sm"
+                        className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.08)] border border-red-100 text-[#D4A94E] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide mb-8 shadow-sm"
                     >
                         <ShieldCheck className="h-4 w-4" />
                         <span>Wealth Protection Alert: 2026 Update</span>
@@ -84,7 +84,7 @@ export function Hero() {
                     >
                         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 text-sm text-left">
                             <div className="flex items-center gap-4 p-5 rounded-xl bg-[#161828] border border-[#2A2D42] shadow-sm hover:shadow-md hover:border-[rgba(197,149,46,0.55)]/30 transition-all duration-300 group">
-                                <div className="p-3 rounded-full bg-blue-50 text-[#F6F4EF] group-hover:scale-110 transition-transform">
+                                <div className="p-3 rounded-full bg-[#121423] text-[#F6F4EF] group-hover:scale-110 transition-transform">
                                     <ShieldCheck className="h-6 w-6" />
                                 </div>
                                 <div className="flex flex-col">
@@ -94,7 +94,7 @@ export function Hero() {
                             </div>
 
                             <div className="flex items-center gap-4 p-5 rounded-xl bg-[#161828] border border-[#2A2D42] shadow-sm hover:shadow-md hover:border-[rgba(197,149,46,0.55)]/30 transition-all duration-300 group">
-                                <div className="p-3 rounded-full bg-blue-50 text-[#F6F4EF] group-hover:scale-110 transition-transform">
+                                <div className="p-3 rounded-full bg-[#121423] text-[#F6F4EF] group-hover:scale-110 transition-transform">
                                     <TrendingUp className="h-6 w-6" />
                                 </div>
                                 <div className="flex flex-col">
@@ -104,7 +104,7 @@ export function Hero() {
                             </div>
 
                             <div className="flex items-center gap-4 p-5 rounded-xl bg-[#161828] border border-[#2A2D42] shadow-sm hover:shadow-md hover:border-[rgba(197,149,46,0.55)]/30 transition-all duration-300 group">
-                                <div className="p-3 rounded-full bg-blue-50 text-[#F6F4EF] group-hover:scale-110 transition-transform">
+                                <div className="p-3 rounded-full bg-[#121423] text-[#F6F4EF] group-hover:scale-110 transition-transform">
                                     <Lock className="h-6 w-6" />
                                 </div>
                                 <div className="flex flex-col">

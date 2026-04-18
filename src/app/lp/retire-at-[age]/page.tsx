@@ -122,7 +122,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
   const source = `lp-retire-at-${age}`;
 
   return (
-    <div className="min-h-screen bg-white text-[#F6F4EF] font-sans">
+    <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF] font-sans">
       {/* Urgency Bar */}
       <div className="bg-[rgba(197,149,46,0.1)] text-white p-3 text-center font-semibold text-sm">
         <span className="flex items-center justify-center gap-2">
@@ -150,7 +150,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
               <p className="text-lg text-[#D0CCC4] mb-6">{data.subheadline}</p>
 
               {/* Key Stat */}
-              <div className="bg-red-50 border-l-4 border-[#B22234] p-4 mb-6">
+              <div className="bg-[rgba(220,38,38,0.08)] border-l-4 border-[#B22234] p-4 mb-6">
                 <div className="flex items-start gap-3">
                   <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
@@ -203,7 +203,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
               <div className="flex justify-center items-center gap-2 mb-6">
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="h-6 w-6 text-amber-400 fill-current" />
+                    <Star key={i} className="h-6 w-6 text-[#D4A94E] fill-current" />
                   ))}
                 </div>
                 <span className="text-lg font-bold text-[#D0CCC4]">4.9/5</span>
@@ -299,19 +299,19 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
       </section>
 
       {/* 2008 Comparison - Quick Visual */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-8">
             What Happened in 2008?
           </h2>
           <div className="grid grid-cols-2 gap-6">
-            <div className="bg-red-50 rounded-xl p-6 border border-red-200">
+            <div className="bg-[rgba(220,38,38,0.08)] rounded-xl p-6 border border-red-200">
               <TrendingDown className="h-10 w-10 text-[#D4A94E] mx-auto mb-3" />
               <div className="text-4xl font-black text-[#D4A94E] mb-1">-50%</div>
               <div className="text-[#D0CCC4]">S&P 500</div>
               <p className="text-xs text-[#A8A39A] mt-2">Stocks crashed</p>
             </div>
-            <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+            <div className="bg-[rgba(46,139,87,0.08)] rounded-xl p-6 border border-green-200">
               <Shield className="h-10 w-10 text-green-600 mx-auto mb-3" />
               <div className="text-4xl font-black text-green-600 mb-1">+25%</div>
               <div className="text-[#D0CCC4]">Gold</div>
@@ -331,7 +331,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
             <div className="bg-[#161828] rounded-xl p-5 shadow-sm border border-[#2A2D42]">
               <div className="flex gap-1 mb-3">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
+                  <Star key={i} className="w-4 h-4 text-[#D4A94E] fill-current" />
                 ))}
               </div>
               <p className="text-[#D0CCC4] text-sm mb-3 italic">
@@ -344,7 +344,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
             <div className="bg-[#161828] rounded-xl p-5 shadow-sm border border-[#2A2D42]">
               <div className="flex gap-1 mb-3">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
+                  <Star key={i} className="w-4 h-4 text-[#D4A94E] fill-current" />
                 ))}
               </div>
               <p className="text-[#D0CCC4] text-sm mb-3 italic">
@@ -357,7 +357,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
             <div className="bg-[#161828] rounded-xl p-5 shadow-sm border border-[#2A2D42]">
               <div className="flex gap-1 mb-3">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
+                  <Star key={i} className="w-4 h-4 text-[#D4A94E] fill-current" />
                 ))}
               </div>
               <p className="text-[#D0CCC4] text-sm mb-3 italic">
@@ -371,7 +371,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
       </section>
 
       {/* FAQ Section - Objection Handling */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
             Common Questions
@@ -404,7 +404,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
           <LeadCaptureButton
             variant="retirement-number"
             source={`${source}-footer`}
-            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-all inline-flex items-center gap-3"
+            className="bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-all inline-flex items-center gap-3"
           >
             Get My Retirement Number
             <ArrowRight className="h-6 w-6" />

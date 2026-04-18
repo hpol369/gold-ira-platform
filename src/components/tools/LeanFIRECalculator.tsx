@@ -125,7 +125,7 @@ export function LeanFIRECalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-green-500/20 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-green-500/30">
+        <div className="inline-flex items-center gap-2 bg-[rgba(46,139,87,0.08)]0/20 text-green-600 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-green-500/30">
           <Leaf className="h-4 w-4" />
           Minimalist FIRE Calculator
         </div>
@@ -143,7 +143,7 @@ export function LeanFIRECalculator() {
           {/* Monthly Expenses Breakdown */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+              <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                 <ShoppingCart className="h-5 w-5 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold">Minimal Monthly Expenses</h3>
@@ -221,7 +221,7 @@ export function LeanFIRECalculator() {
                 </div>
               </div>
 
-              <div className="bg-green-500/10 rounded-lg p-4 border border-green-500/20">
+              <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-lg p-4 border border-green-500/20">
                 <div className="flex justify-between items-center">
                   <span className="font-semibold text-green-600">Total Monthly</span>
                   <span className="text-2xl font-bold text-green-600">
@@ -238,7 +238,7 @@ export function LeanFIRECalculator() {
           {/* Savings Progress */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <DollarSign className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Savings</h3>
@@ -287,7 +287,7 @@ export function LeanFIRECalculator() {
           {/* Assumptions */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <Calculator className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Assumptions</h3>
@@ -346,8 +346,8 @@ export function LeanFIRECalculator() {
           {/* Status Card */}
           <div className={`rounded-xl p-6 border ${
             calculations.hasReachedFIRE
-              ? 'bg-green-500/20 border-green-500/30'
-              : 'bg-blue-500/20 border-blue-500/30'
+              ? 'bg-[rgba(46,139,87,0.08)]0/20 border-green-500/30'
+              : 'bg-[#121423]0/20 border-blue-500/30'
           }`}>
             <div className="flex items-center gap-3 mb-4">
               {calculations.hasReachedFIRE ? (
@@ -460,7 +460,7 @@ export function LeanFIRECalculator() {
                 </div>
                 <div className="w-full bg-[#121423] rounded-full h-2">
                   <div
-                    className="h-full bg-blue-500 rounded-full"
+                    className="h-full bg-[#121423]0 rounded-full"
                     style={{ width: `${calculations.housingPercent}%` }}
                   />
                 </div>
@@ -475,7 +475,7 @@ export function LeanFIRECalculator() {
                 </div>
                 <div className="w-full bg-[#121423] rounded-full h-2">
                   <div
-                    className="h-full bg-green-500 rounded-full"
+                    className="h-full bg-[rgba(46,139,87,0.08)]0 rounded-full"
                     style={{ width: `${calculations.foodPercent}%` }}
                   />
                 </div>
@@ -490,7 +490,7 @@ export function LeanFIRECalculator() {
                 </div>
                 <div className="w-full bg-[#121423] rounded-full h-2">
                   <div
-                    className="h-full bg-amber-500 rounded-full"
+                    className="h-full bg-[#161828]0 rounded-full"
                     style={{ width: `${calculations.utilitiesPercent}%` }}
                   />
                 </div>

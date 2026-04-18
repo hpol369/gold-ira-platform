@@ -159,7 +159,7 @@ function WizardStep({ question, helper, options, onSelect, onBack, stepIdx }: an
             {/* Progress */}
             <div className="flex items-center gap-2 mb-8 justify-center">
                 {[1, 2, 3].map((i) => (
-                    <div key={i} className={`h-1.5 w-12 rounded-full transition-colors ${i <= stepIdx ? 'bg-[#DC2626]' : 'bg-slate-200'}`} />
+                    <div key={i} className={`h-1.5 w-12 rounded-full transition-colors ${i <= stepIdx ? 'bg-[#DC2626]' : 'bg-[#2A2D42]'}`} />
                 ))}
             </div>
 

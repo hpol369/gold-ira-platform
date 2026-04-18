@@ -129,7 +129,7 @@ export default function GoldIRACompanyFeesPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-[#F6F4EF] font-sans">
+        <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF] font-sans">
             {/* FAQ Schema */}
             <script
                 type="application/ld+json"
@@ -139,7 +139,7 @@ export default function GoldIRACompanyFeesPage() {
             {/* Alert Bar */}
             <div className="bg-[rgba(197,149,46,0.1)] text-white p-2.5 text-center font-bold text-sm">
                 <span className="flex items-center justify-center gap-2">
-                    <AlertTriangle className="h-4 w-4 text-amber-400" />
+                    <AlertTriangle className="h-4 w-4 text-[#D4A94E]" />
                     Comparing Gold IRA Companies? Here&apos;s What They Actually Charge
                 </span>
             </div>
@@ -169,7 +169,7 @@ export default function GoldIRACompanyFeesPage() {
                             <div className="text-sm text-[#D0CCC4]">Companies Analyzed</div>
                         </div>
                         <div className="text-center border-l border-[#3F4460] pl-6 md:pl-12">
-                            <div className="text-3xl md:text-4xl font-bold text-amber-600">Fee Transparency</div>
+                            <div className="text-3xl md:text-4xl font-bold text-[#D4A94E]">Fee Transparency</div>
                             <div className="text-sm text-[#D0CCC4]">Ranked</div>
                         </div>
                         <div className="text-center border-l border-[#3F4460] pl-6 md:pl-12">
@@ -182,7 +182,7 @@ export default function GoldIRACompanyFeesPage() {
                     <LeadCaptureButton
                         variant="compare"
                         source="lp-gold-ira-company-fees-hero"
-                        className="inline-flex items-center gap-3 bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-lg hover:shadow-xl transition-all"
+                        className="inline-flex items-center gap-3 bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-lg hover:shadow-xl transition-all"
                     >
                         See The Comparison
                         <ArrowRight className="h-6 w-6" />
@@ -208,7 +208,7 @@ export default function GoldIRACompanyFeesPage() {
             </section>
 
             {/* Big Comparison Table */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <div className="max-w-6xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] text-center mb-4">2026 Gold IRA Fee Comparison</h2>
                     <p className="text-center text-[#D0CCC4] mb-10 max-w-2xl mx-auto">Side-by-side comparison of fees, minimums, and BBB records from the top Gold IRA companies.</p>
@@ -229,7 +229,7 @@ export default function GoldIRACompanyFeesPage() {
                                 {companies.map((company, index) => (
                                     <tr
                                         key={index}
-                                        className={company.highlight ? "bg-green-50 border-l-4 border-green-500" : index % 2 === 1 ? "bg-[#0C0D18]" : ""}
+                                        className={company.highlight ? "bg-[rgba(46,139,87,0.08)] border-l-4 border-green-500" : index % 2 === 1 ? "bg-[#0C0D18]" : ""}
                                     >
                                         <td className="p-4 font-bold text-[#F6F4EF]">
                                             {company.name}
@@ -251,8 +251,8 @@ export default function GoldIRACompanyFeesPage() {
                                             </span>
                                         </td>
                                         <td className="p-4 text-center">
-                                            <span className="inline-flex items-center gap-1 text-amber-600 font-semibold">
-                                                <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
+                                            <span className="inline-flex items-center gap-1 text-[#D4A94E] font-semibold">
+                                                <Star className="h-4 w-4 fill-[#D4A94E] text-[#D4A94E]" />
                                                 {company.bbbRating}
                                             </span>
                                         </td>
@@ -354,13 +354,13 @@ export default function GoldIRACompanyFeesPage() {
             </section>
 
             {/* Why Augusta Wins Section */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] text-center mb-4">Why Augusta Has The Best Fee Structure</h2>
                     <p className="text-center text-[#D0CCC4] mb-10 max-w-2xl mx-auto">After comparing all major Gold IRA companies, Augusta stands out on three key factors.</p>
 
                     <div className="grid md:grid-cols-3 gap-6">
-                        <div className="bg-green-50 rounded-xl p-6 border border-green-200 text-center">
+                        <div className="bg-[rgba(46,139,87,0.08)] rounded-xl p-6 border border-green-200 text-center">
                             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-3xl font-bold text-green-600">0</span>
                             </div>
@@ -368,7 +368,7 @@ export default function GoldIRACompanyFeesPage() {
                             <p className="text-[#D0CCC4] text-sm">The only major Gold IRA company with zero BBB complaints in 10+ years. That&apos;s unheard of in this industry.</p>
                         </div>
 
-                        <div className="bg-blue-50 rounded-xl p-6 border border-blue-200 text-center">
+                        <div className="bg-[#121423] rounded-xl p-6 border border-blue-200 text-center">
                             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-3xl font-bold text-blue-600">$180</span>
                             </div>
@@ -376,9 +376,9 @@ export default function GoldIRACompanyFeesPage() {
                             <p className="text-[#D0CCC4] text-sm">One simple price covers BOTH custodian and storage. No percentage-based fees that grow with your account.</p>
                         </div>
 
-                        <div className="bg-amber-50 rounded-xl p-6 border border-amber-200 text-center">
+                        <div className="bg-[#161828] rounded-xl p-6 border border-amber-200 text-center">
                             <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                                <span className="text-3xl font-bold text-amber-600">10yr</span>
+                                <span className="text-3xl font-bold text-[#D4A94E]">10yr</span>
                             </div>
                             <h3 className="text-xl font-bold text-[#F6F4EF] mb-2">Fees Waived</h3>
                             <p className="text-[#D0CCC4] text-sm">For accounts $50K+, Augusta waives up to 10 years of fees. That&apos;s $1,800 in savings.</p>
@@ -429,7 +429,7 @@ export default function GoldIRACompanyFeesPage() {
                     <LeadCaptureButton
                         variant="compare"
                         source="lp-gold-ira-company-fees-footer"
-                        className="inline-flex items-center gap-3 bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-all border-2 border-white/20"
+                        className="inline-flex items-center gap-3 bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-all border-2 border-white/20"
                     >
                         Get Your Free Consultation
                         <ArrowRight className="h-6 w-6" />

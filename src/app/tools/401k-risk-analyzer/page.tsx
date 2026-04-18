@@ -82,10 +82,10 @@ function calculateRiskScore(stockExposure: number, ageRange: string): number {
 }
 
 function getRiskLevel(score: number): { level: string; color: string; bgColor: string } {
-  if (score < 30) return { level: "Low", color: "text-green-600", bgColor: "bg-green-500/20 border-green-500/30" };
-  if (score < 50) return { level: "Medium", color: "text-blue-600", bgColor: "bg-blue-500/20 border-blue-500/30" };
+  if (score < 30) return { level: "Low", color: "text-green-600", bgColor: "bg-[rgba(46,139,87,0.08)]0/20 border-green-500/30" };
+  if (score < 50) return { level: "Medium", color: "text-blue-600", bgColor: "bg-[#121423]0/20 border-blue-500/30" };
   if (score < 75) return { level: "High", color: "text-[#D4A94E]", bgColor: "bg-[rgba(220,38,38,0.1)] border-[#B22234]/30" };
-  return { level: "Very High", color: "text-red-600", bgColor: "bg-red-500/20 border-red-500/30" };
+  return { level: "Very High", color: "text-red-600", bgColor: "bg-[rgba(220,38,38,0.08)]0/20 border-red-500/30" };
 }
 
 function getRecommendation(riskScore: number, ageRange: string, stockExposure: number): string {
@@ -177,14 +177,14 @@ export default function RiskAnalyzerPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       {/* Hero Section */}
       <section className="py-12 md:py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 border border-red-500/30 rounded-full text-red-600 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.08)]0/20 border border-red-500/30 rounded-full text-red-600 font-semibold text-sm mb-6">
               <AlertTriangle className="h-4 w-4" />
               FREE RISK ASSESSMENT
             </div>
@@ -396,7 +396,7 @@ export default function RiskAnalyzerPage() {
                       {step > 1 && (
                         <button
                           onClick={handleBack}
-                          className="px-6 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] font-medium hover:bg-slate-200 transition-all flex items-center gap-2"
+                          className="px-6 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] font-medium hover:bg-[#2A2D42] transition-all flex items-center gap-2"
                         >
                           <ArrowLeft className="h-4 w-4" />
                           Back
@@ -484,7 +484,7 @@ export default function RiskAnalyzerPage() {
                       </div>
 
                       {/* Potential Loss */}
-                      <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                      <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-4">
                         <div className="flex items-center gap-2 text-red-600 text-sm mb-2">
                           <DollarSign className="h-4 w-4" />
                           IF MARKET DROPS 40%
@@ -561,7 +561,7 @@ export default function RiskAnalyzerPage() {
                     {/* Start Over */}
                     <button
                       onClick={resetAnalyzer}
-                      className="w-full mt-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#A8A39A] font-medium hover:bg-slate-200 hover:text-[#F6F4EF] transition-all"
+                      className="w-full mt-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#A8A39A] font-medium hover:bg-[#2A2D42] hover:text-[#F6F4EF] transition-all"
                     >
                       Start Over
                     </button>
@@ -646,7 +646,7 @@ export default function RiskAnalyzerPage() {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

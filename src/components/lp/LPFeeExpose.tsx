@@ -77,7 +77,7 @@ export function LPFeeExpose({
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-sm font-medium">
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20 text-red-400 text-sm font-medium">
             <AlertTriangle className="h-4 w-4" />
             Fee Transparency Alert
           </div>
@@ -89,8 +89,8 @@ export function LPFeeExpose({
         {/* Two-Column Comparison */}
         <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-10">
           {/* Hidden Fees Column (Left - Red/Warning) */}
-          <div className="rounded-2xl border border-red-500/30 bg-red-500/5 overflow-hidden">
-            <div className="bg-red-500/10 border-b border-red-500/20 px-6 py-4">
+          <div className="rounded-2xl border border-red-500/30 bg-[rgba(220,38,38,0.08)]0/5 overflow-hidden">
+            <div className="bg-[rgba(220,38,38,0.08)]0/10 border-b border-red-500/20 px-6 py-4">
               <h3 className="text-lg md:text-xl font-bold text-red-400 flex items-center gap-2">
                 <XCircle className="h-5 w-5" />
                 Hidden Industry Fees
@@ -110,8 +110,8 @@ export function LPFeeExpose({
           </div>
 
           {/* Augusta Column (Right - Green/Success) */}
-          <div className="rounded-2xl border border-green-500/30 bg-green-500/5 overflow-hidden">
-            <div className="bg-green-500/10 border-b border-green-500/20 px-6 py-4">
+          <div className="rounded-2xl border border-green-500/30 bg-[rgba(46,139,87,0.08)]0/5 overflow-hidden">
+            <div className="bg-[rgba(46,139,87,0.08)]0/10 border-b border-green-500/20 px-6 py-4">
               <h3 className="text-lg md:text-xl font-bold text-green-400 flex items-center gap-2">
                 <CheckCircle className="h-5 w-5" />
                 Augusta Transparent Pricing
@@ -132,13 +132,13 @@ export function LPFeeExpose({
         </div>
 
         {/* Impact Callout Box */}
-        <div className="rounded-xl border border-amber-400/30 bg-amber-500/5 p-6 md:p-8">
+        <div className="rounded-xl border border-amber-400/30 bg-[#161828]0/5 p-6 md:p-8">
           <div className="flex items-start gap-4">
-            <div className="hidden sm:flex h-12 w-12 rounded-full bg-amber-500/20 items-center justify-center flex-shrink-0">
-              <Lightbulb className="h-6 w-6 text-amber-400" />
+            <div className="hidden sm:flex h-12 w-12 rounded-full bg-[#161828]0/20 items-center justify-center flex-shrink-0">
+              <Lightbulb className="h-6 w-6 text-[#D4A94E]" />
             </div>
             <div>
-              <h4 className="font-bold text-amber-400 mb-2 flex items-center gap-2">
+              <h4 className="font-bold text-[#D4A94E] mb-2 flex items-center gap-2">
                 <Lightbulb className="h-5 w-5 sm:hidden" />
                 The Real Cost of Hidden Fees
               </h4>

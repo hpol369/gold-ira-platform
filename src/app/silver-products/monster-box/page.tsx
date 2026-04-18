@@ -110,7 +110,7 @@ const schema = {
 
 export default function MonsterBoxPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -125,7 +125,7 @@ export default function MonsterBoxPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6">
               <Package className="h-4 w-4" />
               800 MONTHLY SEARCHES - DIFFICULTY 0!
             </div>
@@ -186,7 +186,7 @@ export default function MonsterBoxPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
@@ -266,7 +266,7 @@ export default function MonsterBoxPage() {
                 </table>
               </div>
 
-              <div className="not-prose bg-green-500/10 border border-green-500/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
                   <TrendingUp className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
@@ -504,7 +504,7 @@ export default function MonsterBoxPage() {
       </section>
 
       {/* Related Products */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">

@@ -29,14 +29,14 @@ export function LPTrustBar({
         {/* Row 1: Award Badges */}
         {showAwards && (
           <div className="flex flex-wrap justify-center gap-3 mb-4">
-            <div className="flex items-center gap-2 bg-amber-50 border border-amber-200 px-3 py-1.5 rounded-lg">
-              <Award className="h-4 w-4 text-amber-600" />
+            <div className="flex items-center gap-2 bg-[#161828] border border-[rgba(197,149,46,0.32)] px-3 py-1.5 rounded-lg">
+              <Award className="h-4 w-4 text-[#D4A94E]" />
               <div>
-                <div className="text-[10px] text-amber-600 font-medium leading-tight">MONEY MAGAZINE 2024</div>
+                <div className="text-[10px] text-[#D4A94E] font-medium leading-tight">MONEY MAGAZINE 2024</div>
                 <div className="text-xs font-bold text-amber-800 leading-tight">&quot;Best Overall Gold IRA&quot;</div>
               </div>
             </div>
-            <div className="flex items-center gap-2 bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-lg">
+            <div className="flex items-center gap-2 bg-[#121423] border border-blue-200 px-3 py-1.5 rounded-lg">
               <Shield className="h-4 w-4 text-blue-600" />
               <div>
                 <div className="text-[10px] text-blue-600 font-medium leading-tight">INVESTOPEDIA 2024</div>
@@ -50,7 +50,7 @@ export function LPTrustBar({
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-6 md:gap-10">
           {/* Star Rating */}
           <div className="flex items-center gap-2">
-            <div className="flex text-amber-400">
+            <div className="flex text-[#D4A94E]">
               {[1, 2, 3, 4, 5].map((i) => (
                 <Star
                   key={i}
@@ -79,7 +79,7 @@ export function LPTrustBar({
 
           {/* Zero Complaints */}
           <div className="flex items-center gap-2">
-            <div className="h-4 w-4 sm:h-5 sm:w-5 rounded-full bg-green-500/20 flex items-center justify-center">
+            <div className="h-4 w-4 sm:h-5 sm:w-5 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center">
               <span className="text-green-400 text-[10px] sm:text-xs font-bold">0</span>
             </div>
             <span className="text-white font-semibold text-sm sm:text-base">Consumer Complaints</span>
@@ -90,7 +90,7 @@ export function LPTrustBar({
 
           {/* Joe Montana Endorsement */}
           <div className="flex items-center gap-2">
-            <Users className="h-4 w-4 sm:h-5 sm:w-5 text-amber-400" />
+            <Users className="h-4 w-4 sm:h-5 sm:w-5 text-[#D4A94E]" />
             <span className="text-white font-semibold text-sm sm:text-base">Joe Montana&apos;s Choice</span>
           </div>
         </div>

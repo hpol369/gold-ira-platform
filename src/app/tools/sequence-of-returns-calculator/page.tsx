@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function SequenceOfReturnsCalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+    <div className="min-h-screen bg-[#0C0D18]text-[#F6F4EF]">
       <SchemaScript schema={articleSchema({ title: "Sequence of Returns Calculator - Retirement Risk Tool", description: "Free sequence of returns calculator. See how return timing affects retirement outcomes and learn to protect against sequence risk.", slug: "/tools/sequence-of-returns-calculator" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Sequence of Returns Calculator", url: "/tools/sequence-of-returns-calculator" }])} />
       <Navbar />

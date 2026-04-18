@@ -67,7 +67,7 @@ const faqs = [
 
 export default function NonRecourseLoansPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <SchemaScript
@@ -125,7 +125,7 @@ export default function NonRecourseLoansPage() {
             </header>
 
             {/* What Non-Recourse Means */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -138,7 +138,7 @@ export default function NonRecourseLoansPage() {
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-6">
-                            <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                            <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                 <h3 className="font-bold text-red-800 mb-3">Recourse Loan (Regular Mortgage)</h3>
                                 <p className="text-[#D0CCC4] text-sm mb-3">
                                     With a regular mortgage, you personally guarantee repayment. If you default, the lender can:
@@ -164,7 +164,7 @@ export default function NonRecourseLoansPage() {
                                 <p className="text-red-700 text-xs font-bold mt-4">NOT ALLOWED for IRA real estate</p>
                             </div>
 
-                            <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                                 <h3 className="font-bold text-green-800 mb-3">Non-Recourse Loan (IRA Mortgage)</h3>
                                 <p className="text-[#D0CCC4] text-sm mb-3">
                                     The lender&apos;s only collateral is the property. If the IRA defaults:
@@ -200,7 +200,7 @@ export default function NonRecourseLoansPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
                             <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
-                                <Scale className="w-5 h-5 text-amber-600" />
+                                <Scale className="w-5 h-5 text-[#D4A94E]" />
                             </div>
                             <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                 Why IRAs Require Non-Recourse Financing
@@ -220,7 +220,7 @@ export default function NonRecourseLoansPage() {
             </section>
 
             {/* Typical Terms */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
@@ -290,7 +290,7 @@ export default function NonRecourseLoansPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="flex items-center gap-3 mb-8">
                             <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                                <Landmark className="w-5 h-5 text-purple-600" />
+                                <Landmark className="w-5 h-5 text-[#D4A94E]" />
                             </div>
                             <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                 Lenders Who Offer Non-Recourse IRA Loans
@@ -329,9 +329,9 @@ export default function NonRecourseLoansPage() {
                             ))}
                         </div>
 
-                        <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 mt-6">
+                        <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 mt-6">
                             <div className="flex items-start gap-3">
-                                <AlertTriangle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                                <AlertTriangle className="w-5 h-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
                                 <p className="text-[#D0CCC4] text-sm">
                                     <strong>Disclaimer:</strong> Lender terms change frequently. Always verify current rates, terms, and availability directly with the lender. This list is informational and not an endorsement. Your IRA custodian may also have preferred lending partners.
                                 </p>
@@ -342,7 +342,7 @@ export default function NonRecourseLoansPage() {
             </section>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <AugustaCTA

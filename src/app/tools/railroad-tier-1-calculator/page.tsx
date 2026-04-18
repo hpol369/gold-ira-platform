@@ -112,7 +112,7 @@ const faqSchema = {
 
 export default function RailroadTier1CalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -124,7 +124,7 @@ export default function RailroadTier1CalculatorPage() {
 
         <Container>
           <div className="relative max-w-4xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-blue-500/10 text-blue-600 border border-blue-500/20 mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-[#121423]0/10 text-blue-600 border border-blue-500/20 mb-4">
               <Train className="h-4 w-4" />
               Railroad Retirement Tool
             </span>
@@ -143,7 +143,7 @@ export default function RailroadTier1CalculatorPage() {
       <RailroadTier1Calculator />
 
       {/* Key Facts Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -158,7 +158,7 @@ export default function RailroadTier1CalculatorPage() {
                     className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-blue-600" />
                       </div>
                       <div>
@@ -214,7 +214,7 @@ export default function RailroadTier1CalculatorPage() {
                 </ul>
               </div>
 
-              <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+              <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-red-600 mb-4">
                   Government Pension Offset (GPO)
                 </h3>
@@ -239,7 +239,7 @@ export default function RailroadTier1CalculatorPage() {
               </div>
             </div>
 
-            <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+            <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
               <h3 className="text-lg font-semibold text-green-600 mb-3">
                 Good News for Railroad Workers
               </h3>
@@ -256,7 +256,7 @@ export default function RailroadTier1CalculatorPage() {
       </section>
 
       {/* How Tier 1 is Calculated */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -367,7 +367,7 @@ export default function RailroadTier1CalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -443,7 +443,7 @@ export default function RailroadTier1CalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

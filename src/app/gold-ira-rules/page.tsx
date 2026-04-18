@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 
 export default function GoldIRARulesPage() {
   return (
-    <main className="min-h-screen flex flex-col bg-white">
+    <main className="min-h-screen flex flex-col bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Gold IRA Rules 2026 | IRS Regulations & Requirements", description: "Gold IRA rules guide covering contribution limits, eligible metals, storage requirements, and distribution rules.", slug: "/gold-ira-rules" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Gold IRA Rules", url: "/gold-ira-rules" }])} />
       <SchemaScript schema={faqSchema(getPageFAQs("gold-ira-rules"))} />
@@ -115,9 +115,9 @@ export default function GoldIRARulesPage() {
             {/* Main Column */}
             <div className="lg:col-span-2 space-y-12">
               {/* 2026 Contribution Limits Callout */}
-              <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
+              <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 mb-8">
                 <h3 className="text-xl font-bold text-amber-900 mb-3 flex items-center gap-2">
-                  <DollarSign className="h-6 w-6 text-amber-600" />
+                  <DollarSign className="h-6 w-6 text-[#D4A94E]" />
                   2026 Gold IRA Contribution Limits
                 </h3>
                 <div className="grid sm:grid-cols-2 gap-4 mb-3">
@@ -155,7 +155,7 @@ export default function GoldIRARulesPage() {
                     <div className="text-sm text-[#A8A39A]">Age 50+ (Catch-Up)</div>
                   </div>
                 </div>
-                <div className="bg-blue-50 rounded-xl p-5 border border-blue-200">
+                <div className="bg-[#121423] rounded-xl p-5 border border-blue-200">
                   <h4 className="font-bold text-blue-600 mb-2">Important Note</h4>
                   <p className="text-sm text-blue-700/80">
                     These limits apply to total IRA contributions. If you contribute $7,000 to a traditional IRA,
@@ -188,7 +188,7 @@ export default function GoldIRARulesPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                    <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                     <div>
                       <span className="font-medium text-[#F6F4EF]">Indirect Rollover:</span>
                       <span className="text-[#A8A39A]"> You receive funds and have 60 days to deposit. 20% withholding applies. One per year.</span>
@@ -242,7 +242,7 @@ export default function GoldIRARulesPage() {
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="bg-green-50 rounded-xl p-5 border border-green-200">
+                  <div className="bg-[rgba(46,139,87,0.08)] rounded-xl p-5 border border-green-200">
                     <h4 className="font-bold text-green-600 mb-3 flex items-center gap-2">
                       <CheckCircle2 className="h-5 w-5" />
                       Allowed in Gold IRA
@@ -256,7 +256,7 @@ export default function GoldIRARulesPage() {
                       <li>- PAMP Suisse gold bars</li>
                     </ul>
                   </div>
-                  <div className="bg-red-50 rounded-xl p-5 border border-red-200">
+                  <div className="bg-[rgba(220,38,38,0.08)] rounded-xl p-5 border border-red-200">
                     <h4 className="font-bold text-red-600 mb-3 flex items-center gap-2">
                       <XCircle className="h-5 w-5" />
                       NOT Allowed in Gold IRA
@@ -272,8 +272,8 @@ export default function GoldIRARulesPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 bg-amber-50 rounded-xl p-5 border border-amber-200">
-                  <h4 className="font-bold text-amber-600 mb-2 flex items-center gap-2">
+                <div className="mt-6 bg-[#161828] rounded-xl p-5 border border-amber-200">
+                  <h4 className="font-bold text-[#D4A94E] mb-2 flex items-center gap-2">
                     <AlertTriangle className="h-5 w-5" />
                     Exception: American Gold Eagle
                   </h4>
@@ -330,7 +330,7 @@ export default function GoldIRARulesPage() {
                   </div>
                 </div>
 
-                <div className="bg-red-50 rounded-xl p-5 border border-red-200">
+                <div className="bg-[rgba(220,38,38,0.08)] rounded-xl p-5 border border-red-200">
                   <h4 className="font-bold text-red-600 mb-2 flex items-center gap-2">
                     <XCircle className="h-5 w-5" />
                     Home Storage is NOT Allowed
@@ -380,7 +380,7 @@ export default function GoldIRARulesPage() {
                         <span>No early withdrawal penalty</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>Traditional Gold IRA: Taxed as ordinary income</span>
                       </li>
                       <li className="flex items-start gap-2">
@@ -394,7 +394,7 @@ export default function GoldIRARulesPage() {
                     <h4 className="font-bold text-[#F6F4EF] mb-3">Required Minimum Distributions (RMDs)</h4>
                     <ul className="space-y-2 text-sm text-[#A8A39A]">
                       <li className="flex items-start gap-2">
-                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>Traditional Gold IRA: RMDs begin at age 73</span>
                       </li>
                       <li className="flex items-start gap-2">
@@ -402,13 +402,13 @@ export default function GoldIRARulesPage() {
                         <span>Roth Gold IRA: No RMDs during owner&apos;s lifetime</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>50% penalty for failing to take RMD</span>
                       </li>
                     </ul>
                   </div>
 
-                  <div className="bg-blue-50 rounded-xl p-5 border border-blue-200">
+                  <div className="bg-[#121423] rounded-xl p-5 border border-blue-200">
                     <h4 className="font-bold text-blue-600 mb-2">Distribution Options</h4>
                     <p className="text-sm text-blue-700/80">
                       When you take a distribution from your Gold IRA, you can receive the physical metals
@@ -430,7 +430,7 @@ export default function GoldIRARulesPage() {
                   Violating these rules can disqualify your entire IRA:
                 </p>
 
-                <div className="bg-red-50 rounded-xl p-6 border border-red-200 mb-6">
+                <div className="bg-[rgba(220,38,38,0.08)] rounded-xl p-6 border border-red-200 mb-6">
                   <h4 className="font-bold text-red-600 mb-4">Disqualified Persons</h4>
                   <p className="text-sm text-red-700/80 mb-4">
                     You cannot conduct IRA transactions with &quot;disqualified persons,&quot; which include:
@@ -478,8 +478,8 @@ export default function GoldIRARulesPage() {
                   </div>
                 </div>
 
-                <div className="mt-6 bg-amber-50 rounded-xl p-5 border border-amber-200">
-                  <h4 className="font-bold text-amber-600 mb-2 flex items-center gap-2">
+                <div className="mt-6 bg-[#161828] rounded-xl p-5 border border-amber-200">
+                  <h4 className="font-bold text-[#D4A94E] mb-2 flex items-center gap-2">
                     <AlertTriangle className="h-5 w-5" />
                     Consequences of Prohibited Transactions
                   </h4>
@@ -516,7 +516,7 @@ export default function GoldIRARulesPage() {
                         <span>No capital gains tax while metals are held inside the IRA</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>Withdrawals taxed as ordinary income (not capital gains rates)</span>
                       </li>
                     </ul>
@@ -537,7 +537,7 @@ export default function GoldIRARulesPage() {
                         <span>No Required Minimum Distributions during the owner&apos;s lifetime</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>Contributions are NOT tax-deductible (funded with after-tax money)</span>
                       </li>
                     </ul>
@@ -550,7 +550,7 @@ export default function GoldIRARulesPage() {
                     </p>
                     <ul className="space-y-2 text-sm text-[#A8A39A]">
                       <li className="flex items-start gap-2">
-                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>Traditional Gold IRA: RMDs begin at age 73</span>
                       </li>
                       <li className="flex items-start gap-2">
@@ -558,13 +558,13 @@ export default function GoldIRARulesPage() {
                         <span>Roth Gold IRA: No RMDs during owner&apos;s lifetime</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>Gold IRA RMDs can be taken as physical metals (in-kind) or cash after liquidation</span>
                       </li>
                     </ul>
                   </div>
 
-                  <div className="bg-red-50 rounded-xl p-6 border border-red-200">
+                  <div className="bg-[rgba(220,38,38,0.08)] rounded-xl p-6 border border-red-200">
                     <h4 className="font-bold text-red-600 mb-3">Early Withdrawal Penalties</h4>
                     <p className="text-sm text-red-700/80 mb-3">
                       Withdrawing from a Gold IRA before age 59 1/2 triggers both income tax and a 10% early withdrawal penalty. Some exceptions apply:
@@ -680,7 +680,7 @@ export default function GoldIRARulesPage() {
         </Container>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <FAQSection
             faqs={getPageFAQs("gold-ira-rules")}
@@ -691,7 +691,7 @@ export default function GoldIRARulesPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <SourcesSection
             sources={[

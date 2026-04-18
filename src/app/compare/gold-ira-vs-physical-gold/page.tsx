@@ -122,7 +122,7 @@ const schema = {
 
 export default function GoldIraVsPhysicalGoldPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
@@ -289,7 +289,7 @@ export default function GoldIraVsPhysicalGoldPage() {
                                             <td className="p-4">N/A (retirement account)</td>
                                             <td className="p-4">Ordinary income tax rates</td>
                                         </tr>
-                                        <tr className="bg-amber-500/10">
+                                        <tr className="bg-[#161828]0/10">
                                             <td className="p-4 font-bold text-[#D4A94E]">Winner</td>
                                             <td className="p-4 font-bold text-green-700">Better for long-term</td>
                                             <td className="p-4">Simpler but higher tax burden</td>
@@ -378,7 +378,7 @@ export default function GoldIraVsPhysicalGoldPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-500/10 border border-green-500/30">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30">
                                     <ShieldCheck className="w-6 h-6 text-green-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">Choose a Gold IRA if...</h4>
@@ -391,7 +391,7 @@ export default function GoldIraVsPhysicalGoldPage() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-500/10 border border-blue-500/30">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423]0/10 border border-blue-500/30">
                                     <Lock className="w-6 h-6 text-blue-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">Choose Physical Gold if...</h4>
@@ -404,7 +404,7 @@ export default function GoldIraVsPhysicalGoldPage() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/30">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#161828]0/10 border border-amber-500/30">
                                     <DollarSign className="w-6 h-6 text-[#D4A94E] shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-[#D4A94E]">Consider Both if...</h4>
@@ -482,7 +482,7 @@ export default function GoldIraVsPhysicalGoldPage() {
             </section>
 
             {/* Related Content */}
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/compare/gold-ira-vs-physical-gold" />
                 </Container>

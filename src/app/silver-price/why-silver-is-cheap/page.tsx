@@ -92,7 +92,7 @@ const schema = {
 
 export default function WhySilverIsCheapPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
 
             {/* Header */}
@@ -103,7 +103,7 @@ export default function WhySilverIsCheapPage() {
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
                         <div className="flex items-center gap-3 mb-4">
-                            <span className="bg-green-500/20 text-green-700 text-xs font-bold px-3 py-1 rounded-full">LOW DIFFICULTY</span>
+                            <span className="bg-[rgba(46,139,87,0.08)]0/20 text-green-700 text-xs font-bold px-3 py-1 rounded-full">LOW DIFFICULTY</span>
                             <span className="text-[#D0CCC4] text-sm">250 monthly searches | Easy to rank</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
@@ -213,7 +213,7 @@ export default function WhySilverIsCheapPage() {
                         {/* Reason 2: Bank Manipulation */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #2: Bank Manipulation (Yes, It&apos;s Real)</h2>
@@ -223,21 +223,21 @@ export default function WhySilverIsCheapPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">JPMorgan Chase: $920 Million Fine (2020)</h4>
                                         <p className="text-sm text-red-800 mt-1">JPMorgan paid the largest CFTC fine in history for &quot;spoofing&quot; gold and silver markets from 2008-2016. Their traders placed fake orders to manipulate prices, then canceled them.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Deutsche Bank: Settlement (2016)</h4>
                                         <p className="text-sm text-red-800 mt-1">Deutsche Bank settled silver manipulation lawsuits and agreed to help expose other banks involved in the scheme. They literally turned state&apos;s evidence.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Multiple Banks: London Fix Manipulation</h4>
@@ -265,7 +265,7 @@ export default function WhySilverIsCheapPage() {
                         {/* Reason 3: Industrial Pricing */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <Factory className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #3: Industrial Users Want Low Prices</h2>
@@ -343,7 +343,7 @@ export default function WhySilverIsCheapPage() {
                                             <span className="text-[#F6F4EF] font-bold">~800M oz equivalent</span>
                                         </div>
                                         <div className="w-full bg-[#121423] rounded-full h-3">
-                                            <div className="bg-red-500 h-3 rounded-full" style={{ width: '100%' }}></div>
+                                            <div className="bg-[rgba(220,38,38,0.08)]0 h-3 rounded-full" style={{ width: '100%' }}></div>
                                         </div>
                                     </div>
                                 </div>
@@ -375,19 +375,19 @@ export default function WhySilverIsCheapPage() {
                             </p>
 
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-4">
-                                <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-5 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3">Physical Demand Overwhelms Paper</h4>
                                     <p className="text-sm text-[#D0CCC4]">If enough investors demand physical delivery, the paper market breaks. India&apos;s 2024 import surge and retail stacking are moving in this direction.</p>
                                 </div>
-                                <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-5 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3">Industrial Supply Crunch</h4>
                                     <p className="text-sm text-[#D0CCC4]">If solar manufacturers can&apos;t get enough silver, they&apos;ll bid prices up regardless of paper market shenanigans. Physical scarcity trumps paper.</p>
                                 </div>
-                                <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-5 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3">Monetary Crisis</h4>
                                     <p className="text-sm text-[#D0CCC4]">A dollar crisis, debt default, or banking emergency could trigger a rush to hard assets that overwhelms the paper short sellers.</p>
                                 </div>
-                                <div className="bg-green-500/10 rounded-xl p-5 border border-green-500/20">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 rounded-xl p-5 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3">Short Squeeze</h4>
                                     <p className="text-sm text-[#D0CCC4]">The massive concentrated short position is a coiled spring. If prices rise fast enough, shorts will be forced to cover, accelerating the move.</p>
                                 </div>

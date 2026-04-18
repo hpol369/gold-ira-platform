@@ -125,7 +125,7 @@ const schema = {
 
 export default function GoldIraVsAnnuityPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -211,7 +211,7 @@ export default function GoldIraVsAnnuityPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <h4 className="font-bold text-green-700 mb-3">Annuity Advantages</h4>
                                     <ul className="space-y-2 text-sm text-green-600">
                                         <li>&#8226; <strong>Guaranteed lifetime income</strong> &mdash; You cannot outlive it</li>
@@ -221,7 +221,7 @@ export default function GoldIraVsAnnuityPage() {
                                         <li>&#8226; <strong>Tax-deferred growth</strong> &mdash; No taxes until you withdraw</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                                     <h4 className="font-bold text-red-700 mb-3">Annuity Disadvantages</h4>
                                     <ul className="space-y-2 text-sm text-red-600">
                                         <li>&#8226; <strong>No inflation protection</strong> &mdash; Fixed payments lose value over time</li>
@@ -249,7 +249,7 @@ export default function GoldIraVsAnnuityPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <h4 className="font-bold text-green-700 mb-3">Gold IRA Advantages</h4>
                                     <ul className="space-y-2 text-sm text-green-600">
                                         <li>&#8226; <strong>Inflation hedge</strong> &mdash; Gold maintains purchasing power over decades</li>
@@ -259,7 +259,7 @@ export default function GoldIraVsAnnuityPage() {
                                         <li>&#8226; <strong>Tax-free rollover</strong> &mdash; Move 401k/IRA funds with no penalty</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                                     <h4 className="font-bold text-red-700 mb-3">Gold IRA Disadvantages</h4>
                                     <ul className="space-y-2 text-sm text-red-600">
                                         <li>&#8226; <strong>No income guarantee</strong> &mdash; No fixed monthly payment</li>
@@ -324,7 +324,7 @@ export default function GoldIraVsAnnuityPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-[#161828] border border-[#2A2D42] shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-amber-100 text-[#D4A94E] flex items-center justify-center shrink-0">
                                         <TrendingUp className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -335,7 +335,7 @@ export default function GoldIraVsAnnuityPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-[#161828] border border-[#2A2D42] shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-[#D4A94E] flex items-center justify-center shrink-0">
                                         <Clock className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -353,28 +353,28 @@ export default function GoldIraVsAnnuityPage() {
                             <p>A Gold IRA is the better choice when:</p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You&apos;re worried about inflation destroying your savings</h4>
                                         <p className="text-sm text-green-600 mt-1">Gold has been the go-to inflation hedge for thousands of years. It doesn&apos;t pay interest, but it holds its purchasing power when dollars don&apos;t.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You already have guaranteed income from Social Security or a pension</h4>
                                         <p className="text-sm text-green-600 mt-1">If your basic expenses are covered by Social Security and/or a pension, you don&apos;t need an annuity duplicating that. Use a Gold IRA to protect and grow your nest egg.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You want to leave an inheritance</h4>
                                         <p className="text-sm text-green-600 mt-1">Gold IRA balances pass directly to your heirs. Many annuities pay nothing to beneficiaries after you die &mdash; the insurance company keeps the rest.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You don&apos;t want your money locked up</h4>
@@ -390,21 +390,21 @@ export default function GoldIraVsAnnuityPage() {
                             <p>An annuity might be the right call when:</p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423] border border-[#3F4460]">
                                     <AlertTriangle className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">You have no pension and Social Security alone won&apos;t cover basics</h4>
                                         <p className="text-sm text-blue-600 mt-1">If you need guaranteed income to cover rent, food, and utilities, an annuity can fill that gap. Think of it as buying your own pension.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423] border border-[#3F4460]">
                                     <AlertTriangle className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">You&apos;re terrified of running out of money</h4>
                                         <p className="text-sm text-blue-600 mt-1">If the fear of outliving your savings keeps you up at night, an annuity removes that worry entirely. You get paid until you die, period.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423] border border-[#3F4460]">
                                     <AlertTriangle className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">You have a very long life expectancy and family history of longevity</h4>

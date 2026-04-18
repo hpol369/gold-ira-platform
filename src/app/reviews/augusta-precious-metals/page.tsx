@@ -64,7 +64,7 @@ export default function AugustaReviewPage() {
                             <div className="flex items-center gap-2 text-[#D4A94E] text-sm font-bold uppercase tracking-wider mb-4">
                                 <span className="bg-[rgba(197,149,46,0.1)] px-2 py-1 rounded border border-[#2A2D42]">Gold IRA Company Reviews</span>
                                 <span>•</span>
-                                <span className="bg-green-50 text-green-700 px-2 py-1 rounded border border-green-200">Updated March 2026</span>
+                                <span className="bg-[rgba(46,139,87,0.08)] text-green-700 px-2 py-1 rounded border border-green-200">Updated March 2026</span>
                             </div>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#F6F4EF]">
                                 Augusta Precious Metals Review: <br />
@@ -135,7 +135,7 @@ export default function AugustaReviewPage() {
                                     Here's where it gets interesting for larger accounts. Depending on your account size, Augusta covers your custodian and storage fees for up to 10 years. On a $100,000 account, that's $2,000-$3,000 that stays invested instead of going to fees. Tom, a retired long-haul trucker from Texas, told us: "I spent 30 years watching companies take fees from my 401k. Augusta was the first one that actually saved me money upfront."
                                 </p>
 
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                <div className="bg-[#121423] p-6 rounded-xl border border-blue-100 not-prose my-8">
                                     <h4 className="font-bold text-[#F6F4EF] flex items-center gap-2 mb-2">
                                         <Info className="w-5 h-5 text-secondary" /> About Dealer Spreads
                                     </h4>
@@ -221,7 +221,7 @@ export default function AugustaReviewPage() {
                     </div>
                 </Container>
             </div>
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <FAQSection faqs={getPageFAQs("reviews/augusta-precious-metals")} title="Augusta Precious Metals FAQ" className="max-w-3xl" includeSchema={false} />
                 </Container>
@@ -238,7 +238,7 @@ export default function AugustaReviewPage() {
                     />
                 </Container>
             </section>
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/reviews/augusta-precious-metals" />
                 </Container>

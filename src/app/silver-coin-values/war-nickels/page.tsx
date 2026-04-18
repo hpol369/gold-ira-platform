@@ -82,7 +82,7 @@ const warNickelValues = [
 
 export default function WarNickelsValuePage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -97,7 +97,7 @@ export default function WarNickelsValuePage() {
               <ArrowLeft className="h-4 w-4" />
               Back to Silver Coin Values
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6 ml-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-400 font-semibold text-sm mb-6 ml-4">
               <Star className="h-4 w-4" />
               LOW COMPETITION - 700 SEARCHES
             </div>
@@ -248,7 +248,7 @@ export default function WarNickelsValuePage() {
       </section>
 
       {/* Key Variety */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -394,7 +394,7 @@ export default function WarNickelsValuePage() {
       </section>
 
       {/* Historical Context */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -452,7 +452,7 @@ export default function WarNickelsValuePage() {
       </section>
 
       {/* Related Pages */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
@@ -486,7 +486,7 @@ export default function WarNickelsValuePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

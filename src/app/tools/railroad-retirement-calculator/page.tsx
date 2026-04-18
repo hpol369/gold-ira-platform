@@ -114,7 +114,7 @@ const faqSchema = {
 
 export default function RailroadRetirementCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -145,7 +145,7 @@ export default function RailroadRetirementCalculatorPage() {
       <RailroadRetirementCalculator />
 
       {/* Key Facts Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -192,7 +192,7 @@ export default function RailroadRetirementCalculatorPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+              <div className="bg-[#121423] border border-blue-200 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-blue-600 mb-4">
                   Tier I: Social Security Equivalent
                 </h3>
@@ -274,7 +274,7 @@ export default function RailroadRetirementCalculatorPage() {
       </section>
 
       {/* Eligibility Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">

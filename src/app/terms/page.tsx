@@ -56,7 +56,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={schema} />
       <SchemaScript schema={breadcrumbs} />
@@ -73,7 +73,7 @@ export default function TermsPage() {
               <span className="text-[#D0CCC4]">Terms of Service</span>
             </nav>
 
-            <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-1.5 text-sm font-semibold text-blue-700 mb-6 border border-blue-200">
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#121423] px-4 py-1.5 text-sm font-semibold text-blue-700 mb-6 border border-blue-200">
               <FileText className="h-4 w-4" />
               Legal
             </div>

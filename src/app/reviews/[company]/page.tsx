@@ -160,7 +160,7 @@ export default async function CompanyReviewPage({ params }: Props) {
                 {/* Company Overview */}
                 <section id="overview" className="scroll-mt-24">
                   <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-3 font-serif">
-                    <div className="p-2 bg-blue-50 rounded-lg border border-blue-100">
+                    <div className="p-2 bg-[#121423] rounded-lg border border-blue-100">
                       <Building2 className="h-5 w-5 text-[#F6F4EF]" />
                     </div>
                     Company Overview
@@ -202,7 +202,7 @@ export default async function CompanyReviewPage({ params }: Props) {
                 {/* Pros & Cons */}
                 <section id="pros-cons" className="scroll-mt-24">
                   <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-3 font-serif">
-                    <div className="p-2 bg-blue-50 rounded-lg border border-blue-100">
+                    <div className="p-2 bg-[#121423] rounded-lg border border-blue-100">
                       <Scale className="h-5 w-5 text-[#F6F4EF]" />
                     </div>
                     Pros & Cons
@@ -218,7 +218,7 @@ export default async function CompanyReviewPage({ params }: Props) {
                 {/* Fee Structure */}
                 <section id="fees" className="scroll-mt-24">
                   <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-3 font-serif">
-                    <div className="p-2 bg-blue-50 rounded-lg border border-blue-100">
+                    <div className="p-2 bg-[#121423] rounded-lg border border-blue-100">
                       <DollarSign className="h-5 w-5 text-[#F6F4EF]" />
                     </div>
                     Fee Structure
@@ -288,7 +288,7 @@ export default async function CompanyReviewPage({ params }: Props) {
                               {c.bbbRating} BBB • ${c.minInvestment.toLocaleString()} min
                             </div>
                           </div>
-                          <div className="text-amber-500 font-bold">{c.rating}</div>
+                          <div className="text-[#D4A94E] font-bold">{c.rating}</div>
                         </Link>
                       ))}
                     </div>
@@ -355,7 +355,7 @@ export default async function CompanyReviewPage({ params }: Props) {
           </section>
         )}
 
-        <section className="py-12 bg-white">
+        <section className="py-12 bg-[#0C0D18]">
           <Container>
             <AutoRelatedContent currentUrl={`/reviews/${slug}`} />
           </Container>

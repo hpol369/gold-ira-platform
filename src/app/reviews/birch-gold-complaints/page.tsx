@@ -60,7 +60,7 @@ export default function BirchGoldComplaintsPage() {
             {/* Header */}
             <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-sm font-semibold text-[#F6F4EF] mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[#121423] border border-[#3F4460] text-sm font-semibold text-[#F6F4EF] mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <AlertOctagon className="w-4 h-4" /> Complaint Investigation
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#F6F4EF]">

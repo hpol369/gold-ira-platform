@@ -47,7 +47,7 @@ const companyData = {
 
 export default function MillenniumTrustReviewPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Hero Section */}
@@ -89,9 +89,9 @@ export default function MillenniumTrustReviewPage() {
                             />
 
                             {/* Important Notice */}
-                            <div className="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
+                            <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-6 mb-8">
                                 <div className="flex items-start gap-4">
-                                    <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                                    <AlertTriangle className="w-6 h-6 text-[#D4A94E] flex-shrink-0 mt-1" />
                                     <div>
                                         <h3 className="text-amber-800 font-bold mb-2">Important: You Likely Did Not Choose Millennium Trust</h3>
                                         <p className="text-amber-700 text-sm">
@@ -106,7 +106,7 @@ export default function MillenniumTrustReviewPage() {
                                 <h2 className="text-xl font-serif font-bold text-[#F6F4EF] mb-4">Millennium Trust at a Glance</h2>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div className="flex items-center gap-3">
-                                        <Building2 className="w-5 h-5 text-purple-600" />
+                                        <Building2 className="w-5 h-5 text-[#D4A94E]" />
                                         <div>
                                             <p className="text-[#A8A39A] text-sm">Founded</p>
                                             <p className="text-[#F6F4EF] font-medium">{companyData.founded}</p>
@@ -151,7 +151,7 @@ export default function MillenniumTrustReviewPage() {
                             </div>
 
                             {/* Article Content */}
-                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-purple-600 hover:prose-a:text-purple-700">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E] hover:prose-a:text-purple-700">
 
                                 <h2>What is Millennium Trust?</h2>
                                 <p>
@@ -239,7 +239,7 @@ export default function MillenniumTrustReviewPage() {
 
                             {/* Action Steps */}
                             <div className="grid gap-4 my-8">
-                                <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+                                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-lg p-5">
                                     <div className="flex items-start gap-4">
                                         <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                                         <div>
@@ -248,7 +248,7 @@ export default function MillenniumTrustReviewPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-green-50 border border-green-200 rounded-lg p-5">
+                                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-lg p-5">
                                     <div className="flex items-start gap-4">
                                         <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                                         <div>
@@ -257,7 +257,7 @@ export default function MillenniumTrustReviewPage() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="bg-blue-50 border border-blue-200 rounded-lg p-5">
+                                <div className="bg-[#121423] border border-blue-200 rounded-lg p-5">
                                     <div className="flex items-start gap-4">
                                         <Clock className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                                         <div>
@@ -268,7 +268,7 @@ export default function MillenniumTrustReviewPage() {
                                 </div>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-purple-600">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E]">
 
                                 <h2>How to Roll Out of Millennium Trust</h2>
                                 <ol>

@@ -245,7 +245,7 @@ const schema = {
 
 export default function SilverInheritancePlanningPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -263,7 +263,7 @@ export default function SilverInheritancePlanningPage() {
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
             </Link>
-            <div className="inline-flex items-center gap-2 text-orange-400 text-sm font-medium mb-4 bg-orange-500/20 px-4 py-2 rounded-full border border-orange-500/30">
+            <div className="inline-flex items-center gap-2 text-orange-400 text-sm font-medium mb-4 bg-[rgba(183,121,31,0.08)]0/20 px-4 py-2 rounded-full border border-orange-500/30">
               <FileText className="h-4 w-4" />
               ESTATE PLANNING
             </div>
@@ -302,7 +302,7 @@ export default function SilverInheritancePlanningPage() {
             <div className="bg-[#0C0D18] border border-orange-500/30 rounded-xl p-6">
               <h3 className="font-bold text-[#F6F4EF] mb-4">Example: $10,000 Silver Investment</h3>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
+                <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30 rounded-lg p-4">
                   <h4 className="font-semibold text-red-400 mb-3">If Gifted While Alive</h4>
                   <ul className="space-y-2 text-sm text-[#D0CCC4]">
                     <li>You paid: $10,000</li>
@@ -312,7 +312,7 @@ export default function SilverInheritancePlanningPage() {
                     <li className="text-xs text-[#D0CCC4]">(28% collectibles rate on $15,000 gain)</li>
                   </ul>
                 </div>
-                <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4">
+                <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-lg p-4">
                   <h4 className="font-semibold text-green-400 mb-3">If Inherited at Death</h4>
                   <ul className="space-y-2 text-sm text-[#D0CCC4]">
                     <li>You paid: $10,000</li>
@@ -351,7 +351,7 @@ export default function SilverInheritancePlanningPage() {
                   className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6"
                 >
                   <div className="flex flex-col md:flex-row md:items-start gap-4">
-                    <div className="bg-orange-500/20 p-3 rounded-lg self-start">
+                    <div className="bg-[rgba(183,121,31,0.08)]0/20 p-3 rounded-lg self-start">
                       <Icon className="h-6 w-6 text-orange-400" />
                     </div>
                     <div className="flex-1">
@@ -412,9 +412,9 @@ export default function SilverInheritancePlanningPage() {
                       <span
                         className={`px-2 py-1 rounded text-xs font-semibold ${
                           row.winner === "Physical"
-                            ? "bg-slate-200 text-[#D0CCC4]"
+                            ? "bg-[#2A2D42] text-[#D0CCC4]"
                             : row.winner === "IRA"
-                            ? "bg-blue-500/20 text-blue-600"
+                            ? "bg-[#121423]0/20 text-blue-600"
                             : "bg-[#121423] text-[#D0CCC4]"
                         }`}
                       >
@@ -497,7 +497,7 @@ export default function SilverInheritancePlanningPage() {
                   "Review plan annually",
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-[#D0CCC4]">
-                    <div className="w-6 h-6 bg-orange-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <div className="w-6 h-6 bg-[rgba(183,121,31,0.08)]0/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <span className="text-xs font-bold text-orange-400">{index + 1}</span>
                     </div>
                     {item}

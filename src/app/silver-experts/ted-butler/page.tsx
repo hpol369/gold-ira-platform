@@ -108,7 +108,7 @@ const keyArticles = [
 
 export default function TedButlerPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -120,7 +120,7 @@ export default function TedButlerPage() {
                         <Link href="/silver-experts" className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Experts
                         </Link>
-                        <div className="inline-flex items-center gap-2 rounded-full bg-red-500/20 px-4 py-1.5 text-sm font-semibold text-red-700 mb-6 border border-red-500/30 ml-4">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.08)]0/20 px-4 py-1.5 text-sm font-semibold text-red-700 mb-6 border border-red-500/30 ml-4">
                             <AlertTriangle className="w-4 h-4" />
                             Silver Expert Profile
                         </div>
@@ -146,7 +146,7 @@ export default function TedButlerPage() {
                         {/* Who Is Ted Butler */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <Search className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Who Is Ted Butler?</h2>
@@ -193,7 +193,7 @@ export default function TedButlerPage() {
                         {/* COMEX Analysis */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <BarChart3 className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Butler&apos;s COMEX Analysis</h2>
@@ -226,7 +226,7 @@ export default function TedButlerPage() {
                         {/* JP Morgan Accusations */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <AlertTriangle className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">The JP Morgan Accusations</h2>
@@ -242,7 +242,7 @@ export default function TedButlerPage() {
                                     <li><strong className="text-[#F6F4EF]">Physical Accumulation:</strong> While suppressing paper prices, JP Morgan has allegedly accumulated one of the largest physical silver hoards in history.</li>
                                 </ul>
 
-                                <div className="bg-red-500/10 border border-red-500/20 rounded-xl p-6 my-8 not-prose">
+                                <div className="bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20 rounded-xl p-6 my-8 not-prose">
                                     <h4 className="font-bold text-red-700 text-lg mb-3">The 2020 Vindication</h4>
                                     <p className="text-[#D0CCC4]">
                                         In September 2020, JP Morgan paid <strong className="text-[#F6F4EF]">$920 million</strong> to settle charges of manipulating precious metals and Treasury markets. While the settlement cited &quot;spoofing&quot; rather than concentrated short positions, it confirmed what Butler had been saying for years: JP Morgan was manipulating precious metals markets.
@@ -257,7 +257,7 @@ export default function TedButlerPage() {
                         {/* Key Quotes */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <Quote className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Key Quotes & Predictions</h2>
@@ -275,7 +275,7 @@ export default function TedButlerPage() {
                         {/* Key Articles */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-red-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                                     <FileText className="w-6 h-6 text-red-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">Key Articles & Research</h2>
@@ -296,7 +296,7 @@ export default function TedButlerPage() {
                         {/* What Butler Recommends */}
                         <section className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-8">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-green-500/20 rounded-lg">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg">
                                     <CheckCircle2 className="w-6 h-6 text-green-700" />
                                 </div>
                                 <h2 className="text-2xl font-bold font-serif text-[#F6F4EF]">What Ted Butler Recommends</h2>

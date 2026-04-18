@@ -114,7 +114,7 @@ const faqSchema = {
 
 export default function NUACalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -126,7 +126,7 @@ export default function NUACalculatorPage() {
 
         <Container>
           <div className="relative max-w-4xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-green-500/10 text-green-600 border border-green-500/20 mb-4">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium bg-[rgba(46,139,87,0.08)]0/10 text-green-600 border border-green-500/20 mb-4">
               <TrendingUp className="h-4 w-4" />
               Tax Optimization Tool
             </span>
@@ -145,7 +145,7 @@ export default function NUACalculatorPage() {
       <NUACalculator />
 
       {/* Key Facts Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -160,7 +160,7 @@ export default function NUACalculatorPage() {
                     className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-green-600" />
                       </div>
                       <div>
@@ -183,7 +183,7 @@ export default function NUACalculatorPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/20 rounded-xl flex items-center justify-center">
                 <Calculator className="h-6 w-6 text-green-600" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
@@ -194,7 +194,7 @@ export default function NUACalculatorPage() {
             <div className="space-y-6">
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 text-[#F6F4EF] font-bold">
+                  <div className="w-8 h-8 bg-[rgba(46,139,87,0.08)]0 rounded-full flex items-center justify-center flex-shrink-0 text-[#F6F4EF] font-bold">
                     1
                   </div>
                   <div>
@@ -211,7 +211,7 @@ export default function NUACalculatorPage() {
 
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 text-[#F6F4EF] font-bold">
+                  <div className="w-8 h-8 bg-[rgba(46,139,87,0.08)]0 rounded-full flex items-center justify-center flex-shrink-0 text-[#F6F4EF] font-bold">
                     2
                   </div>
                   <div>
@@ -247,7 +247,7 @@ export default function NUACalculatorPage() {
 
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 text-[#F6F4EF] font-bold">
+                  <div className="w-8 h-8 bg-[rgba(46,139,87,0.08)]0 rounded-full flex items-center justify-center flex-shrink-0 text-[#F6F4EF] font-bold">
                     4
                   </div>
                   <div>
@@ -266,7 +266,7 @@ export default function NUACalculatorPage() {
             </div>
 
             {/* Example Calculation */}
-            <div className="mt-8 bg-green-50 border border-green-200 rounded-xl p-6">
+            <div className="mt-8 bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
               <h3 className="text-lg font-semibold text-green-600 mb-4">
                 Example: The Power of NUA
               </h3>
@@ -278,7 +278,7 @@ export default function NUACalculatorPage() {
                 </p>
               </div>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-lg p-4">
                   <p className="text-red-600 font-semibold mb-2">Regular Rollover</p>
                   <p className="text-[#D0CCC4] text-sm">
                     Tax at 24%: <strong>$24,000</strong>
@@ -286,7 +286,7 @@ export default function NUACalculatorPage() {
                     (Full $100,000 taxed as ordinary income)
                   </p>
                 </div>
-                <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-lg p-4">
                   <p className="text-green-600 font-semibold mb-2">NUA Strategy</p>
                   <p className="text-[#D0CCC4] text-sm">
                     Cost Basis (24%): $6,000
@@ -306,7 +306,7 @@ export default function NUACalculatorPage() {
       </section>
 
       {/* When NUA Makes Sense */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -314,7 +314,7 @@ export default function NUACalculatorPage() {
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+              <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-green-600 mb-4">
                   NUA Is Often Better When:
                 </h3>

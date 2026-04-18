@@ -96,7 +96,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function FourOhOneKAlternativesPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             <section className="pt-8 pb-4 bg-white">
@@ -119,7 +119,7 @@ export default function FourOhOneKAlternativesPage() {
                 <div className="absolute inset-0 bg-primary-dark/50" />
                 <Container className="relative z-10">
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-slate-200 px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#2A2D42]">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[#2A2D42] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#2A2D42]">
                             <span className="w-2 h-2 rounded-full bg-[#DC2626]"></span>
                             Updated for 2026
                         </div>
@@ -161,7 +161,7 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 1: Traditional IRA */}
                         <section id="traditional-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <Building2 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">1. Traditional IRA</h2>
@@ -203,7 +203,7 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 2: Roth IRA */}
                         <section id="roth-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">2. Roth IRA</h2>
@@ -245,7 +245,7 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 3: Gold IRA */}
                         <section id="gold-ira" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-amber-700">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">3. Gold IRA (Self-Directed Precious Metals IRA)</h2>
@@ -254,7 +254,7 @@ export default function FourOhOneKAlternativesPage() {
                                 A <Link href="/what-is-a-gold-ira">Gold IRA</Link> is a self-directed IRA that holds physical gold, silver, platinum, and palladium instead of paper assets. It offers true diversification beyond stocks and bonds.
                             </p>
 
-                            <div className="bg-amber-500/10 rounded-xl p-6 border border-amber-500/20 not-prose my-6">
+                            <div className="bg-[#161828]0/10 rounded-xl p-6 border border-amber-500/20 not-prose my-6">
                                 <h4 className="font-bold text-amber-700 mb-4">Why Consider a Gold IRA?</h4>
                                 <ul className="space-y-2 text-sm text-amber-800">
                                     <li className="flex items-start gap-2">
@@ -299,7 +299,7 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 4: HSA */}
                         <section id="hsa" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">4. Health Savings Account (HSA)</h2>
@@ -383,7 +383,7 @@ export default function FourOhOneKAlternativesPage() {
                         {/* Alternative 7: SEP & SIMPLE IRAs */}
                         <section id="sep-simple" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
+                                <div className="p-3 bg-[rgba(183,121,31,0.08)]0/20 rounded-lg text-orange-400">
                                     <PiggyBank className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">7. SEP IRA & SIMPLE IRA</h2>
@@ -439,7 +439,7 @@ export default function FourOhOneKAlternativesPage() {
                                             <td className="p-3">After-tax, tax-free withdrawal</td>
                                             <td className="p-3">Higher taxes in retirement</td>
                                         </tr>
-                                        <tr className="bg-amber-500/10">
+                                        <tr className="bg-[#161828]0/10">
                                             <td className="p-3 font-medium text-amber-700">Gold IRA</td>
                                             <td className="p-3">$7,000 (or rollover)</td>
                                             <td className="p-3">Same as Traditional/Roth</td>
@@ -476,7 +476,7 @@ export default function FourOhOneKAlternativesPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What are the best alternatives to a 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -490,7 +490,7 @@ export default function FourOhOneKAlternativesPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Can I have a Gold IRA instead of a 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -504,7 +504,7 @@ export default function FourOhOneKAlternativesPage() {
                                 <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What if my employer doesn&apos;t offer a 401(k)?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -527,7 +527,7 @@ export default function FourOhOneKAlternativesPage() {
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-slate-200">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#2A2D42]">
                                         <Link href="/what-is-a-gold-ira">Learn About Gold IRAs</Link>
                                     </Button>
                                 </div>

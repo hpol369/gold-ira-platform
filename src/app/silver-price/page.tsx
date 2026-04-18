@@ -138,7 +138,7 @@ const schema = {
 
 export default function SilverPriceHubPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
 
             {/* Hero Header with Live Price */}
@@ -149,7 +149,7 @@ export default function SilverPriceHubPage() {
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
                             <div>
                                 <span className="inline-flex items-center gap-2 text-[#A8A39A] font-bold tracking-widest uppercase text-xs mb-4">
-                                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                                    <span className="w-2 h-2 rounded-full bg-[rgba(46,139,87,0.08)]0 animate-pulse"></span>
                                     Live Market Data
                                 </span>
                                 <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-4">
@@ -204,8 +204,8 @@ export default function SilverPriceHubPage() {
                                         <td className="p-4 text-[#D0CCC4]">{pred.timeframe}</td>
                                         <td className="p-4">
                                             <span className={`px-3 py-1 rounded-full text-xs font-bold ${
-                                                pred.stance === 'Extremely Bullish' ? 'bg-green-500/20 text-green-700' :
-                                                pred.stance === 'Very Bullish' ? 'bg-green-500/20 text-green-700' :
+                                                pred.stance === 'Extremely Bullish' ? 'bg-[rgba(46,139,87,0.08)]0/20 text-green-700' :
+                                                pred.stance === 'Very Bullish' ? 'bg-[rgba(46,139,87,0.08)]0/20 text-green-700' :
                                                 pred.stance === 'Bullish' ? 'bg-emerald-500/20 text-emerald-400' :
                                                 'bg-[rgba(220,38,38,0.18)] text-[#D4A94E]'
                                             }`}>
@@ -236,7 +236,7 @@ export default function SilverPriceHubPage() {
                                     </div>
                                     <div className="flex items-center gap-2">
                                         {page.hot && (
-                                            <span className="bg-red-500/20 text-red-700 text-xs font-bold px-2 py-1 rounded-full">HOT</span>
+                                            <span className="bg-[rgba(220,38,38,0.08)]0/20 text-red-700 text-xs font-bold px-2 py-1 rounded-full">HOT</span>
                                         )}
                                         <span className="text-xs text-[#D0CCC4]">{page.volume} searches/mo</span>
                                     </div>
@@ -380,7 +380,7 @@ export default function SilverPriceHubPage() {
                 </Container>
             </section>
 
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/silver-price" />
                 </Container>

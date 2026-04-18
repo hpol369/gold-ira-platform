@@ -121,7 +121,7 @@ const schema = {
 
 export default function BuyPhysicalSilverGuidePage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -702,42 +702,42 @@ export default function BuyPhysicalSilverGuidePage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Prices Too Good to Be True</h4>
                                         <p className="text-sm text-red-800 mt-1">If someone is selling silver significantly below spot price or with abnormally low premiums, it&apos;s likely counterfeit, stolen, or a scam. Always verify current spot prices.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">High-Pressure Sales Tactics</h4>
                                         <p className="text-sm text-red-800 mt-1">&quot;Buy now or lose this deal forever!&quot; Legitimate dealers don&apos;t need to pressure you. Take your time to research and compare.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Pushing &quot;Rare&quot; or Numismatic Coins</h4>
                                         <p className="text-sm text-red-800 mt-1">Unscrupulous dealers often push numismatic coins at massive markups to beginners. Stick with bullion products until you understand numismatics.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">No Physical Address or Phone</h4>
                                         <p className="text-sm text-red-800 mt-1">Reputable dealers have verifiable business locations and customer service. Anonymous sellers are high risk.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">&quot;Allocated&quot; Storage Without Proof</h4>
                                         <p className="text-sm text-red-800 mt-1">If a dealer offers to store your silver but can&apos;t provide audited proof of allocated holdings, your silver may not exist.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Counterfeit Products</h4>
@@ -849,7 +849,7 @@ export default function BuyPhysicalSilverGuidePage() {
                                     <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white" size="xl" asChild>
                                         <Link href="/quiz">Find Your Silver IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-[#3F4460] text-[#F6F4EF] hover:bg-slate-200">
+                                    <Button variant="outline" size="xl" asChild className="border-[#3F4460] text-[#F6F4EF] hover:bg-[#2A2D42]">
                                         <Link href="/silver-squeeze">Explore Silver Squeeze Hub</Link>
                                     </Button>
                                 </div>

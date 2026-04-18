@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function SilverIRARolloverPage() {
     return (
-        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
+        <div className="min-h-screen bg-[#0C0D18] text-[#F6F4EF] font-serif">
             {/* Top Warning Bar */}
             <div className="bg-[#DC2626] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
                 <span className="flex items-center justify-center gap-2">
@@ -84,7 +84,7 @@ export default function SilverIRARolloverPage() {
             </section>
 
             {/* Global Instability Section */}
-            <section className="py-12 bg-red-50 border-y border-red-200 font-sans">
+            <section className="py-12 bg-[rgba(220,38,38,0.08)] border-y border-red-200 font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-2xl font-bold text-[#D4A94E] text-center mb-6 font-serif">Why Americans Are Moving to Silver in 2026</h2>
                     <div className="grid md:grid-cols-3 gap-4 text-center">
@@ -111,7 +111,7 @@ export default function SilverIRARolloverPage() {
             </section>
 
             {/* Direct Rollover Explanation */}
-            <section className="py-16 bg-white font-sans text-lg md:text-xl leading-relaxed text-[#F6F4EF]">
+            <section className="py-16 bg-[#0C0D18] font-sans text-lg md:text-xl leading-relaxed text-[#F6F4EF]">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl font-bold text-[#F6F4EF] font-serif mb-6">What Is a Direct Rollover?</h2>
                     <p className="mb-6">
@@ -165,7 +165,7 @@ export default function SilverIRARolloverPage() {
                         </div>
                     </div>
 
-                    <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
+                    <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6 text-center">
                         <h4 className="font-bold text-green-700 mb-2">Accounts That Can Roll Over:</h4>
                         <p className="text-[#D0CCC4]">401(k) • Traditional IRA • Roth IRA • 403(b) • TSP • SEP IRA • SIMPLE IRA • 457(b)</p>
                     </div>
@@ -184,7 +184,7 @@ export default function SilverIRARolloverPage() {
                     <LeadCaptureButton
                         variant="silver"
                         source="lp-silver-ira-rollover-footer"
-                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#C5952E] hover:bg-[#D4A94E] text-[#0C0D18] text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_14px_40px_rgba(197,149,46,0.32)] hover:scale-105 transition-transform uppercase font-sans border-2 border-[rgba(197,149,46,0.5)]"
                     >
                         Get Your Free Rollover Kit
                     </LeadCaptureButton>

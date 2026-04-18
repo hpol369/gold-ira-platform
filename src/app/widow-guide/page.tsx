@@ -34,7 +34,7 @@ export default function WidowGuidePage() {
   const articles = getAllWidowGuideArticles();
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "Widow's Financial Guide | Navigating Finances After Loss", description: "Compassionate guidance for managing finances after losing a spouse. Survivor benefits, estate planning, insurance, and protecting your financial future.", slug: "/widow-guide" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Widow's Financial Guide", url: "/widow-guide" }])} />
       <Navbar />
@@ -45,13 +45,13 @@ export default function WidowGuidePage() {
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 text-purple-600 text-sm font-medium mb-4">
+            <div className="inline-flex items-center gap-2 text-[#D4A94E] text-sm font-medium mb-4">
               <Heart className="h-4 w-4" />
               COMPASSIONATE GUIDANCE
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6">
               Widow&apos;s Financial{" "}
-              <span className="text-purple-600">Guide</span>
+              <span className="text-[#D4A94E]">Guide</span>
             </h1>
             <p className="text-xl text-[#D0CCC4] mb-8">
               We understand this is an incredibly difficult time. These resources
@@ -116,19 +116,19 @@ export default function WidowGuidePage() {
         <Container>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-purple-600">{articles.length}</div>
+              <div className="text-3xl font-bold text-[#D4A94E]">{articles.length}</div>
               <div className="text-sm text-[#A8A39A]">Helpful Guides</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600">24/7</div>
+              <div className="text-3xl font-bold text-[#D4A94E]">24/7</div>
               <div className="text-sm text-[#A8A39A]">Available Resources</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600">Free</div>
+              <div className="text-3xl font-bold text-[#D4A94E]">Free</div>
               <div className="text-sm text-[#A8A39A]">Always No Cost</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-purple-600">SSA</div>
+              <div className="text-3xl font-bold text-[#D4A94E]">SSA</div>
               <div className="text-sm text-[#A8A39A]">1-800-772-1213</div>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function WidowGuidePage() {
       </section>
 
       {/* Key Resources */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
             Key Resources & Contacts
@@ -164,13 +164,13 @@ export default function WidowGuidePage() {
             </div>
             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-amber-100 p-3 rounded-lg inline-block mb-4">
-                <Clock className="h-6 w-6 text-amber-600" />
+                <Clock className="h-6 w-6 text-[#D4A94E]" />
               </div>
               <h3 className="font-bold text-[#F6F4EF] mb-2">Medicare</h3>
               <p className="text-[#A8A39A] text-sm mb-3">
                 Health insurance questions and options
               </p>
-              <p className="text-lg font-semibold text-amber-600">1-800-633-4227</p>
+              <p className="text-lg font-semibold text-[#D4A94E]">1-800-633-4227</p>
             </div>
           </div>
         </Container>
@@ -181,7 +181,7 @@ export default function WidowGuidePage() {
         <Container>
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] flex items-center gap-2">
-              <BookOpen className="h-6 w-6 text-purple-600" />
+              <BookOpen className="h-6 w-6 text-[#D4A94E]" />
               Financial Guides
             </h2>
           </div>
@@ -204,13 +204,13 @@ export default function WidowGuidePage() {
                     {article.articleType === "checklist" ? "Checklist" : "Guide"}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-purple-600 transition-colors mb-2 leading-snug">
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors mb-2 leading-snug">
                   {article.title}
                 </h3>
                 <p className="text-sm text-[#A8A39A] line-clamp-2">
                   {article.subtitle}
                 </p>
-                <div className="mt-4 flex items-center text-purple-600 text-sm font-medium">
+                <div className="mt-4 flex items-center text-[#D4A94E] text-sm font-medium">
                   Read Guide <ArrowRight className="ml-1 h-4 w-4" />
                 </div>
               </Link>
@@ -220,10 +220,10 @@ export default function WidowGuidePage() {
       </section>
 
       {/* Support Message */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
-            <Heart className="h-12 w-12 text-purple-600 mx-auto mb-6" />
+            <Heart className="h-12 w-12 text-[#D4A94E] mx-auto mb-6" />
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
               You&apos;re Not Alone
             </h2>

@@ -107,7 +107,7 @@ const schema = {
 
 export default function GoldIraVsRothIraPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -255,7 +255,7 @@ export default function GoldIraVsRothIraPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-[#161828] shadow-sm border border-[#2A2D42]">
-                                    <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-700 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-[rgba(46,139,87,0.08)]0/20 text-green-700 flex items-center justify-center shrink-0">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -370,7 +370,7 @@ export default function GoldIraVsRothIraPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-500/10 border border-green-500/30">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30">
                                     <ShieldCheck className="w-6 h-6 text-green-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">Choose a Gold IRA if...</h4>
@@ -383,7 +383,7 @@ export default function GoldIraVsRothIraPage() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-500/10 border border-blue-500/30">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423]0/10 border border-blue-500/30">
                                     <TrendingUp className="w-6 h-6 text-blue-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">Choose a Traditional Roth IRA if...</h4>
@@ -396,7 +396,7 @@ export default function GoldIraVsRothIraPage() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-500/10 border border-amber-500/30">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#161828]0/10 border border-amber-500/30">
                                     <Scale className="w-6 h-6 text-[#D4A94E] shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-[#D4A94E]">Consider Both if...</h4>

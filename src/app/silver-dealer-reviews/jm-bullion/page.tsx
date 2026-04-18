@@ -117,7 +117,7 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function JMBullionReviewPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={reviewSchema} />
             <SchemaScript schema={faqSchema} />
             <Navbar />
@@ -165,7 +165,7 @@ export default function JMBullionReviewPage() {
                                     JM Bullion delivers the perfect balance of competitive pricing, excellent selection, fast shipping, and top-tier customer service. Their buyback program is among the best in the industry, and their website experience is smooth. For direct silver purchases, they are our top pick. For Silver IRAs, we recommend Augusta Precious Metals.
                                 </p>
                             </div>
-                            <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 text-center">
+                            <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6 text-center">
                                 <div className="text-5xl font-bold text-[#F6F4EF] mb-2">4.8</div>
                                 <StarRating rating={4.8} />
                                 <div className="mt-4 pt-4 border-t border-green-500/30">

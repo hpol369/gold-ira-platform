@@ -96,7 +96,7 @@ export default function PriorityGoldReviewPage() {
                                     For IRA clients, they work with established custodians like Equity Trust and handle the rollover paperwork. The process is straightforward—they assign you a dedicated rep who walks you through every step. Multiple reviewers mention their rep by name, which speaks to the personalized approach.
                                 </p>
 
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                <div className="bg-[#121423] p-6 rounded-xl border border-blue-100 not-prose my-8">
                                     <h4 className="font-bold text-[#F6F4EF] flex items-center gap-2 mb-2">
                                         <Info className="w-5 h-5 text-[#D4A94E]" /> Numismatic vs. Bullion
                                     </h4>

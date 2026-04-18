@@ -85,10 +85,10 @@ export function LPProcess({
                 <div className="flex flex-col items-center text-center">
                   {/* Step number */}
                   <div className="relative">
-                    <div className="h-20 w-20 rounded-full bg-amber-500/20 flex items-center justify-center mb-4">
-                      <Icon className="h-10 w-10 text-amber-400" />
+                    <div className="h-20 w-20 rounded-full bg-[#161828]0/20 flex items-center justify-center mb-4">
+                      <Icon className="h-10 w-10 text-[#D4A94E]" />
                     </div>
-                    <div className="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-amber-500 flex items-center justify-center text-[#F6F4EF] font-bold text-sm">
+                    <div className="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-[#161828]0 flex items-center justify-center text-[#F6F4EF] font-bold text-sm">
                       {index + 1}
                     </div>
                   </div>

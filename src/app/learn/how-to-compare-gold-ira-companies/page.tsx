@@ -303,15 +303,15 @@ export default function HowToCompareGoldIraCompaniesPage() {
                 Score each of the 8 categories from 1 to 5. That gives you a possible total of 40 points.
               </p>
               <div className="grid md:grid-cols-3 gap-4 mb-6">
-                <div className="bg-green-50 border border-green-200 rounded-xl p-5 text-center">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5 text-center">
                   <p className="text-2xl font-bold text-green-700 mb-1">34 - 40</p>
                   <p className="text-sm text-[#D0CCC4] font-medium">Strong Candidate</p>
                 </div>
-                <div className="bg-amber-50 border border-amber-200 rounded-xl p-5 text-center">
+                <div className="bg-[#161828] border border-[rgba(197,149,46,0.32)] rounded-xl p-5 text-center">
                   <p className="text-2xl font-bold text-amber-700 mb-1">28 - 33</p>
                   <p className="text-sm text-[#D0CCC4] font-medium">Worth Further Review</p>
                 </div>
-                <div className="bg-red-50 border border-red-200 rounded-xl p-5 text-center">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5 text-center">
                   <p className="text-2xl font-bold text-red-700 mb-1">Under 28</p>
                   <p className="text-sm text-[#D0CCC4] font-medium">Proceed Carefully or Skip</p>
                 </div>
@@ -332,7 +332,7 @@ export default function HowToCompareGoldIraCompaniesPage() {
                 </h2>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+                <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                   <h3 className="font-bold text-green-800 mb-3">This Is for You If:</h3>
                   <ul className="space-y-2 text-[#D0CCC4] text-sm">
                     <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /> You are comparing multiple gold IRA providers</li>
@@ -340,7 +340,7 @@ export default function HowToCompareGoldIraCompaniesPage() {
                     <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /> You prefer facts over promotions</li>
                   </ul>
                 </div>
-                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                   <h3 className="font-bold text-red-800 mb-3">This Is Not for You If:</h3>
                   <ul className="space-y-2 text-[#D0CCC4] text-sm">
                     <li className="flex items-start gap-2"><XCircle className="h-4 w-4 text-red-500 mt-0.5 shrink-0" /> You have already decided based purely on advertising</li>

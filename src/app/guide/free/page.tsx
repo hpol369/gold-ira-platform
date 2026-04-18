@@ -69,7 +69,7 @@ export default function FreeGuidePage() {
             <p className="text-sm text-[#A8A39A] mb-3">Or speak directly with a specialist:</p>
             <a
               href={getTrackedAugustaLink("default", "guide-free-success")}
-              className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-[#F6F4EF] px-6 py-3 rounded-xl font-bold text-sm transition-colors"
+              className="inline-flex items-center gap-2 bg-[#161828]0 hover:bg-amber-400 text-[#F6F4EF] px-6 py-3 rounded-xl font-bold text-sm transition-colors"
             >
               Free Consultation from Augusta
               <ArrowRight className="w-4 h-4" />
@@ -132,7 +132,7 @@ export default function FreeGuidePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 bg-[#161828]0/20 text-amber-300 px-4 py-1.5 rounded-full text-sm font-medium mb-6">
               <BookOpen className="w-4 h-4" />
               Free Download — No Phone Required
             </div>
@@ -161,8 +161,8 @@ export default function FreeGuidePage() {
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <div className="w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <item.icon className="w-4 h-4 text-amber-400" />
+                  <div className="w-8 h-8 bg-[#161828]0/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <item.icon className="w-4 h-4 text-[#D4A94E]" />
                   </div>
                   <p className="text-[#3F4460] text-lg">{item.text}</p>
                 </div>
@@ -236,7 +236,7 @@ export default function FreeGuidePage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-amber-500 hover:bg-amber-400 disabled:bg-amber-500/50 text-[#F6F4EF] font-bold py-4 px-6 rounded-xl text-lg transition-colors flex items-center justify-center gap-2"
+                  className="w-full bg-[#161828]0 hover:bg-amber-400 disabled:bg-[#161828]0/50 text-[#F6F4EF] font-bold py-4 px-6 rounded-xl text-lg transition-colors flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>

@@ -181,7 +181,7 @@ const schema = {
 
 export default function GoldStocksHubPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <Navbar />
             <SchemaScript schema={schema} />
 
@@ -249,7 +249,7 @@ export default function GoldStocksHubPage() {
             </section>
 
             {/* Gold Investment Options Overview */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="text-center mb-12">
@@ -344,7 +344,7 @@ export default function GoldStocksHubPage() {
             </section>
 
             {/* Key Insight Box */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <div className="bg-gradient-to-br from-[#B22234]/10 to-[#B22234]/5 rounded-2xl p-8 border border-[#B22234]/20">
@@ -393,7 +393,7 @@ export default function GoldStocksHubPage() {
             </section>
 
             {/* Quick Stats */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="bg-[#0C0D18] rounded-2xl p-8 border border-[#2A2D42]">
@@ -530,7 +530,7 @@ export default function GoldStocksHubPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

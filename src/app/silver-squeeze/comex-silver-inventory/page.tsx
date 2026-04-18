@@ -116,7 +116,7 @@ const schema = {
 
 export default function ComexSilverInventoryPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
             <header className="bg-[#0C0D18] backdrop-blur-sm py-16 border-b border-[#2A2D42]">
@@ -173,7 +173,7 @@ export default function ComexSilverInventoryPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/30">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30">
                                     <Lock className="w-8 h-8 text-green-700 mb-4" />
                                     <h4 className="font-bold text-green-700 text-lg mb-2">Registered Silver</h4>
                                     <p className="text-sm text-[#D0CCC4] mb-4">Silver with warrants attached, available for delivery against futures contracts. This is the &quot;real&quot; inventory that backs the market.</p>
@@ -203,7 +203,7 @@ export default function ComexSilverInventoryPage() {
                         {/* Current Levels */}
                         <section id="current-levels" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Current Inventory Levels</h2>
@@ -269,7 +269,7 @@ export default function ComexSilverInventoryPage() {
                         {/* Historical Drawdowns */}
                         <section id="historical-drawdowns" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Historical Drawdowns</h2>
@@ -346,7 +346,7 @@ export default function ComexSilverInventoryPage() {
                         {/* What Depletion Means */}
                         <section id="what-depletion-means" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
+                                <div className="p-3 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What Depletion Means for Investors</h2>
@@ -371,7 +371,7 @@ export default function ComexSilverInventoryPage() {
                                     <p className="text-sm text-[#D0CCC4]">If delivery requests exceed available metal, COMEX may force cash settlement at potentially unfavorable rates. This would destroy confidence in paper silver markets.</p>
                                 </div>
 
-                                <div className="p-6 rounded-xl bg-red-500/10 border border-red-500/30">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/30">
                                     <h4 className="font-bold text-red-700 text-lg mb-2">Scenario 4: Paper/Physical Disconnect</h4>
                                     <p className="text-sm text-[#D0CCC4]">Physical silver prices could decouple from futures prices, with significant premiums for actual metal. We saw hints of this in 2020 and 2021.</p>
                                 </div>
@@ -388,7 +388,7 @@ export default function ComexSilverInventoryPage() {
                         {/* How to Track */}
                         <section id="how-to-track" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">How to Track COMEX Data</h2>

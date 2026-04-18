@@ -159,7 +159,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function TSPCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -169,11 +169,11 @@ export default function TSPCalculatorPage() {
       <TSPCalculator />
 
       {/* TSP Fund Overview */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/20 rounded-xl flex items-center justify-center">
                 <PieChart className="h-6 w-6 text-green-600" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
@@ -227,7 +227,7 @@ export default function TSPCalculatorPage() {
               {/* 2026 Limits */}
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg flex items-center justify-center">
                     <DollarSign className="h-5 w-5 text-green-600" />
                   </div>
                   <h3 className="text-xl font-bold text-[#F6F4EF]">2026 TSP Limits</h3>
@@ -241,7 +241,7 @@ export default function TSPCalculatorPage() {
                     <span className="text-[#A8A39A]">Catch-Up (Age 50+)</span>
                     <span className="text-[#F6F4EF] font-semibold">+${contributionLimits2026.catchUp.toLocaleString()}</span>
                   </div>
-                  <div className="flex justify-between items-center py-2 bg-green-500/10 rounded-lg px-3 -mx-3">
+                  <div className="flex justify-between items-center py-2 bg-[rgba(46,139,87,0.08)]0/10 rounded-lg px-3 -mx-3">
                     <span className="text-green-600 font-medium">Total Possible (50+)</span>
                     <span className="text-green-600 font-bold text-lg">${contributionLimits2026.total.toLocaleString()}</span>
                   </div>
@@ -251,7 +251,7 @@ export default function TSPCalculatorPage() {
               {/* Matching Breakdown */}
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-[#121423]0/20 rounded-lg flex items-center justify-center">
                     <TrendingUp className="h-5 w-5 text-blue-600" />
                   </div>
                   <h3 className="text-xl font-bold text-[#F6F4EF]">Agency Matching</h3>
@@ -278,7 +278,7 @@ export default function TSPCalculatorPage() {
                       <p className="text-[#D0CCC4] text-sm">Agency matches 50% of your next 2%</p>
                     </div>
                   </div>
-                  <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                  <div className="mt-4 p-3 bg-[#121423] border border-blue-200 rounded-lg">
                     <p className="text-blue-600 text-sm">
                       <strong>Bottom line:</strong> Contribute at least 5% to get the full 5% agency contribution (4% match + 1% auto).
                     </p>
@@ -291,7 +291,7 @@ export default function TSPCalculatorPage() {
       </section>
 
       {/* TSP Rollover Options */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
@@ -424,7 +424,7 @@ export default function TSPCalculatorPage() {
       </section>
 
       {/* Related Tools */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -502,7 +502,7 @@ export default function TSPCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

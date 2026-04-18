@@ -122,7 +122,7 @@ export default function NobleGoldReviewPage() {
                                     Not everyone has $50,000 sitting around. Maybe you switched jobs a few times and have a couple small 401ks scattered around. Maybe you're a decade or two away from retirement and want to start protecting what you've built. <strong>Noble Gold doesn't treat you like a second-class customer just because your account isn't six figures.</strong>
                                 </p>
 
-                                <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
+                                <div className="bg-[#121423] p-6 rounded-xl border border-blue-100 not-prose my-8">
                                     <h4 className="font-bold text-[#F6F4EF] flex items-center gap-2 mb-2">
                                         <Info className="w-5 h-5 text-secondary" /> Important Math for Small Accounts
                                     </h4>
@@ -191,12 +191,12 @@ export default function NobleGoldReviewPage() {
                     </div>
                 </Container>
             </div>
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <FAQSection faqs={getPageFAQs("reviews/noble-gold")} title="Noble Gold FAQ" className="max-w-3xl" includeSchema={false} />
                 </Container>
             </section>
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/reviews/noble-gold" />
                 </Container>

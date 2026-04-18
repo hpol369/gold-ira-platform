@@ -156,7 +156,7 @@ const schema = {
 
 export default function SilverCoinsVsBarsPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -391,7 +391,7 @@ export default function SilverCoinsVsBarsPage() {
                             </p>
 
                             <div className="space-y-4">
-                                <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+                                <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-3">
                                         <span className="w-8 h-8 rounded-full bg-green-400 text-[#F6F4EF] flex items-center justify-center font-bold">1</span>
                                         <h4 className="font-bold text-green-700">Foundation (0-100 oz): 100% Coins</h4>
@@ -401,7 +401,7 @@ export default function SilverCoinsVsBarsPage() {
                                     </p>
                                 </div>
 
-                                <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
+                                <div className="bg-[#121423]0/10 border border-blue-500/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-3">
                                         <span className="w-8 h-8 rounded-full bg-blue-400 text-[#F6F4EF] flex items-center justify-center font-bold">2</span>
                                         <h4 className="font-bold text-blue-700">Growth (100-500 oz): 70% Coins / 30% Bars</h4>

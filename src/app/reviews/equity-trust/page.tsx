@@ -49,7 +49,7 @@ export default function EquityTrustReviewPage() {
     const affiliateLink = getTrackedLink(AFFILIATE_LINKS.equityTrust, "review-equity-trust", "equity-trust");
 
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Hero Section */}

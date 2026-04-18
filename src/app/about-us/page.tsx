@@ -95,7 +95,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function AboutUsPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <SchemaScript schema={aboutArticle} />
       <SchemaScript schema={breadcrumbs} />
@@ -110,7 +110,7 @@ export default function AboutUsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
               {/* Photo */}
-              <div className="w-40 h-40 md:w-56 md:h-56 rounded-2xl border-4 border-[#B22234]/30 shadow-2xl overflow-hidden flex-shrink-0 bg-slate-200">
+              <div className="w-40 h-40 md:w-56 md:h-56 rounded-2xl border-4 border-[#B22234]/30 shadow-2xl overflow-hidden flex-shrink-0 bg-[#2A2D42]">
                 <div className="w-full h-full flex items-center justify-center text-[#A8A39A]">
                   {/* Placeholder - replace with actual photo */}
                   <Users className="w-20 h-20 opacity-50" />
@@ -139,12 +139,12 @@ export default function AboutUsPage() {
       </section>
 
       {/* The Story */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <article className="prose prose-lg prose-slate prose-headings:font-bold prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
               <h2 className="text-2xl text-[#F6F4EF] flex items-center gap-3 not-prose mb-6">
-                <div className="p-2 bg-red-500/20 rounded-lg">
+                <div className="p-2 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg">
                   <AlertTriangle className="h-5 w-5 text-red-500" />
                 </div>
                 The Moment I Snapped
@@ -177,7 +177,7 @@ export default function AboutUsPage() {
               </h2>
 
               <div className="grid md:grid-cols-2 gap-4 not-prose my-8">
-                <div className="bg-red-50 border border-red-200 rounded-xl p-5">
+                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-5">
                   <div className="flex items-center gap-2 text-red-600 font-bold mb-2">
                     <XCircle className="h-5 w-5" />
                     The Gold Sharks
@@ -187,7 +187,7 @@ export default function AboutUsPage() {
                     into bad decisions. Give the whole industry a bad name.
                   </p>
                 </div>
-                <div className="bg-blue-50 border border-blue-200 rounded-xl p-5">
+                <div className="bg-[#121423] border border-blue-200 rounded-xl p-5">
                   <div className="flex items-center gap-2 text-blue-600 font-bold mb-2">
                     <XCircle className="h-5 w-5" />
                     The Traditionalists
@@ -290,7 +290,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* How We Make Money (Transparency) */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -365,7 +365,7 @@ export default function AboutUsPage() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-3 bg-red-50 border border-red-200 rounded-lg px-5 py-3"
+                  className="flex items-center gap-3 bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-lg px-5 py-3"
                 >
                   <XCircle className="h-5 w-5 text-red-500 flex-shrink-0" />
                   <span className="text-[#D0CCC4]">{item}</span>
@@ -385,7 +385,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">

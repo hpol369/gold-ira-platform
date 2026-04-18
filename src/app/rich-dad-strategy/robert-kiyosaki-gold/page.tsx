@@ -107,7 +107,7 @@ const schema = {
 
 export default function RobertKiyosakiGoldPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <Navbar />
             <SchemaScript schema={schema} />
             {/* Header */}
@@ -167,7 +167,7 @@ export default function RobertKiyosakiGoldPage() {
                                 One of Kiyosaki&apos;s most controversial statements is that <strong>&quot;savers are losers.&quot;</strong> This isn&apos;t about being irresponsible with money—it&apos;s about understanding how the monetary system works.
                             </p>
 
-                            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl not-prose my-8">
+                            <div className="bg-[rgba(220,38,38,0.08)] border-l-4 border-red-500 p-6 rounded-r-xl not-prose my-8">
                                 <div className="flex items-start gap-4">
                                     <Quote className="w-8 h-8 text-red-600 flex-shrink-0" />
                                     <div>
@@ -211,9 +211,9 @@ export default function RobertKiyosakiGoldPage() {
                                 The distinction is crucial: Gold&apos;s supply is limited by nature. No government, central bank, or corporation can print more gold. This is why gold has maintained purchasing power for over 5,000 years while every paper currency in history has eventually failed.
                             </p>
 
-                            <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl not-prose my-8">
+                            <div className="bg-[#161828] border-l-4 border-amber-500 p-6 rounded-r-xl not-prose my-8">
                                 <div className="flex items-start gap-4">
-                                    <Quote className="w-8 h-8 text-amber-600 flex-shrink-0" />
+                                    <Quote className="w-8 h-8 text-[#D4A94E] flex-shrink-0" />
                                     <div>
                                         <p className="text-amber-800 italic text-lg mb-2">
                                             &quot;Gold is God&apos;s money. It was here before humans, and it will be here after humans. You can&apos;t print it. You can&apos;t hack it. You can&apos;t make more of it in a computer.&quot;
@@ -248,7 +248,7 @@ export default function RobertKiyosakiGoldPage() {
                             <div className="bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
                                 <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">Kiyosaki&apos;s Recommendations</h4>
                                 <div className="grid md:grid-cols-2 gap-4">
-                                    <div className="p-4 bg-green-50 rounded-xl border border-green-200">
+                                    <div className="p-4 bg-[rgba(46,139,87,0.08)] rounded-xl border border-green-200">
                                         <h5 className="font-semibold text-green-700 mb-2">What He Recommends</h5>
                                         <ul className="text-sm text-green-800 space-y-1">
                                             <li>✓ Physical gold and silver</li>
@@ -257,7 +257,7 @@ export default function RobertKiyosakiGoldPage() {
                                             <li>✓ Financial education</li>
                                         </ul>
                                     </div>
-                                    <div className="p-4 bg-red-50 rounded-xl border border-red-200">
+                                    <div className="p-4 bg-[rgba(220,38,38,0.08)] rounded-xl border border-red-200">
                                         <h5 className="font-semibold text-red-700 mb-2">What He Warns Against</h5>
                                         <ul className="text-sm text-red-800 space-y-1">
                                             <li>✗ Saving dollars long-term</li>
@@ -311,7 +311,7 @@ export default function RobertKiyosakiGoldPage() {
                         {/* Famous Quotes */}
                         <section id="quotes" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-purple-100 rounded-lg text-purple-600 border border-purple-200">
+                                <div className="p-3 bg-purple-100 rounded-lg text-[#D4A94E] border border-purple-200">
                                     <BookOpen className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Famous Kiyosaki Gold Quotes</h2>
@@ -388,7 +388,7 @@ export default function RobertKiyosakiGoldPage() {
                                 <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Does Robert Kiyosaki recommend gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -402,7 +402,7 @@ export default function RobertKiyosakiGoldPage() {
                                 <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Why does Kiyosaki say &quot;savers are losers&quot;?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -416,7 +416,7 @@ export default function RobertKiyosakiGoldPage() {
                                 <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What does &quot;God&apos;s money&quot; mean?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
@@ -430,7 +430,7 @@ export default function RobertKiyosakiGoldPage() {
                                 <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                     <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Does Kiyosaki recommend Gold IRAs?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>

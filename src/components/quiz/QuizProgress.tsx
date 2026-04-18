@@ -25,7 +25,7 @@ export function QuizProgress({
         <span className="text-sm font-medium text-[#A8A39A]">
           Step {currentStep} of {totalSteps}
         </span>
-        <span className="text-sm font-medium text-amber-400">
+        <span className="text-sm font-medium text-[#D4A94E]">
           {Math.round(progress)}% Complete
         </span>
       </div>
@@ -65,7 +65,7 @@ export function QuizProgress({
                 <div
                   className={cn(
                     "w-3 h-3 rounded-full mb-1 transition-all duration-300",
-                    isCompleted && "bg-amber-500",
+                    isCompleted && "bg-[#161828]0",
                     isCurrent && "bg-amber-400 ring-2 ring-amber-400/30 ring-offset-2 ring-offset-slate-900",
                     isFuture && "bg-slate-600"
                   )}
@@ -74,7 +74,7 @@ export function QuizProgress({
                 <span
                   className={cn(
                     "text-xs font-medium transition-colors duration-300 text-center max-w-[80px]",
-                    isCompleted && "text-amber-400",
+                    isCompleted && "text-[#D4A94E]",
                     isCurrent && "text-white",
                     isFuture && "text-[#A8A39A]"
                   )}

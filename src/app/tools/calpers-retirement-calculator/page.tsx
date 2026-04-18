@@ -149,7 +149,7 @@ const faqSchema = {
 
 export default function CalPERSRetirementCalculatorPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
@@ -158,7 +158,7 @@ export default function CalPERSRetirementCalculatorPage() {
       <CalPERSRetirementCalculator />
 
       {/* Important CalPERS Facts */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
@@ -251,7 +251,7 @@ export default function CalPERSRetirementCalculatorPage() {
       </section>
 
       {/* Gold IRA Protection Strategy */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -267,7 +267,7 @@ export default function CalPERSRetirementCalculatorPage() {
             <div className="space-y-6">
               <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[rgba(220,38,38,0.08)]0/20 rounded-lg flex items-center justify-center flex-shrink-0">
                     <AlertTriangle className="h-5 w-5 text-red-600" />
                   </div>
                   <div>
@@ -298,9 +298,9 @@ export default function CalPERSRetirementCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-green-50 border border-green-200 rounded-xl p-6">
+              <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg flex items-center justify-center flex-shrink-0">
                     <CheckCircle2 className="h-5 w-5 text-green-600" />
                   </div>
                   <div>

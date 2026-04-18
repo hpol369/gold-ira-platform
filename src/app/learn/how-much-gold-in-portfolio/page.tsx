@@ -45,7 +45,7 @@ const expertQuotes = [
 
 export default function HowMuchGoldPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={articleSchema({ title: "How Much Gold Should I Have in My Portfolio? (2026 Guide)", description: "Expert recommendations on gold allocation for retirement portfolios. Learn the 5-15% rule, age-based strategies, and how to rebalance your holdings.", slug: "/learn/how-much-gold-in-portfolio" })} />
             <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "How Much Gold in Portfolio", url: "/learn/how-much-gold-in-portfolio" }])} />
 
@@ -339,19 +339,19 @@ export default function HowMuchGoldPage() {
                             <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">Common Mistakes to Avoid</h2>
 
                             <div className="space-y-4">
-                                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                     <h3 className="font-bold text-red-700 mb-2">Going All-In After a Crash</h3>
                                     <p className="text-[#D0CCC4] text-sm">
                                         Don&apos;t panic-buy gold after markets crash. That&apos;s often when gold prices are highest. Have your allocation set beforehand.
                                     </p>
                                 </div>
-                                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                     <h3 className="font-bold text-red-700 mb-2">Treating Gold as a Trading Vehicle</h3>
                                     <p className="text-[#D0CCC4] text-sm">
                                         Gold is insurance, not a get-rich-quick scheme. Don&apos;t try to time gold prices. Set your allocation and stick with it.
                                     </p>
                                 </div>
-                                <div className="bg-red-50 border border-red-200 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-xl p-6">
                                     <h3 className="font-bold text-red-700 mb-2">Ignoring Rebalancing</h3>
                                     <p className="text-[#D0CCC4] text-sm">
                                         If gold surges 50%, your allocation drifts too high. If stocks surge, your gold allocation gets too low. Rebalance annually.

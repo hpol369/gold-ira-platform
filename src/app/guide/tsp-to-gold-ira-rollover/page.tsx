@@ -95,7 +95,7 @@ const breadcrumbs = breadcrumbSchema([
 
 export default function TspRolloverPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbs} />
             <SchemaScript schema={howToSchema({
@@ -192,7 +192,7 @@ export default function TspRolloverPage() {
                                 This is where it gets a little tricky. Your eligibility depends on your employment status:
                             </p>
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-500/10 border border-green-500/20">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/20">
                                     <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                         <CheckCircle2 className="w-5 h-5" />
                                         Separated from Service
@@ -200,7 +200,7 @@ export default function TspRolloverPage() {
                                     <p className="text-green-800 text-sm mb-3">If you&apos;ve left federal employment (retired, resigned, or separated), you can roll over your entire TSP at any age, no restrictions.</p>
                                     <p className="text-green-700 text-xs">This is the easiest path. Most people do rollovers after they leave government service.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-blue-500/10 border border-blue-500/20">
+                                <div className="p-6 rounded-xl bg-[#121423]0/10 border border-blue-500/20">
                                     <h4 className="font-bold text-blue-700 mb-3 flex items-center gap-2">
                                         <Clock className="w-5 h-5" />
                                         Still Working (Age 59½+)
@@ -333,28 +333,28 @@ export default function TspRolloverPage() {
                         <section id="mistakes" className="scroll-mt-32">
                             <h2>Common Mistakes to Avoid</h2>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Taking a check instead of direct transfer</h4>
                                         <p className="text-sm text-red-800 mt-1">Triggers 20% withholding and creates a 60-day deadline. Always choose direct transfer.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Rolling over while under 59½ and still employed</h4>
                                         <p className="text-sm text-red-800 mt-1">You&apos;re not eligible for a rollover unless you&apos;ve separated from service or qualify for age-based withdrawal.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Rolling Traditional TSP to Roth IRA without planning</h4>
                                         <p className="text-sm text-red-800 mt-1">This is a taxable conversion. You&apos;ll owe income taxes on the entire amount that year. Plan accordingly.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-500/10 border border-red-500/20">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)]0/10 border border-red-500/20">
                                     <AlertTriangle className="w-6 h-6 text-red-700 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Choosing the wrong Gold IRA company</h4>
@@ -372,7 +372,7 @@ export default function TspRolloverPage() {
                                     <details key={index} className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
                                         <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-[#2A2D42] p-1.5 text-[#D4A94E] sm:p-3">
                                                 <RefreshCw className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
@@ -420,7 +420,7 @@ export default function TspRolloverPage() {
                 </Container>
             </section>
 
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <AutoRelatedContent currentUrl="/guide/tsp-to-gold-ira-rollover" />
                 </Container>

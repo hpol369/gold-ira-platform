@@ -112,7 +112,7 @@ const schema = {
 
 export default function GoldStocksVsGoldIraPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
@@ -183,7 +183,7 @@ export default function GoldStocksVsGoldIraPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <h4 className="font-bold text-green-700 mb-3">Gold Stock Advantages</h4>
                                     <ul className="space-y-2 text-sm text-green-600">
                                         <li>• <strong>Leverage to gold prices</strong> — Mining profits can amplify gold gains</li>
@@ -193,7 +193,7 @@ export default function GoldStocksVsGoldIraPage() {
                                         <li>• <strong>No storage needed</strong> — Just a brokerage account</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                                     <h4 className="font-bold text-red-700 mb-3">Gold Stock Disadvantages</h4>
                                     <ul className="space-y-2 text-sm text-red-600">
                                         <li>• <strong>Company risk</strong> — Management failures, accidents, fraud</li>
@@ -229,7 +229,7 @@ export default function GoldStocksVsGoldIraPage() {
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-green-50 border border-green-100">
+                                <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <h4 className="font-bold text-green-700 mb-3">Gold IRA Advantages</h4>
                                     <ul className="space-y-2 text-sm text-green-600">
                                         <li>• <strong>Physical ownership</strong> — Real metal in your name</li>
@@ -239,7 +239,7 @@ export default function GoldStocksVsGoldIraPage() {
                                         <li>• <strong>5,000 years of history</strong> — Proven store of value</li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-red-50 border border-red-100">
+                                <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                                     <h4 className="font-bold text-red-700 mb-3">Gold IRA Disadvantages</h4>
                                     <ul className="space-y-2 text-sm text-red-600">
                                         <li>• <strong>Storage fees</strong> — Annual custodian/vault costs</li>
@@ -307,7 +307,7 @@ export default function GoldStocksVsGoldIraPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-[#161828] shadow-sm border border-[#2A2D42]">
-                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-purple-100 text-[#D4A94E] flex items-center justify-center shrink-0">
                                         <DollarSign className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -318,7 +318,7 @@ export default function GoldStocksVsGoldIraPage() {
                                 </div>
 
                                 <div className="flex gap-4 p-6 rounded-xl bg-[#161828] shadow-sm border border-[#2A2D42]">
-                                    <div className="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+                                    <div className="w-12 h-12 rounded-full bg-amber-100 text-[#D4A94E] flex items-center justify-center shrink-0">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
                                     <div>
@@ -338,21 +338,21 @@ export default function GoldStocksVsGoldIraPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423] border border-[#3F4460]">
                                     <BarChart3 className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">You want leveraged gold exposure</h4>
                                         <p className="text-sm text-blue-600 mt-1">When gold rises 10%, well-run miners can rise 20-30%. If you&apos;re bullish on gold prices and want amplified returns, stocks offer that leverage.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423] border border-[#3F4460]">
                                     <DollarSign className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">You want dividend income</h4>
                                         <p className="text-sm text-blue-600 mt-1">Some gold miners pay dividends. If you want your gold investment to generate income, stocks are the only option.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-blue-50 border border-blue-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#121423] border border-[#3F4460]">
                                     <TrendingUp className="w-6 h-6 text-blue-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-blue-700">You&apos;re comfortable with stock picking</h4>
@@ -370,28 +370,28 @@ export default function GoldStocksVsGoldIraPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You want true portfolio insurance</h4>
                                         <p className="text-sm text-green-600 mt-1">Physical gold has an inverse correlation to stocks during crises. It actually protects when you need it most&mdash;unlike gold stocks.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You&apos;re within 10-15 years of retirement</h4>
                                         <p className="text-sm text-green-600 mt-1">At this stage, protection matters more than growth. You can&apos;t afford a 40% drop in your portfolio. Physical gold provides that safety.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You want to eliminate counterparty risk</h4>
                                         <p className="text-sm text-green-600 mt-1">No company to go bankrupt, no management to screw up, no fraud risk. Your gold exists independent of any institution.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                                     <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-green-700">You have retirement funds to roll over</h4>

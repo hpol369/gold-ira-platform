@@ -164,7 +164,7 @@ export function TSPCalculator() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/30 rounded-full text-green-600 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(46,139,87,0.08)]0/20 border border-green-500/30 rounded-full text-green-600 font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               TSP CALCULATOR
             </div>
@@ -333,7 +333,7 @@ export function TSPCalculator() {
                 </div>
 
                 {!isValidAllocation && (
-                  <div className="mt-3 p-3 bg-red-50 border border-red-200 rounded-lg">
+                  <div className="mt-3 p-3 bg-[rgba(220,38,38,0.08)] border border-red-200 rounded-lg">
                     <p className="text-red-600 text-sm">
                       Allocation must total 100%. Currently at {allocationTotal}%.
                     </p>
@@ -363,7 +363,7 @@ export function TSPCalculator() {
               {result ? (
                 <div className="space-y-6">
                   {/* Projected Balance */}
-                  <div className="bg-green-50 border border-green-200 rounded-xl p-5">
+                  <div className="bg-[rgba(46,139,87,0.08)] border border-[rgba(46,139,87,0.32)] rounded-xl p-5">
                     <div className="flex items-center gap-2 text-green-600 text-sm mb-2">
                       <Target className="h-4 w-4" />
                       PROJECTED BALANCE AT RETIREMENT
@@ -421,14 +421,14 @@ export function TSPCalculator() {
                     <h4 className="text-[#F6F4EF] font-semibold mb-3">Balance Composition</h4>
                     <div className="space-y-2">
                       <div className="flex items-center gap-2">
-                        <div className="flex-1 h-4 bg-slate-200 rounded-full overflow-hidden flex">
+                        <div className="flex-1 h-4 bg-[#2A2D42] rounded-full overflow-hidden flex">
                           <div
                             className="h-full bg-[#0C0D18]0"
                             style={{ width: `${(currentBalance / result.projectedBalance) * 100}%` }}
                             title="Starting Balance"
                           />
                           <div
-                            className="h-full bg-blue-500"
+                            className="h-full bg-[#121423]0"
                             style={{ width: `${(result.totalContributions / result.projectedBalance) * 100}%` }}
                             title="Your Contributions"
                           />
@@ -438,7 +438,7 @@ export function TSPCalculator() {
                             title="Employer Match"
                           />
                           <div
-                            className="h-full bg-green-500"
+                            className="h-full bg-[rgba(46,139,87,0.08)]0"
                             style={{ width: `${(result.totalGrowth / result.projectedBalance) * 100}%` }}
                             title="Investment Growth"
                           />
@@ -450,7 +450,7 @@ export function TSPCalculator() {
                           <span className="text-[#A8A39A]">Starting ({formatCurrency(currentBalance)})</span>
                         </div>
                         <div className="flex items-center gap-1">
-                          <div className="w-3 h-3 bg-blue-500 rounded" />
+                          <div className="w-3 h-3 bg-[#121423]0 rounded" />
                           <span className="text-[#A8A39A]">Contributions</span>
                         </div>
                         <div className="flex items-center gap-1">
@@ -458,7 +458,7 @@ export function TSPCalculator() {
                           <span className="text-[#A8A39A]">Match</span>
                         </div>
                         <div className="flex items-center gap-1">
-                          <div className="w-3 h-3 bg-green-500 rounded" />
+                          <div className="w-3 h-3 bg-[rgba(46,139,87,0.08)]0 rounded" />
                           <span className="text-[#A8A39A]">Growth</span>
                         </div>
                       </div>
@@ -487,7 +487,7 @@ export function TSPCalculator() {
                             <tr
                               key={row.year}
                               className={`border-b border-[#2A2D42] ${
-                                idx === result.yearByYearProjection.length - 1 ? "bg-green-500/10" : ""
+                                idx === result.yearByYearProjection.length - 1 ? "bg-[rgba(46,139,87,0.08)]0/10" : ""
                               }`}
                             >
                               <td className="py-2 px-2 text-[#D0CCC4]">{row.year}</td>

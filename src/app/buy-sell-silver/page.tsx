@@ -173,7 +173,7 @@ const schema = {
 
 export default function BuySellSilverHubPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <SchemaScript schema={schema} />
       <Navbar />
 
@@ -226,7 +226,7 @@ export default function BuySellSilverHubPage() {
       </section>
 
       {/* Featured Guides */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4">
@@ -255,7 +255,7 @@ export default function BuySellSilverHubPage() {
                         <p className="text-[#D0CCC4] text-sm mb-3">
                           {guide.description}
                         </p>
-                        <span className="text-xs text-green-400 bg-green-500/10 px-2 py-1 rounded">
+                        <span className="text-xs text-green-400 bg-[rgba(46,139,87,0.08)]0/10 px-2 py-1 rounded">
                           Easy Win: {guide.stats.split(",")[1]?.trim() || "DIFF 0"}
                         </span>
                       </div>
@@ -324,7 +324,7 @@ export default function BuySellSilverHubPage() {
       </section>
 
       {/* Quick Tips Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
@@ -332,7 +332,7 @@ export default function BuySellSilverHubPage() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Buying Tips */}
-              <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+              <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6">
                 <h3 className="text-lg font-bold text-green-400 mb-4 flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5" />
                   Buying Smart
@@ -425,7 +425,7 @@ export default function BuySellSilverHubPage() {
       </section>
 
       {/* IRA Connection */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">

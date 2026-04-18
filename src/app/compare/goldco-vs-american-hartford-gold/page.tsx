@@ -133,7 +133,7 @@ export default function GoldcoVsAHGPage() {
                                 <div className="not-prose grid gap-6 my-6">
                                     <div className="bg-[#161828] shadow-sm p-6 rounded-xl border border-[#2A2D42]">
                                         <div className="flex items-center gap-3 mb-4">
-                                            <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
+                                            <div className="w-10 h-10 rounded-full bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center">
                                                 <DollarSign className="w-5 h-5 text-green-700" />
                                             </div>
                                             <h3 className="font-bold text-lg text-[#D4A94E]">Minimum Investment</h3>
@@ -145,7 +145,7 @@ export default function GoldcoVsAHGPage() {
 
                                     <div className="bg-[#161828] shadow-sm p-6 rounded-xl border border-[#2A2D42]">
                                         <div className="flex items-center gap-3 mb-4">
-                                            <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
+                                            <div className="w-10 h-10 rounded-full bg-[#121423]0/20 flex items-center justify-center">
                                                 <RefreshCw className="w-5 h-5 text-blue-700" />
                                             </div>
                                             <h3 className="font-bold text-lg text-[#D4A94E]">Buyback Programs</h3>
@@ -249,7 +249,7 @@ export default function GoldcoVsAHGPage() {
                                             </Button>
                                         </div>
                                     </div>
-                                    <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
+                                    <div className="bg-[#121423] p-6 rounded-xl border border-blue-200">
                                         <h3 className="font-bold text-[#D4A94E] text-lg mb-3">Choose American Hartford If:</h3>
                                         <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                             <li className="flex items-start gap-2">

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default function Solo401kVsSepIraPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             {/* Hero Section */}
             <section className="relative py-16 md:py-24 overflow-hidden">
                 <div className="absolute inset-0 bg-[#0C0D18]"></div>
@@ -31,7 +31,7 @@ export default function Solo401kVsSepIraPage() {
 
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-700 text-sm font-medium mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[rgba(197,149,46,0.08)] border border-purple-500/20 text-purple-700 text-sm font-medium mb-6">
                             <Trophy className="w-4 h-4" />
                             Self-Employed Retirement Comparison
                         </div>
@@ -71,7 +71,7 @@ export default function Solo401kVsSepIraPage() {
             />
 
             {/* Side-by-Side Comparison */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#F6F4EF] mb-4 text-center">
@@ -241,7 +241,7 @@ export default function Solo401kVsSepIraPage() {
             </section>
 
             {/* Key Differences Explained */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#F6F4EF] mb-12 text-center">
@@ -282,7 +282,7 @@ export default function Solo401kVsSepIraPage() {
                             {/* Roth Option */}
                             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8">
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 rounded-xl bg-[rgba(46,139,87,0.08)]0/20 flex items-center justify-center flex-shrink-0">
                                         <Shield className="w-6 h-6 text-green-700" />
                                     </div>
                                     <div>
@@ -312,7 +312,7 @@ export default function Solo401kVsSepIraPage() {
                             {/* Loan Provision */}
                             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8">
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 rounded-xl bg-[#161828]0/20 flex items-center justify-center flex-shrink-0">
                                         <Banknote className="w-6 h-6 text-amber-700" />
                                     </div>
                                     <div>
@@ -342,7 +342,7 @@ export default function Solo401kVsSepIraPage() {
                             {/* Employees */}
                             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8">
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 rounded-xl bg-[#121423]0/20 flex items-center justify-center flex-shrink-0">
                                         <Users className="w-6 h-6 text-blue-700" />
                                     </div>
                                     <div>
@@ -426,7 +426,7 @@ export default function Solo401kVsSepIraPage() {
                             {/* Choose SEP IRA */}
                             <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8">
                                 <div className="flex items-center gap-3 mb-6">
-                                    <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center">
+                                    <div className="w-12 h-12 rounded-xl bg-[#121423]0/20 flex items-center justify-center">
                                         <Briefcase className="w-6 h-6 text-blue-700" />
                                     </div>
                                     <h3 className="text-xl font-bold text-[#F6F4EF]">Choose SEP IRA If...</h3>
@@ -469,10 +469,10 @@ export default function Solo401kVsSepIraPage() {
             </section>
 
             {/* Can You Have Both? */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <div className="w-16 h-16 rounded-2xl bg-amber-500/20 flex items-center justify-center mx-auto mb-6">
+                        <div className="w-16 h-16 rounded-2xl bg-[#161828]0/20 flex items-center justify-center mx-auto mb-6">
                             <Building2 className="w-8 h-8 text-amber-700" />
                         </div>
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#F6F4EF] mb-4">
@@ -483,7 +483,7 @@ export default function Solo401kVsSepIraPage() {
                             your total employer contributions across both plans are limited to 25% of compensation.
                             You don&apos;t get double the employer contribution limit.
                         </p>
-                        <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6 text-left">
+                        <div className="bg-[#161828]0/10 border border-amber-500/20 rounded-xl p-6 text-left">
                             <p className="text-amber-200 font-medium mb-2">When it might make sense:</p>
                             <ul className="text-[#A8A39A] text-sm space-y-2">
                                 <li>• You have <strong className="text-[#F6F4EF]">two separate businesses</strong> - one with employees (SEP) and one solo (Solo 401k)</li>
@@ -510,7 +510,7 @@ export default function Solo401kVsSepIraPage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <LeadCaptureButton variant="default" source="solo-vs-sep" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                            <LeadCaptureButton variant="default" source="solo-vs-sep" className="bg-[#161828]0 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
                                 Get Free Retirement Guide <ArrowRight className="ml-2 w-5 h-5" />
                             </LeadCaptureButton>
                             <Link href="/learn/solo-401k-contribution-limits">

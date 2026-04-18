@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function WhatIsGoldIRAPage() {
   return (
-    <main className="min-h-screen flex flex-col bg-white">
+    <main className="min-h-screen flex flex-col bg-[#0C0D18]">
       <SchemaScript schema={articleSchema({ title: "What Is a Gold IRA? Complete Guide 2026", description: "Learn what a Gold IRA is, how it works, IRS rules, custodians, storage requirements, and if it's right for your retirement.", slug: "/what-is-a-gold-ira" })} />
       <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "What Is a Gold IRA?", url: "/what-is-a-gold-ira" }])} />
       <SchemaScript schema={faqSchema(getPageFAQs("what-is-a-gold-ira"))} />
@@ -81,15 +81,15 @@ export default function WhatIsGoldIRAPage() {
               Not paper promises. Real metal, in a real vault.
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
-              <div className="flex items-center gap-2 bg-slate-200 px-4 py-2 rounded-lg">
+              <div className="flex items-center gap-2 bg-[#2A2D42] px-4 py-2 rounded-lg">
                 <Shield className="h-4 w-4 text-green-600" />
                 <span>IRS Approved</span>
               </div>
-              <div className="flex items-center gap-2 bg-slate-200 px-4 py-2 rounded-lg">
+              <div className="flex items-center gap-2 bg-[#2A2D42] px-4 py-2 rounded-lg">
                 <Lock className="h-4 w-4 text-blue-600" />
                 <span>Tax-Advantaged</span>
               </div>
-              <div className="flex items-center gap-2 bg-slate-200 px-4 py-2 rounded-lg">
+              <div className="flex items-center gap-2 bg-[#2A2D42] px-4 py-2 rounded-lg">
                 <TrendingUp className="h-4 w-4 text-[#D4A94E]" />
                 <span>Inflation Hedge</span>
               </div>
@@ -116,7 +116,7 @@ export default function WhatIsGoldIRAPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Main Column */}
@@ -272,7 +272,7 @@ export default function WhatIsGoldIRAPage() {
                   Benefits of a Gold IRA
                 </h2>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4 bg-green-50 rounded-xl p-5 border border-green-200">
+                  <div className="flex items-start gap-4 bg-[rgba(46,139,87,0.08)] rounded-xl p-5 border border-green-200">
                     <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-bold text-green-700">Portfolio Diversification</h3>
@@ -281,7 +281,7 @@ export default function WhatIsGoldIRAPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-green-50 rounded-xl p-5 border border-green-200">
+                  <div className="flex items-start gap-4 bg-[rgba(46,139,87,0.08)] rounded-xl p-5 border border-green-200">
                     <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-bold text-green-700">Inflation Hedge</h3>
@@ -290,7 +290,7 @@ export default function WhatIsGoldIRAPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-green-50 rounded-xl p-5 border border-green-200">
+                  <div className="flex items-start gap-4 bg-[rgba(46,139,87,0.08)] rounded-xl p-5 border border-green-200">
                     <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-bold text-green-700">Tax Advantages</h3>
@@ -299,7 +299,7 @@ export default function WhatIsGoldIRAPage() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-green-50 rounded-xl p-5 border border-green-200">
+                  <div className="flex items-start gap-4 bg-[rgba(46,139,87,0.08)] rounded-xl p-5 border border-green-200">
                     <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-bold text-green-700">Tangible Asset Ownership</h3>
@@ -317,39 +317,39 @@ export default function WhatIsGoldIRAPage() {
                   Things to Consider
                 </h2>
                 <div className="space-y-4">
-                  <div className="flex items-start gap-4 bg-amber-50 rounded-xl p-5 border border-amber-200">
-                    <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-[#161828] rounded-xl p-5 border border-amber-200">
+                    <AlertTriangle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-bold text-amber-700">Higher Fees</h3>
-                      <p className="text-sm text-amber-600">
+                      <p className="text-sm text-[#D4A94E]">
                         Gold IRAs have annual storage and custodian fees that traditional IRAs don&apos;t.
                         Expect $150-$300/year for most accounts.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-amber-50 rounded-xl p-5 border border-amber-200">
-                    <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-[#161828] rounded-xl p-5 border border-amber-200">
+                    <AlertTriangle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-bold text-amber-700">No Dividends</h3>
-                      <p className="text-sm text-amber-600">
+                      <p className="text-sm text-[#D4A94E]">
                         Unlike stocks, gold doesn&apos;t pay dividends or interest. Returns come only from price appreciation.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-amber-50 rounded-xl p-5 border border-amber-200">
-                    <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-[#161828] rounded-xl p-5 border border-amber-200">
+                    <AlertTriangle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-bold text-amber-700">Price Volatility</h3>
-                      <p className="text-sm text-amber-600">
+                      <p className="text-sm text-[#D4A94E]">
                         Gold prices can fluctuate significantly in the short term, though they&apos;ve been stable long-term.
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4 bg-amber-50 rounded-xl p-5 border border-amber-200">
-                    <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-4 bg-[#161828] rounded-xl p-5 border border-amber-200">
+                    <AlertTriangle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-bold text-amber-700">Storage Requirements</h3>
-                      <p className="text-sm text-amber-600">
+                      <p className="text-sm text-[#D4A94E]">
                         IRS requires storage at an approved depository—you cannot store Gold IRA metals at home.
                       </p>
                     </div>
@@ -511,7 +511,7 @@ export default function WhatIsGoldIRAPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"
@@ -523,7 +523,7 @@ export default function WhatIsGoldIRAPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <FAQSection
             faqs={getPageFAQs("what-is-a-gold-ira")}
@@ -534,7 +534,7 @@ export default function WhatIsGoldIRAPage() {
         </Container>
       </section>
 
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AutoRelatedContent currentUrl="/what-is-a-gold-ira" />
         </Container>

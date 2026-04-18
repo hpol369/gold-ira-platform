@@ -237,7 +237,7 @@ const faqJsonLd = {
 
 export default function SilverIraCompaniesPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -305,7 +305,7 @@ export default function SilverIraCompaniesPage() {
             </section>
 
             {/* Company Rankings */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto space-y-8">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-12">Top Silver IRA Companies Ranked</h2>
@@ -378,7 +378,7 @@ export default function SilverIraCompaniesPage() {
 
                                     {/* Strengths & Considerations */}
                                     <div className="grid md:grid-cols-2 gap-4 mb-6">
-                                        <div className="bg-green-500/10 p-4 rounded-xl border border-green-500/20">
+                                        <div className="bg-[rgba(46,139,87,0.08)]0/10 p-4 rounded-xl border border-green-500/20">
                                             <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                                 <CheckCircle2 className="h-4 w-4" /> Strengths
                                             </h4>
@@ -477,7 +477,7 @@ export default function SilverIraCompaniesPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">Silver IRA Companies FAQs</h2>
@@ -519,7 +519,7 @@ export default function SilverIraCompaniesPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

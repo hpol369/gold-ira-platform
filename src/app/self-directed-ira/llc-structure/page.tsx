@@ -92,7 +92,7 @@ const schema = {
 
 export default function LLCStructurePage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
 
@@ -172,28 +172,28 @@ export default function LLCStructurePage() {
                     <h2>Benefits of Checkbook Control</h2>
 
                     <div className="not-prose my-8 space-y-4">
-                        <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <Zap className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-green-700">Instant transaction execution</h4>
                                 <p className="text-sm text-green-600 mt-1">No more waiting 5-15 business days for custodian approval. Write a check or wire funds the same day. Critical for competitive real estate markets and time-sensitive deals.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <DollarSign className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-green-700">Lower per-transaction fees</h4>
                                 <p className="text-sm text-green-600 mt-1">Without the custodian processing each transaction, you avoid $50-$250 per-transaction fees. If you&apos;re making 10+ transactions per year, the savings are significant &mdash; often enough to offset the LLC setup cost within the first year.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <ShieldCheck className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-green-700">Asset protection via LLC structure</h4>
                                 <p className="text-sm text-green-600 mt-1">The LLC provides a layer of liability protection. If an IRA-owned property faces a lawsuit, the LLC structure may help contain liability to the LLC&apos;s assets rather than the entire IRA.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-green-50 border border-green-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <CheckCircle2 className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-green-700">Privacy and flexibility</h4>
@@ -209,35 +209,35 @@ export default function LLCStructurePage() {
                     </p>
 
                     <div className="not-prose my-8 space-y-4">
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-700">Prohibited transaction traps are easier to trigger</h4>
                                 <p className="text-sm text-red-600 mt-1">With a regular custodian, they act as a gatekeeper and may flag problematic transactions. With checkbook control, there&apos;s no gatekeeper. You can accidentally commit a prohibited transaction with a single check &mdash; paying yourself, lending to family, mixing personal and IRA expenses.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-700">IRS has increased scrutiny on IRA LLCs</h4>
                                 <p className="text-sm text-red-600 mt-1">The IRS has specifically flagged self-directed IRA LLCs as an area of concern. They know the structure is ripe for abuse. Audits of IRA LLCs often dig deep into every transaction, looking for any benefit to the IRA owner or disqualified persons.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-700">Commingling funds is a fatal mistake</h4>
                                 <p className="text-sm text-red-600 mt-1">Using the LLC checkbook for anything personal &mdash; even accidentally depositing a personal check into the LLC account &mdash; can be treated as a prohibited transaction. Keep the LLC bank account completely separate from all personal finances.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-700">Setup complexity requires professional help</h4>
                                 <p className="text-sm text-red-600 mt-1">An improperly formed IRA LLC can have its entire tax-advantaged status challenged. The operating agreement, EIN application, and bank account setup all need to be done correctly. DIY formation is risky &mdash; spend the money on a qualified attorney.</p>
                             </div>
                         </div>
-                        <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-100">
+                        <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <AlertTriangle className="w-6 h-6 text-red-500 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-red-700">State compliance requirements</h4>
@@ -310,7 +310,7 @@ export default function LLCStructurePage() {
                     <h2>Who Should (and Shouldn&apos;t) Use an IRA LLC</h2>
 
                     <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                        <div className="p-6 rounded-xl bg-green-50 border border-green-100">
+                        <div className="p-6 rounded-xl bg-[rgba(46,139,87,0.08)] border border-green-100">
                             <h4 className="font-bold text-green-700 mb-3">Good Fit</h4>
                             <ul className="space-y-2 text-sm text-green-600">
                                 <li>&#8226; Active real estate investors (5+ deals/year)</li>
@@ -320,7 +320,7 @@ export default function LLCStructurePage() {
                                 <li>&#8226; Investors in time-sensitive deals where custodian delays lose opportunities</li>
                             </ul>
                         </div>
-                        <div className="p-6 rounded-xl bg-red-50 border border-red-100">
+                        <div className="p-6 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-100">
                             <h4 className="font-bold text-red-700 mb-3">NOT a Good Fit</h4>
                             <ul className="space-y-2 text-sm text-red-600">
                                 <li>&#8226; Precious metals only (dealers handle this directly)</li>

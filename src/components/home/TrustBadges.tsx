@@ -33,11 +33,11 @@ export function TrustBadges() {
       <Container className="relative z-10">
         <FadeIn>
           <div className="flex items-center gap-4 justify-center mb-10">
-            <div className="h-px w-12 bg-slate-300" />
+            <div className="h-px w-12 bg-[#3F4460]" />
             <p className="text-center text-xs font-bold text-[#A8A39A] uppercase tracking-[0.2em]">
               Insights Featured In
             </p>
-            <div className="h-px w-12 bg-slate-300" />
+            <div className="h-px w-12 bg-[#3F4460]" />
           </div>
         </FadeIn>
         <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">

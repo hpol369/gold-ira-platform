@@ -117,7 +117,7 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function SDBullionReviewPage() {
     return (
-        <main className="min-h-screen bg-white">
+        <main className="min-h-screen bg-[#0C0D18]">
             <SchemaScript schema={reviewSchema} />
             <SchemaScript schema={faqSchema} />
             <Navbar />
@@ -132,7 +132,7 @@ export default function SDBullionReviewPage() {
                             <span>/</span>
                             <span>SD Bullion</span>
                         </div>
-                        <div className="inline-block bg-green-500/20 text-green-700 text-sm font-bold px-3 py-1 rounded-full mb-4 border border-green-500/30">
+                        <div className="inline-block bg-[rgba(46,139,87,0.08)]0/20 text-green-700 text-sm font-bold px-3 py-1 rounded-full mb-4 border border-green-500/30">
                             High CPC Keyword: $1.90
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
@@ -168,7 +168,7 @@ export default function SDBullionReviewPage() {
                                     SD Bullion lives up to their reputation. They consistently offer the lowest premiums on common silver products like American Eagles, generic rounds, and bars. Add in their no-credit-card-fee policy on many products, and they are hard to beat on price. Trade-off? Slightly less polished website and customer experience compared to JM Bullion. For Silver IRAs, Augusta Precious Metals remains our top choice.
                                 </p>
                             </div>
-                            <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 text-center">
+                            <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6 text-center">
                                 <div className="text-5xl font-bold text-[#F6F4EF] mb-2">4.6</div>
                                 <StarRating rating={4.6} />
                                 <div className="mt-4 pt-4 border-t border-green-500/30">
@@ -241,7 +241,7 @@ export default function SDBullionReviewPage() {
                                 This is where SD Bullion shines. Their premiums are consistently <strong>the lowest in the industry</strong> on popular silver products. On American Silver Eagles alone, you can save $1-3 per coin compared to APMEX.
                             </p>
 
-                            <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 my-8 not-prose">
+                            <div className="bg-[rgba(46,139,87,0.08)]0/10 border border-green-500/30 rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
                                     <Percent className="w-5 h-5 text-green-700 shrink-0 mt-1" />
                                     <div>

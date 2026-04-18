@@ -179,7 +179,7 @@ function PreferenceCenterContent() {
         <button
           onClick={() => handleSubmit("pause-30")}
           disabled={submitting}
-          className="flex items-start gap-4 w-full p-4 mb-3 bg-[#0C0D18] border-2 border-[#2A2D42] rounded-xl hover:border-[rgba(197,149,46,0.55)] hover:bg-blue-50/50 transition-colors text-left cursor-pointer disabled:opacity-50 disabled:cursor-wait"
+          className="flex items-start gap-4 w-full p-4 mb-3 bg-[#0C0D18] border-2 border-[#2A2D42] rounded-xl hover:border-[rgba(197,149,46,0.55)] hover:bg-[#121423]/50 transition-colors text-left cursor-pointer disabled:opacity-50 disabled:cursor-wait"
         >
           <span className="text-2xl flex-shrink-0 mt-0.5">{"\u23F8\uFE0F"}</span>
           <div>
@@ -194,7 +194,7 @@ function PreferenceCenterContent() {
         <button
           onClick={() => handleSubmit("newsletter-only")}
           disabled={submitting}
-          className="flex items-start gap-4 w-full p-4 mb-3 bg-[#0C0D18] border-2 border-[#2A2D42] rounded-xl hover:border-[rgba(197,149,46,0.55)] hover:bg-blue-50/50 transition-colors text-left cursor-pointer disabled:opacity-50 disabled:cursor-wait"
+          className="flex items-start gap-4 w-full p-4 mb-3 bg-[#0C0D18] border-2 border-[#2A2D42] rounded-xl hover:border-[rgba(197,149,46,0.55)] hover:bg-[#121423]/50 transition-colors text-left cursor-pointer disabled:opacity-50 disabled:cursor-wait"
         >
           <span className="text-2xl flex-shrink-0 mt-0.5">{"\uD83D\uDCEC"}</span>
           <div>
@@ -209,7 +209,7 @@ function PreferenceCenterContent() {
         <button
           onClick={() => handleSubmit("unsubscribe-all")}
           disabled={submitting}
-          className="flex items-start gap-4 w-full p-4 mb-3 bg-red-50/50 border-2 border-red-100 rounded-xl hover:border-red-300 transition-colors text-left cursor-pointer disabled:opacity-50 disabled:cursor-wait"
+          className="flex items-start gap-4 w-full p-4 mb-3 bg-[rgba(220,38,38,0.08)]/50 border-2 border-red-100 rounded-xl hover:border-red-300 transition-colors text-left cursor-pointer disabled:opacity-50 disabled:cursor-wait"
         >
           <span className="text-2xl flex-shrink-0 mt-0.5">{"\uD83D\uDEAB"}</span>
           <div>

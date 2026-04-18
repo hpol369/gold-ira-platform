@@ -232,7 +232,7 @@ export function MonteCarloRetirementSimulator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
+        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[rgba(197,149,46,0.32)]">
           <BarChart3 className="h-4 w-4" />
           High Volume Keyword (600-1,100 searches/mo)
         </div>
@@ -251,7 +251,7 @@ export function MonteCarloRetirementSimulator() {
           {/* Portfolio Value */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <DollarSign className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Current Situation</h3>
@@ -303,7 +303,7 @@ export function MonteCarloRetirementSimulator() {
           {/* Timeline */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Calendar className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Timeline</h3>
@@ -378,10 +378,10 @@ export function MonteCarloRetirementSimulator() {
             <div className="space-y-4">
               {Object.entries(ASSET_ASSUMPTIONS).map(([key, asset]) => {
                 const colorClasses = {
-                  stocks: "accent-blue-500",
+                  stocks: "accent-[#C5952E]",
                   bonds: "accent-green-500",
                   cash: "accent-slate-500",
-                  gold: "accent-amber-500",
+                  gold: "accent-[#C5952E]",
                 };
                 const color = colorClasses[key as keyof typeof colorClasses];
 
@@ -734,7 +734,7 @@ export function MonteCarloRetirementSimulator() {
           <div className="space-y-4">
             <div className="flex gap-4 items-start">
               <div className="w-24 flex-shrink-0">
-                <div className="bg-green-500/20 text-green-600 text-center py-2 rounded-lg font-bold">
+                <div className="bg-[rgba(46,139,87,0.08)]0/20 text-green-600 text-center py-2 rounded-lg font-bold">
                   90%+
                 </div>
               </div>
@@ -749,7 +749,7 @@ export function MonteCarloRetirementSimulator() {
 
             <div className="flex gap-4 items-start">
               <div className="w-24 flex-shrink-0">
-                <div className="bg-blue-500/20 text-blue-600 text-center py-2 rounded-lg font-bold">
+                <div className="bg-[#121423]0/20 text-blue-600 text-center py-2 rounded-lg font-bold">
                   75-89%
                 </div>
               </div>
@@ -778,7 +778,7 @@ export function MonteCarloRetirementSimulator() {
 
             <div className="flex gap-4 items-start">
               <div className="w-24 flex-shrink-0">
-                <div className="bg-red-500/20 text-red-600 text-center py-2 rounded-lg font-bold">
+                <div className="bg-[rgba(220,38,38,0.08)]0/20 text-red-600 text-center py-2 rounded-lg font-bold">
                   &lt;50%
                 </div>
               </div>
@@ -845,7 +845,7 @@ export function MonteCarloRetirementSimulator() {
             </div>
           </div>
 
-          <div className="bg-purple-500/10 border border-purple-500/30 rounded-lg p-4 mb-6">
+          <div className="bg-[rgba(197,149,46,0.08)] border border-[rgba(197,149,46,0.32)] rounded-lg p-4 mb-6">
             <div className="flex items-start gap-3">
               <AlertTriangle className="h-5 w-5 text-purple-700 flex-shrink-0 mt-0.5" />
               <div className="text-sm">

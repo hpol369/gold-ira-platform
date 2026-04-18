@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function InvestigativeHubPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-white">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <div className="bg-[#0C0D18] text-[#F6F4EF] py-20 relative overflow-hidden">
@@ -181,7 +181,7 @@ export default function InvestigativeHubPage() {
             <section className="py-16 bg-gradient-to-r from-[#000080] to-[#000060]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <p className="text-amber-400 text-sm font-bold uppercase tracking-wider mb-3">The Company That Passed Every Check</p>
+                        <p className="text-[#D4A94E] text-sm font-bold uppercase tracking-wider mb-3">The Company That Passed Every Check</p>
                         <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
                             Augusta Precious Metals: Our #1 Pick
                         </h2>

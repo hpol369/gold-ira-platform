@@ -104,7 +104,7 @@ const schema = {
 
 export default function CheckbookIraRulesPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             <SchemaScript schema={breadcrumbSchema([
                 { name: "Home", url: "/" },
@@ -207,7 +207,7 @@ export default function CheckbookIraRulesPage() {
                         {/* Gold IRA Problems */}
                         <section id="gold-ira-problems" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/10 rounded-lg text-amber-600">
+                                <div className="p-3 bg-[#161828]0/10 rounded-lg text-[#D4A94E]">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Why It Doesn&apos;t Work for Gold</h2>
@@ -258,32 +258,32 @@ export default function CheckbookIraRulesPage() {
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Real Risks</h2>
                             </div>
                             <div className="not-prose my-8 space-y-4">
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-200">
                                     <XCircle className="w-6 h-6 text-red-600 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Full IRA Disqualification</h4>
                                         <p className="text-sm text-red-600 mt-1">One prohibited transaction can disqualify your entire IRA. Not just the problematic investment—the whole account. You&apos;ll owe taxes on everything.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-red-50 border border-red-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[rgba(220,38,38,0.08)] border border-red-200">
                                     <XCircle className="w-6 h-6 text-red-600 shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-red-700">Early Withdrawal Penalties</h4>
                                         <p className="text-sm text-red-600 mt-1">If you&apos;re under 59½ when your IRA is disqualified, add a 10% early withdrawal penalty on top of the income taxes.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-200">
-                                    <AlertTriangle className="w-6 h-6 text-amber-600 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#161828] border border-[rgba(197,149,46,0.32)]">
+                                    <AlertTriangle className="w-6 h-6 text-[#D4A94E] shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-amber-700">Audit Risk</h4>
-                                        <p className="text-sm text-amber-600 mt-1">The IRS knows about checkbook IRA schemes. These structures face higher scrutiny. An audit years later could uncover issues you didn&apos;t even know you had.</p>
+                                        <p className="text-sm text-[#D4A94E] mt-1">The IRS knows about checkbook IRA schemes. These structures face higher scrutiny. An audit years later could uncover issues you didn&apos;t even know you had.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-amber-50 border border-amber-200">
-                                    <AlertTriangle className="w-6 h-6 text-amber-600 shrink-0 mt-1" />
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#161828] border border-[rgba(197,149,46,0.32)]">
+                                    <AlertTriangle className="w-6 h-6 text-[#D4A94E] shrink-0 mt-1" />
                                     <div>
                                         <h4 className="font-bold text-amber-700">No One to Blame But Yourself</h4>
-                                        <p className="text-sm text-amber-600 mt-1">The company that set up your checkbook IRA isn&apos;t responsible for your compliance. If you mess up, you pay the price—not them.</p>
+                                        <p className="text-sm text-[#D4A94E] mt-1">The company that set up your checkbook IRA isn&apos;t responsible for your compliance. If you mess up, you pay the price—not them.</p>
                                     </div>
                                 </div>
                             </div>

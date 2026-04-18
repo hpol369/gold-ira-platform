@@ -159,7 +159,7 @@ export function PensionPresentValueCalculator() {
     <Container className="py-12 md:py-20">
       {/* Header */}
       <div className="max-w-4xl mx-auto text-center mb-12">
-        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-purple-500/30">
+        <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-[rgba(197,149,46,0.32)]">
           <PiggyBank className="h-4 w-4" />
           Pension Value Calculator
         </div>
@@ -177,7 +177,7 @@ export function PensionPresentValueCalculator() {
           {/* Pension Details */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
+              <div className="p-2 bg-purple-500/20 rounded-lg border border-[rgba(197,149,46,0.32)]">
                 <DollarSign className="h-5 w-5 text-purple-700" />
               </div>
               <h3 className="text-lg font-semibold">Pension Details</h3>
@@ -235,7 +235,7 @@ export function PensionPresentValueCalculator() {
           {/* Age & Timing */}
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
+              <div className="p-2 bg-[#121423]0/20 rounded-lg border border-blue-500/30">
                 <Calendar className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold">Age & Timing</h3>
@@ -252,7 +252,7 @@ export function PensionPresentValueCalculator() {
                   max="75"
                   value={currentAge}
                   onChange={(e) => setCurrentAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
               </div>
 
@@ -266,7 +266,7 @@ export function PensionPresentValueCalculator() {
                   max="75"
                   value={startAge}
                   onChange={(e) => setStartAge(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <p className="text-xs text-[#A8A39A] mt-1">
                   {calculations.yearsUntilStart > 0
@@ -285,7 +285,7 @@ export function PensionPresentValueCalculator() {
                   max="100"
                   value={lifeExpectancy}
                   onChange={(e) => setLifeExpectancy(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                  className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <p className="text-xs text-[#A8A39A] mt-1">
                   {calculations.yearsOfPayment} years of pension payments
@@ -321,7 +321,7 @@ export function PensionPresentValueCalculator() {
                   step="0.5"
                   value={discountRate}
                   onChange={(e) => setDiscountRate(Number(e.target.value))}
-                  className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
+                  className="w-full h-2 bg-[#2A2D42] rounded-lg appearance-none cursor-pointer accent-[#C5952E]"
                 />
                 <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Risk-Free (2-3%)</span>
@@ -346,7 +346,7 @@ export function PensionPresentValueCalculator() {
               className="w-full flex items-center justify-between"
             >
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
+                <div className="p-2 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg border border-green-500/30">
                   <Users className="h-5 w-5 text-green-600" />
                 </div>
                 <h3 className="text-lg font-semibold">Survivor Benefits</h3>
@@ -363,7 +363,7 @@ export function PensionPresentValueCalculator() {
                     type="checkbox"
                     checked={hasSurvivorBenefit}
                     onChange={(e) => setHasSurvivorBenefit(e.target.checked)}
-                    className="w-5 h-5 rounded border-slate-600 bg-[#121423] text-purple-500 focus:ring-purple-500"
+                    className="w-5 h-5 rounded border-slate-600 bg-[#121423] text-[#D4A94E] focus:ring-purple-500"
                   />
                   <span className="text-[#D0CCC4]">Include survivor benefit for spouse</span>
                 </label>
@@ -411,7 +411,7 @@ export function PensionPresentValueCalculator() {
         {/* Results Section */}
         <div className="space-y-6">
           {/* Main Result */}
-          <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-8 border border-purple-500/30">
+          <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-8 border border-[rgba(197,149,46,0.32)]">
             <div className="text-center mb-6">
               <div className="text-sm text-[#A8A39A] mb-2">Your Pension Present Value</div>
               <div className="text-5xl font-bold text-purple-700">
@@ -510,7 +510,7 @@ export function PensionPresentValueCalculator() {
               ))}
             </div>
 
-            <div className="mt-4 pt-4 border-t border-[#2A2D42] bg-purple-500/10 rounded-lg p-3">
+            <div className="mt-4 pt-4 border-t border-[#2A2D42] bg-[rgba(197,149,46,0.08)] rounded-lg p-3">
               <p className="text-sm text-[#D0CCC4]">
                 <strong className="text-purple-700">Important:</strong> For divorce settlements or estate planning, pension present value should be included in total marital assets.
               </p>
@@ -570,7 +570,7 @@ export function PensionPresentValueCalculator() {
           </div>
 
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
-            <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-[#121423]0/20 rounded-xl flex items-center justify-center mb-4">
               <Target className="h-6 w-6 text-blue-600" />
             </div>
             <h3 className="text-[#F6F4EF] font-semibold mb-2">Retirement Planning</h3>
@@ -580,7 +580,7 @@ export function PensionPresentValueCalculator() {
           </div>
 
           <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
-            <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-[rgba(46,139,87,0.08)]0/20 rounded-xl flex items-center justify-center mb-4">
               <DollarSign className="h-6 w-6 text-green-600" />
             </div>
             <h3 className="text-[#F6F4EF] font-semibold mb-2">Job Offer Comparison</h3>

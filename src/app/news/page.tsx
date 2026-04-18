@@ -82,7 +82,7 @@ export default function NewsPage() {
 
             {/* Featured Article */}
             {latestArticle && (
-                <section className="py-12 bg-white">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
                         <div className="mb-8">
                             <h2 className="text-2xl font-serif font-bold text-[#F6F4EF]">Latest Briefing</h2>
@@ -174,7 +174,7 @@ export default function NewsPage() {
             )}
 
             {/* Categories */}
-            <section className="py-12 bg-white">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8">Browse by Topic</h2>
 
@@ -212,7 +212,7 @@ export default function NewsPage() {
 
             {/* Empty State */}
             {articles.length === 0 && (
-                <section className="py-24 bg-white">
+                <section className="py-24 bg-[#0C0D18]">
                     <Container>
                         <div className="text-center max-w-2xl mx-auto">
                             <Newspaper className="w-16 h-16 text-[#3F4460] mx-auto mb-6" />

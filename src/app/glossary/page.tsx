@@ -62,7 +62,7 @@ export default function GlossaryPage() {
   };
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-[#0C0D18]">
       <Navbar />
 
       {/* Hero Section */}
@@ -110,7 +110,7 @@ export default function GlossaryPage() {
                 className={`px-3 py-1.5 rounded text-sm font-medium transition-all ${
                   !selectedLetter && !selectedCategory && !searchQuery
                     ? "bg-[#DC2626] text-white"
-                    : "bg-[#121423] text-[#A8A39A] hover:bg-slate-200 hover:text-[#F6F4EF]"
+                    : "bg-[#121423] text-[#A8A39A] hover:bg-[#2A2D42] hover:text-[#F6F4EF]"
                 }`}
               >
                 All
@@ -133,7 +133,7 @@ export default function GlossaryPage() {
                       isSelected
                         ? "bg-[#DC2626] text-white"
                         : isAvailable
-                        ? "bg-[#121423] text-[#A8A39A] hover:bg-slate-200 hover:text-[#F6F4EF]"
+                        ? "bg-[#121423] text-[#A8A39A] hover:bg-[#2A2D42] hover:text-[#F6F4EF]"
                         : "bg-transparent text-[#3F4460] cursor-not-allowed"
                     }`}
                   >
@@ -166,7 +166,7 @@ export default function GlossaryPage() {
                     className={`px-3 py-1.5 rounded-full text-sm transition-all ${
                       selectedCategory === category.id
                         ? "bg-[#DC2626] text-white"
-                        : "bg-[#121423] text-[#A8A39A] hover:bg-slate-200 hover:text-[#F6F4EF]"
+                        : "bg-[#121423] text-[#A8A39A] hover:bg-[#2A2D42] hover:text-[#F6F4EF]"
                     }`}
                   >
                     {category.name} ({count})
@@ -179,7 +179,7 @@ export default function GlossaryPage() {
       </section>
 
       {/* Terms List */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             {searchQuery && (
@@ -289,7 +289,7 @@ export default function GlossaryPage() {
       </section>
 
       {/* Related Resources */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <h3 className="text-lg font-semibold text-[#A8A39A] text-center mb-6">
@@ -298,21 +298,21 @@ export default function GlossaryPage() {
             <div className="flex flex-wrap justify-center gap-3">
               <Link
                 href="/academy"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-[#121423] border border-[#2A2D42] rounded-full text-[#A8A39A] text-sm hover:bg-slate-200 hover:text-[#F6F4EF] transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-[#121423] border border-[#2A2D42] rounded-full text-[#A8A39A] text-sm hover:bg-[#2A2D42] hover:text-[#F6F4EF] transition-all"
               >
                 Gold IRA Academy
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/faq"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-[#121423] border border-[#2A2D42] rounded-full text-[#A8A39A] text-sm hover:bg-slate-200 hover:text-[#F6F4EF] transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-[#121423] border border-[#2A2D42] rounded-full text-[#A8A39A] text-sm hover:bg-[#2A2D42] hover:text-[#F6F4EF] transition-all"
               >
                 FAQ Hub
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/what-is-a-gold-ira"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-[#121423] border border-[#2A2D42] rounded-full text-[#A8A39A] text-sm hover:bg-slate-200 hover:text-[#F6F4EF] transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-[#121423] border border-[#2A2D42] rounded-full text-[#A8A39A] text-sm hover:bg-[#2A2D42] hover:text-[#F6F4EF] transition-all"
               >
                 What is a Gold IRA?
                 <ArrowRight className="h-4 w-4" />

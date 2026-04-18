@@ -112,7 +112,7 @@ export default function Solo401kPage() {
                 </Container>
             </section>
 
-            <main className="min-h-screen bg-white">
+            <main className="min-h-screen bg-[#0C0D18]">
                 {/* Hero Section */}
                 <section className="relative py-16 lg:py-24 overflow-hidden bg-[#0C0D18]">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(128,90,213,0.08),transparent_50%)]" />
@@ -120,13 +120,13 @@ export default function Solo401kPage() {
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
                             <div className="inline-flex items-center gap-2 bg-purple-100 border border-purple-200 rounded-full px-4 py-2 mb-6">
-                                <Briefcase className="w-4 h-4 text-purple-600" />
+                                <Briefcase className="w-4 h-4 text-[#D4A94E]" />
                                 <span className="text-purple-700 text-sm font-medium">Self-Employed Retirement</span>
                             </div>
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F6F4EF] mb-6 leading-tight">
                                 Solo 401k Guide:{" "}
-                                <span className="text-purple-600">Built for People Who Work for Themselves</span>
+                                <span className="text-[#D4A94E]">Built for People Who Work for Themselves</span>
                             </h1>
 
                             <p className="text-xl text-[#D0CCC4] mb-8 leading-relaxed max-w-3xl">
@@ -160,7 +160,7 @@ export default function Solo401kPage() {
                                     { value: "Loans", label: "Allowed" },
                                 ].map((stat, index) => (
                                     <div key={index} className="bg-[#161828] border border-[#2A2D42] rounded-xl p-4 text-center">
-                                        <div className="text-2xl font-bold text-purple-600">{stat.value}</div>
+                                        <div className="text-2xl font-bold text-[#D4A94E]">{stat.value}</div>
                                         <div className="text-sm text-[#A8A39A]">{stat.label}</div>
                                     </div>
                                 ))}
@@ -170,7 +170,7 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* What is Solo 401k Section */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-4xl mx-auto">
                             <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-6">
@@ -306,7 +306,7 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* Solo 401k vs SEP IRA */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-4 text-center">
                             Solo 401k vs SEP IRA
@@ -399,7 +399,7 @@ export default function Solo401kPage() {
                                 }
                             ].map((benefit, index) => (
                                 <div key={index} className="bg-[#161828] border border-[#2A2D42] rounded-xl p-6">
-                                    <benefit.icon className="w-8 h-8 text-purple-600 mb-4" />
+                                    <benefit.icon className="w-8 h-8 text-[#D4A94E] mb-4" />
                                     <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">{benefit.title}</h3>
                                     <p className="text-[#A8A39A] text-sm">{benefit.description}</p>
                                 </div>
@@ -409,7 +409,7 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* Top Providers */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-4 text-center">
                             Best Solo 401k Providers (2026)
@@ -454,7 +454,7 @@ export default function Solo401kPage() {
                                         }`}
                                 >
                                     {provider.featured && (
-                                        <div className="text-xs font-bold text-purple-600 uppercase tracking-wide mb-3">
+                                        <div className="text-xs font-bold text-[#D4A94E] uppercase tracking-wide mb-3">
                                             Best for Alt Investments
                                         </div>
                                     )}
@@ -581,7 +581,7 @@ export default function Solo401kPage() {
                 </section>
 
                 {/* Related Content */}
-                <section className="py-16 bg-white">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Related Resources
@@ -599,7 +599,7 @@ export default function Solo401kPage() {
                                     href={link.href}
                                     className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-5 hover:bg-[#1E2134] transition-colors group"
                                 >
-                                    <h3 className="text-[#F6F4EF] font-semibold mb-1 group-hover:text-purple-600 transition-colors">
+                                    <h3 className="text-[#F6F4EF] font-semibold mb-1 group-hover:text-[#D4A94E] transition-colors">
                                         {link.title}
                                     </h3>
                                     <p className="text-[#A8A39A] text-sm">{link.desc}</p>
@@ -620,7 +620,7 @@ export default function Solo401kPage() {
                         />
                     </Container>
                 </section>
-                <section className="py-12 bg-white">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
                         <AutoRelatedContent currentUrl="/solo-401k" />
                     </Container>

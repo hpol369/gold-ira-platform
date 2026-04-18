@@ -100,7 +100,7 @@ const schema = {
 
 export default function StockMarketAlternativesPage() {
     return (
-        <main className="min-h-screen bg-white pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
 
             {/* Answer-First GEO Block */}
@@ -171,7 +171,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 1. Gold */}
                         <section id="gold" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
+                                <div className="p-3 bg-[#161828]0/20 rounded-lg text-[#D4A94E]">
                                     <Coins className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">1. Gold & Precious Metals</h2>
@@ -206,7 +206,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 2. Real Estate */}
                         <section id="realestate" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
+                                <div className="p-3 bg-[#121423]0/20 rounded-lg text-blue-700">
                                     <Home className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">2. Real Estate</h2>
@@ -231,7 +231,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 3. Bonds */}
                         <section id="bonds" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
+                                <div className="p-3 bg-[rgba(46,139,87,0.08)]0/20 rounded-lg text-green-700">
                                     <Landmark className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">3. Bonds & Fixed Income</h2>
@@ -278,7 +278,7 @@ export default function StockMarketAlternativesPage() {
                         {/* 5. Commodities */}
                         <section id="commodities" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
+                                <div className="p-3 bg-[rgba(183,121,31,0.08)]0/20 rounded-lg text-orange-400">
                                     <BarChart3 className="w-6 h-6" />
                                 </div>
                                 <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">5. Commodities</h2>
