@@ -215,16 +215,16 @@ export function HeroSectionV2() {
                 </div>
               </Card>
 
-              {/* Live ticker floating chip (mobile visible) */}
+              {/* Live ticker floating chip — sits ON TOP of main card bottom-left */}
               <motion.div
                 initial={{ opacity: 0, y: 20, rotate: -6 }}
                 animate={{ opacity: 1, y: 0, rotate: -6 }}
                 transition={{ delay: 0.5, duration: 0.7 }}
-                className="absolute -left-4 sm:-left-8 -bottom-5 w-[180px]"
+                className="hidden sm:block absolute -left-6 md:-left-10 -bottom-8 w-[190px] z-20"
               >
-                <Card variant="glass" padding="sm" className="!rounded-xl">
+                <Card variant="glass" padding="sm" className="!rounded-xl shadow-[0_18px_50px_rgba(0,0,0,0.5)]">
                   <div className="flex items-center gap-2 mb-1">
-                    <TrendingUp className="size-4 text-[#2E8B57]" />
+                    <TrendingUp className="size-4 text-[#4ADE80]" />
                     <span className="eyebrow !text-[10px]">Gold 30D</span>
                   </div>
                   <div className="tactical text-[20px] text-[#F6F4EF] leading-tight">
