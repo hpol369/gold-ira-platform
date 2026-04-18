@@ -4,13 +4,25 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Shield, ArrowRight, Users } from "lucide-react";
 
-export function SidebarAuditWidget() {
+interface SidebarAuditWidgetProps {
+  /** Source page for tracking (e.g. "learn-gold-ira-fees") */
+  trackSource?: string;
+  /** Custom headline (overrides "Free Precious Metals Kit") */
+  headline?: string;
+  /** Custom body text (overrides "Get matched with the right company in 60 seconds") */
+  body?: string;
+}
+
+export function SidebarAuditWidget({ trackSource, headline, body }: SidebarAuditWidgetProps) {
   const [auditsToday, setAuditsToday] = useState<number>(0);
 
   useEffect(() => {
-    // Generate random number between 8000-15000 on client side
     setAuditsToday(Math.floor(Math.random() * (15000 - 8000 + 1)) + 8000);
   }, []);
+
+  const href = trackSource
+    ? `/get-started?ref=${encodeURIComponent(trackSource)}`
+    : "/get-started";
 
   return (
     <div
@@ -25,34 +37,30 @@ export function SidebarAuditWidget() {
             <Shield className="h-5 w-5 text-[#D4A94E]" />
           </div>
           <h4 className="font-serif font-bold text-[#F6F4EF] text-sm">
-            Which Account Fits You?
+            {headline || "Free Precious Metals Kit"}
           </h4>
         </div>
 
-        <p className="text-lg font-bold text-[#F6F4EF] mb-2">
-          Gold, Crypto, Real Estate...
-        </p>
-
-        <p className="text-sm text-[#A8A39A] mb-4 leading-relaxed">
-          Find out in 60 seconds
+        <p className="text-sm text-[#D0CCC4] mb-4 leading-relaxed">
+          {body || "Get matched with the right company in 60 seconds. No cost, no pressure."}
         </p>
 
         <Link
-          href="/audit"
+          href={href}
           className="group relative overflow-hidden flex items-center justify-center gap-2 w-full py-3 rounded-xl font-bold
-                     bg-[rgba(197,149,46,0.1)] text-white hover:bg-[#000060]
-                     shadow-lg shadow-blue-900/20
+                     bg-[#DC2626] text-white hover:bg-[#991B1B]
+                     shadow-lg shadow-red-900/20
                      hover:shadow-xl hover:scale-105 transition-all duration-300"
         >
           <span className="relative z-10 flex items-center gap-2 text-sm">
-            Take Free Quiz <ArrowRight className="h-4 w-4" />
+            Get Free Kit <ArrowRight className="h-4 w-4" />
           </span>
         </Link>
 
         {auditsToday > 0 && (
           <div className="flex items-center gap-2 text-xs text-[#A8A39A] mt-4">
             <Users className="h-3 w-3" />
-            <span>{auditsToday.toLocaleString()} audits completed today</span>
+            <span>{auditsToday.toLocaleString()} kits requested today</span>
           </div>
         )}
       </div>

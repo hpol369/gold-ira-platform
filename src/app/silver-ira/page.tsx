@@ -18,6 +18,10 @@ import {
     TrendingUp,
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata = createPageMetadata({
     title: "Silver IRA Hub: Complete Guide to Silver IRAs (2026)",
@@ -172,6 +176,25 @@ const whySilverReasons = [
 export default function SilverIraHubPage() {
     return (
         <main className="min-h-screen bg-white">
+            <SchemaScript schema={articleSchema({ title: "Silver IRA Hub: Complete Guide to Silver IRAs (2026)", description: "Everything you need to know about Silver IRAs. Compare companies, learn rules, understand rollovers, and find IRS-approved silver coins for your retirement.", slug: "/silver-ira" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Silver IRA Hub", url: "/silver-ira" }])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A Silver IRA is a self-directed Individual Retirement Account that holds physical silver coins and bars instead of paper assets. It works exactly like a Gold IRA — same tax benefits, same IRS rules, same custodian requirements — but with silver as the primary metal. Silver IRAs are popular because silver has higher industrial demand and greater upside potential than gold, with a lower entry price per ounce."
+                        keyFacts={[
+                            "Silver must be 99.9% pure (.999 fineness) to qualify for IRA inclusion",
+                            "Popular IRA-approved silver: American Silver Eagles, Canadian Maple Leafs, 10 oz bars",
+                            "Same contribution limits as Gold IRA: $7,000/year ($8,000 if 50+)",
+                            "Silver has dual demand: investment metal + critical industrial component (solar, EVs, electronics)",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             <Navbar />
 
             {/* Hero Section */}
@@ -342,6 +365,12 @@ export default function SilverIraHubPage() {
                         trackSource="silver-ira-hub"
                         linkContext="silver"
                     />
+                </Container>
+            </section>
+
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/silver-ira" />
                 </Container>
             </section>
 

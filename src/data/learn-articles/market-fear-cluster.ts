@@ -18,6 +18,13 @@ export const marketFearArticles: LearnArticleRegistry = {
       'move 401k to cash',
       'sell 401k before crash'
     ],
+    answerFirst: 'No, don\'t move your 401k to cash before a crash. Nobody can reliably predict when crashes happen, and missing just the 10 best market days over 20 years cuts your returns in half. Instead, make sure your asset allocation matches your timeline and diversify into non-correlated assets like gold.',
+    answerFirstFacts: [
+      'Missing the 10 best market days over 20 years cuts returns by 55% — and the best days often follow the worst',
+      '80% of actively managed funds underperform the index over 15 years — even pros can\'t time the market',
+      'Moving to cash locks in losses and forces you to time the re-entry perfectly',
+      'Proper diversification (stocks, bonds, gold) protects better than trying to predict crashes',
+    ],
     targetKeyword: 'should i move 401k before market crash',
     volume: 80,
     difficulty: 35,
@@ -176,6 +183,13 @@ export const marketFearArticles: LearnArticleRegistry = {
       '401k losing money',
       'why is my 401k down'
     ],
+    answerFirst: 'Your 401k dropped because the stock market dropped — and that\'s completely normal. Since 1980, the S&P 500 has averaged a 14% drop at some point every single year, yet still delivered strong long-term returns. Your loss is only "on paper" until you sell.',
+    answerFirstFacts: [
+      'The S&P 500 averages a 14% intra-year drop every year, yet finishes positive in most years',
+      'The COVID crash dropped 34% but recovered fully in just 6 months',
+      'Dollar-cost averaging means drops actually help you — you buy more shares at lower prices',
+      'The market has recovered from every single decline in history — staying invested is the key',
+    ],
     targetKeyword: 'why did my 401k drop so much',
     volume: 60,
     difficulty: 25,
@@ -327,6 +341,13 @@ export const marketFearArticles: LearnArticleRegistry = {
       '401k lost 20',
       '401k dropped 20 percent',
       'what to do 401k down 20%'
+    ],
+    answerFirst: 'Don\'t sell. A 20% drop is painful but historically normal — it has happened 24 times since 1929 and the market recovered every single time. Keep contributing (you\'re buying shares at a 20% discount), and check whether your allocation matches your risk tolerance.',
+    answerFirstFacts: [
+      'If you sell after a 20% drop, you need a 25% gain just to break even — plus perfect timing to buy back in',
+      '20% market drops have happened 24 times since 1929; the market recovered every time',
+      'The COVID crash dropped 34% and recovered fully in 6 months',
+      'Continuing to contribute during drops is dollar-cost averaging working in your favor',
     ],
     targetKeyword: '401k lost 20 percent what do i do',
     volume: 40,
@@ -485,6 +506,13 @@ export const marketFearArticles: LearnArticleRegistry = {
       'catch up on retirement savings',
       'retirement savings at 55',
       'start 401k at 60'
+    ],
+    answerFirst: 'It\'s not too late. Even starting at 50, maxing out your 401k and IRA ($39,000/year) for 15 years at 7% growth builds over $1 million. Late starters have advantages: higher income, lower expenses, and catch-up contributions that let you save $7,500 extra per year in your 401k.',
+    answerFirstFacts: [
+      'Catch-up contributions after age 50: $31,000/year in 401k, $8,000/year in IRA',
+      'Starting at 50 with $39,000/year at 7% growth builds about $981,000 by age 65',
+      'Delaying Social Security from 62 to 70 increases your monthly benefit by 77%',
+      'Working 3 extra years has triple impact: more savings, more growth, fewer years of withdrawals',
     ],
     targetKeyword: 'too late to save for retirement',
     volume: 55,
@@ -654,6 +682,13 @@ export const marketFearArticles: LearnArticleRegistry = {
       'how much should I have saved at 50',
       '401k balance at 50',
       'retirement benchmark 50'
+    ],
+    answerFirst: 'The common benchmark is 6 times your annual salary saved by age 50. If you earn $75,000, that means $450,000 saved. Most Americans are behind this target, but 50 is a pivotal age — catch-up contributions begin and you still have 15 years of aggressive saving ahead.',
+    answerFirstFacts: [
+      'Fidelity guideline: 6x your salary saved by 50, T. Rowe Price says 4x',
+      'Average American 401k balance at 50 is far below these benchmarks',
+      'Catch-up contributions start at 50: $31,000/year in 401k, $8,000/year in IRA',
+      'Being behind at 50 is recoverable — $39,000/year for 15 years at 7% growth builds $981,000',
     ],
     targetKeyword: 'am i on track for retirement at 50',
     volume: 35,

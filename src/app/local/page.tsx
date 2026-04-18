@@ -10,6 +10,8 @@ import { MapPin, CheckCircle2, XCircle, Shield, Building2 } from "lucide-react";
 export const metadata: Metadata = {
     title: "Best Gold IRA Companies by State | Local Reviews 2026",
     description: "Find the best Gold IRA companies in your state. Local reviews, tax information, and recommendations for all 50 US states.",
+    // Noindex — all child state/city pages are noindexed, so index page should be too
+    robots: { index: false, follow: true },
     openGraph: {
         title: "Best Gold IRA Companies by State | Local Reviews 2026",
         description: "Find the best Gold IRA companies in your state. Local reviews, tax information, and recommendations for all 50 US states.",

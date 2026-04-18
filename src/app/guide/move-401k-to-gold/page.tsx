@@ -5,11 +5,15 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, Shield, Clock, FileText } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "How to Move 401k to Gold: Easy Guide (2026)",
     description: "Learn how to move your 401k to gold with a simple, tax-free direct rollover. Step-by-step guide explains the process in plain language.",
+    alternates: { canonical: getCanonicalUrl("/guide/move-401k-to-gold") },
 };
 
 const faqs = [
@@ -72,10 +76,44 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Move 401k to Gold", url: "/guide/move-401k-to-gold" },
+]);
+
 export default function Move401kToGoldPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Move Your 401(k) to Gold",
+                description: "Simple 5-step process for moving retirement savings from a 401(k) into physical gold",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Decide How Much to Move", text: "Most advisors recommend moving 10-20% of your 401(k) into gold — enough for protection without sacrificing growth potential." },
+                    { name: "Pick a Gold IRA Company", text: "Compare top providers on fees, minimums, and customer service. Augusta Precious Metals is rated best for accounts over $50,000." },
+                    { name: "Open Your Gold IRA", text: "Complete a quick application to set up a self-directed IRA with an approved custodian. Takes 1-3 business days." },
+                    { name: "Transfer Funds Tax-Free", text: "Request a direct rollover from your 401(k) to your Gold IRA. Direct transfers are tax-free and penalty-free regardless of your age." },
+                    { name: "Buy Physical Gold", text: "Select IRS-approved gold coins or bars. Your custodian executes the purchase and stores your metals in an insured depository." },
+                ],
+            })} />
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="You can move your 401k to gold without penalty by doing a direct rollover into a Gold IRA. The IRS allows this tax-free transfer, and the entire process takes 2-4 weeks with most of the work handled by your Gold IRA company."
+                        keyFacts={[
+                            "Direct rollovers from 401k to Gold IRA are 100% tax-free and penalty-free",
+                            "The process takes 2-4 weeks; your paperwork takes about 15-30 minutes",
+                            "You can move a portion (commonly 10-20%) or all of your 401k balance",
+                            "Most Gold IRA companies offer free consultations and handle the transfer paperwork",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">

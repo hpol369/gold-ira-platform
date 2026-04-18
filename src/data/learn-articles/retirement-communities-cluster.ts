@@ -11,6 +11,14 @@ export const retirementCommunitiesArticles: LearnArticleRegistry = {
     metaTitle: 'What Is a CCRC? Continuing Care Retirement Community Guide (2026)',
     metaDescription: 'Complete CCRC guide: Understand continuing care retirement communities, entrance fees ($200k-$1M+), contract types, benefits, and how to choose the right one.',
     keywords: ['continuing care retirement community', 'ccrc explained', 'what is a ccrc', 'ccrc costs', 'life care community'],
+    answerFirst: 'A Continuing Care Retirement Community (CCRC) offers independent living, assisted living, and skilled nursing care on one campus, allowing residents to age in place as their needs change. Entrance fees range from $200,000 to over $1 million, plus monthly fees of $2,500-$6,000 for independent living. The three main contract types are Life Care (Type A), Modified (Type B), and Fee-for-Service (Type C), each with different cost structures for future care.',
+    answerFirstFacts: [
+      'CCRC entrance fees range from $200,000 to over $1 million depending on location and contract type',
+      'Monthly fees run $2,500-$6,000 for independent living, increasing for higher care levels',
+      'Type A (Life Care) contracts lock in future care costs; Type C passes full market rates to residents',
+      'Most entrance fees are 50-90% refundable to the resident\'s estate upon death or move-out',
+    ],
+
     targetKeyword: 'continuing care retirement community',
     volume: 3000,
     difficulty: 16,
@@ -238,6 +246,14 @@ export const retirementCommunitiesArticles: LearnArticleRegistry = {
     metaTitle: 'The Villages Florida Reviews: Is It Worth It? (2026 Guide)',
     metaDescription: 'Honest review of The Villages retirement community: costs, amenities, lifestyle, pros and cons, and what residents really think about living there.',
     keywords: ['the villages florida reviews', 'villages retirement community', 'the villages pros cons', 'the villages cost', 'living in the villages florida'],
+    answerFirst: 'The Villages is America\'s largest active adult retirement community with over 130,000 residents across 32 square miles in central Florida. Home prices range from $200,000 to $800,000+, with monthly fees adding $150-$300+ for amenities. The community features 50+ golf courses, 60+ recreation centers, and 3,000+ clubs, but common complaints include extreme humidity, healthcare wait times, and a "bubble" atmosphere.',
+    answerFirstFacts: [
+      'The Villages spans 32+ square miles with 130,000+ residents — larger than Manhattan',
+      'Home prices range from $200,000 to $800,000+ plus $150-$300/month in HOA amenity fees',
+      'Amenities include 50+ golf courses, 60+ recreation centers, and 3,000+ clubs',
+      'At least one household member must be 55+; no one under 19 can live there permanently',
+    ],
+
     targetKeyword: 'the villages florida reviews',
     volume: 150,
     difficulty: 0,
@@ -438,6 +454,14 @@ export const retirementCommunitiesArticles: LearnArticleRegistry = {
     metaTitle: 'CCRC Contract Types: Life Care vs Modified vs Fee-for-Service (2026)',
     metaDescription: 'Compare CCRC contract types A, B, and C. Understand entrance fees, monthly costs, and future care coverage to choose the best option.',
     keywords: ['ccrc contract types', 'life care vs fee for service', 'ccrc type a b c', 'ccrc contract comparison', 'continuing care contracts'],
+    answerFirst: 'The three CCRC contract types are Type A (Life Care), Type B (Modified), and Type C (Fee-for-Service). Type A has the highest entrance fee ($400,000-$1,000,000+) but locks in future care costs at little or no increase. Type C has the lowest entrance fee ($100,000-$400,000) but charges full market rates for assisted living and nursing care, which can add $4,000-$8,000/month.',
+    answerFirstFacts: [
+      'Type A (Life Care) entrance fees range from $400,000 to $1,000,000+ with stable monthly costs',
+      'Type C (Fee-for-Service) charges full market rate nursing care at $6,000-$12,000/month',
+      'Refundability affects entrance fees: 90% refundable contracts cost significantly more than non-refundable',
+      'Type B (Modified) includes limited care coverage, such as 30-60 days per year at no extra cost',
+    ],
+
     targetKeyword: 'ccrc contract types',
     volume: 100,
     difficulty: 2,
@@ -648,6 +672,14 @@ export const retirementCommunitiesArticles: LearnArticleRegistry = {
     metaTitle: 'Del Webb Retirement Communities: Complete Guide (2026)',
     metaDescription: 'Explore Del Webb 55+ communities: home prices ($200k-$600k), amenities, locations in 22 states, reviews, and how they compare to other active adult communities.',
     keywords: ['del webb retirement communities', 'del webb reviews', 'del webb 55 plus', 'del webb homes', 'active adult communities'],
+    answerFirst: 'Del Webb is America\'s best-known builder of 55+ active adult communities, operated by PulteGroup, with locations in over 20 states. Home prices typically range from $200,000 to $600,000+ with monthly HOA fees of $100-$400. Unlike CCRCs, Del Webb communities are age-restricted neighborhoods focused on amenities and social lifestyle, not continuing care — residents must arrange their own healthcare and assisted living.',
+    answerFirstFacts: [
+      'Del Webb communities are in 20+ states with the largest concentration in Arizona, Florida, and the Southeast',
+      'Home prices range from $200,000 to $600,000+ with HOA fees of $100-$400/month',
+      'Del Webb is owned by PulteGroup and builds new construction homes, not resale communities',
+      'Unlike CCRCs, Del Webb provides no assisted living or nursing care on site',
+    ],
+
     targetKeyword: 'del webb retirement communities',
     volume: 250,
     difficulty: 11,
@@ -871,6 +903,14 @@ export const retirementCommunitiesArticles: LearnArticleRegistry = {
     metaTitle: '55+ Community Pros and Cons: Complete Guide (2026)',
     metaDescription: 'Understand the pros and cons of 55+ communities. Learn about costs, HOA fees, age restrictions, lifestyle, and whether active adult living is right for you.',
     keywords: ['55 plus community pros cons', 'active adult community', '55 and over communities', 'retirement community pros and cons', '55+ living'],
+    answerFirst: '55+ communities offer age-restricted living with amenities like pools, fitness centers, and social activities designed for active adults. The main pros are built-in social life, low-maintenance living, and shared amenities; the main cons are HOA fees ($100-$500/month), age restrictions that limit who can visit or live there, and potential for a "bubble" environment. They differ from CCRCs in that they do not provide healthcare or assisted living.',
+    answerFirstFacts: [
+      'HOA fees in 55+ communities typically range from $100 to $500 per month',
+      'At least one household member must be 55+ under the Housing for Older Persons Act (HOPA)',
+      '55+ communities do not provide healthcare, assisted living, or nursing care',
+      'The fastest-growing segment is active adult communities with pickleball, pools, and social programming',
+    ],
+
     targetKeyword: '55 plus community pros cons',
     volume: 80,
     difficulty: 8,

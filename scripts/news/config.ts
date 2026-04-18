@@ -7,7 +7,7 @@ export const CONFIG = {
     claude: {
         apiKey: process.env.ANTHROPIC_API_KEY || "",
         model: "claude-sonnet-4-20250514",
-        maxTokens: 2000,
+        maxTokens: 4000, // Longer, more in-depth articles (was 2000 = thin content)
     },
 
     // RSS Feeds to monitor
@@ -107,8 +107,15 @@ export const CONFIG = {
 
     // Scoring thresholds
     scoring: {
-        minimumScore: 3, // Minimum relevance score to consider (out of 10)
-        maxArticlesPerRun: 4, // Maximum articles to generate per run (increased for silver coverage)
+        minimumScore: 7, // Higher bar for relevance (was 6, before that 3)
+        maxArticlesPerRun: 2, // 2 articles per run, 3 runs/day — but only the best survive quality gate
+    },
+
+    // Quality gate — articles below this score get auto-rejected
+    qualityGate: {
+        minimumScore: 40, // Must score at least Tier B on quality scorer
+        minimumWordCount: 700, // No thin articles
+        maxFormulaPhrases: 0, // Zero tolerance for AI fingerprint phrases
     },
 
     // Output paths

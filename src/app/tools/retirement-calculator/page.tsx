@@ -3,9 +3,13 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Navbar } from "@/components/layout/Navbar";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import {
   Calculator,
   ArrowRight,
@@ -22,6 +26,7 @@ import {
   Target,
   Info,
 } from "lucide-react";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 // Step configuration
 const steps = [
@@ -105,6 +110,12 @@ function getRiskAssessment(
       "Your plan is reasonable but has some vulnerability. Consider ways to extend your runway and protect against inflation.",
   };
 }
+
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "Retirement Calculator", url: "/tools/retirement-calculator" },
+]);
 
 export default function RetirementCalculatorPage() {
   // Step state
@@ -235,6 +246,7 @@ export default function RetirementCalculatorPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
+      <SchemaScript schema={breadcrumbs} />
 
       {/* Hero Section */}
       <section className="py-12 md:py-16 bg-[#0C0D18]">
@@ -1059,6 +1071,9 @@ export default function RetirementCalculatorPage() {
                       </div>
                     </div>
 
+                    {/* Contextual CTA */}
+                    <CalculatorCTA calculatorType="retirement" trackSource="tools-retirement-calculator" />
+
                     {/* Augusta CTA */}
                     <AugustaCTA
                       variant="footer"
@@ -1177,6 +1192,27 @@ export default function RetirementCalculatorPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools/retirement-calculator" />
+        </Container>
+      </section>
+
+      <section className="bg-white">
+        <Container>
+          <div className="max-w-4xl mx-auto px-4 pb-12">
+            <SourcesSection
+              sources={[
+                { name: "IRS — Retirement Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions", accessDate: "Mar 2026" },
+                { name: "SSA — Retirement Benefits", url: "https://www.ssa.gov/benefits/retirement/", accessDate: "Mar 2026" },
+                { name: "BLS — Consumer Expenditure Survey", url: "https://www.bls.gov/cex/", accessDate: "Mar 2026" },
+              ]}
+              lastVerified="March 2026"
+            />
           </div>
         </Container>
       </section>

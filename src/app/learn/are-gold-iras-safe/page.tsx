@@ -9,6 +9,10 @@ import { Metadata } from "next";
 import { ShieldCheck, Lock, AlertTriangle, Scale, Building, FileCheck, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Are Gold IRAs Safe? Legitimacy, Risks & Protections (2026)",
@@ -94,6 +98,23 @@ export default function AreGoldIrasSafePage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Yes, Gold IRAs are safe and fully legal. They were authorized by the Taxpayer Relief Act of 1997, are regulated by the IRS, and your physical metals are stored in insured depositories (like Delaware Depository or Brinks) with comprehensive insurance from carriers like Lloyds of London. Your metals are held in trust — not on the custodians balance sheet — so they are protected even if your custodian goes bankrupt."
+                        keyFacts={[
+                            "Gold IRAs are IRS-approved under the Taxpayer Relief Act of 1997 — 100% legal",
+                            "You have direct title ownership; metals are not custodian assets and cannot be seized by creditors",
+                            "Approved depositories carry comprehensive theft, damage, and loss insurance",
+                            "The biggest risk is choosing a dishonest dealer — not the IRA structure itself",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -116,6 +137,9 @@ export default function AreGoldIrasSafePage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-are-gold-iras-safe" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -158,6 +182,8 @@ export default function AreGoldIrasSafePage() {
                                 Gold doesn&apos;t work that way. It&apos;s not a claim on anything. It just <em>is</em>. There&apos;s no CEO who can run it into the ground, no board making bad decisions. Gold has been valuable for 5,000 years and it&apos;ll be valuable 5,000 years from now. That&apos;s why workers like Tom, a retired trucker from Indiana, moved part of his $580k savings to gold—to protect what he built, not gamble with it.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-are-gold-iras-safe" />
 
                         {/* Custodian Safety */}
                         <section id="custodian-safety" className="scroll-mt-32">
@@ -247,6 +273,8 @@ export default function AreGoldIrasSafePage() {
                                 ))}
                             </div>
                         </section>
+
+                        <AutoRelatedContent currentUrl="/learn/are-gold-iras-safe" />
 
                         <AuthorBox />
 

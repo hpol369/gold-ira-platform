@@ -12,6 +12,13 @@ export const retireAbroadArticles: LearnArticleRegistry = {
     metaTitle: 'Portugal Retirement Visa (D7 Visa) Guide for Americans | 2026',
     metaDescription: 'Complete guide to retiring in Portugal with the D7 passive income visa. Learn requirements, NHR tax benefits, healthcare, cost of living, and real estate tips.',
     keywords: ['portugal retirement visa', 'D7 visa portugal', 'retire in portugal', 'portugal retirement'],
+    answerFirst: 'Portugal\'s D7 passive income visa requires just EUR 760/month (~$830) in pension, Social Security, or investment income and grants residency with access to free public healthcare. The NHR (Non-Habitual Resident) tax regime taxes pension income at a flat 10% rate for 10 years, and Portugal offers a path to EU citizenship after 5 years of residency.',
+    answerFirstFacts: [
+      'The D7 visa requires approximately EUR 760/month in passive income (add 50% for a spouse)',
+      'Portugal\'s NHR tax regime taxes pension income at just 10% flat rate for 10 years',
+      'Portuguese public healthcare (SNS) is free or costs EUR 5-10 per doctor visit for residents',
+      'A comfortable couple\'s retirement in Portugal costs $2,500-$3,500/month outside Lisbon',
+    ],
 
     targetKeyword: 'portugal retirement visa',
     volume: 1600,
@@ -196,6 +203,13 @@ export const retireAbroadArticles: LearnArticleRegistry = {
     metaTitle: 'Retire in Costa Rica: Visa, Healthcare & Cost Guide | 2026',
     metaDescription: 'Complete guide to retiring in Costa Rica. Learn about Pensionado and Rentista visas, CAJA healthcare, cost of living, and thriving expat communities.',
     keywords: ['costa rica retirement', 'retire in costa rica', 'pensionado visa costa rica'],
+    answerFirst: 'Costa Rica\'s Pensionado visa requires just $1,000/month in pension or Social Security income and includes access to the CAJA public healthcare system at only $80-$120/month with full coverage including pre-existing conditions. An estimated 50,000-70,000 Americans live in Costa Rica, with established expat communities in Atenas, Lake Arenal, and Tamarindo.',
+    answerFirstFacts: [
+      'The Pensionado visa requires $1,000/month from pension or Social Security ($2,500/month for Rentista visa)',
+      'CAJA public healthcare costs $80-$120/month and covers pre-existing conditions with no exclusions',
+      'Cost of living ranges from $1,800-$2,200/month (budget) to $2,500-$3,500/month (comfortable) for a couple',
+      'An estimated 50,000-70,000 Americans live in Costa Rica year-round in established expat communities',
+    ],
 
     targetKeyword: 'costa rica retirement',
     volume: 500,
@@ -378,6 +392,13 @@ export const retireAbroadArticles: LearnArticleRegistry = {
     metaTitle: 'Panama Retirement Benefits: Pensionado Discounts Guide | 2026',
     metaDescription: 'Discover Panama\'s famous pensionado retirement benefits: 20-50% discounts on everything, USD currency, territorial tax system, and easy visa requirements.',
     keywords: ['panama retirement', 'pensionado program panama', 'retire panama benefits'],
+    answerFirst: 'Panama\'s Pensionado program offers the most generous retirement discounts in the world — 20-50% off restaurants, hotels, entertainment, utilities, healthcare, and airfare — all mandated by law. Panama uses the U.S. dollar as its official currency (eliminating exchange rate risk), and its territorial tax system means U.S. retirement income like Social Security and 401(k) withdrawals are not taxed by Panama.',
+    answerFirstFacts: [
+      'Pensionado discounts of 20-50% are required by law on restaurants, hotels, entertainment, utilities, and medical services',
+      'Panama uses the U.S. dollar as its official currency — zero currency exchange risk for American retirees',
+      'The territorial tax system means all foreign-source income (Social Security, pensions, IRA withdrawals) is tax-free in Panama',
+      'The Pensionado visa requires just $1,000/month in pension income with no minimum age requirement',
+    ],
 
     targetKeyword: 'panama retirement benefits',
     volume: 40,

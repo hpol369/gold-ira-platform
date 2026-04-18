@@ -9,6 +9,11 @@ import { Metadata } from "next";
 import { TrendingDown, AlertTriangle, Calculator, ShieldCheck, ArrowRight, BarChart3, Clock, Coins } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Sequence of Returns Risk: Hidden Retirement Danger",
@@ -100,6 +105,11 @@ export default function SequenceOfReturnsRiskPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Sequence of Returns Risk", url: "/learn/sequence-of-returns-risk" },
+            ])} />
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -117,11 +127,24 @@ export default function SequenceOfReturnsRiskPage() {
                 </Container>
             </header>
 
+            <AnswerFirst
+                variant="light"
+                answer="Sequence of returns risk is the danger that poor investment returns early in retirement can permanently deplete your portfolio, even if average returns over the full period are adequate. A retiree who experiences a -30% drop in year one needs a +43% gain just to break even — while simultaneously withdrawing living expenses."
+                keyFacts={[
+                    "Early losses + withdrawals create a compounding death spiral",
+                    "A -30% loss requires a +43% gain to break even (before withdrawals)",
+                    "The first 5-10 years of retirement are the most vulnerable period",
+                ]}
+            />
+
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-sequence-of-returns-risk" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -183,6 +206,8 @@ export default function SequenceOfReturnsRiskPage() {
                                 Both retirees experienced the same mathematical average return. But Retiree B faced a crash early—while withdrawing $50,000 per year. Those early withdrawals at low prices depleted shares that could never recover.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-sequence-of-returns-risk" />
 
                         {/* Why So Dangerous */}
                         <section id="why-dangerous" className="scroll-mt-32">
@@ -434,6 +459,8 @@ export default function SequenceOfReturnsRiskPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/sequence-of-returns-risk" />
 
                         <AuthorBox />
 

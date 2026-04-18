@@ -12,6 +12,13 @@ export const medicareInsuranceArticles: LearnArticleRegistry = {
     metaTitle: 'Medigap vs Medicare Advantage: Complete Comparison Guide | 2026',
     metaDescription: 'Compare Medigap vs Medicare Advantage plans. Learn the cost differences, coverage gaps, flexibility, and which option makes sense for your retirement.',
     keywords: ['medigap vs medicare advantage', 'medicare supplement vs advantage', 'which is better medigap or medicare advantage', 'medicare comparison'],
+    answerFirst: 'Medigap (Medicare Supplement) covers out-of-pocket costs for Original Medicare with higher premiums ($100-$300+/month) but near-zero copays, while Medicare Advantage replaces Original Medicare with lower premiums (often $0) but network restrictions and potential out-of-pocket costs up to $8,000/year. Medigap Plan G is the most popular choice for comprehensive, predictable coverage.',
+    answerFirstFacts: [
+      'Medigap premiums run $100-$300+/month but cover nearly all out-of-pocket costs with Plan G',
+      'Medicare Advantage often has $0 premiums but out-of-pocket maximums reach $3,000-$8,000/year',
+      'Medigap lets you see any doctor who accepts Medicare nationwide; Advantage plans restrict you to networks',
+      'You have only a 6-month Medigap Open Enrollment window starting when you turn 65 and enroll in Part B',
+    ],
 
     targetKeyword: 'medigap vs medicare advantage',
     volume: 3800,
@@ -191,6 +198,13 @@ export const medicareInsuranceArticles: LearnArticleRegistry = {
     metaTitle: 'Divorced Spouse Social Security Benefits Explained | 2026',
     metaDescription: 'Learn about Social Security benefits for divorced spouses. Understand the 10-year rule, age requirements, and how to claim benefits on your ex\'s record.',
     keywords: ['divorced spouse social security', 'ex spouse social security benefits', 'divorced ss benefits', 'social security after divorce'],
+    answerFirst: 'If you were married for at least 10 years, are currently unmarried, and are age 62 or older, you can claim up to 50% of your ex-spouse\'s full Social Security benefit — and your ex does not need to know or approve. Claiming on your ex\'s record does not reduce their benefit or affect their current spouse\'s benefits in any way.',
+    answerFirstFacts: [
+      'You can receive up to 50% of your ex-spouse\'s Primary Insurance Amount at full retirement age (67)',
+      'The marriage must have lasted at least 10 years — even 9 years and 11 months does not qualify',
+      'Your ex-spouse is never notified and does not need to approve your claim',
+      'If your ex dies, you may qualify for up to 100% of their benefit as a surviving divorced spouse',
+    ],
 
     targetKeyword: 'divorced spouse social security',
     volume: 300,
@@ -354,6 +368,13 @@ export const medicareInsuranceArticles: LearnArticleRegistry = {
     metaTitle: 'Social Security Survivor Benefits Guide for Widows | 2026',
     metaDescription: 'Complete guide to Social Security survivor benefits. Learn eligibility requirements, how much you can receive, when to claim, and working while receiving benefits.',
     keywords: ['social security survivor benefits', 'widow benefits social security', 'surviving spouse ss', 'social security death benefits'],
+    answerFirst: 'Surviving spouses can receive up to 100% of the deceased spouse\'s Social Security benefit starting at full retirement age (67), or a reduced benefit as early as age 60 (age 50 if disabled). A one-time lump-sum death payment of $255 is also available. Strategic claiming — such as taking survivor benefits at 60 while letting your own benefit grow until 70 — can maximize lifetime income.',
+    answerFirstFacts: [
+      'Survivor benefits range from 71.5% at age 60 to 100% at full retirement age (67)',
+      'You can claim survivor benefits as early as age 60, or age 50 if disabled',
+      'Remarriage after age 60 does not disqualify you from receiving survivor benefits',
+      'A $255 one-time lump-sum death payment must be claimed within 2 years of the spouse\'s death',
+    ],
 
     targetKeyword: 'social security survivor benefits',
     volume: 500,

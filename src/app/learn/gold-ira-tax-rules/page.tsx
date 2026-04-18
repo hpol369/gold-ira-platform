@@ -9,6 +9,11 @@ import { Metadata } from "next";
 import { FileText, DollarSign, AlertTriangle, Calendar, ArrowRight, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Gold IRA Tax Rules 2026: Complete Guide to Taxes & Penalties",
@@ -97,6 +102,11 @@ export default function GoldIraTaxRulesPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Gold IRA Tax Rules", url: "/learn/gold-ira-tax-rules" }
+            ])} />
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -114,11 +124,29 @@ export default function GoldIraTaxRulesPage() {
                 </Container>
             </header>
 
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Gold IRAs follow the same IRS tax rules as traditional and Roth IRAs. Contributions are limited to $7,000/year ($8,000 if 50+), but rollovers from 401(k)s have no limit and are tax-free when done as direct transfers. Early withdrawals before age 59½ trigger a 10% penalty plus income taxes, and Traditional Gold IRA RMDs begin at age 73."
+                        keyFacts={[
+                            "2026 contribution limits: $7,000 (under 50) or $8,000 (50+) across all IRAs",
+                            "Direct rollovers from 401(k), 403(b), or TSP are 100% tax-free with no cap",
+                            "Roth Gold IRAs offer tax-free withdrawals and zero lifetime RMDs",
+                            "Home storage of IRA gold is treated as a distribution — avoid this costly mistake"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-gold-ira-tax-rules" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -186,6 +214,8 @@ export default function GoldIraTaxRulesPage() {
                                 Here&apos;s where it gets interesting. That $7,000 limit only applies to new contributions. Rollovers from 401(k)s, 403(b)s, or other IRAs? No limit whatsoever. You could roll over $500,000 in one transaction if you wanted. Completely tax-free. This is how most people fund their Gold IRAs—they move existing retirement money, not new savings. Check out our <Link href="/guide/401k-to-gold-rollover">401(k) rollover guide</Link> for the how-to.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-gold-ira-tax-rules" />
 
                         {/* Traditional vs Roth */}
                         <section id="traditional-vs-roth" className="scroll-mt-32">
@@ -497,6 +527,8 @@ export default function GoldIraTaxRulesPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/gold-ira-tax-rules" />
 
                         <AuthorBox />
 

@@ -4,9 +4,7 @@ import { useState } from "react";
 import { ArrowRight, Loader2, Lock } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-
-// Augusta customer landing page with affiliate tracking
-const AUGUSTA_AFFILIATE_URL = "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129&apmtrkr_cph=844-405-3908";
+import { GOOGLE_ADS_CONVERSION_TAG } from "@/config/google-ads";
 
 const investmentOptions = [
   { value: "25k-50k", label: "$25,000 - $50,000" },
@@ -71,7 +69,11 @@ export function LeadCaptureForm() {
           lastName: formData.lastName,
           email: formData.email,
           phone: formData.phone,
-          investmentAmount: formData.investmentAmount,
+          // Map UI field → API contract. /api/submit-lead reads `savingsTier`
+          // and uses it for sequence routing (high-intent vs starter-nurture)
+          // and for the Augusta specialist's qualification context. Without
+          // this, every lead from this form defaulted to starter-nurture.
+          savingsTier: formData.investmentAmount,
           source: "lead-capture-form",
         }),
       });
@@ -80,26 +82,30 @@ export function LeadCaptureForm() {
 
       if (result.success) {
         // 2. Fire Google Ads conversion
-        if (typeof window !== "undefined" && (window as any).gtag) {
-          (window as any).gtag("event", "conversion", {
-            send_to: "AW-17807049464/b4n5CImJ3O4bEPiFiKtC",
+        if (typeof window !== "undefined" && (window as { gtag?: (...args: unknown[]) => void }).gtag) {
+          (window as { gtag: (...args: unknown[]) => void }).gtag("event", "conversion", {
+            send_to: GOOGLE_ADS_CONVERSION_TAG,
             value: 50.0,
             currency: "USD",
           });
         }
 
-        // 3. Small delay for tracking to fire, then redirect
+        // 3. Small delay for tracking to fire, then redirect to thank-you
         await new Promise((resolve) => setTimeout(resolve, 500));
-        window.location.href = AUGUSTA_AFFILIATE_URL;
+        const thankYouParams = new URLSearchParams({
+          name: formData.firstName,
+          company: "Augusta Precious Metals",
+        });
+        window.location.href = `/thank-you?${thankYouParams.toString()}`;
       } else {
         console.error("Lead submission failed:", result.error);
-        // Still redirect even if our API fails - don't lose the lead
-        window.location.href = AUGUSTA_AFFILIATE_URL;
+        // Still redirect even if our API fails - lead data was captured
+        window.location.href = `/thank-you?name=${encodeURIComponent(formData.firstName)}&company=Augusta+Precious+Metals`;
       }
     } catch (error) {
       console.error("Lead submission error:", error);
-      // Still redirect on error - don't lose the lead
-      window.location.href = AUGUSTA_AFFILIATE_URL;
+      // Still redirect on error - lead data was captured
+      window.location.href = `/thank-you?name=${encodeURIComponent(formData.firstName)}&company=Augusta+Precious+Metals`;
     }
   };
 
@@ -242,7 +248,7 @@ export function LeadCaptureForm() {
         <div className="flex items-start gap-2 text-xs text-[#A8A39A]">
           <Lock className="h-4 w-4 flex-shrink-0 mt-0.5" />
           <p>
-            Your information is secure and will never be shared. By submitting, you agree to receive information about Gold IRAs via phone, email, and text. You can opt out anytime.
+            By submitting, you agree to receive info about Gold IRAs via phone, email, and text message from Rich Dad Retirement and our partners. Msg frequency: up to 3 texts. Msg &amp; data rates may apply. Reply STOP to cancel. <a href="/privacy-policy" className="underline hover:text-[#F6F4EF]">Privacy Policy</a> · <a href="/terms" className="underline hover:text-[#F6F4EF]">Terms</a>
           </p>
         </div>
       </form>

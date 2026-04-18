@@ -1,12 +1,14 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, XCircle, DollarSign, AlertTriangle, Award, Scale, Building2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Noble Gold Fees Breakdown 2026: Setup, Storage & Annual Costs",
@@ -16,12 +18,35 @@ export const metadata: Metadata = {
         description: "Complete breakdown of Noble Gold fees. Compare setup costs, annual fees, storage charges, and spreads.",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/noble-gold-fees") },
 };
+
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Noble Gold Fees", url: "/guide/noble-gold-fees" },
+]);
 
 export default function NobleGoldFeesPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            <SchemaScript schema={breadcrumbs} />
+            
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Noble Gold charges an $80 setup fee, $80/year annual maintenance, and $150/year for storage at Delaware Depository — totaling $230/year in ongoing fees. Their $20,000 minimum is mid-range. Augusta Precious Metals offers lower total fees at $180/year for accounts over $50,000."
+                        keyFacts={[
+                            "Setup fee: $80 one-time; annual maintenance: $80/year; storage: $150/year",
+                            "Total ongoing cost: $230/year — about 0.46% of a $50,000 portfolio",
+                            "Minimum investment: $20,000 — lower than Augusta ($50,000) but higher than Birch Gold ($10,000)",
+                            "Augusta saves $50/year: $80 maintenance + $100 storage = $180/year total",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 md:py-24 border-b border-[#2A2D42]">
@@ -405,7 +430,7 @@ export default function NobleGoldFeesPage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

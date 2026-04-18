@@ -8,8 +8,6 @@ import { ArrowRight, CheckCircle2, ShieldCheck, TrendingUp, AlertTriangle, Trend
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Metadata } from "next";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
     title: "Silver Shortage 2026: Why Physical Silver Is Disappearing",
@@ -98,7 +96,7 @@ export default function SilverShortagePage() {
     return (
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
-            <Navbar />
+            
             {/* Header */}
             <header className="bg-[#0C0D18] text-[#F6F4EF] py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-red-900/10 via-transparent to-transparent" />
@@ -575,7 +573,7 @@ export default function SilverShortagePage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

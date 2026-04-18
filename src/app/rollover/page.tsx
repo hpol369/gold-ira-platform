@@ -8,6 +8,12 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { ProviderCard, AccountTypeCard } from "@/components/rollover/ProviderCard";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 import { getAllProviders, getAllAccountTypes, getProvidersByType } from "@/data/rollovers";
 import { RefreshCw, Building2, Landmark, Shield, ArrowRight, CheckCircle2 } from "lucide-react";
 
@@ -30,7 +36,26 @@ export default function RolloverPage() {
 
   return (
     <main className="min-h-screen flex flex-col bg-white">
+      <SchemaScript schema={articleSchema({ title: "Gold IRA Rollover Guide 2026", description: "Complete guide to rolling over your 401k, IRA, TSP to a Gold IRA. Tax-free transfers step by step.", slug: "/rollover" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Gold IRA Rollover", url: "/rollover" }])} />
+      <SchemaScript schema={faqSchema(getPageFAQs("rollover"))} />
       <Navbar />
+
+      {/* Answer-First GEO Block */}
+      <section className="pt-8 pb-4 bg-white">
+        <Container>
+          <AnswerFirst
+            answer="A Gold IRA rollover transfers funds from your existing 401(k), IRA, TSP, or other retirement account into a self-directed IRA that holds physical gold. Direct rollovers are 100% tax-free with zero penalties. The process takes 2-3 weeks and your current custodian handles the transfer."
+            keyFacts={[
+              "Direct rollovers: 100% tax-free, zero penalties, no dollar limit",
+              "Timeline: 2-3 weeks from start to finish",
+              "Works with 401(k), IRA, TSP, 403(b), 457(b), and more",
+              "Your Gold IRA company handles all paperwork",
+            ]}
+            className="max-w-3xl mx-auto"
+          />
+        </Container>
+      </section>
 
       {/* Header */}
       <header className="bg-[#0C0D18] py-16 md:py-20 relative overflow-hidden">
@@ -392,6 +417,23 @@ export default function RolloverPage() {
             subheadline="After decades of work, your retirement savings deserve real protection. Augusta handles everything&mdash;they call your provider, complete the paperwork, and make sure your rollover goes smoothly. No cost to find out if it&apos;s right for you."
             trackSource="rollover-hub"
           />
+        </Container>
+      </section>
+
+      <section className="py-16 bg-white">
+        <Container>
+          <FAQSection
+            faqs={getPageFAQs("rollover")}
+            title="Gold IRA Rollover FAQ"
+            className="max-w-3xl"
+            includeSchema={false}
+          />
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/rollover" />
         </Container>
       </section>
 

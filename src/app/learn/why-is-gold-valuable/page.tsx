@@ -9,6 +9,10 @@ import { Metadata } from "next";
 import { Gem, Clock, Globe, ShieldCheck, TrendingUp, ArrowRight, Sparkles, Coins, Building2 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Why Is Gold Valuable? Science & History Explained",
@@ -134,11 +138,24 @@ export default function WhyIsGoldValuablePage() {
                 </Container>
             </header>
 
+            <AnswerFirst
+                variant="light"
+                answer="Gold is valuable because it's scarce (only 216,265 tonnes exist above ground), virtually indestructible, and universally recognized as a store of value for 5,000+ years. Unlike fiat currencies, gold cannot be printed or inflated — total supply grows only ~1.5% per year from mining. Central banks held 37,755 tonnes in reserves as of 2024, and bought 863 tonnes in 2025 alone."
+                keyFacts={[
+                    "Total above-ground gold: 216,265 tonnes (World Gold Council, 2024)",
+                    "Central bank reserves: 37,755 tonnes; bought 863t in 2025",
+                    "Annual mine production adds only ~1.5% to total supply",
+                ]}
+            />
+
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-why-is-gold-valuable" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -198,6 +215,8 @@ export default function WhyIsGoldValuablePage() {
                                 In his book &quot;The Power of Gold,&quot; chemist Peter Bernstein explains why gold became money: Start with all 118 elements. Eliminate gases, liquids, radioactive elements, reactive metals, and those too rare or too common. You&apos;re left with gold—the only element that perfectly balances scarcity, durability, and practicality.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-why-is-gold-valuable" />
 
                         {/* Historical Significance */}
                         <section id="history" className="scroll-mt-32">
@@ -444,6 +463,8 @@ export default function WhyIsGoldValuablePage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/why-is-gold-valuable" />
 
                         <AuthorBox />
 

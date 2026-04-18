@@ -11,6 +11,12 @@ import { ComparisonBuilder } from "@/components/compare/ComparisonBuilder";
 import { assets } from "@/data/assets";
 import { Scale, ArrowRight, Star, Award, TrendingUp, BarChart3 } from "lucide-react";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 
 export const metadata: Metadata = {
   title: "Gold IRA Company Comparisons 2026 | Side-by-Side Analysis",
@@ -147,6 +153,9 @@ export default function ComparePage() {
 
   return (
     <main className="min-h-screen flex flex-col bg-white">
+            <SchemaScript schema={articleSchema({ title: "Gold IRA Company Comparisons 2026", description: "Compare Gold IRA companies side-by-side. Fees, minimums, ratings, and pros/cons.", slug: "/compare" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Compare Companies", url: "/compare" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("compare"))} />
       <Navbar />
 
       {/* Header */}
@@ -474,6 +483,32 @@ export default function ComparePage() {
             subheadline="Get your free Gold IRA guide and see why Augusta is rated #1 for transparency."
             trackSource="compare-hub"
           />
+        </Container>
+      </section>
+
+            <section className="py-16 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="When comparing Gold IRA companies, focus on four factors: minimum investment ($2,000 to $50,000), annual fees ($180-$325), BBB complaint history (0 to 30+), and buyback programs. Augusta Precious Metals ranks #1 for $50K+ investors due to zero BBB complaints and fee waivers up to 10 years. Noble Gold is best for smaller budgets at $2,000 minimum."
+                        keyFacts={[
+                            "Augusta: $50K min, zero BBB complaints, 10-year fee waiver",
+                            "Noble Gold: $2K min — lowest in the industry",
+                            "Goldco: $25K min, buyback guarantee, largest brand",
+                            "Always compare metal premiums over spot — not just annual fees",
+                        ]}
+                        className="mb-12 max-w-3xl"
+                    />
+                    <FAQSection
+                        faqs={getPageFAQs("compare")}
+                        title="Gold IRA Comparison FAQ"
+                        className="max-w-3xl"
+                        includeSchema={false}
+                    />
+                </Container>
+            </section>
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/compare" />
         </Container>
       </section>
 

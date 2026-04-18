@@ -19,6 +19,13 @@ export const marketFearExpansionArticles: LearnArticleRegistry = {
       '401k crisis response',
       '401k recovery timeline'
     ],
+    answerFirst: 'Do not panic sell. A 30% 401(k) drop is severe but not unprecedented, and every 30%+ market decline in history has fully recovered within 2-5 years on average. Selling at -30% locks in losses permanently and requires a 43% gain just to get back to even. Continue your contributions (you\'re buying shares at a 30% discount), and rebalance toward your target allocation.',
+    answerFirstFacts: [
+      'To recover a 30% loss, you need a 43% gain, which the market has delivered after every major crash in history',
+      'Historical recovery time for 30%+ drops averages 2-5 years, with the 2020 COVID crash recovering in just 6 months',
+      'Investors who panic sell underperform by 4-5% annually compared to those who stay invested',
+      'Continuing 401(k) contributions during a 30% downturn means buying shares at a steep discount',
+    ],
     targetKeyword: '401k down 30 percent what to do',
     volume: 70,
     difficulty: 25,
@@ -198,6 +205,13 @@ export const marketFearExpansionArticles: LearnArticleRegistry = {
       'government confiscate retirement',
       '401k legal protection'
     ],
+    answerFirst: 'The US government cannot seize your 401(k) or IRA under current law. ERISA provides strong federal protection for 401(k) accounts, and IRAs have state-level creditor protections plus federal bankruptcy protection up to approximately $1.5 million. However, the government can garnish retirement accounts for unpaid federal taxes, federal student loans, and criminal fines.',
+    answerFirstFacts: [
+      'ERISA provides strong federal protection making 401(k) accounts virtually immune to seizure by private creditors',
+      'IRAs have federal bankruptcy protection up to approximately $1.5 million under current law',
+      'The IRS can levy retirement accounts for unpaid federal taxes, even imposing the 10% early withdrawal penalty',
+      'No modern democracy has ever confiscated private retirement accounts from citizens',
+    ],
     targetKeyword: 'can government take my 401k',
     volume: 90,
     difficulty: 30,
@@ -370,6 +384,13 @@ export const marketFearExpansionArticles: LearnArticleRegistry = {
       'target date fund performance',
       'should I change target date fund',
       'target date fund risk'
+    ],
+    answerFirst: 'Target date funds lose money because they hold stocks and bonds that fluctuate with the market. They are not guaranteed investments. TDFs can drop 20-40% in severe downturns even near your retirement date because the "glide path" maintains significant equity exposure (typically 40-55% stocks at the target date). Losses usually recover as markets recover.',
+    answerFirstFacts: [
+      'Target date funds can lose 20-40% in severe market downturns even near the target retirement date',
+      'At the target date, most TDFs still hold 40-55% in stocks, not shifting fully to bonds',
+      'TDF glide paths vary significantly between providers like Vanguard, Fidelity, and T. Rowe Price',
+      'Target date fund losses typically recover as markets recover, since the underlying assets are the same broad market',
     ],
     targetKeyword: 'target date fund losing money',
     volume: 50,
@@ -550,6 +571,13 @@ export const marketFearExpansionArticles: LearnArticleRegistry = {
       'market crash 2026 preparation',
       '401k protection strategies',
       'defensive 401k allocation'
+    ],
+    answerFirst: 'You cannot time the market, but you can position your 401(k) defensively before a crash by maintaining true diversification (including non-correlated assets like gold), keeping 2-3 years of expected expenses in stable assets, and rebalancing to match your time horizon. Physical gold has historically risen during stock market crashes and provides protection without requiring you to predict when the crash will happen.',
+    answerFirstFacts: [
+      'True diversification includes non-correlated assets like gold, not just different stock and bond funds',
+      'Keeping 2-3 years of expected retirement expenses in stable value funds prevents forced selling during crashes',
+      'Gold has historically risen during major stock market crashes including 2008 and 2020',
+      'Your time horizon matters more than market conditions: 10+ years to retirement means short-term crashes are noise',
     ],
     targetKeyword: 'protect 401k from market crash 2026',
     volume: 85,
@@ -733,6 +761,13 @@ export const marketFearExpansionArticles: LearnArticleRegistry = {
       'bank bail-in USA',
       'retirement account safety'
     ],
+    answerFirst: 'Your US 401(k) and IRA investments are legally segregated from bank assets and cannot be "bailed in" under current US regulations. European bail-ins (like Cyprus in 2013) occurred under different rules that do not apply in America. SIPC protects brokerage accounts up to $500,000 if your broker fails, and FDIC covers bank deposits up to $250,000. Physical gold has zero counterparty risk.',
+    answerFirstFacts: [
+      '401(k) and IRA investments are legally segregated from bank assets and cannot be included in a bail-in',
+      'The Cyprus bail-in of 2013 targeted uninsured bank deposits over 100,000 euros under European regulations',
+      'SIPC protects US brokerage accounts up to $500,000 per customer if a broker-dealer fails',
+      'FDIC insures bank deposits up to $250,000 per depositor per institution',
+    ],
     targetKeyword: 'bail-in risk retirement accounts',
     volume: 40,
     difficulty: 25,
@@ -911,6 +946,13 @@ export const marketFearExpansionArticles: LearnArticleRegistry = {
       'SIPC protection 401k',
       'is my 401k safe if broker fails',
       'brokerage failure retirement accounts'
+    ],
+    answerFirst: 'If Fidelity, Schwab, or Vanguard fails, your investments are legally your property, not the brokerage\'s. Securities are held separately from brokerage assets under SEC regulations. SIPC protects up to $500,000 per customer ($250,000 cash) if a brokerage goes bankrupt. In practice, your accounts would simply transfer to another broker-dealer. No major brokerage failure has ever resulted in customers losing their securities.',
+    answerFirstFacts: [
+      'Your securities are legally separate from brokerage assets under SEC customer protection rules',
+      'SIPC insures up to $500,000 per customer ($250,000 cash sub-limit) if a broker-dealer fails',
+      'In brokerage failures, customer accounts are typically transferred intact to another broker-dealer',
+      'Physical gold in a Gold IRA eliminates brokerage counterparty risk entirely since you own the metal directly',
     ],
     targetKeyword: 'brokerage failure retirement',
     volume: 60,

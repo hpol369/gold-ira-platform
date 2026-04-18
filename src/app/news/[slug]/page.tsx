@@ -19,6 +19,8 @@ import {
 import { ArrowRight, ArrowLeft, Clock, Calendar, ExternalLink, Share2 } from "lucide-react";
 import { SpotPriceWidget } from "@/components/widgets/SpotPriceWidget";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { NOINDEX_NEWS_SLUGS } from "@/data/news-noindex";
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -37,9 +39,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: "Article Not Found" };
     }
 
+    // Noindex ALL news articles — AI-generated content flagged by Google's scaled content abuse detection
+    // Keeping pages live for direct/social traffic but hiding from Google index
     return {
         title: article.headline || article.metaTitle || `${article.title} | Rich Dad Daily Briefing`,
         description: article.metaDescription || article.excerpt,
+        robots: { index: false, follow: true },
         alternates: {
             canonical: `/news/${slug}`,
         },
@@ -168,6 +173,11 @@ export default async function NewsArticlePage({ params }: Props) {
     return (
         <main className="min-h-screen bg-white">
             <SchemaScript schema={articleSchema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "News", url: "/news" },
+                { name: article.title, url: `/news/${slug}` },
+            ])} />
             <Navbar />
 
             {/* Article Header - Patriot Style */}
@@ -270,7 +280,7 @@ export default async function NewsArticlePage({ params }: Props) {
                                     purchasing power from inflation and market volatility.
                                 </p>
                                 <LeadCaptureButton variant="default" source={`news-${slug}`} className="bg-[#DC2626] hover:bg-[#991B1B] text-white font-bold px-6 py-3 rounded-lg inline-flex items-center">
-                                    Get Your Free Gold IRA Guide <ArrowRight className="ml-2 w-4 h-4" />
+                                    Get Your Free Precious Metals Guide <ArrowRight className="ml-2 w-4 h-4" />
                                 </LeadCaptureButton>
                             </div>
                         </article>

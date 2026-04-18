@@ -1,0 +1,17 @@
+{
+  "git": {
+    "deploymentEnabled": {
+      "claude/*": false
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/process-emails",
+      "schedule": "7 14 * * *"
+    },
+    {
+      "path": "/api/cron/weekly-digest",
+      "schedule": "17 14 * * 1"
+    }
+  ]
+}

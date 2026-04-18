@@ -1,14 +1,43 @@
 import { NextRequest, NextResponse } from "next/server";
-import { sendNotification } from "@/lib/notifications";
+import crypto from "crypto";
+import { supabase } from "@/lib/supabase";
+import { sendTelegramNotification } from "@/lib/notifications";
+import { sendEmail, isResendConfigured } from "@/lib/resend";
+import { emailLayout, p } from "@/lib/email-templates";
+import { checkRateLimit, getRequestIdentifier, rateLimitedResponse } from "@/lib/rate-limit";
 
-// Store subscribers (in production, use a database or email service like Mailchimp/ConvertKit)
-const subscribers: Set<string> = new Set();
+const SITE_URL = "https://richdadretirement.com";
+
+// 20 newsletter signups per hour per IP — generous enough for legit shared
+// IPs (offices, mobile carriers) but blocks abuse.
+const NEWSLETTER_RATE_LIMIT = 20;
+const NEWSLETTER_RATE_WINDOW_SEC = 60 * 60;
+
+/**
+ * Generate a confirmation token from email + secret
+ * Used for double opt-in verification
+ */
+function generateConfirmToken(email: string): string {
+  const secret = process.env.CRON_SECRET || "fallback-secret";
+  return crypto
+    .createHash("sha256")
+    .update(email + secret)
+    .digest("hex")
+    .slice(0, 32);
+}
 
 export async function POST(request: NextRequest) {
   try {
-    const { email } = await request.json();
+    const rl = await checkRateLimit(getRequestIdentifier(request), {
+      bucket: "newsletter",
+      max: NEWSLETTER_RATE_LIMIT,
+      windowSec: NEWSLETTER_RATE_WINDOW_SEC,
+    });
+    if (!rl.ok) return rateLimitedResponse(rl, NEWSLETTER_RATE_LIMIT);
 
-    // Validate email format
+    const { email, source } = await request.json();
+
+    // Validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
     if (!email || typeof email !== "string" || !emailRegex.test(email) || email.length > 254) {
       return NextResponse.json(
@@ -17,42 +46,78 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Check if already subscribed
-    if (subscribers.has(email.toLowerCase())) {
-      return NextResponse.json({
-        success: true,
-        message: "Already subscribed",
-      });
+    const cleanEmail = email.trim().toLowerCase();
+    const cleanSource = (source || "unknown").replace(/<[^>]*>/g, "").trim().slice(0, 100);
+
+    // Upsert to Supabase with confirmed_at = null (unconfirmed)
+    const { error } = await supabase
+      .from("email_subscribers")
+      .upsert(
+        { email: cleanEmail, source: cleanSource, confirmed_at: null },
+        { onConflict: "email", ignoreDuplicates: true }
+      );
+
+    if (error) {
+      console.error("[NEWSLETTER] Supabase error:", error);
+      return NextResponse.json(
+        { success: false, message: "Database error" },
+        { status: 500 }
+      );
     }
 
-    // Add to subscribers
-    subscribers.add(email.toLowerCase());
+    // Send confirmation email (double opt-in)
+    if (isResendConfigured()) {
+      const token = generateConfirmToken(cleanEmail);
+      const confirmUrl = `${SITE_URL}/api/email/confirm?token=${token}&email=${encodeURIComponent(cleanEmail)}`;
+
+      const html = emailLayout({
+        preheader: "Please confirm your subscription to The Sovereign Weekly",
+        body: [
+          p("Thanks for signing up for <strong>The Sovereign Weekly</strong> — your weekly guide to protecting retirement savings with gold, silver, and smart IRA strategies."),
+          p("Please confirm your email address by clicking the button below:"),
+        ].join(""),
+        ctaText: "Confirm My Subscription",
+        ctaUrl: confirmUrl,
+        email: cleanEmail,
+        sequence: "confirmation",
+      });
+
+      try {
+        await sendEmail({
+          to: cleanEmail,
+          subject: "Confirm your subscription to Rich Dad Retirement",
+          html,
+          tags: [
+            { name: "type", value: "double-opt-in" },
+            { name: "source", value: cleanSource },
+          ],
+        });
+      } catch (err) {
+        console.error("[NEWSLETTER] Confirmation email failed:", err);
+      }
+    }
 
     // Send Telegram notification
     try {
-      await sendNotification({
-        type: "lead_capture",
-        sub_id: "newsletter",
-        timestamp: new Date().toISOString(),
-        email: email,
-      });
+      await sendTelegramNotification(
+        [
+          "\u{1F4E7} <b>New Email Subscriber (pending confirmation)</b>",
+          "",
+          `\u{1F4E9} ${cleanEmail}`,
+          `\u{1F4C4} Source: ${cleanSource}`,
+          `\u{1F550} ${new Date().toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam" })}`,
+        ].join("\n"),
+        false
+      );
     } catch {
-      // Don't fail if notification fails
-      console.error("Failed to send newsletter notification");
+      console.error("[NEWSLETTER] Telegram notification failed");
     }
 
-    // Log for debugging
-    console.log(`[NEWSLETTER] New subscriber: ${email}`);
-    console.log(`[NEWSLETTER] Total subscribers: ${subscribers.size}`);
-
-    // In production, you would:
-    // 1. Add to Mailchimp/ConvertKit/Resend audience
-    // 2. Store in database
-    // 3. Send welcome email
+    console.log(`[NEWSLETTER] Subscriber (pending): ${cleanEmail} from ${cleanSource}`);
 
     return NextResponse.json({
       success: true,
-      message: "Successfully subscribed",
+      message: "Confirmation email sent. Please check your inbox.",
     });
   } catch (error) {
     console.error("[NEWSLETTER ERROR]", error);
@@ -61,12 +126,4 @@ export async function POST(request: NextRequest) {
       { status: 500 }
     );
   }
-}
-
-// GET endpoint to check subscriber count (for admin)
-export async function GET() {
-  return NextResponse.json({
-    count: subscribers.size,
-    // Don't expose actual emails
-  });
 }

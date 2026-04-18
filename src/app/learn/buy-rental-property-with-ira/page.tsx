@@ -16,6 +16,12 @@ import {
     Calculator
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Buy Rental Property with Your IRA: 2026 Guide",
@@ -32,6 +38,8 @@ export const metadata: Metadata = {
 export default function BuyRentalPropertyWithIraPage() {
     return (
         <main className="min-h-screen bg-white">
+            <SchemaScript schema={articleSchema({ title: "Buy Rental Property with Your IRA: 2026 Guide", description: "Complete guide to buying rental property with your IRA. Learn the step-by-step process, financing options, and what to watch out for.", slug: "/learn/buy-rental-property-with-ira" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Buy Rental Property with IRA", url: "/learn/buy-rental-property-with-ira" }])} />
             {/* Hero Section */}
             <section className="relative py-12 lg:py-16 overflow-hidden">
                 <div className="absolute inset-0 bg-[#0C0D18]" />
@@ -74,6 +82,20 @@ export default function BuyRentalPropertyWithIraPage() {
                     </div>
                 </Container>
             </section>
+
+            <Container className="py-8">
+                <div className="max-w-4xl">
+                    <AnswerFirst
+                        variant="light"
+                        answer="You can buy rental property with a self-directed IRA, but all expenses must be paid from the IRA and all income must return to it. You cannot live in the property, perform repairs yourself, or rent it to family members — these are prohibited transactions under IRC Section 4975."
+                        keyFacts={[
+                            "All expenses and income must flow through the IRA",
+                            "Prohibited transactions include self-dealing and family rentals (IRC 4975)",
+                            "UBIT tax applies to debt-financed real estate in an IRA",
+                        ]}
+                    />
+                </div>
+            </Container>
 
             {/* Step-by-Step Process */}
             <section className="py-16 bg-[#0C0D18]">
@@ -212,6 +234,8 @@ export default function BuyRentalPropertyWithIraPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-buy-rental-property-with-ira" />
 
             {/* Financing Options */}
             <section className="py-16 bg-white">
@@ -355,6 +379,8 @@ export default function BuyRentalPropertyWithIraPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/buy-rental-property-with-ira" />
 
             {/* Related Content */}
             <section className="py-12 bg-[#0C0D18]">

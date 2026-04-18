@@ -9,6 +9,11 @@ import { Metadata } from "next";
 import { AlertTriangle, ShieldX, Scale, Gavel, ArrowRight, XCircle, Home } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Home Storage Gold IRA: Why It's a Terrible Idea (2026 Warning)",
@@ -101,6 +106,11 @@ export default function HomeStorageGoldIraPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Home Storage Gold IRA", url: "/learn/home-storage-gold-ira" }
+            ])} />
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -119,11 +129,29 @@ export default function HomeStorageGoldIraPage() {
                 </Container>
             </header>
 
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Home storage Gold IRAs are not legal. The IRS requires Gold IRA assets to be held by an approved custodian at an IRS-approved depository. Storing IRA gold at home is treated as a taxable distribution, triggering income taxes plus a 10% early withdrawal penalty if under 59½ — potentially costing 40%+ of your retirement savings."
+                        keyFacts={[
+                            "IRC Section 408(m) requires IRA metals be held by a bank or approved trustee",
+                            "The 'LLC loophole' was rejected by the Tax Court in McNulty v. Commissioner (2021)",
+                            "A $100,000 home storage IRA can trigger $40,000+ in taxes and penalties",
+                            "Instead: use a legitimate Gold IRA with approved depository, and buy separate gold for home"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-home-storage-gold-ira" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -184,6 +212,8 @@ export default function HomeStorageGoldIraPage() {
                                 Some promoters will tell you the IRS hasn&apos;t &quot;explicitly banned&quot; home storage. This is technically true in the same way the IRS hasn&apos;t explicitly banned keeping your IRA in a shoebox. The rules require approved custodians and depositories. Your home meets neither requirement.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-home-storage-gold-ira" />
 
                         {/* Court Cases */}
                         <section id="court-cases" className="scroll-mt-32">
@@ -304,6 +334,8 @@ export default function HomeStorageGoldIraPage() {
                                 ))}
                             </div>
                         </section>
+
+                        <AutoRelatedContent currentUrl="/learn/home-storage-gold-ira" />
 
                         <AuthorBox />
 

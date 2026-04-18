@@ -9,6 +9,11 @@ import { Metadata } from "next";
 import { AlertTriangle, Shield, Search, Phone, CheckCircle2, ArrowRight, XCircle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Gold IRA Scams to Avoid in 2026: Protect Your Retirement",
@@ -104,6 +109,11 @@ export default function GoldIraScamsPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Gold IRA Scams to Avoid", url: "/learn/gold-ira-scams" }
+            ])} />
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -121,11 +131,29 @@ export default function GoldIraScamsPage() {
                 </Container>
             </header>
 
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="The most common Gold IRA scams include home storage schemes (which violate IRS rules and trigger 40%+ in taxes and penalties), excessive premiums of 15-30% over spot price, and high-pressure sales tactics pushing overpriced numismatic coins. In 2026, the FTC and state regulators have increased enforcement against fraudulent precious metals dealers."
+                        keyFacts={[
+                            "Home storage Gold IRAs are illegal — the IRS requires approved depositories",
+                            "Legitimate dealers charge 3-8% over spot; anything above 15% is a red flag",
+                            "BBB ratings, Trustpilot reviews, and complaint history are your best due-diligence tools",
+                            "High-pressure tactics like 'limited-time pricing' or 'buy today' are classic scam signals"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-gold-ira-scams" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -192,6 +220,8 @@ export default function GoldIraScamsPage() {
                                 <strong>How to Protect Yourself:</strong> Any company promoting home storage should be avoided entirely. Legitimate companies always use IRS-approved depositories like Delaware Depository, Brink&apos;s, or IDS.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-gold-ira-scams" />
 
                         {/* Excessive Premiums */}
                         <section id="excessive-premiums" className="scroll-mt-32">
@@ -535,6 +565,8 @@ export default function GoldIraScamsPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/gold-ira-scams" />
 
                         <AuthorBox />
 

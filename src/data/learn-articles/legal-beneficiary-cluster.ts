@@ -12,6 +12,13 @@ export const legalBeneficiaryArticles: LearnArticleRegistry = {
     metaTitle: 'Contingent Beneficiary Meaning Explained | Complete Guide 2026',
     metaDescription: 'Learn what a contingent beneficiary is, when they inherit, and common mistakes to avoid. Essential guide for protecting your retirement accounts.',
     keywords: ['contingent beneficiary', 'contingent beneficiary meaning', 'what is contingent beneficiary'],
+    answerFirst: 'A contingent beneficiary (also called a secondary beneficiary) is the person or entity who inherits your assets only if the primary beneficiary cannot, such as when the primary predeceases you, disclaims the inheritance, or cannot be located. Beneficiary designations on retirement accounts like 401ks and IRAs override your will, making proper contingent naming essential.',
+    answerFirstFacts: [
+      'Beneficiary designations override your will for retirement accounts and life insurance',
+      'Without a contingent beneficiary, assets may go through probate if the primary cannot inherit',
+      'You can name multiple contingent beneficiaries with specific percentage splits',
+      'Per stirpes vs per capita designation determines how grandchildren inherit if a child dies first',
+    ],
 
     targetKeyword: 'contingent beneficiary meaning',
     volume: 5100,
@@ -177,6 +184,13 @@ export const legalBeneficiaryArticles: LearnArticleRegistry = {
     metaTitle: 'Conservatorship vs Guardianship: Complete Comparison | 2026',
     metaDescription: 'Learn the difference between conservatorship and guardianship, when each applies, the court process, and how to avoid needing either through proper planning.',
     keywords: ['conservatorship vs guardianship', 'guardianship vs conservatorship', 'difference between conservatorship and guardianship'],
+    answerFirst: 'Conservatorship and guardianship are both court-ordered arrangements for incapacitated individuals, but they differ by scope: guardianship typically covers personal and healthcare decisions (guardian of the person) while conservatorship covers financial management (guardian of the estate). In some states these terms are interchangeable, while others use distinct definitions.',
+    answerFirstFacts: [
+      'Guardian of the person handles healthcare and personal care decisions for the incapacitated individual',
+      'Conservator of the estate manages finances, property, and financial decision-making',
+      'Both require a court petition, medical evaluation, and ongoing judicial oversight',
+      'Setting up Power of Attorney and healthcare proxy while competent avoids needing either arrangement',
+    ],
 
     targetKeyword: 'conservatorship vs guardianship',
     volume: 3900,
@@ -371,6 +385,13 @@ export const legalBeneficiaryArticles: LearnArticleRegistry = {
     metaTitle: 'Family Office Investment Strategy Guide | Wealth Management 2026',
     metaDescription: 'Discover how family offices invest for ultra-high-net-worth families. Learn about alternative assets, gold allocation, and strategies you can adapt.',
     keywords: ['family office investment strategy', 'family office investing', 'family office wealth management'],
+    answerFirst: 'Family offices managing wealth for ultra-high-net-worth families ($100 million+) allocate 40-50% of portfolios to alternative assets including private equity, real estate, and gold, prioritizing wealth preservation over maximum returns. Gold allocations of 5-15% are common among family offices as an inflation hedge and portfolio stabilizer.',
+    answerFirstFacts: [
+      'Family offices typically allocate 40-50% to alternative assets beyond traditional stocks and bonds',
+      'Gold allocations of 5-15% are standard among family offices for inflation protection',
+      'Family offices manage wealth for ultra-high-net-worth families with $100 million or more',
+      'Multi-generational thinking drives family office strategy with 20-50 year investment horizons',
+    ],
 
     targetKeyword: 'family office investment strategy',
     volume: 200,
@@ -554,6 +575,13 @@ export const legalBeneficiaryArticles: LearnArticleRegistry = {
     metaTitle: 'Best Simple Cell Phone for Seniors 2026 | Easy Phones for Elderly',
     metaDescription: 'Find the best simple cell phones for seniors. Compare Jitterbug, Lively, and other senior-friendly phones with easy-to-use features.',
     keywords: ['simple cell phone seniors', 'easy phone for elderly', 'senior friendly phone'],
+    answerFirst: 'The best simple cell phones for seniors include the Jitterbug (now Lively) flip phone and simplified smartphones with large buttons, loud volume, simple menus, and emergency SOS buttons. Monthly plans range from $15-50 depending on features, and hearing aid compatibility (M3/T3 rating or higher) is an important feature to check before purchasing.',
+    answerFirstFacts: [
+      'Jitterbug (Lively) and Consumer Cellular are the most popular senior-focused phone brands',
+      'Monthly plans for senior phones range from $15 to $50 depending on data and features',
+      'Key features to look for: large buttons, loud speaker, hearing aid compatibility, emergency SOS button',
+      'Basic flip phones offer maximum simplicity while simplified smartphones add camera and apps',
+    ],
 
     targetKeyword: 'simple cell phone for seniors',
     volume: 700,

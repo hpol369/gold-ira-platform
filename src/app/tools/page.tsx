@@ -4,6 +4,9 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import {
   Calculator,
   TrendingDown,
@@ -648,6 +651,8 @@ const categoryHeaderColors: Record<string, string> = {
 export default function ToolsPage() {
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Free Gold IRA Tools & Calculators", description: "Use our free tools to analyze your retirement portfolio. Crash simulator, wealth calculator, RMD calculator, and more to help you make informed decisions.", slug: "/tools" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools & Calculators", url: "/tools" }])} />
       <Navbar />
 
       {/* Hero Section */}
@@ -768,6 +773,12 @@ export default function ToolsPage() {
             subheadline="You've spent decades building your retirement savings. A Gold IRA specialist can show you how to protect it from the next market crash - no obligation, no pressure."
             trackSource="tools-hub"
           />
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools" />
         </Container>
       </section>
 

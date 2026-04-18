@@ -18,6 +18,13 @@ export const robsExpansionArticles: LearnArticleRegistry = {
       'robs business financing',
       'retirement funds for business'
     ],
+    answerFirst: 'ROBS (Rollover for Business Startups) lets you use 401(k) or IRA funds to finance a business without taxes or early withdrawal penalties. You create a C-Corporation, establish a new 401(k) plan, roll over your retirement funds, and the plan buys stock in your corporation. Setup costs run $3,000-$6,000, and you typically need at least $50,000 in retirement savings. Approximately 10,000-15,000 ROBS transactions occur annually.',
+    answerFirstFacts: [
+      'ROBS allows tax-free and penalty-free use of retirement funds for business financing through a C-Corporation structure',
+      'Setup costs for a ROBS transaction range from $3,000-$6,000 with ongoing annual administration required',
+      'Approximately 20% of new businesses fail in the first year and 50% within five years, putting retirement at risk',
+      'About 10,000-15,000 ROBS transactions occur each year in the United States',
+    ],
     targetKeyword: '401k business financing',
     volume: 50,
     difficulty: 0,
@@ -227,6 +234,13 @@ export const robsExpansionArticles: LearnArticleRegistry = {
       'robs franchise',
       '401k franchise purchase'
     ],
+    answerFirst: 'You can buy a franchise with your 401(k) using ROBS (Rollover for Business Startups), which allows tax-free and penalty-free access to retirement funds. Franchises are the most popular ROBS investment because they have proven business models and higher success rates than independent startups. ROBS funds can cover franchise fees, equipment, and working capital, and can be combined with SBA loans for larger investments.',
+    answerFirstFacts: [
+      'Franchises are the most common ROBS investment due to proven business models and higher success rates',
+      'ROBS covers franchise fees, equipment, and working capital with no taxes or penalties',
+      'ROBS can be combined with SBA loans to fund larger franchise investments',
+      'Many franchise brands are already familiar with ROBS and can guide buyers through the process',
+    ],
     targetKeyword: 'buy franchise with 401k',
     volume: 40,
     difficulty: 5,
@@ -417,6 +431,13 @@ export const robsExpansionArticles: LearnArticleRegistry = {
       'retirement funds business startup',
       'fund business with 401k',
       'retirement money for business'
+    ],
+    answerFirst: 'You have three main options to start a business with retirement funds: ROBS (full access, no taxes/penalties, but your retirement is at risk), a 401(k) loan (limited to $50,000, requires repayment), or early IRA withdrawal (triggers 10% penalty plus income taxes). ROBS is the only method that gives you full access without tax consequences, but 20% of new businesses fail in year one.',
+    answerFirstFacts: [
+      'ROBS is the only way to access full retirement funds for business without taxes or penalties',
+      '401(k) loans are capped at $50,000 and must be repaid with interest, even if the business fails',
+      'Early IRA withdrawal triggers a 10% penalty plus full income taxes, potentially losing 30-40% to the government',
+      'Approximately 20% of businesses fail in year one and 50% within five years regardless of funding source',
     ],
     targetKeyword: 'start business with retirement funds',
     volume: 70,
@@ -632,6 +653,13 @@ export const robsExpansionArticles: LearnArticleRegistry = {
       'is robs worth it',
       'robs disadvantages',
       'robs irs audit'
+    ],
+    answerFirst: 'ROBS pros include tax-free business funding, no debt or credit requirements, and full retirement fund access. ROBS cons include total loss of retirement savings if the business fails, higher IRS scrutiny, $3,000-$6,000 setup costs plus ongoing compliance, and zero portfolio diversification. The IRS flags ROBS transactions for examination more frequently than standard retirement accounts.',
+    answerFirstFacts: [
+      'ROBS provides tax-free and penalty-free business funding with no debt and no credit check required',
+      'IRS flags ROBS transactions for examination more frequently than standard retirement accounts',
+      'Setup costs range from $3,000-$6,000 plus ongoing Form 5500 filing and annual 401(k) administration',
+      'Business failure means total loss of retirement savings with no FDIC or SIPC protection',
     ],
     targetKeyword: 'robs 401k pros cons',
     volume: 30,

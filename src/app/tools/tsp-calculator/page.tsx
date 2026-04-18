@@ -4,7 +4,9 @@ import { Footer } from "@/components/layout/Footer";
 import { TSPCalculator } from "@/components/tools/TSPCalculator";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import {
   AlertTriangle,
   Calculator,
@@ -149,12 +151,19 @@ const faqSchema = {
   ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "TSP Calculator", url: "/tools/tsp-calculator" },
+]);
+
 export default function TSPCalculatorPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
+      <SchemaScript schema={breadcrumbs} />
 
       {/* Calculator Section */}
       <TSPCalculator />
@@ -482,6 +491,13 @@ export default function TSPCalculatorPage() {
               </div>
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Contextual CTA */}
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="tsp" trackSource="tools-tsp-calculator" />
         </Container>
       </section>
 

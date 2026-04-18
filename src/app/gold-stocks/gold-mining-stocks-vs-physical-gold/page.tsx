@@ -41,7 +41,7 @@ const articleSchema = {
         name: "Thomas Richardson",
     },
     publisher: {
-        "@type": "Organization",
+        "@type": "Person",
         name: "Rich Dad Retirement",
     },
     datePublished: "2026-01-27",

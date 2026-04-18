@@ -4,6 +4,10 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { FIRECalculator } from "@/components/tools/FIRECalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "FIRE Calculator - Financial Independence Retire Early Calculator",
@@ -81,6 +85,12 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "FIRE Calculator", url: "/tools/fire-calculator" },
+]);
+
 export default function FIRECalculatorPage() {
   return (
     <div className="min-h-screen bg-white text-[#F6F4EF]">
@@ -92,8 +102,14 @@ export default function FIRECalculatorPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <SchemaScript schema={breadcrumbs} />
       <Navbar />
       <FIRECalculator />
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="fire" trackSource="tools-fire-calculator" />
+        </Container>
+      </section>
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
@@ -102,6 +118,11 @@ export default function FIRECalculatorPage() {
             subheadline="Gold can provide stability during market downturns and help protect your path to financial independence."
             trackSource="tools-fire-calculator"
           />
+        </Container>
+      </section>
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools/fire-calculator" />
         </Container>
       </section>
       <Footer />

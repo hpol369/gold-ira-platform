@@ -1,13 +1,15 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import Link from "next/link";
 import { Coins, Target, Scale, ShieldCheck, TrendingUp, ArrowRight, CheckCircle2, AlertTriangle, Layers, Calculator, Sparkles } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Silver Stacking Guide 2026: How to Build Your Silver Stack",
@@ -19,6 +21,7 @@ export const metadata: Metadata = {
         type: "article",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/silver-stacking") },
 };
 
 const tocItems = [
@@ -150,6 +153,12 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Silver Stacking", url: "/guide/silver-stacking" },
+]);
+
 export default function SilverStackingGuidePage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
@@ -157,7 +166,23 @@ export default function SilverStackingGuidePage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
-            <Navbar />
+            <SchemaScript schema={breadcrumbs} />
+            
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Silver stacking is the practice of systematically buying and accumulating physical silver over time. Start with government-minted coins like American Silver Eagles ($3-8 premium over spot), then diversify into lower-premium bars as your stack grows past 100 oz."
+                        keyFacts={[
+                            "Beginners should start with sovereign coins (Silver Eagles, Maple Leafs) for maximum liquidity",
+                            "Generic rounds and bars carry 8-15% premiums vs 25-40% for American Silver Eagles",
+                            "Dollar-cost averaging ($100-200/month) is the most popular stacking strategy",
+                            "A Silver IRA lets you stack inside a tax-advantaged retirement account with .999 purity silver",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 {/* Hero Header */}
@@ -563,7 +588,7 @@ export default function SilverStackingGuidePage() {
                 </section>
             </div>
 
-            <Footer />
+            
         </main>
     );
 }

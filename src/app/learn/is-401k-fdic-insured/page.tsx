@@ -9,7 +9,12 @@ import { Metadata } from "next";
 import { ShieldX, ShieldCheck, Building2, AlertTriangle, ArrowRight, Coins, Scale, TrendingDown, Briefcase } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Is 401k FDIC Insured? What Actually Protects You",
@@ -97,6 +102,11 @@ export default function Is401kFDICInsuredPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Is 401(k) FDIC Insured?", url: "/learn/is-401k-fdic-insured" },
+            ])} />
             {/* Header */}
             <header className="bg-[#0C0D18] backdrop-blur-sm py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -114,11 +124,28 @@ export default function Is401kFDICInsuredPage() {
                 </Container>
             </header>
 
+            <Container className="py-8">
+                <div className="max-w-4xl mx-auto">
+                    <AnswerFirst
+                        variant="light"
+                        answer="No, your 401(k) is not FDIC insured. FDIC insurance only covers bank deposits (savings, checking, CDs) up to $250,000 per depositor. 401(k) investments in stocks, bonds, and mutual funds have no government insurance. However, SIPC protects brokerage accounts up to $500,000 if the brokerage firm fails."
+                        keyFacts={[
+                            "FDIC covers bank deposits only — not investment accounts",
+                            "SIPC protects brokerage accounts up to $500,000 (securities) + $250,000 (cash)",
+                            "Your 401(k) is at market risk, not institution risk",
+                        ]}
+                    />
+                </div>
+            </Container>
+
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-is-401k-fdic-insured" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -224,6 +251,8 @@ export default function Is401kFDICInsuredPage() {
                                 While FDIC protects against bank failure (institutional risk), ERISA protects against employer misconduct, bankruptcy, and creditor claims. For many people, ERISA protection is actually more relevant than FDIC would be.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-is-401k-fdic-insured" />
 
                         {/* SIPC Coverage */}
                         <section id="sipc" className="scroll-mt-32">
@@ -594,7 +623,7 @@ export default function Is401kFDICInsuredPage() {
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">You didn&apos;t work 30 years to watch a crash wipe it out. Physical gold doesn&apos;t care what the stock market does.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <LeadCaptureButton variant="default" source="is-401k-fdic-insured" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
-                                        Get Your Free Gold IRA Guide <ArrowRight className="ml-2 w-5 h-5" />
+                                        Get Your Free Precious Metals Guide <ArrowRight className="ml-2 w-5 h-5" />
                                     </LeadCaptureButton>
                                     <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-slate-200">
                                         <Link href="/what-is-a-gold-ira">Learn About Gold IRAs</Link>
@@ -602,6 +631,8 @@ export default function Is401kFDICInsuredPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/is-401k-fdic-insured" />
 
                         <AuthorBox />
 

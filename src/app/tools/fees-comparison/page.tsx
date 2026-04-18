@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { FeesComparison } from "@/components/tools/FeesComparison";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { AlertTriangle, CheckCircle2, DollarSign } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -46,6 +48,8 @@ const feeWarnings = [
 export default function FeesComparisonPage() {
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Gold IRA Fees Comparison Tool 2025 | Compare Costs", description: "Compare Gold IRA fees across top companies. See setup fees, annual fees, storage costs, and total expenses over time. Free comparison tool.", slug: "/tools/fees-comparison" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Fees Comparison", url: "/tools/fees-comparison" }])} />
       <Navbar />
 
       {/* Calculator Section */}

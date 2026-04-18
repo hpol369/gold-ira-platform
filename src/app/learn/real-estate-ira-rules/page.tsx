@@ -15,6 +15,12 @@ import {
     Shield
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Real Estate IRA Rules 2026: IRS Requirements Guide",
@@ -31,6 +37,8 @@ export const metadata: Metadata = {
 export default function RealEstateIraRulesPage() {
     return (
         <main className="min-h-screen bg-white">
+            <SchemaScript schema={articleSchema({ title: "Real Estate IRA Rules 2026: IRS Requirements Guide", description: "Complete guide to real estate IRA rules. Learn about prohibited transactions, disqualified persons, UBIT, and how to stay IRS compliant with your SDIRA.", slug: "/learn/real-estate-ira-rules" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Real Estate IRA Rules", url: "/learn/real-estate-ira-rules" }])} />
             {/* Hero Section */}
             <section className="relative py-12 lg:py-16 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#0C0D18] via-white to-[#161828]" />
@@ -63,6 +71,24 @@ export default function RealEstateIraRulesPage() {
                     </div>
                 </Container>
             </section>
+
+            <AnswerFirst
+                variant="light"
+                answer="Real estate IRA rules require that the IRA (not you personally) holds title to the property. You cannot live in it, vacation in it, or use it for any personal benefit. All repairs must be paid from the IRA by third-party contractors — you cannot perform maintenance yourself, even if you're qualified."
+                keyFacts={[
+                    "IRA holds title — not you personally",
+                    "No personal use: cannot live in, vacation in, or benefit from the property",
+                    "All expenses paid from IRA funds by third-party contractors only",
+                ]}
+            />
+
+            <div className="py-8 bg-white">
+                <Container>
+                    <div className="max-w-sm mx-auto lg:mx-0">
+                        <SidebarAuditWidget trackSource="learn-real-estate-ira-rules" />
+                    </div>
+                </Container>
+            </div>
 
             {/* Prohibited Transactions */}
             <section className="py-16 bg-[#0C0D18]">
@@ -171,6 +197,8 @@ export default function RealEstateIraRulesPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-real-estate-ira-rules" />
 
             {/* What You CAN Do */}
             <section className="py-16 bg-[#0C0D18]">
@@ -350,6 +378,8 @@ export default function RealEstateIraRulesPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/real-estate-ira-rules" />
 
             {/* Related Content */}
             <section className="py-12 bg-[#0C0D18]">

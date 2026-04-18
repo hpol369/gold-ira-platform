@@ -4,6 +4,10 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { GoldAllocationCalculator } from "@/components/tools/GoldAllocationCalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Gold Allocation Calculator | Optimal Portfolio %",
@@ -34,6 +38,12 @@ const schemaMarkup = {
   ],
 };
 
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "Gold Allocation Calculator", url: "/tools/gold-allocation-calculator" },
+]);
+
 export default function GoldAllocationCalculatorPage() {
   return (
     <div className="min-h-screen bg-whitetext-[#F6F4EF]">
@@ -41,8 +51,14 @@ export default function GoldAllocationCalculatorPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
+      <SchemaScript schema={breadcrumbs} />
       <Navbar />
       <GoldAllocationCalculator />
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="gold-allocation" trackSource="tools-gold-allocation-calculator" />
+        </Container>
+      </section>
       <section className="py-16 bg-white">
         <Container>
           <AugustaCTA
@@ -51,6 +67,11 @@ export default function GoldAllocationCalculatorPage() {
             subheadline="Learn how Augusta Precious Metals can help you add the right amount of gold to your retirement portfolio."
             trackSource="tools-gold-allocation-calculator"
           />
+        </Container>
+      </section>
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools/gold-allocation-calculator" />
         </Container>
       </section>
       <Footer />

@@ -9,6 +9,11 @@ import { Metadata } from "next";
 import { ShieldCheck, Coins, Building2, Globe, ArrowRight, TrendingUp, Lock, BarChart3 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Safe Haven Investments: 6 Assets for Crisis",
@@ -96,6 +101,28 @@ export default function SafeHavenInvestmentsPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Safe Haven Investments", url: "/learn/safe-haven-investments" },
+            ])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Safe haven investments are assets that hold or increase their value during economic downturns, stock market crashes, and geopolitical crises. The top safe haven assets are physical gold, U.S. Treasury bonds, the Swiss franc, and cash. Gold is considered the ultimate safe haven because it has maintained purchasing power for over 5,000 years and has no counterparty risk — it cannot default or go bankrupt."
+                        keyFacts={[
+                            "Gold rose 25% during the 2008 financial crisis while the S&P 500 fell 37%",
+                            "U.S. Treasuries are backed by the full faith of the government but lose value to inflation",
+                            "Cash is safe short-term but guaranteed to lose purchasing power at 3-4% annually",
+                            "Physical gold in an IRA combines safe-haven protection with tax-deferred growth"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#0C0D18] backdrop-blur-sm py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -118,6 +145,9 @@ export default function SafeHavenInvestmentsPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-safe-haven-investments" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -200,6 +230,8 @@ export default function SafeHavenInvestmentsPage() {
                                 <strong>How to invest:</strong> Physical gold (coins/bars), <Link href="/what-is-a-gold-ira">Gold IRAs</Link>, gold ETFs (GLD, IAU), or gold mining stocks. Physical gold in an IRA offers the best combination of safe haven protection and tax advantages.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-safe-haven-investments" />
 
                         {/* 2. Treasury Bonds */}
                         <section id="bonds" className="scroll-mt-32">
@@ -460,6 +492,8 @@ export default function SafeHavenInvestmentsPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/safe-haven-investments" />
 
                         <AuthorBox />
 

@@ -1,8 +1,6 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import {
@@ -204,7 +202,7 @@ export default function SilverToGoldRatioCalculatorPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
-      <Navbar />
+      
 
       <main className="pt-8 pb-16">
         <Container>
@@ -898,7 +896,7 @@ export default function SilverToGoldRatioCalculatorPage() {
         </Container>
       </main>
 
-      <Footer />
+      
     </div>
   );
 }

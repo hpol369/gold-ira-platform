@@ -156,7 +156,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Lifetime customer support',
     ],
     bestFor: 'High-value investors seeking premium service',
-    logo: '/images/companies/augusta-logo.png',
+    logo: '/images/companies/augusta-logo.svg',
   },
   goldco: {
     id: 'goldco',
@@ -170,7 +170,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Excellent buyback program',
     ],
     bestFor: 'Mid-range investors wanting established company',
-    logo: '/images/companies/goldco-logo.png',
+    logo: '/images/companies/goldco-logo.svg',
   },
   americanHartford: {
     id: 'americanHartford',
@@ -184,7 +184,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Family-owned business',
     ],
     bestFor: 'Value-conscious investors',
-    logo: '/images/companies/american-hartford-logo.png',
+    logo: '/images/companies/american-hartford-logo.svg',
   },
   noble: {
     id: 'noble',
@@ -198,7 +198,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Fast account setup',
     ],
     bestFor: 'First-time gold investors with smaller budgets',
-    logo: '/images/companies/noble-gold-logo.png',
+    logo: '/images/companies/noble-gold-logo.svg',
   },
   birch: {
     id: 'birch',
@@ -212,7 +212,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Excellent customer reviews',
     ],
     bestFor: 'Education-focused investors',
-    logo: '/images/companies/birch-logo.png',
+    logo: '/images/companies/birch-logo.svg',
   },
 
   // Crypto IRA Companies
@@ -228,7 +228,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Physical gold option included',
     ],
     bestFor: 'Active crypto traders wanting IRA benefits',
-    logo: '/images/companies/itrustcapital-logo.png',
+    logo: '/images/companies/itrustcapital-logo.svg',
   },
   altoIra: {
     id: 'altoIra',
@@ -242,7 +242,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Low monthly fees',
     ],
     bestFor: 'Beginners wanting crypto exposure',
-    logo: '/images/companies/alto-ira-logo.png',
+    logo: '/images/companies/alto-ira-logo.svg',
   },
   bitcoinIra: {
     id: 'bitcoinIra',
@@ -256,7 +256,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'White-glove service',
     ],
     bestFor: 'Security-focused crypto investors',
-    logo: '/images/companies/bitcoin-ira-logo.png',
+    logo: '/images/companies/bitcoin-ira-logo.svg',
   },
 
   // Self-Directed IRA Custodians
@@ -272,7 +272,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Unlimited investments',
     ],
     bestFor: 'Self-directed investors wanting checkbook control',
-    logo: '/images/companies/rocket-dollar-logo.png',
+    logo: '/images/companies/rocket-dollar-logo.svg',
   },
   equityTrust: {
     id: 'equityTrust',
@@ -286,7 +286,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Educational webinars',
     ],
     bestFor: 'Real estate IRA investors',
-    logo: '/images/companies/equity-trust-logo.png',
+    logo: '/images/companies/equity-trust-logo.svg',
   },
   entrust: {
     id: 'entrust',
@@ -300,7 +300,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'IRA-to-IRA transfers',
     ],
     bestFor: 'Experienced alternative investors',
-    logo: '/images/companies/entrust-logo.png',
+    logo: '/images/companies/entrust-logo.svg',
   },
   directedIra: {
     id: 'directedIra',
@@ -314,7 +314,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'IRA LLC setup assistance',
     ],
     bestFor: 'Alternative investment enthusiasts',
-    logo: '/images/companies/directed-ira-logo.png',
+    logo: '/images/companies/directed-ira-logo.svg',
   },
 
   // ROBS 401(k) Providers
@@ -330,7 +330,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Business coaching included',
     ],
     bestFor: 'Entrepreneurs using retirement funds for business',
-    logo: '/images/companies/guidant-logo.png',
+    logo: '/images/companies/guidant-logo.svg',
   },
   benetrends: {
     id: 'benetrends',
@@ -344,7 +344,7 @@ export const companies: Record<string, CompanyRecommendation> = {
       'Ongoing compliance support',
     ],
     bestFor: 'Franchise buyers with retirement funds',
-    logo: '/images/companies/benetrends-logo.png',
+    logo: '/images/companies/benetrends-logo.svg',
   },
 };
 
@@ -431,8 +431,8 @@ function getGoldIRARecommendation(budget: BudgetRange): RoutingResult {
 
     case '50k-100k':
       return {
-        primary: companies.goldco,
-        alternatives: [companies.augusta, companies.americanHartford],
+        primary: companies.augusta,
+        alternatives: [companies.goldco, companies.americanHartford],
       };
 
     case '25k-50k':

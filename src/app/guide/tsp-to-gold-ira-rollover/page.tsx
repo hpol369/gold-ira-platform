@@ -1,18 +1,24 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, Building2, Lock, RefreshCw } from "lucide-react";
 import Link from "next/link";
-import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { createPageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-    title: "TSP to Gold IRA Rollover Guide: Federal & Military Rules (2026)",
-    description: "Complete TSP to Gold IRA rollover guide for Federal Employees and Military. Learn Form TSP-70, in-service withdrawals, and tax-free transfers.",
-};
+export const metadata = createPageMetadata({
+    title: "TSP to Gold IRA Rollover: Federal & Military Guide (2026)",
+    description: "How to roll over your Thrift Savings Plan (TSP) to a Gold IRA. Step-by-step process, Form TSP-70, in-service withdrawal rules, and tax-free transfer options for federal employees and military.",
+    url: "https://www.richdadretirement.com/guide/tsp-to-gold-ira-rollover",
+    type: "article",
+});
 
 const tocItems = [
     { id: "what-is-tsp-rollover", label: "What is a TSP Rollover?" },
@@ -34,8 +40,9 @@ const schema = {
             "description": "Complete guide for Federal Employees and Military personnel on rolling over TSP funds to a Gold IRA. Learn about Form TSP-70, in-service withdrawals, and tax-free transfers.",
             "image": "https://richdadretirement.com/images/tsp-rollover-guide-cover.jpg",
             "author": {
-                "@type": "Organization",
-                "name": "Rich Dad Retirement"
+                "@type": "Person",
+                "name": "Thomas Richardson",
+                "url": "https://www.richdadretirement.com/author/thomas-richardson"
             },
             "publisher": {
                 "@type": "Organization",
@@ -46,7 +53,7 @@ const schema = {
                 }
             },
             "datePublished": "2026-01-17",
-            "dateModified": "2026-01-17"
+            "dateModified": "2026-03-22"
         },
         {
             "@type": "FAQPage",
@@ -80,17 +87,39 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "TSP to Gold IRA Rollover", url: "/guide/tsp-to-gold-ira-rollover" },
+]);
+
 export default function TspRolloverPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Roll Over Your TSP to a Gold IRA",
+                description: "Step-by-step guide for federal employees to transfer Thrift Savings Plan funds into a Gold IRA",
+                totalTime: "P28D",
+                steps: [
+                    { name: "Confirm TSP Rollover Eligibility", text: "You can roll over your TSP after separating from federal service, or at age 59½ while still employed. Active employees under 59½ cannot do a full rollover." },
+                    { name: "Choose a Gold IRA Company", text: "Select a Gold IRA provider experienced with TSP rollovers. Augusta Precious Metals and Goldco both handle TSP transfers regularly." },
+                    { name: "Open a Self-Directed Gold IRA", text: "Your Gold IRA company helps you open an account with an IRS-approved custodian. This takes 1-3 business days." },
+                    { name: "Complete TSP Form TSP-99", text: "Submit TSP withdrawal form TSP-99 requesting a direct transfer to your new Gold IRA custodian. Processing typically takes 7-10 business days." },
+                    { name: "Select and Purchase Precious Metals", text: "Once funds arrive in your Gold IRA, work with your advisor to select IRS-approved gold and silver coins or bars for your portfolio." },
+                ],
+            })} />
             {/* Header */}
             <header className="bg-[#0C0D18] py-20 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.1)] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#B22234]/20">
-                            <span className="w-2 h-2 rounded-full bg-[#DC2626]"></span>
-                            For Federal & Military Personnel
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.1)] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] border border-[#B22234]/20">
+                                <span className="w-2 h-2 rounded-full bg-[#DC2626]"></span>
+                                For Federal &amp; Military Personnel
+                            </div>
+                            <span className="text-[#A8A39A] text-sm">Updated March 2026</span>
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-[#F6F4EF]">
                             TSP to Gold IRA Rollover Guide
@@ -101,6 +130,18 @@ export default function TspRolloverPage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                answer="You can roll over your TSP (Thrift Savings Plan) to a Gold IRA tax-free if you've separated from federal service or are age 59½+. Active employees can do an in-service withdrawal of the civilian portion. The process takes 2-4 weeks through a direct rollover to avoid the mandatory 20% withholding."
+                keyFacts={[
+                    "Must have separated from service OR be 59½+ for full rollover",
+                    "Active employees: partial in-service withdrawal available for civilian contributions",
+                    "Direct rollover avoids the mandatory 20% federal tax withholding",
+                    "TSP to Gold IRA transfers are reported on Form 1099-R but are not taxable events",
+                    "FERS and CSRS employees are both eligible",
+                ]}
+                className="mb-8 max-w-3xl"
+            />
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12">
@@ -357,6 +398,15 @@ export default function TspRolloverPage() {
                             </div>
                         </div>
 
+                        <SourcesSection
+                            sources={[
+                                { name: "TSP.gov — Withdrawals and Rollovers", url: "https://www.tsp.gov/", accessDate: "March 2026" },
+                                { name: "OPM.gov — Federal Employees Retirement System", url: "https://www.opm.gov/retirement-center/", accessDate: "March 2026" },
+                                { name: "IRS.gov — Rollover Rules for Retirement Plans", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions", accessDate: "March 2026" },
+                            ]}
+                            lastVerified="March 2026"
+                        />
+
                         <AuthorBox />
 
                     </article>
@@ -367,6 +417,12 @@ export default function TspRolloverPage() {
             <section className="py-16 bg-[#121423]">
                 <Container>
                     <AugustaCTA variant="footer" linkContext="fees" trackSource="guide-tsp-to-gold-ira-rollover" />
+                </Container>
+            </section>
+
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/guide/tsp-to-gold-ira-rollover" />
                 </Container>
             </section>
         </main>

@@ -9,7 +9,12 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { getAllMedicaidArticles } from "@/data/medicaid-planning";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Shield, ArrowRight, Clock, Home, AlertTriangle, BookOpen, Scale } from "lucide-react";
+import { AuthorBox } from "@/components/guide/AuthorBox";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
   title: "Medicaid Planning Guide | Protect Assets & Qualify for Care",
@@ -29,6 +34,8 @@ export default function MedicaidPlanningPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Medicaid Planning Guide | Protect Assets & Qualify for Care", description: "Learn how to protect your assets while qualifying for Medicaid long-term care. Irrevocable trusts, lookback periods, estate recovery, and legal strategies.", slug: "/medicaid-planning" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Medicaid Planning Guide", url: "/medicaid-planning" }])} />
       <Navbar />
 
       {/* Hero Section */}
@@ -86,6 +93,29 @@ export default function MedicaidPlanningPage() {
           </div>
         </Container>
       </section>
+
+      {/* Answer First - GEO optimized */}
+      <section className="py-8 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AnswerFirst
+              answer="Medicaid's 5-year lookback period examines all asset transfers made within 60 months of applying. Gold IRAs in qualified retirement accounts may be exempt from Medicaid asset counting in many states, but rules vary significantly."
+              keyFacts={[
+                "5-year lookback applies to all gifts and transfers (Medicaid.gov)",
+                "Retirement accounts are exempt in many states",
+                "Spousal protections allow the community spouse to keep significant assets",
+              ]}
+              variant="dark"
+            />
+          </div>
+        </Container>
+      </section>
+
+      {/* Author & Last Updated */}
+      <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+        <AuthorBox variant="compact" />
+        <p className="text-sm text-[#A8A39A]">Last updated: March 2026</p>
+      </div>
 
       {/* Key Stats */}
       <section className="py-8 border-y border-[#2A2D42] bg-white">
@@ -221,6 +251,19 @@ export default function MedicaidPlanningPage() {
           />
         </Container>
       </section>
+
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <SourcesSection
+            sources={[
+              { name: "Medicaid.gov — Eligibility", url: "https://www.medicaid.gov/medicaid/eligibility/index.html", accessDate: "Mar 2026" },
+              { name: "IRS — Retirement Topics: Exceptions to Tax on Early Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions", accessDate: "Mar 2026" },
+              { name: "AARP — Understanding Medicaid's Asset Rules", url: "https://www.aarp.org/health/medicaid/", accessDate: "Mar 2026" },
+            ]}
+            lastVerified="March 2026"
+          />
+        </div>
+      </div>
 
       <Footer />
     </main>

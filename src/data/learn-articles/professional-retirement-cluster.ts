@@ -13,6 +13,13 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Dentist Retirement Planning: Practice Sale & Tax Strategies | 2026',
     metaDescription: 'Complete dentist retirement planning guide. Learn practice sale valuation, SEP-IRA vs Solo 401k vs Defined Benefit plans, and how to protect practice sale proceeds.',
     keywords: ['dentist retirement planning', 'dental practice retirement', 'dentist retire', 'dental practice sale retirement'],
+    answerFirst: 'Dental practice valuations typically range from 60-80% of annual gross collections, and a Defined Benefit plan can shelter $200,000+ annually in tax-deferred contributions for high-earning dentists over age 50. Solo 401k allows up to $69,000 in contributions (2024), and combining both accounts maximizes tax deductions during peak earning years.',
+    answerFirstFacts: [
+      'Dental practice valuations range from 60-80% of annual gross collections or 1.5-2.5x net income',
+      'Defined Benefit plans allow tax-deductible contributions of $200,000+ annually for dentists over 50',
+      'Solo 401k contribution limit is $69,000 plus $7,500 catch-up for dentists age 50+ in 2024',
+      'Start succession planning 5-10 years before your target retirement date for maximum practice value',
+    ],
 
     targetKeyword: 'dentist retirement planning',
     volume: 80,
@@ -183,6 +190,13 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Pilot Retirement Age: FAA 65 Rule & Airline Pensions | 2026',
     metaDescription: 'Learn about the FAA mandatory retirement age of 65 for pilots, airline pension options (Delta, United, American), and what to do with your lump sum payout.',
     keywords: ['pilot retirement age', 'airline pilot retirement', 'mandatory retirement age pilots', 'FAA age 65'],
+    answerFirst: 'The FAA mandates airline transport pilots retire at age 65, a rule established by the Fair Treatment for Experienced Pilots Act of 2007 (previously age 60). Most major airlines offer defined benefit pensions plus 401k plans, and senior captains at legacy carriers can accumulate pension lump sums exceeding $1-2 million.',
+    answerFirstFacts: [
+      'FAA mandatory retirement age is 65 for Part 121 commercial airline pilots with no waivers available',
+      'Senior captains at legacy airlines may receive pension lump sums exceeding $1-2 million',
+      'The mandatory retirement age was raised from 60 to 65 in 2007 by the Fair Treatment for Experienced Pilots Act',
+      'Private, cargo, and corporate pilots have no mandatory retirement age under FAA rules',
+    ],
 
     targetKeyword: 'pilot retirement age',
     volume: 800,
@@ -356,6 +370,13 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Veterinarian Retirement Planning: Practice Sale Guide | 2026',
     metaDescription: 'Complete veterinarian retirement guide. Learn vet practice valuation, associate buyouts, Solo 401k strategies, and how to protect your practice sale proceeds.',
     keywords: ['veterinarian retirement', 'vet retirement planning', 'veterinary practice sale'],
+    answerFirst: 'Veterinary practice valuations typically range from 60-85% of gross revenue, with corporate consolidators like Mars and NVA often paying 20-30% premiums above market. Solo 401k allows up to $69,000 in annual contributions (2024), and combining it with a Defined Benefit plan enables total deferrals exceeding $250,000 per year for older veterinarians.',
+    answerFirstFacts: [
+      'Veterinary practices typically sell for 60-85% of gross revenue or 4-8x EBITDA',
+      'Corporate consolidators (Mars, VCA, NVA) now own 25%+ of US veterinary practices',
+      'Average veterinary school debt exceeds $180,000 for recent graduates',
+      'Specialty emergency and surgical practices can command 7-10x EBITDA from corporate buyers',
+    ],
 
     targetKeyword: 'veterinarian retirement',
     volume: 40,
@@ -496,6 +517,13 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Nurse Retirement Pension: Hospital 403b & Pension Guide | 2026',
     metaDescription: 'Complete guide to nurse retirement planning. Learn about hospital pensions, 403b plans, travel nurse retirement strategies, and how to maximize nursing retirement benefits.',
     keywords: ['nurse retirement pension', 'nursing pension plans', 'hospital nurse retirement'],
+    answerFirst: 'Many hospitals still offer both pension plans and 403b retirement accounts for nurses, with 403b contribution limits matching 401k at $23,000 plus $7,500 catch-up for those age 50+ in 2024. The 15-year rule allows nurses with 15+ years at the same hospital to contribute an additional $3,000 per year to their 403b, a benefit most nurses miss.',
+    answerFirstFacts: [
+      '403b contribution limit matches 401k at $23,000 plus $7,500 catch-up if age 50+ in 2024',
+      'The 15-year rule allows an extra $3,000/year 403b contribution for 15+ year hospital employees',
+      'Travel nurses must self-fund retirement through SEP-IRA or Solo 401k with no employer match',
+      'VA hospital nurses receive federal FERS pension plus TSP with government matching contributions',
+    ],
 
     targetKeyword: 'nurse retirement pension',
     volume: 50,
@@ -634,6 +662,13 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Realtor Retirement Plan: Real Estate Agent IRA Guide | 2026',
     metaDescription: 'Complete realtor retirement planning guide. Learn SEP-IRA strategies, commission income planning, and self-employed retirement options for real estate agents.',
     keywords: ['realtor retirement plan', 'real estate agent retirement', 'realtor ira'],
+    answerFirst: 'Most realtors are self-employed independent contractors who must create their own retirement plans. A Solo 401k offers the highest contribution limits at $69,000 plus $7,500 catch-up in 2024 and beats a SEP-IRA for realtors earning under $350,000 in net income. Commission income volatility requires saving 15-25% of every check consistently.',
+    answerFirstFacts: [
+      'Solo 401k allows $69,000 plus $7,500 catch-up (2024), beating SEP-IRA for incomes under $350,000',
+      'SEP-IRA limits contributions to 25% of net self-employment income up to $69,000',
+      'A realtor with $150,000 net income can contribute up to $37,500 to a SEP-IRA',
+      'Real estate concentration risk means realtors should diversify retirement beyond property investments',
+    ],
 
     targetKeyword: 'realtor retirement plan',
     volume: 30,
@@ -785,6 +820,13 @@ export const professionalRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Pastor Retirement Planning: Clergy 403b9 & Housing Allowance | 2026',
     metaDescription: 'Complete pastor retirement planning guide. Learn about 403b9 plans, minister housing allowance in retirement, denominational pensions, and clergy tax strategies.',
     keywords: ['pastor retirement planning', 'clergy retirement', 'minister housing allowance retirement'],
+    answerFirst: 'Ministers can exclude housing allowance (parsonage allowance) from federal income tax even in retirement, saving thousands annually when distributions from 403b9 plans are properly designated as housing allowance by the pension board. Clergy face unique dual-status taxation: they are employees for income tax purposes but self-employed for Social Security, paying the full 15.3% SECA tax.',
+    answerFirstFacts: [
+      'Retired ministers can designate retirement distributions as tax-free housing allowance',
+      'Clergy pay the full 15.3% self-employment tax (SECA) even when employed by a church',
+      '403b9 church plans are exempt from ERISA regulations and allow housing allowance designation',
+      'Opting out of Social Security via Form 4361 is irrevocable and eliminates all future SS benefits',
+    ],
 
     targetKeyword: 'pastor retirement planning',
     volume: 20,

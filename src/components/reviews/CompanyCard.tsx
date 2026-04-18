@@ -158,7 +158,7 @@ export function CompanyCard({
               <a
                 href={getTrackedLink(company.affiliateLink, `company-card-${company.slug}`, company.slug)}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="sponsored noopener noreferrer"
                 className="flex-1 text-center py-3 px-4 rounded-lg font-semibold border border-[#2A2D42] text-[#D0CCC4] hover:bg-[#121423] transition-all text-sm"
               >
                 Visit Website

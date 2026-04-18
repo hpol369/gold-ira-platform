@@ -6,13 +6,17 @@ import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { ShieldCheck, Calendar, DollarSign, TrendingUp, AlertTriangle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Gold IRA for Seniors: Retirement Protection Guide (2026)",
     description: "Is a Gold IRA right for seniors? Learn about RMD rules, safe withdrawal strategies, and how to protect your nest egg from inflation and market crashes.",
+    alternates: { canonical: getCanonicalUrl("/guide/gold-ira-for-seniors") },
 };
 
 const takeaways = [
@@ -89,10 +93,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Gold IRA for Seniors", url: "/guide/gold-ira-for-seniors" },
+]);
+
 export default function GoldIraForSeniorsPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -109,6 +120,18 @@ export default function GoldIraForSeniorsPage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                answer="Seniors aged 59½+ can open a Gold IRA without early withdrawal penalties and begin taking Required Minimum Distributions (RMDs) at age 73. For retirees with $50,000-$500,000 in savings, a 10-20% gold allocation provides inflation protection while preserving capital. Augusta Precious Metals is rated #1 for seniors due to their dedicated education program."
+                keyFacts={[
+                    "No penalty for distributions after age 59½",
+                    "RMDs start at 73 (SECURE Act 2.0) — you can take gold in-kind or sell and distribute cash",
+                    "Traditional Gold IRA contributions may still be deductible if you lack workplace retirement plan",
+                    "Roth Gold IRA: no RMDs, tax-free distributions — ideal for legacy planning",
+                    "Most custodians offer phone support specifically for seniors",
+                ]}
+                className="mb-8 max-w-3xl"
+            />
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

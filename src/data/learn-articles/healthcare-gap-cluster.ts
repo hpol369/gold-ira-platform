@@ -12,6 +12,13 @@ export const healthcareGapArticles: LearnArticleRegistry = {
     metaTitle: 'COBRA vs ACA Marketplace: Complete Comparison Guide | 2026',
     metaDescription: 'Compare COBRA vs ACA marketplace health insurance after job loss or retirement. Learn cost differences, coverage comparisons, and which option saves you money.',
     keywords: ['cobra vs aca marketplace', 'cobra vs obamacare', 'cobra or marketplace'],
+    answerFirst: 'The ACA Marketplace is usually cheaper than COBRA for most people leaving their jobs. COBRA lets you keep your exact same plan for 18 months, but you pay the full premium (employer no longer subsidizes it) — typically $600-$2,000/month. The ACA Marketplace offers subsidies based on your income that can reduce premiums to $0-$500/month.',
+    answerFirstFacts: [
+      'COBRA costs the full premium plus 2% admin fee — averaging $600-$700/month for an individual',
+      'ACA Marketplace subsidies can reduce premiums to $0-$500/month depending on your income',
+      'COBRA lasts only 18 months (36 months in some cases); ACA coverage has no time limit',
+      'You have 60 days to elect COBRA and losing job coverage triggers a Special Enrollment Period for ACA',
+    ],
 
     targetKeyword: 'cobra vs aca marketplace',
     volume: 20,
@@ -191,6 +198,13 @@ export const healthcareGapArticles: LearnArticleRegistry = {
     metaTitle: 'Health Insurance 55 to 65: Options Before Medicare | 2026',
     metaDescription: 'Explore health insurance options for ages 55-65 before Medicare. Compare COBRA, ACA marketplace, spouse plans, short-term insurance, and health sharing ministries.',
     keywords: ['health insurance 55 to 65', 'health insurance before medicare', 'early retirement health insurance'],
+    answerFirst: 'From 55 to 65, before Medicare kicks in, your health insurance options are: ACA Marketplace (best for most), COBRA (temporary, expensive), a spouse\'s employer plan, part-time work with benefits, or health sharing ministries (risky). The ACA Marketplace with income-based subsidies is usually the most affordable option for early retirees.',
+    answerFirstFacts: [
+      'Medicare does not begin until age 65 — creating a potential 10-year healthcare gap for early retirees',
+      'ACA Marketplace premiums for a 60-year-old average $800-$1,500/month before subsidies',
+      'Managing your MAGI (Modified Adjusted Gross Income) below $60,000 unlocks substantial ACA subsidies',
+      'Part-time work at companies like Starbucks, UPS, or Costco can provide employer health benefits',
+    ],
 
     targetKeyword: 'health insurance 55 to 65',
     volume: 480,
@@ -388,6 +402,13 @@ export const healthcareGapArticles: LearnArticleRegistry = {
     metaTitle: 'Retiring Before 65 Healthcare Options: Complete Guide | 2026',
     metaDescription: 'Planning early retirement? Learn all healthcare options before Medicare at 65. Master ACA subsidies, avoid the healthcare cliff, and budget for medical costs.',
     keywords: ['retiring before 65 healthcare', 'early retirement healthcare', 'healthcare early retirement options'],
+    answerFirst: 'If you retire before 65, you need to plan for health coverage until Medicare starts. The best option for most early retirees is the ACA Marketplace with income-based subsidies. By managing your retirement withdrawals to keep income below the subsidy threshold (about $60,000 for a couple), you can get quality coverage for $200-$500/month.',
+    answerFirstFacts: [
+      'ACA subsidies are based on MAGI — controlling your retirement withdrawals controls your premiums',
+      'Roth IRA withdrawals do not count as income for ACA subsidy purposes — a powerful planning tool',
+      'The "healthcare cliff" disappeared in 2021 — going over the subsidy threshold no longer eliminates all subsidies',
+      'Budget $500-$1,500/month for healthcare costs per person from early retirement to Medicare at 65',
+    ],
 
     targetKeyword: 'retiring before 65 healthcare',
     volume: 390,
@@ -589,6 +610,13 @@ export const healthcareGapArticles: LearnArticleRegistry = {
     metaTitle: 'Healthcare Costs Early Retirement: Budget & Planning Guide | 2026',
     metaDescription: 'Plan for healthcare costs in early retirement. Get premium estimates, understand inflation factors, maximize HSA strategies, and create a healthcare budget worksheet.',
     keywords: ['healthcare costs early retirement', 'health insurance costs retirement', 'medical expenses retirement planning'],
+    answerFirst: 'Healthcare costs in early retirement average $500-$1,500 per month per person before Medicare at 65, and a 65-year-old couple will need roughly $315,000+ for healthcare throughout retirement (Fidelity estimate). Healthcare inflation runs 5-7% annually — roughly double general inflation — making it the single biggest retirement expense threat.',
+    answerFirstFacts: [
+      'Fidelity estimates a 65-year-old couple needs $315,000+ for healthcare costs throughout retirement',
+      'Healthcare inflation runs 5-7% per year — double the rate of general inflation',
+      'ACA premiums for a 60-year-old: $800-$1,500/month before subsidies',
+      'HSA (Health Savings Account) offers triple tax advantages and can be used as a retirement healthcare fund',
+    ],
 
     targetKeyword: 'healthcare costs early retirement',
     volume: 170,

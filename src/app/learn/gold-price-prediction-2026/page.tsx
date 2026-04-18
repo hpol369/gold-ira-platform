@@ -1,11 +1,15 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, TrendingUp, TrendingDown, AlertTriangle, BarChart3, Globe, DollarSign, Building2, Shield, Zap } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Gold Price Prediction 2026: Expert Forecasts & Analysis",
@@ -99,7 +103,24 @@ const bearishFactors = [
 export default function GoldPricePrediction2026Page() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            <SchemaScript schema={articleSchema({ title: "Gold Price Prediction 2026: Expert Forecasts & Analysis", description: "What will gold prices do in 2026? Expert predictions from major banks, analysts, and market factors driving gold. Updated analysis for investors.", slug: "/learn/gold-price-prediction-2026" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Gold Price Prediction 2026", url: "/learn/gold-price-prediction-2026" }])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Gold price forecasts for 2026 range from $2,400 to $3,200 per ounce according to major banks and analysts. Goldman Sachs, JP Morgan, and Bank of America have all raised gold targets citing central bank buying, geopolitical uncertainty, and persistent inflation. The key drivers are record central bank purchases (1,000+ tons annually since 2022), de-dollarization trends, and potential Fed rate cuts."
+                        keyFacts={[
+                            "Major bank consensus: $2,400-$3,200/oz range for 2026",
+                            "Central banks bought 1,000+ tons of gold annually since 2022 — a 55-year high",
+                            "Gold has outperformed the S&P 500 over the past 5 years",
+                            "Key catalysts: Fed rate cuts, geopolitical tensions, US debt exceeding $36 trillion",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 md:py-24 border-b border-[#2A2D42]">
@@ -151,6 +172,8 @@ export default function GoldPricePrediction2026Page() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-gold-price-prediction-2026" />
 
             {/* Main Content */}
             <section className="py-16">
@@ -376,6 +399,8 @@ export default function GoldPricePrediction2026Page() {
                 </Container>
             </section>
 
+            <AutoRelatedContent currentUrl="/learn/gold-price-prediction-2026" />
+
             {/* Related Content */}
             <section className="py-12 bg-[#0C0D18] border-t border-[#2A2D42]">
                 <Container>
@@ -404,7 +429,7 @@ export default function GoldPricePrediction2026Page() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

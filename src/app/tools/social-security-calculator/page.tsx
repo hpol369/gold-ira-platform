@@ -4,8 +4,20 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
+import { Container } from '@/components/ui/Container';
+import { AutoRelatedContent } from '@/components/content/RelatedContent';
 import { Footer } from '@/components/layout/Footer';
 import { AugustaCTA } from '@/components/cta/AugustaCTA';
+import { CalculatorCTA } from '@/components/widgets/CalculatorCTA';
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { SourcesSection } from "@/components/content/SourcesSection";
+
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "Social Security Calculator", url: "/tools/social-security-calculator" },
+]);
 
 export default function SocialSecurityCalculatorPage() {
   // Form state
@@ -137,6 +149,7 @@ export default function SocialSecurityCalculatorPage() {
   return (
     <>
       <Navbar />
+      <SchemaScript schema={breadcrumbs} />
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 overflow-hidden">
@@ -619,6 +632,9 @@ export default function SocialSecurityCalculatorPage() {
                     </ul>
                   </div>
 
+                  {/* Contextual CTA */}
+                  <CalculatorCTA calculatorType="social-security" trackSource="tools-social-security-calculator" />
+
                   {/* CTA */}
                   <AugustaCTA
                     variant="inline"
@@ -741,6 +757,25 @@ export default function SocialSecurityCalculatorPage() {
               </Link>
             </div>
           </div>
+        </section>
+        <section className="py-12 bg-white">
+          <Container>
+            <AutoRelatedContent currentUrl="/tools/social-security-calculator" />
+          </Container>
+        </section>
+
+        <section className="bg-white">
+          <Container>
+            <div className="max-w-4xl mx-auto px-4 pb-12">
+              <SourcesSection
+                sources={[
+                  { name: "SSA — Your Retirement Benefit: How It's Figured", url: "https://www.ssa.gov/pubs/EN-05-10070.pdf", accessDate: "Mar 2026" },
+                  { name: "SSA — Benefit Reduction for Early Retirement", url: "https://www.ssa.gov/benefits/retirement/planner/agereduction.html", accessDate: "Mar 2026" },
+                ]}
+                lastVerified="March 2026"
+              />
+            </div>
+          </Container>
         </section>
       </main>
       <Footer />

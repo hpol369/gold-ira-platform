@@ -1,10 +1,42 @@
-import { createClient } from "@supabase/supabase-js";
+import { createClient, SupabaseClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.SUPABASE_URL!;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY!;
+// Lazy-initialized server-side Supabase client with service role (full access).
+// Lazy init is critical: during `next build`, page data collection may load
+// modules that import this file even when env vars aren't available — which
+// used to throw "supabaseUrl is required" at module evaluation and break the
+// build. Instantiating on first use pushes any missing-env failure to request
+// time, where it can be handled gracefully.
+//
+// Supports both env var naming conventions:
+//   - SUPABASE_URL / SUPABASE_SERVICE_KEY (legacy, used in existing Vercel env)
+//   - NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY (modern, .env.example)
+let _client: SupabaseClient | null = null;
 
-// Server-side Supabase client with service role (full access)
-export const supabase = createClient(supabaseUrl, supabaseServiceKey);
+function getClient(): SupabaseClient {
+  if (_client) return _client;
+
+  const url = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+  if (!url || !key) {
+    throw new Error(
+      "[SUPABASE] Missing env: set SUPABASE_URL (or NEXT_PUBLIC_SUPABASE_URL) and SUPABASE_SERVICE_KEY (or SUPABASE_SERVICE_ROLE_KEY)"
+    );
+  }
+
+  _client = createClient(url, key);
+  return _client;
+}
+
+// Proxy that defers client creation until first property access.
+// Preserves `import { supabase }` usage across the codebase.
+export const supabase = new Proxy({} as SupabaseClient, {
+  get(_target, prop) {
+    const client = getClient() as unknown as Record<string | symbol, unknown>;
+    const value = client[prop];
+    return typeof value === "function" ? value.bind(client) : value;
+  },
+});
 
 // Lead type matching our database schema
 export interface Lead {
@@ -19,6 +51,10 @@ export interface Lead {
   user_agent?: string;
   status?: "new" | "sent_to_augusta" | "contacted" | "qualified" | "unqualified" | "converted" | "declined_call";
   augusta_submitted_at?: string;
+  // Augusta retry queue (see scripts/migrate-augusta-retry.sql)
+  augusta_retry_count?: number;
+  augusta_last_attempt_at?: string;
+  augusta_failed_at?: string;
   notes?: string;
   total_retirement_savings?: string;
   percentage_to_protect?: string;
@@ -27,6 +63,15 @@ export interface Lead {
   is_qualified?: boolean;
   telegram_message_id?: number;
   telegram_message_ids?: string; // JSON: {"chatId": messageId, ...}
+  // Qualification funnel fields
+  savings_tier?: string;
+  concern?: string;
+  qualification_tier?: string;
+  routed_to?: string;
+  email_sequence?: string;
+  ab_variant?: string;
+  // Metal preference for precious metals leads
+  metal_preference?: "gold" | "silver" | "both";
 }
 
 // Insert a new lead

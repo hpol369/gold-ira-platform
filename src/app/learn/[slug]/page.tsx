@@ -5,8 +5,6 @@ import { Fragment } from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { Button } from "@/components/ui/Button";
@@ -14,14 +12,24 @@ import { KeyTakeaways } from "@/components/learn/KeyTakeaways";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
 import { InContentCTA } from "@/components/widgets/InContentCTA";
-import { MobileStickyBar } from "@/components/widgets/MobileStickyBar";
+import { NewsletterSignup } from "@/components/email/NewsletterSignup";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
+import { TrustBar } from "@/components/content/TrustBar";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SourcesSection } from "@/components/content/SourcesSection";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
+import {
+  articleSchema as buildArticleSchema,
+  faqSchema as buildFaqSchema,
+  breadcrumbSchema,
+} from "@/lib/schema";
 import {
   getLearnArticleBySlug,
   getAllLearnArticleSlugs,
   getRelatedLearnArticles,
 } from "@/data/learn-articles";
+import { getContextualCTABySlug } from "@/data/contextual-ctas";
 import { threatLevelMeta, categoryMeta } from "@/types/learn-article";
 import type { IconColor, ArticleSection } from "@/types/learn-article";
 import {
@@ -204,6 +212,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: {
       canonical: `/learn/${slug}`,
     },
+    // Noindex dynamic cluster articles — scaled content flagged by Google
+    // Static learn pages in dedicated directories remain indexed
+    robots: { index: false, follow: true },
     openGraph: {
       title: article.metaTitle,
       description: article.metaDescription.length > 155
@@ -361,53 +372,47 @@ export default async function LearnArticlePage({ params }: PageProps) {
   }
 
   const relatedArticles = getRelatedLearnArticles(slug, 3);
+  const ctaCopy = getContextualCTABySlug(slug);
   const threatMeta = threatLevelMeta[article.threatLevel];
   const catMeta = categoryMeta[article.category];
 
-  // JSON-LD Schema
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: article.title,
-    description: article.metaDescription,
-    author: {
-      "@type": "Person",
-      name: "Thomas Richardson",
-      url: "https://www.richdadretirement.com/author/thomas-richardson",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Rich Dad Retirement",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.richdadretirement.com/logo.png",
-      },
-    },
-    datePublished: new Date().toISOString(),
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://www.richdadretirement.com/learn/${slug}`,
-    },
-  };
+  // Resolve dates from article data with static fallbacks
+  const publishDate = article.publishDate ?? "2026-01-15";
+  const updateDate = article.updatedDate ?? "2026-03-20";
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: article.faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
+  // JSON-LD Schemas (centralized generators)
+  const articleSchemaData = buildArticleSchema({
+    title: article.title,
+    description: article.metaDescription,
+    slug: `/learn/${slug}`,
+    datePublished: publishDate,
+    dateModified: updateDate,
+  });
+
+  const faqSchemaData = buildFaqSchema(article.faqs);
+
+  const breadcrumbData = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Learn", url: "/learn" },
+    { name: article.title, url: `/learn/${slug}` },
+  ]);
+
+  // Default sources by category
+  const defaultSources = [
+    { name: "IRS Publication 590-A — Contributions to IRAs", url: "https://www.irs.gov/publications/p590a" },
+    { name: "IRS Publication 590-B — Distributions from IRAs", url: "https://www.irs.gov/publications/p590b" },
+    { name: "World Gold Council — Gold Performance Data", url: "https://www.gold.org/goldhub/data/gold-prices" },
+    { name: "U.S. Bureau of Labor Statistics — Consumer Price Index", url: "https://www.bls.gov/cpi/" },
+    { name: "Better Business Bureau — Company Profiles", url: "https://www.bbb.org" },
+  ];
 
   return (
     <main className="min-h-screen bg-transparent">
-      <SchemaScript schema={articleSchema} />
-      <SchemaScript schema={faqSchema} />
-      <Navbar />
+      <SchemaScript schema={articleSchemaData} />
+      <SchemaScript schema={faqSchemaData} />
+      <SchemaScript schema={breadcrumbData} />
+      
+      <TrustBar updateDate={updateDate} />
 
       {/* Hero Section - Premium Visual Styling */}
       <section className="relative pt-24 pb-12 overflow-hidden">
@@ -457,6 +462,34 @@ export default async function LearnArticlePage({ params }: PageProps) {
         </Container>
       </section>
 
+      {/* Article Meta */}
+      <section className="pt-6 pb-0">
+        <Container>
+          <div className="max-w-4xl">
+            <ArticleMeta
+              publishDate={publishDate}
+              updateDate={updateDate}
+              readTime="8 min"
+            />
+          </div>
+        </Container>
+      </section>
+
+      {/* Answer First - GEO optimization for AI snippets */}
+      {article.answerFirst && (
+        <section className="pb-4">
+          <Container>
+            <div className="max-w-4xl">
+              <AnswerFirst
+                answer={article.answerFirst}
+                keyFacts={article.answerFirstFacts}
+                variant="dark"
+              />
+            </div>
+          </Container>
+        </section>
+      )}
+
       {/* Key Takeaways */}
       <section className="pb-8">
         <Container>
@@ -476,7 +509,11 @@ export default async function LearnArticlePage({ params }: PageProps) {
                 items={article.tocItems}
                 className="static block"
               />
-              <SidebarAuditWidget />
+              <SidebarAuditWidget
+                trackSource={`learn-${article.slug}`}
+                headline={ctaCopy.sidebarHeadline}
+                body={ctaCopy.sidebarBody}
+              />
             </div>
 
             {/* Article Content */}
@@ -485,7 +522,20 @@ export default async function LearnArticlePage({ params }: PageProps) {
               {article.sections.map((section, index) => (
                 <Fragment key={section.id}>
                   <ArticleSectionComponent section={section} />
-                  {index === 2 && <InContentCTA />}
+                  {index === 2 && (
+                    <InContentCTA
+                      trackSource={`learn-${article.slug}`}
+                      headline={ctaCopy.inContentHeadline}
+                      body={ctaCopy.inContentBody}
+                    />
+                  )}
+                  {index === 4 && (
+                    <NewsletterSignup
+                      variant="inline"
+                      headline="Stay Updated on Retirement Strategies"
+                      description="Get weekly insights on IRS rule changes, gold market moves, and retirement planning tips. No spam, unsubscribe anytime."
+                    />
+                  )}
                 </Fragment>
               ))}
 
@@ -562,7 +612,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                   </ul>
                   <Button variant="gold" size="lg" asChild>
                     <Link href="/quiz">
-                      Get Your Free Gold IRA Guide <ArrowRight className="ml-2 h-4 w-4" />
+                      Get Your Free Precious Metals Guide <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                 </div>
@@ -601,6 +651,13 @@ export default async function LearnArticlePage({ params }: PageProps) {
                   </div>
                 </div>
               )}
+
+              {/* Newsletter Signup - Post FAQ */}
+              <NewsletterSignup
+                variant="inline"
+                headline="Stay Updated on Retirement Strategies"
+                description="Get weekly insights on IRS rule changes, gold market moves, and retirement planning tips. No spam, unsubscribe anytime."
+              />
 
               {/* Related Articles - Float Card Effect */}
               {relatedArticles.length > 0 && (
@@ -706,22 +763,29 @@ export default async function LearnArticlePage({ params }: PageProps) {
         </Container>
       </section>
 
+      {/* Sources */}
+      <section className="py-8">
+        <Container>
+          <div className="max-w-4xl">
+            <SourcesSection sources={defaultSources} lastVerified="March 2026" />
+          </div>
+        </Container>
+      </section>
+
       {/* Augusta CTA */}
       <section className="py-16 bg-slate-800/50 border-t border-white/10">
         <Container>
           <AugustaCTA
             variant="footer"
-            headline="Ready to Protect Your Retirement?"
-            subheadline="Join thousands of Americans who have secured their savings with physical gold. Augusta Precious Metals makes the process simple."
+            headline={ctaCopy.footerHeadline}
+            subheadline={ctaCopy.footerSubheadline}
+            augustaContext={ctaCopy.augustaContext}
             trackSource={`learn-${slug}`}
           />
         </Container>
       </section>
 
-      {/* Mobile Sticky CTA Bar */}
-      <MobileStickyBar />
-
-      <Footer />
+      
     </main>
   );
 }

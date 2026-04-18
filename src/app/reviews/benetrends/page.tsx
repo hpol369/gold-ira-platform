@@ -37,7 +37,7 @@ const reviewJsonLd = {
     "@context": "https://schema.org",
     "@type": "Review",
     "itemReviewed": {
-        "@type": "Organization",
+        "@type": "Person",
         "name": "Benetrends"
     },
     "reviewRating": {

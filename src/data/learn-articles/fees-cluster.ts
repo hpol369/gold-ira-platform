@@ -19,6 +19,13 @@ export const feesArticles: LearnArticleRegistry = {
       'how much 401k fees',
       '401k fee disclosure'
     ],
+    answerFirst: 'Yes, 401k fees are probably eating your retirement. The average plan charges 1-2% in total fees, which can cost you $100,000 or more over a career. Even a 1% difference in fees can reduce your final balance by 28% over 40 years.',
+    answerFirstFacts: [
+      'A 1% fee on a $100,000 balance costs $278,000 in lost growth over 40 years',
+      'Three types of fees stack up: expense ratios (0.03-1.5%), admin fees ($20-150/year), and hidden revenue sharing',
+      'Your employer must disclose fees annually via the 404(a)(5) participant fee disclosure',
+      'Switching from a 1% actively managed fund to a 0.03% index fund can save hundreds of thousands',
+    ],
     targetKeyword: '401k fees eating my retirement',
     volume: 30,
     difficulty: 22,
@@ -178,6 +185,13 @@ export const feesArticles: LearnArticleRegistry = {
       'lower 401k expenses',
       '401k fees too high options',
       'bad 401k plan alternatives'
+    ],
+    answerFirst: 'First, always contribute enough to get the full employer match — the match outweighs even high fees. Then switch to the lowest-cost index funds in your plan, petition HR for better options, and use an IRA for savings above the match where you control the costs.',
+    answerFirstFacts: [
+      'Step 1: Switch to index fund options within your plan — often 0.03-0.10% vs 1%+ for active funds',
+      'Step 2: Max out an IRA ($7,000/$8,000 if 50+) where you pick your own low-cost funds',
+      'Step 3: Rally coworkers and petition HR — employers have fiduciary duty to monitor fees',
+      'When you leave your employer, roll over to an IRA or Gold IRA to escape high-fee plans permanently',
     ],
     targetKeyword: 'high 401k fees what to do',
     volume: 25,
@@ -345,6 +359,13 @@ export const feesArticles: LearnArticleRegistry = {
       '401k plan red flags',
       'terrible 401k options',
       'how to tell if 401k is bad'
+    ],
+    answerFirst: 'The worst 401k plans have fees over 1%, no index fund options, fewer than 10 investment choices, and insurance-company-managed funds with surrender charges. Small employers often have the worst plans because they lack bargaining power with providers.',
+    answerFirstFacts: [
+      'Red flags: average expense ratio above 1%, no low-cost index funds, mandatory annuity products',
+      'Insurance company plans (AXA, VALIC, Prudential) typically add 0.50-1.00% in extra costs',
+      'Small companies (under 50 employees) pay 1.50-2.50% in total 401k costs vs 0.20-0.50% at Fortune 500s',
+      'Even in the worst plan, the employer match is usually worth contributing — get the match, then use an IRA',
     ],
     targetKeyword: 'worst 401k plans',
     volume: 20,
@@ -514,6 +535,13 @@ export const feesArticles: LearnArticleRegistry = {
       '401k slow growth',
       '401k not making money',
       '401k stagnant'
+    ],
+    answerFirst: 'The most common reasons your 401k isn\'t growing are high fees eating your gains, being invested in low-return options like money market funds, or market downturns. Check your expense ratios, review your fund allocation, and make sure you\'re not in a money market or stable value fund.',
+    answerFirstFacts: [
+      'High fees (1-2%) can eat all your investment gains in a flat market year',
+      'Money market and stable value funds return only 0.5-3% — not enough to grow meaningfully',
+      'The S&P 500 averages a 14% drop at some point each year — short-term drops are normal',
+      'In years 1-5 of investing, most of your balance is contributions, not growth — compounding takes time',
     ],
     targetKeyword: 'why is my 401k not growing',
     volume: 50,

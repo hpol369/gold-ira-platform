@@ -18,6 +18,13 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
       'infinite banking criticism',
       'whole life insurance scam'
     ],
+    answerFirst: 'Infinite banking is not a scam, but it is heavily oversold by insurance agents who earn 50-100% of first-year premiums as commission. The concept uses dividend-paying whole life insurance as a personal bank, but it requires high premiums ($10,000-$50,000/year), takes 5-10 years to break even, and returns only 3-5% annually versus 8-10% for index funds. It only makes sense for high-income individuals ($200k+) who have already maxed out 401(k), IRA, and HSA.',
+    answerFirstFacts: [
+      'Insurance agents earn 50-100% of first-year premiums as commission on infinite banking policies',
+      'Cash value takes 5-10 years to exceed total premiums paid, and grows at 3-5% annually versus 8-10% for index funds',
+      'Infinite banking requires $10,000-$50,000 per year in premiums to work as intended',
+      'The strategy only makes sense for high-income earners ($200k+) who have already maxed out all other retirement accounts',
+    ],
     targetKeyword: 'infinite banking concept scam',
     volume: 50,
     difficulty: 0,
@@ -242,6 +249,13 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
       'whole life as bank',
       'policy loan strategy'
     ],
+    answerFirst: 'Being your own bank with life insurance means using a dividend-paying whole life policy to build cash value you borrow against for major purchases instead of going to a bank. Policy loans charge 5-8% interest while cash value continues earning 3-5% dividends. The strategy requires premiums of $10,000-$50,000 per year and takes 5-10 years before cash value exceeds premiums paid.',
+    answerFirstFacts: [
+      'Policy loans from whole life insurance typically charge 5-8% interest',
+      'Cash value continues growing at 3-5% through dividends even while borrowed against',
+      'High premiums of $10,000-$50,000 per year are needed for the strategy to work effectively',
+      'It takes 5-10 years for cash value to exceed total premiums paid (break-even point)',
+    ],
     targetKeyword: 'be your own bank life insurance',
     volume: 100,
     difficulty: 1,
@@ -460,6 +474,13 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
       'infinite banking nelson nash',
       'becoming your own banker book',
       'nelson nash whole life'
+    ],
+    answerFirst: 'Becoming Your Own Banker is Nelson Nash\'s book that popularized the infinite banking concept: using a high-premium, dividend-paying whole life insurance policy from a mutual company as your personal banking system. The core idea is recapturing the interest you would normally pay to banks. Implementation takes 10-20 years to see full benefits and is best suited for disciplined, high-income individuals.',
+    answerFirstFacts: [
+      'Nelson Nash\'s book introduced infinite banking using whole life policies from mutual insurance companies',
+      'The concept takes 10-20 years to fully implement and reach maximum benefits',
+      'Requires a dividend-paying whole life policy specifically from a mutual insurance company',
+      'Simpler alternatives like maxing a 401(k), IRA, and HSA outperform infinite banking for 99% of people',
     ],
     targetKeyword: 'become your own banker',
     volume: 200,
@@ -684,6 +705,13 @@ export const infiniteBankingArticles: LearnArticleRegistry = {
       'life insurance vs ira',
       'roth ira or whole life',
       'whole life insurance vs retirement account'
+    ],
+    answerFirst: 'For 99% of people, a Roth IRA beats infinite banking for retirement savings. Roth IRAs grow tax-free at 8-10% historically with near-zero fees, while infinite banking (whole life) grows at 3-5% with high upfront costs and a 5-10 year break-even period. The Roth IRA has a $7,000/year contribution limit (2026), while infinite banking has no cap. Max out your Roth IRA before even considering infinite banking.',
+    answerFirstFacts: [
+      'Roth IRA investments historically return 8-10% annually versus 3-5% for whole life cash value',
+      'Roth IRA has a $7,000/year contribution limit (2026) while infinite banking has no contribution cap',
+      'Roth IRA withdrawals are completely tax-free after age 59.5; infinite banking uses tax-free policy loans',
+      'High earners already maxing all retirement accounts may benefit from combining both strategies',
     ],
     targetKeyword: 'infinite banking vs roth ira',
     volume: 20,

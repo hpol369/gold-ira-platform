@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { BaristaFIRECalculator } from "@/components/tools/BaristaFIRECalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Barista FIRE Calculator - Calculate Part-Time Work FIRE Strategy",
@@ -14,6 +16,8 @@ export const metadata: Metadata = {
 export default function BaristaFIRECalculatorPage() {
   return (
     <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+      <SchemaScript schema={articleSchema({ title: "Barista FIRE Calculator - Calculate Part-Time Work FIRE Strategy", description: "Free Barista FIRE calculator to determine how part-time income can accelerate your financial independence. Find out how much you need with flexible work.", slug: "/tools/barista-fire-calculator" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "Barista FIRE Calculator", url: "/tools/barista-fire-calculator" }])} />
       <Navbar />
       <BaristaFIRECalculator />
       <section className="py-16 bg-white">

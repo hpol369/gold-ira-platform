@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "401(k) Risk Analyzer - Check Your Portfolio Exposure",
@@ -17,6 +19,7 @@ export const metadata: Metadata = {
     "check 401k investments",
     "401k allocation checker",
   ],
+  alternates: { canonical: "/tools/401k-risk-analyzer" },
   openGraph: {
     title: "401(k) Risk Analyzer - Check Your Portfolio Exposure",
     description:
@@ -31,5 +34,11 @@ export default function RiskAnalyzerLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <SchemaScript schema={articleSchema({ title: "401(k) Risk Analyzer - Check Your Portfolio Exposure", description: "Free 401(k) risk analyzer. See how much you could lose in a market crash and learn how to protect your savings.", slug: "/tools/401k-risk-analyzer" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "401(k) Risk Analyzer", url: "/tools/401k-risk-analyzer" }])} />
+      {children}
+    </>
+  );
 }

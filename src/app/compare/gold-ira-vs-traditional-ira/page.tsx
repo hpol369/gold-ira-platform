@@ -11,6 +11,7 @@ import { Footer } from "@/components/layout/Footer";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Gold IRA vs. Traditional IRA: Pros, Cons & Key Differences (2026)",
@@ -99,6 +100,23 @@ export default function GoldIraVsTraditionalIraPage() {
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A Gold IRA and a Traditional IRA have identical tax treatment — both are tax-deferred with the same contribution limits and RMD rules. The only difference is what is inside: a Gold IRA holds physical precious metals while a Traditional IRA holds stocks, bonds, and mutual funds. A Gold IRA is a type of Traditional IRA, just self-directed with different assets."
+                        keyFacts={[
+                            "Same tax treatment: contributions may be tax-deductible, growth is tax-deferred",
+                            "Same 2026 limits: $7,000/year ($8,000 if 50+), same RMD rules starting at age 73",
+                            "Gold IRA fees are higher ($200-350/year) but you own a tangible, inflation-proof asset",
+                            "You can roll over a Traditional IRA into a Gold IRA tax-free via direct transfer",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">

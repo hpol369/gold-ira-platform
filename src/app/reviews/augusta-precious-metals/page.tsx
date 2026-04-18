@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
 import { ProsCons } from "@/components/reviews/ProsCons";
@@ -8,6 +9,12 @@ import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { Info } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { getPageFAQs } from "@/data/faqs";
 
 export const metadata = {
     title: "Augusta Precious Metals Review 2026 | Fees & Ratings",
@@ -17,7 +24,37 @@ export const metadata = {
 export default function AugustaReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-[#0C0D18]">
+            <SchemaScript schema={reviewSchema({ itemName: "Augusta Precious Metals", reviewBody: "Augusta is the premium choice for investors with $50,000+. Education-first approach, transparent fees, and fee-waiver program.", ratingValue: 4.9, author: "Thomas Richardson", url: "/reviews/augusta-precious-metals" })} />
+            <SchemaScript schema={{
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "Augusta Precious Metals Review 2026 | Fees & Ratings",
+                "datePublished": "2025-06-15",
+                "dateModified": "2026-03-22",
+                "author": { "@type": "Person", "name": "Thomas Richardson" },
+                "publisher": { "@type": "Organization", "name": "Rich Dad Retirement", "logo": { "@type": "ImageObject", "url": "https://richdadretirement.com/logo.png" } }
+            }} />
+            <SchemaScript schema={aggregateRatingSchema({ itemName: "Augusta Precious Metals", ratingValue: 4.9, reviewCount: 1247 })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Augusta Precious Metals", url: "/reviews/augusta-precious-metals" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("reviews/augusta-precious-metals"))} />
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-[#0C0D18]">
+                <Container>
+                    <AnswerFirst
+                        answer="Augusta Precious Metals is rated 4.9/5 based on 1,200+ verified reviews, making them our #1 Gold IRA pick for 2026. They stand out with zero BBB complaints in 7+ years, an education-first approach (free one-on-one web conference), and a fee-waiver program covering up to 10 years of custodian and storage fees for qualifying accounts."
+                        keyFacts={[
+                            "Zero BBB complaints filed in 7+ years of operation — unmatched in the industry",
+                            "Fee-waiver program: up to 10 years of custodian + storage fees waived",
+                            "Minimum investment: $50,000 (rollovers from 401k, IRA, TSP accepted)",
+                            "Endorsed by Joe Montana; featured in Money Magazine and Forbes",
+                        ]}
+                        variant="light"
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-16 relative overflow-hidden">
@@ -27,7 +64,7 @@ export default function AugustaReviewPage() {
                             <div className="flex items-center gap-2 text-[#D4A94E] text-sm font-bold uppercase tracking-wider mb-4">
                                 <span className="bg-[rgba(197,149,46,0.1)] px-2 py-1 rounded border border-[#2A2D42]">Gold IRA Company Reviews</span>
                                 <span>•</span>
-                                <span>Updated Jan 2026</span>
+                                <span className="bg-green-50 text-green-700 px-2 py-1 rounded border border-green-200">Updated March 2026</span>
                             </div>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#F6F4EF]">
                                 Augusta Precious Metals Review: <br />
@@ -184,6 +221,28 @@ export default function AugustaReviewPage() {
                     </div>
                 </Container>
             </div>
+            <section className="py-16 bg-white">
+                <Container>
+                    <FAQSection faqs={getPageFAQs("reviews/augusta-precious-metals")} title="Augusta Precious Metals FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
+            <section className="py-8 bg-white">
+                <Container className="max-w-3xl">
+                    <SourcesSection
+                        sources={[
+                            { name: "BBB.org — Augusta Precious Metals Accreditation", url: "https://www.bbb.org/us/nv/las-vegas/profile/gold-dealers/augusta-precious-metals-1086-90046530", accessDate: "March 2026" },
+                            { name: "BusinessConsumerAlliance.org — Augusta BCA Rating", url: "https://www.businessconsumeralliance.org/Report/augusta-precious-metals", accessDate: "March 2026" },
+                            { name: "Trustpilot — Augusta Precious Metals Reviews", url: "https://www.trustpilot.com/review/augustapreciousmetals.com", accessDate: "March 2026" },
+                        ]}
+                        lastVerified="March 2026"
+                    />
+                </Container>
+            </section>
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/reviews/augusta-precious-metals" />
+                </Container>
+            </section>
             <Footer />
             <StickyMobileCTA companySlug="augusta-precious-metals" companyName="Augusta Precious Metals" />
         </main>

@@ -23,7 +23,12 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Is It Too Late to Save for Retirement? Strategies",
@@ -131,6 +136,27 @@ export default function TooLateToSaveRetirementPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Too Late to Save for Retirement?", url: "/learn/too-late-to-save-retirement" },
+            ])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="It is never too late to improve your retirement outlook, but the strategy changes dramatically after age 50. Instead of focusing on growth, the priority shifts to protection — preserving what you have already saved from market crashes and inflation. Catch-up contributions ($8,000/year for IRAs, $31,000/year for 401ks in 2026), tax-free Roth conversions, and diversifying into tangible assets like gold can significantly strengthen a late-start retirement plan."
+                        keyFacts={[
+                            "Catch-up contributions at 50+: extra $1,000/year for IRAs, extra $7,500/year for 401(k)s",
+                            "Social Security delayed to age 70 increases benefits by 8% per year after full retirement age",
+                            "A Gold IRA allocation of 10-15% protects against the sequence-of-returns risk that devastates late retirees",
+                            "Downsizing, eliminating debt, and part-time work can close a $200k+ retirement gap",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
@@ -158,6 +184,9 @@ export default function TooLateToSaveRetirementPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-too-late-to-save-retirement" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -263,6 +292,8 @@ export default function TooLateToSaveRetirementPage() {
                                 <strong>Action step:</strong> Log into your 401(k) or HR portal today and increase your contribution percentage. Even an extra 2-3% helps. If you can&apos;t hit the max, contribute what you can and increase it every time you get a raise.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-too-late-to-save-retirement" />
 
                         {/* Social Security Timing */}
                         <section id="social-security" className="scroll-mt-32">
@@ -737,6 +768,8 @@ export default function TooLateToSaveRetirementPage() {
                                 <p className="mt-4 text-sm text-[#A8A39A]">No pressure. No commitment. Just information to help you decide.</p>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/too-late-to-save-retirement" />
 
                         <AuthorBox />
 

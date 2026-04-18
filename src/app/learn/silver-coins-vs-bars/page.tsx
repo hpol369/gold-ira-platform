@@ -1,10 +1,12 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { Metadata } from "next";
 import Link from "next/link";
 import { Coins, SquareStack, Scale, CheckCircle2, AlertTriangle, ArrowRight, DollarSign, ShieldCheck, TrendingUp } from "lucide-react";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Silver Coins vs Bars: Which is Better for Your IRA? (2026)",
@@ -159,7 +161,7 @@ export default function SilverCoinsVsBarsPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
-            <Navbar />
+            
 
             <div className="flex-grow">
                 {/* Hero */}
@@ -179,6 +181,16 @@ export default function SilverCoinsVsBarsPage() {
                         </div>
                     </Container>
                 </header>
+
+                <AnswerFirst
+                    variant="light"
+                    answer="Silver coins carry higher premiums (5-15% over spot) but are more recognizable, easier to sell, and some are IRS-approved for IRAs. Silver bars have lower premiums (2-5% over spot) but require assay verification when selling. For IRA purposes, silver must be 99.9% pure — American Silver Eagles and Canadian Silver Maple Leafs are the most popular IRA-approved coins."
+                    keyFacts={[
+                        "Coins: 5-15% premium, more liquid; Bars: 2-5% premium, less liquid",
+                        "IRA silver must be 99.9% pure (IRS requirement)",
+                        "American Silver Eagles are the most popular IRA-approved silver coin",
+                    ]}
+                />
 
                 {/* Quick Answer */}
                 <section className="py-12 bg-[rgba(220,38,38,0.1)] border-y border-[#B22234]/30">
@@ -274,6 +286,8 @@ export default function SilverCoinsVsBarsPage() {
                         </div>
                     </Container>
                 </section>
+
+                <InContentCTA trackSource="learn-silver-coins-vs-bars" />
 
                 {/* Detailed Comparison Table */}
                 <section className="py-16 bg-[#0C0D18]">
@@ -439,6 +453,8 @@ export default function SilverCoinsVsBarsPage() {
                     </Container>
                 </section>
 
+                <AutoRelatedContent currentUrl="/learn/silver-coins-vs-bars" />
+
                 {/* Related */}
                 <section className="py-16 bg-[#0C0D18]">
                     <Container>
@@ -474,7 +490,7 @@ export default function SilverCoinsVsBarsPage() {
                 </section>
             </div>
 
-            <Footer />
+            
         </main>
     );
 }

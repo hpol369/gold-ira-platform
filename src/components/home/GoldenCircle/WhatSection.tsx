@@ -5,8 +5,8 @@
 // The tangible offerings - what we provide and featured partner
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
+import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
 import { useLeadModal } from "@/context/LeadModalContext";
 import {
@@ -34,13 +34,7 @@ export function WhatSection() {
       <Container>
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
+          <FadeIn className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 bg-[rgba(197,149,46,0.08)] border border-[#000080]/20 rounded-full text-[#F6F4EF] text-sm font-bold mb-6">
               What We Offer
             </span>
@@ -50,16 +44,10 @@ export function WhatSection() {
             <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto font-medium">
               Research. Compare. Decide. We provide the tools and information—you stay in control.
             </p>
-          </motion.div>
+          </FadeIn>
 
           {/* Resource Cards */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20"
-          >
+          <FadeIn delay={0.2} className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
             <Link
               href="/reviews"
               className="group bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.55)]/30 hover:shadow-lg transition-all"
@@ -135,17 +123,10 @@ export function WhatSection() {
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </span>
             </Link>
-          </motion.div>
+          </FadeIn>
 
           {/* Featured Partner - Augusta */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            id="featured-partner"
-            className="bg-[rgba(197,149,46,0.1)] rounded-3xl overflow-hidden shadow-2xl relative"
-          >
+          <FadeIn delay={0.4} className="bg-[rgba(197,149,46,0.1)] rounded-3xl overflow-hidden shadow-2xl relative" id="featured-partner">
             {/* Texture */}
             <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 pointer-events-none"></div>
 
@@ -198,14 +179,14 @@ export function WhatSection() {
                       onClick={handleCtaClick}
                     >
                       <span className="flex items-center gap-2">
-                        Get Free Gold IRA Kit
+                        Get Free Precious Metals Kit
                         <ArrowRight className="h-4 w-4" />
                       </span>
                     </Button>
                     <Button
                       size="lg"
                       variant="outline"
-                      className="border-white/20 text-[#F6F4EF] hover:bg-[#1E2134]/10 font-bold text-lg"
+                      className="border-white/20 text-[#F6F4EF] hover:bg-white/10 font-bold text-lg"
                       asChild
                     >
                       <Link href="/reviews/augusta-precious-metals">
@@ -217,7 +198,7 @@ export function WhatSection() {
 
                 {/* Right - Trust Badges */}
                 <div className="lg:w-2/5">
-                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-[#1E2134]/15 transition-colors">
+                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-colors">
                     <h4 className="text-white font-bold mb-6 text-center text-xl">Trust & Ratings</h4>
 
                     <div className="space-y-4">
@@ -271,7 +252,7 @@ export function WhatSection() {
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p className="text-blue-100 text-sm font-medium">
                   <Phone className="h-4 w-4 inline mr-2" />
-                  Free consultation with no obligation—just education
+                  Free info call — educational, not sales
                 </p>
                 <button
                   onClick={handleCtaClick}
@@ -281,7 +262,7 @@ export function WhatSection() {
                 </button>
               </div>
             </div>
-          </motion.div>
+          </FadeIn>
         </div>
       </Container>
     </section>

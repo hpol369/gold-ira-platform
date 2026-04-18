@@ -94,7 +94,7 @@ const schema = {
             "@type": "ListItem",
             "position": index + 1,
             "item": {
-                "@type": "Person",
+                "@type": "Organization",
                 "name": expert.name,
                 "jobTitle": expert.title,
                 "description": expert.description,

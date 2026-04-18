@@ -1,18 +1,23 @@
 // src/app/api/submit-to-augusta/route.ts
-// Called when user clicks "Yes, Call Me" in the confirmation step
+// Called when user clicks "Yes, Call Me" in the confirmation step.
+// Verified by requiring the original email used to submit the lead — this
+// prevents random actors from enumerating lead UUIDs and retriggering
+// Augusta submissions for leads they don't own.
 
 import { NextRequest, NextResponse } from "next/server";
 import { getLeadById, updateLeadStatus } from "@/lib/supabase";
 import { updateLeadNotification } from "@/lib/lead-notification";
 import { submitToAugusta } from "@/lib/augusta";
 
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
 export async function POST(request: NextRequest) {
   try {
-    const { leadId } = await request.json();
+    const { leadId, email } = await request.json();
 
-    if (!leadId) {
+    if (!leadId || typeof leadId !== "string" || !UUID_RE.test(leadId)) {
       return NextResponse.json(
-        { success: false, error: "Missing leadId" },
+        { success: false, error: "Invalid leadId" },
         { status: 400 }
       );
     }
@@ -22,6 +27,18 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { success: false, error: "Lead not found" },
         { status: 404 }
+      );
+    }
+
+    // Caller must know the email that was used to create the lead. This is
+    // not cryptographic auth, but raises the bar from "enumerate UUID" to
+    // "know UUID AND email" — sufficient for this flow because the legit
+    // caller always has both from the originating submission response.
+    if (!email || typeof email !== "string" || email.trim().toLowerCase() !== lead.email) {
+      console.warn(`[SUBMIT-AUGUSTA] Email mismatch for lead ${leadId} from ${request.headers.get("x-forwarded-for")}`);
+      return NextResponse.json(
+        { success: false, error: "Unauthorized" },
+        { status: 403 }
       );
     }
 

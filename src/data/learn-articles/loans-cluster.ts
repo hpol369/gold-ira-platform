@@ -19,6 +19,13 @@ export const loansArticles: LearnArticleRegistry = {
       '401k loan repayment',
       'difference between 401k loan and hardship withdrawal'
     ],
+    answerFirst: 'A 401k loan lets you borrow up to $50,000 and repay yourself with interest — no taxes if repaid on time. A hardship withdrawal is permanent: you keep the money but owe income tax plus a 10% penalty if you\'re under 59½. Loans are usually the better option if your job is stable.',
+    answerFirstFacts: [
+      '401k loans: borrow up to 50% of vested balance (max $50,000), repay over 5 years',
+      'Hardship withdrawals: permanent, taxed as income, plus 10% penalty if under 59½',
+      'If you leave your job, 401k loans typically become due within 60-90 days',
+      'A $20,000 hardship withdrawal can cost $7,000+ in taxes and penalties',
+    ],
     targetKeyword: '401k loan vs hardship withdrawal',
     volume: 70,
     difficulty: 5,
@@ -238,6 +245,13 @@ export const loansArticles: LearnArticleRegistry = {
       'outstanding 401k loan fired',
       'repay 401k loan after leaving job'
     ],
+    answerFirst: 'Most 401k loans must be repaid in full within 60-90 days of losing your job. If you can\'t repay, the unpaid balance becomes a taxable distribution — you\'ll owe income tax plus a 10% penalty if you\'re under 59½. On a $25,000 loan, that could mean $9,750 in taxes and penalties.',
+    answerFirstFacts: [
+      'Payroll deductions for loan payments stop immediately when employment ends',
+      'Typical repayment deadline is 60-90 days after termination (varies by plan)',
+      'Unpaid balance becomes a "deemed distribution" — fully taxable plus 10% penalty if under 59½',
+      'Some plans allow continued payments after termination — check your plan documents',
+    ],
     targetKeyword: 'what happens to 401k loan if fired',
     volume: 40,
     difficulty: 8,
@@ -397,6 +411,13 @@ export const loansArticles: LearnArticleRegistry = {
       '401k loan bad idea',
       'borrowing from 401k',
       '401k loan worth it'
+    ],
+    answerFirst: 'For most people, a 401k loan is a bad idea. You lose compound growth on borrowed funds, you repay with after-tax dollars (then get taxed again at retirement), and if you lose your job the full balance becomes due in 60-90 days. Studies show 401k borrowers retire with 20% less wealth.',
+    answerFirstFacts: [
+      'A $20,000 loan left uninvested for 5 years can cost $22,000+ in lost growth over 20 years',
+      '40% of 401k borrowers reduce their contributions while repaying the loan',
+      'Job loss triggers accelerated repayment — fail to repay and you owe taxes plus 10% penalty',
+      'Those who take one 401k loan are 4x more likely to take another',
     ],
     targetKeyword: 'taking 401k loan good or bad idea',
     volume: 60,
@@ -588,6 +609,13 @@ export const loansArticles: LearnArticleRegistry = {
       'borrow from 401k for debt',
       '401k loan to consolidate debt'
     ],
+    answerFirst: 'Using a 401k loan to pay off credit card debt is usually a bad trade. You\'re swapping debt that can be discharged in bankruptcy for retirement assets that are federally protected from creditors. The math rarely works out when you factor in lost growth and job-change risk.',
+    answerFirstFacts: [
+      'Credit card debt is dischargeable in bankruptcy — your 401k is protected from creditors under ERISA',
+      'Lost compound growth on borrowed funds can cost $50,000+ over 20 years',
+      'Research shows people often rack up new credit card debt after paying off old debt with a 401k loan',
+      'Better alternatives: 0% balance transfer cards, personal loans, or debt management plans',
+    ],
     targetKeyword: '401k loan to pay off debt',
     volume: 30,
     difficulty: 15,
@@ -737,6 +765,13 @@ export const loansArticles: LearnArticleRegistry = {
       'borrow from 401k to buy house',
       '401k loan for home',
       'use 401k for down payment'
+    ],
+    answerFirst: 'You can take a 401k loan for a home purchase with a longer 15-year repayment period, but the hidden costs are steep. A $30,000 loan costs $50,000+ in lost compound growth over 15 years. If you need to raid retirement for a down payment, it may be a sign you\'re not ready to buy.',
+    answerFirstFacts: [
+      '401k home loans get up to 15 years to repay (vs 5 years for regular 401k loans)',
+      'Still limited to 50% of vested balance, maximum $50,000',
+      'Lost compound growth on a $30,000 loan over 15 years can exceed $50,000',
+      'If you lose your job, the full loan balance becomes due in 60-90 days',
     ],
     targetKeyword: '401k loan for home purchase',
     volume: 45,

@@ -6,19 +6,46 @@ import { ComparisonTable } from "@/components/home/ComparisonTable";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { Sparkles, Trophy, Star, CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import Image from "next/image";
 import Link from "next/link";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { getCanonicalUrl } from "@/lib/metadata";
 
 export const metadata = {
     title: "Best Gold IRA Companies of 2026 | Independent Reviews",
     description: "Objective comparison of the top Gold IRA companies. We analyze fees, minimums, customer service, and track records to help you make an informed decision.",
+    alternates: { canonical: getCanonicalUrl("/best-gold-ira-companies") },
 };
 
 export default function BestGoldIraCompaniesPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
+            <SchemaScript schema={articleSchema({ title: "Best Gold IRA Companies of 2026", description: "Objective comparison of the top Gold IRA companies. Fees, minimums, ratings, and customer reviews analyzed.", slug: "/best-gold-ira-companies" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Best Gold IRA Companies", url: "/best-gold-ira-companies" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("best-gold-ira-companies"))} />
             <Navbar />
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="The best Gold IRA companies in 2026 are Augusta Precious Metals (#1 — zero fees for 10 years, $50k minimum), Noble Gold (#2 — lowest minimum at $2,000), and Goldco (#3 — best customer service). We analyzed 20+ companies across fees, BBB ratings, complaint history, and customer reviews."
+                        keyFacts={[
+                            "Augusta Precious Metals: #1 pick — zero BBB complaints, fee waivers up to 10 years",
+                            "Noble Gold: Lowest minimum at $2,000 — best for smaller portfolios",
+                            "American Hartford Gold: $10,000 minimum with price match guarantee",
+                            "Goldco: $25,000 minimum — largest brand with buyback guarantee",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 <header className="bg-[#0C0D18] text-[#F6F4EF] py-20 relative overflow-hidden">
@@ -29,7 +56,7 @@ export default function BestGoldIraCompaniesPage() {
                     <Container className="relative z-10 text-center">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[rgba(220,38,38,0.1)] border border-[#B22234]/20 text-[#D4A94E] text-sm font-semibold mb-6">
                             <Sparkles className="w-4 h-4" />
-                            Updated January 2026
+                            Updated March 2026
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#F6F4EF]">
                             We Know You&apos;re Skeptical. You Should Be.
@@ -60,7 +87,7 @@ export default function BestGoldIraCompaniesPage() {
                                 <p>
                                     We look at what actually matters: Do they have complaints with the BBB? Will they pressure you into
                                     buying today? Can a retired steelworker or nurse actually understand their fee structure? Do they
-                                    treat you like a partner or a transaction?
+                                    treat you like a partner or a transaction? See our <Link href="/gold-ira-industry-report-2026" className="text-[#D4A94E] hover:underline">2026 Industry Report</Link> for fee analysis and recession performance data across all major providers.
                                 </p>
                                 <p>
                                     <strong>Real example:</strong> Tom, a retired electrician from Ohio, told us he called three Gold IRA
@@ -80,8 +107,8 @@ export default function BestGoldIraCompaniesPage() {
                                 </div>
                                 <div className="p-8">
                                     <div className="flex flex-col md:flex-row gap-8 mb-6">
-                                        <div className="w-full md:w-1/3 bg-[#161828] rounded-xl h-40 flex items-center justify-center text-[#A8A39A] border border-[#2A2D42]">
-                                            [Logo/Image]
+                                        <div className="w-full md:w-1/3 bg-[#161828] rounded-xl h-40 flex items-center justify-center border border-[#2A2D42] p-4">
+                                            <Image src="/images/companies/augusta-logo.svg" alt="Augusta Precious Metals Logo" width={240} height={68} className="w-full h-auto" />
                                         </div>
                                         <div className="w-full md:w-2/3">
                                             <p className="text-[#A8A39A] mb-4">
@@ -140,8 +167,8 @@ export default function BestGoldIraCompaniesPage() {
                                 </div>
                                 <div className="p-8">
                                     <div className="flex flex-col md:flex-row gap-8 mb-6">
-                                        <div className="w-full md:w-1/3 bg-[#161828] rounded-xl h-40 flex items-center justify-center text-[#A8A39A] border border-[#2A2D42]">
-                                            [Logo/Image]
+                                        <div className="w-full md:w-1/3 bg-[#161828] rounded-xl h-40 flex items-center justify-center border border-[#2A2D42] p-4">
+                                            <Image src="/images/companies/noble-gold-logo.svg" alt="Noble Gold Investments Logo" width={240} height={68} className="w-full h-auto" />
                                         </div>
                                         <div className="w-full md:w-2/3">
                                             <p className="text-[#A8A39A] mb-4">
@@ -286,7 +313,7 @@ export default function BestGoldIraCompaniesPage() {
                     <Container>
                         <AugustaCTA
                             variant="footer"
-                            linkContext="comparison"
+                            linkContext="comparison" directToAugusta
                             headline="You've Earned the Right to Be Careful With Your Money"
                             subheadline="Augusta Precious Metals has zero BBB complaints because they treat people right. No pressure, no gimmicks—just honest folks who will answer your questions and let you decide on your own timeline. After 30 years of hard work, that's the least you deserve."
                             trackSource="best-companies"
@@ -294,6 +321,34 @@ export default function BestGoldIraCompaniesPage() {
                     </Container>
                 </section>
             </div>
+            <section className="py-16 bg-white">
+                <Container>
+                    <FAQSection
+                        faqs={getPageFAQs("best-gold-ira-companies")}
+                        title="Gold IRA Company FAQs"
+                        className="max-w-3xl"
+                        includeSchema={false}
+                    />
+                </Container>
+            </section>
+            <section className="py-12 bg-white">
+                <Container className="max-w-4xl">
+                    <SourcesSection
+                        sources={[
+                            { name: "BBB.org — Better Business Bureau Company Ratings", url: "https://www.bbb.org/", accessDate: "March 2026" },
+                            { name: "BusinessConsumerAlliance.org — BCA Accreditation", url: "https://www.businessconsumeralliance.org/", accessDate: "March 2026" },
+                            { name: "IRS.gov — Retirement Plan and IRA Rules", url: "https://www.irs.gov/retirement-plans", accessDate: "March 2026" },
+                        ]}
+                        lastVerified="March 2026"
+                    />
+                </Container>
+            </section>
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/best-gold-ira-companies" />
+                </Container>
+            </section>
+
             <Footer />
         </main>
     );

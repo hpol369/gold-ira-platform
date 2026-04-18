@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
@@ -9,10 +10,13 @@ import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { createPageMetadata } from "@/lib/metadata";
+import { breadcrumbSchema, howToSchema, faqSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
 
 export const metadata = createPageMetadata({
-    title: "Rich Dad Retirement 2026: Complete Beginner's Guide to Gold IRAs",
-    description: "The definitive gold IRA guide for 2026. Learn what a gold IRA is, how it works, tax benefits, fees, and how to open one. Updated for current IRS rules.",
+    title: "How to Open a Gold IRA in 2026: Step-by-Step Guide",
+    description: "Step-by-step guide to opening a Gold IRA in 2026. Learn how to choose a custodian, fund your account, select IRS-approved metals, and avoid common mistakes.",
     url: "https://www.richdadretirement.com/guide/gold-ira-guide",
     type: "article",
     imageAlt: "Complete Gold IRA Guide for 2026 - Rich Dad Retirement",
@@ -96,10 +100,40 @@ const schema = {
     }
 };
 
+const howTo = howToSchema({
+    name: "How to Open a Gold IRA in 5 Steps",
+    description: "Step-by-step guide to opening a Gold IRA and rolling over your 401(k) or traditional IRA into physical gold.",
+    totalTime: "PT7D",
+    steps: [
+        { name: "Choose a Gold IRA company", text: "Compare top custodians like Augusta Precious Metals, Goldco, and Noble Gold. Look at minimum investments, fees, storage options, and customer reviews." },
+        { name: "Open a self-directed IRA account", text: "Complete the application with your chosen custodian. Provide identification and beneficiary information. Most companies complete this in 1-2 business days." },
+        { name: "Fund your account", text: "Transfer funds via direct rollover from a 401(k), 403(b), TSP, or IRA. Direct rollovers are tax-free and penalty-free. You can also make a new cash contribution." },
+        { name: "Select your precious metals", text: "Work with your account representative to choose IRS-approved gold, silver, platinum, or palladium products. Minimum purity: 99.5% for gold, 99.9% for silver." },
+        { name: "Secure storage at an approved depository", text: "Your metals are shipped to an IRS-approved depository such as Delaware Depository or Brink's. Choose segregated or commingled storage." },
+    ],
+});
+
+const faqs = faqSchema([
+    { question: "Can I physically hold the gold in my IRA?", answer: "No, IRS rules require precious metals in an IRA to be stored at an approved depository. You can only take physical possession when you take a distribution." },
+    { question: "What is the minimum investment for a gold IRA?", answer: "Minimums vary by company. Noble Gold accepts investments as low as $2,000, while Augusta Precious Metals usually requires $50,000+." },
+    { question: "Can I rollover my 401(k) to a gold IRA without penalties?", answer: "Yes. You can rollover funds from a 401(k), 403(b), TSP, or traditional IRA into a gold IRA completely tax-free and penalty-free using a direct rollover." },
+    { question: "Is a gold IRA a good investment in 2026?", answer: "Gold IRAs can be an excellent choice for investors seeking to protect against inflation, economic uncertainty, and stock market volatility. Most advisors recommend 10-20% allocation." },
+    { question: "Are gold IRAs safe?", answer: "Gold IRAs are safe when you work with reputable companies and IRS-approved depositories. Your metals are stored in high-security vaults, fully insured against theft and damage." },
+]);
+
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Gold IRA Guide", url: "/guide/gold-ira-guide" },
+]);
+
 export default function GoldIraGuidePage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={howTo} />
+            <SchemaScript schema={faqs} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-[#121423] text-[#F6F4EF] py-20 relative overflow-hidden border-b border-[#2A2D42]">
                 <div className="absolute inset-0 bg-primary-dark/50" />
@@ -110,7 +144,7 @@ export default function GoldIraGuidePage() {
                             Updated for 2026 Tax Rules
                         </div>
                         <h1 className="text-4xl md:text-6xl font-serif font-bold leading-tight mb-6 text-[#F6F4EF]">
-                            The Complete Rich Dad Retirement for 2026
+                            How to Open a Gold IRA in 2026: Step-by-Step
                         </h1>
                         <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
                             Everything you need to know about protecting your retirement with physical gold—from tax advantages to choosing the right custodian.
@@ -120,6 +154,18 @@ export default function GoldIraGuidePage() {
             </header>
 
             <Container className="py-12">
+                <ArticleMeta publishDate="2026-01-17" updateDate="2026-03-20" readTime="15 min" />
+                <AnswerFirst
+                  answer="A Gold IRA is a self-directed Individual Retirement Account that holds IRS-approved physical gold, silver, platinum, or palladium instead of paper assets. You can open one by rolling over funds from an existing 401(k) or IRA — tax-free and penalty-free — with a minimum investment of $2,000-$50,000 depending on the custodian. Annual fees typically run $200-$300 for storage and administration."
+                  keyFacts={[
+                    "Tax benefits: Same as traditional/Roth IRAs — tax-deferred or tax-free growth",
+                    "Minimum purity: 99.5% for gold, 99.9% for silver (IRS requirement)",
+                    "Storage: Must be held at an IRS-approved depository (not at home)",
+                    "Top custodians: Augusta Precious Metals ($50k min), Goldco ($25k), Noble Gold ($2k)",
+                    "2026 contribution limit: $7,000 ($8,000 if age 50+)",
+                  ]}
+                  className="mb-8 max-w-3xl"
+                />
                 <div className="flex flex-col lg:flex-row gap-12">
                     {/* Sidebar (TOC) */}
                     <aside className="lg:w-64 flex-shrink-0">
@@ -729,6 +775,12 @@ export default function GoldIraGuidePage() {
             <section className="py-16 bg-[#121423]">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="guide-gold-ira-guide" />
+                </Container>
+            </section>
+
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/guide/gold-ira-guide" />
                 </Container>
             </section>
         </main>

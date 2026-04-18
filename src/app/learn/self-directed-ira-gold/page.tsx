@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
@@ -9,10 +7,15 @@ import { Callout } from "@/components/ui/Callout";
 import { ArrowRight, CheckCircle2, Building2, Scale, Lock, AlertTriangle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { faqSchema, breadcrumbSchema } from "@/lib/schema";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata = {
-    title: "Self-Directed IRA Gold Guide (2026): Rules, Setup & Best Custodians",
-    description: "Complete guide to self-directed gold IRAs. Learn what they are, IRS rules, how to set one up, and which custodians to use. Updated for 2026.",
+    title: "Self-Directed IRA Gold Investing: Rules, Benefits & How It Works (2026)",
+    description: "Learn how self-directed IRA gold investing works. Understand IRS rules, tax benefits, eligible metals, and how a SDIRA differs from a standard Gold IRA.",
 };
 
 const tocItems = [
@@ -42,8 +45,35 @@ const schema = {
 export default function SelfDirectedIraGoldPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            
             <SchemaScript schema={schema} />
+            <SchemaScript schema={faqSchema([
+                { question: "Can I store Gold IRA metals at home?", answer: "No. The IRS requires precious metals IRA assets to be stored by an approved custodian or depository. Home storage constitutes a distribution, triggering taxes and potential 10% early withdrawal penalties." },
+                { question: "What's the difference between a Gold IRA and a Self-Directed IRA?", answer: "A Gold IRA is a type of Self-Directed IRA. 'Self-directed' is the category that allows alternative investments; 'Gold IRA' is a self-directed account specifically used for precious metals." },
+                { question: "Can I roll over my 401(k) into a Self-Directed Gold IRA?", answer: "Yes, in most cases. If you've left your employer, you can roll over your 401(k) tax-free. If still employed, check if your plan allows 'in-service' rollovers." },
+                { question: "What happens when I retire?", answer: "At age 59½, you can take distributions without penalty. Options: receive physical gold (taxed on value), sell and take cash, or take Required Minimum Distributions starting at age 73." },
+            ])} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Self-Directed IRA Gold Investing", url: "/learn/self-directed-ira-gold" },
+            ])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A self-directed IRA for gold is a retirement account that lets you hold physical gold, silver, platinum, and palladium instead of just stocks and bonds. Unlike regular IRAs limited to paper assets, a self-directed Gold IRA gives you full control over your investment choices through a specialized custodian who handles IRS compliance and depository storage."
+                        keyFacts={[
+                            "Self-directed means you choose the assets — the custodian handles IRS paperwork",
+                            "Same tax benefits as a regular IRA: tax-deferred growth or tax-free (Roth)",
+                            "Requires an IRS-approved custodian and depository — you cannot store metals at home",
+                            "2026 limits: $7,000/year ($8,000 if 50+); rollovers from 401k/IRA have no dollar limit",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 {/* Header */}
@@ -56,7 +86,7 @@ export default function SelfDirectedIraGoldPage() {
                                 Educational Guide
                             </div>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight mb-6">
-                                Self-Directed IRA Gold: <br />The Complete 2026 Guide
+                                Self-Directed IRA Gold Investing: <br />Rules, Benefits & How It Works
                             </h1>
                             <p className="text-xl text-gray-200 leading-relaxed max-w-2xl">
                                 Your company 401(k) limits you to whatever funds they picked—and you&apos;ve seen how that works out when markets crash. A Self-Directed IRA puts YOU in control. Hold physical gold, real estate, and assets that Wall Street can&apos;t gamble away.
@@ -68,8 +98,11 @@ export default function SelfDirectedIraGoldPage() {
                 <Container className="py-12">
                     <div className="flex flex-col lg:flex-row gap-12">
                         {/* Sidebar (TOC) */}
-                        <aside className="lg:w-64 flex-shrink-0">
+                        <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                             <TableOfContents items={tocItems} />
+                            <div className="mt-8">
+                                <SidebarAuditWidget trackSource="learn-self-directed-ira-gold" />
+                            </div>
                         </aside>
 
                         {/* Main Content */}
@@ -150,6 +183,8 @@ export default function SelfDirectedIraGoldPage() {
                                     Once funded, you direct your custodian to purchase specific precious metals from an authorized dealer. The metals ship directly to an IRS-approved depository—not to your home. The custodian holds the paperwork; the depository holds the physical gold.
                                 </p>
                             </section>
+
+                            <InContentCTA trackSource="learn-self-directed-ira-gold" />
 
                             {/* Mid-Article CTA */}
                             <div className="my-12 bg-[#DC2626] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
@@ -298,6 +333,8 @@ export default function SelfDirectedIraGoldPage() {
                                 </div>
                             </div>
 
+                            <AutoRelatedContent currentUrl="/learn/self-directed-ira-gold" />
+
                             <AuthorBox />
 
                         </article>
@@ -312,7 +349,7 @@ export default function SelfDirectedIraGoldPage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

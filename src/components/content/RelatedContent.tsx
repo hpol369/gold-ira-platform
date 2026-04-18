@@ -7,8 +7,8 @@ import {
   ArrowRight,
   GraduationCap,
   Scale,
-  Shield,
 } from "lucide-react";
+import { getRelatedLinks } from "@/data/internal-links";
 
 interface RelatedLink {
   title: string;
@@ -127,6 +127,48 @@ export function RelatedContent({
         </Link>
       ))}
     </div>
+  );
+}
+
+/**
+ * Auto-resolving related content using hub-and-spoke internal linking data.
+ * Renders dark-themed links for learn/guide pages.
+ */
+interface AutoRelatedContentProps {
+  currentUrl: string;
+  title?: string;
+  maxLinks?: number;
+  className?: string;
+}
+
+export function AutoRelatedContent({
+  currentUrl,
+  title = "Related Articles",
+  maxLinks = 5,
+  className = "",
+}: AutoRelatedContentProps) {
+  const links = getRelatedLinks(currentUrl, maxLinks);
+
+  if (links.length === 0) return null;
+
+  return (
+    <section className={`mt-12 pt-8 border-t border-white/10 ${className}`}>
+      <h2 className="text-xl font-bold text-white mb-4">{title}</h2>
+      <div className="grid gap-2">
+        {links.map((link) => (
+          <Link
+            key={link.url}
+            href={link.url}
+            className="group flex items-center justify-between p-3 rounded-lg hover:bg-white/5 transition-colors"
+          >
+            <span className="text-[#3F4460] group-hover:text-amber-400 font-medium transition-colors">
+              {link.title}
+            </span>
+            <ArrowRight className="h-4 w-4 text-[#A8A39A] group-hover:text-amber-400 group-hover:translate-x-1 transition-all" />
+          </Link>
+        ))}
+      </div>
+    </section>
   );
 }
 

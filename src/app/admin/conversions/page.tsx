@@ -14,10 +14,14 @@ import {
   BarChart3,
   MousePointer2,
   Eye,
-  ExternalLink
+  ExternalLink,
+  ArrowDown,
+  TrendingUp,
+  Mail,
+  Phone,
 } from "lucide-react";
 
-const ADMIN_PIN = "6903";
+// PIN verified server-side via /api/admin/auth
 
 interface Conversion {
   type: "lead_capture" | "qualified_lead" | "trade_complete";
@@ -31,6 +35,19 @@ interface NotificationStatus {
   email: boolean;
 }
 
+interface PipelineData {
+  totalLeads: number;
+  sentToAugusta: number;
+  qualified: number;
+  trades: number;
+  totalClicks: number;
+  emailsSent: number;
+  emailsPending: number;
+  emailsFailed: number;
+  revenueMin: number;
+  revenueMax: number;
+}
+
 export default function ConversionsPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pin, setPin] = useState("");
@@ -39,6 +56,7 @@ export default function ConversionsPage() {
   const [loading, setLoading] = useState(true);
   const [notificationStatus, setNotificationStatus] = useState<NotificationStatus | null>(null);
   const [testingSent, setTestingSent] = useState(false);
+  const [pipeline, setPipeline] = useState<PipelineData | null>(null);
 
   useEffect(() => {
     // Check if already authenticated in this session
@@ -52,16 +70,28 @@ export default function ConversionsPage() {
     if (isAuthenticated) {
       fetchConversions();
       checkNotificationStatus();
+      fetchPipeline();
     }
   }, [isAuthenticated]);
 
-  function handlePinSubmit(e: React.FormEvent) {
+  async function handlePinSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (pin === ADMIN_PIN) {
-      setIsAuthenticated(true);
-      sessionStorage.setItem("admin_auth", "true");
-      setPinError(false);
-    } else {
+    try {
+      const res = await fetch("/api/admin/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ pin }),
+      });
+      if (res.ok) {
+        setIsAuthenticated(true);
+        sessionStorage.setItem("admin_auth", "true");
+        sessionStorage.setItem("admin_pin", pin);
+        setPinError(false);
+      } else {
+        setPinError(true);
+        setPin("");
+      }
+    } catch {
       setPinError(true);
       setPin("");
     }
@@ -127,6 +157,32 @@ export default function ConversionsPage() {
       setNotificationStatus(data.configured);
     } catch {
       // Ignore
+    }
+  }
+
+  async function fetchPipeline() {
+    try {
+      const savedPin = sessionStorage.getItem("admin_pin") || "";
+      const res = await fetch("/api/admin/dashboard", {
+        headers: { "x-admin-pin": savedPin },
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setPipeline({
+          totalLeads: data.overview?.totalLeads || 0,
+          sentToAugusta: data.overview?.augustaSubmitted || 0,
+          qualified: data.overview?.qualifiedLeads || 0,
+          trades: data.postbacks?.trades || 0,
+          totalClicks: data.overview?.totalClicks || 0,
+          emailsSent: data.emailSequences?.sent || 0,
+          emailsPending: data.emailSequences?.pending || 0,
+          emailsFailed: data.emailSequences?.failed || 0,
+          revenueMin: data.overview?.revenueMin || 0,
+          revenueMax: data.overview?.revenueMax || 0,
+        });
+      }
+    } catch {
+      // Ignore — pipeline data is supplementary
     }
   }
 
@@ -285,6 +341,97 @@ export default function ConversionsPage() {
               <div className="text-sm text-green-300">Trades Completed</div>
             </div>
           </div>
+
+          {/* Revenue Pipeline Funnel */}
+          {pipeline && (
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mb-8">
+              <div className="flex items-center gap-3 mb-6">
+                <TrendingUp className="h-5 w-5 text-emerald-400" />
+                <span className="font-semibold text-white">Revenue Pipeline</span>
+              </div>
+
+              {/* Funnel Steps */}
+              <div className="space-y-1">
+                {[
+                  { label: "Affiliate Clicks", value: pipeline.totalClicks, color: "slate", icon: MousePointer2 },
+                  { label: "Leads Submitted", value: pipeline.totalLeads, color: "blue", icon: Target },
+                  { label: "Sent to Augusta", value: pipeline.sentToAugusta, color: "amber", icon: Phone },
+                  { label: "Qualified by Augusta", value: pipeline.qualified, color: "green", icon: Star },
+                  { label: "Trades Completed", value: pipeline.trades, color: "emerald", icon: DollarSign },
+                ].map((step, i, arr) => {
+                  const prevValue = i > 0 ? arr[i - 1].value : step.value;
+                  const convRate = prevValue > 0 ? ((step.value / prevValue) * 100).toFixed(0) : "—";
+                  const Icon = step.icon;
+                  const widthPct = arr[0].value > 0 ? Math.max(15, (step.value / Math.max(arr[0].value, 1)) * 100) : 100;
+
+                  return (
+                    <div key={step.label}>
+                      {i > 0 && (
+                        <div className="flex items-center gap-2 py-1 pl-8">
+                          <ArrowDown className="h-3 w-3 text-slate-600" />
+                          <span className="text-[10px] text-slate-500">
+                            {convRate}% conversion
+                          </span>
+                        </div>
+                      )}
+                      <div
+                        className={`flex items-center gap-3 px-4 py-3 rounded-lg bg-${step.color}-500/10 border border-${step.color}-500/20`}
+                        style={{ width: `${widthPct}%`, minWidth: "200px" }}
+                      >
+                        <Icon className={`h-4 w-4 text-${step.color}-400 flex-shrink-0`} />
+                        <span className="text-sm text-slate-300 flex-1">{step.label}</span>
+                        <span className={`text-lg font-bold text-${step.color}-400`}>{step.value}</span>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Revenue Estimate */}
+              <div className="mt-6 pt-4 border-t border-white/10">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-slate-400">Revenue Potential (from qualified leads)</span>
+                  <span className="text-lg font-bold text-emerald-400">
+                    {pipeline.revenueMin > 0
+                      ? `$${(pipeline.revenueMin / 1000).toFixed(0)}k–$${(pipeline.revenueMax / 1000).toFixed(0)}k`
+                      : "No qualified leads yet"}
+                  </span>
+                </div>
+                <p className="text-[11px] text-slate-500 mt-1">
+                  Based on Augusta&apos;s $200 CPA for qualified leads. Actual commission depends on trade completion.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* Email Nurture Stats */}
+          {pipeline && (pipeline.emailsSent > 0 || pipeline.emailsPending > 0) && (
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mb-8">
+              <div className="flex items-center gap-3 mb-4">
+                <Mail className="h-5 w-5 text-cyan-400" />
+                <span className="font-semibold text-white">Email Nurture Pipeline</span>
+              </div>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-green-400">{pipeline.emailsSent}</div>
+                  <div className="text-xs text-slate-400 mt-1">Sent</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-amber-400">{pipeline.emailsPending}</div>
+                  <div className="text-xs text-slate-400 mt-1">Pending</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-red-400">{pipeline.emailsFailed}</div>
+                  <div className="text-xs text-slate-400 mt-1">Failed</div>
+                </div>
+              </div>
+              {pipeline.emailsFailed > 0 && (
+                <div className="mt-3 p-2 bg-red-500/10 border border-red-500/20 rounded-lg">
+                  <p className="text-xs text-red-300">⚠ {pipeline.emailsFailed} failed emails — check Resend dashboard for bounces</p>
+                </div>
+              )}
+            </div>
+          )}
 
           {/* Postback URLs */}
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 mb-8">

@@ -1,18 +1,32 @@
 import { MetadataRoute } from "next";
-import { audienceSlugs } from "@/config/audiences";
-import { getCompanySlugs, getAllCompanies } from "@/data/companies";
-import { getProviderSlugs, getAccountTypeSlugs } from "@/data/rollovers";
-import { getAllScenarioSlugs } from "@/data/scenarios";
-import { getAllAssetSlugs } from "@/data/assets";
-import { US_STATES } from "@/lib/states";
-import { getAllNewsSlugs } from "@/lib/news";
-import { getAllLearnArticleSlugs } from "@/data/learn-articles";
-import { getAllCitySlugs } from "@/lib/cities";
-import { getAllWidowGuideArticleSlugs } from "@/data/widow-guide";
-import { getAllMedicaidArticleSlugs } from "@/data/medicaid-planning";
-import { getAllGrandchildrenArticleSlugs } from "@/data/grandchildren";
-import { getAllSeniorProtectionArticleSlugs } from "@/data/senior-protection";
+import { getAllSegmentSlugs } from "@/data/segment-hubs";
+import { getPublishedEditorialSlugs } from "@/data/editorial-schedule";
 
+/**
+ * SITEMAP — QUALITY-ONLY VERSION
+ *
+ * Google Recovery Plan Phase 1: Reduced from ~2,100 URLs to ~350 high-quality pages.
+ *
+ * REMOVED (noindexed or thin content):
+ * - All 1,230+ news articles (AI-generated, noindexed)
+ * - All 500+ city pages (templated, noindexed)
+ * - All 50 state pages (thin, noindexed)
+ * - All 26 audience pages (templated, noindexed)
+ * - All 272 dynamic company comparison permutations (kept only curated static comparisons)
+ * - News index page, local index page, audience index page
+ *
+ * KEPT:
+ * - Core pages, legal, author pages
+ * - 44 calculator tools (genuinely useful, unique)
+ * - 22 guide pages (substantive content)
+ * - ~37 curated learn articles (static, high-quality)
+ * - Company reviews (unique content per company)
+ * - Curated comparison pages (static, high-quality)
+ * - Silver hub pages (substantive)
+ * - Rollover account type pages (substantive)
+ * - Content hub sub-pages
+ * - Special topic hubs (widow guide, medicaid, etc.)
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.richdadretirement.com";
 
@@ -31,7 +45,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/solo-401k",
     "/reviews",
     "/compare",
-    "/rollover",
+    "/gold-ira-rollover",
+    "/is-gold-a-good-investment",
+    "/gold-ira-pros-and-cons",
+    "/how-does-a-gold-ira-work",
+    "/is-a-gold-ira-a-good-idea",
+    "/gold-ira-statistics",
     "/why-gold",
     "/what-is-a-gold-ira",
     "/gold-ira-rules",
@@ -48,14 +67,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/investigative-hub",
     "/rich-dad-strategy",
     "/scenarios",
-    "/best-gold-ira-for",
-    "/news",
-    "/audit",
     "/learn",
-    "/local",
+    "/is-enough-to-retire",
+    "/audit",
+    "/gold-ira-industry-report-2026",
+    "/when-not-to-open-gold-ira",
+    "/retirement-risk-score",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-22'),
     changeFrequency: "weekly" as const,
     priority: route === "" ? 1 : 0.9,
   }));
@@ -66,10 +86,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const legalPages = [
     "/privacy-policy",
     "/editorial-policy",
-    "/terms-of-service",
+    "/editorial-standards",
+    "/editorial-board",
+    "/terms",
+    "/disclaimer",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-01-15'),
     changeFrequency: "monthly" as const,
     priority: 0.3,
   }));
@@ -81,13 +104,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/author/thomas-richardson",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-01'),
     changeFrequency: "monthly" as const,
     priority: 0.5,
   }));
 
   // ============================================
-  // TOOLS PAGES
+  // TOOLS PAGES (genuinely useful calculators — keep all)
   // ============================================
   const toolsPages = [
     "/tools/401k-risk-analyzer",
@@ -134,13 +157,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tools/gold-ira-calculator",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-02-01'),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
   // ============================================
-  // GUIDE PAGES
+  // GUIDE PAGES (substantive, keep all)
   // ============================================
   const guidePages = [
     "/guide/gold-ira-guide",
@@ -167,15 +190,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guide/401k-to-gold-without-penalty",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
   // ============================================
-  // LEARN PAGES (Static hardcoded pages)
+  // LEARN PAGES (curated, high-quality static articles only)
+  // Dynamic cluster articles REMOVED — too many thin keyword variants
   // ============================================
-  const learnStaticPages = [
+  const learnPages = [
     "/learn/are-gold-iras-safe",
     "/learn/bitcoin-ira",
     "/learn/buy-rental-property-with-ira",
@@ -213,20 +237,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learn/too-late-to-save-retirement",
     "/learn/why-401k-losing-money",
     "/learn/why-is-gold-valuable",
+    // 15 editorial articles — only include those whose publish date has passed
+    ...getPublishedEditorialSlugs().map((slug) => `/learn/${slug}`),
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // LEARN ARTICLE PAGES (Dynamic from data)
-  // ============================================
-  const learnArticleSlugs = getAllLearnArticleSlugs();
-  const learnArticlePages = learnArticleSlugs.map((slug) => ({
-    url: `${baseUrl}/learn/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-04-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -241,7 +256,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/why-gold/gold-vs-stocks",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -253,16 +268,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/rich-dad-strategy/robert-kiyosaki-gold",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   // ============================================
-  // REVIEW PAGES (Static)
+  // HUB SUB-PAGES
   // ============================================
-  const reviewStaticPages = [
-    // Main company reviews
+  const hubSubPages = [
+    "/self-directed-ira/prohibited-transactions",
+    "/self-directed-ira/custodian-comparison",
+    "/self-directed-ira/alternative-assets",
+    "/self-directed-ira/llc-structure",
+    "/crypto-ira/best-companies",
+    "/crypto-ira/tax-rules",
+    "/crypto-ira/bitcoin-vs-gold-ira",
+    "/real-estate-ira/ubit-rules",
+    "/real-estate-ira/rental-property-rules",
+    "/real-estate-ira/non-recourse-loans",
+    "/robs-401k/qualification-rules",
+    "/robs-401k/vs-sba-loan",
+    "/robs-401k/success-rates",
+    "/compare/gold-ira-vs-annuity",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date('2026-03-15'),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  // ============================================
+  // REVIEW PAGES (unique content per company — keep)
+  // ============================================
+  const reviewPages = [
     "/reviews/augusta-precious-metals",
     "/reviews/goldco",
     "/reviews/american-hartford-gold",
@@ -281,15 +320,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/reviews/blanchard-gold",
     "/reviews/monetary-gold",
     "/reviews/money-metals-exchange",
-    // Crypto IRA reviews
     "/reviews/itrustcapital",
     "/reviews/alto-ira",
-    // Self-Directed IRA reviews
     "/reviews/rocket-dollar",
-    // ROBS 401k reviews
     "/reviews/guidant-financial",
     "/reviews/benetrends",
-    // Complaints & lawsuit pages
     "/reviews/us-money-reserve-complaints",
     "/reviews/rosland-capital-lawsuit",
     "/reviews/augusta-precious-metals-lawsuit",
@@ -300,33 +335,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/reviews/regal-assets-lawsuit",
     "/reviews/birch-gold-complaints",
     "/reviews/noble-gold-legit",
-    // Custodian reviews
     "/reviews/equity-trust",
     "/reviews/kingdom-trust",
     "/reviews/millennium-trust",
     "/reviews/preferred-trust",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   // ============================================
-  // REVIEW PAGES (Dynamic from companies data)
+  // COMPARE PAGES (curated only — NO dynamic permutations)
   // ============================================
-  const companySlugs = getCompanySlugs();
-  const reviewDynamicPages = companySlugs.map((slug) => ({
-    url: `${baseUrl}/reviews/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // COMPARE PAGES (Static)
-  // ============================================
-  const compareStaticPages = [
+  const comparePages = [
     "/compare/augusta-vs-goldco",
     "/compare/augusta-vs-noble-gold",
     "/compare/goldco-vs-american-hartford-gold",
@@ -341,74 +364,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/compare/gold-ira-vs-gold-etf",
     "/compare/gold-ira-vs-crypto",
     "/compare/gold-vs-silver-ira",
-    "/compare/goldco-vs-augusta",
     "/compare/gold-stocks-vs-gold-ira",
     "/compare/gold-etf-vs-physical-gold",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-01'),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
   // ============================================
-  // DYNAMIC COMPANY VS COMPANY COMPARISON PAGES
+  // ROLLOVER ACCOUNT TYPE PAGES (keep — substantive)
+  // Provider-specific pages REMOVED (too many permutations)
   // ============================================
-  const allCompanies = getAllCompanies();
-  const companyComparisonSlugs: string[] = [];
-  for (let i = 0; i < allCompanies.length; i++) {
-    for (let j = i + 1; j < allCompanies.length; j++) {
-      // Both directions for SEO
-      companyComparisonSlugs.push(`${allCompanies[i].slug}-vs-${allCompanies[j].slug}`);
-      companyComparisonSlugs.push(`${allCompanies[j].slug}-vs-${allCompanies[i].slug}`);
-    }
-  }
-  const companyComparePages = companyComparisonSlugs.map((slug) => ({
-    url: `${baseUrl}/compare/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
-  // ============================================
-  // GOLD VS [ASSET] COMPARISON PAGES
-  // ============================================
-  const assetSlugs = getAllAssetSlugs();
-  const assetComparePages = assetSlugs.map((slug) => ({
-    url: `${baseUrl}/compare/gold-vs/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
-  // ============================================
-  // ROLLOVER ACCOUNT TYPE PAGES
-  // ============================================
-  const accountTypeSlugs = getAccountTypeSlugs();
-  const rolloverAccountPages = accountTypeSlugs.map((slug) => ({
-    url: `${baseUrl}/rollover/${slug}-to-gold-ira`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // ROLLOVER PROVIDER PAGES
-  // ============================================
-  const providerSlugs = getProviderSlugs();
-  const rolloverProviderPages = providerSlugs.map((slug) => ({
-    url: `${baseUrl}/rollover/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // BEST GOLD IRA FOR [AUDIENCE] PAGES
-  // ============================================
-  const audiencePages = audienceSlugs.map((slug) => ({
-    url: `${baseUrl}/best-gold-ira-for/${slug}`,
-    lastModified: new Date(),
+  const rolloverPages = [
+    "/rollover/401k-to-gold-ira",
+    "/rollover/403b-to-gold-ira",
+    "/rollover/457b-to-gold-ira",
+    "/rollover/tsp-to-gold-ira",
+    "/rollover/pension-to-gold-ira",
+    "/rollover/sep-ira-to-gold-ira",
+    "/rollover/simple-ira-to-gold-ira",
+    "/rollover/traditional-ira-to-gold-ira",
+    "/rollover/roth-ira-to-gold-ira",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date('2026-03-01'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
@@ -416,134 +397,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // ============================================
   // SCENARIO PAGES
   // ============================================
-  const scenarioSlugs = getAllScenarioSlugs();
-  const scenarioPages = scenarioSlugs.map((slug) => ({
-    url: `${baseUrl}/scenarios/${slug}`,
-    lastModified: new Date(),
+  const scenarioPages = [
+    "/scenarios/currency-crisis",
+    "/scenarios/bank-bail-in",
+    "/scenarios/pension-crisis",
+    "/scenarios/hyperinflation",
+    "/scenarios/stock-market-crash",
+    "/scenarios/social-security-collapse",
+    "/scenarios/dollar-collapse",
+    "/scenarios/stagflation",
+    "/scenarios/debt-ceiling-crisis",
+    "/scenarios/cyber-attack-financial",
+    "/scenarios/supply-chain-collapse",
+    "/scenarios/housing-crash-2",
+    "/scenarios/bond-market-crash",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date('2026-02-01'),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
 
   // ============================================
-  // LOCAL STATE PAGES
+  // SPECIAL TOPIC HUBS (substantive niche content)
   // ============================================
-  const statePages = US_STATES.map((state) => ({
-    url: `${baseUrl}/local/${state.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
+  const specialTopicPages = [
+    "/widow-guide",
+    "/medicaid-planning",
+    "/grandchildren",
+    "/senior-protection",
+    "/federal-retirement",
+  ].map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date('2026-03-15'),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
   }));
 
   // ============================================
-  // LOCAL CITY PAGES
+  // SILVER HUB PAGES (keep hub pages + key sub-pages)
   // ============================================
-  const citySlugs = getAllCitySlugs();
-  const cityPages = citySlugs.map(({ state, city }) => ({
-    url: `${baseUrl}/local/${state}/${city}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.5,
-  }));
-
-  // ============================================
-  // NEWS ARTICLE PAGES
-  // ============================================
-  const newsSlugs = getAllNewsSlugs();
-  const newsPages = newsSlugs.map((slug) => ({
-    url: `${baseUrl}/news/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "daily" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // WIDOW'S GUIDE PAGES
-  // ============================================
-  const widowGuideSlugs = getAllWidowGuideArticleSlugs();
-  const widowGuidePages = [
-    // Hub page
-    {
-      url: `${baseUrl}/widow-guide`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-    // Article pages
-    ...widowGuideSlugs.map((slug) => ({
-      url: `${baseUrl}/widow-guide/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
-  ];
-
-  // ============================================
-  // MEDICAID PLANNING PAGES
-  // ============================================
-  const medicaidSlugs = getAllMedicaidArticleSlugs();
-  const medicaidPages = [
-    // Hub page
-    {
-      url: `${baseUrl}/medicaid-planning`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-    // Article pages
-    ...medicaidSlugs.map((slug) => ({
-      url: `${baseUrl}/medicaid-planning/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
-  ];
-
-  // ============================================
-  // GRANDCHILDREN LEGACY PAGES
-  // ============================================
-  const grandchildrenSlugs = getAllGrandchildrenArticleSlugs();
-  const grandchildrenPages = [
-    // Hub page
-    {
-      url: `${baseUrl}/grandchildren`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-    // Article pages
-    ...grandchildrenSlugs.map((slug) => ({
-      url: `${baseUrl}/grandchildren/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
-  ];
-
-  // ============================================
-  // SENIOR PROTECTION PAGES
-  // ============================================
-  const seniorProtectionSlugs = getAllSeniorProtectionArticleSlugs();
-  const seniorProtectionPages = [
-    // Hub page
-    {
-      url: `${baseUrl}/senior-protection`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-    // Article pages
-    ...seniorProtectionSlugs.map((slug) => ({
-      url: `${baseUrl}/senior-protection/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
-  ];
-
-  // ============================================
-  // SILVER SQUEEZE PAGES
-  // ============================================
-  const silverSqueezePages = [
+  const silverPages = [
+    // Silver Squeeze Hub
     "/silver-squeeze",
     "/silver-squeeze/buy-physical-silver-guide",
     "/silver-squeeze/silver-supply-deficit",
@@ -557,17 +452,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-squeeze/silver-shortage",
     "/silver-squeeze/silver-undervalued",
     "/silver-squeeze/silver-to-gold-ratio-calculator",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
-
-  // ============================================
-  // SILVER IRA HUB PAGES (10 pages)
-  // ============================================
-  const silverIraPages = [
+    // Silver IRA Hub
     "/silver-ira",
     "/silver-ira/rules",
     "/silver-ira/rollover",
@@ -578,17 +463,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-ira/custodian",
     "/silver-ira/reviews",
     "/silver-ira/vs-gold-ira",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
-
-  // ============================================
-  // SILVER PRICE PREDICTIONS PAGES (8 pages)
-  // ============================================
-  const silverPricePages = [
+    // Silver Price Hub
     "/silver-price",
     "/silver-price/prediction-2026",
     "/silver-price/all-time-high",
@@ -597,17 +472,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-price/why-silver-is-cheap",
     "/silver-price/will-silver-hit-50",
     "/silver-price/will-silver-hit-100",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
-
-  // ============================================
-  // SILVER PRODUCTS GUIDE PAGES (9 pages)
-  // ============================================
-  const silverProductsPages = [
+    // Silver Products
     "/silver-products",
     "/silver-products/1000-oz-bar",
     "/silver-products/90-percent-coins",
@@ -617,17 +482,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-products/krugerrand",
     "/silver-products/perth-mint",
     "/silver-products/pslv-vs-slv",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // SILVER EXPERTS PAGES (7 pages)
-  // ============================================
-  const silverExpertsPages = [
+    // Silver Experts
     "/silver-experts",
     "/silver-experts/mike-maloney",
     "/silver-experts/david-morgan",
@@ -635,25 +490,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-experts/rick-rule",
     "/silver-experts/eric-sprott",
     "/silver-experts/ted-butler",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // SILVER COIN VALUES PAGES (9 pages) - Part 3
-  // ============================================
-  const silverCoinValuesHubPages = [
-    {
-      url: `${baseUrl}/silver-coin-values`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-  ];
-  const silverCoinValuesSubPages = [
+    // Silver Coin Values
+    "/silver-coin-values",
     "/silver-coin-values/morgan-dollar",
     "/silver-coin-values/walking-liberty-half",
     "/silver-coin-values/silver-dimes",
@@ -662,25 +500,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-coin-values/war-nickels",
     "/silver-coin-values/junk-silver",
     "/silver-coin-values/melt-value-calculator",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // SILVER DEALER REVIEWS PAGES (8 pages) - Part 3
-  // ============================================
-  const silverDealerReviewsHubPages = [
-    {
-      url: `${baseUrl}/silver-dealer-reviews`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-  ];
-  const silverDealerReviewsSubPages = [
+    // Silver Dealer Reviews
+    "/silver-dealer-reviews",
     "/silver-dealer-reviews/apmex",
     "/silver-dealer-reviews/jm-bullion",
     "/silver-dealer-reviews/sd-bullion",
@@ -688,25 +509,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-dealer-reviews/hero-bullion",
     "/silver-dealer-reviews/bold-precious-metals",
     "/silver-dealer-reviews/comparison",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // BUY SELL SILVER PAGES (10 pages) - Part 3
-  // ============================================
-  const buySellSilverHubPages = [
-    {
-      url: `${baseUrl}/buy-sell-silver`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-  ];
-  const buySellSilverSubPages = [
+    // Buy/Sell Silver
+    "/buy-sell-silver",
     "/buy-sell-silver/best-place-to-sell",
     "/buy-sell-silver/best-coins-to-buy",
     "/buy-sell-silver/how-to-sell-coins",
@@ -716,25 +520,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/buy-sell-silver/when-to-sell",
     "/buy-sell-silver/coins-vs-bars",
     "/buy-sell-silver/stacking-beginners",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // SILVER RETIREMENT PAGES (9 pages) - Part 3
-  // ============================================
-  const silverRetirementHubPages = [
-    {
-      url: `${baseUrl}/silver-retirement`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    },
-  ];
-  const silverRetirementSubPages = [
+    // Silver Retirement
+    "/silver-retirement",
     "/silver-retirement/transfer-ira-to-silver",
     "/silver-retirement/ira-approved-bars",
     "/silver-retirement/ira-approved-coins",
@@ -745,105 +532,60 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/silver-retirement/rmd-rules",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   // ============================================
-  // SILVER PRODUCTS EXPANSION (7 NEW pages) - Part 3
+  // GOLD & SILVER STOCKS HUBS
   // ============================================
-  const silverProductsExpansionPages = [
-    "/silver-products/monster-box",
-    "/silver-products/engelhard",
-    "/silver-products/sunshine-mint",
-    "/silver-products/fractional",
-    "/silver-products/johnson-matthey",
-    "/silver-products/pamp-suisse",
-    "/silver-products/generic-rounds",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
-
-  // ============================================
-  // GOLD STOCKS HUB PAGES (4 pages)
-  // ============================================
-  const goldStocksPages = [
+  const stocksPages = [
     "/gold-stocks",
     "/gold-stocks/best-gold-stocks",
     "/gold-stocks/gold-stocks-to-buy",
     "/gold-stocks/gold-mining-stocks-vs-physical-gold",
-  ].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: route === "/gold-stocks" ? 0.8 : 0.7,
-  }));
-
-  // ============================================
-  // SILVER STOCKS HUB PAGES (2 pages)
-  // ============================================
-  const silverStocksPages = [
     "/silver-stocks",
     "/silver-stocks/best-silver-stocks",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date('2026-03-15'),
     changeFrequency: "monthly" as const,
-    priority: route === "/silver-stocks" ? 0.7 : 0.6,
+    priority: 0.7,
+  }));
+
+  // ============================================
+  // SEGMENT HUB PAGES (occupation + life-event)
+  // ============================================
+  const segmentSlugs = getAllSegmentSlugs();
+  const segmentPages = segmentSlugs.map((slug) => ({
+    url: `${baseUrl}/retirement/${slug}`,
+    lastModified: new Date('2026-04-14'),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
   }));
 
   // ============================================
   // COMBINE ALL PAGES
   // ============================================
-  // Deduplicate by URL to handle any overlaps
   const allPages = [
     ...corePages,
     ...legalPages,
     ...authorPages,
     ...toolsPages,
     ...guidePages,
-    ...learnStaticPages,
-    ...learnArticlePages,
+    ...learnPages,
     ...whyGoldPages,
     ...richDadPages,
-    ...reviewStaticPages,
-    ...reviewDynamicPages,
-    ...compareStaticPages,
-    ...companyComparePages,
-    ...assetComparePages,
-    ...rolloverAccountPages,
-    ...rolloverProviderPages,
-    ...audiencePages,
+    ...hubSubPages,
+    ...reviewPages,
+    ...comparePages,
+    ...rolloverPages,
     ...scenarioPages,
-    ...statePages,
-    ...cityPages,
-    ...newsPages,
-    ...widowGuidePages,
-    ...medicaidPages,
-    ...grandchildrenPages,
-    ...seniorProtectionPages,
-    ...silverSqueezePages,
-    ...silverIraPages,
-    ...silverPricePages,
-    ...silverProductsPages,
-    ...silverExpertsPages,
-    // Silver Part 3 Content Hubs
-    ...silverCoinValuesHubPages,
-    ...silverCoinValuesSubPages,
-    ...silverDealerReviewsHubPages,
-    ...silverDealerReviewsSubPages,
-    ...buySellSilverHubPages,
-    ...buySellSilverSubPages,
-    ...silverRetirementHubPages,
-    ...silverRetirementSubPages,
-    ...silverProductsExpansionPages,
-    // Gold & Silver Stocks Hubs
-    ...goldStocksPages,
-    ...silverStocksPages,
+    ...specialTopicPages,
+    ...silverPages,
+    ...stocksPages,
+    ...segmentPages,
   ];
 
   // Deduplicate by URL

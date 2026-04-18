@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import {
@@ -15,6 +13,13 @@ import {
     Home,
     Lock
 } from "lucide-react";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import { getTrackedAugustaLink } from "@/config/affiliates";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Self-Directed Roth IRA Guide 2026: Tax-Free Alternative Investments",
@@ -31,7 +36,18 @@ export const metadata: Metadata = {
 export default function SelfDirectedRothIRAPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            <SchemaScript schema={articleSchema({
+                title: "Self-Directed Roth IRA Guide: Tax-Free Alternative Investments",
+                description: "Learn how a Self-Directed Roth IRA lets you invest in real estate, crypto, and gold completely tax-free.",
+                slug: "/learn/self-directed-roth-ira",
+                datePublished: "2026-01-01",
+                dateModified: "2026-01-25",
+            })} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Self-Directed Roth IRA Guide", url: "/learn/self-directed-roth-ira" },
+            ])} />
 
             {/* Hero */}
             <header className="relative py-20 overflow-hidden">
@@ -70,6 +86,16 @@ export default function SelfDirectedRothIRAPage() {
                 </Container>
             </header>
 
+            <AnswerFirst
+                variant="light"
+                answer="A self-directed Roth IRA combines the tax-free growth of a Roth with the investment freedom of a self-directed account. You can hold real estate, precious metals, private equity, and more — and qualified withdrawals after age 59½ are completely tax-free. Income limits apply: $161,000 (single) or $240,000 (married filing jointly) for 2026."
+                keyFacts={[
+                    "Tax-free withdrawals after age 59½ and 5-year holding period",
+                    "Income limits: $161,000 single / $240,000 MFJ for 2026 (IRS)",
+                    "Can hold alternative assets: real estate, gold, crypto, private equity",
+                ]}
+            />
+
             {/* Key Benefits */}
             <section className="py-12 bg-[#0C0D18]">
                 <Container>
@@ -100,6 +126,8 @@ export default function SelfDirectedRothIRAPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-self-directed-roth-ira" />
 
             {/* Main Content */}
             <section className="py-16 bg-white">
@@ -323,6 +351,31 @@ export default function SelfDirectedRothIRAPage() {
                 </Container>
             </section>
 
+            {/* Augusta CTA */}
+            <section className="py-12 bg-gradient-to-r from-[#000080] to-[#000060]">
+                <Container>
+                    <div className="max-w-3xl mx-auto text-center">
+                        <p className="text-amber-400 text-sm font-bold uppercase tracking-wider mb-3">Our #1 Recommended Company</p>
+                        <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
+                            Want Gold in Your Self-Directed IRA?
+                        </h2>
+                        <p className="text-blue-200 mb-6 max-w-xl mx-auto">
+                            Augusta Precious Metals makes it easy to add physical gold and silver to your retirement account. Free info kit, no pressure.
+                        </p>
+                        <a
+                            href={getTrackedAugustaLink("default", "learn-self-directed-roth-ira")}
+                            className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#9a1e2d] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg"
+                        >
+                            Get Your Free Augusta Kit
+                            <ArrowRight className="w-5 h-5" />
+                        </a>
+                        <p className="text-white/40 text-xs mt-3">A+ BBB Rated &bull; Zero Complaints &bull; No Obligation</p>
+                    </div>
+                </Container>
+            </section>
+
+            <AutoRelatedContent currentUrl="/learn/self-directed-roth-ira" />
+
             {/* Related */}
             <section className="py-16 bg-[#0C0D18]">
                 <Container>
@@ -344,23 +397,6 @@ export default function SelfDirectedRothIRAPage() {
                 </Container>
             </section>
 
-            <Footer />
-
-            {/* Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Article",
-                        "headline": "Self-Directed Roth IRA Guide: Tax-Free Alternative Investments",
-                        "description": "Learn how a Self-Directed Roth IRA lets you invest in real estate, crypto, and gold completely tax-free.",
-                        "author": { "@type": "Organization", "name": "Rich Dad Retirement" },
-                        "datePublished": "2026-01-01",
-                        "dateModified": "2026-01-25"
-                    })
-                }}
-            />
         </main>
     );
 }

@@ -6,22 +6,16 @@ import { insertLead, updateLeadStatus, updateLead, getLeadById, getLeadByEmail, 
 import { updateLeadNotification } from "@/lib/lead-notification";
 import { calculatePotentialDeal } from "@/lib/deal-calculator";
 import { submitToAugusta } from "@/lib/augusta";
+import { enrollInSequence, upgradeSequence, checkActiveSequence } from "@/lib/email-queue";
+import { getSequenceForContext } from "@/lib/email-sequences";
+import { sendHighIntentSMS, isTwilioConfigured } from "@/lib/sms";
+import { checkRateLimit, getRequestIdentifier, rateLimitedResponse } from "@/lib/rate-limit";
 
-// Simple rate limiting (per IP, resets on deploy)
-const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
-const RATE_LIMIT = 10; // max submissions per window
-const RATE_WINDOW = 60 * 60 * 1000; // 1 hour
-
-function isRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const entry = rateLimitMap.get(ip);
-  if (!entry || now > entry.resetAt) {
-    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_WINDOW });
-    return false;
-  }
-  entry.count++;
-  return entry.count > RATE_LIMIT;
-}
+// Rate limit: 10 lead submissions per hour per IP. Backed by Vercel KV so
+// the counter is shared across serverless instances (the prior in-memory
+// Map was bypassed by hitting cold instances).
+const RATE_LIMIT = 10;
+const RATE_WINDOW_SEC = 60 * 60;
 
 // Validation helpers
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -46,24 +40,33 @@ interface LeadData {
   investmentAmount?: string;
   source?: string;
   skipAugusta?: boolean;
+  // Qualification funnel fields
+  savingsTier?: string;
+  concern?: string;
+  qualificationTier?: string;
+  routedTo?: string;
+  abVariant?: string;
+  // Metal preference (gold, silver, both, or undefined for legacy leads)
+  metalPreference?: "gold" | "silver" | "both";
 }
 
 export async function POST(request: NextRequest) {
   try {
-    // Rate limiting
-    const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-      request.headers.get("x-real-ip") || "unknown";
-    if (isRateLimited(ip)) {
-      return NextResponse.json(
-        { success: false, error: "Too many requests" },
-        { status: 429 }
-      );
+    // Rate limiting (KV-backed, shared across Vercel instances)
+    const ip = getRequestIdentifier(request);
+    const rl = await checkRateLimit(ip, {
+      bucket: "submit-lead",
+      max: RATE_LIMIT,
+      windowSec: RATE_WINDOW_SEC,
+    });
+    if (!rl.ok) {
+      return rateLimitedResponse(rl, RATE_LIMIT);
     }
 
     const body: LeadData = await request.json();
 
-    // Validate required fields
-    if (!body.firstName || !body.email || !body.phone) {
+    // Validate required fields (phone is optional for sub-$50k leads)
+    if (!body.firstName || !body.email) {
       return NextResponse.json(
         { success: false, error: "Missing required fields" },
         { status: 400 }
@@ -78,30 +81,85 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Validate phone (must be 10 digits US number)
-    if (!isValidPhone(body.phone)) {
-      return NextResponse.json(
-        { success: false, error: "Invalid phone number - must be 10 digit US number" },
-        { status: 400 }
-      );
+    // Validate phone only if provided (required for Augusta $50k+ leads, optional for others)
+    if (body.phone && body.phone.trim()) {
+      if (!isValidPhone(body.phone)) {
+        return NextResponse.json(
+          { success: false, error: "Invalid phone number - must be 10 digit US number" },
+          { status: 400 }
+        );
+      }
     }
 
     // Sanitize inputs (strip HTML/script tags)
     body.firstName = body.firstName.replace(/<[^>]*>/g, "").trim().slice(0, 100);
     body.lastName = (body.lastName || "").replace(/<[^>]*>/g, "").trim().slice(0, 100);
     body.email = body.email.trim().toLowerCase().slice(0, 254);
-    body.phone = normalizePhone(body.phone);
+    body.phone = body.phone ? normalizePhone(body.phone) : "";
 
     // Deduplication: check if email already exists
     const existingLead = await getLeadByEmail(body.email);
     if (existingLead) {
-      console.log("[LEAD] Duplicate email detected:", body.email);
-      // Return success to user but don't create duplicate
+      // If already sent to Augusta, truly a duplicate — don't resubmit
+      if (existingLead.status === "sent_to_augusta" || existingLead.status === "contacted" || existingLead.status === "qualified" || existingLead.status === "converted") {
+        console.log("[LEAD] Already processed:", body.email, existingLead.status);
+        return NextResponse.json({
+          success: true,
+          message: "Lead received",
+          leadId: existingLead.id,
+          augustaSubmitted: true,
+        });
+      }
+
+      // Guide-downloader or newsletter sub upgrading to full lead — enrich and continue
+      console.log("[LEAD] Upgrading existing lead:", body.email, existingLead.status);
+      const enrichUpdates: Partial<Lead> = {};
+      if (body.phone && !existingLead.phone) enrichUpdates.phone = normalizePhone(body.phone);
+      if (body.lastName && !existingLead.last_name) enrichUpdates.last_name = body.lastName;
+      if (body.savingsTier) enrichUpdates.savings_tier = body.savingsTier;
+      if (body.concern) enrichUpdates.concern = body.concern;
+      if (body.qualificationTier) enrichUpdates.qualification_tier = body.qualificationTier;
+      if (body.routedTo) enrichUpdates.routed_to = body.routedTo;
+      if (body.source) enrichUpdates.source = body.source;
+      if (body.metalPreference) enrichUpdates.metal_preference = body.metalPreference;
+
+      if (Object.keys(enrichUpdates).length > 0) {
+        await updateLead(existingLead.id!, enrichUpdates);
+        Object.assign(existingLead, enrichUpdates);
+      }
+
+      // Upgrade their email sequence
+      try {
+        const { upgradeSequence } = await import("@/lib/email-queue");
+        const { getSequenceForContext } = await import("@/lib/email-sequences");
+        const sequenceId = getSequenceForContext("lead-form", body.savingsTier);
+        await upgradeSequence(body.email, sequenceId, body.source, body.firstName);
+        console.log(`[LEAD] Upgraded ${body.email} sequence to ${sequenceId}`);
+      } catch (err) {
+        console.error("[LEAD] Sequence upgrade failed:", err);
+      }
+
+      // Submit to Augusta if high-intent and not already submitted
+      if (!body.skipAugusta && existingLead.phone) {
+        const augustaSuccess = await submitToAugusta(existingLead);
+        if (augustaSuccess) {
+          await updateLeadStatus(existingLead.id!, "sent_to_augusta", {
+            augusta_submitted_at: new Date().toISOString(),
+          });
+        }
+        return NextResponse.json({
+          success: true,
+          message: augustaSuccess ? "Lead submitted to Augusta" : "Lead captured - Augusta submission pending",
+          leadId: existingLead.id,
+          augustaSubmitted: augustaSuccess,
+        });
+      }
+
       return NextResponse.json({
         success: true,
-        message: "Lead received",
+        message: "Lead updated",
         leadId: existingLead.id,
-        augustaSubmitted: existingLead.status === "sent_to_augusta",
+        augustaSubmitted: false,
       });
     }
 
@@ -131,6 +189,13 @@ export async function POST(request: NextRequest) {
       ip_address: ip,
       user_agent: userAgent,
       status: "new",
+      // Qualification funnel fields (columns must exist in Supabase)
+      ...(body.savingsTier && { savings_tier: body.savingsTier }),
+      ...(body.concern && { concern: body.concern }),
+      ...(body.qualificationTier && { qualification_tier: body.qualificationTier }),
+      ...(body.routedTo && { routed_to: body.routedTo }),
+      ...(body.abVariant && { ab_variant: body.abVariant }),
+      ...(body.metalPreference && { metal_preference: body.metalPreference }),
     };
 
     const lead = await insertLead(leadData);
@@ -143,7 +208,32 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 2. Send initial Telegram notification
+    // 2. Enroll in email nurture sequence based on savings tier
+    //    V2.1: Uses getSequenceForContext, handles sequence upgrades
+    //    (e.g., guide-nurture reader submits lead form → upgrades to high-intent)
+    try {
+      const sequenceId = getSequenceForContext("lead-form", body.savingsTier);
+      const metadata = {
+        ...(body.savingsTier && { savings_tier: body.savingsTier }),
+        ...(body.concern && { concern: body.concern }),
+        ...(body.qualificationTier && { qualification_tier: body.qualificationTier }),
+        ...(body.routedTo && { routed_to: body.routedTo }),
+      };
+
+      // Check if already in a sequence (e.g., guide-nurture) and upgrade
+      const activeSequence = await checkActiveSequence(lead.email);
+      if (activeSequence && activeSequence !== sequenceId) {
+        await upgradeSequence(lead.email, sequenceId, body.source, body.firstName, metadata);
+        console.log(`[LEAD] Upgraded ${lead.email} from ${activeSequence} to ${sequenceId}`);
+      } else {
+        await enrollInSequence(lead.email, sequenceId, body.source, body.firstName, metadata);
+        console.log(`[LEAD] Enrolled ${lead.email} in sequence: ${sequenceId}`);
+      }
+    } catch (err) {
+      console.error("[LEAD] Sequence enrollment failed:", err);
+    }
+
+    // 3. Send initial Telegram notification
     console.log("[LEAD] Sending Telegram notification for lead:", lead.email);
     try {
       const messageId = await updateLeadNotification(lead, location);
@@ -158,7 +248,21 @@ export async function POST(request: NextRequest) {
       console.error("[TELEGRAM ERROR]", err);
     }
 
-    // 3. Submit to Augusta via Zapier webhook (unless skipAugusta is true)
+    // 4. Send SMS confirmation for high-intent leads (they gave us their phone)
+    if (lead.phone && isTwilioConfigured()) {
+      const sequenceId = getSequenceForContext("lead-form", body.savingsTier);
+      if (sequenceId === "high-intent") {
+        try {
+          await sendHighIntentSMS(lead.phone, body.firstName);
+          console.log("[LEAD] High-intent SMS sent to", lead.phone);
+        } catch (err) {
+          console.error("[SMS] Failed for lead:", lead.email, err);
+          // Non-critical — don't fail the lead submission
+        }
+      }
+    }
+
+    // 5. Submit to Augusta via Zapier webhook (unless skipAugusta is true)
     if (body.skipAugusta) {
       // New confirmation flow: save lead but don't send to Augusta yet
       return NextResponse.json({
@@ -185,9 +289,14 @@ export async function POST(request: NextRequest) {
         console.error("[TELEGRAM ERROR]", err);
       }
     } else {
-      // Keep as new, flag for manual review
+      // Mark for the retry cron — augusta-retry.ts picks these up, retries
+      // with exponential backoff, and alerts via Telegram after MAX_RETRIES.
+      const nowIso = new Date().toISOString();
       await updateLeadStatus(lead.id!, "new", {
-        notes: "Augusta webhook failed - needs manual upload",
+        notes: "Augusta webhook failed at capture — retry queue scheduled",
+        augusta_failed_at: nowIso,
+        augusta_last_attempt_at: nowIso,
+        augusta_retry_count: 1,
       });
     }
 
@@ -211,7 +320,7 @@ export async function POST(request: NextRequest) {
 export async function PATCH(request: NextRequest) {
   try {
     const body = await request.json();
-    const { leadId, action, totalRetirementSavings, percentageToProtect, notes } = body;
+    const { leadId, email, action, totalRetirementSavings, percentageToProtect, notes } = body;
 
     if (!leadId || !/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(leadId)) {
       return NextResponse.json(
@@ -224,6 +333,16 @@ export async function PATCH(request: NextRequest) {
     const lead = await getLeadById(leadId);
     if (!lead) {
       return NextResponse.json({ success: false, error: "Lead not found" }, { status: 404 });
+    }
+
+    // Caller must know the email the lead was created with. Prevents random
+    // actors from marking arbitrary leads as qualified or overwriting notes.
+    if (!email || typeof email !== "string" || email.trim().toLowerCase() !== lead.email) {
+      console.warn(`[PATCH-LEAD] Email mismatch for lead ${leadId} from ${request.headers.get("x-forwarded-for")}`);
+      return NextResponse.json(
+        { success: false, error: "Unauthorized" },
+        { status: 403 }
+      );
     }
 
     // Handle decline_call action

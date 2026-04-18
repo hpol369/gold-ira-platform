@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { AugustaCTA } from '@/components/cta/AugustaCTA';
+import { CalculatorCTA } from '@/components/widgets/CalculatorCTA';
 
 export default function FERSCalculatorPage() {
   // Form state
@@ -664,6 +665,9 @@ export default function FERSCalculatorPage() {
                       </p>
                     </div>
                   )}
+
+                  {/* Contextual CTA */}
+                  <CalculatorCTA calculatorType="fers" trackSource="tools-fers-calculator" />
 
                   {/* CTA */}
                   <AugustaCTA

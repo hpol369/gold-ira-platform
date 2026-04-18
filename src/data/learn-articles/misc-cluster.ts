@@ -18,6 +18,13 @@ export const miscArticles: LearnArticleRegistry = {
       'is retirement fdic insured',
       '401k sipc'
     ],
+    answerFirst: 'No, your 401(k) is not FDIC insured. FDIC only covers bank deposits (checking, savings, CDs) up to $250,000 per depositor. Your 401(k) investments are protected by SIPC (up to $500,000) against brokerage failure and by ERISA against employer mismanagement — but no insurance protects against market losses. In 2008, average 401(k) balances dropped over 30%.',
+    answerFirstFacts: [
+      'FDIC covers bank deposits up to $250,000 — it does not cover stocks, bonds, mutual funds, or 401(k) investments',
+      'SIPC protects up to $500,000 per account if a brokerage firm fails, but not against market losses',
+      'ERISA provides fiduciary standards and protection against employer or plan mismanagement',
+      'In 2008, average 401(k) balances dropped 30%+ and in 2022 many dropped 20%+ — this is uninsured market risk',
+    ],
     targetKeyword: 'is my 401k fdic insured',
     volume: 45,
     difficulty: 18,
@@ -160,6 +167,13 @@ export const miscArticles: LearnArticleRegistry = {
       '401k losing value',
       '401k decreasing',
       '401k going down every day'
+    ],
+    answerFirst: 'Your 401(k) is most likely losing money due to normal market volatility — the S&P 500 falls an average of 14% at some point during most years, and 10% corrections happen every 1-2 years. Other common causes include high fees (anything over 0.5% expense ratio is high), wrong asset allocation for your age, and 401(k) loan repayments reducing your invested balance. The market has recovered from every decline in history.',
+    answerFirstFacts: [
+      'The S&P 500 experiences an average intra-year decline of 14% during most years',
+      'Bear markets (20%+ drops) happen roughly every 4-5 years and take about 2 years to recover on average',
+      'High fund fees of 1-2% can eat a significant portion of gains even in positive market years',
+      'Panic selling locks in losses permanently — staying invested has been the winning strategy through every crash in history',
     ],
     targetKeyword: 'why 401k losing money',
     volume: 50,
@@ -320,6 +334,13 @@ export const miscArticles: LearnArticleRegistry = {
       'after tax 401k conversion',
       'mega backdoor roth how it works',
       'mega backdoor roth limit'
+    ],
+    answerFirst: 'A mega backdoor Roth lets you contribute up to $69,000 total to your 401(k) in 2025 by making after-tax contributions beyond the normal $23,500 limit, then converting them to Roth. Only about 30% of 401(k) plans allow the required after-tax contributions and in-plan Roth conversions. If your plan qualifies, you can shelter an additional $35,000-$46,000 per year in tax-free Roth growth.',
+    answerFirstFacts: [
+      'The 2025 total 401(k) contribution limit is $69,000 ($76,500 for those 50+) including employer contributions',
+      'Only approximately 30% of 401(k) plans allow the after-tax contributions required for mega backdoor Roth',
+      'Your mega backdoor capacity equals $69,000 minus your pre-tax contributions minus employer match',
+      'After-tax contributions should be converted to Roth immediately to minimize taxable gains',
     ],
     targetKeyword: 'what is a mega backdoor roth',
     volume: 40,
@@ -485,6 +506,13 @@ export const miscArticles: LearnArticleRegistry = {
       'should I contribute to 401k or pay debt',
       '401k or pay off credit card',
       'debt vs retirement savings'
+    ],
+    answerFirst: 'Always contribute enough to get your full employer 401(k) match first — it is a 50-100% instant return that beats any debt interest rate. After the match, pay off high-interest debt (15%+) before making additional 401(k) contributions. For low-interest debt under 7% (mortgage, federal student loans), the 401(k) tax deduction often makes additional contributions the mathematically better choice.',
+    answerFirstFacts: [
+      'A typical 401(k) employer match provides an instant 50-100% return — better than paying off any debt interest rate',
+      'Credit card debt at 20%+ should be attacked aggressively after securing the employer match',
+      'In a 24% tax bracket, a 7% pre-tax 401(k) return equals only 5.3% on an after-tax basis',
+      'The optimal order is: emergency fund, 401(k) match, high-interest debt, Roth IRA, max 401(k), then low-interest debt',
     ],
     targetKeyword: 'should i max out 401k or pay off debt',
     volume: 35,

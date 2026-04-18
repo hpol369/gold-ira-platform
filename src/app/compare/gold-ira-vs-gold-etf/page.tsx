@@ -11,6 +11,7 @@ import { Footer } from "@/components/layout/Footer";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Gold IRA vs. Gold ETF: Real Gold vs. Paper Assets (2026 Guide)",
@@ -100,6 +101,23 @@ export default function GoldIraVsGoldEtfPage() {
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A Gold IRA holds physical gold coins and bars that you directly own, while a Gold ETF (like GLD or IAU) is a paper asset — a share in a trust that holds gold on your behalf. Gold IRAs offer better crisis protection with zero counterparty risk and IRA tax benefits, but Gold ETFs are cheaper and more liquid. For retirement protection, most advisors recommend physical gold in an IRA over paper ETFs."
+                        keyFacts={[
+                            "Gold IRAs: you own the metal; Gold ETFs: you own shares in a trust holding gold",
+                            "Gold ETFs are taxed as collectibles (28% max rate); Gold IRAs are tax-deferred or tax-free",
+                            "Gold IRA fees: $200-350/year; Gold ETF expense ratios: 0.25-0.40%/year",
+                            "In a banking crisis, physical gold is independent of the financial system — ETFs are not",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">

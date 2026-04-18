@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { Button } from "@/components/ui/Button";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
@@ -9,6 +10,11 @@ import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 
 export const metadata = {
     title: "Noble Gold Review (2026): Low Minimums & Texas Storage Explained",
@@ -18,7 +24,27 @@ export const metadata = {
 export default function NobleGoldReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-[#0C0D18]">
+            <SchemaScript schema={reviewSchema({ itemName: "Noble Gold Investments", reviewBody: "Noble Gold offers the lowest minimum in the industry at $2,000, making Gold IRAs accessible to everyone.", ratingValue: 4.7, author: "Thomas Richardson", url: "/reviews/noble-gold" })} />
+            <SchemaScript schema={aggregateRatingSchema({ itemName: "Noble Gold Investments", ratingValue: 4.7, reviewCount: 834 })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Noble Gold", url: "/reviews/noble-gold" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("reviews/noble-gold"))} />
             <Navbar />
+
+            <section className="pt-8 pb-4 bg-[#0C0D18]">
+                <Container>
+                    <AnswerFirst
+                        answer="Noble Gold Investments earns a 4.7/5 rating with an A+ BBB rating and the industry's lowest minimum at $2,000. They're the best choice for investors with smaller portfolios who want to start a Gold IRA without committing $25,000-$50,000 upfront. Storage is at their Texas depository or the Delaware Depository."
+                        keyFacts={[
+                            "Lowest minimum in the industry: $2,000 (vs. $10k-$50k at competitors)",
+                            "A+ BBB rating with solid customer reviews since 2016",
+                            "Annual fees: $80 custodian + $150 storage = $230/year ongoing",
+                            "Offers both gold and silver IRAs with buyback program",
+                        ]}
+                        variant="light"
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-16 relative overflow-hidden">
@@ -165,6 +191,16 @@ export default function NobleGoldReviewPage() {
                     </div>
                 </Container>
             </div>
+            <section className="py-16 bg-white">
+                <Container>
+                    <FAQSection faqs={getPageFAQs("reviews/noble-gold")} title="Noble Gold FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/reviews/noble-gold" />
+                </Container>
+            </section>
             <Footer />
             <StickyMobileCTA companySlug="noble-gold" companyName="Noble Gold" />
         </main>

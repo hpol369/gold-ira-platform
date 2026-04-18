@@ -9,6 +9,11 @@ import { Metadata } from "next";
 import { Gem, TrendingUp, AlertTriangle, ArrowRight, BarChart3, Factory } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Platinum IRA: A Complete Guide to Investing in White Gold (2026)",
@@ -93,6 +98,11 @@ export default function PlatinumIraPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Platinum IRA Investment Guide", url: "/learn/platinum-ira" },
+            ])} />
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -110,11 +120,28 @@ export default function PlatinumIraPage() {
                 </Container>
             </header>
 
+            <Container className="py-8">
+                <div className="max-w-4xl mx-auto">
+                    <AnswerFirst
+                        variant="light"
+                        answer="A Platinum IRA allows you to hold IRS-approved platinum bullion (99.95% purity) in a self-directed retirement account. Platinum is rarer than gold — annual mine production is about 190 tonnes vs 3,000+ tonnes for gold. The same contribution limits and tax rules apply as Gold IRAs."
+                        keyFacts={[
+                            "Platinum must be 99.95% pure for IRA eligibility (IRS)",
+                            "Annual platinum production: ~190 tonnes vs gold: ~3,000+ tonnes",
+                            "Same contribution limits as Gold IRA: $7,000/$8,000 (2026)",
+                        ]}
+                    />
+                </div>
+            </Container>
+
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-platinum-ira" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -159,6 +186,8 @@ export default function PlatinumIraPage() {
                                 <strong>The Supply Crunch:</strong> Most platinum comes from South Africa and Russia. Geopolitical instability in these regions can cut off supply overnight, leading to explosive price growth.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-platinum-ira" />
 
                         {/* Platinum vs Gold */}
                         <section id="platinum-vs-gold" className="scroll-mt-32">
@@ -260,6 +289,8 @@ export default function PlatinumIraPage() {
                                 ))}
                             </div>
                         </section>
+
+                        <AutoRelatedContent currentUrl="/learn/platinum-ira" />
 
                         <AuthorBox />
 

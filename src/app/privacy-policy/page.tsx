@@ -146,6 +146,11 @@ export default function PrivacyPolicyPage() {
                                 Our site is not intended for anyone under 18. We don&apos;t knowingly collect information from children. If you believe a child has provided us with personal information, please contact us and we&apos;ll delete it.
                             </p>
 
+                            <h2>SMS/Text Messaging Privacy</h2>
+                            <p>
+                                If you submit a Gold IRA information request form and provide your phone number, you may receive up to 3 transactional text messages from Rich Dad Retirement. Your phone number is used solely for sending form-related notifications (confirmation, call reminders, and follow-ups). We do not sell, share, or use your phone number for any other purpose. You can opt out at any time by replying STOP to any message. For help, reply HELP or email <a href="mailto:hello@richdadretirement.com" className="text-[#D4A94E] hover:underline">hello@richdadretirement.com</a>. Message and data rates may apply.
+                            </p>
+
                             <h2>Changes to This Policy</h2>
                             <p>
                                 We may update this policy from time to time. When we make significant changes, we&apos;ll update the &quot;Last updated&quot; date at the top. We encourage you to review this policy periodically.

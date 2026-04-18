@@ -7,6 +7,8 @@ import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { reviewSchema, breadcrumbSchema } from "@/lib/schema";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -17,6 +19,8 @@ export const metadata = {
 export default function AmericanBullionReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-[#0C0D18]">
+            <SchemaScript schema={reviewSchema({ itemName: "American Bullion", reviewBody: "Founded in 2009, American Bullion is one of the oldest Gold IRA companies. We analyze their fees, customer service, and whether experience translates to better service for investors.", ratingValue: 4.2, url: "/reviews/american-bullion" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "American Bullion", url: "/reviews/american-bullion" }])} />
             <Navbar />
 
             <div className="flex-grow">

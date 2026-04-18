@@ -7,8 +7,11 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, XCircle, AlertTriangle, DollarSign, Building2, Coins, RefreshCw } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 
 export const metadata: Metadata = {
     title: "What to Do with an Old 401(k): 5 Options for 2026",
@@ -19,6 +22,7 @@ export const metadata: Metadata = {
         type: "article",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/what-to-do-with-old-401k") },
 };
 
 const tocItems = [
@@ -103,10 +107,32 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "What to Do With Old 401k", url: "/guide/what-to-do-with-old-401k" },
+]);
+
 export default function WhatToDoWithOld401kPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="You have 5 options for an old 401k from a previous employer: leave it, roll it to your new employer's plan, roll it to a Traditional IRA, cash it out (not recommended — 10% penalty plus income tax), or convert it to a Gold IRA for physical precious metals diversification."
+                        keyFacts={[
+                            "Rolling to an IRA gives you the most investment options and typically lower fees",
+                            "Cashing out costs 20-37% in taxes plus a 10% penalty if you're under 59 1/2",
+                            "Employers may force-distribute balances under $5,000 if you do nothing",
+                            "A Gold IRA rollover is tax-free and lets you diversify into physical gold and silver",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#121423] text-[#F6F4EF] py-20 relative overflow-hidden border-b border-[#2A2D42]">
                 <div className="absolute inset-0 bg-primary-dark/50" />

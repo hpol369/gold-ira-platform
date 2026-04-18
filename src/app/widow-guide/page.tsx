@@ -10,7 +10,12 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { getAllWidowGuideArticles } from "@/data/widow-guide";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Heart, ArrowRight, Phone, BookOpen, Clock, Shield } from "lucide-react";
+import { AuthorBox } from "@/components/guide/AuthorBox";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
   title: "Widow's Financial Guide | Navigating Finances After Loss",
@@ -30,6 +35,8 @@ export default function WidowGuidePage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Widow's Financial Guide | Navigating Finances After Loss", description: "Compassionate guidance for managing finances after losing a spouse. Survivor benefits, estate planning, insurance, and protecting your financial future.", slug: "/widow-guide" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Widow's Financial Guide", url: "/widow-guide" }])} />
       <Navbar />
 
       {/* Hero Section - Emotional, Supportive */}
@@ -80,6 +87,29 @@ export default function WidowGuidePage() {
           </div>
         </Container>
       </section>
+
+      {/* Answer First - GEO optimized */}
+      <section className="py-8 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AnswerFirst
+              answer="If you've recently lost a spouse, your first financial steps should be: claim Social Security survivor benefits (up to 100% of your spouse's benefit), understand inherited IRA distribution rules, and avoid making major investment decisions for at least 6 months."
+              keyFacts={[
+                "Survivor benefits can be up to 100% of deceased spouse's benefit (SSA.gov)",
+                "Inherited IRA RMD rules changed under the SECURE Act 2.0",
+                "You have 60 days to decide on an inherited IRA rollover",
+              ]}
+              variant="dark"
+            />
+          </div>
+        </Container>
+      </section>
+
+      {/* Author & Last Updated */}
+      <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+        <AuthorBox variant="compact" />
+        <p className="text-sm text-[#A8A39A]">Last updated: March 2026</p>
+      </div>
 
       {/* Quick Stats */}
       <section className="py-8 border-y border-[#2A2D42] bg-white">
@@ -222,6 +252,19 @@ export default function WidowGuidePage() {
           />
         </Container>
       </section>
+
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <SourcesSection
+            sources={[
+              { name: "Social Security Administration — Survivor Benefits", url: "https://www.ssa.gov/benefits/survivors/", accessDate: "Mar 2026" },
+              { name: "IRS — Retirement Plan and IRA Required Minimum Distributions FAQs", url: "https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs", accessDate: "Mar 2026" },
+              { name: "IRS — Publication 590-B: Distributions from IRAs", url: "https://www.irs.gov/publications/p590b", accessDate: "Mar 2026" },
+            ]}
+            lastVerified="March 2026"
+          />
+        </div>
+      </div>
 
       <Footer />
     </main>

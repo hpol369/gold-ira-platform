@@ -1,8 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export type Variant = "control" | "variant";
+
+/** Fire GA4 event when variant is assigned */
+function trackVariantAssignment(testName: string, variant: Variant) {
+    if (typeof window === "undefined") return;
+    const gtag = (window as unknown as Record<string, unknown>).gtag as (
+        ...args: unknown[]
+    ) => void;
+    if (typeof gtag === "function") {
+        gtag("event", "ab_test_assignment", {
+            test_name: testName,
+            variant: variant,
+        });
+    }
+}
 
 // Helper to get or create variant (runs only on client)
 function getOrCreateVariant(testName: string): Variant {
@@ -21,7 +35,12 @@ function getOrCreateVariant(testName: string): Variant {
 }
 
 export function useABTest(testName: string): Variant {
-    // Use lazy initialization to avoid setState in useEffect
     const [variant] = useState<Variant>(() => getOrCreateVariant(testName));
+
+    // Track assignment in GA4 on first render
+    useEffect(() => {
+        trackVariantAssignment(testName, variant);
+    }, [testName, variant]);
+
     return variant;
 }

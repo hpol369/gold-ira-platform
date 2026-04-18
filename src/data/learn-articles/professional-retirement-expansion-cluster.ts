@@ -13,6 +13,13 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Physician Retirement Planning: Doctor Strategies',
     metaDescription: 'Complete physician retirement planning guide. Learn malpractice tail coverage, practice sale strategies, defined benefit plans, and how doctors protect wealth with Gold IRA.',
     keywords: ['physician retirement planning', 'doctor retirement planning', 'medical professional retirement', 'physician tax planning'],
+    answerFirst: 'Physicians start earning peak income at age 35-40 with an average medical school debt exceeding $200,000, creating a compressed 20-30 year window to build retirement wealth. Defined Benefit plans can shelter $200,000-$300,000 annually in tax-deductible contributions, and malpractice tail insurance costs $100,000-$500,000+ depending on specialty, a major retirement expense most doctors overlook.',
+    answerFirstFacts: [
+      'Physicians should target 25-30x annual retirement spending, often $5-7.5 million for doctors',
+      'Malpractice tail insurance costs $100,000-$500,000+ for surgeons in high-risk states',
+      'Defined Benefit plan combined with 401k allows $250,000-$350,000 in annual tax deferrals',
+      'Medical school debt averages $200,000-$500,000, delaying wealth accumulation into the 40s and 50s',
+    ],
 
     targetKeyword: 'physician retirement planning',
     volume: 150,
@@ -233,6 +240,13 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'High Net Worth Retirement Planning Strategies',
     metaDescription: 'Complete high-net-worth retirement guide. Learn estate tax planning, asset protection trusts, tax diversification, and alternative investments including Gold IRA for millionaires.',
     keywords: ['high net worth retirement planning', 'wealthy retirement planning', 'retirement planning millionaires', 'estate tax planning'],
+    answerFirst: 'High net worth retirement planning focuses on wealth preservation, estate tax minimization, and tax diversification across traditional, Roth, and taxable accounts. The estate tax exemption is $13.61 million per person in 2024 but is scheduled to drop to approximately $7 million in 2026 unless Congress acts. Medicare IRMAA surcharges cost high-income retirees up to $594 per month extra for Part B alone.',
+    answerFirstFacts: [
+      'Estate tax exemption is $13.61 million per person (2024) but scheduled to drop to ~$7 million in 2026',
+      'Medicare IRMAA surcharges add up to $594/month for Part B and $81/month for Part D for high earners',
+      'Qualified Charitable Distributions allow $105,000/year from IRA to charity, satisfying RMDs tax-free',
+      'ERISA 401k accounts have unlimited federal creditor protection versus $1.5 million for IRAs',
+    ],
 
     targetKeyword: 'high net worth retirement planning',
     volume: 100,
@@ -464,6 +478,13 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'CPA Retirement Planning | Firm Succession',
     metaDescription: 'Complete CPA retirement planning guide. Learn accounting practice succession, tax-advantaged strategies CPAs know, maximizing deductions, and Gold IRA for inflation hedge.',
     keywords: ['cpa retirement planning', 'accountant retirement', 'accounting firm succession', 'cpa practice sale'],
+    answerFirst: 'CPA practice valuations typically range from 0.8-1.2x annual gross revenue, with tax practices commanding higher multiples due to recurring client relationships. Solo 401k combined with a Defined Benefit plan allows annual contributions of $250,000+ for CPAs over 50. Practice succession should begin 5-7 years before retirement to maximize value and ensure smooth client transition.',
+    answerFirstFacts: [
+      'CPA practices typically sell for 0.8-1.2x annual gross revenue or 2-4x seller\'s discretionary earnings',
+      'Combining Solo 401k + Defined Benefit plan enables $250,000-$300,000 in annual tax deferrals',
+      'Tax practice clients with recurring engagements command higher sale multiples than one-time consulting',
+      'Internal associate succession preserves client relationships but typically requires 3-5 year seller financing',
+    ],
 
     targetKeyword: 'cpa retirement planning',
     volume: 70,
@@ -668,6 +689,13 @@ export const professionalRetirementExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Attorney Retirement Planning | Law Firm Exit',
     metaDescription: 'Complete attorney retirement planning guide. Learn partnership buyouts, deferred compensation, malpractice tail coverage, asset protection, and retirement strategies for lawyers.',
     keywords: ['attorney retirement planning', 'lawyer retirement', 'law firm partner retirement', 'legal professional retirement'],
+    answerFirst: 'Law firm partnership buyout formulas vary widely from simple capital account return to multi-year payouts based on book of business, and attorneys should review these terms in their 40s-50s while they still have leverage. Deferred compensation plans carry firm bankruptcy risk as unsecured liabilities, and malpractice tail insurance costs $50,000-$200,000 depending on practice area.',
+    answerFirstFacts: [
+      'BigLaw partnership buyouts typically pay capital account plus formula over 3-5 years',
+      'Non-qualified deferred compensation is an unsecured firm liability with bankruptcy risk',
+      'Legal malpractice tail insurance costs $50,000-$200,000 depending on practice area and location',
+      'Several major law firms (Dewey & LeBoeuf, Howrey) collapsed, leaving retired partners with worthless deferred comp',
+    ],
 
     targetKeyword: 'attorney retirement planning',
     volume: 20,

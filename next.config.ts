@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "X-XSS-Protection", value: "1; mode=block" },
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+          { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
         ],
       },
       {
@@ -38,6 +39,18 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // SEO: Redirect old learn slug to new standalone authority page
+      {
+        source: '/learn/is-gold-good-investment-2026',
+        destination: '/is-gold-a-good-investment',
+        permanent: true,
+      },
+      // SEO: Consolidate rollover hub
+      {
+        source: '/rollover',
+        destination: '/gold-ira-rollover',
+        permanent: true,
+      },
       {
         source: '/guide/silver-ira-rules',
         destination: '/silver-ira/rules',
@@ -87,6 +100,16 @@ const nextConfig: NextConfig = {
       { source: '/silver-experts/keith-neumeyer', destination: '/silver-experts', permanent: true },
       { source: '/silver-experts/peter-schiff-silver', destination: '/silver-experts', permanent: true },
       { source: '/silver-squeeze/reddit-wallstreetsilver-review', destination: '/silver-squeeze', permanent: true },
+      // CRITICAL: Fix top-traffic 404s found in GA (Mar 2026)
+      { source: '/learn/rmd-penalty-2026', destination: '/learn/rmd-penalty-if-i-forget', permanent: true },
+      { source: '/learn/voya-401k-rollover-guide', destination: '/learn/voya-401k-rollover', permanent: true },
+      { source: '/learn/railroad-retirement-guide', destination: '/learn/railroad-retirement-calculator', permanent: true },
+      { source: '/learn/comex-silver-inventory', destination: '/learn/comex-silver-inventory-data', permanent: true },
+      { source: '/learn/gold-ira-rollover-rules', destination: '/gold-ira-rules', permanent: true },
+      // 401k-to-gold cannibalization fix — consolidate to single authority page
+      { source: '/guide/transfer-401k-to-gold', destination: '/guide/401k-to-gold-rollover', permanent: true },
+      { source: '/guide/convert-401k-to-gold', destination: '/guide/401k-to-gold-rollover', permanent: true },
+      { source: '/guide/move-401k-to-gold', destination: '/guide/401k-to-gold-rollover', permanent: true },
     ];
   },
 };

@@ -9,6 +9,11 @@ import { Metadata } from "next";
 import { AlertTriangle, FileText, Scale, Building, ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Checkbook IRA Rules: What You Need to Know (2026 Guide)",
@@ -101,6 +106,11 @@ export default function CheckbookIraRulesPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Checkbook IRA Rules", url: "/learn/checkbook-ira-rules" },
+            ])} />
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -118,11 +128,28 @@ export default function CheckbookIraRulesPage() {
                 </Container>
             </header>
 
+            <Container className="py-8">
+                <div className="max-w-4xl mx-auto">
+                    <AnswerFirst
+                        variant="light"
+                        answer="Checkbook IRA rules require that the LLC is owned 100% by the IRA, the IRA holder serves as a non-compensated manager, and all prohibited transaction rules still apply. You cannot use the funds for personal expenses, lend to disqualified persons, or invest in collectibles or life insurance."
+                        keyFacts={[
+                            "LLC must be 100% owned by the IRA",
+                            "IRA holder is non-compensated manager",
+                            "All IRS prohibited transaction rules still apply (IRC 4975)",
+                        ]}
+                    />
+                </div>
+            </Container>
+
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-checkbook-ira-rules" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -174,6 +201,8 @@ export default function CheckbookIraRulesPage() {
                                 The appeal is obvious: instead of submitting paperwork to your custodian every time you want to make an investment, you just write a check. Faster, more flexible.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-checkbook-ira-rules" />
 
                         {/* Gold IRA Problems */}
                         <section id="gold-ira-problems" className="scroll-mt-32">
@@ -317,6 +346,8 @@ export default function CheckbookIraRulesPage() {
                                 ))}
                             </div>
                         </section>
+
+                        <AutoRelatedContent currentUrl="/learn/checkbook-ira-rules" />
 
                         <AuthorBox />
 

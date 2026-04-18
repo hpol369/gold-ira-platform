@@ -7,11 +7,15 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, ShieldCheck, AlertTriangle, Clock, FileText, Building2, Lock, RefreshCw } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "403(b) to Gold IRA Rollover Guide: For Teachers & Nurses (2026)",
     description: "Complete guide for Teachers, Nurses, and Non-Profit employees. Learn how to roll over your 403(b) / TSA to a Gold IRA tax-free. Avoid annuity surrender charges.",
+    alternates: { canonical: getCanonicalUrl("/guide/403b-to-gold-ira-rollover") },
 };
 
 const tocItems = [
@@ -79,10 +83,44 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "403b to Gold IRA Rollover", url: "/guide/403b-to-gold-ira-rollover" },
+]);
+
 export default function TsaRolloverPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Roll Over Your 403(b) to a Gold IRA",
+                description: "Step-by-step process for transferring 403(b) retirement funds into physical gold",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Confirm 403(b) Rollover Eligibility", text: "You can roll over your 403(b) after leaving your employer or at age 59½ while still employed if your plan allows in-service distributions." },
+                    { name: "Choose a Gold IRA Provider", text: "Select a reputable Gold IRA company experienced with 403(b) rollovers. Compare fees, minimums, and customer reviews." },
+                    { name: "Open a Self-Directed Gold IRA", text: "Complete the application to open a self-directed IRA with an IRS-approved custodian. Typically takes 1-3 business days." },
+                    { name: "Initiate a Direct Rollover", text: "Request a direct trustee-to-trustee transfer from your 403(b) plan to your Gold IRA custodian. This avoids taxes and penalties." },
+                    { name: "Purchase IRS-Approved Gold", text: "Select gold coins or bars meeting the 99.5% purity requirement. Your custodian arranges purchase and insured depository storage." },
+                ],
+            })} />
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="You can roll over a 403(b) to a Gold IRA tax-free using a direct rollover. Teachers, nurses, and non-profit workers are eligible once they leave their employer or reach age 59 1/2. Watch for annuity surrender charges of 2-7% that many 403(b) plans carry."
+                        keyFacts={[
+                            "Direct rollovers from 403(b) to Gold IRA are 100% tax-free and penalty-free",
+                            "Most 403(b) plans are annuity contracts with 5-10 year surrender charge schedules (up to 7%)",
+                            "You can roll over if you've left the employer or are 59 1/2+ while still working",
+                            "The rollover process takes 2-4 weeks; insurance companies are slower than 401k administrators",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#0C0D18] py-20 border-b border-[#2A2D42]">
                 <Container>

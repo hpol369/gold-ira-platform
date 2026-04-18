@@ -1,14 +1,28 @@
 // src/app/api/leads/route.ts
-// API endpoint for saving quiz leads
+// Quiz completion analytics — NOT a lead capture endpoint.
+//
+// The Universal Quiz doesn't collect contact info (by design — its CTA routes
+// users to /get-started which handles real lead capture via /api/submit-lead).
+// This endpoint exists purely to persist quiz-completion analytics so we can
+// measure funnel dropoff from quiz-completed → lead-captured.
+//
+// Prior implementation wrote to /tmp/quiz-leads.json which is ephemeral on
+// Vercel (per-instance, lost on cold start). We now write to the existing
+// source_clicks table in Supabase for durable analytics.
 
-import { NextRequest, NextResponse } from 'next/server';
-import { saveLead, getAllLeads, type QuizLead } from '@/lib/lead-storage';
-import { sendTelegramNotification } from '@/lib/notifications';
+import { NextRequest, NextResponse } from "next/server";
+import { supabase } from "@/lib/supabase";
+import { sendTelegramNotification } from "@/lib/notifications";
+import { checkRateLimit, getRequestIdentifier, rateLimitedResponse } from "@/lib/rate-limit";
 
-// Required fields for a valid lead
-const REQUIRED_FIELDS = ['productType', 'budget', 'answers', 'recommendedCompany'] as const;
+const REQUIRED_FIELDS = ["productType", "budget", "answers", "recommendedCompany"] as const;
 
-interface LeadInput {
+// Quiz is anonymous and called once per completion. 30/hr per IP catches
+// scripted abuse without ever bothering a real user.
+const QUIZ_RATE_LIMIT = 30;
+const QUIZ_RATE_WINDOW_SEC = 60 * 60;
+
+interface QuizCompletion {
   productType: string;
   budget: string;
   answers: Record<string, string>;
@@ -17,143 +31,88 @@ interface LeadInput {
   utmParams?: Record<string, string>;
 }
 
-/**
- * POST /api/leads
- * Save a new quiz lead
- */
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json() as LeadInput;
+    const rl = await checkRateLimit(getRequestIdentifier(request), {
+      bucket: "quiz-leads",
+      max: QUIZ_RATE_LIMIT,
+      windowSec: QUIZ_RATE_WINDOW_SEC,
+    });
+    if (!rl.ok) return rateLimitedResponse(rl, QUIZ_RATE_LIMIT);
+
+    const body = (await request.json()) as QuizCompletion;
 
     // Validate required fields
-    const missingFields: string[] = [];
-    for (const field of REQUIRED_FIELDS) {
-      if (!body[field]) {
-        missingFields.push(field);
-      }
-    }
-
-    if (missingFields.length > 0) {
+    const missing = REQUIRED_FIELDS.filter((f) => !body[f]);
+    if (missing.length > 0) {
       return NextResponse.json(
-        {
-          success: false,
-          error: 'Missing required fields',
-          missingFields,
-        },
+        { success: false, error: "Missing required fields", missingFields: missing },
         { status: 400 }
       );
     }
 
-    // Validate answers is an object
-    if (typeof body.answers !== 'object' || body.answers === null || Array.isArray(body.answers)) {
+    if (typeof body.answers !== "object" || body.answers === null || Array.isArray(body.answers)) {
       return NextResponse.json(
-        {
-          success: false,
-          error: 'Invalid answers format - must be an object',
-        },
+        { success: false, error: "Invalid answers format — must be an object" },
         { status: 400 }
       );
     }
 
-    // Save the lead
-    const leadId = await saveLead({
-      productType: body.productType,
-      budget: body.budget,
-      answers: body.answers,
-      recommendedCompany: body.recommendedCompany,
-      email: body.email,
-      utmParams: body.utmParams,
-    });
+    // Request metadata
+    const ip =
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      request.headers.get("x-real-ip") ||
+      "unknown";
+    const userAgent = request.headers.get("user-agent") || "";
+    const country = request.headers.get("x-vercel-ip-country") || "";
+    const city = request.headers.get("x-vercel-ip-city") || "";
+    const referer = request.headers.get("referer") || "";
 
-    // Log full lead data for analytics
-    console.log('[LEAD ANALYTICS]', JSON.stringify({
-      id: leadId,
-      productType: body.productType,
-      budget: body.budget,
-      answers: body.answers,
-      recommendedCompany: body.recommendedCompany,
-      email: body.email ? '[REDACTED]' : undefined,
-      utmParams: body.utmParams,
-      timestamp: new Date().toISOString(),
-    }));
+    // Persist to source_clicks. We use this table because:
+    // 1) it already exists (no migration needed)
+    // 2) quiz completions are closer to traffic analytics than leads
+    // 3) the source field encodes product + budget + recommendation
+    const campaign = body.utmParams?.utm_campaign || body.utmParams?.ref || "universal-quiz";
+    const { error } = await supabase.from("source_clicks").insert([
+      {
+        source: `quiz:${body.productType}:${body.budget}`,
+        campaign,
+        ip_address: ip,
+        user_agent: userAgent,
+        country,
+        city: city ? decodeURIComponent(city) : "",
+        referer,
+      },
+    ]);
 
-    // Send Telegram notification for high-value leads
-    if (body.budget === '100k-500k' || body.budget === '500k-plus') {
-      const message = `🎯 High-Value Lead!\n\nProduct: ${body.productType}\nBudget: ${body.budget}\nRecommended: ${body.recommendedCompany}\nTime: ${new Date().toISOString()}`;
+    if (error) {
+      // Don't fail the quiz over an analytics write — log and continue
+      console.error("[QUIZ] source_clicks insert error:", error);
+    }
 
-      // Try to send notification (don't fail if it errors)
+    // Telegram alert for high-value completions
+    if (body.budget === "100k-500k" || body.budget === "500k-plus") {
+      const message = [
+        "🎯 High-value quiz completion",
+        `Product: ${body.productType}`,
+        `Budget: ${body.budget}`,
+        `Recommended: ${body.recommendedCompany}`,
+        `Time: ${new Date().toISOString()}`,
+      ].join("\n");
+
       try {
         await sendTelegramNotification(message, true);
       } catch (e) {
-        console.error('Failed to send notification:', e);
+        console.error("[QUIZ] Telegram notification failed:", e);
       }
     }
 
-    return NextResponse.json(
-      {
-        success: true,
-        id: leadId,
-        message: 'Lead saved successfully',
-      },
-      { status: 201 }
-    );
+    return NextResponse.json({ success: true, message: "Quiz completion recorded" }, { status: 201 });
   } catch (error) {
-    console.error('Error saving lead:', error);
-
-    // Handle JSON parse errors
     if (error instanceof SyntaxError) {
-      return NextResponse.json(
-        {
-          success: false,
-          error: 'Invalid JSON in request body',
-        },
-        { status: 400 }
-      );
+      return NextResponse.json({ success: false, error: "Invalid JSON in request body" }, { status: 400 });
     }
-
-    return NextResponse.json(
-      {
-        success: false,
-        error: 'Internal server error',
-      },
-      { status: 500 }
-    );
-  }
-}
-
-/**
- * GET /api/leads
- * Retrieve all leads (protected - requires API key)
- */
-export async function GET(request: NextRequest) {
-  // Require API key for admin access
-  const apiKey = request.headers.get("x-api-key");
-  const expectedKey = process.env.ADMIN_API_KEY;
-
-  if (!expectedKey || apiKey !== expectedKey) {
-    return NextResponse.json(
-      { success: false, error: "Unauthorized" },
-      { status: 401 }
-    );
-  }
-
-  try {
-    const leads = await getAllLeads();
-
-    return NextResponse.json({
-      success: true,
-      count: leads.length,
-      leads,
-    });
-  } catch (error) {
-    console.error('Error fetching leads:', error);
-
-    return NextResponse.json(
-      {
-        success: false,
-        error: 'Internal server error',
-      },
-      { status: 500 }
-    );
+    console.error("[QUIZ] Error:", error);
+    return NextResponse.json({ success: false, error: "Internal server error" }, { status: 500 });
   }
 }

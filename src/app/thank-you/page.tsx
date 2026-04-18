@@ -1,21 +1,74 @@
 // src/app/thank-you/page.tsx
 // Thank you page after lead submission - instant value delivery
+// V2.1: Dynamic messaging based on company routing (Augusta vs affiliate)
 
 import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { CheckCircle2, Download, Phone, Clock, Shield, ArrowRight } from "lucide-react";
+import { CheckCircle2, Download, Phone, Clock, Shield, ArrowRight, Mail, BookOpen } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Thank You | Your Free Kit is On The Way | Rich Dad Retirement",
   description: "Your free Gold IRA information kit is on its way. Download your instant guide while you wait.",
-  robots: { index: false, follow: false }, // Don't index thank you pages
+  robots: { index: false, follow: false },
 };
 
-export default function ThankYouPage() {
+interface ThankYouPageProps {
+  searchParams: Promise<{ name?: string; company?: string; tier?: string }>;
+}
+
+// Augusta leads get a call. Affiliate leads get email resources.
+const AUGUSTA_COMPANIES = ["Augusta Precious Metals"];
+
+export default async function ThankYouPage({ searchParams }: ThankYouPageProps) {
+  const params = await searchParams;
+  const firstName = params.name || "";
+  const companyName = params.company || "your matched partner";
+  const tier = params.tier || "";
+
+  // Determine if this is an Augusta lead (gets a call) or affiliate lead (gets email resources)
+  const isAugustaLead = AUGUSTA_COMPANIES.some((c) => companyName.toLowerCase().includes(c.toLowerCase()));
+
+  // Build the right "what happens next" steps based on routing
+  const nextSteps = isAugustaLead
+    ? [
+        {
+          icon: Phone,
+          title: "Expect a Call",
+          desc: `A specialist from ${companyName} will call you within 24 hours for a free info call — they'll walk you through how a Gold IRA works for your situation.`,
+        },
+        {
+          icon: Clock,
+          title: "15 Minutes, Educational",
+          desc: "It's an info call, not a sales pitch. They'll explain the process, answer your questions, and that's it.",
+        },
+        {
+          icon: Shield,
+          title: "Zero Obligation",
+          desc: "100% free. No contracts. Your decision, your timeline.",
+        },
+      ]
+    : [
+        {
+          icon: Mail,
+          title: "Check Your Email",
+          desc: `We just sent your free Gold IRA Protection Guide and a personalized recommendation for ${companyName}.`,
+        },
+        {
+          icon: BookOpen,
+          title: "Your Guide is Ready",
+          desc: "Read the guide — Chapter 9 (Scams to Avoid) alone could save you thousands.",
+        },
+        {
+          icon: Shield,
+          title: "No Obligation",
+          desc: `When you're ready, ${companyName} offers a free info call — educational, not sales.`,
+        },
+      ];
+
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
@@ -31,34 +84,20 @@ export default function ThankYouPage() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-4">
-              You&apos;re All Set!
+              {firstName ? `You're All Set, ${firstName}!` : "You're All Set!"}
             </h1>
 
             <p className="text-xl text-[#D0CCC4] mb-8">
-              Your free Gold IRA kit is being prepared. A specialist from Augusta Precious Metals will contact you within 24 hours.
+              {isAugustaLead
+                ? `A specialist from ${companyName} will call you within 24 hours for a free, educational info call about how a Gold IRA works for your situation.`
+                : `Your free Gold IRA guide and personalized recommendation are on the way to your inbox.`}
             </p>
 
             {/* What Happens Next */}
             <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-8 mb-8 text-left shadow-sm">
               <h2 className="text-lg font-bold text-[#F6F4EF] mb-6 text-center">What Happens Next?</h2>
               <div className="space-y-4">
-                {[
-                  {
-                    icon: Phone,
-                    title: "Expect a Call",
-                    desc: "A Gold IRA specialist will reach out within 24 hours to answer your questions.",
-                  },
-                  {
-                    icon: Download,
-                    title: "Your Kit Ships Free",
-                    desc: "A physical information kit will be mailed to you at no cost.",
-                  },
-                  {
-                    icon: Shield,
-                    title: "No Obligation",
-                    desc: "This is purely educational. No pressure, no commitment required.",
-                  },
-                ].map((item, i) => (
+                {nextSteps.map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
                       <item.icon className="h-5 w-5 text-[#D4A94E]" />
@@ -99,7 +138,7 @@ export default function ThankYouPage() {
                 className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-xl p-6 text-left transition-all"
               >
                 <h3 className="font-semibold text-[#F6F4EF] mb-2">Compare Companies</h3>
-                <p className="text-[#A8A39A] text-sm">See how Augusta stacks up against other providers.</p>
+                <p className="text-[#A8A39A] text-sm">See how the top Gold IRA providers stack up.</p>
               </Link>
               <Link
                 href="/rollover"

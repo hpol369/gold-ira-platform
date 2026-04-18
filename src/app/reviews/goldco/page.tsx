@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { Button } from "@/components/ui/Button";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
@@ -9,6 +10,11 @@ import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 
 export const metadata = {
     title: "Goldco Review 2026: Celebrity Hype vs Reality",
@@ -18,7 +24,27 @@ export const metadata = {
 export default function GoldcoReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-[#0C0D18]">
+            <SchemaScript schema={reviewSchema({ itemName: "Goldco", reviewBody: "Goldco is one of the largest Gold IRA companies with billions in transactions and a strong buyback guarantee.", ratingValue: 4.6, author: "Thomas Richardson", url: "/reviews/goldco" })} />
+            <SchemaScript schema={aggregateRatingSchema({ itemName: "Goldco", ratingValue: 4.6, reviewCount: 956 })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "Goldco", url: "/reviews/goldco" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("reviews/goldco"))} />
             <Navbar />
+
+            <section className="pt-8 pb-4 bg-[#0C0D18]">
+                <Container>
+                    <AnswerFirst
+                        answer="Goldco earns a 4.6/5 rating as one of the longest-running Gold IRA companies (est. 2006). With a $25,000 minimum, A+ BBB rating, and endorsement by Sean Hannity, they're a solid mid-range option. They offer a buyback guarantee and have processed billions in precious metals transactions."
+                        keyFacts={[
+                            "In business since 2006 — one of the longest track records in the industry",
+                            "Minimum investment: $25,000 (between Noble Gold's $2k and Augusta's $50k)",
+                            "A+ BBB rating with buyback guarantee on all metals purchased",
+                            "Annual fees typically $225-$325 depending on account size",
+                        ]}
+                        variant="light"
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-16 relative overflow-hidden">
@@ -159,6 +185,16 @@ export default function GoldcoReviewPage() {
                     </div>
                 </Container>
             </div>
+            <section className="py-16 bg-white">
+                <Container>
+                    <FAQSection faqs={getPageFAQs("reviews/goldco")} title="Goldco FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/reviews/goldco" />
+                </Container>
+            </section>
             <Footer />
             <StickyMobileCTA companySlug="goldco" companyName="Goldco" />
         </main>

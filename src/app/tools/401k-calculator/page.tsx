@@ -5,6 +5,8 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import {
   XAxis,
   YAxis,
@@ -136,6 +138,12 @@ const webApplicationSchema = {
     "Interactive growth charts",
   ],
 };
+
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "401k Calculator", url: "/tools/401k-calculator" },
+]);
 
 export default function Calculator401kPage() {
   // Input states
@@ -276,6 +284,7 @@ export default function Calculator401kPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <SchemaScript schema={breadcrumbs} />
 
       <Navbar />
 

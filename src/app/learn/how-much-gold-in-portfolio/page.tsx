@@ -1,11 +1,15 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, PieChart, Shield, AlertTriangle, Target, TrendingUp, Clock, CheckCircle2, User } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "How Much Gold Should I Have in My Portfolio? (2026 Guide)",
@@ -42,7 +46,24 @@ const expertQuotes = [
 export default function HowMuchGoldPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            <SchemaScript schema={articleSchema({ title: "How Much Gold Should I Have in My Portfolio? (2026 Guide)", description: "Expert recommendations on gold allocation for retirement portfolios. Learn the 5-15% rule, age-based strategies, and how to rebalance your holdings.", slug: "/learn/how-much-gold-in-portfolio" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "How Much Gold in Portfolio", url: "/learn/how-much-gold-in-portfolio" }])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Most financial advisors recommend allocating 5-20% of your retirement portfolio to gold and precious metals. For people over 50 with $100,000+ saved, a 10-15% allocation provides meaningful crash protection without sacrificing growth. Ray Dalio recommends 7.5% gold in his All Weather Portfolio; the World Gold Council suggests 2-10% depending on risk tolerance."
+                        keyFacts={[
+                            "Conservative allocation: 5-10% for moderate inflation protection",
+                            "Balanced allocation: 10-15% for meaningful crash protection (recommended for 50+)",
+                            "Aggressive allocation: 15-20% for maximum preservation during economic uncertainty",
+                            "Never go 100% gold — you lose growth potential from stocks and dividends",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 md:py-24 border-b border-[#2A2D42]">
@@ -76,6 +97,8 @@ export default function HowMuchGoldPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-how-much-gold-in-portfolio" />
 
             {/* Main Content */}
             <section className="py-16">
@@ -380,6 +403,8 @@ export default function HowMuchGoldPage() {
                 </Container>
             </section>
 
+            <AutoRelatedContent currentUrl="/learn/how-much-gold-in-portfolio" />
+
             {/* Footer CTA */}
             <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
                 <Container>
@@ -387,7 +412,7 @@ export default function HowMuchGoldPage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

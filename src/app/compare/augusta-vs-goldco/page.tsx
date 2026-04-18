@@ -11,6 +11,7 @@ import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 import { Metadata } from "next";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Augusta Precious Metals vs. Goldco: 2026 Comparison",
@@ -97,6 +98,23 @@ export default function AugustaVsGoldcoPage() {
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Augusta Precious Metals is better for investors with $50,000+ who value transparency and education, while Goldco is better for investors with $25,000-$50,000 who want lower minimums and free silver promotions. Augusta has zero BBB complaints and offers a 1-on-1 webinar with a Harvard economist; Goldco offers a lower entry point and a highest-price buyback guarantee."
+                        keyFacts={[
+                            "Augusta minimum: $50,000 | Goldco minimum: $25,000",
+                            "Both have A+ BBB ratings; Augusta has 4.9/5 TrustPilot vs Goldco's 4.8/5",
+                            "Augusta charges flat fees (often waived year 1); Goldco scales fees by account size",
+                            "Goldco offers up to 10% free silver on qualifying orders; Augusta does not",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[rgba(197,149,46,0.1)]-dark/50" />

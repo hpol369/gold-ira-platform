@@ -9,7 +9,12 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { getAllGrandchildrenArticles } from "@/data/grandchildren";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { Gift, ArrowRight, GraduationCap, Briefcase, Heart, BookOpen, DollarSign } from "lucide-react";
+import { AuthorBox } from "@/components/guide/AuthorBox";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
   title: "Grandchildren Legacy Hub | Gift, Save & Invest for Grandkids",
@@ -29,6 +34,8 @@ export default function GrandchildrenPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Grandchildren Legacy Hub | Gift, Save & Invest for Grandkids", description: "Smart ways to gift money, set up trusts, and invest for your grandchildren's future. 529 plans, trust funds, and tax-efficient wealth transfer strategies.", slug: "/grandchildren" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Grandchildren Legacy Hub", url: "/grandchildren" }])} />
       <Navbar />
 
       {/* Hero Section */}
@@ -69,6 +76,29 @@ export default function GrandchildrenPage() {
           </div>
         </Container>
       </section>
+
+      {/* Answer First - GEO optimized */}
+      <section className="py-8 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AnswerFirst
+              answer="The three most tax-efficient ways to build wealth for grandchildren are: 529 education plans (tax-free growth), custodial Roth IRAs (if the child has earned income), and irrevocable trusts for larger estates. The 2026 annual gift tax exclusion is $19,000 per recipient."
+              keyFacts={[
+                "$19,000 annual gift tax exclusion per recipient (IRS, 2026)",
+                "529 plans grow tax-free for qualified education expenses",
+                "Custodial Roth IRAs require the child to have earned income",
+              ]}
+              variant="dark"
+            />
+          </div>
+        </Container>
+      </section>
+
+      {/* Author & Last Updated */}
+      <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+        <AuthorBox variant="compact" />
+        <p className="text-sm text-[#A8A39A]">Last updated: March 2026</p>
+      </div>
 
       {/* Key Stats */}
       <section className="py-8 border-y border-[#2A2D42] bg-white">
@@ -205,6 +235,19 @@ export default function GrandchildrenPage() {
           />
         </Container>
       </section>
+
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <SourcesSection
+            sources={[
+              { name: "IRS — Frequently Asked Questions on Gift Taxes", url: "https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes", accessDate: "Mar 2026" },
+              { name: "SEC — 529 Plans: Questions and Answers", url: "https://www.sec.gov/about/reports-publications/investor-publications/introduction-529-plans", accessDate: "Mar 2026" },
+              { name: "IRS — Publication 559: Survivors, Executors, and Administrators", url: "https://www.irs.gov/publications/p559", accessDate: "Mar 2026" },
+            ]}
+            lastVerified="March 2026"
+          />
+        </div>
+      </div>
 
       <Footer />
     </main>

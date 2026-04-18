@@ -7,11 +7,18 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, AlertTriangle, DollarSign, Calculator, Percent, Building2 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { ArticleMeta } from "@/components/content/ArticleMeta";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 export const metadata: Metadata = {
     title: "Gold IRA Fees Guide 2026: Complete Fee Breakdown & Comparison",
     description: "Complete guide to gold IRA fees in 2026. Understand setup fees, storage fees, custodian fees, and dealer markups. Compare fees across top companies.",
+    alternates: { canonical: getCanonicalUrl("/guide/gold-ira-fees") },
 };
 
 const tocItems = [
@@ -95,10 +102,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Gold IRA Fees", url: "/guide/gold-ira-fees" },
+]);
+
 export default function GoldIraFeesGuidePage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-[#0C0D18] py-20 border-b border-[#2A2D42]">
                 <Container>
@@ -118,6 +132,18 @@ export default function GoldIraFeesGuidePage() {
             </header>
 
             <Container className="py-12">
+                <ArticleMeta publishDate="2026-01-17" updateDate="2026-03-20" readTime="15 min" />
+                <AnswerFirst
+                  answer="A Gold IRA costs between $200-$350 per year in fees, including storage ($100-$150/year), custodian fees ($50-$100/year), and a one-time setup fee ($50-$100). The biggest hidden cost is the dealer markup on metals, which ranges from 5-33% over spot price depending on the company and product type."
+                  keyFacts={[
+                    "Augusta Precious Metals: No fees for up to 10 years on qualifying accounts ($50k+)",
+                    "Goldco: $175/year flat fee (storage + custodian combined)",
+                    "Noble Gold: $80/year custodian + $150/year storage ($230 total)",
+                    "Segregated storage costs $50-$150 more per year than commingled",
+                    "On a $50,000 account, annual fees equal roughly 0.45% — comparable to many ETFs",
+                  ]}
+                  className="mb-8 max-w-3xl"
+                />
                 <div className="flex flex-col lg:flex-row gap-12">
                     {/* Sidebar (TOC) */}
                     <aside className="lg:w-64 flex-shrink-0">
@@ -310,9 +336,72 @@ export default function GoldIraFeesGuidePage() {
                                 </table>
                             </div>
 
+                            <p className="text-[#D0CCC4]">
+                                For industry-wide fee benchmarks and how costs have changed year over year, see our <Link href="/gold-ira-industry-report-2026" className="text-[#D4A94E] hover:underline">Gold IRA Industry Report 2026</Link>.
+                            </p>
+
                             <Callout type="tip" title="Best Value Tip">
                                 For accounts over $50,000, <Link href="/reviews/augusta-precious-metals">Augusta Precious Metals</Link> often waives up to 10 years of fees—a potential savings of $2,250+. For smaller accounts, <Link href="/reviews/noble-gold">Noble Gold</Link> and <Link href="/reviews/advantage-gold">Advantage Gold</Link> offer competitive pricing without high minimums.
                             </Callout>
+
+                            <h3 className="text-[#F6F4EF]">Gold IRA Fee Comparison: Setup, Annual, Storage & Minimums</h3>
+                            <p className="text-[#D0CCC4]">
+                                Here&apos;s a side-by-side breakdown of <strong className="text-[#F6F4EF]">gold IRA fees</strong> across the five largest companies, including setup fees, annual custodian fees, storage fees, and minimum investment requirements:
+                            </p>
+
+                            <div className="overflow-x-auto not-prose my-8">
+                                <table className="w-full text-left border-collapse bg-[#0C0D18] rounded-xl shadow-sm border border-[#2A2D42]">
+                                    <thead className="bg-[#121423]">
+                                        <tr>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Company</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Setup Fee</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Annual Fee</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Storage Fee</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Minimum Investment</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="divide-y divide-[#2A2D42] text-sm">
+                                        <tr>
+                                            <td className="p-4 font-semibold"><Link href="/reviews/augusta-precious-metals" className="text-[#D4A94E] hover:underline">Augusta Precious Metals</Link></td>
+                                            <td className="p-4 text-[#D0CCC4]">$50</td>
+                                            <td className="p-4 text-[#D0CCC4]">$75</td>
+                                            <td className="p-4 text-[#D0CCC4]">$150/yr</td>
+                                            <td className="p-4 text-[#D0CCC4]">$50,000</td>
+                                        </tr>
+                                        <tr className="bg-[#121423]/50">
+                                            <td className="p-4 font-semibold"><Link href="/reviews/goldco" className="text-[#D4A94E] hover:underline">Goldco</Link></td>
+                                            <td className="p-4 text-[#D0CCC4]">$50</td>
+                                            <td className="p-4 text-[#D0CCC4]">$100</td>
+                                            <td className="p-4 text-[#D0CCC4]">$150/yr</td>
+                                            <td className="p-4 text-[#D0CCC4]">$25,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="p-4 font-semibold"><Link href="/reviews/noble-gold" className="text-[#D4A94E] hover:underline">Noble Gold</Link></td>
+                                            <td className="p-4 text-[#D0CCC4]">$80</td>
+                                            <td className="p-4 text-[#D0CCC4]">$80</td>
+                                            <td className="p-4 text-[#D0CCC4]">$150/yr</td>
+                                            <td className="p-4 text-[#D0CCC4]">$20,000</td>
+                                        </tr>
+                                        <tr className="bg-[#121423]/50">
+                                            <td className="p-4 font-semibold"><Link href="/reviews/american-hartford-gold" className="text-[#D4A94E] hover:underline">American Hartford Gold</Link></td>
+                                            <td className="p-4 text-[#D0CCC4]">$0</td>
+                                            <td className="p-4 text-[#D0CCC4]">$75</td>
+                                            <td className="p-4 text-[#D0CCC4]">$100/yr</td>
+                                            <td className="p-4 text-[#D0CCC4]">$10,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="p-4 font-semibold"><Link href="/reviews/birch-gold" className="text-[#D4A94E] hover:underline">Birch Gold Group</Link></td>
+                                            <td className="p-4 text-[#D0CCC4]">$50</td>
+                                            <td className="p-4 text-[#D0CCC4]">$100</td>
+                                            <td className="p-4 text-[#D0CCC4]">$100/yr</td>
+                                            <td className="p-4 text-[#D0CCC4]">$10,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p className="text-sm text-[#A8A39A]">
+                                Fees are approximate and may vary based on account size, promotions, and storage type (segregated vs. commingled). Always confirm current pricing directly with the company.
+                            </p>
                         </section>
 
                         {/* Mid-Article CTA */}
@@ -560,6 +649,17 @@ export default function GoldIraFeesGuidePage() {
                         </div>
 
                         <AuthorBox />
+
+                        <SourcesSection
+                          sources={[
+                            { name: "IRS Publication 590-A: Contributions to Individual Retirement Arrangements", url: "https://www.irs.gov/publications/p590a", accessDate: "2026-03-15" },
+                            { name: "IRS Publication 590-B: Distributions from Individual Retirement Arrangements", url: "https://www.irs.gov/publications/p590b", accessDate: "2026-03-15" },
+                            { name: "IRC Section 408(m) — Investment in Collectibles", url: "https://www.law.cornell.edu/uscode/text/26/408", accessDate: "2026-03-15" },
+                          ]}
+                          lastVerified="2026-03-15"
+                        />
+
+                        <AutoRelatedContent currentUrl="/guide/gold-ira-fees" />
 
                     </article>
                 </div>

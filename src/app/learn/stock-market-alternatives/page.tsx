@@ -9,6 +9,10 @@ import { Metadata } from "next";
 import { Coins, Building2, Home, BarChart3, ArrowRight, ShieldCheck, TrendingUp, Landmark } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Stock Market Alternatives: 8 Ways to Invest Beyond",
@@ -98,6 +102,23 @@ export default function StockMarketAlternativesPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="The best stock market alternatives for retirement savings include physical gold and silver IRAs, real estate (rental properties through a self-directed IRA), Treasury bonds (I-bonds and TIPS), high-yield savings accounts, and fixed annuities. For people over 50, a Gold IRA is the most popular stock market alternative because it provides inflation protection, zero counterparty risk, and the same tax benefits as a regular IRA."
+                        keyFacts={[
+                            "Gold IRAs: tax-deferred growth, inflation hedge, no correlation to stock market",
+                            "Real Estate IRAs: rental income grows tax-free, tangible asset with appreciation",
+                            "I-Bonds: government-backed, inflation-adjusted, risk-free (limited to $10k/year)",
+                            "Fixed annuities: guaranteed income for life, but lower returns and less flexibility"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -120,6 +141,9 @@ export default function StockMarketAlternativesPage() {
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-stock-market-alternatives" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -176,6 +200,8 @@ export default function StockMarketAlternativesPage() {
                                 A <Link href="/what-is-a-gold-ira">Gold IRA</Link> is particularly compelling for retirement investors—it combines the diversification benefits of physical gold with the tax advantages of an IRA.
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-stock-market-alternatives" />
 
                         {/* 2. Real Estate */}
                         <section id="realestate" className="scroll-mt-32">
@@ -479,6 +505,8 @@ export default function StockMarketAlternativesPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/stock-market-alternatives" />
 
                         <AuthorBox />
 

@@ -89,9 +89,17 @@ export interface LearnArticle {
   difficulty?: number;
   cpc?: number;
 
+  // Dates (ISO format, e.g. "2026-01-15")
+  publishDate?: string;
+  updatedDate?: string;
+
   // Classification
   category: ArticleCategory;
   threatLevel: ThreatLevel;
+
+  // GEO: Answer-first for AI snippet optimization
+  answerFirst?: string;       // Direct 1-3 sentence answer to the query
+  answerFirstFacts?: string[]; // Key facts as bullet points
 
   // Content structure
   takeaways: string[]; // 5-8 key points for KeyTakeaways component

@@ -7,8 +7,11 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, Building2, Coins, PiggyBank, Home, TrendingUp, Briefcase, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 
 export const metadata: Metadata = {
     title: "401(k) Alternatives: 7 Ways to Save in 2026",
@@ -19,6 +22,7 @@ export const metadata: Metadata = {
         type: "article",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/401k-alternatives") },
 };
 
 const tocItems = [
@@ -84,10 +88,32 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "401k Alternatives", url: "/guide/401k-alternatives" },
+]);
+
 export default function FourOhOneKAlternativesPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="The best 401k alternatives for 2026 include Roth IRAs (tax-free growth, $7,000 limit), Gold IRAs (physical precious metals with tax-deferred growth), HSAs (triple tax advantage, $4,300/$8,550 limits), and SEP IRAs for self-employed workers (up to $69,000/year)."
+                        keyFacts={[
+                            "Roth IRA: $7,000/year limit ($8,000 if 50+), tax-free withdrawals, no RMDs",
+                            "Gold IRA: Same limits as Traditional IRA, holds physical gold/silver, tax-free rollovers from 401k",
+                            "HSA: Triple tax advantage — deductible contributions, tax-free growth, tax-free medical withdrawals",
+                            "SEP IRA: Up to $69,000/year for self-employed — 10x the regular IRA limit",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#121423] text-[#F6F4EF] py-20 relative overflow-hidden border-b border-[#2A2D42]">
                 <div className="absolute inset-0 bg-primary-dark/50" />

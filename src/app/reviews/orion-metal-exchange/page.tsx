@@ -8,6 +8,8 @@ import { ProsCons } from "@/components/reviews/ProsCons";
 import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { reviewSchema, breadcrumbSchema } from "@/lib/schema";
 import { Info } from "lucide-react";
 
 export const metadata = {
@@ -18,6 +20,8 @@ export const metadata = {
 export default function OrionMetalExchangeReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
+            <SchemaScript schema={reviewSchema({ itemName: "Orion Metal Exchange", reviewBody: "With the lowest minimum in the industry at just $5,000, Orion Metal Exchange has opened doors for smaller investors. We analyze their fees, real-time pricing, and customer reviews.", ratingValue: 4.4, url: "/reviews/orion-metal-exchange" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/reviews" }, { name: "Orion Metal Exchange", url: "/reviews/orion-metal-exchange" }])} />
             <Navbar />
 
             <div className="flex-grow bg-white">

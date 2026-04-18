@@ -4,11 +4,15 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Link from "next/link";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { ArrowRight, TrendingUp, AlertTriangle, ShieldCheck, DollarSign } from "lucide-react";
 
 export default function RichDadStrategyPage() {
     return (
         <main className="min-h-screen bg-white">
+            <SchemaScript schema={articleSchema({ title: "Why Savers Are Losers - Rich Dad Strategy", description: "Learn why the wealthy are moving millions into real assets. The Rich Dad strategy for protecting and growing your retirement wealth.", slug: "/rich-dad-strategy" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Rich Dad Strategy", url: "/rich-dad-strategy" }])} />
             <Navbar />
 
             {/* Hero Section */}

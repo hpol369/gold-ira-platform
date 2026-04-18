@@ -12,6 +12,13 @@ export const fireMovementArticles: LearnArticleRegistry = {
     metaTitle: 'FIRE Movement Guide: Financial Independence Retire Early | 2026',
     metaDescription: 'Complete guide to the FIRE movement (Financial Independence Retire Early). Learn about Lean FIRE, Fat FIRE, Barista FIRE, Coast FIRE, the 25x rule, and building a sustainable early retirement plan.',
     keywords: ['financial independence retire early', 'FIRE movement', 'early retirement planning', 'what is FIRE', 'FIRE types'],
+    answerFirst: 'FIRE (Financial Independence, Retire Early) means saving 50-70% of your income and investing aggressively so you can retire decades early — often in your 30s or 40s. The core idea: save 25 times your annual expenses, then withdraw 4% per year to live on indefinitely. There are four main types: Lean FIRE, Fat FIRE, Barista FIRE, and Coast FIRE.',
+    answerFirstFacts: [
+      'FIRE is based on the 25x rule: save 25 times your annual expenses to retire (e.g., $40k/year spending = $1M needed)',
+      'The 4% safe withdrawal rate means withdrawing 4% of your portfolio per year, adjusted for inflation',
+      'Four types: Lean FIRE ($40k/year or less), Fat FIRE ($100k+/year), Barista FIRE (part-time work), Coast FIRE (stop saving, let compound growth finish)',
+      'Sequence of returns risk is the biggest threat — a crash in the first 5 years can derail a 50-year retirement',
+    ],
 
     targetKeyword: 'financial independence retire early',
     volume: 3200,
@@ -272,6 +279,13 @@ export const fireMovementArticles: LearnArticleRegistry = {
     metaTitle: '25x Retirement Rule Explained: Calculate Your FIRE Number | 2026',
     metaDescription: 'Learn the 25x retirement rule (4% rule) - how to calculate how much money you need to retire. Includes examples, calculator, and why 25x your annual expenses works.',
     keywords: ['25x retirement rule', '25 times rule retirement', '4 percent rule', '4% safe withdrawal rate'],
+    answerFirst: 'The 25x rule says you need 25 times your annual expenses saved to retire. If you spend $50,000 per year, you need $1.25 million. This comes from the 4% safe withdrawal rate — withdraw 4% of your portfolio the first year, then adjust for inflation, and your money should last 30+ years based on historical stock/bond data.',
+    answerFirstFacts: [
+      'The 25x rule formula: Annual Expenses x 25 = Retirement Number (e.g., $50,000 x 25 = $1,250,000)',
+      'The 4% rule is based on the 1998 Trinity Study analyzing 75 years of stock and bond returns',
+      'The 4% rule has a 95% historical success rate over 30-year periods',
+      'Early retirees (40+ year retirements) may need 28-33x expenses due to longer time horizon',
+    ],
 
     targetKeyword: '25x retirement rule',
     volume: 100,
@@ -478,6 +492,13 @@ export const fireMovementArticles: LearnArticleRegistry = {
     metaTitle: 'Early Retirement Extreme (ERE): Complete Guide to ERE Lifestyle',
     metaDescription: 'Complete guide to Early Retirement Extreme (ERE) by Jacob Lund Fisker. Learn the extreme frugality strategies, living on $7,000/year, and achieving FI in 5 years through radical lifestyle design.',
     keywords: ['early retirement extreme', 'ERE lifestyle', 'extreme frugality retirement', 'Jacob Lund Fisker'],
+    answerFirst: 'Early Retirement Extreme (ERE) is the most radical form of FIRE, pioneered by Jacob Lund Fisker. The goal is to achieve financial independence in just 5 years by living on $7,000-$12,000 per year and saving 75-80% of your income. ERE is not just frugality — it is a complete systems-thinking approach to reducing your cost of living.',
+    answerFirstFacts: [
+      'ERE targets financial independence in 5 years by saving 75-80% of income',
+      'Typical ERE spending: $7,000-$12,000 per year per person',
+      'ERE portfolio needed: approximately $200,000-$300,000 (using 3-4% withdrawal rate)',
+      'Jacob Lund Fisker retired at age 33 after 5 years of extreme saving',
+    ],
 
     targetKeyword: 'early retirement extreme',
     volume: 1100,
@@ -706,6 +727,13 @@ export const fireMovementArticles: LearnArticleRegistry = {
     metaTitle: 'What Is Coast FIRE? Complete Guide to Coast FIRE Number | 2026',
     metaDescription: 'Coast FIRE explained: Save aggressively early, then let investments grow while you coast to retirement. Learn how to calculate your Coast FIRE number and whether you\'ve hit it.',
     keywords: ['coast fire', 'coast fire meaning', 'coast to retirement', 'what is coast fire', 'coast fire number'],
+    answerFirst: 'Coast FIRE means you have already saved enough that compound growth alone will grow your portfolio to your retirement number by age 65 — so you can stop saving aggressively and "coast" with lower-stress, lower-income work. For example, if you have $250,000 at age 35 and assume 7% returns, it grows to $1.9 million by 65 without adding another dollar.',
+    answerFirstFacts: [
+      'Coast FIRE formula: Current savings x (1.07)^years to 65 = target retirement number',
+      'Example: $250,000 at age 35 grows to roughly $1.9 million by age 65 at 7% average returns',
+      'After hitting Coast FIRE, you only need to earn enough to cover current expenses — no more saving required',
+      'Coast FIRE is the most achievable FIRE type since it still uses traditional retirement age (65)',
+    ],
 
     targetKeyword: 'coast fire',
     volume: 500,
@@ -940,6 +968,13 @@ export const fireMovementArticles: LearnArticleRegistry = {
     metaTitle: 'What Is Barista FIRE? Part-Time Retirement Strategy Guide | 2026',
     metaDescription: 'Barista FIRE explained: Achieve semi-retirement by combining part-time work with investment income. Learn how to calculate your Barista FIRE number and access healthcare.',
     keywords: ['barista fire', 'barista fire meaning', 'part time retirement', 'semi retirement'],
+    answerFirst: 'Barista FIRE means you have enough invested that part-time work covers your remaining expenses. You quit your stressful career and work 20-25 hours per week at a lower-stress job — often one that provides health insurance benefits. The name comes from working at Starbucks, which offers health insurance to part-time employees.',
+    answerFirstFacts: [
+      'Barista FIRE requires roughly 50-70% of your full FIRE number saved',
+      'Part-time work covers remaining expenses plus provides employer health insurance',
+      'Named after Starbucks, which offers health benefits to employees working 20+ hours/week',
+      'Barista FIRE number example: if FIRE = $1M, Barista FIRE may require only $500,000-$700,000',
+    ],
 
     targetKeyword: 'barista fire',
     volume: 300,
@@ -1184,6 +1219,13 @@ export const fireMovementArticles: LearnArticleRegistry = {
     metaTitle: 'Fat FIRE Guide: Retire Early Spending $100k+ Per Year | 2026',
     metaDescription: 'Fat FIRE explained: Retire early with $100,000+ annual lifestyle. Learn the Fat FIRE number calculation, required income, investment strategy, and whether Fat FIRE is achievable.',
     keywords: ['fat fire', 'fat fire number', 'luxury early retirement', 'high income fire'],
+    answerFirst: 'Fat FIRE means retiring early with a high standard of living — typically $100,000 or more per year in spending. Using the 25x rule, Fat FIRE requires $2.5 million to $5 million or more saved. It is only realistic for high earners ($200,000+/year) who can save aggressively while maintaining a comfortable lifestyle.',
+    answerFirstFacts: [
+      'Fat FIRE spending target: $100,000-$200,000+ per year in retirement',
+      'Fat FIRE portfolio needed: $2.5M-$5M+ using the 25x rule',
+      'Typically requires household income of $200,000+ and a savings rate of 40-60%',
+      'Fat FIRE portfolios over $3M need serious protection — a 30% crash means losing $1M+',
+    ],
 
     targetKeyword: 'fat fire',
     volume: 200,
@@ -1450,6 +1492,13 @@ export const fireMovementArticles: LearnArticleRegistry = {
     metaTitle: 'Lean FIRE Guide: Retire Early on $40k/Year or Less | 2026',
     metaDescription: 'Lean FIRE explained: Achieve early retirement spending $25k-40k/year through strategic frugality. Learn the Lean FIRE number, realistic budgets, and whether Lean FIRE is sustainable.',
     keywords: ['lean fire', 'lean fire number', 'frugal early retirement', 'minimalist fire'],
+    answerFirst: 'Lean FIRE means retiring early on $40,000 per year or less through intentional minimalism and frugality. Using the 25x rule, Lean FIRE requires $625,000 to $1 million saved. It is the most achievable form of FIRE but leaves very little margin for error — unexpected expenses or high inflation can derail your plan.',
+    answerFirstFacts: [
+      'Lean FIRE spending target: $25,000-$40,000 per year (individual or couple)',
+      'Lean FIRE portfolio needed: $625,000-$1,000,000 using the 25x rule',
+      'Geographic arbitrage (moving to low-cost areas) is often essential for Lean FIRE success',
+      'The biggest risk: zero margin for error — one unexpected $10,000 expense is a major setback',
+    ],
 
     targetKeyword: 'lean fire',
     volume: 150,
@@ -1728,6 +1777,13 @@ export const fireMovementArticles: LearnArticleRegistry = {
     metaTitle: 'Gold IRA for FIRE Movement: Protect Early Retirement Portfolio',
     metaDescription: 'How Gold IRAs protect FIRE portfolios from sequence risk and inflation over 40-50 year retirements. Learn optimal gold allocation, tax advantages, and FIRE-specific strategies.',
     keywords: ['fire movement gold', 'gold ira early retirement', 'fire portfolio gold', 'gold fire movement'],
+    answerFirst: 'FIRE investors need gold more than traditional retirees because a 40-50 year retirement makes sequence of returns risk devastating. A 30% crash in your first 5 years can deplete your portfolio permanently. Gold (10-15% allocation) acts as crash insurance, rising when stocks fall and giving you something to sell instead of stocks during downturns.',
+    answerFirstFacts: [
+      'FIRE portfolios face 40-50 years of withdrawals vs 25-30 years for traditional retirees',
+      'A 30% stock crash in the first 5 years of FIRE retirement can permanently deplete the portfolio',
+      'Gold allocation of 10-15% provides crash protection without significantly reducing long-term returns',
+      'A Gold IRA offers tax-advantaged gold ownership for FIRE investors using the Roth conversion ladder',
+    ],
 
     targetKeyword: 'fire movement gold',
 

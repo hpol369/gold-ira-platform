@@ -27,8 +27,8 @@ export interface QuizResult {
 // AFFILIATE LINKS - Customer landing pages with tracking
 // ===========================================
 const AFFILIATE_LINKS = {
-    orion: "https://orionmetalexchange.com", // TODO: Replace with your Orion affiliate link
-    noble: "https://noblegoldinvestments.com", // TODO: Replace with your Noble Gold affiliate link
+    orion: "https://noblegoldinvestments.com/gold-silver-ira-guide/?affiliate_id=RICH_DAD", // Noble Gold handles low-tier (Orion removed)
+    noble: "https://noblegoldinvestments.com/gold-silver-ira-guide/?affiliate_id=RICH_DAD",
     augusta: "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129&apmtrkr_cph=844-405-3908",
 };
 

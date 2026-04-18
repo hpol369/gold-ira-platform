@@ -14,6 +14,12 @@ import {
     Clock
 } from "lucide-react";
 import { AFFILIATE_LINKS, getTrackedLink } from "@/config/affiliates";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Best Real Estate IRA Custodians 2026: Top Providers",
@@ -89,6 +95,8 @@ const custodians = [
 export default function RealEstateIraCustodiansPage() {
     return (
         <main className="min-h-screen bg-white">
+            <SchemaScript schema={articleSchema({ title: "Best Real Estate IRA Custodians 2026: Top Providers", description: "Compare the best self-directed IRA custodians for real estate investing. Fees, features, and reviews of Rocket Dollar, Equity Trust, Entrust, and more.", slug: "/learn/real-estate-ira-custodians" })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Learn", url: "/learn" }, { name: "Real Estate IRA Custodians", url: "/learn/real-estate-ira-custodians" }])} />
             {/* Hero Section */}
             <section className="relative py-12 lg:py-16 overflow-hidden">
                 <div className="absolute inset-0 bg-[#0C0D18]" />
@@ -121,6 +129,28 @@ export default function RealEstateIraCustodiansPage() {
                     </div>
                 </Container>
             </section>
+
+            <Container className="py-8">
+                <div className="max-w-4xl">
+                    <AnswerFirst
+                        variant="light"
+                        answer="The top self-directed IRA custodians for real estate include Equity Trust ($70B+ in assets under custody), Directed IRA (part of Solera National Bank), and Pacific Premier Trust ($18B AUM). Custodian fees typically range from $75-$400/year depending on account size, plus transaction fees for each property purchase."
+                        keyFacts={[
+                            "Equity Trust: largest SDIRA custodian with $70B+ in assets",
+                            "Annual custodian fees: $75-$400 depending on account size",
+                            "Transaction fees: $25-$250 per real estate purchase/sale",
+                        ]}
+                    />
+                </div>
+            </Container>
+
+            <div className="py-8 bg-white">
+                <Container>
+                    <div className="max-w-sm mx-auto lg:mx-0">
+                        <SidebarAuditWidget trackSource="learn-real-estate-ira-custodians" />
+                    </div>
+                </Container>
+            </div>
 
             {/* Quick Comparison Table */}
             <section className="py-12 bg-[#0C0D18]">
@@ -270,6 +300,8 @@ export default function RealEstateIraCustodiansPage() {
                 </Container>
             </section>
 
+            <InContentCTA trackSource="learn-real-estate-ira-custodians" />
+
             {/* What to Look For */}
             <section className="py-12 bg-[#0C0D18]">
                 <Container>
@@ -353,6 +385,8 @@ export default function RealEstateIraCustodiansPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/real-estate-ira-custodians" />
 
             {/* Related Content */}
             <section className="py-12 bg-[#0C0D18]">

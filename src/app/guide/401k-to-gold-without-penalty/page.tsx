@@ -6,7 +6,10 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, XCircle, AlertTriangle, ShieldCheck, Clock, Building2 } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "401k to Gold Without Penalty: Tax-Free Rollover Guide (2026)",
@@ -17,6 +20,7 @@ export const metadata: Metadata = {
         type: "article",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/401k-to-gold-without-penalty") },
 };
 
 const schema = {
@@ -106,10 +110,29 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "401k to Gold Without Penalty", url: "/guide/401k-to-gold-without-penalty" },
+]);
+
 export default function GoldWithoutPenaltyGuidePage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Move 401(k) to Gold Without Penalty",
+                description: "Tax-free, penalty-free process for moving 401(k) funds into a Gold IRA",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Choose a Direct Rollover", text: "Always use a direct rollover (trustee-to-trustee transfer) to avoid the 20% mandatory withholding and potential 10% early withdrawal penalty." },
+                    { name: "Select a Gold IRA Custodian", text: "Choose an IRS-approved custodian through a reputable Gold IRA company. They handle the paperwork and ensure compliance." },
+                    { name: "Complete Rollover Paperwork", text: "Your Gold IRA company provides the forms. You sign, and they coordinate with your 401(k) plan administrator to initiate the transfer." },
+                    { name: "Wait for Fund Transfer", text: "Direct rollovers typically complete in 1-3 weeks. The funds move directly between financial institutions — you never touch the money." },
+                    { name: "Purchase Gold for Your IRA", text: "Once funded, select IRS-approved gold products. Your metals are purchased and stored in an insured depository." },
+                ],
+            })} />
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
@@ -128,6 +151,18 @@ export default function GoldWithoutPenaltyGuidePage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                answer="You can convert your 401(k) to gold without penalty using a direct rollover to a Gold IRA — no age restrictions, no taxes, and no early withdrawal penalties. The key is requesting a direct (trustee-to-trustee) transfer rather than an indirect rollover, which triggers mandatory 20% withholding."
+                keyFacts={[
+                    "Direct rollover: funds transfer custodian-to-custodian — zero tax withholding",
+                    "Indirect rollover: you get a check, must redeposit within 60 days or face taxes + 10% penalty",
+                    "Works for current 401(k) only if your plan allows in-service withdrawals",
+                    "Former employer 401(k): always eligible for penalty-free rollover",
+                    "No limit on the amount you can roll over",
+                ]}
+                className="mb-8 max-w-3xl"
+            />
 
             <Container className="py-12">
                 <div className="max-w-3xl mx-auto">

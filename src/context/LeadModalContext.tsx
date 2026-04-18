@@ -1,32 +1,43 @@
 "use client";
 
-import { createContext, useContext, useState, useCallback, ReactNode } from "react";
+import { createContext, useContext, useCallback, ReactNode } from "react";
+import { getTrackedLink, AFFILIATE_LINKS } from "@/config/affiliates";
+import type { MetalPreference } from "@/types/funnel";
+
+// Two-path CTA system:
+// - "funnel" (default): routes to /get-started qualification page
+// - "direct-augusta": routes directly to Augusta LP (for Augusta-specific pages)
+type CTAPath = "funnel" | "direct-augusta";
 
 interface LeadModalContextType {
-  isOpen: boolean;
-  variant: string;
-  source: string;
-  openModal: (variant: string, source: string) => void;
-  closeModal: () => void;
+  /** Navigate to the appropriate CTA destination */
+  openModal: (variant: string, source: string, metal?: MetalPreference) => void;
+  /** Get the href for a CTA link (for <a> tags) */
+  getCTALink: (source: string, path?: CTAPath, metal?: MetalPreference) => string;
 }
 
 const LeadModalContext = createContext<LeadModalContextType | undefined>(undefined);
 
 export function LeadModalProvider({ children }: { children: ReactNode }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [variant, setVariant] = useState("default");
-  const [source, setSource] = useState("");
-
-  const openModal = useCallback((newVariant: string, newSource: string) => {
-    window.location.href = "https://learn.augustapreciousmetals.com/apm-aff-lp-1-v3?apmtrkr_cid=1696&aff_id=5129&apmtrkr_cph=844-405-3908";
+  const getCTALink = useCallback((source: string, path: CTAPath = "funnel", metal?: MetalPreference): string => {
+    if (path === "direct-augusta") {
+      // Use silver-specific Augusta link when metal is silver
+      const link = metal === "silver" ? AFFILIATE_LINKS.augustaSilver : AFFILIATE_LINKS.augusta;
+      return getTrackedLink(link, source, "augusta");
+    }
+    const params = new URLSearchParams({ ref: source });
+    if (metal) params.set("metal", metal);
+    return `/get-started?${params.toString()}`;
   }, []);
 
-  const closeModal = useCallback(() => {
-    setIsOpen(false);
-  }, []);
+  const openModal = useCallback((variant: string, source: string, metal?: MetalPreference) => {
+    // Determine path based on variant
+    const path: CTAPath = variant === "direct-augusta" ? "direct-augusta" : "funnel";
+    window.location.href = getCTALink(source, path, metal);
+  }, [getCTALink]);
 
   return (
-    <LeadModalContext.Provider value={{ isOpen, variant, source, openModal, closeModal }}>
+    <LeadModalContext.Provider value={{ openModal, getCTALink }}>
       {children}
     </LeadModalContext.Provider>
   );

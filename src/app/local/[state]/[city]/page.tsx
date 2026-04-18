@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         alternates: {
             canonical: `/local/${state}/${city}`,
         },
+        robots: { index: false, follow: true },
     };
 }
 
@@ -353,7 +354,7 @@ export default async function CityPage({ params }: Props) {
                                         source={`city-${state}-${city}-cta`}
                                         className="inline-flex items-center justify-center rounded-md font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-11 px-6 text-base"
                                     >
-                                        Get Your Free Gold IRA Kit
+                                        Get Your Free Precious Metals Kit
                                     </LeadCaptureButton>
                                 </div>
                             </div>

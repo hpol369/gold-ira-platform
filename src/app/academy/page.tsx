@@ -19,9 +19,10 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Gold IRA Academy - Free Course | Rich Dad Retirement",
+  title: "Gold IRA Academy | Free Education Center | Rich Dad Retirement",
   description:
     "Free 10-module Gold IRA course. Learn the basics to advanced strategies for protecting your retirement with precious metals.",
+  alternates: { canonical: "/academy" },
 };
 
 const modules = [

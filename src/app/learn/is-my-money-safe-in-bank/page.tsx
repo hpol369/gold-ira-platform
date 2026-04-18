@@ -9,6 +9,11 @@ import { Metadata } from "next";
 import { Building2, ShieldCheck, AlertTriangle, DollarSign, ArrowRight, Lock, TrendingDown, Coins } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Is My Money Safe in the Bank? FDIC Limits Guide",
@@ -95,6 +100,11 @@ export default function IsMyMoneySafeInBankPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Is My Money Safe in the Bank?", url: "/learn/is-my-money-safe-in-bank" },
+            ])} />
             {/* Header */}
             <header className="bg-[#0C0D18] backdrop-blur-sm py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -112,11 +122,28 @@ export default function IsMyMoneySafeInBankPage() {
                 </Container>
             </header>
 
+            <Container className="py-8">
+                <div className="max-w-4xl mx-auto">
+                    <AnswerFirst
+                        variant="light"
+                        answer="Your money is safe in a bank up to $250,000 per depositor per bank, guaranteed by FDIC insurance. Amounts above $250,000 are uninsured. Joint accounts are covered up to $500,000 ($250,000 per owner). In the rare event of a bank failure, FDIC typically makes insured deposits available within 2 business days."
+                        keyFacts={[
+                            "FDIC insures up to $250,000 per depositor per bank",
+                            "Joint accounts covered up to $500,000",
+                            "FDIC has never failed to pay an insured deposit since 1933",
+                        ]}
+                    />
+                </div>
+            </Container>
+
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-is-my-money-safe-in-bank" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -182,6 +209,8 @@ export default function IsMyMoneySafeInBankPage() {
                                 If you have $500,000 in one bank, only $250,000 is insured. The rest is at risk if that bank fails. However, if you spread $250,000 across two different banks, you&apos;re fully covered at each.
                             </Callout>
                         </section>
+
+                        <InContentCTA trackSource="learn-is-my-money-safe-in-bank" />
 
                         {/* Real Risks */}
                         <section id="risks" className="scroll-mt-32">
@@ -466,6 +495,8 @@ export default function IsMyMoneySafeInBankPage() {
                                 </div>
                             </div>
                         </div>
+
+                        <AutoRelatedContent currentUrl="/learn/is-my-money-safe-in-bank" />
 
                         <AuthorBox />
 

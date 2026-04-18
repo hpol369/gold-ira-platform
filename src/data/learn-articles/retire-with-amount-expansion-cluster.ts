@@ -13,6 +13,14 @@ export const retireWithAmountExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Can You Retire at 55 With $300k? Lean FIRE Analysis 2026',
     metaDescription: 'Retiring at 55 with $300,000 is extremely challenging. At 4% withdrawal, you get just $12,000/year. Learn about lean FIRE, SS bridge strategies, and lifestyle changes required.',
     keywords: ['retire at 55 with 300k', 'can i retire with 300000 at 55', '300k early retirement', 'lean fire 300k', 'retire early 300k'],
+    answerFirst: 'Retiring at 55 with $300,000 is extremely challenging but possible with major lifestyle changes. At 4% withdrawal, you receive only $12,000/year — below the federal poverty line of $15,060. The most viable strategy is treating $300k as a bridge to Social Security at 62, withdrawing $20,000/year aggressively and then relying on SS benefits.',
+    answerFirstFacts: [
+      '$300,000 at 4% withdrawal provides only $12,000/year, below the poverty line ($15,060)',
+      '10 years without Medicare (ages 55-65) could consume $48,000-144,000 in healthcare',
+      'The Social Security bridge strategy: withdraw $20k/year until age 62, then rely on SS',
+      'Part-time income of $10,000/year nearly doubles retirement income to $22,000',
+    ],
+
 
     targetKeyword: 'retire at 55 with 300k',
     volume: 20,
@@ -240,6 +248,14 @@ export const retireWithAmountExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Can You Retire at 60 With $400k? Medicare Gap Guide 2026',
     metaDescription: 'Retiring at 60 with $400,000 means 5 years without Medicare and just $16,000/year at 4% withdrawal. Learn about healthcare gap strategies and whether part-time work is needed.',
     keywords: ['retire at 60 with 400k', 'can i retire with 400000 at 60', '400k retirement at 60', 'retire early 400k'],
+    answerFirst: 'Retiring at 60 with $400,000 is tight but doable with planning. At 4% withdrawal, you receive $16,000/year ($1,333/month), and combining with early Social Security at 62 brings total income to about $34,000/year. Part-time work from ages 60-65 is strongly recommended to bridge the 5-year Medicare gap and preserve your savings.',
+    answerFirstFacts: [
+      '$400,000 at 4% withdrawal provides $16,000/year or $1,333/month',
+      'Combined with early Social Security at 62, total income reaches approximately $34,000/year',
+      'At $16,000 annual income, you qualify for significant ACA healthcare subsidies',
+      'Part-time work of 15 hours/week at $15/hour adds $11,700/year to retirement income',
+    ],
+
 
     targetKeyword: 'retire at 60 with 400k',
     volume: 20,
@@ -465,6 +481,14 @@ export const retireWithAmountExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Can You Retire at 62 With $500k? Early SS + Medicare Gap 2026',
     metaDescription: 'Retiring at 62 with $500,000 gives you early SS option and only 3 years until Medicare. At 4% withdrawal ($20k) + SS ($18k), you have $38,000/year. Complete strategy guide.',
     keywords: ['retire at 62 with 500k', 'can i retire with 500000 at 62', '500k retirement at 62', 'retire early 500k social security'],
+    answerFirst: 'Retiring at 62 with $500,000 is workable because you can immediately claim Social Security. At 4% withdrawal ($20,000/year) plus early SS ($18,000/year), combined income reaches $38,000/year — enough for a modest middle-class retirement. The 3-year Medicare gap (62-65) is much shorter and more manageable than earlier retirement scenarios.',
+    answerFirstFacts: [
+      '$500,000 at 4% withdrawal plus early SS at 62 provides $38,000/year combined income',
+      'Only 3 years of healthcare gap until Medicare (vs. 10 years at age 55)',
+      'ACA subsidies at $38,000 income can reduce healthcare to $300-400/month',
+      'Social Security covers 47% of income needs, reducing portfolio dependency significantly',
+    ],
+
 
     targetKeyword: 'retire at 62 with 500k',
     volume: 30,
@@ -693,6 +717,14 @@ export const retireWithAmountExpansionArticles: LearnArticleRegistry = {
     metaTitle: 'Can You Retire at 65 With $600k? Complete Medicare Analysis 2026',
     metaDescription: 'Retiring at 65 with $600,000 means Medicare eligibility and approximately $46,000/year combined income. Learn about modest retirement budgeting and portfolio protection strategies.',
     keywords: ['retire at 65 with 600k', 'can i retire with 600000 at 65', '600k retirement at 65', 'retire with medicare 600k'],
+    answerFirst: '$600,000 at age 65 provides a modest but comfortable retirement with full Medicare eligibility. At 4% withdrawal ($24,000/year) plus Social Security ($22,000/year), total income reaches $46,000/year with no healthcare gap to worry about. Medicare costs $350-500/month compared to $800-1,400/month for pre-65 ACA coverage.',
+    answerFirstFacts: [
+      '$600,000 at 4% withdrawal plus Social Security provides approximately $46,000/year',
+      'Medicare eligibility eliminates the healthcare gap, saving $50,000-75,000 vs. retiring at 60',
+      '$600k is nearly 2.5x the median 401k balance for Americans 65+ ($255,000)',
+      'Medicare costs $350-500/month total vs. $800-1,400/month for pre-65 ACA coverage',
+    ],
+
 
     targetKeyword: 'retire at 65 with 600k',
     volume: 30,

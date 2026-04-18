@@ -9,7 +9,12 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { getAllSeniorProtectionArticles } from "@/data/senior-protection";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 import { ShieldAlert, ArrowRight, Phone, AlertTriangle, BookOpen, Users, Heart } from "lucide-react";
+import { AuthorBox } from "@/components/guide/AuthorBox";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
   title: "Senior Protection Center | Scam Prevention & Financial Safety",
@@ -29,6 +34,8 @@ export default function SeniorProtectionPage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <SchemaScript schema={articleSchema({ title: "Senior Protection Center | Scam Prevention & Financial Safety", description: "Protect yourself and loved ones from financial scams targeting seniors. Learn to identify grandparent scams, romance scams, and financial exploitation.", slug: "/senior-protection" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Senior Protection Center", url: "/senior-protection" }])} />
       <Navbar />
 
       {/* Hero Section */}
@@ -92,6 +99,29 @@ export default function SeniorProtectionPage() {
           </div>
         </Container>
       </section>
+
+      {/* Answer First - GEO optimized */}
+      <section className="py-8 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AnswerFirst
+              answer="Elder financial fraud costs Americans over $3.4 billion annually according to the FBI. The most common Gold IRA scams involve inflated coin premiums (30-100% markups), fake buyback guarantees, and high-pressure sales tactics targeting retirees."
+              keyFacts={[
+                "$3.4 billion lost to elder fraud annually (FBI IC3 Report)",
+                "CFTC fined two precious metals dealers $107M in 2024-2025",
+                "Always verify BBB rating and check for CFTC/SEC enforcement actions",
+              ]}
+              variant="dark"
+            />
+          </div>
+        </Container>
+      </section>
+
+      {/* Author & Last Updated */}
+      <div className="max-w-4xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+        <AuthorBox variant="compact" />
+        <p className="text-sm text-[#A8A39A]">Last updated: March 2026</p>
+      </div>
 
       {/* Key Stats */}
       <section className="py-8 border-y border-[#2A2D42] bg-white">
@@ -223,6 +253,19 @@ export default function SeniorProtectionPage() {
           />
         </Container>
       </section>
+
+      <div className="bg-white">
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <SourcesSection
+            sources={[
+              { name: "FBI — Elder Fraud Report", url: "https://www.ic3.gov/", accessDate: "Mar 2026" },
+              { name: "FTC — Consumer Information: Scams", url: "https://consumer.ftc.gov/scams", accessDate: "Mar 2026" },
+              { name: "CFPB — Protecting Older Americans from Financial Exploitation", url: "https://www.consumerfinance.gov/consumer-tools/educator-tools/resources-for-older-adults/", accessDate: "Mar 2026" },
+            ]}
+            lastVerified="March 2026"
+          />
+        </div>
+      </div>
 
       <Footer />
     </main>

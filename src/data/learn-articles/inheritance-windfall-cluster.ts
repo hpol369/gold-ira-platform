@@ -12,7 +12,13 @@ export const inheritanceWindfallArticles: LearnArticleRegistry = {
     metaTitle: 'What to Do With $100k Inheritance | Smart Planning Guide 2026',
     metaDescription: 'Inherited $100,000? Learn the tax implications, smart allocation strategies, and how to protect this windfall for your retirement.',
     keywords: ['what to do with 100k inheritance', '100k inheritance investment', 'inherited 100000'],
-
+    answerFirst: 'With a $100,000 inheritance, do nothing for at least 30 days, then follow this priority order: build a 6-month emergency fund ($15,000-$20,000), pay off all high-interest credit card debt, allocate 15-20% ($15,000-$20,000) to a Gold IRA, and invest the rest in diversified index funds. Cash inheritances are generally not taxable income, though inherited IRA distributions are.',
+    answerFirstFacts: [
+      'Direct cash inheritances are generally not taxable income in most states',
+      'Inherited IRAs must be distributed within 10 years under the SECURE Act',
+      'Allocating $15,000-$20,000 (15-20%) to a Gold IRA provides crash and inflation protection',
+      'High-yield savings accounts currently pay 4-5% APY — a safe place to park funds while planning',
+    ],
     targetKeyword: 'what to do with 100k inheritance',
     volume: 80,
     difficulty: 0,
@@ -176,7 +182,13 @@ export const inheritanceWindfallArticles: LearnArticleRegistry = {
     metaTitle: 'What to Do With $200k Inheritance | Planning Guide 2026',
     metaDescription: 'Inherited $200,000? Learn smart diversification strategies, tax-efficient investing, and when to get professional help.',
     keywords: ['what to do with 200k inheritance', '200k inheritance planning', 'invest 200k inheritance'],
-
+    answerFirst: 'A $200,000 inheritance benefits from professional guidance — hire a fee-only fiduciary advisor ($1,500-$3,500 for a comprehensive plan) and wait 90 days before investing. Allocate 15-20% ($30,000-$40,000) to a Gold IRA for crash protection, diversify across taxable, tax-deferred, and tax-free accounts, and keep $20,000-$30,000 as an emergency fund. Estate tax is not a concern until estates exceed $13.61 million.',
+    answerFirstFacts: [
+      'A fee-only fiduciary advisor costs $1,500-$3,500 for a comprehensive inheritance plan',
+      'Federal estate tax only applies to estates exceeding $13.61 million (2024)',
+      'Lump-sum investing beats dollar-cost averaging about 2/3 of the time statistically',
+      'Allocating $30,000-$40,000 (15-20%) to a Gold IRA protects against market crashes and inflation',
+    ],
     targetKeyword: 'what to do with 200k inheritance',
     volume: 60,
     difficulty: 0,
@@ -336,7 +348,13 @@ export const inheritanceWindfallArticles: LearnArticleRegistry = {
     metaTitle: 'What to Do With $500k Inheritance | Wealth Management Guide 2026',
     metaDescription: 'Inherited $500,000? Learn wealth management strategies, tax-efficient investing, and trust considerations for large inheritances.',
     keywords: ['what to do with 500k inheritance', 'large inheritance planning', 'half million inheritance'],
-
+    answerFirst: 'A $500,000 inheritance requires a professional advisory team (financial planner, estate attorney, CPA) and at least 6 months before major decisions. Allocate 15-20% ($75,000-$100,000) to a Gold IRA, establish a revocable living trust to avoid probate, and diversify across US stocks (30-35%), international stocks (10-15%), bonds (15-20%), and REITs (5-10%). At the 4% withdrawal rate, $500k generates only ~$20,000/year — not enough to quit your job.',
+    answerFirstFacts: [
+      'Using the 4% rule, $500k generates only about $20,000/year sustainably',
+      'A revocable living trust avoids expensive and public probate proceedings',
+      'Tax-efficient strategies (asset location, tax-loss harvesting, muni bonds) save tens of thousands over time',
+      'Lifestyle inflation is the biggest risk — live on earned income and let inheritance compound',
+    ],
     targetKeyword: 'what to do with 500k inheritance',
     volume: 50,
     difficulty: 0,
@@ -504,7 +522,13 @@ export const inheritanceWindfallArticles: LearnArticleRegistry = {
     metaTitle: 'Sudden Wealth Syndrome: Avoid Windfall Mistakes | Guide 2026',
     metaDescription: 'Learn about sudden wealth syndrome, common mistakes lottery winners and inheritance recipients make, and how to protect your windfall.',
     keywords: ['sudden wealth syndrome', 'lottery winner mistakes', 'windfall anxiety', 'inheritance guilt'],
-
+    answerFirst: 'Sudden Wealth Syndrome is a recognized psychological condition causing anxiety, guilt, isolation, and poor decision-making in people who receive large windfalls. About 70% of lottery winners end up broke within 5 years, and inheritance recipients face similar risks from lifestyle inflation, family "loans," and impulsive investments. The single most protective step is waiting 6-12 months before any major financial decisions.',
+    answerFirstFacts: [
+      'Approximately 70% of lottery winners end up broke within 5 years of winning',
+      'Common symptoms include guilt, anxiety, identity crisis, and relationship strain',
+      'For windfalls of $500k+, experts recommend waiting at least 6 months before major decisions',
+      'Telling others about the amount is one of the most destructive mistakes — it attracts requests, scams, and jealousy',
+    ],
     targetKeyword: 'sudden wealth syndrome',
     volume: 40,
     difficulty: 3,
@@ -668,7 +692,13 @@ export const inheritanceWindfallArticles: LearnArticleRegistry = {
     metaTitle: 'Business Sale Retirement Planning | Exit Strategy Guide 2026',
     metaDescription: 'Selling your business and retiring? Learn capital gains strategies, installment sales, and how to roll proceeds into a Gold IRA.',
     keywords: ['business sale retirement', 'sell business retire', 'exit strategy retirement planning'],
-
+    answerFirst: 'Start planning your business exit 3-5 years before selling to maximize tax savings. A $2 million business sale can save ~$80,000 in federal taxes through an installment sale versus lump sum. Qualified Small Business Stock (QSBS) exclusion can eliminate taxes on up to $10 million in gains for qualifying C-corps held 5+ years. After the sale, diversify proceeds across multiple asset classes including a Gold IRA for inflation protection.',
+    answerFirstFacts: [
+      'An installment sale on a $2M business can save ~$80,000 in federal taxes compared to a lump sum',
+      'QSBS exclusion can eliminate capital gains taxes on up to $10 million for qualifying C-corp stock held 5+ years',
+      'Federal long-term capital gains rates are 0%, 15%, or 20% plus 3.8% Net Investment Income Tax',
+      'Exit planning should start 3-5 years before the sale to implement tax-efficient strategies',
+    ],
     targetKeyword: 'business sale retirement',
     volume: 30,
     difficulty: 2,

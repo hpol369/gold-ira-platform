@@ -13,6 +13,7 @@ import { SingleCompanyFees } from "@/components/reviews/FeesTable";
 import { VerdictSection } from "@/components/reviews/VerdictSection";
 import { BestForSection } from "@/components/reviews/BestForSection";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import {
   getCompanyBySlug,
@@ -211,7 +212,7 @@ export default async function CompanyReviewPage({ params }: Props) {
 
                 {/* Inline CTA */}
                 {!company.featured && (
-                  <AugustaCTA variant="inline" linkContext="comparison" trackSource={`review-${slug}`} />
+                  <AugustaCTA variant="inline" linkContext="comparison" directToAugusta trackSource={`review-${slug}`} />
                 )}
 
                 {/* Fee Structure */}
@@ -243,7 +244,7 @@ export default async function CompanyReviewPage({ params }: Props) {
                 <div className="sticky top-24 space-y-6">
                   {/* Augusta CTA Sidebar (if not viewing Augusta) */}
                   {!company.featured && (
-                    <AugustaCTA variant="sidebar" linkContext="comparison" trackSource={`review-${slug}`} />
+                    <AugustaCTA variant="sidebar" linkContext="comparison" directToAugusta trackSource={`review-${slug}`} />
                   )}
 
                   {/* This Company CTA */}
@@ -349,11 +350,16 @@ export default async function CompanyReviewPage({ params }: Props) {
         ) : (
           <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
             <Container>
-              <AugustaCTA variant="footer" linkContext="comparison" trackSource={`review-${slug}`} />
+              <AugustaCTA variant="footer" linkContext="comparison" directToAugusta trackSource={`review-${slug}`} />
             </Container>
           </section>
         )}
 
+        <section className="py-12 bg-white">
+          <Container>
+            <AutoRelatedContent currentUrl={`/reviews/${slug}`} />
+          </Container>
+        </section>
         <Footer />
         <StickyMobileCTA companySlug={company.slug} companyName={company.name} />
       </main>

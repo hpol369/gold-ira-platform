@@ -12,6 +12,13 @@ export const lifeEventsArticles: LearnArticleRegistry = {
     metaTitle: 'What Happens to Unvested 401k? Complete Guide | 2026',
     metaDescription: 'Understand what happens to unvested 401k contributions when you leave. Learn about vesting schedules, forfeiture, and how to protect your retirement.',
     keywords: ['unvested 401k', 'what happens to unvested 401k', '401k vesting', '401k forfeiture'],
+    answerFirst: 'When you leave your job, you keep 100% of the money you contributed. But unvested employer matching contributions are forfeited back to the plan. Common vesting schedules are 3-year cliff (0% then 100%) or 6-year graded (20% per year starting year 2).',
+    answerFirstFacts: [
+      'Your own contributions are always 100% vested — that money is always yours',
+      'Employer matching contributions follow a vesting schedule, typically 3-6 years',
+      'Forfeited unvested amounts go back to the employer to reduce future contribution costs',
+      'SAFE harbor 401k matches must be immediately vested or use a 2-year cliff maximum',
+    ],
 
     targetKeyword: 'what happens to unvested 401k',
     volume: 50,
@@ -162,6 +169,13 @@ export const lifeEventsArticles: LearnArticleRegistry = {
     metaTitle: 'Laid Off at 58? What Happens to Your 401k | Guide',
     metaDescription: 'Got laid off at 58? Learn what happens to your 401k, the Rule of 55 for penalty-free withdrawals, and how to protect your retirement.',
     keywords: ['laid off at 58', '401k layoff', 'rule of 55', 'laid off before retirement'],
+    answerFirst: 'Your 401k is still yours after a layoff — it doesn\'t disappear. Being laid off at 58 actually unlocks the Rule of 55, which lets you take penalty-free withdrawals from that employer\'s 401k. Don\'t make emotional decisions; you have time to evaluate your options.',
+    answerFirstFacts: [
+      'Your 401k is protected by federal law (ERISA) and held in trust separate from your employer',
+      'The Rule of 55 allows penalty-free 401k withdrawals if you separate from service at 55 or older',
+      'You can leave funds in the old plan, roll to an IRA, roll to a new employer plan, or cash out',
+      'Cashing out loses 30-40% to taxes and penalties — use unemployment and severance first',
+    ],
 
     targetKeyword: 'what happens to my 401k if i get laid off at 58',
 
@@ -306,6 +320,13 @@ export const lifeEventsArticles: LearnArticleRegistry = {
     metaTitle: 'Leaving Job Before 401k Vested? Decision Guide | 2026',
     metaDescription: 'Thinking of leaving before your 401k is fully vested? Learn how to calculate what you\'ll forfeit and whether the new opportunity is worth it.',
     keywords: ['leaving job before vested', '401k vesting', 'forfeit 401k match', 'quit before vested'],
+    answerFirst: 'Only employer contributions are at risk — your own contributions are always 100% yours. Calculate the exact dollar amount you\'d forfeit and compare it to the new opportunity\'s value. Many new employers offer signing bonuses to offset forfeiture.',
+    answerFirstFacts: [
+      'Your personal 401k contributions are always 100% vested regardless of when you leave',
+      'The forfeiture amount = total employer match times (100% minus your vested percentage)',
+      'If the cliff date is within 2-3 months, it may be worth waiting to keep the full match',
+      'You can ask a new employer to offset your forfeiture with a signing bonus — this is standard practice',
+    ],
 
     targetKeyword: 'leaving job before 401k vested',
 
@@ -457,6 +478,13 @@ export const lifeEventsArticles: LearnArticleRegistry = {
     metaTitle: '401k Match Not Vested - Should You Leave? Decision Framework',
     metaDescription: 'Your 401k match isn\'t vested yet but you want to leave. Learn how to calculate if staying is worth it or if you should take the new opportunity.',
     keywords: ['401k match not vested', 'should i leave', 'unvested 401k match', 'wait for vesting'],
+    answerFirst: 'Do the math first: calculate the exact dollar amount you\'d forfeit, then compare it to the salary increase and career benefits of the new job. If the forfeiture is less than one month\'s salary increase, leave immediately. If it\'s more, consider negotiating or timing your exit.',
+    answerFirstFacts: [
+      'Your own contributions are always 100% yours — only the employer match is at risk',
+      'If the cliff date is less than 3 months away, it\'s usually worth waiting',
+      'Asking a new employer to offset forfeiture with a signing bonus is standard practice',
+      'Don\'t stay in a bad job just for unvested money — your health matters more than any match',
+    ],
 
     targetKeyword: '401k match not vested yet should i leave',
 
@@ -558,6 +586,13 @@ export const lifeEventsArticles: LearnArticleRegistry = {
     metaTitle: 'Spouse\'s 401k After Death: Your Options Explained | 2026',
     metaDescription: 'What to do with your spouse\'s 401k after they pass away. Learn your options as a surviving spouse, tax implications, and the best choice for your situation.',
     keywords: ['spouse 401k after death', 'inherited 401k spouse', 'surviving spouse 401k', 'deceased spouse retirement'],
+    answerFirst: 'As a surviving spouse, you have more options than any other beneficiary. The most common choice is a spousal rollover into your own IRA. There\'s no rush — take time to grieve before making financial decisions. The 10-year rule does NOT apply to surviving spouses.',
+    answerFirstFacts: [
+      'Spousal rollover lets you treat the 401k as your own IRA with your own RMD schedule',
+      'The 10-year rule does NOT apply to surviving spouses — you can stretch distributions',
+      'If you\'re under 59½, keeping it as an inherited account avoids the 10% early withdrawal penalty',
+      'Cashing out is fully taxable as ordinary income and generally not recommended',
+    ],
 
     targetKeyword: 'what to do with spouses 401k after death',
 

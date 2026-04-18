@@ -5,11 +5,15 @@ import { Callout } from "@/components/ui/Callout";
 import { ArrowRight, CheckCircle2, ShieldCheck, Clock, FileText } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "How to Transfer 401k to Gold: Simple Guide (2026)",
     description: "Learn how to transfer your 401k to gold in plain English. It's called a rollover and it's 100% tax-free when done right. Simple 3-step process explained.",
+    alternates: { canonical: getCanonicalUrl("/guide/transfer-401k-to-gold") },
 };
 
 const schema = {
@@ -83,10 +87,44 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Transfer 401k to Gold", url: "/guide/transfer-401k-to-gold" },
+]);
+
 export default function Transfer401kToGoldPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Transfer Your 401(k) to Gold",
+                description: "Complete guide to transferring 401(k) retirement savings into physical gold",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Research Gold IRA Companies", text: "Compare top-rated Gold IRA companies based on fees, minimums, BBB ratings, and customer reviews. Request free information kits." },
+                    { name: "Open a Self-Directed IRA", text: "Work with your chosen Gold IRA company to open a self-directed IRA through an approved custodian." },
+                    { name: "Request Direct Rollover", text: "Initiate a direct rollover from your 401(k) plan to your new Gold IRA. The funds transfer directly between custodians with zero tax consequences." },
+                    { name: "Choose Your Metals", text: "Select IRS-approved gold products including American Gold Eagles, Canadian Maple Leafs, or gold bars meeting the 99.5% purity requirement." },
+                    { name: "Secure Depository Storage", text: "Your custodian arranges insured storage at an IRS-approved depository such as Delaware Depository or Brinks." },
+                ],
+            })} />
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="You can transfer your 401k to a Gold IRA through a direct rollover, which is 100% tax-free and penalty-free. The IRS calls this a rollover, and it takes 3 simple steps: open a Gold IRA, request the transfer, and select your gold. The process takes 2-4 weeks."
+                        keyFacts={[
+                            "Direct rollovers (trustee-to-trustee) incur zero taxes and zero penalties",
+                            "The transfer process takes 2-4 weeks with about 15 minutes of your time",
+                            "Gold must be .995+ fineness and stored in an IRS-approved depository",
+                            "You can transfer all or a portion of your 401k balance at any time",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">

@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 
 // Provider options
 const providers = [
@@ -549,7 +550,7 @@ export default function RiskAnalyzerPage() {
                         source="401k-risk-analyzer-cta"
                         className="inline-flex items-center gap-2 px-8 py-4 bg-[#DC2626] text-[#F6F4EF] font-bold text-lg rounded-xl hover:bg-[#991B1B] transition-all shadow-lg shadow-amber-500/25"
                       >
-                        Get Your Free Gold IRA Guide
+                        Get Your Free Precious Metals Guide
                         <ArrowRight className="h-5 w-5" />
                       </LeadCaptureButton>
                       <p className="text-[#A8A39A] text-xs mt-3">
@@ -634,6 +635,13 @@ export default function RiskAnalyzerPage() {
               </div>
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Contextual CTA */}
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="general" trackSource="tools-401k-risk-analyzer" />
         </Container>
       </section>
 

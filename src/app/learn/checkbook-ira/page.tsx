@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import {
@@ -15,6 +13,13 @@ import {
     AlertTriangle,
     FileText
 } from "lucide-react";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, faqSchema, breadcrumbSchema } from "@/lib/schema";
+import { getTrackedAugustaLink } from "@/config/affiliates";
 
 export const metadata: Metadata = {
     title: "Checkbook IRA Guide 2026: What is Checkbook Control?",
@@ -31,7 +36,24 @@ export const metadata: Metadata = {
 export default function CheckbookIRAPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            <SchemaScript schema={articleSchema({
+                title: "What is a Checkbook IRA? Complete Guide to Checkbook Control",
+                description: "Learn what a Checkbook IRA is, how it works, pros and cons, and whether checkbook control is right for your self-directed retirement investing.",
+                slug: "/learn/checkbook-ira",
+                datePublished: "2026-01-01",
+                dateModified: "2026-01-25",
+            })} />
+            <SchemaScript schema={faqSchema([
+                { question: "Is a Checkbook IRA legal?", answer: "Yes, Checkbook IRAs are completely legal and IRS-approved. The structure has been validated by multiple IRS rulings and tax court cases. The key is following all prohibited transaction rules." },
+                { question: "How much does it cost to set up a Checkbook IRA?", answer: "Setup costs typically range from $500-$1,500 for LLC formation, registered agent, and account setup. Ongoing costs are usually $15-$50/month. Providers like Rocket Dollar include setup in their pricing." },
+                { question: "Can I have checkbook control for a Roth IRA?", answer: "Yes, you can have checkbook control with either a Traditional or Roth Self-Directed IRA. The tax treatment follows the same rules as any IRA—Roth grows tax-free, Traditional is tax-deferred." },
+                { question: "What can I invest in with a Checkbook IRA?", answer: "The same investments allowed in any Self-Directed IRA: real estate, precious metals, cryptocurrency, private equity, tax liens, promissory notes, and more. The only difference is you have direct checkbook access." },
+            ])} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "What is a Checkbook IRA?", url: "/learn/checkbook-ira" },
+            ])} />
 
             {/* Hero */}
             <header className="relative py-20 overflow-hidden">
@@ -62,6 +84,20 @@ export default function CheckbookIRAPage() {
                 </Container>
             </header>
 
+            <Container className="py-8">
+                <div className="max-w-4xl">
+                    <AnswerFirst
+                        variant="light"
+                        answer="A Checkbook IRA (or IRA LLC) gives you direct control over your self-directed IRA investments through an LLC owned by the IRA. You write checks directly from the LLC bank account instead of going through the custodian for every transaction. Setup costs $1,000-$3,000 plus state LLC fees."
+                        keyFacts={[
+                            "IRA owns the LLC, you manage it as a non-compensated manager",
+                            "Eliminates custodian approval delays for each investment",
+                            "Setup: $1,000-$3,000 + state LLC filing fees",
+                        ]}
+                    />
+                </div>
+            </Container>
+
             {/* Key Takeaways */}
             <section className="py-12 bg-[#0C0D18]">
                 <Container>
@@ -90,6 +126,8 @@ export default function CheckbookIRAPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-checkbook-ira" />
 
             {/* Main Content */}
             <section className="py-16 bg-white">
@@ -348,6 +386,31 @@ export default function CheckbookIRAPage() {
                 </Container>
             </section>
 
+            {/* Augusta CTA */}
+            <section className="py-12 bg-gradient-to-r from-[#000080] to-[#000060]">
+                <Container>
+                    <div className="max-w-3xl mx-auto text-center">
+                        <p className="text-amber-400 text-sm font-bold uppercase tracking-wider mb-3">Prefer a Simpler Approach?</p>
+                        <h2 className="text-2xl md:text-3xl font-serif font-bold text-white mb-4">
+                            Just Want Gold in Your IRA? No LLC Needed.
+                        </h2>
+                        <p className="text-blue-200 mb-6 max-w-xl mx-auto">
+                            If a Checkbook IRA feels like too much complexity, Augusta Precious Metals handles everything for you. Simple rollover, zero hassle.
+                        </p>
+                        <a
+                            href={getTrackedAugustaLink("default", "learn-checkbook-ira")}
+                            className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#9a1e2d] text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors shadow-lg"
+                        >
+                            Get Your Free Augusta Kit
+                            <ArrowRight className="w-5 h-5" />
+                        </a>
+                        <p className="text-white/40 text-xs mt-3">A+ BBB Rated &bull; Zero Complaints &bull; No Obligation</p>
+                    </div>
+                </Container>
+            </section>
+
+            <AutoRelatedContent currentUrl="/learn/checkbook-ira" />
+
             {/* Related */}
             <section className="py-16 bg-[#0C0D18]">
                 <Container>
@@ -369,23 +432,6 @@ export default function CheckbookIRAPage() {
                 </Container>
             </section>
 
-            <Footer />
-
-            {/* Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Article",
-                        "headline": "What is a Checkbook IRA? Complete Guide to Checkbook Control",
-                        "description": "Learn what a Checkbook IRA is, how it works, pros and cons, and whether checkbook control is right for your self-directed retirement investing.",
-                        "author": { "@type": "Organization", "name": "Rich Dad Retirement" },
-                        "datePublished": "2026-01-01",
-                        "dateModified": "2026-01-25"
-                    })
-                }}
-            />
         </main>
     );
 }

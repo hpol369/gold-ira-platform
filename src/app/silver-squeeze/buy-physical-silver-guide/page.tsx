@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import { Button } from "@/components/ui/Button";
@@ -75,7 +73,7 @@ const schema = {
         description: "30+ years experience in precious metals investing and retirement planning"
     },
     publisher: {
-        "@type": "Organization",
+        "@type": "Person",
         name: "Rich Dad Retirement",
         logo: {
             "@type": "ImageObject",
@@ -128,7 +126,7 @@ export default function BuyPhysicalSilverGuidePage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
             />
-            <Navbar />
+            
 
             {/* Hero Header */}
             <header className="bg-[#0C0D18] text-[#F6F4EF] py-20 relative overflow-hidden">
@@ -892,7 +890,7 @@ export default function BuyPhysicalSilverGuidePage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

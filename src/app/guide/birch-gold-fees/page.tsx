@@ -1,12 +1,14 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, XCircle, DollarSign, AlertTriangle, Award, Scale, Building2, HelpCircle } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Birch Gold Fees 2026: Complete Fee Breakdown & Cost Analysis",
@@ -23,6 +25,7 @@ export const metadata: Metadata = {
         title: "Birch Gold Fees 2026: Complete Fee Breakdown",
         description: "Complete breakdown of Birch Gold fees. Compare costs with Augusta Precious Metals.",
     },
+    alternates: { canonical: getCanonicalUrl("/guide/birch-gold-fees") },
 };
 
 // FAQ data for schema markup
@@ -85,10 +88,16 @@ const articleSchema = {
     }
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Birch Gold Fees", url: "/guide/birch-gold-fees" },
+]);
+
 export default function BirchGoldFeesPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            
 
             {/* Schema Markup */}
             <script
@@ -99,6 +108,22 @@ export default function BirchGoldFeesPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
             />
+            <SchemaScript schema={breadcrumbs} />
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Birch Gold Group charges a $50 setup fee, $100/year annual maintenance, and $150/year for storage — totaling $250/year in ongoing fees. Their $10,000 minimum is lower than competitors, but their total annual cost is $70 more than Augusta Precious Metals ($180/year)."
+                        keyFacts={[
+                            "Setup fee: $50 one-time; annual maintenance: $100/year; storage: $150/year",
+                            "Total ongoing cost: $250/year (excluding spreads of 5-8% on gold purchases)",
+                            "Minimum investment: $10,000 — lower than Augusta ($50,000) or Goldco ($25,000)",
+                            "Augusta saves $70/year on fees: $80 maintenance + $100 storage = $180/year total",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 md:py-24 border-b border-[#2A2D42]">
@@ -511,7 +536,7 @@ export default function BirchGoldFeesPage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

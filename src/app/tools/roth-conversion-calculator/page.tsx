@@ -6,6 +6,8 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import {
   Calculator,
   ArrowRight,
@@ -19,6 +21,7 @@ import {
   Calendar,
   PiggyBank,
 } from "lucide-react";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 // Format currency
 function formatCurrency(value: number): string {
@@ -33,6 +36,12 @@ function formatCurrency(value: number): string {
 function formatPercent(value: number): string {
   return `${value.toFixed(1)}%`;
 }
+
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "Roth Conversion Calculator", url: "/tools/roth-conversion-calculator" },
+]);
 
 export default function RothConversionCalculatorPage() {
   // Form inputs
@@ -130,6 +139,7 @@ export default function RothConversionCalculatorPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
+      <SchemaScript schema={breadcrumbs} />
 
       {/* Hero Section */}
       <section className="py-12 md:py-16 bg-[#0C0D18]">
@@ -671,6 +681,20 @@ export default function RothConversionCalculatorPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-white">
+        <Container>
+          <div className="max-w-4xl mx-auto px-4 pb-12">
+            <SourcesSection
+              sources={[
+                { name: "IRS — Roth IRA Conversions", url: "https://www.irs.gov/retirement-plans/roth-iras", accessDate: "Mar 2026" },
+                { name: "IRS — Tax on Early Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions", accessDate: "Mar 2026" },
+              ]}
+              lastVerified="March 2026"
+            />
           </div>
         </Container>
       </section>

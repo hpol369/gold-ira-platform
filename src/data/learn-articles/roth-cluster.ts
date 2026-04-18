@@ -18,6 +18,13 @@ export const rothArticles: LearnArticleRegistry = {
       'late roth conversion',
       'should I convert to roth before retirement'
     ],
+    answerFirst: 'Ages 60-70 can be the ideal window for Roth conversions, especially if your income is lower between retirement and Social Security. Convert just enough to fill your current tax bracket each year. You need at least 5 years for the conversion to pay off, so don\'t wait too long.',
+    answerFirstFacts: [
+      'Converting before RMDs start at age 73 preserves more tax-free growth',
+      'Partial conversions over multiple years almost always beat one large conversion',
+      'Large conversions can trigger Medicare IRMAA surcharges of $3,000-$15,000 for 2 years',
+      'Since 2018, Roth conversions are irreversible — you cannot undo them',
+    ],
     targetKeyword: 'should i convert 401k to roth at 60',
     volume: 35,
     difficulty: 28,
@@ -200,6 +207,13 @@ export const rothArticles: LearnArticleRegistry = {
       'roth conversion tax hit',
       'avoid roth conversion tax'
     ],
+    answerFirst: 'A Roth conversion "tax bomb" happens when you convert too much in one year, pushing yourself into higher tax brackets and triggering Medicare premium surcharges. The fix is simple: spread conversions over multiple years, filling your current bracket without jumping higher.',
+    answerFirstFacts: [
+      'Converting $300,000 at once can push your effective tax rate above 25-30%',
+      'Medicare IRMAA surcharges add $3,000-$15,000 in higher premiums for 2 years after a large conversion',
+      'Since 2018, Roth conversions are irreversible — you can\'t undo a mistake',
+      'The sweet spot is "bracket filling" — convert just enough to stay in your current tax bracket',
+    ],
     targetKeyword: 'roth conversion tax bomb explained',
     volume: 25,
     difficulty: 20,
@@ -362,6 +376,13 @@ export const rothArticles: LearnArticleRegistry = {
       'should I choose roth 401k',
       '401k pre-tax or roth'
     ],
+    answerFirst: 'Traditional 401k gives you a tax deduction now but you pay taxes when you withdraw. Roth 401k uses after-tax money but withdrawals are tax-free. If you expect to be in a higher tax bracket in retirement, choose Roth. If you\'re in your peak earning years, Traditional usually wins.',
+    answerFirstFacts: [
+      'Traditional: tax deduction now, taxed at withdrawal. Roth: no deduction now, tax-free at withdrawal',
+      'Both have the same 2025 contribution limit: $23,500 ($31,000 if 50+)',
+      'Employer match always goes into the Traditional bucket regardless of your choice',
+      'Having both Traditional and Roth gives maximum tax flexibility in retirement',
+    ],
     targetKeyword: 'traditional vs roth 401k',
     volume: 45,
     difficulty: 25,
@@ -520,6 +541,13 @@ export const rothArticles: LearnArticleRegistry = {
       'high earner roth ira',
       'roth ira income limit workaround',
       'how to do backdoor roth'
+    ],
+    answerFirst: 'A backdoor Roth is a legal two-step workaround for high earners: contribute to a non-deductible Traditional IRA, then immediately convert it to a Roth IRA. There are no income limits on conversions, so this lets anyone contribute to a Roth regardless of income.',
+    answerFirstFacts: [
+      'Roth IRA income limits are $161,000 (single) and $240,000 (married) in 2025',
+      'Step 1: Contribute $7,000/$8,000 to a non-deductible Traditional IRA, Step 2: Convert to Roth',
+      'The pro-rata rule can create unexpected taxes if you have other pre-tax IRA balances',
+      'Mega backdoor Roth uses after-tax 401k contributions — allows up to $69,000/year total',
     ],
     targetKeyword: 'backdoor roth explained',
     volume: 60,

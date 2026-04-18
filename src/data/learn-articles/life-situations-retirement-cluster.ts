@@ -12,6 +12,13 @@ export const lifeSituationsRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Single Retirement Planning: Complete Guide for Singles | 2026',
     metaDescription: 'Retirement planning for singles and never-married individuals. Learn self-reliance strategies, healthcare planning, Social Security optimization, and how to build security alone.',
     keywords: ['single retirement planning', 'retirement for singles', 'never married retirement', 'single person retirement'],
+    answerFirst: 'Singles need 25-30% more retirement savings than married couples because they bear 100% of expenses alone, receive no spousal Social Security boost, and have no built-in caregiver. Target 12-15x your annual income in savings (vs 10-12x for couples) and maintain a 12+ month emergency fund since there is no spouse\'s income as backup.',
+    answerFirstFacts: [
+      'Singles should save 12-15x their annual income for retirement compared to 10-12x for couples',
+      'Long-term care insurance is more critical for singles who have no spouse caregiver available',
+      'Singles miss out on Social Security spousal benefits worth up to 50% of a partner\'s benefit',
+      'Healthcare reserve should be $200,000+ for singles versus $150,000 for married couples',
+    ],
 
     targetKeyword: 'single retirement planning',
     volume: 150,
@@ -168,6 +175,13 @@ export const lifeSituationsRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Stay-at-Home Mom Retirement Planning: SAHM Guide | 2026',
     metaDescription: 'Retirement planning for stay-at-home moms. Learn about spousal IRAs, Social Security spousal benefits, returning to work, and catch-up strategies for homemakers.',
     keywords: ['stay at home mom retirement', 'sahm retirement planning', 'homemaker retirement'],
+    answerFirst: 'Stay-at-home moms can save for retirement using a Spousal IRA, which allows contributions of up to $7,000 per year ($8,000 if age 50+) using household income even without personal earned income. Social Security spousal benefits provide up to 50% of the working spouse\'s benefit at full retirement age, and survivor benefits can reach 100% if the working spouse dies.',
+    answerFirstFacts: [
+      'Spousal IRA allows $7,000/year ($8,000 if 50+) in contributions without personal earned income',
+      'Social Security spousal benefit provides up to 50% of the working spouse\'s full retirement benefit',
+      'Starting a Spousal IRA at age 40 with max contributions can grow to approximately $450,000 by age 65',
+      'If married 10+ years, divorced spouses can claim 50% of ex-spouse\'s benefit without reducing theirs',
+    ],
 
     targetKeyword: 'stay at home mom retirement',
     volume: 20,
@@ -336,6 +350,13 @@ export const lifeSituationsRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Divorce After 50: Retirement Planning Guide | 2026',
     metaDescription: 'Divorced at 50, 55, or 60? Learn about QDRO 401k division, Social Security divorced spouse benefits, and strategies to rebuild retirement savings.',
     keywords: ['divorce after 50 retirement', 'gray divorce finances', 'divorced at 55 retirement'],
+    answerFirst: 'Gray divorce typically cuts retirement assets roughly in half through QDRO (Qualified Domestic Relations Order) division, but you can rebuild with catch-up contributions of $8,000 per year to IRAs and $31,500 per year to 401ks after age 50. If married 10+ years, you may claim Social Security divorced spouse benefits of up to 50% of your ex\'s benefit without reducing theirs.',
+    answerFirstFacts: [
+      'QDRO allows penalty-free transfer of 401k/pension assets in divorce without triggering taxes',
+      'Divorced spouse Social Security requires 10+ years of marriage and you must remain unmarried',
+      'Catch-up contributions at 50+ allow $8,000/year to IRA and $31,500/year to 401k in 2026',
+      'Failing to file QDRO promptly risks losing your share if ex-spouse withdraws funds or dies',
+    ],
 
     targetKeyword: 'divorce after 50 retirement',
     volume: 40,
@@ -507,6 +528,13 @@ export const lifeSituationsRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'Widow Retirement Planning: Financial Guide for Surviving Spouses | 2026',
     metaDescription: 'Retirement planning after losing a spouse. Learn about survivor Social Security benefits, life insurance proceeds, pension options, and managing grief with finances.',
     keywords: ['widowed retirement planning', 'widow retirement', 'surviving spouse retirement finances'],
+    answerFirst: 'Surviving spouses can receive Social Security survivor benefits of up to 100% of the deceased spouse\'s benefit starting at age 60 (or 50 if disabled). The first 6-12 months after losing a spouse, avoid major financial decisions while grieving. Inherited retirement accounts offer special options for surviving spouses, including spousal rollover to your own IRA.',
+    answerFirstFacts: [
+      'Survivor Social Security benefit is up to 100% of deceased spouse\'s benefit at your full retirement age',
+      'Claiming survivor benefits early at age 60 reduces the amount to 71.5% of the full benefit',
+      'Surviving spouses are exempt from the 10-year inherited IRA distribution rule',
+      'Filing status drops from married ($29,200 deduction) to single ($14,600 deduction) after 2-3 years',
+    ],
 
     targetKeyword: 'widowed retirement planning',
     volume: 30,
@@ -672,6 +700,13 @@ export const lifeSituationsRetirementArticles: LearnArticleRegistry = {
     metaTitle: 'One Income Retirement Planning: Single Earner Family Guide | 2026',
     metaDescription: 'Retirement planning for one-income families. Learn spousal IRA strategies, Social Security optimization for couples, and how to protect the sole earner.',
     keywords: ['one income retirement', 'single income family retirement', 'one earner household retirement'],
+    answerFirst: 'One-income households can contribute to two IRAs totaling $14,000-16,000 per year using a Spousal IRA, plus maximize the earner\'s 401k for up to $37,000-46,500 in combined annual retirement savings. The non-working spouse qualifies for Social Security spousal benefits of up to 50% of the earner\'s benefit with zero work history required.',
+    answerFirstFacts: [
+      'Spousal IRA allows $14,000-$16,000 combined annual IRA contributions on one income',
+      'Combined maximum retirement savings: $37,000-$46,500/year (two IRAs + 401k + catch-up)',
+      'Life insurance on the sole earner should be 10-12x annual income minimum',
+      'Social Security spousal benefit provides 50% of earner\'s benefit with no work history required',
+    ],
 
     targetKeyword: 'one income retirement',
     volume: 20,

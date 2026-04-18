@@ -20,7 +20,7 @@ interface LPHeroProps {
 export function LPHero({
   headline,
   subheadline,
-  ctaText = "Get Your Free Consultation",
+  ctaText = "Get Your Free Info Kit",
   linkContext = "silver",
   trackSource,
   className,

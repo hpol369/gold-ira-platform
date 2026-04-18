@@ -12,7 +12,13 @@ export const inheritanceProcessArticles: LearnArticleRegistry = {
     metaTitle: 'Inheritance Financial Advisor: When to Hire & What to Look For | 2026',
     metaDescription: 'Should you hire a financial advisor for your inheritance? Learn when windfall advisors are worth it, fee structures to avoid, and how to find Gold IRA specialists.',
     keywords: ['inheritance financial advisor', 'windfall advisor', 'sudden wealth advisor', 'inheritance planning advisor'],
-
+    answerFirst: 'Inheritances over $100,000 typically benefit from a fee-only fiduciary financial advisor, which costs $1,500-$4,000 for a comprehensive plan. Fee-only fiduciary advisors are legally required to act in your best interest, unlike commission-based advisors who may push products that benefit them. Look for CFP designation and sudden wealth experience, and always verify fiduciary status in writing.',
+    answerFirstFacts: [
+      'A flat-fee comprehensive financial plan from a fee-only advisor costs $1,500-$4,000',
+      'Commission-based advisors have inherent conflicts of interest — always choose fee-only fiduciary',
+      'NAPFA.org and Garrett Planning Network maintain directories of verified fee-only advisors',
+      'AUM fees of 1% on $500k cost $5,000 every year — flat-fee plans are often better value for inheritances',
+    ],
     targetKeyword: 'inheritance financial advisor',
     volume: 150,
     difficulty: 3,
@@ -198,7 +204,13 @@ export const inheritanceProcessArticles: LearnArticleRegistry = {
     metaTitle: 'Inheriting IRA From Parent: 10-Year Rule & RMD Guide | 2026',
     metaDescription: 'Inherited an IRA from your mother or father? Learn the 10-year rule, RMD requirements, rollover options, and tax strategies for inherited IRAs.',
     keywords: ['inheriting ira from parent', 'inherited ira rules parent', 'inherited ira from mother', 'inherited ira from father'],
-
+    answerFirst: 'Under the SECURE Act, non-spouse beneficiaries must empty an inherited IRA within 10 years of the parent\'s death. You cannot roll an inherited IRA into your own IRA — it must remain a separate inherited account. If your parent was already taking RMDs (age 73+), you must take annual distributions during the 10-year period or face a 25% penalty on missed amounts.',
+    answerFirstFacts: [
+      'The SECURE Act requires most non-spouse beneficiaries to empty inherited IRAs within 10 years',
+      'A $500k inherited IRA taken as a lump sum in year 10 could push you into the 32-37% tax bracket',
+      'Missing a required RMD triggers a 25% penalty on the amount that should have been withdrawn',
+      'Spreading distributions evenly over 10 years can save $20,000+ in taxes compared to a lump-sum approach',
+    ],
     targetKeyword: 'inheriting ira from parent',
     volume: 90,
     difficulty: 4,
@@ -375,7 +387,13 @@ export const inheritanceProcessArticles: LearnArticleRegistry = {
     metaTitle: 'Inheriting 401k From Parent: Rollover Rules & Options | 2026',
     metaDescription: 'Inherited a 401k from your parent? Learn your options including rollover to inherited IRA, distribution choices, and tax implications.',
     keywords: ['inheriting 401k from parent', 'inherited 401k rules', 'inherited 401k options', 'parent 401k beneficiary'],
-
+    answerFirst: 'When inheriting a 401k from a parent, the best option for most beneficiaries is rolling it to an inherited IRA via direct trustee-to-trustee transfer, which avoids the 20% mandatory withholding and gives you more investment flexibility. The same 10-year distribution rule applies as with inherited IRAs, and there is no 10% early withdrawal penalty regardless of your age.',
+    answerFirstFacts: [
+      'A direct trustee-to-trustee rollover to an inherited IRA avoids 20% mandatory tax withholding',
+      'Non-spouse beneficiaries cannot roll inherited 401k into their own 401k or personal IRA',
+      'The 10% early withdrawal penalty does not apply to distributions from inherited retirement accounts',
+      'A $200k inherited 401k taken in one year could cost $20,000+ more in taxes than spreading over 10 years',
+    ],
     targetKeyword: 'inheriting 401k from parent',
     volume: 30,
     difficulty: 1,

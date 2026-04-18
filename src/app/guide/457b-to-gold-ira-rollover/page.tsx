@@ -1,17 +1,22 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { TableOfContents } from "@/components/guide/TableOfContents";
 import { Callout } from "@/components/ui/Callout";
 import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, AlertTriangle, Building2, RefreshCw, Briefcase, Shield } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "457(b) to Gold IRA Rollover Guide: For Government Employees (2026)",
     description: "457(b) to Gold IRA rollover guide for government employees. Transfer your deferred compensation plan tax-free with no early withdrawal penalty.",
+    alternates: { canonical: getCanonicalUrl("/guide/457b-to-gold-ira-rollover") },
 };
 
 const tocItems = [
@@ -87,10 +92,44 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "457b to Gold IRA Rollover", url: "/guide/457b-to-gold-ira-rollover" },
+]);
+
 export default function Page457bRolloverPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Roll Over Your 457(b) to a Gold IRA",
+                description: "Step-by-step guide for government employees to transfer 457(b) funds into a Gold IRA",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Check 457(b) Rollover Rules", text: "Governmental 457(b) plans are eligible for rollover to a Gold IRA. Private 457(b) plans have different rules — verify with your plan administrator." },
+                    { name: "Select a Gold IRA Company", text: "Choose a provider experienced with government retirement plan rollovers. Augusta Precious Metals and Goldco handle 457(b) transfers." },
+                    { name: "Open Your Gold IRA Account", text: "Set up a self-directed IRA through an approved custodian. Your Gold IRA company handles the paperwork." },
+                    { name: "Complete the Direct Transfer", text: "Request a direct rollover to avoid the 20% withholding on indirect transfers. Funds move directly between custodians tax-free." },
+                    { name: "Select and Store Precious Metals", text: "Choose IRS-approved gold and silver products. Metals are stored in an insured depository — not at your home." },
+                ],
+            })} />
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Governmental 457(b) plans can be rolled over to a Gold IRA tax-free through a direct rollover. The 457(b) has a unique advantage: no 10% early withdrawal penalty at any age. However, once rolled to an IRA, standard IRA penalty rules apply."
+                        keyFacts={[
+                            "Governmental 457(b) plans have NO 10% early withdrawal penalty at any age",
+                            "Direct rollovers to a Gold IRA are 100% tax-free for governmental 457(b) plans",
+                            "Non-governmental 457(b) plans (non-profits, hospitals) generally cannot roll to an IRA",
+                            "Many government employees have both a 457(b) and 401(a) — each can be rolled separately",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#121423] text-[#F6F4EF] py-20 relative overflow-hidden border-b border-[#2A2D42]">
                 <div className="absolute inset-0 bg-primary-dark/50" />
@@ -404,6 +443,12 @@ export default function Page457bRolloverPage() {
             <section className="py-16 bg-[#121423]">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="guide-457b-to-gold-ira-rollover" />
+                </Container>
+            </section>
+
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/guide/457b-to-gold-ira-rollover" />
                 </Container>
             </section>
         </main>

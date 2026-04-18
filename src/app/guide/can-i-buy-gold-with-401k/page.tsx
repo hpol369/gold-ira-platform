@@ -5,11 +5,15 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, CheckCircle2, HelpCircle, Coins, FileText } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Can I Buy Gold With My 401k? Yes, Here's How (2026)",
     description: "Yes, you can buy gold with your 401k through a Gold IRA rollover. Learn the simple process to convert your retirement savings to physical gold.",
+    alternates: { canonical: getCanonicalUrl("/guide/can-i-buy-gold-with-401k") },
 };
 
 const faqs = [
@@ -72,10 +76,44 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Can I Buy Gold With 401k", url: "/guide/can-i-buy-gold-with-401k" },
+]);
+
 export default function CanIBuyGoldWith401kPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Buy Gold with Your 401(k)",
+                description: "Step-by-step guide to using 401(k) funds to purchase physical gold through a Gold IRA",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Determine Your Eligibility", text: "If you have left your employer, you can roll over your 401(k) to a Gold IRA at any age. If still employed, check for in-service rollover options." },
+                    { name: "Choose a Gold IRA Company", text: "Research top-rated Gold IRA companies. Look for low fees, strong BBB ratings, and transparent pricing." },
+                    { name: "Roll Over Funds Tax-Free", text: "Use a direct rollover (trustee-to-trustee) to transfer 401(k) funds into your new Gold IRA without triggering taxes or penalties." },
+                    { name: "Select Your Gold Products", text: "Choose from IRS-approved gold coins (American Eagles, Canadian Maple Leafs) and gold bars (99.5% minimum purity)." },
+                    { name: "Store in Approved Depository", text: "Your custodian arranges secure storage at an IRS-approved depository with full insurance coverage." },
+                ],
+            })} />
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Yes, you can buy gold with your 401k money. You do this through a Gold IRA rollover — transferring funds from your 401k to a Self-Directed IRA that holds physical gold. The process is tax-free and has been permitted by the IRS since 1997."
+                        keyFacts={[
+                            "You cannot buy gold directly inside a 401k — you need a Gold IRA rollover first",
+                            "Gold must be .995+ fineness (American Eagles, Maple Leafs, approved bars)",
+                            "Setup fees range from $50-$80; annual storage and maintenance costs $150-$300/year",
+                            "2026 IRA contribution limit is $7,000/year ($8,000 if 50+), plus unlimited rollovers",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">

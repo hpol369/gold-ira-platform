@@ -2,8 +2,13 @@ import { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { GoldIRACalculator } from "@/components/tools/GoldIRACalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 export const metadata: Metadata = {
   title: "Gold IRA Calculator - Calculate Your Gold IRA Investment Returns",
@@ -38,6 +43,12 @@ const schemaMarkup = {
   ],
 };
 
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "Gold IRA Calculator", url: "/tools/gold-ira-calculator" },
+]);
+
 export default function GoldIRACalculatorPage() {
   return (
     <div className="min-h-screen bg-white text-[#F6F4EF]">
@@ -45,8 +56,14 @@ export default function GoldIRACalculatorPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
+      <SchemaScript schema={breadcrumbs} />
       <Navbar />
       <GoldIRACalculator />
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="gold-ira" trackSource="tools-gold-ira-calculator" />
+        </Container>
+      </section>
       <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
@@ -55,6 +72,25 @@ export default function GoldIRACalculatorPage() {
             subheadline="See how gold can diversify your retirement savings and protect against market volatility."
             trackSource="tools-gold-ira-calculator"
           />
+        </Container>
+      </section>
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools/gold-ira-calculator" />
+        </Container>
+      </section>
+      <section className="bg-white">
+        <Container>
+          <div className="max-w-4xl mx-auto px-4 pb-12">
+            <SourcesSection
+              sources={[
+                { name: "IRS — Retirement Topics: IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits", accessDate: "Mar 2026" },
+                { name: "World Gold Council — Gold Performance Data", url: "https://www.gold.org/goldhub/data/gold-prices", accessDate: "Mar 2026" },
+                { name: "IRS — Self-Directed IRA Rules (Publication 590-A)", url: "https://www.irs.gov/publications/p590a", accessDate: "Mar 2026" },
+              ]}
+              lastVerified="March 2026"
+            />
+          </div>
         </Container>
       </section>
       <Footer />

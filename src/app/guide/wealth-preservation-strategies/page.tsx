@@ -7,7 +7,10 @@ import { AuthorBox } from "@/components/guide/AuthorBox";
 import { ArrowRight, ShieldCheck, Coins, Building2, Globe, Lock, TrendingUp, PieChart } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Wealth Preservation Strategies: Protect Your Assets",
@@ -18,6 +21,7 @@ export const metadata: Metadata = {
         type: "article",
         images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Rich Dad Retirement" }],
     },
+    alternates: { canonical: getCanonicalUrl("/guide/wealth-preservation-strategies") },
 };
 
 const tocItems = [
@@ -101,10 +105,17 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Wealth Preservation Strategies", url: "/guide/wealth-preservation-strategies" },
+]);
+
 export default function WealthPreservationStrategiesPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
             {/* Header */}
             <header className="bg-[#121423] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -121,6 +132,18 @@ export default function WealthPreservationStrategiesPage() {
                     </div>
                 </Container>
             </header>
+
+            <AnswerFirst
+                answer="The top wealth preservation strategies for 2026 are gold/precious metals allocation (10-20%), Treasury bonds (I-Bonds and TIPS), diversified real estate, and Roth IRA conversions during low-income years. In periods of high inflation and geopolitical uncertainty, physical gold has outperformed traditional safe-haven assets."
+                keyFacts={[
+                    "Gold has maintained purchasing power for 5,000+ years",
+                    "I-Bonds currently yield 5.27% (inflation-adjusted, risk-free)",
+                    "Roth conversions lock in today's tax rates — valuable if you expect rates to rise",
+                    "Real estate provides inflation protection plus rental income",
+                    "Diversification across 5+ asset classes reduces portfolio drawdowns by 30-40%",
+                ]}
+                className="mb-8 max-w-3xl"
+            />
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">

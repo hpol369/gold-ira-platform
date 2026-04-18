@@ -5,11 +5,15 @@ import { Callout } from "@/components/ui/Callout";
 import { ArrowRight, CheckCircle2, ShieldCheck, Coins, TrendingUp, Lock, FileText } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { getCanonicalUrl } from "@/lib/metadata";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { breadcrumbSchema, howToSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "How to Convert 401k to Gold: Step-by-Step (2026)",
     description: "Converting your 401k to gold is possible and tax-free. The IRS calls it a rollover. Learn the simple steps to convert your retirement savings to physical gold.",
+    alternates: { canonical: getCanonicalUrl("/guide/convert-401k-to-gold") },
 };
 
 const schema = {
@@ -83,10 +87,44 @@ const schema = {
     ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Guides", url: "/guide" },
+    { name: "Convert 401k to Gold", url: "/guide/convert-401k-to-gold" },
+]);
+
 export default function Convert401kToGoldPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbs} />
+            <SchemaScript schema={howToSchema({
+                name: "How to Convert Your 401(k) to Gold",
+                description: "Step-by-step process for converting 401(k) funds into physical gold in an IRA",
+                totalTime: "P21D",
+                steps: [
+                    { name: "Verify 401(k) Eligibility", text: "Confirm your 401(k) is eligible for rollover. If you have left your employer, you can roll over any amount. If still employed, check if your plan allows in-service rollovers." },
+                    { name: "Select a Gold IRA Provider", text: "Choose a reputable Gold IRA company that handles the conversion process. Top-rated companies include Augusta Precious Metals and Goldco." },
+                    { name: "Open Your Gold IRA Account", text: "Complete the application to open a self-directed IRA with an approved custodian. Most applications take 1-3 business days to process." },
+                    { name: "Initiate the Direct Transfer", text: "Request a direct trustee-to-trustee transfer from your 401(k) to your new Gold IRA. This method is tax-free and penalty-free." },
+                    { name: "Purchase IRS-Approved Gold", text: "Once funds arrive, select from IRS-approved gold products (minimum 99.5% purity). Your metals are shipped to an insured, approved depository." },
+                ],
+            })} />
+
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="Yes, you can convert your 401k to gold through a tax-free direct rollover into a Gold IRA. The process takes 2-4 weeks, costs $0 in taxes or penalties, and most Gold IRA companies handle the paperwork for you."
+                        keyFacts={[
+                            "Direct rollovers are 100% tax-free and penalty-free under IRS rules",
+                            "Most Gold IRA companies charge $50-$80 setup fees and $150-$300/year for storage and maintenance",
+                            "Financial advisors typically recommend allocating 10-20% of retirement savings to precious metals",
+                            "The entire conversion process takes 2-4 weeks from start to finish",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">

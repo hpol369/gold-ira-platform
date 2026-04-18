@@ -12,6 +12,13 @@ export const safetyArticles: LearnArticleRegistry = {
     metaTitle: 'Is Fidelity Too Big to Fail? Your 401k Protection Explained | 2026',
     metaDescription: 'Is Fidelity too big to fail? Learn what actually protects your 401k if Fidelity collapses, SIPC limits, and why physical gold offers different protection.',
     keywords: ['is fidelity too big to fail', 'fidelity bankruptcy', 'is my money safe at fidelity', 'fidelity sipc coverage'],
+    answerFirst: 'No, Fidelity is not "too big to fail." Unlike banks, brokerages have no government bailout guarantee. However, your investments are protected up to $500,000 by SIPC, and your securities are held separately from Fidelity\'s business assets.',
+    answerFirstFacts: [
+      'SIPC covers up to $500,000 per account if a brokerage fails',
+      'Your stocks and bonds are held separately from Fidelity\'s own assets',
+      'No brokerage has "too big to fail" status — that\'s only for banks',
+      'Physical gold in a Gold IRA sits outside the brokerage system entirely',
+    ],
 
     targetKeyword: 'is fidelity too big to fail',
     volume: 10,
@@ -169,6 +176,13 @@ export const safetyArticles: LearnArticleRegistry = {
     metaTitle: 'Is My Money Safe at Vanguard? Protection Explained | 2026',
     metaDescription: 'Is your retirement safe at Vanguard? Learn about SIPC coverage limits, what happens if Vanguard fails, and how to protect against the risks insurance doesn\'t cover.',
     keywords: ['is my money safe at vanguard', 'vanguard safe', 'vanguard sipc coverage', 'vanguard bankruptcy'],
+    answerFirst: 'Yes, your money is safe at Vanguard from institutional failure. Vanguard\'s unique mutual ownership structure makes collapse extremely unlikely, and SIPC covers up to $500,000 if assets go missing. The real risk is market crashes, which no insurance covers.',
+    answerFirstFacts: [
+      'Vanguard is owned by its funds (which are owned by you) — no outside profit pressure',
+      'SIPC protects up to $500,000 per customer if Vanguard fails',
+      'Your securities are held separately from Vanguard\'s business assets',
+      'Market losses have no insurance — the S&P 500 dropped 18% in 2022 with zero coverage',
+    ],
 
     targetKeyword: 'is my money safe at vanguard',
 
@@ -297,6 +311,13 @@ export const safetyArticles: LearnArticleRegistry = {
     metaTitle: 'SIPC vs FDIC for Retirement Accounts Explained | 2026',
     metaDescription: 'Understand the difference between SIPC and FDIC protection for your 401k and IRA. Learn coverage limits, what\'s protected, and the biggest risk neither covers.',
     keywords: ['sipc vs fdic', 'sipc vs fdic retirement', 'is my ira fdic insured', 'sipc coverage retirement'],
+    answerFirst: 'FDIC covers bank deposits up to $250,000. SIPC covers brokerage accounts up to $500,000. Your 401k and IRA are typically at a brokerage, so they\'re protected by SIPC, not FDIC. Neither one protects against stock market losses.',
+    answerFirstFacts: [
+      'FDIC covers bank deposits (checking, savings, CDs) — NOT investment accounts',
+      'SIPC covers brokerage accounts up to $500,000 if the broker fails',
+      'Your 401k at Fidelity or Vanguard is SIPC-protected, not FDIC',
+      'Neither SIPC nor FDIC covers market losses — the biggest actual risk to your retirement',
+    ],
 
     targetKeyword: 'sipc vs fdic retirement accounts',
 
@@ -449,6 +470,13 @@ export const safetyArticles: LearnArticleRegistry = {
     metaTitle: 'What Happens to 401k If Brokerage Fails? Complete Guide | 2026',
     metaDescription: 'Learn what happens to your 401k and IRA if your brokerage fails. Understand SIPC protection, asset transfer process, and risks SIPC doesn\'t cover.',
     keywords: ['what happens to 401k if brokerage fails', 'brokerage failure', '401k protection', 'broker bankruptcy'],
+    answerFirst: 'If your brokerage fails, your investments don\'t disappear. Your stocks, bonds, and funds are held in your name — separate from the broker\'s assets. SIPC steps in and transfers your holdings to another brokerage, usually within 1-3 months.',
+    answerFirstFacts: [
+      'Your securities are held in your name, separate from the brokerage\'s business',
+      'SIPC oversees the transfer and covers up to $500,000 if assets are missing',
+      'Lehman Brothers brokerage customers recovered fully in 2008 — assets transferred to Barclays',
+      'The real risk is market crashes, not broker failure — SIPC doesn\'t cover market losses',
+    ],
 
     targetKeyword: 'what happens to 401k if brokerage fails',
 
@@ -585,6 +613,13 @@ export const safetyArticles: LearnArticleRegistry = {
     metaTitle: 'Will Government Take My 401k? The Real Risk Explained | 2026',
     metaDescription: 'Can the government seize your 401k? Learn what\'s legally possible, what\'s conspiracy theory, and the real threats to your retirement the government CAN\'T protect you from.',
     keywords: ['will government take my 401k', 'can government seize 401k', 'government 401k seizure', '401k confiscation'],
+    answerFirst: 'The government can\'t just "seize" your 401k — that would require new laws. However, the IRS can levy your 401k for unpaid taxes. The more realistic threat is inflation silently eroding your purchasing power through money printing.',
+    answerFirstFacts: [
+      'ERISA protects your 401k from most creditors and lawsuits',
+      'The IRS CAN take your 401k for unpaid federal taxes — no exceptions',
+      'Proposals for mandatory government retirement accounts have surfaced but never passed',
+      'Since 2020, real inflation has reduced your 401k\'s purchasing power by 15-20%',
+    ],
 
     targetKeyword: 'will government take my 401k',
 
@@ -718,6 +753,13 @@ export const safetyArticles: LearnArticleRegistry = {
     metaTitle: 'Can Government Seize My IRA? Legal Facts Explained | 2026',
     metaDescription: 'Can the government seize your IRA? Learn about IRS levy powers, creditor protection differences from 401k, and how to protect your retirement savings.',
     keywords: ['can government seize my ira', 'ira seizure', 'ira protection from government', 'irs ira levy'],
+    answerFirst: 'The IRS can absolutely seize your IRA for unpaid federal taxes. Beyond the IRS, your IRA has less legal protection than a 401k because IRAs aren\'t covered by ERISA. State laws determine how well your IRA is shielded from other creditors.',
+    answerFirstFacts: [
+      'IRAs are NOT covered by ERISA — they have weaker federal protection than 401ks',
+      'The IRS can levy both Traditional and Roth IRAs for unpaid taxes',
+      'Bankruptcy protection is limited to about $1.5 million for IRAs',
+      'Some states like Texas and Florida offer unlimited IRA protection; others offer very little',
+    ],
 
     targetKeyword: 'can the government seize my ira',
 
@@ -846,6 +888,13 @@ export const safetyArticles: LearnArticleRegistry = {
     metaTitle: 'What Happens to 401k If Bank Fails? Protection Explained | 2026',
     metaDescription: 'What happens to your 401k if your bank fails? Learn why your 401k is (mostly) safe, the difference between banks and brokerages, and real risks to worry about.',
     keywords: ['what happens to 401k if bank fails', '401k bank failure', 'bank collapse 401k', 'is my 401k safe'],
+    answerFirst: 'Your 401k is almost certainly not at a bank — it\'s at a brokerage like Fidelity or Vanguard. Bank failures don\'t directly affect brokerage-held 401ks. If your 401k IS at a bank, only deposit products are FDIC insured; your stock and bond investments are not.',
+    answerFirstFacts: [
+      'Most 401ks are held at brokerages (Fidelity, Vanguard, Schwab), not banks',
+      'Bank failures affect bank accounts, not brokerage-held 401ks',
+      'FDIC covers bank deposits up to $250,000 — NOT stock or bond investments',
+      'SVB depositors were made whole, but 2022 stock crash victims lost 20%+ with no recourse',
+    ],
 
     targetKeyword: 'what happens to 401k if bank fails',
 

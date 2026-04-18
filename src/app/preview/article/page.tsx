@@ -91,7 +91,7 @@ export default function PreviewArticle() {
                         <div>
                             <h4 className="font-bold text-[#000080] text-lg">About Thomas Richardson</h4>
                             <p className="text-slate-600 text-sm mt-2">
-                                Thomas is a senior financial analyst specializing in retirement preservation. He has helped over 10,000 Americans understand the benefits of precious metals diversification.
+                                I&apos;m Thomas Richardson, Senior Editor &amp; Founder of Rich Dad Retirement. I specialize in retirement preservation research, helping Americans understand the benefits of precious metals diversification through data-driven analysis.
                             </p>
                         </div>
                     </div>

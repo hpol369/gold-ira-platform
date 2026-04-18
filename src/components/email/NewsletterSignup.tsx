@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Mail, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { trackEmailSignup } from "@/lib/analytics";
 
 interface NewsletterSignupProps {
   variant?: "default" | "inline" | "footer" | "popup";
@@ -18,6 +19,7 @@ export function NewsletterSignup({
   className,
 }: NewsletterSignupProps) {
   const [email, setEmail] = useState("");
+  const [consent, setConsent] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -30,19 +32,31 @@ export function NewsletterSignup({
       return;
     }
 
+    if (!consent) {
+      setStatus("error");
+      setErrorMessage("Please agree to receive emails");
+      return;
+    }
+
     setStatus("loading");
 
     try {
       const res = await fetch("/api/newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({
+          email,
+          source: typeof window !== "undefined" ? window.location.pathname : "",
+        }),
       });
 
       if (!res.ok) throw new Error("Failed to subscribe");
 
+      const trigger = variant === "footer" ? "footer" : variant === "inline" ? "inline" : "inline";
+      trackEmailSignup(window.location.pathname, trigger);
       setStatus("success");
       setEmail("");
+      setConsent(false);
     } catch {
       setStatus("error");
       setErrorMessage("Something went wrong. Please try again.");
@@ -66,7 +80,7 @@ export function NewsletterSignup({
         {status === "success" ? (
           <div className="flex items-center gap-2 text-green-600 text-sm">
             <CheckCircle2 className="h-4 w-4" />
-            You&apos;re subscribed!
+            Check your inbox to confirm your subscription.
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-2">
@@ -77,9 +91,22 @@ export function NewsletterSignup({
               placeholder="Enter your email"
               className="w-full px-4 py-2 bg-[#161828] border border-[#2A2D42] rounded-lg text-[#F6F4EF] placeholder-slate-500 text-sm focus:outline-none focus:border-[#B22234]"
             />
+            <label className="flex items-start gap-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={consent}
+                onChange={(e) => setConsent(e.target.checked)}
+                className="mt-0.5 h-4 w-4 rounded border-[#3F4460] text-[#D4A94E] focus:ring-[#B22234]"
+              />
+              <span className="text-[#A8A39A] text-xs leading-relaxed">
+                I agree to receive retirement planning emails.{" "}
+                <a href="/privacy-policy" className="underline hover:text-[#F6F4EF]">Privacy Policy</a>.
+                Unsubscribe anytime.
+              </span>
+            </label>
             <button
               type="submit"
-              disabled={status === "loading"}
+              disabled={status === "loading" || !consent}
               className="w-full px-4 py-2 bg-[#DC2626] hover:bg-[#991B1B] disabled:bg-[rgba(220,38,38,0.06)]0 text-white font-semibold rounded-lg text-sm transition-colors flex items-center justify-center gap-2"
             >
               {status === "loading" ? (
@@ -121,29 +148,44 @@ export function NewsletterSignup({
           {status === "success" ? (
             <div className="flex items-center gap-2 text-green-600 bg-green-500/10 px-6 py-3 rounded-xl">
               <CheckCircle2 className="h-5 w-5" />
-              <span className="font-semibold">You&apos;re on the list!</span>
+              <span className="font-semibold">Check your inbox to confirm!</span>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 min-w-[300px]">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-[#161828] border border-[#2A2D42] rounded-xl text-[#F6F4EF] placeholder-slate-500 focus:outline-none focus:border-[#B22234]"
-              />
-              <button
-                type="submit"
-                disabled={status === "loading"}
-                className="px-6 py-3 bg-[#DC2626] hover:bg-[#991B1B] disabled:bg-[rgba(220,38,38,0.06)]0 text-white font-bold rounded-xl transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
-              >
-                {status === "loading" ? (
-                  <Loader2 className="h-5 w-5 animate-spin" />
-                ) : (
-                  "Subscribe"
-                )}
-              </button>
-            </form>
+            <div className="min-w-[300px] space-y-3">
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  className="flex-1 px-4 py-3 bg-[#161828] border border-[#2A2D42] rounded-xl text-[#F6F4EF] placeholder-slate-500 focus:outline-none focus:border-[#B22234]"
+                />
+                <button
+                  type="submit"
+                  disabled={status === "loading" || !consent}
+                  className="px-6 py-3 bg-[#DC2626] hover:bg-[#991B1B] disabled:bg-[rgba(220,38,38,0.06)]0 text-white font-bold rounded-xl transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
+                >
+                  {status === "loading" ? (
+                    <Loader2 className="h-5 w-5 animate-spin" />
+                  ) : (
+                    "Subscribe"
+                  )}
+                </button>
+              </form>
+              <label className="flex items-start gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={consent}
+                  onChange={(e) => setConsent(e.target.checked)}
+                  className="mt-0.5 h-4 w-4 rounded border-[#3F4460] text-[#D4A94E] focus:ring-[#B22234]"
+                />
+                <span className="text-[#A8A39A] text-xs leading-relaxed">
+                  I agree to receive retirement planning emails.{" "}
+                  <a href="/privacy-policy" className="underline hover:text-[#F6F4EF]">Privacy Policy</a>.
+                  Unsubscribe anytime.
+                </span>
+              </label>
+            </div>
           )}
         </div>
         {status === "error" && (
@@ -172,7 +214,7 @@ export function NewsletterSignup({
       {status === "success" ? (
         <div className="flex items-center justify-center gap-2 text-green-600 bg-green-500/10 px-6 py-4 rounded-xl">
           <CheckCircle2 className="h-6 w-6" />
-          <span className="font-semibold text-lg">Welcome! Check your inbox.</span>
+          <span className="font-semibold text-lg">Check your inbox to confirm your subscription.</span>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="max-w-sm mx-auto space-y-3">
@@ -183,9 +225,22 @@ export function NewsletterSignup({
             placeholder="Enter your email address"
             className="w-full px-5 py-4 bg-[#161828] border border-[#2A2D42] rounded-xl text-[#F6F4EF] placeholder-slate-500 text-center focus:outline-none focus:border-[#B22234]"
           />
+          <label className="flex items-start gap-2 cursor-pointer text-left">
+            <input
+              type="checkbox"
+              checked={consent}
+              onChange={(e) => setConsent(e.target.checked)}
+              className="mt-0.5 h-4 w-4 rounded border-[#3F4460] text-[#D4A94E] focus:ring-[#B22234]"
+            />
+            <span className="text-[#A8A39A] text-xs leading-relaxed">
+              I agree to receive retirement planning emails.{" "}
+              <a href="/privacy-policy" className="underline hover:text-[#F6F4EF]">Privacy Policy</a>.
+              Unsubscribe anytime.
+            </span>
+          </label>
           <button
             type="submit"
-            disabled={status === "loading"}
+            disabled={status === "loading" || !consent}
             className="w-full px-6 py-4 bg-gradient-to-r from-[#B22234] to-[#8b1c2a] hover:from-[#8b1c2a] hover:to-[#6b1520] disabled:from-[#B22234]/50 disabled:to-[#8b1c2a]/50 text-white font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
           >
             {status === "loading" ? (
@@ -200,9 +255,6 @@ export function NewsletterSignup({
               {errorMessage}
             </p>
           )}
-          <p className="text-[#A8A39A] text-xs">
-            No spam. Unsubscribe anytime.
-          </p>
         </form>
       )}
     </div>

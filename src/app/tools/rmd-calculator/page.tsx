@@ -3,8 +3,11 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { RMDCalculator } from "@/components/tools/RMDCalculator";
 import { Container } from "@/components/ui/Container";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { CalculatorCTA } from "@/components/widgets/CalculatorCTA";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 import {
   AlertTriangle,
   CheckCircle2,
@@ -13,6 +16,7 @@ import {
   Calculator,
   Table,
 } from "lucide-react";
+import { SourcesSection } from "@/components/content/SourcesSection";
 
 export const metadata: Metadata = {
   title: "RMD Calculator 2026 | Free Required Minimum Distribution Calculator",
@@ -134,12 +138,19 @@ const faqSchema = {
   ]
 };
 
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: "/" },
+  { name: "Tools", url: "/tools" },
+  { name: "RMD Calculator", url: "/tools/rmd-calculator" },
+]);
+
 export default function RMDCalculatorPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
       <SchemaScript schema={calculatorSchema} />
       <SchemaScript schema={faqSchema} />
+      <SchemaScript schema={breadcrumbs} />
 
       {/* Calculator Section */}
       <RMDCalculator />
@@ -394,6 +405,13 @@ export default function RMDCalculatorPage() {
         </Container>
       </section>
 
+      {/* Contextual CTA */}
+      <section className="py-12">
+        <Container>
+          <CalculatorCTA calculatorType="rmd" trackSource="tools-rmd-calculator" />
+        </Container>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-white">
         <Container>
@@ -403,6 +421,26 @@ export default function RMDCalculatorPage() {
             subheadline="You have to take withdrawals - but you don't have to watch your balance shrink from market crashes. A Gold IRA can help preserve what's left."
             trackSource="tools-rmd-calculator"
           />
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/tools/rmd-calculator" />
+        </Container>
+      </section>
+
+      <section className="bg-white">
+        <Container>
+          <div className="max-w-4xl mx-auto px-4 pb-12">
+            <SourcesSection
+              sources={[
+                { name: "IRS — Retirement Topics: Required Minimum Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds", accessDate: "Mar 2026" },
+                { name: "IRS — Uniform Lifetime Table", url: "https://www.irs.gov/publications/p590b", accessDate: "Mar 2026" },
+              ]}
+              lastVerified="March 2026"
+            />
+          </div>
         </Container>
       </section>
 

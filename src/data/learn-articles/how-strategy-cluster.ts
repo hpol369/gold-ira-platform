@@ -18,6 +18,13 @@ export const howStrategyArticles: LearnArticleRegistry = {
       'how to retire at 65',
       'retirement strategy age 50'
     ],
+    answerFirst: 'At 50, you still have 15 years to build serious wealth before full retirement. Your biggest advantage is catch-up contributions — you can put an extra $7,500 per year into your 401(k) on top of the regular $23,500 limit. This is also the ideal time to diversify into gold and other alternatives to protect what you have built.',
+    answerFirstFacts: [
+      'At age 50, you can contribute up to $31,000/year to your 401(k) ($23,500 + $7,500 catch-up)',
+      'IRA catch-up contribution is $1,000 extra/year for those 50+ (total $8,000 for 2025)',
+      '15 years of compound growth at 7% can roughly double your portfolio',
+      'This is the ideal time to start shifting from 100% stocks toward a balanced allocation including gold',
+    ],
     targetKeyword: 'retirement planning at 50',
     category: 'how-strategy',
     threatLevel: 'info',
@@ -174,6 +181,13 @@ export const howStrategyArticles: LearnArticleRegistry = {
       'penalty free 401k withdrawal 55',
       '401k withdrawal at 55'
     ],
+    answerFirst: 'At 55, the Rule of 55 lets you withdraw from your current employer\'s 401(k) penalty-free if you leave your job. You have a 10-year countdown to full retirement, and the decisions you make now about Social Security timing, healthcare coverage (the 55-65 gap), and portfolio protection will determine your financial security for decades.',
+    answerFirstFacts: [
+      'The Rule of 55 allows penalty-free 401(k) withdrawals if you separate from your employer at age 55+',
+      'The Rule of 55 only applies to your current employer\'s 401(k) — not old 401(k)s or IRAs',
+      'Delaying Social Security from 62 to 67 increases your benefit by about 30%; waiting to 70 increases it by 76%',
+      'The healthcare gap from 55-65 (before Medicare) can cost $500-$2,000/month for coverage',
+    ],
     targetKeyword: 'retirement planning at 55',
     category: 'how-strategy',
     threatLevel: 'info',
@@ -320,6 +334,13 @@ export const howStrategyArticles: LearnArticleRegistry = {
       'retire in 5 years plan',
       'protect retirement savings at 60',
       'pre-retirement planning'
+    ],
+    answerFirst: 'At 60, your focus must shift from growth to capital preservation. You are in the "danger zone" — one bad market year can delay your retirement by a decade because you do not have time to recover. The bucket strategy (safety, income, growth buckets) protects your near-term spending money while keeping long-term growth potential.',
+    answerFirstFacts: [
+      'A 30% market crash at age 60 can delay retirement by 5-10 years due to sequence of returns risk',
+      'The bucket strategy: 2-3 years cash (Bucket 1), 5-7 years bonds (Bucket 2), remaining in stocks/gold (Bucket 3)',
+      'Gold allocation should be 15-20% at this stage to protect against a crash in the final 5 years',
+      'Start mapping all retirement income sources: Social Security, pension, 401(k), IRA, other savings',
     ],
     targetKeyword: 'retirement planning at 60',
     category: 'how-strategy',
@@ -471,6 +492,13 @@ export const howStrategyArticles: LearnArticleRegistry = {
       'Medicare enrollment at 65',
       'retirement withdrawal strategy'
     ],
+    answerFirst: 'At 65, the challenge shifts from saving money to making it last 25-30 years. The 4% rule says you can withdraw 4% of your portfolio in year one, then adjust for inflation each year. Enroll in Medicare during your Initial Enrollment Period (3 months before to 3 months after your 65th birthday) to avoid permanent late penalties.',
+    answerFirstFacts: [
+      'The 4% rule: withdraw 4% of your portfolio in year one, adjust for inflation each year',
+      'Medicare Initial Enrollment Period: 3 months before to 3 months after your 65th birthday',
+      'Late Medicare Part B enrollment penalty: 10% premium increase for every 12 months you were late — permanently',
+      'Tax-efficient withdrawal order: taxable accounts first, then Traditional IRA/401(k), then Roth last',
+    ],
     targetKeyword: 'retirement planning at 65',
     category: 'how-strategy',
     threatLevel: 'info',
@@ -611,6 +639,13 @@ export const howStrategyArticles: LearnArticleRegistry = {
       '401k crash protection',
       'market crash retirement strategy',
       'safeguard 401k'
+    ],
+    answerFirst: 'To protect your 401(k) from a market crash, diversify into defensive assets like gold, bonds, and stable value funds. Do not go to all cash — you will miss the recovery. The best approach is a balanced allocation with 10-20% in gold, 20-30% in bonds, and the rest in diversified stock funds.',
+    answerFirstFacts: [
+      'The S&P 500 has crashed 30%+ six times since 1970 — crashes are inevitable, not unusual',
+      'After every crash, the market has recovered and set new highs — panic selling locks in losses',
+      'Gold gained 25% during the 2008 crash while stocks fell 57%',
+      'You can roll over part of your 401(k) to a Gold IRA while still employed at many companies (in-service rollover)',
     ],
     targetKeyword: 'protect 401k from market crash',
     category: 'how-strategy',
@@ -758,6 +793,13 @@ export const howStrategyArticles: LearnArticleRegistry = {
       'alternative retirement investments',
       'portfolio diversification strategies',
       'retirement asset allocation'
+    ],
+    answerFirst: 'True diversification means going beyond just owning different stock funds. A properly diversified retirement portfolio includes stocks, bonds, gold/precious metals, and possibly real estate. Most Americans have 100% of their retirement in stocks and bonds — adding 10-20% gold significantly reduces crash risk without sacrificing much growth.',
+    answerFirstFacts: [
+      'Owning 5 different stock funds is not true diversification — they all fall together in a crash',
+      'Gold has negative correlation with stocks, meaning it tends to rise when stocks fall',
+      'A portfolio with 10-20% gold and the rest in stocks/bonds has historically reduced max drawdowns by 25-35%',
+      'Alternative assets (gold, real estate, commodities) behave differently than stocks and bonds',
     ],
     targetKeyword: 'diversify retirement portfolio',
     category: 'how-strategy',
@@ -910,6 +952,13 @@ export const howStrategyArticles: LearnArticleRegistry = {
       'gold IRA allocation',
       'optimal gold allocation'
     ],
+    answerFirst: 'Most financial experts recommend holding 5-20% of your portfolio in gold, with retirees and near-retirees at the higher end (15-20%). Ray Dalio suggests 7.5% in his All Weather Portfolio. The right amount depends on your age, risk tolerance, and how close you are to retirement.',
+    answerFirstFacts: [
+      'Ray Dalio recommends 7.5% gold in his All Weather Portfolio',
+      'Near-retirees (55+) should consider 15-20% gold for crash protection',
+      'Younger investors may hold 5-10% gold as a long-term hedge',
+      'Gold allocation should increase as you approach retirement — you have less time to recover from crashes',
+    ],
     targetKeyword: 'how much gold to own',
     category: 'how-strategy',
     threatLevel: 'info',
@@ -1056,6 +1105,13 @@ export const howStrategyArticles: LearnArticleRegistry = {
       'gold dollar cost averaging',
       'gold market timing',
       'buy gold for retirement'
+    ],
+    answerFirst: 'The best time to buy gold is before you need it — not during a crisis when prices spike. Dollar-cost averaging (buying a fixed amount regularly) eliminates the timing problem entirely. For retirement investors, the question is not when to buy, but whether your portfolio has enough gold to protect you when the next crash hits.',
+    answerFirstFacts: [
+      'Dollar-cost averaging into gold reduces timing risk — buy a set amount monthly or quarterly',
+      'Gold prices tend to spike during crises, meaning buying during calm markets gets you better prices',
+      'Historically, gold bought at any point and held for 20+ years has preserved purchasing power',
+      'The best time to add gold to your retirement portfolio is when stocks are at all-time highs — before the crash',
     ],
     targetKeyword: 'when to buy gold',
     category: 'how-strategy',

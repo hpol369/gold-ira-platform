@@ -24,6 +24,11 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
+import type { Asset } from "@/data/assets";
 
 interface PageProps {
   params: Promise<{ asset: string }>;
@@ -48,6 +53,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `Gold vs ${asset.name}: Retirement Investment Comparison`,
     description: `Compare Physical Gold vs ${asset.name} (${asset.ticker}) for retirement. See 10-year returns, volatility, inflation protection, and which asset protects your wealth better.`,
+    // Noindex dynamic asset comparison pages — scaled content
+    robots: { index: false, follow: true },
     keywords: [
       `gold vs ${asset.name.toLowerCase()}`,
       `${asset.name} vs gold`,
@@ -58,6 +65,39 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       "retirement investing",
     ],
   };
+}
+
+// Generate answer-first text for gold vs asset
+function generateAssetAnswerFirst(asset: Asset, goldAdvantage: number): string {
+  if (goldAdvantage >= 70) {
+    return `Gold is the stronger retirement investment compared to ${asset.name} (${asset.ticker}). With a Gold Advantage Score of ${goldAdvantage}/100, physical gold offers lower volatility (${GOLD_BASELINE.volatility}% vs ${asset.volatility}%), better inflation protection (correlation: +${GOLD_BASELINE.inflationCorrelation.toFixed(2)} vs ${asset.inflationCorrelation > 0 ? "+" : ""}${asset.inflationCorrelation.toFixed(2)}), and a smaller maximum drawdown (${GOLD_BASELINE.maxDrawdown}% vs ${asset.maxDrawdown}%). For retirees prioritizing wealth preservation over speculation, gold is the clear choice.`;
+  }
+  if (goldAdvantage >= 50) {
+    return `Gold and ${asset.name} (${asset.ticker}) both have a place in a retirement portfolio, but gold edges ahead with a Gold Advantage Score of ${goldAdvantage}/100. While ${asset.name} may offer competitive returns, gold provides superior inflation protection (correlation: +${GOLD_BASELINE.inflationCorrelation.toFixed(2)}) and lower downside risk (max drawdown: ${GOLD_BASELINE.maxDrawdown}% vs ${asset.maxDrawdown}%). For retirement, gold's stability matters more than chasing returns.`;
+  }
+  return `${asset.name} (${asset.ticker}) has delivered stronger recent returns than gold, with a Gold Advantage Score of ${goldAdvantage}/100. However, gold remains essential for retirement diversification due to its near-zero correlation with stocks, strong inflation protection, and proven crisis performance. Most advisors recommend holding both — 10-15% in gold alongside growth assets like ${asset.name}.`;
+}
+
+// Generate FAQs for gold vs asset
+function generateAssetFAQs(asset: Asset): Array<{ question: string; answer: string }> {
+  return [
+    {
+      question: `Is gold a better investment than ${asset.name}?`,
+      answer: `Gold and ${asset.name} serve different purposes. Gold is a wealth preservation asset with low volatility (${GOLD_BASELINE.volatility}%) and strong inflation protection. ${asset.name} is a ${asset.category} asset with ${asset.returns.year10 > GOLD_BASELINE.returns.year10 ? "higher" : "lower"} 10-year returns (${asset.returns.year10}% vs ${GOLD_BASELINE.returns.year10}%) but ${asset.volatility > GOLD_BASELINE.volatility ? "higher" : "lower"} risk. For retirement, most advisors recommend holding both.`,
+    },
+    {
+      question: `Should I invest in gold or ${asset.name} for retirement?`,
+      answer: `For retirement portfolios, the answer is usually both. Gold provides crisis protection and inflation hedging, while ${asset.name} can provide growth potential. A common recommendation is 10-15% of your portfolio in gold with the remainder in diversified assets. The key is that gold moves independently of ${asset.category} assets, providing true diversification.`,
+    },
+    {
+      question: `How does gold's performance compare to ${asset.name} during market crashes?`,
+      answer: `Gold has historically performed well during market crashes — rising 25% during the 2008 financial crisis and holding steady during 2022. ${asset.name} had a maximum drawdown of ${asset.maxDrawdown}% compared to gold's ${GOLD_BASELINE.maxDrawdown}%. This inverse relationship is why gold is called a "safe haven" asset.`,
+    },
+    {
+      question: `Can I hold both gold and ${asset.name} in an IRA?`,
+      answer: `Yes, but not in the same account. A standard IRA can hold ${asset.name} and other paper assets. Physical gold requires a self-directed Gold IRA with an approved custodian and depository. You can maintain both accounts simultaneously to get exposure to both asset classes with tax advantages.`,
+    },
+  ];
 }
 
 export default async function GoldVsAssetPage({ params }: PageProps) {
@@ -79,9 +119,29 @@ export default async function GoldVsAssetPage({ params }: PageProps) {
     inflation: asset.inflationCorrelation > gold.inflationCorrelation ? "asset" : "gold",
   };
 
+  const answerFirstText = generateAssetAnswerFirst(asset, comparison.goldAdvantage);
+  const assetFAQs = generateAssetFAQs(asset);
+
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
+
+      <SchemaScript
+        schema={articleSchema({
+          title: `Gold vs ${asset.name}: Retirement Investment Comparison`,
+          description: `Compare Physical Gold vs ${asset.name} (${asset.ticker}) for retirement investing.`,
+          slug: `/compare/gold-vs/${slug}`,
+          datePublished: "2026-03-20",
+          dateModified: "2026-03-20",
+        })}
+      />
+      <SchemaScript
+        schema={breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: "Compare", url: "/compare" },
+          { name: `Gold vs ${asset.name}`, url: `/compare/gold-vs/${slug}` },
+        ])}
+      />
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden bg-[#0C0D18] border-b border-[#2A2D42]">
@@ -114,6 +174,15 @@ export default async function GoldVsAssetPage({ params }: PageProps) {
                 Gold Advantage Score: <span className="text-[#D4A94E] font-bold">{comparison.goldAdvantage}/100</span>
               </span>
             </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Answer First - GEO */}
+      <section className="py-8 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <AnswerFirst answer={answerFirstText} />
           </div>
         </Container>
       </section>
@@ -416,6 +485,18 @@ export default async function GoldVsAssetPage({ params }: PageProps) {
         </Container>
       </section>
 
+      {/* FAQ Section - GEO */}
+      <section className="py-16 bg-white">
+        <Container>
+          <div className="max-w-3xl mx-auto">
+            <FAQSection
+              faqs={assetFAQs}
+              title={`Gold vs ${asset.name} FAQs`}
+            />
+          </div>
+        </Container>
+      </section>
+
       {/* Bottom CTA */}
       <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
         <Container>
@@ -440,7 +521,7 @@ export default async function GoldVsAssetPage({ params }: PageProps) {
         <Container>
           <AugustaCTA
             variant="footer"
-            linkContext="comparison"
+            linkContext="comparison" directToAugusta
             trackSource={`gold-vs-${slug}`}
           />
         </Container>

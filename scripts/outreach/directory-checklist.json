@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "created": "2026-03-23",
+    "purpose": "Track directory and citation link submissions",
+    "note": "All submissions require human action — real business info needed"
+  },
+  "directories": [
+    {
+      "name": "Google Business Profile",
+      "url": "https://business.google.com",
+      "category": "business",
+      "estimated_dr": 100,
+      "dofollow": false,
+      "status": "not_started",
+      "notes": "Register as 'Rich Dad Retirement - Financial Education'. Needs real address (can use service area business).",
+      "priority": "P1"
+    },
+    {
+      "name": "Bing Places",
+      "url": "https://www.bingplaces.com",
+      "category": "business",
+      "estimated_dr": 93,
+      "dofollow": false,
+      "status": "not_started",
+      "notes": "Import from Google Business Profile once set up",
+      "priority": "P2"
+    },
+    {
+      "name": "BBB (Better Business Bureau)",
+      "url": "https://www.bbb.org",
+      "category": "business",
+      "estimated_dr": 93,
+      "dofollow": true,
+      "status": "not_started",
+      "notes": "All 3 competitors have BBB links. Major trust signal. Requires business verification.",
+      "priority": "P1"
+    },
+    {
+      "name": "Crunchbase",
+      "url": "https://www.crunchbase.com",
+      "category": "business",
+      "estimated_dr": 91,
+      "dofollow": false,
+      "status": "not_started",
+      "notes": "Free company profile with website link",
+      "priority": "P2"
+    },
+    {
+      "name": "LinkedIn Company Page",
+      "url": "https://www.linkedin.com/company/setup",
+      "category": "social",
+      "estimated_dr": 98,
+      "dofollow": false,
+      "status": "not_started",
+      "notes": "Create company page for Rich Dad Retirement. Link to website.",
+      "priority": "P1"
+    },
+    {
+      "name": "YouTube Channel",
+      "url": "https://www.youtube.com",
+      "category": "social",
+      "estimated_dr": 99,
+      "dofollow": false,
+      "status": "not_started",
+      "notes": "Even empty channel with About section linking to site is valuable. Competitors have significant YouTube presence.",
+      "priority": "P1"
+    },
+    {
+      "name": "Medium",
+      "url": "https://medium.com",
+      "category": "content",
+      "estimated_dr": 94,
+      "dofollow": false,
+      "status": "not_started",
+      "notes": "Republish articles with canonical tags pointing to richdadretirement.com. Augusta has 5 links from Medium.",
+      "priority": "P1"
+    },
+    {
+      "name": "Substack",
+      "url": "https://substack.com",
+      "category": "content",
+      "estimated_dr": 93,
+      "dofollow": true,
+      "status": "not_started",
+      "notes": "HIGHEST PRIORITY. See substack-launch-plan.md. Birch Gold has 100 dofollow links from here.",
+      "priority": "P0"
+    },
+    {
+      "name": "Reddit (u/TheIRAAdvisor)",
+      "url": "https://www.reddit.com",
+      "category": "social",
+      "estimated_dr": 97,
+      "dofollow": false,
+      "status": "not_started",
+      "notes": "Participate genuinely in r/retirement, r/personalfinance, r/GoldIRA. Build karma before posting links. Profile bio links to site.",
+      "priority": "P2"
+    },
+    {
+      "name": "Quora",
+      "url": "https://www.quora.com",
+      "category": "social",
+      "estimated_dr": 93,
+      "dofollow": false,
+      "status": "not_started",
+      "notes": "Answer retirement/gold IRA questions. Profile links to site. Answers can cite our articles.",
+      "priority": "P2"
+    },
+    {
+      "name": "Apple Maps Connect",
+      "url": "https://mapsconnect.apple.com",
+      "category": "business",
+      "estimated_dr": 100,
+      "dofollow": false,
+      "status": "not_started",
+      "notes": "Only if registered as a business with physical/service area",
+      "priority": "P3"
+    },
+    {
+      "name": "X/Twitter (@TheIRAAdvisor)",
+      "url": "https://twitter.com/TheIRAAdvisor",
+      "category": "social",
+      "estimated_dr": 94,
+      "dofollow": false,
+      "status": "exists",
+      "notes": "Already exists. Needs active engagement — reply to retirement discussions, share articles.",
+      "priority": "P1"
+    }
+  ],
+  "stats": {
+    "total": 12,
+    "completed": 0,
+    "in_progress": 1,
+    "not_started": 11
+  }
+}

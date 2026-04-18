@@ -9,6 +9,11 @@ import { Metadata } from "next";
 import { Scale, FileText, CheckCircle2, XCircle, ArrowRight, Gavel } from "lucide-react";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 
 export const metadata: Metadata = {
     title: "Precious Metals IRA Rules: IRS Regulations You Must Know (2026)",
@@ -93,6 +98,11 @@ export default function PreciousMetalsIraRulesPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Precious Metals IRA Rules", url: "/learn/precious-metals-ira-rules" },
+            ])} />
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
@@ -110,11 +120,28 @@ export default function PreciousMetalsIraRulesPage() {
                 </Container>
             </header>
 
+            <Container className="py-8">
+                <div className="max-w-4xl mx-auto">
+                    <AnswerFirst
+                        variant="light"
+                        answer="IRS rules for Precious Metals IRAs require specific purity standards: gold 99.5%, silver 99.9%, platinum 99.95%, and palladium 99.95%. Metals must be stored at an IRS-approved depository — home storage is prohibited and triggers a taxable distribution. Contribution limits are $7,000 ($8,000 if 50+) for 2026."
+                        keyFacts={[
+                            "Purity: Gold 99.5%, Silver 99.9%, Platinum 99.95%, Palladium 99.95%",
+                            "Home storage = taxable distribution + 10% early withdrawal penalty if under 59\u00BD",
+                            "Must use IRS-approved depository (e.g., Delaware Depository, Brink's)",
+                        ]}
+                    />
+                </div>
+            </Container>
+
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
                     {/* Sidebar */}
                     <aside className="lg:w-64 flex-shrink-0 hidden lg:block">
                         <TableOfContents items={tocItems} />
+                        <div className="mt-8">
+                            <SidebarAuditWidget trackSource="learn-precious-metals-ira-rules" />
+                        </div>
                     </aside>
 
                     {/* Content */}
@@ -165,6 +192,8 @@ export default function PreciousMetalsIraRulesPage() {
                                 <strong>NOT Allowed:</strong> South African Krugerrands, Pre-1933 Gold Coins (unless deemed bullion), Numismatic/Collectible Coins (generally).
                             </p>
                         </section>
+
+                        <InContentCTA trackSource="learn-precious-metals-ira-rules" />
 
                         {/* Storage Rules */}
                         <section id="storage-rules" className="scroll-mt-32">
@@ -243,6 +272,8 @@ export default function PreciousMetalsIraRulesPage() {
                                 ))}
                             </div>
                         </section>
+
+                        <AutoRelatedContent currentUrl="/learn/precious-metals-ira-rules" />
 
                         <AuthorBox />
 

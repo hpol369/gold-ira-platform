@@ -9,6 +9,7 @@ import { ArrowRight, TrendingUp, ShieldCheck, AlertTriangle, DollarSign, Lock, B
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
 
@@ -118,6 +119,23 @@ export default function GoldIraVs401kPage() {
         <main className="min-h-screen bg-white">
             <SchemaScript schema={schema} />
             <Navbar />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A Gold IRA holds physical precious metals and protects against inflation and market crashes, while a 401(k) holds stocks and mutual funds with higher growth potential and employer matching. Most financial advisors recommend keeping your 401(k) for growth but rolling 10-20% into a Gold IRA for crash protection — especially if you are over 50 with $100k+ saved."
+                        keyFacts={[
+                            "401(k) contribution limit: $23,500/year ($31,000 if 50+); Gold IRA: $7,000 ($8,000 if 50+)",
+                            "Direct 401(k)-to-Gold IRA rollovers are tax-free and penalty-free at any age",
+                            "Gold rose 25% during the 2008 crash while the S&P 500 fell 37%",
+                            "You can have both — they are complementary, not competing strategies",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
+
             {/* Header */}
             <header className="bg-[#0C0D18] py-20 relative overflow-hidden border-b border-[#2A2D42]">
                 <Container className="relative z-10 text-center">

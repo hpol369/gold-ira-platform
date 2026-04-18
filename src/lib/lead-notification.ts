@@ -1,6 +1,6 @@
 // Living Lead Notification - One message that evolves with the lead lifecycle
 import { Lead } from "@/lib/supabase";
-import { sendTelegramNotification, editTelegramMessages } from "@/lib/notifications";
+import { sendTelegramNotification, sendTelegramWithButtons, editTelegramMessages } from "@/lib/notifications";
 import { formatCurrency, getSavingsLabel, getHotLeadIndicator } from "@/lib/deal-calculator";
 
 // Detect traffic source and return emoji + label
@@ -69,6 +69,27 @@ export function buildLeadNotification(lead: Lead, location?: string): string {
 
   lines.push(`🕐 ${timestamp}`);
 
+  // Qualification funnel data
+  if (lead.savings_tier) {
+    lines.push("");
+    const tierLabels: Record<string, string> = {
+      "augusta-white-glove": "🏆 AUGUSTA WHITE GLOVE",
+      "augusta-private": "⭐ AUGUSTA PRIVATE CLIENT",
+      "augusta-standard": "✅ AUGUSTA STANDARD",
+      "secondary": "🔄 SECONDARY (Goldco/AHG)",
+      "starter": "🌱 STARTER (Noble Gold)",
+    };
+    const tierLabel = lead.qualification_tier ? (tierLabels[lead.qualification_tier] || lead.qualification_tier) : "";
+    lines.push(`💰 <b>Savings:</b> ${lead.savings_tier}`);
+    if (lead.concern) lines.push(`⚠️ <b>Concern:</b> ${lead.concern}`);
+    if (lead.metal_preference) {
+      const metalLabels: Record<string, string> = { gold: "🥇 Gold", silver: "🥈 Silver", both: "🥇🥈 Gold & Silver" };
+      lines.push(`⚙️ <b>Metal:</b> ${metalLabels[lead.metal_preference] || lead.metal_preference}`);
+    }
+    if (tierLabel) lines.push(`🎯 <b>Tier:</b> ${tierLabel}`);
+    if (lead.routed_to) lines.push(`➡️ <b>Routed to:</b> ${lead.routed_to}`);
+  }
+
   // Enrichment data if available
   if (lead.total_retirement_savings && lead.percentage_to_protect) {
     lines.push("");
@@ -124,6 +145,31 @@ export async function updateLeadNotification(
 
   // Otherwise send new messages to all chats
   console.log("[TELEGRAM] Sending new notification to all chats");
+
+  // For $50k+ leads sent to Augusta, add inline status buttons
+  const isHighIntent = lead.status === "sent_to_augusta" ||
+    (lead.savings_tier && ["500k-plus", "500k+", "250k-500k", "100k-250k", "50k-100k"].includes(
+      lead.savings_tier.replace(/[$\s]/g, "").toLowerCase()
+    ));
+
+  if (isHighIntent && lead.email) {
+    const buttons = [
+      [
+        { text: "✅ Connected", callback_data: `lead_connected:${lead.email}` },
+        { text: "❌ No Answer", callback_data: `lead_no_answer:${lead.email}` },
+      ],
+      [
+        { text: "🔄 Callback Scheduled", callback_data: `lead_callback:${lead.email}` },
+      ],
+    ];
+
+    const messageIds = await sendTelegramWithButtons(message, buttons, isUrgent);
+    if (messageIds) {
+      return JSON.stringify(messageIds);
+    }
+    return null;
+  }
+
   const messageIds = await sendTelegramNotification(message, isUrgent);
 
   if (messageIds) {

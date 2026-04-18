@@ -11,10 +11,18 @@ import { Footer } from "@/components/layout/Footer";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
 import Link from "next/link";
 import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SourcesSection } from "@/components/content/SourcesSection";
+import { getCanonicalUrl } from "@/lib/metadata";
 
 export const metadata: Metadata = {
     title: "Gold IRA vs. Physical Gold: Which is Better? (2026 Comparison)",
     description: "Comparing Gold IRAs vs buying physical gold directly. Learn the tax advantages, storage considerations, and which method is right for your situation.",
+    alternates: {
+        canonical: getCanonicalUrl("/compare/gold-ira-vs-physical-gold"),
+    },
 };
 
 const comparisonRows: ComparisonRow[] = [
@@ -62,7 +70,7 @@ const schema = {
                 }
             },
             "datePublished": "2026-01-17",
-            "dateModified": "2026-01-17"
+            "dateModified": "2026-03-22"
         },
         {
             "@type": "FAQPage",
@@ -98,6 +106,14 @@ const schema = {
                         "@type": "Answer",
                         "text": "Buy from reputable dealers with transparent pricing. Stick to well-known coins (American Gold Eagles, Canadian Maple Leafs) or bars from recognized mints. Avoid eBay and unverified sellers. Many Gold IRA companies also sell physical gold for direct ownership—they're vetted and reliable."
                     }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is it better to buy gold or invest in a gold IRA?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It depends on your goal. A Gold IRA is better for retirement savings because your gains grow tax-deferred or tax-free. Buying physical gold directly is better if you want immediate access, maximum privacy, or emergency preparedness. Many investors do both."
+                    }
                 }
             ]
         }
@@ -123,6 +139,22 @@ export default function GoldIraVsPhysicalGoldPage() {
                     </p>
                 </Container>
             </header>
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A Gold IRA gives you tax advantages and professional storage, while buying physical gold gives you direct possession but no tax benefits. For retirement savings, a Gold IRA is usually better because your gains grow tax-deferred. For emergency reserves or collecting, physical gold wins."
+                        keyFacts={[
+                            "Gold IRA: tax-deferred or tax-free growth; physical gold taxed as collectibles at up to 28%",
+                            "Gold IRA metals must be stored in an IRS-approved depository; physical gold you keep at home",
+                            "Gold IRAs charge $200-350/year in fees; physical gold has no annual fees but requires insurance",
+                            "Many investors use both: 80-90% in a Gold IRA for retirement, 10-20% physical for emergencies",
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <Container className="py-12">
                 <div className="flex flex-col lg:flex-row gap-12">
@@ -400,66 +432,18 @@ export default function GoldIraVsPhysicalGoldPage() {
                         </section>
 
                         {/* FAQ Section */}
-                        <section id="faq" className="scroll-mt-32">
-                            <h2>Gold IRA vs. Physical Gold FAQs</h2>
-
-                            <div className="space-y-4 not-prose">
-                                <details className="group bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
-                                        <h4 className="text-lg font-bold">Can I keep my Gold IRA gold at home?</h4>
-                                        <span className="shrink-0 rounded-full bg-[rgba(220,38,38,0.1)] p-1.5 text-[#D4A94E] sm:p-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                                            </svg>
-                                        </span>
-                                    </summary>
-                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
-                                        No. The IRS requires Gold IRA metals to be stored at an approved depository. &quot;Home storage Gold IRA&quot; schemes are risky and can result in the IRS treating your entire IRA as a distribution—triggering immediate taxes plus a 10% penalty if you&apos;re under 59½. If you want gold at home, buy it outside of an IRA.
-                                    </p>
-                                </details>
-
-                                <details className="group bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
-                                        <h4 className="text-lg font-bold">Is physical gold a good investment?</h4>
-                                        <span className="shrink-0 rounded-full bg-[rgba(220,38,38,0.1)] p-1.5 text-[#D4A94E] sm:p-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                                            </svg>
-                                        </span>
-                                    </summary>
-                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
-                                        Gold is excellent for wealth preservation and inflation protection, but not designed for aggressive growth. It&apos;s best used as a portfolio diversifier (10-20% allocation). Gold tends to hold value during crashes when stocks fall—that&apos;s its main appeal. Whether in an IRA or physical form, the underlying value is the same.
-                                    </p>
-                                </details>
-
-                                <details className="group bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
-                                        <h4 className="text-lg font-bold">How do taxes compare between Gold IRA and physical gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-[rgba(220,38,38,0.1)] p-1.5 text-[#D4A94E] sm:p-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                                            </svg>
-                                        </span>
-                                    </summary>
-                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
-                                        Physical gold held outside an IRA is taxed as a collectible—28% max on long-term gains (or ordinary income for short-term). A Roth Gold IRA offers tax-free withdrawals. A Traditional Gold IRA defers taxes until withdrawal. For long-term holdings, a Gold IRA typically results in lower overall taxes. See our <Link href="/learn/gold-ira-tax-rules" className="text-[#D4A94E] hover:underline">tax rules guide</Link> for details.
-                                    </p>
-                                </details>
-
-                                <details className="group bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
-                                        <h4 className="text-lg font-bold">What&apos;s the best way to buy physical gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-[rgba(220,38,38,0.1)] p-1.5 text-[#D4A94E] sm:p-3">
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
-                                                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                                            </svg>
-                                        </span>
-                                    </summary>
-                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
-                                        Buy from reputable dealers with transparent pricing. Stick to well-known coins (American Gold Eagles, Canadian Maple Leafs) or bars from recognized mints. Avoid eBay and unverified sellers. Many Gold IRA companies also sell physical gold for direct ownership—they&apos;re vetted and reliable. See our <Link href="/reviews" className="text-[#D4A94E] hover:underline">company reviews</Link>.
-                                    </p>
-                                </details>
-                            </div>
+                        <section id="faq" className="scroll-mt-32 not-prose">
+                            <FAQSection
+                                title="Gold IRA vs. Physical Gold FAQs"
+                                faqs={[
+                                    { question: "Is it better to buy gold or invest in a gold IRA?", answer: "It depends on your goal. A Gold IRA is better for retirement savings because your gains grow tax-deferred or tax-free. Buying physical gold directly is better if you want immediate access, maximum privacy, or emergency preparedness. Many investors do both." },
+                                    { question: "Can I hold physical gold in my IRA?", answer: "Yes, but not at home. The IRS requires Gold IRA metals to be stored at an approved depository like Delaware Depository or Brink's. 'Home storage IRA' schemes violate IRS rules and can trigger taxes plus a 10% penalty." },
+                                    { question: "What are the tax advantages of a gold IRA over physical gold?", answer: "A Gold IRA lets your investment grow tax-deferred (Traditional) or tax-free (Roth). Physical gold sold outside an IRA is taxed as a collectible at up to 28% on gains. Over 20-30 years, the IRA tax advantage can save you tens of thousands of dollars." },
+                                    { question: "Is physical gold a good investment?", answer: "Physical gold is excellent for wealth preservation and inflation protection but isn't designed for aggressive growth. It's best as a portfolio diversifier (10-20% allocation). Gold tends to hold value during crashes when stocks fall—that's its main appeal." },
+                                    { question: "What's the best way to buy physical gold?", answer: "Buy from reputable dealers with transparent pricing. Stick to well-known coins (American Gold Eagles, Canadian Maple Leafs) or bars from recognized mints. Avoid eBay and unverified sellers. Many Gold IRA companies also sell physical gold for direct ownership." },
+                                ]}
+                                includeSchema={false}
+                            />
                         </section>
 
                         {/* Final CTA */}
@@ -482,6 +466,27 @@ export default function GoldIraVsPhysicalGoldPage() {
                     </article>
                 </div>
             </Container>
+
+            {/* Sources */}
+            <section className="py-8 bg-white">
+                <Container className="max-w-3xl">
+                    <SourcesSection
+                        sources={[
+                            { name: "IRS.gov — Retirement Topics: IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits", accessDate: "March 2026" },
+                            { name: "IRS.gov — Publication 590-A: Contributions to IRAs", url: "https://www.irs.gov/publications/p590a", accessDate: "March 2026" },
+                            { name: "IRS.gov — Topic No. 409: Capital Gains and Losses (Collectibles)", url: "https://www.irs.gov/taxtopics/tc409", accessDate: "March 2026" },
+                        ]}
+                        lastVerified="March 2026"
+                    />
+                </Container>
+            </section>
+
+            {/* Related Content */}
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/compare/gold-ira-vs-physical-gold" />
+                </Container>
+            </section>
 
             {/* Augusta CTA */}
             <section className="py-16 bg-[#0C0D18]">

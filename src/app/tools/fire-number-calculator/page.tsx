@@ -4,6 +4,8 @@ import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { FIRENumberCalculator } from "@/components/tools/FIRENumberCalculator";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "FIRE Number Calculator - Calculate Your Financial Independence Number",
@@ -14,6 +16,8 @@ export const metadata: Metadata = {
 export default function FIRENumberCalculatorPage() {
   return (
     <div className="min-h-screen bg-whitetext-[#F6F4EF]">
+      <SchemaScript schema={articleSchema({ title: "FIRE Number Calculator - Calculate Your Financial Independence Number", description: "Free FIRE number calculator to determine exactly how much you need to retire early. Calculate your path to financial independence.", slug: "/tools/fire-number-calculator" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Tools", url: "/tools" }, { name: "FIRE Number Calculator", url: "/tools/fire-number-calculator" }])} />
       <Navbar />
       <FIRENumberCalculator />
       <section className="py-16 bg-white">

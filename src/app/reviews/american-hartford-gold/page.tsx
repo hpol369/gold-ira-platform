@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
 import { Button } from "@/components/ui/Button";
 import { StickyMasterSidebar } from "@/components/reviews/StickyMasterSidebar";
 import { VerdictBox } from "@/components/reviews/VerdictBox";
@@ -9,6 +10,11 @@ import { AuthorVerification } from "@/components/reviews/AuthorVerification";
 import { StickyMobileCTA } from "@/components/cta/StickyMobileCTA";
 import { AFFILIATE_LINKS } from "@/config/affiliates";
 import { Info } from "lucide-react";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { reviewSchema, aggregateRatingSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 
 export const metadata = {
     title: "American Hartford Gold Review 2026 | Fees & Service",
@@ -18,7 +24,27 @@ export const metadata = {
 export default function AmericanHartfordGoldReviewPage() {
     return (
         <main className="min-h-screen flex flex-col bg-[#0C0D18]">
+            <SchemaScript schema={reviewSchema({ itemName: "American Hartford Gold", reviewBody: "American Hartford Gold offers a $10,000 minimum and price match guarantee, making them a strong mid-range option.", ratingValue: 4.5, author: "Thomas Richardson", url: "/reviews/american-hartford-gold" })} />
+            <SchemaScript schema={aggregateRatingSchema({ itemName: "American Hartford Gold", ratingValue: 4.5, reviewCount: 612 })} />
+            <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Reviews", url: "/best-gold-ira-companies" }, { name: "American Hartford Gold", url: "/reviews/american-hartford-gold" }])} />
+            <SchemaScript schema={faqSchema(getPageFAQs("reviews/american-hartford-gold"))} />
             <Navbar />
+
+            <section className="pt-8 pb-4 bg-[#0C0D18]">
+                <Container>
+                    <AnswerFirst
+                        answer="American Hartford Gold earns a 4.5/5 rating with a $10,000 minimum — the sweet spot for mid-budget investors. They're an Inc. 5000 company with an A+ BBB rating and offer a price match guarantee: if you find a lower price on the same product elsewhere, they'll match it."
+                        keyFacts={[
+                            "Minimum investment: $10,000 — accessible for mid-range investors",
+                            "Price match guarantee on all precious metals purchases",
+                            "A+ BBB rating; Inc. 5000 fastest-growing company; endorsed by Bill O'Reilly",
+                            "Also offers direct (non-IRA) precious metals purchases from $5,000",
+                        ]}
+                        variant="light"
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             <div className="flex-grow">
                 <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-16 relative overflow-hidden">
@@ -156,6 +182,16 @@ export default function AmericanHartfordGoldReviewPage() {
                     </div>
                 </Container>
             </div>
+            <section className="py-16 bg-white">
+                <Container>
+                    <FAQSection faqs={getPageFAQs("reviews/american-hartford-gold")} title="American Hartford Gold FAQ" className="max-w-3xl" includeSchema={false} />
+                </Container>
+            </section>
+            <section className="py-12 bg-white">
+                <Container>
+                    <AutoRelatedContent currentUrl="/reviews/american-hartford-gold" />
+                </Container>
+            </section>
             <Footer />
             <StickyMobileCTA companySlug="american-hartford-gold" companyName="American Hartford Gold" />
         </main>

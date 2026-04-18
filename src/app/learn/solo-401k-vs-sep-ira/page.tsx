@@ -4,6 +4,10 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import LeadCaptureButton from "@/components/lp/LeadCaptureButton";
 import { ArrowRight, CheckCircle, XCircle, Trophy, Users, DollarSign, Briefcase, Building2, Shield, Banknote } from "lucide-react";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
 
 export const metadata: Metadata = {
     title: "Solo 401k vs SEP IRA: Which is Better for Self-Employed? (2026)",
@@ -55,6 +59,16 @@ export default function Solo401kVsSepIraPage() {
                     </div>
                 </Container>
             </section>
+
+            <AnswerFirst
+                variant="light"
+                answer="Solo 401(k) beats SEP IRA for most self-employed individuals because it allows higher contributions at lower income levels and offers a Roth option. A self-employed person earning $100,000 can contribute ~$48,500 to a Solo 401(k) vs ~$25,000 to a SEP IRA. SEP IRAs are simpler to set up but have no Roth option and no loan provisions."
+                keyFacts={[
+                    "At $100K income: Solo 401(k) ~$48,500 vs SEP IRA ~$25,000",
+                    "Solo 401(k) offers Roth option; SEP IRA does not",
+                    "SEP IRA has no loan provision; Solo 401(k) allows loans up to $50,000",
+                ]}
+            />
 
             {/* Side-by-Side Comparison */}
             <section className="py-16 bg-white">
@@ -162,6 +176,8 @@ export default function Solo401kVsSepIraPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-solo-401k-vs-sep-ira" />
 
             {/* Contribution Comparison by Income */}
             <section className="py-16 bg-[#121423]">
@@ -478,6 +494,8 @@ export default function Solo401kVsSepIraPage() {
                     </div>
                 </Container>
             </section>
+
+            <AutoRelatedContent currentUrl="/learn/solo-401k-vs-sep-ira" />
 
             {/* CTA Section */}
             <section className="py-16 bg-[#0C0D18]">

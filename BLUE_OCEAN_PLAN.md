@@ -58,14 +58,14 @@ Adding 6 high-opportunity pages targeting low-competition, high-value keywords.
 
 ## Execution Order
 1. ✅ Create plan (this file)
-2. 🔲 Build page 1: 457b rollover
-3. 🔲 Build page 2: Bullion vs coins
-4. 🔲 Build page 3: Indirect vs direct rollover
-5. 🔲 Build page 4: Noble gold fees
-6. 🔲 Build page 5: Gold price prediction 2026
-7. 🔲 Build page 6: Portfolio allocation
-8. 🔲 Update internal links
-9. 🔲 Run build verification
+2. ✅ Build page 1: 457b rollover
+3. ✅ Build page 2: Bullion vs coins
+4. ✅ Build page 3: Indirect vs direct rollover
+5. ✅ Build page 4: Noble gold fees
+6. ✅ Build page 5: Gold price prediction 2026
+7. ✅ Build page 6: Portfolio allocation
+8. ✅ GEO pass: AnswerFirst + HowTo schemas added (Sprint 4)
+9. 🔲 Update internal links
 10. 🔲 Push to GitHub
 
 ## Success Metrics

@@ -18,6 +18,13 @@ export const zeroDifficultyArticles: LearnArticleRegistry = {
       'estate planning beneficiary',
       'retirement account beneficiary'
     ],
+    answerFirst: 'Per stirpes means "by branch" — if a beneficiary dies before you, their share passes to their children (your grandchildren). Per capita means "by head" — a deceased beneficiary\'s share is redistributed equally among surviving beneficiaries, and their descendants get nothing. Most retirement accounts default to per stirpes distribution.',
+    answerFirstFacts: [
+      'Per stirpes preserves each family branch\'s inheritance — grandchildren inherit what their deceased parent would have received',
+      'Per capita redistributes a deceased beneficiary\'s share among surviving beneficiaries only',
+      'Beneficiary forms on retirement accounts legally override your will',
+      'Most IRA and 401(k) custodians default to per stirpes if you do not specify a method',
+    ],
     targetKeyword: 'per stirpes vs per capita',
     volume: 3900,
     difficulty: 0,
@@ -205,6 +212,13 @@ export const zeroDifficultyArticles: LearnArticleRegistry = {
       'burial cost',
       'funeral cost comparison',
       'end of life planning cost'
+    ],
+    answerFirst: 'Cremation costs $2,000-$7,000 on average, while traditional burial costs $7,000-$15,000+ — making cremation 40-70% cheaper. Direct cremation (no service) can cost under $1,000, which is the most affordable option. Cemetery plots alone average $1,000-$4,000, and caskets add another $500-$10,000.',
+    answerFirstFacts: [
+      'Direct cremation costs $500-$1,500 and includes only the cremation itself with no service',
+      'Average traditional burial costs $7,000-$12,000 including casket, plot, vault, and service',
+      'The FTC Funeral Rule requires funeral homes to provide itemized price lists upon request',
+      'Social Security provides only a one-time $255 death benefit to surviving spouses',
     ],
     targetKeyword: 'cremation vs burial cost',
     volume: 600,
@@ -401,6 +415,13 @@ export const zeroDifficultyArticles: LearnArticleRegistry = {
       'reverse mortgage risks',
       'alternatives to reverse mortgage'
     ],
+    answerFirst: 'A reverse mortgage is generally not a good idea for most retirees due to high upfront costs (2-5% of home value), compounding interest that can exceed the home\'s value, and the risk that heirs receive nothing. On a $300,000 home, upfront fees alone can exceed $15,000, and at 7% interest, a $200,000 loan balance doubles in about 10 years.',
+    answerFirstFacts: [
+      'Upfront costs include origination fees up to $6,000, 2% mortgage insurance, and $2,000-$5,000 in closing costs',
+      'You can still lose your home to foreclosure if you fail to pay property taxes or insurance',
+      'Non-borrowing spouses may face repayment if the borrowing spouse dies or enters a nursing home for 12+ months',
+      'Better alternatives include downsizing, HELOCs, or delaying Social Security for higher guaranteed income',
+    ],
     targetKeyword: 'reverse mortgage good idea',
     volume: 100,
     difficulty: 0,
@@ -584,6 +605,13 @@ export const zeroDifficultyArticles: LearnArticleRegistry = {
       'family office investments',
       'rich people portfolio'
     ],
+    answerFirst: 'Wealthy investors ($10M+) typically hold only 25-35% in public stocks, with 15-25% in private equity, 15-25% in real estate, 5-10% in precious metals, and 5-15% in hedge funds — far more diversified than a typical 60/40 portfolio. They prioritize capital preservation and tax efficiency over maximum growth, and use real assets like gold to protect against inflation and currency risk.',
+    answerFirstFacts: [
+      'High-net-worth portfolios allocate 5-10% to precious metals for wealth preservation',
+      'Wealthy investors hold just 25-35% in public stocks compared to 60% for typical investors',
+      'Tax strategies like asset location, tax-loss harvesting, and self-directed IRAs drive major allocation decisions',
+      'Regular investors can replicate many wealthy strategies using Gold IRAs, REITs, and low-cost alternatives',
+    ],
     targetKeyword: 'what do rich people invest in',
     volume: 80,
     difficulty: 0,
@@ -764,6 +792,13 @@ export const zeroDifficultyArticles: LearnArticleRegistry = {
       'dividend aristocrats',
       'passive income retirement',
       'best dividend stocks'
+    ],
+    answerFirst: 'Dividend stocks provide retirement income without selling shares, but require roughly $1 million invested at a 4% yield to generate $40,000/year. Dividend Aristocrats — companies that have raised dividends for 25+ consecutive years like Coca-Cola and Johnson & Johnson — offer the most reliable income, though even they can cut dividends as AT&T did in 2022.',
+    answerFirstFacts: [
+      'At 4% yield, you need $25 invested for every $1 of annual dividend income',
+      'Dividend Aristocrats have raised dividends for 25+ consecutive years — about 66 S&P 500 companies qualify',
+      'Qualified dividends are taxed at 0%, 15%, or 20% — significantly lower than ordinary income rates',
+      'Yields above 5-6% often signal trouble and frequently precede dividend cuts',
     ],
     targetKeyword: 'dividend stocks for retirement',
     volume: 50,
@@ -956,6 +991,13 @@ export const zeroDifficultyArticles: LearnArticleRegistry = {
       'rich dad poor dad scam',
       'kiyosaki bankruptcy',
       'is rich dad real'
+    ],
+    answerFirst: 'Robert Kiyosaki is not a scam, but some of his advice is controversial and oversimplified. His company Rich Global LLC filed Chapter 7 bankruptcy in 2012 to avoid a $24 million judgment — this was a corporate strategy, not personal insolvency. Rich Dad Poor Dad has sold 40+ million copies and contains valid principles about financial education, though his specific investment predictions have been hit-or-miss.',
+    answerFirstFacts: [
+      'Rich Dad Poor Dad has sold over 40 million copies since 1997',
+      'Kiyosaki\'s corporate bankruptcy in 2012 was a business strategy — not personal bankruptcy',
+      'His gold recommendation since the early 2000s (gold at ~$300) has been validated as gold exceeded $2,000',
+      'Some licensed "Rich Dad" seminars were criticized for aggressive upselling, though not run by Kiyosaki directly',
     ],
     targetKeyword: 'is robert kiyosaki a scam',
     volume: 10,

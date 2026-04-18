@@ -7,6 +7,12 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Container } from "@/components/ui/Container";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { getPageFAQs } from "@/data/faqs";
 import {
   Shield,
   TrendingUp,
@@ -34,7 +40,26 @@ export const metadata: Metadata = {
 export default function WhyGoldPage() {
   return (
     <main className="min-h-screen flex flex-col bg-white">
+      <SchemaScript schema={articleSchema({ title: "Why Gold for Retirement? Inflation Protection & Portfolio Safety", description: "Why add gold to your retirement? Learn about inflation protection, portfolio diversification, and wealth preservation.", slug: "/why-gold" })} />
+      <SchemaScript schema={breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Why Gold", url: "/why-gold" }])} />
+      <SchemaScript schema={faqSchema(getPageFAQs("why-gold"))} />
       <Navbar />
+
+      {/* Answer-First GEO Block */}
+      <section className="pt-8 pb-4 bg-white">
+        <Container>
+          <AnswerFirst
+            answer="Gold protects retirement savings because it moves inversely to stocks and the dollar. During the 2008 financial crisis, gold gained 25.5% while the S&P 500 lost 37%. Central banks bought 1,037 tons of gold in 2023 alone — the third consecutive year of record purchases — signaling that institutions see gold as essential protection against currency devaluation."
+            keyFacts={[
+              "Gold gained 25.5% during 2008 while the S&P 500 lost 37%",
+              "Central banks bought 1,037 tons of gold in 2023 — a record year",
+              "$100 of gold in 1971 would be worth over $5,000 today",
+              "Most advisors recommend 5-15% of retirement portfolio in precious metals",
+            ]}
+            className="max-w-3xl mx-auto"
+          />
+        </Container>
+      </section>
 
       {/* Header */}
       <header className="bg-[#0C0D18] text-[#F6F4EF] py-16 md:py-24">
@@ -297,6 +322,7 @@ export default function WhyGoldPage() {
             </div>
             <p className="text-sm text-[#A8A39A] text-center mt-6">
               Past performance doesn&apos;t guarantee future results. But the pattern is hard to ignore.
+              Gold outperformed the S&P 500 in 5 of 7 recessions — see the full data in our <Link href="/gold-ira-industry-report-2026" className="text-[#D4A94E] hover:underline">2026 Industry Report</Link>.
             </p>
           </div>
         </Container>
@@ -478,6 +504,23 @@ export default function WhyGoldPage() {
             subheadline="Augusta Precious Metals offers free one-on-one conversations with specialists who will answer your questions honestly. No pressure, no sales pitch - just real information from people who actually know this stuff."
             trackSource="why-gold-hub"
           />
+        </Container>
+      </section>
+
+      <section className="py-16 bg-white">
+        <Container>
+          <FAQSection
+            faqs={getPageFAQs("why-gold")}
+            title="Gold Investment FAQ"
+            className="max-w-3xl"
+            includeSchema={false}
+          />
+        </Container>
+      </section>
+
+      <section className="py-12 bg-white">
+        <Container>
+          <AutoRelatedContent currentUrl="/why-gold" />
         </Container>
       </section>
 

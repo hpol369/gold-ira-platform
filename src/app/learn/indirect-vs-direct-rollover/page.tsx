@@ -1,11 +1,15 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AugustaCTA } from "@/components/cta/AugustaCTA";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { ArrowRight, CheckCircle2, XCircle, AlertTriangle, ArrowLeftRight, Building2, User, Clock, DollarSign, Shield } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { SidebarAuditWidget } from "@/components/widgets/SidebarAuditWidget";
+import { InContentCTA } from "@/components/widgets/InContentCTA";
+import { AutoRelatedContent } from "@/components/content/RelatedContent";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
     title: "Direct vs Indirect Rollover: Which Should You Choose? (2026 Guide)",
@@ -20,7 +24,34 @@ export const metadata: Metadata = {
 export default function IndirectVsDirectRolloverPage() {
     return (
         <main className="min-h-screen flex flex-col bg-white">
-            <Navbar />
+            <SchemaScript schema={articleSchema({
+                title: "Direct vs Indirect Rollover: Which Should You Choose?",
+                description: "Understand the critical differences between direct and indirect rollovers. Avoid the 20% withholding trap and 60-day deadline.",
+                slug: "/learn/indirect-vs-direct-rollover",
+                datePublished: "2026-01-01",
+                dateModified: "2026-01-25",
+            })} />
+            <SchemaScript schema={breadcrumbSchema([
+                { name: "Home", url: "/" },
+                { name: "Learn", url: "/learn" },
+                { name: "Direct vs Indirect Rollover", url: "/learn/indirect-vs-direct-rollover" },
+            ])} />
+
+            {/* Answer-First GEO Block */}
+            <section className="pt-8 pb-4 bg-white">
+                <Container>
+                    <AnswerFirst
+                        answer="A direct rollover transfers retirement funds straight from one custodian to another — you never touch the money, and there are zero taxes or penalties. An indirect rollover sends you a check, and you have 60 days to deposit the full amount into the new account or face income taxes plus a 10% early withdrawal penalty if under 59½. Always choose a direct rollover for a Gold IRA transfer."
+                        keyFacts={[
+                            "Direct rollover: tax-free, penalty-free, no 60-day deadline, unlimited per year",
+                            "Indirect rollover: 20% mandatory withholding, 60-day deadline, limited to one per 12 months",
+                            "If you miss the 60-day window on an indirect rollover, the IRS treats it as a taxable distribution",
+                            "Your Gold IRA company handles all direct rollover paperwork — typical processing: 1-3 weeks"
+                        ]}
+                        className="max-w-3xl mx-auto"
+                    />
+                </Container>
+            </section>
 
             {/* Header */}
             <header className="bg-[#0C0D18] py-16 md:py-24 border-b border-[#2A2D42]">
@@ -68,6 +99,8 @@ export default function IndirectVsDirectRolloverPage() {
                     </div>
                 </Container>
             </section>
+
+            <InContentCTA trackSource="learn-indirect-vs-direct-rollover" />
 
             {/* Main Content */}
             <section className="py-16">
@@ -403,6 +436,8 @@ export default function IndirectVsDirectRolloverPage() {
                 </Container>
             </section>
 
+            <AutoRelatedContent currentUrl="/learn/indirect-vs-direct-rollover" />
+
             {/* Related Content */}
             <section className="py-12 bg-[#0C0D18] border-t border-[#2A2D42]">
                 <Container>
@@ -431,7 +466,7 @@ export default function IndirectVsDirectRolloverPage() {
                 </Container>
             </section>
 
-            <Footer />
+            
         </main>
     );
 }

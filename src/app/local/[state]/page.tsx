@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         alternates: {
             canonical: `/local/${state}`,
         },
+        robots: { index: false, follow: true },
     };
 }
 

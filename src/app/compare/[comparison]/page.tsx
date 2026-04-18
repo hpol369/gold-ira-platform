@@ -20,6 +20,10 @@ import {
 } from "@/data/companies";
 import { Scale, ArrowRight, Star, Shield, DollarSign, Award, CheckCircle2 } from "lucide-react";
 import { getTrackedLink } from "@/config/affiliates";
+import { AnswerFirst } from "@/components/seo/AnswerFirst";
+import { FAQSection } from "@/components/seo/FAQSection";
+import { SchemaScript } from "@/components/seo/SchemaScript";
+import { breadcrumbSchema } from "@/lib/schema";
 
 interface Props {
   params: Promise<{ comparison: string }>;
@@ -78,6 +82,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    // Noindex dynamic company comparison permutations — scaled content
+    // Only curated static comparison pages remain indexed
+    robots: { index: false, follow: true },
     openGraph: {
       title,
       description,
@@ -105,6 +112,45 @@ function generateJsonLd(companyA: Company, companyB: Company) {
   };
 }
 
+// Generate dynamic answer-first text
+function generateAnswerFirst(companyA: Company, companyB: Company): string {
+  const winner = companyA.rating > companyB.rating ? companyA :
+    companyA.rating < companyB.rating ? companyB : null;
+
+  if (winner) {
+    const loser = winner === companyA ? companyB : companyA;
+    return `Between ${companyA.name} and ${companyB.name}, ${winner.name} is the stronger choice with a ${winner.rating}/5 rating, ${winner.bbbRating} BBB grade, and a $${winner.minInvestment.toLocaleString()} minimum investment. ${loser.name} scores ${loser.rating}/5 with a ${loser.bbbRating} BBB rating. ${winner.name} is best for ${winner.bestFor.toLowerCase()}, while ${loser.name} is better for ${loser.bestFor.toLowerCase()}.`;
+  }
+  return `${companyA.name} and ${companyB.name} are evenly matched — both earn a ${companyA.rating}/5 rating. ${companyA.name} has a ${companyA.bbbRating} BBB grade with a $${companyA.minInvestment.toLocaleString()} minimum, while ${companyB.name} has a ${companyB.bbbRating} BBB grade with a $${companyB.minInvestment.toLocaleString()} minimum. Your choice depends on investment size and personal preferences.`;
+}
+
+// Generate dynamic FAQs for company comparisons
+function generateComparisonFAQs(companyA: Company, companyB: Company): Array<{ question: string; answer: string }> {
+  const winner = companyA.rating > companyB.rating ? companyA :
+    companyA.rating < companyB.rating ? companyB : null;
+
+  return [
+    {
+      question: `Is ${companyA.name} or ${companyB.name} better for a Gold IRA?`,
+      answer: winner
+        ? `${winner.name} edges ahead with a ${winner.rating}/5 rating compared to ${(winner === companyA ? companyB : companyA).rating}/5. ${winner.name} is best for ${winner.bestFor.toLowerCase()}. However, ${(winner === companyA ? companyB : companyA).name} may be a better fit if you're looking for ${(winner === companyA ? companyB : companyA).bestFor.toLowerCase()}.`
+        : `Both companies are evenly rated at ${companyA.rating}/5. ${companyA.name} is best for ${companyA.bestFor.toLowerCase()}, while ${companyB.name} is best for ${companyB.bestFor.toLowerCase()}.`,
+    },
+    {
+      question: `What is the minimum investment for ${companyA.name} vs ${companyB.name}?`,
+      answer: `${companyA.name} requires a minimum investment of $${companyA.minInvestment.toLocaleString()}, while ${companyB.name} requires $${companyB.minInvestment.toLocaleString()}. ${companyA.minInvestment < companyB.minInvestment ? companyA.name : companyB.name} has the lower entry point.`,
+    },
+    {
+      question: `How do ${companyA.name} and ${companyB.name} fees compare?`,
+      answer: `${companyA.name} charges $${companyA.fees.setup} setup, $${companyA.fees.annual}/year maintenance, and $${companyA.fees.storage}/year storage. ${companyB.name} charges $${companyB.fees.setup} setup, $${companyB.fees.annual}/year maintenance, and $${companyB.fees.storage}/year storage. Compare total first-year costs: $${companyA.fees.setup + companyA.fees.annual + companyA.fees.storage} (${companyA.name}) vs $${companyB.fees.setup + companyB.fees.annual + companyB.fees.storage} (${companyB.name}).`,
+    },
+    {
+      question: `Can I have accounts with both ${companyA.name} and ${companyB.name}?`,
+      answer: `Yes, you can open Gold IRAs with multiple custodians. However, most investors find one quality provider sufficient. Annual IRA contribution limits ($7,000 in 2026, $8,000 if 50+) apply across all IRAs combined, though rollover amounts are unlimited.`,
+    },
+  ];
+}
+
 export default async function ComparisonPage({ params }: Props) {
   const { comparison } = await params;
   const parsed = parseComparisonSlug(comparison);
@@ -124,12 +170,21 @@ export default async function ComparisonPage({ params }: Props) {
   const winner = companyA.rating > companyB.rating ? companyA :
     companyA.rating < companyB.rating ? companyB : null;
   const showAugustaCTA = !companyA.featured && !companyB.featured;
+  const answerFirstText = generateAnswerFirst(companyA, companyB);
+  const comparisonFAQs = generateComparisonFAQs(companyA, companyB);
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <SchemaScript
+        schema={breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: "Compare", url: "/compare" },
+          { name: `${companyA.name} vs ${companyB.name}`, url: `/compare/${comparison}` },
+        ])}
       />
       <main className="min-h-screen flex flex-col bg-white">
         <Navbar />
@@ -206,6 +261,15 @@ export default async function ComparisonPage({ params }: Props) {
           </Container>
         </header>
 
+        {/* Answer First - GEO */}
+        <section className="py-8 bg-white">
+          <Container>
+            <div className="max-w-3xl">
+              <AnswerFirst answer={answerFirstText} />
+            </div>
+          </Container>
+        </section>
+
         {/* Main Content */}
         <section className="py-12">
           <Container>
@@ -230,7 +294,7 @@ export default async function ComparisonPage({ params }: Props) {
                 {showAugustaCTA && (
                   <AugustaCTA
                     variant="inline"
-                    linkContext="comparison"
+                    linkContext="comparison" directToAugusta
                     subheadline={`Looking for a third option? Augusta Precious Metals is our #1 rated Gold IRA company for ${new Date().getFullYear()}.`}
                     trackSource={`compare-${comparison}`}
                   />
@@ -400,7 +464,7 @@ export default async function ComparisonPage({ params }: Props) {
 
                   {/* Augusta CTA (if neither company is Augusta) */}
                   {showAugustaCTA && (
-                    <AugustaCTA variant="sidebar" linkContext="comparison" trackSource={`compare-${comparison}`} />
+                    <AugustaCTA variant="sidebar" linkContext="comparison" directToAugusta trackSource={`compare-${comparison}`} />
                   )}
 
                   {/* Related Comparisons */}
@@ -446,11 +510,23 @@ export default async function ComparisonPage({ params }: Props) {
           </Container>
         </section>
 
+        {/* FAQ Section - GEO */}
+        <section className="py-16 bg-white">
+          <Container>
+            <div className="max-w-3xl mx-auto">
+              <FAQSection
+                faqs={comparisonFAQs}
+                title={`${companyA.name} vs ${companyB.name} FAQs`}
+              />
+            </div>
+          </Container>
+        </section>
+
         {/* Footer CTA */}
         <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
           <Container>
             {showAugustaCTA ? (
-              <AugustaCTA variant="footer" linkContext="comparison" trackSource={`compare-${comparison}`} />
+              <AugustaCTA variant="footer" linkContext="comparison" directToAugusta trackSource={`compare-${comparison}`} />
             ) : (
               <div className="text-center max-w-2xl mx-auto">
                 <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">
