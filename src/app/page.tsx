@@ -1,112 +1,42 @@
-import { Metadata } from "next";
-import dynamic from "next/dynamic";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { WhySection } from "@/components/home/GoldenCircle";
-import { TrustBadgeBar } from "@/components/trust/TrustBadgeBar";
-import { SchemaScript } from "@/components/seo/SchemaScript";
-import { webSiteSchema, siteNavigationSchema } from "@/lib/schema";
-
-export const metadata: Metadata = {
-  title: "Best Gold & Silver IRA Companies 2026 | Compare Reviews, Fees & Ratings",
-  description: "Compare the top Gold and Silver IRA companies for 2026. Independent reviews, fee breakdowns, and expert analysis to help you protect your retirement savings with precious metals.",
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: "Best Gold & Silver IRA Companies 2026 | Rich Dad Retirement",
-    description: "Compare top Gold and Silver IRA companies. Independent reviews, fee comparisons, and precious metals retirement protection strategies.",
-    type: "website",
-  },
-};
-
-// Loading skeleton for consistent CLS prevention
-function SectionSkeleton({ height = "h-64" }: { height?: string }) {
-  return <div className={`${height} bg-[#121423] animate-pulse rounded-lg`} />;
-}
-
-// SocialProofUrgency REMOVED — Google recovery: excessive urgency/CTA density
-
-// Section 3: Wealth Calculator
-const WealthCalculator = dynamic(
-  () => import("@/components/home/WealthCalculator").then(mod => ({ default: mod.WealthCalculator })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-96" /> }
-);
-
-// FeaturedPartner REMOVED — Google recovery: pure ad unit hurts content quality signal
-
-// Section 5: How It Works
-const HowSection = dynamic(
-  () => import("@/components/home/GoldenCircle").then(mod => ({ default: mod.HowSection })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-80" /> }
-);
-
-// Section 5b: What We Offer (Golden Circle: WHAT)
-const WhatSection = dynamic(
-  () => import("@/components/home/GoldenCircle").then(mod => ({ default: mod.WhatSection })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-96" /> }
-);
-
-// Section 6: Company Comparison
-const ComparisonTable = dynamic(
-  () => import("@/components/home/ComparisonTable").then(mod => ({ default: mod.ComparisonTable })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-96" /> }
-);
-
-// Testimonials REMOVED — Google recovery: reduces CTA density (testimonials had embedded CTA)
-
-// Section 8: Closing CTA
-const ClosingCTA = dynamic(
-  () => import("@/components/home/ClosingCTA").then(mod => ({ default: mod.ClosingCTA })),
-  { ssr: true, loading: () => <SectionSkeleton height="h-48" /> }
-);
-
-const siteNavItems = [
-  { name: "Gold IRA Guide", url: "/guide/gold-ira-guide" },
-  { name: "Best Gold IRA Companies", url: "/best-gold-ira-companies" },
-  { name: "Reviews", url: "/reviews" },
-  { name: "Calculators", url: "/tools" },
-  { name: "Learn", url: "/learn" },
-  { name: "News", url: "/news" },
-  { name: "Rollover Guide", url: "/rollover" },
-  { name: "Get Started", url: "/get-started" },
-];
+import { NavbarV2 } from "@/components/home/v2/NavbarV2";
+import { HeroSectionV2 } from "@/components/home/v2/HeroSection";
+import { TrustBar } from "@/components/home/v2/TrustBar";
+import { ProblemSection } from "@/components/home/v2/ProblemSection";
+import { CompaniesTeaser } from "@/components/home/v2/CompaniesTeaser";
+import { HowItWorksSection } from "@/components/home/v2/HowItWorksSection";
+import { ProofSection } from "@/components/home/v2/ProofSection";
+import { CTASection } from "@/components/home/v2/CTASection";
+import { FooterV2 } from "@/components/home/v2/FooterV2";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col bg-transparent">
-      <SchemaScript schema={webSiteSchema()} />
-      <SchemaScript schema={siteNavigationSchema(siteNavItems)} />
-      <Navbar />
+    <main className="min-h-screen flex flex-col bg-[#0C0D18] text-[#F6F4EF]">
+      <NavbarV2 />
 
       <div className="flex-grow">
-        {/* 1. HERO: Emotional hook + primary CTA to /get-started */}
-        <WhySection />
+        {/* 1. Hero + live ticker + calculator widget */}
+        <HeroSectionV2 />
 
-        {/* 2. WEALTH CALCULATOR: Interactive value tool */}
-        <WealthCalculator />
+        {/* 2. Trust bar (BBB / Money / fiduciary etc.) */}
+        <TrustBar />
 
-        {/* 3. TRUST BADGES: Credibility bar */}
-        <section className="py-6 bg-white">
-          <div className="max-w-5xl mx-auto px-4">
-            <TrustBadgeBar variant="light" />
-          </div>
-        </section>
+        {/* 3. The three silent threats (problem agitation) */}
+        <ProblemSection />
 
-        {/* 5. HOW IT WORKS: 3 simple steps — reduce anxiety */}
-        <HowSection />
+        {/* 4. Top 4 custodians — restyled ranking teaser */}
+        <CompaniesTeaser />
 
-        {/* 5b. WHAT: The tangible offerings — Golden Circle complete */}
-        <WhatSection />
+        {/* 5. How it works — 3 steps */}
+        <HowItWorksSection />
 
-        {/* 6. COMPANY COMPARISON: For researchers */}
-        <ComparisonTable />
+        {/* 6. Social proof — verified testimonials */}
+        <ProofSection />
 
-        {/* 7. CLOSING CTA */}
-        <ClosingCTA />
+        {/* 7. Final CTA + newsletter capture */}
+        <CTASection />
       </div>
 
-      <Footer />
+      <FooterV2 />
     </main>
   );
 }

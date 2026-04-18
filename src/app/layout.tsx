@@ -1,20 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-// SocialProofTicker REMOVED — fake "someone just signed up" notifications are manipulative dark patterns
-// MobileBottomNav REMOVED — aggressive sticky "Free Kit" CTA on every mobile page hurts quality signal
-// ExitIntentPopup REMOVED — Google recovery: aggressive popups are negative quality signal
 import Providers from "@/components/providers/Providers";
-import { AIDisclosureBanner } from "@/components/content/AIDisclosureBanner";
-
-import { GOOGLE_ADS_ID } from "@/config/google-ads";
 
 const GA_MEASUREMENT_ID = "G-5Q1485P9KS";
+const GOOGLE_ADS_ID = "AW-17807049464";
 const CLARITY_PROJECT_ID = "v816rr21t5";
 const GTM_ID = "GTM-TPC628G9";
-const BING_UET_TAG_ID = "97235692";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,6 +20,13 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
   display: 'swap',
+  preload: true,
+});
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+  display: 'swap',
+  weight: ["400", "500", "600"],
   preload: true,
 });
 
@@ -89,12 +90,11 @@ export default function RootLayout({
       "url": "https://www.richdadretirement.com/get-started",
       "contactType": "customer service",
       "availableLanguage": "English"
-    },
-    "publishingPrinciples": "https://www.richdadretirement.com/editorial-standards"
+    }
   };
 
   return (
-    <html lang="en-US">
+    <html lang="en" className={cn(inter.variable, playfair.variable, jetbrains.variable)}>
       <head>
         {/* Google Tag Manager - must be first */}
         <Script id="google-tag-manager" strategy="lazyOnload">
@@ -120,17 +120,6 @@ export default function RootLayout({
             gtag('config', '${GOOGLE_ADS_ID}');
           `}
         </Script>
-        {/* Microsoft Advertising UET Tag - Bing Ads Conversion Tracking */}
-        <Script id="bing-uet" strategy="lazyOnload">
-          {`
-            (function(w,d,t,u,o){
-              w[u]=w[u]||[];var n=d.createElement(t);n.async=1;
-              n.src="https://bat.bing.net/bat.js?ti=${BING_UET_TAG_ID}&enableAutoSpaTracking=true";
-              var i=d.getElementsByTagName(t)[0];i.parentNode.insertBefore(n,i);
-              w.uetq=w.uetq||[];w.uetq.push("pageLoad");
-            })(window,document,"script","uetq");
-          `}
-        </Script>
         {/* Microsoft Clarity - Session Recording & Heatmaps */}
         <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
@@ -142,7 +131,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={cn(inter.variable, playfair.variable, "antialiased bg-white text-slate-900")}>
+      <body className={cn(inter.variable, playfair.variable, jetbrains.variable, "antialiased")} style={{ background: "var(--color-navy-base)", color: "var(--color-text-primary)" }}>
         {/* Google Tag Manager (noscript) - must be first in body */}
         <noscript>
           <iframe
@@ -157,7 +146,6 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Providers>
-          <AIDisclosureBanner />
           {children}
         </Providers>
       </body>
