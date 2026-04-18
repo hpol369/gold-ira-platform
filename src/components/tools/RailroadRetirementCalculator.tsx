@@ -150,7 +150,7 @@ export function RailroadRetirementCalculator() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
-              className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8"
+              className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-8"
             >
               {/* Progress Steps */}
               <div className="flex items-center justify-center mb-8">
@@ -159,8 +159,8 @@ export function RailroadRetirementCalculator() {
                     <div
                       className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-colors ${
                         step >= s
-                          ? "bg-[#B22234] text-white"
-                          : "bg-slate-700 text-slate-500"
+                          ? "bg-[#DC2626] text-white"
+                          : "bg-slate-700 text-[#A8A39A]"
                       }`}
                     >
                       {s}
@@ -183,19 +183,19 @@ export function RailroadRetirementCalculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] mb-2 text-center">
                     Years of Railroad Service
                   </h2>
-                  <p className="text-slate-500 text-center mb-8">
+                  <p className="text-[#A8A39A] text-center mb-8">
                     Total years of creditable railroad employment
                   </p>
 
                   <div className="space-y-6">
                     <div className="text-center">
-                      <span className="text-5xl font-bold text-[#B22234]">
+                      <span className="text-5xl font-bold text-[#D4A94E]">
                         {yearsOfService}
                       </span>
-                      <span className="text-2xl text-slate-500 ml-2">years</span>
+                      <span className="text-2xl text-[#A8A39A] ml-2">years</span>
                     </div>
 
                     <input
@@ -208,7 +208,7 @@ export function RailroadRetirementCalculator() {
                       className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                     />
 
-                    <div className="flex justify-between text-sm text-slate-500">
+                    <div className="flex justify-between text-sm text-[#A8A39A]">
                       <span>5 years</span>
                       <span>45 years</span>
                     </div>
@@ -220,8 +220,8 @@ export function RailroadRetirementCalculator() {
                           onClick={() => setYearsOfService(years)}
                           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                             yearsOfService === years
-                              ? "bg-[#B22234] text-white"
-                              : "bg-slate-700 text-slate-600 hover:bg-slate-600"
+                              ? "bg-[#DC2626] text-white"
+                              : "bg-slate-700 text-[#D0CCC4] hover:bg-slate-600"
                           }`}
                         >
                           {years} years
@@ -229,7 +229,7 @@ export function RailroadRetirementCalculator() {
                       ))}
                     </div>
 
-                    <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
+                    <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
                       <p className="text-amber-800 text-sm">
                         <strong>Note:</strong> You need at least 10 years of railroad service to
                         qualify for Railroad Retirement benefits. With 30+ years, you can retire
@@ -241,7 +241,7 @@ export function RailroadRetirementCalculator() {
                   <div className="mt-8 flex justify-end">
                     <button
                       onClick={() => setStep(2)}
-                      className="px-8 py-3 bg-[#B22234] text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-colors"
+                      className="px-8 py-3 bg-[#DC2626] text-[#F6F4EF] font-semibold rounded-lg hover:bg-amber-400 transition-colors"
                     >
                       Next Step
                     </button>
@@ -256,19 +256,19 @@ export function RailroadRetirementCalculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] mb-2 text-center">
                     Average Monthly Earnings
                   </h2>
-                  <p className="text-slate-500 text-center mb-8">
+                  <p className="text-[#A8A39A] text-center mb-8">
                     Your highest 60 consecutive months of railroad earnings
                   </p>
 
                   <div className="space-y-6">
                     <div className="text-center">
-                      <span className="text-5xl font-bold text-[#B22234]">
+                      <span className="text-5xl font-bold text-[#D4A94E]">
                         {formatCurrency(averageMonthlyEarnings)}
                       </span>
-                      <span className="text-xl text-slate-500 ml-2">/month</span>
+                      <span className="text-xl text-[#A8A39A] ml-2">/month</span>
                     </div>
 
                     <input
@@ -283,7 +283,7 @@ export function RailroadRetirementCalculator() {
                       className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                     />
 
-                    <div className="flex justify-between text-sm text-slate-500">
+                    <div className="flex justify-between text-sm text-[#A8A39A]">
                       <span>$2,000</span>
                       <span>$15,000</span>
                     </div>
@@ -295,8 +295,8 @@ export function RailroadRetirementCalculator() {
                           onClick={() => setAverageMonthlyEarnings(amount)}
                           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                             averageMonthlyEarnings === amount
-                              ? "bg-[#B22234] text-white"
-                              : "bg-slate-700 text-slate-600 hover:bg-slate-600"
+                              ? "bg-[#DC2626] text-white"
+                              : "bg-slate-700 text-[#D0CCC4] hover:bg-slate-600"
                           }`}
                         >
                           {formatCurrency(amount)}
@@ -316,13 +316,13 @@ export function RailroadRetirementCalculator() {
                   <div className="mt-8 flex justify-between">
                     <button
                       onClick={() => setStep(1)}
-                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-[#D0CCC4] font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Back
                     </button>
                     <button
                       onClick={() => setStep(3)}
-                      className="px-8 py-3 bg-[#B22234] text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-colors"
+                      className="px-8 py-3 bg-[#DC2626] text-[#F6F4EF] font-semibold rounded-lg hover:bg-amber-400 transition-colors"
                     >
                       Next Step
                     </button>
@@ -337,19 +337,19 @@ export function RailroadRetirementCalculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] mb-2 text-center">
                     Retirement Age
                   </h2>
-                  <p className="text-slate-500 text-center mb-8">
+                  <p className="text-[#A8A39A] text-center mb-8">
                     When do you plan to start receiving benefits?
                   </p>
 
                   <div className="space-y-6">
                     <div className="text-center">
-                      <span className="text-5xl font-bold text-[#B22234]">
+                      <span className="text-5xl font-bold text-[#D4A94E]">
                         {retirementAge}
                       </span>
-                      <span className="text-2xl text-slate-500 ml-2">years old</span>
+                      <span className="text-2xl text-[#A8A39A] ml-2">years old</span>
                     </div>
 
                     <input
@@ -362,7 +362,7 @@ export function RailroadRetirementCalculator() {
                       className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                     />
 
-                    <div className="flex justify-between text-sm text-slate-500">
+                    <div className="flex justify-between text-sm text-[#A8A39A]">
                       <span>60</span>
                       <span>70</span>
                     </div>
@@ -374,8 +374,8 @@ export function RailroadRetirementCalculator() {
                           onClick={() => setRetirementAge(age)}
                           className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                             retirementAge === age
-                              ? "bg-[#B22234] text-white"
-                              : "bg-slate-700 text-slate-600 hover:bg-slate-600"
+                              ? "bg-[#DC2626] text-white"
+                              : "bg-slate-700 text-[#D0CCC4] hover:bg-slate-600"
                           }`}
                         >
                           Age {age}
@@ -387,7 +387,7 @@ export function RailroadRetirementCalculator() {
                       className={`rounded-lg p-4 ${
                         yearsOfService >= 30
                           ? "bg-green-50 border border-green-200"
-                          : "bg-[#B22234]/10 border border-[#B22234]/30"
+                          : "bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30"
                       }`}
                     >
                       <p
@@ -405,13 +405,13 @@ export function RailroadRetirementCalculator() {
                   <div className="mt-8 flex justify-between">
                     <button
                       onClick={() => setStep(2)}
-                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-[#D0CCC4] font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Back
                     </button>
                     <button
                       onClick={() => setStep(4)}
-                      className="px-8 py-3 bg-[#B22234] text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-colors"
+                      className="px-8 py-3 bg-[#DC2626] text-[#F6F4EF] font-semibold rounded-lg hover:bg-amber-400 transition-colors"
                     >
                       Next Step
                     </button>
@@ -426,24 +426,24 @@ export function RailroadRetirementCalculator() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] mb-2 text-center">
                     Spousal Benefits
                   </h2>
-                  <p className="text-slate-500 text-center mb-8">
+                  <p className="text-[#A8A39A] text-center mb-8">
                     Enter spouse information for spousal benefit calculation
                   </p>
 
                   <div className="space-y-8">
                     {/* Spouse Age */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-slate-900 text-center">
+                      <h3 className="text-lg font-semibold text-[#F6F4EF] text-center">
                         Spouse Age at Your Retirement
                       </h3>
                       <div className="text-center">
-                        <span className="text-4xl font-bold text-[#B22234]">
+                        <span className="text-4xl font-bold text-[#D4A94E]">
                           {spouseAge}
                         </span>
-                        <span className="text-xl text-slate-500 ml-2">years old</span>
+                        <span className="text-xl text-[#A8A39A] ml-2">years old</span>
                       </div>
                       <input
                         type="range"
@@ -461,8 +461,8 @@ export function RailroadRetirementCalculator() {
                             onClick={() => setSpouseAge(age)}
                             className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
                               spouseAge === age
-                                ? "bg-[#B22234] text-white"
-                                : "bg-slate-700 text-slate-600 hover:bg-slate-600"
+                                ? "bg-[#DC2626] text-white"
+                                : "bg-slate-700 text-[#D0CCC4] hover:bg-slate-600"
                             }`}
                           >
                             Age {age}
@@ -473,7 +473,7 @@ export function RailroadRetirementCalculator() {
 
                     {/* Vested Dual Benefit */}
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold text-slate-900 text-center">
+                      <h3 className="text-lg font-semibold text-[#F6F4EF] text-center">
                         Vested Dual Benefit (VDB)
                       </h3>
                       <div className="grid grid-cols-2 gap-4">
@@ -481,12 +481,12 @@ export function RailroadRetirementCalculator() {
                           onClick={() => setHasVestedDualBenefit(false)}
                           className={`p-4 rounded-xl border-2 text-center transition-colors ${
                             !hasVestedDualBenefit
-                              ? "border-amber-500 bg-[#B22234]/10"
-                              : "border-slate-700 bg-slate-50 hover:border-slate-600"
+                              ? "border-amber-500 bg-[rgba(220,38,38,0.1)]"
+                              : "border-slate-700 bg-[#0C0D18] hover:border-slate-600"
                           }`}
                         >
-                          <p className="font-semibold text-slate-900">No VDB</p>
-                          <p className="text-slate-600 text-sm mt-1">
+                          <p className="font-semibold text-[#F6F4EF]">No VDB</p>
+                          <p className="text-[#D0CCC4] text-sm mt-1">
                             Most railroad workers
                           </p>
                         </button>
@@ -494,17 +494,17 @@ export function RailroadRetirementCalculator() {
                           onClick={() => setHasVestedDualBenefit(true)}
                           className={`p-4 rounded-xl border-2 text-center transition-colors ${
                             hasVestedDualBenefit
-                              ? "border-amber-500 bg-[#B22234]/10"
-                              : "border-slate-700 bg-slate-50 hover:border-slate-600"
+                              ? "border-amber-500 bg-[rgba(220,38,38,0.1)]"
+                              : "border-slate-700 bg-[#0C0D18] hover:border-slate-600"
                           }`}
                         >
-                          <p className="font-semibold text-slate-900">Has VDB</p>
-                          <p className="text-slate-600 text-sm mt-1">
+                          <p className="font-semibold text-[#F6F4EF]">Has VDB</p>
+                          <p className="text-[#D0CCC4] text-sm mt-1">
                             Pre-1975 qualification
                           </p>
                         </button>
                       </div>
-                      <p className="text-slate-500 text-xs text-center">
+                      <p className="text-[#A8A39A] text-xs text-center">
                         VDB applies to workers who had both railroad and social security
                         credits before 1975.
                       </p>
@@ -514,13 +514,13 @@ export function RailroadRetirementCalculator() {
                   <div className="mt-8 flex justify-between">
                     <button
                       onClick={() => setStep(3)}
-                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-[#D0CCC4] font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Back
                     </button>
                     <button
                       onClick={handleCalculate}
-                      className="px-8 py-3 bg-[#B22234] text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-colors"
+                      className="px-8 py-3 bg-[#DC2626] text-[#F6F4EF] font-semibold rounded-lg hover:bg-amber-400 transition-colors"
                     >
                       Calculate Benefits
                     </button>
@@ -537,26 +537,26 @@ export function RailroadRetirementCalculator() {
               className="space-y-8"
             >
               {/* Total Benefit Card */}
-              <div className="bg-[#B22234]/5 border-2 border-[#B22234]/30 rounded-2xl p-8 text-center">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#B22234]/10 text-[#B22234] mb-4">
+              <div className="bg-[rgba(220,38,38,0.06)] border-2 border-[#B22234]/30 rounded-2xl p-8 text-center">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[rgba(220,38,38,0.1)] text-[#D4A94E] mb-4">
                   Your Total Monthly Benefit
                 </span>
-                <div className="text-6xl font-bold text-[#B22234] mb-2">
+                <div className="text-6xl font-bold text-[#D4A94E] mb-2">
                   {formatCurrency(calculations.totalMonthlyBenefit)}
                 </div>
-                <p className="text-slate-600 mb-4">
+                <p className="text-[#D0CCC4] mb-4">
                   Based on {calculations.yearsOfService} years of railroad service,
                   retiring at age {calculations.retirementAge}
                 </p>
                 <div className="flex justify-center gap-8">
                   <div>
-                    <p className="text-slate-600 text-sm">Annual Benefit</p>
-                    <p className="text-2xl font-bold text-slate-900">
+                    <p className="text-[#D0CCC4] text-sm">Annual Benefit</p>
+                    <p className="text-2xl font-bold text-[#F6F4EF]">
                       {formatCurrency(calculations.totalMonthlyBenefit * 12)}
                     </p>
                   </div>
                   <div>
-                    <p className="text-slate-600 text-sm">RR Advantage</p>
+                    <p className="text-[#D0CCC4] text-sm">RR Advantage</p>
                     <p className="text-2xl font-bold text-green-600">
                       +{formatCurrency(calculations.rrAdvantage)}/mo
                     </p>
@@ -565,31 +565,31 @@ export function RailroadRetirementCalculator() {
               </div>
 
               {/* Benefit Breakdown */}
-              <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8">
-                <h2 className="text-2xl font-bold text-[#000080] mb-6 text-center">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-8">
+                <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 text-center">
                   Benefit Breakdown
                 </h2>
 
                 <div className="grid md:grid-cols-3 gap-6 mb-8">
                   {/* Tier I */}
-                  <div className="bg-slate-50 border border-slate-700 rounded-xl p-6">
+                  <div className="bg-[#0C0D18] border border-slate-700 rounded-xl p-6">
                     <div className="flex items-center gap-2 mb-4">
                       <div className="w-3 h-3 bg-blue-400 rounded-full" />
-                      <h3 className="text-lg font-semibold text-slate-900">Tier I</h3>
+                      <h3 className="text-lg font-semibold text-[#F6F4EF]">Tier I</h3>
                     </div>
-                    <p className="text-sm text-slate-500 mb-4">
+                    <p className="text-sm text-[#A8A39A] mb-4">
                       Social Security equivalent
                     </p>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-slate-600 text-sm">Monthly</p>
+                        <p className="text-[#D0CCC4] text-sm">Monthly</p>
                         <p className="text-2xl font-bold text-blue-600">
                           {formatCurrency(calculations.tierIBenefit)}
                         </p>
                       </div>
                       <div>
-                        <p className="text-slate-600 text-sm">Annual</p>
-                        <p className="text-lg font-semibold text-slate-900">
+                        <p className="text-[#D0CCC4] text-sm">Annual</p>
+                        <p className="text-lg font-semibold text-[#F6F4EF]">
                           {formatCurrency(calculations.tierIBenefit * 12)}
                         </p>
                       </div>
@@ -597,29 +597,29 @@ export function RailroadRetirementCalculator() {
                   </div>
 
                   {/* Tier II */}
-                  <div className="bg-[#B22234]/5 border-2 border-[#B22234]/30 rounded-xl p-6 relative">
+                  <div className="bg-[rgba(220,38,38,0.06)] border-2 border-[#B22234]/30 rounded-xl p-6 relative">
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <span className="bg-[#B22234] text-slate-900 text-xs font-bold px-3 py-1 rounded-full">
+                      <span className="bg-[#DC2626] text-[#F6F4EF] text-xs font-bold px-3 py-1 rounded-full">
                         RAILROAD ONLY
                       </span>
                     </div>
                     <div className="flex items-center gap-2 mb-4">
                       <div className="w-3 h-3 bg-amber-400 rounded-full" />
-                      <h3 className="text-lg font-semibold text-slate-900">Tier II</h3>
+                      <h3 className="text-lg font-semibold text-[#F6F4EF]">Tier II</h3>
                     </div>
-                    <p className="text-sm text-slate-500 mb-4">
+                    <p className="text-sm text-[#A8A39A] mb-4">
                       Railroad pension benefit
                     </p>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-slate-600 text-sm">Monthly</p>
-                        <p className="text-2xl font-bold text-[#B22234]">
+                        <p className="text-[#D0CCC4] text-sm">Monthly</p>
+                        <p className="text-2xl font-bold text-[#D4A94E]">
                           {formatCurrency(calculations.tierIIBenefit)}
                         </p>
                       </div>
                       <div>
-                        <p className="text-slate-600 text-sm">Annual</p>
-                        <p className="text-lg font-semibold text-slate-900">
+                        <p className="text-[#D0CCC4] text-sm">Annual</p>
+                        <p className="text-lg font-semibold text-[#F6F4EF]">
                           {formatCurrency(calculations.tierIIBenefit * 12)}
                         </p>
                       </div>
@@ -627,21 +627,21 @@ export function RailroadRetirementCalculator() {
                   </div>
 
                   {/* VDB or Comparison */}
-                  <div className="bg-slate-50 border border-slate-700 rounded-xl p-6">
+                  <div className="bg-[#0C0D18] border border-slate-700 rounded-xl p-6">
                     <div className="flex items-center gap-2 mb-4">
                       <div className="w-3 h-3 bg-green-400 rounded-full" />
-                      <h3 className="text-lg font-semibold text-slate-900">
+                      <h3 className="text-lg font-semibold text-[#F6F4EF]">
                         {hasVestedDualBenefit ? "VDB" : "SS-Only"}
                       </h3>
                     </div>
-                    <p className="text-sm text-slate-500 mb-4">
+                    <p className="text-sm text-[#A8A39A] mb-4">
                       {hasVestedDualBenefit
                         ? "Vested Dual Benefit"
                         : "If only Social Security"}
                     </p>
                     <div className="space-y-3">
                       <div>
-                        <p className="text-slate-600 text-sm">Monthly</p>
+                        <p className="text-[#D0CCC4] text-sm">Monthly</p>
                         <p className="text-2xl font-bold text-green-600">
                           {hasVestedDualBenefit
                             ? formatCurrency(calculations.vestedDualBenefit)
@@ -649,10 +649,10 @@ export function RailroadRetirementCalculator() {
                         </p>
                       </div>
                       <div>
-                        <p className="text-slate-600 text-sm">
+                        <p className="text-[#D0CCC4] text-sm">
                           {hasVestedDualBenefit ? "Annual VDB" : "You gain"}
                         </p>
-                        <p className="text-lg font-semibold text-slate-900">
+                        <p className="text-lg font-semibold text-[#F6F4EF]">
                           {hasVestedDualBenefit
                             ? formatCurrency(calculations.vestedDualBenefit * 12)
                             : `+${formatCurrency(calculations.rrAdvantage)}/mo`}
@@ -663,15 +663,15 @@ export function RailroadRetirementCalculator() {
                 </div>
 
                 {/* Comparison Bar */}
-                <div className="bg-slate-50 rounded-xl p-6">
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">
+                <div className="bg-[#0C0D18] rounded-xl p-6">
+                  <h3 className="text-lg font-semibold text-[#F6F4EF] mb-4">
                     Railroad Retirement vs Social Security Only
                   </h3>
                   <div className="space-y-4">
                     <div>
                       <div className="flex justify-between mb-2">
-                        <span className="text-slate-500">Social Security Only</span>
-                        <span className="text-slate-900 font-semibold">
+                        <span className="text-[#A8A39A]">Social Security Only</span>
+                        <span className="text-[#F6F4EF] font-semibold">
                           {formatCurrency(calculations.ssOnlyEquivalent)}
                         </span>
                       </div>
@@ -690,8 +690,8 @@ export function RailroadRetirementCalculator() {
                     </div>
                     <div>
                       <div className="flex justify-between mb-2">
-                        <span className="text-slate-500">Railroad Retirement</span>
-                        <span className="text-[#B22234] font-semibold">
+                        <span className="text-[#A8A39A]">Railroad Retirement</span>
+                        <span className="text-[#D4A94E] font-semibold">
                           {formatCurrency(calculations.totalMonthlyBenefit)}
                         </span>
                       </div>
@@ -708,33 +708,33 @@ export function RailroadRetirementCalculator() {
               </div>
 
               {/* Spousal Benefits */}
-              <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8">
-                <h2 className="text-xl font-bold text-[#000080] mb-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-8">
+                <h2 className="text-xl font-bold text-[#F6F4EF] mb-6">
                   Spousal Benefits (Age {spouseAge})
                 </h2>
                 <div className="grid md:grid-cols-3 gap-6">
-                  <div className="bg-slate-50 rounded-lg p-4">
-                    <p className="text-slate-600 text-sm">Spouse Tier I (50%)</p>
-                    <p className="text-2xl font-bold text-slate-900">
+                  <div className="bg-[#0C0D18] rounded-lg p-4">
+                    <p className="text-[#D0CCC4] text-sm">Spouse Tier I (50%)</p>
+                    <p className="text-2xl font-bold text-[#F6F4EF]">
                       {formatCurrency(calculations.spouseTierI)}
                     </p>
                   </div>
-                  <div className="bg-slate-50 rounded-lg p-4">
-                    <p className="text-slate-600 text-sm">Spouse Tier II (45%)</p>
-                    <p className="text-2xl font-bold text-[#B22234]">
+                  <div className="bg-[#0C0D18] rounded-lg p-4">
+                    <p className="text-[#D0CCC4] text-sm">Spouse Tier II (45%)</p>
+                    <p className="text-2xl font-bold text-[#D4A94E]">
                       {formatCurrency(calculations.spouseTierII)}
                     </p>
                   </div>
-                  <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
-                    <p className="text-[#B22234] text-sm">Total Spouse Benefit</p>
-                    <p className="text-2xl font-bold text-slate-900">
+                  <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
+                    <p className="text-[#D4A94E] text-sm">Total Spouse Benefit</p>
+                    <p className="text-2xl font-bold text-[#F6F4EF]">
                       {formatCurrency(calculations.spouseTotal)}
                     </p>
                   </div>
                 </div>
-                <div className="mt-4 bg-slate-50 rounded-lg p-4">
-                  <p className="text-slate-600 text-sm">
-                    <strong className="text-slate-900">Combined Household:</strong>{" "}
+                <div className="mt-4 bg-[#0C0D18] rounded-lg p-4">
+                  <p className="text-[#D0CCC4] text-sm">
+                    <strong className="text-[#F6F4EF]">Combined Household:</strong>{" "}
                     {formatCurrency(
                       calculations.totalMonthlyBenefit + calculations.spouseTotal
                     )}
@@ -751,7 +751,7 @@ export function RailroadRetirementCalculator() {
                 <h3 className="text-lg font-semibold text-blue-600 mb-4">
                   Important Information
                 </h3>
-                <ul className="space-y-2 text-slate-600">
+                <ul className="space-y-2 text-[#D0CCC4]">
                   <li className="flex items-start gap-2">
                     <span className="text-blue-600 mt-1">*</span>
                     <span>
@@ -795,13 +795,13 @@ export function RailroadRetirementCalculator() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   onClick={handleReset}
-                  className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                  className="px-8 py-3 bg-slate-700 text-[#D0CCC4] font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                 >
                   Calculate Again
                 </button>
                 <Link
                   href="/tools/railroad-tier-1-calculator"
-                  className="px-8 py-3 bg-[#B22234] text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-colors text-center"
+                  className="px-8 py-3 bg-[#DC2626] text-[#F6F4EF] font-semibold rounded-lg hover:bg-amber-400 transition-colors text-center"
                 >
                   Detailed Tier I Calculator
                 </Link>

@@ -60,16 +60,16 @@ export default function NobleGoldLegitPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
-            <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
+            <header className="bg-[rgba(197,149,46,0.1)] text-white py-16 relative overflow-hidden">
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-2 mb-6">
                             <div className="flex gap-1">
                                 {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-[#B22234] text-[#B22234]' : 'fill-[#B22234]/50 text-[#B22234]/50'}`} />
+                                    <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-[#B22234] text-[#D4A94E]' : 'fill-[#B22234]/50 text-[#D4A94E]/50'}`} />
                                 ))}
                             </div>
-                            <span className="font-bold text-[#B22234] text-lg">Trust Score: 98/100</span>
+                            <span className="font-bold text-[#D4A94E] text-lg">Trust Score: 98/100</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
                             Is Noble Gold Legit? (2026 Investigation)
@@ -90,7 +90,7 @@ export default function NobleGoldLegitPage() {
                                 <ReviewSidebar {...companyData} />
                             </div>
 
-                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-800 prose-a:text-[#B22234] max-w-none">
+                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-li:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E] max-w-none">
 
                                 {/* Intro Text */}
                                 <section>
@@ -125,20 +125,20 @@ export default function NobleGoldLegitPage() {
                                         Noble Gold maintains excellent ratings across all major consumer protection platforms:
                                     </p>
                                     <div className="not-prose grid md:grid-cols-3 gap-4 my-6">
-                                        <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 text-center">
-                                            <div className="text-3xl font-bold text-[#000080] mb-1">A+</div>
-                                            <div className="text-sm text-slate-600">BBB Rating</div>
-                                            <div className="text-xs text-slate-400 mt-1">Zero unresolved complaints</div>
+                                        <div className="bg-[#0C0D18] p-6 rounded-xl shadow-sm border border-[#2A2D42] text-center">
+                                            <div className="text-3xl font-bold text-[#F6F4EF] mb-1">A+</div>
+                                            <div className="text-sm text-[#D0CCC4]">BBB Rating</div>
+                                            <div className="text-xs text-[#A8A39A] mt-1">Zero unresolved complaints</div>
                                         </div>
-                                        <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 text-center">
-                                            <div className="text-3xl font-bold text-[#000080] mb-1">4.9/5</div>
-                                            <div className="text-sm text-slate-600">TrustPilot</div>
-                                            <div className="text-xs text-slate-400 mt-1">1,000+ reviews</div>
+                                        <div className="bg-[#0C0D18] p-6 rounded-xl shadow-sm border border-[#2A2D42] text-center">
+                                            <div className="text-3xl font-bold text-[#F6F4EF] mb-1">4.9/5</div>
+                                            <div className="text-sm text-[#D0CCC4]">TrustPilot</div>
+                                            <div className="text-xs text-[#A8A39A] mt-1">1,000+ reviews</div>
                                         </div>
-                                        <div className="bg-slate-50 p-6 rounded-xl shadow-sm border border-slate-200 text-center">
-                                            <div className="text-3xl font-bold text-[#000080] mb-1">5/5</div>
-                                            <div className="text-sm text-slate-600">Consumer Affairs</div>
-                                            <div className="text-xs text-slate-400 mt-1">Top rated</div>
+                                        <div className="bg-[#0C0D18] p-6 rounded-xl shadow-sm border border-[#2A2D42] text-center">
+                                            <div className="text-3xl font-bold text-[#F6F4EF] mb-1">5/5</div>
+                                            <div className="text-sm text-[#D0CCC4]">Consumer Affairs</div>
+                                            <div className="text-xs text-[#A8A39A] mt-1">Top rated</div>
                                         </div>
                                     </div>
                                     <p>
@@ -197,7 +197,7 @@ export default function NobleGoldLegitPage() {
                                         While they&apos;re a younger company (founded 2016) compared to 25-year veterans like Lear Capital, their track record is spotless. If you&apos;re looking for an accessible, transparent Gold IRA experience, Noble Gold is a safe choice.
                                     </p>
                                     <p>
-                                        <strong>Read more:</strong> See our full <Link href="/reviews/noble-gold" className="text-[#B22234] hover:underline">Noble Gold Review</Link> or compare them to competitors in <Link href="/compare/lear-capital-vs-noble-gold" className="text-[#B22234] hover:underline">Lear Capital vs Noble Gold</Link>.
+                                        <strong>Read more:</strong> See our full <Link href="/reviews/noble-gold" className="text-[#D4A94E] hover:underline">Noble Gold Review</Link> or compare them to competitors in <Link href="/compare/lear-capital-vs-noble-gold" className="text-[#D4A94E] hover:underline">Lear Capital vs Noble Gold</Link>.
                                     </p>
                                 </section>
 

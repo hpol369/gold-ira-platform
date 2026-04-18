@@ -249,29 +249,29 @@ export default function SilverIraCompaniesPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <header className="py-16 md:py-20 bg-slate-50 relative overflow-hidden">
+            <header className="py-16 md:py-20 bg-[#0C0D18] relative overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-100 rounded-full blur-[150px]" />
+                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#121423] rounded-full blur-[150px]" />
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#3F4460] rounded-full text-[#D0CCC4] font-semibold text-sm mb-6">
                             <Building2 className="h-4 w-4" />
                             COMPANY COMPARISON
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+                        <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
                             Silver IRA Companies: Find Your Perfect Provider
                         </h1>
-                        <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
+                        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto mb-8">
                             Not all precious metals companies are equal when it comes to silver. We analyzed fees, silver selection, premiums, and customer service to rank the best Silver IRA providers for 2026.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
+                            <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white" size="lg" asChild>
                                 <Link href="/quiz">
                                     Find Your Match <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
-                            <Button variant="outline" size="lg" className="border-slate-300 text-slate-600 hover:bg-slate-100" asChild>
+                            <Button variant="outline" size="lg" className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]" asChild>
                                 <Link href="#augusta-precious-metals">
                                     See #1 Pick
                                 </Link>
@@ -282,22 +282,22 @@ export default function SilverIraCompaniesPage() {
             </header>
 
             {/* How We Evaluate */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">How We Evaluate Silver IRA Companies</h2>
-                        <p className="text-slate-600 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-4">How We Evaluate Silver IRA Companies</h2>
+                        <p className="text-[#D0CCC4] max-w-2xl mx-auto">
                             Our ranking methodology focuses on factors that matter most to silver investors.
                         </p>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {comparisonFactors.map((factor, index) => (
-                            <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                                <div className="w-12 h-12 rounded-lg bg-[#B22234]/10 flex items-center justify-center mb-4">
-                                    <factor.icon className="w-6 h-6 text-slate-600" />
+                            <div key={index} className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                                <div className="w-12 h-12 rounded-lg bg-[rgba(220,38,38,0.1)] flex items-center justify-center mb-4">
+                                    <factor.icon className="w-6 h-6 text-[#D0CCC4]" />
                                 </div>
-                                <h3 className="font-bold text-slate-900 mb-2">{factor.title}</h3>
-                                <p className="text-sm text-slate-600">{factor.description}</p>
+                                <h3 className="font-bold text-[#F6F4EF] mb-2">{factor.title}</h3>
+                                <p className="text-sm text-[#D0CCC4]">{factor.description}</p>
                             </div>
                         ))}
                     </div>
@@ -308,24 +308,24 @@ export default function SilverIraCompaniesPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto space-y-8">
-                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">Top Silver IRA Companies Ranked</h2>
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-12">Top Silver IRA Companies Ranked</h2>
 
                         {silverCompanies.map((company) => (
                             <div
                                 key={company.rank}
                                 id={company.name.toLowerCase().replace(/\s+/g, '-')}
-                                className={`rounded-2xl overflow-hidden border ${company.featured ? 'border-[#B22234]/50 bg-gradient-to-br from-[#B22234]/10 to-slate-900' : 'border-slate-200 bg-slate-50'}`}
+                                className={`rounded-2xl overflow-hidden border ${company.featured ? 'border-[#B22234]/50 bg-gradient-to-br from-[#B22234]/10 to-slate-900' : 'border-[#2A2D42] bg-[#0C0D18]'}`}
                             >
                                 {/* Header */}
-                                <div className={`p-6 ${company.featured ? 'bg-[#B22234]/20' : 'bg-slate-50'}`}>
+                                <div className={`p-6 ${company.featured ? 'bg-[rgba(220,38,38,0.18)]' : 'bg-[#0C0D18]'}`}>
                                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                                         <div className="flex items-center gap-4">
-                                            <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl ${company.featured ? 'bg-[#B22234] text-slate-900' : 'bg-slate-100 text-slate-900'}`}>
+                                            <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl ${company.featured ? 'bg-[#DC2626] text-[#F6F4EF]' : 'bg-[#121423] text-[#F6F4EF]'}`}>
                                                 #{company.rank}
                                             </div>
                                             <div>
-                                                <h3 className="text-2xl font-bold text-slate-900">{company.name}</h3>
-                                                <p className="text-slate-600">{company.tagline}</p>
+                                                <h3 className="text-2xl font-bold text-[#F6F4EF]">{company.name}</h3>
+                                                <p className="text-[#D0CCC4]">{company.tagline}</p>
                                             </div>
                                         </div>
                                         <div className="flex items-center gap-4">
@@ -333,10 +333,10 @@ export default function SilverIraCompaniesPage() {
                                                 {[1, 2, 3, 4, 5].map((star) => (
                                                     <Star
                                                         key={star}
-                                                        className={`h-5 w-5 ${star <= Math.floor(company.rating) ? 'text-[#B22234] fill-[#B22234]' : 'text-slate-600'}`}
+                                                        className={`h-5 w-5 ${star <= Math.floor(company.rating) ? 'text-[#D4A94E] fill-[#B22234]' : 'text-[#D0CCC4]'}`}
                                                     />
                                                 ))}
-                                                <span className="ml-2 text-slate-900 font-bold">{company.rating}</span>
+                                                <span className="ml-2 text-[#F6F4EF] font-bold">{company.rating}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -344,32 +344,32 @@ export default function SilverIraCompaniesPage() {
 
                                 {/* Content */}
                                 <div className="p-6">
-                                    <p className="text-slate-600 mb-6">{company.highlight}</p>
+                                    <p className="text-[#D0CCC4] mb-6">{company.highlight}</p>
 
                                     {/* Quick Stats */}
                                     <div className="grid grid-cols-3 gap-4 mb-6">
-                                        <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                                            <div className="text-xs text-slate-600 mb-1">Minimum</div>
-                                            <div className="font-bold text-slate-900">{company.minInvestment}</div>
+                                        <div className="bg-[#0C0D18] rounded-lg p-4 border border-[#2A2D42]">
+                                            <div className="text-xs text-[#D0CCC4] mb-1">Minimum</div>
+                                            <div className="font-bold text-[#F6F4EF]">{company.minInvestment}</div>
                                         </div>
-                                        <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                                            <div className="text-xs text-slate-600 mb-1">Annual Fee</div>
-                                            <div className="font-bold text-slate-900">{company.annualFee}</div>
+                                        <div className="bg-[#0C0D18] rounded-lg p-4 border border-[#2A2D42]">
+                                            <div className="text-xs text-[#D0CCC4] mb-1">Annual Fee</div>
+                                            <div className="font-bold text-[#F6F4EF]">{company.annualFee}</div>
                                         </div>
-                                        <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-                                            <div className="text-xs text-slate-600 mb-1">Silver Selection</div>
-                                            <div className="font-bold text-slate-900">{company.silverSelection}</div>
+                                        <div className="bg-[#0C0D18] rounded-lg p-4 border border-[#2A2D42]">
+                                            <div className="text-xs text-[#D0CCC4] mb-1">Silver Selection</div>
+                                            <div className="font-bold text-[#F6F4EF]">{company.silverSelection}</div>
                                         </div>
                                     </div>
 
                                     {/* Silver Products */}
                                     <div className="mb-6">
-                                        <h4 className="font-semibold text-slate-900 mb-2 flex items-center gap-2">
-                                            <Coins className="h-4 w-4 text-slate-600" /> Available Silver Products
+                                        <h4 className="font-semibold text-[#F6F4EF] mb-2 flex items-center gap-2">
+                                            <Coins className="h-4 w-4 text-[#D0CCC4]" /> Available Silver Products
                                         </h4>
                                         <div className="flex flex-wrap gap-2">
                                             {company.silverProducts.map((product, idx) => (
-                                                <span key={idx} className="px-3 py-1 bg-slate-100 rounded-full text-sm text-slate-600">
+                                                <span key={idx} className="px-3 py-1 bg-[#121423] rounded-full text-sm text-[#D0CCC4]">
                                                     {product}
                                                 </span>
                                             ))}
@@ -382,7 +382,7 @@ export default function SilverIraCompaniesPage() {
                                             <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                                                 <CheckCircle2 className="h-4 w-4" /> Strengths
                                             </h4>
-                                            <ul className="space-y-2 text-sm text-slate-600">
+                                            <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                                 {company.strengths.map((strength, idx) => (
                                                     <li key={idx} className="flex items-start gap-2">
                                                         <CheckCircle2 className="h-4 w-4 text-green-700 mt-0.5 flex-shrink-0" />
@@ -391,9 +391,9 @@ export default function SilverIraCompaniesPage() {
                                                 ))}
                                             </ul>
                                         </div>
-                                        <div className="bg-[#B22234]/10 p-4 rounded-xl border border-amber-500/20">
-                                            <h4 className="font-bold text-[#B22234] mb-3">Considerations</h4>
-                                            <ul className="space-y-2 text-sm text-slate-600">
+                                        <div className="bg-[rgba(220,38,38,0.1)] p-4 rounded-xl border border-amber-500/20">
+                                            <h4 className="font-bold text-[#D4A94E] mb-3">Considerations</h4>
+                                            <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                                 {company.considerations.map((consideration, idx) => (
                                                     <li key={idx}>* {consideration}</li>
                                                 ))}
@@ -403,12 +403,12 @@ export default function SilverIraCompaniesPage() {
 
                                     {/* CTAs */}
                                     <div className="flex flex-col sm:flex-row gap-4">
-                                        <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white flex-1" size="lg" asChild>
+                                        <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white flex-1" size="lg" asChild>
                                             <a href={getTrackedLink(company.link, "silver-companies", company.name.toLowerCase().replace(/\s+/g, '-'))} target="_blank" rel="noopener noreferrer">
                                                 Get Free Silver IRA Kit <ArrowRight className="ml-2 h-4 w-4" />
                                             </a>
                                         </Button>
-                                        <Button variant="outline" size="lg" className="flex-1 border-slate-300 text-slate-600 hover:bg-slate-100" asChild>
+                                        <Button variant="outline" size="lg" className="flex-1 border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]" asChild>
                                             <Link href={company.reviewLink}>Read Full Review</Link>
                                         </Button>
                                     </div>
@@ -420,51 +420,51 @@ export default function SilverIraCompaniesPage() {
             </section>
 
             {/* Comparison Table */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
-                    <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">Quick Comparison</h2>
+                    <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">Quick Comparison</h2>
                     <div className="overflow-x-auto">
-                        <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
-                            <thead className="bg-slate-50">
+                        <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl shadow-sm border border-[#2A2D42]">
+                            <thead className="bg-[#0C0D18]">
                                 <tr>
-                                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Company</th>
-                                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Minimum</th>
-                                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Annual Fee</th>
-                                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Rating</th>
-                                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Best For</th>
+                                    <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Company</th>
+                                    <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Minimum</th>
+                                    <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Annual Fee</th>
+                                    <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Rating</th>
+                                    <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Best For</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-slate-200 text-sm text-slate-600">
-                                <tr className="bg-[#B22234]/5">
-                                    <td className="p-4 font-semibold text-slate-900">Augusta Precious Metals</td>
+                            <tbody className="divide-y divide-[#2A2D42] text-sm text-[#D0CCC4]">
+                                <tr className="bg-[rgba(220,38,38,0.06)]">
+                                    <td className="p-4 font-semibold text-[#F6F4EF]">Augusta Precious Metals</td>
                                     <td className="p-4">$50,000</td>
                                     <td className="p-4">$180</td>
                                     <td className="p-4">4.9/5</td>
                                     <td className="p-4">Best Overall Experience</td>
                                 </tr>
                                 <tr>
-                                    <td className="p-4 font-semibold text-slate-900">Goldco</td>
+                                    <td className="p-4 font-semibold text-[#F6F4EF]">Goldco</td>
                                     <td className="p-4">$25,000</td>
                                     <td className="p-4">Varies</td>
                                     <td className="p-4">4.8/5</td>
                                     <td className="p-4">Brand Recognition</td>
                                 </tr>
                                 <tr>
-                                    <td className="p-4 font-semibold text-slate-900">Birch Gold Group</td>
+                                    <td className="p-4 font-semibold text-[#F6F4EF]">Birch Gold Group</td>
                                     <td className="p-4">$10,000</td>
                                     <td className="p-4">$200 flat</td>
                                     <td className="p-4">4.7/5</td>
                                     <td className="p-4">Flat Fee Structure</td>
                                 </tr>
                                 <tr>
-                                    <td className="p-4 font-semibold text-slate-900">Noble Gold</td>
+                                    <td className="p-4 font-semibold text-[#F6F4EF]">Noble Gold</td>
                                     <td className="p-4">$2,000</td>
                                     <td className="p-4">$225</td>
                                     <td className="p-4">4.6/5</td>
                                     <td className="p-4">Low Minimum</td>
                                 </tr>
                                 <tr>
-                                    <td className="p-4 font-semibold text-slate-900">American Hartford Gold</td>
+                                    <td className="p-4 font-semibold text-[#F6F4EF]">American Hartford Gold</td>
                                     <td className="p-4">$10,000</td>
                                     <td className="p-4">Varies</td>
                                     <td className="p-4">4.5/5</td>
@@ -480,18 +480,18 @@ export default function SilverIraCompaniesPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">Silver IRA Companies FAQs</h2>
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">Silver IRA Companies FAQs</h2>
                         <div className="space-y-4">
                             {faqs.map((faq, index) => (
                                 <details
                                     key={index}
-                                    className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl"
+                                    className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl"
                                 >
-                                    <summary className="cursor-pointer p-6 font-semibold text-slate-900 flex justify-between items-center list-none">
+                                    <summary className="cursor-pointer p-6 font-semibold text-[#F6F4EF] flex justify-between items-center list-none">
                                         {faq.question}
-                                        <span className="text-[#B22234] group-open:rotate-180 transition-transform">&#9660;</span>
+                                        <span className="text-[#D4A94E] group-open:rotate-180 transition-transform">&#9660;</span>
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-600">
+                                    <div className="px-6 pb-6 text-[#D0CCC4]">
                                         {faq.answer}
                                     </div>
                                 </details>
@@ -502,14 +502,14 @@ export default function SilverIraCompaniesPage() {
             </section>
 
             {/* Quiz CTA */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">Not Sure Which Company Is Right for You?</h2>
-                        <p className="text-slate-600 mb-8">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-4">Not Sure Which Company Is Right for You?</h2>
+                        <p className="text-[#D0CCC4] mb-8">
                             Take our 60-second quiz to get a personalized recommendation based on your investment amount, goals, and preferences.
                         </p>
-                        <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
+                        <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white" size="xl" asChild>
                             <Link href="/quiz">
                                 Take the Free Quiz <ArrowRight className="ml-2 h-5 w-5" />
                             </Link>

@@ -60,7 +60,7 @@ export default function FeesComparisonPage() {
                 <AlertTriangle className="h-4 w-4" />
                 WATCH OUT FOR
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
                 Hidden Costs to Avoid
               </h2>
             </div>
@@ -76,10 +76,10 @@ export default function FeesComparisonPage() {
                       <AlertTriangle className="h-5 w-5 text-red-600" />
                     </div>
                     <div>
-                      <h3 className="text-slate-900 font-semibold mb-2">
+                      <h3 className="text-[#F6F4EF] font-semibold mb-2">
                         {warning.title}
                       </h3>
-                      <p className="text-slate-600 text-sm">
+                      <p className="text-[#D0CCC4] text-sm">
                         {warning.description}
                       </p>
                     </div>
@@ -92,7 +92,7 @@ export default function FeesComparisonPage() {
       </section>
 
       {/* What Good Value Looks Like */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -100,7 +100,7 @@ export default function FeesComparisonPage() {
                 <CheckCircle2 className="h-4 w-4" />
                 WHAT TO LOOK FOR
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
                 Signs of a Good-Value Gold IRA Company
               </h2>
             </div>
@@ -118,7 +118,7 @@ export default function FeesComparisonPage() {
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  <span className="text-slate-600">{item}</span>
+                  <span className="text-[#D0CCC4]">{item}</span>
                 </div>
               ))}
             </div>
@@ -130,18 +130,18 @@ export default function FeesComparisonPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-16 h-16 bg-[#B22234]/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-              <DollarSign className="h-8 w-8 text-[#B22234]" />
+            <div className="w-16 h-16 bg-[rgba(220,38,38,0.1)] rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <DollarSign className="h-8 w-8 text-[#D4A94E]" />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-4">
               Put Fees in Perspective
             </h2>
-            <p className="text-slate-500 leading-relaxed mb-6">
+            <p className="text-[#A8A39A] leading-relaxed mb-6">
               On a $100,000 account, paying $300/year in fees equals 0.3%—less than
               most stock mutual fund expense ratios. The real question isn&apos;t &quot;are
               fees low enough?&quot; but &quot;is the protection worth the cost?&quot;
             </p>
-            <p className="text-slate-500 leading-relaxed">
+            <p className="text-[#A8A39A] leading-relaxed">
               If gold helps your portfolio avoid a 30% market crash, those fees
               become trivial compared to the losses you avoided. Focus on value, not
               just the lowest price.
@@ -151,15 +151,15 @@ export default function FeesComparisonPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-50">
+      <section className="py-8 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-slate-900 font-semibold mb-2">Disclaimer</h3>
-                  <p className="text-slate-600 text-sm">
+                  <h3 className="text-[#F6F4EF] font-semibold mb-2">Disclaimer</h3>
+                  <p className="text-[#D0CCC4] text-sm">
                     Fee information is based on publicly available data and may change.
                     Always confirm current fees directly with each company before
                     opening an account. Some companies offer promotional pricing that

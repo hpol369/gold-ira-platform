@@ -136,39 +136,39 @@ export default function MorganDollarValuePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-coin-values"
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Silver Coin Values
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/20 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6 ml-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6 ml-4">
               <Star className="h-4 w-4" />
               6,800 MONTHLY SEARCHES
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               Morgan Silver Dollar Value Guide
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mb-8">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mb-8">
               The Morgan dollar is America&apos;s most collected silver coin. Minted from 1878-1921,
               these coins contain 0.7734 oz of pure silver. But here&apos;s what coin dealers won&apos;t tell you:
-              <span className="text-[#B22234] font-semibold"> common dates are often worth
+              <span className="text-[#D4A94E] font-semibold"> common dates are often worth
               only a small premium over melt value</span>, while key dates can fetch six figures.
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <Coins className="h-4 w-4 text-slate-600" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <Coins className="h-4 w-4 text-[#D0CCC4]" />
                 0.7734 oz Silver
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <History className="h-4 w-4 text-slate-600" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <History className="h-4 w-4 text-[#D0CCC4]" />
                 1878-1921
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
                 <TrendingUp className="h-4 w-4 text-green-400" />
                 ~$19 Melt Value
               </span>
@@ -178,19 +178,19 @@ export default function MorganDollarValuePage() {
       </section>
 
       {/* Key Dates Alert */}
-      <section className="py-8 bg-white border-y border-slate-200">
+      <section className="py-8 bg-[#161828] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-[#B22234]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-6">
               <div className="flex items-start gap-4">
-                <AlertTriangle className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-1" />
+                <AlertTriangle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-1" />
                 <div>
-                  <h2 className="text-lg font-bold text-slate-900 mb-2">
+                  <h2 className="text-lg font-bold text-[#F6F4EF] mb-2">
                     Before You Sell: Check for Key Dates
                   </h2>
-                  <p className="text-slate-600">
+                  <p className="text-[#D0CCC4]">
                     Banks and pawn shops often buy Morgan dollars at melt value, regardless of date.
-                    An 1893-S in your collection could be worth <span className="text-[#B22234] font-semibold">$5,000 to $500,000+</span> depending on condition.
+                    An 1893-S in your collection could be worth <span className="text-[#D4A94E] font-semibold">$5,000 to $500,000+</span> depending on condition.
                     Always verify your dates and mint marks before selling.
                   </p>
                 </div>
@@ -201,53 +201,53 @@ export default function MorganDollarValuePage() {
       </section>
 
       {/* Value Chart */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4">
               Morgan Dollar Value by Year and Condition
             </h2>
-            <p className="text-slate-600 text-center mb-8 max-w-2xl mx-auto">
+            <p className="text-[#D0CCC4] text-center mb-8 max-w-2xl mx-auto">
               Values in USD. Melt value provides the floor for common dates.
               Key dates and high-grade specimens command significant premiums.
             </p>
-            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden overflow-x-auto">
+            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl overflow-hidden overflow-x-auto">
               <table className="w-full min-w-[900px] text-sm">
                 <thead className="bg-slate-800/80">
                   <tr>
-                    <th className="text-left p-3 text-slate-900 font-bold">Year</th>
-                    <th className="text-center p-3 text-slate-900 font-bold">Mint</th>
-                    <th className="text-center p-3 text-slate-600">G-4</th>
-                    <th className="text-center p-3 text-slate-600">VG-8</th>
-                    <th className="text-center p-3 text-slate-600">F-12</th>
-                    <th className="text-center p-3 text-slate-600">VF-20</th>
-                    <th className="text-center p-3 text-slate-600">XF-40</th>
-                    <th className="text-center p-3 text-slate-600">AU-50</th>
-                    <th className="text-center p-3 text-[#B22234]">MS-60</th>
-                    <th className="text-center p-3 text-[#B22234]">MS-65</th>
-                    <th className="text-left p-3 text-slate-600">Notes</th>
+                    <th className="text-left p-3 text-[#F6F4EF] font-bold">Year</th>
+                    <th className="text-center p-3 text-[#F6F4EF] font-bold">Mint</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">G-4</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">VG-8</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">F-12</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">VF-20</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">XF-40</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">AU-50</th>
+                    <th className="text-center p-3 text-[#D4A94E]">MS-60</th>
+                    <th className="text-center p-3 text-[#D4A94E]">MS-65</th>
+                    <th className="text-left p-3 text-[#D0CCC4]">Notes</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200">
+                <tbody className="divide-y divide-[#2A2D42]">
                   {valueByYear.map((row, index) => (
-                    <tr key={index} className={row.notes.includes("Key") || row.notes.includes("rarest") ? "bg-[#B22234]/10" : ""}>
-                      <td className="p-3 text-slate-900 font-medium">{row.year}</td>
-                      <td className="p-3 text-center text-slate-600">{row.mint}</td>
-                      <td className="p-3 text-center text-slate-600">{row.g ? `$${row.g}` : "-"}</td>
-                      <td className="p-3 text-center text-slate-600">{row.vg ? `$${row.vg}` : "-"}</td>
-                      <td className="p-3 text-center text-slate-600">{row.f ? `$${row.f}` : "-"}</td>
-                      <td className="p-3 text-center text-slate-600">{row.vf ? `$${row.vf}` : "-"}</td>
-                      <td className="p-3 text-center text-slate-600">{row.xf ? `$${row.xf}` : "-"}</td>
-                      <td className="p-3 text-center text-slate-600">{row.au ? `$${row.au}` : "-"}</td>
+                    <tr key={index} className={row.notes.includes("Key") || row.notes.includes("rarest") ? "bg-[rgba(220,38,38,0.1)]" : ""}>
+                      <td className="p-3 text-[#F6F4EF] font-medium">{row.year}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.mint}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.g ? `$${row.g}` : "-"}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.vg ? `$${row.vg}` : "-"}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.f ? `$${row.f}` : "-"}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.vf ? `$${row.vf}` : "-"}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.xf ? `$${row.xf}` : "-"}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.au ? `$${row.au}` : "-"}</td>
                       <td className="p-3 text-center text-green-400">{row.ms60 ? `$${row.ms60.toLocaleString()}` : "-"}</td>
-                      <td className="p-3 text-center text-[#B22234] font-semibold">{row.ms65 ? `$${row.ms65.toLocaleString()}` : "-"}</td>
-                      <td className="p-3 text-slate-600 text-xs">{row.notes}</td>
+                      <td className="p-3 text-center text-[#D4A94E] font-semibold">{row.ms65 ? `$${row.ms65.toLocaleString()}` : "-"}</td>
+                      <td className="p-3 text-[#D0CCC4] text-xs">{row.notes}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-slate-600 mt-4 text-center">
+            <p className="text-xs text-[#D0CCC4] mt-4 text-center">
               Values are approximate and fluctuate with market conditions. For valuable coins, professional grading is recommended.
             </p>
           </div>
@@ -258,25 +258,25 @@ export default function MorganDollarValuePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Morgan Dollar Key Dates
             </h2>
             <div className="grid gap-4">
               {keyDates.map((coin, index) => (
                 <div
                   key={index}
-                  className="bg-slate-50 backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-5"
+                  className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-5"
                 >
                   <div className="flex flex-col md:flex-row md:items-center gap-4">
                     <div className="md:w-1/4">
-                      <h3 className="text-xl font-bold text-[#B22234]">{coin.year}</h3>
-                      <p className="text-sm text-slate-600">Mintage: {coin.mintage}</p>
+                      <h3 className="text-xl font-bold text-[#D4A94E]">{coin.year}</h3>
+                      <p className="text-sm text-[#D0CCC4]">Mintage: {coin.mintage}</p>
                     </div>
                     <div className="md:w-1/4">
                       <p className="text-lg font-semibold text-green-400">{coin.value}</p>
                     </div>
                     <div className="md:w-1/2">
-                      <p className="text-slate-600">{coin.why}</p>
+                      <p className="text-[#D0CCC4]">{coin.why}</p>
                     </div>
                   </div>
                 </div>
@@ -287,73 +287,73 @@ export default function MorganDollarValuePage() {
       </section>
 
       {/* Grading Guide */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               How to Grade Morgan Dollars
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-4 flex items-center gap-2">
                   <Info className="h-5 w-5 text-blue-400" />
                   Key Areas to Examine
                 </h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Hair Above Ear:</span> First area to show wear. Look for fine lines and detail.
+                      <span className="font-semibold text-[#F6F4EF]">Hair Above Ear:</span> First area to show wear. Look for fine lines and detail.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Cheek of Liberty:</span> Develops bag marks and contact marks from storage.
+                      <span className="font-semibold text-[#F6F4EF]">Cheek of Liberty:</span> Develops bag marks and contact marks from storage.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Eagle&apos;s Breast:</span> Feathers flatten with circulation. Check for full detail.
+                      <span className="font-semibold text-[#F6F4EF]">Eagle&apos;s Breast:</span> Feathers flatten with circulation. Check for full detail.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Luster:</span> Original mint luster should be unbroken on uncirculated coins.
+                      <span className="font-semibold text-[#F6F4EF]">Luster:</span> Original mint luster should be unbroken on uncirculated coins.
                     </div>
                   </li>
                 </ul>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                  <AlertTriangle className="h-5 w-5 text-[#B22234]" />
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-4 flex items-center gap-2">
+                  <AlertTriangle className="h-5 w-5 text-[#D4A94E]" />
                   Grading Red Flags
                 </h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <span className="text-red-400 font-bold">X</span>
                     <div>
-                      <span className="font-semibold text-slate-900">Cleaning:</span> Hairlines, unnatural shine, or dull surfaces indicate cleaning. Reduces value 50-90%.
+                      <span className="font-semibold text-[#F6F4EF]">Cleaning:</span> Hairlines, unnatural shine, or dull surfaces indicate cleaning. Reduces value 50-90%.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <span className="text-red-400 font-bold">X</span>
                     <div>
-                      <span className="font-semibold text-slate-900">Whizzing:</span> Wire brushing to simulate luster. Look for directional lines under magnification.
+                      <span className="font-semibold text-[#F6F4EF]">Whizzing:</span> Wire brushing to simulate luster. Look for directional lines under magnification.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <span className="text-red-400 font-bold">X</span>
                     <div>
-                      <span className="font-semibold text-slate-900">Tooling:</span> Added or enhanced details. Common on key dates - always buy PCGS/NGC certified.
+                      <span className="font-semibold text-[#F6F4EF]">Tooling:</span> Added or enhanced details. Common on key dates - always buy PCGS/NGC certified.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <span className="text-red-400 font-bold">X</span>
                     <div>
-                      <span className="font-semibold text-slate-900">Counterfeits:</span> Chinese fakes are common. Weight (26.73g) and sound test help identify.
+                      <span className="font-semibold text-[#F6F4EF]">Counterfeits:</span> Chinese fakes are common. Weight (26.73g) and sound test help identify.
                     </div>
                   </li>
                 </ul>
@@ -367,37 +367,37 @@ export default function MorganDollarValuePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Morgan Dollar Mint Marks
             </h2>
-            <p className="text-slate-600 text-center mb-8">
+            <p className="text-[#D0CCC4] text-center mb-8">
               Mint marks appear on the reverse, below the wreath and above the &quot;D&quot; in DOLLAR.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-5 text-center">
-                <div className="text-3xl font-bold text-slate-900 mb-2">P</div>
-                <h3 className="font-bold text-slate-600 mb-1">Philadelphia</h3>
-                <p className="text-sm text-slate-600">No mint mark. Highest total mintage.</p>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-5 text-center">
+                <div className="text-3xl font-bold text-[#F6F4EF] mb-2">P</div>
+                <h3 className="font-bold text-[#D0CCC4] mb-1">Philadelphia</h3>
+                <p className="text-sm text-[#D0CCC4]">No mint mark. Highest total mintage.</p>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-5 text-center">
-                <div className="text-3xl font-bold text-[#B22234] mb-2">CC</div>
-                <h3 className="font-bold text-slate-600 mb-1">Carson City</h3>
-                <p className="text-sm text-slate-600">Most valuable. Minted 1878-1893.</p>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-5 text-center">
+                <div className="text-3xl font-bold text-[#D4A94E] mb-2">CC</div>
+                <h3 className="font-bold text-[#D0CCC4] mb-1">Carson City</h3>
+                <p className="text-sm text-[#D0CCC4]">Most valuable. Minted 1878-1893.</p>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-5 text-center">
-                <div className="text-3xl font-bold text-slate-900 mb-2">O</div>
-                <h3 className="font-bold text-slate-600 mb-1">New Orleans</h3>
-                <p className="text-sm text-slate-600">Often weakly struck. Many survivors.</p>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-5 text-center">
+                <div className="text-3xl font-bold text-[#F6F4EF] mb-2">O</div>
+                <h3 className="font-bold text-[#D0CCC4] mb-1">New Orleans</h3>
+                <p className="text-sm text-[#D0CCC4]">Often weakly struck. Many survivors.</p>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-5 text-center">
-                <div className="text-3xl font-bold text-slate-900 mb-2">S</div>
-                <h3 className="font-bold text-slate-600 mb-1">San Francisco</h3>
-                <p className="text-sm text-slate-600">Known for sharp strikes and luster.</p>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-5 text-center">
+                <div className="text-3xl font-bold text-[#F6F4EF] mb-2">S</div>
+                <h3 className="font-bold text-[#D0CCC4] mb-1">San Francisco</h3>
+                <p className="text-sm text-[#D0CCC4]">Known for sharp strikes and luster.</p>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-5 text-center lg:col-start-2">
-                <div className="text-3xl font-bold text-slate-900 mb-2">D</div>
-                <h3 className="font-bold text-slate-600 mb-1">Denver</h3>
-                <p className="text-sm text-slate-600">1921 only. Very common.</p>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-5 text-center lg:col-start-2">
+                <div className="text-3xl font-bold text-[#F6F4EF] mb-2">D</div>
+                <h3 className="font-bold text-[#D0CCC4] mb-1">Denver</h3>
+                <p className="text-sm text-[#D0CCC4]">1921 only. Very common.</p>
               </div>
             </div>
           </div>
@@ -405,25 +405,25 @@ export default function MorganDollarValuePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {schema.mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -437,30 +437,30 @@ export default function MorganDollarValuePage() {
       <section className="py-12 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
+            <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
               Related Silver Coin Guides
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <Link
                 href="/silver-coin-values/peace-dollar"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Peace Dollar Values</h3>
-                <p className="text-sm text-slate-600">1921-1935 Peace dollars</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Peace Dollar Values</h3>
+                <p className="text-sm text-[#D0CCC4]">1921-1935 Peace dollars</p>
               </Link>
               <Link
                 href="/silver-coin-values/melt-value-calculator"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Melt Value Calculator</h3>
-                <p className="text-sm text-slate-600">Calculate silver value instantly</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Melt Value Calculator</h3>
+                <p className="text-sm text-[#D0CCC4]">Calculate silver value instantly</p>
               </Link>
               <Link
                 href="/silver-coin-values/junk-silver"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Junk Silver Guide</h3>
-                <p className="text-sm text-slate-600">Constitutional silver coins</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Junk Silver Guide</h3>
+                <p className="text-sm text-[#D0CCC4]">Constitutional silver coins</p>
               </Link>
             </div>
           </div>

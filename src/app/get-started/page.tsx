@@ -12,7 +12,7 @@ export default function GetStartedPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#000080] flex items-center justify-center">
+    <div className="min-h-screen bg-[rgba(197,149,46,0.1)] flex items-center justify-center">
       <Loader2 className="h-8 w-8 text-white animate-spin" />
     </div>
   );

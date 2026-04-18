@@ -40,14 +40,14 @@ const schemaMarkup = {
 
 export default function GoldIRACalculatorPage() {
   return (
-    <div className="min-h-screen bg-white text-slate-900">
+    <div className="min-h-screen bg-white text-[#F6F4EF]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
       <Navbar />
       <GoldIRACalculator />
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

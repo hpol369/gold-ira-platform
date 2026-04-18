@@ -49,7 +49,7 @@ export function LPSilverDemand({ className }: LPSilverDemandProps) {
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
             Why Silver Demand is Growing
           </h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
+          <p className="text-[#A8A39A] text-lg max-w-2xl mx-auto">
             Unlike gold that sits in vaults, silver powers modern life.
             Over half of all silver goes to industry each year.
           </p>
@@ -64,7 +64,7 @@ export function LPSilverDemand({ className }: LPSilverDemandProps) {
                 className={cn(
                   "relative p-5 md:p-6 rounded-xl text-center",
                   "bg-white/5 backdrop-blur-sm border border-white/10",
-                  "hover:border-sky-400/30 hover:bg-white/[0.07]",
+                  "hover:border-sky-400/30 hover:bg-[#1E2134]/[0.07]",
                   "transition-all duration-300"
                 )}
               >
@@ -74,10 +74,10 @@ export function LPSilverDemand({ className }: LPSilverDemandProps) {
                 <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                   {driver.stat}
                 </div>
-                <div className="text-sm md:text-base font-medium text-slate-300 mb-1">
+                <div className="text-sm md:text-base font-medium text-[#3F4460] mb-1">
                   {driver.label}
                 </div>
-                <div className="text-xs md:text-sm text-slate-500">
+                <div className="text-xs md:text-sm text-[#A8A39A]">
                   {driver.detail}
                 </div>
               </div>
@@ -87,7 +87,7 @@ export function LPSilverDemand({ className }: LPSilverDemandProps) {
 
         {/* Simple callout for 55+ audience */}
         <div className="mt-10 md:mt-12 text-center">
-          <p className="text-slate-400 text-base md:text-lg max-w-3xl mx-auto">
+          <p className="text-[#A8A39A] text-base md:text-lg max-w-3xl mx-auto">
             <span className="text-white font-medium">Your grandkids&apos; phones, your neighbor&apos;s solar panels, the electric cars on your street</span>
             {" "}&mdash; they all need silver. And unlike gold, silver gets used up.
           </p>

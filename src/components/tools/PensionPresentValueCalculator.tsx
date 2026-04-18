@@ -166,7 +166,7 @@ export function PensionPresentValueCalculator() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
           Pension Present Value Calculator
         </h1>
-        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
           Calculate the lump sum equivalent of your pension. Understand your true &quot;pension wealth&quot; for retirement planning, divorce settlements, or job offer comparisons.
         </p>
       </div>
@@ -175,7 +175,7 @@ export function PensionPresentValueCalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Pension Details */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
                 <DollarSign className="h-5 w-5 text-purple-700" />
@@ -185,31 +185,31 @@ export function PensionPresentValueCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Monthly Pension Amount
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={monthlyPension}
                     onChange={(e) => setMonthlyPension(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-purple-500"
                     min="0"
                     step="100"
                   />
                 </div>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-[#A8A39A] mt-1">
                   Annual: {formatFullCurrency(monthlyPension * 12)}
                 </p>
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 flex items-center gap-2">
+                <label className="text-sm text-[#A8A39A] mb-2 flex items-center gap-2">
                   COLA (Cost of Living Adjustment): {colaPension}%
                   <div className="group relative">
-                    <Info className="h-4 w-4 text-slate-500 cursor-help" />
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-slate-100 text-xs text-slate-600 rounded-lg p-3 border border-slate-700 z-10">
+                    <Info className="h-4 w-4 text-[#A8A39A] cursor-help" />
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-[#121423] text-xs text-[#D0CCC4] rounded-lg p-3 border border-slate-700 z-10">
                       Annual increase to keep pace with inflation. Government pensions often have COLA; private pensions typically don&apos;t.
                     </div>
                   </div>
@@ -223,7 +223,7 @@ export function PensionPresentValueCalculator() {
                   onChange={(e) => setColaPension(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-purple-500"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>0% (None)</span>
                   <span>2%</span>
                   <span>4%</span>
@@ -233,7 +233,7 @@ export function PensionPresentValueCalculator() {
           </div>
 
           {/* Age & Timing */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
                 <Calendar className="h-5 w-5 text-blue-600" />
@@ -243,7 +243,7 @@ export function PensionPresentValueCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Your Current Age: {currentAge}
                 </label>
                 <input
@@ -257,7 +257,7 @@ export function PensionPresentValueCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Pension Start Age: {startAge}
                 </label>
                 <input
@@ -268,7 +268,7 @@ export function PensionPresentValueCalculator() {
                   onChange={(e) => setStartAge(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-[#A8A39A] mt-1">
                   {calculations.yearsUntilStart > 0
                     ? `${calculations.yearsUntilStart} years until pension starts`
                     : "Pension starts immediately"}
@@ -276,7 +276,7 @@ export function PensionPresentValueCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Life Expectancy: {lifeExpectancy}
                 </label>
                 <input
@@ -287,7 +287,7 @@ export function PensionPresentValueCalculator() {
                   onChange={(e) => setLifeExpectancy(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-[#A8A39A] mt-1">
                   {calculations.yearsOfPayment} years of pension payments
                 </p>
               </div>
@@ -295,21 +295,21 @@ export function PensionPresentValueCalculator() {
           </div>
 
           {/* Discount Rate */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-[#B22234]/10 rounded-lg border border-[#B22234]/30">
-                <TrendingUp className="h-5 w-5 text-[#B22234]" />
+              <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+                <TrendingUp className="h-5 w-5 text-[#D4A94E]" />
               </div>
               <h3 className="text-lg font-semibold">Discount Rate</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 flex items-center gap-2">
+                <label className="text-sm text-[#A8A39A] mb-2 flex items-center gap-2">
                   Discount Rate: {discountRate}%
                   <div className="group relative">
-                    <Info className="h-4 w-4 text-slate-500 cursor-help" />
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-slate-100 text-xs text-slate-600 rounded-lg p-3 border border-slate-700 z-10">
+                    <Info className="h-4 w-4 text-[#A8A39A] cursor-help" />
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-[#121423] text-xs text-[#D0CCC4] rounded-lg p-3 border border-slate-700 z-10">
                       The rate used to discount future payments to present value. Use risk-free rate (3-4%) for conservative estimate, or expected investment return (5-7%) for comparison purposes.
                     </div>
                   </div>
@@ -323,24 +323,24 @@ export function PensionPresentValueCalculator() {
                   onChange={(e) => setDiscountRate(Number(e.target.value))}
                   className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Risk-Free (2-3%)</span>
                   <span>5%</span>
                   <span>Aggressive (8%)</span>
                 </div>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-3 text-sm">
-                <p className="text-slate-500">
-                  <strong className="text-[#B22234]">Lower rate</strong> = higher present value (pension worth more)<br />
-                  <strong className="text-[#B22234]">Higher rate</strong> = lower present value (lump sum could earn more)
+              <div className="bg-[#0C0D18] rounded-lg p-3 text-sm">
+                <p className="text-[#A8A39A]">
+                  <strong className="text-[#D4A94E]">Lower rate</strong> = higher present value (pension worth more)<br />
+                  <strong className="text-[#D4A94E]">Higher rate</strong> = lower present value (lump sum could earn more)
                 </p>
               </div>
             </div>
           </div>
 
           {/* Survivor Benefits (Collapsible) */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <button
               onClick={() => setShowAdvanced(!showAdvanced)}
               className="w-full flex items-center justify-between"
@@ -351,7 +351,7 @@ export function PensionPresentValueCalculator() {
                 </div>
                 <h3 className="text-lg font-semibold">Survivor Benefits</h3>
               </div>
-              <span className={`text-slate-500 transition-transform ${showAdvanced ? 'rotate-180' : ''}`}>
+              <span className={`text-[#A8A39A] transition-transform ${showAdvanced ? 'rotate-180' : ''}`}>
                 &#9660;
               </span>
             </button>
@@ -363,15 +363,15 @@ export function PensionPresentValueCalculator() {
                     type="checkbox"
                     checked={hasSurvivorBenefit}
                     onChange={(e) => setHasSurvivorBenefit(e.target.checked)}
-                    className="w-5 h-5 rounded border-slate-600 bg-slate-100 text-purple-500 focus:ring-purple-500"
+                    className="w-5 h-5 rounded border-slate-600 bg-[#121423] text-purple-500 focus:ring-purple-500"
                   />
-                  <span className="text-slate-600">Include survivor benefit for spouse</span>
+                  <span className="text-[#D0CCC4]">Include survivor benefit for spouse</span>
                 </label>
 
                 {hasSurvivorBenefit && (
                   <>
                     <div>
-                      <label className="text-sm text-slate-500 mb-2 block">
+                      <label className="text-sm text-[#A8A39A] mb-2 block">
                         Survivor Benefit: {survivorBenefitPercent}% of pension
                       </label>
                       <input
@@ -386,7 +386,7 @@ export function PensionPresentValueCalculator() {
                     </div>
 
                     <div>
-                      <label className="text-sm text-slate-500 mb-2 block">
+                      <label className="text-sm text-[#A8A39A] mb-2 block">
                         Spouse Current Age: {spouseAge}
                       </label>
                       <input
@@ -397,7 +397,7 @@ export function PensionPresentValueCalculator() {
                         onChange={(e) => setSpouseAge(Number(e.target.value))}
                         className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-green-500"
                       />
-                      <p className="text-xs text-slate-500 mt-1">
+                      <p className="text-xs text-[#A8A39A] mt-1">
                         Est. survivor years: {calculations.survivorYears}
                       </p>
                     </div>
@@ -413,24 +413,24 @@ export function PensionPresentValueCalculator() {
           {/* Main Result */}
           <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-8 border border-purple-500/30">
             <div className="text-center mb-6">
-              <div className="text-sm text-slate-500 mb-2">Your Pension Present Value</div>
+              <div className="text-sm text-[#A8A39A] mb-2">Your Pension Present Value</div>
               <div className="text-5xl font-bold text-purple-700">
                 {formatCurrency(calculations.totalPV)}
               </div>
-              <div className="text-sm text-slate-500 mt-2">
+              <div className="text-sm text-[#A8A39A] mt-2">
                 {formatFullCurrency(calculations.totalPV)}
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-slate-50 rounded-lg p-4 text-center">
-                <div className="text-sm text-slate-500">Pension Portion</div>
+              <div className="bg-[#0C0D18] rounded-lg p-4 text-center">
+                <div className="text-sm text-[#A8A39A]">Pension Portion</div>
                 <div className="text-xl font-bold text-purple-700">
                   {formatCurrency(calculations.pensionPV)}
                 </div>
               </div>
-              <div className="bg-slate-50 rounded-lg p-4 text-center">
-                <div className="text-sm text-slate-500">Survivor Benefit</div>
+              <div className="bg-[#0C0D18] rounded-lg p-4 text-center">
+                <div className="text-sm text-[#A8A39A]">Survivor Benefit</div>
                 <div className="text-xl font-bold text-green-600">
                   {formatCurrency(calculations.survivorPV)}
                 </div>
@@ -439,37 +439,37 @@ export function PensionPresentValueCalculator() {
           </div>
 
           {/* Comparison Metrics */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <Scale className="h-5 w-5 text-[#B22234]" />
+              <Scale className="h-5 w-5 text-[#D4A94E]" />
               Equivalent Values
             </h3>
 
             <div className="space-y-4">
-              <div className="flex justify-between items-center pb-4 border-b border-slate-200">
+              <div className="flex justify-between items-center pb-4 border-b border-[#2A2D42]">
                 <div>
-                  <span className="text-slate-500">4% Rule Equivalent</span>
-                  <div className="text-xs text-slate-500">Lump sum to match pension income</div>
+                  <span className="text-[#A8A39A]">4% Rule Equivalent</span>
+                  <div className="text-xs text-[#A8A39A]">Lump sum to match pension income</div>
                 </div>
-                <span className="text-xl font-bold text-[#B22234]">
+                <span className="text-xl font-bold text-[#D4A94E]">
                   {formatCurrency(calculations.equivalentLumpSum4Percent)}
                 </span>
               </div>
 
-              <div className="flex justify-between items-center pb-4 border-b border-slate-200">
+              <div className="flex justify-between items-center pb-4 border-b border-[#2A2D42]">
                 <div>
-                  <span className="text-slate-500">Total Nominal Payments</span>
-                  <div className="text-xs text-slate-500">What you&apos;ll actually receive</div>
+                  <span className="text-[#A8A39A]">Total Nominal Payments</span>
+                  <div className="text-xs text-[#A8A39A]">What you&apos;ll actually receive</div>
                 </div>
                 <span className="text-xl font-bold text-blue-600">
                   {formatCurrency(calculations.totalNominalPayments)}
                 </span>
               </div>
 
-              <div className="flex justify-between items-center pb-4 border-b border-slate-200">
+              <div className="flex justify-between items-center pb-4 border-b border-[#2A2D42]">
                 <div>
-                  <span className="text-slate-500">PV at Start Age</span>
-                  <div className="text-xs text-slate-500">If invested until pension begins</div>
+                  <span className="text-[#A8A39A]">PV at Start Age</span>
+                  <div className="text-xs text-[#A8A39A]">If invested until pension begins</div>
                 </div>
                 <span className="text-xl font-bold text-green-600">
                   {formatCurrency(calculations.pvAtStartAge)}
@@ -478,8 +478,8 @@ export function PensionPresentValueCalculator() {
 
               <div className="flex justify-between items-center">
                 <div>
-                  <span className="text-slate-500">Monthly Income from PV</span>
-                  <div className="text-xs text-slate-500">At {discountRate}% return</div>
+                  <span className="text-[#A8A39A]">Monthly Income from PV</span>
+                  <div className="text-xs text-[#A8A39A]">At {discountRate}% return</div>
                 </div>
                 <span className="text-xl font-bold text-purple-700">
                   {formatFullCurrency(calculations.monthlyFromPV)}/mo
@@ -489,20 +489,20 @@ export function PensionPresentValueCalculator() {
           </div>
 
           {/* Pension Wealth Context */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
               <Target className="h-5 w-5 text-purple-700" />
               Pension as Part of Net Worth
             </h3>
 
-            <p className="text-slate-600 text-sm mb-4">
+            <p className="text-[#D0CCC4] text-sm mb-4">
               Your pension is a hidden asset often left off balance sheets. Here&apos;s how it compares:
             </p>
 
             <div className="space-y-3">
               {[100000, 250000, 500000, 1000000].map((netWorth) => (
                 <div key={netWorth} className="flex justify-between items-center">
-                  <span className="text-slate-500">{formatCurrency(netWorth)} net worth</span>
+                  <span className="text-[#A8A39A]">{formatCurrency(netWorth)} net worth</span>
                   <span className="font-semibold text-purple-700">
                     +{Math.round((calculations.totalPV / netWorth) * 100)}% pension wealth
                   </span>
@@ -510,15 +510,15 @@ export function PensionPresentValueCalculator() {
               ))}
             </div>
 
-            <div className="mt-4 pt-4 border-t border-slate-200 bg-purple-500/10 rounded-lg p-3">
-              <p className="text-sm text-slate-600">
+            <div className="mt-4 pt-4 border-t border-[#2A2D42] bg-purple-500/10 rounded-lg p-3">
+              <p className="text-sm text-[#D0CCC4]">
                 <strong className="text-purple-700">Important:</strong> For divorce settlements or estate planning, pension present value should be included in total marital assets.
               </p>
             </div>
           </div>
 
           {/* Year-by-Year Breakdown */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
               <Calendar className="h-5 w-5 text-blue-600" />
               Payment Breakdown (First 10 Years)
@@ -527,18 +527,18 @@ export function PensionPresentValueCalculator() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-slate-200">
-                    <th className="px-2 py-2 text-left text-slate-500">Year</th>
-                    <th className="px-2 py-2 text-left text-slate-500">Age</th>
-                    <th className="px-2 py-2 text-right text-slate-500">Payment</th>
-                    <th className="px-2 py-2 text-right text-slate-500">PV</th>
+                  <tr className="border-b border-[#2A2D42]">
+                    <th className="px-2 py-2 text-left text-[#A8A39A]">Year</th>
+                    <th className="px-2 py-2 text-left text-[#A8A39A]">Age</th>
+                    <th className="px-2 py-2 text-right text-[#A8A39A]">Payment</th>
+                    <th className="px-2 py-2 text-right text-[#A8A39A]">PV</th>
                   </tr>
                 </thead>
                 <tbody>
                   {calculations.yearlyBreakdown.slice(0, 10).map((row) => (
-                    <tr key={row.year} className="border-b border-slate-200">
-                      <td className="px-2 py-2 text-slate-500">{row.year}</td>
-                      <td className="px-2 py-2text-slate-900">{row.age}</td>
+                    <tr key={row.year} className="border-b border-[#2A2D42]">
+                      <td className="px-2 py-2 text-[#A8A39A]">{row.year}</td>
+                      <td className="px-2 py-2text-[#F6F4EF]">{row.age}</td>
                       <td className="px-2 py-2 text-right text-green-600">
                         {formatCurrency(row.payment)}
                       </td>
@@ -559,32 +559,32 @@ export function PensionPresentValueCalculator() {
         <h2 className="text-2xl font-bold text-center mb-8">When You Need Pension Present Value</h2>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4">
               <Scale className="h-6 w-6 text-purple-700" />
             </div>
-            <h3 className="text-slate-900 font-semibold mb-2">Divorce Settlements</h3>
-            <p className="text-slate-600 text-sm">
+            <h3 className="text-[#F6F4EF] font-semibold mb-2">Divorce Settlements</h3>
+            <p className="text-[#D0CCC4] text-sm">
               Pensions are marital property. The present value determines fair division during divorce proceedings.
             </p>
           </div>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
               <Target className="h-6 w-6 text-blue-600" />
             </div>
-            <h3 className="text-slate-900 font-semibold mb-2">Retirement Planning</h3>
-            <p className="text-slate-600 text-sm">
+            <h3 className="text-[#F6F4EF] font-semibold mb-2">Retirement Planning</h3>
+            <p className="text-[#D0CCC4] text-sm">
               Include pension wealth in your net worth to accurately assess retirement readiness.
             </p>
           </div>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4">
               <DollarSign className="h-6 w-6 text-green-600" />
             </div>
-            <h3 className="text-slate-900 font-semibold mb-2">Job Offer Comparison</h3>
-            <p className="text-slate-600 text-sm">
+            <h3 className="text-[#F6F4EF] font-semibold mb-2">Job Offer Comparison</h3>
+            <p className="text-[#D0CCC4] text-sm">
               Compare total compensation including pension value when evaluating job offers.
             </p>
           </div>
@@ -593,20 +593,20 @@ export function PensionPresentValueCalculator() {
 
       {/* Gold Bridge Section */}
       <div className="max-w-4xl mx-auto mt-12">
-        <div className="bg-[#B22234]/5 backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
+        <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
           <div className="flex items-center gap-3 mb-6">
-            <Info className="h-6 w-6 text-[#B22234]" />
+            <Info className="h-6 w-6 text-[#D4A94E]" />
             <h2 className="text-2xl font-bold">Protecting Your Pension Wealth</h2>
           </div>
 
-          <p className="text-slate-500 mb-6">
+          <p className="text-[#A8A39A] mb-6">
             Your pension has significant value - {formatFullCurrency(calculations.totalPV)}. But if it lacks COLA, inflation will erode its purchasing power. Consider diversifying with a Gold IRA to protect the wealth your pension represents.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Pension Risk</div>
-              <ul className="space-y-2 text-sm text-slate-500">
+              <div className="text-[#D4A94E] font-semibold mb-2">Pension Risk</div>
+              <ul className="space-y-2 text-sm text-[#A8A39A]">
                 <li className="flex gap-2">
                   <ArrowRight className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
                   <span>No COLA means declining real income</span>
@@ -623,8 +623,8 @@ export function PensionPresentValueCalculator() {
             </div>
 
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Gold IRA Protection</div>
-              <ul className="space-y-2 text-sm text-slate-500">
+              <div className="text-[#D4A94E] font-semibold mb-2">Gold IRA Protection</div>
+              <ul className="space-y-2 text-sm text-[#A8A39A]">
                 <li className="flex gap-2">
                   <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Physical asset hedges inflation</span>
@@ -655,19 +655,19 @@ export function PensionPresentValueCalculator() {
         <div className="prose max-w-none">
           <h2 className="text-3xl font-bold mb-6">Understanding Pension Present Value</h2>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42] mb-6">
             <h3 className="text-xl font-semibold mb-4">The NPV Formula</h3>
-            <div className="bg-slate-100 rounded-lg p-4 font-mono text-sm mb-4 overflow-x-auto">
+            <div className="bg-[#121423] rounded-lg p-4 font-mono text-sm mb-4 overflow-x-auto">
               PV = Sum of [Payment / (1 + discount rate)^n]
             </div>
-            <p className="text-slate-500">
+            <p className="text-[#A8A39A]">
               Present value discounts future payments to today&apos;s dollars. A payment 10 years from now is worth less than the same payment today because money has time value - you could invest it and earn returns.
             </p>
           </div>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-xl font-semibold mb-4">Choosing the Right Discount Rate</h3>
-            <ul className="space-y-2 text-slate-500">
+            <ul className="space-y-2 text-[#A8A39A]">
               <li className="flex gap-2">
                 <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                 <span><strong>Risk-free rate (3-4%):</strong> Most conservative; assumes you&apos;d invest in Treasury bonds</span>

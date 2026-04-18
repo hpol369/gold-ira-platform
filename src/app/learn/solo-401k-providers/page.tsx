@@ -213,7 +213,7 @@ export default function Solo401kProvidersPage() {
         <main className="min-h-screen bg-white">
             {/* Hero Section */}
             <section className="relative py-16 md:py-24 overflow-hidden">
-                <div className="absolute inset-0 bg-slate-50"></div>
+                <div className="absolute inset-0 bg-[#0C0D18]"></div>
                 <div className="absolute top-0 right-0 w-1/2 h-full hidden"></div>
 
                 <Container className="relative z-10">
@@ -223,34 +223,34 @@ export default function Solo401kProvidersPage() {
                             2026 Provider Comparison
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6 leading-tight">
                             Best Solo 401k{" "}
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">
                                 Providers
                             </span>
                         </h1>
 
-                        <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl">
+                        <p className="text-xl text-[#D0CCC4] mb-8 leading-relaxed max-w-3xl">
                             You went independent for a reason—more control over your work, your schedule, your life. Why hand that control back to Wall Street for your retirement? Here&apos;s how to pick a Solo 401k provider that lets you decide where your hard-earned money goes.
                         </p>
 
                         {/* Quick Decision */}
                         <div className="grid sm:grid-cols-2 gap-4">
-                            <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4">
                                 <div className="flex items-center gap-2 text-green-700 mb-2">
                                     <DollarSign className="w-5 h-5" />
                                     <span className="font-semibold">Want $0 Fees?</span>
                                 </div>
-                                <p className="text-slate-500 text-sm">
+                                <p className="text-[#A8A39A] text-sm">
                                     Choose Fidelity or Schwab for zero setup and annual fees with commission-free trading.
                                 </p>
                             </div>
-                            <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4">
                                 <div className="flex items-center gap-2 text-purple-700 mb-2">
                                     <Coins className="w-5 h-5" />
                                     <span className="font-semibold">Want Alt Investments?</span>
                                 </div>
-                                <p className="text-slate-500 text-sm">
+                                <p className="text-[#A8A39A] text-sm">
                                     Choose Rocket Dollar or MySolo401k for crypto, real estate, and checkbook control.
                                 </p>
                             </div>
@@ -265,11 +265,11 @@ export default function Solo401kProvidersPage() {
                     <div className="max-w-5xl mx-auto">
                         <div className="flex items-center gap-3 mb-4">
                             <Building2 className="w-8 h-8 text-blue-700" />
-                            <h2 className="text-3xl font-serif font-bold text-[#000080]">
+                            <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                 Traditional Brokerage Providers
                             </h2>
                         </div>
-                        <p className="text-slate-500 mb-8 max-w-2xl">
+                        <p className="text-[#A8A39A] mb-8 max-w-2xl">
                             Best for most self-employed investors. Zero fees, easy setup, traditional stocks, bonds, and mutual funds.
                         </p>
 
@@ -283,16 +283,16 @@ export default function Solo401kProvidersPage() {
             </section>
 
             {/* Self-Directed Providers */}
-            <section className="py-16 bg-slate-100">
+            <section className="py-16 bg-[#121423]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="flex items-center gap-3 mb-4">
                             <Shield className="w-8 h-8 text-purple-700" />
-                            <h2 className="text-3xl font-serif font-bold text-[#000080]">
+                            <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                 Self-Directed Solo 401k Providers
                             </h2>
                         </div>
-                        <p className="text-slate-500 mb-8 max-w-2xl">
+                        <p className="text-[#A8A39A] mb-8 max-w-2xl">
                             For investors wanting checkbook control and alternative investments like real estate, crypto, private equity, and more.
                         </p>
 
@@ -309,59 +309,59 @@ export default function Solo401kProvidersPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-5xl mx-auto">
-                        <h2 className="text-3xl font-serif font-bold text-[#000080] mb-4 text-center">
+                        <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-4 text-center">
                             Quick Feature Comparison
                         </h2>
-                        <p className="text-slate-500 text-center mb-8 max-w-2xl mx-auto">
+                        <p className="text-[#A8A39A] text-center mb-8 max-w-2xl mx-auto">
                             Compare key features across all Solo 401k providers at a glance.
                         </p>
 
-                        <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
+                        <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl overflow-hidden">
                             <div className="overflow-x-auto">
                                 <table className="w-full text-sm">
                                     <thead>
-                                        <tr className="border-b border-slate-200 bg-slate-100">
-                                            <th className="text-left p-4 text-slate-500 font-medium">Provider</th>
-                                            <th className="text-center p-4 text-slate-500 font-medium">Setup Fee</th>
-                                            <th className="text-center p-4 text-slate-500 font-medium">Annual Fee</th>
-                                            <th className="text-center p-4 text-slate-500 font-medium">Roth</th>
-                                            <th className="text-center p-4 text-slate-500 font-medium">Loans</th>
-                                            <th className="text-center p-4 text-slate-500 font-medium">Checkbook</th>
-                                            <th className="text-center p-4 text-slate-500 font-medium">Alt Invest</th>
+                                        <tr className="border-b border-[#2A2D42] bg-[#121423]">
+                                            <th className="text-left p-4 text-[#A8A39A] font-medium">Provider</th>
+                                            <th className="text-center p-4 text-[#A8A39A] font-medium">Setup Fee</th>
+                                            <th className="text-center p-4 text-[#A8A39A] font-medium">Annual Fee</th>
+                                            <th className="text-center p-4 text-[#A8A39A] font-medium">Roth</th>
+                                            <th className="text-center p-4 text-[#A8A39A] font-medium">Loans</th>
+                                            <th className="text-center p-4 text-[#A8A39A] font-medium">Checkbook</th>
+                                            <th className="text-center p-4 text-[#A8A39A] font-medium">Alt Invest</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {providers.map((provider, idx) => (
-                                            <tr key={idx} className={`border-b border-slate-200 ${idx % 2 === 0 ? "" : "bg-slate-100"}`}>
-                                                <td className="p-4 text-slate-900 font-medium">{provider.name}</td>
-                                                <td className="p-4 text-center text-slate-600">{provider.setupFee}</td>
-                                                <td className="p-4 text-center text-slate-600">{provider.annualFee}</td>
+                                            <tr key={idx} className={`border-b border-[#2A2D42] ${idx % 2 === 0 ? "" : "bg-[#121423]"}`}>
+                                                <td className="p-4 text-[#F6F4EF] font-medium">{provider.name}</td>
+                                                <td className="p-4 text-center text-[#D0CCC4]">{provider.setupFee}</td>
+                                                <td className="p-4 text-center text-[#D0CCC4]">{provider.annualFee}</td>
                                                 <td className="p-4 text-center">
                                                     {provider.rothOption ? (
                                                         <CheckCircle className="w-5 h-5 text-green-700 mx-auto" />
                                                     ) : (
-                                                        <span className="text-slate-500">—</span>
+                                                        <span className="text-[#A8A39A]">—</span>
                                                     )}
                                                 </td>
                                                 <td className="p-4 text-center">
                                                     {provider.loanOption ? (
                                                         <CheckCircle className="w-5 h-5 text-green-700 mx-auto" />
                                                     ) : (
-                                                        <span className="text-slate-500">—</span>
+                                                        <span className="text-[#A8A39A]">—</span>
                                                     )}
                                                 </td>
                                                 <td className="p-4 text-center">
                                                     {provider.checkbookControl ? (
                                                         <CheckCircle className="w-5 h-5 text-green-700 mx-auto" />
                                                     ) : (
-                                                        <span className="text-slate-500">—</span>
+                                                        <span className="text-[#A8A39A]">—</span>
                                                     )}
                                                 </td>
                                                 <td className="p-4 text-center">
                                                     {provider.altInvestments ? (
                                                         <CheckCircle className="w-5 h-5 text-green-700 mx-auto" />
                                                     ) : (
-                                                        <span className="text-slate-500">—</span>
+                                                        <span className="text-[#A8A39A]">—</span>
                                                     )}
                                                 </td>
                                             </tr>
@@ -375,20 +375,20 @@ export default function Solo401kProvidersPage() {
             </section>
 
             {/* Choosing the Right Provider */}
-            <section className="py-16 bg-slate-100">
+            <section className="py-16 bg-[#121423]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-serif font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
                             How to Choose the Right Provider
                         </h2>
 
                         <div className="grid md:grid-cols-2 gap-6">
-                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-6">
                                 <div className="w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center mb-4">
                                     <DollarSign className="w-6 h-6 text-green-700" />
                                 </div>
-                                <h3 className="text-xl font-bold text-[#000080] mb-3">Choose Free Brokerage If...</h3>
-                                <ul className="space-y-2 text-slate-500">
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Choose Free Brokerage If...</h3>
+                                <ul className="space-y-2 text-[#A8A39A]">
                                     <li className="flex items-start gap-2">
                                         <CheckCircle className="w-4 h-4 text-green-700 mt-1 flex-shrink-0" />
                                         <span>You want to invest in stocks, bonds, ETFs, mutual funds</span>
@@ -408,12 +408,12 @@ export default function Solo401kProvidersPage() {
                                 </ul>
                             </div>
 
-                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-6">
                                 <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-4">
                                     <Coins className="w-6 h-6 text-purple-700" />
                                 </div>
-                                <h3 className="text-xl font-bold text-[#000080] mb-3">Choose Self-Directed If...</h3>
-                                <ul className="space-y-2 text-slate-500">
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Choose Self-Directed If...</h3>
+                                <ul className="space-y-2 text-[#A8A39A]">
                                     <li className="flex items-start gap-2">
                                         <CheckCircle className="w-4 h-4 text-purple-700 mt-1 flex-shrink-0" />
                                         <span>You want to invest in crypto, real estate, or startups</span>
@@ -441,46 +441,46 @@ export default function Solo401kProvidersPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-serif font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
                             Our Top Recommendations
                         </h2>
 
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="bg-gradient-to-br from-green-500/10 to-green-600/5 backdrop-blur-sm border border-green-500/20 rounded-2xl p-6 text-center">
                                 <div className="text-sm text-green-700 font-medium mb-2">Best Overall (Free)</div>
-                                <div className="text-2xl font-bold text-[#000080] mb-2">Fidelity</div>
+                                <div className="text-2xl font-bold text-[#F6F4EF] mb-2">Fidelity</div>
                                 <div className="flex justify-center gap-1 mb-4">
                                     {[1, 2, 3, 4, 5].map(i => (
-                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-slate-600"}`} />
+                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-[#D0CCC4]"}`} />
                                     ))}
                                 </div>
-                                <p className="text-slate-500 text-sm">
+                                <p className="text-[#A8A39A] text-sm">
                                     Zero fees, great research tools, and commission-free trading for most investors.
                                 </p>
                             </div>
 
                             <div className="bg-gradient-to-br from-purple-500/10 to-purple-600/5 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-6 text-center">
                                 <div className="text-sm text-purple-700 font-medium mb-2">Best Self-Directed</div>
-                                <div className="text-2xl font-bold text-[#000080] mb-2">Rocket Dollar</div>
+                                <div className="text-2xl font-bold text-[#F6F4EF] mb-2">Rocket Dollar</div>
                                 <div className="flex justify-center gap-1 mb-4">
                                     {[1, 2, 3, 4, 5].map(i => (
-                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-slate-600"}`} />
+                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-[#D0CCC4]"}`} />
                                     ))}
                                 </div>
-                                <p className="text-slate-500 text-sm">
+                                <p className="text-[#A8A39A] text-sm">
                                     Modern platform, checkbook control, and great for crypto and real estate.
                                 </p>
                             </div>
 
                             <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/5 backdrop-blur-sm border border-blue-500/20 rounded-2xl p-6 text-center">
                                 <div className="text-sm text-blue-700 font-medium mb-2">Best for Index Funds</div>
-                                <div className="text-2xl font-bold text-[#000080] mb-2">Vanguard</div>
+                                <div className="text-2xl font-bold text-[#F6F4EF] mb-2">Vanguard</div>
                                 <div className="flex justify-center gap-1 mb-4">
                                     {[1, 2, 3, 4, 5].map(i => (
-                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-slate-600"}`} />
+                                        <Star key={i} className={`w-4 h-4 ${i <= 5 ? "text-amber-700 fill-amber-400" : "text-[#D0CCC4]"}`} />
                                     ))}
                                 </div>
-                                <p className="text-slate-500 text-sm">
+                                <p className="text-[#A8A39A] text-sm">
                                     Industry-low expense ratios for long-term passive investors.
                                 </p>
                             </div>
@@ -490,18 +490,18 @@ export default function Solo401kProvidersPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#000080] mb-4">
+                        <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#F6F4EF] mb-4">
                             Ready to Open Your Solo 401k?
                         </h2>
-                        <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+                        <p className="text-xl text-[#D0CCC4] mb-8 max-w-2xl mx-auto">
                             Start maximizing your self-employed retirement savings with up to $70,000 in annual contributions.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <LeadCaptureButton variant="default" source="solo-providers" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                            <LeadCaptureButton variant="default" source="solo-providers" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
                                 Get Free Solo 401k Guide <ArrowRight className="ml-2 w-5 h-5" />
                             </LeadCaptureButton>
                             <Link href="/learn/solo-401k-contribution-limits">
@@ -564,17 +564,17 @@ export default function Solo401kProvidersPage() {
 
 function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) {
     return (
-        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 hover:border-slate-300 transition-colors">
+        <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-6 hover:border-[#3F4460] transition-colors">
             <div className="flex flex-col md:flex-row md:items-start gap-6">
                 {/* Rank & Basic Info */}
                 <div className="flex items-start gap-4">
                     <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg ${
-                        rank === 1 ? "bg-amber-500/20 text-amber-700" : "bg-slate-200 text-slate-500"
+                        rank === 1 ? "bg-amber-500/20 text-amber-700" : "bg-slate-200 text-[#A8A39A]"
                     }`}>
                         {rank}
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold text-[#000080]">{provider.name}</h3>
+                        <h3 className="text-xl font-bold text-[#F6F4EF]">{provider.name}</h3>
                         <div className="flex items-center gap-2 mt-1">
                             <div className="flex items-center gap-1">
                                 {[1, 2, 3, 4, 5].map(i => (
@@ -585,12 +585,12 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
                                                 ? "text-amber-700 fill-amber-400"
                                                 : i <= provider.rating
                                                 ? "text-amber-700 fill-amber-400/50"
-                                                : "text-slate-600"
+                                                : "text-[#D0CCC4]"
                                         }`}
                                     />
                                 ))}
                             </div>
-                            <span className="text-sm text-slate-500">{provider.rating}/5</span>
+                            <span className="text-sm text-[#A8A39A]">{provider.rating}/5</span>
                             <span className={`text-xs px-2 py-0.5 rounded-full ${
                                 provider.type === "self-directed"
                                     ? "bg-purple-500/20 text-purple-700"
@@ -599,21 +599,21 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
                                 {provider.type === "self-directed" ? "Self-Directed" : "Brokerage"}
                             </span>
                         </div>
-                        <p className="text-sm text-slate-500 mt-2">Best for: {provider.bestFor}</p>
+                        <p className="text-sm text-[#A8A39A] mt-2">Best for: {provider.bestFor}</p>
                     </div>
                 </div>
 
                 {/* Fees */}
                 <div className="flex gap-4 md:ml-auto text-sm">
                     <div className="text-center">
-                        <div className="text-slate-500 text-xs mb-1">Setup</div>
-                        <div className={`font-semibold ${provider.setupFee === "$0" ? "text-green-700" : "text-slate-900"}`}>
+                        <div className="text-[#A8A39A] text-xs mb-1">Setup</div>
+                        <div className={`font-semibold ${provider.setupFee === "$0" ? "text-green-700" : "text-[#F6F4EF]"}`}>
                             {provider.setupFee}
                         </div>
                     </div>
                     <div className="text-center">
-                        <div className="text-slate-500 text-xs mb-1">Annual</div>
-                        <div className={`font-semibold ${provider.annualFee === "$0" ? "text-green-700" : "text-slate-900"}`}>
+                        <div className="text-[#A8A39A] text-xs mb-1">Annual</div>
+                        <div className={`font-semibold ${provider.annualFee === "$0" ? "text-green-700" : "text-[#F6F4EF]"}`}>
                             {provider.annualFee}
                         </div>
                     </div>
@@ -621,7 +621,7 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
             </div>
 
             {/* Features */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 pt-6 border-t border-slate-200">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6 pt-6 border-t border-[#2A2D42]">
                 <FeatureBadge label="Roth Option" enabled={provider.rothOption} />
                 <FeatureBadge label="Loan Provision" enabled={provider.loanOption} />
                 <FeatureBadge label="Checkbook Control" enabled={provider.checkbookControl} />
@@ -629,12 +629,12 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
             </div>
 
             {/* Pros/Cons */}
-            <div className="grid md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-slate-200">
+            <div className="grid md:grid-cols-2 gap-6 mt-6 pt-6 border-t border-[#2A2D42]">
                 <div>
                     <div className="text-sm font-medium text-green-700 mb-2">Pros</div>
                     <ul className="space-y-1">
                         {provider.pros.map((pro, idx) => (
-                            <li key={idx} className="flex items-start gap-2 text-sm text-slate-500">
+                            <li key={idx} className="flex items-start gap-2 text-sm text-[#A8A39A]">
                                 <CheckCircle className="w-4 h-4 text-green-700 mt-0.5 flex-shrink-0" />
                                 {pro}
                             </li>
@@ -645,7 +645,7 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
                     <div className="text-sm font-medium text-red-700 mb-2">Cons</div>
                     <ul className="space-y-1">
                         {provider.cons.map((con, idx) => (
-                            <li key={idx} className="flex items-start gap-2 text-sm text-slate-500">
+                            <li key={idx} className="flex items-start gap-2 text-sm text-[#A8A39A]">
                                 <span className="text-red-700 mt-0.5 flex-shrink-0">•</span>
                                 {con}
                             </li>
@@ -659,11 +659,11 @@ function ProviderCard({ provider, rank }: { provider: Provider; rank: number }) 
 
 function FeatureBadge({ label, enabled }: { label: string; enabled: boolean }) {
     return (
-        <div className={`flex items-center gap-2 text-sm ${enabled ? "text-slate-600" : "text-slate-500"}`}>
+        <div className={`flex items-center gap-2 text-sm ${enabled ? "text-[#D0CCC4]" : "text-[#A8A39A]"}`}>
             {enabled ? (
                 <CheckCircle className="w-4 h-4 text-green-700" />
             ) : (
-                <span className="w-4 h-4 flex items-center justify-center text-slate-600">—</span>
+                <span className="w-4 h-4 flex items-center justify-center text-[#D0CCC4]">—</span>
             )}
             {label}
         </div>

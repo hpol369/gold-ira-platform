@@ -30,7 +30,7 @@ export function WhatSection() {
   };
 
   return (
-    <section className="py-20 md:py-28 bg-white border-b border-slate-200">
+    <section className="py-20 md:py-28 bg-[#161828] border-b border-[#2A2D42]">
       <Container>
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -41,13 +41,13 @@ export function WhatSection() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="inline-block px-4 py-1.5 bg-[#000080]/10 border border-[#000080]/20 rounded-full text-[#000080] text-sm font-bold mb-6">
+            <span className="inline-block px-4 py-1.5 bg-[rgba(197,149,46,0.08)] border border-[#000080]/20 rounded-full text-[#F6F4EF] text-sm font-bold mb-6">
               What We Offer
             </span>
-            <h2 className="text-3xl md:text-5xl font-serif font-black text-[#000080] mb-6">
+            <h2 className="text-3xl md:text-5xl font-serif font-black text-[#F6F4EF] mb-6">
               Everything You Need to Make an Informed Decision
             </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto font-medium">
               Research. Compare. Decide. We provide the tools and information—you stay in control.
             </p>
           </motion.div>
@@ -62,18 +62,18 @@ export function WhatSection() {
           >
             <Link
               href="/reviews"
-              className="group bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-[#000080]/30 hover:shadow-lg transition-all"
+              className="group bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.55)]/30 hover:shadow-lg transition-all"
             >
               <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center mb-4 group-hover:bg-amber-200 transition-colors">
                 <Star className="h-6 w-6 text-amber-700" />
               </div>
-              <h3 className="font-bold text-lg text-[#000080] mb-2 group-hover:text-blue-800 transition-colors">
+              <h3 className="font-bold text-lg text-[#F6F4EF] mb-2 group-hover:text-blue-800 transition-colors">
                 Company Reviews
               </h3>
-              <p className="text-sm text-slate-600 mb-4 font-medium">
+              <p className="text-sm text-[#D0CCC4] mb-4 font-medium">
                 In-depth reviews of 15+ Gold IRA companies with ratings, fees, and pros/cons.
               </p>
-              <span className="text-[#B22234] font-bold text-sm flex items-center gap-1">
+              <span className="text-[#D4A94E] font-bold text-sm flex items-center gap-1">
                 Read Reviews
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -81,18 +81,18 @@ export function WhatSection() {
 
             <Link
               href="/compare"
-              className="group bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-[#000080]/30 hover:shadow-lg transition-all"
+              className="group bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.55)]/30 hover:shadow-lg transition-all"
             >
               <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
                 <Scale className="h-6 w-6 text-blue-700" />
               </div>
-              <h3 className="font-bold text-lg text-[#000080] mb-2 group-hover:text-blue-800 transition-colors">
+              <h3 className="font-bold text-lg text-[#F6F4EF] mb-2 group-hover:text-blue-800 transition-colors">
                 Company Comparisons
               </h3>
-              <p className="text-sm text-slate-600 mb-4 font-medium">
+              <p className="text-sm text-[#D0CCC4] mb-4 font-medium">
                 Side-by-side comparisons to help you choose between top providers.
               </p>
-              <span className="text-[#B22234] font-bold text-sm flex items-center gap-1">
+              <span className="text-[#D4A94E] font-bold text-sm flex items-center gap-1">
                 Compare Companies
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -100,18 +100,18 @@ export function WhatSection() {
 
             <Link
               href="/rollover"
-              className="group bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-[#000080]/30 hover:shadow-lg transition-all"
+              className="group bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.55)]/30 hover:shadow-lg transition-all"
             >
               <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
                 <FileText className="h-6 w-6 text-green-700" />
               </div>
-              <h3 className="font-bold text-lg text-[#000080] mb-2 group-hover:text-blue-800 transition-colors">
+              <h3 className="font-bold text-lg text-[#F6F4EF] mb-2 group-hover:text-blue-800 transition-colors">
                 Rollover Guides
               </h3>
-              <p className="text-sm text-slate-600 mb-4 font-medium">
+              <p className="text-sm text-[#D0CCC4] mb-4 font-medium">
                 Step-by-step guides for Fidelity, Vanguard, Schwab, TSP, and more.
               </p>
-              <span className="text-[#B22234] font-bold text-sm flex items-center gap-1">
+              <span className="text-[#D4A94E] font-bold text-sm flex items-center gap-1">
                 Start Rollover
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -119,18 +119,18 @@ export function WhatSection() {
 
             <Link
               href="/why-gold"
-              className="group bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-[#000080]/30 hover:shadow-lg transition-all"
+              className="group bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.55)]/30 hover:shadow-lg transition-all"
             >
               <div className="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center mb-4 group-hover:bg-purple-200 transition-colors">
                 <Shield className="h-6 w-6 text-purple-700" />
               </div>
-              <h3 className="font-bold text-lg text-[#000080] mb-2 group-hover:text-blue-800 transition-colors">
+              <h3 className="font-bold text-lg text-[#F6F4EF] mb-2 group-hover:text-blue-800 transition-colors">
                 Why Gold
               </h3>
-              <p className="text-sm text-slate-600 mb-4 font-medium">
+              <p className="text-sm text-[#D0CCC4] mb-4 font-medium">
                 Research on gold as inflation protection and portfolio diversification.
               </p>
-              <span className="text-[#B22234] font-bold text-sm flex items-center gap-1">
+              <span className="text-[#D4A94E] font-bold text-sm flex items-center gap-1">
                 Learn More
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </span>
@@ -144,7 +144,7 @@ export function WhatSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
             id="featured-partner"
-            className="bg-[#000080] rounded-3xl overflow-hidden shadow-2xl relative"
+            className="bg-[rgba(197,149,46,0.1)] rounded-3xl overflow-hidden shadow-2xl relative"
           >
             {/* Texture */}
             <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 pointer-events-none"></div>
@@ -194,7 +194,7 @@ export function WhatSection() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button
                       size="lg"
-                      className="bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold shadow-lg text-lg px-8"
+                      className="bg-[#DC2626] hover:bg-[#991B1B] text-white font-bold shadow-lg text-lg px-8"
                       onClick={handleCtaClick}
                     >
                       <span className="flex items-center gap-2">
@@ -205,7 +205,7 @@ export function WhatSection() {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="border-white/20 text-white hover:bg-white/10 font-bold text-lg"
+                      className="border-white/20 text-[#F6F4EF] hover:bg-[#1E2134]/10 font-bold text-lg"
                       asChild
                     >
                       <Link href="/reviews/augusta-precious-metals">
@@ -217,14 +217,14 @@ export function WhatSection() {
 
                 {/* Right - Trust Badges */}
                 <div className="lg:w-2/5">
-                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-colors">
+                  <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-[#1E2134]/15 transition-colors">
                     <h4 className="text-white font-bold mb-6 text-center text-xl">Trust & Ratings</h4>
 
                     <div className="space-y-4">
                       <div className="flex items-center justify-between p-4 bg-black/20 rounded-xl">
                         <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                            <span className="text-xs font-black text-[#000080]">BBB</span>
+                          <div className="w-10 h-10 bg-[#161828] rounded-lg flex items-center justify-center">
+                            <span className="text-xs font-black text-[#F6F4EF]">BBB</span>
                           </div>
                           <span className="text-white font-bold">BBB Rating</span>
                         </div>

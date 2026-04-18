@@ -175,26 +175,26 @@ export default function SilverIraHubPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="py-16 md:py-24 bg-slate-50 relative overflow-hidden">
+            <section className="py-16 md:py-24 bg-[#0C0D18] relative overflow-hidden">
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
                             <Coins className="h-4 w-4" />
                             SILVER IRA RESOURCE CENTER
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-bold text-[#000080] mb-6">
+                        <h1 className="text-4xl md:text-6xl font-bold text-[#F6F4EF] mb-6">
                             Silver IRA Hub
                         </h1>
-                        <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
+                        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto mb-8">
                             Your complete resource for Silver IRA investing. Compare companies, understand IRS rules, learn about approved coins, and start protecting your retirement with physical silver.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
+                            <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white" size="lg" asChild>
                                 <Link href="/quiz">
                                     Find Your Best Silver IRA Company <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
-                            <Button variant="outline" size="lg" className="border-slate-300 text-slate-700 hover:bg-slate-100" asChild>
+                            <Button variant="outline" size="lg" className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]" asChild>
                                 <Link href="/silver-ira/best-company">
                                     See Our #1 Pick
                                 </Link>
@@ -208,8 +208,8 @@ export default function SilverIraHubPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-4">Why Consider Silver for Your IRA?</h2>
-                        <p className="text-slate-600 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-4">Why Consider Silver for Your IRA?</h2>
+                        <p className="text-[#D0CCC4] max-w-2xl mx-auto">
                             Silver offers unique advantages that make it an attractive addition to any precious metals portfolio.
                         </p>
                     </div>
@@ -217,13 +217,13 @@ export default function SilverIraHubPage() {
                         {whySilverReasons.map((reason, index) => (
                             <div
                                 key={index}
-                                className="bg-slate-50 border border-slate-200 rounded-xl p-6"
+                                className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6"
                             >
-                                <div className="w-10 h-10 bg-[#B22234]/10 rounded-lg flex items-center justify-center mb-4">
-                                    <CheckCircle2 className="h-5 w-5 text-[#B22234]" />
+                                <div className="w-10 h-10 bg-[rgba(220,38,38,0.1)] rounded-lg flex items-center justify-center mb-4">
+                                    <CheckCircle2 className="h-5 w-5 text-[#D4A94E]" />
                                 </div>
-                                <h3 className="font-bold text-slate-900 mb-2">{reason.title}</h3>
-                                <p className="text-sm text-slate-600">{reason.description}</p>
+                                <h3 className="font-bold text-[#F6F4EF] mb-2">{reason.title}</h3>
+                                <p className="text-sm text-[#D0CCC4]">{reason.description}</p>
                             </div>
                         ))}
                     </div>
@@ -231,12 +231,12 @@ export default function SilverIraHubPage() {
             </section>
 
             {/* Silver IRA Pages Grid */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-12">
-                            <h2 className="text-3xl font-bold text-[#000080] mb-4">Explore Silver IRA Topics</h2>
-                            <p className="text-slate-600 max-w-2xl mx-auto">
+                            <h2 className="text-3xl font-bold text-[#F6F4EF] mb-4">Explore Silver IRA Topics</h2>
+                            <p className="text-[#D0CCC4] max-w-2xl mx-auto">
                                 Everything you need to make informed decisions about Silver IRA investing.
                             </p>
                         </div>
@@ -247,28 +247,28 @@ export default function SilverIraHubPage() {
                                     <Link
                                         key={page.href}
                                         href={page.href}
-                                        className="group bg-white border border-slate-200 rounded-xl p-6 hover:bg-slate-50 hover:border-slate-300 transition-all"
+                                        className="group bg-[#161828] border border-[#2A2D42] rounded-xl p-6 hover:bg-[#121423] hover:border-[#3F4460] transition-all"
                                     >
                                         <div className="flex items-start gap-4">
-                                            <div className="w-12 h-12 bg-[#000080]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                                <Icon className="h-6 w-6 text-[#000080]" />
+                                            <div className="w-12 h-12 bg-[rgba(197,149,46,0.08)] rounded-xl flex items-center justify-center flex-shrink-0">
+                                                <Icon className="h-6 w-6 text-[#F6F4EF]" />
                                             </div>
                                             <div className="flex-1">
                                                 <div className="flex items-center gap-2 mb-1">
-                                                    <h3 className="text-lg font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                                                    <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                                                         {page.title}
                                                     </h3>
                                                     {page.badge && (
-                                                        <span className="px-2 py-0.5 bg-[#B22234]/10 text-[#B22234] text-xs font-semibold rounded-full">
+                                                        <span className="px-2 py-0.5 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] text-xs font-semibold rounded-full">
                                                             {page.badge}
                                                         </span>
                                                     )}
                                                 </div>
-                                                <p className="text-slate-600 text-sm">
+                                                <p className="text-[#D0CCC4] text-sm">
                                                     {page.description}
                                                 </p>
                                             </div>
-                                            <ArrowRight className="h-5 w-5 text-slate-600 group-hover:text-[#B22234] transition-colors flex-shrink-0" />
+                                            <ArrowRight className="h-5 w-5 text-[#D0CCC4] group-hover:text-[#D4A94E] transition-colors flex-shrink-0" />
                                         </div>
                                     </Link>
                                 );
@@ -282,7 +282,7 @@ export default function SilverIraHubPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-5xl mx-auto">
-                        <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
+                        <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
                             Related Silver Resources
                         </h2>
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -290,12 +290,12 @@ export default function SilverIraHubPage() {
                                 <Link
                                     key={resource.href}
                                     href={resource.href}
-                                    className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:bg-white hover:border-slate-300 transition-all"
+                                    className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-[#1E2134] hover:border-[#3F4460] transition-all"
                                 >
-                                    <h3 className="font-bold text-slate-900 text-sm mb-1 group-hover:text-[#B22234] transition-colors">
+                                    <h3 className="font-bold text-[#F6F4EF] text-sm mb-1 group-hover:text-[#D4A94E] transition-colors">
                                         {resource.title}
                                     </h3>
-                                    <p className="text-xs text-slate-600">{resource.description}</p>
+                                    <p className="text-xs text-[#D0CCC4]">{resource.description}</p>
                                 </Link>
                             ))}
                         </div>
@@ -304,27 +304,27 @@ export default function SilverIraHubPage() {
             </section>
 
             {/* Quick Stats */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
-                            <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">Silver IRA Quick Facts</h2>
+                        <div className="bg-[#161828] rounded-2xl p-8 border border-[#2A2D42] shadow-sm">
+                            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">Silver IRA Quick Facts</h2>
                             <div className="grid md:grid-cols-4 gap-6 text-center">
                                 <div>
-                                    <div className="text-3xl font-bold text-[#B22234] mb-2">.999</div>
-                                    <div className="text-sm text-slate-600">Minimum Purity Required</div>
+                                    <div className="text-3xl font-bold text-[#D4A94E] mb-2">.999</div>
+                                    <div className="text-sm text-[#D0CCC4]">Minimum Purity Required</div>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-[#B22234] mb-2">$2K</div>
-                                    <div className="text-sm text-slate-600">Lowest Minimum Investment</div>
+                                    <div className="text-3xl font-bold text-[#D4A94E] mb-2">$2K</div>
+                                    <div className="text-sm text-[#D0CCC4]">Lowest Minimum Investment</div>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-[#B22234] mb-2">80:1</div>
-                                    <div className="text-sm text-slate-600">Current Gold-Silver Ratio</div>
+                                    <div className="text-3xl font-bold text-[#D4A94E] mb-2">80:1</div>
+                                    <div className="text-sm text-[#D0CCC4]">Current Gold-Silver Ratio</div>
                                 </div>
                                 <div>
-                                    <div className="text-3xl font-bold text-[#B22234] mb-2">50%+</div>
-                                    <div className="text-sm text-slate-600">Industrial Demand Share</div>
+                                    <div className="text-3xl font-bold text-[#D4A94E] mb-2">50%+</div>
+                                    <div className="text-sm text-[#D0CCC4]">Industrial Demand Share</div>
                                 </div>
                             </div>
                         </div>

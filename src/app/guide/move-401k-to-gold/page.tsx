@@ -78,17 +78,17 @@ export default function Move401kToGoldPage() {
             <SchemaScript schema={schema} />
 
             {/* Header */}
-            <header className="bg-slate-50 py-16 border-b border-slate-200">
+            <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
                         <div className="inline-flex items-center gap-2 rounded-full bg-green-100 px-4 py-1.5 text-sm font-semibold text-green-700 mb-6 border border-green-200">
                             <CheckCircle2 className="w-4 h-4" />
                             SIMPLE GUIDE
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
                             How to Move Your 401k to Gold
                         </h1>
-                        <p className="text-xl text-slate-600 leading-relaxed">
+                        <p className="text-xl text-[#D0CCC4] leading-relaxed">
                             A straightforward explanation of how to transfer your retirement savings to physical gold, written in plain English.
                         </p>
                     </div>
@@ -97,18 +97,18 @@ export default function Move401kToGoldPage() {
 
             <Container className="py-12">
                 <div className="max-w-3xl mx-auto">
-                    <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-a:text-[#B22234] max-w-none">
+                    <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-a:text-[#D4A94E] max-w-none">
 
                         {/* Direct Answer Box */}
                         <div className="not-prose mb-10 p-6 md:p-8 rounded-2xl bg-green-50 border border-green-200">
-                            <h2 className="text-xl md:text-2xl font-bold text-[#000080] mb-4">The Short Answer</h2>
-                            <p className="text-lg text-slate-600 leading-relaxed">
+                            <h2 className="text-xl md:text-2xl font-bold text-[#F6F4EF] mb-4">The Short Answer</h2>
+                            <p className="text-lg text-[#D0CCC4] leading-relaxed">
                                 <strong className="text-green-700">Moving your 401k to gold is straightforward.</strong> The IRS allows direct rollovers that are completely tax-free. Your money moves directly from your old account to your new Gold IRA. You never touch it, so there are no taxes or penalties.
                             </p>
                         </div>
 
                         {/* What Moving Your 401k Means */}
-                        <h2 className="text-[#000080]">What &quot;Moving&quot; Your 401k Actually Means</h2>
+                        <h2 className="text-[#F6F4EF]">What &quot;Moving&quot; Your 401k Actually Means</h2>
                         <p>
                             When people say they want to &quot;move&quot; their 401k to gold, what they&apos;re really describing is a <strong>rollover</strong>. This is a perfectly normal, IRS-approved way to transfer retirement funds between accounts.
                         </p>
@@ -120,7 +120,7 @@ export default function Move401kToGoldPage() {
                         </p>
 
                         {/* Direct Rollover Explanation */}
-                        <h2 className="text-[#000080]">The Direct Rollover: Why It&apos;s Tax-Free</h2>
+                        <h2 className="text-[#F6F4EF]">The Direct Rollover: Why It&apos;s Tax-Free</h2>
                         <p>
                             There are two ways to move retirement funds: direct and indirect. You want the <strong>direct rollover</strong>.
                         </p>
@@ -139,38 +139,38 @@ export default function Move401kToGoldPage() {
                         </p>
 
                         {/* Simple 4-Step Process */}
-                        <h2 className="text-[#000080]">Simple 4-Step Process</h2>
+                        <h2 className="text-[#F6F4EF]">Simple 4-Step Process</h2>
                         <p>
                             Moving your 401k to gold involves four basic steps:
                         </p>
 
                         <div className="not-prose my-8 space-y-4">
-                            <div className="flex gap-4 items-start p-5 rounded-xl bg-slate-50 border border-slate-200">
-                                <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">1</div>
+                            <div className="flex gap-4 items-start p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                <div className="w-10 h-10 rounded-full bg-[#DC2626] text-[#F6F4EF] flex items-center justify-center font-bold shrink-0">1</div>
                                 <div>
-                                    <h4 className="font-bold text-[#000080] text-lg mb-1">Choose a Gold IRA Company</h4>
-                                    <p className="text-slate-600">Pick a company to guide you through the process. They handle most of the paperwork. This takes about 15 minutes of research and one phone call.</p>
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-1">Choose a Gold IRA Company</h4>
+                                    <p className="text-[#D0CCC4]">Pick a company to guide you through the process. They handle most of the paperwork. This takes about 15 minutes of research and one phone call.</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4 items-start p-5 rounded-xl bg-slate-50 border border-slate-200">
-                                <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">2</div>
+                            <div className="flex gap-4 items-start p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                <div className="w-10 h-10 rounded-full bg-[#DC2626] text-[#F6F4EF] flex items-center justify-center font-bold shrink-0">2</div>
                                 <div>
-                                    <h4 className="font-bold text-[#000080] text-lg mb-1">Open Your Gold IRA Account</h4>
-                                    <p className="text-slate-600">Fill out a simple application to open your new account. Your Gold IRA company walks you through this. Takes about 10-15 minutes.</p>
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-1">Open Your Gold IRA Account</h4>
+                                    <p className="text-[#D0CCC4]">Fill out a simple application to open your new account. Your Gold IRA company walks you through this. Takes about 10-15 minutes.</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4 items-start p-5 rounded-xl bg-slate-50 border border-slate-200">
-                                <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">3</div>
+                            <div className="flex gap-4 items-start p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                <div className="w-10 h-10 rounded-full bg-[#DC2626] text-[#F6F4EF] flex items-center justify-center font-bold shrink-0">3</div>
                                 <div>
-                                    <h4 className="font-bold text-[#000080] text-lg mb-1">Request the Direct Rollover</h4>
-                                    <p className="text-slate-600">Your new custodian contacts your old 401(k) administrator and requests the transfer. You sign some paperwork. They handle the rest.</p>
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-1">Request the Direct Rollover</h4>
+                                    <p className="text-[#D0CCC4]">Your new custodian contacts your old 401(k) administrator and requests the transfer. You sign some paperwork. They handle the rest.</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4 items-start p-5 rounded-xl bg-slate-50 border border-slate-200">
-                                <div className="w-10 h-10 rounded-full bg-[#B22234] text-[#000080] flex items-center justify-center font-bold shrink-0">4</div>
+                            <div className="flex gap-4 items-start p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                <div className="w-10 h-10 rounded-full bg-[#DC2626] text-[#F6F4EF] flex items-center justify-center font-bold shrink-0">4</div>
                                 <div>
-                                    <h4 className="font-bold text-[#000080] text-lg mb-1">Select and Purchase Your Gold</h4>
-                                    <p className="text-slate-600">Once funds arrive (1-3 weeks), choose which gold products you want. Your dealer helps you select IRS-approved coins or bars. The gold is shipped to a secure depository.</p>
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-1">Select and Purchase Your Gold</h4>
+                                    <p className="text-[#D0CCC4]">Once funds arrive (1-3 weeks), choose which gold products you want. Your dealer helps you select IRS-approved coins or bars. The gold is shipped to a secure depository.</p>
                                 </div>
                             </div>
                         </div>
@@ -180,20 +180,20 @@ export default function Move401kToGoldPage() {
                         </p>
 
                         {/* Learn More Links */}
-                        <div className="not-prose my-10 p-6 rounded-xl bg-slate-50 border border-slate-200">
-                            <h3 className="font-bold text-[#000080] text-lg mb-4 flex items-center gap-2">
-                                <FileText className="w-5 h-5 text-[#B22234]" />
+                        <div className="not-prose my-10 p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                            <h3 className="font-bold text-[#F6F4EF] text-lg mb-4 flex items-center gap-2">
+                                <FileText className="w-5 h-5 text-[#D4A94E]" />
                                 Want More Details?
                             </h3>
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/guide/401k-to-gold-rollover" className="flex items-center gap-2 text-[#B22234] hover:text-[#B22234]/80 transition-colors">
+                                    <Link href="/guide/401k-to-gold-rollover" className="flex items-center gap-2 text-[#D4A94E] hover:text-[#D4A94E]/80 transition-colors">
                                         <ArrowRight className="w-4 h-4" />
                                         <span>Complete 401k to Gold Rollover Guide (detailed version)</span>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/compare/gold-ira-vs-401k" className="flex items-center gap-2 text-[#B22234] hover:text-[#B22234]/80 transition-colors">
+                                    <Link href="/compare/gold-ira-vs-401k" className="flex items-center gap-2 text-[#D4A94E] hover:text-[#D4A94E]/80 transition-colors">
                                         <ArrowRight className="w-4 h-4" />
                                         <span>Gold IRA vs. 401k: Which is Better?</span>
                                     </Link>
@@ -202,32 +202,32 @@ export default function Move401kToGoldPage() {
                         </div>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.18)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Ready to Move Your 401k?</h3>
                                 <p className="mb-6 text-blue-100">Find the best Gold IRA company for your situation in under 2 minutes.</p>
-                                <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8B0000]">
+                                <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#8B0000]">
                                     <Link href="/quiz">Find My Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
                         </div>
 
                         {/* FAQ Section */}
-                        <h2 className="text-[#000080]">Frequently Asked Questions</h2>
+                        <h2 className="text-[#F6F4EF]">Frequently Asked Questions</h2>
 
                         <div className="space-y-4 not-prose">
                             {faqs.map((faq, index) => (
-                                <details key={index} className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                                <details key={index} className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">{faq.question}</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                         {faq.answer}
                                     </p>
                                 </details>
@@ -243,7 +243,7 @@ export default function Move401kToGoldPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-100">
+            <section className="py-16 bg-[#121423]">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="guide-move-401k-gold" />
                 </Container>

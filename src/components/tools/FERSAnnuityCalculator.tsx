@@ -144,7 +144,7 @@ export function FERSAnnuityCalculator() {
     }).format(amount);
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-[#0C0D18]">
       <Container>
         <div className="max-w-5xl mx-auto">
           {/* Header */}
@@ -153,38 +153,38 @@ export function FERSAnnuityCalculator() {
               <Calculator className="h-4 w-4" />
               FERS ANNUITY CALCULATOR
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
               FERS Annuity Calculator 2026
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
               Estimate your FERS basic annuity with survivor benefits and COLA projections.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Input Panel */}
-            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-[#000080] mb-6">Your Information</h3>
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#F6F4EF] mb-6">Your Information</h3>
 
               {/* High-3 Salary */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   High-3 Average Salary
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={highThreeSalary}
                     onChange={(e) => setHighThreeSalary(Number(e.target.value))}
-                    className="w-full pl-12 pr-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-blue-500"
+                    className="w-full pl-12 pr-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] text-lg focus:outline-none focus:border-blue-500"
                   />
                 </div>
               </div>
 
               {/* Years of Service */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   Years of Creditable Service: <span className="text-blue-600 font-bold">{yearsOfService} years</span>
                 </label>
                 <input
@@ -196,7 +196,7 @@ export function FERSAnnuityCalculator() {
                   onChange={(e) => setYearsOfService(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>5 years</span>
                   <span>20 years</span>
                   <span>40 years</span>
@@ -205,7 +205,7 @@ export function FERSAnnuityCalculator() {
 
               {/* Retirement Age */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   Retirement Age: <span className="text-blue-600 font-bold">{retirementAge}</span>
                 </label>
                 <input
@@ -217,7 +217,7 @@ export function FERSAnnuityCalculator() {
                   onChange={(e) => setRetirementAge(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>55</span>
                   <span>MRA (57)</span>
                   <span>62</span>
@@ -227,13 +227,13 @@ export function FERSAnnuityCalculator() {
 
               {/* Retirement Type */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   Retirement Type
                 </label>
                 <select
                   value={retirementType}
                   onChange={(e) => setRetirementType(e.target.value as RetirementType)}
-                  className="w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-blue-500"
+                  className="w-full px-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] focus:outline-none focus:border-blue-500"
                 >
                   {retirementOptions.map((option) => (
                     <option key={option.value} value={option.value}>
@@ -245,7 +245,7 @@ export function FERSAnnuityCalculator() {
 
               {/* Survivor Benefit */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   Survivor Benefit Election
                 </label>
                 <div className="space-y-2">
@@ -255,8 +255,8 @@ export function FERSAnnuityCalculator() {
                       onClick={() => setSurvivorBenefit(option.value as SurvivorBenefit)}
                       className={`w-full px-4 py-3 rounded-lg text-left transition-colors ${
                         survivorBenefit === option.value
-                          ? "bg-blue-500/20 border border-blue-500/50text-slate-900"
-                          : "bg-slate-100 border border-slate-200 text-slate-500 hover:bg-slate-200"
+                          ? "bg-blue-500/20 border border-blue-500/50text-[#F6F4EF]"
+                          : "bg-[#121423] border border-[#2A2D42] text-[#A8A39A] hover:bg-slate-200"
                       }`}
                     >
                       <div className="flex items-center justify-between">
@@ -272,7 +272,7 @@ export function FERSAnnuityCalculator() {
 
               {/* COLA Assumption */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   COLA Assumption: <span className="text-blue-600 font-bold">{colaRate}%</span>
                 </label>
                 <input
@@ -284,7 +284,7 @@ export function FERSAnnuityCalculator() {
                   onChange={(e) => setColaRate(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>0%</span>
                   <span>2.5%</span>
                   <span>5%</span>
@@ -294,7 +294,7 @@ export function FERSAnnuityCalculator() {
               {/* Calculate Button */}
               <button
                 onClick={calculateAnnuity}
-                className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-slate-900 font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
+                className="w-full py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-[#F6F4EF] font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
               >
                 <Calculator className="h-5 w-5" />
                 Calculate FERS Annuity
@@ -302,8 +302,8 @@ export function FERSAnnuityCalculator() {
             </div>
 
             {/* Results Panel */}
-            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-[#000080] mb-6">Your Results</h3>
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#F6F4EF] mb-6">Your Results</h3>
 
               {result ? (
                 <div className="space-y-6">
@@ -313,71 +313,71 @@ export function FERSAnnuityCalculator() {
                       <DollarSign className="h-4 w-4" />
                       NET MONTHLY ANNUITY
                     </div>
-                    <div className="text-4xl font-bold text-[#000080] mb-2">
+                    <div className="text-4xl font-bold text-[#F6F4EF] mb-2">
                       {formatCurrency(result.netMonthlyAnnuity)}
                     </div>
-                    <p className="text-slate-600 text-sm">
+                    <p className="text-[#D0CCC4] text-sm">
                       {formatCurrency(result.netAnnualAnnuity)} per year
                     </p>
                   </div>
 
                   {/* Breakdown */}
-                  <div className="bg-slate-50 rounded-xl p-4 space-y-3">
+                  <div className="bg-[#0C0D18] rounded-xl p-4 space-y-3">
                     <div className="flex justify-between text-sm">
-                      <span className="text-slate-500">Multiplier</span>
-                      <span className="text-slate-900 font-semibold">{(result.multiplier * 100).toFixed(1)}%</span>
+                      <span className="text-[#A8A39A]">Multiplier</span>
+                      <span className="text-[#F6F4EF] font-semibold">{(result.multiplier * 100).toFixed(1)}%</span>
                     </div>
                     <div className="flex justify-between text-sm">
-                      <span className="text-slate-500">Gross Annual Annuity</span>
-                      <span className="text-slate-900 font-semibold">{formatCurrency(result.grossAnnualAnnuity)}</span>
+                      <span className="text-[#A8A39A]">Gross Annual Annuity</span>
+                      <span className="text-[#F6F4EF] font-semibold">{formatCurrency(result.grossAnnualAnnuity)}</span>
                     </div>
                     {result.earlyRetirementReduction > 0 && (
                       <div className="flex justify-between text-sm">
-                        <span className="text-slate-500">Early Retirement Reduction</span>
+                        <span className="text-[#A8A39A]">Early Retirement Reduction</span>
                         <span className="text-red-600 font-semibold">-{result.earlyRetirementReduction}%</span>
                       </div>
                     )}
                     {result.survivorReduction > 0 && (
                       <div className="flex justify-between text-sm">
-                        <span className="text-slate-500">Survivor Benefit Reduction</span>
-                        <span className="text-[#B22234] font-semibold">-{formatCurrency(result.survivorReduction)}/yr</span>
+                        <span className="text-[#A8A39A]">Survivor Benefit Reduction</span>
+                        <span className="text-[#D4A94E] font-semibold">-{formatCurrency(result.survivorReduction)}/yr</span>
                       </div>
                     )}
                   </div>
 
                   {/* Formula */}
-                  <div className="bg-slate-50 rounded-xl p-4">
-                    <p className="text-slate-600 text-sm">
-                      <strong className="text-slate-900">Formula:</strong>{" "}
+                  <div className="bg-[#0C0D18] rounded-xl p-4">
+                    <p className="text-[#D0CCC4] text-sm">
+                      <strong className="text-[#F6F4EF]">Formula:</strong>{" "}
                       {(result.multiplier * 100).toFixed(1)}% x {formatCurrency(highThreeSalary)} x {yearsOfService} years = {formatCurrency(result.grossAnnualAnnuity)}/year
                     </p>
                   </div>
 
                   {/* 10-Year Projection */}
                   <div>
-                    <div className="flex items-center gap-2 text-slate-900 font-semibold mb-4">
+                    <div className="flex items-center gap-2 text-[#F6F4EF] font-semibold mb-4">
                       <TrendingUp className="h-5 w-5 text-blue-600" />
                       10-Year COLA Projection ({colaRate}% annual)
                     </div>
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm">
                         <thead>
-                          <tr className="border-b border-slate-200">
-                            <th className="py-2 px-2 text-left text-slate-500">Year</th>
-                            <th className="py-2 px-2 text-right text-slate-500">Annual</th>
-                            <th className="py-2 px-2 text-right text-slate-500">Cumulative</th>
+                          <tr className="border-b border-[#2A2D42]">
+                            <th className="py-2 px-2 text-left text-[#A8A39A]">Year</th>
+                            <th className="py-2 px-2 text-right text-[#A8A39A]">Annual</th>
+                            <th className="py-2 px-2 text-right text-[#A8A39A]">Cumulative</th>
                           </tr>
                         </thead>
                         <tbody>
                           {result.tenYearProjection.map((proj, idx) => (
                             <tr
                               key={proj.year}
-                              className={`border-b border-slate-200 ${
+                              className={`border-b border-[#2A2D42] ${
                                 idx === 0 ? "bg-blue-500/5" : ""
                               }`}
                             >
-                              <td className="py-2 px-2 text-slate-600">{proj.year}</td>
-                              <td className="py-2 px-2 text-righttext-slate-900">
+                              <td className="py-2 px-2 text-[#D0CCC4]">{proj.year}</td>
+                              <td className="py-2 px-2 text-righttext-[#F6F4EF]">
                                 {formatCurrency(proj.annuity)}
                               </td>
                               <td className="py-2 px-2 text-right text-blue-600 font-medium">
@@ -396,10 +396,10 @@ export function FERSAnnuityCalculator() {
                       <Percent className="h-4 w-4" />
                       25-YEAR ESTIMATED VALUE
                     </div>
-                    <div className="text-2xl font-bold text-slate-900">
+                    <div className="text-2xl font-bold text-[#F6F4EF]">
                       {formatCurrency(result.lifetimeValue25Years)}
                     </div>
-                    <p className="text-slate-500 text-xs mt-1">
+                    <p className="text-[#A8A39A] text-xs mt-1">
                       Total pension value over 25 years with {colaRate}% annual COLA
                     </p>
                   </div>
@@ -407,7 +407,7 @@ export function FERSAnnuityCalculator() {
                   {/* CTA */}
                   <Link
                     href="/get-started"
-                    className="block w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-slate-900 font-bold text-center rounded-xl transition-all"
+                    className="block w-full py-4 bg-[#DC2626] hover:bg-[#991B1B] text-[#F6F4EF] font-bold text-center rounded-xl transition-all"
                   >
                     Protect Your Federal Pension
                     <ArrowRight className="inline ml-2 h-5 w-5" />
@@ -415,10 +415,10 @@ export function FERSAnnuityCalculator() {
                 </div>
               ) : (
                 <div className="h-full flex flex-col items-center justify-center text-center py-12">
-                  <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-4">
-                    <Calculator className="h-8 w-8 text-slate-500" />
+                  <div className="w-16 h-16 bg-[#121423] rounded-2xl flex items-center justify-center mb-4">
+                    <Calculator className="h-8 w-8 text-[#A8A39A]" />
                   </div>
-                  <p className="text-slate-500">
+                  <p className="text-[#A8A39A]">
                     Enter your information and click &quot;Calculate&quot; to see your FERS annuity estimate.
                   </p>
                 </div>
@@ -433,10 +433,10 @@ export function FERSAnnuityCalculator() {
                 <Info className="h-6 w-6 text-blue-600" />
               </div>
               <div>
-                <h4 className="text-slate-900 font-semibold mb-2">
+                <h4 className="text-[#F6F4EF] font-semibold mb-2">
                   About the 1.1% Multiplier
                 </h4>
-                <p className="text-slate-600 text-sm">
+                <p className="text-[#D0CCC4] text-sm">
                   If you retire at age 62 or older with at least 20 years of service, your annuity
                   is calculated using the 1.1% multiplier instead of 1%. This can significantly
                   increase your pension. For example, with 25 years and a $100,000 High-3:

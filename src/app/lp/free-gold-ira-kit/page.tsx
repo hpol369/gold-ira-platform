@@ -59,14 +59,14 @@ export default function FreeGoldIRAKitPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-slate-900 font-serif">
+        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
 
             {/* Top Alert Bar */}
-            <div className="bg-[#000080] text-white p-3 text-center font-bold uppercase tracking-wider text-sm">
+            <div className="bg-[rgba(197,149,46,0.1)] text-white p-3 text-center font-bold uppercase tracking-wider text-sm">
                 <span className="flex items-center justify-center gap-2">
                     <BookOpen className="h-4 w-4" />
                     Free 2026 Gold IRA Kit — No Obligation
@@ -74,16 +74,16 @@ export default function FreeGoldIRAKitPage() {
             </div>
 
             {/* Hero Section */}
-            <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
+            <header className="relative py-12 md:py-20 bg-[#0C0D18] border-b-4 border-[#000080]">
                 <div className="max-w-4xl mx-auto px-4 text-center">
-                    <div className="inline-flex items-center gap-2 bg-[#000080]/10 text-[#000080] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6">
+                    <div className="inline-flex items-center gap-2 bg-[rgba(197,149,46,0.08)] text-[#F6F4EF] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6">
                         <Award className="h-4 w-4" />
                         Updated for 2026
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#F6F4EF] mb-6 leading-tight uppercase">
                         Request Your Free <br />
-                        <span className="text-[#B22234] underline decoration-4 underline-offset-8">2026 Gold IRA Kit</span>
+                        <span className="text-[#D4A94E] underline decoration-4 underline-offset-8">2026 Gold IRA Kit</span>
                     </h1>
 
                     <div className="mb-4 flex flex-wrap justify-center gap-3">
@@ -91,7 +91,7 @@ export default function FreeGoldIRAKitPage() {
                         <ZeroFeesBadge />
                     </div>
 
-                    <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
+                    <p className="text-xl md:text-2xl text-[#D0CCC4] font-sans mb-8 max-w-2xl mx-auto">
                         Everything you need to make an informed decision. <strong>Complete guide, fee chart, and tax rules — all free.</strong>
                     </p>
 
@@ -99,12 +99,12 @@ export default function FreeGoldIRAKitPage() {
                         <LeadCaptureButton
                             variant="free-gold-kit"
                             source="lp-free-gold-ira-kit-hero"
-                            className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get My Free Kit
                             <ArrowRight className="h-6 w-6" />
                         </LeadCaptureButton>
-                        <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
+                        <p className="text-sm text-[#A8A39A] font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             100% Free • No Obligation • No Sales Pressure
                         </p>
@@ -113,14 +113,14 @@ export default function FreeGoldIRAKitPage() {
             </header>
 
             {/* Trust Bar */}
-            <section className="py-8 bg-slate-100 border-b border-slate-200">
+            <section className="py-8 bg-[#121423] border-b border-[#2A2D42]">
                 <div className="max-w-5xl mx-auto px-4 text-center">
-                    <p className="text-slate-500 font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
+                    <p className="text-[#A8A39A] font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale">
-                        <span className="text-2xl font-black text-slate-800">FOX NEWS</span>
-                        <span className="text-2xl font-black text-slate-800">NEWSMAX</span>
-                        <span className="text-2xl font-black text-slate-800">BEN SHAPIRO</span>
-                        <span className="text-2xl font-black text-slate-800">FORBES</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FOX NEWS</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">NEWSMAX</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">BEN SHAPIRO</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FORBES</span>
                     </div>
                 </div>
             </section>
@@ -128,40 +128,40 @@ export default function FreeGoldIRAKitPage() {
             {/* What's Inside Your Free Kit */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         What&apos;s Inside Your Free Kit
                     </h2>
-                    <p className="text-center text-slate-600 mb-12 text-lg">
+                    <p className="text-center text-[#D0CCC4] mb-12 text-lg">
                         Three essential resources to help you decide if a Gold IRA is right for you.
                     </p>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
-                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <BookOpen className="h-8 w-8 text-[#000080]" />
+                        <div className="bg-[#0C0D18] p-8 rounded-xl border border-[#2A2D42] text-center">
+                            <div className="w-16 h-16 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center mx-auto mb-6">
+                                <BookOpen className="h-8 w-8 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-[#000080] mb-3">Complete Gold IRA Guide</h3>
-                            <p className="text-slate-600">
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Complete Gold IRA Guide</h3>
+                            <p className="text-[#D0CCC4]">
                                 Everything from how gold IRAs work, to which metals qualify, to how your gold is stored and insured. Written in plain English.
                             </p>
                         </div>
 
-                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
-                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <DollarSign className="h-8 w-8 text-[#000080]" />
+                        <div className="bg-[#0C0D18] p-8 rounded-xl border border-[#2A2D42] text-center">
+                            <div className="w-16 h-16 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center mx-auto mb-6">
+                                <DollarSign className="h-8 w-8 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-[#000080] mb-3">Transparent Fee Chart</h3>
-                            <p className="text-slate-600">
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Transparent Fee Chart</h3>
+                            <p className="text-[#D0CCC4]">
                                 See exactly what Gold IRAs cost — setup fees, annual fees, storage fees. No hidden charges, no surprises. Compare providers side by side.
                             </p>
                         </div>
 
-                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
-                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <FileText className="h-8 w-8 text-[#000080]" />
+                        <div className="bg-[#0C0D18] p-8 rounded-xl border border-[#2A2D42] text-center">
+                            <div className="w-16 h-16 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center mx-auto mb-6">
+                                <FileText className="h-8 w-8 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-[#000080] mb-3">2026 Tax Rules</h3>
-                            <p className="text-slate-600">
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">2026 Tax Rules</h3>
+                            <p className="text-[#D0CCC4]">
                                 Updated tax rules for rollovers, contributions, and distributions. Understand the tax benefits before you make a move.
                             </p>
                         </div>
@@ -170,48 +170,48 @@ export default function FreeGoldIRAKitPage() {
             </section>
 
             {/* Common Objections */}
-            <section className="py-16 bg-slate-50 font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         We Get It — You Have Questions
                     </h2>
-                    <p className="text-center text-slate-600 mb-10 text-lg">
+                    <p className="text-center text-[#D0CCC4] mb-10 text-lg">
                         Here&apos;s what people ask before requesting the kit.
                     </p>
 
                     <div className="space-y-6">
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42]">
                             <div className="flex gap-4 items-start">
                                 <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                                     <HelpCircle className="h-5 w-5 text-green-600" />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-[#000080] mb-1">&ldquo;Is this really free?&rdquo;</h3>
-                                    <p className="text-slate-600">Yes. No credit card, no hidden fees, no catches. Augusta provides this kit as an educational resource. You won&apos;t owe anyone anything.</p>
+                                    <h3 className="font-bold text-[#F6F4EF] mb-1">&ldquo;Is this really free?&rdquo;</h3>
+                                    <p className="text-[#D0CCC4]">Yes. No credit card, no hidden fees, no catches. Augusta provides this kit as an educational resource. You won&apos;t owe anyone anything.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42]">
                             <div className="flex gap-4 items-start">
                                 <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                                     <HelpCircle className="h-5 w-5 text-green-600" />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-[#000080] mb-1">&ldquo;Will I get pushy sales calls?&rdquo;</h3>
-                                    <p className="text-slate-600">No. Augusta has zero BBB complaints because they never use pressure tactics. You choose whether to speak with a specialist — and if you do, it&apos;s educational, not a sales pitch.</p>
+                                    <h3 className="font-bold text-[#F6F4EF] mb-1">&ldquo;Will I get pushy sales calls?&rdquo;</h3>
+                                    <p className="text-[#D0CCC4]">No. Augusta has zero BBB complaints because they never use pressure tactics. You choose whether to speak with a specialist — and if you do, it&apos;s educational, not a sales pitch.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42]">
                             <div className="flex gap-4 items-start">
                                 <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                                     <HelpCircle className="h-5 w-5 text-green-600" />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-[#000080] mb-1">&ldquo;Why do you need my phone number?&rdquo;</h3>
-                                    <p className="text-slate-600">We send the kit details via text for fastest delivery. You&apos;ll be asked if you&apos;d like a specialist to call — it&apos;s entirely your choice.</p>
+                                    <h3 className="font-bold text-[#F6F4EF] mb-1">&ldquo;Why do you need my phone number?&rdquo;</h3>
+                                    <p className="text-[#D0CCC4]">We send the kit details via text for fastest delivery. You&apos;ll be asked if you&apos;d like a specialist to call — it&apos;s entirely your choice.</p>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +221,7 @@ export default function FreeGoldIRAKitPage() {
                         <LeadCaptureButton
                             variant="free-gold-kit"
                             source="lp-free-gold-ira-kit-middle"
-                            className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
+                            className="inline-block bg-[rgba(197,149,46,0.1)] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
                         >
                             Request Your Free Kit Now
                         </LeadCaptureButton>
@@ -232,27 +232,27 @@ export default function FreeGoldIRAKitPage() {
             {/* Why Augusta */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         Why 50,000+ Americans Trust Augusta
                     </h2>
 
-                    <div className="bg-slate-50 p-6 md:p-8 rounded-xl border border-slate-200 mt-10">
+                    <div className="bg-[#0C0D18] p-6 md:p-8 rounded-xl border border-[#2A2D42] mt-10">
                         <ul className="space-y-5 text-lg">
                             <li className="flex items-start gap-4">
-                                <div className="flex-shrink-0 w-10 h-10 bg-[#000080]/10 rounded-full flex items-center justify-center">
-                                    <Award className="h-5 w-5 text-[#000080]" />
+                                <div className="flex-shrink-0 w-10 h-10 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center">
+                                    <Award className="h-5 w-5 text-[#F6F4EF]" />
                                 </div>
                                 <span><strong>Zero BBB Complaints:</strong> The only major gold company with a perfect record.</span>
                             </li>
                             <li className="flex items-start gap-4">
-                                <div className="flex-shrink-0 w-10 h-10 bg-[#000080]/10 rounded-full flex items-center justify-center">
-                                    <Phone className="h-5 w-5 text-[#000080]" />
+                                <div className="flex-shrink-0 w-10 h-10 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center">
+                                    <Phone className="h-5 w-5 text-[#F6F4EF]" />
                                 </div>
                                 <span><strong>Dedicated Phone Support:</strong> One person who knows your account and answers when you call.</span>
                             </li>
                             <li className="flex items-start gap-4">
-                                <div className="flex-shrink-0 w-10 h-10 bg-[#000080]/10 rounded-full flex items-center justify-center">
-                                    <Shield className="h-5 w-5 text-[#000080]" />
+                                <div className="flex-shrink-0 w-10 h-10 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center">
+                                    <Shield className="h-5 w-5 text-[#F6F4EF]" />
                                 </div>
                                 <span><strong>Money Magazine&apos;s &ldquo;Best Overall&rdquo;:</strong> Recognized as the top Gold IRA company in 2024.</span>
                             </li>
@@ -262,17 +262,17 @@ export default function FreeGoldIRAKitPage() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-16 bg-slate-100 font-sans">
+            <section className="py-16 bg-[#121423] font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-10">
                         Frequently Asked Questions
                     </h2>
 
                     <div className="space-y-6">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="bg-white rounded-lg p-6 shadow-sm border border-slate-200">
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">{faq.question}</h3>
-                                <p className="text-slate-700 leading-relaxed">{faq.answer}</p>
+                            <div key={index} className="bg-[#161828] rounded-lg p-6 shadow-sm border border-[#2A2D42]">
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">{faq.question}</h3>
+                                <p className="text-[#D0CCC4] leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>
@@ -280,19 +280,19 @@ export default function FreeGoldIRAKitPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-[#000080] text-center">
+            <section className="py-16 bg-[rgba(197,149,46,0.1)] text-center">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
                         Get the Facts. Then Decide.
                     </h2>
-                    <p className="text-slate-300 text-lg mb-8 font-sans">
+                    <p className="text-[#3F4460] text-lg mb-8 font-sans">
                         Your free Gold IRA kit is waiting — everything you need, no strings attached.
                     </p>
 
                     <LeadCaptureButton
                         variant="free-gold-kit"
                         source="lp-free-gold-ira-kit-footer"
-                        className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Request My Free Kit
                     </LeadCaptureButton>
@@ -312,13 +312,13 @@ export default function FreeGoldIRAKitPage() {
                         </span>
                     </div>
 
-                    <p className="text-slate-400 mt-6 text-sm font-sans">
+                    <p className="text-[#A8A39A] mt-6 text-sm font-sans">
                         Your information is 100% secure. We respect your privacy.
                     </p>
                 </div>
             </section>
 
-            <footer className="bg-slate-900 text-slate-600 py-8 text-center text-xs font-sans">
+            <footer className="bg-slate-900 text-[#D0CCC4] py-8 text-center text-xs font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <p>&copy; 2026 Rich Dad Retirement. All Rights Reserved.</p>
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals investing involves risk. Past performance does not guarantee future results.</p>

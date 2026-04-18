@@ -100,7 +100,7 @@ export default function SelfDirectedIRAPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <header className="relative py-20 overflow-hidden bg-slate-50">
+            <header className="relative py-20 overflow-hidden bg-[#0C0D18]">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(128,90,213,0.08),transparent_50%)]" />
 
                 <Container className="relative z-10">
@@ -110,22 +110,22 @@ export default function SelfDirectedIRAPage() {
                             <span>Your Money, Your Choices</span>
                         </div>
 
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#000080] mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#F6F4EF] mb-6 leading-tight">
                             Self-Directed IRA Guide 2026
                         </h1>
 
-                        <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-xl text-[#D0CCC4] mb-8 max-w-2xl mx-auto leading-relaxed">
                             You spent decades building your 401k. A Self-Directed IRA gives you the freedom to invest it how you want—real estate, gold, crypto, or whatever makes sense for your situation. No more being stuck with whatever funds your employer picked.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button variant="gold" size="xl" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+                            <Button variant="gold" size="xl" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                                 <Link href="/reviews/rocket-dollar">
                                     See Top SDIRA Custodian
                                     <ArrowRight className="ml-2 w-5 h-5" />
                                 </Link>
                             </Button>
-                            <Button variant="outline" size="xl" className="border-slate-300 text-slate-700 hover:bg-slate-100" asChild>
+                            <Button variant="outline" size="xl" className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]" asChild>
                                 <Link href="/learn/checkbook-ira">
                                     Learn About Checkbook Control
                                 </Link>
@@ -139,9 +139,9 @@ export default function SelfDirectedIRAPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-serif font-bold text-[#000080] mb-6">What is a Self-Directed IRA?</h2>
+                        <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-6">What is a Self-Directed IRA?</h2>
 
-                        <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900">
+                        <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF]">
                             <p>
                                 Here&apos;s the deal: a regular IRA from Fidelity or Vanguard only lets you invest in stocks, bonds, and mutual funds. That&apos;s it. A <strong>Self-Directed IRA (SDIRA)</strong> removes those handcuffs. After 30+ years of building your nest egg, shouldn&apos;t you get to decide where it goes?
                             </p>
@@ -166,10 +166,10 @@ export default function SelfDirectedIRAPage() {
             </section>
 
             {/* Investment Types */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
-                    <h2 className="text-3xl font-serif font-bold text-[#000080] mb-4 text-center">What Can You Actually Invest In?</h2>
-                    <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
+                    <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-4 text-center">What Can You Actually Invest In?</h2>
+                    <p className="text-[#A8A39A] text-center mb-12 max-w-2xl mx-auto">
                         You worked 30 years in your field. Maybe you understand real estate better than any stock chart. Maybe you&apos;ve watched gold prices your whole life. With an SDIRA, you can invest in what you know:
                     </p>
 
@@ -178,21 +178,21 @@ export default function SelfDirectedIRAPage() {
                             <Link
                                 key={type.title}
                                 href={type.link}
-                                className="bg-white p-6 rounded-xl border border-slate-200 hover:border-purple-400 transition-all group"
+                                className="bg-[#161828] p-6 rounded-xl border border-[#2A2D42] hover:border-purple-400 transition-all group"
                             >
                                 <div className={`w-12 h-12 bg-${type.color}-100 rounded-lg flex items-center justify-center mb-4`}>
                                     <type.icon className={`w-6 h-6 text-${type.color}-600`} />
                                 </div>
-                                <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2 group-hover:text-purple-600 transition-colors">
                                     {type.title}
                                 </h3>
-                                <p className="text-slate-500 text-sm">{type.description}</p>
+                                <p className="text-[#A8A39A] text-sm">{type.description}</p>
                             </Link>
                         ))}
                     </div>
 
                     <div className="mt-8 text-center">
-                        <p className="text-slate-500 text-sm">
+                        <p className="text-[#A8A39A] text-sm">
                             Note: Collectibles, life insurance, and S-corporations are prohibited IRA investments per IRS rules.
                         </p>
                     </div>
@@ -205,12 +205,12 @@ export default function SelfDirectedIRAPage() {
                     <div className="max-w-5xl mx-auto">
                         <div className="grid lg:grid-cols-2 gap-12 items-center">
                             <div>
-                                <h2 className="text-3xl font-serif font-bold text-[#000080] mb-6">
+                                <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-6">
                                     What is Checkbook Control?
                                 </h2>
-                                <div className="prose prose-lg text-slate-600">
+                                <div className="prose prose-lg text-[#D0CCC4]">
                                     <p>
-                                        <strong className="text-slate-900">Checkbook control</strong> (also called a Checkbook IRA or IRA LLC) gives you direct access to your IRA funds without waiting for custodian approval for every transaction.
+                                        <strong className="text-[#F6F4EF]">Checkbook control</strong> (also called a Checkbook IRA or IRA LLC) gives you direct access to your IRA funds without waiting for custodian approval for every transaction.
                                     </p>
                                     <p>
                                         Here's how it works: Your Self-Directed IRA owns an LLC, and you're the manager of that LLC. You have a checkbook (or debit card) for the LLC's bank account, allowing you to:
@@ -223,7 +223,7 @@ export default function SelfDirectedIRAPage() {
                                     </ul>
                                 </div>
                                 <div className="mt-6">
-                                    <Button variant="outline" className="border-slate-300 text-slate-700 hover:bg-slate-100" asChild>
+                                    <Button variant="outline" className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]" asChild>
                                         <Link href="/learn/checkbook-ira">
                                             Learn More About Checkbook IRAs
                                             <ArrowRight className="ml-2 w-4 h-4" />
@@ -232,35 +232,35 @@ export default function SelfDirectedIRAPage() {
                                 </div>
                             </div>
 
-                            <div className="bg-slate-50 p-8 rounded-xl border border-slate-200">
-                                <h3 className="text-xl font-bold text-[#000080] mb-6">Checkbook Control vs Traditional SDIRA</h3>
+                            <div className="bg-[#0C0D18] p-8 rounded-xl border border-[#2A2D42]">
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-6">Checkbook Control vs Traditional SDIRA</h3>
                                 <div className="space-y-4">
                                     <div className="flex items-start gap-4">
                                         <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                                         <div>
-                                            <p className="text-slate-900 font-medium">Faster Transactions</p>
-                                            <p className="text-slate-500 text-sm">Close real estate deals in days, not weeks</p>
+                                            <p className="text-[#F6F4EF] font-medium">Faster Transactions</p>
+                                            <p className="text-[#A8A39A] text-sm">Close real estate deals in days, not weeks</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
                                         <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                                         <div>
-                                            <p className="text-slate-900 font-medium">Lower Fees</p>
-                                            <p className="text-slate-500 text-sm">No per-transaction custodian fees</p>
+                                            <p className="text-[#F6F4EF] font-medium">Lower Fees</p>
+                                            <p className="text-[#A8A39A] text-sm">No per-transaction custodian fees</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
                                         <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
                                         <div>
-                                            <p className="text-slate-900 font-medium">Full Control</p>
-                                            <p className="text-slate-500 text-sm">You manage the LLC and make decisions</p>
+                                            <p className="text-[#F6F4EF] font-medium">Full Control</p>
+                                            <p className="text-[#A8A39A] text-sm">You manage the LLC and make decisions</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
                                         <AlertTriangle className="w-6 h-6 text-amber-500 flex-shrink-0 mt-1" />
                                         <div>
-                                            <p className="text-slate-900 font-medium">More Responsibility</p>
-                                            <p className="text-slate-500 text-sm">You must ensure IRS compliance</p>
+                                            <p className="text-[#F6F4EF] font-medium">More Responsibility</p>
+                                            <p className="text-[#A8A39A] text-sm">You must ensure IRS compliance</p>
                                         </div>
                                     </div>
                                 </div>
@@ -271,11 +271,11 @@ export default function SelfDirectedIRAPage() {
             </section>
 
             {/* Top Custodians */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-serif font-bold text-[#000080] mb-4">Best Self-Directed IRA Custodians</h2>
-                        <p className="text-slate-500 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-4">Best Self-Directed IRA Custodians</h2>
+                        <p className="text-[#A8A39A] max-w-2xl mx-auto">
                             Compare the top SDIRA providers based on fees, features, and investment options.
                         </p>
                     </div>
@@ -284,7 +284,7 @@ export default function SelfDirectedIRAPage() {
                         {topCustodians.map((custodian, index) => (
                             <div
                                 key={custodian.name}
-                                className={`bg-white rounded-xl border ${index === 0 ? 'border-purple-400' : 'border-slate-200'} overflow-hidden`}
+                                className={`bg-[#161828] rounded-xl border ${index === 0 ? 'border-purple-400' : 'border-[#2A2D42]'} overflow-hidden`}
                             >
                                 {index === 0 && (
                                     <div className="bg-purple-600 text-white text-center py-1 text-xs font-bold uppercase tracking-wide">
@@ -293,10 +293,10 @@ export default function SelfDirectedIRAPage() {
                                 )}
                                 <div className="p-6">
                                     <div className="flex items-center justify-between mb-4">
-                                        <h3 className="text-xl font-bold text-slate-900">{custodian.name}</h3>
+                                        <h3 className="text-xl font-bold text-[#F6F4EF]">{custodian.name}</h3>
                                         <div className="flex items-center gap-1">
                                             <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
-                                            <span className="text-slate-900 font-medium">{custodian.rating}</span>
+                                            <span className="text-[#F6F4EF] font-medium">{custodian.rating}</span>
                                         </div>
                                     </div>
 
@@ -306,22 +306,22 @@ export default function SelfDirectedIRAPage() {
 
                                     <div className="space-y-3 mb-6">
                                         <div className="flex justify-between text-sm">
-                                            <span className="text-slate-500">Fee</span>
-                                            <span className="text-slate-900 font-medium">{custodian.fee}</span>
+                                            <span className="text-[#A8A39A]">Fee</span>
+                                            <span className="text-[#F6F4EF] font-medium">{custodian.fee}</span>
                                         </div>
                                         <div className="flex justify-between text-sm">
-                                            <span className="text-slate-500">Minimum</span>
-                                            <span className="text-slate-900 font-medium">{custodian.minimum}</span>
+                                            <span className="text-[#A8A39A]">Minimum</span>
+                                            <span className="text-[#F6F4EF] font-medium">{custodian.minimum}</span>
                                         </div>
                                         <div className="flex justify-between text-sm">
-                                            <span className="text-slate-500">Best For</span>
-                                            <span className="text-slate-900 font-medium text-right text-xs">{custodian.bestFor}</span>
+                                            <span className="text-[#A8A39A]">Best For</span>
+                                            <span className="text-[#F6F4EF] font-medium text-right text-xs">{custodian.bestFor}</span>
                                         </div>
                                     </div>
 
                                     <Button
                                         variant={index === 0 ? "gold" : "outline"}
-                                        className={`w-full ${index === 0 ? 'bg-[#B22234] hover:bg-[#8b1c2a] text-white' : 'border-slate-300 text-slate-700 hover:bg-slate-100'}`}
+                                        className={`w-full ${index === 0 ? 'bg-[#DC2626] hover:bg-[#991B1B] text-white' : 'border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]'}`}
                                         asChild
                                     >
                                         <Link href={custodian.link}>
@@ -344,11 +344,11 @@ export default function SelfDirectedIRAPage() {
                             <div className="flex gap-4">
                                 <AlertTriangle className="w-8 h-8 text-red-600 flex-shrink-0" />
                                 <div>
-                                    <h3 className="text-xl font-bold text-slate-900 mb-4">Prohibited Transactions</h3>
-                                    <p className="text-slate-600 mb-4">
+                                    <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">Prohibited Transactions</h3>
+                                    <p className="text-[#D0CCC4] mb-4">
                                         The IRS has strict rules about Self-Directed IRAs. Violating these rules can disqualify your entire IRA and trigger massive tax penalties.
                                     </p>
-                                    <ul className="space-y-2 text-slate-600">
+                                    <ul className="space-y-2 text-[#D0CCC4]">
                                         <li className="flex items-start gap-2">
                                             <span className="text-red-600">x</span>
                                             <span><strong>No self-dealing:</strong> You can't buy property from yourself or sell to yourself</span>
@@ -366,7 +366,7 @@ export default function SelfDirectedIRAPage() {
                                             <span><strong>No sweat equity:</strong> You can't personally perform work on IRA-owned property</span>
                                         </li>
                                     </ul>
-                                    <p className="text-slate-500 text-sm mt-4">
+                                    <p className="text-[#A8A39A] text-sm mt-4">
                                         Always consult a tax professional before making SDIRA investments.
                                     </p>
                                 </div>
@@ -377,10 +377,10 @@ export default function SelfDirectedIRAPage() {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-serif font-bold text-[#000080] mb-8 text-center">Frequently Asked Questions</h2>
+                        <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Frequently Asked Questions</h2>
 
                         <div className="space-y-4">
                             {[
@@ -409,9 +409,9 @@ export default function SelfDirectedIRAPage() {
                                     a: "Prohibited transactions can cause your entire IRA to be disqualified, meaning the full balance becomes taxable immediately. You may also face a 10% early withdrawal penalty if under 59 1/2. The consequences are severe—always consult a professional."
                                 },
                             ].map((faq, i) => (
-                                <div key={i} className="bg-white rounded-xl border border-slate-200 p-6">
-                                    <h3 className="font-bold text-slate-900 mb-2">{faq.q}</h3>
-                                    <p className="text-slate-500 text-sm leading-relaxed">{faq.a}</p>
+                                <div key={i} className="bg-[#161828] rounded-xl border border-[#2A2D42] p-6">
+                                    <h3 className="font-bold text-[#F6F4EF] mb-2">{faq.q}</h3>
+                                    <p className="text-[#A8A39A] text-sm leading-relaxed">{faq.a}</p>
                                 </div>
                             ))}
                         </div>
@@ -422,55 +422,55 @@ export default function SelfDirectedIRAPage() {
             {/* Related Resources */}
             <section className="py-16 bg-white">
                 <Container>
-                    <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">Related Resources</h2>
+                    <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Related Resources</h2>
                     <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-                        <Link href="/learn/checkbook-ira" className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-purple-400 transition-colors group">
+                        <Link href="/learn/checkbook-ira" className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] hover:border-purple-400 transition-colors group">
                             <Lock className="w-8 h-8 text-purple-600 mb-3" />
-                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">Checkbook IRA Guide</h3>
-                            <p className="text-slate-500 text-sm">Take direct control of your IRA investments.</p>
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-purple-600 transition-colors">Checkbook IRA Guide</h3>
+                            <p className="text-[#A8A39A] text-sm">Take direct control of your IRA investments.</p>
                         </Link>
-                        <Link href="/learn/self-directed-roth-ira" className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-purple-400 transition-colors group">
+                        <Link href="/learn/self-directed-roth-ira" className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] hover:border-purple-400 transition-colors group">
                             <Shield className="w-8 h-8 text-green-600 mb-3" />
-                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">Self-Directed Roth IRA</h3>
-                            <p className="text-slate-500 text-sm">Tax-free growth on alternative investments.</p>
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-purple-600 transition-colors">Self-Directed Roth IRA</h3>
+                            <p className="text-[#A8A39A] text-sm">Tax-free growth on alternative investments.</p>
                         </Link>
-                        <Link href="/crypto-ira" className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-purple-400 transition-colors group">
+                        <Link href="/crypto-ira" className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] hover:border-purple-400 transition-colors group">
                             <TrendingUp className="w-8 h-8 text-blue-600 mb-3" />
-                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">Crypto IRA Guide</h3>
-                            <p className="text-slate-500 text-sm">Bitcoin and crypto in your retirement account.</p>
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-purple-600 transition-colors">Crypto IRA Guide</h3>
+                            <p className="text-[#A8A39A] text-sm">Bitcoin and crypto in your retirement account.</p>
                         </Link>
-                        <Link href="/best-gold-ira-companies" className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:border-purple-400 transition-colors group">
+                        <Link href="/best-gold-ira-companies" className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] hover:border-purple-400 transition-colors group">
                             <Coins className="w-8 h-8 text-amber-500 mb-3" />
-                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-purple-600 transition-colors">Gold IRA Companies</h3>
-                            <p className="text-slate-500 text-sm">Precious metals for your retirement.</p>
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-purple-600 transition-colors">Gold IRA Companies</h3>
+                            <p className="text-[#A8A39A] text-sm">Precious metals for your retirement.</p>
                         </Link>
                     </div>
                 </Container>
             </section>
 
             {/* Bottom CTA */}
-            <section className="py-16 bg-gradient-to-r from-[#000080] to-[#000060] border-t border-slate-200">
+            <section className="py-16 bg-gradient-to-r from-[#000080] to-[#000060] border-t border-[#2A2D42]">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
                         <h2 className="text-3xl font-serif font-bold text-white mb-4">
                             You Built It. You Should Decide Where It Goes.
                         </h2>
-                        <p className="text-xl text-slate-200 mb-8">
+                        <p className="text-xl text-[#3F4460] mb-8">
                             After decades of saving, you&apos;ve earned the right to invest your retirement in what makes sense to you—not just whatever your old employer&apos;s plan offered.
                         </p>
-                        <Button variant="gold" size="xl" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+                        <Button variant="gold" size="xl" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                             <Link href="/reviews/rocket-dollar">
                                 Get Started with Rocket Dollar
                                 <ArrowRight className="ml-2 w-5 h-5" />
                             </Link>
                         </Button>
-                        <p className="text-slate-300 text-sm mt-4">$15/month flat fee - Checkbook control - No hidden fees</p>
+                        <p className="text-[#3F4460] text-sm mt-4">$15/month flat fee - Checkbook control - No hidden fees</p>
                     </div>
                 </Container>
             </section>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

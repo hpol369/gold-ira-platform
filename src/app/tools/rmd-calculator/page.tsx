@@ -148,7 +148,7 @@ export default function RMDCalculatorPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
               What You Need to Know About RMDs
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -157,17 +157,17 @@ export default function RMDCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
+                    className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-[#B22234]" />
+                      <div className="w-12 h-12 bg-[rgba(220,38,38,0.1)] rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-[#D4A94E]" />
                       </div>
                       <div>
-                        <h3 className="text-slate-900 font-semibold mb-2">
+                        <h3 className="text-[#F6F4EF] font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-600 text-sm">
+                        <p className="text-[#D0CCC4] text-sm">
                           {fact.description}
                         </p>
                       </div>
@@ -181,34 +181,34 @@ export default function RMDCalculatorPage() {
       </section>
 
       {/* How to Calculate RMD Section */}
-      <section className="py-16 bg-slate-100/30">
+      <section className="py-16 bg-[#121423]/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center">
-                <Calculator className="h-6 w-6 text-[#B22234]" />
+              <div className="w-12 h-12 bg-[rgba(220,38,38,0.1)] rounded-xl flex items-center justify-center">
+                <Calculator className="h-6 w-6 text-[#D4A94E]" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
                 How to Calculate Your RMD
               </h2>
             </div>
 
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 mb-8">
-              <h3 className="text-lg font-semibold text-slate-900 mb-4">The RMD Formula</h3>
-              <div className="bg-slate-100 rounded-lg p-4 mb-4">
-                <p className="text-[#B22234] font-mono text-lg text-center">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6 mb-8">
+              <h3 className="text-lg font-semibold text-[#F6F4EF] mb-4">The RMD Formula</h3>
+              <div className="bg-[#121423] rounded-lg p-4 mb-4">
+                <p className="text-[#D4A94E] font-mono text-lg text-center">
                   RMD = Account Balance (Dec 31 prior year) ÷ Life Expectancy Factor
                 </p>
               </div>
-              <div className="space-y-3 text-slate-500">
-                <p><strong className="text-slate-900">Step 1:</strong> Find your IRA balance as of December 31 of the previous year.</p>
-                <p><strong className="text-slate-900">Step 2:</strong> Look up your age in the IRS Uniform Lifetime Table below.</p>
-                <p><strong className="text-slate-900">Step 3:</strong> Divide your balance by the distribution period factor.</p>
+              <div className="space-y-3 text-[#A8A39A]">
+                <p><strong className="text-[#F6F4EF]">Step 1:</strong> Find your IRA balance as of December 31 of the previous year.</p>
+                <p><strong className="text-[#F6F4EF]">Step 2:</strong> Look up your age in the IRS Uniform Lifetime Table below.</p>
+                <p><strong className="text-[#F6F4EF]">Step 3:</strong> Divide your balance by the distribution period factor.</p>
               </div>
               <div className="mt-4 p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
                 <p className="text-green-600 font-medium mb-1">Example Calculation:</p>
-                <p className="text-slate-600 text-sm">
-                  Age 75 with $500,000 balance: $500,000 ÷ 24.6 = <strong className="text-slate-900">$20,325 RMD</strong>
+                <p className="text-[#D0CCC4] text-sm">
+                  Age 75 with $500,000 balance: $500,000 ÷ 24.6 = <strong className="text-[#F6F4EF]">$20,325 RMD</strong>
                 </p>
               </div>
             </div>
@@ -225,38 +225,38 @@ export default function RMDCalculatorPage() {
                 <Table className="h-6 w-6 text-blue-600" />
               </div>
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
                   RMD Table 2026
                 </h2>
-                <p className="text-slate-600 text-sm">IRS Uniform Lifetime Table</p>
+                <p className="text-[#D0CCC4] text-sm">IRS Uniform Lifetime Table</p>
               </div>
             </div>
 
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="bg-slate-50 border-b border-slate-200">
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Age</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Distribution Period</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">% of Balance</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">RMD on $500K</th>
+                    <tr className="bg-[#0C0D18] border-b border-[#2A2D42]">
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-[#D0CCC4]">Age</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-[#D0CCC4]">Distribution Period</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-[#D0CCC4]">% of Balance</th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-[#D0CCC4]">RMD on $500K</th>
                     </tr>
                   </thead>
                   <tbody>
                     {rmdTable.map((row, index) => (
-                      <tr key={row.age} className={`border-b border-slate-200 ${index % 2 === 0 ? 'bg-slate-50' : ''}`}>
-                        <td className="px-6 py-3 text-slate-900 font-medium">{row.age}</td>
-                        <td className="px-6 py-3 text-slate-500">{row.factor}</td>
-                        <td className="px-6 py-3 text-slate-500">{(100 / row.factor).toFixed(2)}%</td>
-                        <td className="px-6 py-3 text-[#B22234]">${Math.round(500000 / row.factor).toLocaleString()}</td>
+                      <tr key={row.age} className={`border-b border-[#2A2D42] ${index % 2 === 0 ? 'bg-[#0C0D18]' : ''}`}>
+                        <td className="px-6 py-3 text-[#F6F4EF] font-medium">{row.age}</td>
+                        <td className="px-6 py-3 text-[#A8A39A]">{row.factor}</td>
+                        <td className="px-6 py-3 text-[#A8A39A]">{(100 / row.factor).toFixed(2)}%</td>
+                        <td className="px-6 py-3 text-[#D4A94E]">${Math.round(500000 / row.factor).toLocaleString()}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
-              <div className="px-6 py-4 bg-slate-50 border-t border-slate-200">
-                <p className="text-xs text-slate-500">
+              <div className="px-6 py-4 bg-[#0C0D18] border-t border-[#2A2D42]">
+                <p className="text-xs text-[#A8A39A]">
                   Source: IRS Uniform Lifetime Table (Publication 590-B). Table shown for ages 73-90.
                   Full table continues to age 120+. Use our calculator above for exact calculations.
                 </p>
@@ -267,35 +267,35 @@ export default function RMDCalculatorPage() {
       </section>
 
       {/* Gold IRA RMD Strategy */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-4">
                 Gold IRA RMD Strategies
               </h2>
-              <p className="text-slate-500">
+              <p className="text-[#A8A39A]">
                 Physical gold in your IRA gives you unique options when taking distributions.
               </p>
             </div>
 
             <div className="space-y-6">
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#F6F4EF] mb-3">
                   Option 1: Cash Distribution
                 </h3>
-                <p className="text-slate-500">
+                <p className="text-[#A8A39A]">
                   Your custodian sells enough gold to meet your RMD amount and sends you
                   cash. This is the simplest method and works like any traditional IRA
                   distribution. Taxes owed on the full withdrawal amount.
                 </p>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-slate-900 mb-3">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#F6F4EF] mb-3">
                   Option 2: In-Kind Distribution
                 </h3>
-                <p className="text-slate-500">
+                <p className="text-[#A8A39A]">
                   Receive physical gold instead of cash! The depository ships actual coins
                   or bars directly to you. You still owe taxes on the fair market value,
                   but you now own the gold outright—outside your IRA. Popular for those
@@ -303,11 +303,11 @@ export default function RMDCalculatorPage() {
                 </p>
               </div>
 
-              <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-[#B22234] mb-3">
+              <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#D4A94E] mb-3">
                   Pro Tip: Consider a Roth Conversion
                 </h3>
-                <p className="text-slate-500">
+                <p className="text-[#A8A39A]">
                   If you don&apos;t need the RMD income, consider converting part of your
                   Traditional Gold IRA to a Roth Gold IRA. You&apos;ll pay taxes now, but
                   eliminate future RMDs and leave tax-free gold to your heirs.
@@ -322,7 +322,7 @@ export default function RMDCalculatorPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
               RMD Frequently Asked Questions
             </h2>
 
@@ -351,16 +351,16 @@ export default function RMDCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
+                  className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
-                    <span className="text-slate-500 group-open:rotate-180 transition-transform">
+                    <span className="text-[#F6F4EF] font-medium pr-4">{faq.q}</span>
+                    <span className="text-[#A8A39A] group-open:rotate-180 transition-transform">
                       ▼
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
-                    <p className="text-slate-500">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-[#2A2D42] pt-4">
+                    <p className="text-[#A8A39A]">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -370,17 +370,17 @@ export default function RMDCalculatorPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-8 bg-slate-50">
+      <section className="py-8 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-slate-900 font-semibold mb-2">
+                  <h3 className="text-[#F6F4EF] font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-600 text-sm">
+                  <p className="text-[#D0CCC4] text-sm">
                     This calculator provides estimates based on IRS Uniform Lifetime
                     Tables. Your actual RMD may differ based on beneficiary age,
                     multiple accounts, or other factors. This is not tax advice.

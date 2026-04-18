@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 
 export default function SilverIRARolloverPage() {
     return (
-        <div className="min-h-screen bg-white text-slate-900 font-serif">
+        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
             {/* Top Warning Bar */}
-            <div className="bg-[#B22234] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
+            <div className="bg-[#DC2626] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
                 <span className="flex items-center justify-center gap-2">
                     <AlertTriangle className="h-4 w-4" />
                     IRS Direct Rollover: Zero Taxes, Zero Penalties
@@ -24,31 +24,31 @@ export default function SilverIRARolloverPage() {
             </div>
 
             {/* Hero Section */}
-            <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
+            <header className="relative py-12 md:py-20 bg-[#0C0D18] border-b-4 border-[#000080]">
                 <div className="max-w-4xl mx-auto px-4 text-center">
 
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#F6F4EF] mb-6 leading-tight uppercase">
                         Move Your 401(k) to Silver <br />
-                        <span className="text-[#B22234] underline decoration-4 underline-offset-8">Without Paying Taxes</span>
+                        <span className="text-[#D4A94E] underline decoration-4 underline-offset-8">Without Paying Taxes</span>
                     </h1>
 
-                    <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
+                    <p className="text-xl md:text-2xl text-[#D0CCC4] font-sans mb-8 max-w-2xl mx-auto">
                         The IRS allows a <strong>direct rollover</strong> from your existing retirement account to a Silver IRA. No taxes. No penalties. No 60-day deadline stress.
                     </p>
 
                     {/* Quick Stats */}
                     <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10 font-sans">
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-black text-[#000080]">$0</div>
-                            <div className="text-sm text-slate-600">Taxes on Transfer</div>
+                            <div className="text-3xl md:text-4xl font-black text-[#F6F4EF]">$0</div>
+                            <div className="text-sm text-[#D0CCC4]">Taxes on Transfer</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-black text-[#B22234]">$0</div>
-                            <div className="text-sm text-slate-600">Early Withdrawal Penalty</div>
+                            <div className="text-3xl md:text-4xl font-black text-[#D4A94E]">$0</div>
+                            <div className="text-sm text-[#D0CCC4]">Early Withdrawal Penalty</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-black text-[#000080]">5-10</div>
-                            <div className="text-sm text-slate-600">Business Days</div>
+                            <div className="text-3xl md:text-4xl font-black text-[#F6F4EF]">5-10</div>
+                            <div className="text-sm text-[#D0CCC4]">Business Days</div>
                         </div>
                     </div>
 
@@ -57,12 +57,12 @@ export default function SilverIRARolloverPage() {
                         <LeadCaptureButton
                             variant="silver"
                             source="lp-silver-ira-rollover-hero"
-                            className="bg-[#000080] hover:bg-[#000060] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(0,0,80)] hover:shadow-[0_2px_0_rgb(0,0,80)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[rgba(197,149,46,0.1)] hover:bg-[#000060] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(0,0,80)] hover:shadow-[0_2px_0_rgb(0,0,80)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get Your Free Rollover Kit
                             <ArrowRight className="h-8 w-8" />
                         </LeadCaptureButton>
-                        <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
+                        <p className="text-sm text-[#A8A39A] font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Tax-Free Process • IRS Compliant • Zero Obligation
                         </p>
@@ -71,14 +71,14 @@ export default function SilverIRARolloverPage() {
             </header>
 
             {/* Trust Bar */}
-            <section className="py-8 bg-slate-100 border-b border-slate-200">
+            <section className="py-8 bg-[#121423] border-b border-[#2A2D42]">
                 <div className="max-w-5xl mx-auto px-4 text-center">
-                    <p className="text-slate-500 font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
+                    <p className="text-[#A8A39A] font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale">
-                        <span className="text-2xl font-black text-slate-800">FOX NEWS</span>
-                        <span className="text-2xl font-black text-slate-800">NEWSMAX</span>
-                        <span className="text-2xl font-black text-slate-800">BEN SHAPIRO</span>
-                        <span className="text-2xl font-black text-slate-800">FORBES</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FOX NEWS</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">NEWSMAX</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">BEN SHAPIRO</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FORBES</span>
                     </div>
                 </div>
             </section>
@@ -86,44 +86,44 @@ export default function SilverIRARolloverPage() {
             {/* Global Instability Section */}
             <section className="py-12 bg-red-50 border-y border-red-200 font-sans">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-2xl font-bold text-[#B22234] text-center mb-6 font-serif">Why Americans Are Moving to Silver in 2026</h2>
+                    <h2 className="text-2xl font-bold text-[#D4A94E] text-center mb-6 font-serif">Why Americans Are Moving to Silver in 2026</h2>
                     <div className="grid md:grid-cols-3 gap-4 text-center">
-                        <div className="bg-white p-4 rounded-lg border border-red-200">
+                        <div className="bg-[#161828] p-4 rounded-lg border border-red-200">
                             <div className="text-3xl mb-2">💵</div>
-                            <div className="font-bold text-[#000080]">$38 Trillion Debt</div>
-                            <div className="text-sm text-slate-600">19% of federal spending goes to interest payments alone.</div>
+                            <div className="font-bold text-[#F6F4EF]">$38 Trillion Debt</div>
+                            <div className="text-sm text-[#D0CCC4]">19% of federal spending goes to interest payments alone.</div>
                         </div>
-                        <div className="bg-white p-4 rounded-lg border border-red-200">
+                        <div className="bg-[#161828] p-4 rounded-lg border border-red-200">
                             <div className="text-3xl mb-2">📈</div>
-                            <div className="font-bold text-[#000080]">Tariffs = Higher Prices</div>
-                            <div className="text-sm text-slate-600">$1,300/household added costs in 2026 from new tariffs.</div>
+                            <div className="font-bold text-[#F6F4EF]">Tariffs = Higher Prices</div>
+                            <div className="text-sm text-[#D0CCC4]">$1,300/household added costs in 2026 from new tariffs.</div>
                         </div>
-                        <div className="bg-white p-4 rounded-lg border border-red-200">
+                        <div className="bg-[#161828] p-4 rounded-lg border border-red-200">
                             <div className="text-3xl mb-2">🏭</div>
-                            <div className="font-bold text-[#000080]">Industrial Demand</div>
-                            <div className="text-sm text-slate-600">Solar, EVs, and electronics need 50%+ of all silver mined.</div>
+                            <div className="font-bold text-[#F6F4EF]">Industrial Demand</div>
+                            <div className="text-sm text-[#D0CCC4]">Solar, EVs, and electronics need 50%+ of all silver mined.</div>
                         </div>
                     </div>
-                    <p className="text-center mt-6 text-slate-700 font-semibold">
-                        Silver isn't just precious—it's <span className="text-[#000080]">essential</span>.
+                    <p className="text-center mt-6 text-[#D0CCC4] font-semibold">
+                        Silver isn't just precious—it's <span className="text-[#F6F4EF]">essential</span>.
                     </p>
                 </div>
             </section>
 
             {/* Direct Rollover Explanation */}
-            <section className="py-16 bg-white font-sans text-lg md:text-xl leading-relaxed text-slate-800">
+            <section className="py-16 bg-white font-sans text-lg md:text-xl leading-relaxed text-[#F6F4EF]">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-[#000080] font-serif mb-6">What Is a Direct Rollover?</h2>
+                    <h2 className="text-3xl font-bold text-[#F6F4EF] font-serif mb-6">What Is a Direct Rollover?</h2>
                     <p className="mb-6">
                         A direct rollover (also called a "trustee-to-trustee transfer") moves money straight from your old retirement account to your new Silver IRA. <strong>You never touch the funds.</strong> That's why there's no tax event.
                     </p>
 
-                    <div className="bg-slate-50 border-l-4 border-[#000080] p-6 rounded-r-xl mb-8">
-                        <h3 className="text-xl font-bold text-[#000080] mb-4">Direct Rollover vs. Indirect Rollover</h3>
+                    <div className="bg-[#0C0D18] border-l-4 border-[#000080] p-6 rounded-r-xl mb-8">
+                        <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">Direct Rollover vs. Indirect Rollover</h3>
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
                                 <h4 className="font-bold text-green-600 mb-2">✓ Direct Rollover</h4>
-                                <ul className="text-base space-y-2 text-slate-600">
+                                <ul className="text-base space-y-2 text-[#D0CCC4]">
                                     <li>• Funds go directly to new custodian</li>
                                     <li>• No taxes withheld</li>
                                     <li>• No 60-day deadline</li>
@@ -132,7 +132,7 @@ export default function SilverIRARolloverPage() {
                             </div>
                             <div>
                                 <h4 className="font-bold text-red-600 mb-2">✗ Indirect Rollover</h4>
-                                <ul className="text-base space-y-2 text-slate-600">
+                                <ul className="text-base space-y-2 text-[#D0CCC4]">
                                     <li>• Check sent to YOU</li>
                                     <li>• 20% mandatory tax withholding</li>
                                     <li>• Must deposit within 60 days</li>
@@ -142,59 +142,59 @@ export default function SilverIRARolloverPage() {
                         </div>
                     </div>
 
-                    <h3 className="text-2xl font-bold text-[#000080] font-serif mb-6">The 3-Step Process</h3>
+                    <h3 className="text-2xl font-bold text-[#F6F4EF] font-serif mb-6">The 3-Step Process</h3>
 
                     <div className="grid md:grid-cols-3 gap-4 mb-8">
-                        <div className="bg-white p-6 rounded-xl border-2 border-slate-200 text-center">
-                            <div className="bg-[#000080] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">1</div>
-                            <FileText className="h-8 w-8 text-[#000080] mx-auto mb-3" />
+                        <div className="bg-[#161828] p-6 rounded-xl border-2 border-[#2A2D42] text-center">
+                            <div className="bg-[rgba(197,149,46,0.1)] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">1</div>
+                            <FileText className="h-8 w-8 text-[#F6F4EF] mx-auto mb-3" />
                             <h4 className="font-bold mb-2">Open Your Silver IRA</h4>
-                            <p className="text-sm text-slate-600">We help you set up a self-directed IRA with an approved custodian. Takes 15 minutes.</p>
+                            <p className="text-sm text-[#D0CCC4]">We help you set up a self-directed IRA with an approved custodian. Takes 15 minutes.</p>
                         </div>
-                        <div className="bg-white p-6 rounded-xl border-2 border-slate-200 text-center">
-                            <div className="bg-[#000080] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">2</div>
-                            <Building2 className="h-8 w-8 text-[#000080] mx-auto mb-3" />
+                        <div className="bg-[#161828] p-6 rounded-xl border-2 border-[#2A2D42] text-center">
+                            <div className="bg-[rgba(197,149,46,0.1)] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">2</div>
+                            <Building2 className="h-8 w-8 text-[#F6F4EF] mx-auto mb-3" />
                             <h4 className="font-bold mb-2">Request Direct Transfer</h4>
-                            <p className="text-sm text-slate-600">We contact your old custodian and handle the paperwork. You just sign.</p>
+                            <p className="text-sm text-[#D0CCC4]">We contact your old custodian and handle the paperwork. You just sign.</p>
                         </div>
-                        <div className="bg-white p-6 rounded-xl border-2 border-slate-200 text-center">
-                            <div className="bg-[#000080] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">3</div>
-                            <Clock className="h-8 w-8 text-[#000080] mx-auto mb-3" />
+                        <div className="bg-[#161828] p-6 rounded-xl border-2 border-[#2A2D42] text-center">
+                            <div className="bg-[rgba(197,149,46,0.1)] text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">3</div>
+                            <Clock className="h-8 w-8 text-[#F6F4EF] mx-auto mb-3" />
                             <h4 className="font-bold mb-2">Fund & Buy Silver</h4>
-                            <p className="text-sm text-slate-600">Once funds arrive (usually 5-10 business days), choose your IRS-approved silver.</p>
+                            <p className="text-sm text-[#D0CCC4]">Once funds arrive (usually 5-10 business days), choose your IRS-approved silver.</p>
                         </div>
                     </div>
 
                     <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
                         <h4 className="font-bold text-green-700 mb-2">Accounts That Can Roll Over:</h4>
-                        <p className="text-slate-700">401(k) • Traditional IRA • Roth IRA • 403(b) • TSP • SEP IRA • SIMPLE IRA • 457(b)</p>
+                        <p className="text-[#D0CCC4]">401(k) • Traditional IRA • Roth IRA • 403(b) • TSP • SEP IRA • SIMPLE IRA • 457(b)</p>
                     </div>
                 </div>
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-[#000080] text-center">
+            <section className="py-16 bg-[rgba(197,149,46,0.1)] text-center">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
                         Start Your Tax-Free Rollover Today
                     </h2>
-                    <p className="text-slate-300 text-lg mb-8 font-sans">
+                    <p className="text-[#3F4460] text-lg mb-8 font-sans">
                         Join 50,000+ Americans who have diversified into physical silver.
                     </p>
                     <LeadCaptureButton
                         variant="silver"
                         source="lp-silver-ira-rollover-footer"
-                        className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get Your Free Rollover Kit
                     </LeadCaptureButton>
-                    <p className="text-slate-400 mt-6 text-sm font-sans">
+                    <p className="text-[#A8A39A] mt-6 text-sm font-sans">
                         100% free. No obligation. Strictly confidential.
                     </p>
                 </div>
             </section>
 
-            <footer className="bg-slate-900 text-slate-600 py-8 text-center text-xs font-sans">
+            <footer className="bg-slate-900 text-[#D0CCC4] py-8 text-center text-xs font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <p>&copy; 2026 Rich Dad Retirement. All Rights Reserved.</p>
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals involve risk. Past performance does not guarantee future results.</p>

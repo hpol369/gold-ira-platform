@@ -115,12 +115,12 @@ export default function SilverDimesValuePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-coin-values"
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Silver Coin Values
@@ -129,29 +129,29 @@ export default function SilverDimesValuePage() {
               <Star className="h-4 w-4" />
               LOW COMPETITION - 1,000 SEARCHES
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               Silver Dimes Value Guide
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mb-8">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mb-8">
               Every dime dated 1964 or earlier contains 90% silver - worth far more than ten cents.
               From the elegant Mercury dime to common Roosevelt dimes, these small coins pack real purchasing power
-              that <span className="text-[#B22234] font-semibold">paper money can never match</span>.
+              that <span className="text-[#D4A94E] font-semibold">paper money can never match</span>.
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <Coins className="h-4 w-4 text-slate-600" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <Coins className="h-4 w-4 text-[#D0CCC4]" />
                 0.0723 oz Silver
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <History className="h-4 w-4 text-slate-600" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <History className="h-4 w-4 text-[#D0CCC4]" />
                 Pre-1965
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
                 <TrendingUp className="h-4 w-4 text-green-400" />
                 ~$1.80 Melt Value
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <Scale className="h-4 w-4 text-slate-600" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <Scale className="h-4 w-4 text-[#D0CCC4]" />
                 2.5 grams total
               </span>
             </div>
@@ -160,33 +160,33 @@ export default function SilverDimesValuePage() {
       </section>
 
       {/* Dime Types Overview */}
-      <section className="py-12 bg-white border-y border-slate-200">
+      <section className="py-12 bg-[#161828] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Three Types of Silver Dimes
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#B22234] mb-2">Barber Dime</h3>
-                <p className="text-slate-600 text-sm mb-3">1892-1916</p>
-                <p className="text-slate-600 text-sm">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#D4A94E] mb-2">Barber Dime</h3>
+                <p className="text-[#D0CCC4] text-sm mb-3">1892-1916</p>
+                <p className="text-[#D0CCC4] text-sm">
                   Liberty head design by Charles Barber. Known for quick wear and many rare dates.
                   The 1894-S is one of America&apos;s rarest coins.
                 </p>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#B22234] mb-2">Mercury Dime</h3>
-                <p className="text-slate-600 text-sm mb-3">1916-1945</p>
-                <p className="text-slate-600 text-sm">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#D4A94E] mb-2">Mercury Dime</h3>
+                <p className="text-[#D0CCC4] text-sm mb-3">1916-1945</p>
+                <p className="text-[#D0CCC4] text-sm">
                   Actually shows Liberty with a winged cap (not Mercury). Most collected silver dime series.
                   The 1916-D is the key date.
                 </p>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#B22234] mb-2">Roosevelt Dime</h3>
-                <p className="text-slate-600 text-sm mb-3">1946-1964 (silver)</p>
-                <p className="text-slate-600 text-sm">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#D4A94E] mb-2">Roosevelt Dime</h3>
+                <p className="text-[#D0CCC4] text-sm mb-3">1946-1964 (silver)</p>
+                <p className="text-[#D0CCC4] text-sm">
                   Honors FDR, who died in 1945. Silver versions ended in 1964. Most common and affordable
                   way to stack silver dimes.
                 </p>
@@ -197,47 +197,47 @@ export default function SilverDimesValuePage() {
       </section>
 
       {/* Mercury Dimes */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4">
               Mercury Dime Values (1916-1945)
             </h2>
-            <p className="text-slate-600 text-center mb-8 max-w-2xl mx-auto">
+            <p className="text-[#D0CCC4] text-center mb-8 max-w-2xl mx-auto">
               The Mercury dime is the most collected silver dime series. &quot;Full Bands&quot; (FB) specimens
               showing complete horizontal bands on the fasces command significant premiums.
             </p>
-            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden overflow-x-auto">
+            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl overflow-hidden overflow-x-auto">
               <table className="w-full min-w-[800px] text-sm">
                 <thead className="bg-slate-800/80">
                   <tr>
-                    <th className="text-left p-3 text-slate-900 font-bold">Year</th>
-                    <th className="text-center p-3 text-slate-900 font-bold">Mint</th>
-                    <th className="text-center p-3 text-slate-600">G-4</th>
-                    <th className="text-center p-3 text-slate-600">VG-8</th>
-                    <th className="text-center p-3 text-slate-600">F-12</th>
-                    <th className="text-center p-3 text-slate-600">VF-20</th>
-                    <th className="text-center p-3 text-slate-600">XF-40</th>
-                    <th className="text-center p-3 text-slate-600">AU-50</th>
-                    <th className="text-center p-3 text-[#B22234]">MS-60</th>
-                    <th className="text-center p-3 text-[#B22234]">MS-65</th>
-                    <th className="text-left p-3 text-slate-600">Notes</th>
+                    <th className="text-left p-3 text-[#F6F4EF] font-bold">Year</th>
+                    <th className="text-center p-3 text-[#F6F4EF] font-bold">Mint</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">G-4</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">VG-8</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">F-12</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">VF-20</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">XF-40</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">AU-50</th>
+                    <th className="text-center p-3 text-[#D4A94E]">MS-60</th>
+                    <th className="text-center p-3 text-[#D4A94E]">MS-65</th>
+                    <th className="text-left p-3 text-[#D0CCC4]">Notes</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200">
+                <tbody className="divide-y divide-[#2A2D42]">
                   {mercuryDimeValues.map((row, index) => (
-                    <tr key={index} className={row.notes.includes("Key") || row.notes.includes("Overdate") ? "bg-[#B22234]/10" : ""}>
-                      <td className="p-3 text-slate-900 font-medium">{row.year}</td>
-                      <td className="p-3 text-center text-slate-600">{row.mint}</td>
-                      <td className="p-3 text-center text-slate-600">${row.g}</td>
-                      <td className="p-3 text-center text-slate-600">${row.vg}</td>
-                      <td className="p-3 text-center text-slate-600">${row.f}</td>
-                      <td className="p-3 text-center text-slate-600">${row.vf}</td>
-                      <td className="p-3 text-center text-slate-600">${row.xf}</td>
-                      <td className="p-3 text-center text-slate-600">${row.au}</td>
+                    <tr key={index} className={row.notes.includes("Key") || row.notes.includes("Overdate") ? "bg-[rgba(220,38,38,0.1)]" : ""}>
+                      <td className="p-3 text-[#F6F4EF] font-medium">{row.year}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.mint}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.g}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.vg}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.f}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.vf}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.xf}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.au}</td>
                       <td className="p-3 text-center text-green-400">${row.ms60.toLocaleString()}</td>
-                      <td className="p-3 text-center text-[#B22234] font-semibold">${row.ms65.toLocaleString()}</td>
-                      <td className="p-3 text-slate-600 text-xs">{row.notes}</td>
+                      <td className="p-3 text-center text-[#D4A94E] font-semibold">${row.ms65.toLocaleString()}</td>
+                      <td className="p-3 text-[#D0CCC4] text-xs">{row.notes}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -251,44 +251,44 @@ export default function SilverDimesValuePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4">
               Roosevelt Dime Values (1946-1964)
             </h2>
-            <p className="text-slate-600 text-center mb-8 max-w-2xl mx-auto">
+            <p className="text-[#D0CCC4] text-center mb-8 max-w-2xl mx-auto">
               Roosevelt dimes offer the most affordable entry into silver dimes. Common dates
               trade near melt value, but S-mint issues from 1949-1955 carry premiums.
             </p>
-            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden overflow-x-auto">
+            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl overflow-hidden overflow-x-auto">
               <table className="w-full min-w-[800px] text-sm">
                 <thead className="bg-slate-800/80">
                   <tr>
-                    <th className="text-left p-3 text-slate-900 font-bold">Year</th>
-                    <th className="text-center p-3 text-slate-900 font-bold">Mint</th>
-                    <th className="text-center p-3 text-slate-600">G-4</th>
-                    <th className="text-center p-3 text-slate-600">VG-8</th>
-                    <th className="text-center p-3 text-slate-600">F-12</th>
-                    <th className="text-center p-3 text-slate-600">VF-20</th>
-                    <th className="text-center p-3 text-slate-600">XF-40</th>
-                    <th className="text-center p-3 text-slate-600">AU-50</th>
-                    <th className="text-center p-3 text-[#B22234]">MS-60</th>
-                    <th className="text-center p-3 text-[#B22234]">MS-65</th>
-                    <th className="text-left p-3 text-slate-600">Notes</th>
+                    <th className="text-left p-3 text-[#F6F4EF] font-bold">Year</th>
+                    <th className="text-center p-3 text-[#F6F4EF] font-bold">Mint</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">G-4</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">VG-8</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">F-12</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">VF-20</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">XF-40</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">AU-50</th>
+                    <th className="text-center p-3 text-[#D4A94E]">MS-60</th>
+                    <th className="text-center p-3 text-[#D4A94E]">MS-65</th>
+                    <th className="text-left p-3 text-[#D0CCC4]">Notes</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200">
+                <tbody className="divide-y divide-[#2A2D42]">
                   {rooseveltDimeValues.map((row, index) => (
-                    <tr key={index} className={row.notes.includes("Semi-key") ? "bg-[#B22234]/10" : ""}>
-                      <td className="p-3 text-slate-900 font-medium">{row.year}</td>
-                      <td className="p-3 text-center text-slate-600">{row.mint}</td>
-                      <td className="p-3 text-center text-slate-600">${row.g}</td>
-                      <td className="p-3 text-center text-slate-600">${row.vg}</td>
-                      <td className="p-3 text-center text-slate-600">${row.f}</td>
-                      <td className="p-3 text-center text-slate-600">${row.vf}</td>
-                      <td className="p-3 text-center text-slate-600">${row.xf}</td>
-                      <td className="p-3 text-center text-slate-600">${row.au}</td>
+                    <tr key={index} className={row.notes.includes("Semi-key") ? "bg-[rgba(220,38,38,0.1)]" : ""}>
+                      <td className="p-3 text-[#F6F4EF] font-medium">{row.year}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.mint}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.g}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.vg}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.f}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.vf}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.xf}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.au}</td>
                       <td className="p-3 text-center text-green-400">${row.ms60}</td>
-                      <td className="p-3 text-center text-[#B22234] font-semibold">${row.ms65}</td>
-                      <td className="p-3 text-slate-600 text-xs">{row.notes}</td>
+                      <td className="p-3 text-center text-[#D4A94E] font-semibold">${row.ms65}</td>
+                      <td className="p-3 text-[#D0CCC4] text-xs">{row.notes}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -299,47 +299,47 @@ export default function SilverDimesValuePage() {
       </section>
 
       {/* Barber Dimes */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4">
               Barber Dime Values (1892-1916)
             </h2>
-            <p className="text-slate-600 text-center mb-8 max-w-2xl mx-auto">
+            <p className="text-[#D0CCC4] text-center mb-8 max-w-2xl mx-auto">
               Barber dimes are scarcer than Mercury or Roosevelt dimes. Many dates are rare in
               high grades. The 1894-S with only 24 minted is a legendary rarity.
             </p>
-            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden overflow-x-auto">
+            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl overflow-hidden overflow-x-auto">
               <table className="w-full min-w-[800px] text-sm">
                 <thead className="bg-slate-800/80">
                   <tr>
-                    <th className="text-left p-3 text-slate-900 font-bold">Year</th>
-                    <th className="text-center p-3 text-slate-900 font-bold">Mint</th>
-                    <th className="text-center p-3 text-slate-600">G-4</th>
-                    <th className="text-center p-3 text-slate-600">VG-8</th>
-                    <th className="text-center p-3 text-slate-600">F-12</th>
-                    <th className="text-center p-3 text-slate-600">VF-20</th>
-                    <th className="text-center p-3 text-slate-600">XF-40</th>
-                    <th className="text-center p-3 text-slate-600">AU-50</th>
-                    <th className="text-center p-3 text-[#B22234]">MS-60</th>
-                    <th className="text-center p-3 text-[#B22234]">MS-65</th>
-                    <th className="text-left p-3 text-slate-600">Notes</th>
+                    <th className="text-left p-3 text-[#F6F4EF] font-bold">Year</th>
+                    <th className="text-center p-3 text-[#F6F4EF] font-bold">Mint</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">G-4</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">VG-8</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">F-12</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">VF-20</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">XF-40</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">AU-50</th>
+                    <th className="text-center p-3 text-[#D4A94E]">MS-60</th>
+                    <th className="text-center p-3 text-[#D4A94E]">MS-65</th>
+                    <th className="text-left p-3 text-[#D0CCC4]">Notes</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200">
+                <tbody className="divide-y divide-[#2A2D42]">
                   {barberDimeValues.map((row, index) => (
-                    <tr key={index} className={row.notes.includes("Key") || row.notes.includes("Legendary") ? "bg-[#B22234]/10" : ""}>
-                      <td className="p-3 text-slate-900 font-medium">{row.year}</td>
-                      <td className="p-3 text-center text-slate-600">{row.mint}</td>
-                      <td className="p-3 text-center text-slate-600">${row.g.toLocaleString()}</td>
-                      <td className="p-3 text-center text-slate-600">${row.vg.toLocaleString()}</td>
-                      <td className="p-3 text-center text-slate-600">${row.f.toLocaleString()}</td>
-                      <td className="p-3 text-center text-slate-600">${row.vf.toLocaleString()}</td>
-                      <td className="p-3 text-center text-slate-600">${row.xf.toLocaleString()}</td>
-                      <td className="p-3 text-center text-slate-600">${row.au.toLocaleString()}</td>
+                    <tr key={index} className={row.notes.includes("Key") || row.notes.includes("Legendary") ? "bg-[rgba(220,38,38,0.1)]" : ""}>
+                      <td className="p-3 text-[#F6F4EF] font-medium">{row.year}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.mint}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.g.toLocaleString()}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.vg.toLocaleString()}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.f.toLocaleString()}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.vf.toLocaleString()}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.xf.toLocaleString()}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.au.toLocaleString()}</td>
                       <td className="p-3 text-center text-green-400">${row.ms60.toLocaleString()}</td>
-                      <td className="p-3 text-center text-[#B22234] font-semibold">${row.ms65.toLocaleString()}</td>
-                      <td className="p-3 text-slate-600 text-xs">{row.notes}</td>
+                      <td className="p-3 text-center text-[#D4A94E] font-semibold">${row.ms65.toLocaleString()}</td>
+                      <td className="p-3 text-[#D0CCC4] text-xs">{row.notes}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -353,51 +353,51 @@ export default function SilverDimesValuePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Understanding Silver Dime Melt Value
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-4">Silver Content</h3>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Silver Content</h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Weight:</span> 2.5 grams total
+                      <span className="font-semibold text-[#F6F4EF]">Weight:</span> 2.5 grams total
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Composition:</span> 90% silver, 10% copper
+                      <span className="font-semibold text-[#F6F4EF]">Composition:</span> 90% silver, 10% copper
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Pure Silver:</span> 0.0723 troy ounces
+                      <span className="font-semibold text-[#F6F4EF]">Pure Silver:</span> 0.0723 troy ounces
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Face Value Multiplier:</span> $1.40 = $1 face value
+                      <span className="font-semibold text-[#F6F4EF]">Face Value Multiplier:</span> $1.40 = $1 face value
                     </div>
                   </li>
                 </ul>
               </div>
               <div className="bg-gradient-to-br from-[#B22234]/10 via-amber-500/5 to-transparent border border-[#B22234]/30 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#B22234] mb-4">Quick Math</h3>
-                <p className="text-slate-600 mb-4">
-                  At <span className="text-slate-900 font-semibold">$25/oz silver</span>:
+                <h3 className="text-lg font-bold text-[#D4A94E] mb-4">Quick Math</h3>
+                <p className="text-[#D0CCC4] mb-4">
+                  At <span className="text-[#F6F4EF] font-semibold">$25/oz silver</span>:
                 </p>
-                <ul className="space-y-2 text-slate-600">
+                <ul className="space-y-2 text-[#D0CCC4]">
                   <li>1 dime = $1.81 melt value</li>
                   <li>10 dimes ($1 face) = $18.08</li>
                   <li>100 dimes ($10 face) = $180.83</li>
                   <li>$1,000 face value = $18,083</li>
                 </ul>
-                <p className="text-sm text-slate-600 mt-4">
+                <p className="text-sm text-[#D0CCC4] mt-4">
                   Most dealers buy at 95-100% of melt and sell at 105-115% of melt for common dates.
                 </p>
               </div>
@@ -407,25 +407,25 @@ export default function SilverDimesValuePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {schema.mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -439,30 +439,30 @@ export default function SilverDimesValuePage() {
       <section className="py-12 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
+            <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
               Related Silver Coin Guides
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <Link
                 href="/silver-coin-values/silver-quarters"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Silver Quarters</h3>
-                <p className="text-sm text-slate-600">Pre-1965 quarter values</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Silver Quarters</h3>
+                <p className="text-sm text-[#D0CCC4]">Pre-1965 quarter values</p>
               </Link>
               <Link
                 href="/silver-coin-values/melt-value-calculator"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Melt Value Calculator</h3>
-                <p className="text-sm text-slate-600">Calculate silver value instantly</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Melt Value Calculator</h3>
+                <p className="text-sm text-[#D0CCC4]">Calculate silver value instantly</p>
               </Link>
               <Link
                 href="/silver-coin-values/junk-silver"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Junk Silver Guide</h3>
-                <p className="text-sm text-slate-600">Constitutional silver coins</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Junk Silver Guide</h3>
+                <p className="text-sm text-[#D0CCC4]">Constitutional silver coins</p>
               </Link>
             </div>
           </div>

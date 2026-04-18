@@ -48,12 +48,12 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden shadow-[0_-4px_20px_rgba(0,0,0,0.1)]">
-      <div className="bg-white/95 backdrop-blur-lg border-t border-slate-200 px-4 py-3 safe-area-pb">
+      <div className="bg-white/95 backdrop-blur-lg border-t border-[#2A2D42] px-4 py-3 safe-area-pb">
         <div className="flex items-center gap-3">
           {/* Dismiss button */}
           <button
             onClick={() => setIsDismissed(true)}
-            className="p-1.5 text-slate-400 hover:text-slate-600 transition-colors"
+            className="p-1.5 text-[#A8A39A] hover:text-[#F6F4EF] transition-colors"
             aria-label="Dismiss"
           >
             <X className="h-4 w-4" />
@@ -67,13 +67,13 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
                   <Star className="h-3 w-3 fill-amber-500 text-amber-500" />
                   <span>Our #1 Pick</span>
                 </div>
-                <p className="text-slate-900 text-sm font-bold truncate">
+                <p className="text-[#F6F4EF] text-sm font-bold truncate">
                   Get Your Free Gold IRA Kit
                 </p>
               </div>
               <button
                 onClick={handleCtaClick}
-                className="flex items-center gap-2 px-4 py-2.5 bg-[#B22234] text-white font-bold text-sm rounded-lg hover:bg-[#8b1c2a] transition-all whitespace-nowrap shadow-sm"
+                className="flex items-center gap-2 px-4 py-2.5 bg-[#DC2626] text-white font-bold text-sm rounded-lg hover:bg-[#991B1B] transition-all whitespace-nowrap shadow-sm"
               >
                 Get Free Kit
                 <ArrowRight className="h-4 w-4" />
@@ -87,7 +87,7 @@ export function StickyMobileCTA({ companySlug, companyName }: StickyMobileCTAPro
                   <Shield className="h-3 w-3 fill-green-100" />
                   <span>Better Alternative?</span>
                 </div>
-                <p className="text-slate-900 text-sm font-bold truncate">
+                <p className="text-[#F6F4EF] text-sm font-bold truncate">
                   See why Augusta is rated #1
                 </p>
               </div>

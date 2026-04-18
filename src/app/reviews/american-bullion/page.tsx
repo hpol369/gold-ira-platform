@@ -16,25 +16,25 @@ export const metadata = {
 
 export default function AmericanBullionReviewPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-slate-50">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <div className="flex-grow">
                 {/* Header / Hero for Review */}
-                <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-1/3 h-full bg-[#000080]/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
+                <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-16 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-1/3 h-full bg-[rgba(197,149,46,0.06)] skew-x-12 transform translate-x-20 pointer-events-none"></div>
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
-                            <div className="flex items-center gap-2 text-[#B22234] text-sm font-bold uppercase tracking-wider mb-4">
-                                <span className="bg-white px-2 py-1 rounded border border-slate-200">Gold IRA Company Reviews</span>
+                            <div className="flex items-center gap-2 text-[#D4A94E] text-sm font-bold uppercase tracking-wider mb-4">
+                                <span className="bg-[rgba(197,149,46,0.1)] px-2 py-1 rounded border border-[#2A2D42]">Gold IRA Company Reviews</span>
                                 <span>•</span>
                                 <span>Updated Jan 2026</span>
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#000080]">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#F6F4EF]">
                                 American Bullion Review: <br />
-                                <span className="text-slate-500">The Original Gold IRA Pioneer?</span>
+                                <span className="text-[#A8A39A]">The Original Gold IRA Pioneer?</span>
                             </h1>
-                            <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
+                            <p className="text-xl text-[#D0CCC4] max-w-2xl leading-relaxed">
                                 Founded in 2009, American Bullion claims to have "pioneered" the Gold IRA industry. But does experience translate to better service, or have newer competitors passed them by?
                             </p>
                         </div>
@@ -60,7 +60,7 @@ export default function AmericanBullionReviewPage() {
                             />
 
                             {/* Main Body Content - TYPOGRAPHY PROSE */}
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-[#B22234]">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E]">
                                 <h2>The Straight Talk</h2>
                                 <p>
                                     <strong>You&apos;ve been working hard since before 2008.</strong> You remember what happened to retirement accounts that year. American Bullion has been around since 2009—they started right after that crash, when people were scrambling to protect what was left of their savings.
@@ -96,10 +96,10 @@ export default function AmericanBullionReviewPage() {
                                 </p>
 
                                 <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
-                                    <h4 className="font-bold text-[#000080] flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5 text-[#B22234]" /> Experience vs. Innovation
+                                    <h4 className="font-bold text-[#F6F4EF] flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-[#D4A94E]" /> Experience vs. Innovation
                                     </h4>
-                                    <p className="text-sm text-slate-600">
+                                    <p className="text-sm text-[#D0CCC4]">
                                         American Bullion's age is their biggest asset—and their biggest limitation. They know the business inside out, but haven't invested in modern educational content and digital experience that newer competitors prioritize.
                                     </p>
                                 </div>
@@ -120,7 +120,7 @@ export default function AmericanBullionReviewPage() {
                                     Complaints that exist tend to center on pricing (not always the cheapest) and communication speed. Nothing catastrophic—no patterns of fraud or major failures.
                                 </p>
 
-                                <hr className="my-12 border-slate-200" />
+                                <hr className="my-12 border-[#2A2D42]" />
 
                                 <h2>Final Verdict: Experienced, Not Flashy</h2>
                                 <p>
@@ -135,10 +135,10 @@ export default function AmericanBullionReviewPage() {
                             </div>
 
                             {/* Bottom CTA */}
-                            <div className="bg-slate-50 border border-slate-200 p-8 rounded-2xl text-center mt-12 shadow-sm relative overflow-hidden">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] p-8 rounded-2xl text-center mt-12 shadow-sm relative overflow-hidden">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Want Modern Tools & Education?</h3>
-                                    <p className="mb-8 text-slate-600 max-w-lg mx-auto">
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Want Modern Tools & Education?</h3>
+                                    <p className="mb-8 text-[#D0CCC4] max-w-lg mx-auto">
                                         Compare American Bullion with our top-rated companies.
                                     </p>
                                     <LeadCaptureButton

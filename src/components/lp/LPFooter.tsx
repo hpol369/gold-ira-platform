@@ -18,7 +18,7 @@ export function LPFooter({ className }: LPFooterProps) {
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[#A8A39A]">
           <div>
             &copy; {currentYear} Rich Dad Retirement. All rights reserved.
           </div>
@@ -43,7 +43,7 @@ export function LPFooter({ className }: LPFooterProps) {
             </Link>
           </div>
         </div>
-        <div className="mt-4 text-xs text-slate-600 text-center">
+        <div className="mt-4 text-xs text-[#D0CCC4] text-center">
           <p>
             This site is for informational purposes only. Always consult with a
             qualified financial advisor before making investment decisions.

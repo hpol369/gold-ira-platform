@@ -59,14 +59,14 @@ export default function GoldIRARolloverPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-slate-900 font-serif">
+        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
 
             {/* Top Alert Bar */}
-            <div className="bg-[#000080] text-white p-3 text-center font-bold uppercase tracking-wider text-sm">
+            <div className="bg-[rgba(197,149,46,0.1)] text-white p-3 text-center font-bold uppercase tracking-wider text-sm">
                 <span className="flex items-center justify-center gap-2">
                     <ArrowRightLeft className="h-4 w-4" />
                     Tax-Free Gold IRA Rollover — Free Step-by-Step Checklist
@@ -74,16 +74,16 @@ export default function GoldIRARolloverPage() {
             </div>
 
             {/* Hero Section */}
-            <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
+            <header className="relative py-12 md:py-20 bg-[#0C0D18] border-b-4 border-[#000080]">
                 <div className="max-w-4xl mx-auto px-4 text-center">
-                    <div className="inline-flex items-center gap-2 bg-[#000080]/10 text-[#000080] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6">
+                    <div className="inline-flex items-center gap-2 bg-[rgba(197,149,46,0.08)] text-[#F6F4EF] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6">
                         <ClipboardCheck className="h-4 w-4" />
                         2026 Rollover Checklist
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#F6F4EF] mb-6 leading-tight uppercase">
                         Move Your 401(k) or IRA <br />
-                        <span className="text-[#B22234] underline decoration-4 underline-offset-8">to Physical Gold</span>
+                        <span className="text-[#D4A94E] underline decoration-4 underline-offset-8">to Physical Gold</span>
                     </h1>
 
                     <div className="mb-4 flex flex-wrap justify-center gap-3">
@@ -91,23 +91,23 @@ export default function GoldIRARolloverPage() {
                         <ZeroFeesBadge />
                     </div>
 
-                    <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
+                    <p className="text-xl md:text-2xl text-[#D0CCC4] font-sans mb-8 max-w-2xl mx-auto">
                         Free step-by-step checklist shows you exactly how. <strong>Takes 15 minutes.</strong>
                     </p>
 
                     {/* Quick Stats */}
                     <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10 font-sans">
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-black text-[#000080]">$0</div>
-                            <div className="text-sm text-slate-600">Tax on Rollover</div>
+                            <div className="text-3xl md:text-4xl font-black text-[#F6F4EF]">$0</div>
+                            <div className="text-sm text-[#D0CCC4]">Tax on Rollover</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-black text-[#000080]">$0</div>
-                            <div className="text-sm text-slate-600">Penalties</div>
+                            <div className="text-3xl md:text-4xl font-black text-[#F6F4EF]">$0</div>
+                            <div className="text-sm text-[#D0CCC4]">Penalties</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-black text-[#000080]">2-3</div>
-                            <div className="text-sm text-slate-600">Weeks to Complete</div>
+                            <div className="text-3xl md:text-4xl font-black text-[#F6F4EF]">2-3</div>
+                            <div className="text-sm text-[#D0CCC4]">Weeks to Complete</div>
                         </div>
                     </div>
 
@@ -117,12 +117,12 @@ export default function GoldIRARolloverPage() {
                             href={augustaLink("lp-gold-ira-rollover-hero")}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get My Free Rollover Checklist
                             <ArrowRight className="h-6 w-6" />
                         </a>
-                        <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
+                        <p className="text-sm text-[#A8A39A] font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Free • No Obligation • Tax-Free Transfer
                         </p>
@@ -131,14 +131,14 @@ export default function GoldIRARolloverPage() {
             </header>
 
             {/* Trust Bar */}
-            <section className="py-8 bg-slate-100 border-b border-slate-200">
+            <section className="py-8 bg-[#121423] border-b border-[#2A2D42]">
                 <div className="max-w-5xl mx-auto px-4 text-center">
-                    <p className="text-slate-500 font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
+                    <p className="text-[#A8A39A] font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale">
-                        <span className="text-2xl font-black text-slate-800">FOX NEWS</span>
-                        <span className="text-2xl font-black text-slate-800">NEWSMAX</span>
-                        <span className="text-2xl font-black text-slate-800">BEN SHAPIRO</span>
-                        <span className="text-2xl font-black text-slate-800">FORBES</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FOX NEWS</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">NEWSMAX</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">BEN SHAPIRO</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FORBES</span>
                     </div>
                 </div>
             </section>
@@ -146,10 +146,10 @@ export default function GoldIRARolloverPage() {
             {/* Which Account Do You Have? */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         Which Account Do You Have?
                     </h2>
-                    <p className="text-center text-slate-600 mb-10 text-lg">
+                    <p className="text-center text-[#D0CCC4] mb-10 text-lg">
                         All of these are eligible for a tax-free rollover to physical gold.
                     </p>
 
@@ -163,11 +163,11 @@ export default function GoldIRARolloverPage() {
                             { icon: DollarSign, label: "SEP IRA" },
                             { icon: Building2, label: "457(b)" },
                         ].map((item, index) => (
-                            <div key={index} className="bg-slate-50 p-5 rounded-xl border border-slate-200 text-center hover:border-green-300 transition-colors">
+                            <div key={index} className="bg-[#0C0D18] p-5 rounded-xl border border-[#2A2D42] text-center hover:border-green-300 transition-colors">
                                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
                                     <item.icon className="h-6 w-6 text-green-600" />
                                 </div>
-                                <p className="font-bold text-[#000080] text-lg">{item.label}</p>
+                                <p className="font-bold text-[#F6F4EF] text-lg">{item.label}</p>
                                 <p className="text-xs text-green-600 font-semibold mt-1 flex items-center justify-center gap-1">
                                     <CheckCircle2 className="h-3 w-3" />
                                     Eligible for tax-free rollover
@@ -179,51 +179,51 @@ export default function GoldIRARolloverPage() {
             </section>
 
             {/* How It Works — 3 Steps */}
-            <section className="py-16 bg-slate-50 font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         How It Works — 3 Steps
                     </h2>
-                    <p className="text-center text-slate-600 mb-12 text-lg">
+                    <p className="text-center text-[#D0CCC4] mb-12 text-lg">
                         You handle 5%. They handle 95%.
                     </p>
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className="relative bg-white p-8 rounded-xl border border-slate-200 text-center">
-                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-[#000080] rounded-full flex items-center justify-center text-white font-bold text-lg">
+                        <div className="relative bg-[#161828] p-8 rounded-xl border border-[#2A2D42] text-center">
+                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-[rgba(197,149,46,0.1)] rounded-full flex items-center justify-center text-white font-bold text-lg">
                                 1
                             </div>
-                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6 mt-4">
-                                <ClipboardCheck className="h-8 w-8 text-[#000080]" />
+                            <div className="w-16 h-16 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center mx-auto mb-6 mt-4">
+                                <ClipboardCheck className="h-8 w-8 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-[#000080] mb-3">Request Your Checklist</h3>
-                            <p className="text-slate-600">
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Request Your Checklist</h3>
+                            <p className="text-[#D0CCC4]">
                                 Get your free rollover checklist. A specialist reviews your account type and walks you through your options.
                             </p>
                         </div>
 
-                        <div className="relative bg-white p-8 rounded-xl border border-slate-200 text-center">
-                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-[#000080] rounded-full flex items-center justify-center text-white font-bold text-lg">
+                        <div className="relative bg-[#161828] p-8 rounded-xl border border-[#2A2D42] text-center">
+                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-[rgba(197,149,46,0.1)] rounded-full flex items-center justify-center text-white font-bold text-lg">
                                 2
                             </div>
-                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6 mt-4">
-                                <FileCheck className="h-8 w-8 text-[#000080]" />
+                            <div className="w-16 h-16 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center mx-auto mb-6 mt-4">
+                                <FileCheck className="h-8 w-8 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-[#000080] mb-3">They Handle the Paperwork</h3>
-                            <p className="text-slate-600">
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">They Handle the Paperwork</h3>
+                            <p className="text-[#D0CCC4]">
                                 Augusta coordinates with your current custodian. They handle 95% of the paperwork. You just approve and sign.
                             </p>
                         </div>
 
-                        <div className="relative bg-white p-8 rounded-xl border border-slate-200 text-center">
-                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-[#000080] rounded-full flex items-center justify-center text-white font-bold text-lg">
+                        <div className="relative bg-[#161828] p-8 rounded-xl border border-[#2A2D42] text-center">
+                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-10 h-10 bg-[rgba(197,149,46,0.1)] rounded-full flex items-center justify-center text-white font-bold text-lg">
                                 3
                             </div>
-                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6 mt-4">
-                                <Shield className="h-8 w-8 text-[#000080]" />
+                            <div className="w-16 h-16 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center mx-auto mb-6 mt-4">
+                                <Shield className="h-8 w-8 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-[#000080] mb-3">Your Gold Is Secured</h3>
-                            <p className="text-slate-600">
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Your Gold Is Secured</h3>
+                            <p className="text-[#D0CCC4]">
                                 Your physical gold is stored in a secure, insured depository. Done in 2-3 weeks. You own real, tangible wealth.
                             </p>
                         </div>
@@ -234,7 +234,7 @@ export default function GoldIRARolloverPage() {
                             href={augustaLink("lp-gold-ira-rollover-steps")}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
+                            className="inline-block bg-[rgba(197,149,46,0.1)] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
                         >
                             Start My Rollover — Free
                         </a>
@@ -245,36 +245,36 @@ export default function GoldIRARolloverPage() {
             {/* Key Objections */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-10">
                         Your Questions, Answered
                     </h2>
 
                     <div className="grid sm:grid-cols-2 gap-6">
-                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                            <p className="text-[#000080] font-bold text-lg mb-2">&ldquo;Will I pay taxes?&rdquo;</p>
-                            <p className="text-slate-700">
+                        <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42]">
+                            <p className="text-[#F6F4EF] font-bold text-lg mb-2">&ldquo;Will I pay taxes?&rdquo;</p>
+                            <p className="text-[#D0CCC4]">
                                 <strong className="text-green-600">No.</strong> Direct rollovers are tax-free. Funds move between custodians — they never hit your personal account.
                             </p>
                         </div>
 
-                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                            <p className="text-[#000080] font-bold text-lg mb-2">&ldquo;Will I pay penalties?&rdquo;</p>
-                            <p className="text-slate-700">
+                        <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42]">
+                            <p className="text-[#F6F4EF] font-bold text-lg mb-2">&ldquo;Will I pay penalties?&rdquo;</p>
+                            <p className="text-[#D0CCC4]">
                                 <strong className="text-green-600">No.</strong> A direct rollover is not a withdrawal. No early distribution penalties at any age.
                             </p>
                         </div>
 
-                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                            <p className="text-[#000080] font-bold text-lg mb-2">&ldquo;How long does it take?&rdquo;</p>
-                            <p className="text-slate-700">
-                                <strong className="text-[#000080]">2-3 weeks</strong> for most rollovers. Augusta coordinates everything and keeps you updated throughout.
+                        <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42]">
+                            <p className="text-[#F6F4EF] font-bold text-lg mb-2">&ldquo;How long does it take?&rdquo;</p>
+                            <p className="text-[#D0CCC4]">
+                                <strong className="text-[#F6F4EF]">2-3 weeks</strong> for most rollovers. Augusta coordinates everything and keeps you updated throughout.
                             </p>
                         </div>
 
-                        <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                            <p className="text-[#000080] font-bold text-lg mb-2">&ldquo;What&apos;s the minimum?&rdquo;</p>
-                            <p className="text-slate-700">
-                                <strong className="text-[#000080]">$50,000</strong> in qualifying retirement savings. Partial rollovers are available — you don&apos;t have to move everything.
+                        <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42]">
+                            <p className="text-[#F6F4EF] font-bold text-lg mb-2">&ldquo;What&apos;s the minimum?&rdquo;</p>
+                            <p className="text-[#D0CCC4]">
+                                <strong className="text-[#F6F4EF]">$50,000</strong> in qualifying retirement savings. Partial rollovers are available — you don&apos;t have to move everything.
                             </p>
                         </div>
                     </div>
@@ -282,41 +282,41 @@ export default function GoldIRARolloverPage() {
             </section>
 
             {/* Trust Stats Bar */}
-            <section className="py-12 bg-[#000080] text-white font-sans">
+            <section className="py-12 bg-[rgba(197,149,46,0.1)] text-white font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                         <div>
                             <div className="text-4xl font-black text-amber-400">A+</div>
-                            <div className="text-sm text-slate-300 mt-1">BBB Rating</div>
+                            <div className="text-sm text-[#3F4460] mt-1">BBB Rating</div>
                         </div>
                         <div>
                             <div className="text-4xl font-black text-amber-400">0</div>
-                            <div className="text-sm text-slate-300 mt-1">BBB Complaints</div>
+                            <div className="text-sm text-[#3F4460] mt-1">BBB Complaints</div>
                         </div>
                         <div>
                             <div className="text-4xl font-black text-amber-400">50K+</div>
-                            <div className="text-sm text-slate-300 mt-1">Americans Served</div>
+                            <div className="text-sm text-[#3F4460] mt-1">Americans Served</div>
                         </div>
                         <div>
                             <div className="text-4xl font-black text-amber-400">$0</div>
-                            <div className="text-sm text-slate-300 mt-1">Fees for 10 Years</div>
+                            <div className="text-sm text-[#3F4460] mt-1">Fees for 10 Years</div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* FAQ Section */}
-            <section className="py-16 bg-slate-100 font-sans">
+            <section className="py-16 bg-[#121423] font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-10">
                         Rollover FAQs
                     </h2>
 
                     <div className="space-y-6">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="bg-white rounded-lg p-6 shadow-sm border border-slate-200">
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">{faq.question}</h3>
-                                <p className="text-slate-700 leading-relaxed">{faq.answer}</p>
+                            <div key={index} className="bg-[#161828] rounded-lg p-6 shadow-sm border border-[#2A2D42]">
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">{faq.question}</h3>
+                                <p className="text-[#D0CCC4] leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>
@@ -324,12 +324,12 @@ export default function GoldIRARolloverPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-[#000080] text-center">
+            <section className="py-16 bg-[rgba(197,149,46,0.1)] text-center">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
                         Ready to Move Your Retirement to Gold?
                     </h2>
-                    <p className="text-slate-300 text-lg mb-8 font-sans">
+                    <p className="text-[#3F4460] text-lg mb-8 font-sans">
                         Get your free rollover checklist. Tax-free. Penalty-free. Takes 15 minutes.
                     </p>
 
@@ -352,18 +352,18 @@ export default function GoldIRARolloverPage() {
                         href={augustaLink("lp-gold-ira-rollover-footer")}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get My Free Rollover Checklist
                     </a>
 
-                    <p className="text-slate-400 mt-6 text-sm font-sans">
+                    <p className="text-[#A8A39A] mt-6 text-sm font-sans">
                         100% free. No obligation. Your information is secure.
                     </p>
                 </div>
             </section>
 
-            <footer className="bg-slate-900 text-slate-600 py-8 text-center text-xs font-sans">
+            <footer className="bg-slate-900 text-[#D0CCC4] py-8 text-center text-xs font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <p>&copy; 2026 Rich Dad Retirement. All Rights Reserved.</p>
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals investing involves risk. Past performance does not guarantee future results.</p>

@@ -199,7 +199,7 @@ export function CharitableRemainderTrustCalculator() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
           Charitable Remainder Trust Calculator
         </h1>
-        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
           Calculate income, tax deductions, and charitable benefits from a CRAT or CRUT.
           Perfect for appreciated assets like gold holdings.
         </p>
@@ -209,7 +209,7 @@ export function CharitableRemainderTrustCalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Contribution Details */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
                 <Gift className="h-5 w-5 text-purple-700" />
@@ -219,47 +219,47 @@ export function CharitableRemainderTrustCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Contribution Amount (Fair Market Value)
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={contributionAmount}
                     onChange={(e) => setContributionAmount(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-purple-500"
                     min="100000"
                     step="50000"
                   />
                 </div>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-[#A8A39A] mt-1">
                   Minimum $100,000 recommended for CRT setup costs
                 </p>
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Cost Basis (Original Purchase Price)
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={costBasis}
                     onChange={(e) => setCostBasis(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-purple-500"
                     min="0"
                     step="10000"
                   />
                 </div>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-[#A8A39A] mt-1">
                   Unrealized gain: {formatCurrency(contributionAmount - costBasis)}
                 </p>
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Trust Type
                 </label>
                 <div className="grid grid-cols-2 gap-3">
@@ -268,7 +268,7 @@ export function CharitableRemainderTrustCalculator() {
                     className={`p-3 rounded-lg border text-sm font-medium transition-all ${
                       trustType === "crut"
                         ? "bg-purple-500/20 border-purple-500 text-purple-700"
-                        : "bg-slate-100 border-slate-700 text-slate-500 hover:border-slate-600"
+                        : "bg-[#121423] border-slate-700 text-[#A8A39A] hover:border-slate-600"
                     }`}
                   >
                     <div className="font-semibold">CRUT</div>
@@ -279,7 +279,7 @@ export function CharitableRemainderTrustCalculator() {
                     className={`p-3 rounded-lg border text-sm font-medium transition-all ${
                       trustType === "crat"
                         ? "bg-purple-500/20 border-purple-500 text-purple-700"
-                        : "bg-slate-100 border-slate-700 text-slate-500 hover:border-slate-600"
+                        : "bg-[#121423] border-slate-700 text-[#A8A39A] hover:border-slate-600"
                     }`}
                   >
                     <div className="font-semibold">CRAT</div>
@@ -291,7 +291,7 @@ export function CharitableRemainderTrustCalculator() {
           </div>
 
           {/* Payout Settings */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
                 <Percent className="h-5 w-5 text-green-600" />
@@ -301,7 +301,7 @@ export function CharitableRemainderTrustCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Payout Rate: {payoutRate}%
                 </label>
                 <input
@@ -313,20 +313,20 @@ export function CharitableRemainderTrustCalculator() {
                   onChange={(e) => setPayoutRate(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-purple-500"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>5% (Min)</span>
                   <span>Typical: 5-7%</span>
                   <span>50% (Max)</span>
                 </div>
                 {payoutRate > 10 && (
-                  <p className="text-[#B22234] text-xs mt-2">
+                  <p className="text-[#D4A94E] text-xs mt-2">
                     Higher payout rates reduce charitable deduction and may not pass IRS 10% remainder test.
                   </p>
                 )}
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Trust Term
                 </label>
                 <div className="grid grid-cols-2 gap-3 mb-3">
@@ -335,7 +335,7 @@ export function CharitableRemainderTrustCalculator() {
                     className={`p-3 rounded-lg border text-sm font-medium transition-all ${
                       termType === "life"
                         ? "bg-green-500/20 border-green-500 text-green-600"
-                        : "bg-slate-100 border-slate-700 text-slate-500 hover:border-slate-600"
+                        : "bg-[#121423] border-slate-700 text-[#A8A39A] hover:border-slate-600"
                     }`}
                   >
                     Lifetime
@@ -345,7 +345,7 @@ export function CharitableRemainderTrustCalculator() {
                     className={`p-3 rounded-lg border text-sm font-medium transition-all ${
                       termType === "years"
                         ? "bg-green-500/20 border-green-500 text-green-600"
-                        : "bg-slate-100 border-slate-700 text-slate-500 hover:border-slate-600"
+                        : "bg-[#121423] border-slate-700 text-[#A8A39A] hover:border-slate-600"
                     }`}
                   >
                     Fixed Years
@@ -353,7 +353,7 @@ export function CharitableRemainderTrustCalculator() {
                 </div>
                 {termType === "years" && (
                   <div>
-                    <label className="text-sm text-slate-500 mb-2 block">
+                    <label className="text-sm text-[#A8A39A] mb-2 block">
                       Number of Years: {termYears}
                     </label>
                     <input
@@ -370,7 +370,7 @@ export function CharitableRemainderTrustCalculator() {
 
               {termType === "life" && (
                 <div>
-                  <label className="text-sm text-slate-500 mb-2 block">
+                  <label className="text-sm text-[#A8A39A] mb-2 block">
                     Your Age: {beneficiaryAge}
                   </label>
                   <input
@@ -381,7 +381,7 @@ export function CharitableRemainderTrustCalculator() {
                     onChange={(e) => setBeneficiaryAge(Number(e.target.value))}
                     className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-purple-500"
                   />
-                  <p className="text-xs text-slate-500 mt-1">
+                  <p className="text-xs text-[#A8A39A] mt-1">
                     Estimated life expectancy: {calculations.actualTerm} years
                   </p>
                 </div>
@@ -390,7 +390,7 @@ export function CharitableRemainderTrustCalculator() {
           </div>
 
           {/* Tax & Growth Assumptions */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
                 <TrendingUp className="h-5 w-5 text-blue-600" />
@@ -400,11 +400,11 @@ export function CharitableRemainderTrustCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 flex items-center gap-2">
+                <label className="text-sm text-[#A8A39A] mb-2 flex items-center gap-2">
                   AFR (Section 7520 Rate): {afrRate}%
                   <div className="group relative">
-                    <Info className="h-4 w-4 text-slate-500 cursor-help" />
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-slate-100 text-xs text-slate-600 rounded-lg p-3 border border-slate-700 z-10">
+                    <Info className="h-4 w-4 text-[#A8A39A] cursor-help" />
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-[#121423] text-xs text-[#D0CCC4] rounded-lg p-3 border border-slate-700 z-10">
                       IRS publishes this rate monthly. It affects the charitable deduction calculation. Check IRS.gov for current rate.
                     </div>
                   </div>
@@ -421,7 +421,7 @@ export function CharitableRemainderTrustCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Expected Trust Growth Rate: {expectedGrowth}%
                 </label>
                 <input
@@ -437,7 +437,7 @@ export function CharitableRemainderTrustCalculator() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="text-sm text-slate-500 mb-2 block">
+                  <label className="text-sm text-[#A8A39A] mb-2 block">
                     Income Tax Rate: {marginalTaxRate}%
                   </label>
                   <input
@@ -451,7 +451,7 @@ export function CharitableRemainderTrustCalculator() {
                   />
                 </div>
                 <div>
-                  <label className="text-sm text-slate-500 mb-2 block">
+                  <label className="text-sm text-[#A8A39A] mb-2 block">
                     Cap Gains Rate: {capitalGainsRate}%
                   </label>
                   <input
@@ -476,80 +476,80 @@ export function CharitableRemainderTrustCalculator() {
             <div className="flex items-center gap-3 mb-6">
               <Shield className="h-10 w-10 text-purple-700" />
               <div>
-                <h3 className="text-sm text-slate-500">Immediate Tax Benefits</h3>
+                <h3 className="text-sm text-[#A8A39A]">Immediate Tax Benefits</h3>
                 <div className="text-3xl font-bold text-purple-700">
                   {formatCurrency(calculations.totalTaxBenefits)}
                 </div>
               </div>
             </div>
 
-            <div className="space-y-3 bg-slate-50 rounded-lg p-4">
+            <div className="space-y-3 bg-[#0C0D18] rounded-lg p-4">
               <div className="flex justify-between items-center">
-                <span className="text-slate-600 text-sm">Charitable Deduction</span>
-                <span className="font-semibold text-slate-900">
+                <span className="text-[#D0CCC4] text-sm">Charitable Deduction</span>
+                <span className="font-semibold text-[#F6F4EF]">
                   {formatCurrency(calculations.charitableDeduction)}
                 </span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-slate-600 text-sm">Income Tax Savings</span>
+                <span className="text-[#D0CCC4] text-sm">Income Tax Savings</span>
                 <span className="font-semibold text-green-600">
                   {formatCurrency(calculations.incomeTaxSavings)}
                 </span>
               </div>
-              <div className="flex justify-between items-center pt-2 border-t border-slate-200">
-                <span className="text-slate-600 text-sm">Capital Gains Avoided</span>
+              <div className="flex justify-between items-center pt-2 border-t border-[#2A2D42]">
+                <span className="text-[#D0CCC4] text-sm">Capital Gains Avoided</span>
                 <span className="font-semibold text-green-600">
                   {formatCurrency(calculations.capitalGainsAvoided)}
                 </span>
               </div>
             </div>
 
-            <div className="mt-4 text-xs text-slate-500">
+            <div className="mt-4 text-xs text-[#A8A39A]">
               Remainder Factor: {formatPercent(calculations.remainderFactor)}
             </div>
           </div>
 
           {/* Income Stream */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <Calendar className="h-6 w-6 text-green-600" />
               <h3 className="text-lg font-semibold">Your Income Stream</h3>
             </div>
 
             <div className="grid grid-cols-2 gap-4 mb-6">
-              <div className="bg-slate-50 rounded-lg p-4">
-                <div className="text-xs text-slate-500 mb-1">First Year Income</div>
+              <div className="bg-[#0C0D18] rounded-lg p-4">
+                <div className="text-xs text-[#A8A39A] mb-1">First Year Income</div>
                 <div className="text-2xl font-bold text-green-600">
                   {formatCurrency(calculations.firstYearIncome)}
                 </div>
-                <div className="text-xs text-slate-500">
+                <div className="text-xs text-[#A8A39A]">
                   {formatCurrency(calculations.monthlyIncome)}/month
                 </div>
               </div>
-              <div className="bg-slate-50 rounded-lg p-4">
-                <div className="text-xs text-slate-500 mb-1">Total Over {calculations.actualTerm} Years</div>
-                <div className="text-2xl font-bold text-slate-900">
+              <div className="bg-[#0C0D18] rounded-lg p-4">
+                <div className="text-xs text-[#A8A39A] mb-1">Total Over {calculations.actualTerm} Years</div>
+                <div className="text-2xl font-bold text-[#F6F4EF]">
                   {formatCurrency(calculations.totalIncome)}
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
-              <div className="flex items-center gap-2 text-[#B22234] text-sm font-semibold mb-2">
+            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
+              <div className="flex items-center gap-2 text-[#D4A94E] text-sm font-semibold mb-2">
                 <Gift className="h-4 w-4" />
                 Charitable Remainder
               </div>
-              <div className="text-2xl font-bold text-[#000080] mb-1">
+              <div className="text-2xl font-bold text-[#F6F4EF] mb-1">
                 {formatCurrency(calculations.estimatedRemainder)}
               </div>
-              <p className="text-xs text-slate-500">
+              <p className="text-xs text-[#A8A39A]">
                 Estimated amount going to your chosen charity at trust termination
               </p>
             </div>
           </div>
 
           {/* Projection Table */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
               <TrendingUp className="h-5 w-5 text-blue-600" />
               {trustType === "crut" ? "CRUT" : "CRAT"} Payment Schedule
@@ -558,29 +558,29 @@ export function CharitableRemainderTrustCalculator() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-slate-200">
-                    <th className="py-2 px-2 text-left text-slate-500">Year</th>
-                    <th className="py-2 px-2 text-right text-slate-500">Trust Value</th>
-                    <th className="py-2 px-2 text-right text-slate-500">Annual Payout</th>
-                    <th className="py-2 px-2 text-right text-slate-500">Cumulative</th>
+                  <tr className="border-b border-[#2A2D42]">
+                    <th className="py-2 px-2 text-left text-[#A8A39A]">Year</th>
+                    <th className="py-2 px-2 text-right text-[#A8A39A]">Trust Value</th>
+                    <th className="py-2 px-2 text-right text-[#A8A39A]">Annual Payout</th>
+                    <th className="py-2 px-2 text-right text-[#A8A39A]">Cumulative</th>
                   </tr>
                 </thead>
                 <tbody>
                   {calculations.projections.slice(0, 10).map((proj, idx) => (
                     <tr
                       key={proj.year}
-                      className={`border-b border-slate-200 ${idx === 0 ? "bg-purple-500/5" : ""}`}
+                      className={`border-b border-[#2A2D42] ${idx === 0 ? "bg-purple-500/5" : ""}`}
                     >
-                      <td className="py-2 px-2 text-slate-600">
+                      <td className="py-2 px-2 text-[#D0CCC4]">
                         {proj.year} (Age {proj.age})
                       </td>
-                      <td className="py-2 px-2 text-right text-slate-500">
+                      <td className="py-2 px-2 text-right text-[#A8A39A]">
                         {formatCurrency(proj.trustValue)}
                       </td>
                       <td className="py-2 px-2 text-right text-green-600 font-medium">
                         {formatCurrency(proj.annualPayout)}
                       </td>
-                      <td className="py-2 px-2 text-right text-slate-500">
+                      <td className="py-2 px-2 text-right text-[#A8A39A]">
                         {formatCurrency(proj.cumulativePayouts)}
                       </td>
                     </tr>
@@ -588,19 +588,19 @@ export function CharitableRemainderTrustCalculator() {
                 </tbody>
               </table>
             </div>
-            <p className="text-slate-500 text-xs mt-3">
+            <p className="text-[#A8A39A] text-xs mt-3">
               * {trustType === "crut" ? "CRUT payouts vary with trust value" : "CRAT payouts are fixed"}.
               Assumes {expectedGrowth}% annual growth.
             </p>
           </div>
 
           {/* CRAT vs CRUT Comparison */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4">CRAT vs CRUT Comparison</h3>
             <div className="grid grid-cols-2 gap-4 text-sm">
               <div className="space-y-3">
                 <h4 className="font-semibold text-blue-600">CRAT (Annuity Trust)</h4>
-                <ul className="space-y-1 text-slate-500">
+                <ul className="space-y-1 text-[#A8A39A]">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
                     Fixed dollar payments
@@ -617,7 +617,7 @@ export function CharitableRemainderTrustCalculator() {
               </div>
               <div className="space-y-3">
                 <h4 className="font-semibold text-purple-700">CRUT (Unitrust)</h4>
-                <ul className="space-y-1 text-slate-500">
+                <ul className="space-y-1 text-[#A8A39A]">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-purple-700 mt-0.5 flex-shrink-0" />
                     % of annual value
@@ -639,30 +639,30 @@ export function CharitableRemainderTrustCalculator() {
 
       {/* Gold Bridge Section */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200">
+        <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-8 border border-[#2A2D42]">
           <div className="flex items-center gap-3 mb-6">
-            <Gift className="h-6 w-6 text-[#B22234]" />
+            <Gift className="h-6 w-6 text-[#D4A94E]" />
             <h2 className="text-2xl font-bold">CRT Strategies for Gold Investors</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Appreciated Gold Holdings</div>
-              <p className="text-slate-600 text-sm">
+              <div className="text-[#D4A94E] font-semibold mb-2">Appreciated Gold Holdings</div>
+              <p className="text-[#D0CCC4] text-sm">
                 If you own physical gold or gold investments with significant gains, funding a CRT bypasses immediate capital gains while generating income and a charitable deduction.
               </p>
             </div>
 
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Diversification Strategy</div>
-              <p className="text-slate-600 text-sm">
+              <div className="text-[#D4A94E] font-semibold mb-2">Diversification Strategy</div>
+              <p className="text-[#D0CCC4] text-sm">
                 A CRT allows concentrated gold positions to be sold tax-free within the trust and reinvested across multiple asset classes for income generation.
               </p>
             </div>
 
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Legacy Planning</div>
-              <p className="text-slate-600 text-sm">
+              <div className="text-[#D4A94E] font-semibold mb-2">Legacy Planning</div>
+              <p className="text-[#D0CCC4] text-sm">
                 Combine CRT income with a Gold IRA for your retirement, while your chosen charity receives the remainder - a complete wealth transfer strategy.
               </p>
             </div>

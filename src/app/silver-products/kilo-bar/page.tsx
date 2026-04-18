@@ -113,24 +113,24 @@ export default function SilverKiloBarPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-products"
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#3F4460] rounded-full text-[#D0CCC4] font-semibold text-sm mb-6">
               <Package className="h-4 w-4" />
               200 MONTHLY SEARCHES - DIFFICULTY 1
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               Silver Kilo Bar: The Stacker&apos;s Sweet Spot
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               At 32.15 troy ounces, the silver kilo bar hits the perfect balance:
               large enough for meaningful premiums savings, small enough to be practical.
               It&apos;s the go-to choice for serious silver stackers building wealth.
@@ -154,29 +154,29 @@ export default function SilverKiloBarPage() {
       </section>
 
       {/* Quick Specs */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Scale className="h-8 w-8 text-slate-600 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">32.15 oz</div>
-                <div className="text-sm text-slate-600">Silver Content</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Scale className="h-8 w-8 text-[#D0CCC4] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">32.15 oz</div>
+                <div className="text-sm text-[#D0CCC4]">Silver Content</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
                 <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">3-6%</div>
-                <div className="text-sm text-slate-600">Typical Premium</div>
+                <div className="text-2xl font-bold text-[#F6F4EF]">3-6%</div>
+                <div className="text-sm text-[#D0CCC4]">Typical Premium</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Shield className="h-8 w-8 text-slate-600 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">.999</div>
-                <div className="text-sm text-slate-600">Purity</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Shield className="h-8 w-8 text-[#D0CCC4] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">.999</div>
+                <div className="text-sm text-[#D0CCC4]">Purity</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Package className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">~2.2 lbs</div>
-                <div className="text-sm text-slate-600">Weight</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Package className="h-8 w-8 text-[#D4A94E] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">~2.2 lbs</div>
+                <div className="text-sm text-[#D0CCC4]">Weight</div>
               </div>
             </div>
           </div>
@@ -187,22 +187,22 @@ export default function SilverKiloBarPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+            <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
               {/* Why Kilo Bars */}
-              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 mb-8">
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 mb-8">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 bg-green-500/20 rounded-lg">
                     <Award className="h-6 w-6 text-green-400" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 m-0">Why Kilo Bars Are the Sweet Spot</h2>
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] m-0">Why Kilo Bars Are the Sweet Spot</h2>
                 </div>
-                <p className="text-slate-600 mb-4">
+                <p className="text-[#D0CCC4] mb-4">
                   Silver kilo bars occupy a unique position in the market. They&apos;re large enough to
                   benefit from wholesale-level premiums (3-6% vs 10-20% for small products), but still
                   small enough for individual investors to handle, store, and eventually sell.
                 </p>
-                <p className="text-slate-600">
+                <p className="text-[#D0CCC4]">
                   At around $800 per bar (at $25/oz spot), they&apos;re accessible to most serious investors
                   without requiring the $25,000+ commitment of 1000 oz bars. Many stackers consider
                   kilos the &quot;goldilocks zone&quot; of silver investing.
@@ -210,70 +210,70 @@ export default function SilverKiloBarPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Gem className="h-6 w-6 text-[#B22234]" />
+                <Gem className="h-6 w-6 text-[#D4A94E]" />
                 Top Silver Kilo Bar Brands
               </h2>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Brand</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Type</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Premium</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">IRA Eligible</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Notes</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Brand</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Type</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Premium</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">IRA Eligible</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Notes</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">PAMP Suisse</td>
-                      <td className="p-4 text-slate-600">Minted</td>
-                      <td className="p-4 text-[#B22234]">5-7%</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">PAMP Suisse</td>
+                      <td className="p-4 text-[#D0CCC4]">Minted</td>
+                      <td className="p-4 text-[#D4A94E]">5-7%</td>
                       <td className="p-4 text-green-400">Yes</td>
-                      <td className="p-4 text-slate-600">Premium brand, Lady Fortuna design</td>
+                      <td className="p-4 text-[#D0CCC4]">Premium brand, Lady Fortuna design</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Valcambi</td>
-                      <td className="p-4 text-slate-600">Minted</td>
-                      <td className="p-4 text-[#B22234]">5-6%</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Valcambi</td>
+                      <td className="p-4 text-[#D0CCC4]">Minted</td>
+                      <td className="p-4 text-[#D4A94E]">5-6%</td>
                       <td className="p-4 text-green-400">Yes</td>
-                      <td className="p-4 text-slate-600">Swiss quality, combibar options</td>
+                      <td className="p-4 text-[#D0CCC4]">Swiss quality, combibar options</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Royal Canadian Mint</td>
-                      <td className="p-4 text-slate-600">Minted</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Royal Canadian Mint</td>
+                      <td className="p-4 text-[#D0CCC4]">Minted</td>
                       <td className="p-4 text-green-400">4-5%</td>
                       <td className="p-4 text-green-400">Yes</td>
-                      <td className="p-4 text-slate-600">Government mint, maple leaf design</td>
+                      <td className="p-4 text-[#D0CCC4]">Government mint, maple leaf design</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Perth Mint</td>
-                      <td className="p-4 text-slate-600">Cast/Minted</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Perth Mint</td>
+                      <td className="p-4 text-[#D0CCC4]">Cast/Minted</td>
                       <td className="p-4 text-green-400">4-5%</td>
                       <td className="p-4 text-green-400">Yes</td>
-                      <td className="p-4 text-slate-600">Australian government mint</td>
+                      <td className="p-4 text-[#D0CCC4]">Australian government mint</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Asahi</td>
-                      <td className="p-4 text-slate-600">Minted</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Asahi</td>
+                      <td className="p-4 text-[#D0CCC4]">Minted</td>
                       <td className="p-4 text-green-400">3-4%</td>
                       <td className="p-4 text-green-400">Yes</td>
-                      <td className="p-4 text-slate-600">Former J-M refinery, great value</td>
+                      <td className="p-4 text-[#D0CCC4]">Former J-M refinery, great value</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Nadir</td>
-                      <td className="p-4 text-slate-600">Minted</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Nadir</td>
+                      <td className="p-4 text-[#D0CCC4]">Minted</td>
                       <td className="p-4 text-green-400">3-4%</td>
                       <td className="p-4 text-green-400">Yes</td>
-                      <td className="p-4 text-slate-600">Turkish refiner, budget option</td>
+                      <td className="p-4 text-[#D0CCC4]">Turkish refiner, budget option</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Generic/Secondary</td>
-                      <td className="p-4 text-slate-600">Cast</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Generic/Secondary</td>
+                      <td className="p-4 text-[#D0CCC4]">Cast</td>
                       <td className="p-4 text-green-400">2-3%</td>
-                      <td className="p-4 text-[#B22234]">Varies</td>
-                      <td className="p-4 text-slate-600">Lowest cost, check refiner</td>
+                      <td className="p-4 text-[#D4A94E]">Varies</td>
+                      <td className="p-4 text-[#D0CCC4]">Lowest cost, check refiner</td>
                     </tr>
                   </tbody>
                 </table>
@@ -289,89 +289,89 @@ export default function SilverKiloBarPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Product</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Premium</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Cost for 100 oz</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Extra Cost vs Kilo</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Product</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Premium</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Cost for 100 oz</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Extra Cost vs Kilo</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">1 oz Rounds</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">1 oz Rounds</td>
                       <td className="p-4 text-red-400">12-15%</td>
-                      <td className="p-4 text-slate-600">$2,800-2,875</td>
+                      <td className="p-4 text-[#D0CCC4]">$2,800-2,875</td>
                       <td className="p-4 text-red-400">+$225-300</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">10 oz Bars</td>
-                      <td className="p-4 text-[#B22234]">6-8%</td>
-                      <td className="p-4 text-slate-600">$2,650-2,700</td>
-                      <td className="p-4 text-[#B22234]">+$75-125</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">10 oz Bars</td>
+                      <td className="p-4 text-[#D4A94E]">6-8%</td>
+                      <td className="p-4 text-[#D0CCC4]">$2,650-2,700</td>
+                      <td className="p-4 text-[#D4A94E]">+$75-125</td>
                     </tr>
                     <tr className="bg-green-500/10">
-                      <td className="p-4 font-semibold text-slate-900">Kilo Bars (3x)</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Kilo Bars (3x)</td>
                       <td className="p-4 text-green-400 font-bold">4-5%</td>
-                      <td className="p-4 text-slate-600">$2,575-2,625</td>
+                      <td className="p-4 text-[#D0CCC4]">$2,575-2,625</td>
                       <td className="p-4 text-green-400">Baseline</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">100 oz Bar</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">100 oz Bar</td>
                       <td className="p-4 text-green-400">3-4%</td>
-                      <td className="p-4 text-slate-600">$2,575-2,600</td>
+                      <td className="p-4 text-[#D0CCC4]">$2,575-2,600</td>
                       <td className="p-4 text-green-400">~Same</td>
                     </tr>
                   </tbody>
                 </table>
-                <p className="text-xs text-slate-600 mt-2">Based on $25/oz spot price. Actual prices vary by dealer and market conditions.</p>
+                <p className="text-xs text-[#D0CCC4] mt-2">Based on $25/oz spot price. Actual prices vary by dealer and market conditions.</p>
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Scale className="h-6 w-6 text-slate-600" />
+                <Scale className="h-6 w-6 text-[#D0CCC4]" />
                 Cast vs Minted Kilo Bars
               </h2>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Cast Bars</h3>
-                  <p className="text-slate-600 mb-4">
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Cast Bars</h3>
+                  <p className="text-[#D0CCC4] mb-4">
                     Made by pouring molten silver into molds. Each bar is slightly unique with
                     a rougher, more industrial appearance.
                   </p>
                   <ul className="space-y-2">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Lower premiums (2-4%)</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Unique character</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Preferred by stackers</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Minted Bars</h3>
-                  <p className="text-slate-600 mb-4">
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Minted Bars</h3>
+                  <p className="text-[#D0CCC4] mb-4">
                     Stamped from rolled silver sheets with precise designs. Uniform, polished
                     appearance with sharp edges.
                   </p>
                   <ul className="space-y-2">
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <CheckCircle className="h-5 w-5 text-slate-600 flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <CheckCircle className="h-5 w-5 text-[#D0CCC4] flex-shrink-0 mt-0.5" />
                       <span>Higher premiums (4-7%)</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <CheckCircle className="h-5 w-5 text-slate-600 flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <CheckCircle className="h-5 w-5 text-[#D0CCC4] flex-shrink-0 mt-0.5" />
                       <span>Pristine finish</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <CheckCircle className="h-5 w-5 text-slate-600 flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <CheckCircle className="h-5 w-5 text-[#D0CCC4] flex-shrink-0 mt-0.5" />
                       <span>Often in assay cards</span>
                     </li>
                   </ul>
@@ -388,10 +388,10 @@ export default function SilverKiloBarPage() {
                   <CheckCircle className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-lg font-bold text-green-400 mb-2">Silver Kilo Bars Are IRA-Eligible</h4>
-                    <p className="text-slate-600 mb-3">
+                    <p className="text-[#D0CCC4] mb-3">
                       To qualify for a Precious Metals IRA, silver kilo bars must:
                     </p>
-                    <ul className="space-y-1 text-slate-600">
+                    <ul className="space-y-1 text-[#D0CCC4]">
                       <li>- Be .999 fine purity (or higher)</li>
                       <li>- Be produced by NYMEX/COMEX-approved refiner OR accredited manufacturer</li>
                       <li>- Be in new, uncirculated condition</li>
@@ -423,26 +423,26 @@ export default function SilverKiloBarPage() {
                 they must be stored at an approved depository like Delaware Depository or Brinks.
               </p>
 
-              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 my-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Kilo Bar Stacking Math</h3>
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 my-8">
+                <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">Kilo Bar Stacking Math</h3>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#B22234]">10 Bars</div>
-                    <div className="text-slate-600">~321.5 oz</div>
-                    <div className="text-slate-600">~$8,000</div>
+                    <div className="text-3xl font-bold text-[#D4A94E]">10 Bars</div>
+                    <div className="text-[#D0CCC4]">~321.5 oz</div>
+                    <div className="text-[#D0CCC4]">~$8,000</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#B22234]">31 Bars</div>
-                    <div className="text-slate-600">~1000 oz</div>
-                    <div className="text-slate-600">~$25,000</div>
+                    <div className="text-3xl font-bold text-[#D4A94E]">31 Bars</div>
+                    <div className="text-[#D0CCC4]">~1000 oz</div>
+                    <div className="text-[#D0CCC4]">~$25,000</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#B22234]">100 Bars</div>
-                    <div className="text-slate-600">~3215 oz</div>
-                    <div className="text-slate-600">~$80,000</div>
+                    <div className="text-3xl font-bold text-[#D4A94E]">100 Bars</div>
+                    <div className="text-[#D0CCC4]">~3215 oz</div>
+                    <div className="text-[#D0CCC4]">~$80,000</div>
                   </div>
                 </div>
-                <p className="text-xs text-slate-600 mt-4 text-center">At approximately $25/oz spot price</p>
+                <p className="text-xs text-[#D0CCC4] mt-4 text-center">At approximately $25/oz spot price</p>
               </div>
 
             </article>
@@ -451,25 +451,25 @@ export default function SilverKiloBarPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>

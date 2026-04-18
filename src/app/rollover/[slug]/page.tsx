@@ -127,19 +127,19 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
       <Navbar />
 
       {/* Header */}
-      <header className="bg-slate-50 py-12 md:py-16">
+      <header className="bg-[#0C0D18] py-12 md:py-16">
         <Container>
           <Link
             href="/rollover"
-            className="inline-flex items-center gap-2 text-slate-500 hover:text-[#000080] transition-colors mb-6"
+            className="inline-flex items-center gap-2 text-[#A8A39A] hover:text-[#F6F4EF] transition-colors mb-6"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Rollover Hub
           </Link>
 
           <div className="flex items-start gap-4 mb-6">
-            <div className="p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
-              <Landmark className="h-8 w-8 text-[#B22234]" />
+            <div className="p-4 bg-[#161828] rounded-xl border border-[#2A2D42] shadow-sm">
+              <Landmark className="h-8 w-8 text-[#D4A94E]" />
             </div>
             <div>
               <span className={`text-xs font-medium px-2 py-1 rounded-full ${
@@ -150,33 +150,33 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                 {accountType.taxTreatment === "pre-tax" ? "Pre-Tax" :
                  accountType.taxTreatment === "post-tax" ? "Post-Tax (Roth)" : "Both Options"}
               </span>
-              <h1 className="text-3xl md:text-4xl font-bold mt-2 text-[#000080]">
+              <h1 className="text-3xl md:text-4xl font-bold mt-2 text-[#F6F4EF]">
                 {accountType.name} to Gold IRA Rollover
               </h1>
             </div>
           </div>
 
-          <p className="text-xl text-slate-600 leading-relaxed max-w-3xl mb-4">
+          <p className="text-xl text-[#D0CCC4] leading-relaxed max-w-3xl mb-4">
             After years of contributing to your {accountType.fullName}, you&apos;ve built something real. Now it&apos;s about protecting what you&apos;ve earned&mdash;not chasing more growth.
           </p>
-          <p className="text-lg text-slate-500 leading-relaxed max-w-3xl mb-8">
+          <p className="text-lg text-[#A8A39A] leading-relaxed max-w-3xl mb-8">
             This is simpler than it sounds. A direct rollover moves your {accountType.name} to a Gold IRA without taxes or penalties. Most people complete the process in under two weeks.
           </p>
 
           <div className="flex flex-wrap gap-4 text-sm">
-            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm">
+            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-[#2A2D42] shadow-sm">
               <DollarSign className="h-4 w-4 text-green-600" />
-              <span className="text-slate-700">2026 Limit: ${accountType.contributionLimit2026.toLocaleString()}</span>
+              <span className="text-[#D0CCC4]">2026 Limit: ${accountType.contributionLimit2026.toLocaleString()}</span>
             </div>
             {accountType.catchUpContribution && accountType.catchUpContribution > 0 && (
-              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm">
+              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-[#2A2D42] shadow-sm">
                 <Calendar className="h-4 w-4 text-blue-600" />
-                <span className="text-slate-700">Age {accountType.catchUpAge}+ Catch-up: ${accountType.catchUpContribution.toLocaleString()}</span>
+                <span className="text-[#D0CCC4]">Age {accountType.catchUpAge}+ Catch-up: ${accountType.catchUpContribution.toLocaleString()}</span>
               </div>
             )}
-            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm">
+            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-[#2A2D42] shadow-sm">
               <CheckCircle2 className="h-4 w-4 text-green-600" />
-              <span className="text-slate-700">{accountType.canRolloverToGoldIRA ? "Eligible for Gold IRA" : "Not Eligible"}</span>
+              <span className="text-[#D0CCC4]">{accountType.canRolloverToGoldIRA ? "Eligible for Gold IRA" : "Not Eligible"}</span>
             </div>
           </div>
         </Container>
@@ -187,16 +187,16 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
         <Container>
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <h2 className="text-lg font-bold text-[#000080]">
+              <h2 className="text-lg font-bold text-[#F6F4EF]">
                 Nervous About Getting This Right?
               </h2>
-              <p className="text-slate-600 text-sm">
+              <p className="text-[#D0CCC4] text-sm">
                 Most people are. Augusta handles the whole process&mdash;they contact your {accountType.name} provider, complete the paperwork, and make sure nothing falls through the cracks.
               </p>
             </div>
             <Link
               href="/reviews/augusta-precious-metals"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold rounded-xl transition-all shadow-lg text-sm whitespace-nowrap"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#DC2626] hover:bg-[#991B1B] text-white font-bold rounded-xl transition-all shadow-lg text-sm whitespace-nowrap"
             >
               Get Free Rollover Kit
             </Link>
@@ -211,11 +211,11 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
             {/* Main Column */}
             <div className="lg:col-span-2 space-y-8">
               {/* Rollover Steps */}
-              <div className="bg-slate-50 rounded-xl border border-slate-200 p-6">
-                <h3 className="font-bold text-lg text-[#000080] mb-2">
+              <div className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6">
+                <h3 className="font-bold text-lg text-[#F6F4EF] mb-2">
                   How to Roll Over Your {accountType.name} to a Gold IRA
                 </h3>
-                <p className="text-slate-600 text-sm mb-6">
+                <p className="text-[#D0CCC4] text-sm mb-6">
                   Six steps. Your Gold IRA company handles most of the work. You don&apos;t touch the money, so there&apos;s no tax hit.
                 </p>
                 <div className="space-y-4">
@@ -228,11 +228,11 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                     "Choose your gold and silver. Your metals ship to an IRS-approved vault."
                   ].map((step, index) => (
                     <div key={index} className="flex gap-4">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-100 text-[#B22234] flex items-center justify-center font-bold text-sm border border-amber-200">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-100 text-[#D4A94E] flex items-center justify-center font-bold text-sm border border-amber-200">
                         {index + 1}
                       </div>
                       <div className="flex-1 pt-1">
-                        <p className="text-slate-700">{step}</p>
+                        <p className="text-[#D0CCC4]">{step}</p>
                       </div>
                     </div>
                   ))}
@@ -240,34 +240,34 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
               </div>
 
               {/* Account Details */}
-              <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-                <h3 className="font-bold text-[#000080] mb-4">{accountType.name} Account Details</h3>
+              <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
+                <h3 className="font-bold text-[#F6F4EF] mb-4">{accountType.name} Account Details</h3>
                 <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="p-4 bg-white rounded-lg border border-slate-200">
-                    <div className="text-sm text-slate-500 mb-1">2026 Contribution Limit</div>
-                    <div className="text-xl font-bold text-slate-900">
+                  <div className="p-4 bg-[#161828] rounded-lg border border-[#2A2D42]">
+                    <div className="text-sm text-[#A8A39A] mb-1">2026 Contribution Limit</div>
+                    <div className="text-xl font-bold text-[#F6F4EF]">
                       ${accountType.contributionLimit2026.toLocaleString()}
                     </div>
                   </div>
                   {accountType.catchUpContribution && accountType.catchUpContribution > 0 && (
-                    <div className="p-4 bg-white rounded-lg border border-slate-200">
-                      <div className="text-sm text-slate-500 mb-1">Catch-Up (Age {accountType.catchUpAge}+)</div>
-                      <div className="text-xl font-bold text-slate-900">
+                    <div className="p-4 bg-[#161828] rounded-lg border border-[#2A2D42]">
+                      <div className="text-sm text-[#A8A39A] mb-1">Catch-Up (Age {accountType.catchUpAge}+)</div>
+                      <div className="text-xl font-bold text-[#F6F4EF]">
                         +${accountType.catchUpContribution.toLocaleString()}
                       </div>
                     </div>
                   )}
-                  <div className="p-4 bg-white rounded-lg border border-slate-200">
-                    <div className="text-sm text-slate-500 mb-1">Tax Treatment</div>
-                    <div className="text-xl font-bold text-slate-900">
+                  <div className="p-4 bg-[#161828] rounded-lg border border-[#2A2D42]">
+                    <div className="text-sm text-[#A8A39A] mb-1">Tax Treatment</div>
+                    <div className="text-xl font-bold text-[#F6F4EF]">
                       {accountType.taxTreatment === "pre-tax" ? "Pre-Tax" :
                        accountType.taxTreatment === "post-tax" ? "Post-Tax (Roth)" : "Both Available"}
                     </div>
                   </div>
                   {accountType.requiredMinDistributionAge > 0 && (
-                    <div className="p-4 bg-white rounded-lg border border-slate-200">
-                      <div className="text-sm text-slate-500 mb-1">RMD Age</div>
-                      <div className="text-xl font-bold text-slate-900">
+                    <div className="p-4 bg-[#161828] rounded-lg border border-[#2A2D42]">
+                      <div className="text-sm text-[#A8A39A] mb-1">RMD Age</div>
+                      <div className="text-xl font-bold text-[#F6F4EF]">
                         {accountType.requiredMinDistributionAge}
                       </div>
                     </div>
@@ -295,32 +295,32 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
               </div>
 
               {/* Who Holds This Account Type */}
-              <div className="bg-slate-50 rounded-xl border border-slate-200 p-6">
-                <h3 className="font-bold text-lg text-[#000080] mb-4">
+              <div className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6">
+                <h3 className="font-bold text-lg text-[#F6F4EF] mb-4">
                   Is This You?
                 </h3>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-[#D0CCC4] text-sm mb-4">
                   If you&apos;ve been contributing to a {accountType.name} for years, you&apos;ve done something most Americans couldn&apos;t. Now let&apos;s protect it.
                 </p>
                 <div className="space-y-4">
                   <div>
-                    <div className="text-sm font-medium text-slate-500 mb-1">Who Has This Account</div>
-                    <p className="text-slate-700">{accountType.eligibility}</p>
+                    <div className="text-sm font-medium text-[#A8A39A] mb-1">Who Has This Account</div>
+                    <p className="text-[#D0CCC4]">{accountType.eligibility}</p>
                   </div>
                   <div>
-                    <div className="text-sm font-medium text-slate-500 mb-1">Typical Account Holder</div>
-                    <p className="text-slate-700">{accountType.typicalHolder}</p>
+                    <div className="text-sm font-medium text-[#A8A39A] mb-1">Typical Account Holder</div>
+                    <p className="text-[#D0CCC4]">{accountType.typicalHolder}</p>
                   </div>
                 </div>
               </div>
 
               {/* Providers That Handle This Account Type */}
               {relevantProviders.length > 0 && (
-                <div className="bg-slate-50 rounded-xl border border-slate-200 p-6">
-                  <h3 className="font-bold text-lg text-[#000080] mb-4">
+                <div className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6">
+                  <h3 className="font-bold text-lg text-[#F6F4EF] mb-4">
                     Common {accountType.name} Providers
                   </h3>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-[#D0CCC4] mb-4">
                     If your {accountType.name} is held at one of these providers, click through for specific rollover instructions.
                   </p>
                   <div className="grid sm:grid-cols-2 gap-3">
@@ -328,15 +328,15 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                       <Link
                         key={provider.slug}
                         href={`/rollover/${provider.slug}`}
-                        className="group flex items-center justify-between p-3 bg-white rounded-lg hover:bg-amber-50 transition-colors border border-slate-200"
+                        className="group flex items-center justify-between p-3 bg-[#161828] rounded-lg hover:bg-amber-50 transition-colors border border-[#2A2D42]"
                       >
                         <div className="flex items-center gap-2">
-                          <Building2 className="h-4 w-4 text-slate-400 group-hover:text-[#B22234]" />
-                          <span className="font-medium text-slate-900 group-hover:text-[#B22234]">
+                          <Building2 className="h-4 w-4 text-[#A8A39A] group-hover:text-[#D4A94E]" />
+                          <span className="font-medium text-[#F6F4EF] group-hover:text-[#D4A94E]">
                             {provider.name}
                           </span>
                         </div>
-                        <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-[#B22234]" />
+                        <ArrowRight className="h-4 w-4 text-[#A8A39A] group-hover:text-[#D4A94E]" />
                       </Link>
                     ))}
                   </div>
@@ -347,8 +347,8 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
             {/* Sidebar */}
             <div className="space-y-6">
               {/* Key Facts Card */}
-              <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 sticky top-4">
-                <h3 className="font-bold text-[#000080] mb-4">
+              <div className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 sticky top-4">
+                <h3 className="font-bold text-[#F6F4EF] mb-4">
                   The Bottom Line
                 </h3>
 
@@ -356,8 +356,8 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-slate-900">Yes, You Can Roll It Over</div>
-                      <div className="text-sm text-slate-600">
+                      <div className="font-medium text-[#F6F4EF]">Yes, You Can Roll It Over</div>
+                      <div className="text-sm text-[#D0CCC4]">
                         {accountType.canRolloverToGoldIRA ? "Your " + accountType.name + " is eligible for a Gold IRA rollover" : "Some restrictions may apply"}
                       </div>
                     </div>
@@ -366,26 +366,26 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                   <div className="flex items-start gap-3">
                     <Shield className="h-5 w-5 text-blue-600 flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-slate-900">No Taxes. No Penalties.</div>
-                      <div className="text-sm text-slate-600">
+                      <div className="font-medium text-[#F6F4EF]">No Taxes. No Penalties.</div>
+                      <div className="text-sm text-[#D0CCC4]">
                         Direct rollover means you don&apos;t touch the money
                       </div>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Clock className="h-5 w-5 text-[#B22234] flex-shrink-0" />
+                    <Clock className="h-5 w-5 text-[#D4A94E] flex-shrink-0" />
                     <div>
-                      <div className="font-medium text-slate-900">About 1-2 Weeks</div>
-                      <div className="text-sm text-slate-600">
+                      <div className="font-medium text-[#F6F4EF]">About 1-2 Weeks</div>
+                      <div className="text-sm text-[#D0CCC4]">
                         Most rollovers finish in 5-14 business days
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-6 pt-6 border-t border-slate-200">
-                  <div className="flex items-start gap-2 text-sm text-slate-700">
+                <div className="mt-6 pt-6 border-t border-[#2A2D42]">
+                  <div className="flex items-start gap-2 text-sm text-[#D0CCC4]">
                     <Shield className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
                     <span>
                       You worked hard for this money. A direct rollover keeps it protected and tax-free.
@@ -396,16 +396,16 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
 
               {/* Augusta CTA */}
               <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6 border border-amber-200">
-                <h3 className="font-bold text-[#000080] mb-2">
+                <h3 className="font-bold text-[#F6F4EF] mb-2">
                   Don&apos;t Want to Do This Alone?
                 </h3>
-                <p className="text-sm text-slate-700 mb-4">
+                <p className="text-sm text-[#D0CCC4] mb-4">
                   Most people don&apos;t. Augusta contacts your {accountType.name} provider, handles the paperwork,
                   and makes sure everything goes right. No cost to get started.
                 </p>
                 <Link
                   href="/reviews/augusta-precious-metals"
-                  className="block text-center px-4 py-2.5 bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold rounded-lg transition-all shadow text-sm"
+                  className="block text-center px-4 py-2.5 bg-[#DC2626] hover:bg-[#991B1B] text-white font-bold rounded-lg transition-all shadow text-sm"
                 >
                   Get Free Rollover Kit
                 </Link>
@@ -416,49 +416,49 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
-          <h2 className="text-2xl font-bold text-[#000080] mb-4">
+          <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">
             Common Questions About {accountType.name} Rollovers
           </h2>
-          <p className="text-slate-600 mb-8">
+          <p className="text-[#D0CCC4] mb-8">
             Straight answers. No financial jargon.
           </p>
           <div className="max-w-3xl space-y-4">
-            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-              <h3 className="font-bold text-slate-900 mb-2">
+            <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">
                 Can I actually do this with my {accountType.name}?
               </h3>
-              <p className="text-slate-700">
+              <p className="text-[#D0CCC4]">
                 Yes. {accountType.name}s are eligible for Gold IRA rollovers. The key is using a
                 direct rollover&mdash;the money goes straight from one custodian to the other. You never
                 touch it, so there&apos;s no tax bill.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-              <h3 className="font-bold text-slate-900 mb-2">
+            <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">
                 Will I owe taxes on the rollover?
               </h3>
-              <p className="text-slate-700">
+              <p className="text-[#D0CCC4]">
                 No. A direct rollover is 100% tax-free. The money moves between accounts without
                 you taking possession. No taxes, no penalties, no 60-day deadline to worry about.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-              <h3 className="font-bold text-slate-900 mb-2">
+            <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">
                 How much can I roll over?
               </h3>
-              <p className="text-slate-700">
+              <p className="text-[#D0CCC4]">
                 There&apos;s no limit on rollover amounts. You can move all of it or just a portion&mdash;whatever
                 feels right for protecting your retirement. If you&apos;re still working, check if your plan
                 has any in-service withdrawal rules.
               </p>
             </div>
-            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-              <h3 className="font-bold text-slate-900 mb-2">
+            <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">
                 What kind of Gold IRA do I need?
               </h3>
-              <p className="text-slate-700">
+              <p className="text-[#D0CCC4]">
                 {accountType.taxTreatment === "pre-tax"
                   ? `Your ${accountType.name} is pre-tax money, so it rolls into a traditional Gold IRA. Same tax treatment, just different assets. If you wanted a Roth Gold IRA instead, you'd owe taxes on the conversion.`
                   : accountType.taxTreatment === "post-tax"
@@ -475,7 +475,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
       {relatedAccountTypes.length > 0 && (
         <section className="py-12 bg-white">
           <Container>
-            <h2 className="text-2xl font-bold text-[#000080] mb-6">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6">
               Related Account Types
             </h2>
             <div className="grid md:grid-cols-3 gap-4">
@@ -483,15 +483,15 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
                 <Link
                   key={at.slug}
                   href={`/rollover/${at.slug}-to-gold-ira`}
-                  className="group block bg-slate-50 rounded-xl border border-slate-200 p-6 hover:border-[#B22234]/30 hover:bg-white transition-all"
+                  className="group block bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 hover:border-[rgba(197,149,46,0.45)] hover:bg-[#1E2134] transition-all"
                 >
-                  <h3 className="font-bold text-lg text-slate-900 group-hover:text-[#B22234] transition-colors mb-2">
+                  <h3 className="font-bold text-lg text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors mb-2">
                     {at.name} to Gold IRA
                   </h3>
-                  <p className="text-sm text-slate-600 mb-4 line-clamp-2">
+                  <p className="text-sm text-[#D0CCC4] mb-4 line-clamp-2">
                     {at.description}
                   </p>
-                  <span className="text-[#B22234] text-sm font-semibold flex items-center gap-1">
+                  <span className="text-[#D4A94E] text-sm font-semibold flex items-center gap-1">
                     Learn More
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </span>
@@ -503,7 +503,7 @@ function AccountTypeRolloverPage({ accountType }: { accountType: NonNullable<Ret
       )}
 
       {/* Bottom CTA */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"
@@ -541,19 +541,19 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
       <Navbar />
 
       {/* Header */}
-      <header className="bg-slate-50 py-12 md:py-16">
+      <header className="bg-[#0C0D18] py-12 md:py-16">
         <Container>
           <Link
             href="/rollover"
-            className="inline-flex items-center gap-2 text-slate-500 hover:text-[#000080] transition-colors mb-6"
+            className="inline-flex items-center gap-2 text-[#A8A39A] hover:text-[#F6F4EF] transition-colors mb-6"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Rollover Hub
           </Link>
 
           <div className="flex items-start gap-4 mb-6">
-            <div className="p-4 bg-white rounded-xl border border-slate-200 shadow-sm">
-              <Building2 className="h-8 w-8 text-[#B22234]" />
+            <div className="p-4 bg-[#161828] rounded-xl border border-[#2A2D42] shadow-sm">
+              <Building2 className="h-8 w-8 text-[#D4A94E]" />
             </div>
             <div>
               <span className={`text-xs font-medium px-2 py-1 rounded-full ${
@@ -564,40 +564,40 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
                 {provider.type === "brokerage" ? "Brokerage" :
                  provider.type === "employer" ? "Employer Plan" : "Government"}
               </span>
-              <h1 className="text-3xl md:text-4xl font-bold mt-2 text-[#000080]">
+              <h1 className="text-3xl md:text-4xl font-bold mt-2 text-[#F6F4EF]">
                 {provider.name} Gold IRA Rollover
               </h1>
             </div>
           </div>
 
-          <p className="text-xl text-slate-600 leading-relaxed max-w-3xl mb-4">
+          <p className="text-xl text-[#D0CCC4] leading-relaxed max-w-3xl mb-4">
             After decades of work, your {provider.name} account represents real money&mdash;money you earned one paycheck at a time. Here&apos;s exactly how to move it to a Gold IRA without taxes or penalties.
           </p>
-          <p className="text-lg text-slate-500 leading-relaxed max-w-3xl mb-8">
+          <p className="text-lg text-[#A8A39A] leading-relaxed max-w-3xl mb-8">
             This is simpler than it sounds. {provider.description}
           </p>
 
           <div className="flex flex-wrap gap-4 text-sm">
-            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm">
-              <Clock className="h-4 w-4 text-[#B22234]" />
-              <span className="text-slate-700">{provider.typicalTimeline}</span>
+            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-[#2A2D42] shadow-sm">
+              <Clock className="h-4 w-4 text-[#D4A94E]" />
+              <span className="text-[#D0CCC4]">{provider.typicalTimeline}</span>
             </div>
             {provider.phone && (
-              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm">
+              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-[#2A2D42] shadow-sm">
                 <Phone className="h-4 w-4 text-green-600" />
-                <span className="text-slate-700">{provider.phone}</span>
+                <span className="text-[#D0CCC4]">{provider.phone}</span>
               </div>
             )}
             {provider.onlineRollover && (
-              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm">
+              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-[#2A2D42] shadow-sm">
                 <Globe className="h-4 w-4 text-blue-600" />
-                <span className="text-slate-700">Online Rollover Available</span>
+                <span className="text-[#D0CCC4]">Online Rollover Available</span>
               </div>
             )}
             {provider.directRollover && (
-              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-slate-200 shadow-sm">
+              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-lg border border-[#2A2D42] shadow-sm">
                 <CheckCircle2 className="h-4 w-4 text-green-600" />
-                <span className="text-slate-700">Direct Rollover</span>
+                <span className="text-[#D0CCC4]">Direct Rollover</span>
               </div>
             )}
           </div>
@@ -609,16 +609,16 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
         <Container>
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <h2 className="text-lg font-bold text-[#000080]">
+              <h2 className="text-lg font-bold text-[#F6F4EF]">
                 Nervous About Doing This Yourself?
               </h2>
-              <p className="text-slate-600 text-sm">
+              <p className="text-[#D0CCC4] text-sm">
                 Most people are. Augusta calls {provider.name} for you, handles all the paperwork, and makes sure nothing goes wrong.
               </p>
             </div>
             <Link
               href="/reviews/augusta-precious-metals"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold rounded-xl transition-all shadow-lg text-sm whitespace-nowrap"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#DC2626] hover:bg-[#991B1B] text-white font-bold rounded-xl transition-all shadow-lg text-sm whitespace-nowrap"
             >
               Get Free Rollover Assistance
             </Link>
@@ -652,20 +652,20 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
               />
 
               {/* Rollover Process Details */}
-              <div className="bg-slate-50 rounded-xl border border-slate-200 p-6">
-                <h3 className="font-bold text-lg text-[#000080] mb-4 flex items-center gap-2">
-                  <FileText className="h-5 w-5 text-slate-500" />
+              <div className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6">
+                <h3 className="font-bold text-lg text-[#F6F4EF] mb-4 flex items-center gap-2">
+                  <FileText className="h-5 w-5 text-[#A8A39A]" />
                   {provider.name} Rollover Process Details
                 </h3>
-                <p className="text-slate-700 leading-relaxed">
+                <p className="text-[#D0CCC4] leading-relaxed">
                   {provider.rolloverProcess}
                 </p>
               </div>
 
               {/* Account Types Supported */}
               {accountTypeDetails.length > 0 && (
-                <div className="bg-slate-50 rounded-xl border border-slate-200 p-6">
-                  <h3 className="font-bold text-lg text-[#000080] mb-4">
+                <div className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6">
+                  <h3 className="font-bold text-lg text-[#F6F4EF] mb-4">
                     Account Types You Can Roll Over from {provider.name}
                   </h3>
                   <div className="grid sm:grid-cols-2 gap-4">
@@ -673,12 +673,12 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
                       <Link
                         key={accountType!.slug}
                         href={`/rollover/${accountType!.slug}-to-gold-ira`}
-                        className="group p-4 bg-white rounded-lg hover:bg-amber-50 transition-colors border border-slate-200"
+                        className="group p-4 bg-[#161828] rounded-lg hover:bg-amber-50 transition-colors border border-[#2A2D42]"
                       >
-                        <div className="font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                        <div className="font-semibold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                           {accountType!.name}
                         </div>
-                        <div className="text-sm text-slate-500">{accountType!.fullName}</div>
+                        <div className="text-sm text-[#A8A39A]">{accountType!.fullName}</div>
                       </Link>
                     ))}
                   </div>
@@ -689,29 +689,29 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
             {/* Sidebar */}
             <div className="space-y-6">
               {/* Contact Card */}
-              <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 sticky top-4">
-                <h3 className="font-bold text-[#000080] mb-4">
+              <div className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 sticky top-4">
+                <h3 className="font-bold text-[#F6F4EF] mb-4">
                   If You Want to Call Yourself
                 </h3>
-                <p className="text-slate-600 text-sm mb-4">
+                <p className="text-[#D0CCC4] text-sm mb-4">
                   Here&apos;s {provider.name}&apos;s rollover line. Or let Augusta handle it for you.
                 </p>
 
                 {provider.phone && (
                   <a
                     href={`tel:${provider.phone.replace(/[^0-9]/g, '')}`}
-                    className="flex items-center gap-3 p-3 bg-white rounded-lg hover:bg-slate-100 transition-colors mb-3 border border-slate-200"
+                    className="flex items-center gap-3 p-3 bg-[#161828] rounded-lg hover:bg-[#1E2134] transition-colors mb-3 border border-[#2A2D42]"
                   >
-                    <Phone className="h-5 w-5 text-slate-500" />
+                    <Phone className="h-5 w-5 text-[#A8A39A]" />
                     <div>
-                      <div className="font-medium text-slate-900">{provider.phone}</div>
-                      <div className="text-xs text-slate-500">{provider.rolloverDepartment || "Rollover Department"}</div>
+                      <div className="font-medium text-[#F6F4EF]">{provider.phone}</div>
+                      <div className="text-xs text-[#A8A39A]">{provider.rolloverDepartment || "Rollover Department"}</div>
                     </div>
                   </a>
                 )}
 
-                <div className="mt-6 pt-6 border-t border-slate-200">
-                  <div className="flex items-start gap-2 text-sm text-slate-700">
+                <div className="mt-6 pt-6 border-t border-[#2A2D42]">
+                  <div className="flex items-start gap-2 text-sm text-[#D0CCC4]">
                     <Shield className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
                     <span>
                       A direct rollover from {provider.name} to a Gold IRA is 100% tax-free. You don&apos;t touch the money, so there&apos;s no tax bill.
@@ -722,16 +722,16 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
 
               {/* Augusta CTA */}
               <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl p-6 border border-amber-200">
-                <h3 className="font-bold text-[#000080] mb-2">
+                <h3 className="font-bold text-[#F6F4EF] mb-2">
                   Skip the Phone Calls
                 </h3>
-                <p className="text-sm text-slate-700 mb-4">
+                <p className="text-sm text-[#D0CCC4] mb-4">
                   Augusta contacts {provider.name} for you, handles all the paperwork,
                   and makes sure your rollover goes smoothly. No cost to get started.
                 </p>
                 <Link
                   href="/reviews/augusta-precious-metals"
-                  className="block text-center px-4 py-2.5 bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold rounded-lg transition-all shadow text-sm"
+                  className="block text-center px-4 py-2.5 bg-[#DC2626] hover:bg-[#991B1B] text-white font-bold rounded-lg transition-all shadow text-sm"
                 >
                   Get Free Rollover Kit
                 </Link>
@@ -743,9 +743,9 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
 
       {/* Related Providers */}
       {relatedProviders.length > 0 && (
-        <section className="py-12 bg-slate-50">
+        <section className="py-12 bg-[#0C0D18]">
           <Container>
-            <h2 className="text-2xl font-bold text-[#000080] mb-6">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6">
               Have an Account Somewhere Else?
             </h2>
             <div className="grid md:grid-cols-3 gap-4">
@@ -760,18 +760,18 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
       {/* FAQ Section */}
       <section className="py-12 bg-white">
         <Container>
-          <h2 className="text-2xl font-bold text-[#000080] mb-4">
+          <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">
             Common Questions About {provider.name} Rollovers
           </h2>
-          <p className="text-slate-600 mb-8">
+          <p className="text-[#D0CCC4] mb-8">
             Straight answers. No financial jargon.
           </p>
           <div className="max-w-3xl space-y-4">
-            <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-              <h3 className="font-bold text-slate-900 mb-2">
+            <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">
                 How long is this going to take?
               </h3>
-              <p className="text-slate-700">
+              <p className="text-[#D0CCC4]">
                 {provider.name} rollovers typically take {provider.typicalTimeline}.
                 {provider.onlineRollover
                   ? " You can start online, which speeds things up."
@@ -779,21 +779,21 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
                 }
               </p>
             </div>
-            <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-              <h3 className="font-bold text-slate-900 mb-2">
+            <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">
                 Will I owe taxes on this?
               </h3>
-              <p className="text-slate-700">
+              <p className="text-[#D0CCC4]">
                 No. A direct rollover from {provider.name} to a Gold IRA is 100% tax-free.
                 The money goes straight from one account to the other&mdash;you never touch it.
                 No taxes, no penalties. It&apos;s the same money, just in a different account.
               </p>
             </div>
-            <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-              <h3 className="font-bold text-slate-900 mb-2">
+            <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">
                 What happens to my current investments?
               </h3>
-              <p className="text-slate-700">
+              <p className="text-[#D0CCC4]">
                 Your stocks, bonds, or mutual funds at {provider.name} get sold and converted to cash.
                 That cash then transfers to your Gold IRA, where you use it to buy physical gold.
                 Your Gold IRA company walks you through choosing the right metals.
@@ -804,7 +804,7 @@ function ProviderRolloverPage({ provider }: { provider: NonNullable<ReturnType<t
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

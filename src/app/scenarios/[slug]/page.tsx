@@ -74,7 +74,7 @@ export default async function ScenarioPage({ params }: PageProps) {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 overflow-hidden bg-slate-50">
+      <section className="relative pt-24 pb-16 overflow-hidden bg-[#0C0D18]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.08),transparent_50%)]" />
 
         <Container className="relative z-10">
@@ -88,39 +88,39 @@ export default async function ScenarioPage({ params }: PageProps) {
                 <AlertTriangle className="h-4 w-4" />
                 {scenario.threatLevel} Threat
               </div>
-              <div className="flex items-center gap-2 text-slate-500 text-sm">
+              <div className="flex items-center gap-2 text-[#A8A39A] text-sm">
                 <Clock className="h-4 w-4" />
                 {scenario.timeframe}
               </div>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6">
               {scenario.title}
             </h1>
 
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+            <p className="text-xl text-[#D0CCC4] mb-8 leading-relaxed">
               {scenario.subtitle}
             </p>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               {scenario.stats.map((stat, i) => (
-                <div key={i} className="bg-white rounded-xl border border-slate-200 p-4 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-[#B22234]">{stat.value}</div>
-                  <div className="text-xs text-slate-500">{stat.label}</div>
-                  {stat.subtext && <div className="text-xs text-slate-400">{stat.subtext}</div>}
+                <div key={i} className="bg-[#161828] rounded-xl border border-[#2A2D42] p-4 text-center">
+                  <div className="text-2xl md:text-3xl font-bold text-[#D4A94E]">{stat.value}</div>
+                  <div className="text-xs text-[#A8A39A]">{stat.label}</div>
+                  {stat.subtext && <div className="text-xs text-[#A8A39A]">{stat.subtext}</div>}
                 </div>
               ))}
             </div>
 
             {/* CTA */}
             <div className="flex flex-wrap gap-4">
-              <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+              <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                 <Link href="/quiz">
                   Protect Your Wealth Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
+              <Button variant="outline" size="lg" asChild className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]">
                 <a href="#protection">
                   See Protection Plan
                 </a>
@@ -142,7 +142,7 @@ export default async function ScenarioPage({ params }: PageProps) {
               {scenario.warningSignals.map((signal, i) => (
                 <div key={i} className="flex items-start gap-2 text-sm">
                   <Zap className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-600">{signal}</span>
+                  <span className="text-[#D0CCC4]">{signal}</span>
                 </div>
               ))}
             </div>
@@ -158,18 +158,18 @@ export default async function ScenarioPage({ params }: PageProps) {
             <div className="space-y-12 mb-16">
               {scenario.sections.map((section, i) => (
                 <div key={i}>
-                  <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
+                  <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
                     {section.title}
                   </h2>
-                  <p className="text-slate-600 leading-relaxed mb-4">
+                  <p className="text-[#D0CCC4] leading-relaxed mb-4">
                     {section.content}
                   </p>
                   {section.bullets && (
                     <ul className="space-y-2">
                       {section.bullets.map((bullet, j) => (
                         <li key={j} className="flex items-start gap-2 text-sm">
-                          <ChevronRight className="h-4 w-4 text-[#B22234] flex-shrink-0 mt-0.5" />
-                          <span className="text-slate-600">{bullet}</span>
+                          <ChevronRight className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
+                          <span className="text-[#D0CCC4]">{bullet}</span>
                         </li>
                       ))}
                     </ul>
@@ -181,7 +181,7 @@ export default async function ScenarioPage({ params }: PageProps) {
             {/* Protection Plan */}
             <div id="protection" className="scroll-mt-24">
               <div className="bg-gradient-to-r from-green-50 via-emerald-50 to-green-50 rounded-2xl border border-green-200 p-8 mb-16">
-                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-6 flex items-center gap-3">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
                   <Shield className="h-8 w-8 text-green-600" />
                   Your Protection Plan
                 </h2>
@@ -193,8 +193,8 @@ export default async function ScenarioPage({ params }: PageProps) {
                         <span className="text-green-700 font-bold">{step.step}</span>
                       </div>
                       <div>
-                        <h3 className="font-bold text-slate-900 mb-1">{step.title}</h3>
-                        <p className="text-slate-600 text-sm">{step.description}</p>
+                        <h3 className="font-bold text-[#F6F4EF] mb-1">{step.title}</h3>
+                        <p className="text-[#D0CCC4] text-sm">{step.description}</p>
                       </div>
                     </div>
                   ))}
@@ -204,15 +204,15 @@ export default async function ScenarioPage({ params }: PageProps) {
 
             {/* Why Gold */}
             <div className="bg-gradient-to-r from-amber-50 via-amber-100/50 to-amber-50 rounded-2xl border border-amber-200 p-8 mb-16">
-              <h2 className="text-2xl font-serif font-bold text-[#000080] mb-4 flex items-center gap-3">
-                <TrendingUp className="h-6 w-6 text-[#B22234]" />
+              <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-4 flex items-center gap-3">
+                <TrendingUp className="h-6 w-6 text-[#D4A94E]" />
                 Why Gold Protects Against This Scenario
               </h2>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-[#D0CCC4] leading-relaxed">
                 {scenario.goldBenefit}
               </p>
               <div className="mt-6">
-                <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+                <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                   <Link href="/quiz">
                     Start Your Gold IRA Today <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -222,14 +222,14 @@ export default async function ScenarioPage({ params }: PageProps) {
 
             {/* FAQs */}
             <div className="mb-16">
-              <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">
+              <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-4">
                 {scenario.faqs.map((faq, i) => (
-                  <div key={i} className="bg-slate-50 rounded-xl border border-slate-200 p-6">
-                    <h3 className="font-bold text-slate-900 mb-2">{faq.question}</h3>
-                    <p className="text-slate-600 text-sm">{faq.answer}</p>
+                  <div key={i} className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6">
+                    <h3 className="font-bold text-[#F6F4EF] mb-2">{faq.question}</h3>
+                    <p className="text-[#D0CCC4] text-sm">{faq.answer}</p>
                   </div>
                 ))}
               </div>
@@ -238,13 +238,13 @@ export default async function ScenarioPage({ params }: PageProps) {
             {/* Related Scenarios */}
             {relatedScenarios.length > 0 && (
               <div className="mb-16">
-                <h2 className="text-xl font-bold text-[#000080] mb-6">Related Threats</h2>
+                <h2 className="text-xl font-bold text-[#F6F4EF] mb-6">Related Threats</h2>
                 <div className="grid md:grid-cols-3 gap-4">
                   {relatedScenarios.map((related) => (
                     <Link
                       key={related.slug}
                       href={`/scenarios/${related.slug}`}
-                      className="bg-slate-50 hover:bg-slate-100 border border-slate-200 hover:border-red-300 rounded-xl p-4 transition-all group"
+                      className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] hover:border-red-300 rounded-xl p-4 transition-all group"
                     >
                       <div className={cn(
                         "text-xs font-bold uppercase tracking-wider mb-2",
@@ -252,7 +252,7 @@ export default async function ScenarioPage({ params }: PageProps) {
                       )}>
                         {related.threatLevel} threat
                       </div>
-                      <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                      <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                         {related.title}
                       </h3>
                     </Link>
@@ -265,16 +265,16 @@ export default async function ScenarioPage({ params }: PageProps) {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16 bg-slate-50 border-t border-slate-200">
+      <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
         <Container>
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
               You Worked Too Hard to Gamble It Now
             </h2>
-            <p className="text-slate-500 mb-8">
+            <p className="text-[#A8A39A] mb-8">
               You remember 2008. You remember watching years of hard work disappear on a screen. The good news? You can take steps today to protect what you&apos;ve built. Take our 60-second quiz to find out if a Gold IRA makes sense for your situation.
             </p>
-            <Button variant="gold" size="xl" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+            <Button variant="gold" size="xl" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
               <Link href="/quiz">
                 See If Gold Is Right for Me <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -284,7 +284,7 @@ export default async function ScenarioPage({ params }: PageProps) {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

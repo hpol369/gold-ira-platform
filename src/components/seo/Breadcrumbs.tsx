@@ -49,12 +49,12 @@ export function Breadcrumbs() {
     };
 
     return (
-        <nav aria-label="Breadcrumb" className="py-4 text-sm text-slate-400">
+        <nav aria-label="Breadcrumb" className="py-4 text-sm text-[#A8A39A]">
             <SchemaScript schema={schema} />
             <ol className="flex flex-wrap items-center gap-2">
                 {allItems.map((item, index) => (
                     <li key={item.href} className="flex items-center">
-                        {index > 0 && <ChevronRight className="w-4 h-4 mx-1 text-slate-600" />}
+                        {index > 0 && <ChevronRight className="w-4 h-4 mx-1 text-[#D0CCC4]" />}
                         {item.current ? (
                             <span className="font-semibold text-white" aria-current="page">
                                 {item.label}

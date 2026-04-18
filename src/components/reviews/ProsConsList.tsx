@@ -27,7 +27,7 @@ export function ProsConsList({
             Pros
           </div>
           {pros.slice(0, 3).map((pro, index) => (
-            <div key={index} className="flex items-start gap-2 text-sm text-slate-700">
+            <div key={index} className="flex items-start gap-2 text-sm text-[#D0CCC4]">
               <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
               <span>{pro}</span>
             </div>
@@ -41,7 +41,7 @@ export function ProsConsList({
             Cons
           </div>
           {cons.slice(0, 3).map((con, index) => (
-            <div key={index} className="flex items-start gap-2 text-sm text-slate-700">
+            <div key={index} className="flex items-start gap-2 text-sm text-[#D0CCC4]">
               <XCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
               <span>{con}</span>
             </div>
@@ -105,13 +105,13 @@ export function QuickProsCons({ pros, cons, limit = 3 }: QuickProsConsProps) {
       {pros.slice(0, limit).map((pro, index) => (
         <div key={`pro-${index}`} className="flex items-center gap-2 text-sm">
           <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0" />
-          <span className="text-slate-700 truncate">{pro}</span>
+          <span className="text-[#D0CCC4] truncate">{pro}</span>
         </div>
       ))}
       {cons.slice(0, 1).map((con, index) => (
         <div key={`con-${index}`} className="flex items-center gap-2 text-sm">
           <XCircle className="h-4 w-4 text-red-500 flex-shrink-0" />
-          <span className="text-slate-700 truncate">{con}</span>
+          <span className="text-[#D0CCC4] truncate">{con}</span>
         </div>
       ))}
     </div>

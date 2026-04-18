@@ -57,17 +57,17 @@ const testimonials = [
 
 export function Testimonials() {
     return (
-        <section className="relative py-24 bg-slate-50 border-t border-slate-200 overflow-hidden">
+        <section className="relative py-24 bg-[#0C0D18] border-t border-[#2A2D42] overflow-hidden">
             {/* Patriot Wash */}
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/noise.png')] opacity-[0.015] pointer-events-none"></div>
 
             <Container className="relative z-10">
                 <FadeIn>
                     <div className="text-center mb-16 space-y-4">
-                        <h2 className="text-3xl font-serif font-black text-[#000080] md:text-5xl">
+                        <h2 className="text-3xl font-serif font-black text-[#F6F4EF] md:text-5xl">
                             Trusted by American Retirees
                         </h2>
-                        <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
+                        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto font-medium">
                             See why thousands of investors have switched to physical precious metals for their retirement security.
                         </p>
                     </div>
@@ -76,9 +76,9 @@ export function Testimonials() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {testimonials.slice(0, 3).map((t, i) => (
                         <FadeIn key={t.id} delay={i * 0.1} className="h-full">
-                            <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:border-[#000080]/20 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col relative group">
+                            <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-8 shadow-sm hover:shadow-xl hover:border-[rgba(197,149,46,0.55)]/20 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col relative group">
                                 {/* Quote mark */}
-                                <div className="text-6xl font-serif text-slate-100 absolute top-4 right-6 group-hover:text-[#000080]/5 transition-colors">
+                                <div className="text-6xl font-serif text-slate-100 absolute top-4 right-6 group-hover:text-[#F6F4EF]/5 transition-colors">
                                     &rdquo;
                                 </div>
 
@@ -92,17 +92,17 @@ export function Testimonials() {
                                     ))}
                                 </div>
 
-                                <p className="text-slate-700 leading-relaxed font-medium mb-6 flex-grow relative z-10">
+                                <p className="text-[#D0CCC4] leading-relaxed font-medium mb-6 flex-grow relative z-10">
                                     &ldquo;{t.text}&rdquo;
                                 </p>
 
-                                <div className="border-t border-slate-100 pt-6 flex items-center gap-4">
-                                    <div className="w-10 h-10 rounded-full bg-[#000080]/10 flex items-center justify-center text-[#000080] font-bold">
+                                <div className="border-t border-[#2A2D42] pt-6 flex items-center gap-4">
+                                    <div className="w-10 h-10 rounded-full bg-[rgba(197,149,46,0.08)] flex items-center justify-center text-[#F6F4EF] font-bold">
                                         {t.name.charAt(0)}
                                     </div>
                                     <div>
-                                        <p className="font-bold text-[#000080]">{t.name}</p>
-                                        <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">{t.location}</p>
+                                        <p className="font-bold text-[#F6F4EF]">{t.name}</p>
+                                        <p className="text-xs text-[#A8A39A] font-bold uppercase tracking-wider">{t.location}</p>
                                     </div>
                                 </div>
                             </div>

@@ -11,7 +11,7 @@ export function AuthorBio() {
                     {/* Image Placeholder */}
                     <FadeIn className="w-full md:w-1/3 flex-shrink-0">
                         <div className="aspect-[3/4] rounded-2xl bg-gray-100 relative overflow-hidden shadow-lg">
-                            <div className="absolute inset-0 flex items-center justify-center bg-primary/5 text-gray-400 text-center p-4">
+                            <div className="absolute inset-0 flex items-center justify-center bg-primary/5 text-[#A8A39A] text-center p-4">
                                 Financial Advisor <br /> Portrait Placeholder
                             </div>
                         </div>
@@ -36,7 +36,7 @@ export function AuthorBio() {
 
                         <div className="pt-4">
                             <span className="font-serif italic text-2xl text-primary font-bold">Thomas Richardson</span>
-                            <p className="text-sm text-gray-500 uppercase tracking-wide mt-1">Senior Editor & Founder</p>
+                            <p className="text-sm text-[#A8A39A] uppercase tracking-wide mt-1">Senior Editor & Founder</p>
                         </div>
                     </FadeIn>
                 </div>

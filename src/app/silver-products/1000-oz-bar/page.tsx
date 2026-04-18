@@ -115,24 +115,24 @@ export default function ThousandOzBarPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-products"
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#3F4460] rounded-full text-[#D0CCC4] font-semibold text-sm mb-6">
               <Layers className="h-4 w-4" />
               1,300 MONTHLY SEARCHES
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               1000 oz Silver Bar: The Institutional Standard
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               The 1000 oz silver bar is the benchmark for wholesale silver trading.
               Used on COMEX and LBMA exchanges, these bars offer the lowest premiums
               available for physical silver ownership.
@@ -146,7 +146,7 @@ export default function ThousandOzBarPage() {
                 <CheckCircle className="h-4 w-4" />
                 COMEX Deliverable
               </span>
-              <span className="flex items-center gap-2 text-[#B22234]">
+              <span className="flex items-center gap-2 text-[#D4A94E]">
                 <AlertTriangle className="h-4 w-4" />
                 High Minimum
               </span>
@@ -156,29 +156,29 @@ export default function ThousandOzBarPage() {
       </section>
 
       {/* Quick Specs */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Scale className="h-8 w-8 text-slate-600 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">~68 lbs</div>
-                <div className="text-sm text-slate-600">Weight</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Scale className="h-8 w-8 text-[#D0CCC4] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">~68 lbs</div>
+                <div className="text-sm text-[#D0CCC4]">Weight</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
                 <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">1-3%</div>
-                <div className="text-sm text-slate-600">Premium Over Spot</div>
+                <div className="text-2xl font-bold text-[#F6F4EF]">1-3%</div>
+                <div className="text-sm text-[#D0CCC4]">Premium Over Spot</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Building2 className="h-8 w-8 text-slate-600 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">.999</div>
-                <div className="text-sm text-slate-600">Purity (Fine)</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Building2 className="h-8 w-8 text-[#D0CCC4] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">.999</div>
+                <div className="text-sm text-[#D0CCC4]">Purity (Fine)</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Warehouse className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">$25K+</div>
-                <div className="text-sm text-slate-600">Min. Investment</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Warehouse className="h-8 w-8 text-[#D4A94E] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">$25K+</div>
+                <div className="text-sm text-[#D0CCC4]">Min. Investment</div>
               </div>
             </div>
           </div>
@@ -189,66 +189,66 @@ export default function ThousandOzBarPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+            <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
               {/* What is a 1000 oz Bar */}
-              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 mb-8">
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-[#B22234]/10 rounded-lg">
-                    <Layers className="h-6 w-6 text-slate-600" />
+                  <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg">
+                    <Layers className="h-6 w-6 text-[#D0CCC4]" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 m-0">What is a 1000 oz Silver Bar?</h2>
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] m-0">What is a 1000 oz Silver Bar?</h2>
                 </div>
-                <p className="text-slate-600 mb-4">
+                <p className="text-[#D0CCC4] mb-4">
                   The 1000 oz silver bar (also called a &quot;Good Delivery&quot; bar or &quot;COMEX bar&quot;) is the
                   standard unit of trade for institutional silver markets. Despite the name, these bars
                   actually range from 900 to 1,100 troy ounces—the &quot;1000 oz&quot; is just a nominal designation.
                 </p>
-                <p className="text-slate-600">
+                <p className="text-[#D0CCC4]">
                   These bars are what banks, hedge funds, and commodity traders buy and sell. When silver
                   futures contracts are settled with physical delivery, these are the bars that change hands.
                 </p>
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Scale className="h-6 w-6 text-slate-600" />
+                <Scale className="h-6 w-6 text-[#D0CCC4]" />
                 Specifications & Dimensions
               </h2>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Specification</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">COMEX Standard</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">LBMA Good Delivery</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Specification</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">COMEX Standard</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">LBMA Good Delivery</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Weight Range</td>
-                      <td className="p-4 text-slate-600">750-1,100 troy oz</td>
-                      <td className="p-4 text-slate-600">900-1,100 troy oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Weight Range</td>
+                      <td className="p-4 text-[#D0CCC4]">750-1,100 troy oz</td>
+                      <td className="p-4 text-[#D0CCC4]">900-1,100 troy oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Purity</td>
-                      <td className="p-4 text-slate-600">.999 fine minimum</td>
-                      <td className="p-4 text-slate-600">.999 fine minimum</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Purity</td>
+                      <td className="p-4 text-[#D0CCC4]">.999 fine minimum</td>
+                      <td className="p-4 text-[#D0CCC4]">.999 fine minimum</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Physical Weight</td>
-                      <td className="p-4 text-slate-600">~62-75 lbs (28-34 kg)</td>
-                      <td className="p-4 text-slate-600">~62-75 lbs (28-34 kg)</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Physical Weight</td>
+                      <td className="p-4 text-[#D0CCC4]">~62-75 lbs (28-34 kg)</td>
+                      <td className="p-4 text-[#D0CCC4]">~62-75 lbs (28-34 kg)</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Dimensions (approx)</td>
-                      <td className="p-4 text-slate-600">10-12&quot; x 4-6&quot; x 3-4&quot;</td>
-                      <td className="p-4 text-slate-600">10-12&quot; x 4-6&quot; x 3-4&quot;</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Dimensions (approx)</td>
+                      <td className="p-4 text-[#D0CCC4]">10-12&quot; x 4-6&quot; x 3-4&quot;</td>
+                      <td className="p-4 text-[#D0CCC4]">10-12&quot; x 4-6&quot; x 3-4&quot;</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Required Markings</td>
-                      <td className="p-4 text-slate-600">Serial #, weight, assay, refiner</td>
-                      <td className="p-4 text-slate-600">Serial #, weight, assay, refiner, year</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Required Markings</td>
+                      <td className="p-4 text-[#D0CCC4]">Serial #, weight, assay, refiner</td>
+                      <td className="p-4 text-[#D0CCC4]">Serial #, weight, assay, refiner, year</td>
                     </tr>
                   </tbody>
                 </table>
@@ -266,87 +266,87 @@ export default function ThousandOzBarPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Product</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Typical Premium</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Cost at $25 Spot</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Product</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Typical Premium</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Cost at $25 Spot</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr className="bg-green-500/10">
-                      <td className="p-4 font-semibold text-slate-900">1000 oz Bar</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">1000 oz Bar</td>
                       <td className="p-4 text-green-400 font-bold">1-3%</td>
-                      <td className="p-4 text-slate-600">$25,250 - $25,750</td>
+                      <td className="p-4 text-[#D0CCC4]">$25,250 - $25,750</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">100 oz Bar</td>
-                      <td className="p-4 text-slate-600">3-5%</td>
-                      <td className="p-4 text-slate-600">$2,575 - $2,625</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">100 oz Bar</td>
+                      <td className="p-4 text-[#D0CCC4]">3-5%</td>
+                      <td className="p-4 text-[#D0CCC4]">$2,575 - $2,625</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">10 oz Bar</td>
-                      <td className="p-4 text-slate-600">5-8%</td>
-                      <td className="p-4 text-slate-600">$262 - $270</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">10 oz Bar</td>
+                      <td className="p-4 text-[#D0CCC4]">5-8%</td>
+                      <td className="p-4 text-[#D0CCC4]">$262 - $270</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">1 oz Round</td>
-                      <td className="p-4 text-slate-600">10-15%</td>
-                      <td className="p-4 text-slate-600">$27.50 - $28.75</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">1 oz Round</td>
+                      <td className="p-4 text-[#D0CCC4]">10-15%</td>
+                      <td className="p-4 text-[#D0CCC4]">$27.50 - $28.75</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">American Silver Eagle</td>
-                      <td className="p-4 text-[#B22234]">15-25%</td>
-                      <td className="p-4 text-slate-600">$28.75 - $31.25</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">American Silver Eagle</td>
+                      <td className="p-4 text-[#D4A94E]">15-25%</td>
+                      <td className="p-4 text-[#D0CCC4]">$28.75 - $31.25</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Building2 className="h-6 w-6 text-slate-600" />
+                <Building2 className="h-6 w-6 text-[#D0CCC4]" />
                 Who Buys 1000 oz Silver Bars?
               </h2>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Ideal For</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Ideal For</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Institutional investors and funds</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>High-net-worth individuals ($250K+ in precious metals)</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Serious stackers optimizing for lowest cost per ounce</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>IRA accounts with $50K+ in silver allocation</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Not Ideal For</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Not Ideal For</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Beginners or small investors</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Those needing liquidity/divisibility</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Home storage without professional security</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Preppers planning for SHTF scenarios</span>
                     </li>
@@ -355,7 +355,7 @@ export default function ThousandOzBarPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Warehouse className="h-6 w-6 text-[#B22234]" />
+                <Warehouse className="h-6 w-6 text-[#D4A94E]" />
                 Storage Considerations
               </h2>
 
@@ -366,37 +366,37 @@ export default function ThousandOzBarPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Storage Option</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Annual Cost</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Pros</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Cons</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Storage Option</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Annual Cost</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Pros</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Cons</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Delaware Depository</td>
-                      <td className="p-4 text-slate-600">0.5% of value</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Delaware Depository</td>
+                      <td className="p-4 text-[#D0CCC4]">0.5% of value</td>
                       <td className="p-4 text-green-400">Insured, IRA-approved, liquid</td>
-                      <td className="p-4 text-slate-600">Ongoing fees</td>
+                      <td className="p-4 text-[#D0CCC4]">Ongoing fees</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Brinks/Loomis</td>
-                      <td className="p-4 text-slate-600">0.4-0.6% of value</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Brinks/Loomis</td>
+                      <td className="p-4 text-[#D0CCC4]">0.4-0.6% of value</td>
                       <td className="p-4 text-green-400">Global network, insured</td>
-                      <td className="p-4 text-slate-600">May require minimum</td>
+                      <td className="p-4 text-[#D0CCC4]">May require minimum</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Bank Safe Deposit</td>
-                      <td className="p-4 text-slate-600">$300-500/year</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Bank Safe Deposit</td>
+                      <td className="p-4 text-[#D0CCC4]">$300-500/year</td>
                       <td className="p-4 text-green-400">Low cost, local access</td>
                       <td className="p-4 text-red-400">Not insured, size limits</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Home Safe</td>
-                      <td className="p-4 text-slate-600">One-time $2,000+</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Home Safe</td>
+                      <td className="p-4 text-[#D0CCC4]">One-time $2,000+</td>
                       <td className="p-4 text-green-400">Full control, no fees</td>
                       <td className="p-4 text-red-400">Security risk, heavy</td>
                     </tr>
@@ -404,12 +404,12 @@ export default function ThousandOzBarPage() {
                 </table>
               </div>
 
-              <div className="not-prose bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
-                  <Info className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <Info className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-lg font-bold text-[#B22234] mb-2">IRA Storage Requirements</h4>
-                    <p className="text-slate-600">
+                    <h4 className="text-lg font-bold text-[#D4A94E] mb-2">IRA Storage Requirements</h4>
+                    <p className="text-[#D0CCC4]">
                       If you hold 1000 oz bars in a Precious Metals IRA, the IRS requires they be stored
                       at an approved depository—you cannot take home delivery. This is actually a benefit:
                       it ensures your bars maintain &quot;good delivery&quot; status and can be easily liquidated.
@@ -444,25 +444,25 @@ export default function ThousandOzBarPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>

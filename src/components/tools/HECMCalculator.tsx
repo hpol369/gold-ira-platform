@@ -162,7 +162,7 @@ export function HECMCalculator() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">
           HECM Calculator 2026
         </h1>
-        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
           Calculate your Home Equity Conversion Mortgage (HECM) proceeds and compare to proprietary reverse mortgages for high-value homes.
         </p>
       </div>
@@ -171,7 +171,7 @@ export function HECMCalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Borrower Info */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-emerald-500/20 rounded-lg border border-emerald-500/30">
                 <Calendar className="h-5 w-5 text-emerald-400" />
@@ -181,8 +181,8 @@ export function HECMCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
-                  Your Age: <span className="text-slate-900 font-semibold">{age}</span>
+                <label className="text-sm text-[#A8A39A] mb-2 block">
+                  Your Age: <span className="text-[#F6F4EF] font-semibold">{age}</span>
                 </label>
                 <input
                   type="range"
@@ -194,7 +194,7 @@ export function HECMCalculator() {
                 />
               </div>
 
-              <div className="flex items-center gap-3 p-3 bg-slate-50 rounded-lg">
+              <div className="flex items-center gap-3 p-3 bg-[#0C0D18] rounded-lg">
                 <input
                   type="checkbox"
                   id="hasSpouse"
@@ -202,15 +202,15 @@ export function HECMCalculator() {
                   onChange={(e) => setHasSpouse(e.target.checked)}
                   className="w-4 h-4 accent-emerald-500"
                 />
-                <label htmlFor="hasSpouse" className="text-sm text-slate-600">
+                <label htmlFor="hasSpouse" className="text-sm text-[#D0CCC4]">
                   Include spouse/co-borrower (uses younger age for PLF)
                 </label>
               </div>
 
               {hasSpouse && (
                 <div>
-                  <label className="text-sm text-slate-500 mb-2 block">
-                    Spouse Age: <span className="text-slate-900 font-semibold">{spouseAge || "Enter age"}</span>
+                  <label className="text-sm text-[#A8A39A] mb-2 block">
+                    Spouse Age: <span className="text-[#F6F4EF] font-semibold">{spouseAge || "Enter age"}</span>
                   </label>
                   <input
                     type="number"
@@ -219,7 +219,7 @@ export function HECMCalculator() {
                     placeholder="Spouse's age (62+)"
                     min="62"
                     max="100"
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-emerald-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-4 py-3 text-[#F6F4EF] focus:outline-none focus:border-emerald-500"
                   />
                 </div>
               )}
@@ -227,7 +227,7 @@ export function HECMCalculator() {
           </div>
 
           {/* Home Information */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
                 <Home className="h-5 w-5 text-blue-600" />
@@ -237,22 +237,22 @@ export function HECMCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Home Value
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={homeValue}
                     onChange={(e) => setHomeValue(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-emerald-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-emerald-500"
                     min="100000"
                     step="25000"
                   />
                 </div>
                 {calculations.exceedsHECMLimit && (
-                  <p className="text-[#B22234] text-xs mt-2 flex items-center gap-1">
+                  <p className="text-[#D4A94E] text-xs mt-2 flex items-center gap-1">
                     <AlertTriangle className="h-3 w-3" />
                     Your home exceeds the HECM limit of ${formatNumber(HECM_LIMIT_2024)}
                   </p>
@@ -260,16 +260,16 @@ export function HECMCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Current Mortgage Balance
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={mortgageBalance}
                     onChange={(e) => setMortgageBalance(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-emerald-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-emerald-500"
                     min="0"
                     step="10000"
                   />
@@ -277,13 +277,13 @@ export function HECMCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Expected Interest Rate
                 </label>
                 <select
                   value={interestRate}
                   onChange={(e) => setInterestRate(e.target.value)}
-                  className="w-full bg-slate-100 border border-slate-700 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-emerald-500"
+                  className="w-full bg-[#121423] border border-slate-700 rounded-lg px-4 py-3 text-[#F6F4EF] focus:outline-none focus:border-emerald-500"
                 >
                   <option value="5.0">5.0%</option>
                   <option value="5.5">5.5%</option>
@@ -301,10 +301,10 @@ export function HECMCalculator() {
               <Shield className="h-6 w-6 text-emerald-400" />
               <h3 className="text-lg font-semibold text-emerald-400">2024 HECM Lending Limit</h3>
             </div>
-            <div className="text-3xl font-bold text-[#000080] mb-2">
+            <div className="text-3xl font-bold text-[#F6F4EF] mb-2">
               ${formatNumber(HECM_LIMIT_2024)}
             </div>
-            <p className="text-slate-600 text-sm">
+            <p className="text-[#D0CCC4] text-sm">
               The maximum home value used to calculate HECM proceeds. Homes worth more may benefit from proprietary reverse mortgages.
             </p>
           </div>
@@ -332,48 +332,48 @@ export function HECMCalculator() {
 
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-slate-500">Assessed Value (max ${formatNumber(HECM_LIMIT_2024)})</span>
-                <span className="text-slate-900">{formatCurrency(calculations.hecmAssessedValue)}</span>
+                <span className="text-[#A8A39A]">Assessed Value (max ${formatNumber(HECM_LIMIT_2024)})</span>
+                <span className="text-[#F6F4EF]">{formatCurrency(calculations.hecmAssessedValue)}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">PLF (Age {calculations.effectiveAge})</span>
-                <span className="text-slate-900">{(calculations.hecmPLF * 100).toFixed(1)}%</span>
+                <span className="text-[#A8A39A]">PLF (Age {calculations.effectiveAge})</span>
+                <span className="text-[#F6F4EF]">{(calculations.hecmPLF * 100).toFixed(1)}%</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Principal Limit</span>
-                <span className="text-slate-900">{formatCurrency(calculations.hecmPrincipalLimit)}</span>
+                <span className="text-[#A8A39A]">Principal Limit</span>
+                <span className="text-[#F6F4EF]">{formatCurrency(calculations.hecmPrincipalLimit)}</span>
               </div>
-              <div className="flex justify-between pt-2 border-t border-slate-200">
-                <span className="text-slate-500">Origination Fee</span>
+              <div className="flex justify-between pt-2 border-t border-[#2A2D42]">
+                <span className="text-[#A8A39A]">Origination Fee</span>
                 <span className="text-orange-400">-{formatCurrency(calculations.hecmOriginationFee)}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Upfront MIP (2%)</span>
+                <span className="text-[#A8A39A]">Upfront MIP (2%)</span>
                 <span className="text-orange-400">-{formatCurrency(calculations.hecmUpfrontMIP)}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Other Costs</span>
+                <span className="text-[#A8A39A]">Other Costs</span>
                 <span className="text-orange-400">-$3,500</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Mortgage Payoff</span>
+                <span className="text-[#A8A39A]">Mortgage Payoff</span>
                 <span className="text-orange-400">-{formatCurrency(mortgageBalance)}</span>
               </div>
             </div>
 
-            <div className="mt-4 p-3 bg-slate-50 rounded-lg">
+            <div className="mt-4 p-3 bg-[#0C0D18] rounded-lg">
               <div className="flex justify-between text-sm">
-                <span className="text-slate-500">Annual MIP (ongoing)</span>
-                <span className="text-[#B22234]">0.5% of balance/year</span>
+                <span className="text-[#A8A39A]">Annual MIP (ongoing)</span>
+                <span className="text-[#D4A94E]">0.5% of balance/year</span>
               </div>
             </div>
           </div>
 
           {/* Proprietary Results */}
-          <div className={`bg-slate-50 backdrop-blur-sm rounded-xl p-6 border ${
+          <div className={`bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border ${
             !calculations.hecmIsBetter || calculations.exceedsHECMLimit
               ? "border-[#B22234]/30"
-              : "border-slate-200"
+              : "border-[#2A2D42]"
           }`}>
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center gap-2">
@@ -381,7 +381,7 @@ export function HECMCalculator() {
                 <h3 className="text-lg font-semibold">Proprietary Reverse Mortgage</h3>
               </div>
               {(!calculations.hecmIsBetter || calculations.exceedsHECMLimit) && (
-                <span className="px-2 py-1 bg-[#B22234]/10 text-[#B22234] text-xs font-semibold rounded-full">
+                <span className="px-2 py-1 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] text-xs font-semibold rounded-full">
                   CONSIDER
                 </span>
               )}
@@ -393,45 +393,45 @@ export function HECMCalculator() {
 
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-slate-500">Full Home Value Used</span>
-                <span className="text-slate-900">{formatCurrency(homeValue)}</span>
+                <span className="text-[#A8A39A]">Full Home Value Used</span>
+                <span className="text-[#F6F4EF]">{formatCurrency(homeValue)}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">PLF (Typically Lower)</span>
-                <span className="text-slate-900">{(calculations.proprietaryPLF * 100).toFixed(1)}%</span>
+                <span className="text-[#A8A39A]">PLF (Typically Lower)</span>
+                <span className="text-[#F6F4EF]">{(calculations.proprietaryPLF * 100).toFixed(1)}%</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Principal Limit</span>
-                <span className="text-slate-900">{formatCurrency(calculations.proprietaryPrincipalLimit)}</span>
+                <span className="text-[#A8A39A]">Principal Limit</span>
+                <span className="text-[#F6F4EF]">{formatCurrency(calculations.proprietaryPrincipalLimit)}</span>
               </div>
-              <div className="flex justify-between pt-2 border-t border-slate-200">
-                <span className="text-slate-500">Total Costs</span>
+              <div className="flex justify-between pt-2 border-t border-[#2A2D42]">
+                <span className="text-[#A8A39A]">Total Costs</span>
                 <span className="text-orange-400">-{formatCurrency(calculations.proprietaryTotalCosts)}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Mortgage Payoff</span>
+                <span className="text-[#A8A39A]">Mortgage Payoff</span>
                 <span className="text-orange-400">-{formatCurrency(mortgageBalance)}</span>
               </div>
             </div>
 
             <div className="mt-4 p-3 bg-emerald-500/10 rounded-lg">
               <div className="flex justify-between text-sm">
-                <span className="text-slate-500">No Annual MIP!</span>
+                <span className="text-[#A8A39A]">No Annual MIP!</span>
                 <span className="text-emerald-400">Saves ~${formatNumber(Math.round(calculations.hecmAnnualMIP))}/year</span>
               </div>
             </div>
           </div>
 
           {/* Comparison Summary */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-2 mb-4">
-              <Scale className="h-5 w-5 text-[#B22234]" />
+              <Scale className="h-5 w-5 text-[#D4A94E]" />
               <h3 className="text-lg font-semibold">HECM vs Proprietary</h3>
             </div>
 
             <div className="space-y-3">
-              <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
-                <span className="text-slate-500">Initial Proceeds</span>
+              <div className="flex items-center justify-between p-3 bg-[#0C0D18] rounded-lg">
+                <span className="text-[#A8A39A]">Initial Proceeds</span>
                 <div className="flex items-center gap-2">
                   {calculations.hecmProceeds > calculations.proprietaryProceeds ? (
                     <>
@@ -447,8 +447,8 @@ export function HECMCalculator() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
-                <span className="text-slate-500">Balance at Year 10</span>
+              <div className="flex items-center justify-between p-3 bg-[#0C0D18] rounded-lg">
+                <span className="text-[#A8A39A]">Balance at Year 10</span>
                 <div className="flex items-center gap-2">
                   {calculations.hecmProjection[10].balance < calculations.proprietaryProjection[10].balance ? (
                     <>
@@ -464,8 +464,8 @@ export function HECMCalculator() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
-                <span className="text-slate-500">FHA Insurance</span>
+              <div className="flex items-center justify-between p-3 bg-[#0C0D18] rounded-lg">
+                <span className="text-[#A8A39A]">FHA Insurance</span>
                 <div className="flex gap-4">
                   <span className="text-emerald-400 flex items-center gap-1">
                     <CheckCircle2 className="h-4 w-4" /> HECM
@@ -482,7 +482,7 @@ export function HECMCalculator() {
 
       {/* Balance Projection Comparison */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200">
+        <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-8 border border-[#2A2D42]">
           <div className="flex items-center gap-3 mb-6">
             <TrendingUp className="h-6 w-6 text-blue-600" />
             <h2 className="text-2xl font-bold">15-Year Balance Projection</h2>
@@ -491,28 +491,28 @@ export function HECMCalculator() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-slate-200">
-                  <th className="py-2 text-left text-slate-500">Year</th>
+                <tr className="border-b border-[#2A2D42]">
+                  <th className="py-2 text-left text-[#A8A39A]">Year</th>
                   <th className="py-2 text-right text-emerald-400">HECM Balance</th>
                   <th className="py-2 text-right text-purple-700">Proprietary Balance</th>
-                  <th className="py-2 text-right text-[#B22234]">MIP Paid (HECM)</th>
+                  <th className="py-2 text-right text-[#D4A94E]">MIP Paid (HECM)</th>
                 </tr>
               </thead>
               <tbody>
                 {calculations.hecmProjection.filter((_, i) => i % 3 === 0 || i === 10 || i === 15).map((proj, idx) => (
-                  <tr key={proj.year} className={idx % 2 === 0 ? "bg-slate-50" : ""}>
-                    <td className="py-2 text-slate-600">{proj.year}</td>
+                  <tr key={proj.year} className={idx % 2 === 0 ? "bg-[#0C0D18]" : ""}>
+                    <td className="py-2 text-[#D0CCC4]">{proj.year}</td>
                     <td className="py-2 text-right text-emerald-400">{formatCurrency(proj.balance)}</td>
                     <td className="py-2 text-right text-purple-700">
                       {formatCurrency(calculations.proprietaryProjection[proj.year].balance)}
                     </td>
-                    <td className="py-2 text-right text-[#B22234]">{formatCurrency(proj.mipPaid)}</td>
+                    <td className="py-2 text-right text-[#D4A94E]">{formatCurrency(proj.mipPaid)}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-slate-500 mt-3">
+          <p className="text-xs text-[#A8A39A] mt-3">
             HECM balance includes annual MIP of 0.5%. Proprietary has no ongoing MIP but may have higher rates.
           </p>
         </div>
@@ -525,7 +525,7 @@ export function HECMCalculator() {
             <h3 className="text-xl font-bold text-emerald-400 mb-4 flex items-center gap-2">
               <Shield className="h-5 w-5" /> HECM Advantages
             </h3>
-            <ul className="space-y-3 text-slate-600 text-sm">
+            <ul className="space-y-3 text-[#D0CCC4] text-sm">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="h-4 w-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                 <span>FHA-insured - government guarantees you receive your funds</span>
@@ -553,7 +553,7 @@ export function HECMCalculator() {
             <h3 className="text-xl font-bold text-purple-700 mb-4 flex items-center gap-2">
               <Building2 className="h-5 w-5" /> Proprietary Advantages
             </h3>
-            <ul className="space-y-3 text-slate-600 text-sm">
+            <ul className="space-y-3 text-[#D0CCC4] text-sm">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="h-4 w-4 text-purple-700 flex-shrink-0 mt-0.5" />
                 <span>No HECM limit - access equity on high-value homes</span>
@@ -581,13 +581,13 @@ export function HECMCalculator() {
 
       {/* Gold IRA Alternative */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-[#B22234]/5 backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
+        <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
           <div className="flex items-center gap-3 mb-6">
-            <DollarSign className="h-6 w-6 text-[#B22234]" />
+            <DollarSign className="h-6 w-6 text-[#D4A94E]" />
             <h2 className="text-2xl font-bold">Protect Your Home, Diversify Your Retirement</h2>
           </div>
 
-          <p className="text-slate-500 mb-6">
+          <p className="text-[#A8A39A] mb-6">
             A HECM can provide needed cash flow, but compound interest and MIP charges erode your home equity over time.
             Before tapping your home, consider whether a Gold IRA could meet your retirement income needs while preserving
             your home for your heirs.
@@ -604,12 +604,12 @@ export function HECMCalculator() {
 
       {/* Disclaimer */}
       <div className="max-w-3xl mx-auto mt-12">
-        <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+        <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
           <div className="flex items-start gap-3">
-            <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+            <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
             <div>
-              <h3 className="text-slate-900 font-semibold mb-2">Important Disclaimer</h3>
-              <p className="text-slate-600 text-sm">
+              <h3 className="text-[#F6F4EF] font-semibold mb-2">Important Disclaimer</h3>
+              <p className="text-[#D0CCC4] text-sm">
                 This calculator provides estimates for educational purposes only. Actual HECM and proprietary reverse
                 mortgage terms vary by lender, location, and individual circumstances. PLF tables are approximate and
                 change based on HUD guidelines. This is not financial advice. Consult a HUD-approved counselor before

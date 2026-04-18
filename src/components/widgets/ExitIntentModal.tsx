@@ -73,12 +73,12 @@ export function ExitIntentModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="relative w-full max-w-md bg-[#000080]/95 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden border border-white/20"
+            className="relative w-full max-w-md bg-[rgba(197,149,46,0.1)]/95 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden border border-white/20"
           >
             {/* Close button */}
             <button
               onClick={handleClose}
-              className="absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors z-20 rounded-full hover:bg-white/10"
+              className="absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors z-20 rounded-full hover:bg-[#1E2134]/10"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />
@@ -86,7 +86,7 @@ export function ExitIntentModal() {
 
             <div className="p-8 text-center">
               {/* Icon */}
-              <div className="mx-auto mb-6 w-16 h-16 rounded-full bg-[#B22234]/20 border border-[#B22234]/30 flex items-center justify-center">
+              <div className="mx-auto mb-6 w-16 h-16 rounded-full bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 flex items-center justify-center">
                 <FileText className="w-8 h-8 text-white" />
               </div>
 
@@ -103,15 +103,15 @@ export function ExitIntentModal() {
               {/* Benefits */}
               <ul className="text-left space-y-2 mb-8 max-w-xs mx-auto">
                 <li className="flex items-center gap-2 text-sm text-white/80">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#B22234] shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#DC2626] shrink-0" />
                   Learn how to protect your retirement from inflation
                 </li>
                 <li className="flex items-center gap-2 text-sm text-white/80">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#B22234] shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#DC2626] shrink-0" />
                   Discover the IRS-approved gold you can hold
                 </li>
                 <li className="flex items-center gap-2 text-sm text-white/80">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#B22234] shrink-0" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#DC2626] shrink-0" />
                   Compare top Gold IRA companies side-by-side
                 </li>
               </ul>
@@ -121,7 +121,7 @@ export function ExitIntentModal() {
                 <Button
                   variant="default"
                   size="lg"
-                  className="w-full shadow-lg bg-[#B22234] hover:bg-[#8b1c2a] text-white border-0"
+                  className="w-full shadow-lg bg-[#DC2626] hover:bg-[#991B1B] text-white border-0"
                   onClick={handleGetGuide}
                 >
                   Get Free Guide <ArrowRight className="ml-2 h-4 w-4" />
@@ -131,7 +131,7 @@ export function ExitIntentModal() {
                   variant="ghost"
                   size="default"
                   asChild
-                  className="w-full text-white/70 hover:text-white hover:bg-white/10"
+                  className="w-full text-white/70 hover:text-[#F6F4EF] hover:bg-[#1E2134]/10"
                 >
                   <Link href="/audit">
                     Or take our free portfolio audit

@@ -58,22 +58,22 @@ export default async function AudiencePage({ params }: PageProps) {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/20 rounded-full text-[#B22234] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/20 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Target className="h-4 w-4" />
               TAILORED FOR {data.title.toUpperCase()}
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-6">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               {data.heroHeadline}
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto mb-8">
               {data.heroSubheadline}
             </p>
             <Link
               href="/get-started"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold text-lg rounded-xl transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#DC2626] hover:bg-[#991B1B] text-white font-bold text-lg rounded-xl transition-all"
             >
               Get Your Free Consultation
               <ArrowRight className="h-5 w-5" />
@@ -101,7 +101,7 @@ export default async function AudiencePage({ params }: PageProps) {
                           {index + 1}
                         </span>
                       </div>
-                      <span className="text-slate-700">{point}</span>
+                      <span className="text-[#D0CCC4]">{point}</span>
                     </li>
                   ))}
                 </ul>
@@ -117,7 +117,7 @@ export default async function AudiencePage({ params }: PageProps) {
                   {data.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-700">{benefit}</span>
+                      <span className="text-[#D0CCC4]">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -128,7 +128,7 @@ export default async function AudiencePage({ params }: PageProps) {
       </section>
 
       {/* Expert Advice */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
             <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 md:p-8">
@@ -136,7 +136,7 @@ export default async function AudiencePage({ params }: PageProps) {
                 <Lightbulb className="h-5 w-5" />
                 OUR ADVICE FOR {data.title.toUpperCase()}
               </div>
-              <p className="text-slate-700 text-lg leading-relaxed">
+              <p className="text-[#D0CCC4] text-lg leading-relaxed">
                 {data.specificAdvice}
               </p>
             </div>
@@ -149,11 +149,11 @@ export default async function AudiencePage({ params }: PageProps) {
         <Container>
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 text-[#B22234] font-semibold text-sm mb-4">
+              <div className="inline-flex items-center gap-2 text-[#D4A94E] font-semibold text-sm mb-4">
                 <HelpCircle className="h-4 w-4" />
                 FREQUENTLY ASKED QUESTIONS
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
                 Questions From {data.title}
               </h2>
             </div>
@@ -162,16 +162,16 @@ export default async function AudiencePage({ params }: PageProps) {
               {data.faqQuestions.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 border border-slate-200 rounded-xl overflow-hidden"
+                  className="group bg-[#0C0D18] border border-[#2A2D42] rounded-xl overflow-hidden"
                 >
                   <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                    <span className="text-slate-900 font-semibold pr-4">
+                    <span className="text-[#F6F4EF] font-semibold pr-4">
                       {faq.question}
                     </span>
-                    <ChevronDown className="h-5 w-5 text-slate-500 group-open:rotate-180 transition-transform flex-shrink-0" />
+                    <ChevronDown className="h-5 w-5 text-[#A8A39A] group-open:rotate-180 transition-transform flex-shrink-0" />
                   </summary>
                   <div className="px-6 pb-6">
-                    <p className="text-slate-600">{faq.answer}</p>
+                    <p className="text-[#D0CCC4]">{faq.answer}</p>
                   </div>
                 </details>
               ))}
@@ -181,10 +181,10 @@ export default async function AudiencePage({ params }: PageProps) {
       </section>
 
       {/* Related Links */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h3 className="text-xl font-bold text-[#000080] text-center mb-8">
+            <h3 className="text-xl font-bold text-[#F6F4EF] text-center mb-8">
               Recommended Next Steps
             </h3>
             <div className="grid sm:grid-cols-3 gap-4">
@@ -192,12 +192,12 @@ export default async function AudiencePage({ params }: PageProps) {
                 <Link
                   key={index}
                   href={link.href}
-                  className="bg-white border border-slate-200 rounded-xl p-4 text-center hover:bg-slate-50 hover:border-[#B22234]/30 transition-all group shadow-sm"
+                  className="bg-[#161828] border border-[#2A2D42] rounded-xl p-4 text-center hover:bg-[#121423] hover:border-[rgba(197,149,46,0.45)] transition-all group shadow-sm"
                 >
-                  <span className="text-slate-900 font-semibold group-hover:text-[#B22234] transition-colors">
+                  <span className="text-[#F6F4EF] font-semibold group-hover:text-[#D4A94E] transition-colors">
                     {link.title}
                   </span>
-                  <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-[#B22234] mx-auto mt-2 transition-colors" />
+                  <ArrowRight className="h-4 w-4 text-[#A8A39A] group-hover:text-[#D4A94E] mx-auto mt-2 transition-colors" />
                 </Link>
               ))}
             </div>
@@ -218,10 +218,10 @@ export default async function AudiencePage({ params }: PageProps) {
       </section>
 
       {/* Browse Other Audiences */}
-      <section className="py-12 bg-slate-50 border-t border-slate-200">
+      <section className="py-12 bg-[#0C0D18] border-t border-[#2A2D42]">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h3 className="text-lg font-semibold text-slate-500 text-center mb-6">
+            <h3 className="text-lg font-semibold text-[#A8A39A] text-center mb-6">
               Explore Guides for Other Situations
             </h3>
             <div className="flex flex-wrap justify-center gap-2">
@@ -234,7 +234,7 @@ export default async function AudiencePage({ params }: PageProps) {
                     <Link
                       key={slug}
                       href={`/best-gold-ira-for/${slug}`}
-                      className="px-4 py-2 bg-white border border-slate-200 rounded-full text-slate-600 text-sm hover:bg-slate-50 hover:text-slate-900 transition-all"
+                      className="px-4 py-2 bg-[#161828] border border-[#2A2D42] rounded-full text-[#D0CCC4] text-sm hover:bg-[#121423] hover:text-[#F6F4EF] transition-all"
                     >
                       {audienceData.title}
                     </Link>

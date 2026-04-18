@@ -53,7 +53,7 @@ export default function RocketDollarReviewPage() {
             <Navbar />
 
             {/* Hero */}
-            <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
+            <header className="bg-[rgba(197,149,46,0.1)] text-white py-16 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-500/10 via-transparent to-transparent"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
@@ -90,56 +90,56 @@ export default function RocketDollarReviewPage() {
                             />
 
                             {/* Quick Facts */}
-                            <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 mb-8">
-                                <h2 className="text-xl font-serif font-bold text-[#000080] mb-4">Rocket Dollar at a Glance</h2>
+                            <div className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 mb-8">
+                                <h2 className="text-xl font-serif font-bold text-[#F6F4EF] mb-4">Rocket Dollar at a Glance</h2>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div className="flex items-center gap-3">
                                         <Building2 className="w-5 h-5 text-purple-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Founded</p>
-                                            <p className="text-slate-900 font-medium">{companyData.founded}</p>
+                                            <p className="text-[#A8A39A] text-sm">Founded</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.founded}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <DollarSign className="w-5 h-5 text-green-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Silver Plan</p>
-                                            <p className="text-slate-900 font-medium">{companyData.silverPlan}</p>
+                                            <p className="text-[#A8A39A] text-sm">Silver Plan</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.silverPlan}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Star className="w-5 h-5 text-[#B22234]" />
+                                        <Star className="w-5 h-5 text-[#D4A94E]" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Gold Plan</p>
-                                            <p className="text-slate-900 font-medium">{companyData.goldPlan}</p>
+                                            <p className="text-[#A8A39A] text-sm">Gold Plan</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.goldPlan}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <Lock className="w-5 h-5 text-blue-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Checkbook Control</p>
-                                            <p className="text-slate-900 font-medium">Yes (both plans)</p>
+                                            <p className="text-[#A8A39A] text-sm">Checkbook Control</p>
+                                            <p className="text-[#F6F4EF] font-medium">Yes (both plans)</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <Shield className="w-5 h-5 text-green-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">BBB Rating</p>
-                                            <p className="text-slate-900 font-medium">{companyData.bbbRating}</p>
+                                            <p className="text-[#A8A39A] text-sm">BBB Rating</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.bbbRating}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <Zap className="w-5 h-5 text-orange-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Account Minimum</p>
-                                            <p className="text-slate-900 font-medium">{companyData.minimum}</p>
+                                            <p className="text-[#A8A39A] text-sm">Account Minimum</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.minimum}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Article */}
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-purple-600">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-purple-600">
 
                                 <h2>What is Rocket Dollar?</h2>
                                 <p>
@@ -173,51 +173,51 @@ export default function RocketDollarReviewPage() {
                             </div>
 
                             {/* Pricing Table */}
-                            <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden my-8">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl overflow-hidden my-8">
                                 <table className="w-full text-sm">
-                                    <thead className="bg-slate-100">
+                                    <thead className="bg-[#121423]">
                                         <tr>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Feature</th>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Silver ($15/mo)</th>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Gold ($30/mo)</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Feature</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Silver ($15/mo)</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Gold ($30/mo)</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-slate-200">
+                                    <tbody className="divide-y divide-[#2A2D42]">
                                         <tr>
-                                            <td className="p-4 text-slate-600">Checkbook Control</td>
+                                            <td className="p-4 text-[#D0CCC4]">Checkbook Control</td>
                                             <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                             <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">LLC Formation</td>
+                                            <td className="p-4 text-[#D0CCC4]">LLC Formation</td>
                                             <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                             <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">One-Time Setup Fee</td>
-                                            <td className="p-4 text-slate-600">$360</td>
+                                            <td className="p-4 text-[#D0CCC4]">One-Time Setup Fee</td>
+                                            <td className="p-4 text-[#D0CCC4]">$360</td>
                                             <td className="p-4 text-green-600 font-medium">$0</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">Priority Support</td>
-                                            <td className="p-4 text-slate-400">No</td>
+                                            <td className="p-4 text-[#D0CCC4]">Priority Support</td>
+                                            <td className="p-4 text-[#A8A39A]">No</td>
                                             <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">Tax Filing Support</td>
-                                            <td className="p-4 text-slate-400">No</td>
+                                            <td className="p-4 text-[#D0CCC4]">Tax Filing Support</td>
+                                            <td className="p-4 text-[#A8A39A]">No</td>
                                             <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">Unlimited Sub-LLCs</td>
-                                            <td className="p-4 text-slate-400">No</td>
+                                            <td className="p-4 text-[#D0CCC4]">Unlimited Sub-LLCs</td>
+                                            <td className="p-4 text-[#A8A39A]">No</td>
                                             <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF]">
                                 <p>
                                     <strong>Which plan should you choose?</strong> The Silver plan ($15/month + $360 setup) is best for most investors. The Gold plan ($30/month, no setup fee) makes sense if you want priority support, plan to use multiple LLCs, or prefer to avoid the upfront cost.
                                 </p>
@@ -230,62 +230,62 @@ export default function RocketDollarReviewPage() {
 
                             {/* Investment Types */}
                             <div className="grid sm:grid-cols-2 gap-4 my-8">
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <Home className="w-6 h-6 text-green-600" />
-                                    <span className="text-slate-900">Real Estate (rental, commercial, land)</span>
+                                    <span className="text-[#F6F4EF]">Real Estate (rental, commercial, land)</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <TrendingUp className="w-6 h-6 text-blue-600" />
-                                    <span className="text-slate-900">Cryptocurrency</span>
+                                    <span className="text-[#F6F4EF]">Cryptocurrency</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
-                                    <Shield className="w-6 h-6 text-[#B22234]" />
-                                    <span className="text-slate-900">Precious Metals</span>
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
+                                    <Shield className="w-6 h-6 text-[#D4A94E]" />
+                                    <span className="text-[#F6F4EF]">Precious Metals</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <Building2 className="w-6 h-6 text-purple-600" />
-                                    <span className="text-slate-900">Private Equity & Startups</span>
+                                    <span className="text-[#F6F4EF]">Private Equity & Startups</span>
                                 </div>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF]">
                                 <h2>Rocket Dollar vs Competitors</h2>
                             </div>
 
-                            <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden my-8">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl overflow-hidden my-8">
                                 <table className="w-full text-sm">
-                                    <thead className="bg-slate-100">
+                                    <thead className="bg-[#121423]">
                                         <tr>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Feature</th>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Rocket Dollar</th>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Equity Trust</th>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Entrust</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Feature</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Rocket Dollar</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Equity Trust</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Entrust</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-slate-200">
+                                    <tbody className="divide-y divide-[#2A2D42]">
                                         <tr>
-                                            <td className="p-4 text-slate-600">Pricing Model</td>
+                                            <td className="p-4 text-[#D0CCC4]">Pricing Model</td>
                                             <td className="p-4 text-green-600 font-medium">Flat monthly</td>
-                                            <td className="p-4 text-slate-600">Per-transaction</td>
-                                            <td className="p-4 text-slate-600">Per-transaction</td>
+                                            <td className="p-4 text-[#D0CCC4]">Per-transaction</td>
+                                            <td className="p-4 text-[#D0CCC4]">Per-transaction</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">Checkbook Control</td>
+                                            <td className="p-4 text-[#D0CCC4]">Checkbook Control</td>
                                             <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
-                                            <td className="p-4 text-slate-400">Optional (extra)</td>
-                                            <td className="p-4 text-slate-400">No</td>
+                                            <td className="p-4 text-[#A8A39A]">Optional (extra)</td>
+                                            <td className="p-4 text-[#A8A39A]">No</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">Best For</td>
-                                            <td className="p-4 text-slate-600">Active investors</td>
-                                            <td className="p-4 text-slate-600">Occasional investors</td>
-                                            <td className="p-4 text-slate-600">Real estate focus</td>
+                                            <td className="p-4 text-[#D0CCC4]">Best For</td>
+                                            <td className="p-4 text-[#D0CCC4]">Active investors</td>
+                                            <td className="p-4 text-[#D0CCC4]">Occasional investors</td>
+                                            <td className="p-4 text-[#D0CCC4]">Real estate focus</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF]">
                                 <h2>Who Should Use Rocket Dollar?</h2>
                                 <ul>
                                     <li><strong>Real estate investors</strong> who need to close deals quickly</li>
@@ -301,7 +301,7 @@ export default function RocketDollarReviewPage() {
                                     <li><strong>Crypto-only investors</strong> — iTrustCapital or Alto IRA are better for pure crypto</li>
                                 </ul>
 
-                                <hr className="my-12 border-slate-200" />
+                                <hr className="my-12 border-[#2A2D42]" />
 
                                 <h2>Final Verdict</h2>
                                 <p>
@@ -314,7 +314,7 @@ export default function RocketDollarReviewPage() {
 
                             {/* FAQ */}
                             <div className="mt-12">
-                                <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">Frequently Asked Questions</h2>
+                                <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6">Frequently Asked Questions</h2>
                                 <div className="space-y-4">
                                     {[
                                         {
@@ -334,17 +334,17 @@ export default function RocketDollarReviewPage() {
                                             a: "Yes, Rocket Dollar supports both Traditional and Roth Self-Directed IRAs with checkbook control."
                                         },
                                     ].map((faq, i) => (
-                                        <div key={i} className="bg-slate-50 rounded-xl border border-slate-200 p-6">
-                                            <h3 className="font-bold text-[#000080] mb-2">{faq.q}</h3>
-                                            <p className="text-slate-600 text-sm">{faq.a}</p>
+                                        <div key={i} className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6">
+                                            <h3 className="font-bold text-[#F6F4EF] mb-2">{faq.q}</h3>
+                                            <p className="text-[#D0CCC4] text-sm">{faq.a}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
                             {/* Bottom CTA */}
-                            <div className="bg-[#000080] text-white p-8 rounded-2xl text-center mt-12 border border-[#000080] relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                            <div className="bg-[rgba(197,149,46,0.1)] text-white p-8 rounded-2xl text-center mt-12 border border-[#000080] relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.18)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10">
                                     <h3 className="text-2xl font-serif font-bold mb-4">Ready to Get Started?</h3>
                                     <p className="mb-6 text-white/80 max-w-lg mx-auto">
@@ -364,29 +364,29 @@ export default function RocketDollarReviewPage() {
                         {/* Sidebar */}
                         <aside className="relative">
                             <div className="hidden lg:block sticky top-24 space-y-6">
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#000080]">Related Resources</h3>
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42]">
+                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#F6F4EF]">Related Resources</h3>
                                     <div className="space-y-3">
-                                        <Link href="/self-directed-ira" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
+                                        <Link href="/self-directed-ira" className="block text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors">
                                             Self-Directed IRA Guide →
                                         </Link>
-                                        <Link href="/learn/checkbook-ira" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
+                                        <Link href="/learn/checkbook-ira" className="block text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors">
                                             What is a Checkbook IRA? →
                                         </Link>
-                                        <Link href="/learn/self-directed-roth-ira" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
+                                        <Link href="/learn/self-directed-roth-ira" className="block text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors">
                                             Self-Directed Roth IRA →
                                         </Link>
                                     </div>
                                 </div>
 
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] text-center">
                                     <div className="flex justify-center gap-1 mb-2">
                                         {[1,2,3,4,5].map(i => (
-                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-[#B22234] fill-[#B22234]' : 'text-[#B22234]/30'}`} />
+                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-[#D4A94E] fill-[#B22234]' : 'text-[#D4A94E]/30'}`} />
                                         ))}
                                     </div>
-                                    <p className="text-[#000080] font-bold">4.6 / 5</p>
-                                    <p className="text-slate-500 text-xs mt-1">Our Rating</p>
+                                    <p className="text-[#F6F4EF] font-bold">4.6 / 5</p>
+                                    <p className="text-[#A8A39A] text-xs mt-1">Our Rating</p>
                                 </div>
                             </div>
                         </aside>

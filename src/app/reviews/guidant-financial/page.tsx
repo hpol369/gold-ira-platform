@@ -102,7 +102,7 @@ export default function GuidantFinancialReviewPage() {
 
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
-                <section className="relative py-12 lg:py-16 overflow-hidden bg-[#000080]">
+                <section className="relative py-12 lg:py-16 overflow-hidden bg-[rgba(197,149,46,0.1)]">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-500/10 via-transparent to-transparent" />
 
                     <Container className="relative z-10">
@@ -140,7 +140,7 @@ export default function GuidantFinancialReviewPage() {
                                         {[1, 2, 3, 4, 5].map((star) => (
                                             <Star
                                                 key={star}
-                                                className={`w-5 h-5 ${star <= 4 ? 'text-[#B22234] fill-[#B22234]' : star === 5 ? 'text-[#B22234] fill-[#B22234]/50' : 'text-slate-400'}`}
+                                                className={`w-5 h-5 ${star <= 4 ? 'text-[#D4A94E] fill-[#B22234]' : star === 5 ? 'text-[#D4A94E] fill-[#B22234]/50' : 'text-[#A8A39A]'}`}
                                             />
                                         ))}
                                         <span className="ml-2 text-white font-bold">4.7/5</span>
@@ -179,9 +179,9 @@ export default function GuidantFinancialReviewPage() {
                 </section>
 
                 {/* At a Glance */}
-                <section className="py-12 bg-slate-50">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
-                        <h2 className="text-2xl font-bold text-[#000080] mb-8">Guidant Financial at a Glance</h2>
+                        <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8">Guidant Financial at a Glance</h2>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                             {[
@@ -194,10 +194,10 @@ export default function GuidantFinancialReviewPage() {
                                 { label: "Services", value: "ROBS + SBA", icon: Shield },
                                 { label: "Support", value: "Dedicated Team", icon: Users },
                             ].map((item, index) => (
-                                <div key={index} className="bg-white border border-slate-200 rounded-xl p-5">
+                                <div key={index} className="bg-[#161828] border border-[#2A2D42] rounded-xl p-5">
                                     <item.icon className="w-6 h-6 text-orange-600 mb-3" />
-                                    <div className="text-sm text-slate-500 mb-1">{item.label}</div>
-                                    <div className="text-lg font-bold text-[#000080]">{item.value}</div>
+                                    <div className="text-sm text-[#A8A39A] mb-1">{item.label}</div>
+                                    <div className="text-lg font-bold text-[#F6F4EF]">{item.value}</div>
                                 </div>
                             ))}
                         </div>
@@ -207,7 +207,7 @@ export default function GuidantFinancialReviewPage() {
                 {/* Pros and Cons */}
                 <section className="py-12 bg-white">
                     <Container>
-                        <h2 className="text-2xl font-bold text-[#000080] mb-8">Guidant Financial: Pros and Cons</h2>
+                        <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8">Guidant Financial: Pros and Cons</h2>
 
                         <ProsCons
                             pros={[
@@ -232,10 +232,10 @@ export default function GuidantFinancialReviewPage() {
                 </section>
 
                 {/* How Guidant Works */}
-                <section className="py-12 bg-slate-50">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-2xl font-bold text-[#000080] mb-8">How Guidant Financial&apos;s ROBS Process Works</h2>
+                            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8">How Guidant Financial&apos;s ROBS Process Works</h2>
 
                             <div className="space-y-6">
                                 {[
@@ -265,14 +265,14 @@ export default function GuidantFinancialReviewPage() {
                                         description: "Guidant handles annual 401(k) administration, IRS filings, and compliance monitoring to keep everything legal."
                                     }
                                 ].map((item, index) => (
-                                    <div key={index} className="bg-white border border-slate-200 rounded-xl p-6">
+                                    <div key={index} className="bg-[#161828] border border-[#2A2D42] rounded-xl p-6">
                                         <div className="flex items-start gap-4">
                                             <div className="flex-shrink-0 w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
                                                 {item.step}
                                             </div>
                                             <div>
-                                                <h3 className="text-lg font-bold text-[#000080] mb-2">{item.title}</h3>
-                                                <p className="text-slate-600">{item.description}</p>
+                                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">{item.title}</h3>
+                                                <p className="text-[#D0CCC4]">{item.description}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -286,15 +286,15 @@ export default function GuidantFinancialReviewPage() {
                 <section className="py-12 bg-white">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-2xl font-bold text-[#000080] mb-8">Guidant Financial Fees</h2>
+                            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8">Guidant Financial Fees</h2>
 
-                            <div className="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl overflow-hidden">
                                 <table className="w-full">
                                     <thead>
-                                        <tr className="border-b border-slate-200">
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Fee Type</th>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Amount</th>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Notes</th>
+                                        <tr className="border-b border-[#2A2D42]">
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Fee Type</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Amount</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Notes</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -305,17 +305,17 @@ export default function GuidantFinancialReviewPage() {
                                             { type: "State Filing Fees", amount: "Varies", notes: "Depends on your state of incorporation" },
                                             { type: "SBA Loan (Optional)", amount: "Varies", notes: "If combining ROBS with SBA financing" },
                                         ].map((fee, index) => (
-                                            <tr key={index} className="border-b border-slate-100">
-                                                <td className="p-4 text-slate-900">{fee.type}</td>
+                                            <tr key={index} className="border-b border-[#2A2D42]">
+                                                <td className="p-4 text-[#F6F4EF]">{fee.type}</td>
                                                 <td className="p-4 text-orange-600 font-semibold">{fee.amount}</td>
-                                                <td className="p-4 text-slate-600 text-sm">{fee.notes}</td>
+                                                <td className="p-4 text-[#D0CCC4] text-sm">{fee.notes}</td>
                                             </tr>
                                         ))}
                                     </tbody>
                                 </table>
                             </div>
 
-                            <p className="text-slate-500 text-sm mt-4">
+                            <p className="text-[#A8A39A] text-sm mt-4">
                                 * Fees are approximate and may vary based on your specific situation. Contact Guidant for a detailed quote.
                             </p>
                         </div>
@@ -323,18 +323,18 @@ export default function GuidantFinancialReviewPage() {
                 </section>
 
                 {/* Comparison Table */}
-                <section className="py-12 bg-slate-50">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
-                        <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">Guidant vs. Other ROBS Providers</h2>
+                        <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">Guidant vs. Other ROBS Providers</h2>
 
                         <div className="max-w-4xl mx-auto overflow-x-auto">
-                            <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+                            <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl overflow-hidden">
                                 <table className="w-full min-w-[600px]">
                                     <thead>
-                                        <tr className="border-b border-slate-200">
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Feature</th>
+                                        <tr className="border-b border-[#2A2D42]">
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Feature</th>
                                             <th className="text-center p-4 text-orange-600 font-semibold bg-orange-50">Guidant Financial</th>
-                                            <th className="text-center p-4 text-[#000080] font-semibold">Benetrends</th>
+                                            <th className="text-center p-4 text-[#F6F4EF] font-semibold">Benetrends</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -348,10 +348,10 @@ export default function GuidantFinancialReviewPage() {
                                             { feature: "Payroll Services", guidant: "Yes", benetrends: "No" },
                                             { feature: "Online Dashboard", guidant: "Yes", benetrends: "Limited" },
                                         ].map((row, index) => (
-                                            <tr key={index} className="border-b border-slate-100">
-                                                <td className="p-4 text-slate-900">{row.feature}</td>
-                                                <td className="p-4 text-center text-slate-700 bg-orange-50">{row.guidant}</td>
-                                                <td className="p-4 text-center text-slate-600">{row.benetrends}</td>
+                                            <tr key={index} className="border-b border-[#2A2D42]">
+                                                <td className="p-4 text-[#F6F4EF]">{row.feature}</td>
+                                                <td className="p-4 text-center text-[#D0CCC4] bg-orange-50">{row.guidant}</td>
+                                                <td className="p-4 text-center text-[#D0CCC4]">{row.benetrends}</td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -364,7 +364,7 @@ export default function GuidantFinancialReviewPage() {
                 {/* Customer Reviews */}
                 <section className="py-12 bg-white">
                     <Container>
-                        <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">What Customers Say About Guidant</h2>
+                        <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">What Customers Say About Guidant</h2>
 
                         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                             {[
@@ -387,19 +387,19 @@ export default function GuidantFinancialReviewPage() {
                                     rating: 5
                                 }
                             ].map((review, index) => (
-                                <div key={index} className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                                <div key={index} className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
                                     <div className="flex mb-4">
                                         {[1, 2, 3, 4, 5].map((star) => (
                                             <Star
                                                 key={star}
-                                                className={`w-4 h-4 ${star <= review.rating ? 'text-[#B22234] fill-[#B22234]' : 'text-slate-300'}`}
+                                                className={`w-4 h-4 ${star <= review.rating ? 'text-[#D4A94E] fill-[#B22234]' : 'text-[#3F4460]'}`}
                                             />
                                         ))}
                                     </div>
-                                    <p className="text-slate-600 italic mb-4">&quot;{review.quote}&quot;</p>
+                                    <p className="text-[#D0CCC4] italic mb-4">&quot;{review.quote}&quot;</p>
                                     <div>
-                                        <div className="text-[#000080] font-semibold">{review.author}</div>
-                                        <div className="text-slate-500 text-sm">{review.business}</div>
+                                        <div className="text-[#F6F4EF] font-semibold">{review.author}</div>
+                                        <div className="text-[#A8A39A] text-sm">{review.business}</div>
                                     </div>
                                 </div>
                             ))}
@@ -408,10 +408,10 @@ export default function GuidantFinancialReviewPage() {
                 </section>
 
                 {/* Who Should Use */}
-                <section className="py-12 bg-slate-50">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
+                            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
                                 Who Should Use Guidant Financial?
                             </h2>
 
@@ -466,7 +466,7 @@ export default function GuidantFinancialReviewPage() {
                 {/* FAQ Section */}
                 <section className="py-12 bg-white">
                     <Container>
-                        <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Guidant Financial FAQ
                         </h2>
 
@@ -497,9 +497,9 @@ export default function GuidantFinancialReviewPage() {
                                     answer: "If your business fails, you could lose the retirement funds you invested. Guidant provides education and support, but ultimately the business risk is yours. This is why they recommend having a solid business plan."
                                 }
                             ].map((faq, index) => (
-                                <div key={index} className="bg-slate-50 border border-slate-200 rounded-xl p-5">
-                                    <h3 className="text-[#000080] font-semibold mb-2">{faq.question}</h3>
-                                    <p className="text-slate-600 text-sm">{faq.answer}</p>
+                                <div key={index} className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-5">
+                                    <h3 className="text-[#F6F4EF] font-semibold mb-2">{faq.question}</h3>
+                                    <p className="text-[#D0CCC4] text-sm">{faq.answer}</p>
                                 </div>
                             ))}
                         </div>
@@ -507,23 +507,23 @@ export default function GuidantFinancialReviewPage() {
                 </section>
 
                 {/* Final Verdict */}
-                <section className="py-12 bg-slate-50">
+                <section className="py-12 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
-                            <h2 className="text-2xl font-bold text-[#000080] mb-6">Our Verdict: Guidant Financial</h2>
+                            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6">Our Verdict: Guidant Financial</h2>
 
-                            <div className="bg-white border border-orange-200 rounded-2xl p-8 mb-8">
+                            <div className="bg-[#161828] border border-orange-200 rounded-2xl p-8 mb-8">
                                 <div className="flex justify-center mb-4">
                                     {[1, 2, 3, 4, 5].map((star) => (
                                         <Star
                                             key={star}
-                                            className={`w-8 h-8 ${star <= 4 ? 'text-[#B22234] fill-[#B22234]' : star === 5 ? 'text-[#B22234] fill-[#B22234]/50' : 'text-slate-300'}`}
+                                            className={`w-8 h-8 ${star <= 4 ? 'text-[#D4A94E] fill-[#B22234]' : star === 5 ? 'text-[#D4A94E] fill-[#B22234]/50' : 'text-[#3F4460]'}`}
                                         />
                                     ))}
                                 </div>
                                 <div className="text-3xl font-bold text-orange-600 mb-4">4.7 / 5</div>
-                                <p className="text-lg text-slate-600 leading-relaxed">
-                                    Guidant Financial is our <strong className="text-[#000080]">top recommendation for ROBS funding</strong>.
+                                <p className="text-lg text-[#D0CCC4] leading-relaxed">
+                                    Guidant Financial is our <strong className="text-[#F6F4EF]">top recommendation for ROBS funding</strong>.
                                     While their fees are on the higher side, the combination of experience (25,000+ businesses funded),
                                     comprehensive services, and excellent compliance support makes them worth the investment.
                                     If you&apos;re serious about using your retirement to start a business, Guidant is the safest choice.
@@ -541,7 +541,7 @@ export default function GuidantFinancialReviewPage() {
                                 </a>
                             </Button>
 
-                            <p className="text-sm text-slate-500 mt-4">
+                            <p className="text-sm text-[#A8A39A] mt-4">
                                 No obligation. Speak with a funding specialist about your situation.
                             </p>
                         </div>
@@ -551,7 +551,7 @@ export default function GuidantFinancialReviewPage() {
                 {/* Related Content */}
                 <section className="py-12 bg-white">
                     <Container>
-                        <h2 className="text-xl font-bold text-[#000080] mb-6 text-center">Related Resources</h2>
+                        <h2 className="text-xl font-bold text-[#F6F4EF] mb-6 text-center">Related Resources</h2>
 
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
                             {[
@@ -563,12 +563,12 @@ export default function GuidantFinancialReviewPage() {
                                 <Link
                                     key={index}
                                     href={link.href}
-                                    className="bg-slate-50 border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                                    className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
                                 >
-                                    <h3 className="text-[#000080] font-semibold mb-1 group-hover:text-orange-600 transition-colors text-sm">
+                                    <h3 className="text-[#F6F4EF] font-semibold mb-1 group-hover:text-orange-600 transition-colors text-sm">
                                         {link.title}
                                     </h3>
-                                    <p className="text-slate-500 text-xs">{link.desc}</p>
+                                    <p className="text-[#A8A39A] text-xs">{link.desc}</p>
                                 </Link>
                             ))}
                         </div>

@@ -109,16 +109,16 @@ export default function BestCryptoIRACompaniesPage() {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-100/50 via-white to-purple-100/30"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 bg-[#B22234]/10 text-[#B22234] px-4 py-2 rounded-full text-sm font-medium mb-6">
+                        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-4 py-2 rounded-full text-sm font-medium mb-6">
                             <Award className="w-4 h-4" />
                             <span>Updated January 2026</span>
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6 leading-tight">
                             Best Crypto IRA Companies 2026
                         </h1>
 
-                        <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+                        <p className="text-xl text-[#D0CCC4] mb-8 max-w-2xl mx-auto">
                             We compared fees, crypto selection, and user experience to rank the top Bitcoin and crypto IRA providers.
                         </p>
 
@@ -135,35 +135,35 @@ export default function BestCryptoIRACompaniesPage() {
             </header>
 
             {/* Quick Comparison Table */}
-            <section className="py-12 bg-slate-50">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
-                    <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6 text-center">Quick Comparison</h2>
+                    <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6 text-center">Quick Comparison</h2>
                     <div className="overflow-x-auto">
-                        <table className="w-full text-sm bg-white rounded-xl border border-slate-200 overflow-hidden">
-                            <thead className="bg-slate-100">
+                        <table className="w-full text-sm bg-[#161828] rounded-xl border border-[#2A2D42] overflow-hidden">
+                            <thead className="bg-[#121423]">
                                 <tr>
-                                    <th className="text-left p-4 text-[#000080] font-semibold">Company</th>
-                                    <th className="text-left p-4 text-[#000080] font-semibold">Trading Fee</th>
-                                    <th className="text-left p-4 text-[#000080] font-semibold">Monthly</th>
-                                    <th className="text-left p-4 text-[#000080] font-semibold">Minimum</th>
-                                    <th className="text-left p-4 text-[#000080] font-semibold">Cryptos</th>
-                                    <th className="text-left p-4 text-[#000080] font-semibold">Gold/Silver</th>
-                                    <th className="text-left p-4 text-[#000080] font-semibold">Rating</th>
+                                    <th className="text-left p-4 text-[#F6F4EF] font-semibold">Company</th>
+                                    <th className="text-left p-4 text-[#F6F4EF] font-semibold">Trading Fee</th>
+                                    <th className="text-left p-4 text-[#F6F4EF] font-semibold">Monthly</th>
+                                    <th className="text-left p-4 text-[#F6F4EF] font-semibold">Minimum</th>
+                                    <th className="text-left p-4 text-[#F6F4EF] font-semibold">Cryptos</th>
+                                    <th className="text-left p-4 text-[#F6F4EF] font-semibold">Gold/Silver</th>
+                                    <th className="text-left p-4 text-[#F6F4EF] font-semibold">Rating</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-slate-200">
+                            <tbody className="divide-y divide-[#2A2D42]">
                                 {companies.map((company) => (
-                                    <tr key={company.name} className={company.rank === 1 ? 'bg-[#B22234]/5' : ''}>
+                                    <tr key={company.name} className={company.rank === 1 ? 'bg-[rgba(220,38,38,0.06)]' : ''}>
                                         <td className="p-4">
                                             <div className="flex items-center gap-2">
-                                                {company.rank === 1 && <Award className="w-4 h-4 text-[#B22234]" />}
-                                                <span className="text-[#000080] font-medium">{company.name}</span>
+                                                {company.rank === 1 && <Award className="w-4 h-4 text-[#D4A94E]" />}
+                                                <span className="text-[#F6F4EF] font-medium">{company.name}</span>
                                             </div>
                                         </td>
-                                        <td className="p-4 text-slate-600">{company.tradingFee}</td>
-                                        <td className="p-4 text-slate-600">{company.monthlyFee}</td>
-                                        <td className="p-4 text-slate-600">{company.minimum}</td>
-                                        <td className="p-4 text-slate-600">{company.cryptos}</td>
+                                        <td className="p-4 text-[#D0CCC4]">{company.tradingFee}</td>
+                                        <td className="p-4 text-[#D0CCC4]">{company.monthlyFee}</td>
+                                        <td className="p-4 text-[#D0CCC4]">{company.minimum}</td>
+                                        <td className="p-4 text-[#D0CCC4]">{company.cryptos}</td>
                                         <td className="p-4">
                                             {company.goldSilver ?
                                                 <CheckCircle2 className="w-5 h-5 text-green-500" /> :
@@ -172,8 +172,8 @@ export default function BestCryptoIRACompaniesPage() {
                                         </td>
                                         <td className="p-4">
                                             <div className="flex items-center gap-1">
-                                                <Star className="w-4 h-4 text-[#B22234] fill-[#B22234]" />
-                                                <span className="text-[#000080]">{company.rating}</span>
+                                                <Star className="w-4 h-4 text-[#D4A94E] fill-[#B22234]" />
+                                                <span className="text-[#F6F4EF]">{company.rating}</span>
                                             </div>
                                         </td>
                                     </tr>
@@ -192,19 +192,19 @@ export default function BestCryptoIRACompaniesPage() {
                             <div
                                 key={company.name}
                                 id={company.name.toLowerCase().replace(/\s+/g, '-')}
-                                className={`bg-slate-50 rounded-xl border ${company.rank === 1 ? 'border-[#B22234]/50' : 'border-slate-200'} overflow-hidden`}
+                                className={`bg-[#0C0D18] rounded-xl border ${company.rank === 1 ? 'border-[#B22234]/50' : 'border-[#2A2D42]'} overflow-hidden`}
                             >
                                 {/* Header */}
-                                <div className={`p-6 ${company.rank === 1 ? 'bg-[#B22234]/5' : 'bg-slate-100'} border-b border-slate-200`}>
+                                <div className={`p-6 ${company.rank === 1 ? 'bg-[rgba(220,38,38,0.06)]' : 'bg-[#121423]'} border-b border-[#2A2D42]`}>
                                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                                         <div>
                                             <div className="flex items-center gap-3 mb-2">
-                                                <span className={`text-3xl font-bold ${company.rank === 1 ? 'text-[#B22234]' : 'text-slate-400'}`}>
+                                                <span className={`text-3xl font-bold ${company.rank === 1 ? 'text-[#D4A94E]' : 'text-[#A8A39A]'}`}>
                                                     #{company.rank}
                                                 </span>
-                                                <h3 className="text-2xl font-serif font-bold text-[#000080]">{company.name}</h3>
+                                                <h3 className="text-2xl font-serif font-bold text-[#F6F4EF]">{company.name}</h3>
                                                 {company.rank === 1 && (
-                                                    <span className="bg-[#B22234] text-white text-xs font-bold px-2 py-1 rounded uppercase">
+                                                    <span className="bg-[#DC2626] text-white text-xs font-bold px-2 py-1 rounded uppercase">
                                                         Our Top Pick
                                                     </span>
                                                 )}
@@ -216,37 +216,37 @@ export default function BestCryptoIRACompaniesPage() {
                                                 {[1,2,3,4,5].map(i => (
                                                     <Star
                                                         key={i}
-                                                        className={`w-5 h-5 ${i <= Math.floor(company.rating) ? 'text-[#B22234] fill-[#B22234]' : 'text-[#B22234]/30'}`}
+                                                        className={`w-5 h-5 ${i <= Math.floor(company.rating) ? 'text-[#D4A94E] fill-[#B22234]' : 'text-[#D4A94E]/30'}`}
                                                     />
                                                 ))}
                                             </div>
-                                            <span className="text-[#000080] font-bold text-lg">{company.rating}</span>
+                                            <span className="text-[#F6F4EF] font-bold text-lg">{company.rating}</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Content */}
                                 <div className="p-6">
-                                    <p className="text-slate-600 mb-6">{company.description}</p>
+                                    <p className="text-[#D0CCC4] mb-6">{company.description}</p>
 
                                     <div className="grid md:grid-cols-2 gap-6 mb-6">
                                         {/* Quick Stats */}
                                         <div className="space-y-3">
                                             <div className="flex justify-between">
-                                                <span className="text-slate-500">Trading Fee</span>
-                                                <span className="text-[#000080] font-medium">{company.tradingFee}</span>
+                                                <span className="text-[#A8A39A]">Trading Fee</span>
+                                                <span className="text-[#F6F4EF] font-medium">{company.tradingFee}</span>
                                             </div>
                                             <div className="flex justify-between">
-                                                <span className="text-slate-500">Monthly Fee</span>
-                                                <span className="text-[#000080] font-medium">{company.monthlyFee}</span>
+                                                <span className="text-[#A8A39A]">Monthly Fee</span>
+                                                <span className="text-[#F6F4EF] font-medium">{company.monthlyFee}</span>
                                             </div>
                                             <div className="flex justify-between">
-                                                <span className="text-slate-500">Minimum</span>
-                                                <span className="text-[#000080] font-medium">{company.minimum}</span>
+                                                <span className="text-[#A8A39A]">Minimum</span>
+                                                <span className="text-[#F6F4EF] font-medium">{company.minimum}</span>
                                             </div>
                                             <div className="flex justify-between">
-                                                <span className="text-slate-500">Cryptocurrencies</span>
-                                                <span className="text-[#000080] font-medium">{company.cryptos}</span>
+                                                <span className="text-[#A8A39A]">Cryptocurrencies</span>
+                                                <span className="text-[#F6F4EF] font-medium">{company.cryptos}</span>
                                             </div>
                                         </div>
 
@@ -256,7 +256,7 @@ export default function BestCryptoIRACompaniesPage() {
                                                 <h4 className="text-green-600 font-medium text-sm mb-2">Pros</h4>
                                                 <ul className="space-y-1">
                                                     {company.pros.map((pro, i) => (
-                                                        <li key={i} className="text-slate-500 text-sm flex items-start gap-1">
+                                                        <li key={i} className="text-[#A8A39A] text-sm flex items-start gap-1">
                                                             <CheckCircle2 className="w-3 h-3 text-green-500 mt-1 flex-shrink-0" />
                                                             {pro}
                                                         </li>
@@ -267,7 +267,7 @@ export default function BestCryptoIRACompaniesPage() {
                                                 <h4 className="text-red-600 font-medium text-sm mb-2">Cons</h4>
                                                 <ul className="space-y-1">
                                                     {company.cons.map((con, i) => (
-                                                        <li key={i} className="text-slate-500 text-sm flex items-start gap-1">
+                                                        <li key={i} className="text-[#A8A39A] text-sm flex items-start gap-1">
                                                             <XCircle className="w-3 h-3 text-red-500 mt-1 flex-shrink-0" />
                                                             {con}
                                                         </li>
@@ -279,14 +279,14 @@ export default function BestCryptoIRACompaniesPage() {
 
                                     {/* CTA */}
                                     <div className="flex flex-col sm:flex-row gap-3">
-                                        <Button variant={company.rank === 1 ? "gold" : "outline"} className={company.rank !== 1 ? 'border-slate-300 text-[#000080] hover:bg-slate-100' : ''} asChild>
+                                        <Button variant={company.rank === 1 ? "gold" : "outline"} className={company.rank !== 1 ? 'border-[#3F4460] text-[#F6F4EF] hover:bg-[#1E2134]' : ''} asChild>
                                             <a href={getTrackedLink(company.ctaLink, `best-crypto-${company.name.toLowerCase().replace(/\s+/g, '-')}`, company.name.toLowerCase())} target="_blank" rel="noopener noreferrer">
                                                 Visit {company.name}
                                                 <ArrowRight className="ml-2 w-4 h-4" />
                                             </a>
                                         </Button>
                                         {company.link !== "#" && (
-                                            <Button variant="ghost" className="text-slate-500 hover:text-[#000080]" asChild>
+                                            <Button variant="ghost" className="text-[#A8A39A] hover:text-[#F6F4EF]" asChild>
                                                 <Link href={company.link}>
                                                     Read Full Review
                                                 </Link>
@@ -301,31 +301,31 @@ export default function BestCryptoIRACompaniesPage() {
             </section>
 
             {/* How We Ranked */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-serif font-bold text-[#000080] mb-8 text-center">How We Ranked These Companies</h2>
+                        <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">How We Ranked These Companies</h2>
 
                         <div className="grid md:grid-cols-2 gap-6">
-                            <div className="bg-white p-6 rounded-xl border border-slate-200">
+                            <div className="bg-[#161828] p-6 rounded-xl border border-[#2A2D42]">
                                 <DollarSign className="w-8 h-8 text-green-500 mb-3" />
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">Fees (40%)</h3>
-                                <p className="text-slate-500 text-sm">Total cost of ownership including trading fees, monthly charges, and hidden costs.</p>
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">Fees (40%)</h3>
+                                <p className="text-[#A8A39A] text-sm">Total cost of ownership including trading fees, monthly charges, and hidden costs.</p>
                             </div>
-                            <div className="bg-white p-6 rounded-xl border border-slate-200">
+                            <div className="bg-[#161828] p-6 rounded-xl border border-[#2A2D42]">
                                 <TrendingUp className="w-8 h-8 text-blue-500 mb-3" />
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">Asset Selection (25%)</h3>
-                                <p className="text-slate-500 text-sm">Number and variety of cryptocurrencies available, plus any additional assets like gold.</p>
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">Asset Selection (25%)</h3>
+                                <p className="text-[#A8A39A] text-sm">Number and variety of cryptocurrencies available, plus any additional assets like gold.</p>
                             </div>
-                            <div className="bg-white p-6 rounded-xl border border-slate-200">
+                            <div className="bg-[#161828] p-6 rounded-xl border border-[#2A2D42]">
                                 <Shield className="w-8 h-8 text-purple-500 mb-3" />
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">Security & Trust (20%)</h3>
-                                <p className="text-slate-500 text-sm">Custody solutions, insurance, BBB rating, and company track record.</p>
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">Security & Trust (20%)</h3>
+                                <p className="text-[#A8A39A] text-sm">Custody solutions, insurance, BBB rating, and company track record.</p>
                             </div>
-                            <div className="bg-white p-6 rounded-xl border border-slate-200">
-                                <Star className="w-8 h-8 text-[#B22234] mb-3" />
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">User Experience (15%)</h3>
-                                <p className="text-slate-500 text-sm">Platform quality, mobile app, customer support, and ease of use.</p>
+                            <div className="bg-[#161828] p-6 rounded-xl border border-[#2A2D42]">
+                                <Star className="w-8 h-8 text-[#D4A94E] mb-3" />
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">User Experience (15%)</h3>
+                                <p className="text-[#A8A39A] text-sm">Platform quality, mobile app, customer support, and ease of use.</p>
                             </div>
                         </div>
                     </div>
@@ -336,7 +336,7 @@ export default function BestCryptoIRACompaniesPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-serif font-bold text-[#000080] mb-8 text-center">Frequently Asked Questions</h2>
+                        <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Frequently Asked Questions</h2>
                         <div className="space-y-4">
                             {[
                                 {
@@ -356,9 +356,9 @@ export default function BestCryptoIRACompaniesPage() {
                                     a: "Crypto IRAs use institutional-grade custody, but crypto itself is volatile and not FDIC insured. Choose established providers with good track records and only invest what you can afford to hold long-term."
                                 },
                             ].map((faq, i) => (
-                                <div key={i} className="bg-slate-50 rounded-xl border border-slate-200 p-6">
-                                    <h3 className="font-bold text-[#000080] mb-2">{faq.q}</h3>
-                                    <p className="text-slate-500 text-sm">{faq.a}</p>
+                                <div key={i} className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6">
+                                    <h3 className="font-bold text-[#F6F4EF] mb-2">{faq.q}</h3>
+                                    <p className="text-[#A8A39A] text-sm">{faq.a}</p>
                                 </div>
                             ))}
                         </div>
@@ -367,21 +367,21 @@ export default function BestCryptoIRACompaniesPage() {
             </section>
 
             {/* Related Resources */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
-                    <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">Learn More About Crypto IRAs</h2>
+                    <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Learn More About Crypto IRAs</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <Link href="/crypto-ira" className="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-500/50 transition-colors group">
-                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-blue-600 transition-colors">Crypto IRA Guide</h3>
-                            <p className="text-slate-500 text-sm">Complete guide to cryptocurrency retirement accounts.</p>
+                        <Link href="/crypto-ira" className="bg-[#161828] p-6 rounded-xl border border-[#2A2D42] hover:border-blue-500/50 transition-colors group">
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-blue-600 transition-colors">Crypto IRA Guide</h3>
+                            <p className="text-[#A8A39A] text-sm">Complete guide to cryptocurrency retirement accounts.</p>
                         </Link>
-                        <Link href="/learn/bitcoin-ira" className="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-500/50 transition-colors group">
-                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-blue-600 transition-colors">What is a Bitcoin IRA?</h3>
-                            <p className="text-slate-500 text-sm">Everything you need to know about Bitcoin in retirement.</p>
+                        <Link href="/learn/bitcoin-ira" className="bg-[#161828] p-6 rounded-xl border border-[#2A2D42] hover:border-blue-500/50 transition-colors group">
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-blue-600 transition-colors">What is a Bitcoin IRA?</h3>
+                            <p className="text-[#A8A39A] text-sm">Everything you need to know about Bitcoin in retirement.</p>
                         </Link>
-                        <Link href="/compare/gold-ira-vs-crypto" className="bg-white p-6 rounded-xl border border-slate-200 hover:border-blue-500/50 transition-colors group">
-                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-blue-600 transition-colors">Gold IRA vs Crypto IRA</h3>
-                            <p className="text-slate-500 text-sm">Compare precious metals and crypto for retirement.</p>
+                        <Link href="/compare/gold-ira-vs-crypto" className="bg-[#161828] p-6 rounded-xl border border-[#2A2D42] hover:border-blue-500/50 transition-colors group">
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-blue-600 transition-colors">Gold IRA vs Crypto IRA</h3>
+                            <p className="text-[#A8A39A] text-sm">Compare precious metals and crypto for retirement.</p>
                         </Link>
                     </div>
                 </Container>

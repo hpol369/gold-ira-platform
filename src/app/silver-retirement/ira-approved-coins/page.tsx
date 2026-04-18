@@ -231,14 +231,14 @@ export default function IraApprovedCoinsPage() {
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-slate-50" />
+        <div className="absolute inset-0 bg-[#0C0D18]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(34,197,94,0.15),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <Link
               href="/silver-retirement"
-              className="inline-flex items-center gap-2 text-slate-600 text-sm hover:text-slate-900 transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] text-sm hover:text-[#F6F4EF] transition-colors mb-6"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
@@ -247,11 +247,11 @@ export default function IraApprovedCoinsPage() {
               <Coins className="h-4 w-4" />
               GOVERNMENT-MINTED COINS
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6">
               IRA-Approved{" "}
               <span className="text-green-400">Silver Coins</span>
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               American Eagles, Canadian Maple Leafs, and other government-minted
               silver coins that qualify for your retirement account.
             </p>
@@ -259,7 +259,7 @@ export default function IraApprovedCoinsPage() {
             <LeadCaptureButton
               variant="silver"
               source="silver-retirement-coins-hero"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-11 px-8"
             >
               Browse IRA Silver Coins <ArrowRight className="ml-2 h-4 w-4" />
             </LeadCaptureButton>
@@ -268,31 +268,31 @@ export default function IraApprovedCoinsPage() {
       </section>
 
       {/* Key Requirements */}
-      <section className="py-12 bg-slate-100 border-y border-slate-200">
+      <section className="py-12 bg-[#121423] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
               IRA Silver Coin Requirements
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 text-center">
                 <Shield className="h-8 w-8 text-green-400 mx-auto mb-3" />
-                <h3 className="font-bold text-slate-900 mb-2">Government Minted</h3>
-                <p className="text-sm text-slate-600">
+                <h3 className="font-bold text-[#F6F4EF] mb-2">Government Minted</h3>
+                <p className="text-sm text-[#D0CCC4]">
                   Must be struck by a national mint (U.S. Mint, Royal Canadian Mint, etc.)
                 </p>
               </div>
-              <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 text-center">
                 <CheckCircle2 className="h-8 w-8 text-green-400 mx-auto mb-3" />
-                <h3 className="font-bold text-slate-900 mb-2">.999+ Purity</h3>
-                <p className="text-sm text-slate-600">
+                <h3 className="font-bold text-[#F6F4EF] mb-2">.999+ Purity</h3>
+                <p className="text-sm text-[#D0CCC4]">
                   Minimum 99.9% pure silver. Some coins like Maple Leafs are .9999
                 </p>
               </div>
-              <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 text-center">
                 <Globe className="h-8 w-8 text-green-400 mx-auto mb-3" />
-                <h3 className="font-bold text-slate-900 mb-2">Legal Tender</h3>
-                <p className="text-sm text-slate-600">
+                <h3 className="font-bold text-[#F6F4EF] mb-2">Legal Tender</h3>
+                <p className="text-sm text-[#D0CCC4]">
                   Must have legal tender status in country of origin
                 </p>
               </div>
@@ -304,10 +304,10 @@ export default function IraApprovedCoinsPage() {
       {/* Approved Coins List */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-4">
             IRS-Approved Silver Coins for IRAs
           </h2>
-          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-12">
+          <p className="text-[#D0CCC4] text-center max-w-2xl mx-auto mb-12">
             These government-minted silver coins meet IRS requirements for precious
             metals IRAs. All feature proper purity and legal tender status.
           </p>
@@ -316,43 +316,43 @@ export default function IraApprovedCoinsPage() {
             {approvedCoins.map((coin, index) => (
               <div
                 key={index}
-                className={`bg-slate-50 backdrop-blur-sm border rounded-xl p-6 ${
+                className={`bg-[#0C0D18] backdrop-blur-sm border rounded-xl p-6 ${
                   coin.recommended
                     ? "border-green-500/30"
-                    : "border-slate-200"
+                    : "border-[#2A2D42]"
                 }`}
               >
                 <div className="flex items-start justify-between mb-3">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
-                      <h3 className="text-lg font-bold text-slate-900">{coin.name}</h3>
+                      <h3 className="text-lg font-bold text-[#F6F4EF]">{coin.name}</h3>
                       {coin.recommended && (
                         <Award className="h-4 w-4 text-green-400" />
                       )}
                     </div>
-                    <p className="text-sm text-slate-600">{coin.country} - {coin.mint}</p>
+                    <p className="text-sm text-[#D0CCC4]">{coin.country} - {coin.mint}</p>
                   </div>
-                  <div className="flex text-[#B22234]">
+                  <div className="flex text-[#D4A94E]">
                     {[...Array(coin.popularity)].map((_, i) => (
                       <Star key={i} className="h-3 w-3 fill-current" />
                     ))}
                   </div>
                 </div>
 
-                <p className="text-sm text-slate-600 mb-4">{coin.notes}</p>
+                <p className="text-sm text-[#D0CCC4] mb-4">{coin.notes}</p>
 
                 <div className="grid grid-cols-3 gap-4 text-xs">
                   <div>
-                    <span className="text-slate-600 block">Purity</span>
-                    <span className="text-slate-900 font-semibold">{coin.purity}</span>
+                    <span className="text-[#D0CCC4] block">Purity</span>
+                    <span className="text-[#F6F4EF] font-semibold">{coin.purity}</span>
                   </div>
                   <div>
-                    <span className="text-slate-600 block">Weight</span>
-                    <span className="text-slate-900 font-semibold">{coin.weight}</span>
+                    <span className="text-[#D0CCC4] block">Weight</span>
+                    <span className="text-[#F6F4EF] font-semibold">{coin.weight}</span>
                   </div>
                   <div>
-                    <span className="text-slate-600 block">Premium</span>
-                    <span className="text-slate-900 font-semibold">{coin.premium}</span>
+                    <span className="text-[#D0CCC4] block">Premium</span>
+                    <span className="text-[#F6F4EF] font-semibold">{coin.premium}</span>
                   </div>
                 </div>
               </div>
@@ -362,13 +362,13 @@ export default function IraApprovedCoinsPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-slate-200">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+            <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">
               Ready to Add Silver Coins to Your IRA?
             </h3>
-            <p className="text-slate-600 mb-6">
+            <p className="text-[#D0CCC4] mb-6">
               Augusta Precious Metals offers competitive pricing on all major
               IRA-approved silver coins. Get expert guidance on building your
               Silver IRA with the right coin selection.
@@ -376,7 +376,7 @@ export default function IraApprovedCoinsPage() {
             <LeadCaptureButton
               variant="silver"
               source="silver-retirement-coins-mid"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-11 px-8"
             >
               Get Free Silver Coin Guide <ArrowRight className="ml-2 h-4 w-4" />
             </LeadCaptureButton>
@@ -385,10 +385,10 @@ export default function IraApprovedCoinsPage() {
       </section>
 
       {/* NOT Approved Section */}
-      <section className="py-16 bg-slate-100">
+      <section className="py-16 bg-[#121423]">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8 flex items-center justify-center gap-3">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8 flex items-center justify-center gap-3">
               <XCircle className="h-6 w-6 text-red-400" />
               Silver Coins NOT Allowed in IRAs
             </h2>
@@ -398,22 +398,22 @@ export default function IraApprovedCoinsPage() {
                   <div key={index} className="flex items-start gap-3">
                     <XCircle className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
                     <div>
-                      <span className="text-slate-900 font-semibold">{item.name}</span>
-                      <p className="text-sm text-slate-600">{item.reason}</p>
+                      <span className="text-[#F6F4EF] font-semibold">{item.name}</span>
+                      <p className="text-sm text-[#D0CCC4]">{item.reason}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="mt-8 bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
+            <div className="mt-8 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-[#B22234] mt-0.5 flex-shrink-0" />
+                <AlertTriangle className="h-5 w-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-slate-900 mb-2">
+                  <h4 className="font-bold text-[#F6F4EF] mb-2">
                     The "Junk Silver" Misconception
                   </h4>
-                  <p className="text-sm text-slate-600">
+                  <p className="text-sm text-[#D0CCC4]">
                     Many retirees ask about adding their pre-1965 U.S. silver coins
                     (often called "junk silver") to their IRA. Unfortunately, these
                     historic coins are only 90% silver and do NOT qualify. The IRS
@@ -429,54 +429,54 @@ export default function IraApprovedCoinsPage() {
       {/* Comparison: Eagles vs Maple Leafs */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
             American Eagles vs Canadian Maple Leafs
           </h2>
           <div className="max-w-4xl mx-auto">
             <div className="overflow-x-auto">
-              <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                <thead className="bg-slate-50">
+              <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                <thead className="bg-[#0C0D18]">
                   <tr>
-                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Feature</th>
-                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">American Eagle</th>
-                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Maple Leaf</th>
+                    <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Feature</th>
+                    <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">American Eagle</th>
+                    <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Maple Leaf</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200 text-sm">
+                <tbody className="divide-y divide-[#2A2D42] text-sm">
                   <tr>
-                    <td className="p-4 font-semibold text-slate-900">Purity</td>
-                    <td className="p-4 text-slate-600">.999 fine (99.9%)</td>
+                    <td className="p-4 font-semibold text-[#F6F4EF]">Purity</td>
+                    <td className="p-4 text-[#D0CCC4]">.999 fine (99.9%)</td>
                     <td className="p-4 text-green-400 font-semibold">.9999 fine (99.99%)</td>
                   </tr>
-                  <tr className="bg-slate-100">
-                    <td className="p-4 font-semibold text-slate-900">Premium</td>
-                    <td className="p-4 text-slate-600">Higher (~$3-5 over spot)</td>
+                  <tr className="bg-[#121423]">
+                    <td className="p-4 font-semibold text-[#F6F4EF]">Premium</td>
+                    <td className="p-4 text-[#D0CCC4]">Higher (~$3-5 over spot)</td>
                     <td className="p-4 text-green-400 font-semibold">Lower (~$2-4 over spot)</td>
                   </tr>
                   <tr>
-                    <td className="p-4 font-semibold text-slate-900">Liquidity</td>
+                    <td className="p-4 font-semibold text-[#F6F4EF]">Liquidity</td>
                     <td className="p-4 text-green-400 font-semibold">Highest - Most recognized</td>
-                    <td className="p-4 text-slate-600">Very High</td>
+                    <td className="p-4 text-[#D0CCC4]">Very High</td>
                   </tr>
-                  <tr className="bg-slate-100">
-                    <td className="p-4 font-semibold text-slate-900">Security Features</td>
-                    <td className="p-4 text-slate-600">Limited</td>
+                  <tr className="bg-[#121423]">
+                    <td className="p-4 font-semibold text-[#F6F4EF]">Security Features</td>
+                    <td className="p-4 text-[#D0CCC4]">Limited</td>
                     <td className="p-4 text-green-400 font-semibold">Micro-engraved maple leaf</td>
                   </tr>
                   <tr>
-                    <td className="p-4 font-semibold text-slate-900">Face Value</td>
-                    <td className="p-4 text-slate-600">$1 USD</td>
-                    <td className="p-4 text-slate-600">$5 CAD</td>
+                    <td className="p-4 font-semibold text-[#F6F4EF]">Face Value</td>
+                    <td className="p-4 text-[#D0CCC4]">$1 USD</td>
+                    <td className="p-4 text-[#D0CCC4]">$5 CAD</td>
                   </tr>
-                  <tr className="bg-slate-100">
-                    <td className="p-4 font-semibold text-slate-900">Best For</td>
-                    <td className="p-4 text-slate-600">Maximum liquidity, patriotic appeal</td>
-                    <td className="p-4 text-slate-600">Best value, highest purity</td>
+                  <tr className="bg-[#121423]">
+                    <td className="p-4 font-semibold text-[#F6F4EF]">Best For</td>
+                    <td className="p-4 text-[#D0CCC4]">Maximum liquidity, patriotic appeal</td>
+                    <td className="p-4 text-[#D0CCC4]">Best value, highest purity</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-slate-600 text-center mt-4">
+            <p className="text-sm text-[#D0CCC4] text-center mt-4">
               Both coins are excellent choices for Silver IRAs. Most investors choose
               based on premium (Maple Leafs) or recognition (Eagles).
             </p>
@@ -485,24 +485,24 @@ export default function IraApprovedCoinsPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-16 bg-slate-100 border-y border-slate-200">
+      <section className="py-16 bg-[#121423] border-y border-[#2A2D42]">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
             IRA Silver Coin FAQs
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900 font-semibold list-none">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF] font-semibold list-none">
                   {faq.question}
-                  <span className="text-[#B22234] group-open:rotate-180 transition-transform">
+                  <span className="text-[#D4A94E] group-open:rotate-180 transition-transform">
                     &#9660;
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-600">{faq.answer}</p>
+                <p className="mt-4 text-[#D0CCC4]">{faq.answer}</p>
               </details>
             ))}
           </div>
@@ -512,37 +512,37 @@ export default function IraApprovedCoinsPage() {
       {/* Related Pages */}
       <section className="py-12">
         <Container>
-          <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
+          <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
             Related Silver IRA Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <Link
               href="/silver-retirement/ira-approved-bars"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">IRA-Approved Silver Bars</h3>
-              <p className="text-sm text-slate-600">PAMP, RCM & more</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">IRA-Approved Silver Bars</h3>
+              <p className="text-sm text-[#D0CCC4]">PAMP, RCM & more</p>
             </Link>
             <Link
               href="/silver-retirement/transfer-ira-to-silver"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">Transfer IRA to Silver</h3>
-              <p className="text-sm text-slate-600">Step-by-step guide</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">Transfer IRA to Silver</h3>
+              <p className="text-sm text-[#D0CCC4]">Step-by-step guide</p>
             </Link>
             <Link
               href="/silver-retirement/how-much-silver"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">How Much Silver?</h3>
-              <p className="text-sm text-slate-600">Portfolio allocation</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">How Much Silver?</h3>
+              <p className="text-sm text-[#D0CCC4]">Portfolio allocation</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 border-t border-slate-200">
+      <section className="py-16 border-t border-[#2A2D42]">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -58,10 +58,10 @@ export default function LearCapitalComplaintsPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-[#000080] text-white py-20 relative overflow-hidden">
+            <header className="bg-[rgba(197,149,46,0.1)] text-white py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[#000060]/50" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-[#B22234]/20 border border-[#B22234]/30 text-sm font-semibold text-red-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 text-sm font-semibold text-red-200 mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <Scale className="w-4 h-4" /> Legal Investigation
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
@@ -81,7 +81,7 @@ export default function LearCapitalComplaintsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-800 prose-a:text-[#B22234] max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-li:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E] max-w-none">
 
                         <p className="lead">
                             <strong>You googled &quot;Lear Capital&quot; and saw &quot;lawsuit&quot; pop up.</strong> Good—that&apos;s exactly the kind of due diligence you should do after 30 years of working hard. We respect that. Here&apos;s the straight story: Lear Capital has had legal problems, but they&apos;ve also been in business 25+ years. Scams don&apos;t last that long. Let&apos;s look at the facts—the bad stuff and what they&apos;ve done to fix it.
@@ -125,21 +125,21 @@ export default function LearCapitalComplaintsPage() {
                         <section id="current-status" className="scroll-mt-32">
                             <h2>Lear Capital in 2026</h2>
                             <div className="not-prose my-8 grid md:grid-cols-4 gap-4">
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
-                                    <div className="text-3xl font-bold text-[#B22234] mb-1">A+</div>
-                                    <div className="text-sm text-slate-500">BBB Rating</div>
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] text-center">
+                                    <div className="text-3xl font-bold text-[#D4A94E] mb-1">A+</div>
+                                    <div className="text-sm text-[#A8A39A]">BBB Rating</div>
                                 </div>
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
-                                    <div className="text-3xl font-bold text-[#B22234] mb-1">25+</div>
-                                    <div className="text-sm text-slate-500">Years in Business</div>
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] text-center">
+                                    <div className="text-3xl font-bold text-[#D4A94E] mb-1">25+</div>
+                                    <div className="text-sm text-[#A8A39A]">Years in Business</div>
                                 </div>
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
-                                    <div className="text-3xl font-bold text-[#B22234] mb-1">4.8/5</div>
-                                    <div className="text-sm text-slate-500">Trustpilot</div>
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] text-center">
+                                    <div className="text-3xl font-bold text-[#D4A94E] mb-1">4.8/5</div>
+                                    <div className="text-sm text-[#A8A39A]">Trustpilot</div>
                                 </div>
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
-                                    <div className="text-3xl font-bold text-[#B22234] mb-1">$10k</div>
-                                    <div className="text-sm text-slate-500">Minimum</div>
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] text-center">
+                                    <div className="text-3xl font-bold text-[#D4A94E] mb-1">$10k</div>
+                                    <div className="text-sm text-[#A8A39A]">Minimum</div>
                                 </div>
                             </div>
 
@@ -156,21 +156,21 @@ export default function LearCapitalComplaintsPage() {
                             </p>
 
                             <div className="not-prose grid gap-4 my-6">
-                                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                                    <h4 className="font-bold text-[#000080] mb-2">1. Sales Call Persistence</h4>
-                                    <p className="text-slate-600 text-sm">
+                                <div className="p-5 bg-[#0C0D18] rounded-xl border border-[#2A2D42]">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">1. Sales Call Persistence</h4>
+                                    <p className="text-[#D0CCC4] text-sm">
                                         Lear Capital has an aggressive sales team. If you request info, expect follow-up calls. This isn&apos;t fraud—it&apos;s just their sales culture. You can ask to be removed from their call list.
                                     </p>
                                 </div>
-                                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                                    <h4 className="font-bold text-[#000080] mb-2">2. Spread/Premium Questions</h4>
-                                    <p className="text-slate-600 text-sm">
+                                <div className="p-5 bg-[#0C0D18] rounded-xl border border-[#2A2D42]">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">2. Spread/Premium Questions</h4>
+                                    <p className="text-[#D0CCC4] text-sm">
                                         Some customers still don&apos;t fully understand the spread when they buy. However, Lear Capital now provides written disclosures upfront—a direct result of the lawsuit.
                                     </p>
                                 </div>
-                                <div className="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                                    <h4 className="font-bold text-[#000080] mb-2">3. Higher Fees Than Some Competitors</h4>
-                                    <p className="text-slate-600 text-sm">
+                                <div className="p-5 bg-[#0C0D18] rounded-xl border border-[#2A2D42]">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">3. Higher Fees Than Some Competitors</h4>
+                                    <p className="text-[#D0CCC4] text-sm">
                                         Lear Capital&apos;s annual fees ($225-280/year) are higher than budget competitors. You&apos;re paying for a 25-year track record and their Price Lock Guarantee.
                                     </p>
                                 </div>
@@ -181,17 +181,17 @@ export default function LearCapitalComplaintsPage() {
                         <section id="improvements" className="scroll-mt-32">
                             <h2>How They Fixed the Issues</h2>
                             <div className="not-prose my-6 space-y-3">
-                                <div className="flex gap-3 items-start p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                <div className="flex gap-3 items-start p-4 bg-[#0C0D18] rounded-xl border border-[#2A2D42]">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
-                                    <p className="text-slate-600"><strong className="text-slate-800">Price Lock Guarantee:</strong> They now lock in your purchase price, so no surprises if metal prices move during processing</p>
+                                    <p className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Price Lock Guarantee:</strong> They now lock in your purchase price, so no surprises if metal prices move during processing</p>
                                 </div>
-                                <div className="flex gap-3 items-start p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                <div className="flex gap-3 items-start p-4 bg-[#0C0D18] rounded-xl border border-[#2A2D42]">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
-                                    <p className="text-slate-600"><strong className="text-slate-800">Written fee disclosures:</strong> All spreads and fees are now documented upfront before you commit</p>
+                                    <p className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Written fee disclosures:</strong> All spreads and fees are now documented upfront before you commit</p>
                                 </div>
-                                <div className="flex gap-3 items-start p-4 bg-slate-50 rounded-xl border border-slate-200">
+                                <div className="flex gap-3 items-start p-4 bg-[#0C0D18] rounded-xl border border-[#2A2D42]">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-1" />
-                                    <p className="text-slate-600"><strong className="text-slate-800">Compliance overhaul:</strong> The lawsuit forced them to tighten internal controls—making them safer than before</p>
+                                    <p className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Compliance overhaul:</strong> The lawsuit forced them to tighten internal controls—making them safer than before</p>
                                 </div>
                             </div>
                         </section>
@@ -214,16 +214,16 @@ export default function LearCapitalComplaintsPage() {
                                 <li>Can say &quot;no thanks&quot; firmly if they push products you don&apos;t want</li>
                             </ul>
                             <p>
-                                If you&apos;d rather not deal with aggressive sales calls, look at <Link href="/reviews/augusta-precious-metals" className="text-[#B22234] hover:underline">Augusta Precious Metals</Link> (education-first, no pressure) or <Link href="/reviews/noble-gold" className="text-[#B22234] hover:underline">Noble Gold</Link> (more laid-back).
+                                If you&apos;d rather not deal with aggressive sales calls, look at <Link href="/reviews/augusta-precious-metals" className="text-[#D4A94E] hover:underline">Augusta Precious Metals</Link> (education-first, no pressure) or <Link href="/reviews/noble-gold" className="text-[#D4A94E] hover:underline">Noble Gold</Link> (more laid-back).
                             </p>
                             <p>
-                                For our full review, see our <Link href="/reviews/lear-capital" className="text-[#B22234] hover:underline">Lear Capital Review</Link>.
+                                For our full review, see our <Link href="/reviews/lear-capital" className="text-[#D4A94E] hover:underline">Lear Capital Review</Link>.
                             </p>
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.18)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">25 Years. Lessons Learned.</h3>
                                 <p className="mb-6 text-blue-100">Get their Price Lock Guarantee and transparent pricing.</p>

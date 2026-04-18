@@ -103,14 +103,14 @@ function StarRating({ rating }: { rating: number }) {
                 <Star
                     key={star}
                     className={`w-5 h-5 ${star <= Math.floor(rating)
-                            ? 'text-[#B22234] fill-[#B22234]'
+                            ? 'text-[#D4A94E] fill-[#B22234]'
                             : star <= rating
-                                ? 'text-[#B22234] fill-[#B22234]/50'
-                                : 'text-slate-600'
+                                ? 'text-[#D4A94E] fill-[#B22234]/50'
+                                : 'text-[#D0CCC4]'
                         }`}
                 />
             ))}
-            <span className="ml-2 text-slate-900 font-bold">{rating}/5</span>
+            <span className="ml-2 text-[#F6F4EF] font-bold">{rating}/5</span>
         </div>
     );
 }
@@ -123,25 +123,25 @@ export default function JMBullionReviewPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <header className="bg-slate-50 text-slate-900 py-16 relative overflow-hidden border-b border-slate-200">
+            <header className="bg-[#0C0D18] text-[#F6F4EF] py-16 relative overflow-hidden border-b border-[#2A2D42]">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-600/10 via-transparent to-transparent" />
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
-                        <div className="flex items-center gap-2 text-slate-600 text-sm font-bold uppercase tracking-wider mb-4">
-                            <Link href="/silver-dealer-reviews" className="hover:text-slate-900 transition-colors">Silver Dealer Reviews</Link>
+                        <div className="flex items-center gap-2 text-[#D0CCC4] text-sm font-bold uppercase tracking-wider mb-4">
+                            <Link href="/silver-dealer-reviews" className="hover:text-[#F6F4EF] transition-colors">Silver Dealer Reviews</Link>
                             <span>/</span>
                             <span>JM Bullion</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">
                             JM Bullion Review 2026: <br />
-                            <span className="text-slate-600">Best Overall Experience?</span>
+                            <span className="text-[#D0CCC4]">Best Overall Experience?</span>
                         </h1>
-                        <p className="text-xl text-slate-600 max-w-2xl leading-relaxed mb-6">
+                        <p className="text-xl text-[#D0CCC4] max-w-2xl leading-relaxed mb-6">
                             Competitive pricing, fast shipping, excellent customer service, and a strong buyback program. JM Bullion checks all the boxes for serious silver stackers.
                         </p>
                         <div className="flex items-center gap-6 flex-wrap">
                             <StarRating rating={4.8} />
-                            <div className="flex items-center gap-2 text-slate-600">
+                            <div className="flex items-center gap-2 text-[#D0CCC4]">
                                 <Users className="w-4 h-4" />
                                 <span className="text-sm">1,500 monthly searches</span>
                             </div>
@@ -151,22 +151,22 @@ export default function JMBullionReviewPage() {
             </header>
 
             {/* Verdict Box */}
-            <section className="py-8 bg-slate-50 border-b border-slate-200">
+            <section className="py-8 bg-[#0C0D18] border-b border-[#2A2D42]">
                 <Container>
-                    <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-2xl p-6 md:p-8">
+                    <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-2xl p-6 md:p-8">
                         <div className="grid md:grid-cols-3 gap-8 items-center">
                             <div className="md:col-span-2">
                                 <div className="flex items-center gap-2 text-green-700 font-semibold text-sm mb-2">
                                     <Award className="w-4 h-4" />
                                     EDITOR&apos;S CHOICE
                                 </div>
-                                <h2 className="text-2xl font-serif font-bold text-slate-900 mb-4">Best Overall Silver Dealer</h2>
-                                <p className="text-slate-600">
+                                <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-4">Best Overall Silver Dealer</h2>
+                                <p className="text-[#D0CCC4]">
                                     JM Bullion delivers the perfect balance of competitive pricing, excellent selection, fast shipping, and top-tier customer service. Their buyback program is among the best in the industry, and their website experience is smooth. For direct silver purchases, they are our top pick. For Silver IRAs, we recommend Augusta Precious Metals.
                                 </p>
                             </div>
                             <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 text-center">
-                                <div className="text-5xl font-bold text-slate-900 mb-2">4.8</div>
+                                <div className="text-5xl font-bold text-[#F6F4EF] mb-2">4.8</div>
                                 <StarRating rating={4.8} />
                                 <div className="mt-4 pt-4 border-t border-green-500/30">
                                     <div className="flex items-center justify-center gap-2 text-green-700">
@@ -185,7 +185,7 @@ export default function JMBullionReviewPage() {
                 <div className="grid lg:grid-cols-3 gap-12">
                     {/* Main Content */}
                     <article className="lg:col-span-2">
-                        <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-[#B22234]">
+                        <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E]">
 
                             <h2>Company Overview</h2>
                             <p>
@@ -196,17 +196,17 @@ export default function JMBullionReviewPage() {
                             </p>
 
                             <div className="grid md:grid-cols-3 gap-4 my-8 not-prose">
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
-                                    <div className="text-2xl font-bold text-[#B22234]">2011</div>
-                                    <div className="text-sm text-slate-600">Year Founded</div>
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4 text-center">
+                                    <div className="text-2xl font-bold text-[#D4A94E]">2011</div>
+                                    <div className="text-sm text-[#D0CCC4]">Year Founded</div>
                                 </div>
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
-                                    <div className="text-2xl font-bold text-[#B22234]">A+</div>
-                                    <div className="text-sm text-slate-600">BBB Rating</div>
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4 text-center">
+                                    <div className="text-2xl font-bold text-[#D4A94E]">A+</div>
+                                    <div className="text-sm text-[#D0CCC4]">BBB Rating</div>
                                 </div>
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-center">
-                                    <div className="text-2xl font-bold text-[#B22234]">Thousands</div>
-                                    <div className="text-sm text-slate-600">5-Star Reviews</div>
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4 text-center">
+                                    <div className="text-2xl font-bold text-[#D4A94E]">Thousands</div>
+                                    <div className="text-sm text-[#D0CCC4]">5-Star Reviews</div>
                                 </div>
                             </div>
 
@@ -230,7 +230,7 @@ export default function JMBullionReviewPage() {
                             ]}
                         />
 
-                        <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-[#B22234]">
+                        <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E]">
 
                             <h2>Pricing & Premiums</h2>
                             <p>
@@ -246,30 +246,30 @@ export default function JMBullionReviewPage() {
                                 <li><strong>No Hidden Fees:</strong> Transparent pricing throughout</li>
                             </ul>
 
-                            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 my-8 not-prose">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
-                                    <CreditCard className="w-5 h-5 text-[#B22234] shrink-0 mt-1" />
+                                    <CreditCard className="w-5 h-5 text-[#D4A94E] shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-slate-900 mb-2">Payment Methods</h4>
-                                        <p className="text-sm text-slate-600 mb-4">
+                                        <h4 className="font-bold text-[#F6F4EF] mb-2">Payment Methods</h4>
+                                        <p className="text-sm text-[#D0CCC4] mb-4">
                                             JM Bullion accepts multiple payment methods with different pricing:
                                         </p>
                                         <div className="grid grid-cols-2 gap-4 text-sm">
                                             <div>
                                                 <span className="text-green-700 font-semibold">Bank Wire:</span>
-                                                <span className="text-slate-900 ml-2">Best price (no fee)</span>
+                                                <span className="text-[#F6F4EF] ml-2">Best price (no fee)</span>
                                             </div>
                                             <div>
                                                 <span className="text-green-700 font-semibold">Check:</span>
-                                                <span className="text-slate-900 ml-2">Best price (no fee)</span>
+                                                <span className="text-[#F6F4EF] ml-2">Best price (no fee)</span>
                                             </div>
                                             <div>
-                                                <span className="text-[#B22234] font-semibold">PayPal:</span>
-                                                <span className="text-slate-900 ml-2">Slight premium</span>
+                                                <span className="text-[#D4A94E] font-semibold">PayPal:</span>
+                                                <span className="text-[#F6F4EF] ml-2">Slight premium</span>
                                             </div>
                                             <div>
-                                                <span className="text-[#B22234] font-semibold">Credit Card:</span>
-                                                <span className="text-slate-900 ml-2">~4% fee</span>
+                                                <span className="text-[#D4A94E] font-semibold">Credit Card:</span>
+                                                <span className="text-[#F6F4EF] ml-2">~4% fee</span>
                                             </div>
                                         </div>
                                     </div>
@@ -295,24 +295,24 @@ export default function JMBullionReviewPage() {
                         </div>
 
                         <div className="grid md:grid-cols-3 gap-4 my-8">
-                            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 text-center">
                                 <Truck className="w-8 h-8 text-blue-700 mx-auto mb-3" />
-                                <div className="font-bold text-slate-900 mb-1">Free Shipping</div>
-                                <div className="text-sm text-slate-600">Orders over $199</div>
+                                <div className="font-bold text-[#F6F4EF] mb-1">Free Shipping</div>
+                                <div className="text-sm text-[#D0CCC4]">Orders over $199</div>
                             </div>
-                            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 text-center">
                                 <Clock className="w-8 h-8 text-green-700 mx-auto mb-3" />
-                                <div className="font-bold text-slate-900 mb-1">Fast Processing</div>
-                                <div className="text-sm text-slate-600">1-3 business days</div>
+                                <div className="font-bold text-[#F6F4EF] mb-1">Fast Processing</div>
+                                <div className="text-sm text-[#D0CCC4]">1-3 business days</div>
                             </div>
-                            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 text-center">
                                 <Shield className="w-8 h-8 text-purple-700 mx-auto mb-3" />
-                                <div className="font-bold text-slate-900 mb-1">Fully Insured</div>
-                                <div className="text-sm text-slate-600">Every shipment</div>
+                                <div className="font-bold text-[#F6F4EF] mb-1">Fully Insured</div>
+                                <div className="text-sm text-[#D0CCC4]">Every shipment</div>
                             </div>
                         </div>
 
-                        <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-[#B22234]">
+                        <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E]">
                             <p>
                                 JM Bullion excels at shipping. Orders typically process within 1-3 business days, with delivery in 3-5 business days. All shipments are fully insured and arrive in discreet packaging with no indication of contents.
                             </p>
@@ -328,12 +328,12 @@ export default function JMBullionReviewPage() {
                                 <li>Competitive prices near spot for standard bullion</li>
                             </ul>
 
-                            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 my-8 not-prose">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
                                     <RefreshCw className="w-5 h-5 text-green-700 shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-slate-900 mb-2">Why Buyback Programs Matter</h4>
-                                        <p className="text-sm text-slate-600">
+                                        <h4 className="font-bold text-[#F6F4EF] mb-2">Why Buyback Programs Matter</h4>
+                                        <p className="text-sm text-[#D0CCC4]">
                                             A strong buyback program is essential for precious metals investors. It provides liquidity when you need it and demonstrates the dealer&apos;s confidence in their products. JM Bullion&apos;s willingness to buy back what they sell is a testament to their reputation.
                                         </p>
                                     </div>
@@ -352,13 +352,13 @@ export default function JMBullionReviewPage() {
 
                             <div className="bg-amber-900/20 border border-[#B22234]/30 rounded-xl p-6 my-8 not-prose">
                                 <div className="flex items-start gap-3">
-                                    <Award className="w-5 h-5 text-[#B22234] shrink-0 mt-1" />
+                                    <Award className="w-5 h-5 text-[#D4A94E] shrink-0 mt-1" />
                                     <div>
-                                        <h4 className="font-bold text-slate-900 mb-2">For Silver IRA Accounts</h4>
-                                        <p className="text-slate-600 text-sm mb-4">
+                                        <h4 className="font-bold text-[#F6F4EF] mb-2">For Silver IRA Accounts</h4>
+                                        <p className="text-[#D0CCC4] text-sm mb-4">
                                             JM Bullion is fantastic for direct silver purchases, but for Silver IRAs, consider working with a specialist. <strong>Augusta Precious Metals</strong> offers dedicated IRA support with lifetime customer service and an education-first approach that makes the process straightforward.
                                         </p>
-                                        <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="sm" asChild>
+                                        <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white" size="sm" asChild>
                                             <Link href="/quiz">Find Your Perfect IRA Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                         </Button>
                                     </div>
@@ -379,27 +379,27 @@ export default function JMBullionReviewPage() {
 
                         {/* FAQ Section */}
                         <div className="mt-12">
-                            <h2 className="text-2xl font-serif font-bold text-slate-900 mb-8">Frequently Asked Questions</h2>
+                            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8">Frequently Asked Questions</h2>
                             <div className="space-y-4">
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-                                    <h3 className="font-bold text-slate-900 mb-2">Is JM Bullion legitimate and trustworthy?</h3>
-                                    <p className="text-slate-600">Yes, JM Bullion is one of the most trusted precious metals dealers in the United States. Founded in 2011, they have an A+ BBB rating with thousands of positive reviews.</p>
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
+                                    <h3 className="font-bold text-[#F6F4EF] mb-2">Is JM Bullion legitimate and trustworthy?</h3>
+                                    <p className="text-[#D0CCC4]">Yes, JM Bullion is one of the most trusted precious metals dealers in the United States. Founded in 2011, they have an A+ BBB rating with thousands of positive reviews.</p>
                                 </div>
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-                                    <h3 className="font-bold text-slate-900 mb-2">How are JM Bullion&apos;s prices compared to other dealers?</h3>
-                                    <p className="text-slate-600">JM Bullion offers very competitive pricing, typically lower than APMEX and comparable to SD Bullion. They frequently run sales and special promotions.</p>
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
+                                    <h3 className="font-bold text-[#F6F4EF] mb-2">How are JM Bullion&apos;s prices compared to other dealers?</h3>
+                                    <p className="text-[#D0CCC4]">JM Bullion offers very competitive pricing, typically lower than APMEX and comparable to SD Bullion. They frequently run sales and special promotions.</p>
                                 </div>
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-                                    <h3 className="font-bold text-slate-900 mb-2">Does JM Bullion have a buyback program?</h3>
-                                    <p className="text-slate-600">Yes, JM Bullion has one of the best buyback programs in the industry. They offer competitive prices and make the selling process straightforward with instant online quotes.</p>
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
+                                    <h3 className="font-bold text-[#F6F4EF] mb-2">Does JM Bullion have a buyback program?</h3>
+                                    <p className="text-[#D0CCC4]">Yes, JM Bullion has one of the best buyback programs in the industry. They offer competitive prices and make the selling process straightforward with instant online quotes.</p>
                                 </div>
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-                                    <h3 className="font-bold text-slate-900 mb-2">How fast does JM Bullion ship orders?</h3>
-                                    <p className="text-slate-600">JM Bullion typically ships orders within 1-3 business days of payment clearing. Free shipping is available on orders over $199. All shipments are fully insured.</p>
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
+                                    <h3 className="font-bold text-[#F6F4EF] mb-2">How fast does JM Bullion ship orders?</h3>
+                                    <p className="text-[#D0CCC4]">JM Bullion typically ships orders within 1-3 business days of payment clearing. Free shipping is available on orders over $199. All shipments are fully insured.</p>
                                 </div>
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-                                    <h3 className="font-bold text-slate-900 mb-2">Does JM Bullion offer Silver IRA services?</h3>
-                                    <p className="text-slate-600">JM Bullion sells IRA-eligible products but partners with third-party custodians for IRA administration. For a more integrated IRA experience, Augusta Precious Metals is recommended.</p>
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
+                                    <h3 className="font-bold text-[#F6F4EF] mb-2">Does JM Bullion offer Silver IRA services?</h3>
+                                    <p className="text-[#D0CCC4]">JM Bullion sells IRA-eligible products but partners with third-party custodians for IRA administration. For a more integrated IRA experience, Augusta Precious Metals is recommended.</p>
                                 </div>
                             </div>
                         </div>
@@ -409,61 +409,61 @@ export default function JMBullionReviewPage() {
                     <aside className="lg:col-span-1">
                         <div className="sticky top-24 space-y-8">
                             {/* Quick Stats */}
-                            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                                <h3 className="font-bold text-slate-900 mb-4">JM Bullion Quick Stats</h3>
+                            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                                <h3 className="font-bold text-[#F6F4EF] mb-4">JM Bullion Quick Stats</h3>
                                 <div className="space-y-4">
                                     <div className="flex justify-between items-center">
-                                        <span className="text-slate-600">Our Rating</span>
+                                        <span className="text-[#D0CCC4]">Our Rating</span>
                                         <div className="flex items-center gap-1">
-                                            <Star className="w-4 h-4 text-[#B22234] fill-[#B22234]" />
-                                            <span className="text-slate-900 font-bold">4.8/5</span>
+                                            <Star className="w-4 h-4 text-[#D4A94E] fill-[#B22234]" />
+                                            <span className="text-[#F6F4EF] font-bold">4.8/5</span>
                                         </div>
                                     </div>
                                     <div className="flex justify-between items-center">
-                                        <span className="text-slate-600">BBB Rating</span>
-                                        <span className="text-slate-900 font-bold">A+</span>
+                                        <span className="text-[#D0CCC4]">BBB Rating</span>
+                                        <span className="text-[#F6F4EF] font-bold">A+</span>
                                     </div>
                                     <div className="flex justify-between items-center">
-                                        <span className="text-slate-600">Founded</span>
-                                        <span className="text-slate-900 font-bold">2011</span>
+                                        <span className="text-[#D0CCC4]">Founded</span>
+                                        <span className="text-[#F6F4EF] font-bold">2011</span>
                                     </div>
                                     <div className="flex justify-between items-center">
-                                        <span className="text-slate-600">Min Order</span>
-                                        <span className="text-slate-900 font-bold">$99</span>
+                                        <span className="text-[#D0CCC4]">Min Order</span>
+                                        <span className="text-[#F6F4EF] font-bold">$99</span>
                                     </div>
                                     <div className="flex justify-between items-center">
-                                        <span className="text-slate-600">Free Shipping</span>
-                                        <span className="text-slate-900 font-bold">$199+</span>
+                                        <span className="text-[#D0CCC4]">Free Shipping</span>
+                                        <span className="text-[#F6F4EF] font-bold">$199+</span>
                                     </div>
                                     <div className="flex justify-between items-center">
-                                        <span className="text-slate-600">Price Match</span>
+                                        <span className="text-[#D0CCC4]">Price Match</span>
                                         <span className="text-green-700 font-bold">Yes</span>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Other Dealers */}
-                            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                                <h3 className="font-bold text-slate-900 mb-4">Compare Other Dealers</h3>
+                            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                                <h3 className="font-bold text-[#F6F4EF] mb-4">Compare Other Dealers</h3>
                                 <div className="space-y-3">
-                                    <Link href="/silver-dealer-reviews/apmex" className="flex justify-between items-center text-sm hover:bg-slate-50 p-2 rounded transition-colors">
-                                        <span className="text-slate-600">APMEX</span>
-                                        <span className="text-[#B22234] flex items-center gap-1"><Star className="w-3 h-3 fill-[#B22234]" /> 4.7</span>
+                                    <Link href="/silver-dealer-reviews/apmex" className="flex justify-between items-center text-sm hover:bg-[#121423] p-2 rounded transition-colors">
+                                        <span className="text-[#D0CCC4]">APMEX</span>
+                                        <span className="text-[#D4A94E] flex items-center gap-1"><Star className="w-3 h-3 fill-[#B22234]" /> 4.7</span>
                                     </Link>
-                                    <Link href="/silver-dealer-reviews/sd-bullion" className="flex justify-between items-center text-sm hover:bg-slate-50 p-2 rounded transition-colors">
-                                        <span className="text-slate-600">SD Bullion</span>
-                                        <span className="text-[#B22234] flex items-center gap-1"><Star className="w-3 h-3 fill-[#B22234]" /> 4.6</span>
+                                    <Link href="/silver-dealer-reviews/sd-bullion" className="flex justify-between items-center text-sm hover:bg-[#121423] p-2 rounded transition-colors">
+                                        <span className="text-[#D0CCC4]">SD Bullion</span>
+                                        <span className="text-[#D4A94E] flex items-center gap-1"><Star className="w-3 h-3 fill-[#B22234]" /> 4.6</span>
                                     </Link>
-                                    <Link href="/silver-dealer-reviews/money-metals-exchange" className="flex justify-between items-center text-sm hover:bg-slate-50 p-2 rounded transition-colors">
-                                        <span className="text-slate-600">Money Metals</span>
-                                        <span className="text-[#B22234] flex items-center gap-1"><Star className="w-3 h-3 fill-[#B22234]" /> 4.5</span>
+                                    <Link href="/silver-dealer-reviews/money-metals-exchange" className="flex justify-between items-center text-sm hover:bg-[#121423] p-2 rounded transition-colors">
+                                        <span className="text-[#D0CCC4]">Money Metals</span>
+                                        <span className="text-[#D4A94E] flex items-center gap-1"><Star className="w-3 h-3 fill-[#B22234]" /> 4.5</span>
                                     </Link>
-                                    <Link href="/silver-dealer-reviews/hero-bullion" className="flex justify-between items-center text-sm hover:bg-slate-50 p-2 rounded transition-colors">
-                                        <span className="text-slate-600">Hero Bullion</span>
-                                        <span className="text-[#B22234] flex items-center gap-1"><Star className="w-3 h-3 fill-[#B22234]" /> 4.4</span>
+                                    <Link href="/silver-dealer-reviews/hero-bullion" className="flex justify-between items-center text-sm hover:bg-[#121423] p-2 rounded transition-colors">
+                                        <span className="text-[#D0CCC4]">Hero Bullion</span>
+                                        <span className="text-[#D4A94E] flex items-center gap-1"><Star className="w-3 h-3 fill-[#B22234]" /> 4.4</span>
                                     </Link>
                                 </div>
-                                <Link href="/silver-dealer-reviews/comparison" className="block mt-4 text-center text-[#B22234] text-sm font-semibold hover:text-[#B22234] transition-colors">
+                                <Link href="/silver-dealer-reviews/comparison" className="block mt-4 text-center text-[#D4A94E] text-sm font-semibold hover:text-[#D4A94E] transition-colors">
                                     View Full Comparison
                                 </Link>
                             </div>
@@ -476,7 +476,7 @@ export default function JMBullionReviewPage() {
             </Container>
 
             {/* Bottom CTA */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

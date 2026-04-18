@@ -23,16 +23,16 @@ export function ProcessSteps() {
     ];
 
     return (
-        <section className="py-16 bg-slate-50 border-t border-slate-200">
+        <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
             <Container>
                 <div className="text-center mb-12">
-                    <span className="text-[#B22234] font-bold tracking-widest uppercase text-xs mb-2 block">
+                    <span className="text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-2 block">
                         The Process
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#000080] mb-4">
+                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#F6F4EF] mb-4">
                         How a Gold IRA Works
                     </h2>
-                    <p className="text-slate-500 max-w-2xl mx-auto">
+                    <p className="text-[#A8A39A] max-w-2xl mx-auto">
                         A Gold IRA works just like your regular IRA—but instead of paper assets,
                         you own physical gold. The process is straightforward and fully IRS-compliant.
                     </p>
@@ -44,21 +44,21 @@ export function ProcessSteps() {
 
                     {steps.map((step, i) => (
                         <div key={i} className="relative z-10 flex flex-col items-center text-center group">
-                            <div className="w-20 h-20 rounded-2xl bg-white border border-slate-200 shadow-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-[#B22234]/30 group-hover:bg-slate-50 transition-all duration-300">
-                                <step.icon className="w-10 h-10 text-[#B22234]" />
-                                <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-[#B22234] text-white flex items-center justify-center font-bold text-lg border-4 border-slate-50">
+                            <div className="w-20 h-20 rounded-2xl bg-[#161828] border border-[#2A2D42] shadow-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-[rgba(197,149,46,0.45)] group-hover:bg-[#121423] transition-all duration-300">
+                                <step.icon className="w-10 h-10 text-[#D4A94E]" />
+                                <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-bold text-lg border-4 border-slate-50">
                                     {i + 1}
                                 </div>
                             </div>
-                            <h3 className="text-xl font-bold text-[#000080] mb-3">{step.title}</h3>
-                            <p className="text-sm text-slate-500 leading-relaxed max-w-xs">{step.desc}</p>
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">{step.title}</h3>
+                            <p className="text-sm text-[#A8A39A] leading-relaxed max-w-xs">{step.desc}</p>
                         </div>
                     ))}
                 </div>
 
                 {/* Timeline note */}
                 <div className="mt-10 text-center">
-                    <p className="text-sm text-slate-500">
+                    <p className="text-sm text-[#A8A39A]">
                         Most rollovers complete within 1-2 weeks. Your specialist handles the paperwork.
                     </p>
                 </div>

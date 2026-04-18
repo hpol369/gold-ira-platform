@@ -40,16 +40,16 @@ export default function SelfDirectedRothIRAPage() {
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-2 text-green-700 text-sm font-medium mb-4">
                             <span className="bg-green-500/20 px-3 py-1 rounded-full">Self-Directed IRA</span>
-                            <span className="text-slate-500">•</span>
-                            <span className="text-slate-500">Updated January 2026</span>
+                            <span className="text-[#A8A39A]">•</span>
+                            <span className="text-[#A8A39A]">Updated January 2026</span>
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6 leading-tight">
                             Self-Directed Roth IRA: <br />
                             <span className="text-green-700">Tax-Free</span> Alternative Investments
                         </h1>
 
-                        <p className="text-xl text-slate-600 max-w-2xl leading-relaxed mb-8">
+                        <p className="text-xl text-[#D0CCC4] max-w-2xl leading-relaxed mb-8">
                             You paid taxes on every paycheck for 30 years. With a Self-Directed Roth IRA, your retirement growth is <strong>completely tax-free</strong>—and you get to invest in real assets like gold, real estate, and more. Not just whatever funds HR picked.
                         </p>
 
@@ -60,7 +60,7 @@ export default function SelfDirectedRothIRAPage() {
                                     <ArrowRight className="ml-2 w-5 h-5" />
                                 </Link>
                             </Button>
-                            <Button variant="outline" size="lg" className="border-white/20 text-[#000080] hover:bg-white/10" asChild>
+                            <Button variant="outline" size="lg" className="border-white/20 text-[#F6F4EF] hover:bg-[#1E2134]/10" asChild>
                                 <Link href="/reviews/rocket-dollar">
                                     See Top Provider
                                 </Link>
@@ -71,30 +71,30 @@ export default function SelfDirectedRothIRAPage() {
             </header>
 
             {/* Key Benefits */}
-            <section className="py-12 bg-slate-50">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
                         <div className="grid md:grid-cols-3 gap-6">
-                            <div className="bg-slate-50 backdrop-blur-sm p-6 rounded-xl border border-slate-200 text-center">
+                            <div className="bg-[#0C0D18] backdrop-blur-sm p-6 rounded-xl border border-[#2A2D42] text-center">
                                 <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                                     <Shield className="w-6 h-6 text-green-700" />
                                 </div>
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">Tax-Free Growth</h3>
-                                <p className="text-slate-500 text-sm">All qualified withdrawals are completely tax-free—including decades of gains.</p>
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">Tax-Free Growth</h3>
+                                <p className="text-[#A8A39A] text-sm">All qualified withdrawals are completely tax-free—including decades of gains.</p>
                             </div>
-                            <div className="bg-slate-50 backdrop-blur-sm p-6 rounded-xl border border-slate-200 text-center">
+                            <div className="bg-[#0C0D18] backdrop-blur-sm p-6 rounded-xl border border-[#2A2D42] text-center">
                                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                                     <TrendingUp className="w-6 h-6 text-blue-700" />
                                 </div>
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">Alternative Assets</h3>
-                                <p className="text-slate-500 text-sm">Invest in real estate, crypto, gold, startups, and more beyond stocks.</p>
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">Alternative Assets</h3>
+                                <p className="text-[#A8A39A] text-sm">Invest in real estate, crypto, gold, startups, and more beyond stocks.</p>
                             </div>
-                            <div className="bg-slate-50 backdrop-blur-sm p-6 rounded-xl border border-slate-200 text-center">
+                            <div className="bg-[#0C0D18] backdrop-blur-sm p-6 rounded-xl border border-[#2A2D42] text-center">
                                 <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                                     <Lock className="w-6 h-6 text-purple-700" />
                                 </div>
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">Full Control</h3>
-                                <p className="text-slate-500 text-sm">You choose your investments—not a fund manager or financial advisor.</p>
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">Full Control</h3>
+                                <p className="text-[#A8A39A] text-sm">You choose your investments—not a fund manager or financial advisor.</p>
                             </div>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ export default function SelfDirectedRothIRAPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-[#000080]">
+                        <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF]">
 
                             <h2>What is a Self-Directed Roth IRA?</h2>
                             <p>
@@ -131,34 +131,34 @@ export default function SelfDirectedRothIRAPage() {
                         </div>
 
                         {/* Rules Table */}
-                        <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden my-8">
+                        <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl overflow-hidden my-8">
                             <table className="w-full text-sm">
                                 <tbody className="divide-y divide-white/10">
                                     <tr>
-                                        <td className="p-4 text-slate-500 font-medium">Contribution Limit (2026)</td>
-                                        <td className="p-4 text-[#000080]">$7,000 ($8,000 if 50+)</td>
+                                        <td className="p-4 text-[#A8A39A] font-medium">Contribution Limit (2026)</td>
+                                        <td className="p-4 text-[#F6F4EF]">$7,000 ($8,000 if 50+)</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 text-slate-500 font-medium">Income Limit (Single)</td>
-                                        <td className="p-4 text-[#000080]">$161,000 (phases out up to $176,000)</td>
+                                        <td className="p-4 text-[#A8A39A] font-medium">Income Limit (Single)</td>
+                                        <td className="p-4 text-[#F6F4EF]">$161,000 (phases out up to $176,000)</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 text-slate-500 font-medium">Income Limit (Married)</td>
-                                        <td className="p-4 text-[#000080]">$240,000 (phases out up to $250,000)</td>
+                                        <td className="p-4 text-[#A8A39A] font-medium">Income Limit (Married)</td>
+                                        <td className="p-4 text-[#F6F4EF]">$240,000 (phases out up to $250,000)</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 text-slate-500 font-medium">Qualified Withdrawals</td>
-                                        <td className="p-4 text-[#000080]">After age 59½ and 5-year rule met</td>
+                                        <td className="p-4 text-[#A8A39A] font-medium">Qualified Withdrawals</td>
+                                        <td className="p-4 text-[#F6F4EF]">After age 59½ and 5-year rule met</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 text-slate-500 font-medium">Required Minimum Distributions</td>
+                                        <td className="p-4 text-[#A8A39A] font-medium">Required Minimum Distributions</td>
                                         <td className="p-4 text-green-700 font-medium">None (Roth IRAs have no RMDs)</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-[#000080]">
+                        <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF]">
                             <h2>What Can You Invest In?</h2>
                             <p>
                                 A Self-Directed Roth IRA allows the same alternative investments as any Self-Directed IRA:
@@ -167,74 +167,74 @@ export default function SelfDirectedRothIRAPage() {
 
                         {/* Investment Types */}
                         <div className="grid sm:grid-cols-2 gap-4 my-8">
-                            <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3">
+                            <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3">
                                 <Home className="w-6 h-6 text-green-700" />
                                 <div>
-                                    <p className="text-[#000080] font-medium">Real Estate</p>
-                                    <p className="text-slate-500 text-sm">Rental, commercial, land, REITs</p>
+                                    <p className="text-[#F6F4EF] font-medium">Real Estate</p>
+                                    <p className="text-[#A8A39A] text-sm">Rental, commercial, land, REITs</p>
                                 </div>
                             </div>
-                            <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3">
+                            <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3">
                                 <TrendingUp className="w-6 h-6 text-blue-700" />
                                 <div>
-                                    <p className="text-[#000080] font-medium">Cryptocurrency</p>
-                                    <p className="text-slate-500 text-sm">Bitcoin, Ethereum, altcoins</p>
+                                    <p className="text-[#F6F4EF] font-medium">Cryptocurrency</p>
+                                    <p className="text-[#A8A39A] text-sm">Bitcoin, Ethereum, altcoins</p>
                                 </div>
                             </div>
-                            <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3">
+                            <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3">
                                 <Coins className="w-6 h-6 text-amber-700" />
                                 <div>
-                                    <p className="text-[#000080] font-medium">Precious Metals</p>
-                                    <p className="text-slate-500 text-sm">Gold, silver, platinum</p>
+                                    <p className="text-[#F6F4EF] font-medium">Precious Metals</p>
+                                    <p className="text-[#A8A39A] text-sm">Gold, silver, platinum</p>
                                 </div>
                             </div>
-                            <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3">
+                            <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3">
                                 <DollarSign className="w-6 h-6 text-purple-700" />
                                 <div>
-                                    <p className="text-[#000080] font-medium">Private Equity</p>
-                                    <p className="text-slate-500 text-sm">Startups, LLCs, private companies</p>
+                                    <p className="text-[#F6F4EF] font-medium">Private Equity</p>
+                                    <p className="text-[#A8A39A] text-sm">Startups, LLCs, private companies</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-[#000080]">
+                        <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF]">
                             <h2>Self-Directed Roth IRA vs Traditional SDIRA</h2>
                         </div>
 
-                        <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden my-8">
+                        <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl overflow-hidden my-8">
                             <table className="w-full text-sm">
-                                <thead className="bg-slate-50">
+                                <thead className="bg-[#0C0D18]">
                                     <tr>
-                                        <th className="text-left p-4 text-[#000080] font-semibold">Feature</th>
-                                        <th className="text-left p-4 text-[#000080] font-semibold">Self-Directed Roth</th>
-                                        <th className="text-left p-4 text-[#000080] font-semibold">Self-Directed Traditional</th>
+                                        <th className="text-left p-4 text-[#F6F4EF] font-semibold">Feature</th>
+                                        <th className="text-left p-4 text-[#F6F4EF] font-semibold">Self-Directed Roth</th>
+                                        <th className="text-left p-4 text-[#F6F4EF] font-semibold">Self-Directed Traditional</th>
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-white/10">
                                     <tr>
-                                        <td className="p-4 text-slate-600">Contributions</td>
-                                        <td className="p-4 text-slate-600">After-tax</td>
+                                        <td className="p-4 text-[#D0CCC4]">Contributions</td>
+                                        <td className="p-4 text-[#D0CCC4]">After-tax</td>
                                         <td className="p-4 text-green-700">Pre-tax (deductible)</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 text-slate-600">Withdrawals</td>
+                                        <td className="p-4 text-[#D0CCC4]">Withdrawals</td>
                                         <td className="p-4 text-green-700 font-medium">Tax-free</td>
-                                        <td className="p-4 text-slate-600">Taxed as income</td>
+                                        <td className="p-4 text-[#D0CCC4]">Taxed as income</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 text-slate-600">Required Distributions</td>
+                                        <td className="p-4 text-[#D0CCC4]">Required Distributions</td>
                                         <td className="p-4 text-green-700 font-medium">None</td>
-                                        <td className="p-4 text-slate-600">Starting at 73</td>
+                                        <td className="p-4 text-[#D0CCC4]">Starting at 73</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 text-slate-600">Income Limits</td>
+                                        <td className="p-4 text-[#D0CCC4]">Income Limits</td>
                                         <td className="p-4 text-amber-700">Yes (see above)</td>
                                         <td className="p-4 text-green-700 font-medium">No</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 text-slate-600">Best For</td>
-                                        <td className="p-4 text-slate-600">Expecting higher taxes later</td>
-                                        <td className="p-4 text-slate-600">Need tax break now</td>
+                                        <td className="p-4 text-[#D0CCC4]">Best For</td>
+                                        <td className="p-4 text-[#D0CCC4]">Expecting higher taxes later</td>
+                                        <td className="p-4 text-[#D0CCC4]">Need tax break now</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -245,15 +245,15 @@ export default function SelfDirectedRothIRAPage() {
                             <div className="flex gap-4">
                                 <CheckCircle2 className="w-6 h-6 text-green-700 flex-shrink-0" />
                                 <div>
-                                    <h4 className="font-bold text-[#000080] mb-2">The Backdoor Roth Strategy</h4>
-                                    <p className="text-slate-600 text-sm">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">The Backdoor Roth Strategy</h4>
+                                    <p className="text-[#D0CCC4] text-sm">
                                         If your income exceeds Roth IRA limits, you can still use a "Backdoor Roth" strategy: contribute to a Traditional IRA (non-deductible) and convert it to a Roth. This works with Self-Directed IRAs too. Consult a tax professional for details.
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-[#000080]">
+                        <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF]">
                             <h2>How to Open a Self-Directed Roth IRA</h2>
                             <ol>
                                 <li><strong>Choose a custodian</strong> — Rocket Dollar, Equity Trust, or Entrust for alternatives</li>
@@ -268,19 +268,19 @@ export default function SelfDirectedRothIRAPage() {
 
                         {/* Provider Cards */}
                         <div className="grid md:grid-cols-2 gap-6 my-8">
-                            <div className="bg-slate-50 backdrop-blur-sm rounded-xl border border-purple-500/50 p-6">
-                                <span className="bg-purple-500 text-[#000080] text-xs font-bold px-2 py-1 rounded">CHECKBOOK CONTROL</span>
-                                <h3 className="text-xl font-bold text-[#000080] mt-3 mb-2">Rocket Dollar</h3>
-                                <p className="text-slate-500 text-sm mb-4">Best for real estate and active investors. $15/month flat fee.</p>
+                            <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-purple-500/50 p-6">
+                                <span className="bg-purple-500 text-[#F6F4EF] text-xs font-bold px-2 py-1 rounded">CHECKBOOK CONTROL</span>
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mt-3 mb-2">Rocket Dollar</h3>
+                                <p className="text-[#A8A39A] text-sm mb-4">Best for real estate and active investors. $15/month flat fee.</p>
                                 <Button variant="gold" className="w-full" asChild>
                                     <Link href="/reviews/rocket-dollar">Read Review →</Link>
                                 </Button>
                             </div>
-                            <div className="bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6">
+                            <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6">
                                 <span className="bg-blue-500/20 text-blue-700 text-xs font-bold px-2 py-1 rounded">CRYPTO FOCUSED</span>
-                                <h3 className="text-xl font-bold text-[#000080] mt-3 mb-2">iTrustCapital</h3>
-                                <p className="text-slate-500 text-sm mb-4">Best for crypto investors. 1% trading fee, Roth supported.</p>
-                                <Button variant="outline" className="w-full border-white/20 text-[#000080] hover:bg-white/10" asChild>
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mt-3 mb-2">iTrustCapital</h3>
+                                <p className="text-[#A8A39A] text-sm mb-4">Best for crypto investors. 1% trading fee, Roth supported.</p>
+                                <Button variant="outline" className="w-full border-white/20 text-[#F6F4EF] hover:bg-[#1E2134]/10" asChild>
                                     <Link href="/reviews/itrustcapital">Read Review →</Link>
                                 </Button>
                             </div>
@@ -288,7 +288,7 @@ export default function SelfDirectedRothIRAPage() {
 
                         {/* FAQ */}
                         <div className="mt-12">
-                            <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">Frequently Asked Questions</h2>
+                            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6">Frequently Asked Questions</h2>
                             <div className="space-y-4">
                                 {[
                                     {
@@ -312,9 +312,9 @@ export default function SelfDirectedRothIRAPage() {
                                         a: "Yes, you can convert a Traditional Self-Directed IRA to a Roth SDIRA. You'll pay taxes on the converted amount, but future growth will be tax-free."
                                     },
                                 ].map((faq, i) => (
-                                    <div key={i} className="bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6">
-                                        <h3 className="font-bold text-[#000080] mb-2">{faq.q}</h3>
-                                        <p className="text-slate-500 text-sm">{faq.a}</p>
+                                    <div key={i} className="bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6">
+                                        <h3 className="font-bold text-[#F6F4EF] mb-2">{faq.q}</h3>
+                                        <p className="text-[#A8A39A] text-sm">{faq.a}</p>
                                     </div>
                                 ))}
                             </div>
@@ -324,21 +324,21 @@ export default function SelfDirectedRothIRAPage() {
             </section>
 
             {/* Related */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
-                    <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">Related Resources</h2>
+                    <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Related Resources</h2>
                     <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                        <Link href="/self-directed-ira" className="bg-slate-50 backdrop-blur-sm p-6 rounded-xl border border-slate-200 hover:border-green-500/50 transition-colors group">
-                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-green-700 transition-colors">Self-Directed IRA Guide</h3>
-                            <p className="text-slate-500 text-sm">Complete guide to SDIRA investing.</p>
+                        <Link href="/self-directed-ira" className="bg-[#0C0D18] backdrop-blur-sm p-6 rounded-xl border border-[#2A2D42] hover:border-green-500/50 transition-colors group">
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-green-700 transition-colors">Self-Directed IRA Guide</h3>
+                            <p className="text-[#A8A39A] text-sm">Complete guide to SDIRA investing.</p>
                         </Link>
-                        <Link href="/learn/checkbook-ira" className="bg-slate-50 backdrop-blur-sm p-6 rounded-xl border border-slate-200 hover:border-green-500/50 transition-colors group">
-                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-green-700 transition-colors">Checkbook IRA Guide</h3>
-                            <p className="text-slate-500 text-sm">Take direct control of your IRA.</p>
+                        <Link href="/learn/checkbook-ira" className="bg-[#0C0D18] backdrop-blur-sm p-6 rounded-xl border border-[#2A2D42] hover:border-green-500/50 transition-colors group">
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-green-700 transition-colors">Checkbook IRA Guide</h3>
+                            <p className="text-[#A8A39A] text-sm">Take direct control of your IRA.</p>
                         </Link>
-                        <Link href="/crypto-ira" className="bg-slate-50 backdrop-blur-sm p-6 rounded-xl border border-slate-200 hover:border-green-500/50 transition-colors group">
-                            <h3 className="font-bold text-[#000080] mb-2 group-hover:text-green-700 transition-colors">Crypto IRA Guide</h3>
-                            <p className="text-slate-500 text-sm">Tax-free crypto investing.</p>
+                        <Link href="/crypto-ira" className="bg-[#0C0D18] backdrop-blur-sm p-6 rounded-xl border border-[#2A2D42] hover:border-green-500/50 transition-colors group">
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-green-700 transition-colors">Crypto IRA Guide</h3>
+                            <p className="text-[#A8A39A] text-sm">Tax-free crypto investing.</p>
                         </Link>
                     </div>
                 </Container>

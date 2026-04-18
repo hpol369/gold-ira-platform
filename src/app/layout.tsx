@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
@@ -21,6 +21,13 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
   display: 'swap',
+  preload: true,
+});
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+  display: 'swap',
+  weight: ["400", "500", "600"],
   preload: true,
 });
 
@@ -88,7 +95,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" className={cn(inter.variable, playfair.variable, jetbrains.variable)}>
       <head>
         {/* Google Tag Manager - must be first */}
         <Script id="google-tag-manager" strategy="lazyOnload">
@@ -125,7 +132,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={cn(inter.variable, playfair.variable, "antialiased bg-white text-slate-900")}>
+      <body className={cn(inter.variable, playfair.variable, jetbrains.variable, "antialiased")} style={{ background: "var(--color-navy-base)", color: "var(--color-text-primary)" }}>
         {/* Google Tag Manager (noscript) - must be first in body */}
         <noscript>
           <iframe

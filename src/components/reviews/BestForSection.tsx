@@ -77,7 +77,7 @@ export function BestForSection({ company }: BestForSectionProps) {
         <div className="p-2 bg-amber-100 rounded-lg">
           <Target className="h-5 w-5 text-amber-700" />
         </div>
-        <h2 className="text-2xl font-bold text-slate-900">Who Is {company.name} Best For?</h2>
+        <h2 className="text-2xl font-bold text-[#F6F4EF]">Who Is {company.name} Best For?</h2>
       </div>
 
       {/* Main Best For */}
@@ -93,14 +93,14 @@ export function BestForSection({ company }: BestForSectionProps) {
           {profiles.map((profile, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 p-4 bg-white rounded-xl border border-slate-200"
+              className="flex items-start gap-4 p-4 bg-[#161828] rounded-xl border border-[#2A2D42]"
             >
-              <div className="p-2 bg-slate-100 rounded-lg flex-shrink-0">
-                <profile.icon className="h-5 w-5 text-slate-600" />
+              <div className="p-2 bg-[#121423] rounded-lg flex-shrink-0">
+                <profile.icon className="h-5 w-5 text-[#D0CCC4]" />
               </div>
               <div>
-                <h3 className="font-semibold text-slate-900">{profile.title}</h3>
-                <p className="text-sm text-slate-600">{profile.description}</p>
+                <h3 className="font-semibold text-[#F6F4EF]">{profile.title}</h3>
+                <p className="text-sm text-[#D0CCC4]">{profile.description}</p>
               </div>
             </div>
           ))}
@@ -108,9 +108,9 @@ export function BestForSection({ company }: BestForSectionProps) {
       )}
 
       {/* Who Should Look Elsewhere */}
-      <div className="mt-6 p-4 bg-slate-50 rounded-xl border border-slate-200">
-        <h3 className="font-semibold text-slate-900 mb-2">Who Might Want to Look Elsewhere</h3>
-        <ul className="space-y-2 text-sm text-slate-600">
+      <div className="mt-6 p-4 bg-[#0C0D18] rounded-xl border border-[#2A2D42]">
+        <h3 className="font-semibold text-[#F6F4EF] mb-2">Who Might Want to Look Elsewhere</h3>
+        <ul className="space-y-2 text-sm text-[#D0CCC4]">
           {company.minInvestment >= 25000 && (
             <li>• Investors with less than ${company.minInvestment.toLocaleString()} to invest</li>
           )}

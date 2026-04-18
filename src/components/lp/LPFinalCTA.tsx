@@ -49,7 +49,7 @@ export function LPFinalCTA({
           {headline}
         </h2>
         {subheadline && (
-          <p className="text-lg text-slate-300 mb-6">{subheadline}</p>
+          <p className="text-lg text-[#3F4460] mb-6">{subheadline}</p>
         )}
 
         {/* Guarantees Row */}
@@ -76,7 +76,7 @@ export function LPFinalCTA({
               "w-full md:w-auto",
               "px-6 py-3 text-lg md:px-10 md:py-5 md:text-xl font-bold",
               "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
-              "text-slate-900 rounded-xl",
+              "text-[#F6F4EF] rounded-xl",
               "shadow-[0_0_80px_-5px_rgba(212,175,55,0.6)]",
               "hover:shadow-[0_0_100px_-5px_rgba(212,175,55,0.8)]",
               "hover:scale-105 transition-all duration-300",
@@ -99,7 +99,7 @@ export function LPFinalCTA({
               "w-full md:w-auto",
               "px-6 py-3 text-lg md:px-10 md:py-5 md:text-xl font-bold",
               "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
-              "text-slate-900 rounded-xl",
+              "text-[#F6F4EF] rounded-xl",
               "shadow-[0_0_80px_-5px_rgba(212,175,55,0.6)]",
               "hover:shadow-[0_0_100px_-5px_rgba(212,175,55,0.8)]",
               "hover:scale-105 transition-all duration-300",
@@ -115,10 +115,10 @@ export function LPFinalCTA({
         )}
 
         {trustPoints.length > 0 && (
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-[#A8A39A]">
             {trustPoints.map((point, index) => (
               <span key={index} className="flex items-center gap-2">
-                {index > 0 && <span className="text-slate-600">|</span>}
+                {index > 0 && <span className="text-[#D0CCC4]">|</span>}
                 {point}
               </span>
             ))}

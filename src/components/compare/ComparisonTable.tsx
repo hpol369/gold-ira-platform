@@ -18,16 +18,16 @@ export function ComparisonTable({ optionAName, optionBName, rows }: ComparisonTa
     const renderValue = (value: string | boolean, isWinner: boolean) => {
         if (typeof value === "boolean") {
             return value ? (
-                <Check className={cn("w-6 h-6 mx-auto", isWinner ? "text-green-600" : "text-gray-400")} />
+                <Check className={cn("w-6 h-6 mx-auto", isWinner ? "text-green-600" : "text-[#A8A39A]")} />
             ) : (
                 <X className="w-6 h-6 mx-auto text-red-400" />
             );
         }
-        return <span className={cn(isWinner ? "font-bold text-green-700" : "text-gray-600")}>{value}</span>;
+        return <span className={cn(isWinner ? "font-bold text-green-700" : "text-[#D0CCC4]")}>{value}</span>;
     };
 
     return (
-        <div className="overflow-x-auto my-12 rounded-xl border border-gray-200 shadow-sm">
+        <div className="overflow-x-auto my-12 rounded-xl border border-[#2A2D42] shadow-sm">
             <table className="w-full text-center border-collapse bg-white">
                 <thead>
                     <tr className="bg-gray-50">
@@ -39,7 +39,7 @@ export function ComparisonTable({ optionAName, optionBName, rows }: ComparisonTa
                 <tbody className="divide-y divide-gray-100">
                     {rows.map((row, idx) => (
                         <tr key={idx} className="hover:bg-gray-50/50 transition-colors">
-                            <td className="p-4 text-left font-medium text-gray-700">{row.feature}</td>
+                            <td className="p-4 text-left font-medium text-[#D0CCC4]">{row.feature}</td>
                             <td className={cn("p-4", row.winner === "A" ? "bg-green-50/30" : "")}>
                                 {renderValue(row.optionA, row.winner === "A")}
                             </td>

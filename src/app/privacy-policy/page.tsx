@@ -12,14 +12,14 @@ export default function PrivacyPolicyPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             {/* Header */}
-            <header className="bg-slate-50 py-16 border-b border-slate-200">
+            <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
                     <FadeIn>
                         <div className="max-w-3xl mx-auto text-center">
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-4">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-4">
                                 Privacy Policy
                             </h1>
-                            <p className="text-slate-500">
+                            <p className="text-[#A8A39A]">
                                 Last updated: January 2026
                             </p>
                         </div>
@@ -31,9 +31,9 @@ export default function PrivacyPolicyPage() {
             <Container className="py-12">
                 <div className="max-w-3xl mx-auto">
                     <FadeIn delay={0.1}>
-                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
-                            <p className="lead text-lg text-slate-600">
+                            <p className="lead text-lg text-[#D0CCC4]">
                                 We take your privacy seriously. This policy explains what information we collect, how we use it, and your rights regarding your personal data. We try to keep this straightforward—no legalese buried in footnotes.
                             </p>
 
@@ -125,7 +125,7 @@ export default function PrivacyPolicyPage() {
                                 <li><strong>Opt-out:</strong> Unsubscribe from marketing communications</li>
                             </ul>
                             <p>
-                                To exercise these rights, contact us at <a href="mailto:privacy@richdadretirement.com" className="text-[#B22234] hover:underline">privacy@richdadretirement.com</a>.
+                                To exercise these rights, contact us at <a href="mailto:privacy@richdadretirement.com" className="text-[#D4A94E] hover:underline">privacy@richdadretirement.com</a>.
                             </p>
 
                             <h2>California Residents</h2>
@@ -133,7 +133,7 @@ export default function PrivacyPolicyPage() {
                                 If you&apos;re a California resident, the California Consumer Privacy Act (CCPA) gives you additional rights, including the right to know what personal information we collect and the right to opt out of the &quot;sale&quot; of your information (as defined by CCPA).
                             </p>
                             <p>
-                                When we share your information with Gold IRA companies at your request, this may be considered a &quot;sale&quot; under CCPA. To opt out, email us at <a href="mailto:privacy@richdadretirement.com" className="text-[#B22234] hover:underline">privacy@richdadretirement.com</a> with the subject line &quot;CCPA Opt-Out.&quot;
+                                When we share your information with Gold IRA companies at your request, this may be considered a &quot;sale&quot; under CCPA. To opt out, email us at <a href="mailto:privacy@richdadretirement.com" className="text-[#D4A94E] hover:underline">privacy@richdadretirement.com</a> with the subject line &quot;CCPA Opt-Out.&quot;
                             </p>
 
                             <h2>Data Security</h2>
@@ -156,10 +156,10 @@ export default function PrivacyPolicyPage() {
                                 Questions about this privacy policy? Reach out:
                             </p>
                             <p>
-                                <strong>Email:</strong> <a href="mailto:privacy@richdadretirement.com" className="text-[#B22234] hover:underline">privacy@richdadretirement.com</a>
+                                <strong>Email:</strong> <a href="mailto:privacy@richdadretirement.com" className="text-[#D4A94E] hover:underline">privacy@richdadretirement.com</a>
                             </p>
                             <p>
-                                You can also visit our <Link href="/contact" className="text-[#B22234] hover:underline">contact page</Link> for other ways to get in touch.
+                                You can also visit our <Link href="/contact" className="text-[#D4A94E] hover:underline">contact page</Link> for other ways to get in touch.
                             </p>
 
                         </article>

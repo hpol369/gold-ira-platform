@@ -234,27 +234,27 @@ export default function TransferIraToSilverPage() {
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-slate-50" />
+        <div className="absolute inset-0 bg-[#0C0D18]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(245,158,11,0.15),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <Link
               href="/silver-retirement"
-              className="inline-flex items-center gap-2 text-slate-600 text-sm hover:text-slate-900 transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] text-sm hover:text-[#F6F4EF] transition-colors mb-6"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
             </Link>
-            <div className="inline-flex items-center gap-2 text-[#B22234] text-sm font-medium mb-4 bg-[#B22234]/20 px-4 py-2 rounded-full border border-[#B22234]/30">
+            <div className="inline-flex items-center gap-2 text-[#D4A94E] text-sm font-medium mb-4 bg-[rgba(220,38,38,0.18)] px-4 py-2 rounded-full border border-[#B22234]/30">
               <Clock className="h-4 w-4" />
               STEP-BY-STEP GUIDE
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6">
               Transfer Your IRA to{" "}
-              <span className="text-[#B22234]">Silver</span>
+              <span className="text-[#D4A94E]">Silver</span>
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               Move your retirement funds to physical silver without taxes or penalties.
               This guide covers Traditional IRAs, Roth IRAs, 401(k)s, and more.
             </p>
@@ -263,7 +263,7 @@ export default function TransferIraToSilverPage() {
               <LeadCaptureButton
                 variant="silver"
                 source="silver-retirement-transfer-hero"
-                className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-11 px-8"
               >
                 Start Your Silver Transfer <ArrowRight className="ml-2 h-4 w-4" />
               </LeadCaptureButton>
@@ -271,7 +271,7 @@ export default function TransferIraToSilverPage() {
                 variant="outline"
                 size="lg"
                 asChild
-                className="border-slate-300 text-slate-900 hover:bg-slate-100"
+                className="border-[#3F4460] text-[#F6F4EF] hover:bg-[#1E2134]"
               >
                 <a href="#steps">See the Steps</a>
               </Button>
@@ -284,9 +284,9 @@ export default function TransferIraToSilverPage() {
       <section className="py-4 bg-gradient-to-r from-amber-600/20 via-amber-500/20 to-[#8b1c2a]/20 border-y border-[#B22234]/30">
         <Container>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-center">
-            <AlertTriangle className="h-5 w-5 text-[#B22234]" />
-            <p className="text-slate-900">
-              <strong className="text-[#B22234]">Market Alert:</strong> With inflation
+            <AlertTriangle className="h-5 w-5 text-[#D4A94E]" />
+            <p className="text-[#F6F4EF]">
+              <strong className="text-[#D4A94E]">Market Alert:</strong> With inflation
               concerns and economic uncertainty, more retirees are moving to physical
               silver. Don't let paper assets erode your purchasing power.
             </p>
@@ -297,10 +297,10 @@ export default function TransferIraToSilverPage() {
       {/* Transfer Steps */}
       <section id="steps" className="py-16 scroll-mt-16">
         <Container>
-          <h2 className="text-3xl font-serif font-bold text-[#000080] text-center mb-4">
+          <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] text-center mb-4">
             5 Steps to Transfer Your IRA to Silver
           </h2>
-          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-12">
+          <p className="text-[#D0CCC4] text-center max-w-2xl mx-auto mb-12">
             The entire process typically takes 1-3 weeks. Here's exactly what to expect.
           </p>
 
@@ -310,25 +310,25 @@ export default function TransferIraToSilverPage() {
               return (
                 <div
                   key={index}
-                  className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 md:p-8"
+                  className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 md:p-8"
                 >
                   <div className="flex items-start gap-6">
                     <div className="flex-shrink-0">
-                      <div className="w-14 h-14 bg-[#B22234]/20 rounded-full flex items-center justify-center border border-[#B22234]/30">
-                        <span className="text-2xl font-bold text-[#B22234]">
+                      <div className="w-14 h-14 bg-[rgba(220,38,38,0.18)] rounded-full flex items-center justify-center border border-[#B22234]/30">
+                        <span className="text-2xl font-bold text-[#D4A94E]">
                           {step.step}
                         </span>
                       </div>
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-3">
-                        <Icon className="h-5 w-5 text-[#B22234]" />
-                        <h3 className="text-xl font-bold text-slate-900">{step.title}</h3>
+                        <Icon className="h-5 w-5 text-[#D4A94E]" />
+                        <h3 className="text-xl font-bold text-[#F6F4EF]">{step.title}</h3>
                       </div>
-                      <p className="text-slate-600 mb-4">{step.description}</p>
+                      <p className="text-[#D0CCC4] mb-4">{step.description}</p>
                       <ul className="grid md:grid-cols-2 gap-2">
                         {step.details.map((detail, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
+                          <li key={i} className="flex items-start gap-2 text-sm text-[#D0CCC4]">
                             <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
                             {detail}
                           </li>
@@ -344,31 +344,31 @@ export default function TransferIraToSilverPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-slate-200">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-[#2A2D42]">
         <Container>
-          <div className="max-w-4xl mx-auto text-center bg-slate-50 backdrop-blur-sm border border-[#B22234]/30 rounded-2xl p-8">
-            <div className="inline-flex items-center gap-2 text-[#B22234] text-sm font-semibold mb-4">
+          <div className="max-w-4xl mx-auto text-center bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-2xl p-8">
+            <div className="inline-flex items-center gap-2 text-[#D4A94E] text-sm font-semibold mb-4">
               <Award className="h-4 w-4" />
               OUR #1 RECOMMENDATION
             </div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+            <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">
               Augusta Precious Metals Makes Transfers Easy
             </h3>
-            <p className="text-slate-600 mb-6 max-w-2xl mx-auto">
+            <p className="text-[#D0CCC4] mb-6 max-w-2xl mx-auto">
               Augusta handles the entire transfer process for you. Their dedicated team
               contacts your existing custodian, manages all paperwork, and ensures a
               smooth, tax-free rollover to your new Silver IRA.
             </p>
             <div className="flex flex-wrap justify-center gap-6 mb-6 text-sm">
-              <div className="flex items-center gap-2 text-slate-600">
+              <div className="flex items-center gap-2 text-[#D0CCC4]">
                 <Shield className="h-4 w-4 text-green-400" />
                 Zero BBB Complaints
               </div>
-              <div className="flex items-center gap-2 text-slate-600">
-                <Star className="h-4 w-4 text-[#B22234]" />
+              <div className="flex items-center gap-2 text-[#D0CCC4]">
+                <Star className="h-4 w-4 text-[#D4A94E]" />
                 4.9/5 Rating
               </div>
-              <div className="flex items-center gap-2 text-slate-600">
+              <div className="flex items-center gap-2 text-[#D0CCC4]">
                 <Phone className="h-4 w-4 text-blue-400" />
                 Lifetime Support
               </div>
@@ -376,7 +376,7 @@ export default function TransferIraToSilverPage() {
             <LeadCaptureButton
               variant="silver"
               source="silver-retirement-transfer-mid"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-11 px-8"
             >
               Get Your Free Silver IRA Kit <ArrowRight className="ml-2 h-4 w-4" />
             </LeadCaptureButton>
@@ -387,47 +387,47 @@ export default function TransferIraToSilverPage() {
       {/* IRA Types Table */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-4">
             Which Accounts Can Transfer to Silver?
           </h2>
-          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-8">
+          <p className="text-[#D0CCC4] text-center max-w-2xl mx-auto mb-8">
             Most retirement accounts can be transferred to a Silver IRA. Here's a
             breakdown of transfer eligibility and tax implications.
           </p>
 
           <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-              <thead className="bg-slate-50">
+            <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+              <thead className="bg-[#0C0D18]">
                 <tr>
-                  <th className="p-4 border-b border-slate-200 font-bold text-slate-900">
+                  <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">
                     Account Type
                   </th>
-                  <th className="p-4 border-b border-slate-200 font-bold text-slate-900 text-center">
+                  <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF] text-center">
                     Can Transfer?
                   </th>
-                  <th className="p-4 border-b border-slate-200 font-bold text-slate-900">
+                  <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">
                     Tax Implications
                   </th>
-                  <th className="p-4 border-b border-slate-200 font-bold text-slate-900">
+                  <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">
                     Notes
                   </th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-200 text-sm">
+              <tbody className="divide-y divide-[#2A2D42] text-sm">
                 {iraTypes.map((ira, index) => (
-                  <tr key={index} className={index % 2 === 0 ? "" : "bg-slate-100"}>
-                    <td className="p-4 font-semibold text-slate-900">{ira.type}</td>
+                  <tr key={index} className={index % 2 === 0 ? "" : "bg-[#121423]"}>
+                    <td className="p-4 font-semibold text-[#F6F4EF]">{ira.type}</td>
                     <td className="p-4 text-center">
                       {ira.canTransfer ? (
                         <CheckCircle2 className="h-5 w-5 text-green-400 mx-auto" />
                       ) : (
-                        <span className="text-[#B22234] text-xs font-semibold">
+                        <span className="text-[#D4A94E] text-xs font-semibold">
                           CONDITIONAL
                         </span>
                       )}
                     </td>
-                    <td className="p-4 text-slate-600">{ira.taxImplications}</td>
-                    <td className="p-4 text-slate-600">{ira.notes}</td>
+                    <td className="p-4 text-[#D0CCC4]">{ira.taxImplications}</td>
+                    <td className="p-4 text-[#D0CCC4]">{ira.notes}</td>
                   </tr>
                 ))}
               </tbody>
@@ -437,10 +437,10 @@ export default function TransferIraToSilverPage() {
       </section>
 
       {/* Tax Benefits Section */}
-      <section className="py-16 bg-slate-100 border-y border-slate-200">
+      <section className="py-16 bg-[#121423] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
               Tax Advantages of Direct Transfers
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -449,7 +449,7 @@ export default function TransferIraToSilverPage() {
                   <CheckCircle2 className="h-5 w-5" />
                   Direct Transfer (Recommended)
                 </h3>
-                <ul className="space-y-3 text-sm text-slate-600">
+                <ul className="space-y-3 text-sm text-[#D0CCC4]">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5" />
                     100% of funds transfer to silver
@@ -473,7 +473,7 @@ export default function TransferIraToSilverPage() {
                   <AlertTriangle className="h-5 w-5" />
                   Indirect Rollover (Riskier)
                 </h3>
-                <ul className="space-y-3 text-sm text-slate-600">
+                <ul className="space-y-3 text-sm text-[#D0CCC4]">
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="h-4 w-4 text-red-400 mt-0.5" />
                     20% withheld from 401(k) distributions
@@ -500,22 +500,22 @@ export default function TransferIraToSilverPage() {
       {/* FAQs */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
             IRA to Silver Transfer FAQs
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900 font-semibold list-none">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF] font-semibold list-none">
                   {faq.question}
-                  <span className="text-[#B22234] group-open:rotate-180 transition-transform">
+                  <span className="text-[#D4A94E] group-open:rotate-180 transition-transform">
                     &#9660;
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-600">{faq.answer}</p>
+                <p className="mt-4 text-[#D0CCC4]">{faq.answer}</p>
               </details>
             ))}
           </div>
@@ -523,39 +523,39 @@ export default function TransferIraToSilverPage() {
       </section>
 
       {/* Related Pages */}
-      <section className="py-12 bg-slate-100">
+      <section className="py-12 bg-[#121423]">
         <Container>
-          <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
+          <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
             Continue Your Silver IRA Research
           </h2>
           <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <Link
               href="/silver-retirement/ira-approved-bars"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">IRA-Approved Silver Bars</h3>
-              <p className="text-sm text-slate-600">Which bars qualify for your IRA</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">IRA-Approved Silver Bars</h3>
+              <p className="text-sm text-[#D0CCC4]">Which bars qualify for your IRA</p>
             </Link>
             <Link
               href="/silver-retirement/ira-approved-coins"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">IRA-Approved Silver Coins</h3>
-              <p className="text-sm text-slate-600">Eagles, Maple Leafs & more</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">IRA-Approved Silver Coins</h3>
+              <p className="text-sm text-[#D0CCC4]">Eagles, Maple Leafs & more</p>
             </Link>
             <Link
               href="/silver-retirement/rmd-rules"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">Silver IRA RMD Rules</h3>
-              <p className="text-sm text-slate-600">Distribution requirements explained</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">Silver IRA RMD Rules</h3>
+              <p className="text-sm text-[#D0CCC4]">Distribution requirements explained</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 border-t border-slate-200">
+      <section className="py-16 border-t border-[#2A2D42]">
         <Container>
           <AugustaCTA
             variant="footer"

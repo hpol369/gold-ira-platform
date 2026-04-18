@@ -129,18 +129,18 @@ export default function SilverForecast5YearsPage() {
             <SchemaScript schema={schema} />
 
             {/* Header */}
-            <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
+            <header className="bg-[#0C0D18] backdrop-blur-sm py-16 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <Link href="/silver-price" className="text-gray-400 hover:text-slate-600 text-sm font-medium mb-4 inline-flex items-center gap-2">
+                        <Link href="/silver-price" className="text-[#A8A39A] hover:text-[#F6F4EF] text-sm font-medium mb-4 inline-flex items-center gap-2">
                             <ArrowRight className="w-4 h-4 rotate-180" /> Back to Silver Price Hub
                         </Link>
-                        <span className="text-slate-600 text-sm block mb-4">20 monthly searches</span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">
+                        <span className="text-[#D0CCC4] text-sm block mb-4">20 monthly searches</span>
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
                             Silver Forecast: Next 5 Years (2026-2030)
                         </h1>
-                        <p className="text-xl text-slate-600 leading-relaxed">
-                            The next five years could be transformative for silver. <strong className="text-slate-900">Solar panels, EVs, 5G, and AI</strong> are creating unprecedented demand—while supply remains stubbornly flat. Here&apos;s the long-term outlook.
+                        <p className="text-xl text-[#D0CCC4] leading-relaxed">
+                            The next five years could be transformative for silver. <strong className="text-[#F6F4EF]">Solar panels, EVs, 5G, and AI</strong> are creating unprecedented demand—while supply remains stubbornly flat. Here&apos;s the long-term outlook.
                         </p>
                     </div>
                 </Container>
@@ -148,7 +148,7 @@ export default function SilverForecast5YearsPage() {
 
             <Container className="py-12">
                 <div className="max-w-4xl mx-auto">
-                    <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                    <article className="prose prose-lg prose-invert prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -173,31 +173,31 @@ export default function SilverForecast5YearsPage() {
                         {/* Year-by-Year Projections */}
                         <section className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
+                                <div className="p-3 bg-[rgba(220,38,38,0.18)] rounded-lg text-[#D4A94E]">
                                     <Calendar className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Year-by-Year Price Projections</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Year-by-Year Price Projections</h2>
                             </div>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
-                                    <thead className="bg-slate-50">
+                                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl shadow-sm border border-[#2A2D42]">
+                                    <thead className="bg-[#0C0D18]">
                                         <tr>
-                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Year</th>
-                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Bear Case</th>
-                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Base Case</th>
-                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Bull Case</th>
-                                            <th className="p-4 font-bold text-slate-900 border-b border-slate-200">Supply/Demand</th>
+                                            <th className="p-4 font-bold text-[#F6F4EF] border-b border-[#2A2D42]">Year</th>
+                                            <th className="p-4 font-bold text-[#F6F4EF] border-b border-[#2A2D42]">Bear Case</th>
+                                            <th className="p-4 font-bold text-[#F6F4EF] border-b border-[#2A2D42]">Base Case</th>
+                                            <th className="p-4 font-bold text-[#F6F4EF] border-b border-[#2A2D42]">Bull Case</th>
+                                            <th className="p-4 font-bold text-[#F6F4EF] border-b border-[#2A2D42]">Supply/Demand</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-slate-200 text-sm">
+                                    <tbody className="divide-y divide-[#2A2D42] text-sm">
                                         {yearlyProjections.map((year, idx) => (
-                                            <tr key={idx} className={idx % 2 === 1 ? 'bg-slate-100' : ''}>
-                                                <td className="p-4 text-slate-900 font-bold">{year.year}</td>
+                                            <tr key={idx} className={idx % 2 === 1 ? 'bg-[#121423]' : ''}>
+                                                <td className="p-4 text-[#F6F4EF] font-bold">{year.year}</td>
                                                 <td className="p-4 text-red-700">{year.low}</td>
-                                                <td className="p-4 text-[#B22234] font-bold">{year.base}</td>
+                                                <td className="p-4 text-[#D4A94E] font-bold">{year.base}</td>
                                                 <td className="p-4 text-green-700">{year.high}</td>
-                                                <td className="p-4 text-slate-600">
+                                                <td className="p-4 text-[#D0CCC4]">
                                                     <span className="text-xs">{year.supply} / {year.demand}</span>
                                                     <span className="text-red-700 font-bold ml-2">{year.deficit}</span>
                                                 </td>
@@ -218,7 +218,7 @@ export default function SilverForecast5YearsPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">Megatrends Driving Silver Demand</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Megatrends Driving Silver Demand</h2>
                             </div>
                             <p>
                                 These aren&apos;t speculative trends—they&apos;re secular shifts that are already underway and accelerating:
@@ -226,28 +226,28 @@ export default function SilverForecast5YearsPage() {
 
                             <div className="not-prose my-8 space-y-6">
                                 {megatrends.map((trend, idx) => (
-                                    <div key={idx} className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+                                    <div key={idx} className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
                                         <div className="flex items-start gap-4">
                                             <div className="p-3 bg-green-500/20 rounded-lg text-green-700 shrink-0">
                                                 <trend.icon className="w-6 h-6" />
                                             </div>
                                             <div className="flex-1">
                                                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-3">
-                                                    <h4 className="font-bold text-slate-900 text-lg">{trend.trend}</h4>
+                                                    <h4 className="font-bold text-[#F6F4EF] text-lg">{trend.trend}</h4>
                                                     <div className="flex items-center gap-4">
                                                         <div className="text-center">
-                                                            <div className="text-xs text-slate-600">2026</div>
-                                                            <div className="text-sm font-bold text-slate-600">{trend.current}</div>
+                                                            <div className="text-xs text-[#D0CCC4]">2026</div>
+                                                            <div className="text-sm font-bold text-[#D0CCC4]">{trend.current}</div>
                                                         </div>
                                                         <div className="text-green-700">→</div>
                                                         <div className="text-center">
-                                                            <div className="text-xs text-slate-600">2030</div>
+                                                            <div className="text-xs text-[#D0CCC4]">2030</div>
                                                             <div className="text-sm font-bold text-green-700">{trend.by2030}</div>
                                                         </div>
                                                         <span className="px-2 py-1 bg-green-500/20 rounded text-xs font-bold text-green-700">{trend.growth}</span>
                                                     </div>
                                                 </div>
-                                                <p className="text-sm text-slate-600">{trend.details}</p>
+                                                <p className="text-sm text-[#D0CCC4]">{trend.details}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -265,7 +265,7 @@ export default function SilverForecast5YearsPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <Pickaxe className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-slate-900 m-0">The Supply Problem: Why Production Can&apos;t Keep Up</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Supply Problem: Why Production Can&apos;t Keep Up</h2>
                             </div>
                             <p>
                                 Silver supply is fundamentally constrained by factors that can&apos;t be quickly changed:
@@ -274,53 +274,53 @@ export default function SilverForecast5YearsPage() {
                             <div className="not-prose my-8 grid md:grid-cols-2 gap-4">
                                 <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3">No Major New Mines</h4>
-                                    <p className="text-sm text-slate-600">It takes 10-15 years and $500M+ to develop a primary silver mine. There are no significant projects coming online before 2030 at the earliest.</p>
+                                    <p className="text-sm text-[#D0CCC4]">It takes 10-15 years and $500M+ to develop a primary silver mine. There are no significant projects coming online before 2030 at the earliest.</p>
                                 </div>
                                 <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3">Byproduct Dependency</h4>
-                                    <p className="text-sm text-slate-600">70% of silver comes as a byproduct of zinc, copper, and lead mining. Silver supply is tied to base metal demand, not silver prices.</p>
+                                    <p className="text-sm text-[#D0CCC4]">70% of silver comes as a byproduct of zinc, copper, and lead mining. Silver supply is tied to base metal demand, not silver prices.</p>
                                 </div>
                                 <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3">Declining Ore Grades</h4>
-                                    <p className="text-sm text-slate-600">Average ore grades have fallen 30% over 20 years. Miners must process more rock to get the same silver, increasing costs and limiting production growth.</p>
+                                    <p className="text-sm text-[#D0CCC4]">Average ore grades have fallen 30% over 20 years. Miners must process more rock to get the same silver, increasing costs and limiting production growth.</p>
                                 </div>
                                 <div className="bg-red-500/10 rounded-xl p-5 border border-red-500/20">
                                     <h4 className="font-bold text-red-700 mb-3">ESG and Permitting</h4>
-                                    <p className="text-sm text-slate-600">Environmental regulations and permitting challenges make new mine development increasingly difficult and expensive.</p>
+                                    <p className="text-sm text-[#D0CCC4]">Environmental regulations and permitting challenges make new mine development increasingly difficult and expensive.</p>
                                 </div>
                             </div>
 
-                            <div className="bg-slate-50 backdrop-blur-sm rounded-2xl p-6 border border-slate-200 not-prose my-8">
-                                <h4 className="font-bold text-slate-900 text-lg mb-4">5-Year Supply Outlook</h4>
+                            <div className="bg-[#0C0D18] backdrop-blur-sm rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
+                                <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">5-Year Supply Outlook</h4>
                                 <div className="space-y-3">
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-600">Mine Production</span>
-                                            <span className="text-[#B22234]">~820M oz (flat)</span>
+                                            <span className="text-[#D0CCC4]">Mine Production</span>
+                                            <span className="text-[#D4A94E]">~820M oz (flat)</span>
                                         </div>
-                                        <div className="w-full bg-slate-100 rounded-full h-3">
-                                            <div className="bg-[#B22234] h-3 rounded-full" style={{ width: '82%' }}></div>
+                                        <div className="w-full bg-[#121423] rounded-full h-3">
+                                            <div className="bg-[#DC2626] h-3 rounded-full" style={{ width: '82%' }}></div>
                                         </div>
                                     </div>
                                     <div>
                                         <div className="flex justify-between text-sm mb-1">
-                                            <span className="text-slate-600">Recycling</span>
-                                            <span className="text-slate-600">~180-200M oz (slow growth)</span>
+                                            <span className="text-[#D0CCC4]">Recycling</span>
+                                            <span className="text-[#D0CCC4]">~180-200M oz (slow growth)</span>
                                         </div>
-                                        <div className="w-full bg-slate-100 rounded-full h-3">
-                                            <div className="bg-slate-500 h-3 rounded-full" style={{ width: '18%' }}></div>
+                                        <div className="w-full bg-[#121423] rounded-full h-3">
+                                            <div className="bg-[#0C0D18]0 h-3 rounded-full" style={{ width: '18%' }}></div>
                                         </div>
                                     </div>
-                                    <div className="pt-3 border-t border-slate-200">
+                                    <div className="pt-3 border-t border-[#2A2D42]">
                                         <div className="flex justify-between">
-                                            <span className="text-slate-600">Total 5-Year Supply</span>
-                                            <span className="text-slate-900 font-bold">~5.1B oz</span>
+                                            <span className="text-[#D0CCC4]">Total 5-Year Supply</span>
+                                            <span className="text-[#F6F4EF] font-bold">~5.1B oz</span>
                                         </div>
                                         <div className="flex justify-between mt-1">
-                                            <span className="text-slate-600">Total 5-Year Demand (projected)</span>
+                                            <span className="text-[#D0CCC4]">Total 5-Year Demand (projected)</span>
                                             <span className="text-green-700 font-bold">~6.6B oz</span>
                                         </div>
-                                        <div className="flex justify-between mt-2 pt-2 border-t border-slate-200">
+                                        <div className="flex justify-between mt-2 pt-2 border-t border-[#2A2D42]">
                                             <span className="text-red-700 font-bold">Cumulative Deficit</span>
                                             <span className="text-red-700 font-bold text-lg">~1.5B oz</span>
                                         </div>
@@ -330,12 +330,12 @@ export default function SilverForecast5YearsPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-primary rounded-2xl p-8 text-[#F6F4EF] text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-gray-400/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Think Long-Term. Act Now.</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Think Long-Term. Act Now.</h3>
                                 <p className="mb-6 text-gray-200">The 5-year outlook for silver is exceptional. Find the right precious metals company to help you build your position.</p>
-                                <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
+                                <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white" size="lg" asChild>
                                     <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
@@ -352,28 +352,28 @@ export default function SilverForecast5YearsPage() {
                                 <div className="bg-red-500/10 rounded-xl p-6 border border-red-500/20">
                                     <div className="flex items-center justify-between mb-3">
                                         <h4 className="font-bold text-red-700 text-lg">Bear Case: $50-60</h4>
-                                        <span className="text-xs text-slate-600">20% probability</span>
+                                        <span className="text-xs text-[#D0CCC4]">20% probability</span>
                                     </div>
-                                    <p className="text-sm text-slate-600 mb-3">Manipulation continues, recession hits industrial demand, Fed stays hawkish longer than expected. Silver grinds higher but underperforms vs fundamentals.</p>
-                                    <p className="text-xs text-slate-600">Even the bear case shows significant gains from current levels (~$32).</p>
+                                    <p className="text-sm text-[#D0CCC4] mb-3">Manipulation continues, recession hits industrial demand, Fed stays hawkish longer than expected. Silver grinds higher but underperforms vs fundamentals.</p>
+                                    <p className="text-xs text-[#D0CCC4]">Even the bear case shows significant gains from current levels (~$32).</p>
                                 </div>
 
-                                <div className="bg-[#B22234]/10 rounded-xl p-6 border border-amber-500/20">
+                                <div className="bg-[rgba(220,38,38,0.1)] rounded-xl p-6 border border-amber-500/20">
                                     <div className="flex items-center justify-between mb-3">
-                                        <h4 className="font-bold text-[#B22234] text-lg">Base Case: $70-90</h4>
-                                        <span className="text-xs text-slate-600">50% probability</span>
+                                        <h4 className="font-bold text-[#D4A94E] text-lg">Base Case: $70-90</h4>
+                                        <span className="text-xs text-[#D0CCC4]">50% probability</span>
                                     </div>
-                                    <p className="text-sm text-slate-600 mb-3">Supply deficits force price higher over time. Gold ratio compresses from 80:1 toward 50:1. Fed eventually cuts, dollar weakens. Steady accumulation of bullish factors.</p>
-                                    <p className="text-xs text-slate-600">Base case represents 120-180% gains over 5 years.</p>
+                                    <p className="text-sm text-[#D0CCC4] mb-3">Supply deficits force price higher over time. Gold ratio compresses from 80:1 toward 50:1. Fed eventually cuts, dollar weakens. Steady accumulation of bullish factors.</p>
+                                    <p className="text-xs text-[#D0CCC4]">Base case represents 120-180% gains over 5 years.</p>
                                 </div>
 
                                 <div className="bg-green-500/10 rounded-xl p-6 border border-green-500/20">
                                     <div className="flex items-center justify-between mb-3">
                                         <h4 className="font-bold text-green-700 text-lg">Bull Case: $100-200+</h4>
-                                        <span className="text-xs text-slate-600">30% probability</span>
+                                        <span className="text-xs text-[#D0CCC4]">30% probability</span>
                                     </div>
-                                    <p className="text-sm text-slate-600 mb-3">Industrial supply crunch forces physical price discovery. Dollar crisis drives safe-haven buying. Gold ratio reverts toward 20:1-30:1. Paper manipulation breaks.</p>
-                                    <p className="text-xs text-slate-600">Bull case represents 200-500%+ gains—life-changing for positioned investors.</p>
+                                    <p className="text-sm text-[#D0CCC4] mb-3">Industrial supply crunch forces physical price discovery. Dollar crisis drives safe-haven buying. Gold ratio reverts toward 20:1-30:1. Paper manipulation breaks.</p>
+                                    <p className="text-xs text-[#D0CCC4]">Bull case represents 200-500%+ gains—life-changing for positioned investors.</p>
                                 </div>
                             </div>
 
@@ -390,21 +390,21 @@ export default function SilverForecast5YearsPage() {
                             </p>
 
                             <div className="not-prose my-8 space-y-4">
-                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-5 border border-slate-200">
-                                    <h4 className="font-bold text-slate-900 mb-2">Silver IRA (Tax-Advantaged Holding)</h4>
-                                    <p className="text-sm text-slate-600">Best for long-term investors. Tax-deferred or tax-free growth over 5+ years. Physical metal in secure storage. No need to time trades. <Link href="/quiz" className="text-gray-400 hover:underline">Find the right Silver IRA company →</Link></p>
+                                <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-5 border border-[#2A2D42]">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">Silver IRA (Tax-Advantaged Holding)</h4>
+                                    <p className="text-sm text-[#D0CCC4]">Best for long-term investors. Tax-deferred or tax-free growth over 5+ years. Physical metal in secure storage. No need to time trades. <Link href="/quiz" className="text-[#A8A39A] hover:underline">Find the right Silver IRA company →</Link></p>
                                 </div>
-                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-5 border border-slate-200">
-                                    <h4 className="font-bold text-slate-900 mb-2">Physical Silver (Coins & Bars)</h4>
-                                    <p className="text-sm text-slate-600">For those who want direct control. American Silver Eagles, Canadian Maple Leafs, or generic bars. Store securely. No counterparty risk.</p>
+                                <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-5 border border-[#2A2D42]">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">Physical Silver (Coins & Bars)</h4>
+                                    <p className="text-sm text-[#D0CCC4]">For those who want direct control. American Silver Eagles, Canadian Maple Leafs, or generic bars. Store securely. No counterparty risk.</p>
                                 </div>
-                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-5 border border-slate-200">
-                                    <h4 className="font-bold text-slate-900 mb-2">Silver Mining Stocks</h4>
-                                    <p className="text-sm text-slate-600">Leveraged exposure to silver price. Higher risk/reward. Consider First Majestic (AG), Pan American Silver (PAAS), or the SIL ETF for diversification.</p>
+                                <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-5 border border-[#2A2D42]">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">Silver Mining Stocks</h4>
+                                    <p className="text-sm text-[#D0CCC4]">Leveraged exposure to silver price. Higher risk/reward. Consider First Majestic (AG), Pan American Silver (PAAS), or the SIL ETF for diversification.</p>
                                 </div>
-                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-5 border border-slate-200">
-                                    <h4 className="font-bold text-slate-900 mb-2">Dollar-Cost Averaging</h4>
-                                    <p className="text-sm text-slate-600">Given volatility, consider buying a fixed amount monthly over 12-24 months rather than all at once. This reduces timing risk.</p>
+                                <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-5 border border-[#2A2D42]">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">Dollar-Cost Averaging</h4>
+                                    <p className="text-sm text-[#D0CCC4]">Given volatility, consider buying a fixed amount monthly over 12-24 months rather than all at once. This reduces timing risk.</p>
                                 </div>
                             </div>
                         </section>
@@ -414,58 +414,58 @@ export default function SilverForecast5YearsPage() {
                             <h2>Silver 5-Year Forecast: FAQ</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What is the silver price forecast for the next 5 years?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#A8A39A] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                         Long-term silver forecasts project significant gains over 2026-2030: Bear case sees $50-60 (if manipulation persists), base case targets $70-90 (as supply deficits force prices higher), and bull case sees $100-200+ (if supply crunch or monetary crisis materializes). The key drivers are growing industrial demand from solar and EVs, combined with stagnant mine supply creating cumulative deficits of 1.5+ billion ounces.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What will silver be worth in 2030?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#A8A39A] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                         By 2030, silver could range from $55 (conservative, if manipulation persists) to $120+ (bullish, if supply crunch materializes). The base case estimate is around $80, reflecting continued demand growth from green energy, depleting inventories, and potential ratio reversion vs gold. Even at $80, silver would still be below its 1980 inflation-adjusted high of $180+.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Why will silver be higher in 5 years?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#A8A39A] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                         Silver is positioned for higher prices due to: 1) Structural supply deficits (demand exceeding supply by 150-400M oz annually), 2) Solar panel demand potentially consuming 30% of mine supply by 2030, 3) EV growth requiring 80-120M oz annually, 4) 5G and AI infrastructure creating new demand, 5) No major new mines coming online before 2030, 6) Depleting above-ground stockpiles that have covered deficits. The math simply doesn&apos;t work at current prices.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Is silver a good 5-year investment?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-gray-400 sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#A8A39A] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                         Silver&apos;s 5-year fundamentals are among the strongest of any major asset class. Supply/demand dynamics strongly favor higher prices. Even the bear case shows significant gains from current levels. However, silver is volatile—expect 20-30% drawdowns even in a bull market. For those with a 5-year horizon and tolerance for volatility, silver offers an asymmetric risk/reward setup. Consider it as part of a diversified precious metals allocation (10-20% of portfolio).
                                     </p>
                                 </details>
@@ -473,16 +473,16 @@ export default function SilverForecast5YearsPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose">
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-[#F6F4EF] relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-gray-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Build Your 5-Year Position</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#F6F4EF]">Build Your 5-Year Position</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">The next 5 years could be transformative for silver. Don&apos;t wait until $50 or $80 to start building your position. Find the right company today.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="xl" asChild>
+                                    <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white" size="xl" asChild>
                                         <Link href="/quiz">Find Your Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#1E2134]">
                                         <Link href="/silver-price/prediction-2026">2026 Predictions</Link>
                                     </Button>
                                 </div>
@@ -496,7 +496,7 @@ export default function SilverForecast5YearsPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="silver-forecast-5-years" />
                 </Container>

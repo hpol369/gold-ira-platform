@@ -598,7 +598,7 @@ export function UniversalQuiz() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg md:text-xl text-slate-300 max-w-xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-[#3F4460] max-w-xl mx-auto leading-relaxed"
         >
           Answer 4 quick questions to get a personalized recommendation
         </motion.p>
@@ -615,11 +615,11 @@ export function UniversalQuiz() {
             return (
               <div
                 key={index}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10
-                           hover:bg-white/10 hover:border-white/20 transition-all duration-200"
+                className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[rgba(197,149,46,0.14)]/5 border border-white/10
+                           hover:bg-[#1E2134]/10 hover:border-white/20 transition-all duration-200"
               >
                 <IconComponent className={cn("h-4 w-4", option.color)} />
-                <span className="text-sm text-slate-300">{option.label}</span>
+                <span className="text-sm text-[#3F4460]">{option.label}</span>
               </div>
             );
           })}
@@ -642,7 +642,7 @@ export function UniversalQuiz() {
             Start Free Assessment
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <p className="text-sm text-slate-400 mt-4">
+          <p className="text-sm text-[#A8A39A] mt-4">
             No email required. Get instant results.
           </p>
         </motion.div>
@@ -671,7 +671,7 @@ export function UniversalQuiz() {
           </motion.h2>
 
           {currentQuestion.helper && (
-            <p className="text-center text-slate-400 mb-8 text-sm">
+            <p className="text-center text-[#A8A39A] mb-8 text-sm">
               {currentQuestion.helper}
             </p>
           )}
@@ -695,7 +695,7 @@ export function UniversalQuiz() {
                   className={cn(
                     "group relative flex items-center justify-between p-6 text-left rounded-xl",
                     "bg-white/5 backdrop-blur-xl border border-white/10",
-                    "hover:bg-white/[0.1] hover:-translate-y-2 hover:scale-[1.02]",
+                    "hover:bg-[#1E2134]/[0.1] hover:-translate-y-2 hover:scale-[1.02]",
                     "hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_40px_rgba(212,175,55,0.15)]",
                     "hover:border-amber-400/40 transition-all duration-300 cursor-pointer",
                     isSelected && "bg-amber-500/10 border-amber-400/50 shadow-[0_0_30px_rgba(212,175,55,0.2)]"
@@ -804,7 +804,7 @@ export function UniversalQuiz() {
                            [text-shadow:_0_2px_20px_rgba(0,0,0,0.5)]">
               We Recommend: <span className="text-amber-400 [text-shadow:_0_2px_30px_rgba(212,175,55,0.3)]">{recommendedCompany.name}</span>
             </h2>
-            <p className="text-slate-400 text-lg">{recommendedCompany.headline}</p>
+            <p className="text-[#A8A39A] text-lg">{recommendedCompany.headline}</p>
           </motion.div>
 
           <motion.div
@@ -818,12 +818,12 @@ export function UniversalQuiz() {
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400
                             shadow-[0_0_10px_rgba(212,175,55,0.5)]" />
 
-            <p className="text-slate-300 text-base md:text-lg leading-relaxed mb-6">
+            <p className="text-[#3F4460] text-base md:text-lg leading-relaxed mb-6">
               {recommendedCompany.description}
             </p>
 
             <div className="mb-8">
-              <h4 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">
+              <h4 className="text-sm font-semibold text-[#A8A39A] uppercase tracking-wider mb-4">
                 Why {recommendedCompany.name}?
               </h4>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -877,7 +877,7 @@ export function UniversalQuiz() {
                 size="lg"
                 variant="outline"
                 onClick={handleRestart}
-                className="text-slate-300 border-white/20 hover:bg-white/10
+                className="text-[#3F4460] border-white/20 hover:bg-[#1E2134]/10
                            hover:border-white/30 hover:shadow-[0_4px_20px_rgba(255,255,255,0.1)]
                            transition-all duration-300"
               >
@@ -885,7 +885,7 @@ export function UniversalQuiz() {
               </Button>
             </div>
 
-            <p className="text-center text-xs text-slate-500 mt-4">
+            <p className="text-center text-xs text-[#A8A39A] mt-4">
               Minimum Investment: {recommendedCompany.minInvestment}
             </p>
           </motion.div>
@@ -914,9 +914,9 @@ export function UniversalQuiz() {
       {(state.step === 'product-type' || (state.step === 'questions')) && (
         <button
           onClick={handleBack}
-          className="self-start flex items-center gap-2 text-sm text-slate-400 hover:text-white mb-4
+          className="self-start flex items-center gap-2 text-sm text-[#A8A39A] hover:text-white mb-4
                      px-3 py-1.5 rounded-lg bg-white/5 border border-white/10
-                     hover:bg-white/10 hover:border-white/20
+                     hover:bg-[#1E2134]/10 hover:border-white/20
                      hover:shadow-[0_4px_20px_rgba(255,255,255,0.05)]
                      transition-all duration-300"
         >

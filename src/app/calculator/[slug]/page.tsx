@@ -55,7 +55,7 @@ export default async function CalculatorPage({ params }: { params: Params }) {
     }).format(amount);
 
     return (
-        <main className="min-h-screen flex flex-col bg-slate-50">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             {/* Hero Section */}
@@ -65,29 +65,29 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                         <span className="inline-block py-1 px-3 rounded-full bg-red-100 text-red-700 text-xs font-bold tracking-wider uppercase mb-4">
                             Inflation Reality Check
                         </span>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#000080] mb-6 leading-tight">
-                            Is <span className="text-[#B22234] border-b-4 border-[#B22234]/20">{formattedAmount}</span> Enough to Retire at {age}?
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#F6F4EF] mb-6 leading-tight">
+                            Is <span className="text-[#D4A94E] border-b-4 border-[#B22234]/20">{formattedAmount}</span> Enough to Retire at {age}?
                         </h1>
-                        <p className="text-xl md:text-2xl text-slate-600 leading-relaxed">
-                            The answer depends on the one "hidden tax" that could wipe out <strong className="text-slate-900">40% of your purchasing power</strong> in the next {timeHorizon} years.
+                        <p className="text-xl md:text-2xl text-[#D0CCC4] leading-relaxed">
+                            The answer depends on the one "hidden tax" that could wipe out <strong className="text-[#F6F4EF]">40% of your purchasing power</strong> in the next {timeHorizon} years.
                         </p>
                     </div>
 
                     {/* Trust Bar */}
-                    <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 py-6 border-t border-b border-slate-200 mt-8">
-                        <div className="flex items-center gap-2 text-slate-500">
+                    <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 py-6 border-t border-b border-[#2A2D42] mt-8">
+                        <div className="flex items-center gap-2 text-[#A8A39A]">
                             <Shield className="w-5 h-5 text-green-600" />
                             <span className="text-sm font-semibold">A+ BBB Rating</span>
                         </div>
-                        <div className="flex items-center gap-2 text-slate-500">
+                        <div className="flex items-center gap-2 text-[#A8A39A]">
                             <Award className="w-5 h-5 text-amber-500" />
                             <span className="text-sm font-semibold">Money Magazine #1</span>
                         </div>
-                        <div className="flex items-center gap-2 text-slate-500">
-                            <Star className="w-5 h-5 text-[#B22234] fill-current" />
+                        <div className="flex items-center gap-2 text-[#A8A39A]">
+                            <Star className="w-5 h-5 text-[#D4A94E] fill-current" />
                             <span className="text-sm font-semibold">4.9/5 (1,847 Reviews)</span>
                         </div>
-                        <div className="flex items-center gap-2 text-slate-500">
+                        <div className="flex items-center gap-2 text-[#A8A39A]">
                             <Users className="w-5 h-5 text-blue-600" />
                             <span className="text-sm font-semibold">Trusted by Joe Montana</span>
                         </div>
@@ -107,18 +107,18 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                                 <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-white">
                                     The "Cash Trap"
                                 </h2>
-                                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+                                <p className="text-lg text-[#3F4460] mb-6 leading-relaxed">
                                     Most retirement calculators assume your dollars will buy the same amount of groceries in 20 years as they do today.
                                 </p>
-                                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+                                <p className="text-lg text-[#3F4460] mb-6 leading-relaxed">
                                     <strong className="text-amber-400">They are wrong.</strong>
                                 </p>
-                                <p className="text-lg text-slate-300 mb-8 leading-relaxed">
+                                <p className="text-lg text-[#3F4460] mb-8 leading-relaxed">
                                     As the government prints more money, your {formattedAmount} stays numerically the same, but its <em>value</em> quietly disappears. This is why standard 401(k)s often fail to protect retirees.
                                 </p>
                             </div>
                             <div className="bg-white/5 p-8 rounded-2xl border border-white/10 relative">
-                                <div className="absolute -top-4 -left-4 bg-[#B22234] text-white px-4 py-2 font-bold rounded-lg shadow-lg">
+                                <div className="absolute -top-4 -left-4 bg-[#DC2626] text-white px-4 py-2 font-bold rounded-lg shadow-lg">
                                     The Solution
                                 </div>
                                 <h3 className="text-xl font-bold mb-4 text-amber-400">
@@ -129,19 +129,19 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                                         <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
                                             <span className="text-green-500 font-bold">✓</span>
                                         </div>
-                                        <span className="text-slate-200">Zero Tax Consequences (Rollover)</span>
+                                        <span className="text-[#3F4460]">Zero Tax Consequences (Rollover)</span>
                                     </li>
                                     <li className="flex gap-3">
                                         <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
                                             <span className="text-green-500 font-bold">✓</span>
                                         </div>
-                                        <span className="text-slate-200">Moves in Opposite Direction of Dollar</span>
+                                        <span className="text-[#3F4460]">Moves in Opposite Direction of Dollar</span>
                                     </li>
                                     <li className="flex gap-3">
                                         <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
                                             <span className="text-green-500 font-bold">✓</span>
                                         </div>
-                                        <span className="text-slate-200">Physical Asset You Control</span>
+                                        <span className="text-[#3F4460]">Physical Asset You Control</span>
                                     </li>
                                 </ul>
                             </div>
@@ -151,49 +151,49 @@ export default async function CalculatorPage({ params }: { params: Params }) {
             </section>
 
             {/* Social Proof Section */}
-            <section className="py-16 bg-white border-t border-slate-200">
+            <section className="py-16 bg-[#161828] border-t border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
                         <div className="text-center mb-12">
-                            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
+                            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
                                 Why 23,000+ Americans Trust Augusta
                             </h2>
-                            <p className="text-slate-600">
+                            <p className="text-[#D0CCC4]">
                                 Real reviews from verified customers protecting their retirement
                             </p>
                         </div>
 
                         <div className="grid md:grid-cols-3 gap-6">
                             {/* Testimonial 1 */}
-                            <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                            <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
                                 <div className="flex gap-1 mb-3">
                                     {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />)}
                                 </div>
-                                <p className="text-slate-600 text-sm mb-4 italic">
+                                <p className="text-[#D0CCC4] text-sm mb-4 italic">
                                     "Finally someone who explained the inflation risk without trying to scare me into buying. Augusta educated me first."
                                 </p>
                                 <div className="flex items-center gap-2">
-                                    <div className="w-8 h-8 bg-[#000080] rounded-full flex items-center justify-center text-white text-sm font-bold">R</div>
+                                    <div className="w-8 h-8 bg-[rgba(197,149,46,0.1)] rounded-full flex items-center justify-center text-white text-sm font-bold">R</div>
                                     <div>
-                                        <p className="text-sm font-semibold text-slate-800">Robert M.</p>
-                                        <p className="text-xs text-slate-500">Retired, Texas</p>
+                                        <p className="text-sm font-semibold text-[#F6F4EF]">Robert M.</p>
+                                        <p className="text-xs text-[#A8A39A]">Retired, Texas</p>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Testimonial 2 */}
-                            <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                            <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
                                 <div className="flex gap-1 mb-3">
                                     {[1,2,3,4,5].map(i => <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />)}
                                 </div>
-                                <p className="text-slate-600 text-sm mb-4 italic">
+                                <p className="text-[#D0CCC4] text-sm mb-4 italic">
                                     "I had $1.2M in my 401k and was worried about a crash. The rollover took 3 weeks and I never paid a dime in taxes."
                                 </p>
                                 <div className="flex items-center gap-2">
-                                    <div className="w-8 h-8 bg-[#B22234] rounded-full flex items-center justify-center text-white text-sm font-bold">S</div>
+                                    <div className="w-8 h-8 bg-[#DC2626] rounded-full flex items-center justify-center text-white text-sm font-bold">S</div>
                                     <div>
-                                        <p className="text-sm font-semibold text-slate-800">Susan K.</p>
-                                        <p className="text-xs text-slate-500">Retired Teacher, Florida</p>
+                                        <p className="text-sm font-semibold text-[#F6F4EF]">Susan K.</p>
+                                        <p className="text-xs text-[#A8A39A]">Retired Teacher, Florida</p>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +207,7 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                                     "I know what it takes to prepare for the big game. That's why I chose Augusta for my retirement."
                                 </p>
                                 <div className="flex items-center gap-2">
-                                    <div className="w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center text-[#000080] text-sm font-bold">JM</div>
+                                    <div className="w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center text-[#F6F4EF] text-sm font-bold">JM</div>
                                     <div>
                                         <p className="text-sm font-semibold text-white">Joe Montana</p>
                                         <p className="text-xs text-blue-200">NFL Hall of Fame QB</p>
@@ -217,22 +217,22 @@ export default async function CalculatorPage({ params }: { params: Params }) {
                         </div>
 
                         {/* Trust Badges */}
-                        <div className="flex flex-wrap justify-center items-center gap-8 mt-12 pt-8 border-t border-slate-200">
+                        <div className="flex flex-wrap justify-center items-center gap-8 mt-12 pt-8 border-t border-[#2A2D42]">
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-[#000080]">A+</div>
-                                <div className="text-xs text-slate-500">BBB Rating</div>
+                                <div className="text-3xl font-bold text-[#F6F4EF]">A+</div>
+                                <div className="text-xs text-[#A8A39A]">BBB Rating</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-[#000080]">AAA</div>
-                                <div className="text-xs text-slate-500">BCA Rating</div>
+                                <div className="text-3xl font-bold text-[#F6F4EF]">AAA</div>
+                                <div className="text-xs text-[#A8A39A]">BCA Rating</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-[#000080]">4.9</div>
-                                <div className="text-xs text-slate-500">Trustpilot</div>
+                                <div className="text-3xl font-bold text-[#F6F4EF]">4.9</div>
+                                <div className="text-xs text-[#A8A39A]">Trustpilot</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-[#000080]">#1</div>
-                                <div className="text-xs text-slate-500">Money Magazine 2024</div>
+                                <div className="text-3xl font-bold text-[#F6F4EF]">#1</div>
+                                <div className="text-xs text-[#A8A39A]">Money Magazine 2024</div>
                             </div>
                         </div>
                     </div>
@@ -240,7 +240,7 @@ export default async function CalculatorPage({ params }: { params: Params }) {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-slate-50">
+            <section className="py-20 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="default"

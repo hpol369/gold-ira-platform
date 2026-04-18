@@ -157,7 +157,7 @@ export function Solo401kCalculator() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
           Solo 401(k) Calculator
         </h1>
-        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
           Calculate your maximum Solo 401(k) contribution as a self-employed individual. Includes 2024 limits, catch-up contributions, and tax savings.
         </p>
       </div>
@@ -166,7 +166,7 @@ export function Solo401kCalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Business Type */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
                 <Building2 className="h-5 w-5 text-purple-700" />
@@ -185,8 +185,8 @@ export function Solo401kCalculator() {
                   onClick={() => setBusinessType(type.value as BusinessType)}
                   className={`p-4 rounded-xl border transition-all ${
                     businessType === type.value
-                      ? "bg-purple-500/20 border-purple-500text-slate-900"
-                      : "bg-slate-100 border-slate-700 text-slate-500 hover:border-slate-600"
+                      ? "bg-purple-500/20 border-purple-500text-[#F6F4EF]"
+                      : "bg-[#121423] border-slate-700 text-[#A8A39A] hover:border-slate-600"
                   }`}
                 >
                   <div className="font-semibold">{type.label}</div>
@@ -195,7 +195,7 @@ export function Solo401kCalculator() {
               ))}
             </div>
 
-            <div className="mt-4 p-3 bg-slate-50 rounded-lg text-sm text-slate-500">
+            <div className="mt-4 p-3 bg-[#0C0D18] rounded-lg text-sm text-[#A8A39A]">
               {businessType === "s-corp" ? (
                 <p>S-Corp: Contributions based on W-2 wages you pay yourself.</p>
               ) : (
@@ -205,7 +205,7 @@ export function Solo401kCalculator() {
           </div>
 
           {/* Income */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
                 <DollarSign className="h-5 w-5 text-green-600" />
@@ -216,41 +216,41 @@ export function Solo401kCalculator() {
             <div className="space-y-4">
               {businessType === "s-corp" ? (
                 <div>
-                  <label className="text-sm text-slate-500 mb-2 block">
+                  <label className="text-sm text-[#A8A39A] mb-2 block">
                     W-2 Wages (paid to yourself)
                   </label>
                   <div className="relative">
-                    <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                    <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                     <input
                       type="number"
                       value={w2Wages}
                       onChange={(e) => setW2Wages(Number(e.target.value))}
-                      className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
+                      className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-purple-500"
                       min="0"
                       step="5000"
                     />
                   </div>
-                  <p className="text-xs text-slate-500 mt-1">
+                  <p className="text-xs text-[#A8A39A] mt-1">
                     Must be &quot;reasonable compensation&quot; for work performed
                   </p>
                 </div>
               ) : (
                 <div>
-                  <label className="text-sm text-slate-500 mb-2 block">
+                  <label className="text-sm text-[#A8A39A] mb-2 block">
                     Net Self-Employment Income
                   </label>
                   <div className="relative">
-                    <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                    <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                     <input
                       type="number"
                       value={netIncome}
                       onChange={(e) => setNetIncome(Number(e.target.value))}
-                      className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-purple-500"
+                      className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-purple-500"
                       min="0"
                       step="5000"
                     />
                   </div>
-                  <p className="text-xs text-slate-500 mt-1">
+                  <p className="text-xs text-[#A8A39A] mt-1">
                     Business income minus business expenses (Schedule C line 31)
                   </p>
                 </div>
@@ -259,7 +259,7 @@ export function Solo401kCalculator() {
           </div>
 
           {/* Personal Info */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
                 <User className="h-5 w-5 text-blue-600" />
@@ -269,7 +269,7 @@ export function Solo401kCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 flex items-center gap-2">
+                <label className="text-sm text-[#A8A39A] mb-2 flex items-center gap-2">
                   Your Age: {age}
                   {isCatchUpEligible && (
                     <span className="text-green-600 text-xs bg-green-500/20 px-2 py-0.5 rounded">
@@ -288,7 +288,7 @@ export function Solo401kCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Tax Bracket: {taxBracket}%
                 </label>
                 <input
@@ -299,7 +299,7 @@ export function Solo401kCalculator() {
                   onChange={(e) => setTaxBracket(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>10%</span>
                   <span>22%</span>
                   <span>37%</span>
@@ -309,18 +309,18 @@ export function Solo401kCalculator() {
           </div>
 
           {/* Advanced Options (Collapsible) */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <button
               onClick={() => setShowAdvanced(!showAdvanced)}
               className="w-full flex items-center justify-between"
             >
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-[#B22234]/10 rounded-lg border border-[#B22234]/30">
-                  <TrendingUp className="h-5 w-5 text-[#B22234]" />
+                <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+                  <TrendingUp className="h-5 w-5 text-[#D4A94E]" />
                 </div>
                 <h3 className="text-lg font-semibold">Advanced Options</h3>
               </div>
-              <span className={`text-slate-500 transition-transform ${showAdvanced ? 'rotate-180' : ''}`}>
+              <span className={`text-[#A8A39A] transition-transform ${showAdvanced ? 'rotate-180' : ''}`}>
                 &#9660;
               </span>
             </button>
@@ -328,27 +328,27 @@ export function Solo401kCalculator() {
             {showAdvanced && (
               <div className="space-y-4 mt-6">
                 <div>
-                  <label className="text-sm text-slate-500 mb-2 flex items-center gap-2">
+                  <label className="text-sm text-[#A8A39A] mb-2 flex items-center gap-2">
                     Other Retirement Plan Contributions
                     <div className="group relative">
-                      <Info className="h-4 w-4 text-slate-500 cursor-help" />
-                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-slate-100 text-xs text-slate-600 rounded-lg p-3 border border-slate-700 z-10">
+                      <Info className="h-4 w-4 text-[#A8A39A] cursor-help" />
+                      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-[#121423] text-xs text-[#D0CCC4] rounded-lg p-3 border border-slate-700 z-10">
                         If you have another job with a 401(k), your employee deferral limit is combined. Enter your other contributions here.
                       </div>
                     </div>
                   </label>
                   <div className="relative">
-                    <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                    <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                     <input
                       type="number"
                       value={otherContributions}
                       onChange={(e) => setOtherContributions(Number(e.target.value))}
-                      className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-[#B22234]"
+                      className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-[#B22234]"
                       min="0"
                       step="1000"
                     />
                   </div>
-                  <p className="text-xs text-slate-500 mt-1">
+                  <p className="text-xs text-[#A8A39A] mt-1">
                     Employee deferrals from other employer plans (401k, 403b)
                   </p>
                 </div>
@@ -362,18 +362,18 @@ export function Solo401kCalculator() {
           {/* Main Result */}
           <div className="bg-gradient-to-br from-purple-500/20 to-blue-500/20 backdrop-blur-sm rounded-xl p-8 border border-purple-500/30">
             <div className="text-center mb-6">
-              <div className="text-sm text-slate-500 mb-2">Maximum Solo 401(k) Contribution</div>
+              <div className="text-sm text-[#A8A39A] mb-2">Maximum Solo 401(k) Contribution</div>
               <div className="text-5xl font-bold text-purple-700">
                 {formatCurrency(calculations.totalMaxContribution)}
               </div>
-              <div className="text-sm text-slate-500 mt-2">
+              <div className="text-sm text-[#A8A39A] mt-2">
                 {formatFullCurrency(calculations.totalMaxContribution)} for 2024
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-slate-50 rounded-lg p-4 text-center">
-                <div className="text-sm text-slate-500">Employee Deferral</div>
+              <div className="bg-[#0C0D18] rounded-lg p-4 text-center">
+                <div className="text-sm text-[#A8A39A]">Employee Deferral</div>
                 <div className="text-xl font-bold text-blue-600">
                   {formatCurrency(calculations.optimalEmployeeDeferral)}
                 </div>
@@ -383,12 +383,12 @@ export function Solo401kCalculator() {
                   </div>
                 )}
               </div>
-              <div className="bg-slate-50 rounded-lg p-4 text-center">
-                <div className="text-sm text-slate-500">Employer Contribution</div>
+              <div className="bg-[#0C0D18] rounded-lg p-4 text-center">
+                <div className="text-sm text-[#A8A39A]">Employer Contribution</div>
                 <div className="text-xl font-bold text-green-600">
                   {formatCurrency(calculations.optimalEmployerContribution)}
                 </div>
-                <div className="text-xs text-slate-500 mt-1">
+                <div className="text-xs text-[#A8A39A] mt-1">
                   25% of compensation
                 </div>
               </div>
@@ -396,7 +396,7 @@ export function Solo401kCalculator() {
           </div>
 
           {/* Tax Savings */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
               <Wallet className="h-5 w-5 text-green-600" />
               Tax Savings
@@ -407,20 +407,20 @@ export function Solo401kCalculator() {
                 <div className="text-2xl font-bold text-green-600 mb-1">
                   {formatFullCurrency(calculations.taxSavings)}
                 </div>
-                <div className="text-sm text-slate-500">
+                <div className="text-sm text-[#A8A39A]">
                   Estimated federal tax savings this year ({taxBracket}% bracket)
                 </div>
               </div>
 
               <div className="flex justify-between items-center">
-                <span className="text-slate-500">Effective contribution cost</span>
-                <span className="font-semibold text-slate-900">
+                <span className="text-[#A8A39A]">Effective contribution cost</span>
+                <span className="font-semibold text-[#F6F4EF]">
                   {formatFullCurrency(calculations.totalMaxContribution - calculations.taxSavings)}
                 </span>
               </div>
 
               <div className="flex justify-between items-center">
-                <span className="text-slate-500">% of income sheltered</span>
+                <span className="text-[#A8A39A]">% of income sheltered</span>
                 <span className="font-semibold text-purple-700">
                   {calculations.percentOfIncome.toFixed(1)}%
                 </span>
@@ -429,21 +429,21 @@ export function Solo401kCalculator() {
           </div>
 
           {/* Comparison to SEP IRA */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <Calculator className="h-5 w-5 text-[#B22234]" />
+              <Calculator className="h-5 w-5 text-[#D4A94E]" />
               Solo 401(k) vs SEP IRA
             </h3>
 
             <div className="space-y-4">
               <div>
                 <div className="flex justify-between mb-1">
-                  <span className="text-slate-500">Solo 401(k) Max</span>
+                  <span className="text-[#A8A39A]">Solo 401(k) Max</span>
                   <span className="font-semibold text-purple-700">
                     {formatFullCurrency(calculations.totalMaxContribution)}
                   </span>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-3">
+                <div className="w-full bg-[#121423] rounded-full h-3">
                   <div
                     className="h-full bg-purple-500 rounded-full"
                     style={{ width: '100%' }}
@@ -453,12 +453,12 @@ export function Solo401kCalculator() {
 
               <div>
                 <div className="flex justify-between mb-1">
-                  <span className="text-slate-500">SEP IRA Max</span>
-                  <span className="font-semibold text-[#B22234]">
+                  <span className="text-[#A8A39A]">SEP IRA Max</span>
+                  <span className="font-semibold text-[#D4A94E]">
                     {formatFullCurrency(calculations.sepMaxContribution)}
                   </span>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-3">
+                <div className="w-full bg-[#121423] rounded-full h-3">
                   <div
                     className="h-full bg-amber-500 rounded-full"
                     style={{
@@ -480,27 +480,27 @@ export function Solo401kCalculator() {
           </div>
 
           {/* 10-Year Projection */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
               <TrendingUp className="h-5 w-5 text-blue-600" />
               10-Year Growth Projection
             </h3>
 
             <div className="space-y-4">
-              <div className="bg-slate-50 rounded-lg p-4">
-                <div className="text-sm text-slate-500 mb-1">One-time contribution grows to</div>
+              <div className="bg-[#0C0D18] rounded-lg p-4">
+                <div className="text-sm text-[#A8A39A] mb-1">One-time contribution grows to</div>
                 <div className="text-2xl font-bold text-blue-600">
                   {formatFullCurrency(calculations.futureValue)}
                 </div>
-                <div className="text-xs text-slate-500">At 7% annual return</div>
+                <div className="text-xs text-[#A8A39A]">At 7% annual return</div>
               </div>
 
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                <div className="text-sm text-slate-500 mb-1">Annual contributions for 10 years</div>
+                <div className="text-sm text-[#A8A39A] mb-1">Annual contributions for 10 years</div>
                 <div className="text-2xl font-bold text-blue-600">
                   {formatCurrency(calculations.annualContributionFV)}
                 </div>
-                <div className="text-xs text-slate-500">
+                <div className="text-xs text-[#A8A39A]">
                   Contributing {formatFullCurrency(calculations.totalMaxContribution)}/year
                 </div>
               </div>
@@ -508,25 +508,25 @@ export function Solo401kCalculator() {
           </div>
 
           {/* 2024 Limits Reference */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4">2024 Contribution Limits</h3>
 
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-slate-500">Employee deferral</span>
-                <span className="text-slate-900">${LIMITS_2024.employeeDeferral.toLocaleString()}</span>
+                <span className="text-[#A8A39A]">Employee deferral</span>
+                <span className="text-[#F6F4EF]">${LIMITS_2024.employeeDeferral.toLocaleString()}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Catch-up (50+)</span>
+                <span className="text-[#A8A39A]">Catch-up (50+)</span>
                 <span className="text-green-600">+${LIMITS_2024.catchUp.toLocaleString()}</span>
               </div>
-              <div className="flex justify-between border-t border-slate-200 pt-2 mt-2">
-                <span className="text-slate-500">Total limit (under 50)</span>
-                <span className="text-slate-900">${LIMITS_2024.totalContribution.toLocaleString()}</span>
+              <div className="flex justify-between border-t border-[#2A2D42] pt-2 mt-2">
+                <span className="text-[#A8A39A]">Total limit (under 50)</span>
+                <span className="text-[#F6F4EF]">${LIMITS_2024.totalContribution.toLocaleString()}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Total limit (50+)</span>
-                <span className="text-slate-900">${LIMITS_2024.totalWithCatchUp.toLocaleString()}</span>
+                <span className="text-[#A8A39A]">Total limit (50+)</span>
+                <span className="text-[#F6F4EF]">${LIMITS_2024.totalWithCatchUp.toLocaleString()}</span>
               </div>
             </div>
           </div>
@@ -535,20 +535,20 @@ export function Solo401kCalculator() {
 
       {/* Gold Bridge Section */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-[#B22234]/5 backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
+        <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
           <div className="flex items-center gap-3 mb-6">
-            <Shield className="h-6 w-6 text-[#B22234]" />
+            <Shield className="h-6 w-6 text-[#D4A94E]" />
             <h2 className="text-2xl font-bold">Solo 401(k) with Checkbook Control</h2>
           </div>
 
-          <p className="text-slate-500 mb-6">
+          <p className="text-[#A8A39A] mb-6">
             A self-directed Solo 401(k) with &quot;checkbook control&quot; lets you invest in physical gold directly - without custodian approval for each purchase. This is one of the most powerful ways to hold precious metals in a retirement account.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Checkbook Control</div>
-              <ul className="space-y-2 text-sm text-slate-500">
+              <div className="text-[#D4A94E] font-semibold mb-2">Checkbook Control</div>
+              <ul className="space-y-2 text-sm text-[#A8A39A]">
                 <li className="flex gap-2">
                   <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>Write checks from plan account</span>
@@ -565,8 +565,8 @@ export function Solo401kCalculator() {
             </div>
 
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Eligible Gold</div>
-              <ul className="space-y-2 text-sm text-slate-500">
+              <div className="text-[#D4A94E] font-semibold mb-2">Eligible Gold</div>
+              <ul className="space-y-2 text-sm text-[#A8A39A]">
                 <li className="flex gap-2">
                   <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
                   <span>American Gold Eagles</span>
@@ -583,29 +583,29 @@ export function Solo401kCalculator() {
             </div>
 
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Key Rules</div>
-              <ul className="space-y-2 text-sm text-slate-500">
+              <div className="text-[#D4A94E] font-semibold mb-2">Key Rules</div>
+              <ul className="space-y-2 text-sm text-[#A8A39A]">
                 <li className="flex gap-2">
-                  <AlertTriangle className="h-4 w-4 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <span>Gold must be stored in approved depository</span>
                 </li>
                 <li className="flex gap-2">
-                  <AlertTriangle className="h-4 w-4 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <span>Cannot hold gold personally</span>
                 </li>
                 <li className="flex gap-2">
-                  <AlertTriangle className="h-4 w-4 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <span>Annual reporting required</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 mb-6">
+          <div className="bg-[#0C0D18] rounded-lg p-4 mb-6">
             <div className="flex items-start gap-3">
-              <Info className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
-              <p className="text-slate-600 text-sm">
-                <strong className="text-[#B22234]">Key Insight:</strong> A Solo 401(k) with checkbook control lets you invest in physical gold directly. This gives you more control and potentially lower fees than a traditional Gold IRA, while sheltering up to ${formatFullCurrency(calculations.totalMaxContribution)} per year.
+              <Info className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
+              <p className="text-[#D0CCC4] text-sm">
+                <strong className="text-[#D4A94E]">Key Insight:</strong> A Solo 401(k) with checkbook control lets you invest in physical gold directly. This gives you more control and potentially lower fees than a traditional Gold IRA, while sheltering up to ${formatFullCurrency(calculations.totalMaxContribution)} per year.
               </p>
             </div>
           </div>
@@ -624,12 +624,12 @@ export function Solo401kCalculator() {
         <div className="prose max-w-none">
           <h2 className="text-3xl font-bold mb-6">Understanding Solo 401(k) Contributions</h2>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42] mb-6">
             <h3 className="text-xl font-semibold mb-4">Two Types of Contributions</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="text-blue-600 font-semibold mb-2">1. Employee Deferral</h4>
-                <ul className="space-y-2 text-sm text-slate-500">
+                <ul className="space-y-2 text-sm text-[#A8A39A]">
                   <li>Up to $23,000 (2024)</li>
                   <li>+$7,500 catch-up if 50+</li>
                   <li>Can be Traditional or Roth</li>
@@ -638,7 +638,7 @@ export function Solo401kCalculator() {
               </div>
               <div>
                 <h4 className="text-green-600 font-semibold mb-2">2. Employer Profit Sharing</h4>
-                <ul className="space-y-2 text-sm text-slate-500">
+                <ul className="space-y-2 text-sm text-[#A8A39A]">
                   <li>Up to 25% of compensation</li>
                   <li>Must be Traditional (pre-tax)</li>
                   <li>Separate limit per employer</li>
@@ -648,62 +648,62 @@ export function Solo401kCalculator() {
             </div>
           </div>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42] mb-6">
             <h3 className="text-xl font-semibold mb-4">Business Type Calculations</h3>
 
             <div className="space-y-4">
-              <div className="bg-slate-50 rounded-lg p-4">
+              <div className="bg-[#0C0D18] rounded-lg p-4">
                 <h4 className="text-purple-700 font-semibold mb-2">Sole Proprietor / Single-Member LLC</h4>
-                <p className="text-slate-600 text-sm mb-2">
+                <p className="text-[#D0CCC4] text-sm mb-2">
                   Compensation = Net SE Income - (1/2 of SE Tax)
                 </p>
-                <p className="text-slate-500 text-xs">
+                <p className="text-[#A8A39A] text-xs">
                   Example: $150,000 net income = ~$138,725 compensation
                 </p>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-4">
+              <div className="bg-[#0C0D18] rounded-lg p-4">
                 <h4 className="text-purple-700 font-semibold mb-2">S-Corporation</h4>
-                <p className="text-slate-600 text-sm mb-2">
+                <p className="text-[#D0CCC4] text-sm mb-2">
                   Compensation = W-2 wages paid to yourself
                 </p>
-                <p className="text-slate-500 text-xs">
+                <p className="text-[#A8A39A] text-xs">
                   Must pay &quot;reasonable compensation&quot; for services performed
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-xl font-semibold mb-4">Solo 401(k) vs Other Options</h3>
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-slate-200">
-                  <th className="px-3 py-2 text-left text-slate-600">Plan Type</th>
-                  <th className="px-3 py-2 text-right text-slate-600">2024 Max</th>
-                  <th className="px-3 py-2 text-left text-slate-600">Best For</th>
+                <tr className="border-b border-[#2A2D42]">
+                  <th className="px-3 py-2 text-left text-[#D0CCC4]">Plan Type</th>
+                  <th className="px-3 py-2 text-right text-[#D0CCC4]">2024 Max</th>
+                  <th className="px-3 py-2 text-left text-[#D0CCC4]">Best For</th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-slate-200">
+                <tr className="border-b border-[#2A2D42]">
                   <td className="px-3 py-2 text-purple-700 font-semibold">Solo 401(k)</td>
-                  <td className="px-3 py-2 text-righttext-slate-900">$69,000 ($76,500 if 50+)</td>
-                  <td className="px-3 py-2 text-slate-500">No employees, max savings</td>
+                  <td className="px-3 py-2 text-righttext-[#F6F4EF]">$69,000 ($76,500 if 50+)</td>
+                  <td className="px-3 py-2 text-[#A8A39A]">No employees, max savings</td>
                 </tr>
-                <tr className="border-b border-slate-200">
-                  <td className="px-3 py-2 text-[#B22234] font-semibold">SEP IRA</td>
-                  <td className="px-3 py-2 text-righttext-slate-900">$69,000</td>
-                  <td className="px-3 py-2 text-slate-500">Simple setup, lower income</td>
+                <tr className="border-b border-[#2A2D42]">
+                  <td className="px-3 py-2 text-[#D4A94E] font-semibold">SEP IRA</td>
+                  <td className="px-3 py-2 text-righttext-[#F6F4EF]">$69,000</td>
+                  <td className="px-3 py-2 text-[#A8A39A]">Simple setup, lower income</td>
                 </tr>
-                <tr className="border-b border-slate-200">
+                <tr className="border-b border-[#2A2D42]">
                   <td className="px-3 py-2 text-blue-600 font-semibold">SIMPLE IRA</td>
-                  <td className="px-3 py-2 text-righttext-slate-900">$16,000 ($19,500 if 50+)</td>
-                  <td className="px-3 py-2 text-slate-500">Small business with employees</td>
+                  <td className="px-3 py-2 text-righttext-[#F6F4EF]">$16,000 ($19,500 if 50+)</td>
+                  <td className="px-3 py-2 text-[#A8A39A]">Small business with employees</td>
                 </tr>
                 <tr>
                   <td className="px-3 py-2 text-green-600 font-semibold">Traditional/Roth IRA</td>
-                  <td className="px-3 py-2 text-righttext-slate-900">$7,000 ($8,000 if 50+)</td>
-                  <td className="px-3 py-2 text-slate-500">Additional savings after 401k</td>
+                  <td className="px-3 py-2 text-righttext-[#F6F4EF]">$7,000 ($8,000 if 50+)</td>
+                  <td className="px-3 py-2 text-[#A8A39A]">Additional savings after 401k</td>
                 </tr>
               </tbody>
             </table>

@@ -32,7 +32,7 @@ export default function MedicaidPlanningPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 overflow-hidden bg-slate-50">
+      <section className="relative pt-24 pb-16 overflow-hidden bg-[#0C0D18]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.08),transparent_50%)]" />
 
         <Container className="relative z-10">
@@ -41,11 +41,11 @@ export default function MedicaidPlanningPage() {
               <Shield className="h-4 w-4" />
               ASSET PROTECTION
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6">
               Medicaid Planning{" "}
               <span className="text-blue-600">Guide</span>
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               Protect your life savings while ensuring you qualify for the long-term
               care coverage you need. Learn legal strategies used by elder law
               attorneys.
@@ -59,7 +59,7 @@ export default function MedicaidPlanningPage() {
                   <p className="text-amber-800 font-medium mb-1">
                     The 5-Year Rule Is Critical
                   </p>
-                  <p className="text-slate-600 text-sm">
+                  <p className="text-[#D0CCC4] text-sm">
                     Medicaid reviews 5 years of financial history. Planning must begin
                     early - ideally before you need care. Assets transferred within the
                     lookback period trigger penalties.
@@ -69,7 +69,7 @@ export default function MedicaidPlanningPage() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+              <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                 <Link href="/quiz">
                   Get Expert Guidance <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -78,7 +78,7 @@ export default function MedicaidPlanningPage() {
                 variant="outline"
                 size="lg"
                 asChild
-                className="border-slate-300 text-slate-700 hover:bg-slate-100"
+                className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]"
               >
                 <a href="#guides">View Guides</a>
               </Button>
@@ -88,24 +88,24 @@ export default function MedicaidPlanningPage() {
       </section>
 
       {/* Key Stats */}
-      <section className="py-8 border-y border-slate-200 bg-white">
+      <section className="py-8 border-y border-[#2A2D42] bg-white">
         <Container>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-blue-600">5 Years</div>
-              <div className="text-sm text-slate-500">Lookback Period</div>
+              <div className="text-sm text-[#A8A39A]">Lookback Period</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-blue-600">$2,000</div>
-              <div className="text-sm text-slate-500">Asset Limit (Single)</div>
+              <div className="text-sm text-[#A8A39A]">Asset Limit (Single)</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-blue-600">$10K+</div>
-              <div className="text-sm text-slate-500">Monthly Care Cost</div>
+              <div className="text-sm text-[#A8A39A]">Monthly Care Cost</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-blue-600">100%</div>
-              <div className="text-sm text-slate-500">Legal Strategies</div>
+              <div className="text-sm text-[#A8A39A]">Legal Strategies</div>
             </div>
           </div>
         </Container>
@@ -114,36 +114,36 @@ export default function MedicaidPlanningPage() {
       {/* Key Concepts */}
       <section className="py-16 bg-white">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
             Key Medicaid Planning Concepts
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-amber-100 p-3 rounded-lg inline-block mb-4">
                 <Clock className="h-6 w-6 text-amber-600" />
               </div>
-              <h3 className="font-bold text-slate-900 mb-2">5-Year Lookback</h3>
-              <p className="text-slate-500 text-sm">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">5-Year Lookback</h3>
+              <p className="text-[#A8A39A] text-sm">
                 Medicaid reviews all asset transfers from the past 60 months. Transfers
                 during this period create penalty periods.
               </p>
             </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-blue-100 p-3 rounded-lg inline-block mb-4">
                 <Home className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="font-bold text-slate-900 mb-2">Home Protection</h3>
-              <p className="text-slate-500 text-sm">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">Home Protection</h3>
+              <p className="text-[#A8A39A] text-sm">
                 Your home is exempt while you live, but may face estate recovery after
                 death. Trusts and special deeds can protect it.
               </p>
             </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-green-100 p-3 rounded-lg inline-block mb-4">
                 <Scale className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="font-bold text-slate-900 mb-2">Legal Strategies</h3>
-              <p className="text-slate-500 text-sm">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">Legal Strategies</h3>
+              <p className="text-[#A8A39A] text-sm">
                 Irrevocable trusts, Lady Bird deeds, and spousal protections are legal
                 tools to protect assets.
               </p>
@@ -153,10 +153,10 @@ export default function MedicaidPlanningPage() {
       </section>
 
       {/* Guides */}
-      <section id="guides" className="py-16 bg-slate-50 scroll-mt-16">
+      <section id="guides" className="py-16 bg-[#0C0D18] scroll-mt-16">
         <Container>
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] flex items-center gap-2">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] flex items-center gap-2">
               <BookOpen className="h-6 w-6 text-blue-600" />
               Medicaid Planning Guides
             </h2>
@@ -167,16 +167,16 @@ export default function MedicaidPlanningPage() {
               <Link
                 key={article.slug}
                 href={`/medicaid-planning/${article.slug}`}
-                className="bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-300 rounded-xl p-6 transition-all group"
+                className="bg-white hover:bg-[#121423] border border-[#2A2D42] hover:border-blue-300 rounded-xl p-6 transition-all group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-2 leading-snug">
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-blue-600 transition-colors mb-2 leading-snug">
                   {article.title}
                 </h3>
-                <p className="text-sm text-slate-500 line-clamp-2">
+                <p className="text-sm text-[#A8A39A] line-clamp-2">
                   {article.subtitle}
                 </p>
                 {article.volume && (
-                  <div className="mt-4 text-xs text-slate-400">
+                  <div className="mt-4 text-xs text-[#A8A39A]">
                     {article.volume.toLocaleString()} monthly searches
                   </div>
                 )}
@@ -193,15 +193,15 @@ export default function MedicaidPlanningPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
               Start Planning Now
             </h2>
-            <p className="text-slate-500 mb-8">
+            <p className="text-[#A8A39A] mb-8">
               The 5-year lookback means the best time to plan was 5 years ago. The
               second best time is today. Don&apos;t wait until you need care to
               protect your assets.
             </p>
-            <Button variant="gold" size="xl" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+            <Button variant="gold" size="xl" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
               <Link href="/quiz">
                 Get Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -211,7 +211,7 @@ export default function MedicaidPlanningPage() {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-slate-50 border-t border-slate-200">
+      <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
         <Container>
           <AugustaCTA
             variant="footer"

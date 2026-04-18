@@ -61,7 +61,7 @@ export default function GoldRolloverPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-slate-900 font-serif">
+        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
             {/* FAQ Schema */}
             <script
                 type="application/ld+json"
@@ -77,17 +77,17 @@ export default function GoldRolloverPage() {
             </div>
 
             {/* Hero Section */}
-            <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
+            <header className="relative py-12 md:py-20 bg-[#0C0D18] border-b-4 border-[#000080]">
                 <div className="max-w-4xl mx-auto px-4 text-center">
 
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 bg-[#000080]/10 text-[#000080] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6">
+                    <div className="inline-flex items-center gap-2 bg-[rgba(197,149,46,0.08)] text-[#F6F4EF] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6">
                         <FileText className="h-4 w-4" />
                         2026 Rollover Guide
                     </div>
 
                     {/* Headline Group */}
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#F6F4EF] mb-6 leading-tight uppercase">
                         Move Your 401(k) to Gold — <br />
                         <span className="text-green-600 underline decoration-4 underline-offset-8">Tax-Free</span>
                     </h1>
@@ -98,23 +98,23 @@ export default function GoldRolloverPage() {
                         <ZeroFeesBadge />
                     </div>
 
-                    <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
+                    <p className="text-xl md:text-2xl text-[#D0CCC4] font-sans mb-8 max-w-2xl mx-auto">
                         Most Americans don&apos;t know they can <strong>protect their retirement</strong> with physical gold without paying taxes or penalties.
                     </p>
 
                     {/* Quick Stats */}
                     <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10 font-sans">
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-black text-[#000080]">60-Day</div>
-                            <div className="text-sm text-slate-600">Rollover Window</div>
+                            <div className="text-3xl md:text-4xl font-black text-[#F6F4EF]">60-Day</div>
+                            <div className="text-sm text-[#D0CCC4]">Rollover Window</div>
                         </div>
                         <div className="text-center">
                             <div className="text-3xl md:text-4xl font-black text-green-600">$0</div>
-                            <div className="text-sm text-slate-600">Taxes or Penalties</div>
+                            <div className="text-sm text-[#D0CCC4]">Taxes or Penalties</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-black text-[#000080]">3</div>
-                            <div className="text-sm text-slate-600">Simple Steps</div>
+                            <div className="text-3xl md:text-4xl font-black text-[#F6F4EF]">3</div>
+                            <div className="text-sm text-[#D0CCC4]">Simple Steps</div>
                         </div>
                     </div>
 
@@ -123,12 +123,12 @@ export default function GoldRolloverPage() {
                         <LeadCaptureButton
                             variant="401k"
                             source="lp-401k-gold-rollover-hero"
-                            className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get Your Free Rollover Guide
                             <ArrowRight className="h-6 w-6" />
                         </LeadCaptureButton>
-                        <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
+                        <p className="text-sm text-[#A8A39A] font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Free Guide • No Obligation • Takes 2 Minutes
                         </p>
@@ -137,14 +137,14 @@ export default function GoldRolloverPage() {
             </header>
 
             {/* Trust Bar */}
-            <section className="py-8 bg-slate-100 border-b border-slate-200">
+            <section className="py-8 bg-[#121423] border-b border-[#2A2D42]">
                 <div className="max-w-5xl mx-auto px-4 text-center">
-                    <p className="text-slate-500 font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
+                    <p className="text-[#A8A39A] font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale">
-                        <span className="text-2xl font-black text-slate-800">FOX NEWS</span>
-                        <span className="text-2xl font-black text-slate-800">NEWSMAX</span>
-                        <span className="text-2xl font-black text-slate-800">BEN SHAPIRO</span>
-                        <span className="text-2xl font-black text-slate-800">FORBES</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FOX NEWS</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">NEWSMAX</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">BEN SHAPIRO</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FORBES</span>
                     </div>
                 </div>
             </section>
@@ -152,54 +152,54 @@ export default function GoldRolloverPage() {
             {/* 3-Step Process Section */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         How It Works: 3 Simple Steps
                     </h2>
-                    <p className="text-center text-slate-600 mb-12 text-lg">
+                    <p className="text-center text-[#D0CCC4] mb-12 text-lg">
                         Rolling over your 401(k) to gold is easier than you think. Here&apos;s the process:
                     </p>
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {/* Step 1 */}
                         <div className="relative">
-                            <div className="bg-[#000080] text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">1</div>
-                            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center h-full">
-                                <Building2 className="h-10 w-10 text-[#000080] mx-auto mb-4" />
-                                <h3 className="text-xl font-bold text-[#000080] mb-2">Open Gold IRA Account</h3>
-                                <p className="text-slate-600">Complete a simple application. Augusta handles the paperwork and opens your new Gold IRA with an IRS-approved custodian.</p>
+                            <div className="bg-[rgba(197,149,46,0.1)] text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">1</div>
+                            <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] text-center h-full">
+                                <Building2 className="h-10 w-10 text-[#F6F4EF] mx-auto mb-4" />
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-2">Open Gold IRA Account</h3>
+                                <p className="text-[#D0CCC4]">Complete a simple application. Augusta handles the paperwork and opens your new Gold IRA with an IRS-approved custodian.</p>
                             </div>
                             <div className="hidden md:block absolute top-6 right-0 translate-x-1/2">
-                                <ArrowRightCircle className="h-6 w-6 text-[#000080]" />
+                                <ArrowRightCircle className="h-6 w-6 text-[#F6F4EF]" />
                             </div>
                         </div>
 
                         {/* Step 2 */}
                         <div className="relative">
-                            <div className="bg-[#000080] text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">2</div>
-                            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center h-full">
-                                <FileText className="h-10 w-10 text-[#000080] mx-auto mb-4" />
-                                <h3 className="text-xl font-bold text-[#000080] mb-2">Request Direct Rollover</h3>
-                                <p className="text-slate-600">Augusta contacts your old 401(k) provider and initiates a direct transfer. No taxes, no penalties, no hassle.</p>
+                            <div className="bg-[rgba(197,149,46,0.1)] text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">2</div>
+                            <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] text-center h-full">
+                                <FileText className="h-10 w-10 text-[#F6F4EF] mx-auto mb-4" />
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-2">Request Direct Rollover</h3>
+                                <p className="text-[#D0CCC4]">Augusta contacts your old 401(k) provider and initiates a direct transfer. No taxes, no penalties, no hassle.</p>
                             </div>
                             <div className="hidden md:block absolute top-6 right-0 translate-x-1/2">
-                                <ArrowRightCircle className="h-6 w-6 text-[#000080]" />
+                                <ArrowRightCircle className="h-6 w-6 text-[#F6F4EF]" />
                             </div>
                         </div>
 
                         {/* Step 3 */}
                         <div>
-                            <div className="bg-[#000080] text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">3</div>
+                            <div className="bg-[rgba(197,149,46,0.1)] text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4 mx-auto">3</div>
                             <div className="bg-green-50 p-6 rounded-xl border-2 border-green-200 text-center h-full">
                                 <Coins className="h-10 w-10 text-green-600 mx-auto mb-4" />
                                 <h3 className="text-xl font-bold text-green-700 mb-2">Choose Your Gold</h3>
-                                <p className="text-slate-600">Select from IRS-approved gold coins and bars. Your metals are stored in a secure, insured depository.</p>
+                                <p className="text-[#D0CCC4]">Select from IRS-approved gold coins and bars. Your metals are stored in a secure, insured depository.</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="text-center mt-10">
-                        <p className="text-lg text-slate-700 bg-slate-50 inline-block px-6 py-3 rounded-full">
-                            <Clock className="inline h-5 w-5 text-[#000080] mr-2" />
+                        <p className="text-lg text-[#D0CCC4] bg-[#0C0D18] inline-block px-6 py-3 rounded-full">
+                            <Clock className="inline h-5 w-5 text-[#F6F4EF] mr-2" />
                             Most rollovers complete in <strong>2-3 weeks</strong>
                         </p>
                     </div>
@@ -207,50 +207,50 @@ export default function GoldRolloverPage() {
             </section>
 
             {/* Why Gold Section */}
-            <section className="py-16 bg-slate-50 font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-10">
                         Why Add Gold to Your Retirement?
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-6">
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex gap-4">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42] flex gap-4">
                             <div className="flex-shrink-0">
-                                <div className="w-12 h-12 bg-[#000080]/10 rounded-full flex items-center justify-center">
-                                    <ShieldCheck className="h-6 w-6 text-[#000080]" />
+                                <div className="w-12 h-12 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center">
+                                    <ShieldCheck className="h-6 w-6 text-[#F6F4EF]" />
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-bold text-[#000080] mb-2">Protection from Volatility</h3>
-                                <p className="text-slate-600 text-sm">Gold typically moves inversely to stocks. When markets crash, gold often rises, protecting your wealth.</p>
+                                <h3 className="font-bold text-[#F6F4EF] mb-2">Protection from Volatility</h3>
+                                <p className="text-[#D0CCC4] text-sm">Gold typically moves inversely to stocks. When markets crash, gold often rises, protecting your wealth.</p>
                             </div>
                         </div>
 
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex gap-4">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42] flex gap-4">
                             <div className="flex-shrink-0">
-                                <div className="w-12 h-12 bg-[#000080]/10 rounded-full flex items-center justify-center">
-                                    <DollarSign className="h-6 w-6 text-[#000080]" />
+                                <div className="w-12 h-12 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center">
+                                    <DollarSign className="h-6 w-6 text-[#F6F4EF]" />
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-bold text-[#000080] mb-2">Inflation Hedge</h3>
-                                <p className="text-slate-600 text-sm">Gold has maintained purchasing power for over 5,000 years. Paper money loses value — gold doesn&apos;t.</p>
+                                <h3 className="font-bold text-[#F6F4EF] mb-2">Inflation Hedge</h3>
+                                <p className="text-[#D0CCC4] text-sm">Gold has maintained purchasing power for over 5,000 years. Paper money loses value — gold doesn&apos;t.</p>
                             </div>
                         </div>
 
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex gap-4">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42] flex gap-4">
                             <div className="flex-shrink-0">
-                                <div className="w-12 h-12 bg-[#000080]/10 rounded-full flex items-center justify-center">
-                                    <Coins className="h-6 w-6 text-[#000080]" />
+                                <div className="w-12 h-12 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center">
+                                    <Coins className="h-6 w-6 text-[#F6F4EF]" />
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-bold text-[#000080] mb-2">Physical Asset</h3>
-                                <p className="text-slate-600 text-sm">Unlike stocks or bonds, you own real, tangible gold stored in a secure vault. No counterparty risk.</p>
+                                <h3 className="font-bold text-[#F6F4EF] mb-2">Physical Asset</h3>
+                                <p className="text-[#D0CCC4] text-sm">Unlike stocks or bonds, you own real, tangible gold stored in a secure vault. No counterparty risk.</p>
                             </div>
                         </div>
 
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 flex gap-4">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42] flex gap-4">
                             <div className="flex-shrink-0">
                                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                                     <CheckCircle2 className="h-6 w-6 text-green-600" />
@@ -258,7 +258,7 @@ export default function GoldRolloverPage() {
                             </div>
                             <div>
                                 <h3 className="font-bold text-green-700 mb-2">Tax Advantages</h3>
-                                <p className="text-slate-600 text-sm">Same tax benefits as your 401(k). Rollover tax-free, grow tax-deferred until retirement.</p>
+                                <p className="text-[#D0CCC4] text-sm">Same tax benefits as your 401(k). Rollover tax-free, grow tax-deferred until retirement.</p>
                             </div>
                         </div>
                     </div>
@@ -268,14 +268,14 @@ export default function GoldRolloverPage() {
             {/* Eligibility Section */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         Who Can Roll Over?
                     </h2>
-                    <p className="text-center text-slate-600 mb-10 text-lg">
+                    <p className="text-center text-[#D0CCC4] mb-10 text-lg">
                         You may be eligible if you have any of these accounts:
                     </p>
 
-                    <div className="bg-slate-50 p-6 md:p-8 rounded-xl border border-slate-200">
+                    <div className="bg-[#0C0D18] p-6 md:p-8 rounded-xl border border-[#2A2D42]">
                         <div className="grid md:grid-cols-2 gap-4">
                             <div className="flex items-center gap-3">
                                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0" />
@@ -303,8 +303,8 @@ export default function GoldRolloverPage() {
                             </div>
                         </div>
 
-                        <div className="mt-6 pt-6 border-t border-slate-200 text-center">
-                            <p className="text-slate-600">
+                        <div className="mt-6 pt-6 border-t border-[#2A2D42] text-center">
+                            <p className="text-[#D0CCC4]">
                                 <strong>Not sure if you qualify?</strong> Augusta&apos;s specialists will check your eligibility for free.
                             </p>
                         </div>
@@ -313,16 +313,16 @@ export default function GoldRolloverPage() {
             </section>
 
             {/* Augusta Section */}
-            <section className="py-16 bg-slate-100 font-sans">
+            <section className="py-16 bg-[#121423] font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         Why Choose Augusta for Your Rollover?
                     </h2>
-                    <p className="text-center text-slate-600 mb-10 text-lg">
+                    <p className="text-center text-[#D0CCC4] mb-10 text-lg">
                         Augusta is America&apos;s most trusted Gold IRA company.
                     </p>
 
-                    <div className="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-slate-200">
+                    <div className="bg-[#161828] p-6 md:p-8 rounded-xl shadow-lg border border-[#2A2D42]">
                         <ul className="space-y-4 text-lg">
                             <li className="flex items-start gap-3">
                                 <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
@@ -346,7 +346,7 @@ export default function GoldRolloverPage() {
                             <LeadCaptureButton
                                 variant="401k"
                                 source="lp-401k-gold-rollover-middle"
-                                className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
+                                className="inline-block bg-[rgba(197,149,46,0.1)] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
                             >
                                 Get Your Free Rollover Guide
                             </LeadCaptureButton>
@@ -356,14 +356,14 @@ export default function GoldRolloverPage() {
             </section>
 
             {/* Joe Montana Section */}
-            <section className="py-12 bg-[#000080]/5 border-y border-[#000080]/20 font-sans">
+            <section className="py-12 bg-[rgba(197,149,46,0.06)] border-y border-[#000080]/20 font-sans">
                 <div className="max-w-3xl mx-auto px-4 text-center">
                     <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                         <Award className="h-4 w-4" />
                         Celebrity Endorsement That Means Something
                     </div>
-                    <h3 className="text-2xl font-bold text-[#000080] mb-4">Joe Montana Isn&apos;t Just a Spokesman</h3>
-                    <p className="text-slate-700 text-lg">
+                    <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">Joe Montana Isn&apos;t Just a Spokesman</h3>
+                    <p className="text-[#D0CCC4] text-lg">
                         Hall of Fame quarterback Joe Montana asked his personal financial team to find the best precious metals company in the nation and they chose Augusta Precious Metals for him over others. He loved the company&apos;s mission so much that he became a customer and paid ambassador.
                     </p>
                 </div>
@@ -372,15 +372,15 @@ export default function GoldRolloverPage() {
             {/* FAQ Section */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-10">
                         Rollover Questions Answered
                     </h2>
 
                     <div className="space-y-6">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="bg-slate-50 rounded-lg p-6 border border-slate-200">
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">{faq.question}</h3>
-                                <p className="text-slate-700 leading-relaxed">{faq.answer}</p>
+                            <div key={index} className="bg-[#0C0D18] rounded-lg p-6 border border-[#2A2D42]">
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">{faq.question}</h3>
+                                <p className="text-[#D0CCC4] leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>
@@ -388,19 +388,19 @@ export default function GoldRolloverPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-[#000080] text-center">
+            <section className="py-16 bg-[rgba(197,149,46,0.1)] text-center">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
                         Ready to Protect Your 401(k)?
                     </h2>
-                    <p className="text-slate-300 text-lg mb-8 font-sans">
+                    <p className="text-[#3F4460] text-lg mb-8 font-sans">
                         Get your free rollover guide and learn how to move your retirement to gold — tax-free.
                     </p>
 
                     <LeadCaptureButton
                         variant="401k"
                         source="lp-401k-gold-rollover-footer"
-                        className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get Your Free Rollover Guide
                     </LeadCaptureButton>
@@ -420,14 +420,14 @@ export default function GoldRolloverPage() {
                         </span>
                     </div>
 
-                    <p className="text-slate-400 mt-6 text-sm font-sans">
+                    <p className="text-[#A8A39A] mt-6 text-sm font-sans">
                         Your information is 100% secure and will never be shared.
                     </p>
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="bg-slate-900 text-slate-600 py-8 text-center text-xs font-sans">
+            <footer className="bg-slate-900 text-[#D0CCC4] py-8 text-center text-xs font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <p>&copy; 2026 Rich Dad Retirement. All Rights Reserved.</p>
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals investing involves risk. Past performance does not guarantee future results.</p>

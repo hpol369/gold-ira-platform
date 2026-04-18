@@ -60,7 +60,7 @@ export function AuthoritySection() {
   };
 
   return (
-    <section className="py-32 bg-slate-50 border-y border-slate-200 relative overflow-hidden">
+    <section className="py-32 bg-[#0C0D18] border-y border-[#2A2D42] relative overflow-hidden">
       <FloatingOrbs variant="minimal" />
       <Container className="relative z-10">
         {/* Trust Stats */}
@@ -75,21 +75,21 @@ export function AuthoritySection() {
             <motion.div
               key={stat.label}
               variants={itemVariants}
-              className="bg-white border border-slate-200 rounded-2xl p-6
-                         hover:bg-slate-50 hover:-translate-y-2
+              className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-6
+                         hover:bg-[#121423] hover:-translate-y-2
                          hover:shadow-[0_20px_60px_rgba(0,0,0,0.1),0_0_40px_rgba(178,34,52,0.1)]
-                         hover:border-[#B22234]/30
+                         hover:border-[rgba(197,149,46,0.45)]
                          transition-all duration-400 text-center"
             >
               <div className="flex justify-center mb-3">
                 <div className="p-3 rounded-full bg-gradient-to-br from-[#B22234]/20 to-[#B22234]/5">
-                  <stat.icon className="h-5 w-5 text-[#B22234]" />
+                  <stat.icon className="h-5 w-5 text-[#D4A94E]" />
                 </div>
               </div>
-              <div className="text-2xl md:text-3xl font-bold text-slate-900 mb-1">
+              <div className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-1">
                 {stat.value}
               </div>
-              <div className="text-xs md:text-sm text-slate-500">{stat.label}</div>
+              <div className="text-xs md:text-sm text-[#A8A39A]">{stat.label}</div>
             </motion.div>
           ))}
         </motion.div>
@@ -100,10 +100,10 @@ export function AuthoritySection() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap justify-center gap-x-8 gap-y-3 pt-8 border-t border-slate-200"
+          className="flex flex-wrap justify-center gap-x-8 gap-y-3 pt-8 border-t border-[#2A2D42]"
         >
           {trustSignals.map((signal) => (
-            <div key={signal} className="flex items-center gap-2 text-sm text-slate-500">
+            <div key={signal} className="flex items-center gap-2 text-sm text-[#A8A39A]">
               <CheckCircle2 className="h-4 w-4 text-green-600" />
               <span>{signal}</span>
             </div>
@@ -116,17 +116,17 @@ export function AuthoritySection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-10 pt-8 border-t border-slate-200"
+          className="mt-10 pt-8 border-t border-[#2A2D42]"
         >
           <div className="max-w-3xl mx-auto text-center">
-            <div className="flex items-center justify-center gap-2 text-[#B22234] text-sm font-semibold mb-4">
+            <div className="flex items-center justify-center gap-2 text-[#D4A94E] text-sm font-semibold mb-4">
               <TrendingUp className="h-4 w-4" />
               INSPIRED BY RICH DAD PRINCIPLES
             </div>
-            <blockquote className="text-lg md:text-xl text-slate-600 italic mb-4">
+            <blockquote className="text-lg md:text-xl text-[#D0CCC4] italic mb-4">
               "Savers are losers. The dollar has lost 95% of its value since 1971. The rich don't work for money—they acquire assets that protect and grow their wealth."
             </blockquote>
-            <p className="text-slate-500 text-sm">
+            <p className="text-[#A8A39A] text-sm">
               — The "Rich Dad" philosophy on why tangible assets matter
             </p>
           </div>

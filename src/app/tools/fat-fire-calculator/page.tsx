@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function FatFIRECalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-slate-900">
+    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
       <Navbar />
       <FatFIRECalculator />
       <section className="py-16 bg-white">

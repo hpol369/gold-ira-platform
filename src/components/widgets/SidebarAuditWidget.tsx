@@ -14,7 +14,7 @@ export function SidebarAuditWidget() {
 
   return (
     <div
-      className="relative overflow-hidden w-64 p-6 bg-white rounded-2xl border border-slate-200 shadow-xl"
+      className="relative overflow-hidden w-64 p-6 bg-[#161828] rounded-2xl border border-[#2A2D42] shadow-xl"
     >
       {/* Ambient gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#000080]/5 via-transparent to-red-500/5 rounded-2xl pointer-events-none" />
@@ -22,25 +22,25 @@ export function SidebarAuditWidget() {
       <div className="relative z-10">
         <div className="flex items-center gap-2 mb-3">
           <div className="p-2 rounded-lg bg-red-50">
-            <Shield className="h-5 w-5 text-[#B22234]" />
+            <Shield className="h-5 w-5 text-[#D4A94E]" />
           </div>
-          <h4 className="font-serif font-bold text-[#000080] text-sm">
+          <h4 className="font-serif font-bold text-[#F6F4EF] text-sm">
             Which Account Fits You?
           </h4>
         </div>
 
-        <p className="text-lg font-bold text-slate-800 mb-2">
+        <p className="text-lg font-bold text-[#F6F4EF] mb-2">
           Gold, Crypto, Real Estate...
         </p>
 
-        <p className="text-sm text-slate-500 mb-4 leading-relaxed">
+        <p className="text-sm text-[#A8A39A] mb-4 leading-relaxed">
           Find out in 60 seconds
         </p>
 
         <Link
           href="/audit"
           className="group relative overflow-hidden flex items-center justify-center gap-2 w-full py-3 rounded-xl font-bold
-                     bg-[#000080] text-white hover:bg-[#000060]
+                     bg-[rgba(197,149,46,0.1)] text-white hover:bg-[#000060]
                      shadow-lg shadow-blue-900/20
                      hover:shadow-xl hover:scale-105 transition-all duration-300"
         >
@@ -50,7 +50,7 @@ export function SidebarAuditWidget() {
         </Link>
 
         {auditsToday > 0 && (
-          <div className="flex items-center gap-2 text-xs text-slate-500 mt-4">
+          <div className="flex items-center gap-2 text-xs text-[#A8A39A] mt-4">
             <Users className="h-3 w-3" />
             <span>{auditsToday.toLocaleString()} audits completed today</span>
           </div>

@@ -36,25 +36,25 @@ export default function PhysicalGoldVsPaperPage() {
             <Navbar />
 
             {/* Header */}
-            <header className="bg-slate-50 text-[#000080] py-16 md:py-20">
+            <header className="bg-[#0C0D18] text-[#F6F4EF] py-16 md:py-20">
                 <Container>
                     <Link
                         href="/why-gold"
-                        className="inline-flex items-center gap-2 text-slate-600 hover:text-[#000080] transition-colors mb-6"
+                        className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors mb-6"
                     >
                         <ArrowLeft className="h-4 w-4" />
                         Back to Why Gold
                     </Link>
 
                     <div className="max-w-3xl">
-                        <div className="flex items-center gap-2 text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4">
+                        <div className="flex items-center gap-2 text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-4">
                             <Scale className="h-4 w-4" />
                             Paper vs Real
                         </div>
                         <h1 className="text-4xl md:text-5xl font-bold mb-6">
                             Real Gold You Own vs Paper Promises
                         </h1>
-                        <p className="text-xl text-slate-600 leading-relaxed">
+                        <p className="text-xl text-[#D0CCC4] leading-relaxed">
                             Enron employees had stock certificates. Lehman Brothers employees had company shares.
                             They trusted paper. You&apos;ve worked too hard to make the same mistake. Here&apos;s why
                             owning real gold is completely different from owning Wall Street&apos;s paper version.
@@ -67,10 +67,10 @@ export default function PhysicalGoldVsPaperPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-6 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6 text-center">
                             The Question Nobody Asks
                         </h2>
-                        <p className="text-lg text-slate-600 text-center mb-12">
+                        <p className="text-lg text-[#D0CCC4] text-center mb-12">
                             When someone says they &quot;own gold&quot; through an ETF, do they really own gold?
                             Or do they own a piece of paper that says someone else might have gold somewhere?
                             That difference matters more than most people realize.
@@ -80,16 +80,16 @@ export default function PhysicalGoldVsPaperPage() {
                             {/* Physical Gold */}
                             <div className="bg-amber-50 rounded-xl p-8 border-2 border-amber-200">
                                 <div className="flex items-center gap-3 mb-6">
-                                    <div className="w-12 h-12 rounded-full bg-[#B22234] flex items-center justify-center">
+                                    <div className="w-12 h-12 rounded-full bg-[#DC2626] flex items-center justify-center">
                                         <Coins className="h-6 w-6 text-white" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#000080]">Real Gold</h3>
+                                    <h3 className="text-xl font-bold text-[#F6F4EF]">Real Gold</h3>
                                 </div>
-                                <p className="text-slate-600 mb-6">
+                                <p className="text-[#D0CCC4] mb-6">
                                     Actual gold coins and bars with your name on them. Stored in a secure vault.
                                     You can drive there and pick them up if you want. That&apos;s ownership.
                                 </p>
-                                <ul className="space-y-3 text-slate-600">
+                                <ul className="space-y-3 text-[#D0CCC4]">
                                     <li className="flex items-start gap-2 text-sm">
                                         <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                                         <span>You own it. Period. No middle man.</span>
@@ -114,18 +114,18 @@ export default function PhysicalGoldVsPaperPage() {
                             </div>
 
                             {/* Paper Gold */}
-                            <div className="bg-white rounded-xl p-8 border-2 border-slate-200">
+                            <div className="bg-[#161828] rounded-xl p-8 border-2 border-[#2A2D42]">
                                 <div className="flex items-center gap-3 mb-6">
                                     <div className="w-12 h-12 rounded-full bg-slate-400 flex items-center justify-center">
                                         <FileText className="h-6 w-6 text-white" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-[#000080]">Paper &quot;Gold&quot;</h3>
+                                    <h3 className="text-xl font-bold text-[#F6F4EF]">Paper &quot;Gold&quot;</h3>
                                 </div>
-                                <p className="text-slate-600 mb-6">
+                                <p className="text-[#D0CCC4] mb-6">
                                     ETFs, futures, mining stocks - fancy ways of saying &quot;we promise there&apos;s
                                     gold somewhere.&quot; You own a piece of paper about gold, not actual gold.
                                 </p>
-                                <ul className="space-y-3 text-slate-600">
+                                <ul className="space-y-3 text-[#D0CCC4]">
                                     <li className="flex items-start gap-2 text-sm">
                                         <XCircle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
                                         <span>Just a promise from Wall Street</span>
@@ -154,17 +154,17 @@ export default function PhysicalGoldVsPaperPage() {
             </section>
 
             {/* Types of Paper Gold */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
                             What Wall Street Is Actually Selling You
                         </h2>
 
                         <div className="space-y-6">
-                            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                                <h3 className="font-bold text-[#000080] mb-3">Gold ETFs (GLD, IAU, etc.)</h3>
-                                <p className="text-slate-600 text-sm mb-4">
+                            <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+                                <h3 className="font-bold text-[#F6F4EF] mb-3">Gold ETFs (GLD, IAU, etc.)</h3>
+                                <p className="text-[#D0CCC4] text-sm mb-4">
                                     Your broker might mention these. They track the price of gold. Sound good?
                                     Read the fine print. You don&apos;t own gold. You own shares in a fund.
                                 </p>
@@ -179,9 +179,9 @@ export default function PhysicalGoldVsPaperPage() {
                                 </div>
                             </div>
 
-                            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                                <h3 className="font-bold text-[#000080] mb-3">Gold Futures Contracts</h3>
-                                <p className="text-slate-600 text-sm mb-4">
+                            <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+                                <h3 className="font-bold text-[#F6F4EF] mb-3">Gold Futures Contracts</h3>
+                                <p className="text-[#D0CCC4] text-sm mb-4">
                                     This is Vegas-style betting on gold prices. Speculators and traders use these.
                                     Not for someone protecting 30 years of savings.
                                 </p>
@@ -196,9 +196,9 @@ export default function PhysicalGoldVsPaperPage() {
                                 </div>
                             </div>
 
-                            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                                <h3 className="font-bold text-[#000080] mb-3">Gold Mining Stocks</h3>
-                                <p className="text-slate-600 text-sm mb-4">
+                            <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+                                <h3 className="font-bold text-[#F6F4EF] mb-3">Gold Mining Stocks</h3>
+                                <p className="text-[#D0CCC4] text-sm mb-4">
                                     Shares in companies that dig gold out of the ground. Sounds like owning gold, right?
                                     Wrong. You own stock in a company, with all the risks that come with it.
                                 </p>
@@ -213,9 +213,9 @@ export default function PhysicalGoldVsPaperPage() {
                                 </div>
                             </div>
 
-                            <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                                <h3 className="font-bold text-[#000080] mb-3">Gold Certificates</h3>
-                                <p className="text-slate-600 text-sm mb-4">
+                            <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+                                <h3 className="font-bold text-[#F6F4EF] mb-3">Gold Certificates</h3>
+                                <p className="text-[#D0CCC4] text-sm mb-4">
                                     A piece of paper that says &quot;you own gold&quot; stored somewhere. Banks used to
                                     issue these. Some still do. It&apos;s exactly what it sounds like - paper.
                                 </p>
@@ -241,11 +241,11 @@ export default function PhysicalGoldVsPaperPage() {
                         <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <AlertTriangle className="h-8 w-8 text-red-600" />
-                                <h2 className="text-2xl font-bold text-[#000080]">
+                                <h2 className="text-2xl font-bold text-[#F6F4EF]">
                                     The Question You Need to Ask
                                 </h2>
                             </div>
-                            <p className="text-slate-600 mb-6">
+                            <p className="text-[#D0CCC4] mb-6">
                                 When you &quot;own&quot; paper gold, you&apos;re trusting a lot of people to do the right thing.
                                 Remember 2008? How&apos;d that trust work out for Lehman employees?
                             </p>
@@ -307,23 +307,23 @@ export default function PhysicalGoldVsPaperPage() {
             </section>
 
             {/* The Paper to Physical Ratio */}
-            <section className="py-16 bg-slate-50 text-[#000080]">
+            <section className="py-16 bg-[#0C0D18] text-[#F6F4EF]">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <h2 className="text-3xl font-bold mb-6">
                             Here&apos;s What Keeps Gold Experts Up at Night
                         </h2>
-                        <p className="text-xl text-slate-600 mb-8">
+                        <p className="text-xl text-[#D0CCC4] mb-8">
                             For every ounce of real gold, there are over 100 paper claims saying &quot;I own that gold.&quot;
                             Think about that for a second.
                         </p>
-                        <div className="bg-white rounded-2xl p-8 mb-8 border border-slate-200 shadow-sm">
-                            <div className="text-6xl font-bold text-[#B22234] mb-4">100:1</div>
-                            <p className="text-slate-600">
+                        <div className="bg-[#161828] rounded-2xl p-8 mb-8 border border-[#2A2D42] shadow-sm">
+                            <div className="text-6xl font-bold text-[#D4A94E] mb-4">100:1</div>
+                            <p className="text-[#D0CCC4]">
                                 Paper claims to actual gold - like a game of musical chairs with 100 people and 1 chair
                             </p>
                         </div>
-                        <p className="text-slate-500">
+                        <p className="text-[#A8A39A]">
                             If even 2% of paper gold holders said &quot;I want my actual gold&quot; at the same time,
                             the whole system falls apart. That&apos;s why Dave, a retired steelworker from Pennsylvania,
                             told us: &quot;Paper promises are fine until everyone wants their promise kept at once.
@@ -337,37 +337,37 @@ export default function PhysicalGoldVsPaperPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Why Physical Gold for Your IRA?
                         </h2>
 
                         <div className="grid md:grid-cols-3 gap-6">
                             <div className="text-center p-6">
                                 <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-4">
-                                    <Lock className="h-8 w-8 text-[#B22234]" />
+                                    <Lock className="h-8 w-8 text-[#D4A94E]" />
                                 </div>
-                                <h3 className="font-bold text-[#000080] mb-2">True Ownership</h3>
-                                <p className="text-sm text-slate-600">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2">True Ownership</h3>
+                                <p className="text-sm text-[#D0CCC4]">
                                     In a Gold IRA, specific coins and bars are allocated to you by serial number.
                                     You own them—not shares in a fund.
                                 </p>
                             </div>
                             <div className="text-center p-6">
                                 <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-4">
-                                    <ShieldCheck className="h-8 w-8 text-[#B22234]" />
+                                    <ShieldCheck className="h-8 w-8 text-[#D4A94E]" />
                                 </div>
-                                <h3 className="font-bold text-[#000080] mb-2">IRS-Approved Storage</h3>
-                                <p className="text-sm text-slate-600">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2">IRS-Approved Storage</h3>
+                                <p className="text-sm text-[#D0CCC4]">
                                     Your gold is held in secure, insured, IRS-approved depositories.
                                     Regularly audited and segregated from other assets.
                                 </p>
                             </div>
                             <div className="text-center p-6">
                                 <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mx-auto mb-4">
-                                    <TrendingUp className="h-8 w-8 text-[#B22234]" />
+                                    <TrendingUp className="h-8 w-8 text-[#D4A94E]" />
                                 </div>
-                                <h3 className="font-bold text-[#000080] mb-2">Tax Advantages</h3>
-                                <p className="text-sm text-slate-600">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2">Tax Advantages</h3>
+                                <p className="text-sm text-[#D0CCC4]">
                                     Same tax benefits as traditional IRAs. Tax-deferred growth (Traditional)
                                     or tax-free withdrawals (Roth).
                                 </p>
@@ -376,10 +376,10 @@ export default function PhysicalGoldVsPaperPage() {
 
                         <div className="mt-12 bg-amber-50 rounded-xl p-8 border border-amber-200">
                             <div className="flex items-start gap-4">
-                                <Building2 className="h-8 w-8 text-[#B22234] flex-shrink-0 mt-1" />
+                                <Building2 className="h-8 w-8 text-[#D4A94E] flex-shrink-0 mt-1" />
                                 <div>
-                                    <h3 className="font-bold text-[#000080] mb-2">Important: ETFs Are NOT Allowed in Gold IRAs</h3>
-                                    <p className="text-slate-600">
+                                    <h3 className="font-bold text-[#F6F4EF] mb-2">Important: ETFs Are NOT Allowed in Gold IRAs</h3>
+                                    <p className="text-[#D0CCC4]">
                                         The IRS requires that Gold IRAs hold actual physical precious metals—not ETFs,
                                         futures, or other paper gold. This is actually a benefit, as it ensures you
                                         have real gold, not just paper promises, protecting your retirement.
@@ -392,55 +392,55 @@ export default function PhysicalGoldVsPaperPage() {
             </section>
 
             {/* Comparison Table */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Side-by-Side Comparison
                         </h2>
 
                         <div className="overflow-x-auto">
-                            <table className="w-full text-left border-collapse bg-white rounded-xl border border-slate-200 shadow-sm">
-                                <thead className="bg-slate-50">
+                            <table className="w-full text-left border-collapse bg-[#161828] rounded-xl border border-[#2A2D42] shadow-sm">
+                                <thead className="bg-[#0C0D18]">
                                     <tr>
-                                        <th className="p-4 font-bold text-[#000080]">Feature</th>
-                                        <th className="p-4 font-bold text-[#B22234]">Physical Gold</th>
-                                        <th className="p-4 font-bold text-slate-500">Paper Gold</th>
+                                        <th className="p-4 font-bold text-[#F6F4EF]">Feature</th>
+                                        <th className="p-4 font-bold text-[#D4A94E]">Physical Gold</th>
+                                        <th className="p-4 font-bold text-[#A8A39A]">Paper Gold</th>
                                     </tr>
                                 </thead>
-                                <tbody className="divide-y divide-slate-200 text-slate-600">
+                                <tbody className="divide-y divide-[#2A2D42] text-[#D0CCC4]">
                                     <tr>
-                                        <td className="p-4 font-medium text-[#000080]">Ownership</td>
+                                        <td className="p-4 font-medium text-[#F6F4EF]">Ownership</td>
                                         <td className="p-4 text-green-600">Direct, allocated to you</td>
                                         <td className="p-4 text-red-600">Shares/claims on pool</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 font-medium text-[#000080]">Counterparty Risk</td>
+                                        <td className="p-4 font-medium text-[#F6F4EF]">Counterparty Risk</td>
                                         <td className="p-4 text-green-600">None</td>
                                         <td className="p-4 text-red-600">Issuer, broker, exchange</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 font-medium text-[#000080]">Physical Delivery</td>
+                                        <td className="p-4 font-medium text-[#F6F4EF]">Physical Delivery</td>
                                         <td className="p-4 text-green-600">Yes, anytime</td>
                                         <td className="p-4 text-red-600">Usually not possible</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 font-medium text-[#000080]">Gold IRA Eligible</td>
+                                        <td className="p-4 font-medium text-[#F6F4EF]">Gold IRA Eligible</td>
                                         <td className="p-4 text-green-600">Yes</td>
                                         <td className="p-4 text-red-600">No</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 font-medium text-[#000080]">Crisis Protection</td>
+                                        <td className="p-4 font-medium text-[#F6F4EF]">Crisis Protection</td>
                                         <td className="p-4 text-green-600">Unaffected by financial system</td>
                                         <td className="p-4 text-red-600">Vulnerable to system failure</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 font-medium text-[#000080]">Trading Convenience</td>
+                                        <td className="p-4 font-medium text-[#F6F4EF]">Trading Convenience</td>
                                         <td className="p-4 text-amber-600">Less liquid, 1-3 day process</td>
                                         <td className="p-4 text-green-600">Instant trading</td>
                                     </tr>
                                     <tr>
-                                        <td className="p-4 font-medium text-[#000080]">Annual Fees</td>
+                                        <td className="p-4 font-medium text-[#F6F4EF]">Annual Fees</td>
                                         <td className="p-4 text-amber-600">Storage fees (~$100-300/yr)</td>
                                         <td className="p-4 text-green-600">Lower expense ratios</td>
                                     </tr>
@@ -455,10 +455,10 @@ export default function PhysicalGoldVsPaperPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-6">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">
                             The Choice Is Simple
                         </h2>
-                        <p className="text-lg text-slate-600 mb-8">
+                        <p className="text-lg text-[#D0CCC4] mb-8">
                             You worked 30+ years. You didn&apos;t do it to own somebody&apos;s promise.
                             For day traders playing games, paper gold is fine. For protecting what you&apos;ve built?
                             You want the real thing. Something you actually own. Something no bank, broker,
@@ -467,13 +467,13 @@ export default function PhysicalGoldVsPaperPage() {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/what-is-a-gold-ira"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-slate-100 text-[#000080] font-bold rounded-xl hover:bg-slate-200 transition-all border border-slate-200"
+                                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#121423] text-[#F6F4EF] font-bold rounded-xl hover:bg-slate-200 transition-all border border-[#2A2D42]"
                             >
                                 How Gold IRAs Work
                             </Link>
                             <Link
                                 href="/reviews/augusta-precious-metals"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#B22234] text-white font-bold rounded-xl hover:bg-[#8B0000] transition-all shadow-lg"
+                                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#DC2626] text-white font-bold rounded-xl hover:bg-[#8B0000] transition-all shadow-lg"
                             >
                                 Get Free Info Kit
                                 <ArrowRight className="h-4 w-4" />
@@ -484,7 +484,7 @@ export default function PhysicalGoldVsPaperPage() {
             </section>
 
             {/* CTA */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

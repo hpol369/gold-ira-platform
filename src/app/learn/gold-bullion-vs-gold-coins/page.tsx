@@ -68,17 +68,17 @@ export default function GoldBullionVsCoinsPage() {
             <Navbar />
 
             {/* Header */}
-            <header className="bg-slate-50 py-16 md:py-24 border-b border-slate-200">
+            <header className="bg-[#0C0D18] py-16 md:py-24 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-3xl">
-                        <div className="flex items-center gap-2 text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4">
+                        <div className="flex items-center gap-2 text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-4">
                             <Scale className="h-4 w-4" />
                             Investment Comparison
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#000080]">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#F6F4EF]">
                             Gold Bullion vs Gold Coins
                         </h1>
-                        <p className="text-xl text-slate-600 leading-relaxed">
+                        <p className="text-xl text-[#D0CCC4] leading-relaxed">
                             You&apos;ve worked decades to build your retirement savings. Now you want to protect it with gold. But should you buy bars or coins? Here&apos;s the straight talk on premiums, liquidity, and which makes sense for your situation.
                         </p>
                     </div>
@@ -86,20 +86,20 @@ export default function GoldBullionVsCoinsPage() {
             </header>
 
             {/* Quick Answer */}
-            <section className="py-12 bg-slate-50 border-b border-slate-200">
+            <section className="py-12 bg-[#0C0D18] border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-2xl p-8">
-                            <h2 className="text-2xl font-bold text-[#000080] mb-4">Quick Answer</h2>
-                            <p className="text-lg text-slate-600 mb-4">
-                                <strong className="text-[#000080]">For most folks protecting their retirement, coins are the better choice.</strong> They&apos;re easier to sell when you need them, everyone recognizes them, and you can cash out a few at a time instead of all or nothing. If you&apos;ve got $100,000+ to move, bars can save you some money on markups.
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-2xl p-8">
+                            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">Quick Answer</h2>
+                            <p className="text-lg text-[#D0CCC4] mb-4">
+                                <strong className="text-[#F6F4EF]">For most folks protecting their retirement, coins are the better choice.</strong> They&apos;re easier to sell when you need them, everyone recognizes them, and you can cash out a few at a time instead of all or nothing. If you&apos;ve got $100,000+ to move, bars can save you some money on markups.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <div className="flex items-center gap-2 text-[#B22234]">
+                                <div className="flex items-center gap-2 text-[#D4A94E]">
                                     <Coins className="h-5 w-5" />
                                     <span className="font-semibold">Coins: Best for most investors</span>
                                 </div>
-                                <div className="flex items-center gap-2 text-slate-500">
+                                <div className="flex items-center gap-2 text-[#A8A39A]">
                                     <Box className="h-5 w-5" />
                                     <span>Bars: Best for large investments</span>
                                 </div>
@@ -117,22 +117,22 @@ export default function GoldBullionVsCoinsPage() {
                         {/* What is Bullion */}
                         <div className="mb-16">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-[#B22234]/10 rounded-xl">
-                                    <Box className="h-6 w-6 text-[#B22234]" />
+                                <div className="p-3 bg-[rgba(220,38,38,0.1)] rounded-xl">
+                                    <Box className="h-6 w-6 text-[#D4A94E]" />
                                 </div>
-                                <h2 className="text-3xl font-bold text-[#000080]">What is Gold Bullion?</h2>
+                                <h2 className="text-3xl font-bold text-[#F6F4EF]">What is Gold Bullion?</h2>
                             </div>
-                            <p className="text-slate-600 mb-6">
+                            <p className="text-[#D0CCC4] mb-6">
                                 Gold bullion refers to gold bars or ingots, typically valued purely for their metal content rather than any collectible value. Bullion bars come in various sizes:
                             </p>
                             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
                                 {["1 oz", "10 oz", "1 kilo (32.15 oz)", "100 oz"].map((size) => (
-                                    <div key={size} className="bg-white border border-slate-200 rounded-xl p-4 text-center shadow-sm">
-                                        <span className="text-[#000080] font-semibold">{size}</span>
+                                    <div key={size} className="bg-[#161828] border border-[#2A2D42] rounded-xl p-4 text-center shadow-sm">
+                                        <span className="text-[#F6F4EF] font-semibold">{size}</span>
                                     </div>
                                 ))}
                             </div>
-                            <p className="text-slate-500 text-sm">
+                            <p className="text-[#A8A39A] text-sm">
                                 For Gold IRAs, bars must be .995 fine (99.5% pure) or higher and produced by a NYMEX or COMEX-approved refiner or national mint.
                             </p>
                         </div>
@@ -140,33 +140,33 @@ export default function GoldBullionVsCoinsPage() {
                         {/* What are Coins */}
                         <div className="mb-16">
                             <div className="flex items-center gap-3 mb-6">
-                                <div className="p-3 bg-[#B22234]/10 rounded-xl">
-                                    <Coins className="h-6 w-6 text-[#B22234]" />
+                                <div className="p-3 bg-[rgba(220,38,38,0.1)] rounded-xl">
+                                    <Coins className="h-6 w-6 text-[#D4A94E]" />
                                 </div>
-                                <h2 className="text-3xl font-bold text-[#000080]">What are Gold Coins?</h2>
+                                <h2 className="text-3xl font-bold text-[#F6F4EF]">What are Gold Coins?</h2>
                             </div>
-                            <p className="text-slate-600 mb-6">
+                            <p className="text-[#D0CCC4] mb-6">
                                 Gold coins are minted by government mints and carry a face value (though their gold value far exceeds it). IRA-approved coins include:
                             </p>
                             <div className="grid sm:grid-cols-2 gap-4 mb-6">
-                                <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
-                                    <h4 className="font-bold text-[#000080] mb-2">American Gold Eagle</h4>
-                                    <p className="text-slate-500 text-sm">Most popular. 91.67% gold (22 karat). The only IRA-approved coin that doesn&apos;t need to be .995 pure due to special IRS exemption.</p>
+                                <div className="bg-[#161828] border border-[#2A2D42] rounded-xl p-5 shadow-sm">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">American Gold Eagle</h4>
+                                    <p className="text-[#A8A39A] text-sm">Most popular. 91.67% gold (22 karat). The only IRA-approved coin that doesn&apos;t need to be .995 pure due to special IRS exemption.</p>
                                 </div>
-                                <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
-                                    <h4 className="font-bold text-[#000080] mb-2">American Gold Buffalo</h4>
-                                    <p className="text-slate-500 text-sm">99.99% pure gold (24 karat). First pure gold coin minted by the US government.</p>
+                                <div className="bg-[#161828] border border-[#2A2D42] rounded-xl p-5 shadow-sm">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">American Gold Buffalo</h4>
+                                    <p className="text-[#A8A39A] text-sm">99.99% pure gold (24 karat). First pure gold coin minted by the US government.</p>
                                 </div>
-                                <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
-                                    <h4 className="font-bold text-[#000080] mb-2">Canadian Gold Maple Leaf</h4>
-                                    <p className="text-slate-500 text-sm">99.99% pure. Known for its high purity and intricate security features.</p>
+                                <div className="bg-[#161828] border border-[#2A2D42] rounded-xl p-5 shadow-sm">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">Canadian Gold Maple Leaf</h4>
+                                    <p className="text-[#A8A39A] text-sm">99.99% pure. Known for its high purity and intricate security features.</p>
                                 </div>
-                                <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
-                                    <h4 className="font-bold text-[#000080] mb-2">Austrian Gold Philharmonic</h4>
-                                    <p className="text-slate-500 text-sm">99.99% pure. Features the Vienna Philharmonic Orchestra design.</p>
+                                <div className="bg-[#161828] border border-[#2A2D42] rounded-xl p-5 shadow-sm">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">Austrian Gold Philharmonic</h4>
+                                    <p className="text-[#A8A39A] text-sm">99.99% pure. Features the Vienna Philharmonic Orchestra design.</p>
                                 </div>
                             </div>
-                            <Link href="/learn/ira-approved-gold-coins" className="inline-flex items-center gap-2 text-[#B22234] font-semibold hover:text-[#B22234]/80">
+                            <Link href="/learn/ira-approved-gold-coins" className="inline-flex items-center gap-2 text-[#D4A94E] font-semibold hover:text-[#D4A94E]/80">
                                 See full list of IRA-approved coins
                                 <ArrowRight className="h-4 w-4" />
                             </Link>
@@ -174,19 +174,19 @@ export default function GoldBullionVsCoinsPage() {
 
                         {/* Comparison Table */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">Side-by-Side Comparison</h2>
+                            <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">Side-by-Side Comparison</h2>
                             <div className="overflow-x-auto">
-                                <table className="w-full bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                                <table className="w-full bg-[#161828] border border-[#2A2D42] rounded-xl overflow-hidden shadow-sm">
                                     <thead>
-                                        <tr className="border-b border-slate-200 bg-slate-50">
-                                            <th className="text-left p-4 text-[#000080] font-bold">Feature</th>
-                                            <th className="text-left p-4 text-[#B22234] font-bold">
+                                        <tr className="border-b border-[#2A2D42] bg-[#0C0D18]">
+                                            <th className="text-left p-4 text-[#F6F4EF] font-bold">Feature</th>
+                                            <th className="text-left p-4 text-[#D4A94E] font-bold">
                                                 <div className="flex items-center gap-2">
                                                     <Box className="h-4 w-4" />
                                                     Bullion Bars
                                                 </div>
                                             </th>
-                                            <th className="text-left p-4 text-[#B22234] font-bold">
+                                            <th className="text-left p-4 text-[#D4A94E] font-bold">
                                                 <div className="flex items-center gap-2">
                                                     <Coins className="h-4 w-4" />
                                                     Gold Coins
@@ -194,10 +194,10 @@ export default function GoldBullionVsCoinsPage() {
                                             </th>
                                         </tr>
                                     </thead>
-                                    <tbody className="text-slate-600">
+                                    <tbody className="text-[#D0CCC4]">
                                         {comparisonData.map((row, i) => (
-                                            <tr key={i} className="border-b border-slate-100">
-                                                <td className="p-4 font-medium text-[#000080]">{row.feature}</td>
+                                            <tr key={i} className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">{row.feature}</td>
                                                 <td className={`p-4 ${row.winner === 'bullion' ? 'text-green-600' : ''}`}>
                                                     {row.winner === 'bullion' && <CheckCircle2 className="inline h-4 w-4 mr-1" />}
                                                     {row.bullion}
@@ -217,8 +217,8 @@ export default function GoldBullionVsCoinsPage() {
                         <div className="grid md:grid-cols-2 gap-8 mb-16">
                             {/* Bullion Pros/Cons */}
                             <div>
-                                <h3 className="text-xl font-bold text-[#000080] mb-6 flex items-center gap-2">
-                                    <Box className="h-5 w-5 text-[#B22234]" />
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-2">
+                                    <Box className="h-5 w-5 text-[#D4A94E]" />
                                     Gold Bullion Bars
                                 </h3>
                                 <div className="space-y-4">
@@ -269,8 +269,8 @@ export default function GoldBullionVsCoinsPage() {
 
                             {/* Coins Pros/Cons */}
                             <div>
-                                <h3 className="text-xl font-bold text-[#000080] mb-6 flex items-center gap-2">
-                                    <Coins className="h-5 w-5 text-[#B22234]" />
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-2">
+                                    <Coins className="h-5 w-5 text-[#D4A94E]" />
                                     Gold Coins
                                 </h3>
                                 <div className="space-y-4">
@@ -322,31 +322,31 @@ export default function GoldBullionVsCoinsPage() {
 
                         {/* Premium Comparison */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-[#000080] mb-6">Understanding Premiums</h2>
-                            <p className="text-slate-600 mb-6">
+                            <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">Understanding Premiums</h2>
+                            <p className="text-[#D0CCC4] mb-6">
                                 The &quot;premium&quot; is how much you pay above the spot price of gold. It covers minting costs, dealer margins, and supply/demand factors.
                             </p>
-                            <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                                <h4 className="font-bold text-[#000080] mb-4">Typical Premiums (2026)</h4>
+                            <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-6 shadow-sm">
+                                <h4 className="font-bold text-[#F6F4EF] mb-4">Typical Premiums (2026)</h4>
                                 <div className="space-y-4">
                                     <div className="flex items-center justify-between">
-                                        <span className="text-slate-600">1 oz Gold Bar</span>
+                                        <span className="text-[#D0CCC4]">1 oz Gold Bar</span>
                                         <span className="text-green-600 font-bold">1-3% over spot</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="text-slate-600">American Gold Eagle (1 oz)</span>
-                                        <span className="text-[#B22234] font-bold">4-6% over spot</span>
+                                        <span className="text-[#D0CCC4]">American Gold Eagle (1 oz)</span>
+                                        <span className="text-[#D4A94E] font-bold">4-6% over spot</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="text-slate-600">American Gold Buffalo (1 oz)</span>
-                                        <span className="text-[#B22234] font-bold">3-5% over spot</span>
+                                        <span className="text-[#D0CCC4]">American Gold Buffalo (1 oz)</span>
+                                        <span className="text-[#D4A94E] font-bold">3-5% over spot</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="text-slate-600">Canadian Maple Leaf (1 oz)</span>
-                                        <span className="text-[#B22234] font-bold">3-5% over spot</span>
+                                        <span className="text-[#D0CCC4]">Canadian Maple Leaf (1 oz)</span>
+                                        <span className="text-[#D4A94E] font-bold">3-5% over spot</span>
                                     </div>
                                 </div>
-                                <p className="text-slate-500 text-sm mt-4">
+                                <p className="text-[#A8A39A] text-sm mt-4">
                                     Note: Premiums fluctuate based on market conditions. During high demand, coin premiums can spike significantly.
                                 </p>
                             </div>
@@ -354,20 +354,20 @@ export default function GoldBullionVsCoinsPage() {
 
                         {/* Recommendation */}
                         <div className="mb-16">
-                            <h2 className="text-3xl font-bold text-[#000080] mb-6">Our Recommendation</h2>
+                            <h2 className="text-3xl font-bold text-[#F6F4EF] mb-6">Our Recommendation</h2>
                             <div className="grid md:grid-cols-2 gap-6">
-                                <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-2xl p-6">
-                                    <h3 className="text-xl font-bold text-[#B22234] mb-3">Choose Coins If...</h3>
-                                    <ul className="space-y-2 text-slate-600">
+                                <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-2xl p-6">
+                                    <h3 className="text-xl font-bold text-[#D4A94E] mb-3">Choose Coins If...</h3>
+                                    <ul className="space-y-2 text-[#D0CCC4]">
                                         <li>You&apos;re rolling over $50,000-$100,000 from your 401(k)</li>
                                         <li>You want flexibility to sell some without liquidating everything</li>
                                         <li>You value being able to sell quickly if needed</li>
                                         <li>You&apos;re moving to gold for the first time</li>
                                     </ul>
                                 </div>
-                                <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                                    <h3 className="text-xl font-bold text-[#000080] mb-3">Choose Bars If...</h3>
-                                    <ul className="space-y-2 text-slate-600">
+                                <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-6 shadow-sm">
+                                    <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Choose Bars If...</h3>
+                                    <ul className="space-y-2 text-[#D0CCC4]">
                                         <li>You&apos;re rolling over $100,000 or more</li>
                                         <li>You want every dollar buying actual gold</li>
                                         <li>You&apos;re protecting savings you won&apos;t touch for 10+ years</li>
@@ -375,8 +375,8 @@ export default function GoldBullionVsCoinsPage() {
                                     </ul>
                                 </div>
                             </div>
-                            <p className="text-slate-500 mt-6 text-center">
-                                <strong className="text-[#000080]">Pro Tip:</strong> Many investors do both—using bars for the bulk of their holdings and coins for flexibility.
+                            <p className="text-[#A8A39A] mt-6 text-center">
+                                <strong className="text-[#F6F4EF]">Pro Tip:</strong> Many investors do both—using bars for the bulk of their holdings and coins for flexibility.
                             </p>
                         </div>
 
@@ -400,7 +400,7 @@ export default function GoldBullionVsCoinsPage() {
             </section>
 
             {/* Footer CTA */}
-            <section className="py-16 bg-slate-50 border-t border-slate-200">
+            <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-bullion-vs-coins" />
                 </Container>

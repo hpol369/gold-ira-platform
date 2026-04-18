@@ -101,15 +101,15 @@ export default function GoldIraVsGoldEtfPage() {
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
-            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
+            <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-sm font-semibold text-[#B22234] mb-6">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[#121423] border border-[#2A2D42] text-sm font-semibold text-[#D4A94E] mb-6">
                         Investment Showdown
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Gold IRA vs. Gold ETF
                     </h1>
-                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto leading-relaxed">
                         Do you want to own the asset or just track the price? We break down the critical differences between holding physical metal and buying "paper gold."
                     </p>
                 </Container>
@@ -123,7 +123,7 @@ export default function GoldIraVsGoldEtfPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                         <p className="lead">
                             Investors often ask: "Why pay for storage and setup fees with a Gold IRA when I can just buy GLD or IAU stock instantly?" It's a fair question. The answer comes down to one fundamental difference: <strong>Counterparty Risk.</strong>
@@ -215,11 +215,11 @@ export default function GoldIraVsGoldEtfPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-[#F6F4EF] text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.1)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Secure Your Retirement with Real Assets</h3>
-                                <p className="mb-6 text-slate-600">Don't rely on paper promises. See which Gold IRA companies offer the best security and lowest fees.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Secure Your Retirement with Real Assets</h3>
+                                <p className="mb-6 text-[#D0CCC4]">Don't rely on paper promises. See which Gold IRA companies offer the best security and lowest fees.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Find My Best Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -228,16 +228,16 @@ export default function GoldIraVsGoldEtfPage() {
 
                         {/* Related Comparisons */}
                         <section className="mt-12 not-prose">
-                            <h3 className="text-lg font-bold text-[#B22234] mb-4">Related Comparisons</h3>
+                            <h3 className="text-lg font-bold text-[#D4A94E] mb-4">Related Comparisons</h3>
                             <div className="grid md:grid-cols-3 gap-4">
-                                <Link href="/gold-stocks/" className="p-4 bg-white/5 rounded-lg border border-slate-200 hover:border-[#B22234]/50 transition-colors group">
-                                    <span className="text-sm font-semibold text-slate-600 group-hover:text-[#B22234]">Gold Stocks Guide &rarr;</span>
+                                <Link href="/gold-stocks/" className="p-4 bg-white/5 rounded-lg border border-[#2A2D42] hover:border-[#B22234]/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-[#D0CCC4] group-hover:text-[#D4A94E]">Gold Stocks Guide &rarr;</span>
                                 </Link>
-                                <Link href="/compare/gold-ira-vs-401k" className="p-4 bg-white/5 rounded-lg border border-slate-200 hover:border-[#B22234]/50 transition-colors group">
-                                    <span className="text-sm font-semibold text-slate-600 group-hover:text-[#B22234]">Gold IRA vs. 401(k) &rarr;</span>
+                                <Link href="/compare/gold-ira-vs-401k" className="p-4 bg-white/5 rounded-lg border border-[#2A2D42] hover:border-[#B22234]/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-[#D0CCC4] group-hover:text-[#D4A94E]">Gold IRA vs. 401(k) &rarr;</span>
                                 </Link>
-                                <Link href="/compare/gold-ira-vs-physical-gold" className="p-4 bg-white/5 rounded-lg border border-slate-200 hover:border-[#B22234]/50 transition-colors group">
-                                    <span className="text-sm font-semibold text-slate-600 group-hover:text-[#B22234]">Gold IRA vs. Physical Gold &rarr;</span>
+                                <Link href="/compare/gold-ira-vs-physical-gold" className="p-4 bg-white/5 rounded-lg border border-[#2A2D42] hover:border-[#B22234]/50 transition-colors group">
+                                    <span className="text-sm font-semibold text-[#D0CCC4] group-hover:text-[#D4A94E]">Gold IRA vs. Physical Gold &rarr;</span>
                                 </Link>
                             </div>
                         </section>
@@ -247,14 +247,14 @@ export default function GoldIraVsGoldEtfPage() {
                             {/* FAQs will serve from Schema but displayed here for readers */}
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white shadow-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                    <details key={index} className="group bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-[#B22234]/10 p-1.5 text-[#B22234] sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-[rgba(220,38,38,0.1)] p-1.5 text-[#D4A94E] sm:p-3">
                                                 <Scale className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-slate-600">
+                                        <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>
@@ -267,7 +267,7 @@ export default function GoldIraVsGoldEtfPage() {
             </Container>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

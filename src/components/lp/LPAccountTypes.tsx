@@ -71,7 +71,7 @@ export function LPAccountTypes({
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 md:mb-4">
             {headline}
           </h2>
-          <p className="text-slate-300 text-base md:text-lg max-w-2xl mx-auto">
+          <p className="text-[#3F4460] text-base md:text-lg max-w-2xl mx-auto">
             {subheadline}
           </p>
         </div>
@@ -82,7 +82,7 @@ export function LPAccountTypes({
             return (
               <div
                 key={account.name}
-                className="group relative rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 hover:border-green-400/30 hover:bg-white/[0.07] transition-all duration-300"
+                className="group relative rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm p-5 hover:border-green-400/30 hover:bg-[#1E2134]/[0.07] transition-all duration-300"
               >
                 <div className="absolute top-3 right-3">
                   <CheckCircle className="h-5 w-5 text-green-400" />
@@ -95,7 +95,7 @@ export function LPAccountTypes({
                 <h3 className="text-base md:text-lg font-bold text-white mb-1">
                   {account.name}
                 </h3>
-                <p className="text-slate-400 text-xs md:text-sm">{account.description}</p>
+                <p className="text-[#A8A39A] text-xs md:text-sm">{account.description}</p>
               </div>
             );
           })}
@@ -110,11 +110,11 @@ export function LPAccountTypes({
               </div>
               <div className="text-left">
                 <div className="text-green-400 font-bold text-lg">Direct Rollover</div>
-                <div className="text-slate-300 text-sm">Zero taxes, zero penalties</div>
+                <div className="text-[#3F4460] text-sm">Zero taxes, zero penalties</div>
               </div>
             </div>
             <div className="hidden sm:block w-px h-12 bg-white/10" />
-            <div className="text-slate-300 text-sm max-w-xs">
+            <div className="text-[#3F4460] text-sm max-w-xs">
               A direct rollover moves funds directly between custodians - never touches your hands, never triggers taxes.
             </div>
           </div>

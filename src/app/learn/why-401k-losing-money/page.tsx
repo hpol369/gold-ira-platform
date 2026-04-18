@@ -133,16 +133,16 @@ export default function Why401kLosingMoneyPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-slate-50 py-16 border-b border-slate-200">
+            <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4 block">
+                        <span className="text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-4 block">
                             401k Concerns
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
                             Why Is My 401k Losing Money?
                         </h1>
-                        <p className="text-xl text-slate-600 leading-relaxed">
+                        <p className="text-xl text-[#D0CCC4] leading-relaxed">
                             If you&apos;ve been watching your 401k balance drop, you&apos;re not alone. Let&apos;s understand what&apos;s happening, why it matters, and what you can actually do about it.
                         </p>
                     </div>
@@ -157,7 +157,7 @@ export default function Why401kLosingMoneyPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -180,25 +180,25 @@ export default function Why401kLosingMoneyPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Reason #1: Market Volatility & Corrections</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #1: Market Volatility & Corrections</h2>
                             </div>
                             <p>
                                 The stock market doesn&apos;t move in a straight line - it never has. Corrections (drops of 10% or more) happen roughly every 1-2 years on average. Bear markets (drops of 20% or more) occur approximately every 5-7 years.
                             </p>
 
-                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
-                                <h4 className="font-bold text-slate-900 text-lg mb-4">Recent Market Volatility Examples</h4>
+                            <div className="bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
+                                <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">Recent Market Volatility Examples</h4>
                                 <div className="space-y-3">
                                     <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
-                                        <span className="text-slate-600">2022 Bear Market</span>
+                                        <span className="text-[#D0CCC4]">2022 Bear Market</span>
                                         <span className="text-red-700 font-semibold">S&P 500 down 25%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
-                                        <span className="text-slate-600">2020 COVID Crash</span>
+                                        <span className="text-[#D0CCC4]">2020 COVID Crash</span>
                                         <span className="text-red-700 font-semibold">S&P 500 down 34%</span>
                                     </div>
                                     <div className="flex justify-between items-center p-3 bg-white/5 rounded-lg">
-                                        <span className="text-slate-600">2008 Financial Crisis</span>
+                                        <span className="text-[#D0CCC4]">2008 Financial Crisis</span>
                                         <span className="text-red-700 font-semibold">S&P 500 down 57%</span>
                                     </div>
                                 </div>
@@ -216,10 +216,10 @@ export default function Why401kLosingMoneyPage() {
                         {/* Hidden Fees */}
                         <section id="hidden-fees" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#B22234]">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Reason #2: Hidden Fees Eating Your Returns</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #2: Hidden Fees Eating Your Returns</h2>
                             </div>
                             <p>
                                 Here&apos;s something most 401k participants don&apos;t realize: <strong>fees can silently consume 20-30% of your retirement savings over time</strong>. And most people have no idea how much they&apos;re actually paying.
@@ -229,33 +229,33 @@ export default function Why401kLosingMoneyPage() {
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-slate-50 rounded-xl shadow-sm border border-slate-200">
-                                    <thead className="bg-slate-100">
+                                <table className="w-full text-left border-collapse bg-[#0C0D18] rounded-xl shadow-sm border border-[#2A2D42]">
+                                    <thead className="bg-[#121423]">
                                         <tr>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Fee Rate</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">$500k Over 20 Years*</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Lost to Fees</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Fee Rate</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">$500k Over 20 Years*</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Lost to Fees</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4 text-slate-900">0.25% (Low-cost index)</td>
+                                            <td className="p-4 text-[#F6F4EF]">0.25% (Low-cost index)</td>
                                             <td className="p-4 text-green-700 font-semibold">$1,540,000</td>
-                                            <td className="p-4 text-slate-500">$45,000</td>
+                                            <td className="p-4 text-[#A8A39A]">$45,000</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-900">1.0% (Average 401k)</td>
-                                            <td className="p-4 text-[#B22234] font-semibold">$1,340,000</td>
+                                            <td className="p-4 text-[#F6F4EF]">1.0% (Average 401k)</td>
+                                            <td className="p-4 text-[#D4A94E] font-semibold">$1,340,000</td>
                                             <td className="p-4 text-red-700">$245,000</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-900">1.5% (High-fee plan)</td>
+                                            <td className="p-4 text-[#F6F4EF]">1.5% (High-fee plan)</td>
                                             <td className="p-4 text-red-700 font-semibold">$1,195,000</td>
                                             <td className="p-4 text-red-700">$390,000</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p className="text-xs text-slate-500 mt-2">*Assumes 7% average annual return before fees</p>
+                                <p className="text-xs text-[#A8A39A] mt-2">*Assumes 7% average annual return before fees</p>
                             </div>
 
                             <p>
@@ -281,7 +281,7 @@ export default function Why401kLosingMoneyPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <PieChart className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Reason #3: Poor Fund Selection</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #3: Poor Fund Selection</h2>
                             </div>
                             <p>
                                 Many 401k plans offer limited investment options - and not all of them are good. You might be stuck with:
@@ -296,12 +296,12 @@ export default function Why401kLosingMoneyPage() {
                                 Studies consistently show that most actively managed funds underperform simple index funds over time - yet many 401k plans are loaded with these expensive, underperforming options.
                             </p>
 
-                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
-                                <h4 className="font-bold text-slate-900 text-lg mb-4 flex items-center gap-2">
-                                    <HelpCircle className="w-5 h-5 text-[#B22234]" />
+                            <div className="bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
+                                <h4 className="font-bold text-[#F6F4EF] text-lg mb-4 flex items-center gap-2">
+                                    <HelpCircle className="w-5 h-5 text-[#D4A94E]" />
                                     Questions to Ask About Your 401k Funds
                                 </h4>
-                                <ul className="space-y-3 text-slate-600">
+                                <ul className="space-y-3 text-[#D0CCC4]">
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0 mt-0.5" />
                                         <span>What is the expense ratio of each fund I&apos;m invested in?</span>
@@ -328,7 +328,7 @@ export default function Why401kLosingMoneyPage() {
                                 <div className="p-3 bg-orange-500/20 rounded-lg text-orange-400">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Reason #4: Over-Concentration in Stocks</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #4: Over-Concentration in Stocks</h2>
                             </div>
                             <p>
                                 Many people - especially those who started their 401k when they were young - have never adjusted their allocation. They might be carrying 80-100% stocks well into their 50s and 60s.
@@ -341,12 +341,12 @@ export default function Why401kLosingMoneyPage() {
                                 <h4 className="font-bold text-red-700 text-lg mb-4">The Danger Zone</h4>
                                 <p className="text-red-800 mb-4">Consider someone retiring in 2008 with $1 million, 80% in stocks:</p>
                                 <div className="grid md:grid-cols-2 gap-4">
-                                    <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl">
-                                        <h5 className="font-semibold text-slate-900 mb-2">January 2008</h5>
+                                    <div className="bg-[#0C0D18] border border-[#2A2D42] p-4 rounded-xl">
+                                        <h5 className="font-semibold text-[#F6F4EF] mb-2">January 2008</h5>
                                         <p className="text-2xl font-bold text-green-700">$1,000,000</p>
                                     </div>
-                                    <div className="bg-slate-50 border border-slate-200 p-4 rounded-xl">
-                                        <h5 className="font-semibold text-slate-900 mb-2">March 2009</h5>
+                                    <div className="bg-[#0C0D18] border border-[#2A2D42] p-4 rounded-xl">
+                                        <h5 className="font-semibold text-[#F6F4EF] mb-2">March 2009</h5>
                                         <p className="text-2xl font-bold text-red-700">$544,000</p>
                                     </div>
                                 </div>
@@ -364,7 +364,7 @@ export default function Why401kLosingMoneyPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Target className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Reason #5: Target Date Fund Issues</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Reason #5: Target Date Fund Issues</h2>
                             </div>
                             <p>
                                 Target date funds are marketed as &quot;set it and forget it&quot; solutions that automatically become more conservative as you approach retirement. Sounds perfect, right? Not necessarily.
@@ -373,32 +373,32 @@ export default function Why401kLosingMoneyPage() {
                             <h3>Problems with Target Date Funds:</h3>
 
                             <div className="space-y-4 not-prose my-8">
-                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
                                     <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">1</div>
                                     <div>
-                                        <h4 className="font-bold text-slate-900">Still Too Much Stock Exposure</h4>
-                                        <p className="text-sm text-slate-500 mt-1">Many target date funds still hold 40-50% stocks at the target date. That&apos;s a lot of risk when you&apos;re ready to retire.</p>
+                                        <h4 className="font-bold text-[#F6F4EF]">Still Too Much Stock Exposure</h4>
+                                        <p className="text-sm text-[#A8A39A] mt-1">Many target date funds still hold 40-50% stocks at the target date. That&apos;s a lot of risk when you&apos;re ready to retire.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
                                     <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">2</div>
                                     <div>
-                                        <h4 className="font-bold text-slate-900">One-Size-Fits-All Approach</h4>
-                                        <p className="text-sm text-slate-500 mt-1">Your risk tolerance, other savings, and retirement plans are unique. Target date funds assume everyone with the same retirement year has identical needs.</p>
+                                        <h4 className="font-bold text-[#F6F4EF]">One-Size-Fits-All Approach</h4>
+                                        <p className="text-sm text-[#A8A39A] mt-1">Your risk tolerance, other savings, and retirement plans are unique. Target date funds assume everyone with the same retirement year has identical needs.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
                                     <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">3</div>
                                     <div>
-                                        <h4 className="font-bold text-slate-900">Hidden Fees</h4>
-                                        <p className="text-sm text-slate-500 mt-1">Many target date funds have higher expense ratios than simple index funds, especially those from major brokerages.</p>
+                                        <h4 className="font-bold text-[#F6F4EF]">Hidden Fees</h4>
+                                        <p className="text-sm text-[#A8A39A] mt-1">Many target date funds have higher expense ratios than simple index funds, especially those from major brokerages.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-5 rounded-xl bg-slate-50 border border-slate-200">
+                                <div className="flex gap-4 p-5 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
                                     <div className="w-10 h-10 rounded-full bg-red-500/20 text-red-700 flex items-center justify-center font-bold flex-shrink-0">4</div>
                                     <div>
-                                        <h4 className="font-bold text-slate-900">No Protection from Correlated Assets</h4>
-                                        <p className="text-sm text-slate-500 mt-1">Stocks and bonds sometimes fall together (like in 2022). Target date funds rarely include truly non-correlated assets like gold.</p>
+                                        <h4 className="font-bold text-[#F6F4EF]">No Protection from Correlated Assets</h4>
+                                        <p className="text-sm text-[#A8A39A] mt-1">Stocks and bonds sometimes fall together (like in 2022). Target date funds rarely include truly non-correlated assets like gold.</p>
                                     </div>
                                 </div>
                             </div>
@@ -409,15 +409,15 @@ export default function Why401kLosingMoneyPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose border border-slate-200">
+                        <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-[#F6F4EF] text-center relative overflow-hidden not-prose border border-[#2A2D42]">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <div className="inline-flex items-center gap-2 bg-amber-500/20 text-[#B22234] font-semibold text-sm px-4 py-2 rounded-full mb-4 border border-amber-500/30">
+                                <div className="inline-flex items-center gap-2 bg-amber-500/20 text-[#D4A94E] font-semibold text-sm px-4 py-2 rounded-full mb-4 border border-amber-500/30">
                                     <Calculator className="h-4 w-4" />
                                     FREE TOOL
                                 </div>
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">How Exposed Is Your 401k?</h3>
-                                <p className="mb-6 text-slate-600 max-w-xl mx-auto">Use our 401k Risk Analyzer to understand your true exposure to market volatility and get personalized recommendations.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">How Exposed Is Your 401k?</h3>
+                                <p className="mb-6 text-[#D0CCC4] max-w-xl mx-auto">Use our 401k Risk Analyzer to understand your true exposure to market volatility and get personalized recommendations.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/tools/401k-risk-analyzer">Analyze Your 401k Risk <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -430,7 +430,7 @@ export default function Why401kLosingMoneyPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">What You Can Do About It</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What You Can Do About It</h2>
                             </div>
                             <p>
                                 Understanding why your 401k is losing money is the first step. Now let&apos;s talk about actionable steps you can take to protect your retirement savings.
@@ -456,28 +456,28 @@ export default function Why401kLosingMoneyPage() {
                                 True diversification means owning assets that don&apos;t move together. When stocks crashed in 2008 and 2020, gold held steady or rose. This is why many financial experts recommend a 10-20% allocation to precious metals.
                             </p>
 
-                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
+                            <div className="bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
                                 <div className="flex items-center gap-3 mb-4">
-                                    <div className="p-2 bg-amber-500/20 rounded-full text-[#B22234]">
+                                    <div className="p-2 bg-amber-500/20 rounded-full text-[#D4A94E]">
                                         <Coins className="w-5 h-5" />
                                     </div>
-                                    <h4 className="font-bold text-slate-900 text-lg">Gold as Portfolio Protection</h4>
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg">Gold as Portfolio Protection</h4>
                                 </div>
-                                <p className="text-slate-600 mb-4">
+                                <p className="text-[#D0CCC4] mb-4">
                                     Gold has historically served as a hedge against market volatility. During the 2008 financial crisis, stocks fell 37% while gold gained 5.5%. A Gold IRA allows you to hold physical gold in a tax-advantaged retirement account.
                                 </p>
                                 <div className="grid md:grid-cols-3 gap-4 text-center">
                                     <div className="p-4 bg-white/5 rounded-xl">
                                         <p className="text-2xl font-bold text-green-700">+5.5%</p>
-                                        <p className="text-xs text-slate-500">Gold in 2008 crash</p>
+                                        <p className="text-xs text-[#A8A39A]">Gold in 2008 crash</p>
                                     </div>
                                     <div className="p-4 bg-white/5 rounded-xl">
                                         <p className="text-2xl font-bold text-green-700">+25%</p>
-                                        <p className="text-xs text-slate-500">Gold in 2020</p>
+                                        <p className="text-xs text-[#A8A39A]">Gold in 2020</p>
                                     </div>
                                     <div className="p-4 bg-white/5 rounded-xl">
                                         <p className="text-2xl font-bold text-green-700">Tax-Free</p>
-                                        <p className="text-xs text-slate-500">401k to Gold IRA rollover</p>
+                                        <p className="text-xs text-[#A8A39A]">401k to Gold IRA rollover</p>
                                     </div>
                                 </div>
                             </div>
@@ -500,72 +500,72 @@ export default function Why401kLosingMoneyPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Why is my 401k losing money?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         Your 401k may be losing money due to several factors: market volatility and corrections, high management fees eating into returns, poor fund selection within your plan, over-concentration in stocks, or issues with target date funds. It&apos;s important to review your specific holdings and fee structure to identify the cause.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Should I be worried if my 401k is down?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         Short-term losses are normal and usually temporary. However, if you&apos;re within 10 years of retirement, you should be more concerned about protecting your savings from major losses. Consider your time horizon, risk tolerance, and whether your current allocation is appropriate for your retirement timeline.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What should I do if my 401k is losing money?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
-                                        First, don&apos;t panic and avoid selling during a market dip. Review your asset allocation and fee structure. Consider rebalancing to match your risk tolerance. For those near retirement, diversifying into non-correlated assets like gold through a <Link href="/what-is-a-gold-ira" className="text-[#B22234] hover:underline">Gold IRA rollover</Link> can provide protection against future market volatility.
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
+                                        First, don&apos;t panic and avoid selling during a market dip. Review your asset allocation and fee structure. Consider rebalancing to match your risk tolerance. For those near retirement, diversifying into non-correlated assets like gold through a <Link href="/what-is-a-gold-ira" className="text-[#D4A94E] hover:underline">Gold IRA rollover</Link> can provide protection against future market volatility.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">How much should my 401k be down before I worry?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         Historical bear markets have seen declines of 20-50%. A 10-20% decline is relatively normal during market corrections. However, the key factor is your timeline - if you&apos;re decades from retirement, you have time to recover. If you&apos;re within 5-10 years of retirement, even a 20% loss can significantly impact your retirement plans.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Can I protect my 401k from market crashes?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         Yes. Strategies include: diversifying across asset classes, reducing stock exposure as you near retirement, maintaining some cash reserves, and considering alternative assets like gold that historically move opposite to stocks. You can also roll over a portion of your 401k into a Gold IRA for added diversification without tax penalties.
                                     </p>
                                 </details>
@@ -573,17 +573,17 @@ export default function Why401kLosingMoneyPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-slate-900 relative overflow-hidden not-prose border border-slate-200">
+                        <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-[#F6F4EF] relative overflow-hidden not-prose border border-[#2A2D42]">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <Clock className="w-12 h-12 text-[#B22234] mx-auto mb-4" />
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-slate-900">Take Control of Your Retirement</h3>
-                                <p className="mb-6 text-slate-600 max-w-xl mx-auto">Don&apos;t let market volatility derail your retirement plans. Learn how gold can provide the stability your portfolio needs.</p>
+                                <Clock className="w-12 h-12 text-[#D4A94E] mx-auto mb-4" />
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#F6F4EF]">Take Control of Your Retirement</h3>
+                                <p className="mb-6 text-[#D0CCC4] max-w-xl mx-auto">Don&apos;t let market volatility derail your retirement plans. Learn how gold can provide the stability your portfolio needs.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <LeadCaptureButton variant="default" source="learn-why-401k" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
+                                    <LeadCaptureButton variant="default" source="learn-why-401k" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center">
                                         Get Free Gold IRA Guide <ArrowRight className="ml-2 w-5 h-5" />
                                     </LeadCaptureButton>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-slate-900 hover:bg-slate-100">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#1E2134]">
                                         <Link href="/tools/401k-risk-analyzer">Analyze Your 401k Risk</Link>
                                     </Button>
                                 </div>
@@ -597,7 +597,7 @@ export default function Why401kLosingMoneyPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-100">
+            <section className="py-16 bg-[#121423]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

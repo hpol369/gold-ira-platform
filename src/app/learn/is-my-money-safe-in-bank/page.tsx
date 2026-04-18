@@ -96,16 +96,16 @@ export default function IsMyMoneySafeInBankPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-slate-50 backdrop-blur-sm py-16 border-b border-slate-200">
+            <header className="bg-[#0C0D18] backdrop-blur-sm py-16 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Financial Safety
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
                             Is My Money Safe in the Bank?
                         </h1>
-                        <p className="text-xl text-slate-600 leading-relaxed">
+                        <p className="text-xl text-[#D0CCC4] leading-relaxed">
                             After watching three banks collapse in 2023, you&apos;re right to ask this question. Here&apos;s what really protects your hard-earned savings and what doesn&apos;t.
                         </p>
                     </div>
@@ -120,7 +120,7 @@ export default function IsMyMoneySafeInBankPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg  prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-[#000080] prose-li:text-slate-600 max-w-none">
+                    <article className="flex-1 prose prose-lg  prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -143,29 +143,29 @@ export default function IsMyMoneySafeInBankPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">FDIC Insurance Explained</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">FDIC Insurance Explained</h2>
                             </div>
                             <p>
                                 The Federal Deposit Insurance Corporation (FDIC) was created in 1933 after thousands of banks failed during the Great Depression. Its purpose: restore confidence in the banking system by guaranteeing deposits.
                             </p>
 
                             <div className="bg-blue-500/10 rounded-2xl p-6 border border-blue-500/20 not-prose my-8">
-                                <h4 className="font-bold text-[#000080] text-lg mb-4">FDIC Coverage Limits</h4>
+                                <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">FDIC Coverage Limits</h4>
                                 <div className="space-y-3">
-                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
-                                        <span className="text-slate-600">Single Accounts</span>
+                                    <div className="flex justify-between items-center p-3 bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-lg">
+                                        <span className="text-[#D0CCC4]">Single Accounts</span>
                                         <span className="font-semibold text-blue-700">$250,000 per depositor</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
-                                        <span className="text-slate-600">Joint Accounts</span>
+                                    <div className="flex justify-between items-center p-3 bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-lg">
+                                        <span className="text-[#D0CCC4]">Joint Accounts</span>
                                         <span className="font-semibold text-blue-700">$250,000 per co-owner</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
-                                        <span className="text-slate-600">Retirement Accounts (IRAs)</span>
+                                    <div className="flex justify-between items-center p-3 bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-lg">
+                                        <span className="text-[#D0CCC4]">Retirement Accounts (IRAs)</span>
                                         <span className="font-semibold text-blue-700">$250,000 per owner</span>
                                     </div>
-                                    <div className="flex justify-between items-center p-3 bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-lg">
-                                        <span className="text-slate-600">Trust Accounts</span>
+                                    <div className="flex justify-between items-center p-3 bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-lg">
+                                        <span className="text-[#D0CCC4]">Trust Accounts</span>
                                         <span className="font-semibold text-blue-700">$250,000 per beneficiary</span>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@ export default function IsMyMoneySafeInBankPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Real Risks to Your Bank Deposits</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Real Risks to Your Bank Deposits</h2>
                             </div>
 
                             <h3>1. Fractional Reserve Banking</h3>
@@ -216,48 +216,48 @@ export default function IsMyMoneySafeInBankPage() {
                         {/* Inflation Problem */}
                         <section id="inflation" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#B22234]">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
                                     <TrendingDown className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The Hidden Risk: Inflation</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Hidden Risk: Inflation</h2>
                             </div>
                             <p>
                                 Perhaps the biggest threat to bank deposits isn&apos;t bank failure—it&apos;s <strong>inflation</strong>. Your money might be &quot;safe&quot; in the sense that the bank won&apos;t lose it, but it&apos;s constantly losing purchasing power.
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
-                                    <thead className="bg-slate-50">
+                                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl shadow-sm border border-[#2A2D42]">
+                                    <thead className="bg-[#0C0D18]">
                                         <tr>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Year</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Avg Savings Rate</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Inflation Rate</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Real Return</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Year</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Avg Savings Rate</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Inflation Rate</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Real Return</th>
                                         </tr>
                                     </thead>
                                     <tbody className="divide-y divide-white/10 text-sm">
                                         <tr>
-                                            <td className="p-4 text-[#000080]">2021</td>
-                                            <td className="p-4 text-slate-500">0.06%</td>
-                                            <td className="p-4 text-slate-500">7.0%</td>
+                                            <td className="p-4 text-[#F6F4EF]">2021</td>
+                                            <td className="p-4 text-[#A8A39A]">0.06%</td>
+                                            <td className="p-4 text-[#A8A39A]">7.0%</td>
                                             <td className="p-4 text-red-700 font-semibold">-6.94%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-[#000080]">2022</td>
-                                            <td className="p-4 text-slate-500">0.30%</td>
-                                            <td className="p-4 text-slate-500">6.5%</td>
+                                            <td className="p-4 text-[#F6F4EF]">2022</td>
+                                            <td className="p-4 text-[#A8A39A]">0.30%</td>
+                                            <td className="p-4 text-[#A8A39A]">6.5%</td>
                                             <td className="p-4 text-red-700 font-semibold">-6.20%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-[#000080]">2023</td>
-                                            <td className="p-4 text-slate-500">0.45%</td>
-                                            <td className="p-4 text-slate-500">3.4%</td>
+                                            <td className="p-4 text-[#F6F4EF]">2023</td>
+                                            <td className="p-4 text-[#A8A39A]">0.45%</td>
+                                            <td className="p-4 text-[#A8A39A]">3.4%</td>
                                             <td className="p-4 text-red-700 font-semibold">-2.95%</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-[#000080]">2024</td>
-                                            <td className="p-4 text-slate-500">4.50%</td>
-                                            <td className="p-4 text-slate-500">2.9%</td>
+                                            <td className="p-4 text-[#F6F4EF]">2024</td>
+                                            <td className="p-4 text-[#A8A39A]">4.50%</td>
+                                            <td className="p-4 text-[#A8A39A]">2.9%</td>
                                             <td className="p-4 text-green-700 font-semibold">+1.60%</td>
                                         </tr>
                                     </tbody>
@@ -276,30 +276,30 @@ export default function IsMyMoneySafeInBankPage() {
                         {/* Bank Failures */}
                         <section id="failures" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-slate-50 rounded-lg text-slate-500">
+                                <div className="p-3 bg-[#0C0D18] rounded-lg text-[#A8A39A]">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The 2023 Banking Crisis</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The 2023 Banking Crisis</h2>
                             </div>
                             <p>
                                 In March 2023, three major banks failed in rapid succession—a stark reminder that bank failures aren&apos;t just historical events:
                             </p>
 
                             <div className="space-y-4 not-prose my-8">
-                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6">
-                                    <h4 className="font-bold text-[#000080] text-lg mb-2">Silicon Valley Bank (SVB)</h4>
-                                    <p className="text-slate-500 text-sm mb-2">Failed March 10, 2023 • $209 billion in assets</p>
-                                    <p className="text-slate-500">The second-largest bank failure in US history. Over 90% of deposits were uninsured. The FDIC made an extraordinary decision to cover all deposits, but this isn&apos;t guaranteed in future failures.</p>
+                                <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6">
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Silicon Valley Bank (SVB)</h4>
+                                    <p className="text-[#A8A39A] text-sm mb-2">Failed March 10, 2023 • $209 billion in assets</p>
+                                    <p className="text-[#A8A39A]">The second-largest bank failure in US history. Over 90% of deposits were uninsured. The FDIC made an extraordinary decision to cover all deposits, but this isn&apos;t guaranteed in future failures.</p>
                                 </div>
-                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6">
-                                    <h4 className="font-bold text-[#000080] text-lg mb-2">Signature Bank</h4>
-                                    <p className="text-slate-500 text-sm mb-2">Failed March 12, 2023 • $110 billion in assets</p>
-                                    <p className="text-slate-500">Third-largest bank failure in US history. Failed just two days after SVB as depositors panicked about exposure to similar risks.</p>
+                                <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6">
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Signature Bank</h4>
+                                    <p className="text-[#A8A39A] text-sm mb-2">Failed March 12, 2023 • $110 billion in assets</p>
+                                    <p className="text-[#A8A39A]">Third-largest bank failure in US history. Failed just two days after SVB as depositors panicked about exposure to similar risks.</p>
                                 </div>
-                                <div className="bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6">
-                                    <h4 className="font-bold text-[#000080] text-lg mb-2">First Republic Bank</h4>
-                                    <p className="text-slate-500 text-sm mb-2">Failed May 1, 2023 • $229 billion in assets</p>
-                                    <p className="text-slate-500">The largest bank failure of 2023. Acquired by JPMorgan Chase in an FDIC-facilitated deal.</p>
+                                <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6">
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">First Republic Bank</h4>
+                                    <p className="text-[#A8A39A] text-sm mb-2">Failed May 1, 2023 • $229 billion in assets</p>
+                                    <p className="text-[#A8A39A]">The largest bank failure of 2023. Acquired by JPMorgan Chase in an FDIC-facilitated deal.</p>
                                 </div>
                             </div>
 
@@ -309,10 +309,10 @@ export default function IsMyMoneySafeInBankPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-primary rounded-2xl p-8 text-[#000080] text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-primary rounded-2xl p-8 text-[#F6F4EF] text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Own Something Real</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Own Something Real</h3>
                                 <p className="mb-6 text-gray-200">A Gold IRA holds actual gold in a vault with your name on it. Not a number on a bank&apos;s computer, not a paper promise. Real metal.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Explore Gold IRA Options <ArrowRight className="ml-2 w-4 h-4" /></Link>
@@ -326,7 +326,7 @@ export default function IsMyMoneySafeInBankPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <Lock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Strategies to Protect Your Money</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Strategies to Protect Your Money</h2>
                             </div>
 
                             <h3>1. Spread Across Multiple Banks</h3>
@@ -358,10 +358,10 @@ export default function IsMyMoneySafeInBankPage() {
                         {/* Alternatives */}
                         <section id="alternatives" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#B22234]">
+                                <div className="p-3 bg-amber-500/20 rounded-lg text-[#D4A94E]">
                                     <Coins className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Alternatives to Bank Deposits</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Alternatives to Bank Deposits</h2>
                             </div>
 
                             <h3>Physical Gold & Precious Metals</h3>
@@ -392,8 +392,8 @@ export default function IsMyMoneySafeInBankPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                                <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What happens if my bank fails?</h4>
                                         <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -401,13 +401,13 @@ export default function IsMyMoneySafeInBankPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         If your bank fails, the FDIC typically takes over and either transfers your deposits to another bank or sends you a check for your insured deposits (up to $250,000). This usually happens within a few business days. However, deposits exceeding $250,000 per depositor, per bank may not be fully recovered.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                                <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Is $250,000 safe in a bank?</h4>
                                         <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -415,13 +415,13 @@ export default function IsMyMoneySafeInBankPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         Yes, up to $250,000 per depositor, per FDIC-insured bank is protected by federal insurance. If you have more than $250,000, spread deposits across multiple banks or use different account ownership categories (individual, joint, retirement) to maximize coverage.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                                <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Can banks legally take your money?</h4>
                                         <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -429,13 +429,13 @@ export default function IsMyMoneySafeInBankPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         Banks can legally take money from your account in specific circumstances: to collect on a loan you have with them (right of setoff), to pay fees you&apos;ve agreed to, or if required by court order. In a bank failure, deposits above FDIC limits may be at risk. Some countries have implemented &quot;bail-in&quot; provisions where depositors absorb bank losses.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                                <details className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">How do I check if my bank is FDIC insured?</h4>
                                         <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-secondary sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
@@ -443,7 +443,7 @@ export default function IsMyMoneySafeInBankPage() {
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         Use the FDIC&apos;s BankFind tool at fdic.gov to verify if your bank is FDIC-insured. Look for the official &quot;Member FDIC&quot; sign at your bank or on their website. Most traditional banks are FDIC-insured, but some online-only institutions and fintech apps may not be directly insured—verify carefully.
                                     </p>
                                 </details>
@@ -451,16 +451,16 @@ export default function IsMyMoneySafeInBankPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-[#000080] relative overflow-hidden not-prose">
+                        <div className="my-12 bg-gradient-to-br from-primary to-primary-dark rounded-2xl p-8 text-[#F6F4EF] relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
-                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#000080]">Don&apos;t Keep All Your Eggs in One Basket</h3>
+                                <h3 className="text-3xl font-serif font-bold mb-4 text-[#F6F4EF]">Don&apos;t Keep All Your Eggs in One Basket</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">You worked too hard for too long to trust it all to banks. Physical gold doesn&apos;t care if banks fail or computers crash.</p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Find Your Gold IRA Match <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#000080] hover:bg-slate-200">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-slate-200">
                                         <Link href="/what-is-a-gold-ira">What Is a Gold IRA?</Link>
                                     </Button>
                                 </div>
@@ -474,7 +474,7 @@ export default function IsMyMoneySafeInBankPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-is-my-money-safe" />
                 </Container>

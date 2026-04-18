@@ -125,7 +125,7 @@ export default function Solo401kCalculatorPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
               Why Choose a Solo 401(k)?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -134,17 +134,17 @@ export default function Solo401kCalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
+                    className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-purple-700" />
                       </div>
                       <div>
-                        <h3 className="text-slate-900 font-semibold mb-2">
+                        <h3 className="text-[#F6F4EF] font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-600 text-sm">
+                        <p className="text-[#D0CCC4] text-sm">
                           {fact.description}
                         </p>
                       </div>
@@ -158,41 +158,41 @@ export default function Solo401kCalculatorPage() {
       </section>
 
       {/* 2024 Limits Reference */}
-      <section className="py-16 bg-slate-100/30">
+      <section className="py-16 bg-[#121423]/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-4">
                 2024 Solo 401(k) Contribution Limits
               </h2>
-              <p className="text-slate-600 max-w-2xl mx-auto">
+              <p className="text-[#D0CCC4] max-w-2xl mx-auto">
                 Understand the different components that make up your maximum contribution.
               </p>
             </div>
 
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
-                    <tr className="bg-slate-50 border-b border-slate-200">
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-slate-600">Contribution Type</th>
-                      <th className="px-6 py-4 text-right text-sm font-semibold text-slate-600">Under 50</th>
-                      <th className="px-6 py-4 text-right text-sm font-semibold text-slate-600">Age 50+</th>
+                    <tr className="bg-[#0C0D18] border-b border-[#2A2D42]">
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-[#D0CCC4]">Contribution Type</th>
+                      <th className="px-6 py-4 text-right text-sm font-semibold text-[#D0CCC4]">Under 50</th>
+                      <th className="px-6 py-4 text-right text-sm font-semibold text-[#D0CCC4]">Age 50+</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-slate-200">
+                    <tr className="border-b border-[#2A2D42]">
                       <td className="px-6 py-4">
-                        <div className="font-semibold text-slate-900">Employee Deferral</div>
-                        <div className="text-xs text-slate-500">Can be Traditional or Roth</div>
+                        <div className="font-semibold text-[#F6F4EF]">Employee Deferral</div>
+                        <div className="text-xs text-[#A8A39A]">Can be Traditional or Roth</div>
                       </td>
                       <td className="px-6 py-4 text-right text-blue-600 font-semibold">$23,000</td>
                       <td className="px-6 py-4 text-right text-blue-600 font-semibold">$30,500</td>
                     </tr>
-                    <tr className="border-b border-slate-200">
+                    <tr className="border-b border-[#2A2D42]">
                       <td className="px-6 py-4">
-                        <div className="font-semibold text-slate-900">Employer Profit Sharing</div>
-                        <div className="text-xs text-slate-500">Up to 25% of compensation</div>
+                        <div className="font-semibold text-[#F6F4EF]">Employer Profit Sharing</div>
+                        <div className="text-xs text-[#A8A39A]">Up to 25% of compensation</div>
                       </td>
                       <td className="px-6 py-4 text-right text-green-600 font-semibold">Up to $46,000</td>
                       <td className="px-6 py-4 text-right text-green-600 font-semibold">Up to $46,000</td>
@@ -207,8 +207,8 @@ export default function Solo401kCalculatorPage() {
                   </tbody>
                 </table>
               </div>
-              <div className="px-6 py-4 bg-slate-50 border-t border-slate-200">
-                <p className="text-xs text-slate-500">
+              <div className="px-6 py-4 bg-[#0C0D18] border-t border-[#2A2D42]">
+                <p className="text-xs text-[#A8A39A]">
                   Note: The employee deferral limit is shared across all 401(k) plans. If you also contribute to an employer 401(k), the combined employee deferrals cannot exceed $23,000 ($30,500 if 50+).
                 </p>
               </div>
@@ -221,22 +221,22 @@ export default function Solo401kCalculatorPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[#B22234]/5 rounded-xl p-8 border border-[#B22234]/30">
+            <div className="bg-[rgba(220,38,38,0.06)] rounded-xl p-8 border border-[#B22234]/30">
               <div className="flex items-center gap-3 mb-6">
-                <Shield className="h-8 w-8 text-[#B22234]" />
-                <h2 className="text-2xl font-bold text-slate-900">
+                <Shield className="h-8 w-8 text-[#D4A94E]" />
+                <h2 className="text-2xl font-bold text-[#F6F4EF]">
                   Self-Directed Solo 401(k) for Gold
                 </h2>
               </div>
 
-              <div className="space-y-4 text-slate-500 mb-8">
+              <div className="space-y-4 text-[#A8A39A] mb-8">
                 <p>
                   A self-directed Solo 401(k) with &quot;checkbook control&quot; is one of the most powerful ways to invest in physical gold within a retirement account. Unlike a traditional Gold IRA, you can:
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-slate-50 rounded-lg p-4">
-                    <h4 className="text-[#B22234] font-semibold mb-2">With Checkbook Control</h4>
+                  <div className="bg-[#0C0D18] rounded-lg p-4">
+                    <h4 className="text-[#D4A94E] font-semibold mb-2">With Checkbook Control</h4>
                     <ul className="space-y-2 text-sm">
                       <li className="flex gap-2">
                         <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
@@ -257,23 +257,23 @@ export default function Solo401kCalculatorPage() {
                     </ul>
                   </div>
 
-                  <div className="bg-slate-50 rounded-lg p-4">
-                    <h4 className="text-[#B22234] font-semibold mb-2">Requirements</h4>
+                  <div className="bg-[#0C0D18] rounded-lg p-4">
+                    <h4 className="text-[#D4A94E] font-semibold mb-2">Requirements</h4>
                     <ul className="space-y-2 text-sm">
                       <li className="flex gap-2">
-                        <AlertTriangle className="h-4 w-4 text-[#B22234] flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>Self-employment income required</span>
                       </li>
                       <li className="flex gap-2">
-                        <AlertTriangle className="h-4 w-4 text-[#B22234] flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>No employees (except spouse)</span>
                       </li>
                       <li className="flex gap-2">
-                        <AlertTriangle className="h-4 w-4 text-[#B22234] flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>Gold stored in approved depository</span>
                       </li>
                       <li className="flex gap-2">
-                        <AlertTriangle className="h-4 w-4 text-[#B22234] flex-shrink-0 mt-0.5" />
+                        <AlertTriangle className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                         <span>Annual IRS reporting (Form 5500-EZ)</span>
                       </li>
                     </ul>
@@ -281,8 +281,8 @@ export default function Solo401kCalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4 mb-6">
-                <p className="text-[#B22234] text-sm">
+              <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4 mb-6">
+                <p className="text-[#D4A94E] text-sm">
                   <strong>Key Insight:</strong> Solo 401(k) with checkbook control lets you invest in physical gold directly. This gives self-employed individuals more control and potentially lower fees than traditional Gold IRAs, while sheltering up to $76,500 per year from taxes.
                 </p>
               </div>
@@ -292,10 +292,10 @@ export default function Solo401kCalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-100/30">
+      <section className="py-16 bg-[#121423]/30">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
               Solo 401(k) Frequently Asked Questions
             </h2>
 
@@ -324,16 +324,16 @@ export default function Solo401kCalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
+                  className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
-                    <span className="text-slate-500 group-open:rotate-180 transition-transform">
+                    <span className="text-[#F6F4EF] font-medium pr-4">{faq.q}</span>
+                    <span className="text-[#A8A39A] group-open:rotate-180 transition-transform">
                       &#9660;
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
-                    <p className="text-slate-500">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-[#2A2D42] pt-4">
+                    <p className="text-[#A8A39A]">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -346,14 +346,14 @@ export default function Solo401kCalculatorPage() {
       <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-slate-900 font-semibold mb-2">
+                  <h3 className="text-[#F6F4EF] font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-600 text-sm">
+                  <p className="text-[#D0CCC4] text-sm">
                     This calculator provides estimates based on 2024 IRS limits and general rules. Your actual contribution limits depend on your specific business structure, income, and other factors. Solo 401(k) plans have complex rules and reporting requirements. We recommend consulting with a qualified tax professional or retirement plan specialist before establishing a Solo 401(k). This is not tax or financial advice.
                   </p>
                 </div>
@@ -364,7 +364,7 @@ export default function Solo401kCalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-100/30">
+      <section className="py-16 bg-[#121423]/30">
         <Container>
           <AugustaCTA
             variant="footer"

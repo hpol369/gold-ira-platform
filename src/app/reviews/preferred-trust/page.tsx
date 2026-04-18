@@ -51,7 +51,7 @@ export default function PreferredTrustReviewPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
+            <header className="bg-[rgba(197,149,46,0.1)] text-white py-16 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-teal-500/10 via-transparent to-transparent"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
@@ -89,56 +89,56 @@ export default function PreferredTrustReviewPage() {
                             />
 
                             {/* Quick Facts */}
-                            <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 mb-8">
-                                <h2 className="text-xl font-serif font-bold text-[#000080] mb-4">Preferred Trust at a Glance</h2>
+                            <div className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 mb-8">
+                                <h2 className="text-xl font-serif font-bold text-[#F6F4EF] mb-4">Preferred Trust at a Glance</h2>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div className="flex items-center gap-3">
                                         <Building2 className="w-5 h-5 text-teal-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Founded</p>
-                                            <p className="text-slate-900 font-medium">{companyData.founded}</p>
+                                            <p className="text-[#A8A39A] text-sm">Founded</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.founded}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <Users className="w-5 h-5 text-blue-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Headquarters</p>
-                                            <p className="text-slate-900 font-medium">{companyData.headquarters}</p>
+                                            <p className="text-[#A8A39A] text-sm">Headquarters</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.headquarters}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <DollarSign className="w-5 h-5 text-green-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Minimum Investment</p>
-                                            <p className="text-slate-900 font-medium">{companyData.minimumInvestment}</p>
+                                            <p className="text-[#A8A39A] text-sm">Minimum Investment</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.minimumInvestment}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Shield className="w-5 h-5 text-[#B22234]" />
+                                        <Shield className="w-5 h-5 text-[#D4A94E]" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">BBB Rating</p>
-                                            <p className="text-slate-900 font-medium">{companyData.bbbRating}</p>
+                                            <p className="text-[#A8A39A] text-sm">BBB Rating</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.bbbRating}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <Clock className="w-5 h-5 text-purple-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Years in Business</p>
-                                            <p className="text-slate-900 font-medium">17+ years</p>
+                                            <p className="text-[#A8A39A] text-sm">Years in Business</p>
+                                            <p className="text-[#F6F4EF] font-medium">17+ years</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <Zap className="w-5 h-5 text-orange-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Best For</p>
-                                            <p className="text-slate-900 font-medium text-sm">{companyData.bestFor}</p>
+                                            <p className="text-[#A8A39A] text-sm">Best For</p>
+                                            <p className="text-[#F6F4EF] font-medium text-sm">{companyData.bestFor}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Article Content */}
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-teal-600 hover:prose-a:text-teal-700">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-teal-600 hover:prose-a:text-teal-700">
 
                                 <h2>What is Preferred Trust?</h2>
                                 <p>
@@ -171,38 +171,38 @@ export default function PreferredTrustReviewPage() {
                                     Preferred Trust uses a straightforward fee structure. Here are the typical fees:
                                 </p>
 
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden not-prose my-8">
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl overflow-hidden not-prose my-8">
                                     <table className="w-full text-sm">
-                                        <thead className="bg-slate-100">
+                                        <thead className="bg-[#121423]">
                                             <tr>
-                                                <th className="text-left p-4 text-[#000080] font-semibold">Fee Type</th>
-                                                <th className="text-left p-4 text-[#000080] font-semibold">Amount</th>
+                                                <th className="text-left p-4 text-[#F6F4EF] font-semibold">Fee Type</th>
+                                                <th className="text-left p-4 text-[#F6F4EF] font-semibold">Amount</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="divide-y divide-slate-200">
+                                        <tbody className="divide-y divide-[#2A2D42]">
                                             <tr>
-                                                <td className="p-4 text-slate-600">Account Setup</td>
-                                                <td className="p-4 text-slate-600">$50</td>
+                                                <td className="p-4 text-[#D0CCC4]">Account Setup</td>
+                                                <td className="p-4 text-[#D0CCC4]">$50</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Annual Account Fee</td>
-                                                <td className="p-4 text-slate-600">$275 - $495 (based on assets)</td>
+                                                <td className="p-4 text-[#D0CCC4]">Annual Account Fee</td>
+                                                <td className="p-4 text-[#D0CCC4]">$275 - $495 (based on assets)</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Transaction Fee</td>
-                                                <td className="p-4 text-slate-600">$95 - $150 per transaction</td>
+                                                <td className="p-4 text-[#D0CCC4]">Transaction Fee</td>
+                                                <td className="p-4 text-[#D0CCC4]">$95 - $150 per transaction</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Wire Transfer</td>
-                                                <td className="p-4 text-slate-600">$25</td>
+                                                <td className="p-4 text-[#D0CCC4]">Wire Transfer</td>
+                                                <td className="p-4 text-[#D0CCC4]">$25</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Precious Metals Storage</td>
-                                                <td className="p-4 text-slate-600">$100 - $300/year (varies by depository)</td>
+                                                <td className="p-4 text-[#D0CCC4]">Precious Metals Storage</td>
+                                                <td className="p-4 text-[#D0CCC4]">$100 - $300/year (varies by depository)</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Account Termination</td>
-                                                <td className="p-4 text-slate-600">$75</td>
+                                                <td className="p-4 text-[#D0CCC4]">Account Termination</td>
+                                                <td className="p-4 text-[#D0CCC4]">$75</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -220,33 +220,33 @@ export default function PreferredTrustReviewPage() {
 
                             {/* Account Types Grid */}
                             <div className="grid sm:grid-cols-2 gap-4 my-8">
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <CheckCircle2 className="w-6 h-6 text-green-600" />
-                                    <span className="text-slate-900">Traditional Self-Directed IRA</span>
+                                    <span className="text-[#F6F4EF]">Traditional Self-Directed IRA</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <CheckCircle2 className="w-6 h-6 text-green-600" />
-                                    <span className="text-slate-900">Roth Self-Directed IRA</span>
+                                    <span className="text-[#F6F4EF]">Roth Self-Directed IRA</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <CheckCircle2 className="w-6 h-6 text-green-600" />
-                                    <span className="text-slate-900">SEP IRA</span>
+                                    <span className="text-[#F6F4EF]">SEP IRA</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <CheckCircle2 className="w-6 h-6 text-green-600" />
-                                    <span className="text-slate-900">SIMPLE IRA</span>
+                                    <span className="text-[#F6F4EF]">SIMPLE IRA</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <CheckCircle2 className="w-6 h-6 text-green-600" />
-                                    <span className="text-slate-900">Solo 401(k)</span>
+                                    <span className="text-[#F6F4EF]">Solo 401(k)</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <CheckCircle2 className="w-6 h-6 text-green-600" />
-                                    <span className="text-slate-900">HSA (Health Savings Account)</span>
+                                    <span className="text-[#F6F4EF]">HSA (Health Savings Account)</span>
                                 </div>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-teal-600">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-teal-600">
 
                                 <h2>Investment Options</h2>
                                 <p>
@@ -256,75 +256,75 @@ export default function PreferredTrustReviewPage() {
 
                             {/* Investment Types Grid */}
                             <div className="grid sm:grid-cols-2 gap-4 my-8">
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <Home className="w-6 h-6 text-teal-600" />
-                                    <span className="text-slate-900">Real Estate (residential, commercial, land)</span>
+                                    <span className="text-[#F6F4EF]">Real Estate (residential, commercial, land)</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
-                                    <Coins className="w-6 h-6 text-[#B22234]" />
-                                    <span className="text-slate-900">Precious Metals (gold, silver, platinum)</span>
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
+                                    <Coins className="w-6 h-6 text-[#D4A94E]" />
+                                    <span className="text-[#F6F4EF]">Precious Metals (gold, silver, platinum)</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <TrendingUp className="w-6 h-6 text-blue-600" />
-                                    <span className="text-slate-900">Private Equity & LLCs</span>
+                                    <span className="text-[#F6F4EF]">Private Equity & LLCs</span>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4 flex items-center gap-3 border border-slate-200">
+                                <div className="bg-[#0C0D18] rounded-lg p-4 flex items-center gap-3 border border-[#2A2D42]">
                                     <Shield className="w-6 h-6 text-purple-600" />
-                                    <span className="text-slate-900">Promissory Notes & Loans</span>
+                                    <span className="text-[#F6F4EF]">Promissory Notes & Loans</span>
                                 </div>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-teal-600">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-teal-600">
 
                                 <h2>Preferred Trust vs Competitors</h2>
                             </div>
 
-                            <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden my-8">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl overflow-hidden my-8">
                                 <table className="w-full text-sm">
-                                    <thead className="bg-slate-100">
+                                    <thead className="bg-[#121423]">
                                         <tr>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Feature</th>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Preferred Trust</th>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Equity Trust</th>
-                                            <th className="text-left p-4 text-[#000080] font-semibold">Rocket Dollar</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Feature</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Preferred Trust</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Equity Trust</th>
+                                            <th className="text-left p-4 text-[#F6F4EF] font-semibold">Rocket Dollar</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-slate-200">
+                                    <tbody className="divide-y divide-[#2A2D42]">
                                         <tr>
-                                            <td className="p-4 text-slate-600">Founded</td>
-                                            <td className="p-4 text-slate-600">2007</td>
+                                            <td className="p-4 text-[#D0CCC4]">Founded</td>
+                                            <td className="p-4 text-[#D0CCC4]">2007</td>
                                             <td className="p-4 text-green-600 font-medium">1974</td>
-                                            <td className="p-4 text-slate-600">2018</td>
+                                            <td className="p-4 text-[#D0CCC4]">2018</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">BBB Rating</td>
-                                            <td className="p-4 text-slate-600">A</td>
+                                            <td className="p-4 text-[#D0CCC4]">BBB Rating</td>
+                                            <td className="p-4 text-[#D0CCC4]">A</td>
                                             <td className="p-4 text-green-600 font-medium">A+</td>
-                                            <td className="p-4 text-slate-600">A</td>
+                                            <td className="p-4 text-[#D0CCC4]">A</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">Pricing Model</td>
-                                            <td className="p-4 text-slate-600">Per-transaction</td>
-                                            <td className="p-4 text-slate-600">Per-transaction</td>
+                                            <td className="p-4 text-[#D0CCC4]">Pricing Model</td>
+                                            <td className="p-4 text-[#D0CCC4]">Per-transaction</td>
+                                            <td className="p-4 text-[#D0CCC4]">Per-transaction</td>
                                             <td className="p-4 text-green-600 font-medium">Flat monthly</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">Checkbook Control</td>
-                                            <td className="p-4 text-slate-400">No</td>
-                                            <td className="p-4 text-slate-600">Extra fee</td>
+                                            <td className="p-4 text-[#D0CCC4]">Checkbook Control</td>
+                                            <td className="p-4 text-[#A8A39A]">No</td>
+                                            <td className="p-4 text-[#D0CCC4]">Extra fee</td>
                                             <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 text-slate-600">Best For</td>
-                                            <td className="p-4 text-slate-600">Real estate</td>
-                                            <td className="p-4 text-slate-600">Long-term hold</td>
-                                            <td className="p-4 text-slate-600">Active investors</td>
+                                            <td className="p-4 text-[#D0CCC4]">Best For</td>
+                                            <td className="p-4 text-[#D0CCC4]">Real estate</td>
+                                            <td className="p-4 text-[#D0CCC4]">Long-term hold</td>
+                                            <td className="p-4 text-[#D0CCC4]">Active investors</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
 
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-teal-600">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-teal-600">
 
                                 <h2>Who Should Use Preferred Trust?</h2>
                                 <ul>
@@ -341,7 +341,7 @@ export default function PreferredTrustReviewPage() {
                                     <li><strong>Investors wanting maximum resources</strong> - Equity Trust has more</li>
                                 </ul>
 
-                                <hr className="my-12 border-slate-200" />
+                                <hr className="my-12 border-[#2A2D42]" />
 
                                 <h2>Final Verdict</h2>
                                 <p>
@@ -354,7 +354,7 @@ export default function PreferredTrustReviewPage() {
 
                             {/* FAQ Section */}
                             <div className="mt-12">
-                                <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">Frequently Asked Questions</h2>
+                                <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6">Frequently Asked Questions</h2>
                                 <div className="space-y-4">
                                     {[
                                         {
@@ -374,17 +374,17 @@ export default function PreferredTrustReviewPage() {
                                             a: "Preferred Trust fees are competitive with industry averages. Their annual fees range from $275-$495 depending on account value, with transaction fees of $95-$150."
                                         },
                                     ].map((faq, i) => (
-                                        <div key={i} className="bg-slate-50 rounded-xl border border-slate-200 p-6">
-                                            <h3 className="font-bold text-[#000080] mb-2">{faq.q}</h3>
-                                            <p className="text-slate-600 text-sm">{faq.a}</p>
+                                        <div key={i} className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6">
+                                            <h3 className="font-bold text-[#F6F4EF] mb-2">{faq.q}</h3>
+                                            <p className="text-[#D0CCC4] text-sm">{faq.a}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
                             {/* Augusta CTA */}
-                            <div className="bg-[#000080] text-white p-8 rounded-2xl text-center mt-12 relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                            <div className="bg-[rgba(197,149,46,0.1)] text-white p-8 rounded-2xl text-center mt-12 relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.18)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10">
                                     <h3 className="text-2xl font-serif font-bold mb-4">Want a Gold IRA With Premium Service?</h3>
                                     <p className="mb-6 text-white/80 max-w-lg mx-auto">
@@ -406,32 +406,32 @@ export default function PreferredTrustReviewPage() {
                         {/* Sidebar */}
                         <aside className="relative">
                             <div className="hidden lg:block sticky top-24 space-y-6">
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#000080]">Related Resources</h3>
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42]">
+                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#F6F4EF]">Related Resources</h3>
                                     <div className="space-y-3">
-                                        <Link href="/self-directed-ira" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
+                                        <Link href="/self-directed-ira" className="block text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors">
                                             Self-Directed IRA Guide
                                         </Link>
-                                        <Link href="/reviews/equity-trust" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
+                                        <Link href="/reviews/equity-trust" className="block text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors">
                                             Equity Trust Review
                                         </Link>
-                                        <Link href="/reviews/rocket-dollar" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
+                                        <Link href="/reviews/rocket-dollar" className="block text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors">
                                             Rocket Dollar Review
                                         </Link>
-                                        <Link href="/best-gold-ira-companies" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
+                                        <Link href="/best-gold-ira-companies" className="block text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors">
                                             Best Gold IRA Companies
                                         </Link>
                                     </div>
                                 </div>
 
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] text-center">
                                     <div className="flex justify-center gap-1 mb-2">
                                         {[1,2,3,4,5].map(i => (
-                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-[#B22234] fill-[#B22234]' : 'text-[#B22234]/30'}`} />
+                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-[#D4A94E] fill-[#B22234]' : 'text-[#D4A94E]/30'}`} />
                                         ))}
                                     </div>
-                                    <p className="text-[#000080] font-bold">4.0 / 5</p>
-                                    <p className="text-slate-500 text-xs mt-1">Our Rating</p>
+                                    <p className="text-[#F6F4EF] font-bold">4.0 / 5</p>
+                                    <p className="text-[#A8A39A] text-xs mt-1">Our Rating</p>
                                 </div>
                             </div>
                         </aside>

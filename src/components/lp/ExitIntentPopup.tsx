@@ -82,7 +82,7 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
                 {/* Close Button */}
                 <button
                     onClick={handleClose}
-                    className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
+                    className="absolute top-4 right-4 text-[#A8A39A] hover:text-white transition-colors"
                     aria-label="Close popup"
                 >
                     <X className="h-6 w-6" />
@@ -104,7 +104,7 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
                 {/* Bullet Points */}
                 <ul className="text-left space-y-3 mb-8">
                     {bullets.map((bullet, index) => (
-                        <li key={index} className="flex items-start gap-3 text-slate-300">
+                        <li key={index} className="flex items-start gap-3 text-[#3F4460]">
                             <span className="text-amber-500 mt-1">•</span>
                             <span>{bullet}</span>
                         </li>
@@ -115,21 +115,21 @@ export default function ExitIntentPopup({ affiliateLink, source, variant = "gold
                 <TrackedLPLink
                     href={affiliateLink}
                     source={source}
-                    className="block w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-4 px-6 rounded-lg transition-colors text-lg flex items-center justify-center gap-2"
+                    className="block w-full bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] font-bold py-4 px-6 rounded-lg transition-colors text-lg flex items-center justify-center gap-2"
                 >
                     Get Free Guide
                     <ArrowRight className="h-5 w-5" />
                 </TrackedLPLink>
 
                 {/* Trust signal */}
-                <p className="mt-4 text-slate-400 text-sm">
+                <p className="mt-4 text-[#A8A39A] text-sm">
                     100% free, no commitment required
                 </p>
 
                 {/* Dismiss Link */}
                 <button
                     onClick={handleClose}
-                    className="mt-3 text-slate-500 text-sm hover:text-slate-400 transition-colors underline"
+                    className="mt-3 text-[#A8A39A] text-sm hover:text-[#A8A39A] transition-colors underline"
                 >
                     Close
                 </button>

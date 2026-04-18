@@ -115,7 +115,7 @@ export default function SEPP72tCalculatorPage() {
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 overflow-hidden">
-          <div className="absolute inset-0 bg-slate-50" />
+          <div className="absolute inset-0 bg-[#0C0D18]" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
 
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -124,13 +124,13 @@ export default function SEPP72tCalculatorPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#B22234]/10 text-[#B22234] border border-[#B22234]/30 mb-4">
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[rgba(220,38,38,0.1)] text-[#D4A94E] border border-[#B22234]/30 mb-4">
                 Early Retirement Tool
               </span>
-              <h1 className="text-4xl md:text-5xl font-bold text-[#000080] mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
                 72(t) SEPP Calculator
               </h1>
-              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
                 Physical work takes a toll. If your body says "retire" before 59.5,
                 Rule 72(t) lets you access your IRA penalty-free. See how much you can withdraw.
               </p>
@@ -148,7 +148,7 @@ export default function SEPP72tCalculatorPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
-                  className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8"
+                  className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-8"
                 >
                   {/* Progress Steps */}
                   <div className="flex items-center justify-center mb-8">
@@ -157,8 +157,8 @@ export default function SEPP72tCalculatorPage() {
                         <div
                           className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-colors ${
                             step >= s
-                              ? 'bg-[#B22234] text-slate-900'
-                              : 'bg-slate-700 text-slate-500'
+                              ? 'bg-[#DC2626] text-[#F6F4EF]'
+                              : 'bg-slate-700 text-[#A8A39A]'
                           }`}
                         >
                           {s}
@@ -166,7 +166,7 @@ export default function SEPP72tCalculatorPage() {
                         {s < 3 && (
                           <div
                             className={`w-16 h-1 mx-2 rounded transition-colors ${
-                              step > s ? 'bg-[#B22234]' : 'bg-slate-200'
+                              step > s ? 'bg-[#DC2626]' : 'bg-slate-200'
                             }`}
                           />
                         )}
@@ -181,16 +181,16 @@ export default function SEPP72tCalculatorPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
+                      <h2 className="text-2xl font-bold text-[#F6F4EF] mb-2 text-center">
                         What is your IRA account balance?
                       </h2>
-                      <p className="text-slate-500 text-center mb-8">
+                      <p className="text-[#A8A39A] text-center mb-8">
                         Enter the current balance of the IRA you want to take SEPP distributions from
                       </p>
 
                       <div className="space-y-6">
                         <div className="text-center">
-                          <span className="text-5xl font-bold text-[#B22234]">
+                          <span className="text-5xl font-bold text-[#D4A94E]">
                             {formatCurrency(accountBalance)}
                           </span>
                         </div>
@@ -205,7 +205,7 @@ export default function SEPP72tCalculatorPage() {
                           className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                         />
 
-                        <div className="flex justify-between text-sm text-slate-500">
+                        <div className="flex justify-between text-sm text-[#A8A39A]">
                           <span>$50,000</span>
                           <span>$5,000,000</span>
                         </div>
@@ -217,8 +217,8 @@ export default function SEPP72tCalculatorPage() {
                               onClick={() => setAccountBalance(amount)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 accountBalance === amount
-                                  ? 'bg-[#B22234] text-slate-900'
-                                  : 'bg-slate-700 text-slate-600 hover:bg-slate-600'
+                                  ? 'bg-[#DC2626] text-[#F6F4EF]'
+                                  : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
                               {formatCurrency(amount)}
@@ -230,7 +230,7 @@ export default function SEPP72tCalculatorPage() {
                       <div className="mt-8 flex justify-end">
                         <button
                           onClick={() => setStep(2)}
-                          className="px-8 py-3 bg-[#B22234] text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-colors"
+                          className="px-8 py-3 bg-[#DC2626] text-[#F6F4EF] font-semibold rounded-lg hover:bg-amber-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -245,17 +245,17 @@ export default function SEPP72tCalculatorPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
+                      <h2 className="text-2xl font-bold text-[#F6F4EF] mb-2 text-center">
                         What is your current age?
                       </h2>
-                      <p className="text-slate-500 text-center mb-8">
+                      <p className="text-[#A8A39A] text-center mb-8">
                         SEPP distributions must continue for 5 years or until age 59½, whichever is longer
                       </p>
 
                       <div className="space-y-6">
                         <div className="text-center">
-                          <span className="text-5xl font-bold text-[#B22234]">{age}</span>
-                          <span className="text-2xl text-slate-500 ml-2">years old</span>
+                          <span className="text-5xl font-bold text-[#D4A94E]">{age}</span>
+                          <span className="text-2xl text-[#A8A39A] ml-2">years old</span>
                         </div>
 
                         <input
@@ -268,7 +268,7 @@ export default function SEPP72tCalculatorPage() {
                           className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                         />
 
-                        <div className="flex justify-between text-sm text-slate-500">
+                        <div className="flex justify-between text-sm text-[#A8A39A]">
                           <span>30</span>
                           <span>59</span>
                         </div>
@@ -280,8 +280,8 @@ export default function SEPP72tCalculatorPage() {
                               onClick={() => setAge(a)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 age === a
-                                  ? 'bg-[#B22234] text-slate-900'
-                                  : 'bg-slate-700 text-slate-600 hover:bg-slate-600'
+                                  ? 'bg-[#DC2626] text-[#F6F4EF]'
+                                  : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
                               {a} years
@@ -300,13 +300,13 @@ export default function SEPP72tCalculatorPage() {
                       <div className="mt-8 flex justify-between">
                         <button
                           onClick={() => setStep(1)}
-                          className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                          className="px-8 py-3 bg-slate-700 text-[#D0CCC4] font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                         >
                           Back
                         </button>
                         <button
                           onClick={() => setStep(3)}
-                          className="px-8 py-3 bg-[#B22234] text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-colors"
+                          className="px-8 py-3 bg-[#DC2626] text-[#F6F4EF] font-semibold rounded-lg hover:bg-amber-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -321,16 +321,16 @@ export default function SEPP72tCalculatorPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
+                      <h2 className="text-2xl font-bold text-[#F6F4EF] mb-2 text-center">
                         Select a reasonable interest rate
                       </h2>
-                      <p className="text-slate-500 text-center mb-8">
+                      <p className="text-[#A8A39A] text-center mb-8">
                         The IRS allows a rate up to 120% of the federal mid-term rate (currently ~5%)
                       </p>
 
                       <div className="space-y-6">
                         <div className="text-center">
-                          <span className="text-5xl font-bold text-[#B22234]">{interestRate.toFixed(1)}%</span>
+                          <span className="text-5xl font-bold text-[#D4A94E]">{interestRate.toFixed(1)}%</span>
                         </div>
 
                         <input
@@ -343,7 +343,7 @@ export default function SEPP72tCalculatorPage() {
                           className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                         />
 
-                        <div className="flex justify-between text-sm text-slate-500">
+                        <div className="flex justify-between text-sm text-[#A8A39A]">
                           <span>2.0%</span>
                           <span>8.0%</span>
                         </div>
@@ -355,8 +355,8 @@ export default function SEPP72tCalculatorPage() {
                               onClick={() => setInterestRate(r)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 interestRate === r
-                                  ? 'bg-[#B22234] text-slate-900'
-                                  : 'bg-slate-700 text-slate-600 hover:bg-slate-600'
+                                  ? 'bg-[#DC2626] text-[#F6F4EF]'
+                                  : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
                               {r.toFixed(1)}%
@@ -364,7 +364,7 @@ export default function SEPP72tCalculatorPage() {
                           ))}
                         </div>
 
-                        <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
                           <p className="text-amber-800 text-sm">
                             <strong>Tip:</strong> A higher interest rate results in larger annual distributions.
                             The IRS publishes updated rates monthly.
@@ -375,13 +375,13 @@ export default function SEPP72tCalculatorPage() {
                       <div className="mt-8 flex justify-between">
                         <button
                           onClick={() => setStep(2)}
-                          className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                          className="px-8 py-3 bg-slate-700 text-[#D0CCC4] font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                         >
                           Back
                         </button>
                         <button
                           onClick={handleCalculate}
-                          className="px-8 py-3 bg-[#B22234] text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-colors"
+                          className="px-8 py-3 bg-[#DC2626] text-[#F6F4EF] font-semibold rounded-lg hover:bg-amber-400 transition-colors"
                         >
                           Calculate SEPP
                         </button>
@@ -398,51 +398,51 @@ export default function SEPP72tCalculatorPage() {
                   className="space-y-8"
                 >
                   {/* Summary Card */}
-                  <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8">
-                    <h2 className="text-2xl font-bold text-[#000080] mb-6 text-center">
+                  <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-8">
+                    <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 text-center">
                       Your 72(t) SEPP Options
                     </h2>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                      <div className="bg-slate-50 rounded-lg p-4 text-center">
-                        <p className="text-slate-600 text-sm">Account Balance</p>
-                        <p className="text-xl font-bold text-slate-900">{formatCurrency(accountBalance)}</p>
+                      <div className="bg-[#0C0D18] rounded-lg p-4 text-center">
+                        <p className="text-[#D0CCC4] text-sm">Account Balance</p>
+                        <p className="text-xl font-bold text-[#F6F4EF]">{formatCurrency(accountBalance)}</p>
                       </div>
-                      <div className="bg-slate-50 rounded-lg p-4 text-center">
-                        <p className="text-slate-600 text-sm">Your Age</p>
-                        <p className="text-xl font-bold text-slate-900">{age}</p>
+                      <div className="bg-[#0C0D18] rounded-lg p-4 text-center">
+                        <p className="text-[#D0CCC4] text-sm">Your Age</p>
+                        <p className="text-xl font-bold text-[#F6F4EF]">{age}</p>
                       </div>
-                      <div className="bg-slate-50 rounded-lg p-4 text-center">
-                        <p className="text-slate-600 text-sm">Interest Rate</p>
-                        <p className="text-xl font-bold text-slate-900">{interestRate.toFixed(1)}%</p>
+                      <div className="bg-[#0C0D18] rounded-lg p-4 text-center">
+                        <p className="text-[#D0CCC4] text-sm">Interest Rate</p>
+                        <p className="text-xl font-bold text-[#F6F4EF]">{interestRate.toFixed(1)}%</p>
                       </div>
-                      <div className="bg-slate-50 rounded-lg p-4 text-center">
-                        <p className="text-slate-600 text-sm">SEPP Duration</p>
-                        <p className="text-xl font-bold text-slate-900">{calculations.minimumYears} years</p>
+                      <div className="bg-[#0C0D18] rounded-lg p-4 text-center">
+                        <p className="text-[#D0CCC4] text-sm">SEPP Duration</p>
+                        <p className="text-xl font-bold text-[#F6F4EF]">{calculations.minimumYears} years</p>
                       </div>
                     </div>
 
                     {/* Three Methods Comparison */}
                     <div className="grid md:grid-cols-3 gap-6">
                       {/* RMD Method */}
-                      <div className="bg-slate-50 border border-slate-700 rounded-xl p-6">
+                      <div className="bg-[#0C0D18] border border-slate-700 rounded-xl p-6">
                         <div className="flex items-center gap-2 mb-4">
                           <div className="w-3 h-3 bg-blue-400 rounded-full" />
-                          <h3 className="text-lg font-semibold text-slate-900">RMD Method</h3>
+                          <h3 className="text-lg font-semibold text-[#F6F4EF]">RMD Method</h3>
                         </div>
-                        <p className="text-sm text-slate-500 mb-4">
+                        <p className="text-sm text-[#A8A39A] mb-4">
                           Simplest method - recalculated annually
                         </p>
                         <div className="space-y-3">
                           <div>
-                            <p className="text-slate-600 text-sm">Annual Distribution</p>
+                            <p className="text-[#D0CCC4] text-sm">Annual Distribution</p>
                             <p className="text-2xl font-bold text-blue-600">
                               {formatCurrency(calculations.rmd.annual)}
                             </p>
                           </div>
                           <div>
-                            <p className="text-slate-600 text-sm">Monthly</p>
-                            <p className="text-lg font-semibold text-slate-900">
+                            <p className="text-[#D0CCC4] text-sm">Monthly</p>
+                            <p className="text-lg font-semibold text-[#F6F4EF]">
                               {formatCurrency(calculations.rmd.monthly)}
                             </p>
                           </div>
@@ -450,29 +450,29 @@ export default function SEPP72tCalculatorPage() {
                       </div>
 
                       {/* Fixed Amortization */}
-                      <div className="bg-[#B22234]/5 border-2 border-[#B22234]/30 rounded-xl p-6 relative">
+                      <div className="bg-[rgba(220,38,38,0.06)] border-2 border-[#B22234]/30 rounded-xl p-6 relative">
                         <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                          <span className="bg-[#B22234] text-slate-900 text-xs font-bold px-3 py-1 rounded-full">
+                          <span className="bg-[#DC2626] text-[#F6F4EF] text-xs font-bold px-3 py-1 rounded-full">
                             MOST POPULAR
                           </span>
                         </div>
                         <div className="flex items-center gap-2 mb-4">
                           <div className="w-3 h-3 bg-amber-400 rounded-full" />
-                          <h3 className="text-lg font-semibold text-slate-900">Fixed Amortization</h3>
+                          <h3 className="text-lg font-semibold text-[#F6F4EF]">Fixed Amortization</h3>
                         </div>
-                        <p className="text-sm text-slate-500 mb-4">
+                        <p className="text-sm text-[#A8A39A] mb-4">
                           Fixed payments - highest distribution
                         </p>
                         <div className="space-y-3">
                           <div>
-                            <p className="text-slate-600 text-sm">Annual Distribution</p>
-                            <p className="text-2xl font-bold text-[#B22234]">
+                            <p className="text-[#D0CCC4] text-sm">Annual Distribution</p>
+                            <p className="text-2xl font-bold text-[#D4A94E]">
                               {formatCurrency(calculations.amortization.annual)}
                             </p>
                           </div>
                           <div>
-                            <p className="text-slate-600 text-sm">Monthly</p>
-                            <p className="text-lg font-semibold text-slate-900">
+                            <p className="text-[#D0CCC4] text-sm">Monthly</p>
+                            <p className="text-lg font-semibold text-[#F6F4EF]">
                               {formatCurrency(calculations.amortization.monthly)}
                             </p>
                           </div>
@@ -480,24 +480,24 @@ export default function SEPP72tCalculatorPage() {
                       </div>
 
                       {/* Fixed Annuitization */}
-                      <div className="bg-slate-50 border border-slate-700 rounded-xl p-6">
+                      <div className="bg-[#0C0D18] border border-slate-700 rounded-xl p-6">
                         <div className="flex items-center gap-2 mb-4">
                           <div className="w-3 h-3 bg-green-400 rounded-full" />
-                          <h3 className="text-lg font-semibold text-slate-900">Fixed Annuitization</h3>
+                          <h3 className="text-lg font-semibold text-[#F6F4EF]">Fixed Annuitization</h3>
                         </div>
-                        <p className="text-sm text-slate-500 mb-4">
+                        <p className="text-sm text-[#A8A39A] mb-4">
                           Uses annuity factor tables
                         </p>
                         <div className="space-y-3">
                           <div>
-                            <p className="text-slate-600 text-sm">Annual Distribution</p>
+                            <p className="text-[#D0CCC4] text-sm">Annual Distribution</p>
                             <p className="text-2xl font-bold text-green-600">
                               {formatCurrency(calculations.annuitization.annual)}
                             </p>
                           </div>
                           <div>
-                            <p className="text-slate-600 text-sm">Monthly</p>
-                            <p className="text-lg font-semibold text-slate-900">
+                            <p className="text-[#D0CCC4] text-sm">Monthly</p>
+                            <p className="text-lg font-semibold text-[#F6F4EF]">
                               {formatCurrency(calculations.annuitization.monthly)}
                             </p>
                           </div>
@@ -507,25 +507,25 @@ export default function SEPP72tCalculatorPage() {
                   </div>
 
                   {/* Total Distributions Over SEPP Period */}
-                  <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8">
-                    <h3 className="text-xl font-bold text-[#000080] mb-6">
+                  <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-8">
+                    <h3 className="text-xl font-bold text-[#F6F4EF] mb-6">
                       Total Distributions Over {calculations.minimumYears} Years
                     </h3>
                     <div className="space-y-4">
                       <div className="flex items-center gap-4">
                         <div className="w-3 h-3 bg-blue-400 rounded-full" />
-                        <span className="text-slate-600 flex-1">RMD Method</span>
-                        <span className="text-slate-900 font-semibold">{formatCurrency(calculations.rmd.total)}</span>
+                        <span className="text-[#D0CCC4] flex-1">RMD Method</span>
+                        <span className="text-[#F6F4EF] font-semibold">{formatCurrency(calculations.rmd.total)}</span>
                       </div>
                       <div className="flex items-center gap-4">
                         <div className="w-3 h-3 bg-amber-400 rounded-full" />
-                        <span className="text-slate-600 flex-1">Fixed Amortization</span>
-                        <span className="text-slate-900 font-semibold">{formatCurrency(calculations.amortization.total)}</span>
+                        <span className="text-[#D0CCC4] flex-1">Fixed Amortization</span>
+                        <span className="text-[#F6F4EF] font-semibold">{formatCurrency(calculations.amortization.total)}</span>
                       </div>
                       <div className="flex items-center gap-4">
                         <div className="w-3 h-3 bg-green-400 rounded-full" />
-                        <span className="text-slate-600 flex-1">Fixed Annuitization</span>
-                        <span className="text-slate-900 font-semibold">{formatCurrency(calculations.annuitization.total)}</span>
+                        <span className="text-[#D0CCC4] flex-1">Fixed Annuitization</span>
+                        <span className="text-[#F6F4EF] font-semibold">{formatCurrency(calculations.annuitization.total)}</span>
                       </div>
                     </div>
                   </div>
@@ -535,7 +535,7 @@ export default function SEPP72tCalculatorPage() {
                     <h3 className="text-lg font-semibold text-red-600 mb-4">
                       Important 72(t) Rules
                     </h3>
-                    <ul className="space-y-2 text-slate-600">
+                    <ul className="space-y-2 text-[#D0CCC4]">
                       <li className="flex items-start gap-2">
                         <span className="text-red-600 mt-1">!</span>
                         <span>Once started, SEPP must continue for 5 years OR until 59½, whichever is longer</span>
@@ -566,13 +566,13 @@ export default function SEPP72tCalculatorPage() {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <button
                       onClick={handleReset}
-                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-[#D0CCC4] font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Calculate Again
                     </button>
                     <Link
                       href="/learn/72t-sepp-early-retirement"
-                      className="px-8 py-3 bg-[#B22234] text-slate-900 font-semibold rounded-lg hover:bg-amber-400 transition-colors text-center"
+                      className="px-8 py-3 bg-[#DC2626] text-[#F6F4EF] font-semibold rounded-lg hover:bg-amber-400 transition-colors text-center"
                     >
                       Learn More About 72(t)
                     </Link>
@@ -584,42 +584,42 @@ export default function SEPP72tCalculatorPage() {
         </section>
 
         {/* Educational Section */}
-        <section className="py-16 bg-slate-50">
+        <section className="py-16 bg-[#0C0D18]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
               Understanding 72(t) SEPP Distributions
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-[#B22234] mb-3">What is 72(t)?</h3>
-                <p className="text-slate-600">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#D4A94E] mb-3">What is 72(t)?</h3>
+                <p className="text-[#D0CCC4]">
                   IRS Rule 72(t) allows you to take penalty-free withdrawals from your IRA before age 59½
                   through Substantially Equal Periodic Payments (SEPP). This is ideal for early retirees
                   who need access to retirement funds.
                 </p>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-[#B22234] mb-3">Which Method to Choose?</h3>
-                <p className="text-slate-600">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#D4A94E] mb-3">Which Method to Choose?</h3>
+                <p className="text-[#D0CCC4]">
                   <strong>RMD:</strong> Lowest payments, can vary year to year.<br />
                   <strong>Amortization:</strong> Highest fixed payments, most popular.<br />
                   <strong>Annuitization:</strong> Fixed payments using annuity factors.
                 </p>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-[#B22234] mb-3">Duration Requirements</h3>
-                <p className="text-slate-600">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#D4A94E] mb-3">Duration Requirements</h3>
+                <p className="text-[#D0CCC4]">
                   You must continue SEPP distributions for the longer of 5 years OR until you reach age 59½.
                   If you're 50, that means 9.5 years. If you're 57, that means 5 years (until age 62).
                 </p>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-[#B22234] mb-3">Modification Penalty</h3>
-                <p className="text-slate-600">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#D4A94E] mb-3">Modification Penalty</h3>
+                <p className="text-[#D0CCC4]">
                   If you modify your SEPP plan (other than the one-time switch to RMD), the IRS will
                   apply a 10% penalty to ALL previous distributions, plus interest. This makes careful
                   planning essential.
@@ -632,40 +632,40 @@ export default function SEPP72tCalculatorPage() {
         {/* Related Tools */}
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
               Related Retirement Tools
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <Link
                 href="/tools/retirement-calculator"
-                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6 hover:bg-[#1E2134]/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                <h3 className="text-lg font-semibold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                   Retirement Calculator
                 </h3>
-                <p className="text-slate-600 text-sm mt-2">
+                <p className="text-[#D0CCC4] text-sm mt-2">
                   See if you have enough saved for retirement
                 </p>
               </Link>
               <Link
                 href="/tools/rmd-calculator"
-                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6 hover:bg-[#1E2134]/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                <h3 className="text-lg font-semibold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                   RMD Calculator
                 </h3>
-                <p className="text-slate-600 text-sm mt-2">
+                <p className="text-[#D0CCC4] text-sm mt-2">
                   Calculate your Required Minimum Distributions
                 </p>
               </Link>
               <Link
                 href="/tools/fees-comparison"
-                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6 hover:bg-[#1E2134]/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                <h3 className="text-lg font-semibold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                   IRA Fees Comparison
                 </h3>
-                <p className="text-slate-600 text-sm mt-2">
+                <p className="text-[#D0CCC4] text-sm mt-2">
                   Compare Gold IRA fees across providers
                 </p>
               </Link>

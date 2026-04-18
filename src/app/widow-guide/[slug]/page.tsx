@@ -109,7 +109,7 @@ const iconColorClasses: Record<IconColor, string> = {
   green: "text-green-600 bg-green-100",
   blue: "text-blue-600 bg-blue-100",
   purple: "text-purple-600 bg-purple-100",
-  slate: "text-slate-600 bg-slate-100",
+  slate: "text-[#D0CCC4] bg-[#121423]",
 };
 
 interface PageProps {
@@ -154,13 +154,13 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
         <div className={cn("p-2 rounded-lg flex-shrink-0", colorClass)}>
           <Icon className="h-5 w-5" />
         </div>
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080]">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF]">
           {section.title}
         </h2>
       </div>
 
       <div className="pl-0 md:pl-14">
-        <p className="text-slate-600 leading-relaxed mb-4">{section.content}</p>
+        <p className="text-[#D0CCC4] leading-relaxed mb-4">{section.content}</p>
 
         {section.bullets && section.bullets.length > 0 && (
           <ul className="space-y-2 mb-4">
@@ -168,11 +168,11 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
               <li key={i} className="flex items-start gap-2 text-sm">
                 <ChevronRight className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
                 <span
-                  className="text-slate-600"
+                  className="text-[#D0CCC4]"
                   dangerouslySetInnerHTML={{
                     __html: bullet.replace(
                       /\*\*(.*?)\*\*/g,
-                      '<strong class="text-slate-900">$1</strong>'
+                      '<strong class="text-[#F6F4EF]">$1</strong>'
                     ),
                   }}
                 />
@@ -189,11 +189,11 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
                   {i + 1}
                 </span>
                 <span
-                  className="text-slate-600"
+                  className="text-[#D0CCC4]"
                   dangerouslySetInnerHTML={{
                     __html: item.replace(
                       /\*\*(.*?)\*\*/g,
-                      '<strong class="text-slate-900">$1</strong>'
+                      '<strong class="text-[#F6F4EF]">$1</strong>'
                     ),
                   }}
                 />
@@ -229,7 +229,7 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
             >
               {section.callout.title}
             </p>
-            <p className="text-sm text-slate-600">{section.callout.content}</p>
+            <p className="text-sm text-[#D0CCC4]">{section.callout.content}</p>
           </div>
         )}
 
@@ -237,11 +237,11 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
           <div className="overflow-x-auto mb-4">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-slate-200">
+                <tr className="border-b border-[#2A2D42]">
                   {section.table.headers.map((header, i) => (
                     <th
                       key={i}
-                      className="text-left py-3 px-4 text-slate-500 font-medium"
+                      className="text-left py-3 px-4 text-[#A8A39A] font-medium"
                     >
                       {header}
                     </th>
@@ -250,9 +250,9 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
               </thead>
               <tbody>
                 {section.table.rows.map((row, i) => (
-                  <tr key={i} className="border-b border-slate-100">
+                  <tr key={i} className="border-b border-[#2A2D42]">
                     {row.map((cell, j) => (
-                      <td key={j} className="py-3 px-4 text-slate-600">
+                      <td key={j} className="py-3 px-4 text-[#D0CCC4]">
                         {cell}
                       </td>
                     ))}
@@ -261,7 +261,7 @@ function ArticleSectionComponent({ section }: { section: HubSection }) {
               </tbody>
             </table>
             {section.table.caption && (
-              <p className="text-xs text-slate-400 mt-2 italic">
+              <p className="text-xs text-[#A8A39A] mt-2 italic">
                 {section.table.caption}
               </p>
             )}
@@ -326,24 +326,24 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
       <SchemaScript schema={faqSchema} />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-12 overflow-hidden bg-slate-50">
+      <section className="relative pt-24 pb-12 overflow-hidden bg-[#0C0D18]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(168,85,247,0.08),transparent_50%)]" />
 
         <Container className="relative z-10">
           {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-sm text-slate-500 mb-6">
-            <Link href="/" className="hover:text-slate-900 transition-colors">
+          <nav className="flex items-center gap-2 text-sm text-[#A8A39A] mb-6">
+            <Link href="/" className="hover:text-[#F6F4EF] transition-colors">
               Home
             </Link>
             <ChevronRight className="h-4 w-4" />
             <Link
               href="/widow-guide"
-              className="hover:text-slate-900 transition-colors"
+              className="hover:text-[#F6F4EF] transition-colors"
             >
               Widow&apos;s Guide
             </Link>
             <ChevronRight className="h-4 w-4" />
-            <span className="text-slate-700">{article.title}</span>
+            <span className="text-[#D0CCC4]">{article.title}</span>
           </nav>
 
           <div className="max-w-4xl">
@@ -363,10 +363,10 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#000080] mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#F6F4EF] mb-4">
               {article.title}
             </h1>
-            <p className="text-xl text-slate-600">{article.subtitle}</p>
+            <p className="text-xl text-[#D0CCC4]">{article.subtitle}</p>
           </div>
         </Container>
       </section>
@@ -383,7 +383,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
                     <p className="text-purple-800 font-medium mb-1">
                       {article.emotionalNote.title}
                     </p>
-                    <p className="text-slate-600 text-sm">
+                    <p className="text-[#D0CCC4] text-sm">
                       {article.emotionalNote.content}
                     </p>
                   </div>
@@ -415,7 +415,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
               {/* Timeline (if exists) */}
               {article.timeline && article.timeline.length > 0 && (
                 <div className="mb-12">
-                  <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6 flex items-center gap-3">
+                  <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
                     <Clock className="h-6 w-6 text-purple-600" />
                     Timeline of Action Items
                   </h2>
@@ -423,9 +423,9 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
                     {article.timeline.map((period, i) => (
                       <div
                         key={i}
-                        className="bg-slate-50 border border-slate-200 rounded-xl p-6"
+                        className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6"
                       >
-                        <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                        <h3 className="font-bold text-[#F6F4EF] mb-4 flex items-center gap-2">
                           <Calendar className="h-5 w-5 text-purple-600" />
                           {period.period}
                         </h3>
@@ -436,7 +436,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
                               className="flex items-start gap-2 text-sm"
                             >
                               <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                              <span className="text-slate-600">{task}</span>
+                              <span className="text-[#D0CCC4]">{task}</span>
                             </li>
                           ))}
                         </ul>
@@ -453,19 +453,19 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
 
               {/* Gold Bridge Section */}
               <section className="my-12 bg-gradient-to-r from-amber-50 to-amber-100 border border-amber-200 rounded-xl p-8">
-                <h2 className="text-2xl font-serif font-bold text-[#B22234] mb-4">
+                <h2 className="text-2xl font-serif font-bold text-[#D4A94E] mb-4">
                   {article.goldBridge.title}
                 </h2>
-                <p className="text-slate-600 mb-4">{article.goldBridge.content}</p>
+                <p className="text-[#D0CCC4] mb-4">{article.goldBridge.content}</p>
                 <ul className="space-y-2 mb-6">
                   {article.goldBridge.bullets.map((bullet, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm">
-                      <CheckCircle2 className="h-4 w-4 text-[#B22234] flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-600">{bullet}</span>
+                      <CheckCircle2 className="h-4 w-4 text-[#D4A94E] flex-shrink-0 mt-0.5" />
+                      <span className="text-[#D0CCC4]">{bullet}</span>
                     </li>
                   ))}
                 </ul>
-                <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+                <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                   <Link href="/quiz">
                     Get Free Consultation <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -475,7 +475,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
               {/* FAQs */}
               {article.faqs.length > 0 && (
                 <section className="my-12">
-                  <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6 flex items-center gap-3">
+                  <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
                     <HelpCircle className="h-6 w-6 text-purple-600" />
                     Frequently Asked Questions
                   </h2>
@@ -483,10 +483,10 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
                     {article.faqs.map((faq, i) => (
                       <div
                         key={i}
-                        className="bg-slate-50 border border-slate-200 rounded-xl p-6"
+                        className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6"
                       >
-                        <h3 className="font-bold text-slate-900 mb-2">{faq.question}</h3>
-                        <p className="text-slate-600 text-sm">{faq.answer}</p>
+                        <h3 className="font-bold text-[#F6F4EF] mb-2">{faq.question}</h3>
+                        <p className="text-[#D0CCC4] text-sm">{faq.answer}</p>
                       </div>
                     ))}
                   </div>
@@ -496,7 +496,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
               {/* Related Articles */}
               {relatedArticles.length > 0 && (
                 <section className="my-12">
-                  <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">
+                  <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6">
                     Related Guides
                   </h2>
                   <div className="grid md:grid-cols-2 gap-4">
@@ -504,12 +504,12 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
                       <Link
                         key={related.slug}
                         href={`/widow-guide/${related.slug}`}
-                        className="bg-slate-50 hover:bg-slate-100 border border-slate-200 hover:border-purple-300 rounded-lg p-4 transition-all group"
+                        className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] hover:border-purple-300 rounded-lg p-4 transition-all group"
                       >
-                        <h3 className="font-medium text-slate-900 group-hover:text-purple-600 transition-colors">
+                        <h3 className="font-medium text-[#F6F4EF] group-hover:text-purple-600 transition-colors">
                           {related.title}
                         </h3>
-                        <p className="text-sm text-slate-500 mt-1 line-clamp-2">
+                        <p className="text-sm text-[#A8A39A] mt-1 line-clamp-2">
                           {related.subtitle}
                         </p>
                       </Link>
@@ -523,7 +523,7 @@ export default async function WidowGuideArticlePage({ params }: PageProps) {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-slate-50 border-t border-slate-200">
+      <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
         <Container>
           <AugustaCTA
             variant="footer"

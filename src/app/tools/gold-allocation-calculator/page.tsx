@@ -36,7 +36,7 @@ const schemaMarkup = {
 
 export default function GoldAllocationCalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-slate-900">
+    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}

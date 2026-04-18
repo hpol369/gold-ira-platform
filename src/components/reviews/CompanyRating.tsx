@@ -68,13 +68,13 @@ export function CompanyRating({
       </div>
 
       {showValue && (
-        <span className={cn("font-semibold text-slate-900", textClasses[size])}>
+        <span className={cn("font-semibold text-[#F6F4EF]", textClasses[size])}>
           {rating.toFixed(1)}
         </span>
       )}
 
       {reviews !== undefined && (
-        <span className={cn("text-slate-500", textClasses[size])}>
+        <span className={cn("text-[#A8A39A]", textClasses[size])}>
           ({reviews.toLocaleString()} reviews)
         </span>
       )}

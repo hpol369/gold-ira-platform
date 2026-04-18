@@ -28,17 +28,17 @@ export default function ContactPage() {
             <SchemaScript schema={schema} />
 
             {/* Hero Section */}
-            <section className="bg-slate-50 text-[#000080] py-20 relative overflow-hidden">
+            <section className="bg-[#0C0D18] text-[#F6F4EF] py-20 relative overflow-hidden">
                 <Container className="relative z-10">
                     <FadeIn>
                         <div className="max-w-3xl mx-auto text-center space-y-6">
-                            <span className="inline-block text-[#B22234] font-bold tracking-widest uppercase text-xs">
+                            <span className="inline-block text-[#D4A94E] font-bold tracking-widest uppercase text-xs">
                                 Get in Touch
                             </span>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight">
                                 Contact Us
                             </h1>
-                            <p className="text-xl text-slate-600 font-light leading-relaxed">
+                            <p className="text-xl text-[#D0CCC4] font-light leading-relaxed">
                                 Got a question? Found an error on our site? Just want to say hi? We actually read every message.
                             </p>
                         </div>
@@ -52,17 +52,17 @@ export default function ContactPage() {
                     <div className="max-w-4xl mx-auto">
                         <div className="grid md:grid-cols-2 gap-8 mb-16">
                             <FadeIn delay={0.1}>
-                                <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 h-full">
-                                    <div className="h-12 w-12 bg-[#B22234]/10 text-[#B22234] rounded-full flex items-center justify-center mb-6">
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8 h-full">
+                                    <div className="h-12 w-12 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] rounded-full flex items-center justify-center mb-6">
                                         <Mail className="h-6 w-6" />
                                     </div>
-                                    <h2 className="text-xl font-bold font-serif text-[#000080] mb-3">Email Us</h2>
-                                    <p className="text-slate-500 leading-relaxed mb-4">
+                                    <h2 className="text-xl font-bold font-serif text-[#F6F4EF] mb-3">Email Us</h2>
+                                    <p className="text-[#A8A39A] leading-relaxed mb-4">
                                         For general questions, corrections, or feedback, drop us a line. We try to respond within a couple business days.
                                     </p>
                                     <a
                                         href="mailto:hugo@cc-community.com"
-                                        className="text-[#B22234] font-semibold hover:underline"
+                                        className="text-[#D4A94E] font-semibold hover:underline"
                                     >
                                         hugo@cc-community.com
                                     </a>
@@ -70,17 +70,17 @@ export default function ContactPage() {
                             </FadeIn>
 
                             <FadeIn delay={0.2}>
-                                <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 h-full">
-                                    <div className="h-12 w-12 bg-[#B22234]/10 text-[#B22234] rounded-full flex items-center justify-center mb-6">
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8 h-full">
+                                    <div className="h-12 w-12 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] rounded-full flex items-center justify-center mb-6">
                                         <MessageCircle className="h-6 w-6" />
                                     </div>
-                                    <h2 className="text-xl font-bold font-serif text-[#000080] mb-3">Partnership Inquiries</h2>
-                                    <p className="text-slate-500 leading-relaxed mb-4">
+                                    <h2 className="text-xl font-bold font-serif text-[#F6F4EF] mb-3">Partnership Inquiries</h2>
+                                    <p className="text-[#A8A39A] leading-relaxed mb-4">
                                         Are you with a Gold IRA company interested in being reviewed? We&apos;re selective, but we&apos;re always open to hearing from reputable businesses.
                                     </p>
                                     <a
                                         href="mailto:hugo@cc-community.com"
-                                        className="text-[#B22234] font-semibold hover:underline"
+                                        className="text-[#D4A94E] font-semibold hover:underline"
                                     >
                                         hugo@cc-community.com
                                     </a>
@@ -90,14 +90,14 @@ export default function ContactPage() {
 
                         {/* Before You Reach Out */}
                         <FadeIn delay={0.3}>
-                            <div className="bg-slate-50 rounded-2xl p-8 md:p-10 border border-slate-200">
+                            <div className="bg-[#0C0D18] rounded-2xl p-8 md:p-10 border border-[#2A2D42]">
                                 <div className="flex items-start gap-4 mb-6">
-                                    <div className="h-10 w-10 bg-[#B22234]/10 text-[#B22234] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                    <div className="h-10 w-10 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                                         <HelpCircle className="h-5 w-5" />
                                     </div>
                                     <div>
-                                        <h2 className="text-2xl font-bold font-serif text-[#000080] mb-2">Before You Reach Out</h2>
-                                        <p className="text-slate-500">
+                                        <h2 className="text-2xl font-bold font-serif text-[#F6F4EF] mb-2">Before You Reach Out</h2>
+                                        <p className="text-[#A8A39A]">
                                             You might find your answer faster in one of these places:
                                         </p>
                                     </div>
@@ -106,34 +106,34 @@ export default function ContactPage() {
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <Link
                                         href="/guide/gold-ira-guide"
-                                        className="bg-white rounded-xl p-5 border border-slate-200 hover:border-[#B22234]/30 hover:bg-slate-50 transition-all group"
+                                        className="bg-[#161828] rounded-xl p-5 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.45)] hover:bg-[#121423] transition-all group"
                                     >
-                                        <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] transition-colors mb-1">Gold IRA Guide</h3>
-                                        <p className="text-sm text-slate-500">Everything you need to know about Gold IRAs, from start to finish.</p>
+                                        <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors mb-1">Gold IRA Guide</h3>
+                                        <p className="text-sm text-[#A8A39A]">Everything you need to know about Gold IRAs, from start to finish.</p>
                                     </Link>
 
                                     <Link
                                         href="/learn/gold-ira-scams"
-                                        className="bg-white rounded-xl p-5 border border-slate-200 hover:border-[#B22234]/30 hover:bg-slate-50 transition-all group"
+                                        className="bg-[#161828] rounded-xl p-5 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.45)] hover:bg-[#121423] transition-all group"
                                     >
-                                        <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] transition-colors mb-1">Scam Prevention Guide</h3>
-                                        <p className="text-sm text-slate-500">Red flags to watch for and how to protect yourself.</p>
+                                        <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors mb-1">Scam Prevention Guide</h3>
+                                        <p className="text-sm text-[#A8A39A]">Red flags to watch for and how to protect yourself.</p>
                                     </Link>
 
                                     <Link
                                         href="/guide/gold-ira-fees"
-                                        className="bg-white rounded-xl p-5 border border-slate-200 hover:border-[#B22234]/30 hover:bg-slate-50 transition-all group"
+                                        className="bg-[#161828] rounded-xl p-5 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.45)] hover:bg-[#121423] transition-all group"
                                     >
-                                        <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] transition-colors mb-1">Fee Breakdown</h3>
-                                        <p className="text-sm text-slate-500">What fees are normal and what&apos;s a ripoff.</p>
+                                        <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors mb-1">Fee Breakdown</h3>
+                                        <p className="text-sm text-[#A8A39A]">What fees are normal and what&apos;s a ripoff.</p>
                                     </Link>
 
                                     <Link
                                         href="/reviews"
-                                        className="bg-white rounded-xl p-5 border border-slate-200 hover:border-[#B22234]/30 hover:bg-slate-50 transition-all group"
+                                        className="bg-[#161828] rounded-xl p-5 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.45)] hover:bg-[#121423] transition-all group"
                                     >
-                                        <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] transition-colors mb-1">Company Reviews</h3>
-                                        <p className="text-sm text-slate-500">Our honest reviews of the top Gold IRA providers.</p>
+                                        <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors mb-1">Company Reviews</h3>
+                                        <p className="text-sm text-[#A8A39A]">Our honest reviews of the top Gold IRA providers.</p>
                                     </Link>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                         {/* Important Note */}
                         <FadeIn delay={0.4}>
                             <div className="mt-12 text-center">
-                                <div className="inline-flex items-center gap-2 text-slate-500 bg-slate-50 border border-slate-200 rounded-full px-5 py-3">
+                                <div className="inline-flex items-center gap-2 text-[#A8A39A] bg-[#0C0D18] border border-[#2A2D42] rounded-full px-5 py-3">
                                     <Clock className="h-4 w-4" />
                                     <span className="text-sm">We typically respond within 1-2 business days</span>
                                 </div>

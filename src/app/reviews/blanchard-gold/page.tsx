@@ -54,7 +54,7 @@ export default function BlanchardGoldReviewPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
-            <header className="bg-[#000080] text-white py-16">
+            <header className="bg-[rgba(197,149,46,0.1)] text-white py-16">
                 <Container>
                     <div className="max-w-4xl">
                         <div className="flex items-center gap-2 mb-6">
@@ -63,10 +63,10 @@ export default function BlanchardGoldReviewPage() {
                             </div>
                             <div className="flex gap-1 ml-4">
                                 {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-[#B22234] text-[#B22234]' : 'text-blue-300'}`} />
+                                    <Star key={i} className={`w-5 h-5 ${i < 4 ? 'fill-[#B22234] text-[#D4A94E]' : 'text-blue-300'}`} />
                                 ))}
                             </div>
-                            <span className="font-bold text-[#B22234] text-lg">4.2/5.0</span>
+                            <span className="font-bold text-[#D4A94E] text-lg">4.2/5.0</span>
                         </div>
                         <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Blanchard Gold Review (2026)</h1>
                         <p className="text-xl text-blue-100 max-w-2xl leading-relaxed">
@@ -83,7 +83,7 @@ export default function BlanchardGoldReviewPage() {
                             <div className="block lg:hidden">
                                 <ReviewSidebar {...companyData} />
                             </div>
-                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-800 prose-a:text-[#B22234] max-w-none">
+                            <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-li:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E] max-w-none">
 
                                 <section id="history" className="scroll-mt-32">
                                     <p className="lead">
@@ -178,7 +178,7 @@ export default function BlanchardGoldReviewPage() {
                                         <li><strong>You can be firm about what you want:</strong> If you can say &quot;bullion only&quot; and stick to it, they&apos;re still legitimate</li>
                                     </ul>
                                     <p>
-                                        <strong>For most working folks looking to protect their retirement</strong>—people who want straightforward gold exposure without collector risk—companies like <Link href="/reviews/goldco" className="text-[#B22234] hover:underline">Goldco</Link> or <Link href="/reviews/augusta-precious-metals" className="text-[#B22234] hover:underline">Augusta</Link> are a better fit. They focus on regular bullion and don&apos;t try to steer you toward expensive collectibles.
+                                        <strong>For most working folks looking to protect their retirement</strong>—people who want straightforward gold exposure without collector risk—companies like <Link href="/reviews/goldco" className="text-[#D4A94E] hover:underline">Goldco</Link> or <Link href="/reviews/augusta-precious-metals" className="text-[#D4A94E] hover:underline">Augusta</Link> are a better fit. They focus on regular bullion and don&apos;t try to steer you toward expensive collectibles.
                                     </p>
                                     <p>
                                         Blanchard is respected with real expertise. But their specialty—rare coins—isn&apos;t what most people need when they&apos;re trying to protect 30 years of hard-earned savings.

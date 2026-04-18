@@ -29,7 +29,7 @@ export function LPFeatures({ headline, features, className }: LPFeaturesProps) {
               <div className="h-6 w-6 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0">
                 <Check className="h-4 w-4 text-green-400" />
               </div>
-              <span className="text-slate-200 text-base md:text-lg">{feature}</span>
+              <span className="text-[#3F4460] text-base md:text-lg">{feature}</span>
             </div>
           ))}
         </div>

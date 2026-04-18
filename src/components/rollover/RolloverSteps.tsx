@@ -15,7 +15,7 @@ export function RolloverSteps({ steps, providerName }: RolloverStepsProps) {
       <h3 className="font-bold text-lg text-white mb-2">
         Step-by-Step: Rolling Over Your {providerName} Account
       </h3>
-      <p className="text-slate-400 text-sm mb-6">
+      <p className="text-[#A8A39A] text-sm mb-6">
         Your Gold IRA company handles most of this. You just need to know what&apos;s happening.
       </p>
       <div className="space-y-4">
@@ -25,7 +25,7 @@ export function RolloverSteps({ steps, providerName }: RolloverStepsProps) {
               {index + 1}
             </div>
             <div className="flex-1 pt-1">
-              <p className="text-slate-300">{step}</p>
+              <p className="text-[#3F4460]">{step}</p>
             </div>
           </div>
         ))}
@@ -87,29 +87,29 @@ export function RolloverTimeline({ timeline, directRollover, onlineRollover }: R
   return (
     <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
       <h3 className="font-bold text-white mb-2">How Long Does This Take?</h3>
-      <p className="text-slate-400 text-sm mb-4">Here&apos;s what to expect once you start the process.</p>
+      <p className="text-[#A8A39A] text-sm mb-4">Here&apos;s what to expect once you start the process.</p>
       <div className="grid sm:grid-cols-3 gap-4">
         <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
           <div className="text-2xl font-bold text-amber-700">{timeline}</div>
-          <div className="text-sm text-slate-400">Start to Finish</div>
+          <div className="text-sm text-[#A8A39A]">Start to Finish</div>
         </div>
         <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
           <div className={cn(
             "text-2xl font-bold",
-            directRollover ? "text-green-700" : "text-slate-500"
+            directRollover ? "text-green-700" : "text-[#A8A39A]"
           )}>
             {directRollover ? "Yes" : "No"}
           </div>
-          <div className="text-sm text-slate-400">Direct Rollover</div>
+          <div className="text-sm text-[#A8A39A]">Direct Rollover</div>
         </div>
         <div className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
           <div className={cn(
             "text-2xl font-bold",
-            onlineRollover ? "text-green-700" : "text-slate-500"
+            onlineRollover ? "text-green-700" : "text-[#A8A39A]"
           )}>
             {onlineRollover ? "Yes" : "No"}
           </div>
-          <div className="text-sm text-slate-400">Start Online</div>
+          <div className="text-sm text-[#A8A39A]">Start Online</div>
         </div>
       </div>
     </div>

@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+@theme {
+  /* PATRIOT THEME - Americana / Trust / Clarity */
+  /* Replaces previous "Hockroll" Dark Theme */
+
+  /* Backgrounds */
+  --color-primary: #000080;
+  /* NAVY BLUE (Headers) */
+  --color-primary-light: #1a1a90;
+  --color-primary-dark: #000050;
+
+  /* Accents */
+  --color-secondary: #B22234;
+  /* WARNING RED (Buttons/Alerts) */
+  --color-secondary-light: #d44455;
+  --color-secondary-dark: #8b0000;
+
+  /* We keep the "Zero Black" available for footer/legacy but default is White */
+  --color-slate-900: #0f172a;
+
+  /* Semantic Colors */
+  --color-background: #ffffff;
+  /* Pure White */
+  --color-background-paper: #f8fafc;
+  /* Slate 50 (Cards) */
+
+  /* Typography */
+  --color-text: #0f172a;
+  /* Slate 900 (Main Text) */
+  --color-text-muted: #475569;
+  /* Slate 600 (Subtext) */
+  --color-text-light: #64748b;
+  /* Slate 500 */
+
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-inter), sans-serif;
+
+  /* Animations - Kept from previous theme for components that need it */
+  --animate-fade-up: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-glow: glow 4s ease-in-out infinite alternate;
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-background);
+  }
+
+  body {
+    background-color: var(--color-background);
+    /* REMOVED: Dark Forest Gradient */
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    color: var(--color-primary);
+    /* Headers are now Navy */
+    letter-spacing: -0.02em;
+  }
+
+  /* Patriot Card Utility */
+  .patriot-card {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .patriot-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-primary);
+  }
+
+  /* Improved Prose for Light Mode */
+  .prose {
+    --tw-prose-body: var(--color-text-muted);
+    --tw-prose-headings: var(--color-primary);
+    --tw-prose-lead: var(--color-text-muted);
+    --tw-prose-links: var(--color-secondary);
+    --tw-prose-bold: var(--color-text);
+    --tw-prose-counters: var(--color-text-muted);
+    --tw-prose-bullets: var(--color-secondary);
+    --tw-prose-hr: #e2e8f0;
+    --tw-prose-quotes: var(--color-primary);
+    --tw-prose-quote-borders: var(--color-primary);
+    --tw-prose-captions: var(--color-text-light);
+    --tw-prose-code: var(--color-secondary);
+    --tw-prose-pre-code: #e2e8f0;
+    --tw-prose-pre-bg: #1e293b;
+    --tw-prose-th-borders: #e2e8f0;
+    --tw-prose-td-borders: #f1f5f9;
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+/* --- COMPATIBILITY UTILITIES --- */
+/* Kept to prevent crashing components that use the old names */
+
+@utility glass-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 1rem;
+}
+
+@utility glass-premium {
+  background: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+/* Gold Glow now becomes Red Shadow for urgency */
+@utility gold-glow {
+  box-shadow: 0 0 20px rgba(178, 34, 52, 0.2);
+}
+
+/* --- PERFORMANCE OPTIMIZATIONS --- */
+
+/* CSS Containment for isolated repaints */
+.patriot-card {
+  contain: layout style paint;
+}
+
+section {
+  contain: layout style;
+}
+
+.fixed {
+  contain: strict;
+}
+
+/* Notification animations (replacing Framer Motion) */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+
+.notification-enter {
+  animation: slideInLeft 0.3s ease-out forwards;
+}
+
+.notification-exit {
+  animation: slideOutLeft 0.3s ease-in forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* GPU compositing hints for animated elements */
+.notification-enter,
+.notification-exit {
+  will-change: transform, opacity;
+}

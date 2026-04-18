@@ -13,14 +13,14 @@ export default function EditorialPolicyPage() {
     return (
         <main className="min-h-screen bg-white pb-24">
             {/* Header */}
-            <header className="bg-slate-50 py-16 border-b border-slate-200">
+            <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
                     <FadeIn>
                         <div className="max-w-3xl mx-auto text-center">
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-4">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-4">
                                 Editorial Policy
                             </h1>
-                            <p className="text-lg text-slate-500">
+                            <p className="text-lg text-[#A8A39A]">
                                 How we research, review, and rank Gold IRA companies
                             </p>
                         </div>
@@ -32,9 +32,9 @@ export default function EditorialPolicyPage() {
             <Container className="py-12">
                 <div className="max-w-3xl mx-auto">
                     <FadeIn delay={0.1}>
-                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                        <article className="prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
-                            <p className="lead text-lg text-slate-600">
+                            <p className="lead text-lg text-[#D0CCC4]">
                                 We built Rich Dad Retirement because finding honest information about Gold IRAs is harder than it should be. Most review sites are just sales funnels in disguise. We wanted to do better.
                             </p>
 
@@ -153,7 +153,7 @@ export default function EditorialPolicyPage() {
                                 <li>Listening to reader feedback about their experiences</li>
                             </ul>
                             <p>
-                                That said, we&apos;re a small team and can&apos;t catch everything instantly. If you notice something outdated or incorrect, please <Link href="/contact" className="text-[#B22234] hover:underline">let us know</Link>.
+                                That said, we&apos;re a small team and can&apos;t catch everything instantly. If you notice something outdated or incorrect, please <Link href="/contact" className="text-[#D4A94E] hover:underline">let us know</Link>.
                             </p>
 
                             <h2>Corrections Policy</h2>
@@ -180,7 +180,7 @@ export default function EditorialPolicyPage() {
 
                             <h2>Questions?</h2>
                             <p>
-                                If you have questions about our editorial process or want to report a concern, email us at <a href="mailto:editorial@richdadretirement.com" className="text-[#B22234] hover:underline">editorial@richdadretirement.com</a>.
+                                If you have questions about our editorial process or want to report a concern, email us at <a href="mailto:editorial@richdadretirement.com" className="text-[#D4A94E] hover:underline">editorial@richdadretirement.com</a>.
                             </p>
 
                         </article>

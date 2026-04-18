@@ -22,7 +22,7 @@ export default function MoneyMetalsExchangePage() {
 
             <div className="flex-grow bg-white">
                 {/* Header / Hero for Review */}
-                <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
+                <header className="bg-[rgba(197,149,46,0.1)] text-white py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-400/10 via-transparent to-transparent opacity-80 z-0"></div>
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
@@ -61,7 +61,7 @@ export default function MoneyMetalsExchangePage() {
                             />
 
                             {/* Main Body Content - TYPOGRAPHY PROSE */}
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-800 prose-a:text-[#B22234]">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E]">
                                 <h2>The Executive Summary</h2>
                                 <p>
                                     <strong>Money Metals Exchange</strong> made headlines when Investopedia named them "Best Overall" precious metals dealer. Their claim to fame? Low-cost Starter Portfolios that let anyone get into gold and silver without a massive upfront investment.
@@ -96,11 +96,11 @@ export default function MoneyMetalsExchangePage() {
                                     For new investors, Starter Portfolios remove the paralysis of choice. For experienced stackers, they might seem limiting. Either way, they've helped Money Metals attract customers who'd otherwise feel overwhelmed.
                                 </p>
 
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 not-prose my-8">
-                                    <h4 className="font-bold text-[#000080] flex items-center gap-2 mb-2">
-                                        <Info className="w-5 h-5 text-[#B22234]" /> IRA vs. Direct Purchase
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] not-prose my-8">
+                                    <h4 className="font-bold text-[#F6F4EF] flex items-center gap-2 mb-2">
+                                        <Info className="w-5 h-5 text-[#D4A94E]" /> IRA vs. Direct Purchase
                                     </h4>
-                                    <p className="text-sm text-slate-600">
+                                    <p className="text-sm text-[#D0CCC4]">
                                         Money Metals is better known for direct purchases (you receive metals at home) than IRAs (metals stored in depository). If your primary goal is a retirement account rollover, compare with IRA-focused companies like Augusta or Noble Gold.
                                     </p>
                                 </div>
@@ -121,7 +121,7 @@ export default function MoneyMetalsExchangePage() {
                                     Complaints typically focus on shipping costs for small orders (no minimum means some people order small and balk at shipping fees) and occasional delays during high-demand periods.
                                 </p>
 
-                                <hr className="my-12 border-slate-200" />
+                                <hr className="my-12 border-[#2A2D42]" />
 
                                 <h2>Final Verdict: Are They Worth It?</h2>
                                 <p>
@@ -133,8 +133,8 @@ export default function MoneyMetalsExchangePage() {
                             </div>
 
                             {/* Bottom CTA */}
-                            <div className="bg-[#000080] text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                            <div className="bg-[rgba(197,149,46,0.1)] text-white p-8 rounded-2xl text-center mt-12 shadow-xl relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.18)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10">
                                     <h3 className="text-2xl font-serif font-bold mb-4">Looking for an IRA Specialist?</h3>
                                     <p className="mb-8 text-blue-100 max-w-lg mx-auto">

@@ -88,16 +88,16 @@ export default function AhgVsOxfordPage() {
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
-            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-[#000080]-dark/50" />
+            <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[rgba(197,149,46,0.1)]-dark/50" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-sm font-semibold text-[#B22234] mb-6">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[#121423] border border-[#2A2D42] text-sm font-semibold text-[#D4A94E] mb-6">
                         Top Rated Dealers
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         American Hartford Gold vs. Oxford Gold Group
                     </h1>
-                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto leading-relaxed">
                         Two of the most aggressive promoters in the space. Who offers the best deal for 2026?
                     </p>
                 </Container>
@@ -111,7 +111,7 @@ export default function AhgVsOxfordPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                         <p className="lead">
                             If you watch cable news, you've seen the ads for <strong>American Hartford Gold</strong>. <strong>Oxford Gold Group</strong> is their quieter but highly competent rival. Both specialize in customer service and competitive pricing.
@@ -171,11 +171,11 @@ export default function AhgVsOxfordPage() {
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-[#F6F4EF] text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.1)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Compare Today's Prices</h3>
-                                <p className="mb-6 text-slate-600">See who is offering the best price on gold bars right now.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Compare Today's Prices</h3>
+                                <p className="mb-6 text-[#D0CCC4]">See who is offering the best price on gold bars right now.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Check Prices <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -189,7 +189,7 @@ export default function AhgVsOxfordPage() {
             </Container>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

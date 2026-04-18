@@ -33,32 +33,32 @@ export function ReviewSidebar({
                     {[...Array(5)].map((_, i) => (
                         <Star
                             key={i}
-                            className={cn("w-5 h-5", i < Math.floor(rating) ? "fill-amber-400 text-amber-400" : "text-slate-600")}
+                            className={cn("w-5 h-5", i < Math.floor(rating) ? "fill-amber-400 text-amber-400" : "text-[#D0CCC4]")}
                         />
                     ))}
                 </div>
-                <p className="text-sm font-medium text-slate-400">Overall Rating</p>
+                <p className="text-sm font-medium text-[#A8A39A]">Overall Rating</p>
             </div>
 
             {/* Quick Facts */}
             <div className="space-y-4 mb-8">
                 <div className="flex justify-between items-center py-3 border-b border-white/10">
-                    <span className="text-sm text-slate-400">Min. Investment</span>
+                    <span className="text-sm text-[#A8A39A]">Min. Investment</span>
                     <span className="font-semibold text-white">{minInvestment}</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-white/10">
-                    <span className="text-sm text-slate-400">Annual Fees</span>
+                    <span className="text-sm text-[#A8A39A]">Annual Fees</span>
                     <span className="font-semibold text-white">{fees}</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-white/10">
-                    <span className="text-sm text-slate-400">BBB Rating</span>
+                    <span className="text-sm text-[#A8A39A]">BBB Rating</span>
                     <div className="flex items-center gap-1">
                         <Shield className="w-4 h-4 text-blue-400" />
                         <span className="font-semibold text-white">{bbbRating}</span>
                     </div>
                 </div>
                 <div className="py-3">
-                    <span className="text-sm text-slate-400 block mb-1">Best For</span>
+                    <span className="text-sm text-[#A8A39A] block mb-1">Best For</span>
                     <div className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-xs font-bold border border-green-500/30">
                         <Award className="w-3 h-3" />
                         {bestFor}
@@ -73,7 +73,7 @@ export function ReviewSidebar({
                 </a>
             </Button>
 
-            <p className="text-xs text-center text-slate-500">
+            <p className="text-xs text-center text-[#A8A39A]">
                 Official Partner Link
             </p>
         </div>

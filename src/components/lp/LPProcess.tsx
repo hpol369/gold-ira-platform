@@ -88,14 +88,14 @@ export function LPProcess({
                     <div className="h-20 w-20 rounded-full bg-amber-500/20 flex items-center justify-center mb-4">
                       <Icon className="h-10 w-10 text-amber-400" />
                     </div>
-                    <div className="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-amber-500 flex items-center justify-center text-slate-900 font-bold text-sm">
+                    <div className="absolute -top-2 -right-2 h-8 w-8 rounded-full bg-amber-500 flex items-center justify-center text-[#F6F4EF] font-bold text-sm">
                       {index + 1}
                     </div>
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-slate-200 text-base md:text-lg leading-relaxed">{step.description}</p>
+                  <p className="text-[#3F4460] text-base md:text-lg leading-relaxed">{step.description}</p>
                 </div>
               </div>
             );
@@ -110,7 +110,7 @@ export function LPProcess({
                 "inline-flex items-center justify-center gap-2",
                 "px-8 py-4 text-lg font-bold",
                 "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
-                "text-slate-900 rounded-xl",
+                "text-[#F6F4EF] rounded-xl",
                 "shadow-[0_0_60px_-5px_rgba(212,175,55,0.5)]",
                 "hover:shadow-[0_0_80px_-5px_rgba(212,175,55,0.7)]",
                 "hover:scale-105 transition-all duration-300",
@@ -132,7 +132,7 @@ export function LPProcess({
                 "inline-flex items-center justify-center gap-2",
                 "px-8 py-4 text-lg font-bold",
                 "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
-                "text-slate-900 rounded-xl",
+                "text-[#F6F4EF] rounded-xl",
                 "shadow-[0_0_60px_-5px_rgba(212,175,55,0.5)]",
                 "hover:shadow-[0_0_80px_-5px_rgba(212,175,55,0.7)]",
                 "hover:scale-105 transition-all duration-300",

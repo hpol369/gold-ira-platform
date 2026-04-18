@@ -102,17 +102,17 @@ export default function HomeStorageGoldIraPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-slate-50 py-16 border-b border-slate-200">
+            <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="inline-flex items-center gap-2 text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4">
+                        <span className="inline-flex items-center gap-2 text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-4">
                             <AlertTriangle className="w-4 h-4" />
                             Important Warning
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
                             Home Storage Gold IRA: Don&apos;t Do It
                         </h1>
-                        <p className="text-xl text-slate-600 leading-relaxed">
+                        <p className="text-xl text-[#D0CCC4] leading-relaxed">
                             Some slick sales guy is telling you that you can keep your IRA gold at home in your safe. Don&apos;t fall for it. Following this advice could cost you 40% of your retirement savings in taxes and penalties.
                         </p>
                     </div>
@@ -127,7 +127,7 @@ export default function HomeStorageGoldIraPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-[#000080] prose-li:text-slate-600 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -146,10 +146,10 @@ export default function HomeStorageGoldIraPage() {
                         {/* What Is It */}
                         <section id="what-is-it" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-[#B22234]/10 rounded-lg text-[#B22234]">
+                                <div className="p-3 bg-[rgba(220,38,38,0.1)] rounded-lg text-[#D4A94E]">
                                     <Home className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">What Is a &quot;Home Storage Gold IRA&quot;?</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What Is a &quot;Home Storage Gold IRA&quot;?</h2>
                             </div>
                             <p>
                                 The pitch goes something like this: <em>&quot;Why trust some bank with YOUR gold? With our special IRA structure, you can keep your gold at home where you can see it, touch it, and protect it yourself.&quot;</em>
@@ -168,7 +168,7 @@ export default function HomeStorageGoldIraPage() {
                                 <div className="p-3 bg-amber-500/10 rounded-lg text-amber-600">
                                     <Scale className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Home Storage Isn&apos;t Legal</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Why Home Storage Isn&apos;t Legal</h2>
                             </div>
                             <p>
                                 The IRS rules are crystal clear. Under IRC Section 408(m), precious metals in an IRA must be held by a bank or approved non-bank trustee. The metals must be stored at an IRS-approved depository.
@@ -188,10 +188,10 @@ export default function HomeStorageGoldIraPage() {
                         {/* Court Cases */}
                         <section id="court-cases" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-[#000080]/10 rounded-lg text-[#000080]">
+                                <div className="p-3 bg-[rgba(197,149,46,0.08)] rounded-lg text-[#F6F4EF]">
                                     <Gavel className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The Court Cases That Settled This</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Court Cases That Settled This</h2>
                             </div>
                             <p>
                                 If there was any doubt, the Tax Court has made it abundantly clear that home storage doesn&apos;t work:
@@ -211,7 +211,7 @@ export default function HomeStorageGoldIraPage() {
                                 <div className="p-3 bg-red-100 rounded-lg text-red-600">
                                     <XCircle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">What You&apos;ll Actually Pay</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">What You&apos;ll Actually Pay</h2>
                             </div>
                             <p>
                                 Let&apos;s say you have $100,000 in a Gold IRA and you move it to home storage. Here&apos;s what happens when the IRS catches up:
@@ -233,10 +233,10 @@ export default function HomeStorageGoldIraPage() {
                         {/* LLC Loophole */}
                         <section id="llc-loophole" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-slate-100 rounded-lg text-slate-600">
+                                <div className="p-3 bg-[#121423] rounded-lg text-[#D0CCC4]">
                                     <ShieldX className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The &quot;LLC Loophole&quot; Myth</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The &quot;LLC Loophole&quot; Myth</h2>
                             </div>
                             <p>
                                 Here&apos;s how the scam usually works: A company tells you to set up an LLC. Your self-directed IRA owns the LLC. The LLC then &quot;buys&quot; gold and stores it at your home.
@@ -290,14 +290,14 @@ export default function HomeStorageGoldIraPage() {
                             <h2>Home Storage Gold IRA FAQs</h2>
                             <div className="space-y-4 not-prose">
                                 {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
-                                    <details key={index} className="group bg-white rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden shadow-sm">
-                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                                    <details key={index} className="group bg-[#161828] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden shadow-sm">
+                                        <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                             <h4 className="text-lg font-bold">{faq.name}</h4>
-                                            <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                            <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                                 <AlertTriangle className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" />
                                             </span>
                                         </summary>
-                                        <p className="mt-4 leading-relaxed text-slate-500">
+                                        <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                             {faq.acceptedAnswer.text}
                                         </p>
                                     </details>
@@ -312,7 +312,7 @@ export default function HomeStorageGoldIraPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-home-storage-gold-ira" />
                 </Container>

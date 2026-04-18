@@ -116,7 +116,7 @@ export default function SilverIRAApprovedPatriotPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-slate-900 font-serif">
+        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
             {/* FAQ Schema */}
             <script
                 type="application/ld+json"
@@ -124,7 +124,7 @@ export default function SilverIRAApprovedPatriotPage() {
             />
 
             {/* Top Warning Bar */}
-            <div className="bg-[#B22234] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
+            <div className="bg-[#DC2626] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
                 <span className="flex items-center justify-center gap-2">
                     <AlertTriangle className="h-4 w-4" />
                     IRS Alert: Only .999 Fine Silver Qualifies for IRAs
@@ -132,23 +132,23 @@ export default function SilverIRAApprovedPatriotPage() {
             </div>
 
             {/* Hero Section */}
-            <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
+            <header className="relative py-12 md:py-20 bg-[#0C0D18] border-b-4 border-[#000080]">
                 <div className="max-w-4xl mx-auto px-4 text-center">
 
                     {/* Headline Group */}
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#F6F4EF] mb-6 leading-tight uppercase">
                         IRA-Approved Silver: <br />
-                        <span className="text-[#B22234] underline decoration-4 underline-offset-8">What the IRS Allows</span>
+                        <span className="text-[#D4A94E] underline decoration-4 underline-offset-8">What the IRS Allows</span>
                     </h1>
 
-                    <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
+                    <p className="text-xl md:text-2xl text-[#D0CCC4] font-sans mb-8 max-w-2xl mx-auto">
                         Don't make a <strong>costly mistake</strong>. Only specific silver products qualify for your retirement account. Here's the complete IRS-approved list.
                     </p>
 
                     {/* Quick Facts Box */}
-                    <div className="bg-white border-2 border-[#000080] rounded-xl p-6 mb-10 max-w-2xl mx-auto text-left shadow-lg">
-                        <h2 className="text-lg font-bold text-[#000080] mb-4 font-sans uppercase tracking-wide">IRS Purity Requirements:</h2>
-                        <ul className="space-y-3 font-sans text-slate-700">
+                    <div className="bg-[#161828] border-2 border-[#000080] rounded-xl p-6 mb-10 max-w-2xl mx-auto text-left shadow-lg">
+                        <h2 className="text-lg font-bold text-[#F6F4EF] mb-4 font-sans uppercase tracking-wide">IRS Purity Requirements:</h2>
+                        <ul className="space-y-3 font-sans text-[#D0CCC4]">
                             <li className="flex items-center gap-3">
                                 <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0" />
                                 <span><strong>.999 Fine Silver Minimum</strong> (99.9% pure)</span>
@@ -169,12 +169,12 @@ export default function SilverIRAApprovedPatriotPage() {
                         <LeadCaptureButton
                             variant="silver"
                             source="lp-silver-ira-approved-hero"
-                            className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get Your Free Silver Guide
                             <ArrowRight className="h-8 w-8" />
                         </LeadCaptureButton>
-                        <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
+                        <p className="text-sm text-[#A8A39A] font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Free Expert Consultation Included
                         </p>
@@ -183,14 +183,14 @@ export default function SilverIRAApprovedPatriotPage() {
             </header>
 
             {/* As Seen On / Trust */}
-            <section className="py-8 bg-slate-100 border-b border-slate-200">
+            <section className="py-8 bg-[#121423] border-b border-[#2A2D42]">
                 <div className="max-w-5xl mx-auto px-4 text-center">
-                    <p className="text-slate-500 font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
+                    <p className="text-[#A8A39A] font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale">
-                        <span className="text-2xl font-black text-slate-800">FOX NEWS</span>
-                        <span className="text-2xl font-black text-slate-800">NEWSMAX</span>
-                        <span className="text-2xl font-black text-slate-800">BEN SHAPIRO</span>
-                        <span className="text-2xl font-black text-slate-800">FORBES</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FOX NEWS</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">NEWSMAX</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">BEN SHAPIRO</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FORBES</span>
                     </div>
                 </div>
             </section>
@@ -199,27 +199,27 @@ export default function SilverIRAApprovedPatriotPage() {
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-5xl mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif mb-4">
                             IRS-Approved Silver Coins
                         </h2>
-                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                        <p className="text-lg text-[#D0CCC4] max-w-2xl mx-auto">
                             These government-minted coins meet all IRS requirements for your Silver IRA.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
                         {approvedCoins.map((coin) => (
-                            <div key={coin.name} className="bg-slate-50 border-2 border-slate-200 rounded-xl p-6 hover:border-[#000080] transition-colors">
+                            <div key={coin.name} className="bg-[#0C0D18] border-2 border-[#2A2D42] rounded-xl p-6 hover:border-[rgba(197,149,46,0.55)] transition-colors">
                                 <div className="flex items-start gap-4">
-                                    <div className="bg-[#000080] text-white p-3 rounded-lg flex-shrink-0">
+                                    <div className="bg-[rgba(197,149,46,0.1)] text-white p-3 rounded-lg flex-shrink-0">
                                         <Award className="h-6 w-6" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-[#000080] mb-1">{coin.name}</h3>
-                                        <p className="text-sm text-[#B22234] font-semibold mb-2">
+                                        <h3 className="text-xl font-bold text-[#F6F4EF] mb-1">{coin.name}</h3>
+                                        <p className="text-sm text-[#D4A94E] font-semibold mb-2">
                                             {coin.purity} | {coin.mint}
                                         </p>
-                                        <p className="text-slate-600">{coin.description}</p>
+                                        <p className="text-[#D0CCC4]">{coin.description}</p>
                                     </div>
                                 </div>
                             </div>
@@ -229,30 +229,30 @@ export default function SilverIRAApprovedPatriotPage() {
             </section>
 
             {/* Approved Bars Section */}
-            <section className="py-16 bg-slate-50 font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-5xl mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif mb-4">
                             IRS-Approved Silver Bars
                         </h2>
-                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                        <p className="text-lg text-[#D0CCC4] max-w-2xl mx-auto">
                             Premium silver bars with lower premiums than coins. Great for larger investments.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
                         {approvedBars.map((bar) => (
-                            <div key={bar.name} className="bg-white border-2 border-slate-200 rounded-xl p-6 hover:border-[#000080] transition-colors">
+                            <div key={bar.name} className="bg-[#161828] border-2 border-[#2A2D42] rounded-xl p-6 hover:border-[rgba(197,149,46,0.55)] transition-colors">
                                 <div className="flex items-start gap-4">
-                                    <div className="bg-slate-200 text-[#000080] p-3 rounded-lg flex-shrink-0">
+                                    <div className="bg-slate-200 text-[#F6F4EF] p-3 rounded-lg flex-shrink-0">
                                         <CheckCircle2 className="h-6 w-6" />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-bold text-[#000080] mb-1">{bar.name}</h3>
-                                        <p className="text-sm text-[#B22234] font-semibold mb-2">
+                                        <h3 className="text-xl font-bold text-[#F6F4EF] mb-1">{bar.name}</h3>
+                                        <p className="text-sm text-[#D4A94E] font-semibold mb-2">
                                             Available Sizes: {bar.sizes}
                                         </p>
-                                        <p className="text-slate-600">{bar.description}</p>
+                                        <p className="text-[#D0CCC4]">{bar.description}</p>
                                     </div>
                                 </div>
                             </div>
@@ -262,33 +262,33 @@ export default function SilverIRAApprovedPatriotPage() {
             </section>
 
             {/* NOT Approved Warning Section */}
-            <section className="py-16 bg-[#B22234]/5 border-y-4 border-[#B22234] font-sans">
+            <section className="py-16 bg-[rgba(220,38,38,0.06)] border-y-4 border-[#B22234] font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="text-center mb-10">
-                        <div className="inline-flex items-center gap-2 bg-[#B22234] text-white px-4 py-2 rounded-full text-sm font-bold uppercase mb-4">
+                        <div className="inline-flex items-center gap-2 bg-[#DC2626] text-white px-4 py-2 rounded-full text-sm font-bold uppercase mb-4">
                             <AlertTriangle className="h-4 w-4" />
                             Warning
                         </div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#B22234] font-serif mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#D4A94E] font-serif mb-4">
                             Silver That Is NOT IRA-Approved
                         </h2>
-                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                        <p className="text-lg text-[#D0CCC4] max-w-2xl mx-auto">
                             Buying the wrong silver can disqualify your IRA and trigger penalties. Avoid these products:
                         </p>
                     </div>
 
-                    <div className="bg-white rounded-xl border-2 border-[#B22234] p-8 shadow-lg">
+                    <div className="bg-[#161828] rounded-xl border-2 border-[#B22234] p-8 shadow-lg">
                         <ul className="grid md:grid-cols-2 gap-4">
                             {notApproved.map((item) => (
-                                <li key={item} className="flex items-center gap-3 text-slate-800">
-                                    <XCircle className="h-6 w-6 text-[#B22234] flex-shrink-0" />
+                                <li key={item} className="flex items-center gap-3 text-[#F6F4EF]">
+                                    <XCircle className="h-6 w-6 text-[#D4A94E] flex-shrink-0" />
                                     <span className="font-medium">{item}</span>
                                 </li>
                             ))}
                         </ul>
                     </div>
 
-                    <p className="text-center mt-8 text-slate-600 italic">
+                    <p className="text-center mt-8 text-[#D0CCC4] italic">
                         Not sure if your silver qualifies? Get a free consultation with an IRA specialist.
                     </p>
                 </div>
@@ -297,15 +297,15 @@ export default function SilverIRAApprovedPatriotPage() {
             {/* FAQ Section */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif mb-10 text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif mb-10 text-center">
                         Common Questions About IRA Silver
                     </h2>
 
                     <div className="space-y-6">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-                                <h3 className="text-lg font-bold text-[#000080] mb-3">{faq.question}</h3>
-                                <p className="text-slate-700 leading-relaxed">{faq.answer}</p>
+                            <div key={index} className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-3">{faq.question}</h3>
+                                <p className="text-[#D0CCC4] leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>
@@ -313,12 +313,12 @@ export default function SilverIRAApprovedPatriotPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-[#000080] text-center">
+            <section className="py-16 bg-[rgba(197,149,46,0.1)] text-center">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
                         Get Your Free Silver IRA Guide
                     </h2>
-                    <p className="text-slate-300 mb-8 text-lg font-sans">
+                    <p className="text-[#3F4460] mb-8 text-lg font-sans">
                         Learn exactly which silver products belong in your retirement account - and which ones to avoid.
                     </p>
 
@@ -340,18 +340,18 @@ export default function SilverIRAApprovedPatriotPage() {
                     <LeadCaptureButton
                         variant="silver"
                         source="lp-silver-ira-approved-footer"
-                        className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Send Me The Free Guide
                     </LeadCaptureButton>
-                    <p className="text-slate-400 mt-6 text-sm font-sans">
+                    <p className="text-[#A8A39A] mt-6 text-sm font-sans">
                         100% Free. Zero Obligation. Your privacy is protected.
                     </p>
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="bg-slate-900 text-slate-600 py-8 text-center text-xs font-sans">
+            <footer className="bg-slate-900 text-[#D0CCC4] py-8 text-center text-xs font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <p>&copy; 2026 Rich Dad Retirement. All Rights Reserved.</p>
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals investing involves risk. Past performance does not guarantee future results.</p>

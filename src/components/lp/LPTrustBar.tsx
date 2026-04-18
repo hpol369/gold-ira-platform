@@ -62,7 +62,7 @@ export function LPTrustBar({
               ))}
             </div>
             <span className="text-white font-semibold text-sm sm:text-base">{rating}/5</span>
-            <span className="text-slate-400 text-xs sm:text-sm">({reviewCount.toLocaleString()} reviews)</span>
+            <span className="text-[#A8A39A] text-xs sm:text-sm">({reviewCount.toLocaleString()} reviews)</span>
           </div>
 
           {/* Divider */}

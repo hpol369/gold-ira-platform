@@ -55,18 +55,18 @@ const schema = {
 
 export default function BirchGoldComplaintsPage() {
     return (
-        <main className="min-h-screen bg-slate-50 pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
+            <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-sm font-semibold text-[#000080] mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-sm font-semibold text-[#F6F4EF] mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <AlertOctagon className="w-4 h-4" /> Complaint Investigation
                     </span>
-                    <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#000080]">
+                    <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#F6F4EF]">
                         Birch Gold Complaints: The Full Picture
                     </h1>
-                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto leading-relaxed">
                         With celebrity endorsements and heavy advertising comes scrutiny. We analyzed BBB complaints, customer reviews, and regulatory records.
                     </p>
                 </Container>
@@ -80,7 +80,7 @@ export default function BirchGoldComplaintsPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-900 prose-a:text-[#B22234] max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-li:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E] max-w-none">
 
                         <p className="lead">
                             Birch Gold Group is everywhere. If you listen to conservative talk radio or podcasts, you&apos;ve probably heard Ben Shapiro, Ron Paul, or other hosts endorse them. That kind of exposure brings in a lot of customers—and inevitably, some complaints.
@@ -106,21 +106,21 @@ export default function BirchGoldComplaintsPage() {
                             </p>
 
                             <div className="not-prose grid gap-4 my-6">
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">1. Spot Price Confusion (Most Common)</h4>
-                                    <p className="text-gray-600 text-sm">
+                                <div className="p-5 bg-[#161828] rounded-lg border border-[#2A2D42]">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">1. Spot Price Confusion (Most Common)</h4>
+                                    <p className="text-[#D0CCC4] text-sm">
                                         Many new investors don&apos;t understand that when you buy gold, you pay a premium above the spot price. When they check their account and see a value lower than what they paid, they think they got scammed. This is actually normal—it&apos;s the dealer&apos;s spread, and it exists everywhere.
                                     </p>
                                 </div>
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">2. Shipping Delays</h4>
-                                    <p className="text-gray-600 text-sm">
+                                <div className="p-5 bg-[#161828] rounded-lg border border-[#2A2D42]">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">2. Shipping Delays</h4>
+                                    <p className="text-[#D0CCC4] text-sm">
                                         Some customers complained about delays in receiving their metals or getting their IRA funded. Most of these were resolved once the customer contacted support, and many were due to third-party custodian delays, not Birch Gold directly.
                                     </p>
                                 </div>
-                                <div className="p-5 bg-white rounded-lg border border-gray-200">
-                                    <h4 className="font-bold text-gray-900 mb-2">3. Sales Call Frequency</h4>
-                                    <p className="text-gray-600 text-sm">
+                                <div className="p-5 bg-[#161828] rounded-lg border border-[#2A2D42]">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-2">3. Sales Call Frequency</h4>
+                                    <p className="text-[#D0CCC4] text-sm">
                                         A few people complained about follow-up calls after requesting a free kit. This is standard practice in the industry—if you request info, expect calls. You can always ask to be removed from their list.
                                     </p>
                                 </div>
@@ -135,20 +135,20 @@ export default function BirchGoldComplaintsPage() {
                         <section id="reputation" className="scroll-mt-32">
                             <h2>Birch Gold&apos;s Reputation in 2026</h2>
                             <div className="not-prose my-8 grid md:grid-cols-3 gap-6">
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
+                                <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42] text-center">
                                     <div className="text-4xl font-bold text-primary mb-2">A+</div>
-                                    <div className="text-sm text-gray-600">BBB Rating</div>
-                                    <div className="text-xs text-gray-400 mt-1">20+ Years Clean</div>
+                                    <div className="text-sm text-[#D0CCC4]">BBB Rating</div>
+                                    <div className="text-xs text-[#A8A39A] mt-1">20+ Years Clean</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
+                                <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42] text-center">
                                     <div className="text-4xl font-bold text-primary mb-2">0</div>
-                                    <div className="text-sm text-gray-600">Regulatory Actions</div>
-                                    <div className="text-xs text-gray-400 mt-1">Clean Record</div>
+                                    <div className="text-sm text-[#D0CCC4]">Regulatory Actions</div>
+                                    <div className="text-xs text-[#A8A39A] mt-1">Clean Record</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
+                                <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42] text-center">
                                     <div className="text-4xl font-bold text-primary mb-2">$10k</div>
-                                    <div className="text-sm text-gray-600">Minimum Investment</div>
-                                    <div className="text-xs text-gray-400 mt-1">Low Barrier</div>
+                                    <div className="text-sm text-[#D0CCC4]">Minimum Investment</div>
+                                    <div className="text-xs text-[#A8A39A] mt-1">Low Barrier</div>
                                 </div>
                             </div>
                         </section>
@@ -163,11 +163,11 @@ export default function BirchGoldComplaintsPage() {
                                 However, there&apos;s a practical consideration: high-profile endorsers have reputations to protect. If Birch Gold were scamming their listeners, it would blow up publicly. The ongoing relationships suggest that Birch Gold is at least meeting basic expectations.
                             </p>
 
-                            <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 flex gap-4 not-prose my-6">
-                                <Users className="w-6 h-6 text-gray-600 shrink-0" />
+                            <div className="bg-gray-50 p-6 rounded-xl border border-[#2A2D42] flex gap-4 not-prose my-6">
+                                <Users className="w-6 h-6 text-[#D0CCC4] shrink-0" />
                                 <div>
-                                    <h4 className="font-bold text-gray-800">The Endorsement Effect</h4>
-                                    <p className="text-gray-600 text-sm">
+                                    <h4 className="font-bold text-[#F6F4EF]">The Endorsement Effect</h4>
+                                    <p className="text-[#D0CCC4] text-sm">
                                         Birch Gold has worked with the same conservative media figures for years. If their customers were getting ripped off en masse, these partnerships would have ended. Still, don&apos;t choose a company based on who endorses them—do your own research on fees and service.
                                     </p>
                                 </div>
@@ -181,32 +181,32 @@ export default function BirchGoldComplaintsPage() {
                                 No. Here&apos;s why I&apos;m confident about that:
                             </p>
                             <div className="not-prose grid gap-3 my-6">
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-[#161828] rounded-lg border border-[#2A2D42]">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">20+ years in business</h4>
-                                        <p className="text-gray-600 text-sm">Scams get shut down. Legitimate businesses last. Birch Gold has been operating since 2003.</p>
+                                        <h4 className="font-bold text-[#F6F4EF]">20+ years in business</h4>
+                                        <p className="text-[#D0CCC4] text-sm">Scams get shut down. Legitimate businesses last. Birch Gold has been operating since 2003.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-[#161828] rounded-lg border border-[#2A2D42]">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">A+ BBB rating</h4>
-                                        <p className="text-gray-600 text-sm">The BBB doesn&apos;t just hand these out. Companies have to respond to complaints and resolve issues.</p>
+                                        <h4 className="font-bold text-[#F6F4EF]">A+ BBB rating</h4>
+                                        <p className="text-[#D0CCC4] text-sm">The BBB doesn&apos;t just hand these out. Companies have to respond to complaints and resolve issues.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-[#161828] rounded-lg border border-[#2A2D42]">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">Physical location</h4>
-                                        <p className="text-gray-600 text-sm">Birch Gold operates out of Burbank, California. They&apos;re real people in a real office—not a PO box.</p>
+                                        <h4 className="font-bold text-[#F6F4EF]">Physical location</h4>
+                                        <p className="text-[#D0CCC4] text-sm">Birch Gold operates out of Burbank, California. They&apos;re real people in a real office—not a PO box.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 p-4 bg-white rounded-lg border border-gray-200">
+                                <div className="flex gap-4 p-4 bg-[#161828] rounded-lg border border-[#2A2D42]">
                                     <CheckCircle2 className="w-6 h-6 text-green-600 shrink-0" />
                                     <div>
-                                        <h4 className="font-bold text-gray-900">No regulatory actions</h4>
-                                        <p className="text-gray-600 text-sm">The CFTC, FTC, and state regulators have taken action against many gold dealers. Birch Gold isn&apos;t on any of those lists.</p>
+                                        <h4 className="font-bold text-[#F6F4EF]">No regulatory actions</h4>
+                                        <p className="text-[#D0CCC4] text-sm">The CFTC, FTC, and state regulators have taken action against many gold dealers. Birch Gold isn&apos;t on any of those lists.</p>
                                     </div>
                                 </div>
                             </div>
@@ -222,15 +222,15 @@ export default function BirchGoldComplaintsPage() {
                                 The main thing to watch: fees can be a higher percentage of your investment when you&apos;re starting with $10-20k. Make sure you understand the spread and annual fees before committing.
                             </p>
                             <p>
-                                For our full review with fee breakdowns, see our <Link href="/reviews/birch-gold" className="text-[#B22234] hover:underline">Birch Gold Group Review</Link>. Or compare them against <Link href="/compare/noble-gold-vs-birch-gold" className="text-[#B22234] hover:underline">Noble Gold</Link> for similar minimums.
+                                For our full review with fee breakdowns, see our <Link href="/reviews/birch-gold" className="text-[#D4A94E] hover:underline">Birch Gold Group Review</Link>. Or compare them against <Link href="/compare/noble-gold-vs-birch-gold" className="text-[#D4A94E] hover:underline">Noble Gold</Link> for similar minimums.
                             </p>
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8 text-center relative overflow-hidden not-prose">
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">20 Years. Zero Regulatory Actions.</h3>
-                                <p className="mb-6 text-slate-600">See why Ben Shapiro recommends Birch Gold. Get their free investor kit.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">20 Years. Zero Regulatory Actions.</h3>
+                                <p className="mb-6 text-[#D0CCC4]">See why Ben Shapiro recommends Birch Gold. Get their free investor kit.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <a href={AFFILIATE_LINKS.birch} target="_blank" rel="noopener noreferrer">
                                         Get Free Kit <ArrowRight className="ml-2 w-4 h-4" />

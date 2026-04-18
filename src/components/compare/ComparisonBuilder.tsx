@@ -23,16 +23,16 @@ export function ComparisonBuilder({ companies }: ComparisonBuilderProps) {
   };
 
   return (
-    <div className="mt-12 bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
-      <h3 className="text-xl font-bold text-[#000080] mb-4">Build Your Own Comparison</h3>
-      <p className="text-slate-600 mb-6">
+    <div className="mt-12 bg-[#161828] rounded-2xl p-8 border border-[#2A2D42] shadow-sm">
+      <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">Build Your Own Comparison</h3>
+      <p className="text-[#D0CCC4] mb-6">
         Select any two companies to see a detailed side-by-side comparison.
       </p>
       <div className="grid md:grid-cols-3 gap-4">
         <select
           value={companyA}
           onChange={(e) => setCompanyA(e.target.value)}
-          className="w-full p-3 border border-slate-200 rounded-lg bg-white text-slate-900 focus:border-[#B22234]/50 focus:outline-none"
+          className="w-full p-3 border border-[#2A2D42] rounded-lg bg-white text-[#F6F4EF] focus:border-[#B22234]/50 focus:outline-none"
         >
           <option value="" disabled>Select first company...</option>
           {companies.map(company => (
@@ -44,7 +44,7 @@ export function ComparisonBuilder({ companies }: ComparisonBuilderProps) {
         <select
           value={companyB}
           onChange={(e) => setCompanyB(e.target.value)}
-          className="w-full p-3 border border-slate-200 rounded-lg bg-white text-slate-900 focus:border-[#B22234]/50 focus:outline-none"
+          className="w-full p-3 border border-[#2A2D42] rounded-lg bg-white text-[#F6F4EF] focus:border-[#B22234]/50 focus:outline-none"
         >
           <option value="" disabled>Select second company...</option>
           {companies.map(company => (
@@ -57,7 +57,7 @@ export function ComparisonBuilder({ companies }: ComparisonBuilderProps) {
           type="button"
           onClick={handleCompare}
           disabled={!companyA || !companyB || companyA === companyB}
-          className="w-full p-3 bg-[#B22234] text-white font-bold rounded-lg hover:bg-[#8b1c2a] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full p-3 bg-[#DC2626] text-white font-bold rounded-lg hover:bg-[#991B1B] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Compare
         </button>

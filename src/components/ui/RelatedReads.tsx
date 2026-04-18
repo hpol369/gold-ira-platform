@@ -22,12 +22,12 @@ export function RelatedReads({ articles }: RelatedReadsProps) {
                     <Link
                         key={idx}
                         href={article.href}
-                        className="group flex flex-col gap-2 p-4 rounded-lg hover:bg-white/5 transition-colors border border-transparent hover:border-white/10"
+                        className="group flex flex-col gap-2 p-4 rounded-lg hover:bg-[#1E2134]/5 transition-colors border border-transparent hover:border-white/10"
                     >
                         <span className="font-semibold text-white group-hover:text-amber-400 transition-colors line-clamp-2">
                             {article.title}
                         </span>
-                        <span className="text-xs font-bold text-slate-400 flex items-center gap-1 uppercase tracking-widest mt-auto">
+                        <span className="text-xs font-bold text-[#A8A39A] flex items-center gap-1 uppercase tracking-widest mt-auto">
                             Read Article <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                         </span>
                     </Link>

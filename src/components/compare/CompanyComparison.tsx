@@ -45,20 +45,20 @@ export function CompanyComparisonTable({
 
   return (
     <div className="overflow-x-auto">
-      <table className="w-full border-collapse bg-white rounded-xl overflow-hidden border border-slate-200">
+      <table className="w-full border-collapse bg-[#161828] rounded-xl overflow-hidden border border-[#2A2D42]">
         <thead>
-          <tr className="bg-slate-100">
-            <th className="p-4 text-left font-semibold text-slate-700 border-b border-slate-200 w-1/3">
+          <tr className="bg-[#121423]">
+            <th className="p-4 text-left font-semibold text-[#D0CCC4] border-b border-[#2A2D42] w-1/3">
               Feature
             </th>
             <th className={cn(
-              "p-4 text-center border-b border-slate-200 w-1/3",
-              companyA.featured ? "bg-[#B22234]/5" : ""
+              "p-4 text-center border-b border-[#2A2D42] w-1/3",
+              companyA.featured ? "bg-[rgba(220,38,38,0.06)]" : ""
             )}>
-              <Link href={`/reviews/${companyA.slug}`} className="hover:text-[#B22234] transition-colors">
-                <div className="font-bold text-slate-900">{companyA.name}</div>
+              <Link href={`/reviews/${companyA.slug}`} className="hover:text-[#D4A94E] transition-colors">
+                <div className="font-bold text-[#F6F4EF]">{companyA.name}</div>
                 {companyA.featured && (
-                  <div className="inline-flex items-center gap-1 text-xs text-[#B22234] mt-1">
+                  <div className="inline-flex items-center gap-1 text-xs text-[#D4A94E] mt-1">
                     <Award className="h-3 w-3" />
                     #1 Rated
                   </div>
@@ -66,13 +66,13 @@ export function CompanyComparisonTable({
               </Link>
             </th>
             <th className={cn(
-              "p-4 text-center border-b border-slate-200 w-1/3",
-              companyB.featured ? "bg-[#B22234]/5" : ""
+              "p-4 text-center border-b border-[#2A2D42] w-1/3",
+              companyB.featured ? "bg-[rgba(220,38,38,0.06)]" : ""
             )}>
-              <Link href={`/reviews/${companyB.slug}`} className="hover:text-[#B22234] transition-colors">
-                <div className="font-bold text-slate-900">{companyB.name}</div>
+              <Link href={`/reviews/${companyB.slug}`} className="hover:text-[#D4A94E] transition-colors">
+                <div className="font-bold text-[#F6F4EF]">{companyB.name}</div>
                 {companyB.featured && (
-                  <div className="inline-flex items-center gap-1 text-xs text-[#B22234] mt-1">
+                  <div className="inline-flex items-center gap-1 text-xs text-[#D4A94E] mt-1">
                     <Award className="h-3 w-3" />
                     #1 Rated
                   </div>
@@ -83,26 +83,26 @@ export function CompanyComparisonTable({
         </thead>
         <tbody>
           {/* Rating */}
-          <tr className="border-b border-slate-100">
-            <td className="p-4 text-slate-600 font-medium">
+          <tr className="border-b border-[#2A2D42]">
+            <td className="p-4 text-[#D0CCC4] font-medium">
               <div className="flex items-center gap-2">
-                <Star className="h-4 w-4 text-[#B22234]" />
+                <Star className="h-4 w-4 text-[#D4A94E]" />
                 Our Rating
               </div>
             </td>
             <td className={cn("p-4 text-center", getWinnerClass(winners.rating, "A"))}>
               <div className="text-xl font-bold">{companyA.rating}</div>
-              <div className="text-xs text-slate-500">/ 5.0</div>
+              <div className="text-xs text-[#A8A39A]">/ 5.0</div>
             </td>
             <td className={cn("p-4 text-center", getWinnerClass(winners.rating, "B"))}>
               <div className="text-xl font-bold">{companyB.rating}</div>
-              <div className="text-xs text-slate-500">/ 5.0</div>
+              <div className="text-xs text-[#A8A39A]">/ 5.0</div>
             </td>
           </tr>
 
           {/* BBB Rating */}
-          <tr className="border-b border-slate-100">
-            <td className="p-4 text-slate-600 font-medium">
+          <tr className="border-b border-[#2A2D42]">
+            <td className="p-4 text-[#D0CCC4] font-medium">
               <div className="flex items-center gap-2">
                 <Shield className="h-4 w-4 text-blue-600" />
                 BBB Rating
@@ -117,8 +117,8 @@ export function CompanyComparisonTable({
           </tr>
 
           {/* Minimum Investment */}
-          <tr className="border-b border-slate-100">
-            <td className="p-4 text-slate-600 font-medium">Minimum Investment</td>
+          <tr className="border-b border-[#2A2D42]">
+            <td className="p-4 text-[#D0CCC4] font-medium">Minimum Investment</td>
             <td className={cn("p-4 text-center", getWinnerClass(winners.minInvestment, "A"))}>
               ${companyA.minInvestment.toLocaleString()}
             </td>
@@ -128,8 +128,8 @@ export function CompanyComparisonTable({
           </tr>
 
           {/* Setup Fee */}
-          <tr className="border-b border-slate-100">
-            <td className="p-4 text-slate-600 font-medium">Setup Fee</td>
+          <tr className="border-b border-[#2A2D42]">
+            <td className="p-4 text-[#D0CCC4] font-medium">Setup Fee</td>
             <td className={cn("p-4 text-center", getWinnerClass(winners.setupFee, "A"))}>
               {companyA.fees.setup === 0 ? (
                 <span className="text-green-600 font-semibold">Free</span>
@@ -147,8 +147,8 @@ export function CompanyComparisonTable({
           </tr>
 
           {/* Annual Fee */}
-          <tr className="border-b border-slate-100">
-            <td className="p-4 text-slate-600 font-medium">Annual Fee</td>
+          <tr className="border-b border-[#2A2D42]">
+            <td className="p-4 text-[#D0CCC4] font-medium">Annual Fee</td>
             <td className={cn("p-4 text-center", getWinnerClass(winners.annualFee, "A"))}>
               ${companyA.fees.annual}
             </td>
@@ -158,8 +158,8 @@ export function CompanyComparisonTable({
           </tr>
 
           {/* Storage Fee */}
-          <tr className="border-b border-slate-100">
-            <td className="p-4 text-slate-600 font-medium">Storage Fee</td>
+          <tr className="border-b border-[#2A2D42]">
+            <td className="p-4 text-[#D0CCC4] font-medium">Storage Fee</td>
             <td className={cn("p-4 text-center", getWinnerClass(winners.storageFee, "A"))}>
               ${companyA.fees.storage}
             </td>
@@ -169,12 +169,12 @@ export function CompanyComparisonTable({
           </tr>
 
           {/* Metals Offered */}
-          <tr className="border-b border-slate-100">
-            <td className="p-4 text-slate-600 font-medium">Metals Offered</td>
+          <tr className="border-b border-[#2A2D42]">
+            <td className="p-4 text-[#D0CCC4] font-medium">Metals Offered</td>
             <td className={cn("p-4 text-center", getWinnerClass(winners.metals, "A"))}>
               <div className="flex flex-wrap justify-center gap-1">
                 {companyA.metals.map((metal) => (
-                  <span key={metal} className="px-2 py-0.5 bg-slate-100 text-xs rounded">
+                  <span key={metal} className="px-2 py-0.5 bg-[#121423] text-xs rounded">
                     {metal}
                   </span>
                 ))}
@@ -183,7 +183,7 @@ export function CompanyComparisonTable({
             <td className={cn("p-4 text-center", getWinnerClass(winners.metals, "B"))}>
               <div className="flex flex-wrap justify-center gap-1">
                 {companyB.metals.map((metal) => (
-                  <span key={metal} className="px-2 py-0.5 bg-slate-100 text-xs rounded">
+                  <span key={metal} className="px-2 py-0.5 bg-[#121423] text-xs rounded">
                     {metal}
                   </span>
                 ))}
@@ -192,15 +192,15 @@ export function CompanyComparisonTable({
           </tr>
 
           {/* Founded */}
-          <tr className="border-b border-slate-100">
-            <td className="p-4 text-slate-600 font-medium">Founded</td>
+          <tr className="border-b border-[#2A2D42]">
+            <td className="p-4 text-[#D0CCC4] font-medium">Founded</td>
             <td className="p-4 text-center">{companyA.founded}</td>
             <td className="p-4 text-center">{companyB.founded}</td>
           </tr>
 
           {/* Reviews */}
-          <tr className="border-b border-slate-100">
-            <td className="p-4 text-slate-600 font-medium">Customer Reviews</td>
+          <tr className="border-b border-[#2A2D42]">
+            <td className="p-4 text-[#D0CCC4] font-medium">Customer Reviews</td>
             <td className={cn("p-4 text-center", getWinnerClass(winners.reviewCount, "A"))}>
               {companyA.reviewCount.toLocaleString()}
             </td>
@@ -210,14 +210,14 @@ export function CompanyComparisonTable({
           </tr>
 
           {/* Best For */}
-          <tr className="bg-slate-50">
-            <td className="p-4 text-slate-600 font-medium">Best For</td>
-            <td className="p-4 text-center text-sm text-slate-700">{companyA.bestFor}</td>
-            <td className="p-4 text-center text-sm text-slate-700">{companyB.bestFor}</td>
+          <tr className="bg-[#0C0D18]">
+            <td className="p-4 text-[#D0CCC4] font-medium">Best For</td>
+            <td className="p-4 text-center text-sm text-[#D0CCC4]">{companyA.bestFor}</td>
+            <td className="p-4 text-center text-sm text-[#D0CCC4]">{companyB.bestFor}</td>
           </tr>
 
           {/* CTAs */}
-          <tr className="bg-slate-100">
+          <tr className="bg-[#121423]">
             <td className="p-4"></td>
             <td className="p-4 text-center">
               <a
@@ -227,8 +227,8 @@ export function CompanyComparisonTable({
                 className={cn(
                   "inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm transition-all",
                   companyA.featured
-                    ? "bg-[#B22234] text-white hover:bg-[#8b1c2a]"
-                    : "bg-[#000080] text-white hover:bg-[#000066]"
+                    ? "bg-[#DC2626] text-white hover:bg-[#991B1B]"
+                    : "bg-[rgba(197,149,46,0.1)] text-white hover:bg-[#000066]"
                 )}
               >
                 Visit Site
@@ -243,8 +243,8 @@ export function CompanyComparisonTable({
                 className={cn(
                   "inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm transition-all",
                   companyB.featured
-                    ? "bg-[#B22234] text-white hover:bg-[#8b1c2a]"
-                    : "bg-[#000080] text-white hover:bg-[#000066]"
+                    ? "bg-[#DC2626] text-white hover:bg-[#991B1B]"
+                    : "bg-[rgba(197,149,46,0.1)] text-white hover:bg-[#000066]"
                 )}
               >
                 Visit Site
@@ -270,12 +270,12 @@ export function ProsConsComparison({ companyA, companyB }: ProsConsComparisonPro
       {/* Company A */}
       <div className={cn(
         "rounded-xl p-6 border",
-        companyA.featured ? "bg-[#B22234]/5 border-[#B22234]/20" : "bg-white border-slate-200"
+        companyA.featured ? "bg-[rgba(220,38,38,0.06)] border-[#B22234]/20" : "bg-[#161828] border-[#2A2D42]"
       )}>
-        <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <h3 className="font-bold text-[#F6F4EF] mb-4 flex items-center gap-2">
           {companyA.name}
           {companyA.featured && (
-            <span className="text-xs bg-[#B22234]/50 text-white px-2 py-0.5 rounded-full">#1</span>
+            <span className="text-xs bg-[rgba(220,38,38,0.06)]0 text-white px-2 py-0.5 rounded-full">#1</span>
           )}
         </h3>
         <div className="space-y-4">
@@ -285,7 +285,7 @@ export function ProsConsComparison({ companyA, companyB }: ProsConsComparisonPro
               {companyA.pros.map((pro, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm">
                   <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">{pro}</span>
+                  <span className="text-[#D0CCC4]">{pro}</span>
                 </li>
               ))}
             </ul>
@@ -296,7 +296,7 @@ export function ProsConsComparison({ companyA, companyB }: ProsConsComparisonPro
               {companyA.cons.map((con, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm">
                   <XCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">{con}</span>
+                  <span className="text-[#D0CCC4]">{con}</span>
                 </li>
               ))}
             </ul>
@@ -307,12 +307,12 @@ export function ProsConsComparison({ companyA, companyB }: ProsConsComparisonPro
       {/* Company B */}
       <div className={cn(
         "rounded-xl p-6 border",
-        companyB.featured ? "bg-[#B22234]/5 border-[#B22234]/20" : "bg-white border-slate-200"
+        companyB.featured ? "bg-[rgba(220,38,38,0.06)] border-[#B22234]/20" : "bg-[#161828] border-[#2A2D42]"
       )}>
-        <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <h3 className="font-bold text-[#F6F4EF] mb-4 flex items-center gap-2">
           {companyB.name}
           {companyB.featured && (
-            <span className="text-xs bg-[#B22234]/50 text-white px-2 py-0.5 rounded-full">#1</span>
+            <span className="text-xs bg-[rgba(220,38,38,0.06)]0 text-white px-2 py-0.5 rounded-full">#1</span>
           )}
         </h3>
         <div className="space-y-4">
@@ -322,7 +322,7 @@ export function ProsConsComparison({ companyA, companyB }: ProsConsComparisonPro
               {companyB.pros.map((pro, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm">
                   <CheckCircle2 className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">{pro}</span>
+                  <span className="text-[#D0CCC4]">{pro}</span>
                 </li>
               ))}
             </ul>
@@ -333,7 +333,7 @@ export function ProsConsComparison({ companyA, companyB }: ProsConsComparisonPro
               {companyB.cons.map((con, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm">
                   <XCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">{con}</span>
+                  <span className="text-[#D0CCC4]">{con}</span>
                 </li>
               ))}
             </ul>
@@ -356,9 +356,9 @@ export function ComparisonWinner({ companyA, companyB }: ComparisonWinnerProps) 
 
   if (!winner) {
     return (
-      <div className="bg-slate-100 rounded-xl p-8 text-center">
-        <h3 className="text-xl font-bold text-slate-900 mb-2">It&apos;s a Tie!</h3>
-        <p className="text-slate-600">
+      <div className="bg-[#121423] rounded-xl p-8 text-center">
+        <h3 className="text-xl font-bold text-[#F6F4EF] mb-2">It&apos;s a Tie!</h3>
+        <p className="text-[#D0CCC4]">
           Both companies have their strengths. Your choice depends on your specific needs and investment amount.
         </p>
       </div>
@@ -371,19 +371,19 @@ export function ComparisonWinner({ companyA, companyB }: ComparisonWinnerProps) 
     <div className={cn(
       "rounded-xl p-8",
       winner.featured
-        ? "bg-[#B22234]/5 border border-[#B22234]/20"
-        : "bg-slate-50 border border-slate-200"
+        ? "bg-[rgba(220,38,38,0.06)] border border-[#B22234]/20"
+        : "bg-[#0C0D18] border border-[#2A2D42]"
     )}>
       <div className="text-center">
         <div className={cn(
           "inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold mb-4",
-          winner.featured ? "bg-[#B22234] text-white" : "bg-[#000080] text-white"
+          winner.featured ? "bg-[#DC2626] text-white" : "bg-[rgba(197,149,46,0.1)] text-white"
         )}>
           <Award className="h-4 w-4" />
           OUR RECOMMENDATION
         </div>
-        <h3 className="text-2xl font-bold text-slate-900 mb-2">{winner.name} Wins</h3>
-        <p className="text-slate-600 mb-6 max-w-xl mx-auto">
+        <h3 className="text-2xl font-bold text-[#F6F4EF] mb-2">{winner.name} Wins</h3>
+        <p className="text-[#D0CCC4] mb-6 max-w-xl mx-auto">
           With a rating of {winner.rating}/5 and {winner.bbbRating} BBB rating, {winner.name} edges out {loser.name} ({loser.rating}/5).
           {winner.featured && " As our #1 overall pick, they offer the best combination of service, fees, and customer satisfaction."}
         </p>
@@ -394,8 +394,8 @@ export function ComparisonWinner({ companyA, companyB }: ComparisonWinnerProps) 
           className={cn(
             "inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all",
             winner.featured
-              ? "bg-[#B22234] text-white hover:bg-[#8b1c2a] shadow-lg shadow-[#B22234]/25"
-              : "bg-[#000080] text-white hover:bg-[#000066]"
+              ? "bg-[#DC2626] text-white hover:bg-[#991B1B] shadow-lg shadow-[#B22234]/25"
+              : "bg-[rgba(197,149,46,0.1)] text-white hover:bg-[#000066]"
           )}
         >
           Get Started with {winner.name}

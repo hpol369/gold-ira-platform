@@ -92,27 +92,27 @@ export default async function CityPage({ params }: Props) {
             <Navbar />
             <div className="flex-grow">
                 {/* Hero */}
-                <header className="bg-slate-50 py-16 relative overflow-hidden">
+                <header className="bg-[#0C0D18] py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(178,34,52,0.08),transparent_50%)]" />
                     <Container className="relative z-10">
                         <div className="max-w-3xl">
                             <div className="flex items-center gap-2 mb-4">
                                 <Link
                                     href={`/local/${state}`}
-                                    className="inline-flex items-center gap-1.5 rounded-full bg-[#B22234]/10 px-3 py-1 text-sm font-semibold text-[#B22234] border border-[#B22234]/20 hover:bg-[#B22234]/20 transition-colors"
+                                    className="inline-flex items-center gap-1.5 rounded-full bg-[rgba(220,38,38,0.1)] px-3 py-1 text-sm font-semibold text-[#D4A94E] border border-[#B22234]/20 hover:bg-[rgba(220,38,38,0.18)] transition-colors"
                                 >
                                     <MapPin className="w-3.5 h-3.5" />
                                     {cityData.stateName}
                                 </Link>
-                                <span className="text-slate-400">/</span>
-                                <span className="inline-flex items-center gap-1.5 rounded-full bg-[#000080]/10 px-3 py-1 text-sm font-semibold text-[#000080] border border-[#000080]/20">
+                                <span className="text-[#A8A39A]">/</span>
+                                <span className="inline-flex items-center gap-1.5 rounded-full bg-[rgba(197,149,46,0.08)] px-3 py-1 text-sm font-semibold text-[#F6F4EF] border border-[#000080]/20">
                                     {cityData.name}
                                 </span>
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-[#000080]">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-[#F6F4EF]">
                                 Gold IRA Guide for {cityData.name}, {cityData.stateName}
                             </h1>
-                            <p className="text-xl text-slate-600">
+                            <p className="text-xl text-[#D0CCC4]">
                                 A complete guide to Gold IRA investing for {cityData.name} residents—including local economy insights, {cityData.stateName} tax rules, and top-rated companies serving your area.
                             </p>
                         </div>
@@ -127,29 +127,29 @@ export default async function CityPage({ params }: Props) {
                         </aside>
 
                         {/* Content */}
-                        <article className="flex-1 prose prose-lg prose-slate prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                        <article className="flex-1 prose prose-lg prose-slate prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                             {/* City Stats Box */}
                             <div className="not-prose grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-                                <div className="bg-slate-50 rounded-xl p-4 border border-slate-200 text-center">
-                                    <Users className="w-5 h-5 text-[#000080] mx-auto mb-1" />
-                                    <p className="text-2xl font-bold text-slate-900">{(cityData.population / 1000).toFixed(0)}K</p>
-                                    <p className="text-xs text-slate-500">Population</p>
+                                <div className="bg-[#0C0D18] rounded-xl p-4 border border-[#2A2D42] text-center">
+                                    <Users className="w-5 h-5 text-[#F6F4EF] mx-auto mb-1" />
+                                    <p className="text-2xl font-bold text-[#F6F4EF]">{(cityData.population / 1000).toFixed(0)}K</p>
+                                    <p className="text-xs text-[#A8A39A]">Population</p>
                                 </div>
-                                <div className="bg-slate-50 rounded-xl p-4 border border-slate-200 text-center">
-                                    <TrendingUp className="w-5 h-5 text-[#B22234] mx-auto mb-1" />
-                                    <p className="text-2xl font-bold text-slate-900">{cityData.retirementPct}%</p>
-                                    <p className="text-xs text-slate-500">Age 55+</p>
+                                <div className="bg-[#0C0D18] rounded-xl p-4 border border-[#2A2D42] text-center">
+                                    <TrendingUp className="w-5 h-5 text-[#D4A94E] mx-auto mb-1" />
+                                    <p className="text-2xl font-bold text-[#F6F4EF]">{cityData.retirementPct}%</p>
+                                    <p className="text-xs text-[#A8A39A]">Age 55+</p>
                                 </div>
-                                <div className="bg-slate-50 rounded-xl p-4 border border-slate-200 text-center">
+                                <div className="bg-[#0C0D18] rounded-xl p-4 border border-[#2A2D42] text-center">
                                     <DollarSign className="w-5 h-5 text-green-600 mx-auto mb-1" />
-                                    <p className="text-2xl font-bold text-slate-900">${(cityData.medianIncome / 1000).toFixed(0)}K</p>
-                                    <p className="text-xs text-slate-500">Median Income</p>
+                                    <p className="text-2xl font-bold text-[#F6F4EF]">${(cityData.medianIncome / 1000).toFixed(0)}K</p>
+                                    <p className="text-xs text-[#A8A39A]">Median Income</p>
                                 </div>
-                                <div className="bg-slate-50 rounded-xl p-4 border border-slate-200 text-center">
+                                <div className="bg-[#0C0D18] rounded-xl p-4 border border-[#2A2D42] text-center">
                                     <Building2 className="w-5 h-5 text-amber-600 mx-auto mb-1" />
-                                    <p className="text-2xl font-bold text-slate-900">{cityData.medianAge}</p>
-                                    <p className="text-xs text-slate-500">Median Age</p>
+                                    <p className="text-2xl font-bold text-[#F6F4EF]">{cityData.medianAge}</p>
+                                    <p className="text-xs text-[#A8A39A]">Median Age</p>
                                 </div>
                             </div>
 
@@ -216,43 +216,43 @@ export default async function CityPage({ params }: Props) {
                                 </p>
 
                                 <div className="not-prose overflow-x-auto my-6">
-                                    <table className="w-full text-left border-collapse bg-slate-50 rounded-xl border border-slate-200">
-                                        <thead className="bg-slate-100">
+                                    <table className="w-full text-left border-collapse bg-[#0C0D18] rounded-xl border border-[#2A2D42]">
+                                        <thead className="bg-[#121423]">
                                             <tr>
-                                                <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Feature</th>
-                                                <th className="p-4 border-b border-slate-200 font-bold text-slate-900">{cityData.name} Coin Shop</th>
-                                                <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">National Gold IRA</th>
+                                                <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Feature</th>
+                                                <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">{cityData.name} Coin Shop</th>
+                                                <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">National Gold IRA</th>
                                             </tr>
                                         </thead>
                                         <tbody className="text-sm">
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Pricing</td>
-                                                <td className="p-4 text-slate-600">Higher overhead = higher premiums</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Pricing</td>
+                                                <td className="p-4 text-[#D0CCC4]">Higher overhead = higher premiums</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">Volume pricing = lower premiums</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Sales Tax</td>
-                                                <td className="p-4 text-slate-600">{stateData.taxFriendly ? 'Exempt in ' + cityData.stateName : 'Taxable in ' + cityData.stateName}</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Sales Tax</td>
+                                                <td className="p-4 text-[#D0CCC4]">{stateData.taxFriendly ? 'Exempt in ' + cityData.stateName : 'Taxable in ' + cityData.stateName}</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">No sales tax (IRA purchase)</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Tax Benefits</td>
-                                                <td className="p-4 text-slate-600">None (post-tax money)</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Tax Benefits</td>
+                                                <td className="p-4 text-[#D0CCC4]">None (post-tax money)</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">Tax-deferred or tax-free (Roth)</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Selection</td>
-                                                <td className="p-4 text-slate-600">Limited to current inventory</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Selection</td>
+                                                <td className="p-4 text-[#D0CCC4]">Limited to current inventory</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">All IRS-approved bullion</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Storage</td>
-                                                <td className="p-4 text-slate-600">Your responsibility (risky)</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Storage</td>
+                                                <td className="p-4 text-[#D0CCC4]">Your responsibility (risky)</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">Insured depository included</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 font-medium text-slate-900">Insurance</td>
-                                                <td className="p-4 text-slate-600">Limited homeowner&apos;s coverage</td>
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Insurance</td>
+                                                <td className="p-4 text-[#D0CCC4]">Limited homeowner&apos;s coverage</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">Full Lloyd&apos;s of London coverage</td>
                                             </tr>
                                         </tbody>
@@ -268,48 +268,48 @@ export default async function CityPage({ params }: Props) {
                                 </p>
 
                                 <div className="not-prose grid gap-4 my-6">
-                                    <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                                    <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
                                         <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center shrink-0 border border-amber-200">
-                                            <ShieldCheck className="w-8 h-8 text-[#B22234]" />
+                                            <ShieldCheck className="w-8 h-8 text-[#D4A94E]" />
                                         </div>
                                         <div className="flex-grow">
-                                            <h4 className="font-bold text-lg text-slate-900">#1 Augusta Precious Metals</h4>
-                                            <p className="text-sm text-slate-600 mb-2">Best for: {cityData.name} investors with $50k+ who want education-first approach</p>
+                                            <h4 className="font-bold text-lg text-[#F6F4EF]">#1 Augusta Precious Metals</h4>
+                                            <p className="text-sm text-[#D0CCC4] mb-2">Best for: {cityData.name} investors with $50k+ who want education-first approach</p>
                                             <p className="text-xs text-green-600 font-semibold">A+ BBB Rating | Zero Complaints | Serves {cityData.name}</p>
                                         </div>
                                         <LeadCaptureButton
                                             variant="gold"
                                             source={`city-${state}-${city}-augusta`}
-                                            className="inline-flex items-center justify-center rounded-md font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-10 px-4 text-sm"
+                                            className="inline-flex items-center justify-center rounded-md font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-10 px-4 text-sm"
                                         >
                                             Get Free Kit
                                         </LeadCaptureButton>
                                     </div>
 
-                                    <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                                    <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
                                         <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center shrink-0 border border-blue-200">
                                             <ShieldCheck className="w-8 h-8 text-blue-600" />
                                         </div>
                                         <div className="flex-grow">
-                                            <h4 className="font-bold text-lg text-slate-900">#2 Goldco</h4>
-                                            <p className="text-sm text-slate-600 mb-2">Best for: First-time {cityData.name} investors with excellent hand-holding</p>
+                                            <h4 className="font-bold text-lg text-[#F6F4EF]">#2 Goldco</h4>
+                                            <p className="text-sm text-[#D0CCC4] mb-2">Best for: First-time {cityData.name} investors with excellent hand-holding</p>
                                             <p className="text-xs text-green-600 font-semibold">A+ BBB Rating | 5,000+ 5-Star Reviews | Serves {cityData.name}</p>
                                         </div>
-                                        <Button variant="outline" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
+                                        <Button variant="outline" asChild className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]">
                                             <a href={getTrackedLink(AFFILIATE_LINKS.goldco, `city-${state}-${city}`, "goldco")} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
                                         </Button>
                                     </div>
 
-                                    <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                                    <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
                                         <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center shrink-0 border border-amber-200">
-                                            <ShieldCheck className="w-8 h-8 text-[#B22234]" />
+                                            <ShieldCheck className="w-8 h-8 text-[#D4A94E]" />
                                         </div>
                                         <div className="flex-grow">
-                                            <h4 className="font-bold text-lg text-slate-900">#3 Noble Gold Investments</h4>
-                                            <p className="text-sm text-slate-600 mb-2">Best for: Smaller accounts & Texas storage option</p>
+                                            <h4 className="font-bold text-lg text-[#F6F4EF]">#3 Noble Gold Investments</h4>
+                                            <p className="text-sm text-[#D0CCC4] mb-2">Best for: Smaller accounts & Texas storage option</p>
                                             <p className="text-xs text-green-600 font-semibold">A+ BBB Rating | Low-Pressure Sales | Serves {cityData.name}</p>
                                         </div>
-                                        <Button variant="outline" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
+                                        <Button variant="outline" asChild className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]">
                                             <a href={getTrackedLink(AFFILIATE_LINKS.noble, `city-${state}-${city}`, "noble")} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
                                         </Button>
                                     </div>
@@ -344,14 +344,14 @@ export default async function CityPage({ params }: Props) {
 
                             {/* CTA */}
                             <div className="my-12 bg-gradient-to-r from-[#000080] to-[#000060] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.18)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10">
                                     <h3 className="text-2xl font-serif font-bold mb-4 text-white">{cityData.name} Residents: Protect Your Retirement Today</h3>
                                     <p className="mb-6 text-gray-200">Compare the top Gold IRA companies serving {cityData.name}, {cityData.stateName}. Get free investor kits with no obligation.</p>
                                     <LeadCaptureButton
                                         variant="gold"
                                         source={`city-${state}-${city}-cta`}
-                                        className="inline-flex items-center justify-center rounded-md font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-6 text-base"
+                                        className="inline-flex items-center justify-center rounded-md font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-11 px-6 text-base"
                                     >
                                         Get Your Free Gold IRA Kit
                                     </LeadCaptureButton>
@@ -368,9 +368,9 @@ export default async function CityPage({ params }: Props) {
                                             <Link
                                                 key={c.slug}
                                                 href={`/local/${state}/${c.slug}`}
-                                                className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-3 text-sm text-slate-700 hover:text-[#000080] transition-colors flex items-center gap-2"
+                                                className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-3 text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors flex items-center gap-2"
                                             >
-                                                <MapPin className="w-3.5 h-3.5 text-slate-400" />
+                                                <MapPin className="w-3.5 h-3.5 text-[#A8A39A]" />
                                                 {c.name}
                                             </Link>
                                         ))}
@@ -382,7 +382,7 @@ export default async function CityPage({ params }: Props) {
                             <div className="not-prose mt-8">
                                 <Link
                                     href={`/local/${state}`}
-                                    className="inline-flex items-center gap-2 text-[#000080] hover:text-[#B22234] font-medium transition-colors"
+                                    className="inline-flex items-center gap-2 text-[#F6F4EF] hover:text-[#D4A94E] font-medium transition-colors"
                                 >
                                     ← Back to {cityData.stateName} Gold IRA Guide
                                 </Link>

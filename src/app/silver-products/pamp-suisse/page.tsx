@@ -114,12 +114,12 @@ export default function PAMPSuissePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-products"
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
@@ -128,10 +128,10 @@ export default function PAMPSuissePage() {
               <Award className="h-4 w-4" />
               150 MONTHLY SEARCHES - DIFFICULTY 0!
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               PAMP Suisse Silver: Swiss Excellence
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               PAMP Suisse represents the pinnacle of precious metals refining. Known worldwide
               for the iconic Lady Fortuna design and meticulous Swiss craftsmanship, PAMP
               bars command premiums that reflect their superior quality and authenticity.
@@ -155,29 +155,29 @@ export default function PAMPSuissePage() {
       </section>
 
       {/* Quick Specs */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Globe className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">1977</div>
-                <div className="text-sm text-slate-600">Founded</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Globe className="h-8 w-8 text-[#D4A94E] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">1977</div>
+                <div className="text-sm text-[#D0CCC4]">Founded</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Shield className="h-8 w-8 text-slate-600 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">.999+</div>
-                <div className="text-sm text-slate-600">Purity</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Shield className="h-8 w-8 text-[#D0CCC4] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">.999+</div>
+                <div className="text-sm text-[#D0CCC4]">Purity</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
                 <FileCheck className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">Assay</div>
-                <div className="text-sm text-slate-600">Card Included</div>
+                <div className="text-2xl font-bold text-[#F6F4EF]">Assay</div>
+                <div className="text-sm text-[#D0CCC4]">Card Included</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <DollarSign className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">15-25%</div>
-                <div className="text-sm text-slate-600">Premium</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <DollarSign className="h-8 w-8 text-[#D4A94E] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">15-25%</div>
+                <div className="text-sm text-[#D0CCC4]">Premium</div>
               </div>
             </div>
           </div>
@@ -188,34 +188,34 @@ export default function PAMPSuissePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+            <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
               {/* About PAMP */}
-              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 mb-8">
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-[#B22234]/20 rounded-lg">
-                    <Award className="h-6 w-6 text-[#B22234]" />
+                  <div className="p-2 bg-[rgba(220,38,38,0.18)] rounded-lg">
+                    <Award className="h-6 w-6 text-[#D4A94E]" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 m-0">About PAMP Suisse</h2>
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] m-0">About PAMP Suisse</h2>
                 </div>
-                <p className="text-slate-600 mb-4">
+                <p className="text-[#D0CCC4] mb-4">
                   PAMP (Produits Artistiques Metaux Precieux, or &quot;Artistic Precious Metals Products&quot;)
                   was founded in 1977 in Ticino, Switzerland. From the beginning, PAMP distinguished itself
                   by combining traditional Swiss craftsmanship with artistic excellence.
                 </p>
-                <p className="text-slate-600 mb-4">
+                <p className="text-[#D0CCC4] mb-4">
                   As an LBMA (London Bullion Market Association) certified refiner, PAMP meets the most
                   stringent global standards for precious metals. Their refinery processes over 400 tonnes
                   of gold and silver annually for clients worldwide.
                 </p>
-                <p className="text-slate-600">
+                <p className="text-[#D0CCC4]">
                   PAMP is now part of the MKS PAMP GROUP, one of the world&apos;s largest precious metals
                   trading companies. This backing ensures financial stability and continued quality.
                 </p>
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Sparkles className="h-6 w-6 text-[#B22234]" />
+                <Sparkles className="h-6 w-6 text-[#D4A94E]" />
                 The Lady Fortuna Design
               </h2>
 
@@ -225,43 +225,43 @@ export default function PAMPSuissePage() {
               </p>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Design Elements</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Design Elements</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <CheckCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <CheckCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span><strong>Lady Fortuna:</strong> Roman goddess of fortune and prosperity</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <CheckCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <CheckCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span><strong>Blindfold:</strong> Represents impartial distribution of luck</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <CheckCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <CheckCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span><strong>Cornucopia:</strong> Horn of plenty symbolizing abundance</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <CheckCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <CheckCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span><strong>Wheel:</strong> Wheel of fortune at her feet</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Why It Matters</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Why It Matters</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Instantly recognizable worldwide</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Commands premium at resale</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Difficult to counterfeit accurately</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Aesthetic value beyond bullion</span>
                     </li>
@@ -279,33 +279,33 @@ export default function PAMPSuissePage() {
                 Here&apos;s how to verify yours is genuine:
               </p>
 
-              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 my-8">
-                <h3 className="text-lg font-bold text-slate-900 mb-4">Authentic Assay Card Features</h3>
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 my-8">
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Authentic Assay Card Features</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>PAMP logo with security hologram</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Unique serial number matching bar</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Certified weight in troy ounces/grams</span>
                     </li>
                   </ul>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Purity certification (.999 or .9999)</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Official assayer signature</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Tamper-evident sealed packaging</span>
                     </li>
@@ -318,7 +318,7 @@ export default function PAMPSuissePage() {
                   <Shield className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-lg font-bold text-green-400 mb-2">VERISCAN Technology</h4>
-                    <p className="text-slate-600">
+                    <p className="text-[#D0CCC4]">
                       PAMP offers VERISCAN, a smartphone app that can verify bar authenticity by scanning
                       the bar&apos;s unique surface pattern and comparing it to PAMP&apos;s database. Every precious
                       metal bar has a unique &quot;fingerprint&quot; created during manufacturing. This provides
@@ -329,50 +329,50 @@ export default function PAMPSuissePage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Scale className="h-6 w-6 text-slate-600" />
+                <Scale className="h-6 w-6 text-[#D0CCC4]" />
                 PAMP Silver Product Range
               </h2>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Product</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Size</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Typical Premium</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Best For</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Product</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Size</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Typical Premium</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Best For</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Lady Fortuna Bar</td>
-                      <td className="p-4 text-slate-600">1 oz</td>
-                      <td className="p-4 text-[#B22234]">20-25% over spot</td>
-                      <td className="p-4 text-slate-600">Collectors, gifts</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Lady Fortuna Bar</td>
+                      <td className="p-4 text-[#D0CCC4]">1 oz</td>
+                      <td className="p-4 text-[#D4A94E]">20-25% over spot</td>
+                      <td className="p-4 text-[#D0CCC4]">Collectors, gifts</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Lady Fortuna Bar</td>
-                      <td className="p-4 text-slate-600">10 oz</td>
-                      <td className="p-4 text-slate-600">15-20% over spot</td>
-                      <td className="p-4 text-slate-600">Serious investors</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Lady Fortuna Bar</td>
+                      <td className="p-4 text-[#D0CCC4]">10 oz</td>
+                      <td className="p-4 text-[#D0CCC4]">15-20% over spot</td>
+                      <td className="p-4 text-[#D0CCC4]">Serious investors</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Lady Fortuna Bar</td>
-                      <td className="p-4 text-slate-600">100 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Lady Fortuna Bar</td>
+                      <td className="p-4 text-[#D0CCC4]">100 oz</td>
                       <td className="p-4 text-green-400">10-15% over spot</td>
-                      <td className="p-4 text-slate-600">Large positions</td>
+                      <td className="p-4 text-[#D0CCC4]">Large positions</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Kilo Bar</td>
-                      <td className="p-4 text-slate-600">32.15 oz</td>
-                      <td className="p-4 text-slate-600">12-18% over spot</td>
-                      <td className="p-4 text-slate-600">Mid-size investors</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Kilo Bar</td>
+                      <td className="p-4 text-[#D0CCC4]">32.15 oz</td>
+                      <td className="p-4 text-[#D0CCC4]">12-18% over spot</td>
+                      <td className="p-4 text-[#D0CCC4]">Mid-size investors</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Rosa Bar (Limited)</td>
-                      <td className="p-4 text-slate-600">Various</td>
-                      <td className="p-4 text-[#B22234]">25%+ over spot</td>
-                      <td className="p-4 text-slate-600">Collectors</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Rosa Bar (Limited)</td>
+                      <td className="p-4 text-[#D0CCC4]">Various</td>
+                      <td className="p-4 text-[#D4A94E]">25%+ over spot</td>
+                      <td className="p-4 text-[#D0CCC4]">Collectors</td>
                     </tr>
                   </tbody>
                 </table>
@@ -384,60 +384,60 @@ export default function PAMPSuissePage() {
               </h2>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Worth the Premium</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Worth the Premium</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Superior Swiss craftsmanship</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>LBMA Good Delivery certification</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Assay card with serial number</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>VERISCAN authentication available</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Strong resale value globally</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Considerations</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Considerations</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <XCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span>High premiums reduce pure silver value</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <XCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span>May not recoup premium on quick sale</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <XCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span>Counterfeits exist (buy from reputable sources)</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <XCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span>Less efficient for pure bullion stacking</span>
                     </li>
                   </ul>
                 </div>
               </div>
 
-              <div className="not-prose bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
-                  <Info className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <Info className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-lg font-bold text-[#B22234] mb-2">Best Use Cases for PAMP</h4>
-                    <p className="text-slate-600">
+                    <h4 className="text-lg font-bold text-[#D4A94E] mb-2">Best Use Cases for PAMP</h4>
+                    <p className="text-[#D0CCC4]">
                       PAMP bars are ideal when you value authenticity guarantees, plan to gift silver,
                       want aesthetic appeal in your collection, or will be selling internationally where
                       PAMP is highly recognized. For pure bullion accumulation where cost-per-ounce is
@@ -472,25 +472,25 @@ export default function PAMPSuissePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -504,30 +504,30 @@ export default function PAMPSuissePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Related Silver Products
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Link
                 href="/silver-products/sunshine-mint"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">Sunshine Mint</h3>
-                <p className="text-sm text-slate-600">MintMark SI security at lower premiums</p>
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#F6F4EF] mb-2">Sunshine Mint</h3>
+                <p className="text-sm text-[#D0CCC4]">MintMark SI security at lower premiums</p>
               </Link>
               <Link
                 href="/silver-products/engelhard"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">Engelhard</h3>
-                <p className="text-sm text-slate-600">Vintage collector silver</p>
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#F6F4EF] mb-2">Engelhard</h3>
+                <p className="text-sm text-[#D0CCC4]">Vintage collector silver</p>
               </Link>
               <Link
                 href="/silver-products/generic-rounds"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">Generic Rounds</h3>
-                <p className="text-sm text-slate-600">Lowest premiums for pure stacking</p>
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#F6F4EF] mb-2">Generic Rounds</h3>
+                <p className="text-sm text-[#D0CCC4]">Lowest premiums for pure stacking</p>
               </Link>
             </div>
           </div>
@@ -535,7 +535,7 @@ export default function PAMPSuissePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

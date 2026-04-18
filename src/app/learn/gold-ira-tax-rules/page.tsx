@@ -98,16 +98,16 @@ export default function GoldIraTaxRulesPage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-slate-50 py-16 border-b border-slate-200">
+            <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="text-secondary font-bold tracking-widest uppercase text-xs mb-4 block">
                             Financial Education
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
                             Gold IRA Tax Rules: 2026 Guide
                         </h1>
-                        <p className="text-xl text-slate-600 leading-relaxed">
+                        <p className="text-xl text-[#D0CCC4] leading-relaxed">
                             The IRS rules aren&apos;t complicated, but make a mistake and you could owe thousands in penalties. Here&apos;s what you need to know before moving your hard-earned retirement savings.
                         </p>
                     </div>
@@ -122,7 +122,7 @@ export default function GoldIraTaxRulesPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -142,36 +142,36 @@ export default function GoldIraTaxRulesPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <DollarSign className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Contribution Rules & Limits</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Contribution Rules & Limits</h2>
                             </div>
                             <p>
                                 Nothing special here—Gold IRAs have the exact same contribution limits as any other IRA. For 2026:
                             </p>
 
                             <div className="overflow-x-auto not-prose my-8">
-                                <table className="w-full text-left border-collapse bg-slate-50 rounded-xl shadow-sm border border-slate-200">
-                                    <thead className="bg-slate-100">
+                                <table className="w-full text-left border-collapse bg-[#0C0D18] rounded-xl shadow-sm border border-[#2A2D42]">
+                                    <thead className="bg-[#121423]">
                                         <tr>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Age</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Annual Limit</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#000080]">Notes</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Age</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Annual Limit</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Notes</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-slate-200 text-sm">
+                                    <tbody className="divide-y divide-[#2A2D42] text-sm">
                                         <tr>
-                                            <td className="p-4 font-semibold text-slate-900">Under 50</td>
-                                            <td className="p-4 text-slate-600">$7,000</td>
-                                            <td className="p-4 text-slate-600">Standard annual contribution</td>
+                                            <td className="p-4 font-semibold text-[#F6F4EF]">Under 50</td>
+                                            <td className="p-4 text-[#D0CCC4]">$7,000</td>
+                                            <td className="p-4 text-[#D0CCC4]">Standard annual contribution</td>
                                         </tr>
-                                        <tr className="bg-slate-100/50">
-                                            <td className="p-4 font-semibold text-slate-900">50 and older</td>
-                                            <td className="p-4 text-slate-600">$8,000</td>
-                                            <td className="p-4 text-slate-600">Includes $1,000 catch-up contribution</td>
+                                        <tr className="bg-[#121423]/50">
+                                            <td className="p-4 font-semibold text-[#F6F4EF]">50 and older</td>
+                                            <td className="p-4 text-[#D0CCC4]">$8,000</td>
+                                            <td className="p-4 text-[#D0CCC4]">Includes $1,000 catch-up contribution</td>
                                         </tr>
                                         <tr>
-                                            <td className="p-4 font-semibold text-slate-900">SEP IRA</td>
-                                            <td className="p-4 text-slate-600">Up to $69,000</td>
-                                            <td className="p-4 text-slate-600">25% of compensation, whichever is less</td>
+                                            <td className="p-4 font-semibold text-[#F6F4EF]">SEP IRA</td>
+                                            <td className="p-4 text-[#D0CCC4]">Up to $69,000</td>
+                                            <td className="p-4 text-[#D0CCC4]">25% of compensation, whichever is less</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -193,60 +193,60 @@ export default function GoldIraTaxRulesPage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <FileText className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Traditional vs. Roth Gold IRA Taxes</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Traditional vs. Roth Gold IRA Taxes</h2>
                             </div>
                             <p>
                                 This is a big one. Traditional and Roth Gold IRAs are taxed completely differently, and picking the wrong one can cost you thousands over the long run.
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
-                                    <h4 className="font-bold text-slate-900 text-lg mb-4">Traditional Gold IRA</h4>
+                                <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42] shadow-sm">
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">Traditional Gold IRA</h4>
                                     <ul className="space-y-3 text-sm">
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span className="text-slate-600"><strong className="text-slate-900">Contributions:</strong> May be tax-deductible</span>
+                                            <span className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Contributions:</strong> May be tax-deductible</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span className="text-slate-600"><strong className="text-slate-900">Growth:</strong> Tax-deferred</span>
+                                            <span className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Growth:</strong> Tax-deferred</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span className="text-slate-600"><strong className="text-slate-900">Withdrawals:</strong> Taxed as ordinary income</span>
+                                            <span className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Withdrawals:</strong> Taxed as ordinary income</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span className="text-slate-600"><strong className="text-slate-900">RMDs:</strong> Required at age 73</span>
+                                            <span className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">RMDs:</strong> Required at age 73</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span className="text-slate-600"><strong className="text-slate-900">Best for:</strong> Expect lower tax bracket in retirement</span>
+                                            <span className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Best for:</strong> Expect lower tax bracket in retirement</span>
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
-                                    <h4 className="font-bold text-slate-900 text-lg mb-4">Roth Gold IRA</h4>
+                                <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42] shadow-sm">
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">Roth Gold IRA</h4>
                                     <ul className="space-y-3 text-sm">
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span className="text-slate-600"><strong className="text-slate-900">Contributions:</strong> After-tax (not deductible)</span>
+                                            <span className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Contributions:</strong> After-tax (not deductible)</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span className="text-slate-600"><strong className="text-slate-900">Growth:</strong> Tax-free</span>
+                                            <span className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Growth:</strong> Tax-free</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span className="text-slate-600"><strong className="text-slate-900">Withdrawals:</strong> Tax-free (if qualified)</span>
+                                            <span className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Withdrawals:</strong> Tax-free (if qualified)</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span className="text-slate-600"><strong className="text-slate-900">RMDs:</strong> None during your lifetime</span>
+                                            <span className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">RMDs:</strong> None during your lifetime</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span className="text-slate-600"><strong className="text-slate-900">Best for:</strong> Expect higher taxes in retirement</span>
+                                            <span className="text-[#D0CCC4]"><strong className="text-[#F6F4EF]">Best for:</strong> Expect higher taxes in retirement</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -267,7 +267,7 @@ export default function GoldIraTaxRulesPage() {
                                 <div className="p-3 bg-amber-500/20 rounded-lg text-amber-700">
                                     <Calendar className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Withdrawal Tax Rules</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Withdrawal Tax Rules</h2>
                             </div>
                             <p>
                                 How you&apos;re taxed on Gold IRA withdrawals depends on your account type and age:
@@ -294,7 +294,7 @@ export default function GoldIraTaxRulesPage() {
                         </section>
 
                         {/* Mid-Article CTA */}
-                        <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-[#DC2626] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Ready to Open a Gold IRA?</h3>
@@ -311,7 +311,7 @@ export default function GoldIraTaxRulesPage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Calendar className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Required Minimum Distributions (RMDs)</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Required Minimum Distributions (RMDs)</h2>
                             </div>
                             <p>
                                 <strong>Traditional Gold IRAs</strong> are subject to Required Minimum Distributions (RMDs) starting at age 73 (as of 2023 SECURE 2.0 Act rules).
@@ -337,7 +337,7 @@ export default function GoldIraTaxRulesPage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Tax-Free Rollover Rules</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Tax-Free Rollover Rules</h2>
                             </div>
                             <p>
                                 One of the best tax features of Gold IRAs: you can <strong>roll over funds from existing retirement accounts tax-free</strong>. No taxes owed, no penalties—just a transfer of assets.
@@ -373,7 +373,7 @@ export default function GoldIraTaxRulesPage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <AlertTriangle className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Penalties to Avoid</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Penalties to Avoid</h2>
                             </div>
                             <p>
                                 These mistakes can trigger significant taxes and penalties:
@@ -423,58 +423,58 @@ export default function GoldIraTaxRulesPage() {
                             <h2>Gold IRA Tax FAQs</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Do I pay taxes when I buy gold in my IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                         No. Purchases within your IRA are not taxable events. You can buy and sell gold within the account without triggering taxes. Taxes only apply when you take distributions (Traditional) or if you made after-tax contributions (Roth, but then distributions are tax-free).
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Is a Gold IRA rollover taxable?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-600">
-                                        No—if done correctly. A direct rollover from a 401(k) or traditional IRA to a Gold IRA is completely tax-free. The funds transfer between custodians without you taking possession. The tax-deferred status is preserved. See our <Link href="/guide/401k-to-gold-rollover" className="text-[#B22234] hover:underline">rollover guide</Link> for details.
+                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
+                                        No—if done correctly. A direct rollover from a 401(k) or traditional IRA to a Gold IRA is completely tax-free. The funds transfer between custodians without you taking possession. The tax-deferred status is preserved. See our <Link href="/guide/401k-to-gold-rollover" className="text-[#D4A94E] hover:underline">rollover guide</Link> for details.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">How is gold taxed outside of an IRA?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                         Physical gold held outside an IRA is taxed as a &quot;collectible.&quot; Long-term capital gains (held over 1 year) are taxed at a maximum rate of 28%. Short-term gains are taxed as ordinary income. This is why a Gold IRA offers significant tax advantages—especially a Roth, where gains are tax-free.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Can I deduct Gold IRA losses?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-600">
+                                    <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                         Generally, no. Losses inside an IRA cannot be deducted because you never paid taxes on the gains in the first place (Traditional) or the account is designed to be tax-free (Roth). This is one reason diversification matters—you can&apos;t offset IRA losses against other income.
                                     </p>
                                 </details>
@@ -482,7 +482,7 @@ export default function GoldIraTaxRulesPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                        <div className="my-12 bg-[#DC2626] rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                             <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
                                 <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Protect Your Retirement?</h3>
@@ -491,7 +491,7 @@ export default function GoldIraTaxRulesPage() {
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#1E2134]/10">
                                         <Link href="/guide/gold-ira-guide">Read the Full Guide</Link>
                                     </Button>
                                 </div>
@@ -505,7 +505,7 @@ export default function GoldIraTaxRulesPage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA variant="footer" linkContext="fees" trackSource="learn-gold-ira-tax-rules" />
                 </Container>

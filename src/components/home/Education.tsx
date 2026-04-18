@@ -39,7 +39,7 @@ export function Education() {
                     {resources.map((item, i) => (
                         <FadeIn key={i} delay={i * 0.1}>
                             <Link href={item.href} className="block group h-full">
-                                <div className="bg-white/5 border border-white/10 rounded-2xl p-8 h-full hover:bg-white/10 transition-colors">
+                                <div className="bg-white/5 border border-white/10 rounded-2xl p-8 h-full hover:bg-[#1E2134]/10 transition-colors">
                                     <div className="h-12 w-12 rounded-full bg-secondary/20 flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform">
                                         <item.icon className="h-6 w-6" />
                                     </div>

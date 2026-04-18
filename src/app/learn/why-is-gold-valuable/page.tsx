@@ -118,16 +118,16 @@ export default function WhyIsGoldValuablePage() {
         <main className="min-h-screen bg-white pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-slate-50 py-16 border-b border-slate-200">
+            <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4 block">
+                        <span className="text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-4 block">
                             Financial Education
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#000080] mb-6">
+                        <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-6">
                             Why Is Gold Valuable?
                         </h1>
-                        <p className="text-xl text-slate-600 leading-relaxed">
+                        <p className="text-xl text-[#D0CCC4] leading-relaxed">
                             The science, history, and economics behind humanity&apos;s most enduring store of value—and why it still matters for your retirement today.
                         </p>
                     </div>
@@ -142,7 +142,7 @@ export default function WhyIsGoldValuablePage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                         <KeyTakeaways items={takeaways} />
 
@@ -162,35 +162,35 @@ export default function WhyIsGoldValuablePage() {
                         {/* Scientific Properties */}
                         <section id="scientific" className="scroll-mt-32">
                             <div className="flex items-center gap-4 mb-4 not-prose">
-                                <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
+                                <div className="p-3 bg-[rgba(220,38,38,0.18)] rounded-lg text-[#D4A94E]">
                                     <Sparkles className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">The Science Behind Gold&apos;s Value</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">The Science Behind Gold&apos;s Value</h2>
                             </div>
                             <p>
                                 Gold (Au, atomic number 79) has unique chemical and physical properties that make it ideal as a store of value:
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                    <ShieldCheck className="w-8 h-8 text-[#B22234] mb-4" />
-                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Virtually Indestructible</h4>
-                                    <p className="text-sm text-slate-500">Gold doesn&apos;t rust, tarnish, or corrode. It&apos;s one of the least reactive chemical elements. Gold artifacts from ancient Egypt look exactly as they did 3,000 years ago.</p>
+                                <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                    <ShieldCheck className="w-8 h-8 text-[#D4A94E] mb-4" />
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Virtually Indestructible</h4>
+                                    <p className="text-sm text-[#A8A39A]">Gold doesn&apos;t rust, tarnish, or corrode. It&apos;s one of the least reactive chemical elements. Gold artifacts from ancient Egypt look exactly as they did 3,000 years ago.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                    <Gem className="w-8 h-8 text-[#B22234] mb-4" />
-                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Naturally Beautiful</h4>
-                                    <p className="text-sm text-slate-500">Gold&apos;s distinctive yellow luster is unique among metals. It&apos;s been prized for jewelry and ornamentation across every culture in human history.</p>
+                                <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                    <Gem className="w-8 h-8 text-[#D4A94E] mb-4" />
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Naturally Beautiful</h4>
+                                    <p className="text-sm text-[#A8A39A]">Gold&apos;s distinctive yellow luster is unique among metals. It&apos;s been prized for jewelry and ornamentation across every culture in human history.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                    <Coins className="w-8 h-8 text-[#B22234] mb-4" />
-                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Easily Divisible</h4>
-                                    <p className="text-sm text-slate-500">Gold is soft and malleable, meaning it can be divided into precise amounts. One ounce can be hammered into a 300 square foot sheet or drawn into a 50-mile wire.</p>
+                                <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                    <Coins className="w-8 h-8 text-[#D4A94E] mb-4" />
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Easily Divisible</h4>
+                                    <p className="text-sm text-[#A8A39A]">Gold is soft and malleable, meaning it can be divided into precise amounts. One ounce can be hammered into a 300 square foot sheet or drawn into a 50-mile wire.</p>
                                 </div>
-                                <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                    <Globe className="w-8 h-8 text-[#B22234] mb-4" />
-                                    <h4 className="font-bold text-slate-900 text-lg mb-2">Universally Recognized</h4>
-                                    <p className="text-sm text-slate-500">Gold is identifiable anywhere in the world. Its density and properties make it nearly impossible to counterfeit. It&apos;s accepted as valuable in every country.</p>
+                                <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                    <Globe className="w-8 h-8 text-[#D4A94E] mb-4" />
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Universally Recognized</h4>
+                                    <p className="text-sm text-[#A8A39A]">Gold is identifiable anywhere in the world. Its density and properties make it nearly impossible to counterfeit. It&apos;s accepted as valuable in every country.</p>
                                 </div>
                             </div>
 
@@ -205,7 +205,7 @@ export default function WhyIsGoldValuablePage() {
                                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-700">
                                     <Clock className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">5,000 Years of History</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">5,000 Years of History</h2>
                             </div>
                             <p>
                                 Gold&apos;s track record as money and a store of value is unmatched by any other asset:
@@ -222,19 +222,19 @@ export default function WhyIsGoldValuablePage() {
                                 Paper currencies, by contrast, have a 100% failure rate over long time horizons. The average lifespan of a fiat currency is 27 years. The US dollar has lost over 96% of its purchasing power since 1913.
                             </p>
 
-                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
-                                <h4 className="font-bold text-slate-900 text-lg mb-4">The Suit Test: Gold vs. Dollar</h4>
+                            <div className="bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
+                                <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">The Suit Test: Gold vs. Dollar</h4>
                                 <div className="grid md:grid-cols-2 gap-6">
-                                    <div className="text-center p-4 bg-white border border-slate-200 rounded-xl">
-                                        <div className="text-3xl font-bold text-[#B22234] mb-2">1920</div>
-                                        <p className="text-sm text-slate-500">1 oz gold ($20) = 1 quality suit</p>
+                                    <div className="text-center p-4 bg-[#161828] border border-[#2A2D42] rounded-xl">
+                                        <div className="text-3xl font-bold text-[#D4A94E] mb-2">1920</div>
+                                        <p className="text-sm text-[#A8A39A]">1 oz gold ($20) = 1 quality suit</p>
                                     </div>
-                                    <div className="text-center p-4 bg-white border border-slate-200 rounded-xl">
-                                        <div className="text-3xl font-bold text-[#B22234] mb-2">2026</div>
-                                        <p className="text-sm text-slate-500">1 oz gold (~$2,000+) = 1 quality suit</p>
+                                    <div className="text-center p-4 bg-[#161828] border border-[#2A2D42] rounded-xl">
+                                        <div className="text-3xl font-bold text-[#D4A94E] mb-2">2026</div>
+                                        <p className="text-sm text-[#A8A39A]">1 oz gold (~$2,000+) = 1 quality suit</p>
                                     </div>
                                 </div>
-                                <p className="text-sm text-slate-500 mt-4 text-center">Gold maintained its purchasing power. The dollar lost 99%.</p>
+                                <p className="text-sm text-[#A8A39A] mt-4 text-center">Gold maintained its purchasing power. The dollar lost 99%.</p>
                             </div>
                         </section>
 
@@ -244,7 +244,7 @@ export default function WhyIsGoldValuablePage() {
                                 <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                     <Gem className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Natural Scarcity You Can&apos;t Fake</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Natural Scarcity You Can&apos;t Fake</h2>
                             </div>
                             <p>
                                 Unlike paper money, which can be printed infinitely, gold&apos;s supply is naturally limited:
@@ -282,7 +282,7 @@ export default function WhyIsGoldValuablePage() {
                                 <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                     <ShieldCheck className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Gold as the Ultimate Store of Value</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Gold as the Ultimate Store of Value</h2>
                             </div>
                             <p>
                                 A &quot;store of value&quot; is an asset that maintains purchasing power over time. Gold excels at this for several reasons:
@@ -304,7 +304,7 @@ export default function WhyIsGoldValuablePage() {
                                 <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                     <TrendingUp className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Gold Matters Today</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Why Gold Matters Today</h2>
                             </div>
                             <p>
                                 In our modern financial system, gold remains critically important:
@@ -327,7 +327,7 @@ export default function WhyIsGoldValuablePage() {
                                 <div className="p-3 bg-cyan-500/20 rounded-lg text-cyan-400">
                                     <Building2 className="w-6 h-6" />
                                 </div>
-                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Central Banks Hold Gold</h2>
+                                <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Why Central Banks Hold Gold</h2>
                             </div>
                             <p>
                                 If gold were truly a &quot;barbarous relic,&quot; why do central banks hold over 35,000 tonnes of it? The answer reveals gold&apos;s true importance:
@@ -356,81 +356,81 @@ export default function WhyIsGoldValuablePage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="space-y-4 not-prose">
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Why is gold so valuable?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         Gold is valuable because of its unique combination of properties: it&apos;s extremely rare, virtually indestructible (doesn&apos;t rust or corrode), beautiful, easily divisible, portable, and universally recognized across all cultures and time periods. These properties make it the ideal store of value and medium of exchange.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">What makes gold different from other metals?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         Gold is one of the least reactive chemical elements, meaning it doesn&apos;t rust, tarnish, or corrode. It&apos;s also extremely rare—all the gold ever mined would fit in a 67-foot cube. Unlike silver (which tarnishes) or platinum (which is too rare), gold strikes the perfect balance of scarcity, durability, and practicality.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Will gold always be valuable?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         While no one can predict the future with certainty, gold has maintained its value for over 5,000 years across every civilization. Its value is rooted in physical properties that cannot change and scarcity that cannot be altered. As long as humans value rare, beautiful, durable assets, gold will likely remain valuable.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Why do central banks hold gold?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
                                         Central banks hold over 35,000 tonnes of gold because it&apos;s the only reserve asset that isn&apos;t simultaneously someone else&apos;s liability. Gold provides diversification from dollar-denominated assets, protection against currency crises, and a hedge against inflation. In 2022-2024, central banks bought record amounts of gold.
                                     </p>
                                 </details>
 
-                                <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-slate-900">
+                                <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                    <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                         <h4 className="text-lg font-bold">Is gold a good investment for retirement?</h4>
-                                        <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-[#B22234] sm:p-3">
+                                        <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D4A94E] sm:p-3">
                                             <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p className="mt-4 leading-relaxed text-slate-500">
-                                        Gold can be an excellent component of a retirement portfolio. It provides diversification, inflation protection, and crisis insurance. Most advisors who recommend precious metals suggest allocating 10-20% of your portfolio to gold. A <Link href="/what-is-a-gold-ira" className="text-[#B22234] hover:underline">Gold IRA</Link> allows you to hold physical gold with the same tax advantages as a traditional IRA.
+                                    <p className="mt-4 leading-relaxed text-[#A8A39A]">
+                                        Gold can be an excellent component of a retirement portfolio. It provides diversification, inflation protection, and crisis insurance. Most advisors who recommend precious metals suggest allocating 10-20% of your portfolio to gold. A <Link href="/what-is-a-gold-ira" className="text-[#D4A94E] hover:underline">Gold IRA</Link> allows you to hold physical gold with the same tax advantages as a traditional IRA.
                                     </p>
                                 </details>
                             </div>
                         </section>
 
                         {/* Final CTA */}
-                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-white relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-96 h-96 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-96 h-96 bg-[rgba(220,38,38,0.1)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
                                 <h3 className="text-3xl font-serif font-bold mb-4 text-white">Ready to Add Gold to Your Portfolio?</h3>
                                 <p className="mb-6 text-gray-200 max-w-xl mx-auto">Discover how a Gold IRA can help you own physical gold with tax advantages for your retirement.</p>
@@ -438,7 +438,7 @@ export default function WhyIsGoldValuablePage() {
                                     <Button variant="gold" size="xl" asChild>
                                         <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                     </Button>
-                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                    <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#1E2134]/10">
                                         <Link href="/what-is-a-gold-ira">Learn About Gold IRAs</Link>
                                     </Button>
                                 </div>
@@ -452,7 +452,7 @@ export default function WhyIsGoldValuablePage() {
             </Container>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-why-is-gold-valuable" />
                 </Container>

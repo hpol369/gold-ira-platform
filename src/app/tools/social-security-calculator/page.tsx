@@ -140,7 +140,7 @@ export default function SocialSecurityCalculatorPage() {
       <main className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative pt-24 pb-16 overflow-hidden">
-          <div className="absolute inset-0 bg-slate-50" />
+          <div className="absolute inset-0 bg-[#0C0D18]" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-green-900/20 via-transparent to-transparent" />
 
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -152,10 +152,10 @@ export default function SocialSecurityCalculatorPage() {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-500/10 text-green-600 border border-green-500/20 mb-4">
                 Retirement Planning Tool
               </span>
-              <h1 className="text-4xl md:text-5xl font-bold text-[#000080] mb-4">
+              <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
                 Social Security Optimizer
               </h1>
-              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
                 After decades of paying into the system, you've earned every dollar.
                 This calculator helps you claim at the right time - especially if your body can't wait until 70.
               </p>
@@ -173,7 +173,7 @@ export default function SocialSecurityCalculatorPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
-                  className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8"
+                  className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-8"
                 >
                   {/* Progress Steps */}
                   <div className="flex items-center justify-center mb-8">
@@ -182,8 +182,8 @@ export default function SocialSecurityCalculatorPage() {
                         <div
                           className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-colors ${
                             step >= s
-                              ? 'bg-green-500 text-slate-900'
-                              : 'bg-slate-700 text-slate-500'
+                              ? 'bg-green-500 text-[#F6F4EF]'
+                              : 'bg-slate-700 text-[#A8A39A]'
                           }`}
                         >
                           {s}
@@ -206,10 +206,10 @@ export default function SocialSecurityCalculatorPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
+                      <h2 className="text-2xl font-bold text-[#F6F4EF] mb-2 text-center">
                         What year were you born?
                       </h2>
-                      <p className="text-slate-500 text-center mb-8">
+                      <p className="text-[#A8A39A] text-center mb-8">
                         Your birth year determines your Full Retirement Age (FRA)
                       </p>
 
@@ -228,7 +228,7 @@ export default function SocialSecurityCalculatorPage() {
                           className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-green-500"
                         />
 
-                        <div className="flex justify-between text-sm text-slate-500">
+                        <div className="flex justify-between text-sm text-[#A8A39A]">
                           <span>1940</span>
                           <span>1980</span>
                         </div>
@@ -240,8 +240,8 @@ export default function SocialSecurityCalculatorPage() {
                               onClick={() => setBirthYear(year)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 birthYear === year
-                                  ? 'bg-green-500 text-slate-900'
-                                  : 'bg-slate-700 text-slate-600 hover:bg-slate-600'
+                                  ? 'bg-green-500 text-[#F6F4EF]'
+                                  : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
                               {year}
@@ -260,7 +260,7 @@ export default function SocialSecurityCalculatorPage() {
                       <div className="mt-8 flex justify-end">
                         <button
                           onClick={() => setStep(2)}
-                          className="px-8 py-3 bg-green-500 text-slate-900 font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                          className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -275,10 +275,10 @@ export default function SocialSecurityCalculatorPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
+                      <h2 className="text-2xl font-bold text-[#F6F4EF] mb-2 text-center">
                         Estimated monthly benefit at FRA?
                       </h2>
-                      <p className="text-slate-500 text-center mb-8">
+                      <p className="text-[#A8A39A] text-center mb-8">
                         Find this on your Social Security statement at ssa.gov/myaccount
                       </p>
 
@@ -287,7 +287,7 @@ export default function SocialSecurityCalculatorPage() {
                           <span className="text-5xl font-bold text-green-600">
                             {formatCurrency(estimatedBenefitAtFRA)}
                           </span>
-                          <span className="text-xl text-slate-500 ml-2">/month</span>
+                          <span className="text-xl text-[#A8A39A] ml-2">/month</span>
                         </div>
 
                         <input
@@ -300,7 +300,7 @@ export default function SocialSecurityCalculatorPage() {
                           className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-green-500"
                         />
 
-                        <div className="flex justify-between text-sm text-slate-500">
+                        <div className="flex justify-between text-sm text-[#A8A39A]">
                           <span>$500</span>
                           <span>$5,000</span>
                         </div>
@@ -312,8 +312,8 @@ export default function SocialSecurityCalculatorPage() {
                               onClick={() => setEstimatedBenefitAtFRA(amount)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 estimatedBenefitAtFRA === amount
-                                  ? 'bg-green-500 text-slate-900'
-                                  : 'bg-slate-700 text-slate-600 hover:bg-slate-600'
+                                  ? 'bg-green-500 text-[#F6F4EF]'
+                                  : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
                               {formatCurrency(amount)}
@@ -332,13 +332,13 @@ export default function SocialSecurityCalculatorPage() {
                       <div className="mt-8 flex justify-between">
                         <button
                           onClick={() => setStep(1)}
-                          className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                          className="px-8 py-3 bg-slate-700 text-[#D0CCC4] font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                         >
                           Back
                         </button>
                         <button
                           onClick={() => setStep(3)}
-                          className="px-8 py-3 bg-green-500 text-slate-900 font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                          className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
                         >
                           Next Step
                         </button>
@@ -353,17 +353,17 @@ export default function SocialSecurityCalculatorPage() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -20 }}
                     >
-                      <h2 className="text-2xl font-bold text-[#000080] mb-2 text-center">
+                      <h2 className="text-2xl font-bold text-[#F6F4EF] mb-2 text-center">
                         Estimated life expectancy?
                       </h2>
-                      <p className="text-slate-500 text-center mb-8">
+                      <p className="text-[#A8A39A] text-center mb-8">
                         Consider your health, family history, and lifestyle
                       </p>
 
                       <div className="space-y-6">
                         <div className="text-center">
                           <span className="text-5xl font-bold text-green-600">{lifeExpectancy}</span>
-                          <span className="text-xl text-slate-500 ml-2">years</span>
+                          <span className="text-xl text-[#A8A39A] ml-2">years</span>
                         </div>
 
                         <input
@@ -376,7 +376,7 @@ export default function SocialSecurityCalculatorPage() {
                           className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-green-500"
                         />
 
-                        <div className="flex justify-between text-sm text-slate-500">
+                        <div className="flex justify-between text-sm text-[#A8A39A]">
                           <span>70</span>
                           <span>100</span>
                         </div>
@@ -388,8 +388,8 @@ export default function SocialSecurityCalculatorPage() {
                               onClick={() => setLifeExpectancy(age)}
                               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                                 lifeExpectancy === age
-                                  ? 'bg-green-500 text-slate-900'
-                                  : 'bg-slate-700 text-slate-600 hover:bg-slate-600'
+                                  ? 'bg-green-500 text-[#F6F4EF]'
+                                  : 'bg-slate-700 text-[#D0CCC4] hover:bg-slate-600'
                               }`}
                             >
                               {age} years
@@ -397,8 +397,8 @@ export default function SocialSecurityCalculatorPage() {
                           ))}
                         </div>
 
-                        <div className="bg-slate-50 border border-slate-700 rounded-lg p-4">
-                          <p className="text-slate-600 text-sm">
+                        <div className="bg-[#0C0D18] border border-slate-700 rounded-lg p-4">
+                          <p className="text-[#D0CCC4] text-sm">
                             <strong>Average life expectancy:</strong><br />
                             • Men at 65: ~84 years<br />
                             • Women at 65: ~87 years<br />
@@ -410,13 +410,13 @@ export default function SocialSecurityCalculatorPage() {
                       <div className="mt-8 flex justify-between">
                         <button
                           onClick={() => setStep(2)}
-                          className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                          className="px-8 py-3 bg-slate-700 text-[#D0CCC4] font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                         >
                           Back
                         </button>
                         <button
                           onClick={handleCalculate}
-                          className="px-8 py-3 bg-green-500 text-slate-900 font-semibold rounded-lg hover:bg-green-400 transition-colors"
+                          className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors"
                         >
                           Optimize Benefits
                         </button>
@@ -440,50 +440,50 @@ export default function SocialSecurityCalculatorPage() {
                     <div className="text-6xl font-bold text-green-600 mb-2">
                       Age {calculations.optimalAge.age}
                     </div>
-                    <p className="text-slate-600 mb-4">
+                    <p className="text-[#D0CCC4] mb-4">
                       Based on your life expectancy of {lifeExpectancy}, claiming at age {calculations.optimalAge.age} maximizes your lifetime benefits
                     </p>
                     <div className="flex justify-center gap-8">
                       <div>
-                        <p className="text-slate-600 text-sm">Monthly Benefit</p>
-                        <p className="text-2xl font-bold text-slate-900">{formatCurrency(calculations.optimalAge.monthly)}</p>
+                        <p className="text-[#D0CCC4] text-sm">Monthly Benefit</p>
+                        <p className="text-2xl font-bold text-[#F6F4EF]">{formatCurrency(calculations.optimalAge.monthly)}</p>
                       </div>
                       <div>
-                        <p className="text-slate-600 text-sm">Lifetime Total</p>
-                        <p className="text-2xl font-bold text-slate-900">{formatCurrency(calculations.optimalAge.lifetime)}</p>
+                        <p className="text-[#D0CCC4] text-sm">Lifetime Total</p>
+                        <p className="text-2xl font-bold text-[#F6F4EF]">{formatCurrency(calculations.optimalAge.lifetime)}</p>
                       </div>
                     </div>
                   </div>
 
                   {/* Claiming Age Comparison */}
-                  <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8">
-                    <h2 className="text-2xl font-bold text-[#000080] mb-6 text-center">
+                  <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-8">
+                    <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 text-center">
                       Benefits by Claiming Age
                     </h2>
 
                     <div className="grid md:grid-cols-3 gap-6 mb-8">
                       {/* Age 62 */}
-                      <div className="bg-slate-50 border border-slate-700 rounded-xl p-6">
+                      <div className="bg-[#0C0D18] border border-slate-700 rounded-xl p-6">
                         <div className="flex items-center gap-2 mb-4">
                           <div className="w-3 h-3 bg-red-400 rounded-full" />
-                          <h3 className="text-lg font-semibold text-slate-900">Age 62 (Early)</h3>
+                          <h3 className="text-lg font-semibold text-[#F6F4EF]">Age 62 (Early)</h3>
                         </div>
                         <div className="space-y-3">
                           <div>
-                            <p className="text-slate-600 text-sm">Monthly Benefit</p>
+                            <p className="text-[#D0CCC4] text-sm">Monthly Benefit</p>
                             <p className="text-2xl font-bold text-red-600">
                               {formatCurrency(calculations.benefitAt62)}
                             </p>
                           </div>
                           <div>
-                            <p className="text-slate-600 text-sm">Reduction from FRA</p>
+                            <p className="text-[#D0CCC4] text-sm">Reduction from FRA</p>
                             <p className="text-lg font-semibold text-red-600">
                               -{calculations.reductionAt62.toFixed(1)}%
                             </p>
                           </div>
                           <div>
-                            <p className="text-slate-600 text-sm">Lifetime Total</p>
-                            <p className="text-lg font-semibold text-slate-900">
+                            <p className="text-[#D0CCC4] text-sm">Lifetime Total</p>
+                            <p className="text-lg font-semibold text-[#F6F4EF]">
                               {formatCurrency(calculations.lifetimeBenefits.find(b => b.age === 62)?.lifetime || 0)}
                             </p>
                           </div>
@@ -491,27 +491,27 @@ export default function SocialSecurityCalculatorPage() {
                       </div>
 
                       {/* FRA */}
-                      <div className="bg-slate-50 border border-slate-700 rounded-xl p-6">
+                      <div className="bg-[#0C0D18] border border-slate-700 rounded-xl p-6">
                         <div className="flex items-center gap-2 mb-4">
                           <div className="w-3 h-3 bg-amber-400 rounded-full" />
-                          <h3 className="text-lg font-semibold text-slate-900">Age {calculations.fraYears} (FRA)</h3>
+                          <h3 className="text-lg font-semibold text-[#F6F4EF]">Age {calculations.fraYears} (FRA)</h3>
                         </div>
                         <div className="space-y-3">
                           <div>
-                            <p className="text-slate-600 text-sm">Monthly Benefit</p>
-                            <p className="text-2xl font-bold text-[#B22234]">
+                            <p className="text-[#D0CCC4] text-sm">Monthly Benefit</p>
+                            <p className="text-2xl font-bold text-[#D4A94E]">
                               {formatCurrency(calculations.benefitAtFRA)}
                             </p>
                           </div>
                           <div>
-                            <p className="text-slate-600 text-sm">Full Retirement Age</p>
-                            <p className="text-lg font-semibold text-[#B22234]">
+                            <p className="text-[#D0CCC4] text-sm">Full Retirement Age</p>
+                            <p className="text-lg font-semibold text-[#D4A94E]">
                               100% of benefit
                             </p>
                           </div>
                           <div>
-                            <p className="text-slate-600 text-sm">Lifetime Total</p>
-                            <p className="text-lg font-semibold text-slate-900">
+                            <p className="text-[#D0CCC4] text-sm">Lifetime Total</p>
+                            <p className="text-lg font-semibold text-[#F6F4EF]">
                               {formatCurrency(calculations.lifetimeBenefits.find(b => b.age === calculations.fraYears)?.lifetime || 0)}
                             </p>
                           </div>
@@ -519,27 +519,27 @@ export default function SocialSecurityCalculatorPage() {
                       </div>
 
                       {/* Age 70 */}
-                      <div className="bg-slate-50 border border-slate-700 rounded-xl p-6">
+                      <div className="bg-[#0C0D18] border border-slate-700 rounded-xl p-6">
                         <div className="flex items-center gap-2 mb-4">
                           <div className="w-3 h-3 bg-green-400 rounded-full" />
-                          <h3 className="text-lg font-semibold text-slate-900">Age 70 (Maximum)</h3>
+                          <h3 className="text-lg font-semibold text-[#F6F4EF]">Age 70 (Maximum)</h3>
                         </div>
                         <div className="space-y-3">
                           <div>
-                            <p className="text-slate-600 text-sm">Monthly Benefit</p>
+                            <p className="text-[#D0CCC4] text-sm">Monthly Benefit</p>
                             <p className="text-2xl font-bold text-green-600">
                               {formatCurrency(calculations.benefitAt70)}
                             </p>
                           </div>
                           <div>
-                            <p className="text-slate-600 text-sm">Increase from FRA</p>
+                            <p className="text-[#D0CCC4] text-sm">Increase from FRA</p>
                             <p className="text-lg font-semibold text-green-600">
                               +{calculations.increaseAt70.toFixed(1)}%
                             </p>
                           </div>
                           <div>
-                            <p className="text-slate-600 text-sm">Lifetime Total</p>
-                            <p className="text-lg font-semibold text-slate-900">
+                            <p className="text-[#D0CCC4] text-sm">Lifetime Total</p>
+                            <p className="text-lg font-semibold text-[#F6F4EF]">
                               {formatCurrency(calculations.lifetimeBenefits.find(b => b.age === 70)?.lifetime || 0)}
                             </p>
                           </div>
@@ -548,8 +548,8 @@ export default function SocialSecurityCalculatorPage() {
                     </div>
 
                     {/* Lifetime Benefits Chart */}
-                    <div className="bg-slate-50 rounded-xl p-6">
-                      <h3 className="text-lg font-semibold text-slate-900 mb-4">Lifetime Benefits by Claiming Age</h3>
+                    <div className="bg-[#0C0D18] rounded-xl p-6">
+                      <h3 className="text-lg font-semibold text-[#F6F4EF] mb-4">Lifetime Benefits by Claiming Age</h3>
                       <div className="space-y-3">
                         {calculations.lifetimeBenefits.map((benefit) => {
                           const maxLifetime = Math.max(...calculations.lifetimeBenefits.map(b => b.lifetime));
@@ -558,21 +558,21 @@ export default function SocialSecurityCalculatorPage() {
 
                           return (
                             <div key={benefit.age} className="flex items-center gap-4">
-                              <span className="text-slate-500 w-16">Age {benefit.age}</span>
+                              <span className="text-[#A8A39A] w-16">Age {benefit.age}</span>
                               <div className="flex-1 h-8 bg-slate-700 rounded-lg overflow-hidden relative">
                                 <div
                                   className={`h-full rounded-lg transition-all ${
-                                    isOptimal ? 'bg-green-500' : 'bg-slate-500'
+                                    isOptimal ? 'bg-green-500' : 'bg-[#0C0D18]0'
                                   }`}
                                   style={{ width: `${percentage}%` }}
                                 />
                                 {isOptimal && (
-                                  <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs font-semibold text-slate-900">
+                                  <span className="absolute right-2 top-1/2 -translate-y-1/2 text-xs font-semibold text-[#F6F4EF]">
                                     OPTIMAL
                                   </span>
                                 )}
                               </div>
-                              <span className="text-slate-900 font-semibold w-24 text-right">
+                              <span className="text-[#F6F4EF] font-semibold w-24 text-right">
                                 {formatCurrency(benefit.lifetime)}
                               </span>
                             </div>
@@ -584,36 +584,36 @@ export default function SocialSecurityCalculatorPage() {
 
                   {/* Breakeven Analysis */}
                   {calculations.breakeven62vs70 && (
-                    <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
-                      <h3 className="text-lg font-semibold text-slate-900 mb-4">Breakeven Analysis</h3>
-                      <p className="text-slate-600">
+                    <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6">
+                      <h3 className="text-lg font-semibold text-[#F6F4EF] mb-4">Breakeven Analysis</h3>
+                      <p className="text-[#D0CCC4]">
                         If you claim at 70 instead of 62, you'll break even at age{' '}
-                        <strong className="text-[#B22234]">{Math.round(calculations.breakeven62vs70)}</strong>.
+                        <strong className="text-[#D4A94E]">{Math.round(calculations.breakeven62vs70)}</strong>.
                         After this age, claiming at 70 provides more total lifetime benefits.
                       </p>
                     </div>
                   )}
 
                   {/* Important Considerations */}
-                  <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
-                    <h3 className="text-lg font-semibold text-[#B22234] mb-4">
+                  <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                    <h3 className="text-lg font-semibold text-[#D4A94E] mb-4">
                       Important Considerations
                     </h3>
-                    <ul className="space-y-2 text-slate-600">
+                    <ul className="space-y-2 text-[#D0CCC4]">
                       <li className="flex items-start gap-2">
-                        <span className="text-[#B22234] mt-1">•</span>
+                        <span className="text-[#D4A94E] mt-1">•</span>
                         <span>Spouse benefits: Your claiming decision affects survivor benefits</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-[#B22234] mt-1">•</span>
+                        <span className="text-[#D4A94E] mt-1">•</span>
                         <span>Working while claiming: Benefits may be reduced if you earn above limits before FRA</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-[#B22234] mt-1">•</span>
+                        <span className="text-[#D4A94E] mt-1">•</span>
                         <span>Taxes: Up to 85% of benefits may be taxable depending on income</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-[#B22234] mt-1">•</span>
+                        <span className="text-[#D4A94E] mt-1">•</span>
                         <span>Inflation: Benefits are adjusted annually for cost of living (COLA)</span>
                       </li>
                     </ul>
@@ -630,13 +630,13 @@ export default function SocialSecurityCalculatorPage() {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <button
                       onClick={handleReset}
-                      className="px-8 py-3 bg-slate-700 text-slate-600 font-semibold rounded-lg hover:bg-slate-600 transition-colors"
+                      className="px-8 py-3 bg-slate-700 text-[#D0CCC4] font-semibold rounded-lg hover:bg-slate-600 transition-colors"
                     >
                       Calculate Again
                     </button>
                     <Link
                       href="/learn/social-security-bridge-strategy"
-                      className="px-8 py-3 bg-green-500 text-slate-900 font-semibold rounded-lg hover:bg-green-400 transition-colors text-center"
+                      className="px-8 py-3 bg-green-500 text-[#F6F4EF] font-semibold rounded-lg hover:bg-green-400 transition-colors text-center"
                     >
                       Learn Bridge Strategies
                     </Link>
@@ -648,16 +648,16 @@ export default function SocialSecurityCalculatorPage() {
         </section>
 
         {/* Educational Section */}
-        <section className="py-16 bg-slate-50">
+        <section className="py-16 bg-[#0C0D18]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
               Understanding Social Security
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-green-600 mb-3">Early Claiming (62-FRA)</h3>
-                <p className="text-slate-600">
+                <p className="text-[#D0CCC4]">
                   Benefits are permanently reduced by:<br />
                   • ~6.7% per year for first 3 years early<br />
                   • ~5% per year for additional years<br />
@@ -665,9 +665,9 @@ export default function SocialSecurityCalculatorPage() {
                 </p>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-green-600 mb-3">Delayed Claiming (FRA-70)</h3>
-                <p className="text-slate-600">
+                <p className="text-[#D0CCC4]">
                   Benefits increase by 8% per year:<br />
                   • Delayed Retirement Credits<br />
                   • Maximum increase at 70: ~24-32%<br />
@@ -675,9 +675,9 @@ export default function SocialSecurityCalculatorPage() {
                 </p>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-green-600 mb-3">Full Retirement Age (FRA)</h3>
-                <p className="text-slate-600">
+                <p className="text-[#D0CCC4]">
                   Your FRA depends on birth year:<br />
                   • 1943-1954: Age 66<br />
                   • 1955-1959: 66 + 2 months/year<br />
@@ -685,9 +685,9 @@ export default function SocialSecurityCalculatorPage() {
                 </p>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-green-600 mb-3">When to Claim Early</h3>
-                <p className="text-slate-600">
+                <p className="text-[#D0CCC4]">
                   Consider claiming early if:<br />
                   • Poor health/shorter life expectancy<br />
                   • Need income and have no alternatives<br />
@@ -702,40 +702,40 @@ export default function SocialSecurityCalculatorPage() {
         {/* Related Tools */}
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
               Related Retirement Tools
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <Link
                 href="/tools/retirement-calculator"
-                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6 hover:bg-[#1E2134]/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                <h3 className="text-lg font-semibold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                   Retirement Calculator
                 </h3>
-                <p className="text-slate-600 text-sm mt-2">
+                <p className="text-[#D0CCC4] text-sm mt-2">
                   See if you have enough saved
                 </p>
               </Link>
               <Link
                 href="/tools/72t-calculator"
-                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6 hover:bg-[#1E2134]/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                <h3 className="text-lg font-semibold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                   72(t) Calculator
                 </h3>
-                <p className="text-slate-600 text-sm mt-2">
+                <p className="text-[#D0CCC4] text-sm mt-2">
                   Early withdrawal options
                 </p>
               </Link>
               <Link
                 href="/tools/rmd-calculator"
-                className="bg-white border border-slate-200 shadow-sm rounded-xl p-6 hover:bg-white/10 transition-colors group"
+                className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6 hover:bg-[#1E2134]/10 transition-colors group"
               >
-                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                <h3 className="text-lg font-semibold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                   RMD Calculator
                 </h3>
-                <p className="text-slate-600 text-sm mt-2">
+                <p className="text-[#D0CCC4] text-sm mt-2">
                   Required Minimum Distributions
                 </p>
               </Link>

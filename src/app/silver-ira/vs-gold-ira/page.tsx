@@ -264,24 +264,24 @@ export default function SilverVsGoldIraPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <header className="py-16 md:py-20 bg-slate-50 relative overflow-hidden">
+            <header className="py-16 md:py-20 bg-[#0C0D18] relative overflow-hidden">
                 <div className="absolute inset-0 pointer-events-none">
-                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-slate-100 rounded-full blur-[150px]" />
+                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#121423] rounded-full blur-[150px]" />
                 </div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#3F4460] rounded-full text-[#D0CCC4] font-semibold text-sm mb-6">
                             <Scale className="h-4 w-4" />
                             METAL COMPARISON
                         </div>
-                        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+                        <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
                             Silver IRA vs Gold IRA: Which Is Right for You?
                         </h1>
-                        <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
+                        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto mb-8">
                             Both metals have their place in a diversified retirement portfolio. This guide compares the pros and cons of each to help you decide the right allocation for your situation.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
+                            <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white" size="lg" asChild>
                                 <Link href="/quiz">
                                     Get Personalized Advice <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
@@ -292,31 +292,31 @@ export default function SilverVsGoldIraPage() {
             </header>
 
             {/* Quick Comparison */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
-                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">Head-to-Head Comparison</h2>
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">Head-to-Head Comparison</h2>
                         <div className="overflow-x-auto">
-                            <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200">
-                                <thead className="bg-slate-50">
+                            <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl shadow-sm border border-[#2A2D42]">
+                                <thead className="bg-[#0C0D18]">
                                     <tr>
-                                        <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Factor</th>
-                                        <th className="p-4 border-b border-slate-200 font-bold text-slate-600">Silver IRA</th>
-                                        <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Gold IRA</th>
-                                        <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Winner</th>
+                                        <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Factor</th>
+                                        <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D0CCC4]">Silver IRA</th>
+                                        <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">Gold IRA</th>
+                                        <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Winner</th>
                                     </tr>
                                 </thead>
-                                <tbody className="divide-y divide-slate-200 text-sm">
+                                <tbody className="divide-y divide-[#2A2D42] text-sm">
                                     {comparisonMetrics.map((row, index) => (
-                                        <tr key={index} className={index % 2 === 0 ? '' : 'bg-slate-100'}>
-                                            <td className="p-4 font-semibold text-slate-900">{row.metric}</td>
-                                            <td className="p-4 text-slate-600">{row.silver}</td>
-                                            <td className="p-4 text-slate-600">{row.gold}</td>
+                                        <tr key={index} className={index % 2 === 0 ? '' : 'bg-[#121423]'}>
+                                            <td className="p-4 font-semibold text-[#F6F4EF]">{row.metric}</td>
+                                            <td className="p-4 text-[#D0CCC4]">{row.silver}</td>
+                                            <td className="p-4 text-[#D0CCC4]">{row.gold}</td>
                                             <td className="p-4">
                                                 <span className={`px-2 py-1 rounded text-xs font-bold ${
-                                                    row.winner === 'Silver' ? 'bg-[#B22234]/10 text-slate-600' :
-                                                    row.winner === 'Gold' ? 'bg-[#B22234]/20 text-[#B22234]' :
-                                                    'bg-slate-100 text-slate-600'
+                                                    row.winner === 'Silver' ? 'bg-[rgba(220,38,38,0.1)] text-[#D0CCC4]' :
+                                                    row.winner === 'Gold' ? 'bg-[rgba(220,38,38,0.18)] text-[#D4A94E]' :
+                                                    'bg-[#121423] text-[#D0CCC4]'
                                                 }`}>
                                                     {row.winner}
                                                 </span>
@@ -337,22 +337,22 @@ export default function SilverVsGoldIraPage() {
                         <div className="grid md:grid-cols-2 gap-8">
                             {/* Silver Advantages */}
                             <div>
-                                <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                                    <Coins className="h-6 w-6 text-slate-600" />
+                                <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
+                                    <Coins className="h-6 w-6 text-[#D0CCC4]" />
                                     Why Choose Silver
                                 </h2>
                                 <div className="space-y-4">
                                     {silverAdvantages.map((item, index) => {
                                         const Icon = item.icon;
                                         return (
-                                            <div key={index} className="bg-slate-100 border border-slate-300 rounded-xl p-4">
+                                            <div key={index} className="bg-[#121423] border border-[#3F4460] rounded-xl p-4">
                                                 <div className="flex items-start gap-3">
-                                                    <div className="w-10 h-10 bg-slate-100/50 rounded-lg flex items-center justify-center flex-shrink-0">
-                                                        <Icon className="h-5 w-5 text-slate-600" />
+                                                    <div className="w-10 h-10 bg-[#121423]/50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                        <Icon className="h-5 w-5 text-[#D0CCC4]" />
                                                     </div>
                                                     <div>
-                                                        <h3 className="font-bold text-slate-900">{item.title}</h3>
-                                                        <p className="text-sm text-slate-600">{item.description}</p>
+                                                        <h3 className="font-bold text-[#F6F4EF]">{item.title}</h3>
+                                                        <p className="text-sm text-[#D0CCC4]">{item.description}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -363,22 +363,22 @@ export default function SilverVsGoldIraPage() {
 
                             {/* Gold Advantages */}
                             <div>
-                                <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                                    <Coins className="h-6 w-6 text-[#B22234]" />
+                                <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-3">
+                                    <Coins className="h-6 w-6 text-[#D4A94E]" />
                                     Why Choose Gold
                                 </h2>
                                 <div className="space-y-4">
                                     {goldAdvantages.map((item, index) => {
                                         const Icon = item.icon;
                                         return (
-                                            <div key={index} className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-4">
+                                            <div key={index} className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4">
                                                 <div className="flex items-start gap-3">
-                                                    <div className="w-10 h-10 bg-[#B22234]/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                                                        <Icon className="h-5 w-5 text-[#B22234]" />
+                                                    <div className="w-10 h-10 bg-[#DC2626]/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                        <Icon className="h-5 w-5 text-[#D4A94E]" />
                                                     </div>
                                                     <div>
-                                                        <h3 className="font-bold text-slate-900">{item.title}</h3>
-                                                        <p className="text-sm text-slate-600">{item.description}</p>
+                                                        <h3 className="font-bold text-[#F6F4EF]">{item.title}</h3>
+                                                        <p className="text-sm text-[#D0CCC4]">{item.description}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -392,17 +392,17 @@ export default function SilverVsGoldIraPage() {
             </section>
 
             {/* When to Choose */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-5xl mx-auto">
-                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">When to Choose Each Metal</h2>
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">When to Choose Each Metal</h2>
                         <div className="grid md:grid-cols-3 gap-6">
                             {whenToChoose.map((section, index) => (
-                                <div key={index} className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-                                    <h3 className="font-bold text-slate-900 text-lg mb-4">{section.scenario}</h3>
+                                <div key={index} className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
+                                    <h3 className="font-bold text-[#F6F4EF] text-lg mb-4">{section.scenario}</h3>
                                     <ul className="space-y-2">
                                         {section.items.map((item, idx) => (
-                                            <li key={idx} className="flex items-start gap-2 text-sm text-slate-600">
+                                            <li key={idx} className="flex items-start gap-2 text-sm text-[#D0CCC4]">
                                                 <CheckCircle2 className="h-4 w-4 text-green-700 mt-0.5 flex-shrink-0" />
                                                 {item}
                                             </li>
@@ -419,38 +419,38 @@ export default function SilverVsGoldIraPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">Recommended Allocation Strategies</h2>
-                        <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-4">Recommended Allocation Strategies</h2>
+                        <p className="text-[#D0CCC4] text-center mb-12 max-w-2xl mx-auto">
                             Most investors hold both metals. Here are common approaches.
                         </p>
 
                         <div className="space-y-4">
                             {allocationStrategies.map((item, index) => (
-                                <div key={index} className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                                <div key={index} className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
                                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                                         <div className="flex-1">
                                             <div className="flex items-center gap-3 mb-2">
-                                                <h3 className="font-bold text-slate-900">{item.strategy}</h3>
+                                                <h3 className="font-bold text-[#F6F4EF]">{item.strategy}</h3>
                                                 <span className={`px-2 py-0.5 rounded text-xs font-bold ${
                                                     item.riskLevel === 'Lower' ? 'bg-green-500/20 text-green-700' :
-                                                    item.riskLevel === 'Moderate' ? 'bg-[#B22234]/20 text-[#B22234]' :
+                                                    item.riskLevel === 'Moderate' ? 'bg-[rgba(220,38,38,0.18)] text-[#D4A94E]' :
                                                     item.riskLevel === 'Higher' ? 'bg-red-500/20 text-red-700' :
                                                     'bg-purple-500/20 text-purple-700'
                                                 }`}>
                                                     {item.riskLevel} Risk
                                                 </span>
                                             </div>
-                                            <p className="text-sm text-slate-600">{item.description}</p>
+                                            <p className="text-sm text-[#D0CCC4]">{item.description}</p>
                                         </div>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
-                        <div className="mt-8 bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
-                            <h4 className="font-bold text-[#B22234] mb-2">Our Recommendation</h4>
-                            <p className="text-slate-600">
-                                For most investors, a <strong className="text-slate-900">60/40 or 70/30 gold-to-silver split</strong> provides a good balance of stability and growth potential.
+                        <div className="mt-8 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                            <h4 className="font-bold text-[#D4A94E] mb-2">Our Recommendation</h4>
+                            <p className="text-[#D0CCC4]">
+                                For most investors, a <strong className="text-[#F6F4EF]">60/40 or 70/30 gold-to-silver split</strong> provides a good balance of stability and growth potential.
                                 Adjust based on your age, risk tolerance, and market outlook. Those closer to retirement typically favor more gold.
                             </p>
                         </div>
@@ -459,30 +459,30 @@ export default function SilverVsGoldIraPage() {
             </section>
 
             {/* Gold-Silver Ratio */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <div className="bg-white rounded-2xl p-8 border border-slate-200">
+                        <div className="bg-[#161828] rounded-2xl p-8 border border-[#2A2D42]">
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="w-16 h-16 bg-slate-100/50 rounded-full flex items-center justify-center">
-                                    <span className="text-2xl font-bold text-slate-900">80:1</span>
+                                <div className="w-16 h-16 bg-[#121423]/50 rounded-full flex items-center justify-center">
+                                    <span className="text-2xl font-bold text-[#F6F4EF]">80:1</span>
                                 </div>
                                 <div>
-                                    <h2 className="text-2xl font-bold text-slate-900">The Gold-to-Silver Ratio</h2>
-                                    <p className="text-slate-600">Currently ~80 oz silver = 1 oz gold</p>
+                                    <h2 className="text-2xl font-bold text-[#F6F4EF]">The Gold-to-Silver Ratio</h2>
+                                    <p className="text-[#D0CCC4]">Currently ~80 oz silver = 1 oz gold</p>
                                 </div>
                             </div>
-                            <div className="prose prose-lg max-w-none text-slate-600">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4]">
                                 <p>
                                     The gold-to-silver ratio measures how many ounces of silver it takes to buy one ounce of gold.
-                                    <strong className="text-slate-900"> Historically, this ratio averaged 15-20:1.</strong> Today's ratio around 80:1
+                                    <strong className="text-[#F6F4EF]"> Historically, this ratio averaged 15-20:1.</strong> Today's ratio around 80:1
                                     suggests silver is historically cheap relative to gold.
                                 </p>
                                 <p>
                                     When this ratio contracts (returns toward historical norms), silver dramatically outperforms gold.
                                     During the 2010-2011 bull market, the ratio fell from ~70:1 to ~31:1, with silver rising over 400%.
                                 </p>
-                                <p className="text-[#B22234]">
+                                <p className="text-[#D4A94E]">
                                     Some investors use this ratio to time their purchases - buying silver when the ratio is high (like now)
                                     and potentially rotating to gold if the ratio falls significantly.
                                 </p>
@@ -495,12 +495,12 @@ export default function SilverVsGoldIraPage() {
             {/* Mid-page CTA */}
             <section className="py-16 bg-white">
                 <Container>
-                    <div className="max-w-3xl mx-auto text-center bg-white rounded-2xl p-8 border border-slate-200">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-4">Not Sure What Mix Is Right for You?</h2>
-                        <p className="text-slate-600 mb-6">
+                    <div className="max-w-3xl mx-auto text-center bg-[#161828] rounded-2xl p-8 border border-[#2A2D42]">
+                        <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">Not Sure What Mix Is Right for You?</h2>
+                        <p className="text-[#D0CCC4] mb-6">
                             Take our quiz to get personalized guidance based on your investment goals, timeline, and risk tolerance.
                         </p>
-                        <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
+                        <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white" size="lg" asChild>
                             <Link href="/quiz">
                                 Get My Personalized Recommendation <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
@@ -510,21 +510,21 @@ export default function SilverVsGoldIraPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-3xl mx-auto">
-                        <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">Silver vs Gold IRA FAQs</h2>
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] text-center mb-8">Silver vs Gold IRA FAQs</h2>
                         <div className="space-y-4">
                             {faqs.map((faq, index) => (
                                 <details
                                     key={index}
-                                    className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl"
+                                    className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl"
                                 >
-                                    <summary className="cursor-pointer p-6 font-semibold text-slate-900 flex justify-between items-center list-none">
+                                    <summary className="cursor-pointer p-6 font-semibold text-[#F6F4EF] flex justify-between items-center list-none">
                                         {faq.question}
-                                        <span className="text-[#B22234] group-open:rotate-180 transition-transform">&#9660;</span>
+                                        <span className="text-[#D4A94E] group-open:rotate-180 transition-transform">&#9660;</span>
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-600">
+                                    <div className="px-6 pb-6 text-[#D0CCC4]">
                                         {faq.answer}
                                     </div>
                                 </details>
@@ -537,26 +537,26 @@ export default function SilverVsGoldIraPage() {
             {/* Related Pages */}
             <section className="py-16 bg-white">
                 <Container>
-                    <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">Continue Your Research</h2>
+                    <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">Continue Your Research</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <Link href="/silver-ira/companies" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
-                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Companies</h3>
-                            <p className="text-sm text-slate-600">Compare top Silver IRA providers.</p>
+                        <Link href="/silver-ira/companies" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors">
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Silver IRA Companies</h3>
+                            <p className="text-sm text-[#D0CCC4]">Compare top Silver IRA providers.</p>
                         </Link>
-                        <Link href="/best-gold-ira-companies" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
-                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Best Gold IRA Companies</h3>
-                            <p className="text-sm text-slate-600">Compare top Gold IRA providers.</p>
+                        <Link href="/best-gold-ira-companies" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors">
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Best Gold IRA Companies</h3>
+                            <p className="text-sm text-[#D0CCC4]">Compare top Gold IRA providers.</p>
                         </Link>
-                        <Link href="/silver-ira/approved-coins" className="group bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
-                            <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">IRA Approved Silver</h3>
-                            <p className="text-sm text-slate-600">Which silver products qualify for IRAs.</p>
+                        <Link href="/silver-ira/approved-coins" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors">
+                            <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">IRA Approved Silver</h3>
+                            <p className="text-sm text-[#D0CCC4]">Which silver products qualify for IRAs.</p>
                         </Link>
                     </div>
                 </Container>
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

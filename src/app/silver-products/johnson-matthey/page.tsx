@@ -115,12 +115,12 @@ export default function JohnsonMattheyPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-products"
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
@@ -129,16 +129,16 @@ export default function JohnsonMattheyPage() {
               <Award className="h-4 w-4" />
               250 MONTHLY SEARCHES - DIFFICULTY 0!
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               Johnson Matthey Silver: The Vintage Standard
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               Johnson Matthey set the global standard for precious metals refining for over 200 years.
               Though they exited the retail silver market in 2015, their bars remain prized collectibles
               known for exceptional quality and purity.
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
-              <span className="flex items-center gap-2 text-[#B22234]">
+              <span className="flex items-center gap-2 text-[#D4A94E]">
                 <History className="h-4 w-4" />
                 Vintage Collectible
               </span>
@@ -146,7 +146,7 @@ export default function JohnsonMattheyPage() {
                 <CheckCircle className="h-4 w-4" />
                 .999+ Fine Silver
               </span>
-              <span className="flex items-center gap-2 text-[#B22234]">
+              <span className="flex items-center gap-2 text-[#D4A94E]">
                 <AlertTriangle className="h-4 w-4" />
                 No Longer Produced
               </span>
@@ -156,29 +156,29 @@ export default function JohnsonMattheyPage() {
       </section>
 
       {/* Quick Specs */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <History className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">1817</div>
-                <div className="text-sm text-slate-600">Founded</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <History className="h-8 w-8 text-[#D4A94E] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">1817</div>
+                <div className="text-sm text-[#D0CCC4]">Founded</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
                 <AlertTriangle className="h-8 w-8 text-red-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">2015</div>
-                <div className="text-sm text-slate-600">Exited Silver</div>
+                <div className="text-2xl font-bold text-[#F6F4EF]">2015</div>
+                <div className="text-sm text-[#D0CCC4]">Exited Silver</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Shield className="h-8 w-8 text-slate-600 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">.999+</div>
-                <div className="text-sm text-slate-600">Purity</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Shield className="h-8 w-8 text-[#D0CCC4] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">.999+</div>
+                <div className="text-sm text-[#D0CCC4]">Purity</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
                 <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">10-30%</div>
-                <div className="text-sm text-slate-600">Premium Range</div>
+                <div className="text-2xl font-bold text-[#F6F4EF]">10-30%</div>
+                <div className="text-sm text-[#D0CCC4]">Premium Range</div>
               </div>
             </div>
           </div>
@@ -189,27 +189,27 @@ export default function JohnsonMattheyPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+            <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
               {/* History */}
-              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 mb-8">
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-[#B22234]/20 rounded-lg">
-                    <History className="h-6 w-6 text-[#B22234]" />
+                  <div className="p-2 bg-[rgba(220,38,38,0.18)] rounded-lg">
+                    <History className="h-6 w-6 text-[#D4A94E]" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 m-0">The History of Johnson Matthey</h2>
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] m-0">The History of Johnson Matthey</h2>
                 </div>
-                <p className="text-slate-600 mb-4">
+                <p className="text-[#D0CCC4] mb-4">
                   Founded in London in 1817, Johnson Matthey became one of the world&apos;s most trusted names
                   in precious metals. The company was appointed official refiner and assayer to the Bank of
                   England and built a global reputation for quality that spanned two centuries.
                 </p>
-                <p className="text-slate-600 mb-4">
+                <p className="text-[#D0CCC4] mb-4">
                   JM established refineries worldwide, with their Salt Lake City facility becoming the
                   primary source for American JM silver bars. These US-made bars, produced from the 1970s
                   through 2015, are the most common JM bars in the American market.
                 </p>
-                <p className="text-slate-600">
+                <p className="text-[#D0CCC4]">
                   In 2015, JM made a strategic decision to exit precious metals refining, selling the
                   division to Japan&apos;s Asahi Holdings. This move instantly transformed all existing JM
                   silver bars into finite collectibles that can never be reproduced.
@@ -217,7 +217,7 @@ export default function JohnsonMattheyPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Globe className="h-6 w-6 text-slate-600" />
+                <Globe className="h-6 w-6 text-[#D0CCC4]" />
                 JM Bar Types by Origin
               </h2>
 
@@ -227,33 +227,33 @@ export default function JohnsonMattheyPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Origin</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Characteristics</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Collector Value</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Origin</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Characteristics</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Collector Value</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Salt Lake City, USA</td>
-                      <td className="p-4 text-slate-600">Pressed bars, distinctive JM logo, most common in US</td>
-                      <td className="p-4 text-slate-600">Standard premium</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Salt Lake City, USA</td>
+                      <td className="p-4 text-[#D0CCC4]">Pressed bars, distinctive JM logo, most common in US</td>
+                      <td className="p-4 text-[#D0CCC4]">Standard premium</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Canada (JM Canada)</td>
-                      <td className="p-4 text-slate-600">Both pressed and poured bars, maple leaf designs</td>
-                      <td className="p-4 text-[#B22234]">Higher premium</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Canada (JM Canada)</td>
+                      <td className="p-4 text-[#D0CCC4]">Both pressed and poured bars, maple leaf designs</td>
+                      <td className="p-4 text-[#D4A94E]">Higher premium</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">United Kingdom</td>
-                      <td className="p-4 text-slate-600">Original hallmarked bars, oldest designs</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">United Kingdom</td>
+                      <td className="p-4 text-[#D0CCC4]">Original hallmarked bars, oldest designs</td>
                       <td className="p-4 text-green-400">Highest premium</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Poured Bars (Any Origin)</td>
-                      <td className="p-4 text-slate-600">Hand-poured with unique characteristics</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Poured Bars (Any Origin)</td>
+                      <td className="p-4 text-[#D0CCC4]">Hand-poured with unique characteristics</td>
                       <td className="p-4 text-green-400">Highest premium</td>
                     </tr>
                   </tbody>
@@ -266,52 +266,52 @@ export default function JohnsonMattheyPage() {
               </h2>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Size</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Premium Range</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Availability</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Notes</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Size</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Premium Range</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Availability</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Notes</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">100 oz Pressed</td>
-                      <td className="p-4 text-slate-600">8-15% over spot</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">100 oz Pressed</td>
+                      <td className="p-4 text-[#D0CCC4]">8-15% over spot</td>
                       <td className="p-4 text-green-400">Common</td>
-                      <td className="p-4 text-slate-600">Best value for serious collectors</td>
+                      <td className="p-4 text-[#D0CCC4]">Best value for serious collectors</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">100 oz Poured</td>
-                      <td className="p-4 text-[#B22234]">20-40% over spot</td>
-                      <td className="p-4 text-[#B22234]">Uncommon</td>
-                      <td className="p-4 text-slate-600">Highly sought after</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">100 oz Poured</td>
+                      <td className="p-4 text-[#D4A94E]">20-40% over spot</td>
+                      <td className="p-4 text-[#D4A94E]">Uncommon</td>
+                      <td className="p-4 text-[#D0CCC4]">Highly sought after</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">10 oz Pressed</td>
-                      <td className="p-4 text-slate-600">10-20% over spot</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">10 oz Pressed</td>
+                      <td className="p-4 text-[#D0CCC4]">10-20% over spot</td>
                       <td className="p-4 text-green-400">Common</td>
-                      <td className="p-4 text-slate-600">Popular size for collectors</td>
+                      <td className="p-4 text-[#D0CCC4]">Popular size for collectors</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">1 oz Bar</td>
-                      <td className="p-4 text-[#B22234]">25-50% over spot</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">1 oz Bar</td>
+                      <td className="p-4 text-[#D4A94E]">25-50% over spot</td>
                       <td className="p-4 text-red-400">Rare</td>
-                      <td className="p-4 text-slate-600">Very collectible</td>
+                      <td className="p-4 text-[#D0CCC4]">Very collectible</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Vintage/Early Bars</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Vintage/Early Bars</td>
                       <td className="p-4 text-red-400">50-100%+ over spot</td>
                       <td className="p-4 text-red-400">Very Rare</td>
-                      <td className="p-4 text-slate-600">Authentication essential</td>
+                      <td className="p-4 text-[#D0CCC4]">Authentication essential</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Search className="h-6 w-6 text-slate-600" />
+                <Search className="h-6 w-6 text-[#D0CCC4]" />
                 Authentication Tips
               </h2>
 
@@ -321,51 +321,51 @@ export default function JohnsonMattheyPage() {
               </p>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Authentic Features</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Authentic Features</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Distinctive JM logo (varies by era)</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Serial number (unique to each bar)</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Correct font styles for production era</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>&quot;.999+ FINE SILVER&quot; marking</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Proper weight and dimensions</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Warning Signs</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Warning Signs</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Incorrect logo or font style</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Missing or illegible serial number</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Suspicious pricing (too good to be true)</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Unknown seller, no return policy</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span>Weight or dimension discrepancies</span>
                     </li>
@@ -373,12 +373,12 @@ export default function JohnsonMattheyPage() {
                 </div>
               </div>
 
-              <div className="not-prose bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
-                  <Info className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <Info className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-lg font-bold text-[#B22234] mb-2">Sigma Testing</h4>
-                    <p className="text-slate-600">
+                    <h4 className="text-lg font-bold text-[#D4A94E] mb-2">Sigma Testing</h4>
+                    <p className="text-[#D0CCC4]">
                       For valuable JM bars, consider Sigma Metalytics testing. This non-destructive
                       method verifies the internal composition matches the surface markings. Many
                       dealers offer free testing, or you can purchase a home unit for serious collecting.
@@ -388,44 +388,44 @@ export default function JohnsonMattheyPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Award className="h-6 w-6 text-[#B22234]" />
+                <Award className="h-6 w-6 text-[#D4A94E]" />
                 JM vs Other Vintage Refiners
               </h2>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Refiner</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Production Ended</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Collectibility</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Typical Premium</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Refiner</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Production Ended</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Collectibility</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Typical Premium</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Johnson Matthey</td>
-                      <td className="p-4 text-slate-600">2015</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Johnson Matthey</td>
+                      <td className="p-4 text-[#D0CCC4]">2015</td>
                       <td className="p-4 text-green-400">Very High</td>
-                      <td className="p-4 text-slate-600">10-30%+</td>
+                      <td className="p-4 text-[#D0CCC4]">10-30%+</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Engelhard</td>
-                      <td className="p-4 text-slate-600">1988</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Engelhard</td>
+                      <td className="p-4 text-[#D0CCC4]">1988</td>
                       <td className="p-4 text-green-400">Very High</td>
-                      <td className="p-4 text-slate-600">10-100%+</td>
+                      <td className="p-4 text-[#D0CCC4]">10-100%+</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Republic Metals</td>
-                      <td className="p-4 text-slate-600">2018 (bankruptcy)</td>
-                      <td className="p-4 text-slate-600">Moderate</td>
-                      <td className="p-4 text-slate-600">5-10%</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Republic Metals</td>
+                      <td className="p-4 text-[#D0CCC4]">2018 (bankruptcy)</td>
+                      <td className="p-4 text-[#D0CCC4]">Moderate</td>
+                      <td className="p-4 text-[#D0CCC4]">5-10%</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Sunshine Mint</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Sunshine Mint</td>
                       <td className="p-4 text-green-400">Still Producing</td>
-                      <td className="p-4 text-slate-600">Current</td>
-                      <td className="p-4 text-slate-600">3-8%</td>
+                      <td className="p-4 text-[#D0CCC4]">Current</td>
+                      <td className="p-4 text-[#D0CCC4]">3-8%</td>
                     </tr>
                   </tbody>
                 </table>
@@ -456,25 +456,25 @@ export default function JohnsonMattheyPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -488,30 +488,30 @@ export default function JohnsonMattheyPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Related Silver Products
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Link
                 href="/silver-products/engelhard"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">Engelhard Silver</h3>
-                <p className="text-sm text-slate-600">Another iconic vintage refiner</p>
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#F6F4EF] mb-2">Engelhard Silver</h3>
+                <p className="text-sm text-[#D0CCC4]">Another iconic vintage refiner</p>
               </Link>
               <Link
                 href="/silver-products/pamp-suisse"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">PAMP Suisse</h3>
-                <p className="text-sm text-slate-600">Premium Swiss refiner still producing</p>
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#F6F4EF] mb-2">PAMP Suisse</h3>
+                <p className="text-sm text-[#D0CCC4]">Premium Swiss refiner still producing</p>
               </Link>
               <Link
                 href="/silver-products/sunshine-mint"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">Sunshine Mint</h3>
-                <p className="text-sm text-slate-600">Modern alternative with security features</p>
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#F6F4EF] mb-2">Sunshine Mint</h3>
+                <p className="text-sm text-[#D0CCC4]">Modern alternative with security features</p>
               </Link>
             </div>
           </div>
@@ -519,7 +519,7 @@ export default function JohnsonMattheyPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -91,7 +91,7 @@ export default function SocialProofToast({ variant = "gold" }: SocialProofToastP
 
     if (!isVisible) return null;
 
-    const accentColor = variant === "gold" ? "text-amber-500" : "text-slate-300";
+    const accentColor = variant === "gold" ? "text-amber-500" : "text-[#3F4460]";
 
     return (
         <div
@@ -99,25 +99,25 @@ export default function SocialProofToast({ variant = "gold" }: SocialProofToastP
             role="status"
             aria-live="polite"
         >
-            <div className="bg-white rounded-lg shadow-2xl border-2 border-[#000080] overflow-hidden max-w-sm">
+            <div className="bg-[#161828] rounded-lg shadow-2xl border-2 border-[#000080] overflow-hidden max-w-sm">
                 {/* Top accent bar */}
-                <div className="h-1 bg-[#B22234]"></div>
+                <div className="h-1 bg-[#DC2626]"></div>
 
                 <div className="p-4 flex items-start gap-3">
                     {/* Icon */}
-                    <div className="flex-shrink-0 w-10 h-10 bg-[#000080] rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-10 h-10 bg-[rgba(197,149,46,0.1)] rounded-full flex items-center justify-center">
                         <Download className="h-5 w-5 text-white" />
                     </div>
 
                     {/* Content */}
                     <div className="flex-1 min-w-0">
-                        <p className="text-slate-800 text-sm font-medium">
+                        <p className="text-[#F6F4EF] text-sm font-medium">
                             <span className={`font-bold ${accentColor}`}>{notification.name}</span>
                             {" "}from{" "}
-                            <span className="font-semibold text-[#000080]">{notification.state}</span>
+                            <span className="font-semibold text-[#F6F4EF]">{notification.state}</span>
                             {" "}{notification.action}
                         </p>
-                        <p className="text-xs text-slate-500 mt-1 flex items-center gap-1">
+                        <p className="text-xs text-[#A8A39A] mt-1 flex items-center gap-1">
                             <MapPin className="h-3 w-3" />
                             {notification.time}
                         </p>
@@ -126,7 +126,7 @@ export default function SocialProofToast({ variant = "gold" }: SocialProofToastP
                     {/* Close button */}
                     <button
                         onClick={() => setIsVisible(false)}
-                        className="flex-shrink-0 text-slate-400 hover:text-slate-600 transition-colors"
+                        className="flex-shrink-0 text-[#A8A39A] hover:text-[#F6F4EF] transition-colors"
                         aria-label="Close notification"
                     >
                         <X className="h-4 w-4" />

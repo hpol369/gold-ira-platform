@@ -60,7 +60,7 @@ export default function SilverIRASeniorsPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-slate-900 font-serif">
+        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
             {/* FAQ Schema */}
             <script
                 type="application/ld+json"
@@ -68,7 +68,7 @@ export default function SilverIRASeniorsPage() {
             />
 
             {/* Top Alert Bar - Navy for trust/calm */}
-            <div className="bg-[#000080] text-white p-3 text-center font-bold uppercase tracking-wider text-sm">
+            <div className="bg-[rgba(197,149,46,0.1)] text-white p-3 text-center font-bold uppercase tracking-wider text-sm">
                 <span className="flex items-center justify-center gap-2">
                     <Shield className="h-4 w-4" />
                     For Americans 60+: A Smarter Way to Protect Your Nest Egg
@@ -76,42 +76,42 @@ export default function SilverIRASeniorsPage() {
             </div>
 
             {/* Hero Section */}
-            <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
+            <header className="relative py-12 md:py-20 bg-[#0C0D18] border-b-4 border-[#000080]">
                 <div className="max-w-4xl mx-auto px-4 text-center">
 
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 bg-[#000080]/10 text-[#000080] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6">
+                    <div className="inline-flex items-center gap-2 bg-[rgba(197,149,46,0.08)] text-[#F6F4EF] px-4 py-2 rounded-full font-sans text-sm font-semibold mb-6">
                         <Award className="h-4 w-4" />
                         Senior&apos;s Guide 2026
                     </div>
 
                     {/* Headline Group */}
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#F6F4EF] mb-6 leading-tight uppercase">
                         Silver IRA for Seniors: <br />
-                        <span className="text-[#B22234] underline decoration-4 underline-offset-8">The Affordable Safe-Haven</span>
+                        <span className="text-[#D4A94E] underline decoration-4 underline-offset-8">The Affordable Safe-Haven</span>
                     </h1>
 
-                    <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
+                    <p className="text-xl md:text-2xl text-[#D0CCC4] font-sans mb-8 max-w-2xl mx-auto">
                         At 60+, you&apos;ve earned the right to protect what you&apos;ve built. <strong>No volatility. No gambling. Just security — at a lower entry point.</strong>
                     </p>
 
                     {/* Quick Stats */}
                     <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-10 font-sans">
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-black text-[#000080]">60+</div>
-                            <div className="text-sm text-slate-600">Friendly Process</div>
+                            <div className="text-3xl md:text-4xl font-black text-[#F6F4EF]">60+</div>
+                            <div className="text-sm text-[#D0CCC4]">Friendly Process</div>
                         </div>
                         <div className="text-center">
-                            <div className="flex items-center justify-center gap-1 text-3xl md:text-4xl font-black text-[#000080]">
+                            <div className="flex items-center justify-center gap-1 text-3xl md:text-4xl font-black text-[#F6F4EF]">
                                 <Phone className="h-7 w-7" />
                             </div>
-                            <div className="text-sm text-slate-600">Phone Support</div>
+                            <div className="text-sm text-[#D0CCC4]">Phone Support</div>
                         </div>
                         <div className="text-center">
-                            <div className="flex items-center justify-center gap-1 text-3xl md:text-4xl font-black text-[#000080]">
+                            <div className="flex items-center justify-center gap-1 text-3xl md:text-4xl font-black text-[#F6F4EF]">
                                 <Heart className="h-7 w-7" />
                             </div>
-                            <div className="text-sm text-slate-600">No Pressure Sales</div>
+                            <div className="text-sm text-[#D0CCC4]">No Pressure Sales</div>
                         </div>
                     </div>
 
@@ -120,12 +120,12 @@ export default function SilverIRASeniorsPage() {
                         <LeadCaptureButton
                             variant="silver-seniors"
                             source="lp-silver-ira-seniors-hero"
-                            className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get Your Free Senior&apos;s Guide
                             <ArrowRight className="h-6 w-6" />
                         </LeadCaptureButton>
-                        <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
+                        <p className="text-sm text-[#A8A39A] font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Free Guide • Phone Support • No Obligation
                         </p>
@@ -134,14 +134,14 @@ export default function SilverIRASeniorsPage() {
             </header>
 
             {/* Trust Bar */}
-            <section className="py-8 bg-slate-100 border-b border-slate-200">
+            <section className="py-8 bg-[#121423] border-b border-[#2A2D42]">
                 <div className="max-w-5xl mx-auto px-4 text-center">
-                    <p className="text-slate-500 font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
+                    <p className="text-[#A8A39A] font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale">
-                        <span className="text-2xl font-black text-slate-800">FOX NEWS</span>
-                        <span className="text-2xl font-black text-slate-800">NEWSMAX</span>
-                        <span className="text-2xl font-black text-slate-800">BEN SHAPIRO</span>
-                        <span className="text-2xl font-black text-slate-800">FORBES</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FOX NEWS</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">NEWSMAX</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">BEN SHAPIRO</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FORBES</span>
                     </div>
                 </div>
             </section>
@@ -149,43 +149,43 @@ export default function SilverIRASeniorsPage() {
             {/* Why Seniors Choose Silver Section */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         Why Seniors Over 60 Are Moving to Silver
                     </h2>
-                    <p className="text-center text-slate-600 mb-12 text-lg">
+                    <p className="text-center text-[#D0CCC4] mb-12 text-lg">
                         After decades of hard work, you deserve peace of mind.
                     </p>
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {/* Reason 1 */}
-                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
-                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <Gem className="h-8 w-8 text-[#000080]" />
+                        <div className="bg-[#0C0D18] p-8 rounded-xl border border-[#2A2D42] text-center">
+                            <div className="w-16 h-16 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center mx-auto mb-6">
+                                <Gem className="h-8 w-8 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-[#000080] mb-3">Affordable Entry Point</h3>
-                            <p className="text-slate-600">
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Affordable Entry Point</h3>
+                            <p className="text-[#D0CCC4]">
                                 Silver costs a fraction of gold per ounce, letting you acquire more physical metal. Perfect for seniors who want tangible assets without the high gold premium.
                             </p>
                         </div>
 
                         {/* Reason 2 */}
-                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
-                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <HandHeart className="h-8 w-8 text-[#000080]" />
+                        <div className="bg-[#0C0D18] p-8 rounded-xl border border-[#2A2D42] text-center">
+                            <div className="w-16 h-16 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center mx-auto mb-6">
+                                <HandHeart className="h-8 w-8 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-[#000080] mb-3">Leave a Legacy</h3>
-                            <p className="text-slate-600">
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Leave a Legacy</h3>
+                            <p className="text-[#D0CCC4]">
                                 Physical silver is a tangible inheritance you can pass to children and grandchildren. Real wealth they can hold in their hands.
                             </p>
                         </div>
 
                         {/* Reason 3 */}
-                        <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 text-center">
-                            <div className="w-16 h-16 bg-[#000080]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <TrendingUp className="h-8 w-8 text-[#000080]" />
+                        <div className="bg-[#0C0D18] p-8 rounded-xl border border-[#2A2D42] text-center">
+                            <div className="w-16 h-16 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center mx-auto mb-6">
+                                <TrendingUp className="h-8 w-8 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-[#000080] mb-3">Growing Industrial Demand</h3>
-                            <p className="text-slate-600">
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">Growing Industrial Demand</h3>
+                            <p className="text-[#D0CCC4]">
                                 Silver is essential for solar panels, electronics, and EVs. Unlike gold, silver has massive industrial demand driving long-term value.
                             </p>
                         </div>
@@ -194,60 +194,60 @@ export default function SilverIRASeniorsPage() {
             </section>
 
             {/* It's Not Too Late Section */}
-            <section className="py-16 bg-slate-50 font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         It&apos;s Not Too Late — And It&apos;s Easier Than You Think
                     </h2>
-                    <p className="text-center text-slate-600 mb-10 text-lg">
+                    <p className="text-center text-[#D0CCC4] mb-10 text-lg">
                         We understand your concerns. Here&apos;s the truth:
                     </p>
 
                     <div className="space-y-6">
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42]">
                             <div className="flex gap-4 items-start">
                                 <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                                     <CheckCircle2 className="h-5 w-5 text-green-600" />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-[#000080] mb-1">&ldquo;I&apos;m too old for this&rdquo;</h3>
-                                    <p className="text-slate-600">There&apos;s no age limit. Many of our clients are 70, 80, even 90+. It&apos;s never too late to protect what you&apos;ve worked for.</p>
+                                    <h3 className="font-bold text-[#F6F4EF] mb-1">&ldquo;I&apos;m too old for this&rdquo;</h3>
+                                    <p className="text-[#D0CCC4]">There&apos;s no age limit. Many of our clients are 70, 80, even 90+. It&apos;s never too late to protect what you&apos;ve worked for.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42]">
                             <div className="flex gap-4 items-start">
                                 <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                                     <CheckCircle2 className="h-5 w-5 text-green-600" />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-[#000080] mb-1">&ldquo;I&apos;m not good with technology&rdquo;</h3>
-                                    <p className="text-slate-600">Everything can be done over the phone. Your dedicated agent handles all paperwork. No apps, no complicated websites.</p>
+                                    <h3 className="font-bold text-[#F6F4EF] mb-1">&ldquo;I&apos;m not good with technology&rdquo;</h3>
+                                    <p className="text-[#D0CCC4]">Everything can be done over the phone. Your dedicated agent handles all paperwork. No apps, no complicated websites.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42]">
                             <div className="flex gap-4 items-start">
                                 <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                                     <CheckCircle2 className="h-5 w-5 text-green-600" />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-[#000080] mb-1">&ldquo;It sounds complicated&rdquo;</h3>
-                                    <p className="text-slate-600">Augusta makes it simple. One phone call to get started. They handle the rest — the paperwork, the transfers, everything.</p>
+                                    <h3 className="font-bold text-[#F6F4EF] mb-1">&ldquo;It sounds complicated&rdquo;</h3>
+                                    <p className="text-[#D0CCC4]">Augusta makes it simple. One phone call to get started. They handle the rest — the paperwork, the transfers, everything.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                        <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42]">
                             <div className="flex gap-4 items-start">
                                 <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
                                     <CheckCircle2 className="h-5 w-5 text-green-600" />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-[#000080] mb-1">&ldquo;I don&apos;t want pushy salespeople&rdquo;</h3>
-                                    <p className="text-slate-600">Augusta has zero BBB complaints because they don&apos;t use pressure tactics. Education first, sales never. Take all the time you need.</p>
+                                    <h3 className="font-bold text-[#F6F4EF] mb-1">&ldquo;I don&apos;t want pushy salespeople&rdquo;</h3>
+                                    <p className="text-[#D0CCC4]">Augusta has zero BBB complaints because they don&apos;t use pressure tactics. Education first, sales never. Take all the time you need.</p>
                                 </div>
                             </div>
                         </div>
@@ -258,36 +258,36 @@ export default function SilverIRASeniorsPage() {
             {/* Augusta for Seniors Section */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         Why Seniors Trust Augusta
                     </h2>
-                    <p className="text-center text-slate-600 mb-10 text-lg">
+                    <p className="text-center text-[#D0CCC4] mb-10 text-lg">
                         Augusta understands what matters most to retirees.
                     </p>
 
-                    <div className="bg-slate-50 p-6 md:p-8 rounded-xl border border-slate-200">
+                    <div className="bg-[#0C0D18] p-6 md:p-8 rounded-xl border border-[#2A2D42]">
                         <ul className="space-y-5 text-lg">
                             <li className="flex items-start gap-4">
-                                <div className="flex-shrink-0 w-10 h-10 bg-[#000080]/10 rounded-full flex items-center justify-center">
-                                    <Award className="h-5 w-5 text-[#000080]" />
+                                <div className="flex-shrink-0 w-10 h-10 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center">
+                                    <Award className="h-5 w-5 text-[#F6F4EF]" />
                                 </div>
                                 <span><strong>Zero BBB Complaints:</strong> The only major precious metals company with a perfect record. Your money is in trustworthy hands.</span>
                             </li>
                             <li className="flex items-start gap-4">
-                                <div className="flex-shrink-0 w-10 h-10 bg-[#000080]/10 rounded-full flex items-center justify-center">
-                                    <Phone className="h-5 w-5 text-[#000080]" />
+                                <div className="flex-shrink-0 w-10 h-10 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center">
+                                    <Phone className="h-5 w-5 text-[#F6F4EF]" />
                                 </div>
                                 <span><strong>Dedicated Phone Support:</strong> One person who knows your account and answers when you call. Real humans, not robots.</span>
                             </li>
                             <li className="flex items-start gap-4">
-                                <div className="flex-shrink-0 w-10 h-10 bg-[#000080]/10 rounded-full flex items-center justify-center">
-                                    <Heart className="h-5 w-5 text-[#000080]" />
+                                <div className="flex-shrink-0 w-10 h-10 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center">
+                                    <Heart className="h-5 w-5 text-[#F6F4EF]" />
                                 </div>
                                 <span><strong>Education First:</strong> They teach you about silver IRAs before asking for anything. No pressure, ever.</span>
                             </li>
                             <li className="flex items-start gap-4">
-                                <div className="flex-shrink-0 w-10 h-10 bg-[#000080]/10 rounded-full flex items-center justify-center">
-                                    <Users className="h-5 w-5 text-[#000080]" />
+                                <div className="flex-shrink-0 w-10 h-10 bg-[rgba(197,149,46,0.08)] rounded-full flex items-center justify-center">
+                                    <Users className="h-5 w-5 text-[#F6F4EF]" />
                                 </div>
                                 <span><strong>Endorsed by Joe Montana:</strong> NFL legend Joe Montana trusts Augusta with his retirement. So do 50,000+ other Americans.</span>
                             </li>
@@ -297,7 +297,7 @@ export default function SilverIRASeniorsPage() {
                             <LeadCaptureButton
                                 variant="silver-seniors"
                                 source="lp-silver-ira-seniors-middle"
-                                className="inline-block bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
+                                className="inline-block bg-[rgba(197,149,46,0.1)] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors uppercase font-sans"
                             >
                                 Get Your Free Senior&apos;s Guide
                             </LeadCaptureButton>
@@ -307,31 +307,31 @@ export default function SilverIRASeniorsPage() {
             </section>
 
             {/* Joe Montana Section */}
-            <section className="py-12 bg-[#000080]/5 border-y border-[#000080]/20 font-sans">
+            <section className="py-12 bg-[rgba(197,149,46,0.06)] border-y border-[#000080]/20 font-sans">
                 <div className="max-w-3xl mx-auto px-4 text-center">
                     <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                         <Award className="h-4 w-4" />
                         Celebrity Endorsement That Means Something
                     </div>
-                    <h3 className="text-2xl font-bold text-[#000080] mb-4">Joe Montana Isn&apos;t Just a Spokesman</h3>
-                    <p className="text-slate-700 text-lg">
+                    <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">Joe Montana Isn&apos;t Just a Spokesman</h3>
+                    <p className="text-[#D0CCC4] text-lg">
                         Hall of Fame quarterback Joe Montana asked his personal financial team to find the best precious metals company in the nation and they chose Augusta Precious Metals for him over others. He loved the company&apos;s mission so much that he became a customer and paid ambassador.
                     </p>
                 </div>
             </section>
 
             {/* FAQ Section */}
-            <section className="py-16 bg-slate-100 font-sans">
+            <section className="py-16 bg-[#121423] font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-10">
                         Questions Seniors Ask
                     </h2>
 
                     <div className="space-y-6">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="bg-white rounded-lg p-6 shadow-sm border border-slate-200">
-                                <h3 className="text-lg font-bold text-[#000080] mb-2">{faq.question}</h3>
-                                <p className="text-slate-700 leading-relaxed">{faq.answer}</p>
+                            <div key={index} className="bg-[#161828] rounded-lg p-6 shadow-sm border border-[#2A2D42]">
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">{faq.question}</h3>
+                                <p className="text-[#D0CCC4] leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>
@@ -339,19 +339,19 @@ export default function SilverIRASeniorsPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-[#000080] text-center">
+            <section className="py-16 bg-[rgba(197,149,46,0.1)] text-center">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
                         Your Retirement. Your Legacy. Protected.
                     </h2>
-                    <p className="text-slate-300 text-lg mb-8 font-sans">
+                    <p className="text-[#3F4460] text-lg mb-8 font-sans">
                         Join thousands of seniors who&apos;ve found peace of mind with a Silver IRA.
                     </p>
 
                     <LeadCaptureButton
                         variant="silver-seniors"
                         source="lp-silver-ira-seniors-footer"
-                        className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get Your Free Senior&apos;s Guide
                     </LeadCaptureButton>
@@ -371,14 +371,14 @@ export default function SilverIRASeniorsPage() {
                         </span>
                     </div>
 
-                    <p className="text-slate-400 mt-6 text-sm font-sans">
+                    <p className="text-[#A8A39A] mt-6 text-sm font-sans">
                         Your information is 100% secure. We respect your privacy.
                     </p>
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="bg-slate-900 text-slate-600 py-8 text-center text-xs font-sans">
+            <footer className="bg-slate-900 text-[#D0CCC4] py-8 text-center text-xs font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <p>&copy; 2026 Rich Dad Retirement. All Rights Reserved.</p>
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals investing involves risk. Past performance does not guarantee future results.</p>

@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gold-ira-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/hugolol/Downloads/Gold_IRA_BAG/gold-ira-platform",
+      "port": 3000
+    }
+  ]
+}

@@ -239,14 +239,14 @@ export default function SilverIraRmdRulesPage() {
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-slate-50" />
+        <div className="absolute inset-0 bg-[#0C0D18]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.15),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <Link
               href="/silver-retirement"
-              className="inline-flex items-center gap-2 text-slate-600 text-sm hover:text-slate-900 transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] text-sm hover:text-[#F6F4EF] transition-colors mb-6"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
@@ -255,11 +255,11 @@ export default function SilverIraRmdRulesPage() {
               <AlertTriangle className="h-4 w-4" />
               REQUIRED READING
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6">
               Silver IRA{" "}
               <span className="text-red-400">RMD Rules</span>
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               Required Minimum Distributions for Silver IRAs - what you must know
               about distribution rules, tax implications, and strategies to minimize
               your tax burden.
@@ -268,7 +268,7 @@ export default function SilverIraRmdRulesPage() {
             <LeadCaptureButton
               variant="silver"
               source="silver-retirement-rmd-hero"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-11 px-8"
             >
               Plan Your Silver IRA <ArrowRight className="ml-2 h-4 w-4" />
             </LeadCaptureButton>
@@ -277,41 +277,41 @@ export default function SilverIraRmdRulesPage() {
       </section>
 
       {/* RMD Age Table */}
-      <section className="py-12 bg-slate-100 border-y border-slate-200">
+      <section className="py-12 bg-[#121423] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-4">
               When Do Silver IRA RMDs Begin?
             </h2>
-            <p className="text-slate-600 text-center mb-8">
+            <p className="text-[#D0CCC4] text-center mb-8">
               Your Required Beginning Date depends on when you were born. The SECURE
               2.0 Act pushed back RMD ages.
             </p>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl overflow-hidden">
               <table className="w-full text-left">
-                <thead className="bg-slate-50">
+                <thead className="bg-[#0C0D18]">
                   <tr>
-                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">
+                    <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">
                       Birth Year
                     </th>
-                    <th className="p-4 border-b border-slate-200 font-bold text-slate-900">
+                    <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">
                       RMDs Begin At Age
                     </th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200">
+                <tbody className="divide-y divide-[#2A2D42]">
                   {rmdAgeTable.map((row, index) => (
                     <tr key={index}>
-                      <td className="p-4 text-slate-600">{row.birthYear}</td>
+                      <td className="p-4 text-[#D0CCC4]">{row.birthYear}</td>
                       <td className="p-4 text-red-400 font-bold">{row.rmdAge}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <div className="mt-4 bg-[#B22234]/10 border border-[#B22234]/30 rounded-lg p-4">
-              <p className="text-sm text-slate-600">
-                <strong className="text-slate-900">First-Year Exception:</strong> For
+            <div className="mt-4 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-lg p-4">
+              <p className="text-sm text-[#D0CCC4]">
+                <strong className="text-[#F6F4EF]">First-Year Exception:</strong> For
                 your first RMD, you can delay until April 1 of the following year.
                 However, you'll then need to take TWO RMDs that year (both years'
                 worth), which could push you into a higher tax bracket.
@@ -325,51 +325,51 @@ export default function SilverIraRmdRulesPage() {
       <section className="py-16">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
               <Calculator className="h-6 w-6 text-red-400 inline-block mr-3" />
               How Silver IRA RMDs Are Calculated
             </h2>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-              <h3 className="font-bold text-slate-900 mb-4">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
+              <h3 className="font-bold text-[#F6F4EF] mb-4">
                 Example: $200,000 Silver IRA at Age 75
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <div className="flex justify-between">
-                    <span className="text-slate-600">Account Value (Dec 31)</span>
-                    <span className="text-slate-900 font-semibold">
+                    <span className="text-[#D0CCC4]">Account Value (Dec 31)</span>
+                    <span className="text-[#F6F4EF] font-semibold">
                       ${rmdCalculationExample.accountValue.toLocaleString()}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-600">Your Age</span>
-                    <span className="text-slate-900 font-semibold">
+                    <span className="text-[#D0CCC4]">Your Age</span>
+                    <span className="text-[#F6F4EF] font-semibold">
                       {rmdCalculationExample.age}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-600">IRS Divisor (Uniform Lifetime Table)</span>
-                    <span className="text-slate-900 font-semibold">
+                    <span className="text-[#D0CCC4]">IRS Divisor (Uniform Lifetime Table)</span>
+                    <span className="text-[#F6F4EF] font-semibold">
                       {rmdCalculationExample.divisor}
                     </span>
                   </div>
                 </div>
                 <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4">
                   <div className="text-center">
-                    <div className="text-sm text-slate-600 mb-1">Required Minimum Distribution</div>
+                    <div className="text-sm text-[#D0CCC4] mb-1">Required Minimum Distribution</div>
                     <div className="text-3xl font-bold text-red-400">
                       ${rmdCalculationExample.rmdAmount.toLocaleString()}
                     </div>
-                    <div className="text-sm text-slate-600 mt-3">
+                    <div className="text-sm text-[#D0CCC4] mt-3">
                       At 22% tax bracket:{" "}
-                      <span className="text-slate-900 font-semibold">
+                      <span className="text-[#F6F4EF] font-semibold">
                         ${rmdCalculationExample.taxOwed.toLocaleString()} tax
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <p className="text-sm text-slate-600 mt-4 text-center">
+              <p className="text-sm text-[#D0CCC4] mt-4 text-center">
                 Formula: Account Value / IRS Divisor = RMD Amount<br />
                 ${rmdCalculationExample.accountValue.toLocaleString()} / {rmdCalculationExample.divisor} = ${rmdCalculationExample.rmdAmount.toLocaleString()}
               </p>
@@ -379,12 +379,12 @@ export default function SilverIraRmdRulesPage() {
       </section>
 
       {/* Distribution Options */}
-      <section className="py-16 bg-slate-100">
+      <section className="py-16 bg-[#121423]">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-4">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-4">
             How to Take Your Silver IRA RMD
           </h2>
-          <p className="text-slate-600 text-center max-w-2xl mx-auto mb-12">
+          <p className="text-[#D0CCC4] text-center max-w-2xl mx-auto mb-12">
             You have options for how to receive your Required Minimum Distribution.
             Each has different implications.
           </p>
@@ -395,21 +395,21 @@ export default function SilverIraRmdRulesPage() {
               return (
                 <div
                   key={index}
-                  className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6"
+                  className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6"
                 >
                   <div className="flex items-start gap-4 mb-4">
                     <div className="bg-red-500/20 p-3 rounded-lg">
                       <Icon className="h-6 w-6 text-red-400" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-slate-900 text-lg">{option.option}</h3>
-                      <p className="text-sm text-slate-600">{option.description}</p>
+                      <h3 className="font-bold text-[#F6F4EF] text-lg">{option.option}</h3>
+                      <p className="text-sm text-[#D0CCC4]">{option.description}</p>
                     </div>
                   </div>
                   <div className="grid md:grid-cols-3 gap-4 mb-4">
                     <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-3">
                       <h4 className="text-xs font-semibold text-green-400 mb-2">Pros</h4>
-                      <ul className="space-y-1 text-xs text-slate-600">
+                      <ul className="space-y-1 text-xs text-[#D0CCC4]">
                         {option.pros.map((pro, i) => (
                           <li key={i} className="flex items-start gap-1">
                             <CheckCircle2 className="h-3 w-3 text-green-400 mt-0.5 flex-shrink-0" />
@@ -420,7 +420,7 @@ export default function SilverIraRmdRulesPage() {
                     </div>
                     <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3">
                       <h4 className="text-xs font-semibold text-red-400 mb-2">Cons</h4>
-                      <ul className="space-y-1 text-xs text-slate-600">
+                      <ul className="space-y-1 text-xs text-[#D0CCC4]">
                         {option.cons.map((con, i) => (
                           <li key={i} className="flex items-start gap-1">
                             <XCircle className="h-3 w-3 text-red-400 mt-0.5 flex-shrink-0" />
@@ -429,9 +429,9 @@ export default function SilverIraRmdRulesPage() {
                         ))}
                       </ul>
                     </div>
-                    <div className="bg-slate-100/30 border border-slate-200 rounded-lg p-3">
-                      <h4 className="text-xs font-semibold text-slate-600 mb-2">Tax Treatment</h4>
-                      <p className="text-xs text-slate-600">{option.taxTreatment}</p>
+                    <div className="bg-[#121423]/30 border border-[#2A2D42] rounded-lg p-3">
+                      <h4 className="text-xs font-semibold text-[#D0CCC4] mb-2">Tax Treatment</h4>
+                      <p className="text-xs text-[#D0CCC4]">{option.taxTreatment}</p>
                     </div>
                   </div>
                 </div>
@@ -442,13 +442,13 @@ export default function SilverIraRmdRulesPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-slate-200">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+            <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">
               Need Help Planning Your RMD Strategy?
             </h3>
-            <p className="text-slate-600 mb-6">
+            <p className="text-[#D0CCC4] mb-6">
               Augusta Precious Metals can help you understand how RMDs work with
               your Silver IRA and connect you with tax professionals who specialize
               in precious metals retirement accounts.
@@ -456,7 +456,7 @@ export default function SilverIraRmdRulesPage() {
             <LeadCaptureButton
               variant="silver"
               source="silver-retirement-rmd-mid"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-11 px-8"
             >
               Get RMD Planning Help <ArrowRight className="ml-2 h-4 w-4" />
             </LeadCaptureButton>
@@ -467,29 +467,29 @@ export default function SilverIraRmdRulesPage() {
       {/* RMD Strategies */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
             Strategies to Minimize Silver IRA RMD Taxes
           </h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {rmdStrategies.map((item, index) => (
               <div
                 key={index}
-                className="bg-slate-50 border border-slate-200 rounded-xl p-6"
+                className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-bold text-slate-900">{item.strategy}</h3>
+                  <h3 className="font-bold text-[#F6F4EF]">{item.strategy}</h3>
                   <span
                     className={`text-xs px-2 py-1 rounded ${
                       item.effectiveness === "High"
                         ? "bg-green-500/20 text-green-400"
-                        : "bg-[#B22234]/20 text-[#B22234]"
+                        : "bg-[rgba(220,38,38,0.18)] text-[#D4A94E]"
                     }`}
                   >
                     {item.effectiveness} Impact
                   </span>
                 </div>
-                <p className="text-sm text-slate-600 mb-3">{item.description}</p>
-                <p className="text-xs text-slate-600">Complexity: {item.complexity}</p>
+                <p className="text-sm text-[#D0CCC4] mb-3">{item.description}</p>
+                <p className="text-xs text-[#D0CCC4]">Complexity: {item.complexity}</p>
               </div>
             ))}
           </div>
@@ -497,10 +497,10 @@ export default function SilverIraRmdRulesPage() {
       </section>
 
       {/* Penalties Section */}
-      <section className="py-16 bg-slate-100">
+      <section className="py-16 bg-[#121423]">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8 flex items-center justify-center gap-3">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8 flex items-center justify-center gap-3">
               <AlertTriangle className="h-6 w-6 text-red-400" />
               RMD Penalties to Avoid
             </h2>
@@ -515,8 +515,8 @@ export default function SilverIraRmdRulesPage() {
                       {item.penalty}
                     </div>
                     <div>
-                      <h3 className="font-bold text-slate-900 mb-1">{item.scenario}</h3>
-                      <p className="text-sm text-slate-600">{item.notes}</p>
+                      <h3 className="font-bold text-[#F6F4EF] mb-1">{item.scenario}</h3>
+                      <p className="text-sm text-[#D0CCC4]">{item.notes}</p>
                     </div>
                   </div>
                 </div>
@@ -530,34 +530,34 @@ export default function SilverIraRmdRulesPage() {
       <section className="py-16">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
               <Calendar className="h-6 w-6 text-red-400 inline-block mr-3" />
               Key RMD Deadlines
             </h2>
             <div className="space-y-4">
-              <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 flex items-center gap-4">
+              <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4 flex items-center gap-4">
                 <div className="text-2xl font-bold text-red-400 flex-shrink-0">Dec 31</div>
                 <div>
-                  <h3 className="font-bold text-slate-900">Annual RMD Deadline</h3>
-                  <p className="text-sm text-slate-600">
+                  <h3 className="font-bold text-[#F6F4EF]">Annual RMD Deadline</h3>
+                  <p className="text-sm text-[#D0CCC4]">
                     You must take your RMD by December 31 each year (except first year)
                   </p>
                 </div>
               </div>
-              <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 flex items-center gap-4">
-                <div className="text-2xl font-bold text-[#B22234] flex-shrink-0">Apr 1</div>
+              <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4 flex items-center gap-4">
+                <div className="text-2xl font-bold text-[#D4A94E] flex-shrink-0">Apr 1</div>
                 <div>
-                  <h3 className="font-bold text-slate-900">First-Year Extension</h3>
-                  <p className="text-sm text-slate-600">
+                  <h3 className="font-bold text-[#F6F4EF]">First-Year Extension</h3>
+                  <p className="text-sm text-[#D0CCC4]">
                     Your first RMD can be delayed until April 1 following your RMD start year
                   </p>
                 </div>
               </div>
-              <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 flex items-center gap-4">
-                <div className="text-2xl font-bold text-slate-600 flex-shrink-0">Dec 31</div>
+              <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4 flex items-center gap-4">
+                <div className="text-2xl font-bold text-[#D0CCC4] flex-shrink-0">Dec 31</div>
                 <div>
-                  <h3 className="font-bold text-slate-900">Valuation Date</h3>
-                  <p className="text-sm text-slate-600">
+                  <h3 className="font-bold text-[#F6F4EF]">Valuation Date</h3>
+                  <p className="text-sm text-[#D0CCC4]">
                     RMD calculated using your account value on December 31 of prior year
                   </p>
                 </div>
@@ -568,24 +568,24 @@ export default function SilverIraRmdRulesPage() {
       </section>
 
       {/* FAQs */}
-      <section className="py-16 bg-slate-100 border-y border-slate-200">
+      <section className="py-16 bg-[#121423] border-y border-[#2A2D42]">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
             Silver IRA RMD FAQs
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900 font-semibold list-none">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF] font-semibold list-none">
                   {faq.question}
-                  <span className="text-[#B22234] group-open:rotate-180 transition-transform">
+                  <span className="text-[#D4A94E] group-open:rotate-180 transition-transform">
                     &#9660;
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-600">{faq.answer}</p>
+                <p className="mt-4 text-[#D0CCC4]">{faq.answer}</p>
               </details>
             ))}
           </div>
@@ -595,37 +595,37 @@ export default function SilverIraRmdRulesPage() {
       {/* Related Pages */}
       <section className="py-12">
         <Container>
-          <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
+          <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
             Related Silver IRA Guides
           </h2>
           <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <Link
               href="/silver-retirement/transfer-ira-to-silver"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">Transfer IRA to Silver</h3>
-              <p className="text-sm text-slate-600">Step-by-step rollover guide</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">Transfer IRA to Silver</h3>
+              <p className="text-sm text-[#D0CCC4]">Step-by-step rollover guide</p>
             </Link>
             <Link
               href="/silver-retirement/inheritance-planning"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">Inheritance Planning</h3>
-              <p className="text-sm text-slate-600">Estate planning with silver</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">Inheritance Planning</h3>
+              <p className="text-sm text-[#D0CCC4]">Estate planning with silver</p>
             </Link>
             <Link
               href="/silver-retirement/how-much-silver"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">How Much Silver?</h3>
-              <p className="text-sm text-slate-600">Portfolio allocation guide</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">How Much Silver?</h3>
+              <p className="text-sm text-[#D0CCC4]">Portfolio allocation guide</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 border-t border-slate-200">
+      <section className="py-16 border-t border-[#2A2D42]">
         <Container>
           <AugustaCTA
             variant="footer"

@@ -22,7 +22,7 @@ export function EvidenceCard({ type, title, description, date, company, findings
     const colorMap = {
         positive: "bg-green-100 text-green-800 border-green-200",
         negative: "bg-red-100 text-red-800 border-red-200",
-        neutral: "bg-gray-100 text-gray-800 border-gray-200"
+        neutral: "bg-gray-100 text-[#F6F4EF] border-[#2A2D42]"
     }
 
     return (
@@ -43,7 +43,7 @@ export function EvidenceCard({ type, title, description, date, company, findings
                 </CardDescription>
             </CardHeader>
             <CardContent>
-                <p className="text-sm text-gray-600 mb-4">{description}</p>
+                <p className="text-sm text-[#D0CCC4] mb-4">{description}</p>
                 <div className={`p-3 rounded-md border text-sm flex items-center gap-2 ${colorMap[findings]}`}>
                     {findings === 'positive' ? <CheckCircle2 className="w-4 h-4 shrink-0" /> :
                         findings === 'negative' ? <AlertTriangle className="w-4 h-4 shrink-0" /> :

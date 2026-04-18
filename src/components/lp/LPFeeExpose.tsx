@@ -102,7 +102,7 @@ export function LPFeeExpose({
                   <XCircle className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-white mb-1">{fee.title}</h4>
-                    <p className="text-sm text-slate-400">{fee.description}</p>
+                    <p className="text-sm text-[#A8A39A]">{fee.description}</p>
                   </div>
                 </div>
               ))}
@@ -123,7 +123,7 @@ export function LPFeeExpose({
                   <CheckCircle className="h-5 w-5 text-green-400 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-white mb-1">{fee.title}</h4>
-                    <p className="text-sm text-slate-400">{fee.description}</p>
+                    <p className="text-sm text-[#A8A39A]">{fee.description}</p>
                   </div>
                 </div>
               ))}
@@ -142,7 +142,7 @@ export function LPFeeExpose({
                 <Lightbulb className="h-5 w-5 sm:hidden" />
                 The Real Cost of Hidden Fees
               </h4>
-              <p className="text-slate-300 text-sm md:text-base leading-relaxed">
+              <p className="text-[#3F4460] text-sm md:text-base leading-relaxed">
                 {impactCallout}
               </p>
             </div>

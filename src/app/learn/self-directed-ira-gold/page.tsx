@@ -51,7 +51,7 @@ export default function SelfDirectedIraGoldPage() {
                     <div className="absolute inset-0 bg-primary-dark/50" />
                     <Container className="relative z-10">
                         <div className="max-w-3xl">
-                            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-secondary mb-6 border border-white/10">
+                            <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(197,149,46,0.14)]/10 px-4 py-1.5 text-sm font-semibold text-secondary mb-6 border border-white/10">
                                 <span className="w-2 h-2 rounded-full bg-secondary"></span>
                                 Educational Guide
                             </div>
@@ -73,7 +73,7 @@ export default function SelfDirectedIraGoldPage() {
                         </aside>
 
                         {/* Main Content */}
-                        <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                        <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                             {/* Section 1: What is a Self-Directed IRA */}
                             <section id="what-is-sdir" className="scroll-mt-32">
@@ -88,20 +88,20 @@ export default function SelfDirectedIraGoldPage() {
                                     Here&apos;s the thing most financial advisors won&apos;t mention: an SDIRA is the <strong>only legal way</strong> to hold physical gold coins and bars in a tax-advantaged retirement account. You can&apos;t just buy gold and store it in your regular IRA—but with a Self-Directed IRA, you can own the real thing.
                                 </p>
 
-                                <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 not-prose my-8">
-                                    <h4 className="font-bold text-slate-900 text-lg mb-4">Key Differences: SDIRA vs. Regular IRA</h4>
-                                    <ul className="space-y-3 text-slate-600">
+                                <div className="bg-[#0C0D18] rounded-2xl p-6 border border-[#2A2D42] not-prose my-8">
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg mb-4">Key Differences: SDIRA vs. Regular IRA</h4>
+                                    <ul className="space-y-3 text-[#D0CCC4]">
                                         <li className="flex items-start gap-3">
-                                            <CheckCircle2 className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
-                                            <span><strong className="text-slate-900">Regular IRA:</strong> Limited to stocks, bonds, mutual funds, ETFs</span>
+                                            <CheckCircle2 className="w-5 h-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
+                                            <span><strong className="text-[#F6F4EF]">Regular IRA:</strong> Limited to stocks, bonds, mutual funds, ETFs</span>
                                         </li>
                                         <li className="flex items-start gap-3">
-                                            <CheckCircle2 className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
-                                            <span><strong className="text-slate-900">Self-Directed IRA:</strong> Physical gold, silver, real estate, private equity, and more</span>
+                                            <CheckCircle2 className="w-5 h-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
+                                            <span><strong className="text-[#F6F4EF]">Self-Directed IRA:</strong> Physical gold, silver, real estate, private equity, and more</span>
                                         </li>
                                         <li className="flex items-start gap-3">
-                                            <CheckCircle2 className="w-5 h-5 text-[#B22234] mt-0.5 flex-shrink-0" />
-                                            <span><strong className="text-slate-900">Same tax benefits:</strong> Both offer tax-deferred or tax-free growth</span>
+                                            <CheckCircle2 className="w-5 h-5 text-[#D4A94E] mt-0.5 flex-shrink-0" />
+                                            <span><strong className="text-[#F6F4EF]">Same tax benefits:</strong> Both offer tax-deferred or tax-free growth</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -116,31 +116,31 @@ export default function SelfDirectedIraGoldPage() {
 
                                 <div className="not-prose">
                                     <div className="space-y-4 my-8">
-                                        <div className="flex gap-4 p-6 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
-                                            <div className="w-12 h-12 rounded-full bg-[#000080]/10 text-[#000080] flex items-center justify-center font-bold shrink-0">
+                                        <div className="flex gap-4 p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42] shadow-sm">
+                                            <div className="w-12 h-12 rounded-full bg-[rgba(197,149,46,0.08)] text-[#F6F4EF] flex items-center justify-center font-bold shrink-0">
                                                 <Building2 className="w-6 h-6" />
                                             </div>
                                             <div>
-                                                <strong className="block text-slate-900 text-lg">1. The Custodian</strong>
-                                                <p className="text-slate-600 mt-1">A specialized financial institution that holds your IRA assets and handles all IRS reporting. Examples: Equity Trust Company, STRATA Trust, New Direction IRA.</p>
+                                                <strong className="block text-[#F6F4EF] text-lg">1. The Custodian</strong>
+                                                <p className="text-[#D0CCC4] mt-1">A specialized financial institution that holds your IRA assets and handles all IRS reporting. Examples: Equity Trust Company, STRATA Trust, New Direction IRA.</p>
                                             </div>
                                         </div>
-                                        <div className="flex gap-4 p-6 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
-                                            <div className="w-12 h-12 rounded-full bg-[#B22234]/10 text-[#B22234] flex items-center justify-center font-bold shrink-0">
+                                        <div className="flex gap-4 p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42] shadow-sm">
+                                            <div className="w-12 h-12 rounded-full bg-[rgba(220,38,38,0.1)] text-[#D4A94E] flex items-center justify-center font-bold shrink-0">
                                                 <Scale className="w-6 h-6" />
                                             </div>
                                             <div>
-                                                <strong className="block text-slate-900 text-lg">2. The Precious Metals Dealer</strong>
-                                                <p className="text-slate-600 mt-1">The company you purchase your gold from. Reputable dealers like <Link href="/reviews/augusta-precious-metals" className="text-[#B22234] hover:underline">Augusta</Link> and <Link href="/reviews/noble-gold" className="text-[#B22234] hover:underline">Noble Gold</Link> guide you through the entire process.</p>
+                                                <strong className="block text-[#F6F4EF] text-lg">2. The Precious Metals Dealer</strong>
+                                                <p className="text-[#D0CCC4] mt-1">The company you purchase your gold from. Reputable dealers like <Link href="/reviews/augusta-precious-metals" className="text-[#D4A94E] hover:underline">Augusta</Link> and <Link href="/reviews/noble-gold" className="text-[#D4A94E] hover:underline">Noble Gold</Link> guide you through the entire process.</p>
                                             </div>
                                         </div>
-                                        <div className="flex gap-4 p-6 rounded-xl bg-slate-50 border border-slate-200 shadow-sm">
+                                        <div className="flex gap-4 p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42] shadow-sm">
                                             <div className="w-12 h-12 rounded-full bg-green-500/20 text-green-600 flex items-center justify-center font-bold shrink-0">
                                                 <Lock className="w-6 h-6" />
                                             </div>
                                             <div>
-                                                <strong className="block text-slate-900 text-lg">3. The Depository</strong>
-                                                <p className="text-slate-600 mt-1">A high-security vault where your physical metals are stored. These facilities are insured, audited, and IRS-approved. Popular: Delaware Depository, Brink's Global Services.</p>
+                                                <strong className="block text-[#F6F4EF] text-lg">3. The Depository</strong>
+                                                <p className="text-[#D0CCC4] mt-1">A high-security vault where your physical metals are stored. These facilities are insured, audited, and IRS-approved. Popular: Delaware Depository, Brink's Global Services.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -152,7 +152,7 @@ export default function SelfDirectedIraGoldPage() {
                             </section>
 
                             {/* Mid-Article CTA */}
-                            <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
+                            <div className="my-12 bg-[#DC2626] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
                                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10">
                                     <h3 className="text-2xl font-serif font-bold mb-4 text-white">Find the Right Company for You</h3>
@@ -201,38 +201,38 @@ export default function SelfDirectedIraGoldPage() {
                                 <div className="not-prose my-8">
                                     <div className="space-y-6">
                                         <div className="flex gap-4 items-start">
-                                            <div className="w-10 h-10 rounded-full bg-[#B22234] text-white flex items-center justify-center font-bold shrink-0">1</div>
+                                            <div className="w-10 h-10 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-bold shrink-0">1</div>
                                             <div>
-                                                <h4 className="font-bold text-slate-900 text-lg">Choose a Gold IRA Company</h4>
-                                                <p className="text-slate-600 mt-1">Select a reputable dealer with strong BBB ratings. They'll guide you through custodian selection and handle the paperwork.</p>
+                                                <h4 className="font-bold text-[#F6F4EF] text-lg">Choose a Gold IRA Company</h4>
+                                                <p className="text-[#D0CCC4] mt-1">Select a reputable dealer with strong BBB ratings. They'll guide you through custodian selection and handle the paperwork.</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start">
-                                            <div className="w-10 h-10 rounded-full bg-[#B22234] text-white flex items-center justify-center font-bold shrink-0">2</div>
+                                            <div className="w-10 h-10 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-bold shrink-0">2</div>
                                             <div>
-                                                <h4 className="font-bold text-slate-900 text-lg">Open Your Self-Directed IRA</h4>
-                                                <p className="text-slate-600 mt-1">Your dealer helps you establish an account with a custodian that specializes in precious metals.</p>
+                                                <h4 className="font-bold text-[#F6F4EF] text-lg">Open Your Self-Directed IRA</h4>
+                                                <p className="text-[#D0CCC4] mt-1">Your dealer helps you establish an account with a custodian that specializes in precious metals.</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start">
-                                            <div className="w-10 h-10 rounded-full bg-[#B22234] text-white flex items-center justify-center font-bold shrink-0">3</div>
+                                            <div className="w-10 h-10 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-bold shrink-0">3</div>
                                             <div>
-                                                <h4 className="font-bold text-slate-900 text-lg">Fund Your Account</h4>
-                                                <p className="text-slate-600 mt-1">Rollover from an existing 401(k)/IRA (tax-free), transfer from another IRA, or make a direct contribution.</p>
+                                                <h4 className="font-bold text-[#F6F4EF] text-lg">Fund Your Account</h4>
+                                                <p className="text-[#D0CCC4] mt-1">Rollover from an existing 401(k)/IRA (tax-free), transfer from another IRA, or make a direct contribution.</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start">
-                                            <div className="w-10 h-10 rounded-full bg-[#B22234] text-white flex items-center justify-center font-bold shrink-0">4</div>
+                                            <div className="w-10 h-10 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-bold shrink-0">4</div>
                                             <div>
-                                                <h4 className="font-bold text-slate-900 text-lg">Select & Purchase Metals</h4>
-                                                <p className="text-slate-600 mt-1">Choose IRS-approved gold, silver, platinum, or palladium. Your dealer ships directly to the depository.</p>
+                                                <h4 className="font-bold text-[#F6F4EF] text-lg">Select & Purchase Metals</h4>
+                                                <p className="text-[#D0CCC4] mt-1">Choose IRS-approved gold, silver, platinum, or palladium. Your dealer ships directly to the depository.</p>
                                             </div>
                                         </div>
                                         <div className="flex gap-4 items-start">
-                                            <div className="w-10 h-10 rounded-full bg-[#B22234] text-white flex items-center justify-center font-bold shrink-0">5</div>
+                                            <div className="w-10 h-10 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-bold shrink-0">5</div>
                                             <div>
-                                                <h4 className="font-bold text-slate-900 text-lg">Secure Storage</h4>
-                                                <p className="text-slate-600 mt-1">Your metals are stored in an IRS-approved depository, insured and audited. You receive confirmation of your holdings.</p>
+                                                <h4 className="font-bold text-[#F6F4EF] text-lg">Secure Storage</h4>
+                                                <p className="text-[#D0CCC4] mt-1">Your metals are stored in an IRS-approved depository, insured and audited. You receive confirmation of your holdings.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -282,7 +282,7 @@ export default function SelfDirectedIraGoldPage() {
                             </section>
 
                             {/* Final CTA */}
-                            <div className="my-12 bg-[#B22234] rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                            <div className="my-12 bg-[#DC2626] rounded-2xl p-8 text-white relative overflow-hidden not-prose">
                                 <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10 text-center">
                                     <h3 className="text-2xl font-serif font-bold mb-4 text-white">Ready to Open Your Self-Directed Gold IRA?</h3>
@@ -291,7 +291,7 @@ export default function SelfDirectedIraGoldPage() {
                                         <Button variant="gold" size="xl" asChild>
                                             <Link href="/quiz">Take the Free Quiz <ArrowRight className="ml-2 w-5 h-5" /></Link>
                                         </Button>
-                                        <Button variant="outline" size="xl" asChild className="border-white/30 text-white hover:bg-white/10">
+                                        <Button variant="outline" size="xl" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#1E2134]/10">
                                             <Link href="/best-gold-ira-companies">See Top Companies</Link>
                                         </Button>
                                     </div>
@@ -306,7 +306,7 @@ export default function SelfDirectedIraGoldPage() {
             </div>
 
             {/* CTA Section */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA variant="footer" trackSource="learn-self-directed-ira-gold" />
                 </Container>

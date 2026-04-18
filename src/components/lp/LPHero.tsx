@@ -54,7 +54,7 @@ export function LPHero({
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
           {headline}
         </h1>
-        <p className="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-[#3F4460] mb-8 max-w-2xl mx-auto leading-relaxed">
           {subheadline}
         </p>
         {isInternal ? (
@@ -64,7 +64,7 @@ export function LPHero({
               "inline-flex items-center justify-center gap-2",
               "px-8 py-4 text-lg font-bold",
               "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
-              "text-slate-900 rounded-xl",
+              "text-[#F6F4EF] rounded-xl",
               "shadow-[0_0_60px_-5px_rgba(212,175,55,0.5)]",
               "hover:shadow-[0_0_80px_-5px_rgba(212,175,55,0.7)]",
               "hover:scale-105 transition-all duration-300",
@@ -86,7 +86,7 @@ export function LPHero({
               "inline-flex items-center justify-center gap-2",
               "px-8 py-4 text-lg font-bold",
               "bg-gradient-to-b from-amber-400 via-amber-500 to-amber-600",
-              "text-slate-900 rounded-xl",
+              "text-[#F6F4EF] rounded-xl",
               "shadow-[0_0_60px_-5px_rgba(212,175,55,0.5)]",
               "hover:shadow-[0_0_80px_-5px_rgba(212,175,55,0.7)]",
               "hover:scale-105 transition-all duration-300",

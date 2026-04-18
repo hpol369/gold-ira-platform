@@ -117,7 +117,7 @@ export default async function CompanyReviewPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="min-h-screen flex flex-col bg-slate-50">
+      <main className="min-h-screen flex flex-col bg-[#0C0D18]">
         <Navbar />
 
         {/* Hero Section - Pass variant if supported, otherwise it likely needs its own refactor */}
@@ -130,27 +130,27 @@ export default async function CompanyReviewPage({ params }: Props) {
               {/* Main Article */}
               <article className="lg:col-span-2 space-y-12">
                 {/* Table of Contents - Patriot Card */}
-                <nav className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-                  <h2 className="font-bold text-[#000080] mb-4 font-serif text-lg">In This Review</h2>
+                <nav className="bg-[#161828] border border-[#2A2D42] rounded-xl p-6 shadow-sm">
+                  <h2 className="font-bold text-[#F6F4EF] mb-4 font-serif text-lg">In This Review</h2>
                   <div className="grid sm:grid-cols-2 gap-3">
-                    <a href="#overview" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#000080] font-medium transition-colors">
-                      <BookOpen className="h-4 w-4 text-slate-400" />
+                    <a href="#overview" className="flex items-center gap-2 text-sm text-[#D0CCC4] hover:text-[#F6F4EF] font-medium transition-colors">
+                      <BookOpen className="h-4 w-4 text-[#A8A39A]" />
                       Company Overview
                     </a>
-                    <a href="#pros-cons" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#000080] font-medium transition-colors">
-                      <Scale className="h-4 w-4 text-slate-400" />
+                    <a href="#pros-cons" className="flex items-center gap-2 text-sm text-[#D0CCC4] hover:text-[#F6F4EF] font-medium transition-colors">
+                      <Scale className="h-4 w-4 text-[#A8A39A]" />
                       Pros & Cons
                     </a>
-                    <a href="#fees" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#000080] font-medium transition-colors">
-                      <DollarSign className="h-4 w-4 text-slate-400" />
+                    <a href="#fees" className="flex items-center gap-2 text-sm text-[#D0CCC4] hover:text-[#F6F4EF] font-medium transition-colors">
+                      <DollarSign className="h-4 w-4 text-[#A8A39A]" />
                       Fee Structure
                     </a>
-                    <a href="#best-for" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#000080] font-medium transition-colors">
-                      <Users className="h-4 w-4 text-slate-400" />
+                    <a href="#best-for" className="flex items-center gap-2 text-sm text-[#D0CCC4] hover:text-[#F6F4EF] font-medium transition-colors">
+                      <Users className="h-4 w-4 text-[#A8A39A]" />
                       Who It&apos;s Best For
                     </a>
-                    <a href="#verdict" className="flex items-center gap-2 text-sm text-slate-600 hover:text-[#000080] font-medium transition-colors">
-                      <Award className="h-4 w-4 text-slate-400" />
+                    <a href="#verdict" className="flex items-center gap-2 text-sm text-[#D0CCC4] hover:text-[#F6F4EF] font-medium transition-colors">
+                      <Award className="h-4 w-4 text-[#A8A39A]" />
                       Final Verdict
                     </a>
                   </div>
@@ -158,17 +158,17 @@ export default async function CompanyReviewPage({ params }: Props) {
 
                 {/* Company Overview */}
                 <section id="overview" className="scroll-mt-24">
-                  <h2 className="text-2xl font-bold text-[#000080] mb-6 flex items-center gap-3 font-serif">
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-3 font-serif">
                     <div className="p-2 bg-blue-50 rounded-lg border border-blue-100">
-                      <Building2 className="h-5 w-5 text-[#000080]" />
+                      <Building2 className="h-5 w-5 text-[#F6F4EF]" />
                     </div>
                     Company Overview
                   </h2>
                   <div className="prose prose-slate max-w-none">
-                    <p className="text-lg text-slate-600 leading-relaxed font-medium">
+                    <p className="text-lg text-[#D0CCC4] leading-relaxed font-medium">
                       {company.description}
                     </p>
-                    <p className="text-slate-600">
+                    <p className="text-[#D0CCC4]">
                       Founded in {company.founded} and headquartered in {company.headquarters},
                       <strong> {company.name}</strong> has been in business for {yearsInBusiness} years. They
                       currently hold an <strong>{company.bbbRating} rating</strong> with the Better Business Bureau
@@ -179,30 +179,30 @@ export default async function CompanyReviewPage({ params }: Props) {
 
                   {/* Quick Stats Grid - Light Mode */}
                   <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-                    <div className="bg-white rounded-xl p-4 text-center border border-slate-200 shadow-sm">
-                      <div className="text-2xl font-bold text-[#000080]">{yearsInBusiness}+</div>
-                      <div className="text-sm text-slate-500 font-medium">Years in Business</div>
+                    <div className="bg-[#161828] rounded-xl p-4 text-center border border-[#2A2D42] shadow-sm">
+                      <div className="text-2xl font-bold text-[#F6F4EF]">{yearsInBusiness}+</div>
+                      <div className="text-sm text-[#A8A39A] font-medium">Years in Business</div>
                     </div>
-                    <div className="bg-white rounded-xl p-4 text-center border border-slate-200 shadow-sm">
-                      <div className="text-2xl font-bold text-[#000080]">{company.bbbRating}</div>
-                      <div className="text-sm text-slate-500 font-medium">BBB Rating</div>
+                    <div className="bg-[#161828] rounded-xl p-4 text-center border border-[#2A2D42] shadow-sm">
+                      <div className="text-2xl font-bold text-[#F6F4EF]">{company.bbbRating}</div>
+                      <div className="text-sm text-[#A8A39A] font-medium">BBB Rating</div>
                     </div>
-                    <div className="bg-white rounded-xl p-4 text-center border border-slate-200 shadow-sm">
-                      <div className="text-2xl font-bold text-[#000080]">${company.minInvestment.toLocaleString()}</div>
-                      <div className="text-sm text-slate-500 font-medium">Minimum</div>
+                    <div className="bg-[#161828] rounded-xl p-4 text-center border border-[#2A2D42] shadow-sm">
+                      <div className="text-2xl font-bold text-[#F6F4EF]">${company.minInvestment.toLocaleString()}</div>
+                      <div className="text-sm text-[#A8A39A] font-medium">Minimum</div>
                     </div>
-                    <div className="bg-white rounded-xl p-4 text-center border border-slate-200 shadow-sm">
-                      <div className="text-2xl font-bold text-[#000080]">{company.metals.length}</div>
-                      <div className="text-sm text-slate-500 font-medium">Metals Offered</div>
+                    <div className="bg-[#161828] rounded-xl p-4 text-center border border-[#2A2D42] shadow-sm">
+                      <div className="text-2xl font-bold text-[#F6F4EF]">{company.metals.length}</div>
+                      <div className="text-sm text-[#A8A39A] font-medium">Metals Offered</div>
                     </div>
                   </div>
                 </section>
 
                 {/* Pros & Cons */}
                 <section id="pros-cons" className="scroll-mt-24">
-                  <h2 className="text-2xl font-bold text-[#000080] mb-6 flex items-center gap-3 font-serif">
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-3 font-serif">
                     <div className="p-2 bg-blue-50 rounded-lg border border-blue-100">
-                      <Scale className="h-5 w-5 text-[#000080]" />
+                      <Scale className="h-5 w-5 text-[#F6F4EF]" />
                     </div>
                     Pros & Cons
                   </h2>
@@ -216,14 +216,14 @@ export default async function CompanyReviewPage({ params }: Props) {
 
                 {/* Fee Structure */}
                 <section id="fees" className="scroll-mt-24">
-                  <h2 className="text-2xl font-bold text-[#000080] mb-6 flex items-center gap-3 font-serif">
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-3 font-serif">
                     <div className="p-2 bg-blue-50 rounded-lg border border-blue-100">
-                      <DollarSign className="h-5 w-5 text-[#000080]" />
+                      <DollarSign className="h-5 w-5 text-[#F6F4EF]" />
                     </div>
                     Fee Structure
                   </h2>
                   <SingleCompanyFees company={company} />
-                  <p className="mt-4 text-sm text-slate-500 bg-slate-50 p-4 rounded-lg border border-slate-200 italic">
+                  <p className="mt-4 text-sm text-[#A8A39A] bg-[#0C0D18] p-4 rounded-lg border border-[#2A2D42] italic">
                     Note: Fees are subject to change. Contact {company.name} directly for current pricing.
                     All Gold IRA companies also charge spreads, typically 3-8% above spot.
                   </p>
@@ -247,14 +247,14 @@ export default async function CompanyReviewPage({ params }: Props) {
                   )}
 
                   {/* This Company CTA */}
-                  <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                    <h3 className="font-bold text-[#000080] mb-4">Get Started with {company.name}</h3>
+                  <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+                    <h3 className="font-bold text-[#F6F4EF] mb-4">Get Started with {company.name}</h3>
                     <ul className="space-y-2 mb-4 text-sm">
-                      <li className="flex items-center gap-2 text-slate-600 font-medium">
+                      <li className="flex items-center gap-2 text-[#D0CCC4] font-medium">
                         <Shield className="h-4 w-4 text-green-600" />
                         Free Consultation
                       </li>
-                      <li className="flex items-center gap-2 text-slate-600 font-medium">
+                      <li className="flex items-center gap-2 text-[#D0CCC4] font-medium">
                         <Clock className="h-4 w-4 text-blue-600" />
                         No Obligation
                       </li>
@@ -263,27 +263,27 @@ export default async function CompanyReviewPage({ params }: Props) {
                       href={company.affiliateLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block w-full text-center py-3 bg-[#000080] text-white font-bold rounded-lg hover:bg-[#000060] hover:shadow-lg transition-all"
+                      className="block w-full text-center py-3 bg-[rgba(197,149,46,0.1)] text-white font-bold rounded-lg hover:bg-[#000060] hover:shadow-lg transition-all"
                     >
                       Visit {company.name}
                     </a>
                   </div>
 
                   {/* Compare with Others */}
-                  <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                    <h3 className="font-bold text-[#000080] mb-4">Compare Companies</h3>
+                  <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+                    <h3 className="font-bold text-[#F6F4EF] mb-4">Compare Companies</h3>
                     <div className="space-y-3">
                       {topCompanies.slice(0, 3).map((c) => (
                         <Link
                           key={c.slug}
                           href={`/reviews/${c.slug}`}
-                          className="flex items-center justify-between p-3 bg-slate-50 rounded-lg border border-slate-200 hover:border-[#000080]/30 hover:bg-white transition-all group"
+                          className="flex items-center justify-between p-3 bg-[#0C0D18] rounded-lg border border-[#2A2D42] hover:border-[rgba(197,149,46,0.55)]/30 hover:bg-[#1E2134] transition-all group"
                         >
                           <div>
-                            <div className="font-bold text-sm text-[#000080] group-hover:underline">
+                            <div className="font-bold text-sm text-[#F6F4EF] group-hover:underline">
                               {c.name}
                             </div>
-                            <div className="text-xs text-slate-500 font-medium">
+                            <div className="text-xs text-[#A8A39A] font-medium">
                               {c.bbbRating} BBB • ${c.minInvestment.toLocaleString()} min
                             </div>
                           </div>
@@ -293,23 +293,23 @@ export default async function CompanyReviewPage({ params }: Props) {
                     </div>
                     <Link
                       href="/reviews"
-                      className="block text-center text-sm text-[#000080] font-bold mt-4 hover:underline"
+                      className="block text-center text-sm text-[#F6F4EF] font-bold mt-4 hover:underline"
                     >
                       See All Reviews →
                     </Link>
                   </div>
 
                   {/* Quick Links */}
-                  <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                    <h3 className="font-bold text-[#000080] mb-4">Related Content</h3>
+                  <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-sm">
+                    <h3 className="font-bold text-[#F6F4EF] mb-4">Related Content</h3>
                     <div className="space-y-2 text-sm">
-                      <Link href="/guide/gold-ira-fees" className="block text-slate-600 hover:text-[#B22234] font-medium transition-colors">
+                      <Link href="/guide/gold-ira-fees" className="block text-[#D0CCC4] hover:text-[#D4A94E] font-medium transition-colors">
                         Understanding Gold IRA Fees →
                       </Link>
-                      <Link href="/learn/gold-ira-scams" className="block text-slate-600 hover:text-[#B22234] font-medium transition-colors">
+                      <Link href="/learn/gold-ira-scams" className="block text-[#D0CCC4] hover:text-[#D4A94E] font-medium transition-colors">
                         Gold IRA Scams to Avoid →
                       </Link>
-                      <Link href="/guide/gold-ira-guide" className="block text-slate-600 hover:text-[#B22234] font-medium transition-colors">
+                      <Link href="/guide/gold-ira-guide" className="block text-[#D0CCC4] hover:text-[#D4A94E] font-medium transition-colors">
                         How to Open a Gold IRA →
                       </Link>
                     </div>
@@ -322,24 +322,24 @@ export default async function CompanyReviewPage({ params }: Props) {
 
         {/* Footer CTA */}
         {company.featured ? (
-          <section className="bg-slate-50 border-t border-slate-200 py-16">
+          <section className="bg-[#0C0D18] border-t border-[#2A2D42] py-16">
             <Container>
               <div className="text-center max-w-2xl mx-auto">
-                <div className="inline-flex items-center gap-2 bg-[#B22234] text-white px-4 py-2 rounded-full text-sm font-bold mb-4 shadow-sm">
+                <div className="inline-flex items-center gap-2 bg-[#DC2626] text-white px-4 py-2 rounded-full text-sm font-bold mb-4 shadow-sm">
                   <Award className="h-4 w-4" />
                   OUR #1 RECOMMENDATION
                 </div>
-                <h2 className="text-3xl font-serif font-bold text-[#000080] mb-4">
+                <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
                   Ready to Get Started with {company.name}?
                 </h2>
-                <p className="text-slate-600 mb-8 max-w-lg mx-auto">
+                <p className="text-[#D0CCC4] mb-8 max-w-lg mx-auto">
                   Get a free consultation and learn how a Gold IRA could protect your retirement savings from inflation.
                 </p>
                 <a
                   href={company.affiliateLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-white font-bold text-lg rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#DC2626] hover:bg-[#991B1B] text-white font-bold text-lg rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
                 >
                   Get Your Free Consultation
                 </a>
@@ -347,7 +347,7 @@ export default async function CompanyReviewPage({ params }: Props) {
             </Container>
           </section>
         ) : (
-          <section className="py-16 bg-slate-50 border-t border-slate-200">
+          <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
             <Container>
               <AugustaCTA variant="footer" linkContext="comparison" trackSource={`review-${slug}`} />
             </Container>

@@ -32,7 +32,7 @@ export default function SeniorProtectionPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 overflow-hidden bg-slate-50">
+      <section className="relative pt-24 pb-16 overflow-hidden bg-[#0C0D18]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.08),transparent_50%)]" />
 
         <Container className="relative z-10">
@@ -41,11 +41,11 @@ export default function SeniorProtectionPage() {
               <ShieldAlert className="h-4 w-4" />
               PROTECTION & AWARENESS
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6">
               Senior Protection{" "}
               <span className="text-red-600">Center</span>
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               Scammers steal billions from seniors every year. Knowledge is your
               best defense. Learn to recognize, avoid, and report financial scams
               targeting older Americans.
@@ -59,14 +59,14 @@ export default function SeniorProtectionPage() {
                   <p className="text-red-800 font-medium mb-2">
                     Think You&apos;ve Been Scammed?
                   </p>
-                  <p className="text-slate-600 text-sm mb-3">
+                  <p className="text-[#D0CCC4] text-sm mb-3">
                     Act quickly. Stop all contact with the scammer and report immediately.
                   </p>
                   <div className="flex flex-wrap gap-3 text-sm">
-                    <span className="bg-slate-100 px-3 py-1 rounded text-slate-700">
+                    <span className="bg-[#121423] px-3 py-1 rounded text-[#D0CCC4]">
                       FTC: reportfraud.ftc.gov
                     </span>
-                    <span className="bg-slate-100 px-3 py-1 rounded text-slate-700">
+                    <span className="bg-[#121423] px-3 py-1 rounded text-[#D0CCC4]">
                       FBI IC3: ic3.gov
                     </span>
                   </div>
@@ -75,7 +75,7 @@ export default function SeniorProtectionPage() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+              <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                 <Link href="/quiz">
                   Protect Your Wealth <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -84,7 +84,7 @@ export default function SeniorProtectionPage() {
                 variant="outline"
                 size="lg"
                 asChild
-                className="border-slate-300 text-slate-700 hover:bg-slate-100"
+                className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]"
               >
                 <a href="#guides">View Protection Guides</a>
               </Button>
@@ -94,24 +94,24 @@ export default function SeniorProtectionPage() {
       </section>
 
       {/* Key Stats */}
-      <section className="py-8 border-y border-slate-200 bg-white">
+      <section className="py-8 border-y border-[#2A2D42] bg-white">
         <Container>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-red-600">$3.4B</div>
-              <div className="text-sm text-slate-500">Lost Annually (60+)</div>
+              <div className="text-sm text-[#A8A39A]">Lost Annually (60+)</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-red-600">$9,000</div>
-              <div className="text-sm text-slate-500">Avg. Grandparent Scam</div>
+              <div className="text-sm text-[#A8A39A]">Avg. Grandparent Scam</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-red-600">1 in 10</div>
-              <div className="text-sm text-slate-500">Seniors Targeted</div>
+              <div className="text-sm text-[#A8A39A]">Seniors Targeted</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-red-600">60%+</div>
-              <div className="text-sm text-slate-500">By Family Members</div>
+              <div className="text-sm text-[#A8A39A]">By Family Members</div>
             </div>
           </div>
         </Container>
@@ -120,36 +120,36 @@ export default function SeniorProtectionPage() {
       {/* Emergency Contacts */}
       <section className="py-16 bg-white">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
             If You Suspect Fraud or Exploitation
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-red-100 p-3 rounded-lg inline-block mb-4">
                 <Phone className="h-6 w-6 text-red-600" />
               </div>
-              <h3 className="font-bold text-slate-900 mb-2">Adult Protective Services</h3>
-              <p className="text-slate-500 text-sm mb-3">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">Adult Protective Services</h3>
+              <p className="text-[#A8A39A] text-sm mb-3">
                 Report elder abuse and exploitation to your state&apos;s APS office.
               </p>
               <p className="text-sm text-red-600 font-medium">eldercare.acl.gov</p>
             </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-blue-100 p-3 rounded-lg inline-block mb-4">
                 <ShieldAlert className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="font-bold text-slate-900 mb-2">AARP Fraud Helpline</h3>
-              <p className="text-slate-500 text-sm mb-3">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">AARP Fraud Helpline</h3>
+              <p className="text-[#A8A39A] text-sm mb-3">
                 Free helpline for scam victims and those who suspect fraud.
               </p>
               <p className="text-lg font-semibold text-blue-600">877-908-3360</p>
             </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-amber-100 p-3 rounded-lg inline-block mb-4">
                 <AlertTriangle className="h-6 w-6 text-amber-600" />
               </div>
-              <h3 className="font-bold text-slate-900 mb-2">FTC Report Fraud</h3>
-              <p className="text-slate-500 text-sm mb-3">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">FTC Report Fraud</h3>
+              <p className="text-[#A8A39A] text-sm mb-3">
                 Federal Trade Commission fraud reporting portal.
               </p>
               <p className="text-sm text-amber-600 font-medium">reportfraud.ftc.gov</p>
@@ -159,10 +159,10 @@ export default function SeniorProtectionPage() {
       </section>
 
       {/* Guides */}
-      <section id="guides" className="py-16 bg-slate-50 scroll-mt-16">
+      <section id="guides" className="py-16 bg-[#0C0D18] scroll-mt-16">
         <Container>
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] flex items-center gap-2">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] flex items-center gap-2">
               <BookOpen className="h-6 w-6 text-red-600" />
               Protection Guides
             </h2>
@@ -173,12 +173,12 @@ export default function SeniorProtectionPage() {
               <Link
                 key={article.slug}
                 href={`/senior-protection/${article.slug}`}
-                className="bg-white hover:bg-slate-50 border border-slate-200 hover:border-red-300 rounded-xl p-6 transition-all group"
+                className="bg-white hover:bg-[#121423] border border-[#2A2D42] hover:border-red-300 rounded-xl p-6 transition-all group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors mb-2 leading-snug">
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-red-600 transition-colors mb-2 leading-snug">
                   {article.title}
                 </h3>
-                <p className="text-sm text-slate-500 line-clamp-2">
+                <p className="text-sm text-[#A8A39A] line-clamp-2">
                   {article.subtitle}
                 </p>
                 <div className="mt-4 flex items-center text-red-600 text-sm font-medium">
@@ -195,15 +195,15 @@ export default function SeniorProtectionPage() {
         <Container>
           <div className="max-w-2xl mx-auto text-center">
             <Users className="h-12 w-12 text-red-600 mx-auto mb-6" />
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
               Protecting Loved Ones
             </h2>
-            <p className="text-slate-500 mb-8">
+            <p className="text-[#A8A39A] mb-8">
               If you&apos;re concerned about an elderly parent or grandparent, these
               guides can help you recognize warning signs and take appropriate
               action while respecting their autonomy.
             </p>
-            <Button variant="gold" size="xl" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+            <Button variant="gold" size="xl" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
               <Link href="/quiz">
                 Get Protection Guidance <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -213,7 +213,7 @@ export default function SeniorProtectionPage() {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-slate-50 border-t border-slate-200">
+      <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
         <Container>
           <AugustaCTA
             variant="footer"

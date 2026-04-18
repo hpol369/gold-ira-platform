@@ -627,7 +627,7 @@ const colorClasses: Record<string, string> = {
   purple: "bg-purple-500/20 text-purple-700 border-purple-500/30",
   teal: "bg-teal-500/20 text-teal-400 border-teal-500/30",
   orange: "bg-orange-500/20 text-orange-400 border-orange-500/30",
-  slate: "bg-slate-500/20 text-slate-400 border-slate-500/30",
+  slate: "bg-[#0C0D18]0/20 text-[#A8A39A] border-slate-500/30",
   cyan: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
   violet: "bg-violet-500/20 text-violet-400 border-violet-500/30",
 };
@@ -640,7 +640,7 @@ const categoryHeaderColors: Record<string, string> = {
   teal: "text-teal-400 border-teal-500/30",
   orange: "text-orange-400 border-orange-500/30",
   red: "text-red-700 border-red-500/30",
-  slate: "text-slate-400 border-slate-500/30",
+  slate: "text-[#A8A39A] border-slate-500/30",
   cyan: "text-cyan-400 border-cyan-500/30",
   violet: "text-violet-400 border-violet-500/30",
 };
@@ -651,21 +651,21 @@ export default function ToolsPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Wrench className="h-4 w-4" />
               FREE TOOLS
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-[#000080] mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#F6F4EF] mb-6">
               Retirement Tools Built for Real Workers
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-4">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto mb-4">
               After 30+ years of showing up every day, you've built something real.
               These free calculators help you protect what you've earned. No signup required.
             </p>
-            <p className="text-lg text-[#B22234] font-semibold">
+            <p className="text-lg text-[#D4A94E] font-semibold">
               {tools.length} Free Calculators Available
             </p>
           </div>
@@ -693,7 +693,7 @@ export default function ToolsPage() {
                     >
                       {category.name}
                     </h2>
-                    <p className="text-slate-400 mt-2">{category.description}</p>
+                    <p className="text-[#A8A39A] mt-2">{category.description}</p>
                   </div>
 
                   {/* Tools Grid */}
@@ -704,9 +704,9 @@ export default function ToolsPage() {
 
                       const CardContent = (
                         <div
-                          className={`bg-white border border-slate-200 rounded-2xl p-6 h-full transition-all shadow-sm ${
+                          className={`bg-[#161828] border border-[#2A2D42] rounded-2xl p-6 h-full transition-all shadow-sm ${
                             isAvailable
-                              ? "hover:bg-slate-50 hover:border-[#B22234]/30 cursor-pointer"
+                              ? "hover:bg-[#121423] hover:border-[rgba(197,149,46,0.45)] cursor-pointer"
                               : "opacity-60"
                           }`}
                         >
@@ -720,20 +720,20 @@ export default function ToolsPage() {
                             </div>
                             <div className="flex-1 min-w-0">
                               <div className="flex items-center gap-2 mb-2">
-                                <h3 className="text-base font-bold text-slate-900 truncate">
+                                <h3 className="text-base font-bold text-[#F6F4EF] truncate">
                                   {tool.name}
                                 </h3>
                                 {!isAvailable && (
-                                  <span className="px-2 py-0.5 bg-slate-200 text-slate-500 text-xs rounded-full shrink-0">
+                                  <span className="px-2 py-0.5 bg-slate-200 text-[#A8A39A] text-xs rounded-full shrink-0">
                                     Coming Soon
                                   </span>
                                 )}
                               </div>
-                              <p className="text-slate-600 text-sm mb-4 line-clamp-3">
+                              <p className="text-[#D0CCC4] text-sm mb-4 line-clamp-3">
                                 {tool.description}
                               </p>
                               {isAvailable && (
-                                <div className="flex items-center gap-2 text-[#B22234] font-semibold text-sm">
+                                <div className="flex items-center gap-2 text-[#D4A94E] font-semibold text-sm">
                                   Use Tool
                                   <ArrowRight className="h-4 w-4" />
                                 </div>
@@ -760,7 +760,7 @@ export default function ToolsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

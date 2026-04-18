@@ -132,7 +132,7 @@ export function LeanFIRECalculator() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
           Lean FIRE Calculator
         </h1>
-        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
           Calculate your path to early retirement with a minimalist lifestyle. Live intentionally and retire decades earlier.
         </p>
       </div>
@@ -141,7 +141,7 @@ export function LeanFIRECalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Monthly Expenses Breakdown */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
                 <ShoppingCart className="h-5 w-5 text-green-600" />
@@ -151,17 +151,17 @@ export function LeanFIRECalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 flex items-center gap-2">
+                <label className="text-sm text-[#A8A39A] mb-2 flex items-center gap-2">
                   <Home className="h-4 w-4" />
                   Housing (rent/mortgage)
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={monthlyHousing}
                     onChange={(e) => setMonthlyHousing(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-green-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-green-500"
                     min="0"
                     step="50"
                   />
@@ -169,17 +169,17 @@ export function LeanFIRECalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 flex items-center gap-2">
+                <label className="text-sm text-[#A8A39A] mb-2 flex items-center gap-2">
                   <Utensils className="h-4 w-4" />
                   Food & Groceries
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={monthlyFood}
                     onChange={(e) => setMonthlyFood(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-green-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-green-500"
                     min="0"
                     step="50"
                   />
@@ -187,17 +187,17 @@ export function LeanFIRECalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 flex items-center gap-2">
+                <label className="text-sm text-[#A8A39A] mb-2 flex items-center gap-2">
                   <Zap className="h-4 w-4" />
                   Utilities & Internet
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={monthlyUtilities}
                     onChange={(e) => setMonthlyUtilities(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-green-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-green-500"
                     min="0"
                     step="25"
                   />
@@ -205,16 +205,16 @@ export function LeanFIRECalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Other Expenses (transport, insurance, etc.)
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={monthlyOther}
                     onChange={(e) => setMonthlyOther(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-green-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-green-500"
                     min="0"
                     step="50"
                   />
@@ -228,7 +228,7 @@ export function LeanFIRECalculator() {
                     {formatFullCurrency(calculations.monthlyExpenses)}
                   </span>
                 </div>
-                <div className="text-xs text-slate-500 mt-1">
+                <div className="text-xs text-[#A8A39A] mt-1">
                   {formatFullCurrency(calculations.annualExpenses)}/year
                 </div>
               </div>
@@ -236,7 +236,7 @@ export function LeanFIRECalculator() {
           </div>
 
           {/* Savings Progress */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
                 <DollarSign className="h-5 w-5 text-blue-600" />
@@ -246,36 +246,36 @@ export function LeanFIRECalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Current Savings
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={currentSavings}
                     onChange={(e) => setCurrentSavings(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-green-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-green-500"
                     min="0"
                     step="5000"
                   />
                 </div>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-[#A8A39A] mt-1">
                   {calculations.monthsOfExpensesSaved.toFixed(1)} months of expenses saved
                 </p>
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Monthly Savings
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={monthlySavings}
                     onChange={(e) => setMonthlySavings(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-green-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-green-500"
                     min="0"
                     step="100"
                   />
@@ -285,7 +285,7 @@ export function LeanFIRECalculator() {
           </div>
 
           {/* Assumptions */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
                 <Calculator className="h-5 w-5 text-purple-700" />
@@ -295,7 +295,7 @@ export function LeanFIRECalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Current Age: {currentAge}
                 </label>
                 <input
@@ -309,7 +309,7 @@ export function LeanFIRECalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Expected Return: {expectedReturn}%
                 </label>
                 <input
@@ -324,7 +324,7 @@ export function LeanFIRECalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Withdrawal Rate: {withdrawalRate}%
                 </label>
                 <input
@@ -361,7 +361,7 @@ export function LeanFIRECalculator() {
                     ? "You've Reached Lean FIRE!"
                     : "Your Lean FIRE Journey"}
                 </h3>
-                <p className="text-sm text-slate-600">
+                <p className="text-sm text-[#D0CCC4]">
                   {calculations.hasReachedFIRE
                     ? "You can retire with a minimalist lifestyle"
                     : `${calculations.yearsToFIRE.toFixed(1)} years to freedom`}
@@ -375,7 +375,7 @@ export function LeanFIRECalculator() {
                 <span>Progress to Lean FIRE</span>
                 <span className="font-semibold">{calculations.progressPercent.toFixed(1)}%</span>
               </div>
-              <div className="w-full bg-slate-100 rounded-full h-3 overflow-hidden">
+              <div className="w-full bg-[#121423] rounded-full h-3 overflow-hidden">
                 <div
                   className="h-full bg-gradient-to-r from-green-500 to-emerald-500 transition-all duration-500"
                   style={{ width: `${Math.min(100, calculations.progressPercent)}%` }}
@@ -386,18 +386,18 @@ export function LeanFIRECalculator() {
 
           {/* Lean FIRE Number */}
           <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 backdrop-blur-sm rounded-xl p-6 border border-green-500/30">
-            <h3 className="text-sm text-slate-500 mb-2">Your Lean FIRE Number</h3>
+            <h3 className="text-sm text-[#A8A39A] mb-2">Your Lean FIRE Number</h3>
             <div className="text-4xl font-bold text-green-600 mb-4">
               {formatCurrency(calculations.leanFIREnumber)}
             </div>
 
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span className="text-slate-500">Age at FIRE</span>
+                <span className="text-[#A8A39A]">Age at FIRE</span>
                 <span className="font-semibold">{Math.round(calculations.fireAge)} years old</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-slate-500">Monthly Portfolio Income</span>
+                <span className="text-[#A8A39A]">Monthly Portfolio Income</span>
                 <span className="font-semibold text-green-600">
                   {formatFullCurrency(calculations.monthlyPortfolioIncome)}
                 </span>
@@ -406,36 +406,36 @@ export function LeanFIRECalculator() {
           </div>
 
           {/* Key Metrics */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-              <Target className="h-5 w-5 text-[#B22234]" />
+              <Target className="h-5 w-5 text-[#D4A94E]" />
               Key Metrics
             </h3>
 
             <div className="space-y-4">
-              <div className="flex justify-between items-center pb-4 border-b border-slate-200">
-                <span className="text-slate-500">Current Savings</span>
+              <div className="flex justify-between items-center pb-4 border-b border-[#2A2D42]">
+                <span className="text-[#A8A39A]">Current Savings</span>
                 <span className="text-xl font-bold">
                   {formatCurrency(currentSavings)}
                 </span>
               </div>
 
-              <div className="flex justify-between items-center pb-4 border-b border-slate-200">
-                <span className="text-slate-500">Amount Needed</span>
+              <div className="flex justify-between items-center pb-4 border-b border-[#2A2D42]">
+                <span className="text-[#A8A39A]">Amount Needed</span>
                 <span className="text-xl font-bold text-orange-400">
                   {calculations.hasReachedFIRE ? "$0" : formatCurrency(calculations.amountNeeded)}
                 </span>
               </div>
 
-              <div className="flex justify-between items-center pb-4 border-b border-slate-200">
-                <span className="text-slate-500">Years to FIRE</span>
+              <div className="flex justify-between items-center pb-4 border-b border-[#2A2D42]">
+                <span className="text-[#A8A39A]">Years to FIRE</span>
                 <span className="text-xl font-bold text-blue-600">
                   {calculations.hasReachedFIRE ? "0" : calculations.yearsToFIRE.toFixed(1)}
                 </span>
               </div>
 
               <div className="flex justify-between items-center">
-                <span className="text-slate-500">FIRE Age</span>
+                <span className="text-[#A8A39A]">FIRE Age</span>
                 <span className="text-xl font-bold text-green-600">
                   {Math.round(calculations.fireAge)}
                 </span>
@@ -444,7 +444,7 @@ export function LeanFIRECalculator() {
           </div>
 
           {/* Expense Breakdown */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
               <ShoppingCart className="h-5 w-5 text-purple-700" />
               Expense Breakdown
@@ -453,12 +453,12 @@ export function LeanFIRECalculator() {
             <div className="space-y-3">
               <div>
                 <div className="flex justify-between text-sm mb-1">
-                  <span className="text-slate-500">Housing</span>
+                  <span className="text-[#A8A39A]">Housing</span>
                   <span className="font-semibold">
                     {formatCurrency(monthlyHousing)} ({calculations.housingPercent.toFixed(0)}%)
                   </span>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-2">
+                <div className="w-full bg-[#121423] rounded-full h-2">
                   <div
                     className="h-full bg-blue-500 rounded-full"
                     style={{ width: `${calculations.housingPercent}%` }}
@@ -468,12 +468,12 @@ export function LeanFIRECalculator() {
 
               <div>
                 <div className="flex justify-between text-sm mb-1">
-                  <span className="text-slate-500">Food</span>
+                  <span className="text-[#A8A39A]">Food</span>
                   <span className="font-semibold">
                     {formatCurrency(monthlyFood)} ({calculations.foodPercent.toFixed(0)}%)
                   </span>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-2">
+                <div className="w-full bg-[#121423] rounded-full h-2">
                   <div
                     className="h-full bg-green-500 rounded-full"
                     style={{ width: `${calculations.foodPercent}%` }}
@@ -483,12 +483,12 @@ export function LeanFIRECalculator() {
 
               <div>
                 <div className="flex justify-between text-sm mb-1">
-                  <span className="text-slate-500">Utilities</span>
+                  <span className="text-[#A8A39A]">Utilities</span>
                   <span className="font-semibold">
                     {formatCurrency(monthlyUtilities)} ({calculations.utilitiesPercent.toFixed(0)}%)
                   </span>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-2">
+                <div className="w-full bg-[#121423] rounded-full h-2">
                   <div
                     className="h-full bg-amber-500 rounded-full"
                     style={{ width: `${calculations.utilitiesPercent}%` }}
@@ -498,12 +498,12 @@ export function LeanFIRECalculator() {
 
               <div>
                 <div className="flex justify-between text-sm mb-1">
-                  <span className="text-slate-500">Other</span>
+                  <span className="text-[#A8A39A]">Other</span>
                   <span className="font-semibold">
                     {formatCurrency(monthlyOther)} ({calculations.otherPercent.toFixed(0)}%)
                   </span>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-2">
+                <div className="w-full bg-[#121423] rounded-full h-2">
                   <div
                     className="h-full bg-purple-500 rounded-full"
                     style={{ width: `${calculations.otherPercent}%` }}
@@ -517,30 +517,30 @@ export function LeanFIRECalculator() {
 
       {/* Why Gold for Lean FIRE Section */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-8 border border-slate-200">
+        <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-8 border border-[#2A2D42]">
           <div className="flex items-center gap-3 mb-6">
-            <Shield className="h-6 w-6 text-[#B22234]" />
+            <Shield className="h-6 w-6 text-[#D4A94E]" />
             <h2 className="text-2xl font-bold">Protecting Your Lean FIRE Nest Egg</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Essential Security</div>
-              <p className="text-slate-600 text-sm">
+              <div className="text-[#D4A94E] font-semibold mb-2">Essential Security</div>
+              <p className="text-[#D0CCC4] text-sm">
                 With minimal expenses, you can't afford portfolio losses. Gold provides a safety net during market crashes and economic uncertainty.
               </p>
             </div>
 
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Inflation Protection</div>
-              <p className="text-slate-600 text-sm">
+              <div className="text-[#D4A94E] font-semibold mb-2">Inflation Protection</div>
+              <p className="text-[#D0CCC4] text-sm">
                 Living on less means inflation hits harder. Gold maintains purchasing power when the dollar loses value, protecting your fixed budget.
               </p>
             </div>
 
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Low Correlation</div>
-              <p className="text-slate-600 text-sm">
+              <div className="text-[#D4A94E] font-semibold mb-2">Low Correlation</div>
+              <p className="text-[#D0CCC4] text-sm">
                 Lean FIRE portfolios need stability. Gold's low correlation to stocks and bonds provides crucial diversification on a tight budget.
               </p>
             </div>
@@ -560,19 +560,19 @@ export function LeanFIRECalculator() {
         <div className="prose max-w-none">
           <h2 className="text-3xl font-bold mb-6">Understanding Lean FIRE</h2>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42] mb-6">
             <h3 className="text-xl font-semibold mb-4">What is Lean FIRE?</h3>
-            <p className="text-slate-500 mb-4">
+            <p className="text-[#A8A39A] mb-4">
               Lean FIRE is the minimalist approach to Financial Independence Retire Early. By keeping expenses low (typically $25,000-$40,000/year), you need a much smaller nest egg - often $600,000-$1,000,000 instead of $2 million+.
             </p>
-            <p className="text-slate-500">
+            <p className="text-[#A8A39A]">
               Lean FIRE practitioners embrace frugality not as deprivation, but as intentional living. By focusing on what truly matters and cutting unnecessary expenses, they achieve freedom years or even decades earlier than traditional retirement.
             </p>
           </div>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42] mb-6">
             <h3 className="text-xl font-semibold mb-4">Strategies for Lean FIRE</h3>
-            <ul className="space-y-2 text-slate-500">
+            <ul className="space-y-2 text-[#A8A39A]">
               <li className="flex gap-2">
                 <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                 <span><strong>Geographic Arbitrage:</strong> Live in low cost-of-living areas or countries</span>
@@ -596,12 +596,12 @@ export function LeanFIRECalculator() {
             </ul>
           </div>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-xl font-semibold mb-4">The Math</h3>
-            <div className="bg-slate-100 rounded-lg p-4 font-mono text-sm mb-4">
+            <div className="bg-[#121423] rounded-lg p-4 font-mono text-sm mb-4">
               Lean FIRE Number = Annual Expenses × 25
             </div>
-            <p className="text-slate-500">
+            <p className="text-[#A8A39A]">
               Example: If you can live comfortably on $30,000/year, your Lean FIRE number is $750,000. At a 4% withdrawal rate, this provides $30,000 annually while preserving your principal.
             </p>
           </div>

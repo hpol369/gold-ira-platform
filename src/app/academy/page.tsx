@@ -115,39 +115,39 @@ export default function AcademyPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <GraduationCap className="h-4 w-4" />
               FREE COURSE
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-[#000080] mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#F6F4EF] mb-6">
               Gold IRA Academy
             </h1>
-            <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-[#D0CCC4] mb-8 max-w-2xl mx-auto">
               You&apos;ve worked 30+ years building your retirement. Before you move any of it, you deserve to understand exactly how Gold IRAs work—the good, the bad, and what the sales reps won&apos;t tell you. 10 modules. Completely free. No email required.
             </p>
 
             {/* Stats */}
             <div className="flex flex-wrap justify-center gap-8 mb-10">
-              <div className="flex items-center gap-2 text-slate-600">
-                <BookOpen className="h-5 w-5 text-[#B22234]" />
+              <div className="flex items-center gap-2 text-[#D0CCC4]">
+                <BookOpen className="h-5 w-5 text-[#D4A94E]" />
                 <span>10 Modules</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-600">
-                <Clock className="h-5 w-5 text-[#B22234]" />
+              <div className="flex items-center gap-2 text-[#D0CCC4]">
+                <Clock className="h-5 w-5 text-[#D4A94E]" />
                 <span>{totalDuration} Minutes Total</span>
               </div>
-              <div className="flex items-center gap-2 text-slate-600">
-                <Users className="h-5 w-5 text-[#B22234]" />
+              <div className="flex items-center gap-2 text-[#D0CCC4]">
+                <Users className="h-5 w-5 text-[#D4A94E]" />
                 <span>50,000+ Students</span>
               </div>
             </div>
 
             <Link
               href="#module-1"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#B22234] text-white font-bold text-lg rounded-xl hover:bg-[#8B1A28] transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#DC2626] text-white font-bold text-lg rounded-xl hover:bg-[#8B1A28] transition-all"
             >
               Start Learning Free
               <ArrowRight className="h-5 w-5" />
@@ -160,7 +160,7 @@ export default function AcademyPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] text-center mb-12">
               Course Curriculum
             </h2>
 
@@ -172,28 +172,28 @@ export default function AcademyPage() {
                   id={`module-${module.number}`}
                   className="block group"
                 >
-                  <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 hover:bg-slate-100 hover:border-[#B22234]/30 transition-all">
+                  <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] hover:border-[rgba(197,149,46,0.45)] transition-all">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center text-[#B22234] font-bold">
+                      <div className="flex-shrink-0 w-12 h-12 bg-[rgba(220,38,38,0.1)] rounded-xl flex items-center justify-center text-[#D4A94E] font-bold">
                         {module.number}
                       </div>
                       <div className="flex-1">
                         <div className="flex items-start justify-between gap-4">
                           <div>
-                            <h3 className="text-lg font-bold text-[#000080] group-hover:text-[#B22234] transition-colors">
+                            <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                               {module.title}
                             </h3>
-                            <p className="text-slate-500 mt-1">
+                            <p className="text-[#A8A39A] mt-1">
                               {module.description}
                             </p>
                           </div>
-                          <div className="flex items-center gap-2 text-slate-500 text-sm whitespace-nowrap">
+                          <div className="flex items-center gap-2 text-[#A8A39A] text-sm whitespace-nowrap">
                             <Clock className="h-4 w-4" />
                             {module.duration}
                           </div>
                         </div>
                       </div>
-                      <ArrowRight className="h-5 w-5 text-slate-500 group-hover:text-[#B22234] transition-colors flex-shrink-0" />
+                      <ArrowRight className="h-5 w-5 text-[#A8A39A] group-hover:text-[#D4A94E] transition-colors flex-shrink-0" />
                     </div>
                   </div>
                 </Link>
@@ -204,40 +204,40 @@ export default function AcademyPage() {
       </section>
 
       {/* Bonus Content */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] text-center mb-4">
               Bonus Resources
             </h2>
-            <p className="text-slate-500 text-center mb-12">
+            <p className="text-[#A8A39A] text-center mb-12">
               Deep-dive guides on specific topics
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <Link href="/learn/how-much-gold-in-portfolio" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
-                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Portfolio Allocation</h3>
-                <p className="text-slate-500 text-sm">How much gold should be in your portfolio?</p>
+              <Link href="/learn/how-much-gold-in-portfolio" className="group bg-[#161828] border border-[#2A2D42] rounded-xl p-5 hover:border-[rgba(197,149,46,0.45)] transition-all">
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] mb-2">Portfolio Allocation</h3>
+                <p className="text-[#A8A39A] text-sm">How much gold should be in your portfolio?</p>
               </Link>
-              <Link href="/learn/gold-price-prediction-2026" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
-                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Gold Price Outlook</h3>
-                <p className="text-slate-500 text-sm">Expert predictions for 2026</p>
+              <Link href="/learn/gold-price-prediction-2026" className="group bg-[#161828] border border-[#2A2D42] rounded-xl p-5 hover:border-[rgba(197,149,46,0.45)] transition-all">
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] mb-2">Gold Price Outlook</h3>
+                <p className="text-[#A8A39A] text-sm">Expert predictions for 2026</p>
               </Link>
-              <Link href="/learn/gold-bullion-vs-gold-coins" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
-                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Bullion vs Coins</h3>
-                <p className="text-slate-500 text-sm">Which is better for your IRA?</p>
+              <Link href="/learn/gold-bullion-vs-gold-coins" className="group bg-[#161828] border border-[#2A2D42] rounded-xl p-5 hover:border-[rgba(197,149,46,0.45)] transition-all">
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] mb-2">Bullion vs Coins</h3>
+                <p className="text-[#A8A39A] text-sm">Which is better for your IRA?</p>
               </Link>
-              <Link href="/learn/indirect-vs-direct-rollover" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
-                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Rollover Types</h3>
-                <p className="text-slate-500 text-sm">Direct vs indirect explained</p>
+              <Link href="/learn/indirect-vs-direct-rollover" className="group bg-[#161828] border border-[#2A2D42] rounded-xl p-5 hover:border-[rgba(197,149,46,0.45)] transition-all">
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] mb-2">Rollover Types</h3>
+                <p className="text-[#A8A39A] text-sm">Direct vs indirect explained</p>
               </Link>
-              <Link href="/guide/457b-to-gold-ira-rollover" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
-                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">457(b) Rollover</h3>
-                <p className="text-slate-500 text-sm">Guide for government employees</p>
+              <Link href="/guide/457b-to-gold-ira-rollover" className="group bg-[#161828] border border-[#2A2D42] rounded-xl p-5 hover:border-[rgba(197,149,46,0.45)] transition-all">
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] mb-2">457(b) Rollover</h3>
+                <p className="text-[#A8A39A] text-sm">Guide for government employees</p>
               </Link>
-              <Link href="/guide/noble-gold-fees" className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-[#B22234]/30 transition-all">
-                <h3 className="font-bold text-[#000080] group-hover:text-[#B22234] mb-2">Fee Comparison</h3>
-                <p className="text-slate-500 text-sm">Noble Gold fees breakdown</p>
+              <Link href="/guide/noble-gold-fees" className="group bg-[#161828] border border-[#2A2D42] rounded-xl p-5 hover:border-[rgba(197,149,46,0.45)] transition-all">
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] mb-2">Fee Comparison</h3>
+                <p className="text-[#A8A39A] text-sm">Noble Gold fees breakdown</p>
               </Link>
             </div>
           </div>
@@ -245,10 +245,10 @@ export default function AcademyPage() {
       </section>
 
       {/* What You'll Learn */}
-      <section className="py-16 bg-slate-100">
+      <section className="py-16 bg-[#121423]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#000080] text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] text-center mb-12">
               What You&apos;ll Actually Learn
             </h2>
 
@@ -265,7 +265,7 @@ export default function AcademyPage() {
               ].map((item, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-600">{item}</span>
+                  <span className="text-[#D0CCC4]">{item}</span>
                 </div>
               ))}
             </div>

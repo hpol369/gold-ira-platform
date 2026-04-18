@@ -30,20 +30,20 @@ const schema = {
 
 export default function AugustaVsNoblePage() {
     return (
-        <main className="min-h-screen flex flex-col bg-slate-50">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <SchemaScript schema={schema} />
             <Navbar />
             <div className="flex-grow">
-                <header className="bg-slate-50 border-b border-slate-200 py-16">
+                <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-16">
                     <Container>
                         <div className="max-w-3xl">
-                            <span className="text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4 block">
+                            <span className="text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-4 block">
                                 Head-to-Head Comparison
                             </span>
                             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">
                                 Augusta Precious Metals vs Noble Gold
                             </h1>
-                            <p className="text-xl text-slate-600">
+                            <p className="text-xl text-[#D0CCC4]">
                                 The Premium Giant vs. The Flexible Favorite. Which Gold IRA is right for your budget?
                             </p>
                         </div>
@@ -58,7 +58,7 @@ export default function AugustaVsNoblePage() {
                         </aside>
 
                         {/* Content */}
-                        <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                        <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
                             <Breadcrumbs />
 
                             {/* Verdict */}
@@ -75,52 +75,52 @@ export default function AugustaVsNoblePage() {
                             <section id="comparison" className="scroll-mt-32">
                                 <h2>At a Glance Comparison</h2>
                                 <div className="not-prose overflow-x-auto my-6">
-                                    <table className="w-full border-collapse bg-white shadow-sm rounded-xl border border-slate-200">
+                                    <table className="w-full border-collapse bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42]">
                                         <thead>
-                                            <tr className="bg-slate-100 text-slate-900">
-                                                <th className="p-4 text-left font-bold text-[#B22234]">Feature</th>
-                                                <th className="p-4 text-center font-bold text-[#B22234]">Augusta</th>
-                                                <th className="p-4 text-center font-bold text-[#B22234]">Noble Gold</th>
+                                            <tr className="bg-[#121423] text-[#F6F4EF]">
+                                                <th className="p-4 text-left font-bold text-[#D4A94E]">Feature</th>
+                                                <th className="p-4 text-center font-bold text-[#D4A94E]">Augusta</th>
+                                                <th className="p-4 text-center font-bold text-[#D4A94E]">Noble Gold</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="text-sm text-slate-600">
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Minimum Investment</td>
+                                        <tbody className="text-sm text-[#D0CCC4]">
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Minimum Investment</td>
                                                 <td className="p-4 text-center text-red-700 font-bold">$50,000</td>
                                                 <td className="p-4 text-center text-green-700 font-bold">$20,000</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200 bg-white/5">
-                                                <td className="p-4 font-medium text-slate-900">BBB Rating</td>
+                                            <tr className="border-b border-[#2A2D42] bg-white/5">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">BBB Rating</td>
                                                 <td className="p-4 text-center">A+</td>
                                                 <td className="p-4 text-center">A+</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">BBB Complaints</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">BBB Complaints</td>
                                                 <td className="p-4 text-center text-green-700 font-bold">0</td>
                                                 <td className="p-4 text-center">Very Few</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200 bg-white/5">
-                                                <td className="p-4 font-medium text-slate-900">Setup Fee</td>
+                                            <tr className="border-b border-[#2A2D42] bg-white/5">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Setup Fee</td>
                                                 <td className="p-4 text-center">$50</td>
                                                 <td className="p-4 text-center">$80</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Annual Fees</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Annual Fees</td>
                                                 <td className="p-4 text-center">$180/year</td>
                                                 <td className="p-4 text-center">$225/year</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200 bg-white/5">
-                                                <td className="p-4 font-medium text-slate-900">Texas Storage</td>
+                                            <tr className="border-b border-[#2A2D42] bg-white/5">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Texas Storage</td>
                                                 <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-700 mx-auto" /></td>
                                                 <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-700 mx-auto" /></td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Free Webinar Education</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Free Webinar Education</td>
                                                 <td className="p-4 text-center"><CheckCircle2 className="w-5 h-5 text-green-700 mx-auto" /></td>
                                                 <td className="p-4 text-center"><XCircle className="w-5 h-5 text-red-700 mx-auto" /></td>
                                             </tr>
                                             <tr className="bg-white/5">
-                                                <td className="p-4 font-medium text-slate-900">Best For</td>
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Best For</td>
                                                 <td className="p-4 text-center text-sm">High-net-worth investors wanting premium service</td>
                                                 <td className="p-4 text-center text-sm">Budget-conscious investors under $50k</td>
                                             </tr>
@@ -137,14 +137,14 @@ export default function AugustaVsNoblePage() {
                                 </p>
 
                                 <div className="not-prose grid md:grid-cols-2 gap-6 my-6">
-                                    <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
+                                    <div className="bg-[#161828] shadow-sm p-6 rounded-xl border border-[#2A2D42]">
                                         <div className="flex items-center gap-2 mb-4">
-                                            <div className="w-10 h-10 rounded-full bg-[#B22234]/10 flex items-center justify-center">
-                                                <Trophy className="w-5 h-5 text-[#B22234]" />
+                                            <div className="w-10 h-10 rounded-full bg-[rgba(220,38,38,0.1)] flex items-center justify-center">
+                                                <Trophy className="w-5 h-5 text-[#D4A94E]" />
                                             </div>
-                                            <h3 className="font-bold text-lg text-[#B22234]">Augusta Fees</h3>
+                                            <h3 className="font-bold text-lg text-[#D4A94E]">Augusta Fees</h3>
                                         </div>
-                                        <ul className="space-y-2 text-sm text-slate-600">
+                                        <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                             <li>• Setup: $50 (one-time)</li>
                                             <li>• Annual Admin: $80</li>
                                             <li>• Storage: $100/year</li>
@@ -152,14 +152,14 @@ export default function AugustaVsNoblePage() {
                                             <li>• <strong>Annual after: $180</strong></li>
                                         </ul>
                                     </div>
-                                    <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
+                                    <div className="bg-[#161828] shadow-sm p-6 rounded-xl border border-[#2A2D42]">
                                         <div className="flex items-center gap-2 mb-4">
                                             <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
                                                 <Wallet className="w-5 h-5 text-blue-600" />
                                             </div>
-                                            <h3 className="font-bold text-lg text-[#B22234]">Noble Gold Fees</h3>
+                                            <h3 className="font-bold text-lg text-[#D4A94E]">Noble Gold Fees</h3>
                                         </div>
-                                        <ul className="space-y-2 text-sm text-slate-600">
+                                        <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                             <li>• Setup: $80 (one-time)</li>
                                             <li>• Annual Admin: $80</li>
                                             <li>• Storage: $150/year</li>
@@ -178,30 +178,30 @@ export default function AugustaVsNoblePage() {
                             <section id="signup" className="scroll-mt-32">
                                 <h2>Sign-Up Experience</h2>
                                 <div className="not-prose grid md:grid-cols-2 gap-6 my-6">
-                                    <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
+                                    <div className="bg-[#161828] shadow-sm p-6 rounded-xl border border-[#2A2D42]">
                                         <div className="flex items-center gap-2 mb-4">
-                                            <GraduationCap className="w-6 h-6 text-[#B22234]" />
-                                            <h3 className="font-bold text-[#B22234]">Augusta: Education-First</h3>
+                                            <GraduationCap className="w-6 h-6 text-[#D4A94E]" />
+                                            <h3 className="font-bold text-[#D4A94E]">Augusta: Education-First</h3>
                                         </div>
-                                        <p className="text-slate-600 text-sm mb-4">
+                                        <p className="text-[#D0CCC4] text-sm mb-4">
                                             Augusta requires you to attend a 15-minute webinar with their economist before you can buy. Some find this annoying; others appreciate the education.
                                         </p>
-                                        <ul className="space-y-1 text-sm text-slate-600">
+                                        <ul className="space-y-1 text-sm text-[#D0CCC4]">
                                             <li>✓ Harvard-trained economist explains gold</li>
                                             <li>✓ No pressure to buy immediately</li>
                                             <li>✓ Confirmation call before purchase</li>
                                             <li>✗ Takes longer to get started</li>
                                         </ul>
                                     </div>
-                                    <div className="bg-white shadow-sm p-6 rounded-xl border border-slate-200">
+                                    <div className="bg-[#161828] shadow-sm p-6 rounded-xl border border-[#2A2D42]">
                                         <div className="flex items-center gap-2 mb-4">
                                             <Wallet className="w-6 h-6 text-blue-600" />
-                                            <h3 className="font-bold text-[#B22234]">Noble Gold: Straightforward</h3>
+                                            <h3 className="font-bold text-[#D4A94E]">Noble Gold: Straightforward</h3>
                                         </div>
-                                        <p className="text-slate-600 text-sm mb-4">
+                                        <p className="text-[#D0CCC4] text-sm mb-4">
                                             Noble Gold takes a more traditional approach. You can open an account and start buying without required education sessions.
                                         </p>
-                                        <ul className="space-y-1 text-sm text-slate-600">
+                                        <ul className="space-y-1 text-sm text-[#D0CCC4]">
                                             <li>✓ Faster account setup</li>
                                             <li>✓ Dedicated account rep</li>
                                             <li>✓ Texas storage option</li>
@@ -234,8 +234,8 @@ export default function AugustaVsNoblePage() {
 
                                 <div className="not-prose grid md:grid-cols-2 gap-6 my-6">
                                     <div className="bg-amber-500/10 p-6 rounded-xl border border-amber-500/30">
-                                        <h3 className="font-bold text-[#B22234] text-lg mb-3">Choose Augusta If:</h3>
-                                        <ul className="space-y-2 text-sm text-slate-600">
+                                        <h3 className="font-bold text-[#D4A94E] text-lg mb-3">Choose Augusta If:</h3>
+                                        <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                                                 <span>You have $50,000+ to invest</span>
@@ -254,14 +254,14 @@ export default function AugustaVsNoblePage() {
                                             </li>
                                         </ul>
                                         <div className="mt-4">
-                                            <LeadCaptureButton variant="default" source="compare-augusta-vs-noble" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-4 py-2 rounded-lg text-sm font-semibold inline-flex items-center">
+                                            <LeadCaptureButton variant="default" source="compare-augusta-vs-noble" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-4 py-2 rounded-lg text-sm font-semibold inline-flex items-center">
                                                 Get Augusta Free Kit <ArrowRight className="ml-2 w-4 h-4" />
                                             </LeadCaptureButton>
                                         </div>
                                     </div>
                                     <div className="bg-blue-500/10 p-6 rounded-xl border border-blue-500/30">
                                         <h3 className="font-bold text-blue-700 text-lg mb-3">Choose Noble Gold If:</h3>
-                                        <ul className="space-y-2 text-sm text-slate-600">
+                                        <ul className="space-y-2 text-sm text-[#D0CCC4]">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
                                                 <span>You have $20,000-$50,000 to invest</span>
@@ -306,16 +306,16 @@ export default function AugustaVsNoblePage() {
                             </section>
 
                             {/* Related Links */}
-                            <div className="not-prose my-8 p-6 bg-white shadow-sm rounded-xl border border-slate-200">
-                                <h4 className="font-bold text-[#B22234] mb-4">Related Reviews</h4>
+                            <div className="not-prose my-8 p-6 bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42]">
+                                <h4 className="font-bold text-[#D4A94E] mb-4">Related Reviews</h4>
                                 <div className="flex flex-wrap gap-3">
-                                    <Link href="/reviews/augusta-precious-metals" className="text-sm px-4 py-2 bg-slate-100 rounded-lg border border-slate-200 text-slate-600 hover:border-[#B22234]/50 hover:text-slate-900 transition-colors">
+                                    <Link href="/reviews/augusta-precious-metals" className="text-sm px-4 py-2 bg-[#121423] rounded-lg border border-[#2A2D42] text-[#D0CCC4] hover:border-[#B22234]/50 hover:text-[#F6F4EF] transition-colors">
                                         Augusta Full Review →
                                     </Link>
-                                    <Link href="/reviews/noble-gold" className="text-sm px-4 py-2 bg-slate-100 rounded-lg border border-slate-200 text-slate-600 hover:border-[#B22234]/50 hover:text-slate-900 transition-colors">
+                                    <Link href="/reviews/noble-gold" className="text-sm px-4 py-2 bg-[#121423] rounded-lg border border-[#2A2D42] text-[#D0CCC4] hover:border-[#B22234]/50 hover:text-[#F6F4EF] transition-colors">
                                         Noble Gold Full Review →
                                     </Link>
-                                    <Link href="/compare/noble-gold-vs-birch-gold" className="text-sm px-4 py-2 bg-slate-100 rounded-lg border border-slate-200 text-slate-600 hover:border-[#B22234]/50 hover:text-slate-900 transition-colors">
+                                    <Link href="/compare/noble-gold-vs-birch-gold" className="text-sm px-4 py-2 bg-[#121423] rounded-lg border border-[#2A2D42] text-[#D0CCC4] hover:border-[#B22234]/50 hover:text-[#F6F4EF] transition-colors">
                                         Noble Gold vs Birch Gold →
                                     </Link>
                                 </div>
@@ -328,7 +328,7 @@ export default function AugustaVsNoblePage() {
                 </Container>
 
                 {/* Augusta CTA */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <AugustaCTA
                             variant="footer"

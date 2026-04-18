@@ -22,7 +22,7 @@ export function QuizProgress({
     <div className={cn("w-full", className)}>
       {/* Step Counter */}
       <div className="flex justify-between items-center mb-2">
-        <span className="text-sm font-medium text-slate-400">
+        <span className="text-sm font-medium text-[#A8A39A]">
           Step {currentStep} of {totalSteps}
         </span>
         <span className="text-sm font-medium text-amber-400">
@@ -76,7 +76,7 @@ export function QuizProgress({
                     "text-xs font-medium transition-colors duration-300 text-center max-w-[80px]",
                     isCompleted && "text-amber-400",
                     isCurrent && "text-white",
-                    isFuture && "text-slate-500"
+                    isFuture && "text-[#A8A39A]"
                   )}
                 >
                   {label}

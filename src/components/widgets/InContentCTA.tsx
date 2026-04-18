@@ -18,19 +18,19 @@ const variantStyles: Record<InContentCTAVariant, {
   button: string;
 }> = {
   default: {
-    container: "bg-slate-50 border border-slate-200",
-    text: "text-slate-600",
-    button: "bg-[#B22234] hover:bg-[#8b1c2a] text-white",
+    container: "bg-[#0C0D18] border border-[#2A2D42]",
+    text: "text-[#D0CCC4]",
+    button: "bg-[#DC2626] hover:bg-[#991B1B] text-white",
   },
   minimal: {
-    container: "bg-white border border-slate-200",
-    text: "text-slate-500",
-    button: "bg-[#B22234]/90 hover:bg-[#B22234] text-white",
+    container: "bg-[#161828] border border-[#2A2D42]",
+    text: "text-[#A8A39A]",
+    button: "bg-[#DC2626]/90 hover:bg-[#DC2626] text-white",
   },
   emphasized: {
     container: "bg-gradient-to-r from-[#B22234]/10 via-[#B22234]/5 to-transparent border border-[#B22234]/20",
-    text: "text-slate-600",
-    button: "bg-[#B22234] hover:bg-[#8b1c2a] text-white",
+    text: "text-[#D0CCC4]",
+    button: "bg-[#DC2626] hover:bg-[#991B1B] text-white",
   },
 };
 
@@ -47,7 +47,7 @@ export function InContentCTA({ variant = "default", className }: InContentCTAPro
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div className={cn("text-sm leading-relaxed", styles.text)}>
-          <p className="font-semibold text-[#000080]">Exploring your retirement options?</p>
+          <p className="font-semibold text-[#F6F4EF]">Exploring your retirement options?</p>
           <p>Our 60-second quiz matches you with the right account type</p>
         </div>
         <Link

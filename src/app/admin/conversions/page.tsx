@@ -165,7 +165,7 @@ export default function ConversionsPage() {
             </div>
             <button
               onClick={fetchConversions}
-              className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors"
+              className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-[#1E2134]/20 text-white rounded-lg transition-colors"
             >
               <RefreshCw className="h-4 w-4" />
               Refresh

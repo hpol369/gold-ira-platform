@@ -10,7 +10,7 @@ import { Quote, Heart, Shield, Users } from "lucide-react";
 
 export function DeepWhySection() {
   return (
-    <section className="py-20 md:py-28 bg-white text-slate-900 border-b border-slate-200 relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-white text-[#F6F4EF] border-b border-[#2A2D42] relative overflow-hidden">
 
       <Container className="relative z-10">
         <motion.div
@@ -29,27 +29,27 @@ export function DeepWhySection() {
           </div>
 
           {/* Main Story */}
-          <div className="bg-slate-50 border border-slate-200 rounded-3xl p-8 md:p-12 shadow-sm relative">
+          <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-3xl p-8 md:p-12 shadow-sm relative">
             {/* Quote Icon */}
             <div className="flex justify-center mb-6">
-              <div className="w-16 h-16 rounded-2xl bg-[#000080]/10 flex items-center justify-center">
-                <Quote className="h-8 w-8 text-[#000080]" />
+              <div className="w-16 h-16 rounded-2xl bg-[rgba(197,149,46,0.08)] flex items-center justify-center">
+                <Quote className="h-8 w-8 text-[#F6F4EF]" />
               </div>
             </div>
 
             {/* The Story */}
             <div className="text-center space-y-6">
-              <h2 className="text-3xl md:text-5xl font-serif font-black text-[#000080] leading-tight">
+              <h2 className="text-3xl md:text-5xl font-serif font-black text-[#F6F4EF] leading-tight">
                 We Started This Because<br />
-                <span className="text-[#B22234]">The System Failed Our Parents</span>
+                <span className="text-[#D4A94E]">The System Failed Our Parents</span>
               </h2>
 
-              <div className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto space-y-4 font-medium">
+              <div className="text-lg md:text-xl text-[#D0CCC4] leading-relaxed max-w-3xl mx-auto space-y-4 font-medium">
                 <p>
-                  In 2008, we watched our parents lose <span className="text-[#B22234] font-bold">40% of their retirement savings</span> in a single year. They did everything right—worked hard for 35 years, saved diligently, trusted their financial advisor.
+                  In 2008, we watched our parents lose <span className="text-[#D4A94E] font-bold">40% of their retirement savings</span> in a single year. They did everything right—worked hard for 35 years, saved diligently, trusted their financial advisor.
                 </p>
                 <p>
-                  <span className="text-[#000080] font-bold">And the system failed them.</span>
+                  <span className="text-[#F6F4EF] font-bold">And the system failed them.</span>
                 </p>
                 <p>
                   Wall Street got bailouts. Banks got bonuses. Our parents got a letter saying their retirement dreams were cut in half.
@@ -57,45 +57,45 @@ export function DeepWhySection() {
               </div>
 
               {/* The Realization */}
-              <div className="pt-8 border-t border-slate-200">
-                <p className="text-lg md:text-xl text-slate-700 leading-relaxed max-w-3xl mx-auto font-medium">
-                  That's when we discovered what the wealthy have known for centuries: <span className="text-[#000080] font-bold">real assets protect real wealth</span>. Gold isn't a get-rich-quick scheme. It's insurance against a financial system that's rigged against regular people.
+              <div className="pt-8 border-t border-[#2A2D42]">
+                <p className="text-lg md:text-xl text-[#D0CCC4] leading-relaxed max-w-3xl mx-auto font-medium">
+                  That's when we discovered what the wealthy have known for centuries: <span className="text-[#F6F4EF] font-bold">real assets protect real wealth</span>. Gold isn't a get-rich-quick scheme. It's insurance against a financial system that's rigged against regular people.
                 </p>
               </div>
 
               {/* Our Mission */}
               <div className="pt-10">
-                <div className="bg-white rounded-2xl p-8 md:p-10 border border-slate-200 shadow-md">
-                  <h3 className="text-2xl font-bold text-[#000080] mb-4 font-serif">Our Mission</h3>
-                  <p className="text-lg text-slate-600 leading-relaxed font-medium">
-                    We built Rich Dad Retirement because <span className="text-[#000080] font-bold">you deserve the same protection that billionaires and central banks have</span>. No jargon. No pressure. No hidden agendas. Just honest information to help you make the right choice for your family.
+                <div className="bg-[#161828] rounded-2xl p-8 md:p-10 border border-[#2A2D42] shadow-md">
+                  <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4 font-serif">Our Mission</h3>
+                  <p className="text-lg text-[#D0CCC4] leading-relaxed font-medium">
+                    We built Rich Dad Retirement because <span className="text-[#F6F4EF] font-bold">you deserve the same protection that billionaires and central banks have</span>. No jargon. No pressure. No hidden agendas. Just honest information to help you make the right choice for your family.
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Values */}
-            <div className="grid md:grid-cols-3 gap-8 mt-12 pt-10 border-t border-slate-200">
+            <div className="grid md:grid-cols-3 gap-8 mt-12 pt-10 border-t border-[#2A2D42]">
               <div className="text-center group">
                 <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-100 transition-colors">
                   <Shield className="h-6 w-6 text-blue-600" />
                 </div>
-                <h4 className="font-bold text-[#000080] mb-2 text-lg">Education First</h4>
-                <p className="text-sm text-slate-500 font-medium">We teach, we don't sell. Your decision should be informed, not pressured.</p>
+                <h4 className="font-bold text-[#F6F4EF] mb-2 text-lg">Education First</h4>
+                <p className="text-sm text-[#A8A39A] font-medium">We teach, we don't sell. Your decision should be informed, not pressured.</p>
               </div>
               <div className="text-center group">
                 <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mx-auto mb-4 group-hover:bg-green-100 transition-colors">
                   <Users className="h-6 w-6 text-green-600" />
                 </div>
-                <h4 className="font-bold text-[#000080] mb-2 text-lg">For Regular People</h4>
-                <p className="text-sm text-slate-500 font-medium">We write for hardworking Americans, not Wall Street insiders.</p>
+                <h4 className="font-bold text-[#F6F4EF] mb-2 text-lg">For Regular People</h4>
+                <p className="text-sm text-[#A8A39A] font-medium">We write for hardworking Americans, not Wall Street insiders.</p>
               </div>
               <div className="text-center group">
                 <div className="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-100 transition-colors">
                   <Heart className="h-6 w-6 text-amber-600" />
                 </div>
-                <h4 className="font-bold text-[#000080] mb-2 text-lg">Your Interests First</h4>
-                <p className="text-sm text-slate-500 font-medium">We only recommend companies we'd trust with our own family's retirement.</p>
+                <h4 className="font-bold text-[#F6F4EF] mb-2 text-lg">Your Interests First</h4>
+                <p className="text-sm text-[#A8A39A] font-medium">We only recommend companies we'd trust with our own family's retirement.</p>
               </div>
             </div>
           </div>
@@ -108,9 +108,9 @@ export function DeepWhySection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-center mt-12"
           >
-            <p className="text-slate-500 italic text-xl font-serif font-medium">
+            <p className="text-[#A8A39A] italic text-xl font-serif font-medium">
               "The best time to protect your wealth was 10 years ago.<br />
-              The second best time is <span className="text-[#B22234] font-bold not-italic">today</span>."
+              The second best time is <span className="text-[#D4A94E] font-bold not-italic">today</span>."
             </p>
           </motion.div>
         </motion.div>

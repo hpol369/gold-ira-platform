@@ -245,32 +245,32 @@ export default function SilverProductsHubPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#3F4460] rounded-full text-[#D0CCC4] font-semibold text-sm mb-6">
               <Layers className="h-4 w-4" />
               SILVER BUYER&apos;S GUIDE
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#F6F4EF] mb-6">
               Silver Products Guide
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto mb-8">
               From 1000 oz institutional bars to constitutional junk silver,
               understand every type of silver product before you invest.
               Compare premiums, liquidity, and storage requirements.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-600">
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-[#D0CCC4]">
               <span className="flex items-center gap-2">
-                <Scale className="h-4 w-4 text-slate-600" />
+                <Scale className="h-4 w-4 text-[#D0CCC4]" />
                 15 Product Types Covered
               </span>
               <span className="flex items-center gap-2">
-                <BarChart3 className="h-4 w-4 text-slate-600" />
+                <BarChart3 className="h-4 w-4 text-[#D0CCC4]" />
                 Premium Comparisons
               </span>
               <span className="flex items-center gap-2">
-                <Building2 className="h-4 w-4 text-slate-600" />
+                <Building2 className="h-4 w-4 text-[#D0CCC4]" />
                 IRA Eligibility Info
               </span>
             </div>
@@ -282,7 +282,7 @@ export default function SilverProductsHubPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
               Silver Products by Category
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -291,15 +291,15 @@ export default function SilverProductsHubPage() {
                 return (
                   <div
                     key={category.name}
-                    className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6"
+                    className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6"
                   >
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 bg-[#B22234]/10 rounded-lg flex items-center justify-center">
-                        <CategoryIcon className="h-5 w-5 text-slate-600" />
+                      <div className="w-10 h-10 bg-[rgba(220,38,38,0.1)] rounded-lg flex items-center justify-center">
+                        <CategoryIcon className="h-5 w-5 text-[#D0CCC4]" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-bold text-slate-900">{category.name}</h3>
-                        <p className="text-sm text-slate-600">{category.description}</p>
+                        <h3 className="text-lg font-bold text-[#F6F4EF]">{category.name}</h3>
+                        <p className="text-sm text-[#D0CCC4]">{category.description}</p>
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -310,12 +310,12 @@ export default function SilverProductsHubPage() {
                           <Link
                             key={slug}
                             href={`/silver-products/${slug}`}
-                            className="flex items-center justify-between p-3 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors group"
+                            className="flex items-center justify-between p-3 bg-[#0C0D18] rounded-lg hover:bg-[#1E2134] transition-colors group"
                           >
-                            <span className="text-slate-600 group-hover:text-slate-900 transition-colors">
+                            <span className="text-[#D0CCC4] group-hover:text-[#F6F4EF] transition-colors">
                               {product.title}
                             </span>
-                            <ArrowRight className="h-4 w-4 text-slate-600 group-hover:text-slate-600 transition-colors" />
+                            <ArrowRight className="h-4 w-4 text-[#D0CCC4] group-hover:text-[#F6F4EF] transition-colors" />
                           </Link>
                         );
                       })}
@@ -329,13 +329,13 @@ export default function SilverProductsHubPage() {
       </section>
 
       {/* All Products Grid */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4">
               All Silver Products
             </h2>
-            <p className="text-slate-600 text-center mb-12 max-w-2xl mx-auto">
+            <p className="text-[#D0CCC4] text-center mb-12 max-w-2xl mx-auto">
               Explore our complete guides to every major silver product type.
               Each guide includes specifications, premium analysis, and buying recommendations.
             </p>
@@ -346,42 +346,42 @@ export default function SilverProductsHubPage() {
                   <Link
                     key={product.slug}
                     href={`/silver-products/${product.slug}`}
-                    className={`group bg-slate-50 backdrop-blur-sm border rounded-xl p-6 hover:bg-slate-100 transition-all ${
+                    className={`group bg-[#0C0D18] backdrop-blur-sm border rounded-xl p-6 hover:bg-[#1E2134] transition-all ${
                       product.highlight
-                        ? "border-slate-300 hover:border-slate-400/50"
-                        : "border-slate-200 hover:border-slate-300"
+                        ? "border-[#3F4460] hover:border-[#3F4460]/50"
+                        : "border-[#2A2D42] hover:border-[#3F4460]"
                     }`}
                   >
                     <div className="flex items-start gap-4">
                       <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${
                         product.highlight
-                          ? "bg-[#B22234]/10"
-                          : "bg-slate-100"
+                          ? "bg-[rgba(220,38,38,0.1)]"
+                          : "bg-[#121423]"
                       }`}>
                         <Icon className={`h-6 w-6 ${
-                          product.highlight ? "text-slate-600" : "text-slate-600"
+                          product.highlight ? "text-[#D0CCC4]" : "text-[#D0CCC4]"
                         }`} />
                       </div>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 transition-colors">
+                          <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#F6F4EF] transition-colors">
                             {product.title}
                           </h3>
                           {product.highlight && (
-                            <span className="text-xs bg-[#B22234]/10 text-slate-600 px-2 py-0.5 rounded">
+                            <span className="text-xs bg-[rgba(220,38,38,0.1)] text-[#D0CCC4] px-2 py-0.5 rounded">
                               Popular
                             </span>
                           )}
                         </div>
-                        <p className="text-slate-600 text-sm mb-2">
+                        <p className="text-[#D0CCC4] text-sm mb-2">
                           {product.description}
                         </p>
-                        <span className="text-xs text-slate-600">
+                        <span className="text-xs text-[#D0CCC4]">
                           {product.keywords}
                         </span>
                       </div>
                     </div>
-                    <div className="flex items-center gap-1 mt-4 text-slate-600 group-hover:text-slate-600 transition-colors text-sm">
+                    <div className="flex items-center gap-1 mt-4 text-[#D0CCC4] group-hover:text-[#F6F4EF] transition-colors text-sm">
                       Read Guide
                       <ArrowRight className="h-4 w-4" />
                     </div>
@@ -397,60 +397,60 @@ export default function SilverProductsHubPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Silver Premium Quick Reference
             </h2>
-            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden">
+            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl overflow-hidden">
               <table className="w-full">
-                <thead className="bg-slate-50">
+                <thead className="bg-[#0C0D18]">
                   <tr>
-                    <th className="text-left p-4 text-slate-900 font-bold">Product Type</th>
-                    <th className="text-center p-4 text-slate-900 font-bold">Typical Premium</th>
-                    <th className="text-center p-4 text-slate-900 font-bold">Min. Investment</th>
-                    <th className="text-center p-4 text-slate-900 font-bold">IRA Eligible</th>
+                    <th className="text-left p-4 text-[#F6F4EF] font-bold">Product Type</th>
+                    <th className="text-center p-4 text-[#F6F4EF] font-bold">Typical Premium</th>
+                    <th className="text-center p-4 text-[#F6F4EF] font-bold">Min. Investment</th>
+                    <th className="text-center p-4 text-[#F6F4EF] font-bold">IRA Eligible</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200">
+                <tbody className="divide-y divide-[#2A2D42]">
                   <tr>
-                    <td className="p-4 text-slate-600">1000 oz Bar</td>
+                    <td className="p-4 text-[#D0CCC4]">1000 oz Bar</td>
                     <td className="p-4 text-center text-green-400">1-3%</td>
-                    <td className="p-4 text-center text-slate-600">$25,000+</td>
+                    <td className="p-4 text-center text-[#D0CCC4]">$25,000+</td>
                     <td className="p-4 text-center text-green-400">Yes*</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-slate-600">Kilo Bar</td>
+                    <td className="p-4 text-[#D0CCC4]">Kilo Bar</td>
                     <td className="p-4 text-center text-green-400">3-5%</td>
-                    <td className="p-4 text-center text-slate-600">$800+</td>
+                    <td className="p-4 text-center text-[#D0CCC4]">$800+</td>
                     <td className="p-4 text-center text-green-400">Yes*</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-slate-600">Silver Krugerrand</td>
-                    <td className="p-4 text-center text-[#B22234]">8-12%</td>
-                    <td className="p-4 text-center text-slate-600">$30+</td>
+                    <td className="p-4 text-[#D0CCC4]">Silver Krugerrand</td>
+                    <td className="p-4 text-center text-[#D4A94E]">8-12%</td>
+                    <td className="p-4 text-center text-[#D0CCC4]">$30+</td>
                     <td className="p-4 text-center text-green-400">Yes</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-slate-600">Perth Mint</td>
-                    <td className="p-4 text-center text-[#B22234]">6-10%</td>
-                    <td className="p-4 text-center text-slate-600">$30+</td>
+                    <td className="p-4 text-[#D0CCC4]">Perth Mint</td>
+                    <td className="p-4 text-center text-[#D4A94E]">6-10%</td>
+                    <td className="p-4 text-center text-[#D0CCC4]">$30+</td>
                     <td className="p-4 text-center text-green-400">Yes</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-slate-600">Constitutional Silver</td>
-                    <td className="p-4 text-center text-[#B22234]">5-15%</td>
-                    <td className="p-4 text-center text-slate-600">$20+</td>
+                    <td className="p-4 text-[#D0CCC4]">Constitutional Silver</td>
+                    <td className="p-4 text-center text-[#D4A94E]">5-15%</td>
+                    <td className="p-4 text-center text-[#D0CCC4]">$20+</td>
                     <td className="p-4 text-center text-red-400">No</td>
                   </tr>
                   <tr>
-                    <td className="p-4 text-slate-600">PSLV / SLV</td>
+                    <td className="p-4 text-[#D0CCC4]">PSLV / SLV</td>
                     <td className="p-4 text-center text-green-400">0% (expense ratio)</td>
-                    <td className="p-4 text-center text-slate-600">$10+</td>
-                    <td className="p-4 text-center text-[#B22234]">N/A</td>
+                    <td className="p-4 text-center text-[#D0CCC4]">$10+</td>
+                    <td className="p-4 text-center text-[#D4A94E]">N/A</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-slate-600 mt-4 text-center">
+            <p className="text-xs text-[#D0CCC4] mt-4 text-center">
               *Must meet .999 purity and be from approved refiner. Premiums vary by market conditions.
             </p>
           </div>
@@ -458,25 +458,25 @@ export default function SilverProductsHubPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>

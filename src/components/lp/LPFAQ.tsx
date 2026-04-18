@@ -55,7 +55,7 @@ export function LPFAQ({ headline, faqs, className }: LPFAQProps) {
                   openIndex === index ? "max-h-[60vh] md:max-h-[500px]" : "max-h-0"
                 )}
               >
-                <div className="px-5 pb-5 text-slate-200 text-base md:text-lg leading-relaxed">{faq.answer}</div>
+                <div className="px-5 pb-5 text-[#3F4460] text-base md:text-lg leading-relaxed">{faq.answer}</div>
               </div>
             </div>
           ))}

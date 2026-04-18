@@ -55,13 +55,13 @@ export function NewsletterSignup({
   // Inline variant - compact for sidebar/within content
   if (variant === "inline") {
     return (
-      <div className={cn("bg-slate-50 border border-slate-200 rounded-xl p-5", className)}>
-        <div className="flex items-center gap-2 text-[#B22234] font-semibold text-sm mb-2">
+      <div className={cn("bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-5", className)}>
+        <div className="flex items-center gap-2 text-[#D4A94E] font-semibold text-sm mb-2">
           <Mail className="h-4 w-4" />
           FREE NEWSLETTER
         </div>
-        <h4 className="font-bold text-[#000080] mb-2">{headline || defaultHeadline}</h4>
-        <p className="text-slate-500 text-sm mb-4">{description || "Weekly gold market insights delivered to your inbox."}</p>
+        <h4 className="font-bold text-[#F6F4EF] mb-2">{headline || defaultHeadline}</h4>
+        <p className="text-[#A8A39A] text-sm mb-4">{description || "Weekly gold market insights delivered to your inbox."}</p>
 
         {status === "success" ? (
           <div className="flex items-center gap-2 text-green-600 text-sm">
@@ -75,12 +75,12 @@ export function NewsletterSignup({
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="w-full px-4 py-2 bg-white border border-slate-200 rounded-lg text-slate-900 placeholder-slate-500 text-sm focus:outline-none focus:border-[#B22234]"
+              className="w-full px-4 py-2 bg-[#161828] border border-[#2A2D42] rounded-lg text-[#F6F4EF] placeholder-slate-500 text-sm focus:outline-none focus:border-[#B22234]"
             />
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full px-4 py-2 bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-[#B22234]/50 text-white font-semibold rounded-lg text-sm transition-colors flex items-center justify-center gap-2"
+              className="w-full px-4 py-2 bg-[#DC2626] hover:bg-[#991B1B] disabled:bg-[rgba(220,38,38,0.06)]0 text-white font-semibold rounded-lg text-sm transition-colors flex items-center justify-center gap-2"
             >
               {status === "loading" ? (
                 <Loader2 className="h-4 w-4 animate-spin" />
@@ -106,14 +106,14 @@ export function NewsletterSignup({
       <div className={cn("bg-gradient-to-r from-[#B22234]/10 to-[#B22234]/5 border border-[#B22234]/20 rounded-2xl p-6 md:p-8", className)}>
         <div className="flex flex-col md:flex-row md:items-center gap-6">
           <div className="flex-1">
-            <div className="flex items-center gap-2 text-[#B22234] font-semibold text-sm mb-2">
+            <div className="flex items-center gap-2 text-[#D4A94E] font-semibold text-sm mb-2">
               <Mail className="h-4 w-4" />
               FREE WEEKLY NEWSLETTER
             </div>
-            <h3 className="text-xl md:text-2xl font-bold text-[#000080] mb-2">
+            <h3 className="text-xl md:text-2xl font-bold text-[#F6F4EF] mb-2">
               {headline || defaultHeadline}
             </h3>
-            <p className="text-slate-600 text-sm">
+            <p className="text-[#D0CCC4] text-sm">
               {description || defaultDescription}
             </p>
           </div>
@@ -130,12 +130,12 @@ export function NewsletterSignup({
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-500 focus:outline-none focus:border-[#B22234]"
+                className="flex-1 px-4 py-3 bg-[#161828] border border-[#2A2D42] rounded-xl text-[#F6F4EF] placeholder-slate-500 focus:outline-none focus:border-[#B22234]"
               />
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="px-6 py-3 bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-[#B22234]/50 text-white font-bold rounded-xl transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
+                className="px-6 py-3 bg-[#DC2626] hover:bg-[#991B1B] disabled:bg-[rgba(220,38,38,0.06)]0 text-white font-bold rounded-xl transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
               >
                 {status === "loading" ? (
                   <Loader2 className="h-5 w-5 animate-spin" />
@@ -158,14 +158,14 @@ export function NewsletterSignup({
 
   // Default variant - full card
   return (
-    <div className={cn("bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-2xl p-8 text-center", className)}>
-      <div className="w-16 h-16 bg-[#B22234]/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-        <Mail className="h-8 w-8 text-[#B22234]" />
+    <div className={cn("bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8 text-center", className)}>
+      <div className="w-16 h-16 bg-[rgba(220,38,38,0.1)] rounded-2xl flex items-center justify-center mx-auto mb-6">
+        <Mail className="h-8 w-8 text-[#D4A94E]" />
       </div>
-      <h3 className="text-2xl font-bold text-[#000080] mb-3">
+      <h3 className="text-2xl font-bold text-[#F6F4EF] mb-3">
         {headline || defaultHeadline}
       </h3>
-      <p className="text-slate-500 mb-6 max-w-md mx-auto">
+      <p className="text-[#A8A39A] mb-6 max-w-md mx-auto">
         {description || defaultDescription}
       </p>
 
@@ -181,7 +181,7 @@ export function NewsletterSignup({
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email address"
-            className="w-full px-5 py-4 bg-white border border-slate-200 rounded-xl text-slate-900 placeholder-slate-500 text-center focus:outline-none focus:border-[#B22234]"
+            className="w-full px-5 py-4 bg-[#161828] border border-[#2A2D42] rounded-xl text-[#F6F4EF] placeholder-slate-500 text-center focus:outline-none focus:border-[#B22234]"
           />
           <button
             type="submit"
@@ -200,7 +200,7 @@ export function NewsletterSignup({
               {errorMessage}
             </p>
           )}
-          <p className="text-slate-500 text-xs">
+          <p className="text-[#A8A39A] text-xs">
             No spam. Unsubscribe anytime.
           </p>
         </form>

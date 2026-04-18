@@ -161,34 +161,34 @@ export default function SilverStackingGuidePage() {
 
             <div className="flex-grow">
                 {/* Hero Header */}
-                <header className="bg-slate-50 text-slate-900 py-16 md:py-20 relative overflow-hidden border-b border-slate-200">
+                <header className="bg-[#0C0D18] text-[#F6F4EF] py-16 md:py-20 relative overflow-hidden border-b border-[#2A2D42]">
                     <div className="absolute inset-0 pointer-events-none">
-                        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-white rounded-full blur-[150px]" />
-                        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-white rounded-full blur-[100px]" />
+                        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[rgba(197,149,46,0.12)] rounded-full blur-[150px]" />
+                        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[rgba(197,149,46,0.12)] rounded-full blur-[100px]" />
                     </div>
                     <Container className="relative z-10">
                         <div className="max-w-3xl">
-                            <div className="flex items-center gap-2 text-slate-600 font-bold tracking-widest uppercase text-xs mb-4">
+                            <div className="flex items-center gap-2 text-[#D0CCC4] font-bold tracking-widest uppercase text-xs mb-4">
                                 <Layers className="h-4 w-4" />
                                 Beginner&apos;s Guide
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#000080]">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#F6F4EF]">
                                 Silver Stacking Guide
                             </h1>
-                            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+                            <p className="text-xl text-[#D0CCC4] leading-relaxed mb-8">
                                 The complete guide to building your silver stack. Learn what to buy, how much to pay, and strategies for accumulating silver over time.
                             </p>
                             <div className="flex flex-wrap gap-4 text-sm">
-                                <div className="flex items-center gap-2 bg-slate-50 backdrop-blur-sm px-4 py-2 rounded-lg border border-slate-200">
-                                    <Coins className="h-4 w-4 text-slate-600" />
+                                <div className="flex items-center gap-2 bg-[#0C0D18] backdrop-blur-sm px-4 py-2 rounded-lg border border-[#2A2D42]">
+                                    <Coins className="h-4 w-4 text-[#D0CCC4]" />
                                     <span>Physical Silver</span>
                                 </div>
-                                <div className="flex items-center gap-2 bg-slate-50 backdrop-blur-sm px-4 py-2 rounded-lg border border-slate-200">
+                                <div className="flex items-center gap-2 bg-[#0C0D18] backdrop-blur-sm px-4 py-2 rounded-lg border border-[#2A2D42]">
                                     <Target className="h-4 w-4 text-green-700" />
                                     <span>Low Premium Focus</span>
                                 </div>
-                                <div className="flex items-center gap-2 bg-slate-50 backdrop-blur-sm px-4 py-2 rounded-lg border border-slate-200">
-                                    <TrendingUp className="h-4 w-4 text-[#B22234]" />
+                                <div className="flex items-center gap-2 bg-[#0C0D18] backdrop-blur-sm px-4 py-2 rounded-lg border border-[#2A2D42]">
+                                    <TrendingUp className="h-4 w-4 text-[#D4A94E]" />
                                     <span>Long-Term Strategy</span>
                                 </div>
                             </div>
@@ -204,7 +204,7 @@ export default function SilverStackingGuidePage() {
                         </aside>
 
                         {/* Content */}
-                        <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                        <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                             {/* What Is Stacking */}
                             <section id="what-is-stacking" className="scroll-mt-32">
@@ -232,32 +232,32 @@ export default function SilverStackingGuidePage() {
                                     <div className="p-3 bg-green-500/20 rounded-lg text-green-700">
                                         <ShieldCheck className="w-6 h-6" />
                                     </div>
-                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Why Stack Silver?</h2>
+                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Why Stack Silver?</h2>
                                 </div>
                                 <p>
                                     Stackers are motivated by various factors, but several themes are common:
                                 </p>
 
                                 <div className="grid md:grid-cols-2 gap-6 not-prose my-8">
-                                    <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                        <Scale className="w-8 h-8 text-[#B22234] mb-4" />
-                                        <h4 className="font-bold text-slate-900 text-lg mb-2">Undervalued vs Gold</h4>
-                                        <p className="text-sm text-slate-600">The silver-to-gold ratio suggests silver is historically cheap compared to gold. Many stackers believe silver has more upside potential.</p>
+                                    <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                        <Scale className="w-8 h-8 text-[#D4A94E] mb-4" />
+                                        <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Undervalued vs Gold</h4>
+                                        <p className="text-sm text-[#D0CCC4]">The silver-to-gold ratio suggests silver is historically cheap compared to gold. Many stackers believe silver has more upside potential.</p>
                                     </div>
-                                    <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
+                                    <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
                                         <ShieldCheck className="w-8 h-8 text-green-600 mb-4" />
-                                        <h4 className="font-bold text-slate-900 text-lg mb-2">No Counterparty Risk</h4>
-                                        <p className="text-sm text-slate-600">Physical silver isn&apos;t someone else&apos;s liability. It can&apos;t be defaulted on, hacked, or frozen by a third party.</p>
+                                        <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">No Counterparty Risk</h4>
+                                        <p className="text-sm text-[#D0CCC4]">Physical silver isn&apos;t someone else&apos;s liability. It can&apos;t be defaulted on, hacked, or frozen by a third party.</p>
                                     </div>
-                                    <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
+                                    <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
                                         <TrendingUp className="w-8 h-8 text-blue-600 mb-4" />
-                                        <h4 className="font-bold text-slate-900 text-lg mb-2">Industrial Demand</h4>
-                                        <p className="text-sm text-slate-600">Over 50% of silver is used in industry. Solar panels, electronics, and EVs all require silver—and demand is growing.</p>
+                                        <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Industrial Demand</h4>
+                                        <p className="text-sm text-[#D0CCC4]">Over 50% of silver is used in industry. Solar panels, electronics, and EVs all require silver—and demand is growing.</p>
                                     </div>
-                                    <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                        <Coins className="w-8 h-8 text-slate-600 mb-4" />
-                                        <h4 className="font-bold text-slate-900 text-lg mb-2">Affordable Entry</h4>
-                                        <p className="text-sm text-slate-600">Unlike gold, you can start stacking silver with $50-100. It&apos;s accessible to virtually anyone.</p>
+                                    <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                        <Coins className="w-8 h-8 text-[#D0CCC4] mb-4" />
+                                        <h4 className="font-bold text-[#F6F4EF] text-lg mb-2">Affordable Entry</h4>
+                                        <p className="text-sm text-[#D0CCC4]">Unlike gold, you can start stacking silver with $50-100. It&apos;s accessible to virtually anyone.</p>
                                     </div>
                                 </div>
                             </section>
@@ -265,10 +265,10 @@ export default function SilverStackingGuidePage() {
                             {/* Best Silver to Stack */}
                             <section id="best-silver" className="scroll-mt-32">
                                 <div className="flex items-center gap-4 mb-4 not-prose">
-                                    <div className="p-3 bg-[#B22234]/10 rounded-lg text-slate-600">
+                                    <div className="p-3 bg-[rgba(220,38,38,0.1)] rounded-lg text-[#D0CCC4]">
                                         <Coins className="w-6 h-6" />
                                     </div>
-                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Best Silver to Stack</h2>
+                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Best Silver to Stack</h2>
                                 </div>
                                 <p>
                                     Not all silver is created equal for stacking purposes. Your focus should evolve as your stack grows:
@@ -297,18 +297,18 @@ export default function SilverStackingGuidePage() {
                                                     }}>
                                                         {tier.tier} Tier
                                                     </span>
-                                                    <span className="text-slate-600 text-sm">({tier.ounces})</span>
+                                                    <span className="text-[#D0CCC4] text-sm">({tier.ounces})</span>
                                                 </div>
-                                                <span className="text-slate-900 font-medium">{tier.focus}</span>
+                                                <span className="text-[#F6F4EF] font-medium">{tier.focus}</span>
                                             </div>
                                             <div className="flex flex-wrap gap-2 mb-4">
                                                 {tier.products.map((product, idx) => (
-                                                    <span key={idx} className="bg-slate-100 text-slate-600 px-3 py-1 rounded-full text-sm">
+                                                    <span key={idx} className="bg-[#121423] text-[#D0CCC4] px-3 py-1 rounded-full text-sm">
                                                         {product}
                                                     </span>
                                                 ))}
                                             </div>
-                                            <p className="text-slate-600 text-sm">{tier.reason}</p>
+                                            <p className="text-[#D0CCC4] text-sm">{tier.reason}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -324,16 +324,16 @@ export default function SilverStackingGuidePage() {
                                     <div className="p-3 bg-purple-500/20 rounded-lg text-purple-700">
                                         <Target className="w-6 h-6" />
                                     </div>
-                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Stacking Strategies</h2>
+                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Stacking Strategies</h2>
                                 </div>
 
                                 <h3>Dollar-Cost Averaging (DCA)</h3>
                                 <p>
                                     The most popular stacking strategy. Buy a fixed dollar amount of silver regularly (weekly, bi-weekly, or monthly) regardless of price. This averages out your cost basis over time and removes the stress of timing the market.
                                 </p>
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 not-prose mb-6">
-                                    <p className="text-sm text-slate-600">
-                                        <strong className="text-slate-900">Example:</strong> Invest $200/month in silver. When silver is $25/oz, you get 8 oz. When it&apos;s $20/oz, you get 10 oz. Over time, your average cost smooths out.
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4 not-prose mb-6">
+                                    <p className="text-sm text-[#D0CCC4]">
+                                        <strong className="text-[#F6F4EF]">Example:</strong> Invest $200/month in silver. When silver is $25/oz, you get 8 oz. When it&apos;s $20/oz, you get 10 oz. Over time, your average cost smooths out.
                                     </p>
                                 </div>
 
@@ -356,40 +356,40 @@ export default function SilverStackingGuidePage() {
                             {/* Understanding Premiums */}
                             <section id="premiums" className="scroll-mt-32">
                                 <div className="flex items-center gap-4 mb-4 not-prose">
-                                    <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
+                                    <div className="p-3 bg-[rgba(220,38,38,0.18)] rounded-lg text-[#D4A94E]">
                                         <Calculator className="w-6 h-6" />
                                     </div>
-                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Understanding Premiums</h2>
+                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Understanding Premiums</h2>
                                 </div>
                                 <p>
                                     The <strong>premium</strong> is the markup over the spot price of silver. It covers minting costs, dealer margins, and market demand. Premiums vary significantly by product type:
                                 </p>
 
-                                <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 not-prose my-8">
-                                    <h4 className="font-bold text-slate-900 mb-4">Typical Silver Premiums (2026)</h4>
+                                <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42] not-prose my-8">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-4">Typical Silver Premiums (2026)</h4>
                                     <div className="space-y-3">
                                         <div className="flex justify-between items-center">
-                                            <span className="text-slate-600">100 oz Silver Bars</span>
+                                            <span className="text-[#D0CCC4]">100 oz Silver Bars</span>
                                             <span className="text-green-600 font-bold">5-10% over spot</span>
                                         </div>
                                         <div className="flex justify-between items-center">
-                                            <span className="text-slate-600">10 oz Silver Bars</span>
+                                            <span className="text-[#D0CCC4]">10 oz Silver Bars</span>
                                             <span className="text-green-600 font-bold">8-12% over spot</span>
                                         </div>
                                         <div className="flex justify-between items-center">
-                                            <span className="text-slate-600">Generic Rounds (1 oz)</span>
+                                            <span className="text-[#D0CCC4]">Generic Rounds (1 oz)</span>
                                             <span className="text-green-600 font-bold">10-15% over spot</span>
                                         </div>
                                         <div className="flex justify-between items-center">
-                                            <span className="text-slate-600">Canadian Maple Leafs</span>
-                                            <span className="text-[#B22234] font-bold">15-25% over spot</span>
+                                            <span className="text-[#D0CCC4]">Canadian Maple Leafs</span>
+                                            <span className="text-[#D4A94E] font-bold">15-25% over spot</span>
                                         </div>
                                         <div className="flex justify-between items-center">
-                                            <span className="text-slate-600">American Silver Eagles</span>
+                                            <span className="text-[#D0CCC4]">American Silver Eagles</span>
                                             <span className="text-red-600 font-bold">25-40% over spot</span>
                                         </div>
                                     </div>
-                                    <p className="text-xs text-slate-600 mt-4">*Premiums fluctuate based on market conditions and silver availability</p>
+                                    <p className="text-xs text-[#D0CCC4] mt-4">*Premiums fluctuate based on market conditions and silver availability</p>
                                 </div>
 
                                 <p>
@@ -398,11 +398,11 @@ export default function SilverStackingGuidePage() {
                             </section>
 
                             {/* Mid-article CTA */}
-                            <div className="my-12 bg-white rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose border border-slate-200">
+                            <div className="my-12 bg-[#161828] rounded-2xl p-8 text-[#F6F4EF] text-center relative overflow-hidden not-prose border border-[#2A2D42]">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Stack Silver With Tax Advantages</h3>
-                                    <p className="mb-6 text-slate-600">A Silver IRA lets you build your silver stack inside a tax-advantaged retirement account.</p>
-                                    <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white" size="lg" asChild>
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Stack Silver With Tax Advantages</h3>
+                                    <p className="mb-6 text-[#D0CCC4]">A Silver IRA lets you build your silver stack inside a tax-advantaged retirement account.</p>
+                                    <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white" size="lg" asChild>
                                         <Link href="/best-silver-ira-companies">Compare Silver IRA Companies <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                     </Button>
                                 </div>
@@ -416,9 +416,9 @@ export default function SilverStackingGuidePage() {
                                 </p>
 
                                 <div className="space-y-4 not-prose my-8">
-                                    <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                        <h4 className="font-bold text-slate-900 mb-2">Home Storage</h4>
-                                        <p className="text-sm text-slate-600 mb-3">Keep your silver in a safe, hidden location, or fireproof safe at home.</p>
+                                    <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                        <h4 className="font-bold text-[#F6F4EF] mb-2">Home Storage</h4>
+                                        <p className="text-sm text-[#D0CCC4] mb-3">Keep your silver in a safe, hidden location, or fireproof safe at home.</p>
                                         <div className="flex flex-wrap gap-4 text-xs">
                                             <span className="flex items-center gap-1 text-green-600"><CheckCircle2 className="h-3 w-3" /> Immediate access</span>
                                             <span className="flex items-center gap-1 text-green-600"><CheckCircle2 className="h-3 w-3" /> No storage fees</span>
@@ -427,9 +427,9 @@ export default function SilverStackingGuidePage() {
                                         </div>
                                     </div>
 
-                                    <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                        <h4 className="font-bold text-slate-900 mb-2">Bank Safe Deposit Box</h4>
-                                        <p className="text-sm text-slate-600 mb-3">Rent a box at your local bank to store your silver.</p>
+                                    <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                        <h4 className="font-bold text-[#F6F4EF] mb-2">Bank Safe Deposit Box</h4>
+                                        <p className="text-sm text-[#D0CCC4] mb-3">Rent a box at your local bank to store your silver.</p>
                                         <div className="flex flex-wrap gap-4 text-xs">
                                             <span className="flex items-center gap-1 text-green-600"><CheckCircle2 className="h-3 w-3" /> Bank-level security</span>
                                             <span className="flex items-center gap-1 text-green-600"><CheckCircle2 className="h-3 w-3" /> Low annual cost</span>
@@ -438,9 +438,9 @@ export default function SilverStackingGuidePage() {
                                         </div>
                                     </div>
 
-                                    <div className="p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                        <h4 className="font-bold text-slate-900 mb-2">Professional Vault Storage</h4>
-                                        <p className="text-sm text-slate-600 mb-3">Third-party vaults like Delaware Depository, Brinks, or IDS of Texas.</p>
+                                    <div className="p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                        <h4 className="font-bold text-[#F6F4EF] mb-2">Professional Vault Storage</h4>
+                                        <p className="text-sm text-[#D0CCC4] mb-3">Third-party vaults like Delaware Depository, Brinks, or IDS of Texas.</p>
                                         <div className="flex flex-wrap gap-4 text-xs">
                                             <span className="flex items-center gap-1 text-green-600"><CheckCircle2 className="h-3 w-3" /> Fully insured</span>
                                             <span className="flex items-center gap-1 text-green-600"><CheckCircle2 className="h-3 w-3" /> Required for IRAs</span>
@@ -461,14 +461,14 @@ export default function SilverStackingGuidePage() {
                                     <div className="p-3 bg-red-500/20 rounded-lg text-red-700">
                                         <AlertTriangle className="w-6 h-6" />
                                     </div>
-                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Common Stacking Mistakes</h2>
+                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Common Stacking Mistakes</h2>
                                 </div>
 
                                 <div className="space-y-4 not-prose my-8">
                                     {commonMistakes.map((item, index) => (
                                         <div key={index} className="p-4 rounded-xl bg-red-50 border border-red-200">
                                             <h4 className="font-bold text-red-600 mb-1">{item.mistake}</h4>
-                                            <p className="text-sm text-slate-600">{item.description}</p>
+                                            <p className="text-sm text-[#D0CCC4]">{item.description}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -477,10 +477,10 @@ export default function SilverStackingGuidePage() {
                             {/* Silver IRA */}
                             <section id="silver-ira" className="scroll-mt-32">
                                 <div className="flex items-center gap-4 mb-4 not-prose">
-                                    <div className="p-3 bg-[#B22234]/20 rounded-lg text-[#B22234]">
+                                    <div className="p-3 bg-[rgba(220,38,38,0.18)] rounded-lg text-[#D4A94E]">
                                         <Sparkles className="w-6 h-6" />
                                     </div>
-                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] m-0">Silver Stacking in an IRA</h2>
+                                    <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] m-0">Silver Stacking in an IRA</h2>
                                 </div>
                                 <p>
                                     For retirement-focused stackers, a Silver IRA combines the benefits of physical silver ownership with tax-advantaged growth:
@@ -507,13 +507,13 @@ export default function SilverStackingGuidePage() {
                                     {faqs.map((faq, index) => (
                                         <details
                                             key={index}
-                                            className="group bg-slate-50 rounded-xl border border-slate-200"
+                                            className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42]"
                                         >
-                                            <summary className="cursor-pointer p-6 font-semibold text-slate-900 flex justify-between items-center list-none">
+                                            <summary className="cursor-pointer p-6 font-semibold text-[#F6F4EF] flex justify-between items-center list-none">
                                                 {faq.question}
-                                                <span className="text-[#B22234] group-open:rotate-180 transition-transform">▼</span>
+                                                <span className="text-[#D4A94E] group-open:rotate-180 transition-transform">▼</span>
                                             </summary>
-                                            <div className="px-6 pb-6 text-slate-600">
+                                            <div className="px-6 pb-6 text-[#D0CCC4]">
                                                 {faq.answer}
                                             </div>
                                         </details>
@@ -529,21 +529,21 @@ export default function SilverStackingGuidePage() {
                 </Container>
 
                 {/* Related Content */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
-                        <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">Continue Your Silver Journey</h2>
+                        <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Continue Your Silver Journey</h2>
                         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                            <Link href="/learn/is-silver-a-good-investment" className="group bg-white border border-slate-200 rounded-xl p-6 hover:bg-slate-50 transition-colors">
-                                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Is Silver a Good Investment?</h3>
-                                <p className="text-sm text-slate-600">Analysis of silver&apos;s investment potential in 2026.</p>
+                            <Link href="/learn/is-silver-a-good-investment" className="group bg-[#161828] border border-[#2A2D42] rounded-xl p-6 hover:bg-[#121423] transition-colors">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Is Silver a Good Investment?</h3>
+                                <p className="text-sm text-[#D0CCC4]">Analysis of silver&apos;s investment potential in 2026.</p>
                             </Link>
-                            <Link href="/guide/ira-approved-silver" className="group bg-white border border-slate-200 rounded-xl p-6 hover:bg-slate-50 transition-colors">
-                                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">IRA-Approved Silver</h3>
-                                <p className="text-sm text-slate-600">Which silver qualifies for retirement accounts.</p>
+                            <Link href="/guide/ira-approved-silver" className="group bg-[#161828] border border-[#2A2D42] rounded-xl p-6 hover:bg-[#121423] transition-colors">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">IRA-Approved Silver</h3>
+                                <p className="text-sm text-[#D0CCC4]">Which silver qualifies for retirement accounts.</p>
                             </Link>
-                            <Link href="/best-silver-ira-companies" className="group bg-white border border-slate-200 rounded-xl p-6 hover:bg-slate-50 transition-colors">
-                                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Best Silver IRA Companies</h3>
-                                <p className="text-sm text-slate-600">Compare top silver IRA providers.</p>
+                            <Link href="/best-silver-ira-companies" className="group bg-[#161828] border border-[#2A2D42] rounded-xl p-6 hover:bg-[#121423] transition-colors">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Best Silver IRA Companies</h3>
+                                <p className="text-sm text-[#D0CCC4]">Compare top silver IRA providers.</p>
                             </Link>
                         </div>
                     </Container>

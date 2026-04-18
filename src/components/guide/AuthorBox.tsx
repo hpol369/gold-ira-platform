@@ -32,7 +32,7 @@ export function AuthorBox({
           >
             Thomas Richardson
           </Link>
-          <p className="text-slate-400 text-xs">20+ years in finance</p>
+          <p className="text-[#A8A39A] text-xs">20+ years in finance</p>
         </div>
       </div>
     );
@@ -61,10 +61,10 @@ export function AuthorBox({
             <p className="text-xs font-bold tracking-widest text-amber-400 uppercase">
               Written & Researched By
             </p>
-            <span className="hidden md:inline text-slate-600">•</span>
+            <span className="hidden md:inline text-[#D0CCC4]">•</span>
             <Link
               href="/about-us"
-              className="text-xs text-slate-400 hover:text-amber-400 transition-colors flex items-center gap-1 justify-center md:justify-start"
+              className="text-xs text-[#A8A39A] hover:text-amber-400 transition-colors flex items-center gap-1 justify-center md:justify-start"
             >
               Read my story
               <ExternalLink className="h-3 w-3" />
@@ -82,7 +82,7 @@ export function AuthorBox({
           </Link>
 
           {/* Bio */}
-          <p className="text-slate-400 mb-4 leading-relaxed text-sm md:text-base">
+          <p className="text-[#A8A39A] mb-4 leading-relaxed text-sm md:text-base">
             Former wealth manager turned Gold IRA researcher. After 20 years in
             finance, I got tired of watching scammers prey on retirees. Now I
             investigate companies and publish what I find—good or bad.
@@ -91,15 +91,15 @@ export function AuthorBox({
           {/* Credentials */}
           {showCredentials && (
             <div className="flex flex-wrap justify-center md:justify-start gap-2">
-              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-300 bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
+              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#3F4460] bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
                 <Briefcase className="h-3 w-3 text-amber-400" />
                 20+ Years Finance
               </span>
-              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-300 bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
+              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#3F4460] bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
                 <FileSearch className="h-3 w-3 text-amber-400" />
                 15+ Companies Investigated
               </span>
-              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-slate-300 bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
+              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-[#3F4460] bg-white/10 px-3 py-1.5 rounded-full border border-white/10">
                 <Shield className="h-3 w-3 text-green-400" />
                 Independent Research
               </span>
@@ -109,7 +109,7 @@ export function AuthorBox({
       </div>
 
       {/* Trust signals */}
-      <div className="mt-6 pt-6 border-t border-white/10 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-xs text-slate-500">
+      <div className="mt-6 pt-6 border-t border-white/10 flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-xs text-[#A8A39A]">
         <span className="flex items-center gap-1">
           <CheckCircle2 className="h-3 w-3 text-green-500" />
           Fact-checked content

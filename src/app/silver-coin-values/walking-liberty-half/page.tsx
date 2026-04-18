@@ -118,12 +118,12 @@ export default function WalkingLibertyHalfValuePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-coin-values"
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Silver Coin Values
@@ -132,30 +132,30 @@ export default function WalkingLibertyHalfValuePage() {
               <Star className="h-4 w-4" />
               LOW COMPETITION - 2,200 SEARCHES
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               Walking Liberty Half Dollar Value Guide
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mb-8">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mb-8">
               Called &quot;the most beautiful American coin ever minted,&quot; the Walking Liberty half dollar
               (1916-1947) is beloved by collectors and silver stackers alike. The design was so iconic
               that the US Mint revived it for the
-              <span className="text-[#B22234] font-semibold"> American Silver Eagle</span> in 1986.
+              <span className="text-[#D4A94E] font-semibold"> American Silver Eagle</span> in 1986.
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <Coins className="h-4 w-4 text-slate-600" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <Coins className="h-4 w-4 text-[#D0CCC4]" />
                 0.3617 oz Silver
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <History className="h-4 w-4 text-slate-600" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <History className="h-4 w-4 text-[#D0CCC4]" />
                 1916-1947
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
                 <TrendingUp className="h-4 w-4 text-green-400" />
                 ~$9 Melt Value
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <Award className="h-4 w-4 text-[#B22234]" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <Award className="h-4 w-4 text-[#D4A94E]" />
                 Most Beautiful Design
               </span>
             </div>
@@ -164,18 +164,18 @@ export default function WalkingLibertyHalfValuePage() {
       </section>
 
       {/* Design History */}
-      <section className="py-8 bg-white border-y border-slate-200">
+      <section className="py-8 bg-[#161828] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-blue-500/10 via-blue-500/5 to-transparent border-l-4 border-blue-500 rounded-r-xl p-6">
-              <h2 className="text-lg font-bold text-slate-900 mb-2">
+              <h2 className="text-lg font-bold text-[#F6F4EF] mb-2">
                 The Story Behind the Design
               </h2>
-              <p className="text-slate-600">
+              <p className="text-[#D0CCC4]">
                 In 1916, Treasury Secretary William McAdoo launched a competition to redesign American coinage.
                 Sculptor Adolph A. Weinman created the Walking Liberty design, showing Liberty striding confidently
                 toward the dawn with the American flag draped over her shoulders. The design symbolizes
-                <span className="text-[#B22234]"> freedom advancing toward a brighter future</span> - a message
+                <span className="text-[#D4A94E]"> freedom advancing toward a brighter future</span> - a message
                 that resonates even more today as paper currencies continue to lose purchasing power.
               </p>
             </div>
@@ -187,7 +187,7 @@ export default function WalkingLibertyHalfValuePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Key Dates to Look For
             </h2>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -203,13 +203,13 @@ export default function WalkingLibertyHalfValuePage() {
               ].map((coin, index) => (
                 <div
                   key={index}
-                  className="bg-slate-50 backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-4"
+                  className="bg-[#0C0D18] backdrop-blur-sm border border-[#B22234]/30 rounded-xl p-4"
                 >
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-lg font-bold text-[#B22234]">{coin.year}</h3>
+                    <h3 className="text-lg font-bold text-[#D4A94E]">{coin.year}</h3>
                     <span className="text-green-400 font-semibold">{coin.value}</span>
                   </div>
-                  <p className="text-slate-600 text-sm">{coin.why}</p>
+                  <p className="text-[#D0CCC4] text-sm">{coin.why}</p>
                 </div>
               ))}
             </div>
@@ -218,55 +218,55 @@ export default function WalkingLibertyHalfValuePage() {
       </section>
 
       {/* Value Chart */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4">
               Walking Liberty Half Dollar Values by Year
             </h2>
-            <p className="text-slate-600 text-center mb-8 max-w-2xl mx-auto">
+            <p className="text-[#D0CCC4] text-center mb-8 max-w-2xl mx-auto">
               Values in USD. Most circulated common dates trade at 10-30% above melt value.
               Key dates command significant premiums in all grades.
             </p>
-            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden overflow-x-auto">
+            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl overflow-hidden overflow-x-auto">
               <table className="w-full min-w-[900px] text-sm">
                 <thead className="bg-slate-800/80">
                   <tr>
-                    <th className="text-left p-3 text-slate-900 font-bold">Year</th>
-                    <th className="text-center p-3 text-slate-900 font-bold">Mint</th>
-                    <th className="text-center p-3 text-slate-600 text-xs">Mintage</th>
-                    <th className="text-center p-3 text-slate-600">G-4</th>
-                    <th className="text-center p-3 text-slate-600">VG-8</th>
-                    <th className="text-center p-3 text-slate-600">F-12</th>
-                    <th className="text-center p-3 text-slate-600">VF-20</th>
-                    <th className="text-center p-3 text-slate-600">XF-40</th>
-                    <th className="text-center p-3 text-slate-600">AU-50</th>
-                    <th className="text-center p-3 text-[#B22234]">MS-60</th>
-                    <th className="text-center p-3 text-[#B22234]">MS-65</th>
-                    <th className="text-left p-3 text-slate-600">Notes</th>
+                    <th className="text-left p-3 text-[#F6F4EF] font-bold">Year</th>
+                    <th className="text-center p-3 text-[#F6F4EF] font-bold">Mint</th>
+                    <th className="text-center p-3 text-[#D0CCC4] text-xs">Mintage</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">G-4</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">VG-8</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">F-12</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">VF-20</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">XF-40</th>
+                    <th className="text-center p-3 text-[#D0CCC4]">AU-50</th>
+                    <th className="text-center p-3 text-[#D4A94E]">MS-60</th>
+                    <th className="text-center p-3 text-[#D4A94E]">MS-65</th>
+                    <th className="text-left p-3 text-[#D0CCC4]">Notes</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200">
+                <tbody className="divide-y divide-[#2A2D42]">
                   {valueByYear.map((row, index) => (
-                    <tr key={index} className={row.notes.includes("Key") || row.notes.includes("Semi-key") ? "bg-[#B22234]/10" : ""}>
-                      <td className="p-3 text-slate-900 font-medium">{row.year}</td>
-                      <td className="p-3 text-center text-slate-600">{row.mint}</td>
-                      <td className="p-3 text-center text-slate-600 text-xs">{row.mintage}</td>
-                      <td className="p-3 text-center text-slate-600">${row.g}</td>
-                      <td className="p-3 text-center text-slate-600">${row.vg}</td>
-                      <td className="p-3 text-center text-slate-600">${row.f}</td>
-                      <td className="p-3 text-center text-slate-600">${row.vf}</td>
-                      <td className="p-3 text-center text-slate-600">${row.xf}</td>
-                      <td className="p-3 text-center text-slate-600">${row.au}</td>
+                    <tr key={index} className={row.notes.includes("Key") || row.notes.includes("Semi-key") ? "bg-[rgba(220,38,38,0.1)]" : ""}>
+                      <td className="p-3 text-[#F6F4EF] font-medium">{row.year}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">{row.mint}</td>
+                      <td className="p-3 text-center text-[#D0CCC4] text-xs">{row.mintage}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.g}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.vg}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.f}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.vf}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.xf}</td>
+                      <td className="p-3 text-center text-[#D0CCC4]">${row.au}</td>
                       <td className="p-3 text-center text-green-400">${row.ms60}</td>
-                      <td className="p-3 text-center text-[#B22234] font-semibold">${row.ms65.toLocaleString()}</td>
-                      <td className="p-3 text-slate-600 text-xs">{row.notes}</td>
+                      <td className="p-3 text-center text-[#D4A94E] font-semibold">${row.ms65.toLocaleString()}</td>
+                      <td className="p-3 text-[#D0CCC4] text-xs">{row.notes}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-slate-600 mt-4 text-center">
+            <p className="text-xs text-[#D0CCC4] mt-4 text-center">
               Values are approximate. S and D mintmarks for common years typically add 10-50% premium. Professional grading recommended for key dates.
             </p>
           </div>
@@ -277,74 +277,74 @@ export default function WalkingLibertyHalfValuePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               How to Grade Walking Liberty Halves
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-4">Key Grading Points - Obverse</h3>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Key Grading Points - Obverse</h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Liberty&apos;s Hand:</span> First area to show wear. Should have clear fingers in XF+.
+                      <span className="font-semibold text-[#F6F4EF]">Liberty&apos;s Hand:</span> First area to show wear. Should have clear fingers in XF+.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Head and Cap:</span> Liberty&apos;s head and cap lose detail quickly with wear.
+                      <span className="font-semibold text-[#F6F4EF]">Head and Cap:</span> Liberty&apos;s head and cap lose detail quickly with wear.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Center Skirt Lines:</span> Vertical lines should be visible in VF and higher.
+                      <span className="font-semibold text-[#F6F4EF]">Center Skirt Lines:</span> Vertical lines should be visible in VF and higher.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Breast and Arm:</span> High points that show early wear. Check for flatness.
+                      <span className="font-semibold text-[#F6F4EF]">Breast and Arm:</span> High points that show early wear. Check for flatness.
                     </div>
                   </li>
                 </ul>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-4">Key Grading Points - Reverse</h3>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Key Grading Points - Reverse</h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Eagle&apos;s Breast:</span> Feather detail is first to wear on reverse.
+                      <span className="font-semibold text-[#F6F4EF]">Eagle&apos;s Breast:</span> Feather detail is first to wear on reverse.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Wing Tips:</span> Should show feather separation in XF and higher.
+                      <span className="font-semibold text-[#F6F4EF]">Wing Tips:</span> Should show feather separation in XF and higher.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Leg Feathers:</span> Thigh feathers should be distinct in VF+.
+                      <span className="font-semibold text-[#F6F4EF]">Leg Feathers:</span> Thigh feathers should be distinct in VF+.
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Strike Quality:</span> Early dates often weakly struck, especially on centers.
+                      <span className="font-semibold text-[#F6F4EF]">Strike Quality:</span> Early dates often weakly struck, especially on centers.
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="mt-6 bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-4">
+            <div className="mt-6 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
-                <p className="text-slate-600 text-sm">
-                  <span className="font-semibold text-slate-900">Strike Weakness Note:</span> Many Walking Liberty halves,
+                <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
+                <p className="text-[#D0CCC4] text-sm">
+                  <span className="font-semibold text-[#F6F4EF]">Strike Weakness Note:</span> Many Walking Liberty halves,
                   especially San Francisco issues, have weak strikes on Liberty&apos;s hand and head. This is a
                   strike issue, not wear, but can affect value. Learn to distinguish strike weakness from circulation wear.
                 </p>
@@ -355,30 +355,30 @@ export default function WalkingLibertyHalfValuePage() {
       </section>
 
       {/* Mintmark Locations */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Mintmark Locations
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#B22234] mb-4">1916-1917: Obverse Mintmark</h3>
-                <p className="text-slate-600 mb-4">
-                  On early issues, the mintmark (D or S) appears on the <span className="text-slate-900 font-semibold">obverse</span>,
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#D4A94E] mb-4">1916-1917: Obverse Mintmark</h3>
+                <p className="text-[#D0CCC4] mb-4">
+                  On early issues, the mintmark (D or S) appears on the <span className="text-[#F6F4EF] font-semibold">obverse</span>,
                   below &quot;IN GOD WE TRUST&quot; near the lower rim.
                 </p>
-                <p className="text-sm text-slate-600">
+                <p className="text-sm text-[#D0CCC4]">
                   1917 coins exist with both obverse and reverse mintmarks - the obverse variety is scarcer.
                 </p>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#B22234] mb-4">1917-1947: Reverse Mintmark</h3>
-                <p className="text-slate-600 mb-4">
-                  From mid-1917 onward, the mintmark moved to the <span className="text-slate-900 font-semibold">reverse</span>,
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#D4A94E] mb-4">1917-1947: Reverse Mintmark</h3>
+                <p className="text-[#D0CCC4] mb-4">
+                  From mid-1917 onward, the mintmark moved to the <span className="text-[#F6F4EF] font-semibold">reverse</span>,
                   below the pine branch near &quot;HALF DOLLAR&quot;.
                 </p>
-                <p className="text-sm text-slate-600">
+                <p className="text-sm text-[#D0CCC4]">
                   Philadelphia coins have no mintmark. D = Denver, S = San Francisco.
                 </p>
               </div>
@@ -391,22 +391,22 @@ export default function WalkingLibertyHalfValuePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {schema.mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -417,33 +417,33 @@ export default function WalkingLibertyHalfValuePage() {
       </section>
 
       {/* Related Pages */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
+            <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
               Related Silver Coin Guides
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <Link
                 href="/silver-coin-values/morgan-dollar"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Morgan Dollar Values</h3>
-                <p className="text-sm text-slate-600">1878-1921 Morgan dollars</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Morgan Dollar Values</h3>
+                <p className="text-sm text-[#D0CCC4]">1878-1921 Morgan dollars</p>
               </Link>
               <Link
                 href="/silver-coin-values/melt-value-calculator"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Melt Value Calculator</h3>
-                <p className="text-sm text-slate-600">Calculate silver value instantly</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Melt Value Calculator</h3>
+                <p className="text-sm text-[#D0CCC4]">Calculate silver value instantly</p>
               </Link>
               <Link
                 href="/silver-coin-values/junk-silver"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Junk Silver Guide</h3>
-                <p className="text-sm text-slate-600">Constitutional silver coins</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Junk Silver Guide</h3>
+                <p className="text-sm text-[#D0CCC4]">Constitutional silver coins</p>
               </Link>
             </div>
           </div>

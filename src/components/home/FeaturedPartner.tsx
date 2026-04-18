@@ -15,10 +15,10 @@ export function FeaturedPartner() {
     };
 
     return (
-        <section className="py-16 md:py-20 bg-slate-50 border-b border-slate-200 relative overflow-hidden" id="featured-partner">
+        <section className="py-16 md:py-20 bg-[#0C0D18] border-b border-[#2A2D42] relative overflow-hidden" id="featured-partner">
             {/* Ambient red glow behind section */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[#B22234]/5 blur-[120px] rounded-full" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-[rgba(220,38,38,0.06)] blur-[120px] rounded-full" />
             </div>
 
             {/* Floating Orbs decoration */}
@@ -27,35 +27,35 @@ export function FeaturedPartner() {
             <Container className="relative z-10">
                 {/* Section Header */}
                 <div className="flex flex-col items-center text-center mb-10">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#B22234]/10 border border-[#B22234]/20 text-[#B22234] text-xs font-bold uppercase tracking-widest mb-4">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[rgba(220,38,38,0.1)] border border-[#B22234]/20 text-[#D4A94E] text-xs font-bold uppercase tracking-widest mb-4">
                         <Trophy className="w-3.5 h-3.5" />
                         Editor&apos;s Choice - 2026 Gold Standard
                     </div>
-                    <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#000080] mb-4">
-                        Our <span className="text-[#B22234] border-b-4 border-[#B22234]/30 drop-shadow-[0_0_20px_rgba(178,34,52,0.4)]">Top Pick</span> for 2026
+                    <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#F6F4EF] mb-4">
+                        Our <span className="text-[#D4A94E] border-b-4 border-[#B22234]/30 drop-shadow-[0_0_20px_rgba(178,34,52,0.4)]">Top Pick</span> for 2026
                     </h2>
-                    <p className="text-lg text-slate-500 max-w-2xl">
+                    <p className="text-lg text-[#A8A39A] max-w-2xl">
                         After reviewing fees, customer complaints, and service quality across the industry,
-                        Augusta Precious Metals earned our highest rating with <strong className="text-slate-900">zero BBB complaints</strong> in over 7 years.
+                        Augusta Precious Metals earned our highest rating with <strong className="text-[#F6F4EF]">zero BBB complaints</strong> in over 7 years.
                     </p>
                 </div>
 
                 {/* Main Card - Premium glass treatment */}
                 <div className="relative rounded-3xl overflow-hidden animate-fade-in-up max-w-5xl mx-auto
-                              bg-white border border-slate-200
+                              bg-[#161828] border border-[#2A2D42]
                               shadow-[0_8px_32px_rgba(0,0,0,0.1)]">
                     {/* Red decorative line */}
                     <div className="absolute top-0 w-full h-1 bg-gradient-to-r from-[#B22234]/50 via-[#B22234] to-[#B22234]/50" />
 
                     <div className="grid md:grid-cols-2 gap-0">
                         {/* Left Side: Visual/Brand */}
-                        <div className="bg-[#000080] text-white p-6 md:p-14 flex flex-col justify-center relative overflow-hidden ring-1 ring-slate-200">
+                        <div className="bg-[rgba(197,149,46,0.1)] text-white p-6 md:p-14 flex flex-col justify-center relative overflow-hidden ring-1 ring-slate-200">
                             {/* Radial Gradient for Depth */}
                             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#000080] via-[#000060] to-[#000040]"></div>
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 blur-[80px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.1)] blur-[80px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
 
                             <div className="relative z-10">
-                                <span className="text-[#B22234] font-bold tracking-widest uppercase text-sm mb-2 block drop-shadow-[0_0_20px_rgba(178,34,52,0.4)]">
+                                <span className="text-[#D4A94E] font-bold tracking-widest uppercase text-sm mb-2 block drop-shadow-[0_0_20px_rgba(178,34,52,0.4)]">
                                     #1 Rated Gold IRA Company
                                 </span>
                                 <h3 className="text-3xl md:text-5xl font-serif font-bold mb-6 leading-tight text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]">
@@ -64,36 +64,36 @@ export function FeaturedPartner() {
 
                                 <div className="space-y-4 mb-8">
                                     <div className="flex items-center gap-3">
-                                        <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-[#B22234] border border-white/20 shadow-[0_0_20px_rgba(178,34,52,0.2)]">
+                                        <div className="w-12 h-12 rounded-full bg-[rgba(197,149,46,0.14)]/10 flex items-center justify-center text-[#D4A94E] border border-white/20 shadow-[0_0_20px_rgba(178,34,52,0.2)]">
                                             <ShieldCheck className="w-6 h-6" />
                                         </div>
                                         <div>
                                             <div className="text-2xl font-bold font-serif">0</div>
-                                            <div className="text-xs text-slate-300 uppercase tracking-wide">BBB Complaints</div>
+                                            <div className="text-xs text-[#3F4460] uppercase tracking-wide">BBB Complaints</div>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-amber-700 border border-white/20 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+                                        <div className="w-12 h-12 rounded-full bg-[rgba(197,149,46,0.14)]/10 flex items-center justify-center text-amber-700 border border-white/20 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
                                             <Star className="w-6 h-6 fill-amber-400" />
                                         </div>
                                         <div>
                                             <div className="text-2xl font-bold font-serif">1000+</div>
-                                            <div className="text-xs text-slate-300 uppercase tracking-wide">5-Star Reviews</div>
+                                            <div className="text-xs text-[#3F4460] uppercase tracking-wide">5-Star Reviews</div>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-[#B22234] border border-white/20 shadow-[0_0_20px_rgba(178,34,52,0.2)]">
+                                        <div className="w-12 h-12 rounded-full bg-[rgba(197,149,46,0.14)]/10 flex items-center justify-center text-[#D4A94E] border border-white/20 shadow-[0_0_20px_rgba(178,34,52,0.2)]">
                                             <UserCheck className="w-6 h-6" />
                                         </div>
                                         <div>
                                             <div className="text-xl font-bold font-serif">Devlyn Steele</div>
-                                            <div className="text-xs text-slate-300 uppercase tracking-wide">On-Staff Harvard Economist</div>
+                                            <div className="text-xs text-[#3F4460] uppercase tracking-wide">On-Staff Harvard Economist</div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-3 text-sm text-slate-200">
-                                    <span className="text-[#B22234] font-bold">Best For:</span> Investors with $50,000+ wanting VIP service.
+                                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-3 text-sm text-[#3F4460]">
+                                    <span className="text-[#D4A94E] font-bold">Best For:</span> Investors with $50,000+ wanting VIP service.
                                 </div>
                             </div>
                         </div>
@@ -101,20 +101,20 @@ export function FeaturedPartner() {
                         {/* Right Side: Copy/Direct CTA */}
                         <div className="p-6 md:p-14 flex flex-col justify-center bg-white relative">
                             {/* Exclusive Banner - hidden on mobile, shown on md+ */}
-                            <div className="hidden md:flex absolute top-6 right-6 items-center gap-1.5 bg-[#B22234]/10 text-[#B22234] px-3 py-1 rounded-full text-xs font-bold border border-[#B22234]/20 shadow-sm">
+                            <div className="hidden md:flex absolute top-6 right-6 items-center gap-1.5 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-3 py-1 rounded-full text-xs font-bold border border-[#B22234]/20 shadow-sm">
                                 <Lock className="w-3 h-3" />
                                 Private Client Access ($50k Min)
                             </div>
                             {/* Mobile version - inline badge */}
-                            <div className="flex md:hidden items-center gap-1.5 bg-[#B22234]/10 text-[#B22234] px-3 py-1.5 rounded-full text-xs font-bold border border-[#B22234]/20 shadow-sm mb-4 w-fit">
+                            <div className="flex md:hidden items-center gap-1.5 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] px-3 py-1.5 rounded-full text-xs font-bold border border-[#B22234]/20 shadow-sm mb-4 w-fit">
                                 <Lock className="w-3 h-3" />
                                 $50k Minimum
                             </div>
 
-                            <h4 className="text-xl md:text-2xl font-bold text-[#000080] mb-4">
+                            <h4 className="text-xl md:text-2xl font-bold text-[#F6F4EF] mb-4">
                                 Education First, Not Sales Pressure
                             </h4>
-                            <p className="text-slate-600 mb-6 leading-relaxed">
+                            <p className="text-[#D0CCC4] mb-6 leading-relaxed">
                                 Augusta built their reputation on teaching, not selling. Request their free kit and you&apos;ll get a one-on-one web conference explaining how Gold IRAs work—no obligation, no hard sell.
                             </p>
 
@@ -124,19 +124,19 @@ export function FeaturedPartner() {
                                     <div className="mt-0.5 w-5 h-5 rounded-full bg-gradient-to-br from-[#B22234] to-[#8b1c2a] flex items-center justify-center shadow-[0_0_12px_rgba(178,34,52,0.5)]">
                                         <Check className="w-3 h-3 text-white" strokeWidth={3} />
                                     </div>
-                                    <span className="text-sm font-medium text-slate-600">Free web conference with their on-staff economist</span>
+                                    <span className="text-sm font-medium text-[#D0CCC4]">Free web conference with their on-staff economist</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <div className="mt-0.5 w-5 h-5 rounded-full bg-gradient-to-br from-[#B22234] to-[#8b1c2a] flex items-center justify-center shadow-[0_0_12px_rgba(178,34,52,0.5)]">
                                         <Check className="w-3 h-3 text-white" strokeWidth={3} />
                                     </div>
-                                    <span className="text-sm font-medium text-slate-600">Dedicated support from account setup through retirement</span>
+                                    <span className="text-sm font-medium text-[#D0CCC4]">Dedicated support from account setup through retirement</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <div className="mt-0.5 w-5 h-5 rounded-full bg-gradient-to-br from-[#B22234] to-[#8b1c2a] flex items-center justify-center shadow-[0_0_12px_rgba(178,34,52,0.5)]">
                                         <Check className="w-3 h-3 text-white" strokeWidth={3} />
                                     </div>
-                                    <span className="text-sm font-medium text-slate-600">Fee waiver programs available for qualifying accounts</span>
+                                    <span className="text-sm font-medium text-[#D0CCC4]">Fee waiver programs available for qualifying accounts</span>
                                 </li>
                             </ul>
 
@@ -162,7 +162,7 @@ export function FeaturedPartner() {
                                 </div>
                             </Button>
 
-                            <p className="text-center text-xs text-slate-500 mt-4">
+                            <p className="text-center text-xs text-[#A8A39A] mt-4">
                                 Minimum investment: <span className="whitespace-nowrap">$50,000</span>
                             </p>
                         </div>
@@ -170,8 +170,8 @@ export function FeaturedPartner() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="max-w-5xl mx-auto mt-0 bg-white border border-t-0 border-slate-200 rounded-b-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.1)]">
-                    <div className="bg-[#000080] border-t border-white/10 px-8 py-4">
+                <div className="max-w-5xl mx-auto mt-0 bg-[#161828] border border-t-0 border-[#2A2D42] rounded-b-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.1)]">
+                    <div className="bg-[rgba(197,149,46,0.1)] border-t border-white/10 px-8 py-4">
                         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                             <p className="text-blue-100 text-sm font-medium">
                                 <Phone className="h-4 w-4 inline mr-2" />

@@ -46,27 +46,27 @@ export default function RegalAssetsLawsuitPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }}
             />
-            <main className="min-h-screen flex flex-col bg-slate-50">
+            <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <div className="flex-grow">
                 {/* Header / Hero for Review */}
-                <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
+                <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-16 relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-1/3 h-full bg-red-500/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
-                            <div className="flex items-center gap-2 text-[#B22234] text-sm font-bold uppercase tracking-wider mb-4">
+                            <div className="flex items-center gap-2 text-[#D4A94E] text-sm font-bold uppercase tracking-wider mb-4">
                                 <span className="bg-red-50 px-2 py-1 rounded border border-red-100 flex items-center gap-1">
                                     <AlertTriangle className="w-4 h-4" /> Warning
                                 </span>
                                 <span>•</span>
                                 <span>Investigation</span>
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#000080]">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#F6F4EF]">
                                 Regal Assets: <br />
-                                <span className="text-[#B22234]">The Rise and Collapse</span>
+                                <span className="text-[#D4A94E]">The Rise and Collapse</span>
                             </h1>
-                            <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
+                            <p className="text-xl text-[#D0CCC4] max-w-2xl leading-relaxed">
                                 Once one of the most-recommended Gold IRA companies in America. Now defunct. What happened, and what should former customers do?
                             </p>
                         </div>
@@ -97,7 +97,7 @@ export default function RegalAssetsLawsuitPage() {
                             </div>
 
                             {/* Main Body Content */}
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-[#B22234]">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E]">
                                 <h2>What Happened to Regal Assets?</h2>
                                 <p>
                                     <strong>Regal Assets</strong> was once one of the most-recommended Gold IRA companies in America. They had thousands of positive reviews, celebrity endorsements, and featured prominently on "best of" lists across the internet.
@@ -141,8 +141,8 @@ export default function RegalAssetsLawsuitPage() {
                                 </p>
 
                                 <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
-                                    <h4 className="font-bold text-[#000080] mb-4">Action Steps for Former Customers</h4>
-                                    <ul className="space-y-3 text-slate-600">
+                                    <h4 className="font-bold text-[#F6F4EF] mb-4">Action Steps for Former Customers</h4>
+                                    <ul className="space-y-3 text-[#D0CCC4]">
                                         <li className="flex items-start gap-2">
                                             <span className="font-bold">1.</span>
                                             <span><strong>Your metals should still exist.</strong> IRA precious metals are held by custodians and depositories, not the dealer. Regal was an intermediary—assets should be held separately.</span>
@@ -186,7 +186,7 @@ export default function RegalAssetsLawsuitPage() {
                                     These companies have weathered multiple market cycles and continue to operate with strong reputations.
                                 </p>
 
-                                <hr className="my-12 border-slate-200" />
+                                <hr className="my-12 border-[#2A2D42]" />
 
                                 <h2>Final Thoughts</h2>
                                 <p>
@@ -195,10 +195,10 @@ export default function RegalAssetsLawsuitPage() {
                             </div>
 
                             {/* Bottom CTA */}
-                            <div className="bg-slate-50 border border-slate-200 p-8 rounded-2xl text-center mt-12 shadow-sm relative overflow-hidden">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] p-8 rounded-2xl text-center mt-12 shadow-sm relative overflow-hidden">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Looking for a Trustworthy Gold IRA Company?</h3>
-                                    <p className="mb-8 text-slate-600 max-w-lg mx-auto">
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Looking for a Trustworthy Gold IRA Company?</h3>
+                                    <p className="mb-8 text-[#D0CCC4] max-w-lg mx-auto">
                                         Compare companies with proven track records and clean regulatory histories.
                                     </p>
                                     <LeadCaptureButton

@@ -107,7 +107,7 @@ export default function Robs401kPage() {
             <Navbar />
             <main className="min-h-screen bg-white">
                 {/* Hero Section */}
-                <section className="relative py-16 lg:py-24 overflow-hidden bg-slate-50">
+                <section className="relative py-16 lg:py-24 overflow-hidden bg-[#0C0D18]">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(249,115,22,0.08),transparent_50%)]" />
 
                     <Container className="relative z-10">
@@ -117,17 +117,17 @@ export default function Robs401kPage() {
                                 <span className="text-orange-700 text-sm font-medium">Business Funding Strategy</span>
                             </div>
 
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#000080] mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F6F4EF] mb-6 leading-tight">
                                 ROBS 401k Guide:{" "}
                                 <span className="text-orange-600">Fund Your Business With Your Retirement</span>
                             </h1>
 
-                            <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl">
-                                You&apos;ve spent 25 years building a retirement account. Now you want to start or buy a business. ROBS (Rollover for Business Startups) lets you use your 401k to fund it—<strong className="text-slate-900">without paying the early withdrawal penalty or taxes</strong>. It&apos;s 100% legal, but it&apos;s not for everyone. Here&apos;s what you need to know.
+                            <p className="text-xl text-[#D0CCC4] mb-8 leading-relaxed max-w-3xl">
+                                You&apos;ve spent 25 years building a retirement account. Now you want to start or buy a business. ROBS (Rollover for Business Startups) lets you use your 401k to fund it—<strong className="text-[#F6F4EF]">without paying the early withdrawal penalty or taxes</strong>. It&apos;s 100% legal, but it&apos;s not for everyone. Here&apos;s what you need to know.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                                <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+                                <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                                     <a
                                         href={getTrackedLink(AFFILIATE_LINKS.guidantFinancial, "robs-hero", "guidant")}
                                         target="_blank"
@@ -137,7 +137,7 @@ export default function Robs401kPage() {
                                         <ArrowRight className="ml-2 h-5 w-5" />
                                     </a>
                                 </Button>
-                                <Button variant="outline" size="lg" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
+                                <Button variant="outline" size="lg" asChild className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]">
                                     <Link href="#how-robs-works">
                                         Learn How It Works
                                     </Link>
@@ -152,9 +152,9 @@ export default function Robs401kPage() {
                                     { value: "100%", label: "IRS Legal" },
                                     { value: "10,000+", label: "Businesses Funded" },
                                 ].map((stat, index) => (
-                                    <div key={index} className="bg-white border border-slate-200 rounded-xl p-4 text-center">
+                                    <div key={index} className="bg-[#161828] border border-[#2A2D42] rounded-xl p-4 text-center">
                                         <div className="text-2xl font-bold text-orange-600">{stat.value}</div>
-                                        <div className="text-sm text-slate-500">{stat.label}</div>
+                                        <div className="text-sm text-[#A8A39A]">{stat.label}</div>
                                     </div>
                                 ))}
                             </div>
@@ -166,23 +166,23 @@ export default function Robs401kPage() {
                 <section id="how-robs-works" className="py-16 bg-white">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-6">
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-6">
                                 What is ROBS?
                             </h2>
 
                             <div className="prose prose-lg max-w-none">
-                                <p className="text-slate-600 text-lg leading-relaxed mb-6">
+                                <p className="text-[#D0CCC4] text-lg leading-relaxed mb-6">
                                     ROBS stands for Rollover for Business Startups. In plain English: it&apos;s a legal way to use your 401k, IRA, or 403b to fund a business without paying the 10% early withdrawal penalty or immediate taxes. The IRS approved this strategy—it&apos;s been used since the 1970s.
                                 </p>
 
-                                <p className="text-slate-600 text-lg leading-relaxed mb-8">
+                                <p className="text-[#D0CCC4] text-lg leading-relaxed mb-8">
                                     Instead of taking a loan (and paying interest to a bank), your retirement money gets invested directly in your own company. Think of it this way: your 401k used to own stocks. Now it owns stock in YOUR business. If the business succeeds, your retirement grows. If it fails... well, that&apos;s the risk.
                                 </p>
                             </div>
 
                             {/* How ROBS Works Steps */}
-                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 mb-8">
-                                <h3 className="text-xl font-bold text-[#000080] mb-6">How ROBS Works (5 Steps)</h3>
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8 mb-8">
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-6">How ROBS Works (5 Steps)</h3>
                                 <div className="space-y-6">
                                     {[
                                         {
@@ -216,8 +216,8 @@ export default function Robs401kPage() {
                                                 {item.step}
                                             </div>
                                             <div>
-                                                <h4 className="text-slate-900 font-semibold mb-1">{item.title}</h4>
-                                                <p className="text-slate-500 text-sm">{item.description}</p>
+                                                <h4 className="text-[#F6F4EF] font-semibold mb-1">{item.title}</h4>
+                                                <p className="text-[#A8A39A] text-sm">{item.description}</p>
                                             </div>
                                         </div>
                                     ))}
@@ -228,9 +228,9 @@ export default function Robs401kPage() {
                 </section>
 
                 {/* Pros and Cons */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-12 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-12 text-center">
                             ROBS 401k: Pros and Cons
                         </h2>
 
@@ -253,7 +253,7 @@ export default function Robs401kPage() {
                                     ].map((pro, index) => (
                                         <li key={index} className="flex items-start gap-3">
                                             <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                            <span className="text-slate-600">{pro}</span>
+                                            <span className="text-[#D0CCC4]">{pro}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -277,7 +277,7 @@ export default function Robs401kPage() {
                                     ].map((con, index) => (
                                         <li key={index} className="flex items-start gap-3">
                                             <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                                            <span className="text-slate-600">{con}</span>
+                                            <span className="text-[#D0CCC4]">{con}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -289,43 +289,43 @@ export default function Robs401kPage() {
                 {/* Top ROBS Providers */}
                 <section className="py-16 bg-white">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-4 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-4 text-center">
                             Best ROBS 401k Providers (2026)
                         </h2>
-                        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
+                        <p className="text-[#A8A39A] text-center mb-12 max-w-2xl mx-auto">
                             Working with an experienced ROBS provider is essential for proper setup and ongoing compliance.
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                             {/* Guidant Financial */}
-                            <div className="bg-slate-50 border border-orange-300 rounded-2xl p-8 relative">
+                            <div className="bg-[#0C0D18] border border-orange-300 rounded-2xl p-8 relative">
                                 <div className="absolute -top-3 left-6 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                                     RECOMMENDED
                                 </div>
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Guidant Financial</h3>
-                                <p className="text-slate-500 mb-6">Industry leader with 25+ years experience</p>
+                                <h3 className="text-2xl font-bold text-[#F6F4EF] mb-2">Guidant Financial</h3>
+                                <p className="text-[#A8A39A] mb-6">Industry leader with 25+ years experience</p>
 
                                 <div className="space-y-3 mb-6">
                                     <div className="flex justify-between">
-                                        <span className="text-slate-500">Setup Fee:</span>
-                                        <span className="text-slate-900 font-medium">~$5,000</span>
+                                        <span className="text-[#A8A39A]">Setup Fee:</span>
+                                        <span className="text-[#F6F4EF] font-medium">~$5,000</span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span className="text-slate-500">Monthly Admin:</span>
-                                        <span className="text-slate-900 font-medium">$139/month</span>
+                                        <span className="text-[#A8A39A]">Monthly Admin:</span>
+                                        <span className="text-[#F6F4EF] font-medium">$139/month</span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span className="text-slate-500">Minimum:</span>
-                                        <span className="text-slate-900 font-medium">$50,000</span>
+                                        <span className="text-[#A8A39A]">Minimum:</span>
+                                        <span className="text-[#F6F4EF] font-medium">$50,000</span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span className="text-slate-500">Businesses Funded:</span>
-                                        <span className="text-slate-900 font-medium">25,000+</span>
+                                        <span className="text-[#A8A39A]">Businesses Funded:</span>
+                                        <span className="text-[#F6F4EF] font-medium">25,000+</span>
                                     </div>
                                 </div>
 
                                 <div className="flex flex-col gap-3">
-                                    <Button variant="gold" className="w-full bg-[#B22234] hover:bg-[#8b1c2a] text-white" asChild>
+                                    <Button variant="gold" className="w-full bg-[#DC2626] hover:bg-[#991B1B] text-white" asChild>
                                         <a
                                             href={getTrackedLink(AFFILIATE_LINKS.guidantFinancial, "robs-providers", "guidant")}
                                             target="_blank"
@@ -334,7 +334,7 @@ export default function Robs401kPage() {
                                             Get Free Consultation
                                         </a>
                                     </Button>
-                                    <Button variant="outline" className="w-full border-slate-300 text-slate-700 hover:bg-slate-100" asChild>
+                                    <Button variant="outline" className="w-full border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]" asChild>
                                         <Link href="/reviews/guidant-financial">
                                             Read Full Review
                                         </Link>
@@ -343,31 +343,31 @@ export default function Robs401kPage() {
                             </div>
 
                             {/* Benetrends */}
-                            <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-2">Benetrends</h3>
-                                <p className="text-slate-500 mb-6">Pioneer of ROBS funding since 1983</p>
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8">
+                                <h3 className="text-2xl font-bold text-[#F6F4EF] mb-2">Benetrends</h3>
+                                <p className="text-[#A8A39A] mb-6">Pioneer of ROBS funding since 1983</p>
 
                                 <div className="space-y-3 mb-6">
                                     <div className="flex justify-between">
-                                        <span className="text-slate-500">Setup Fee:</span>
-                                        <span className="text-slate-900 font-medium">~$4,995</span>
+                                        <span className="text-[#A8A39A]">Setup Fee:</span>
+                                        <span className="text-[#F6F4EF] font-medium">~$4,995</span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span className="text-slate-500">Monthly Admin:</span>
-                                        <span className="text-slate-900 font-medium">$129/month</span>
+                                        <span className="text-[#A8A39A]">Monthly Admin:</span>
+                                        <span className="text-[#F6F4EF] font-medium">$129/month</span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span className="text-slate-500">Minimum:</span>
-                                        <span className="text-slate-900 font-medium">$50,000</span>
+                                        <span className="text-[#A8A39A]">Minimum:</span>
+                                        <span className="text-[#F6F4EF] font-medium">$50,000</span>
                                     </div>
                                     <div className="flex justify-between">
-                                        <span className="text-slate-500">Experience:</span>
-                                        <span className="text-slate-900 font-medium">40+ years</span>
+                                        <span className="text-[#A8A39A]">Experience:</span>
+                                        <span className="text-[#F6F4EF] font-medium">40+ years</span>
                                     </div>
                                 </div>
 
                                 <div className="flex flex-col gap-3">
-                                    <Button variant="outline" className="w-full border-slate-300 text-slate-700 hover:bg-slate-100" asChild>
+                                    <Button variant="outline" className="w-full border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]" asChild>
                                         <a
                                             href={getTrackedLink(AFFILIATE_LINKS.benetrends, "robs-providers", "benetrends")}
                                             target="_blank"
@@ -376,7 +376,7 @@ export default function Robs401kPage() {
                                             Learn More
                                         </a>
                                     </Button>
-                                    <Button variant="outline" className="w-full border-slate-300 text-slate-700 hover:bg-slate-100" asChild>
+                                    <Button variant="outline" className="w-full border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]" asChild>
                                         <Link href="/reviews/benetrends">
                                             Read Full Review
                                         </Link>
@@ -388,16 +388,16 @@ export default function Robs401kPage() {
                 </section>
 
                 {/* Who Should Use ROBS */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-12 text-center">
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-12 text-center">
                                 Is ROBS Right for You?
                             </h2>
 
                             <div className="grid md:grid-cols-2 gap-8">
                                 {/* Good Fit */}
-                                <div className="bg-white border border-slate-200 rounded-2xl p-8">
+                                <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-8">
                                     <h3 className="text-xl font-bold text-green-700 mb-6">ROBS May Be Right If You:</h3>
                                     <ul className="space-y-3">
                                         {[
@@ -411,14 +411,14 @@ export default function Robs401kPage() {
                                         ].map((item, index) => (
                                             <li key={index} className="flex items-start gap-3">
                                                 <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                                <span className="text-slate-600">{item}</span>
+                                                <span className="text-[#D0CCC4]">{item}</span>
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
 
                                 {/* Not Good Fit */}
-                                <div className="bg-white border border-slate-200 rounded-2xl p-8">
+                                <div className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-8">
                                     <h3 className="text-xl font-bold text-red-700 mb-6">ROBS May NOT Be Right If You:</h3>
                                     <ul className="space-y-3">
                                         {[
@@ -432,7 +432,7 @@ export default function Robs401kPage() {
                                         ].map((item, index) => (
                                             <li key={index} className="flex items-start gap-3">
                                                 <AlertTriangle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
-                                                <span className="text-slate-600">{item}</span>
+                                                <span className="text-[#D0CCC4]">{item}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -446,7 +446,7 @@ export default function Robs401kPage() {
                 <section className="py-16 bg-white">
                     <Container>
                         <div className="max-w-4xl mx-auto">
-                            <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-8 text-center">
+                            <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-8 text-center">
                                 ROBS 401k Rules & Requirements
                             </h2>
 
@@ -483,16 +483,16 @@ export default function Robs401kPage() {
                                         description: "Certain transactions between you and the plan are prohibited by ERISA."
                                     }
                                 ].map((rule, index) => (
-                                    <div key={index} className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                                    <div key={index} className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
                                         <rule.icon className="w-8 h-8 text-orange-500 mb-4" />
-                                        <h3 className="text-lg font-bold text-slate-900 mb-2">{rule.title}</h3>
-                                        <p className="text-slate-500 text-sm">{rule.description}</p>
+                                        <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">{rule.title}</h3>
+                                        <p className="text-[#A8A39A] text-sm">{rule.description}</p>
                                     </div>
                                 ))}
                             </div>
 
                             <div className="mt-8 text-center">
-                                <Button variant="outline" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
+                                <Button variant="outline" asChild className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]">
                                     <Link href="/learn/robs-401k-rules">
                                         Read Complete ROBS Rules Guide
                                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -504,9 +504,9 @@ export default function Robs401kPage() {
                 </section>
 
                 {/* FAQ Section */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#000080] mb-12 text-center">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] mb-12 text-center">
                             ROBS 401k: Frequently Asked Questions
                         </h2>
 
@@ -545,9 +545,9 @@ export default function Robs401kPage() {
                                     answer: "Yes, if you work in the business, you must receive reasonable compensation. This also makes you eligible to continue contributing to the company's 401(k) plan as an employee."
                                 }
                             ].map((faq, index) => (
-                                <div key={index} className="bg-white border border-slate-200 rounded-xl p-6">
-                                    <h3 className="text-lg font-bold text-slate-900 mb-3">{faq.question}</h3>
-                                    <p className="text-slate-500">{faq.answer}</p>
+                                <div key={index} className="bg-[#161828] border border-[#2A2D42] rounded-xl p-6">
+                                    <h3 className="text-lg font-bold text-[#F6F4EF] mb-3">{faq.question}</h3>
+                                    <p className="text-[#A8A39A]">{faq.answer}</p>
                                 </div>
                             ))}
                         </div>
@@ -561,12 +561,12 @@ export default function Robs401kPage() {
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                                 Ready to Be Your Own Boss?
                             </h2>
-                            <p className="text-xl text-slate-200 mb-8">
+                            <p className="text-xl text-[#3F4460] mb-8">
                                 You&apos;ve worked for someone else long enough. If you&apos;ve got a solid business plan and understand the risks, ROBS can help you fund your dream without bank loans or credit card debt. Talk to a specialist—it&apos;s free.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+                                <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                                     <a
                                         href={getTrackedLink(AFFILIATE_LINKS.guidantFinancial, "robs-bottom-cta", "guidant")}
                                         target="_blank"
@@ -576,14 +576,14 @@ export default function Robs401kPage() {
                                         <ArrowRight className="ml-2 h-5 w-5" />
                                     </a>
                                 </Button>
-                                <Button variant="outline" size="lg" asChild className="border-white/30 text-white hover:bg-white/10">
+                                <Button variant="outline" size="lg" asChild className="border-white/30 text-[#F6F4EF] hover:bg-[#1E2134]/10">
                                     <Link href="/reviews/guidant-financial">
                                         Read Guidant Review
                                     </Link>
                                 </Button>
                             </div>
 
-                            <p className="text-sm text-slate-300 mt-6">
+                            <p className="text-sm text-[#3F4460] mt-6">
                                 No obligation. Learn if ROBS is right for your situation.
                             </p>
                         </div>
@@ -593,7 +593,7 @@ export default function Robs401kPage() {
                 {/* Related Content */}
                 <section className="py-16 bg-white">
                     <Container>
-                        <h2 className="text-2xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-2xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Related Resources
                         </h2>
 
@@ -607,12 +607,12 @@ export default function Robs401kPage() {
                                 <Link
                                     key={index}
                                     href={link.href}
-                                    className="bg-slate-50 border border-slate-200 rounded-xl p-5 hover:bg-slate-100 transition-colors group"
+                                    className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-5 hover:bg-[#1E2134] transition-colors group"
                                 >
-                                    <h3 className="text-slate-900 font-semibold mb-1 group-hover:text-orange-600 transition-colors">
+                                    <h3 className="text-[#F6F4EF] font-semibold mb-1 group-hover:text-orange-600 transition-colors">
                                         {link.title}
                                     </h3>
-                                    <p className="text-slate-500 text-sm">{link.desc}</p>
+                                    <p className="text-[#A8A39A] text-sm">{link.desc}</p>
                                 </Link>
                             ))}
                         </div>
@@ -620,7 +620,7 @@ export default function Robs401kPage() {
                 </section>
 
                 {/* Augusta CTA */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <AugustaCTA
                             variant="footer"

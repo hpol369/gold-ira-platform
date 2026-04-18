@@ -60,7 +60,7 @@ export default function SilverIRAFeesPatriotPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-slate-900 font-serif">
+        <div className="min-h-screen bg-white text-[#F6F4EF] font-serif">
             {/* FAQ Schema */}
             <script
                 type="application/ld+json"
@@ -68,7 +68,7 @@ export default function SilverIRAFeesPatriotPage() {
             />
 
             {/* Top Warning Bar */}
-            <div className="bg-[#B22234] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
+            <div className="bg-[#DC2626] text-white p-2 text-center font-bold uppercase tracking-wider text-sm">
                 <span className="flex items-center justify-center gap-2">
                     <AlertTriangle className="h-4 w-4" />
                     Warning: Hidden Silver Fees Are Eating Your Retirement
@@ -76,33 +76,33 @@ export default function SilverIRAFeesPatriotPage() {
             </div>
 
             {/* Hero Section */}
-            <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
+            <header className="relative py-12 md:py-20 bg-[#0C0D18] border-b-4 border-[#000080]">
                 <div className="max-w-4xl mx-auto px-4 text-center">
 
                     {/* Headline Group */}
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight uppercase">
+                    <h1 className="text-4xl md:text-6xl font-extrabold text-[#F6F4EF] mb-6 leading-tight uppercase">
                         Silver IRA Fees: <br />
-                        <span className="text-[#B22234] underline decoration-4 underline-offset-8">The Truth They Don't Want You to Know</span>
+                        <span className="text-[#D4A94E] underline decoration-4 underline-offset-8">The Truth They Don't Want You to Know</span>
                     </h1>
 
-                    <p className="text-xl md:text-2xl text-slate-700 font-sans mb-8 max-w-2xl mx-auto">
+                    <p className="text-xl md:text-2xl text-[#D0CCC4] font-sans mb-8 max-w-2xl mx-auto">
                         Hidden buyback spreads of <strong>15-35%</strong> are silently destroying American retirement accounts. Most silver IRA companies won't tell you the real cost until it's too late.
                     </p>
 
                     {/* Key Stats Box */}
-                    <div className="bg-white rounded-xl shadow-2xl p-6 md:p-8 mb-10 border-4 border-[#000080]/20 max-w-3xl mx-auto">
+                    <div className="bg-[#161828] rounded-xl shadow-2xl p-6 md:p-8 mb-10 border-4 border-[#000080]/20 max-w-3xl mx-auto">
                         <div className="grid md:grid-cols-3 gap-6 font-sans">
                             <div className="text-center">
-                                <div className="text-4xl font-black text-[#B22234]">15-35%</div>
-                                <div className="text-slate-600 text-sm">Hidden Buyback Spreads</div>
+                                <div className="text-4xl font-black text-[#D4A94E]">15-35%</div>
+                                <div className="text-[#D0CCC4] text-sm">Hidden Buyback Spreads</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-4xl font-black text-[#B22234]">8-20%</div>
-                                <div className="text-slate-600 text-sm">Premium Markups</div>
+                                <div className="text-4xl font-black text-[#D4A94E]">8-20%</div>
+                                <div className="text-[#D0CCC4] text-sm">Premium Markups</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-4xl font-black text-[#B22234]">$17,500</div>
-                                <div className="text-slate-600 text-sm">Lost on $50K Account</div>
+                                <div className="text-4xl font-black text-[#D4A94E]">$17,500</div>
+                                <div className="text-[#D0CCC4] text-sm">Lost on $50K Account</div>
                             </div>
                         </div>
                     </div>
@@ -112,12 +112,12 @@ export default function SilverIRAFeesPatriotPage() {
                         <LeadCaptureButton
                             variant="silver-fees"
                             source="lp-silver-ira-fees-hero"
-                            className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
+                            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-2xl md:text-3xl font-bold py-6 px-12 rounded-lg shadow-[0_5px_0_rgb(100,0,0)] hover:shadow-[0_2px_0_rgb(100,0,0)] hover:translate-y-[3px] transition-all uppercase flex items-center gap-3 font-sans"
                         >
                             Get The Truth About Silver Fees
                             <ArrowRight className="h-8 w-8" />
                         </LeadCaptureButton>
-                        <p className="text-sm text-slate-500 font-sans flex items-center gap-2">
+                        <p className="text-sm text-[#A8A39A] font-sans flex items-center gap-2">
                             <ShieldCheck className="h-4 w-4 text-green-600" />
                             Free Consultation - Zero Obligation
                         </p>
@@ -126,14 +126,14 @@ export default function SilverIRAFeesPatriotPage() {
             </header>
 
             {/* As Seen On / Trust */}
-            <section className="py-8 bg-slate-100 border-b border-slate-200">
+            <section className="py-8 bg-[#121423] border-b border-[#2A2D42]">
                 <div className="max-w-5xl mx-auto px-4 text-center">
-                    <p className="text-slate-500 font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
+                    <p className="text-[#A8A39A] font-sans uppercase tracking-widest text-xs mb-4">Trusted By 50,000+ Americans</p>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale">
-                        <span className="text-2xl font-black text-slate-800">FOX NEWS</span>
-                        <span className="text-2xl font-black text-slate-800">NEWSMAX</span>
-                        <span className="text-2xl font-black text-slate-800">BEN SHAPIRO</span>
-                        <span className="text-2xl font-black text-slate-800">FORBES</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FOX NEWS</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">NEWSMAX</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">BEN SHAPIRO</span>
+                        <span className="text-2xl font-black text-[#F6F4EF]">FORBES</span>
                     </div>
                 </div>
             </section>
@@ -141,54 +141,54 @@ export default function SilverIRAFeesPatriotPage() {
             {/* Hidden Fees Expose Section */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-5xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] font-serif text-center mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] font-serif text-center mb-4">
                         The Hidden Silver IRA Fees Others Won't Tell You About
                     </h2>
-                    <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+                    <p className="text-center text-[#D0CCC4] mb-12 max-w-2xl mx-auto">
                         Silver fees are often <strong>WORSE</strong> than gold fees. Here's what shady dealers hide from you:
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-8 mb-12">
                         {/* Hidden Fees Column */}
                         <div className="bg-red-50 rounded-xl p-6 border-2 border-red-200">
-                            <h3 className="text-xl font-bold text-[#B22234] mb-6 flex items-center gap-2">
+                            <h3 className="text-xl font-bold text-[#D4A94E] mb-6 flex items-center gap-2">
                                 <XCircle className="h-6 w-6" />
                                 Hidden Fees They Don't Tell You
                             </h3>
                             <ul className="space-y-4">
                                 <li className="flex items-start gap-3">
-                                    <DollarSign className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-1" />
+                                    <DollarSign className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-1" />
                                     <div>
                                         <strong>Buyback Spreads (15-35%)</strong>
-                                        <p className="text-slate-600 text-sm">When you sell silver, some companies buy back at 15-35% below spot price</p>
+                                        <p className="text-[#D0CCC4] text-sm">When you sell silver, some companies buy back at 15-35% below spot price</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <TrendingDown className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-1" />
+                                    <TrendingDown className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-1" />
                                     <div>
                                         <strong>Premium Markups (8-20%)</strong>
-                                        <p className="text-slate-600 text-sm">Hidden in the "price per ounce" - often 8-20% over spot for silver</p>
+                                        <p className="text-[#D0CCC4] text-sm">Hidden in the "price per ounce" - often 8-20% over spot for silver</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <Building2 className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-1" />
+                                    <Building2 className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-1" />
                                     <div>
                                         <strong>Percentage Storage (0.5%+)</strong>
-                                        <p className="text-slate-600 text-sm">Adds up fast as silver takes more space than gold</p>
+                                        <p className="text-[#D0CCC4] text-sm">Adds up fast as silver takes more space than gold</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <DollarSign className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-1" />
+                                    <DollarSign className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-1" />
                                     <div>
                                         <strong>Liquidation Fees</strong>
-                                        <p className="text-slate-600 text-sm">Surprise charges when you need to sell your silver</p>
+                                        <p className="text-[#D0CCC4] text-sm">Surprise charges when you need to sell your silver</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <DollarSign className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-1" />
+                                    <DollarSign className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-1" />
                                     <div>
                                         <strong>Wire Transfer Fees</strong>
-                                        <p className="text-slate-600 text-sm">Nickel-and-dime charges on every transaction</p>
+                                        <p className="text-[#D0CCC4] text-sm">Nickel-and-dime charges on every transaction</p>
                                     </div>
                                 </li>
                             </ul>
@@ -205,35 +205,35 @@ export default function SilverIRAFeesPatriotPage() {
                                     <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-1" />
                                     <div>
                                         <strong>Fair Buyback</strong>
-                                        <p className="text-slate-600 text-sm">Competitive spreads shown upfront before purchase</p>
+                                        <p className="text-[#D0CCC4] text-sm">Competitive spreads shown upfront before purchase</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-1" />
                                     <div>
                                         <strong>Clear Premiums</strong>
-                                        <p className="text-slate-600 text-sm">All silver pricing transparent, no hidden markups</p>
+                                        <p className="text-[#D0CCC4] text-sm">All silver pricing transparent, no hidden markups</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-1" />
                                     <div>
                                         <strong>Flat Storage ($180/year)</strong>
-                                        <p className="text-slate-600 text-sm">Same whether $50K or $500K in silver</p>
+                                        <p className="text-[#D0CCC4] text-sm">Same whether $50K or $500K in silver</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-1" />
                                     <div>
                                         <strong>No Liquidation Fees</strong>
-                                        <p className="text-slate-600 text-sm">Sell your silver anytime without penalty</p>
+                                        <p className="text-[#D0CCC4] text-sm">Sell your silver anytime without penalty</p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-1" />
                                     <div>
                                         <strong>Minimal Transaction Fees</strong>
-                                        <p className="text-slate-600 text-sm">Standard wire fees only when needed</p>
+                                        <p className="text-[#D0CCC4] text-sm">Standard wire fees only when needed</p>
                                     </div>
                                 </li>
                             </ul>
@@ -241,41 +241,41 @@ export default function SilverIRAFeesPatriotPage() {
                     </div>
 
                     {/* Impact Callout */}
-                    <div className="bg-[#000080]/10 rounded-xl p-6 border-2 border-[#000080]/20 text-center">
-                        <p className="text-lg md:text-xl text-[#000080] font-bold">
-                            On a $50,000 silver IRA, hidden buyback spreads alone can cost you <span className="text-[#B22234]">$7,500-$17,500</span> when you sell. Silver spreads are often wider than gold - choose a transparent provider.
+                    <div className="bg-[rgba(197,149,46,0.08)] rounded-xl p-6 border-2 border-[#000080]/20 text-center">
+                        <p className="text-lg md:text-xl text-[#F6F4EF] font-bold">
+                            On a $50,000 silver IRA, hidden buyback spreads alone can cost you <span className="text-[#D4A94E]">$7,500-$17,500</span> when you sell. Silver spreads are often wider than gold - choose a transparent provider.
                         </p>
                     </div>
                 </div>
             </section>
 
             {/* Why Silver Fees Are Worse */}
-            <section className="py-16 bg-slate-50 font-sans">
+            <section className="py-16 bg-[#0C0D18] font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-[#000080] font-serif text-center mb-8">
+                    <h2 className="text-3xl font-bold text-[#F6F4EF] font-serif text-center mb-8">
                         Why Silver Fees Are Often WORSE Than Gold
                     </h2>
 
-                    <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 space-y-6">
+                    <div className="bg-[#161828] rounded-xl shadow-lg p-6 md:p-8 space-y-6">
                         <div className="flex items-start gap-4">
-                            <div className="bg-[#B22234] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
+                            <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">1</div>
                             <div>
-                                <h3 className="font-bold text-lg text-slate-900">Silver Takes 100x More Storage Space</h3>
-                                <p className="text-slate-600">A $50,000 silver investment weighs about 100 lbs vs just 1 lb for gold. This means higher shipping costs, more vault space, and potentially higher insurance.</p>
+                                <h3 className="font-bold text-lg text-[#F6F4EF]">Silver Takes 100x More Storage Space</h3>
+                                <p className="text-[#D0CCC4]">A $50,000 silver investment weighs about 100 lbs vs just 1 lb for gold. This means higher shipping costs, more vault space, and potentially higher insurance.</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
-                            <div className="bg-[#B22234] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</div>
+                            <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">2</div>
                             <div>
-                                <h3 className="font-bold text-lg text-slate-900">Lower Liquidity = Wider Spreads</h3>
-                                <p className="text-slate-600">Silver markets are less liquid than gold, giving dealers an excuse to charge wider buyback spreads of 15-35% vs gold's 3-10%.</p>
+                                <h3 className="font-bold text-lg text-[#F6F4EF]">Lower Liquidity = Wider Spreads</h3>
+                                <p className="text-[#D0CCC4]">Silver markets are less liquid than gold, giving dealers an excuse to charge wider buyback spreads of 15-35% vs gold's 3-10%.</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4">
-                            <div className="bg-[#B22234] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</div>
+                            <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center font-bold flex-shrink-0">3</div>
                             <div>
-                                <h3 className="font-bold text-lg text-slate-900">Percentage-Based Fees Punish Silver</h3>
-                                <p className="text-slate-600">Companies charging 0.5% of holdings for storage penalize silver investors more because of the bulk. Augusta's flat fee solves this.</p>
+                                <h3 className="font-bold text-lg text-[#F6F4EF]">Percentage-Based Fees Punish Silver</h3>
+                                <p className="text-[#D0CCC4]">Companies charging 0.5% of holdings for storage penalize silver investors more because of the bulk. Augusta's flat fee solves this.</p>
                             </div>
                         </div>
                     </div>
@@ -285,15 +285,15 @@ export default function SilverIRAFeesPatriotPage() {
             {/* FAQ Section */}
             <section className="py-16 bg-white font-sans">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-[#000080] font-serif text-center mb-12">
+                    <h2 className="text-3xl font-bold text-[#F6F4EF] font-serif text-center mb-12">
                         Silver IRA Fee Questions Answered
                     </h2>
 
                     <div className="space-y-6">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-                                <h3 className="font-bold text-lg text-[#000080] mb-3">{faq.question}</h3>
-                                <p className="text-slate-700 leading-relaxed">{faq.answer}</p>
+                            <div key={index} className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
+                                <h3 className="font-bold text-lg text-[#F6F4EF] mb-3">{faq.question}</h3>
+                                <p className="text-[#D0CCC4] leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>
@@ -301,12 +301,12 @@ export default function SilverIRAFeesPatriotPage() {
             </section>
 
             {/* Final CTA */}
-            <section className="py-16 bg-[#000080] text-center">
+            <section className="py-16 bg-[rgba(197,149,46,0.1)] text-center">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
                         Stop Overpaying for Your Silver IRA
                     </h2>
-                    <p className="text-slate-300 text-lg mb-8 font-sans">
+                    <p className="text-[#3F4460] text-lg mb-8 font-sans">
                         See why Augusta offers the most transparent silver IRA pricing in America
                     </p>
 
@@ -329,18 +329,18 @@ export default function SilverIRAFeesPatriotPage() {
                     <LeadCaptureButton
                         variant="silver-fees"
                         source="lp-silver-ira-fees-footer"
-                        className="inline-block bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
+                        className="inline-block bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-transform uppercase font-sans border-2 border-white/20"
                     >
                         Get The Truth About Silver Fees
                     </LeadCaptureButton>
-                    <p className="text-slate-400 mt-6 text-sm font-sans">
+                    <p className="text-[#A8A39A] mt-6 text-sm font-sans">
                         Free consultation - Strictly confidential
                     </p>
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="bg-slate-900 text-slate-600 py-8 text-center text-xs font-sans">
+            <footer className="bg-slate-900 text-[#D0CCC4] py-8 text-center text-xs font-sans">
                 <div className="max-w-4xl mx-auto px-4">
                     <p>&copy; 2026 Rich Dad Retirement. All Rights Reserved.</p>
                     <p className="mt-2">Disclaimer: We are not financial advisors. Precious metals involve risk. Past performance does not guarantee future results.</p>

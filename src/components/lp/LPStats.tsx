@@ -31,7 +31,7 @@ export function LPStats({ headline, stats, className }: LPStatsProps) {
               <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 mb-1 md:mb-2">
                 {stat.value}
               </div>
-              <div className="text-sm md:text-base text-slate-200">{stat.label}</div>
+              <div className="text-sm md:text-base text-[#3F4460]">{stat.label}</div>
             </div>
           ))}
         </div>

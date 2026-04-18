@@ -273,12 +273,12 @@ export default function LeadCaptureModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="relative w-full max-w-lg bg-[#000080] rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] md:max-h-none overflow-y-auto"
+            className="relative w-full max-w-lg bg-[rgba(197,149,46,0.1)] rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] md:max-h-none overflow-y-auto"
           >
             {/* Close button */}
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 p-2 text-white/80 hover:text-white transition-colors z-20 rounded-full hover:bg-white/10"
+              className="absolute top-4 right-4 p-2 text-white/80 hover:text-white transition-colors z-20 rounded-full hover:bg-[#1E2134]/10"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />
@@ -373,7 +373,7 @@ export default function LeadCaptureModal() {
 
                   <a
                     href="/"
-                    className="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 text-lg font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                    className="w-full bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] text-lg font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
                   >
                     Explore Our Resources
                     <ArrowRight className="h-5 w-5" />
@@ -415,7 +415,7 @@ export default function LeadCaptureModal() {
                   </div>
                   <a
                     href="/"
-                    className="w-full bg-[#B22234] hover:bg-[#8b1c2a] text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                    className="w-full bg-[#DC2626] hover:bg-[#991B1B] text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
                   >
                     Join Thousands of Smart Retirees
                     <ArrowRight className="h-5 w-5" />
@@ -449,7 +449,7 @@ export default function LeadCaptureModal() {
                         First Name
                       </label>
                       <div className="relative">
-                        <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
+                        <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-[#A8A39A]" />
                         <input
                           id="firstName"
                           ref={inputRef}
@@ -459,7 +459,7 @@ export default function LeadCaptureModal() {
                           value={formData.firstName}
                           onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                           onKeyDown={handleKeyDown}
-                          className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
+                          className="w-full pl-14 pr-4 py-4 text-xl text-[#F6F4EF] bg-[#161828] border-2 border-[#2A2D42] rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
                           placeholder="First name"
                         />
                       </div>
@@ -469,7 +469,7 @@ export default function LeadCaptureModal() {
                         Last Name
                       </label>
                       <div className="relative">
-                        <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
+                        <User className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-[#A8A39A]" />
                         <input
                           id="lastName"
                           type="text"
@@ -477,7 +477,7 @@ export default function LeadCaptureModal() {
                           value={formData.lastName}
                           onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                           onKeyDown={handleKeyDown}
-                          className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
+                          className="w-full pl-14 pr-4 py-4 text-xl text-[#F6F4EF] bg-[#161828] border-2 border-[#2A2D42] rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
                           placeholder="Last name"
                         />
                       </div>
@@ -487,7 +487,7 @@ export default function LeadCaptureModal() {
                   <button
                     onClick={handleNext}
                     disabled={!formData.firstName.trim() || !formData.lastName.trim()}
-                    className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 disabled:cursor-not-allowed text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                    className="w-full bg-[#DC2626] hover:bg-[#991B1B] disabled:bg-[#0C0D18]0 disabled:cursor-not-allowed text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
                   >
                     Continue
                     <ArrowRight className="h-5 w-5" />
@@ -520,7 +520,7 @@ export default function LeadCaptureModal() {
                       Email Address
                     </label>
                     <div className="relative">
-                      <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
+                      <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-[#A8A39A]" />
                       <input
                         id="email"
                         ref={inputRef}
@@ -531,7 +531,7 @@ export default function LeadCaptureModal() {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         onKeyDown={handleKeyDown}
-                        className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
+                        className="w-full pl-14 pr-4 py-4 text-xl text-[#F6F4EF] bg-[#161828] border-2 border-[#2A2D42] rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
                         placeholder="your@email.com"
                       />
                     </div>
@@ -540,7 +540,7 @@ export default function LeadCaptureModal() {
                   <button
                     onClick={handleNext}
                     disabled={!formData.email.includes("@")}
-                    className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 disabled:cursor-not-allowed text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                    className="w-full bg-[#DC2626] hover:bg-[#991B1B] disabled:bg-[#0C0D18]0 disabled:cursor-not-allowed text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
                   >
                     Continue
                     <ArrowRight className="h-5 w-5" />
@@ -548,7 +548,7 @@ export default function LeadCaptureModal() {
 
                   <button
                     onClick={() => setStep(1)}
-                    className="w-full text-white/80 hover:text-white text-base py-3 px-4 rounded-lg hover:bg-white/10 flex items-center justify-center gap-2 transition-colors"
+                    className="w-full text-white/80 hover:text-white text-base py-3 px-4 rounded-lg hover:bg-[#1E2134]/10 flex items-center justify-center gap-2 transition-colors"
                   >
                     <ArrowLeft className="h-4 w-4" />
                     Go Back
@@ -572,7 +572,7 @@ export default function LeadCaptureModal() {
                       Phone Number
                     </label>
                     <div className="relative">
-                      <Phone className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-slate-400" />
+                      <Phone className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-6 text-[#A8A39A]" />
                       <input
                         id="phone"
                         ref={inputRef}
@@ -583,7 +583,7 @@ export default function LeadCaptureModal() {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: formatPhone(e.target.value) })}
                         onKeyDown={handleKeyDown}
-                        className="w-full pl-14 pr-4 py-4 text-xl text-slate-900 bg-white border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
+                        className="w-full pl-14 pr-4 py-4 text-xl text-[#F6F4EF] bg-[#161828] border-2 border-[#2A2D42] rounded-xl focus:ring-2 focus:ring-amber-400 focus:border-amber-400 outline-none transition-all"
                         placeholder="(555) 123-4567"
                       />
                     </div>
@@ -598,7 +598,7 @@ export default function LeadCaptureModal() {
                   <button
                     onClick={handleSubmit}
                     disabled={!formData.phone.trim() || isSubmitting}
-                    className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 disabled:cursor-not-allowed text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                    className="w-full bg-[#DC2626] hover:bg-[#991B1B] disabled:bg-[#0C0D18]0 disabled:cursor-not-allowed text-white text-xl font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
                   >
                     {isSubmitting ? (
                       <>
@@ -615,7 +615,7 @@ export default function LeadCaptureModal() {
 
                   <button
                     onClick={() => setStep(2)}
-                    className="w-full text-white/80 hover:text-white text-base py-3 px-4 rounded-lg hover:bg-white/10 flex items-center justify-center gap-2 transition-colors"
+                    className="w-full text-white/80 hover:text-white text-base py-3 px-4 rounded-lg hover:bg-[#1E2134]/10 flex items-center justify-center gap-2 transition-colors"
                   >
                     <ArrowLeft className="h-4 w-4" />
                     Go Back
@@ -670,7 +670,7 @@ export default function LeadCaptureModal() {
                     <p className="text-white/60 text-xs text-center mb-3">While you wait...</p>
                     <button
                       onClick={() => setStep("calculator")}
-                      className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3"
+                      className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-[#F6F4EF] font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-3"
                     >
                       <Calculator className="h-5 w-5" />
                       <span>See Your Gold Protection Potential</span>
@@ -775,7 +775,7 @@ export default function LeadCaptureModal() {
                       <button
                         onClick={handleCalculatorSubmit}
                         disabled={isSubmitting}
-                        className="w-full bg-[#B22234] hover:bg-[#8b1c2a] disabled:bg-slate-500 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                        className="w-full bg-[#DC2626] hover:bg-[#991B1B] disabled:bg-[#0C0D18]0 text-white text-lg font-bold py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
                       >
                         {isSubmitting ? (
                           <>

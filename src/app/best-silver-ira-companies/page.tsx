@@ -211,42 +211,42 @@ export default function BestSilverIraCompaniesPage() {
 
             <div className="flex-grow">
                 {/* Hero Header */}
-                <header className="bg-slate-50 text-slate-900 py-20 relative overflow-hidden">
+                <header className="bg-[#0C0D18] text-[#F6F4EF] py-20 relative overflow-hidden">
                     <div className="absolute inset-0 pointer-events-none">
-                        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#B22234]/5 rounded-full blur-[150px]" />
-                        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#000080]/5 rounded-full blur-[100px]" />
+                        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[rgba(220,38,38,0.06)] rounded-full blur-[150px]" />
+                        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[rgba(197,149,46,0.06)] rounded-full blur-[100px]" />
                     </div>
                     <Container className="relative z-10 text-center">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#B22234]/10 border border-[#B22234]/20 text-slate-600 text-sm font-semibold mb-6">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[rgba(220,38,38,0.1)] border border-[#B22234]/20 text-[#D0CCC4] text-sm font-semibold mb-6">
                             <Sparkles className="w-4 h-4" />
                             Updated January 2026
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#000080]">
+                        <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#F6F4EF]">
                             Best Silver IRA Companies
                         </h1>
-                        <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto leading-relaxed">
                             Silver offers unique advantages for retirement portfolios. Here&apos;s our analysis of the top Silver IRA providers based on silver selection, premiums, and overall value.
                         </p>
                     </Container>
                 </header>
 
                 {/* Why Silver Section */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <div className="text-center mb-12">
-                            <h2 className="text-3xl font-serif font-bold text-[#000080] mb-4">Why Consider Silver for Your IRA?</h2>
-                            <p className="text-slate-600 max-w-2xl mx-auto">
+                            <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-4">Why Consider Silver for Your IRA?</h2>
+                            <p className="text-[#D0CCC4] max-w-2xl mx-auto">
                                 Silver has historically outperformed gold during precious metals bull markets and offers greater affordability for gradual portfolio building.
                             </p>
                         </div>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {silverFactors.map((factor, index) => (
-                                <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                                    <div className="w-12 h-12 rounded-lg bg-[#B22234]/10 flex items-center justify-center mb-4">
-                                        <factor.icon className="w-6 h-6 text-slate-600" />
+                                <div key={index} className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                                    <div className="w-12 h-12 rounded-lg bg-[rgba(220,38,38,0.1)] flex items-center justify-center mb-4">
+                                        <factor.icon className="w-6 h-6 text-[#D0CCC4]" />
                                     </div>
-                                    <h3 className="font-bold text-slate-900 mb-2">{factor.title}</h3>
-                                    <p className="text-sm text-slate-600">{factor.description}</p>
+                                    <h3 className="font-bold text-[#F6F4EF] mb-2">{factor.title}</h3>
+                                    <p className="text-sm text-[#D0CCC4]">{factor.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -259,8 +259,8 @@ export default function BestSilverIraCompaniesPage() {
                         <div className="lg:col-span-2 space-y-16">
 
                             {/* How We Evaluate */}
-                            <div className="prose prose-lg max-w-none text-slate-600">
-                                <h2 className="text-3xl font-serif font-bold text-[#000080]">How We Evaluate Silver IRA Companies</h2>
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4]">
+                                <h2 className="text-3xl font-serif font-bold text-[#F6F4EF]">How We Evaluate Silver IRA Companies</h2>
                                 <p>
                                     Not all precious metals IRA companies treat silver equally. Some focus primarily on gold and offer limited silver options, while others have built strong silver-specific expertise. We evaluate companies on their silver product selection, transparency of silver premiums, storage solutions for silver&apos;s bulkier nature, and overall value for silver-focused investors.
                                 </p>
@@ -268,7 +268,7 @@ export default function BestSilverIraCompaniesPage() {
                                     The silver-to-gold ratio is an important consideration. As of 2026, this ratio has made silver historically attractive compared to gold. Companies that understand this and can guide you through silver allocation strategies score higher in our rankings.
                                 </p>
                                 <p>
-                                    Learn more about which silver products qualify in our <Link href="/guide/ira-approved-silver" className="text-[#B22234] hover:underline">IRA-Approved Silver Guide</Link> or read our comprehensive <Link href="/guide/silver-ira-guide" className="text-[#B22234] hover:underline">Silver IRA Guide</Link>.
+                                    Learn more about which silver products qualify in our <Link href="/guide/ira-approved-silver" className="text-[#D4A94E] hover:underline">IRA-Approved Silver Guide</Link> or read our comprehensive <Link href="/guide/silver-ira-guide" className="text-[#D4A94E] hover:underline">Silver IRA Guide</Link>.
                                 </p>
                             </div>
 
@@ -277,37 +277,37 @@ export default function BestSilverIraCompaniesPage() {
                                 <div
                                     key={company.rank}
                                     id={`${company.name.toLowerCase().replace(/\s+/g, '-')}-review`}
-                                    className="scroll-mt-24 border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 backdrop-blur-sm shadow-xl"
+                                    className="scroll-mt-24 border border-[#2A2D42] rounded-2xl overflow-hidden bg-[#0C0D18] backdrop-blur-sm shadow-xl"
                                 >
-                                    <div className={`${company.featured ? 'bg-[#000080]' : 'bg-slate-100'} ${company.featured ? 'text-white' : 'text-slate-900'} p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2`}>
+                                    <div className={`${company.featured ? 'bg-[rgba(197,149,46,0.1)]' : 'bg-[#121423]'} ${company.featured ? 'text-white' : 'text-[#F6F4EF]'} p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2`}>
                                         <div className="flex items-center gap-3">
-                                            <div className={`${company.featured ? 'bg-[#B22234] text-white' : 'bg-slate-500 text-white'} font-bold w-8 h-8 rounded-full flex items-center justify-center`}>
+                                            <div className={`${company.featured ? 'bg-[#DC2626] text-white' : 'bg-[#0C0D18]0 text-white'} font-bold w-8 h-8 rounded-full flex items-center justify-center`}>
                                                 #{company.rank}
                                             </div>
                                             <h3 className="font-bold text-xl">{company.name}</h3>
                                         </div>
-                                        <div className="text-sm font-medium bg-slate-100 px-3 py-1 rounded whitespace-nowrap">
+                                        <div className="text-sm font-medium bg-[#121423] px-3 py-1 rounded whitespace-nowrap">
                                             {company.tagline}
                                         </div>
                                     </div>
                                     <div className="p-8">
-                                        <p className="text-slate-600 mb-6">
+                                        <p className="text-[#D0CCC4] mb-6">
                                             {company.description}
                                         </p>
 
                                         {/* Quick Stats */}
                                         <div className="grid grid-cols-3 gap-4 mb-6">
-                                            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
-                                                <div className="text-xs text-slate-600 mb-1">Minimum</div>
-                                                <div className="font-bold text-slate-900">{company.minInvestment}</div>
+                                            <div className="bg-[#0C0D18] rounded-lg p-3 border border-[#2A2D42]">
+                                                <div className="text-xs text-[#D0CCC4] mb-1">Minimum</div>
+                                                <div className="font-bold text-[#F6F4EF]">{company.minInvestment}</div>
                                             </div>
-                                            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
-                                                <div className="text-xs text-slate-600 mb-1">Silver Selection</div>
-                                                <div className="font-bold text-slate-900">{company.silverSelection}</div>
+                                            <div className="bg-[#0C0D18] rounded-lg p-3 border border-[#2A2D42]">
+                                                <div className="text-xs text-[#D0CCC4] mb-1">Silver Selection</div>
+                                                <div className="font-bold text-[#F6F4EF]">{company.silverSelection}</div>
                                             </div>
-                                            <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
-                                                <div className="text-xs text-slate-600 mb-1">Annual Fee</div>
-                                                <div className="font-bold text-slate-900">{company.annualFee}</div>
+                                            <div className="bg-[#0C0D18] rounded-lg p-3 border border-[#2A2D42]">
+                                                <div className="text-xs text-[#D0CCC4] mb-1">Annual Fee</div>
+                                                <div className="font-bold text-[#F6F4EF]">{company.annualFee}</div>
                                             </div>
                                         </div>
 
@@ -316,7 +316,7 @@ export default function BestSilverIraCompaniesPage() {
                                             {company.badges.map((badge, idx) => (
                                                 <span
                                                     key={idx}
-                                                    className="bg-[#B22234]/10 text-slate-600 px-3 py-1 rounded-full text-xs font-bold border border-slate-300"
+                                                    className="bg-[rgba(220,38,38,0.1)] text-[#D0CCC4] px-3 py-1 rounded-full text-xs font-bold border border-[#3F4460]"
                                                 >
                                                     {badge}
                                                 </span>
@@ -329,17 +329,17 @@ export default function BestSilverIraCompaniesPage() {
                                                 <h4 className="font-bold text-green-400 mb-2 flex items-center gap-2">
                                                     <CheckCircle2 className="w-4 h-4" /> Strengths
                                                 </h4>
-                                                <ul className="text-sm space-y-1 text-slate-600">
+                                                <ul className="text-sm space-y-1 text-[#D0CCC4]">
                                                     {company.strengths.map((strength, idx) => (
                                                         <li key={idx}>• {strength}</li>
                                                     ))}
                                                 </ul>
                                             </div>
-                                            <div className="bg-[#B22234]/10 p-4 rounded-xl border border-amber-500/20">
-                                                <h4 className="font-bold text-[#B22234] mb-2 flex items-center gap-2">
+                                            <div className="bg-[rgba(220,38,38,0.1)] p-4 rounded-xl border border-amber-500/20">
+                                                <h4 className="font-bold text-[#D4A94E] mb-2 flex items-center gap-2">
                                                     Considerations
                                                 </h4>
-                                                <ul className="text-sm space-y-1 text-slate-600">
+                                                <ul className="text-sm space-y-1 text-[#D0CCC4]">
                                                     {company.considerations.map((consideration, idx) => (
                                                         <li key={idx}>• {consideration}</li>
                                                     ))}
@@ -349,12 +349,12 @@ export default function BestSilverIraCompaniesPage() {
 
                                         {/* CTAs */}
                                         <div className="flex flex-col sm:flex-row gap-4">
-                                            <Button className="bg-[#B22234] hover:bg-[#8b1c2a] text-white w-full" size="lg" asChild>
+                                            <Button className="bg-[#DC2626] hover:bg-[#991B1B] text-white w-full" size="lg" asChild>
                                                 <a href={getTrackedLink(company.link, "best-silver-companies", company.name.toLowerCase().replace(/\s+/g, '-'))} target="_blank" rel="noopener noreferrer">
                                                     Request Silver IRA Info
                                                 </a>
                                             </Button>
-                                            <Button variant="outline" size="lg" className="w-full border-slate-300 text-slate-600 hover:bg-slate-100" asChild>
+                                            <Button variant="outline" size="lg" className="w-full border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]" asChild>
                                                 <Link href={company.reviewLink}>Read Full Review</Link>
                                             </Button>
                                         </div>
@@ -363,14 +363,14 @@ export default function BestSilverIraCompaniesPage() {
                             ))}
 
                             {/* Silver vs Gold Comparison */}
-                            <div className="bg-white rounded-2xl p-8 border border-slate-200">
-                                <h2 className="text-2xl font-serif font-bold text-[#000080] mb-4">Silver vs Gold in Your IRA</h2>
-                                <p className="text-slate-600 mb-6">
+                            <div className="bg-[#161828] rounded-2xl p-8 border border-[#2A2D42]">
+                                <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-4">Silver vs Gold in Your IRA</h2>
+                                <p className="text-[#D0CCC4] mb-6">
                                     Many investors choose to hold both gold and silver in their precious metals IRA. Silver tends to be more volatile than gold, meaning bigger gains in bull markets but also larger drops in bear markets. The current silver-to-gold ratio may favor silver accumulation.
                                 </p>
                                 <Link
                                     href="/compare/gold-vs-silver-ira"
-                                    className="inline-flex items-center gap-2 text-[#B22234] hover:text-[#B22234] font-semibold"
+                                    className="inline-flex items-center gap-2 text-[#D4A94E] hover:text-[#D4A94E] font-semibold"
                                 >
                                     Read Our Silver vs Gold Comparison <ArrowRight className="w-4 h-4" />
                                 </Link>
@@ -378,18 +378,18 @@ export default function BestSilverIraCompaniesPage() {
 
                             {/* FAQs */}
                             <div>
-                                <h2 className="text-3xl font-serif font-bold text-[#000080] mb-8">Frequently Asked Questions</h2>
+                                <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8">Frequently Asked Questions</h2>
                                 <div className="space-y-4">
                                     {faqs.map((faq, index) => (
                                         <details
                                             key={index}
-                                            className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl"
+                                            className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl"
                                         >
-                                            <summary className="cursor-pointer p-6 font-semibold text-slate-900 flex justify-between items-center list-none">
+                                            <summary className="cursor-pointer p-6 font-semibold text-[#F6F4EF] flex justify-between items-center list-none">
                                                 {faq.question}
-                                                <span className="text-[#B22234] group-open:rotate-180 transition-transform">▼</span>
+                                                <span className="text-[#D4A94E] group-open:rotate-180 transition-transform">▼</span>
                                             </summary>
-                                            <div className="px-6 pb-6 text-slate-600">
+                                            <div className="px-6 pb-6 text-[#D0CCC4]">
                                                 {faq.answer}
                                             </div>
                                         </details>
@@ -398,12 +398,12 @@ export default function BestSilverIraCompaniesPage() {
                             </div>
 
                             {/* Quiz CTA */}
-                            <div className="bg-slate-50 backdrop-blur-sm p-8 rounded-2xl text-center border border-slate-200">
-                                <h3 className="text-2xl font-serif font-bold text-[#000080] mb-4">Not Sure Which Company Fits Your Silver IRA Needs?</h3>
-                                <p className="text-slate-600 mb-6">
+                            <div className="bg-[#0C0D18] backdrop-blur-sm p-8 rounded-2xl text-center border border-[#2A2D42]">
+                                <h3 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-4">Not Sure Which Company Fits Your Silver IRA Needs?</h3>
+                                <p className="text-[#D0CCC4] mb-6">
                                     The right choice depends on your investment amount, silver allocation goals, and preferences. Take our quick quiz to get a personalized recommendation.
                                 </p>
-                                <Button variant="outline" className="border-slate-300 text-slate-600 hover:bg-slate-100 hover:text-slate-900" asChild>
+                                <Button variant="outline" className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134] hover:text-[#F6F4EF]" asChild>
                                     <Link href="/quiz">
                                         Take the Quiz <ArrowRight className="w-4 h-4 ml-2" />
                                     </Link>
@@ -420,63 +420,63 @@ export default function BestSilverIraCompaniesPage() {
                 </Container>
 
                 {/* Related Silver Content */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
-                        <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">Explore Silver Content Hubs</h2>
+                        <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Explore Silver Content Hubs</h2>
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-                            <Link href="/silver-ira" className="group bg-[#B22234]/10 border border-[#B22234]/20 rounded-lg p-4 hover:bg-[#B22234]/10 transition-colors">
-                                <h4 className="font-bold text-slate-900 mb-1 group-hover:text-[#B22234] transition-colors">Silver IRA Hub</h4>
-                                <p className="text-xs text-slate-600">Complete guide to silver retirement accounts</p>
+                            <Link href="/silver-ira" className="group bg-[rgba(220,38,38,0.1)] border border-[#B22234]/20 rounded-lg p-4 hover:bg-[rgba(220,38,38,0.1)] transition-colors">
+                                <h4 className="font-bold text-[#F6F4EF] mb-1 group-hover:text-[#D4A94E] transition-colors">Silver IRA Hub</h4>
+                                <p className="text-xs text-[#D0CCC4]">Complete guide to silver retirement accounts</p>
                             </Link>
-                            <Link href="/silver-price" className="group bg-[#B22234]/10 border border-[#B22234]/20 rounded-lg p-4 hover:bg-[#B22234]/10 transition-colors">
-                                <h4 className="font-bold text-slate-900 mb-1 group-hover:text-[#B22234] transition-colors">Silver Price Predictions</h4>
-                                <p className="text-xs text-slate-600">Expert forecasts 2026-2040</p>
+                            <Link href="/silver-price" className="group bg-[rgba(220,38,38,0.1)] border border-[#B22234]/20 rounded-lg p-4 hover:bg-[rgba(220,38,38,0.1)] transition-colors">
+                                <h4 className="font-bold text-[#F6F4EF] mb-1 group-hover:text-[#D4A94E] transition-colors">Silver Price Predictions</h4>
+                                <p className="text-xs text-[#D0CCC4]">Expert forecasts 2026-2040</p>
                             </Link>
-                            <Link href="/silver-products" className="group bg-[#B22234]/10 border border-[#B22234]/20 rounded-lg p-4 hover:bg-[#B22234]/10 transition-colors">
-                                <h4 className="font-bold text-slate-900 mb-1 group-hover:text-[#B22234] transition-colors">Silver Products Guide</h4>
-                                <p className="text-xs text-slate-600">Coins, bars & IRA-approved silver</p>
+                            <Link href="/silver-products" className="group bg-[rgba(220,38,38,0.1)] border border-[#B22234]/20 rounded-lg p-4 hover:bg-[rgba(220,38,38,0.1)] transition-colors">
+                                <h4 className="font-bold text-[#F6F4EF] mb-1 group-hover:text-[#D4A94E] transition-colors">Silver Products Guide</h4>
+                                <p className="text-xs text-[#D0CCC4]">Coins, bars & IRA-approved silver</p>
                             </Link>
-                            <Link href="/silver-experts" className="group bg-[#B22234]/10 border border-[#B22234]/20 rounded-lg p-4 hover:bg-[#B22234]/10 transition-colors">
-                                <h4 className="font-bold text-slate-900 mb-1 group-hover:text-[#B22234] transition-colors">Silver Experts</h4>
-                                <p className="text-xs text-slate-600">Leading silver analysts & their views</p>
+                            <Link href="/silver-experts" className="group bg-[rgba(220,38,38,0.1)] border border-[#B22234]/20 rounded-lg p-4 hover:bg-[rgba(220,38,38,0.1)] transition-colors">
+                                <h4 className="font-bold text-[#F6F4EF] mb-1 group-hover:text-[#D4A94E] transition-colors">Silver Experts</h4>
+                                <p className="text-xs text-[#D0CCC4]">Leading silver analysts & their views</p>
                             </Link>
                         </div>
 
-                        <h3 className="text-xl font-bold text-slate-900 mb-6 text-center">Learn More About Silver IRAs</h3>
+                        <h3 className="text-xl font-bold text-[#F6F4EF] mb-6 text-center">Learn More About Silver IRAs</h3>
                         <div className="grid md:grid-cols-3 gap-6">
-                            <Link href="/guide/silver-ira-guide" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
-                                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Silver IRA Guide</h3>
-                                <p className="text-sm text-slate-600">Complete guide to opening and managing a silver IRA account.</p>
+                            <Link href="/guide/silver-ira-guide" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Silver IRA Guide</h3>
+                                <p className="text-sm text-[#D0CCC4]">Complete guide to opening and managing a silver IRA account.</p>
                             </Link>
-                            <Link href="/guide/ira-approved-silver" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
-                                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">IRA-Approved Silver</h3>
-                                <p className="text-sm text-slate-600">Which silver coins and bars qualify for your retirement account.</p>
+                            <Link href="/guide/ira-approved-silver" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">IRA-Approved Silver</h3>
+                                <p className="text-sm text-[#D0CCC4]">Which silver coins and bars qualify for your retirement account.</p>
                             </Link>
-                            <Link href="/best-gold-ira-companies" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
-                                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">Best Gold IRA Companies</h3>
-                                <p className="text-sm text-slate-600">Compare gold IRA providers for a diversified precious metals portfolio.</p>
+                            <Link href="/best-gold-ira-companies" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">Best Gold IRA Companies</h3>
+                                <p className="text-sm text-[#D0CCC4]">Compare gold IRA providers for a diversified precious metals portfolio.</p>
                             </Link>
                         </div>
 
                         {/* Silver Squeeze Resources */}
-                        <div className="mt-8 pt-8 border-t border-slate-200">
-                            <h3 className="text-xl font-bold text-slate-900 mb-6 text-center">Silver Market Insights</h3>
+                        <div className="mt-8 pt-8 border-t border-[#2A2D42]">
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-6 text-center">Silver Market Insights</h3>
                             <div className="grid md:grid-cols-4 gap-4">
-                                <Link href="/silver-squeeze" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:bg-slate-100 transition-colors">
-                                    <h4 className="font-bold text-slate-900 text-sm mb-1 group-hover:text-[#B22234] transition-colors">Silver Squeeze Hub</h4>
-                                    <p className="text-xs text-slate-600">Understand the silver squeeze movement</p>
+                                <Link href="/silver-squeeze" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-[#1E2134] transition-colors">
+                                    <h4 className="font-bold text-[#F6F4EF] text-sm mb-1 group-hover:text-[#D4A94E] transition-colors">Silver Squeeze Hub</h4>
+                                    <p className="text-xs text-[#D0CCC4]">Understand the silver squeeze movement</p>
                                 </Link>
-                                <Link href="/silver-squeeze/buy-physical-silver-guide" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:bg-slate-100 transition-colors">
-                                    <h4 className="font-bold text-slate-900 text-sm mb-1 group-hover:text-[#B22234] transition-colors">Buy Physical Silver</h4>
-                                    <p className="text-xs text-slate-600">Guide to premiums, products & dealers</p>
+                                <Link href="/silver-squeeze/buy-physical-silver-guide" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-[#1E2134] transition-colors">
+                                    <h4 className="font-bold text-[#F6F4EF] text-sm mb-1 group-hover:text-[#D4A94E] transition-colors">Buy Physical Silver</h4>
+                                    <p className="text-xs text-[#D0CCC4]">Guide to premiums, products & dealers</p>
                                 </Link>
-                                <Link href="/silver-squeeze/silver-supply-deficit" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:bg-slate-100 transition-colors">
-                                    <h4 className="font-bold text-slate-900 text-sm mb-1 group-hover:text-[#B22234] transition-colors">Silver Supply Deficit</h4>
-                                    <p className="text-xs text-slate-600">Why silver supply is tightening</p>
+                                <Link href="/silver-squeeze/silver-supply-deficit" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-[#1E2134] transition-colors">
+                                    <h4 className="font-bold text-[#F6F4EF] text-sm mb-1 group-hover:text-[#D4A94E] transition-colors">Silver Supply Deficit</h4>
+                                    <p className="text-xs text-[#D0CCC4]">Why silver supply is tightening</p>
                                 </Link>
-                                <Link href="/compare/gold-vs-silver-ira" className="group bg-slate-50 border border-slate-200 rounded-lg p-4 hover:bg-slate-100 transition-colors">
-                                    <h4 className="font-bold text-slate-900 text-sm mb-1 group-hover:text-[#B22234] transition-colors">Gold vs Silver IRA</h4>
-                                    <p className="text-xs text-slate-600">Compare gold and silver for retirement</p>
+                                <Link href="/compare/gold-vs-silver-ira" className="group bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4 hover:bg-[#1E2134] transition-colors">
+                                    <h4 className="font-bold text-[#F6F4EF] text-sm mb-1 group-hover:text-[#D4A94E] transition-colors">Gold vs Silver IRA</h4>
+                                    <p className="text-xs text-[#D0CCC4]">Compare gold and silver for retirement</p>
                                 </Link>
                             </div>
                         </div>

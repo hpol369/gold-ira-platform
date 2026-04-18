@@ -199,19 +199,19 @@ export function CalPERSRetirementCalculator() {
     }).format(amount);
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-[#0C0D18]">
       <Container>
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               CALPERS CALCULATOR
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
               CalPERS Retirement Calculator
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
               Estimate your California Public Employees Retirement System pension
               benefits using official CalPERS formulas.
             </p>
@@ -219,12 +219,12 @@ export function CalPERSRetirementCalculator() {
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Input Panel */}
-            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-[#000080] mb-6">Your Information</h3>
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#F6F4EF] mb-6">Your Information</h3>
 
               {/* Membership Year */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   Year You Became a CalPERS Member
                 </label>
                 <input
@@ -237,10 +237,10 @@ export function CalPERSRetirementCalculator() {
                   }}
                   min={1970}
                   max={2024}
-                  className="w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-[#B22234]"
+                  className="w-full px-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] text-lg focus:outline-none focus:border-[#B22234]"
                 />
                 {membershipYear >= 2013 && (
-                  <p className="text-[#B22234] text-sm mt-2">
+                  <p className="text-[#D4A94E] text-sm mt-2">
                     PEPRA member - You are subject to the 2% @ 62 formula
                   </p>
                 )}
@@ -248,13 +248,13 @@ export function CalPERSRetirementCalculator() {
 
               {/* Benefit Formula Selection */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   Benefit Formula
                 </label>
                 <select
                   value={formula}
                   onChange={(e) => setFormula(e.target.value as FormulaKey)}
-                  className="w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-[#B22234]"
+                  className="w-full px-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] text-lg focus:outline-none focus:border-[#B22234]"
                 >
                   {Object.entries(BENEFIT_FORMULAS).map(([key, data]) => (
                     <option key={key} value={key}>
@@ -263,7 +263,7 @@ export function CalPERSRetirementCalculator() {
                   ))}
                 </select>
                 {formula !== suggestedFormula && membershipYear >= 2013 && (
-                  <p className="text-[#B22234] text-sm mt-2">
+                  <p className="text-[#D4A94E] text-sm mt-2">
                     Note: Based on your membership year, PEPRA 2% @ 62 may be your formula
                   </p>
                 )}
@@ -271,19 +271,19 @@ export function CalPERSRetirementCalculator() {
 
               {/* Final Compensation */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   Final Compensation (Highest {BENEFIT_FORMULAS[formula].finalCompPeriod === 12 ? "12" : "36"} Month Average)
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={finalCompensation}
                     onChange={(e) => setFinalCompensation(Number(e.target.value))}
-                    className="w-full pl-12 pr-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-[#B22234]"
+                    className="w-full pl-12 pr-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] text-lg focus:outline-none focus:border-[#B22234]"
                   />
                 </div>
-                <p className="text-slate-500 text-sm mt-2">
+                <p className="text-[#A8A39A] text-sm mt-2">
                   {BENEFIT_FORMULAS[formula].finalCompPeriod === 12
                     ? "Classic: Average of highest 12 consecutive months"
                     : "PEPRA: Average of highest 36 consecutive months"}
@@ -292,8 +292,8 @@ export function CalPERSRetirementCalculator() {
 
               {/* Service Years */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
-                  Service Credit (Years): <span className="text-[#B22234] font-bold">{serviceYears}</span>
+                <label className="block text-[#D0CCC4] text-sm mb-2">
+                  Service Credit (Years): <span className="text-[#D4A94E] font-bold">{serviceYears}</span>
                 </label>
                 <input
                   type="range"
@@ -304,7 +304,7 @@ export function CalPERSRetirementCalculator() {
                   onChange={(e) => setServiceYears(Number(e.target.value))}
                   className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>5 years</span>
                   <span>20 years</span>
                   <span>40 years</span>
@@ -313,8 +313,8 @@ export function CalPERSRetirementCalculator() {
 
               {/* Retirement Age */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
-                  Retirement Age: <span className="text-[#B22234] font-bold">{retirementAge}</span>
+                <label className="block text-[#D0CCC4] text-sm mb-2">
+                  Retirement Age: <span className="text-[#D4A94E] font-bold">{retirementAge}</span>
                 </label>
                 <input
                   type="range"
@@ -325,7 +325,7 @@ export function CalPERSRetirementCalculator() {
                   onChange={(e) => setRetirementAge(Number(e.target.value))}
                   className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Min: {BENEFIT_FORMULAS[formula].minRetirementAge}</span>
                   <span>62</span>
                   <span>70</span>
@@ -333,14 +333,14 @@ export function CalPERSRetirementCalculator() {
               </div>
 
               {/* Age Factor Display */}
-              <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-4 mb-6">
+              <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <Info className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <Info className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-[#B22234] font-semibold text-sm">
+                    <p className="text-[#D4A94E] font-semibold text-sm">
                       Age Factor at {retirementAge}: {getAgeFactor(formula, retirementAge).toFixed(3)}%
                     </p>
-                    <p className="text-slate-600 text-sm mt-1">
+                    <p className="text-[#D0CCC4] text-sm mt-1">
                       {BENEFIT_FORMULAS[formula].name} - Max factor: {BENEFIT_FORMULAS[formula].maxAgeFactor}%
                     </p>
                   </div>
@@ -350,7 +350,7 @@ export function CalPERSRetirementCalculator() {
               {/* Calculate Button */}
               <button
                 onClick={calculateBenefit}
-                className="w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-slate-900 font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
+                className="w-full py-4 bg-[#DC2626] hover:bg-[#991B1B] text-[#F6F4EF] font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
               >
                 <Calculator className="h-5 w-5" />
                 Calculate My CalPERS Benefit
@@ -358,47 +358,47 @@ export function CalPERSRetirementCalculator() {
             </div>
 
             {/* Results Panel */}
-            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-[#000080] mb-6">Your CalPERS Estimate</h3>
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#F6F4EF] mb-6">Your CalPERS Estimate</h3>
 
               {result ? (
                 <div className="space-y-6">
                   {/* Primary Result */}
-                  <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-5">
-                    <div className="flex items-center gap-2 text-[#B22234] text-sm mb-2">
+                  <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-5">
+                    <div className="flex items-center gap-2 text-[#D4A94E] text-sm mb-2">
                       <Calendar className="h-4 w-4" />
                       ESTIMATED MONTHLY BENEFIT
                     </div>
-                    <div className="text-4xl font-bold text-[#000080] mb-2">
+                    <div className="text-4xl font-bold text-[#F6F4EF] mb-2">
                       {formatCurrency(result.monthlyBenefit)}
                     </div>
-                    <div className="text-slate-600 text-sm">
+                    <div className="text-[#D0CCC4] text-sm">
                       {formatCurrency(result.annualBenefit)} per year
                     </div>
                   </div>
 
                   {/* Formula Breakdown */}
-                  <div className="bg-slate-50 rounded-xl p-4">
-                    <h4 className="text-slate-900 font-semibold mb-3">Calculation Breakdown</h4>
+                  <div className="bg-[#0C0D18] rounded-xl p-4">
+                    <h4 className="text-[#F6F4EF] font-semibold mb-3">Calculation Breakdown</h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
-                        <span className="text-slate-500">Formula</span>
-                        <span className="text-slate-900">{result.formula}</span>
+                        <span className="text-[#A8A39A]">Formula</span>
+                        <span className="text-[#F6F4EF]">{result.formula}</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-500">Age Factor</span>
-                        <span className="text-[#B22234]">{result.ageFactor.toFixed(3)}%</span>
+                        <span className="text-[#A8A39A]">Age Factor</span>
+                        <span className="text-[#D4A94E]">{result.ageFactor.toFixed(3)}%</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-500">Service Credit</span>
-                        <span className="text-slate-900">{serviceYears} years</span>
+                        <span className="text-[#A8A39A]">Service Credit</span>
+                        <span className="text-[#F6F4EF]">{serviceYears} years</span>
                       </div>
                       <div className="flex justify-between">
-                        <span className="text-slate-500">Final Compensation</span>
-                        <span className="text-slate-900">{formatCurrency(finalCompensation)}</span>
+                        <span className="text-[#A8A39A]">Final Compensation</span>
+                        <span className="text-[#F6F4EF]">{formatCurrency(finalCompensation)}</span>
                       </div>
-                      <div className="border-t border-slate-200 pt-2 mt-2">
-                        <p className="text-slate-500 text-xs">
+                      <div className="border-t border-[#2A2D42] pt-2 mt-2">
+                        <p className="text-[#A8A39A] text-xs">
                           {result.ageFactor.toFixed(3)}% x {serviceYears} x {formatCurrency(finalCompensation)} = {formatCurrency(result.annualBenefit)}/year
                         </p>
                       </div>
@@ -406,53 +406,53 @@ export function CalPERSRetirementCalculator() {
                   </div>
 
                   {/* Survivor Options */}
-                  <div className="bg-slate-50 rounded-xl p-4">
-                    <div className="flex items-center gap-2 text-slate-900 font-semibold mb-3">
+                  <div className="bg-[#0C0D18] rounded-xl p-4">
+                    <div className="flex items-center gap-2 text-[#F6F4EF] font-semibold mb-3">
                       <Users className="h-5 w-5 text-blue-600" />
                       Survivor Benefit Options
                     </div>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center">
                         <div>
-                          <span className="text-slate-600 text-sm">100% to Survivor</span>
-                          <span className="text-slate-500 text-xs block">~10% reduction</span>
+                          <span className="text-[#D0CCC4] text-sm">100% to Survivor</span>
+                          <span className="text-[#A8A39A] text-xs block">~10% reduction</span>
                         </div>
-                        <span className="text-slate-900 font-semibold">{formatCurrency(result.survivor100)}/mo</span>
+                        <span className="text-[#F6F4EF] font-semibold">{formatCurrency(result.survivor100)}/mo</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <div>
-                          <span className="text-slate-600 text-sm">75% to Survivor</span>
-                          <span className="text-slate-500 text-xs block">~7.5% reduction</span>
+                          <span className="text-[#D0CCC4] text-sm">75% to Survivor</span>
+                          <span className="text-[#A8A39A] text-xs block">~7.5% reduction</span>
                         </div>
-                        <span className="text-slate-900 font-semibold">{formatCurrency(result.survivor75)}/mo</span>
+                        <span className="text-[#F6F4EF] font-semibold">{formatCurrency(result.survivor75)}/mo</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <div>
-                          <span className="text-slate-600 text-sm">50% to Survivor</span>
-                          <span className="text-slate-500 text-xs block">~5% reduction</span>
+                          <span className="text-[#D0CCC4] text-sm">50% to Survivor</span>
+                          <span className="text-[#A8A39A] text-xs block">~5% reduction</span>
                         </div>
-                        <span className="text-slate-900 font-semibold">{formatCurrency(result.survivor50)}/mo</span>
+                        <span className="text-[#F6F4EF] font-semibold">{formatCurrency(result.survivor50)}/mo</span>
                       </div>
                     </div>
                   </div>
 
                   {/* COLA Projections */}
-                  <div className="bg-slate-50 rounded-xl p-4">
-                    <div className="flex items-center gap-2 text-slate-900 font-semibold mb-3">
+                  <div className="bg-[#0C0D18] rounded-xl p-4">
+                    <div className="flex items-center gap-2 text-[#F6F4EF] font-semibold mb-3">
                       <TrendingUp className="h-5 w-5 text-green-600" />
                       COLA Projections (2% Annual)
                     </div>
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
-                        <span className="text-slate-500">After 5 Years</span>
+                        <span className="text-[#A8A39A]">After 5 Years</span>
                         <span className="text-green-600">{formatCurrency(result.colaAdjusted5yr)}/year</span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span className="text-slate-500">After 10 Years</span>
+                        <span className="text-[#A8A39A]">After 10 Years</span>
                         <span className="text-green-600">{formatCurrency(result.colaAdjusted10yr)}/year</span>
                       </div>
                       <div className="flex justify-between text-sm">
-                        <span className="text-slate-500">After 20 Years</span>
+                        <span className="text-[#A8A39A]">After 20 Years</span>
                         <span className="text-green-600">{formatCurrency(result.colaAdjusted20yr)}/year</span>
                       </div>
                     </div>
@@ -461,7 +461,7 @@ export function CalPERSRetirementCalculator() {
                   {/* CTA */}
                   <Link
                     href="/get-started"
-                    className="block w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-slate-900 font-bold text-center rounded-xl transition-all"
+                    className="block w-full py-4 bg-[#DC2626] hover:bg-[#991B1B] text-[#F6F4EF] font-bold text-center rounded-xl transition-all"
                   >
                     Protect Your Pension with Gold
                     <ArrowRight className="inline ml-2 h-5 w-5" />
@@ -469,10 +469,10 @@ export function CalPERSRetirementCalculator() {
                 </div>
               ) : (
                 <div className="h-full flex flex-col items-center justify-center text-center py-12">
-                  <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-4">
-                    <Calculator className="h-8 w-8 text-slate-500" />
+                  <div className="w-16 h-16 bg-[#121423] rounded-2xl flex items-center justify-center mb-4">
+                    <Calculator className="h-8 w-8 text-[#A8A39A]" />
                   </div>
-                  <p className="text-slate-500">
+                  <p className="text-[#A8A39A]">
                     Enter your information and click &quot;Calculate My CalPERS Benefit&quot; to see your
                     estimated pension.
                   </p>
@@ -483,24 +483,24 @@ export function CalPERSRetirementCalculator() {
 
           {/* Key CalPERS Facts */}
           <div className="mt-12 grid md:grid-cols-3 gap-6">
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
               <CheckCircle2 className="h-8 w-8 text-green-600 mb-4" />
-              <h4 className="text-slate-900 font-semibold mb-2">Guaranteed for Life</h4>
-              <p className="text-slate-600 text-sm">
+              <h4 className="text-[#F6F4EF] font-semibold mb-2">Guaranteed for Life</h4>
+              <p className="text-[#D0CCC4] text-sm">
                 CalPERS pensions are guaranteed monthly income for life, with optional survivor benefits for your spouse.
               </p>
             </div>
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
-              <TrendingUp className="h-8 w-8 text-[#B22234] mb-4" />
-              <h4 className="text-slate-900 font-semibold mb-2">Cost-of-Living Adjustments</h4>
-              <p className="text-slate-600 text-sm">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
+              <TrendingUp className="h-8 w-8 text-[#D4A94E] mb-4" />
+              <h4 className="text-[#F6F4EF] font-semibold mb-2">Cost-of-Living Adjustments</h4>
+              <p className="text-[#D0CCC4] text-sm">
                 Most CalPERS benefits include a 2% annual COLA to help your pension keep pace with inflation.
               </p>
             </div>
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
               <Info className="h-8 w-8 text-blue-600 mb-4" />
-              <h4 className="text-slate-900 font-semibold mb-2">Health Benefits</h4>
-              <p className="text-slate-600 text-sm">
+              <h4 className="text-[#F6F4EF] font-semibold mb-2">Health Benefits</h4>
+              <p className="text-[#D0CCC4] text-sm">
                 CalPERS retirees may be eligible for health insurance benefits through the CalPERS Health Program.
               </p>
             </div>

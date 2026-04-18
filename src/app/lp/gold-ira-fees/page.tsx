@@ -59,7 +59,7 @@ export default function GoldIRAFeesLandingPage() {
     const faqSchema = generateFAQSchema();
 
     return (
-        <div className="min-h-screen bg-white text-slate-900 font-sans">
+        <div className="min-h-screen bg-white text-[#F6F4EF] font-sans">
             {/* FAQ Schema */}
             <script
                 type="application/ld+json"
@@ -67,7 +67,7 @@ export default function GoldIRAFeesLandingPage() {
             />
 
             {/* Alert Bar */}
-            <div className="bg-amber-500 text-slate-900 p-2.5 text-center font-bold text-sm">
+            <div className="bg-amber-500 text-[#F6F4EF] p-2.5 text-center font-bold text-sm">
                 <span className="flex items-center justify-center gap-2">
                     <AlertTriangle className="h-4 w-4" />
                     Fee Alert: Some Gold IRA Companies Charge Hidden Markups of 30%+
@@ -75,15 +75,15 @@ export default function GoldIRAFeesLandingPage() {
             </div>
 
             {/* Hero Section */}
-            <header className="relative py-12 md:py-20 bg-slate-50 border-b-4 border-[#000080]">
+            <header className="relative py-12 md:py-20 bg-[#0C0D18] border-b-4 border-[#000080]">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     {/* Badge - Clickable */}
                     <LeadCaptureButton
                         variant="fees"
                         source="lp-fees-badge-click"
-                        className="inline-flex items-center gap-2 bg-[#000080]/10 text-[#000080] px-4 py-1.5 rounded-full text-sm font-semibold mb-6 hover:bg-[#000080]/20 transition-colors cursor-pointer"
+                        className="inline-flex items-center gap-2 bg-[rgba(197,149,46,0.08)] text-[#F6F4EF] px-4 py-1.5 rounded-full text-sm font-semibold mb-6 hover:bg-[rgba(197,149,46,0.14)] transition-colors cursor-pointer"
                     >
-                        <span className="w-2 h-2 rounded-full bg-[#000080] animate-pulse"></span>
+                        <span className="w-2 h-2 rounded-full bg-[rgba(197,149,46,0.1)] animate-pulse"></span>
                         2026 Fee Guide
                     </LeadCaptureButton>
 
@@ -93,8 +93,8 @@ export default function GoldIRAFeesLandingPage() {
                         source="lp-fees-headline-click"
                         className="block cursor-pointer hover:opacity-90 transition-opacity"
                     >
-                        <h1 className="text-4xl md:text-6xl font-extrabold text-[#000080] mb-6 leading-tight">
-                            Gold IRA Fees <span className="text-[#B22234]">Exposed</span>: <br className="hidden md:block" />
+                        <h1 className="text-4xl md:text-6xl font-extrabold text-[#F6F4EF] mb-6 leading-tight">
+                            Gold IRA Fees <span className="text-[#D4A94E]">Exposed</span>: <br className="hidden md:block" />
                             What They Don&apos;t Tell You
                         </h1>
                     </LeadCaptureButton>
@@ -105,7 +105,7 @@ export default function GoldIRAFeesLandingPage() {
                         source="lp-fees-subheadline-click"
                         className="block cursor-pointer hover:opacity-80 transition-opacity mb-8"
                     >
-                        <p className="text-xl md:text-2xl text-slate-700 max-w-2xl mx-auto">
+                        <p className="text-xl md:text-2xl text-[#D0CCC4] max-w-2xl mx-auto">
                             Not all Gold IRA companies are transparent about fees. Here&apos;s what you need to know before investing.
                         </p>
                     </LeadCaptureButton>
@@ -117,16 +117,16 @@ export default function GoldIRAFeesLandingPage() {
                         className="flex flex-wrap justify-center gap-6 md:gap-12 mb-10 cursor-pointer hover:opacity-80 transition-opacity"
                     >
                         <div className="text-center">
-                            <div className="text-3xl md:text-4xl font-bold text-[#000080]">3</div>
-                            <div className="text-sm text-slate-600">Fee Types</div>
+                            <div className="text-3xl md:text-4xl font-bold text-[#F6F4EF]">3</div>
+                            <div className="text-sm text-[#D0CCC4]">Fee Types</div>
                         </div>
-                        <div className="text-center border-l border-slate-300 pl-6 md:pl-12">
+                        <div className="text-center border-l border-[#3F4460] pl-6 md:pl-12">
                             <div className="text-3xl md:text-4xl font-bold text-green-600">$180</div>
-                            <div className="text-sm text-slate-600">/yr (Augusta)</div>
+                            <div className="text-sm text-[#D0CCC4]">/yr (Augusta)</div>
                         </div>
-                        <div className="text-center border-l border-slate-300 pl-6 md:pl-12">
-                            <div className="text-3xl md:text-4xl font-bold text-[#B22234]">0</div>
-                            <div className="text-sm text-slate-600">Hidden Fees</div>
+                        <div className="text-center border-l border-[#3F4460] pl-6 md:pl-12">
+                            <div className="text-3xl md:text-4xl font-bold text-[#D4A94E]">0</div>
+                            <div className="text-sm text-[#D0CCC4]">Hidden Fees</div>
                         </div>
                     </LeadCaptureButton>
 
@@ -134,12 +134,12 @@ export default function GoldIRAFeesLandingPage() {
                     <LeadCaptureButton
                         variant="fees"
                         source="lp-gold-ira-fees-hero"
-                        className="inline-flex items-center gap-3 bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-lg hover:shadow-xl transition-all"
+                        className="inline-flex items-center gap-3 bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-lg hover:shadow-xl transition-all"
                     >
                         See Full Fee Breakdown
                         <ArrowRight className="h-6 w-6" />
                     </LeadCaptureButton>
-                    <p className="text-sm text-slate-500 mt-4 flex items-center justify-center gap-2">
+                    <p className="text-sm text-[#A8A39A] mt-4 flex items-center justify-center gap-2">
                         <ShieldCheck className="h-4 w-4 text-green-600" />
                         Free Guide - Zero Obligation
                     </p>
@@ -147,14 +147,14 @@ export default function GoldIRAFeesLandingPage() {
             </header>
 
             {/* Trust Bar */}
-            <section className="py-6 bg-slate-100 border-b border-slate-200">
+            <section className="py-6 bg-[#121423] border-b border-[#2A2D42]">
                 <div className="max-w-5xl mx-auto px-4 text-center">
-                    <p className="text-slate-500 uppercase tracking-widest text-xs mb-3">Trusted By 50,000+ Americans</p>
+                    <p className="text-[#A8A39A] uppercase tracking-widest text-xs mb-3">Trusted By 50,000+ Americans</p>
                     <div className="flex flex-wrap justify-center gap-6 md:gap-12 opacity-60 grayscale">
-                        <span className="text-lg md:text-xl font-bold text-slate-800">FOX NEWS</span>
-                        <span className="text-lg md:text-xl font-bold text-slate-800">NEWSMAX</span>
-                        <span className="text-lg md:text-xl font-bold text-slate-800">FORBES</span>
-                        <span className="text-lg md:text-xl font-bold text-slate-800">WSJ</span>
+                        <span className="text-lg md:text-xl font-bold text-[#F6F4EF]">FOX NEWS</span>
+                        <span className="text-lg md:text-xl font-bold text-[#F6F4EF]">NEWSMAX</span>
+                        <span className="text-lg md:text-xl font-bold text-[#F6F4EF]">FORBES</span>
+                        <span className="text-lg md:text-xl font-bold text-[#F6F4EF]">WSJ</span>
                     </div>
                 </div>
             </section>
@@ -162,52 +162,52 @@ export default function GoldIRAFeesLandingPage() {
             {/* The 3 Fee Types Section */}
             <section className="py-16 bg-white">
                 <div className="max-w-5xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] text-center mb-4">Understanding Gold IRA Fees</h2>
-                    <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">Every Gold IRA involves three main fee categories. Here&apos;s what they are and what you should expect to pay.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] text-center mb-4">Understanding Gold IRA Fees</h2>
+                    <p className="text-center text-[#D0CCC4] mb-12 max-w-2xl mx-auto">Every Gold IRA involves three main fee categories. Here&apos;s what they are and what you should expect to pay.</p>
 
                     <div className="grid md:grid-cols-3 gap-6">
                         {/* Fee Card 1 */}
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:border-[#000080]/30 transition-colors">
-                            <div className="w-14 h-14 bg-[#000080]/10 rounded-xl flex items-center justify-center mb-4">
-                                <DollarSign className="h-7 w-7 text-[#000080]" />
+                        <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.55)]/30 transition-colors">
+                            <div className="w-14 h-14 bg-[rgba(197,149,46,0.08)] rounded-xl flex items-center justify-center mb-4">
+                                <DollarSign className="h-7 w-7 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-800 mb-2">Setup Fee</h3>
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-2">Setup Fee</h3>
                             <div className="text-2xl font-bold text-green-600 mb-3">$0 - $50</div>
-                            <p className="text-slate-600 text-sm">One-time fee to open your account. Many companies waive this fee entirely, especially for larger accounts.</p>
+                            <p className="text-[#D0CCC4] text-sm">One-time fee to open your account. Many companies waive this fee entirely, especially for larger accounts.</p>
                         </div>
 
                         {/* Fee Card 2 */}
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:border-[#000080]/30 transition-colors">
-                            <div className="w-14 h-14 bg-[#000080]/10 rounded-xl flex items-center justify-center mb-4">
-                                <Building2 className="h-7 w-7 text-[#000080]" />
+                        <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.55)]/30 transition-colors">
+                            <div className="w-14 h-14 bg-[rgba(197,149,46,0.08)] rounded-xl flex items-center justify-center mb-4">
+                                <Building2 className="h-7 w-7 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-800 mb-2">Annual Storage/Custodian</h3>
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-2">Annual Storage/Custodian</h3>
                             <div className="text-2xl font-bold text-amber-600 mb-3">$150 - $300/yr</div>
-                            <p className="text-slate-600 text-sm">Covers secure vault storage, insurance, IRS reporting, and account maintenance. Best companies charge flat rates.</p>
+                            <p className="text-[#D0CCC4] text-sm">Covers secure vault storage, insurance, IRS reporting, and account maintenance. Best companies charge flat rates.</p>
                         </div>
 
                         {/* Fee Card 3 */}
-                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:border-[#000080]/30 transition-colors">
-                            <div className="w-14 h-14 bg-[#000080]/10 rounded-xl flex items-center justify-center mb-4">
-                                <Percent className="h-7 w-7 text-[#000080]" />
+                        <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42] hover:border-[rgba(197,149,46,0.55)]/30 transition-colors">
+                            <div className="w-14 h-14 bg-[rgba(197,149,46,0.08)] rounded-xl flex items-center justify-center mb-4">
+                                <Percent className="h-7 w-7 text-[#F6F4EF]" />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-800 mb-2">Dealer Markup</h3>
-                            <div className="text-2xl font-bold text-[#B22234] mb-3">Varies Wildly</div>
-                            <p className="text-slate-600 text-sm">Premium over spot price for metals. This is where shady companies hide their biggest profits. Can range from 2% to 30%+.</p>
+                            <h3 className="text-xl font-bold text-[#F6F4EF] mb-2">Dealer Markup</h3>
+                            <div className="text-2xl font-bold text-[#D4A94E] mb-3">Varies Wildly</div>
+                            <p className="text-[#D0CCC4] text-sm">Premium over spot price for metals. This is where shady companies hide their biggest profits. Can range from 2% to 30%+.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Fee Comparison Table */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <div className="max-w-5xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] text-center mb-4">What Do Gold IRAs Really Cost?</h2>
-                    <p className="text-center text-slate-600 mb-10 max-w-2xl mx-auto">Side-by-side comparison of fees from top Gold IRA companies.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] text-center mb-4">What Do Gold IRAs Really Cost?</h2>
+                    <p className="text-center text-[#D0CCC4] mb-10 max-w-2xl mx-auto">Side-by-side comparison of fees from top Gold IRA companies.</p>
 
                     <div className="overflow-x-auto">
-                        <table className="w-full bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden">
-                            <thead className="bg-[#000080] text-white">
+                        <table className="w-full bg-[#161828] rounded-xl shadow-lg border border-[#2A2D42] overflow-hidden">
+                            <thead className="bg-[rgba(197,149,46,0.1)] text-white">
                                 <tr>
                                     <th className="p-4 text-left font-bold">Company</th>
                                     <th className="p-4 text-center font-bold">Setup Fee</th>
@@ -215,9 +215,9 @@ export default function GoldIRAFeesLandingPage() {
                                     <th className="p-4 text-center font-bold">Markup Transparency</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-slate-200">
+                            <tbody className="divide-y divide-[#2A2D42]">
                                 <tr className="bg-green-50 border-l-4 border-green-500">
-                                    <td className="p-4 font-bold text-slate-800">Augusta Precious Metals ⭐</td>
+                                    <td className="p-4 font-bold text-[#F6F4EF]">Augusta Precious Metals ⭐</td>
                                     <td className="p-4 text-center text-green-600 font-semibold">$0</td>
                                     <td className="p-4 text-center text-green-600 font-semibold">$180</td>
                                     <td className="p-4 text-center">
@@ -227,27 +227,27 @@ export default function GoldIRAFeesLandingPage() {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td className="p-4 font-semibold text-slate-700">Goldco</td>
-                                    <td className="p-4 text-center text-slate-600">$50</td>
-                                    <td className="p-4 text-center text-slate-600">$225-$275</td>
+                                    <td className="p-4 font-semibold text-[#D0CCC4]">Goldco</td>
+                                    <td className="p-4 text-center text-[#D0CCC4]">$50</td>
+                                    <td className="p-4 text-center text-[#D0CCC4]">$225-$275</td>
                                     <td className="p-4 text-center text-amber-600">Moderate</td>
                                 </tr>
-                                <tr className="bg-slate-50">
-                                    <td className="p-4 font-semibold text-slate-700">Birch Gold Group</td>
-                                    <td className="p-4 text-center text-slate-600">$50</td>
-                                    <td className="p-4 text-center text-slate-600">$200-$250</td>
+                                <tr className="bg-[#0C0D18]">
+                                    <td className="p-4 font-semibold text-[#D0CCC4]">Birch Gold Group</td>
+                                    <td className="p-4 text-center text-[#D0CCC4]">$50</td>
+                                    <td className="p-4 text-center text-[#D0CCC4]">$200-$250</td>
                                     <td className="p-4 text-center text-amber-600">Moderate</td>
                                 </tr>
                                 <tr>
-                                    <td className="p-4 font-semibold text-slate-700">Noble Gold</td>
-                                    <td className="p-4 text-center text-slate-600">$80</td>
-                                    <td className="p-4 text-center text-slate-600">$225-$250</td>
+                                    <td className="p-4 font-semibold text-[#D0CCC4]">Noble Gold</td>
+                                    <td className="p-4 text-center text-[#D0CCC4]">$80</td>
+                                    <td className="p-4 text-center text-[#D0CCC4]">$225-$250</td>
                                     <td className="p-4 text-center text-amber-600">Moderate</td>
                                 </tr>
-                                <tr className="bg-slate-50">
-                                    <td className="p-4 font-semibold text-slate-700">American Hartford Gold</td>
-                                    <td className="p-4 text-center text-slate-600">$0</td>
-                                    <td className="p-4 text-center text-slate-600">$180-$230</td>
+                                <tr className="bg-[#0C0D18]">
+                                    <td className="p-4 font-semibold text-[#D0CCC4]">American Hartford Gold</td>
+                                    <td className="p-4 text-center text-[#D0CCC4]">$0</td>
+                                    <td className="p-4 text-center text-[#D0CCC4]">$180-$230</td>
                                     <td className="p-4 text-center text-amber-600">Moderate</td>
                                 </tr>
                             </tbody>
@@ -264,47 +264,47 @@ export default function GoldIRAFeesLandingPage() {
             {/* Hidden Fee Warning Section */}
             <section className="py-16 bg-white">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#B22234] text-center mb-4">Watch Out For These Hidden Fees</h2>
-                    <p className="text-center text-slate-600 mb-10 max-w-2xl mx-auto">These &quot;hidden&quot; costs can drain your retirement savings without you even noticing.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#D4A94E] text-center mb-4">Watch Out For These Hidden Fees</h2>
+                    <p className="text-center text-[#D0CCC4] mb-10 max-w-2xl mx-auto">These &quot;hidden&quot; costs can drain your retirement savings without you even noticing.</p>
 
                     <div className="space-y-4">
                         <div className="flex items-start gap-4 bg-red-50 border-l-4 border-[#B22234] p-5 rounded-r-lg">
-                            <XCircle className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
+                            <XCircle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                             <div>
-                                <h4 className="font-bold text-slate-800 mb-1">Excessive Dealer Markup (15-30%+)</h4>
-                                <p className="text-slate-600 text-sm">Some companies charge huge premiums over spot price, hidden in &quot;per ounce&quot; pricing. On $50K, that&apos;s $7,500-$15,000 you&apos;ll never see again.</p>
+                                <h4 className="font-bold text-[#F6F4EF] mb-1">Excessive Dealer Markup (15-30%+)</h4>
+                                <p className="text-[#D0CCC4] text-sm">Some companies charge huge premiums over spot price, hidden in &quot;per ounce&quot; pricing. On $50K, that&apos;s $7,500-$15,000 you&apos;ll never see again.</p>
                             </div>
                         </div>
 
                         <div className="flex items-start gap-4 bg-red-50 border-l-4 border-[#B22234] p-5 rounded-r-lg">
-                            <XCircle className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
+                            <XCircle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                             <div>
-                                <h4 className="font-bold text-slate-800 mb-1">Buyback Spreads (10-30% Loss)</h4>
-                                <p className="text-slate-600 text-sm">When you sell, many companies pay you 10-30% LESS than spot price. This is the single biggest hidden cost in the industry.</p>
+                                <h4 className="font-bold text-[#F6F4EF] mb-1">Buyback Spreads (10-30% Loss)</h4>
+                                <p className="text-[#D0CCC4] text-sm">When you sell, many companies pay you 10-30% LESS than spot price. This is the single biggest hidden cost in the industry.</p>
                             </div>
                         </div>
 
                         <div className="flex items-start gap-4 bg-red-50 border-l-4 border-[#B22234] p-5 rounded-r-lg">
-                            <XCircle className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
+                            <XCircle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                             <div>
-                                <h4 className="font-bold text-slate-800 mb-1">Wire Transfer Fees ($25-50 Each)</h4>
-                                <p className="text-slate-600 text-sm">Charged on every transaction. Multiple purchases or distributions can add up to hundreds in hidden fees.</p>
+                                <h4 className="font-bold text-[#F6F4EF] mb-1">Wire Transfer Fees ($25-50 Each)</h4>
+                                <p className="text-[#D0CCC4] text-sm">Charged on every transaction. Multiple purchases or distributions can add up to hundreds in hidden fees.</p>
                             </div>
                         </div>
 
                         <div className="flex items-start gap-4 bg-red-50 border-l-4 border-[#B22234] p-5 rounded-r-lg">
-                            <XCircle className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
+                            <XCircle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                             <div>
-                                <h4 className="font-bold text-slate-800 mb-1">Liquidation Fees ($50-250)</h4>
-                                <p className="text-slate-600 text-sm">Some companies charge you just to sell YOUR own gold. They profit when you buy AND when you sell.</p>
+                                <h4 className="font-bold text-[#F6F4EF] mb-1">Liquidation Fees ($50-250)</h4>
+                                <p className="text-[#D0CCC4] text-sm">Some companies charge you just to sell YOUR own gold. They profit when you buy AND when you sell.</p>
                             </div>
                         </div>
 
                         <div className="flex items-start gap-4 bg-red-50 border-l-4 border-[#B22234] p-5 rounded-r-lg">
-                            <XCircle className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
+                            <XCircle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                             <div>
-                                <h4 className="font-bold text-slate-800 mb-1">Percentage-Based Storage</h4>
-                                <p className="text-slate-600 text-sm">Instead of flat fees, some charge 0.5%+ of your holdings. As gold rises, your fees grow too—they profit from YOUR success.</p>
+                                <h4 className="font-bold text-[#F6F4EF] mb-1">Percentage-Based Storage</h4>
+                                <p className="text-[#D0CCC4] text-sm">Instead of flat fees, some charge 0.5%+ of your holdings. As gold rises, your fees grow too—they profit from YOUR success.</p>
                             </div>
                         </div>
                     </div>
@@ -312,15 +312,15 @@ export default function GoldIRAFeesLandingPage() {
             </section>
 
             {/* Augusta Fee Transparency Section */}
-            <section className="py-16 bg-slate-100">
+            <section className="py-16 bg-[#121423]">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] text-center mb-4">Why Augusta Has the Most Transparent Pricing</h2>
-                    <p className="text-center text-slate-600 mb-10 max-w-2xl mx-auto">After analyzing 15+ Gold IRA companies, Augusta stands out for one reason: radical transparency.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] text-center mb-4">Why Augusta Has the Most Transparent Pricing</h2>
+                    <p className="text-center text-[#D0CCC4] mb-10 max-w-2xl mx-auto">After analyzing 15+ Gold IRA companies, Augusta stands out for one reason: radical transparency.</p>
 
-                    <div className="bg-white rounded-2xl shadow-xl border-2 border-green-200 p-8">
+                    <div className="bg-[#161828] rounded-2xl shadow-xl border-2 border-green-200 p-8">
                         <div className="grid md:grid-cols-2 gap-8">
                             <div>
-                                <h3 className="text-xl font-bold text-slate-800 mb-4">What Augusta Charges:</h3>
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">What Augusta Charges:</h3>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
@@ -341,7 +341,7 @@ export default function GoldIRAFeesLandingPage() {
                                 </ul>
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold text-slate-800 mb-4">Why It Matters:</h3>
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">Why It Matters:</h3>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
@@ -363,11 +363,11 @@ export default function GoldIRAFeesLandingPage() {
                             </div>
                         </div>
 
-                        <div className="mt-8 pt-6 border-t border-slate-200 text-center">
+                        <div className="mt-8 pt-6 border-t border-[#2A2D42] text-center">
                             <LeadCaptureButton
                                 variant="fees"
                                 source="lp-gold-ira-fees-mid"
-                                className="inline-flex items-center gap-3 bg-[#000080] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors"
+                                className="inline-flex items-center gap-3 bg-[rgba(197,149,46,0.1)] hover:bg-[#000060] text-white text-lg font-bold py-4 px-8 rounded-lg transition-colors"
                             >
                                 Get Augusta&apos;s Free Fee Guide
                                 <ArrowRight className="h-5 w-5" />
@@ -380,12 +380,12 @@ export default function GoldIRAFeesLandingPage() {
             {/* FAQ Section */}
             <section className="py-16 bg-white">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold text-[#000080] text-center mb-10">Gold IRA Fees FAQ</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#F6F4EF] text-center mb-10">Gold IRA Fees FAQ</h2>
                     <div className="space-y-6">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="border-b border-slate-200 pb-6">
-                                <h3 className="text-xl font-bold text-slate-800 mb-3">{faq.question}</h3>
-                                <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
+                            <div key={index} className="border-b border-[#2A2D42] pb-6">
+                                <h3 className="text-xl font-bold text-[#F6F4EF] mb-3">{faq.question}</h3>
+                                <p className="text-[#D0CCC4] leading-relaxed">{faq.answer}</p>
                             </div>
                         ))}
                     </div>
@@ -393,30 +393,30 @@ export default function GoldIRAFeesLandingPage() {
             </section>
 
             {/* Final CTA Section */}
-            <section className="py-16 bg-[#000080] text-center">
+            <section className="py-16 bg-[rgba(197,149,46,0.1)] text-center">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                         Get Your Free Fee Comparison Guide
                     </h2>
-                    <p className="text-slate-300 text-lg mb-8">
+                    <p className="text-[#3F4460] text-lg mb-8">
                         See exactly what each company charges—including the fees they don&apos;t advertise. Make an informed decision with complete transparency.
                     </p>
                     <LeadCaptureButton
                         variant="fees"
                         source="lp-gold-ira-fees-footer"
-                        className="inline-flex items-center gap-3 bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-all border-2 border-white/20"
+                        className="inline-flex items-center gap-3 bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl md:text-2xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-all border-2 border-white/20"
                     >
                         Get Your Free Guide Now
                         <ArrowRight className="h-6 w-6" />
                     </LeadCaptureButton>
-                    <p className="text-slate-400 mt-6 text-sm">
+                    <p className="text-[#A8A39A] mt-6 text-sm">
                         Strictly confidential. We respect your privacy.
                     </p>
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="bg-slate-900 text-slate-600 py-8 text-center text-xs">
+            <footer className="bg-slate-900 text-[#D0CCC4] py-8 text-center text-xs">
                 <div className="max-w-4xl mx-auto px-4">
                     <p>&copy; 2026 Rich Dad Retirement. All Rights Reserved.</p>
                     <p className="mt-2">Disclaimer: We are not financial advisors. Gold and precious metals involve risk. Past performance is not indicative of future results.</p>

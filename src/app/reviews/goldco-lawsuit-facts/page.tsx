@@ -73,18 +73,18 @@ const schema = {
 
 export default function GoldcoLawsuitPage() {
     return (
-        <main className="min-h-screen bg-slate-50 pb-24">
+        <main className="min-h-screen bg-[#0C0D18] pb-24">
             <SchemaScript schema={schema} />
             {/* Header */}
-            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
+            <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-sm font-semibold text-[#000080] mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
+                    <span className="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-sm font-semibold text-[#F6F4EF] mb-6 flex items-center justify-center gap-2 w-fit mx-auto">
                         <Gavel className="w-4 h-4" /> Legal Fact Check
                     </span>
-                    <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#000080]">
+                    <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-[#F6F4EF]">
                         Goldco Lawsuit Rumors: The Truth
                     </h1>
-                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto leading-relaxed">
                         Internet rumors can be misleading. We examine the actual legal history of Goldco to see if your money is safe.
                     </p>
                 </Container>
@@ -98,7 +98,7 @@ export default function GoldcoLawsuitPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-li:text-slate-600 prose-strong:text-slate-900 prose-a:text-[#B22234] max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-li:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E] max-w-none">
                         <Breadcrumbs />
 
                         <p className="lead">
@@ -160,20 +160,20 @@ export default function GoldcoLawsuitPage() {
                                 Forget what lawyers say—what do real people like you say? Here&apos;s what we found.
                             </p>
                             <div className="not-prose my-8 grid md:grid-cols-3 gap-6">
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
+                                <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42] text-center">
                                     <div className="text-4xl font-bold text-primary mb-2">4.9/5</div>
-                                    <div className="text-sm text-gray-600">TrustPilot Rating</div>
-                                    <div className="text-xs text-gray-400 mt-1">5,000+ Reviews</div>
+                                    <div className="text-sm text-[#D0CCC4]">TrustPilot Rating</div>
+                                    <div className="text-xs text-[#A8A39A] mt-1">5,000+ Reviews</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
+                                <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42] text-center">
                                     <div className="text-4xl font-bold text-primary mb-2">A+</div>
-                                    <div className="text-sm text-gray-600">BBB Rating</div>
-                                    <div className="text-xs text-gray-400 mt-1">Accredited Business</div>
+                                    <div className="text-sm text-[#D0CCC4]">BBB Rating</div>
+                                    <div className="text-xs text-[#A8A39A] mt-1">Accredited Business</div>
                                 </div>
-                                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 text-center">
+                                <div className="bg-[#161828] p-6 rounded-xl shadow-sm border border-[#2A2D42] text-center">
                                     <div className="text-4xl font-bold text-primary mb-2">$2B+</div>
-                                    <div className="text-sm text-gray-600">Metals Placed</div>
-                                    <div className="text-xs text-gray-400 mt-1">Since Founding</div>
+                                    <div className="text-sm text-[#D0CCC4]">Metals Placed</div>
+                                    <div className="text-xs text-[#A8A39A] mt-1">Since Founding</div>
                                 </div>
                             </div>
                             <p>
@@ -188,10 +188,10 @@ export default function GoldcoLawsuitPage() {
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center relative overflow-hidden not-prose">
+                        <div className="my-12 bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-8 text-center relative overflow-hidden not-prose">
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Trust But Verify</h3>
-                                <p className="mb-6 text-slate-600">See their compliance first-hand. Get their free gold kit today.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Trust But Verify</h3>
+                                <p className="mb-6 text-[#D0CCC4]">See their compliance first-hand. Get their free gold kit today.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/reviews/goldco">Visit Official Site <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>

@@ -30,17 +30,17 @@ export function LoadingAnalysis({ onComplete }: { onComplete: () => void }) {
     const progress = Math.min(((currentStep + 1) / analysisSteps.length) * 100, 100);
 
     return (
-        <div className="flex flex-col items-center justify-center py-20 bg-white rounded-3xl min-h-[500px] text-center px-4 border border-slate-200 shadow-lg">
+        <div className="flex flex-col items-center justify-center py-20 bg-[#161828] rounded-3xl min-h-[500px] text-center px-4 border border-[#2A2D42] shadow-lg">
             {/* Radar Scan Effect */}
             <div className="relative w-32 h-32 mb-12">
-                <div className="absolute inset-0 border-4 border-slate-200 rounded-full" />
+                <div className="absolute inset-0 border-4 border-[#2A2D42] rounded-full" />
                 <div className="absolute inset-0 border-4 border-[#B22234]/50 rounded-full border-t-[#B22234] animate-spin" />
-                <div className="absolute inset-4 bg-slate-50 rounded-full flex items-center justify-center">
-                    <span className="text-[#B22234] font-bold font-mono text-xl">{Math.round(progress)}%</span>
+                <div className="absolute inset-4 bg-[#0C0D18] rounded-full flex items-center justify-center">
+                    <span className="text-[#D4A94E] font-bold font-mono text-xl">{Math.round(progress)}%</span>
                 </div>
             </div>
 
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
                 Analyzing Your Wealth Profile
             </h2>
 
@@ -58,7 +58,7 @@ export function LoadingAnalysis({ onComplete }: { onComplete: () => void }) {
                             {analysisSteps[currentStep]}
                         </>
                     ) : (
-                        <span className="text-[#000080]">Analysis Complete. Loading Report...</span>
+                        <span className="text-[#F6F4EF]">Analysis Complete. Loading Report...</span>
                     )}
                 </motion.p>
             </div>

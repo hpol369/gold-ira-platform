@@ -149,17 +149,17 @@ export default function GoldcoVsAugustaPage() {
             <Navbar />
 
             {/* Header */}
-            <header className="bg-slate-50 border-b border-slate-200 text-slate-900 py-20 relative overflow-hidden">
+            <header className="bg-[#0C0D18] border-b border-[#2A2D42] text-[#F6F4EF] py-20 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,158,11,0.1),transparent_50%)]" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(59,130,246,0.1),transparent_50%)]" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-4 rounded-full bg-amber-500/10 border border-amber-500/30 text-sm font-semibold text-[#B22234] mb-6">
+                    <span className="inline-block py-1 px-4 rounded-full bg-amber-500/10 border border-amber-500/30 text-sm font-semibold text-[#D4A94E] mb-6">
                         Gold IRA Company Showdown
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Goldco vs. Augusta Precious Metals
                     </h1>
-                    <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-xl text-[#D0CCC4] max-w-3xl mx-auto leading-relaxed">
                         Two of the most popular Gold IRA companies, head-to-head. We analyze fees, minimums, customer service, and reputation to help you make the right choice for your retirement.
                     </p>
                 </Container>
@@ -173,7 +173,7 @@ export default function GoldcoVsAugustaPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                         <p className="lead text-xl">
                             Choosing between <strong>Goldco</strong> and <strong>Augusta Precious Metals</strong>? You&apos;re comparing two of the most respected names in the Gold IRA industry. Both have A+ BBB ratings and thousands of satisfied customers.
@@ -197,7 +197,7 @@ export default function GoldcoVsAugustaPage() {
                         {/* Comparison Table */}
                         <section id="comparison-table" className="scroll-mt-32">
                             <h2 className="flex items-center gap-3">
-                                <Award className="w-8 h-8 text-[#B22234]" />
+                                <Award className="w-8 h-8 text-[#D4A94E]" />
                                 Head-to-Head Comparison
                             </h2>
                             <p>
@@ -208,7 +208,7 @@ export default function GoldcoVsAugustaPage() {
                                 optionBName="Augusta Precious Metals"
                                 rows={comparisonRows}
                             />
-                            <p className="text-sm text-slate-500 italic">
+                            <p className="text-sm text-[#A8A39A] italic">
                                 * Augusta wins in 7 categories, Goldco wins in 3 categories, with 2 ties.
                             </p>
                         </section>
@@ -223,11 +223,11 @@ export default function GoldcoVsAugustaPage() {
                                 <strong>Goldco</strong> is one of the largest Gold IRA companies in America, having facilitated billions of dollars in precious metals transactions. They&apos;re known for aggressive marketing, celebrity endorsements (including Sean Hannity), and promotional offers.
                             </p>
 
-                            <div className="not-prose my-8 bg-white shadow-sm rounded-xl p-6 border border-slate-200">
-                                <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                                    <Star className="w-5 h-5 text-[#B22234]" /> Goldco Key Facts
+                            <div className="not-prose my-8 bg-[#161828] shadow-sm rounded-xl p-6 border border-[#2A2D42]">
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-4 flex items-center gap-2">
+                                    <Star className="w-5 h-5 text-[#D4A94E]" /> Goldco Key Facts
                                 </h3>
-                                <ul className="space-y-3 text-slate-600">
+                                <ul className="space-y-3 text-[#D0CCC4]">
                                     <li className="flex items-start gap-3">
                                         <BadgeCheck className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>A+ BBB Rating with some resolved complaints</span>
@@ -255,7 +255,7 @@ export default function GoldcoVsAugustaPage() {
                         {/* Augusta Overview */}
                         <section id="augusta-overview" className="scroll-mt-32">
                             <h2 className="flex items-center gap-3">
-                                <Shield className="w-8 h-8 text-[#B22234]" />
+                                <Shield className="w-8 h-8 text-[#D4A94E]" />
                                 Augusta Precious Metals Overview
                             </h2>
                             <p>
@@ -263,13 +263,13 @@ export default function GoldcoVsAugustaPage() {
                             </p>
 
                             <div className="not-prose my-8 bg-amber-500/10 backdrop-blur-sm rounded-xl p-6 border border-amber-500/30">
-                                <h3 className="text-lg font-bold text-[#B22234] mb-4 flex items-center gap-2">
-                                    <Star className="w-5 h-5 text-[#B22234]" /> Augusta Key Facts
+                                <h3 className="text-lg font-bold text-[#D4A94E] mb-4 flex items-center gap-2">
+                                    <Star className="w-5 h-5 text-[#D4A94E]" /> Augusta Key Facts
                                 </h3>
-                                <ul className="space-y-3 text-slate-600">
+                                <ul className="space-y-3 text-[#D0CCC4]">
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
-                                        <span><strong className="text-slate-900">Zero BBB complaints</strong> - Unheard of in this industry</span>
+                                        <span><strong className="text-[#F6F4EF]">Zero BBB complaints</strong> - Unheard of in this industry</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
@@ -303,15 +303,15 @@ export default function GoldcoVsAugustaPage() {
                             </p>
 
                             <div className="not-prose my-8 overflow-x-auto">
-                                <table className="w-full text-left border-collapse bg-white shadow-sm rounded-xl border border-slate-200">
+                                <table className="w-full text-left border-collapse bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42]">
                                     <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Fee Type</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-blue-700">Goldco</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Augusta</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">Fee Type</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-blue-700">Goldco</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">Augusta</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-600">
+                                    <tbody className="divide-y divide-white/10 text-sm text-[#D0CCC4]">
                                         <tr>
                                             <td className="p-4 font-medium">Minimum Investment</td>
                                             <td className="p-4">$25,000</td>
@@ -362,7 +362,7 @@ export default function GoldcoVsAugustaPage() {
                                         <h3 className="text-xl font-bold text-blue-700 mb-4 flex items-center gap-2">
                                             <CheckCircle2 className="w-5 h-5" /> Goldco Pros
                                         </h3>
-                                        <ul className="space-y-2 text-slate-600">
+                                        <ul className="space-y-2 text-[#D0CCC4]">
                                             <li>+ Lower minimum ($25k vs $50k)</li>
                                             <li>+ Free silver promotions (up to 10%)</li>
                                             <li>+ Strong buyback guarantee</li>
@@ -374,7 +374,7 @@ export default function GoldcoVsAugustaPage() {
                                         <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
                                             <XCircle className="w-5 h-5" /> Goldco Cons
                                         </h3>
-                                        <ul className="space-y-2 text-slate-600">
+                                        <ul className="space-y-2 text-[#D0CCC4]">
                                             <li>- More sales-focused approach</li>
                                             <li>- Scaled fees cost more at higher balances</li>
                                             <li>- Has some BBB complaints (resolved)</li>
@@ -387,11 +387,11 @@ export default function GoldcoVsAugustaPage() {
                                 {/* Augusta Pros/Cons */}
                                 <div className="space-y-6">
                                     <div className="bg-amber-500/10 p-6 rounded-xl border border-amber-500/30">
-                                        <h3 className="text-xl font-bold text-[#B22234] mb-4 flex items-center gap-2">
+                                        <h3 className="text-xl font-bold text-[#D4A94E] mb-4 flex items-center gap-2">
                                             <CheckCircle2 className="w-5 h-5" /> Augusta Pros
                                         </h3>
-                                        <ul className="space-y-2 text-slate-600">
-                                            <li>+ <strong className="text-slate-900">Zero BBB complaints ever</strong></li>
+                                        <ul className="space-y-2 text-[#D0CCC4]">
+                                            <li>+ <strong className="text-[#F6F4EF]">Zero BBB complaints ever</strong></li>
                                             <li>+ Superior educational resources</li>
                                             <li>+ Dedicated lifetime agent</li>
                                             <li>+ Flat fees save money long-term</li>
@@ -403,7 +403,7 @@ export default function GoldcoVsAugustaPage() {
                                         <h3 className="text-xl font-bold text-red-700 mb-4 flex items-center gap-2">
                                             <XCircle className="w-5 h-5" /> Augusta Cons
                                         </h3>
-                                        <ul className="space-y-2 text-slate-600">
+                                        <ul className="space-y-2 text-[#D0CCC4]">
                                             <li>- Higher minimum ($50,000)</li>
                                             <li>- No promotional giveaways</li>
                                             <li>- Mandatory education webinar</li>
@@ -417,16 +417,16 @@ export default function GoldcoVsAugustaPage() {
                         {/* Customer Service */}
                         <section id="customer-service" className="scroll-mt-32">
                             <h2 className="flex items-center gap-3">
-                                <Phone className="w-8 h-8 text-[#B22234]" />
+                                <Phone className="w-8 h-8 text-[#D4A94E]" />
                                 Customer Service Comparison
                             </h2>
                             <p>
                                 This is where Augusta truly shines. Their &quot;education-first&quot; approach extends to ongoing customer support:
                             </p>
 
-                            <div className="not-prose my-8 bg-white shadow-sm rounded-xl p-6 border border-slate-200">
-                                <h3 className="text-lg font-bold text-slate-900 mb-4">Augusta&apos;s Customer Service Model</h3>
-                                <ul className="space-y-3 text-slate-600">
+                            <div className="not-prose my-8 bg-[#161828] shadow-sm rounded-xl p-6 border border-[#2A2D42]">
+                                <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Augusta&apos;s Customer Service Model</h3>
+                                <ul className="space-y-3 text-[#D0CCC4]">
                                     <li className="flex items-start gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 mt-0.5 shrink-0" />
                                         <span>Dedicated agent assigned for life of your account</span>
@@ -454,14 +454,14 @@ export default function GoldcoVsAugustaPage() {
                         {/* Who Should Choose Which */}
                         <section id="who-should-choose" className="scroll-mt-32">
                             <h2 className="flex items-center gap-3">
-                                <RefreshCw className="w-8 h-8 text-[#B22234]" />
+                                <RefreshCw className="w-8 h-8 text-[#D4A94E]" />
                                 Who Should Choose Which?
                             </h2>
 
                             <div className="not-prose grid md:grid-cols-2 gap-8 my-8">
-                                <div className="bg-white shadow-sm rounded-xl p-6 border border-slate-200">
+                                <div className="bg-[#161828] shadow-sm rounded-xl p-6 border border-[#2A2D42]">
                                     <h3 className="text-xl font-bold text-blue-700 mb-4">Choose Goldco If:</h3>
-                                    <ul className="space-y-3 text-slate-600">
+                                    <ul className="space-y-3 text-[#D0CCC4]">
                                         <li>+ You have $25,000-$50,000 to invest</li>
                                         <li>+ You want promotional silver offers</li>
                                         <li>+ You prefer a faster setup process</li>
@@ -470,8 +470,8 @@ export default function GoldcoVsAugustaPage() {
                                 </div>
 
                                 <div className="bg-amber-500/10 backdrop-blur-sm rounded-xl p-6 border border-amber-500/30">
-                                    <h3 className="text-xl font-bold text-[#B22234] mb-4">Choose Augusta If:</h3>
-                                    <ul className="space-y-3 text-slate-600">
+                                    <h3 className="text-xl font-bold text-[#D4A94E] mb-4">Choose Augusta If:</h3>
+                                    <ul className="space-y-3 text-[#D0CCC4]">
                                         <li>+ You have $50,000+ to invest</li>
                                         <li>+ You value education and transparency</li>
                                         <li>+ You want zero-pressure service</li>
@@ -484,21 +484,21 @@ export default function GoldcoVsAugustaPage() {
 
                         {/* Main CTA */}
                         <div className="not-prose my-12 bg-gradient-to-br from-amber-500/20 to-amber-600/10 rounded-2xl p-8 border border-amber-500/30 text-center relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.1)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <span className="inline-block py-1 px-3 rounded-full bg-green-500/20 border border-green-500/30 text-sm font-semibold text-green-700 mb-4">
                                     Our Recommendation
                                 </span>
-                                <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4 text-slate-900">
+                                <h3 className="text-2xl md:text-3xl font-serif font-bold mb-4 text-[#F6F4EF]">
                                     Ready to Get Started with Augusta?
                                 </h3>
-                                <p className="mb-6 text-slate-600 max-w-2xl mx-auto">
+                                <p className="mb-6 text-[#D0CCC4] max-w-2xl mx-auto">
                                     Request your free Gold IRA guide and learn how Augusta&apos;s education-first approach can help protect your retirement savings.
                                 </p>
-                                <LeadCaptureButton variant="default" source="goldco-vs-augusta" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                <LeadCaptureButton variant="default" source="goldco-vs-augusta" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
                                     Get Your Free Augusta Guide <ArrowRight className="ml-2 w-5 h-5" />
                                 </LeadCaptureButton>
-                                <p className="mt-4 text-xs text-slate-500">
+                                <p className="mt-4 text-xs text-[#A8A39A]">
                                     No obligation. Free educational materials.
                                 </p>
                             </div>
@@ -509,56 +509,56 @@ export default function GoldcoVsAugustaPage() {
                             <h2>Frequently Asked Questions</h2>
 
                             <div className="not-prose space-y-4 my-8">
-                                <details className="bg-white shadow-sm rounded-xl border border-slate-200 group">
-                                    <summary className="p-6 cursor-pointer font-semibold text-slate-900 hover:text-[#B22234] transition-colors">
+                                <details className="bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] group">
+                                    <summary className="p-6 cursor-pointer font-semibold text-[#F6F4EF] hover:text-[#D4A94E] transition-colors">
                                         Is Goldco or Augusta Precious Metals better?
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-600">
+                                    <div className="px-6 pb-6 text-[#D0CCC4]">
                                         <p>For investors with $50,000 or more, Augusta Precious Metals is generally the better choice due to their superior educational resources, zero BBB complaints, and transparent fee structure. Goldco is better for investors with $25,000-$50,000 who want promotional silver offers.</p>
                                     </div>
                                 </details>
 
-                                <details className="bg-white shadow-sm rounded-xl border border-slate-200 group">
-                                    <summary className="p-6 cursor-pointer font-semibold text-slate-900 hover:text-[#B22234] transition-colors">
+                                <details className="bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] group">
+                                    <summary className="p-6 cursor-pointer font-semibold text-[#F6F4EF] hover:text-[#D4A94E] transition-colors">
                                         What is the minimum investment for Goldco vs Augusta?
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-600">
+                                    <div className="px-6 pb-6 text-[#D0CCC4]">
                                         <p>Goldco requires a minimum investment of $25,000, while Augusta Precious Metals requires $50,000. If you have between $25k-$50k to invest, Goldco is your only option between these two companies.</p>
                                     </div>
                                 </details>
 
-                                <details className="bg-white shadow-sm rounded-xl border border-slate-200 group">
-                                    <summary className="p-6 cursor-pointer font-semibold text-slate-900 hover:text-[#B22234] transition-colors">
+                                <details className="bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] group">
+                                    <summary className="p-6 cursor-pointer font-semibold text-[#F6F4EF] hover:text-[#D4A94E] transition-colors">
                                         Which company has better customer service?
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-600">
+                                    <div className="px-6 pb-6 text-[#D0CCC4]">
                                         <p>Augusta Precious Metals is widely regarded as having superior customer service. They assign a dedicated lifetime agent to each client and focus on education rather than sales pressure. Augusta has zero BBB complaints, which is exceptional in this industry.</p>
                                     </div>
                                 </details>
 
-                                <details className="bg-white shadow-sm rounded-xl border border-slate-200 group">
-                                    <summary className="p-6 cursor-pointer font-semibold text-slate-900 hover:text-[#B22234] transition-colors">
+                                <details className="bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] group">
+                                    <summary className="p-6 cursor-pointer font-semibold text-[#F6F4EF] hover:text-[#D4A94E] transition-colors">
                                         Does Goldco or Augusta have lower fees?
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-600">
+                                    <div className="px-6 pb-6 text-[#D0CCC4]">
                                         <p>Augusta typically has lower total fees for larger accounts ($100k+) due to their flat-fee structure. Goldco&apos;s fees scale with account size, which can add up for larger balances. However, both companies often waive first-year fees.</p>
                                     </div>
                                 </details>
 
-                                <details className="bg-white shadow-sm rounded-xl border border-slate-200 group">
-                                    <summary className="p-6 cursor-pointer font-semibold text-slate-900 hover:text-[#B22234] transition-colors">
+                                <details className="bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] group">
+                                    <summary className="p-6 cursor-pointer font-semibold text-[#F6F4EF] hover:text-[#D4A94E] transition-colors">
                                         Which company offers free silver?
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-600">
+                                    <div className="px-6 pb-6 text-[#D0CCC4]">
                                         <p>Goldco offers promotional free silver (up to 10% of your investment) on qualifying purchases. Augusta does not offer promotional giveaways, instead focusing on transparent pricing and education. Some investors prefer Goldco&apos;s offer, while others are skeptical of &quot;free&quot; promotions.</p>
                                     </div>
                                 </details>
 
-                                <details className="bg-white shadow-sm rounded-xl border border-slate-200 group">
-                                    <summary className="p-6 cursor-pointer font-semibold text-slate-900 hover:text-[#B22234] transition-colors">
+                                <details className="bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42] group">
+                                    <summary className="p-6 cursor-pointer font-semibold text-[#F6F4EF] hover:text-[#D4A94E] transition-colors">
                                         Are Goldco and Augusta Precious Metals legitimate?
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-600">
+                                    <div className="px-6 pb-6 text-[#D0CCC4]">
                                         <p>Yes, both Goldco and Augusta Precious Metals are legitimate, reputable Gold IRA companies with A+ BBB ratings. Augusta has zero complaints on file with the BBB, while Goldco has had some complaints (all resolved). Both have thousands of positive customer reviews.</p>
                                     </div>
                                 </details>
@@ -566,11 +566,11 @@ export default function GoldcoVsAugustaPage() {
                         </section>
 
                         {/* Final CTA */}
-                        <div className="not-prose my-12 bg-slate-50 rounded-2xl p-8 text-center border border-slate-200">
-                            <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Still Have Questions?</h3>
-                            <p className="mb-6 text-slate-600">Take our free quiz to see which Gold IRA company best matches your investment goals.</p>
+                        <div className="not-prose my-12 bg-[#0C0D18] rounded-2xl p-8 text-center border border-[#2A2D42]">
+                            <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Still Have Questions?</h3>
+                            <p className="mb-6 text-[#D0CCC4]">Take our free quiz to see which Gold IRA company best matches your investment goals.</p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <LeadCaptureButton variant="default" source="goldco-vs-augusta" className="bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-3 rounded-lg font-semibold inline-flex items-center">
+                                <LeadCaptureButton variant="default" source="goldco-vs-augusta" className="bg-amber-500 hover:bg-amber-600 text-[#F6F4EF] px-6 py-3 rounded-lg font-semibold inline-flex items-center">
                                     Get Augusta&apos;s Free Guide <ArrowRight className="ml-2 w-4 h-4" />
                                 </LeadCaptureButton>
                                 <Button variant="outline" size="lg" asChild>
@@ -586,7 +586,7 @@ export default function GoldcoVsAugustaPage() {
             </Container>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

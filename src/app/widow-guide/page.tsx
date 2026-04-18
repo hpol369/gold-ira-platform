@@ -33,7 +33,7 @@ export default function WidowGuidePage() {
       <Navbar />
 
       {/* Hero Section - Emotional, Supportive */}
-      <section className="relative pt-24 pb-16 overflow-hidden bg-slate-50">
+      <section className="relative pt-24 pb-16 overflow-hidden bg-[#0C0D18]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(168,85,247,0.08),transparent_50%)]" />
 
         <Container className="relative z-10">
@@ -42,11 +42,11 @@ export default function WidowGuidePage() {
               <Heart className="h-4 w-4" />
               COMPASSIONATE GUIDANCE
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6">
               Widow&apos;s Financial{" "}
               <span className="text-purple-600">Guide</span>
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               We understand this is an incredibly difficult time. These resources
               are here to help you navigate the financial aspects of loss at your
               own pace.
@@ -63,7 +63,7 @@ export default function WidowGuidePage() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-4">
-              <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+              <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                 <Link href="/quiz">
                   Get Personalized Help <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -72,7 +72,7 @@ export default function WidowGuidePage() {
                 variant="outline"
                 size="lg"
                 asChild
-                className="border-slate-300 text-slate-700 hover:bg-slate-100"
+                className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]"
               >
                 <a href="#guides">View Guides</a>
               </Button>
@@ -82,24 +82,24 @@ export default function WidowGuidePage() {
       </section>
 
       {/* Quick Stats */}
-      <section className="py-8 border-y border-slate-200 bg-white">
+      <section className="py-8 border-y border-[#2A2D42] bg-white">
         <Container>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-purple-600">{articles.length}</div>
-              <div className="text-sm text-slate-500">Helpful Guides</div>
+              <div className="text-sm text-[#A8A39A]">Helpful Guides</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-purple-600">24/7</div>
-              <div className="text-sm text-slate-500">Available Resources</div>
+              <div className="text-sm text-[#A8A39A]">Available Resources</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-purple-600">Free</div>
-              <div className="text-sm text-slate-500">Always No Cost</div>
+              <div className="text-sm text-[#A8A39A]">Always No Cost</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-purple-600">SSA</div>
-              <div className="text-sm text-slate-500">1-800-772-1213</div>
+              <div className="text-sm text-[#A8A39A]">1-800-772-1213</div>
             </div>
           </div>
         </Container>
@@ -108,36 +108,36 @@ export default function WidowGuidePage() {
       {/* Key Resources */}
       <section className="py-16 bg-white">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] mb-8 text-center">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">
             Key Resources & Contacts
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-blue-100 p-3 rounded-lg inline-block mb-4">
                 <Phone className="h-6 w-6 text-blue-600" />
               </div>
-              <h3 className="font-bold text-slate-900 mb-2">Social Security</h3>
-              <p className="text-slate-500 text-sm mb-3">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">Social Security</h3>
+              <p className="text-[#A8A39A] text-sm mb-3">
                 Report death and claim survivor benefits
               </p>
               <p className="text-lg font-semibold text-blue-600">1-800-772-1213</p>
             </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-green-100 p-3 rounded-lg inline-block mb-4">
                 <Shield className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="font-bold text-slate-900 mb-2">VA Benefits</h3>
-              <p className="text-slate-500 text-sm mb-3">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">VA Benefits</h3>
+              <p className="text-[#A8A39A] text-sm mb-3">
                 Survivor benefits for veterans&apos; spouses
               </p>
               <p className="text-lg font-semibold text-green-600">1-800-827-1000</p>
             </div>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="bg-amber-100 p-3 rounded-lg inline-block mb-4">
                 <Clock className="h-6 w-6 text-amber-600" />
               </div>
-              <h3 className="font-bold text-slate-900 mb-2">Medicare</h3>
-              <p className="text-slate-500 text-sm mb-3">
+              <h3 className="font-bold text-[#F6F4EF] mb-2">Medicare</h3>
+              <p className="text-[#A8A39A] text-sm mb-3">
                 Health insurance questions and options
               </p>
               <p className="text-lg font-semibold text-amber-600">1-800-633-4227</p>
@@ -147,10 +147,10 @@ export default function WidowGuidePage() {
       </section>
 
       {/* Guides */}
-      <section id="guides" className="py-16 bg-slate-50 scroll-mt-16">
+      <section id="guides" className="py-16 bg-[#0C0D18] scroll-mt-16">
         <Container>
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] flex items-center gap-2">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] flex items-center gap-2">
               <BookOpen className="h-6 w-6 text-purple-600" />
               Financial Guides
             </h2>
@@ -161,7 +161,7 @@ export default function WidowGuidePage() {
               <Link
                 key={article.slug}
                 href={`/widow-guide/${article.slug}`}
-                className="bg-white hover:bg-slate-50 border border-slate-200 hover:border-purple-300 rounded-xl p-6 transition-all group"
+                className="bg-white hover:bg-[#121423] border border-[#2A2D42] hover:border-purple-300 rounded-xl p-6 transition-all group"
               >
                 <div className="flex items-center gap-2 mb-3">
                   <span
@@ -174,10 +174,10 @@ export default function WidowGuidePage() {
                     {article.articleType === "checklist" ? "Checklist" : "Guide"}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-purple-600 transition-colors mb-2 leading-snug">
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-purple-600 transition-colors mb-2 leading-snug">
                   {article.title}
                 </h3>
-                <p className="text-sm text-slate-500 line-clamp-2">
+                <p className="text-sm text-[#A8A39A] line-clamp-2">
                   {article.subtitle}
                 </p>
                 <div className="mt-4 flex items-center text-purple-600 text-sm font-medium">
@@ -194,15 +194,15 @@ export default function WidowGuidePage() {
         <Container>
           <div className="max-w-2xl mx-auto text-center">
             <Heart className="h-12 w-12 text-purple-600 mx-auto mb-6" />
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
               You&apos;re Not Alone
             </h2>
-            <p className="text-slate-500 mb-8">
+            <p className="text-[#A8A39A] mb-8">
               Millions of people navigate these challenges every year. Taking things
               one step at a time is not just okay—it&apos;s wise. When you&apos;re ready,
               professional guidance can help protect your financial future.
             </p>
-            <Button variant="gold" size="xl" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+            <Button variant="gold" size="xl" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
               <Link href="/quiz">
                 Get Personalized Guidance <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
@@ -212,7 +212,7 @@ export default function WidowGuidePage() {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-slate-50 border-t border-slate-200">
+      <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
         <Container>
           <AugustaCTA
             variant="footer"

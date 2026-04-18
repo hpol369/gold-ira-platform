@@ -150,24 +150,24 @@ export default function ComparePage() {
       <Navbar />
 
       {/* Header */}
-      <header className="bg-slate-50 py-16 md:py-20 relative overflow-hidden border-b border-slate-200">
+      <header className="bg-[#0C0D18] py-16 md:py-20 relative overflow-hidden border-b border-[#2A2D42]">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#B22234]/5 rounded-full blur-[150px]" />
+          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[rgba(220,38,38,0.06)] rounded-full blur-[150px]" />
           <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-slate-200/50 rounded-full blur-[100px]" />
         </div>
         <Container className="relative z-10">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4">
+            <div className="flex items-center gap-2 text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-4">
               <Scale className="h-4 w-4" />
               Side-by-Side Analysis
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#000080]">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#F6F4EF]">
               Gold IRA Company Comparisons
             </h1>
-            <p className="text-xl text-slate-700 leading-relaxed mb-4">
+            <p className="text-xl text-[#D0CCC4] leading-relaxed mb-4">
               Choosing the right company for your life&apos;s savings isn&apos;t easy. You&apos;ve worked 30+ years to build what you have&mdash;you deserve a straight answer, not a sales pitch.
             </p>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg text-[#D0CCC4] leading-relaxed">
               For someone with $500k saved over 30 years, the difference between companies isn&apos;t just fees&mdash;it&apos;s whether they&apos;ll be there when you need them. We focus on what matters: BBB complaints, customer service track records, and how they treat people like you.
             </p>
           </div>
@@ -175,15 +175,15 @@ export default function ComparePage() {
       </header>
 
       {/* Featured Comparisons - In-Depth Analyses */}
-      <section className="py-16 bg-white border-b border-slate-200">
+      <section className="py-16 bg-[#161828] border-b border-[#2A2D42]">
         <Container>
           <div className="flex items-center gap-3 mb-8">
-            <div className="p-2 bg-[#B22234]/10 rounded-lg border border-[#B22234]/20">
-              <Award className="h-5 w-5 text-[#B22234]" />
+            <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/20">
+              <Award className="h-5 w-5 text-[#D4A94E]" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-[#000080]">Featured Comparisons</h2>
-              <p className="text-slate-600">Our most in-depth head-to-head analyses</p>
+              <h2 className="text-2xl font-bold text-[#F6F4EF]">Featured Comparisons</h2>
+              <p className="text-[#D0CCC4]">Our most in-depth head-to-head analyses</p>
             </div>
           </div>
 
@@ -192,18 +192,18 @@ export default function ComparePage() {
               <Link
                 key={comparison.slug}
                 href={`/compare/${comparison.slug}`}
-                className="group relative bg-white rounded-xl border border-slate-200 p-6 hover:border-[#B22234]/30 hover:shadow-md transition-all"
+                className="group relative bg-[#161828] rounded-xl border border-[#2A2D42] p-6 hover:border-[rgba(197,149,46,0.45)] hover:shadow-md transition-all"
               >
                 {comparison.highlight && (
-                  <div className="absolute -top-2 -right-2 bg-[#B22234] text-white text-xs font-bold px-2 py-1 rounded-full">
+                  <div className="absolute -top-2 -right-2 bg-[#DC2626] text-white text-xs font-bold px-2 py-1 rounded-full">
                     {comparison.highlight}
                   </div>
                 )}
-                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">
+                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">
                   {comparison.title}
                 </h3>
-                <p className="text-sm text-slate-600 mb-4">{comparison.description}</p>
-                <span className="text-[#B22234] text-sm font-semibold flex items-center gap-1">
+                <p className="text-sm text-[#D0CCC4] mb-4">{comparison.description}</p>
+                <span className="text-[#D4A94E] text-sm font-semibold flex items-center gap-1">
                   Read Analysis
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </span>
@@ -214,15 +214,15 @@ export default function ComparePage() {
       </section>
 
       {/* Company vs Company Comparisons */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="flex items-center gap-3 mb-8">
-            <div className="p-2 bg-[#B22234]/10 rounded-lg border border-[#B22234]/20">
-              <TrendingUp className="h-5 w-5 text-[#B22234]" />
+            <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/20">
+              <TrendingUp className="h-5 w-5 text-[#D4A94E]" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-[#000080]">All Company Comparisons</h2>
-              <p className="text-slate-600">We look at trust, complaints, and service&mdash;not just marketing claims</p>
+              <h2 className="text-2xl font-bold text-[#F6F4EF]">All Company Comparisons</h2>
+              <p className="text-[#D0CCC4]">We look at trust, complaints, and service&mdash;not just marketing claims</p>
             </div>
           </div>
 
@@ -231,29 +231,29 @@ export default function ComparePage() {
               <Link
                 key={`${pair.slugA}-${pair.slugB}`}
                 href={`/compare/${pair.slugA}-vs-${pair.slugB}`}
-                className="group relative bg-white rounded-xl border border-slate-200 p-6 hover:border-[#B22234]/30 hover:shadow-md transition-all"
+                className="group relative bg-[#161828] rounded-xl border border-[#2A2D42] p-6 hover:border-[rgba(197,149,46,0.45)] hover:shadow-md transition-all"
               >
                 {pair.highlight && (
-                  <div className="absolute -top-2 -right-2 bg-[#B22234] text-white text-xs font-bold px-2 py-1 rounded-full">
+                  <div className="absolute -top-2 -right-2 bg-[#DC2626] text-white text-xs font-bold px-2 py-1 rounded-full">
                     {pair.highlight}
                   </div>
                 )}
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex-1">
-                    <div className="font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                    <div className="font-semibold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                       {pair.nameA}
                     </div>
                   </div>
-                  <div className="px-3 py-1 bg-slate-100 rounded-full text-xs font-bold text-slate-500">
+                  <div className="px-3 py-1 bg-[#121423] rounded-full text-xs font-bold text-[#A8A39A]">
                     VS
                   </div>
                   <div className="flex-1 text-right">
-                    <div className="font-semibold text-slate-900 group-hover:text-[#B22234] transition-colors">
+                    <div className="font-semibold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">
                       {pair.nameB}
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center justify-center text-[#B22234] text-sm font-semibold group-hover:gap-2 transition-all">
+                <div className="flex items-center justify-center text-[#D4A94E] text-sm font-semibold group-hover:gap-2 transition-all">
                   Compare Now
                   <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -267,31 +267,31 @@ export default function ComparePage() {
       </section>
 
       {/* Gold vs Other Assets */}
-      <section className="py-16 bg-white border-b border-slate-200">
+      <section className="py-16 bg-[#161828] border-b border-[#2A2D42]">
         <Container>
           <div className="flex items-center gap-3 mb-8">
-            <div className="p-2 bg-[#B22234]/10 rounded-lg border border-[#B22234]/20">
-              <BarChart3 className="h-5 w-5 text-[#B22234]" />
+            <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/20">
+              <BarChart3 className="h-5 w-5 text-[#D4A94E]" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-[#000080]">Gold vs Other Assets</h2>
-              <p className="text-slate-600">See how physical gold compares to stocks, crypto, bonds, and more</p>
+              <h2 className="text-2xl font-bold text-[#F6F4EF]">Gold vs Other Assets</h2>
+              <p className="text-[#D0CCC4]">See how physical gold compares to stocks, crypto, bonds, and more</p>
             </div>
           </div>
 
           {/* Stocks */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold text-slate-900 mb-2">Major Stocks</h3>
-            <p className="text-sm text-slate-600 mb-4">How gold stacks up against individual stocks</p>
+            <h3 className="text-lg font-semibold text-[#F6F4EF] mb-2">Major Stocks</h3>
+            <p className="text-sm text-[#D0CCC4] mb-4">How gold stacks up against individual stocks</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {assets.filter(a => a.category === "stock").map((asset) => (
                 <Link
                   key={asset.slug}
                   href={`/compare/gold-vs/${asset.slug}`}
-                  className="group bg-white rounded-lg border border-slate-200 p-4 hover:border-[#B22234]/30 hover:shadow-md transition-all"
+                  className="group bg-[#161828] rounded-lg border border-[#2A2D42] p-4 hover:border-[rgba(197,149,46,0.45)] hover:shadow-md transition-all"
                 >
-                  <div className="text-xs text-slate-500 mb-1">{asset.ticker}</div>
-                  <div className="font-medium text-slate-900 group-hover:text-[#B22234] transition-colors text-sm">
+                  <div className="text-xs text-[#A8A39A] mb-1">{asset.ticker}</div>
+                  <div className="font-medium text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors text-sm">
                     Gold vs {asset.name}
                   </div>
                 </Link>
@@ -301,17 +301,17 @@ export default function ComparePage() {
 
           {/* Market Indices */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold text-slate-900 mb-2">Market Indices</h3>
-            <p className="text-sm text-slate-600 mb-4">Gold vs major stock market benchmarks</p>
+            <h3 className="text-lg font-semibold text-[#F6F4EF] mb-2">Market Indices</h3>
+            <p className="text-sm text-[#D0CCC4] mb-4">Gold vs major stock market benchmarks</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {assets.filter(a => a.category === "index").map((asset) => (
                 <Link
                   key={asset.slug}
                   href={`/compare/gold-vs/${asset.slug}`}
-                  className="group bg-white rounded-lg border border-slate-200 p-4 hover:border-[#B22234]/30 hover:shadow-md transition-all"
+                  className="group bg-[#161828] rounded-lg border border-[#2A2D42] p-4 hover:border-[rgba(197,149,46,0.45)] hover:shadow-md transition-all"
                 >
-                  <div className="text-xs text-slate-500 mb-1">{asset.ticker}</div>
-                  <div className="font-medium text-slate-900 group-hover:text-[#B22234] transition-colors text-sm">
+                  <div className="text-xs text-[#A8A39A] mb-1">{asset.ticker}</div>
+                  <div className="font-medium text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors text-sm">
                     Gold vs {asset.name}
                   </div>
                 </Link>
@@ -321,17 +321,17 @@ export default function ComparePage() {
 
           {/* Crypto */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold text-slate-900 mb-2">Cryptocurrencies</h3>
-            <p className="text-sm text-slate-600 mb-4">Physical gold vs digital assets</p>
+            <h3 className="text-lg font-semibold text-[#F6F4EF] mb-2">Cryptocurrencies</h3>
+            <p className="text-sm text-[#D0CCC4] mb-4">Physical gold vs digital assets</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {assets.filter(a => a.category === "crypto").map((asset) => (
                 <Link
                   key={asset.slug}
                   href={`/compare/gold-vs/${asset.slug}`}
-                  className="group bg-white rounded-lg border border-slate-200 p-4 hover:border-[#B22234]/30 hover:shadow-md transition-all"
+                  className="group bg-[#161828] rounded-lg border border-[#2A2D42] p-4 hover:border-[rgba(197,149,46,0.45)] hover:shadow-md transition-all"
                 >
-                  <div className="text-xs text-slate-500 mb-1">{asset.ticker}</div>
-                  <div className="font-medium text-slate-900 group-hover:text-[#B22234] transition-colors text-sm">
+                  <div className="text-xs text-[#A8A39A] mb-1">{asset.ticker}</div>
+                  <div className="font-medium text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors text-sm">
                     Gold vs {asset.name}
                   </div>
                 </Link>
@@ -341,17 +341,17 @@ export default function ComparePage() {
 
           {/* Commodities & Other */}
           <div className="mb-8">
-            <h3 className="text-lg font-semibold text-slate-900 mb-2">Commodities, Currencies & Other</h3>
-            <p className="text-sm text-slate-600 mb-4">Gold compared to other asset classes</p>
+            <h3 className="text-lg font-semibold text-[#F6F4EF] mb-2">Commodities, Currencies & Other</h3>
+            <p className="text-sm text-[#D0CCC4] mb-4">Gold compared to other asset classes</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {assets.filter(a => ["commodity", "currency", "other"].includes(a.category)).map((asset) => (
                 <Link
                   key={asset.slug}
                   href={`/compare/gold-vs/${asset.slug}`}
-                  className="group bg-white rounded-lg border border-slate-200 p-4 hover:border-[#B22234]/30 hover:shadow-md transition-all"
+                  className="group bg-[#161828] rounded-lg border border-[#2A2D42] p-4 hover:border-[rgba(197,149,46,0.45)] hover:shadow-md transition-all"
                 >
-                  <div className="text-xs text-slate-500 mb-1">{asset.ticker}</div>
-                  <div className="font-medium text-slate-900 group-hover:text-[#B22234] transition-colors text-sm">
+                  <div className="text-xs text-[#A8A39A] mb-1">{asset.ticker}</div>
+                  <div className="font-medium text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors text-sm">
                     Gold vs {asset.name}
                   </div>
                 </Link>
@@ -362,15 +362,15 @@ export default function ComparePage() {
       </section>
 
       {/* Investment Type Comparisons */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="flex items-center gap-3 mb-8">
-            <div className="p-2 bg-slate-200 rounded-lg border border-slate-300">
-              <Scale className="h-5 w-5 text-slate-600" />
+            <div className="p-2 bg-slate-200 rounded-lg border border-[#3F4460]">
+              <Scale className="h-5 w-5 text-[#D0CCC4]" />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-[#000080]">Account Type Comparisons</h2>
-              <p className="text-slate-600">Compare Gold IRAs with other retirement account options</p>
+              <h2 className="text-2xl font-bold text-[#F6F4EF]">Account Type Comparisons</h2>
+              <p className="text-[#D0CCC4]">Compare Gold IRAs with other retirement account options</p>
             </div>
           </div>
 
@@ -379,13 +379,13 @@ export default function ComparePage() {
               <Link
                 key={comparison.slug}
                 href={`/compare/${comparison.slug}`}
-                className="group bg-white rounded-xl border border-slate-200 p-6 hover:border-[#B22234]/30 hover:shadow-md transition-all"
+                className="group bg-[#161828] rounded-xl border border-[#2A2D42] p-6 hover:border-[rgba(197,149,46,0.45)] hover:shadow-md transition-all"
               >
-                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234] transition-colors">
+                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E] transition-colors">
                   {comparison.title}
                 </h3>
-                <p className="text-sm text-slate-600 mb-4">{comparison.description}</p>
-                <span className="text-[#B22234] text-sm font-semibold flex items-center gap-1">
+                <p className="text-sm text-[#D0CCC4] mb-4">{comparison.description}</p>
+                <span className="text-[#D4A94E] text-sm font-semibold flex items-center gap-1">
                   Read Comparison
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </span>
@@ -398,53 +398,53 @@ export default function ComparePage() {
       {/* Quick Comparison Table */}
       <section className="py-16 bg-white">
         <Container>
-          <h2 className="text-2xl font-bold text-[#000080] mb-4">Quick Company Overview</h2>
-          <p className="text-slate-600 mb-8 max-w-2xl">
+          <h2 className="text-2xl font-bold text-[#F6F4EF] mb-4">Quick Company Overview</h2>
+          <p className="text-[#D0CCC4] mb-8 max-w-2xl">
             When you&apos;re trusting a company with decades of savings, ratings and BBB grades tell you how they treat customers when things go wrong. Here&apos;s how the top companies stack up.
           </p>
           <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-xl border border-slate-200 shadow-sm">
+            <table className="w-full bg-[#161828] rounded-xl border border-[#2A2D42] shadow-sm">
               <thead>
-                <tr className="bg-slate-100">
-                  <th className="p-4 text-left font-semibold text-slate-600">Company</th>
-                  <th className="p-4 text-center font-semibold text-slate-600">Rating</th>
-                  <th className="p-4 text-center font-semibold text-slate-600">BBB</th>
-                  <th className="p-4 text-center font-semibold text-slate-600">Minimum</th>
-                  <th className="p-4 text-center font-semibold text-slate-600">Annual Fee</th>
-                  <th className="p-4 text-center font-semibold text-slate-600"></th>
+                <tr className="bg-[#121423]">
+                  <th className="p-4 text-left font-semibold text-[#D0CCC4]">Company</th>
+                  <th className="p-4 text-center font-semibold text-[#D0CCC4]">Rating</th>
+                  <th className="p-4 text-center font-semibold text-[#D0CCC4]">BBB</th>
+                  <th className="p-4 text-center font-semibold text-[#D0CCC4]">Minimum</th>
+                  <th className="p-4 text-center font-semibold text-[#D0CCC4]">Annual Fee</th>
+                  <th className="p-4 text-center font-semibold text-[#D0CCC4]"></th>
                 </tr>
               </thead>
               <tbody>
                 {companies.slice(0, 10).map((company, index) => (
-                  <tr key={company.slug} className="border-t border-slate-200 hover:bg-slate-50">
+                  <tr key={company.slug} className="border-t border-[#2A2D42] hover:bg-[#121423]">
                     <td className="p-4">
                       <div className="flex items-center gap-3">
                         <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${
-                          index === 0 ? "bg-[#B22234] text-white" : "bg-slate-200 text-slate-600"
+                          index === 0 ? "bg-[#DC2626] text-white" : "bg-slate-200 text-[#D0CCC4]"
                         }`}>
                           {index + 1}
                         </span>
                         <div>
-                          <div className="font-semibold text-slate-900 flex items-center gap-2">
+                          <div className="font-semibold text-[#F6F4EF] flex items-center gap-2">
                             {company.name}
-                            {company.featured && <Award className="h-4 w-4 text-[#B22234]" />}
+                            {company.featured && <Award className="h-4 w-4 text-[#D4A94E]" />}
                           </div>
                         </div>
                       </div>
                     </td>
                     <td className="p-4 text-center">
                       <div className="flex items-center justify-center gap-1">
-                        <Star className="h-4 w-4 text-[#B22234] fill-current" />
-                        <span className="font-bold text-slate-900">{company.rating}</span>
+                        <Star className="h-4 w-4 text-[#D4A94E] fill-current" />
+                        <span className="font-bold text-[#F6F4EF]">{company.rating}</span>
                       </div>
                     </td>
-                    <td className="p-4 text-center font-semibold text-slate-700">{company.bbbRating}</td>
-                    <td className="p-4 text-center text-slate-600">${company.minInvestment.toLocaleString()}</td>
-                    <td className="p-4 text-center text-slate-600">${company.fees.annual}</td>
+                    <td className="p-4 text-center font-semibold text-[#D0CCC4]">{company.bbbRating}</td>
+                    <td className="p-4 text-center text-[#D0CCC4]">${company.minInvestment.toLocaleString()}</td>
+                    <td className="p-4 text-center text-[#D0CCC4]">${company.fees.annual}</td>
                     <td className="p-4 text-center">
                       <Link
                         href={`/reviews/${company.slug}`}
-                        className="text-[#B22234] text-sm font-semibold hover:text-[#8b1c2a]"
+                        className="text-[#D4A94E] text-sm font-semibold hover:text-[#8b1c2a]"
                       >
                         Review &rarr;
                       </Link>
@@ -457,7 +457,7 @@ export default function ComparePage() {
           <div className="text-center mt-6">
             <Link
               href="/reviews"
-              className="text-[#B22234] font-semibold hover:text-[#8b1c2a]"
+              className="text-[#D4A94E] font-semibold hover:text-[#8b1c2a]"
             >
               View All {companies.length} Company Reviews &rarr;
             </Link>
@@ -466,7 +466,7 @@ export default function ComparePage() {
       </section>
 
       {/* Augusta CTA */}
-      <section className="py-16 bg-slate-50 border-t border-slate-200">
+      <section className="py-16 bg-[#0C0D18] border-t border-[#2A2D42]">
         <Container>
           <AugustaCTA
             variant="footer"

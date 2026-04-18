@@ -79,8 +79,8 @@ export function AugustaCTA({
     return (
       <div className={cn(
         "relative overflow-hidden",
-        "bg-gradient-to-br from-slate-50 to-white rounded-xl p-5",
-        "border border-slate-200",
+        "bg-[#0C0D18] rounded-xl p-5",
+        "border border-[#2A2D42]",
         "shadow-[0_8px_32px_rgba(0,0,0,0.1),0_0_60px_rgba(178,34,52,0.1)]",
         className
       )}
@@ -88,31 +88,31 @@ export function AugustaCTA({
       >
         <FloatingOrbs variant="minimal" />
         <div className="relative z-10">
-          <div className="flex items-center gap-2 text-[#B22234] font-semibold text-xs mb-3">
+          <div className="flex items-center gap-2 text-[#D4A94E] font-semibold text-xs mb-3">
             <Award className="h-3.5 w-3.5" />
             #1 RATED COMPANY
           </div>
-          <h3 className="font-bold text-[#000080] mb-2 text-lg">
+          <h3 className="font-bold text-[#F6F4EF] mb-2 text-lg">
             {headline || "Augusta Precious Metals"}
           </h3>
           <div className="flex items-center gap-2 mb-3">
-            <div className="flex text-[#B22234]">
+            <div className="flex text-[#D4A94E]">
               {[1, 2, 3, 4, 5].map((i) => (
                 <Star key={i} className="h-4 w-4 fill-current" />
               ))}
             </div>
-            <span className="text-sm text-slate-500">4.9/5</span>
+            <span className="text-sm text-[#A8A39A]">4.9/5</span>
           </div>
           <ul className="space-y-2 mb-4 text-sm">
-            <li className="flex items-center gap-2 text-slate-600">
+            <li className="flex items-center gap-2 text-[#D0CCC4]">
               <Shield className="h-4 w-4 text-green-500" />
               A+ BBB Rating
             </li>
-            <li className="flex items-center gap-2 text-slate-600">
+            <li className="flex items-center gap-2 text-[#D0CCC4]">
               <Shield className="h-4 w-4 text-green-500" />
               Lifetime Support
             </li>
-            <li className="flex items-center gap-2 text-slate-600">
+            <li className="flex items-center gap-2 text-[#D0CCC4]">
               <Shield className="h-4 w-4 text-green-500" />
               No Pushy Sales
             </li>
@@ -130,17 +130,17 @@ export function AugustaCTA({
     return (
       <div className={cn(
         "relative overflow-hidden",
-        "bg-slate-50 border border-slate-200 rounded-2xl p-4 my-6",
+        "bg-[#0C0D18] border border-[#2A2D42] rounded-2xl p-4 my-6",
         "shadow-[0_8px_32px_rgba(0,0,0,0.1),0_0_60px_rgba(178,34,52,0.1)]",
         className
       )}>
         <div className="flex flex-col sm:flex-row sm:items-center gap-4 relative z-10">
           <div className="flex-1">
-            <div className="flex items-center gap-2 text-[#B22234] font-semibold text-xs mb-1">
+            <div className="flex items-center gap-2 text-[#D4A94E] font-semibold text-xs mb-1">
               <Award className="h-3.5 w-3.5" />
               RECOMMENDED
             </div>
-            <p className="text-slate-600 text-sm">
+            <p className="text-[#D0CCC4] text-sm">
               {subheadline || "Augusta Precious Metals is our #1 rated Gold IRA company for their education-first approach and transparent pricing."}
             </p>
           </div>
@@ -158,7 +158,7 @@ export function AugustaCTA({
     return (
       <div className={cn(
         "relative overflow-hidden",
-        "bg-gradient-to-r from-slate-50 via-white to-slate-50 py-4 px-6",
+        "bg-gradient-to-r from-[#0C0D18] via-white to-[#0C0D18] py-4 px-6",
         "shadow-[0_8px_32px_rgba(0,0,0,0.1),0_0_60px_rgba(178,34,52,0.1)]",
         className
       )}>
@@ -166,11 +166,11 @@ export function AugustaCTA({
         <div className="absolute inset-0 bg-gradient-to-r from-[#B22234]/5 via-transparent to-[#B22234]/5" />
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 relative z-10">
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 text-[#B22234] font-semibold text-sm">
+            <div className="flex items-center gap-2 text-[#D4A94E] font-semibold text-sm">
               <Award className="h-4 w-4" />
               #1 RATED
             </div>
-            <span className="text-[#000080]">
+            <span className="text-[#F6F4EF]">
               {headline || "Get Your Free Gold IRA Guide from Augusta Precious Metals"}
             </span>
           </div>
@@ -188,8 +188,8 @@ export function AugustaCTA({
     return (
       <div className={cn(
         "relative overflow-hidden",
-        "bg-gradient-to-br from-slate-50 via-white to-slate-50 rounded-2xl p-8 md:p-10",
-        "border border-slate-200 text-center",
+        "bg-gradient-to-br from-[#0C0D18] via-white to-[#0C0D18] rounded-2xl p-8 md:p-10",
+        "border border-[#2A2D42] text-center",
         "shadow-[0_8px_32px_rgba(0,0,0,0.1),0_0_60px_rgba(178,34,52,0.1)]",
         className
       )}
@@ -199,26 +199,26 @@ export function AugustaCTA({
         {/* Ambient patriot gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#B22234]/5 via-transparent to-[#B22234]/5 rounded-2xl" />
         <div className="relative z-10">
-          <div className="inline-flex items-center gap-2 bg-[#B22234]/10 text-[#B22234] font-semibold text-sm px-4 py-2 rounded-full mb-4 border border-[#B22234]/30">
+          <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] text-[#D4A94E] font-semibold text-sm px-4 py-2 rounded-full mb-4 border border-[#B22234]/30">
             <Award className="h-4 w-4" />
             OUR #1 RECOMMENDATION
           </div>
-          <h3 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-4">
             {headline || "Ready to Protect Your Retirement?"}
           </h3>
-          <p className="text-slate-500 max-w-2xl mx-auto mb-6">
+          <p className="text-[#A8A39A] max-w-2xl mx-auto mb-6">
             {subheadline || "Augusta Precious Metals has been rated #1 in our comprehensive review. Their education-first approach means you'll never feel pressured. Get a free consultation today."}
           </p>
           <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <div className="flex items-center gap-2 text-slate-600">
+            <div className="flex items-center gap-2 text-[#D0CCC4]">
               <Shield className="h-5 w-5 text-green-500" />
               A+ BBB Rating
             </div>
-            <div className="flex items-center gap-2 text-slate-600">
-              <Star className="h-5 w-5 text-[#B22234]" />
+            <div className="flex items-center gap-2 text-[#D0CCC4]">
+              <Star className="h-5 w-5 text-[#D4A94E]" />
               4.9/5 Rating
             </div>
-            <div className="flex items-center gap-2 text-slate-600">
+            <div className="flex items-center gap-2 text-[#D0CCC4]">
               <Phone className="h-5 w-5 text-blue-500" />
               Lifetime Support
             </div>
@@ -236,8 +236,8 @@ export function AugustaCTA({
   return (
     <div className={cn(
       "relative overflow-hidden",
-      "bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 md:p-10",
-      "border border-slate-200",
+      "bg-[#0C0D18] rounded-2xl p-8 md:p-10",
+      "border border-[#2A2D42]",
       "shadow-[0_8px_32px_rgba(0,0,0,0.1),0_0_60px_rgba(178,34,52,0.1)]",
       className
     )}
@@ -248,26 +248,26 @@ export function AugustaCTA({
       <div className="absolute inset-0 bg-gradient-to-br from-[#B22234]/5 via-transparent to-[#B22234]/5 rounded-2xl" />
       <div className="grid md:grid-cols-2 gap-8 items-center relative z-10">
         <div>
-          <div className="inline-flex items-center gap-2 bg-[#B22234] text-white font-semibold text-sm px-4 py-2 rounded-full mb-4">
+          <div className="inline-flex items-center gap-2 bg-[#DC2626] text-white font-semibold text-sm px-4 py-2 rounded-full mb-4">
             <Award className="h-4 w-4" />
             #1 RATED GOLD IRA COMPANY
           </div>
-          <h3 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-4">
             {headline || "Augusta Precious Metals"}
           </h3>
-          <p className="text-slate-500 mb-6">
+          <p className="text-[#A8A39A] mb-6">
             {subheadline || "Education-first approach with lifetime customer support. No high-pressure sales tactics. Get a free one-on-one web conference to learn about protecting your retirement."}
           </p>
           <ul className="space-y-3 mb-6">
-            <li className="flex items-center gap-3 text-slate-600">
+            <li className="flex items-center gap-3 text-[#D0CCC4]">
               <Shield className="h-5 w-5 text-green-500" />
               A+ BBB Rating - Zero Complaints
             </li>
-            <li className="flex items-center gap-3 text-slate-600">
-              <Star className="h-5 w-5 text-[#B22234]" />
+            <li className="flex items-center gap-3 text-[#D0CCC4]">
+              <Star className="h-5 w-5 text-[#D4A94E]" />
               4.9/5 Average Rating
             </li>
-            <li className="flex items-center gap-3 text-slate-600">
+            <li className="flex items-center gap-3 text-[#D0CCC4]">
               <Phone className="h-5 w-5 text-blue-500" />
               Dedicated Agent for Life
             </li>
@@ -278,28 +278,28 @@ export function AugustaCTA({
           </PremiumButton>
         </div>
         <div className="hidden md:block">
-          <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-[0_4px_24px_rgba(0,0,0,0.1),0_0_40px_rgba(178,34,52,0.05)]">
+          <div className="bg-[#161828] rounded-xl p-6 border border-[#2A2D42] shadow-[0_4px_24px_rgba(0,0,0,0.1),0_0_40px_rgba(178,34,52,0.05)]">
             <div className="text-center mb-4">
-              <div className="text-5xl font-bold text-[#000080]">4.9</div>
-              <div className="flex justify-center text-[#B22234] my-2">
+              <div className="text-5xl font-bold text-[#F6F4EF]">4.9</div>
+              <div className="flex justify-center text-[#D4A94E] my-2">
                 {[1, 2, 3, 4, 5].map((i) => (
                   <Star key={i} className="h-6 w-6 fill-current" />
                 ))}
               </div>
-              <div className="text-sm text-slate-500">{augusta.reviewCount.toLocaleString()} verified reviews</div>
+              <div className="text-sm text-[#A8A39A]">{augusta.reviewCount.toLocaleString()} verified reviews</div>
             </div>
-            <div className="space-y-3 pt-4 border-t border-slate-200">
+            <div className="space-y-3 pt-4 border-t border-[#2A2D42]">
               <div className="flex justify-between text-sm">
-                <span className="text-slate-500">Minimum Investment</span>
-                <span className="font-semibold text-[#000080] whitespace-nowrap">${augusta.minInvestment.toLocaleString()}</span>
+                <span className="text-[#A8A39A]">Minimum Investment</span>
+                <span className="font-semibold text-[#F6F4EF] whitespace-nowrap">${augusta.minInvestment.toLocaleString()}</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-slate-500">Setup Fee</span>
+                <span className="text-[#A8A39A]">Setup Fee</span>
                 <span className="font-semibold text-green-600">Free</span>
               </div>
               <div className="flex justify-between text-sm">
-                <span className="text-slate-500">Annual Fee</span>
-                <span className="font-semibold text-[#000080] whitespace-nowrap">${augusta.fees.annual}</span>
+                <span className="text-[#A8A39A]">Annual Fee</span>
+                <span className="font-semibold text-[#F6F4EF] whitespace-nowrap">${augusta.fees.annual}</span>
               </div>
             </div>
           </div>

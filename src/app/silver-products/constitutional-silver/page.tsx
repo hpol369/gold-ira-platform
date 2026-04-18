@@ -103,24 +103,24 @@ export default function ConstitutionalSilverPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-products"
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-slate-300 rounded-full text-slate-600 font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#3F4460] rounded-full text-[#D0CCC4] font-semibold text-sm mb-6">
               <Landmark className="h-4 w-4" />
               450 MONTHLY SEARCHES
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               Constitutional Silver: America&apos;s Original Money
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               Before 1965, every US dime, quarter, and half dollar contained 90% silver.
               Today, this &quot;junk silver&quot; is prized by stackers for its recognizability,
               divisibility, and connection to America&apos;s monetary heritage.
@@ -144,29 +144,29 @@ export default function ConstitutionalSilverPage() {
       </section>
 
       {/* Quick Reference */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Scale className="h-8 w-8 text-slate-600 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">90%</div>
-                <div className="text-sm text-slate-600">Silver Content</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Scale className="h-8 w-8 text-[#D0CCC4] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">90%</div>
+                <div className="text-sm text-[#D0CCC4]">Silver Content</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Calculator className="h-8 w-8 text-slate-600 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">0.715 oz</div>
-                <div className="text-sm text-slate-600">Per $1 Face</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Calculator className="h-8 w-8 text-[#D0CCC4] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">0.715 oz</div>
+                <div className="text-sm text-[#D0CCC4]">Per $1 Face</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <History className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">Pre-1965</div>
-                <div className="text-sm text-slate-600">Mintage Years</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <History className="h-8 w-8 text-[#D4A94E] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">Pre-1965</div>
+                <div className="text-sm text-[#D0CCC4]">Mintage Years</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
                 <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">5-15%</div>
-                <div className="text-sm text-slate-600">Premium Range</div>
+                <div className="text-2xl font-bold text-[#F6F4EF]">5-15%</div>
+                <div className="text-sm text-[#D0CCC4]">Premium Range</div>
               </div>
             </div>
           </div>
@@ -177,22 +177,22 @@ export default function ConstitutionalSilverPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+            <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
               {/* What is Constitutional Silver */}
-              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 mb-8">
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-[#B22234]/10 rounded-lg">
-                    <Landmark className="h-6 w-6 text-slate-600" />
+                  <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg">
+                    <Landmark className="h-6 w-6 text-[#D0CCC4]" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 m-0">What is Constitutional Silver?</h2>
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] m-0">What is Constitutional Silver?</h2>
                 </div>
-                <p className="text-slate-600 mb-4">
+                <p className="text-[#D0CCC4] mb-4">
                   &quot;Constitutional silver&quot; refers to US coins minted before 1965 that contain 90% silver
                   and 10% copper. The term comes from Article I, Section 10 of the US Constitution, which
                   originally defined lawful money as gold and silver coin.
                 </p>
-                <p className="text-slate-600">
+                <p className="text-[#D0CCC4]">
                   It&apos;s also called &quot;junk silver&quot;—not because it&apos;s worthless, but because these coins
                   have no numismatic (collector) value beyond their silver content. They&apos;re valued purely
                   for the silver they contain.
@@ -200,85 +200,85 @@ export default function ConstitutionalSilverPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Scale className="h-6 w-6 text-slate-600" />
+                <Scale className="h-6 w-6 text-[#D0CCC4]" />
                 Types of Constitutional Silver Coins
               </h2>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Coin Type</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Years</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Silver Content</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Per Coin (oz)</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Coin Type</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Years</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Silver Content</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Per Coin (oz)</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Roosevelt Dime</td>
-                      <td className="p-4 text-slate-600">1946-1964</td>
-                      <td className="p-4 text-slate-600">90%</td>
-                      <td className="p-4 text-slate-600">0.0715 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Roosevelt Dime</td>
+                      <td className="p-4 text-[#D0CCC4]">1946-1964</td>
+                      <td className="p-4 text-[#D0CCC4]">90%</td>
+                      <td className="p-4 text-[#D0CCC4]">0.0715 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Mercury Dime</td>
-                      <td className="p-4 text-slate-600">1916-1945</td>
-                      <td className="p-4 text-slate-600">90%</td>
-                      <td className="p-4 text-slate-600">0.0715 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Mercury Dime</td>
+                      <td className="p-4 text-[#D0CCC4]">1916-1945</td>
+                      <td className="p-4 text-[#D0CCC4]">90%</td>
+                      <td className="p-4 text-[#D0CCC4]">0.0715 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Washington Quarter</td>
-                      <td className="p-4 text-slate-600">1932-1964</td>
-                      <td className="p-4 text-slate-600">90%</td>
-                      <td className="p-4 text-slate-600">0.1788 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Washington Quarter</td>
+                      <td className="p-4 text-[#D0CCC4]">1932-1964</td>
+                      <td className="p-4 text-[#D0CCC4]">90%</td>
+                      <td className="p-4 text-[#D0CCC4]">0.1788 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Standing Liberty Quarter</td>
-                      <td className="p-4 text-slate-600">1916-1930</td>
-                      <td className="p-4 text-slate-600">90%</td>
-                      <td className="p-4 text-slate-600">0.1788 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Standing Liberty Quarter</td>
+                      <td className="p-4 text-[#D0CCC4]">1916-1930</td>
+                      <td className="p-4 text-[#D0CCC4]">90%</td>
+                      <td className="p-4 text-[#D0CCC4]">0.1788 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Kennedy Half Dollar</td>
-                      <td className="p-4 text-slate-600">1964</td>
-                      <td className="p-4 text-slate-600">90%</td>
-                      <td className="p-4 text-slate-600">0.3575 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Kennedy Half Dollar</td>
+                      <td className="p-4 text-[#D0CCC4]">1964</td>
+                      <td className="p-4 text-[#D0CCC4]">90%</td>
+                      <td className="p-4 text-[#D0CCC4]">0.3575 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Walking Liberty Half</td>
-                      <td className="p-4 text-slate-600">1916-1947</td>
-                      <td className="p-4 text-slate-600">90%</td>
-                      <td className="p-4 text-slate-600">0.3575 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Walking Liberty Half</td>
+                      <td className="p-4 text-[#D0CCC4]">1916-1947</td>
+                      <td className="p-4 text-[#D0CCC4]">90%</td>
+                      <td className="p-4 text-[#D0CCC4]">0.3575 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Franklin Half Dollar</td>
-                      <td className="p-4 text-slate-600">1948-1963</td>
-                      <td className="p-4 text-slate-600">90%</td>
-                      <td className="p-4 text-slate-600">0.3575 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Franklin Half Dollar</td>
+                      <td className="p-4 text-[#D0CCC4]">1948-1963</td>
+                      <td className="p-4 text-[#D0CCC4]">90%</td>
+                      <td className="p-4 text-[#D0CCC4]">0.3575 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Morgan Dollar</td>
-                      <td className="p-4 text-slate-600">1878-1921</td>
-                      <td className="p-4 text-slate-600">90%</td>
-                      <td className="p-4 text-slate-600">0.7734 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Morgan Dollar</td>
+                      <td className="p-4 text-[#D0CCC4]">1878-1921</td>
+                      <td className="p-4 text-[#D0CCC4]">90%</td>
+                      <td className="p-4 text-[#D0CCC4]">0.7734 oz</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Peace Dollar</td>
-                      <td className="p-4 text-slate-600">1921-1935</td>
-                      <td className="p-4 text-slate-600">90%</td>
-                      <td className="p-4 text-slate-600">0.7734 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Peace Dollar</td>
+                      <td className="p-4 text-[#D0CCC4]">1921-1935</td>
+                      <td className="p-4 text-[#D0CCC4]">90%</td>
+                      <td className="p-4 text-[#D0CCC4]">0.7734 oz</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
-              <div className="not-prose bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
-                  <Info className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <Info className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-lg font-bold text-[#B22234] mb-2">Note on Kennedy Halves (1965-1970)</h4>
-                    <p className="text-slate-600">
+                    <h4 className="text-lg font-bold text-[#D4A94E] mb-2">Note on Kennedy Halves (1965-1970)</h4>
+                    <p className="text-[#D0CCC4]">
                       Kennedy half dollars from 1965-1970 contain only 40% silver, not 90%. These are
                       sometimes called &quot;40% silver&quot; or &quot;clad silver&quot; and trade at different premiums.
                       From 1971 onward, Kennedy halves contain no silver (except special mint issues).
@@ -297,16 +297,16 @@ export default function ConstitutionalSilverPage() {
                 Here&apos;s how to calculate the silver content:
               </p>
 
-              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 my-8">
-                <h3 className="text-xl font-bold text-slate-900 mb-4">The Formula</h3>
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 my-8">
+                <h3 className="text-xl font-bold text-[#F6F4EF] mb-4">The Formula</h3>
                 <div className="bg-slate-800 rounded-lg p-4 font-mono text-lg text-center mb-4">
-                  <span className="text-green-400">$1 face value</span> = <span className="text-[#B22234]">0.715 oz</span> silver
+                  <span className="text-green-400">$1 face value</span> = <span className="text-[#D4A94E]">0.715 oz</span> silver
                 </div>
-                <p className="text-slate-600 mb-4">
+                <p className="text-[#D0CCC4] mb-4">
                   This means $100 face value of 90% silver coins contains approximately <strong>71.5 troy ounces</strong> of silver.
                 </p>
-                <h4 className="text-lg font-bold text-slate-900 mb-2">Quick Reference:</h4>
-                <ul className="space-y-2 text-slate-600">
+                <h4 className="text-lg font-bold text-[#F6F4EF] mb-2">Quick Reference:</h4>
+                <ul className="space-y-2 text-[#D0CCC4]">
                   <li>$1.40 face value (14 dimes or 5.6 quarters) = 1 oz silver</li>
                   <li>$10 face value = 7.15 oz silver</li>
                   <li>$100 face value = 71.5 oz silver</li>
@@ -320,51 +320,51 @@ export default function ConstitutionalSilverPage() {
               </h2>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Advantages</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Advantages</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Instantly recognizable</strong> - Everyone knows what a quarter is</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Highly divisible</strong> - Small denominations for barter</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Hard to counterfeit</strong> - Weight, sound, and design are familiar</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Lower premiums</strong> - Cheaper per oz than Eagles</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Historical value</strong> - Connection to sound money era</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Disadvantages</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Disadvantages</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span><strong>NOT IRA eligible</strong> - Only .999 silver qualifies</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Variable condition</strong> - Wear affects weight</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Bulky storage</strong> - More space per oz vs bars</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Selling complexity</strong> - Need to count/weigh</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <XCircle className="h-5 w-5 text-red-400 flex-shrink-0 mt-0.5" />
                       <span><strong>Premium volatility</strong> - Swings with demand</span>
                     </li>
@@ -377,7 +377,7 @@ export default function ConstitutionalSilverPage() {
                   <XCircle className="h-6 w-6 text-red-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-lg font-bold text-red-400 mb-2">IRA Warning: NOT Eligible</h4>
-                    <p className="text-slate-600">
+                    <p className="text-[#D0CCC4]">
                       Constitutional silver (90% coins) does NOT qualify for Precious Metals IRAs.
                       The IRS requires .999 fine silver (99.9% purity). If you want silver in your IRA,
                       consider American Silver Eagles, Canadian Maple Leafs, or .999 silver bars.
@@ -394,38 +394,38 @@ export default function ConstitutionalSilverPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Purchase Size</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Silver Content</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Typical Cost*</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Purchase Size</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Silver Content</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Typical Cost*</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">$10 Face Value</td>
-                      <td className="p-4 text-slate-600">7.15 oz</td>
-                      <td className="p-4 text-slate-600">$180-200</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">$10 Face Value</td>
+                      <td className="p-4 text-[#D0CCC4]">7.15 oz</td>
+                      <td className="p-4 text-[#D0CCC4]">$180-200</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">$100 Face Value</td>
-                      <td className="p-4 text-slate-600">71.5 oz</td>
-                      <td className="p-4 text-slate-600">$1,800-2,000</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">$100 Face Value</td>
+                      <td className="p-4 text-[#D0CCC4]">71.5 oz</td>
+                      <td className="p-4 text-[#D0CCC4]">$1,800-2,000</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">$500 Face (Half Bag)</td>
-                      <td className="p-4 text-slate-600">357.5 oz</td>
-                      <td className="p-4 text-slate-600">$8,900-9,500</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">$500 Face (Half Bag)</td>
+                      <td className="p-4 text-[#D0CCC4]">357.5 oz</td>
+                      <td className="p-4 text-[#D0CCC4]">$8,900-9,500</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">$1,000 Face (Full Bag)</td>
-                      <td className="p-4 text-slate-600">715 oz</td>
-                      <td className="p-4 text-slate-600">$17,500-19,000</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">$1,000 Face (Full Bag)</td>
+                      <td className="p-4 text-[#D0CCC4]">715 oz</td>
+                      <td className="p-4 text-[#D0CCC4]">$17,500-19,000</td>
                     </tr>
                   </tbody>
                 </table>
-                <p className="text-xs text-slate-600 mt-2">*Prices at approximately $25/oz spot. Premiums vary by market conditions and coin type.</p>
+                <p className="text-xs text-[#D0CCC4] mt-2">*Prices at approximately $25/oz spot. Premiums vary by market conditions and coin type.</p>
               </div>
 
               <h2>Where to Buy</h2>
@@ -441,29 +441,29 @@ export default function ConstitutionalSilverPage() {
               <h2>Best Constitutional Silver for Different Goals</h2>
 
               <div className="not-prose grid md:grid-cols-3 gap-6 my-8">
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">For Pure Value</h3>
-                  <p className="text-slate-600 mb-3">
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">For Pure Value</h3>
+                  <p className="text-[#D0CCC4] mb-3">
                     Roosevelt dimes and Washington quarters offer the best value - common dates
                     with no numismatic premium.
                   </p>
                   <span className="text-green-400 text-sm font-semibold">Lowest premiums</span>
                 </div>
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">For Barter/Prepping</h3>
-                  <p className="text-slate-600 mb-3">
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">For Barter/Prepping</h3>
+                  <p className="text-[#D0CCC4] mb-3">
                     Mix of dimes and quarters. Dimes are most divisible; quarters most recognizable.
                     Skip half dollars for barter.
                   </p>
-                  <span className="text-[#B22234] text-sm font-semibold">Most practical</span>
+                  <span className="text-[#D4A94E] text-sm font-semibold">Most practical</span>
                 </div>
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">For Collector Appeal</h3>
-                  <p className="text-slate-600 mb-3">
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">For Collector Appeal</h3>
+                  <p className="text-[#D0CCC4] mb-3">
                     Mercury dimes, Walking Liberty halves, and Morgan dollars. Higher premiums but
                     potential upside if silver rises.
                   </p>
-                  <span className="text-slate-600 text-sm font-semibold">Semi-numismatic</span>
+                  <span className="text-[#D0CCC4] text-sm font-semibold">Semi-numismatic</span>
                 </div>
               </div>
 
@@ -473,25 +473,25 @@ export default function ConstitutionalSilverPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>

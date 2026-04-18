@@ -53,7 +53,7 @@ export default function AltoIRAReviewPage() {
             <Navbar />
 
             {/* Hero Section */}
-            <header className="bg-[#000080] text-white py-16 relative overflow-hidden">
+            <header className="bg-[rgba(197,149,46,0.1)] text-white py-16 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-400/10 via-transparent to-transparent"></div>
                 <Container className="relative z-10">
                     <div className="max-w-4xl">
@@ -91,56 +91,56 @@ export default function AltoIRAReviewPage() {
                             />
 
                             {/* Quick Facts */}
-                            <div className="bg-slate-50 rounded-xl border border-slate-200 p-6 mb-8">
-                                <h2 className="text-xl font-serif font-bold text-[#000080] mb-4">Alto IRA at a Glance</h2>
+                            <div className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 mb-8">
+                                <h2 className="text-xl font-serif font-bold text-[#F6F4EF] mb-4">Alto IRA at a Glance</h2>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div className="flex items-center gap-3">
-                                        <Building2 className="w-5 h-5 text-[#000080]" />
+                                        <Building2 className="w-5 h-5 text-[#F6F4EF]" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Founded</p>
-                                            <p className="text-slate-800 font-medium">{companyData.founded}</p>
+                                            <p className="text-[#A8A39A] text-sm">Founded</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.founded}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <DollarSign className="w-5 h-5 text-green-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Minimum Investment</p>
-                                            <p className="text-slate-800 font-medium">{companyData.minimum}</p>
+                                            <p className="text-[#A8A39A] text-sm">Minimum Investment</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.minimum}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <TrendingUp className="w-5 h-5 text-[#B22234]" />
+                                        <TrendingUp className="w-5 h-5 text-[#D4A94E]" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Trading Fee</p>
-                                            <p className="text-slate-800 font-medium">{companyData.tradingFee}</p>
+                                            <p className="text-[#A8A39A] text-sm">Trading Fee</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.tradingFee}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Coins className="w-5 h-5 text-[#000080]" />
+                                        <Coins className="w-5 h-5 text-[#F6F4EF]" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Assets</p>
-                                            <p className="text-slate-800 font-medium">{companyData.supportedAssets}</p>
+                                            <p className="text-[#A8A39A] text-sm">Assets</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.supportedAssets}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <Shield className="w-5 h-5 text-green-600" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">BBB Rating</p>
-                                            <p className="text-slate-800 font-medium">{companyData.bbbRating}</p>
+                                            <p className="text-[#A8A39A] text-sm">BBB Rating</p>
+                                            <p className="text-[#F6F4EF] font-medium">{companyData.bbbRating}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <Zap className="w-5 h-5 text-[#000080]" />
+                                        <Zap className="w-5 h-5 text-[#F6F4EF]" />
                                         <div>
-                                            <p className="text-slate-500 text-sm">Best For</p>
-                                            <p className="text-slate-800 font-medium text-sm">{companyData.bestFor}</p>
+                                            <p className="text-[#A8A39A] text-sm">Best For</p>
+                                            <p className="text-[#F6F4EF] font-medium text-sm">{companyData.bestFor}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Article Content */}
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-800 prose-a:text-[#B22234] hover:prose-a:text-[#8B0000]">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E] hover:prose-a:text-[#8B0000]">
 
                                 <h2>What is Alto IRA?</h2>
                                 <p>
@@ -172,29 +172,29 @@ export default function AltoIRAReviewPage() {
                                     Alto's fee structure is straightforward for the CryptoIRA:
                                 </p>
 
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden not-prose my-8">
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl overflow-hidden not-prose my-8">
                                     <table className="w-full text-sm">
-                                        <thead className="bg-slate-100">
+                                        <thead className="bg-[#121423]">
                                             <tr>
-                                                <th className="text-left p-4 text-[#000080] font-semibold">Fee Type</th>
-                                                <th className="text-left p-4 text-[#000080] font-semibold">Alto CryptoIRA</th>
+                                                <th className="text-left p-4 text-[#F6F4EF] font-semibold">Fee Type</th>
+                                                <th className="text-left p-4 text-[#F6F4EF] font-semibold">Alto CryptoIRA</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="divide-y divide-slate-200">
+                                        <tbody className="divide-y divide-[#2A2D42]">
                                             <tr>
-                                                <td className="p-4 text-slate-600">Account Setup</td>
+                                                <td className="p-4 text-[#D0CCC4]">Account Setup</td>
                                                 <td className="p-4 text-green-600 font-medium">$0</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Monthly Fee</td>
+                                                <td className="p-4 text-[#D0CCC4]">Monthly Fee</td>
                                                 <td className="p-4 text-green-600 font-medium">$0</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Trading Fee</td>
-                                                <td className="p-4 text-[#B22234] font-medium">1% + Coinbase spread</td>
+                                                <td className="p-4 text-[#D0CCC4]">Trading Fee</td>
+                                                <td className="p-4 text-[#D4A94E] font-medium">1% + Coinbase spread</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Minimum Investment</td>
+                                                <td className="p-4 text-[#D0CCC4]">Minimum Investment</td>
                                                 <td className="p-4 text-green-600 font-medium">$0</td>
                                             </tr>
                                         </tbody>
@@ -219,44 +219,44 @@ export default function AltoIRAReviewPage() {
 
                                 <h2>Alto IRA vs iTrustCapital</h2>
 
-                                <div className="bg-slate-50 border border-slate-200 rounded-xl overflow-hidden not-prose my-8">
+                                <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl overflow-hidden not-prose my-8">
                                     <table className="w-full text-sm">
-                                        <thead className="bg-slate-100">
+                                        <thead className="bg-[#121423]">
                                             <tr>
-                                                <th className="text-left p-4 text-[#000080] font-semibold">Feature</th>
-                                                <th className="text-left p-4 text-[#000080] font-semibold">Alto IRA</th>
-                                                <th className="text-left p-4 text-[#000080] font-semibold">iTrustCapital</th>
+                                                <th className="text-left p-4 text-[#F6F4EF] font-semibold">Feature</th>
+                                                <th className="text-left p-4 text-[#F6F4EF] font-semibold">Alto IRA</th>
+                                                <th className="text-left p-4 text-[#F6F4EF] font-semibold">iTrustCapital</th>
                                             </tr>
                                         </thead>
-                                        <tbody className="divide-y divide-slate-200">
+                                        <tbody className="divide-y divide-[#2A2D42]">
                                             <tr>
-                                                <td className="p-4 text-slate-600"># of Cryptos</td>
+                                                <td className="p-4 text-[#D0CCC4]"># of Cryptos</td>
                                                 <td className="p-4 text-green-600 font-medium">200+</td>
-                                                <td className="p-4 text-slate-600">30+</td>
+                                                <td className="p-4 text-[#D0CCC4]">30+</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Trading Fee</td>
-                                                <td className="p-4 text-slate-600">1% + spread</td>
+                                                <td className="p-4 text-[#D0CCC4]">Trading Fee</td>
+                                                <td className="p-4 text-[#D0CCC4]">1% + spread</td>
                                                 <td className="p-4 text-green-600 font-medium">1% flat</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Minimum</td>
+                                                <td className="p-4 text-[#D0CCC4]">Minimum</td>
                                                 <td className="p-4 text-green-600 font-medium">$0</td>
-                                                <td className="p-4 text-slate-600">$1,000</td>
+                                                <td className="p-4 text-[#D0CCC4]">$1,000</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Gold/Silver</td>
+                                                <td className="p-4 text-[#D0CCC4]">Gold/Silver</td>
                                                 <td className="p-4"><XCircle className="w-5 h-5 text-red-500" /></td>
                                                 <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Alt Investments</td>
+                                                <td className="p-4 text-[#D0CCC4]">Alt Investments</td>
                                                 <td className="p-4"><CheckCircle2 className="w-5 h-5 text-green-600" /></td>
                                                 <td className="p-4"><XCircle className="w-5 h-5 text-red-500" /></td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 text-slate-600">Platform UX</td>
-                                                <td className="p-4 text-slate-600">Good</td>
+                                                <td className="p-4 text-[#D0CCC4]">Platform UX</td>
+                                                <td className="p-4 text-[#D0CCC4]">Good</td>
                                                 <td className="p-4 text-green-600 font-medium">Excellent</td>
                                             </tr>
                                         </tbody>
@@ -295,7 +295,7 @@ export default function AltoIRAReviewPage() {
                                     Common praise includes the wide crypto selection and easy account setup. Complaints typically mention occasional delays in customer support and the Coinbase integration feeling indirect.
                                 </p>
 
-                                <hr className="my-12 border-slate-200" />
+                                <hr className="my-12 border-[#2A2D42]" />
 
                                 <h2>Final Verdict</h2>
                                 <p>
@@ -308,7 +308,7 @@ export default function AltoIRAReviewPage() {
 
                             {/* FAQ Section */}
                             <div className="mt-12">
-                                <h2 className="text-2xl font-serif font-bold text-[#000080] mb-6">Frequently Asked Questions</h2>
+                                <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-6">Frequently Asked Questions</h2>
                                 <div className="space-y-4">
                                     {[
                                         {
@@ -328,17 +328,17 @@ export default function AltoIRAReviewPage() {
                                             a: "Alto offers more crypto options (200+ vs 30+) and has a $0 minimum (vs $1,000). However, iTrustCapital has lower total fees, offers gold/silver, and has a more polished platform."
                                         },
                                     ].map((faq, i) => (
-                                        <div key={i} className="bg-slate-50 rounded-xl border border-slate-200 p-6">
-                                            <h3 className="font-bold text-[#000080] mb-2">{faq.q}</h3>
-                                            <p className="text-slate-600 text-sm">{faq.a}</p>
+                                        <div key={i} className="bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6">
+                                            <h3 className="font-bold text-[#F6F4EF] mb-2">{faq.q}</h3>
+                                            <p className="text-[#D0CCC4] text-sm">{faq.a}</p>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
                             {/* Bottom CTA */}
-                            <div className="bg-[#000080] text-white p-8 rounded-2xl text-center mt-12 relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                            <div className="bg-[rgba(197,149,46,0.1)] text-white p-8 rounded-2xl text-center mt-12 relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.18)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10">
                                     <h3 className="text-2xl font-serif font-bold mb-4">Ready to Get Started?</h3>
                                     <p className="mb-6 text-blue-100 max-w-lg mx-auto">
@@ -358,29 +358,29 @@ export default function AltoIRAReviewPage() {
                         {/* Sidebar */}
                         <aside className="relative">
                             <div className="hidden lg:block sticky top-24 space-y-6">
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#000080]">Compare Crypto IRAs</h3>
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42]">
+                                    <h3 className="font-serif font-bold text-lg mb-4 text-[#F6F4EF]">Compare Crypto IRAs</h3>
                                     <div className="space-y-3">
-                                        <Link href="/reviews/itrustcapital" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
+                                        <Link href="/reviews/itrustcapital" className="block text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors">
                                             iTrustCapital Review →
                                         </Link>
-                                        <Link href="/best-crypto-ira-companies" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
+                                        <Link href="/best-crypto-ira-companies" className="block text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors">
                                             Best Crypto IRA Companies →
                                         </Link>
-                                        <Link href="/crypto-ira" className="block text-sm text-slate-600 hover:text-[#000080] transition-colors">
+                                        <Link href="/crypto-ira" className="block text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors">
                                             Crypto IRA Guide →
                                         </Link>
                                     </div>
                                 </div>
 
-                                <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+                                <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] text-center">
                                     <div className="flex justify-center gap-1 mb-2">
                                         {[1,2,3,4,5].map(i => (
-                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-[#B22234] fill-[#B22234]' : 'text-slate-300'}`} />
+                                            <Star key={i} className={`w-5 h-5 ${i <= 4 ? 'text-[#D4A94E] fill-[#B22234]' : 'text-[#3F4460]'}`} />
                                         ))}
                                     </div>
-                                    <p className="text-[#000080] font-bold">4.5 / 5</p>
-                                    <p className="text-slate-500 text-xs mt-1">Our Rating</p>
+                                    <p className="text-[#F6F4EF] font-bold">4.5 / 5</p>
+                                    <p className="text-[#A8A39A] text-xs mt-1">Our Rating</p>
                                 </div>
                             </div>
                         </aside>

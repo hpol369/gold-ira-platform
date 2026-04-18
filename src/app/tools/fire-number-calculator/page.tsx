@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function FIRENumberCalculatorPage() {
   return (
-    <div className="min-h-screen bg-whitetext-slate-900">
+    <div className="min-h-screen bg-whitetext-[#F6F4EF]">
       <Navbar />
       <FIRENumberCalculator />
       <section className="py-16 bg-white">

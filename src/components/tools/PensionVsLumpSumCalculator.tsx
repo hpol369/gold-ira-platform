@@ -204,7 +204,7 @@ export function PensionVsLumpSumCalculator() {
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
           Pension vs Lump Sum Calculator
         </h1>
-        <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+        <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
           Should you take the guaranteed monthly pension or the one-time lump sum? This calculator helps you make an informed decision.
         </p>
       </div>
@@ -213,7 +213,7 @@ export function PensionVsLumpSumCalculator() {
         {/* Input Section */}
         <div className="space-y-6">
           {/* Pension Details */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-blue-500/20 rounded-lg border border-blue-500/30">
                 <DollarSign className="h-5 w-5 text-blue-600" />
@@ -223,36 +223,36 @@ export function PensionVsLumpSumCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Monthly Pension Amount
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={monthlyPension}
                     onChange={(e) => setMonthlyPension(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-blue-500"
                     min="0"
                     step="100"
                   />
                 </div>
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-[#A8A39A] mt-1">
                   Annual: {formatFullCurrency(monthlyPension * 12)}
                 </p>
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Lump Sum Offer
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={lumpSumOffer}
                     onChange={(e) => setLumpSumOffer(Number(e.target.value))}
-                    className="w-full bg-slate-100 border border-slate-700 rounded-lg px-10 py-3 text-slate-900 focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#121423] border border-slate-700 rounded-lg px-10 py-3 text-[#F6F4EF] focus:outline-none focus:border-blue-500"
                     min="0"
                     step="10000"
                   />
@@ -260,11 +260,11 @@ export function PensionVsLumpSumCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 flex items-center gap-2">
+                <label className="text-sm text-[#A8A39A] mb-2 flex items-center gap-2">
                   Pension COLA (Cost of Living Adjustment): {colaPension}%
                   <div className="group relative">
-                    <Info className="h-4 w-4 text-slate-500 cursor-help" />
-                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-slate-100 text-xs text-slate-600 rounded-lg p-3 border border-slate-700 z-10">
+                    <Info className="h-4 w-4 text-[#A8A39A] cursor-help" />
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block w-64 bg-[#121423] text-xs text-[#D0CCC4] rounded-lg p-3 border border-slate-700 z-10">
                       Annual increase in pension benefits to offset inflation. Many pensions have 0% COLA, making them lose purchasing power over time.
                     </div>
                   </div>
@@ -278,7 +278,7 @@ export function PensionVsLumpSumCalculator() {
                   onChange={(e) => setColaPension(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-500"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>0% (No COLA)</span>
                   <span>2%</span>
                   <span>4%</span>
@@ -288,7 +288,7 @@ export function PensionVsLumpSumCalculator() {
           </div>
 
           {/* Personal Info */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-purple-500/20 rounded-lg border border-purple-500/30">
                 <Calendar className="h-5 w-5 text-purple-700" />
@@ -298,7 +298,7 @@ export function PensionVsLumpSumCalculator() {
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Your Current Age: {currentAge}
                 </label>
                 <input
@@ -312,7 +312,7 @@ export function PensionVsLumpSumCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Life Expectancy: {lifeExpectancy}
                 </label>
                 <input
@@ -323,13 +323,13 @@ export function PensionVsLumpSumCalculator() {
                   onChange={(e) => setLifeExpectancy(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-purple-500"
                 />
-                <p className="text-xs text-slate-500 mt-1">
+                <p className="text-xs text-[#A8A39A] mt-1">
                   Expected years of payment: {lifeExpectancy - currentAge} years
                 </p>
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Tax Bracket: {taxBracket}%
                 </label>
                 <input
@@ -340,7 +340,7 @@ export function PensionVsLumpSumCalculator() {
                   onChange={(e) => setTaxBracket(Number(e.target.value))}
                   className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-purple-500"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>10%</span>
                   <span>22%</span>
                   <span>37%</span>
@@ -350,7 +350,7 @@ export function PensionVsLumpSumCalculator() {
           </div>
 
           {/* Survivor Benefits */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-green-500/20 rounded-lg border border-green-500/30">
                 <Users className="h-5 w-5 text-green-600" />
@@ -364,15 +364,15 @@ export function PensionVsLumpSumCalculator() {
                   type="checkbox"
                   checked={needsSurvivorBenefit}
                   onChange={(e) => setNeedsSurvivorBenefit(e.target.checked)}
-                  className="w-5 h-5 rounded border-slate-600 bg-slate-100 text-blue-500 focus:ring-blue-500"
+                  className="w-5 h-5 rounded border-slate-600 bg-[#121423] text-blue-500 focus:ring-blue-500"
                 />
-                <span className="text-slate-600">Need survivor benefits for spouse</span>
+                <span className="text-[#D0CCC4]">Need survivor benefits for spouse</span>
               </label>
 
               {needsSurvivorBenefit && (
                 <>
                   <div>
-                    <label className="text-sm text-slate-500 mb-2 block">
+                    <label className="text-sm text-[#A8A39A] mb-2 block">
                       Survivor Benefit: {survivorBenefitPercent}% of pension
                     </label>
                     <input
@@ -387,7 +387,7 @@ export function PensionVsLumpSumCalculator() {
                   </div>
 
                   <div>
-                    <label className="text-sm text-slate-500 mb-2 block">
+                    <label className="text-sm text-[#A8A39A] mb-2 block">
                       Spouse Age: {spouseAge}
                     </label>
                     <input
@@ -405,17 +405,17 @@ export function PensionVsLumpSumCalculator() {
           </div>
 
           {/* Investment Assumptions */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 bg-[#B22234]/10 rounded-lg border border-[#B22234]/30">
-                <TrendingUp className="h-5 w-5 text-[#B22234]" />
+              <div className="p-2 bg-[rgba(220,38,38,0.1)] rounded-lg border border-[#B22234]/30">
+                <TrendingUp className="h-5 w-5 text-[#D4A94E]" />
               </div>
               <h3 className="text-lg font-semibold">Investment Assumptions</h3>
             </div>
 
             <div className="space-y-4">
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Expected Investment Return: {expectedReturn}%
                 </label>
                 <input
@@ -427,7 +427,7 @@ export function PensionVsLumpSumCalculator() {
                   onChange={(e) => setExpectedReturn(Number(e.target.value))}
                   className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>Conservative (2%)</span>
                   <span>6%</span>
                   <span>Aggressive (10%)</span>
@@ -435,7 +435,7 @@ export function PensionVsLumpSumCalculator() {
               </div>
 
               <div>
-                <label className="text-sm text-slate-500 mb-2 block">
+                <label className="text-sm text-[#A8A39A] mb-2 block">
                   Expected Inflation: {inflationRate}%
                 </label>
                 <input
@@ -459,14 +459,14 @@ export function PensionVsLumpSumCalculator() {
             calculations.recommendation === "pension"
               ? 'bg-blue-500/20 border-blue-500/30'
               : calculations.recommendation === "lumpsum"
-              ? 'bg-[#B22234]/10 border-[#B22234]/30'
+              ? 'bg-[rgba(220,38,38,0.1)] border-[#B22234]/30'
               : 'bg-purple-500/20 border-purple-500/30'
           }`}>
             <div className="flex items-center gap-3 mb-4">
               {calculations.recommendation === "pension" ? (
                 <CheckCircle2 className="h-8 w-8 text-blue-600" />
               ) : calculations.recommendation === "lumpsum" ? (
-                <CheckCircle2 className="h-8 w-8 text-[#B22234]" />
+                <CheckCircle2 className="h-8 w-8 text-[#D4A94E]" />
               ) : (
                 <Scale className="h-8 w-8 text-purple-700" />
               )}
@@ -478,7 +478,7 @@ export function PensionVsLumpSumCalculator() {
                     ? "Lump Sum May Be Better"
                     : "Close Call - Consider Both"}
                 </h3>
-                <p className="text-sm text-slate-600 mt-1">
+                <p className="text-sm text-[#D0CCC4] mt-1">
                   {calculations.recommendationReason}
                 </p>
               </div>
@@ -493,32 +493,32 @@ export function PensionVsLumpSumCalculator() {
             </h3>
 
             <div className="grid grid-cols-2 gap-4 mb-4">
-              <div className="bg-slate-50 rounded-lg p-4 text-center">
+              <div className="bg-[#0C0D18] rounded-lg p-4 text-center">
                 <div className="text-2xl font-bold text-blue-600">
                   Age {calculations.breakEvenAge}
                 </div>
-                <div className="text-sm text-slate-500">Break-Even Age</div>
-                <div className="text-xs text-slate-500 mt-1">
+                <div className="text-sm text-[#A8A39A]">Break-Even Age</div>
+                <div className="text-xs text-[#A8A39A] mt-1">
                   ({calculations.yearsToBreakeven} years from now)
                 </div>
               </div>
 
-              <div className="bg-slate-50 rounded-lg p-4 text-center">
+              <div className="bg-[#0C0D18] rounded-lg p-4 text-center">
                 <div className="text-2xl font-bold text-purple-700">
                   {formatCurrency(calculations.pensionPV)}
                 </div>
-                <div className="text-sm text-slate-500">Pension Present Value</div>
+                <div className="text-sm text-[#A8A39A]">Pension Present Value</div>
               </div>
             </div>
 
-            <div className="bg-slate-50 rounded-lg p-4">
-              <p className="text-sm text-slate-500">
+            <div className="bg-[#0C0D18] rounded-lg p-4">
+              <p className="text-sm text-[#A8A39A]">
                 If you live to age {lifeExpectancy}, the pension will pay out{" "}
-                <span className="text-slate-900 font-semibold">
+                <span className="text-[#F6F4EF] font-semibold">
                   {formatFullCurrency(calculations.totalPensionWithCOLA)}
                 </span>{" "}
                 total. Meanwhile, the lump sum would grow to{" "}
-                <span className="text-slate-900 font-semibold">
+                <span className="text-[#F6F4EF] font-semibold">
                   {formatFullCurrency(calculations.lumpSumAtLifeExpectancy)}
                 </span>{" "}
                 at {expectedReturn}% return.
@@ -527,18 +527,18 @@ export function PensionVsLumpSumCalculator() {
           </div>
 
           {/* NPV Comparison */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4">Present Value Comparison</h3>
 
             <div className="space-y-4">
               <div>
                 <div className="flex justify-between mb-1">
-                  <span className="text-slate-500">Pension NPV</span>
+                  <span className="text-[#A8A39A]">Pension NPV</span>
                   <span className="font-semibold text-blue-600">
                     {formatFullCurrency(calculations.pensionPV)}
                   </span>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-3">
+                <div className="w-full bg-[#121423] rounded-full h-3">
                   <div
                     className="h-full bg-blue-500 rounded-full"
                     style={{ width: `${Math.min(100, (calculations.pensionPV / Math.max(calculations.pensionPV, lumpSumOffer)) * 100)}%` }}
@@ -548,12 +548,12 @@ export function PensionVsLumpSumCalculator() {
 
               <div>
                 <div className="flex justify-between mb-1">
-                  <span className="text-slate-500">Lump Sum Offer</span>
-                  <span className="font-semibold text-[#B22234]">
+                  <span className="text-[#A8A39A]">Lump Sum Offer</span>
+                  <span className="font-semibold text-[#D4A94E]">
                     {formatFullCurrency(lumpSumOffer)}
                   </span>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-3">
+                <div className="w-full bg-[#121423] rounded-full h-3">
                   <div
                     className="h-full bg-amber-500 rounded-full"
                     style={{ width: `${Math.min(100, (lumpSumOffer / Math.max(calculations.pensionPV, lumpSumOffer)) * 100)}%` }}
@@ -561,10 +561,10 @@ export function PensionVsLumpSumCalculator() {
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-slate-200">
+              <div className="pt-4 border-t border-[#2A2D42]">
                 <div className="flex justify-between">
-                  <span className="text-slate-500">Difference</span>
-                  <span className={`font-semibold ${calculations.pensionPV > lumpSumOffer ? 'text-blue-600' : 'text-[#B22234]'}`}>
+                  <span className="text-[#A8A39A]">Difference</span>
+                  <span className={`font-semibold ${calculations.pensionPV > lumpSumOffer ? 'text-blue-600' : 'text-[#D4A94E]'}`}>
                     {calculations.pensionPV > lumpSumOffer ? '+' : ''}{formatFullCurrency(calculations.pensionPV - lumpSumOffer)}
                   </span>
                 </div>
@@ -573,16 +573,16 @@ export function PensionVsLumpSumCalculator() {
           </div>
 
           {/* 4% Rule Analysis */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4">4% Rule Analysis</h3>
 
             <div className="space-y-4">
-              <div className="bg-slate-50 rounded-lg p-4">
-                <div className="text-sm text-slate-500 mb-1">To match pension income with 4% withdrawal...</div>
-                <div className="text-xl font-bold text-[#B22234]">
+              <div className="bg-[#0C0D18] rounded-lg p-4">
+                <div className="text-sm text-[#A8A39A] mb-1">To match pension income with 4% withdrawal...</div>
+                <div className="text-xl font-bold text-[#D4A94E]">
                   You need: {formatFullCurrency(calculations.lumpSumNeededFor4Percent)}
                 </div>
-                <div className="text-sm text-slate-500 mt-1">
+                <div className="text-sm text-[#A8A39A] mt-1">
                   {lumpSumOffer >= calculations.lumpSumNeededFor4Percent ? (
                     <span className="text-green-600">Lump sum exceeds this amount!</span>
                   ) : (
@@ -594,14 +594,14 @@ export function PensionVsLumpSumCalculator() {
               </div>
 
               <div className="flex justify-between items-center">
-                <span className="text-slate-500">Lump sum generates monthly</span>
+                <span className="text-[#A8A39A]">Lump sum generates monthly</span>
                 <span className="font-semibold text-green-600">
                   {formatFullCurrency(calculations.lumpSumMonthlyIncome)}/mo
                 </span>
               </div>
 
               <div className="flex justify-between items-center">
-                <span className="text-slate-500">vs. Pension monthly</span>
+                <span className="text-[#A8A39A]">vs. Pension monthly</span>
                 <span className="font-semibold text-blue-600">
                   {formatFullCurrency(monthlyPension)}/mo
                 </span>
@@ -610,7 +610,7 @@ export function PensionVsLumpSumCalculator() {
           </div>
 
           {/* Pros & Cons Table */}
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-lg font-semibold mb-4">Pros & Cons</h3>
 
             <div className="grid md:grid-cols-2 gap-4">
@@ -623,53 +623,53 @@ export function PensionVsLumpSumCalculator() {
                 <div className="space-y-2">
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-500">Guaranteed lifetime income</span>
+                    <span className="text-sm text-[#A8A39A]">Guaranteed lifetime income</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-500">No investment risk</span>
+                    <span className="text-sm text-[#A8A39A]">No investment risk</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-500">Can't outlive payments</span>
+                    <span className="text-sm text-[#A8A39A]">Can't outlive payments</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <XCircle className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-500">{colaPension === 0 ? "No inflation protection" : "Limited inflation protection"}</span>
+                    <span className="text-sm text-[#A8A39A]">{colaPension === 0 ? "No inflation protection" : "Limited inflation protection"}</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <XCircle className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-500">Nothing left for heirs</span>
+                    <span className="text-sm text-[#A8A39A]">Nothing left for heirs</span>
                   </div>
                 </div>
               </div>
 
               {/* Lump Sum Pros/Cons */}
               <div>
-                <div className="text-[#B22234] font-semibold mb-3 flex items-center gap-2">
+                <div className="text-[#D4A94E] font-semibold mb-3 flex items-center gap-2">
                   <DollarSign className="h-4 w-4" />
                   Lump Sum
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-500">Full control of your money</span>
+                    <span className="text-sm text-[#A8A39A]">Full control of your money</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-500">Can hedge inflation with Gold IRA</span>
+                    <span className="text-sm text-[#A8A39A]">Can hedge inflation with Gold IRA</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-500">Estate inheritance potential</span>
+                    <span className="text-sm text-[#A8A39A]">Estate inheritance potential</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <XCircle className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-500">Investment risk on you</span>
+                    <span className="text-sm text-[#A8A39A]">Investment risk on you</span>
                   </div>
                   <div className="flex items-start gap-2">
                     <XCircle className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-slate-500">Could outlive savings</span>
+                    <span className="text-sm text-[#A8A39A]">Could outlive savings</span>
                   </div>
                 </div>
               </div>
@@ -680,33 +680,33 @@ export function PensionVsLumpSumCalculator() {
 
       {/* Gold Bridge Section */}
       <div className="max-w-4xl mx-auto mt-16">
-        <div className="bg-[#B22234]/5 backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
+        <div className="bg-[rgba(220,38,38,0.06)] backdrop-blur-sm rounded-xl p-8 border border-[#B22234]/30">
           <div className="flex items-center gap-3 mb-6">
-            <AlertTriangle className="h-6 w-6 text-[#B22234]" />
+            <AlertTriangle className="h-6 w-6 text-[#D4A94E]" />
             <h2 className="text-2xl font-bold">The Inflation Problem with Pensions</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Without COLA</div>
-              <p className="text-slate-600 text-sm">
+              <div className="text-[#D4A94E] font-semibold mb-2">Without COLA</div>
+              <p className="text-[#D0CCC4] text-sm">
                 A ${formatFullCurrency(monthlyPension)}/month pension with 0% COLA will have the purchasing power of just ${formatFullCurrency(monthlyPension / Math.pow(1.03, 20))}/month in 20 years (at 3% inflation). You lose nearly half your buying power.
               </p>
             </div>
 
             <div>
-              <div className="text-[#B22234] font-semibold mb-2">Gold IRA Solution</div>
-              <p className="text-slate-600 text-sm">
+              <div className="text-[#D4A94E] font-semibold mb-2">Gold IRA Solution</div>
+              <p className="text-[#D0CCC4] text-sm">
                 Rolling a lump sum into a Gold IRA can protect purchasing power. Gold has historically kept pace with or exceeded inflation over 20+ year periods, preserving your retirement lifestyle.
               </p>
             </div>
           </div>
 
-          <div className="bg-slate-50 rounded-lg p-4 mb-6">
+          <div className="bg-[#0C0D18] rounded-lg p-4 mb-6">
             <div className="flex items-start gap-3">
-              <Info className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
-              <p className="text-slate-600 text-sm">
-                <strong className="text-[#B22234]">Key Insight:</strong> If your pension has no COLA, inflation erodes value over time. A lump sum rolled into a Gold IRA can protect purchasing power while still providing retirement income through strategic withdrawals.
+              <Info className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
+              <p className="text-[#D0CCC4] text-sm">
+                <strong className="text-[#D4A94E]">Key Insight:</strong> If your pension has no COLA, inflation erodes value over time. A lump sum rolled into a Gold IRA can protect purchasing power while still providing retirement income through strategic withdrawals.
               </p>
             </div>
           </div>
@@ -725,45 +725,45 @@ export function PensionVsLumpSumCalculator() {
         <div className="prose max-w-none">
           <h2 className="text-3xl font-bold mb-6">Understanding Pension vs Lump Sum</h2>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42] mb-6">
             <h3 className="text-xl font-semibold mb-4">What is a Pension Buyout?</h3>
-            <p className="text-slate-500 mb-4">
+            <p className="text-[#A8A39A] mb-4">
               A pension buyout (or lump sum option) is when your employer offers you a one-time payment instead of monthly pension checks for life. This is becoming increasingly common as companies look to reduce long-term pension obligations.
             </p>
-            <p className="text-slate-500">
+            <p className="text-[#A8A39A]">
               The decision between taking the lump sum or keeping the pension is one of the biggest financial decisions retirees face. There's no universally "right" answer - it depends on your health, financial situation, risk tolerance, and goals.
             </p>
           </div>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200 mb-6">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42] mb-6">
             <h3 className="text-xl font-semibold mb-4">When to Consider the Lump Sum</h3>
-            <ul className="space-y-2 text-slate-500">
+            <ul className="space-y-2 text-[#A8A39A]">
               <li className="flex gap-2">
-                <ArrowRight className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                <ArrowRight className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <span>Your pension has no or minimal COLA adjustments</span>
               </li>
               <li className="flex gap-2">
-                <ArrowRight className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                <ArrowRight className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <span>You have health concerns that may reduce life expectancy</span>
               </li>
               <li className="flex gap-2">
-                <ArrowRight className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                <ArrowRight className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <span>Concerned about pension fund stability or company bankruptcy</span>
               </li>
               <li className="flex gap-2">
-                <ArrowRight className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                <ArrowRight className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <span>Want to leave inheritance to heirs</span>
               </li>
               <li className="flex gap-2">
-                <ArrowRight className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                <ArrowRight className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <span>Confident in your ability to manage investments</span>
               </li>
             </ul>
           </div>
 
-          <div className="bg-slate-50 backdrop-blur-sm rounded-xl p-6 border border-slate-200">
+          <div className="bg-[#0C0D18] backdrop-blur-sm rounded-xl p-6 border border-[#2A2D42]">
             <h3 className="text-xl font-semibold mb-4">When to Keep the Pension</h3>
-            <ul className="space-y-2 text-slate-500">
+            <ul className="space-y-2 text-[#A8A39A]">
               <li className="flex gap-2">
                 <ArrowRight className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                 <span>You value guaranteed income and peace of mind</span>

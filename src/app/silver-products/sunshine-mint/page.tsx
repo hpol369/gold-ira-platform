@@ -114,12 +114,12 @@ export default function SunshineMintPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-products"
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Products
@@ -128,10 +128,10 @@ export default function SunshineMintPage() {
               <Sun className="h-4 w-4" />
               350 MONTHLY SEARCHES - DIFFICULTY 0!
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               Sunshine Mint Silver: Security You Can Trust
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               Sunshine Minting produces the blanks for American Silver Eagles and their own
               premium bullion line featuring the revolutionary MintMark SI anti-counterfeiting
               technology. When authenticity matters, smart investors choose Sunshine Mint.
@@ -155,29 +155,29 @@ export default function SunshineMintPage() {
       </section>
 
       {/* Quick Specs */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Award className="h-8 w-8 text-[#B22234] mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">1979</div>
-                <div className="text-sm text-slate-600">Founded</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Award className="h-8 w-8 text-[#D4A94E] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">1979</div>
+                <div className="text-sm text-[#D0CCC4]">Founded</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
-                <Shield className="h-8 w-8 text-slate-600 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">.999</div>
-                <div className="text-sm text-slate-600">Purity</div>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
+                <Shield className="h-8 w-8 text-[#D0CCC4] mx-auto mb-2" />
+                <div className="text-2xl font-bold text-[#F6F4EF]">.999</div>
+                <div className="text-sm text-[#D0CCC4]">Purity</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
                 <Fingerprint className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">SI</div>
-                <div className="text-sm text-slate-600">Security Tech</div>
+                <div className="text-2xl font-bold text-[#F6F4EF]">SI</div>
+                <div className="text-sm text-[#D0CCC4]">Security Tech</div>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 text-center">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 text-center">
                 <DollarSign className="h-8 w-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-900">3-10%</div>
-                <div className="text-sm text-slate-600">Premium Range</div>
+                <div className="text-2xl font-bold text-[#F6F4EF]">3-10%</div>
+                <div className="text-sm text-[#D0CCC4]">Premium Range</div>
               </div>
             </div>
           </div>
@@ -188,23 +188,23 @@ export default function SunshineMintPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+            <article className="prose prose-lg prose-invert prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
               {/* About Sunshine Mint */}
-              <div className="not-prose bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 mb-8">
+              <div className="not-prose bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-[#B22234]/20 rounded-lg">
-                    <Sun className="h-6 w-6 text-[#B22234]" />
+                  <div className="p-2 bg-[rgba(220,38,38,0.18)] rounded-lg">
+                    <Sun className="h-6 w-6 text-[#D4A94E]" />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 m-0">About Sunshine Minting</h2>
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] m-0">About Sunshine Minting</h2>
                 </div>
-                <p className="text-slate-600 mb-4">
+                <p className="text-[#D0CCC4] mb-4">
                   Sunshine Minting Inc., based in Coeur d&apos;Alene, Idaho, has been producing precious
                   metals since 1979. What many investors don&apos;t know is that Sunshine is a major
                   contractor for the United States Mint, producing the silver blanks used to strike
                   American Silver Eagles.
                 </p>
-                <p className="text-slate-600">
+                <p className="text-[#D0CCC4]">
                   This relationship with the US Mint speaks to Sunshine&apos;s quality and reliability.
                   Their own branded bullion products feature the same precision manufacturing, plus
                   their proprietary MintMark SI security technology that makes counterfeiting virtually impossible.
@@ -222,43 +222,43 @@ export default function SunshineMintPage() {
               </p>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">How It Works</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">How It Works</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Micro-engraved pattern embedded in silver</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Invisible to naked eye</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Decoder lens reveals hidden sun logo</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Verification takes seconds</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Why It Matters</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Why It Matters</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Counterfeiters cannot replicate</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Instant verification without testing</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Higher resale confidence</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>No damage to verify (non-destructive)</span>
                     </li>
@@ -271,7 +271,7 @@ export default function SunshineMintPage() {
                   <Fingerprint className="h-6 w-6 text-green-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <h4 className="text-lg font-bold text-green-400 mb-2">US Mint Approved Technology</h4>
-                    <p className="text-slate-600">
+                    <p className="text-[#D0CCC4]">
                       The MintMark SI technology is now used on American Silver Eagles produced since 2021.
                       When you buy Sunshine Mint products, you&apos;re getting the same security features
                       trusted by the United States Mint for its flagship silver bullion coin.
@@ -281,7 +281,7 @@ export default function SunshineMintPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Scale className="h-6 w-6 text-slate-600" />
+                <Scale className="h-6 w-6 text-[#D0CCC4]" />
                 Sunshine Mint Product Range
               </h2>
 
@@ -290,39 +290,39 @@ export default function SunshineMintPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Product</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Sizes</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Premium</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Best For</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Product</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Sizes</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Premium</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Best For</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Silver Rounds</td>
-                      <td className="p-4 text-slate-600">1 oz, 1/2 oz, 1/4 oz</td>
-                      <td className="p-4 text-slate-600">5-10% over spot</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Silver Rounds</td>
+                      <td className="p-4 text-[#D0CCC4]">1 oz, 1/2 oz, 1/4 oz</td>
+                      <td className="p-4 text-[#D0CCC4]">5-10% over spot</td>
                       <td className="p-4 text-green-400">General stacking</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Silver Bars (Minted)</td>
-                      <td className="p-4 text-slate-600">1 oz, 5 oz, 10 oz</td>
-                      <td className="p-4 text-slate-600">4-8% over spot</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Silver Bars (Minted)</td>
+                      <td className="p-4 text-[#D0CCC4]">1 oz, 5 oz, 10 oz</td>
+                      <td className="p-4 text-[#D0CCC4]">4-8% over spot</td>
                       <td className="p-4 text-green-400">Value seekers</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Silver Bars (Large)</td>
-                      <td className="p-4 text-slate-600">100 oz</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Silver Bars (Large)</td>
+                      <td className="p-4 text-[#D0CCC4]">100 oz</td>
                       <td className="p-4 text-green-400">3-5% over spot</td>
                       <td className="p-4 text-green-400">Serious investors</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Eagle Design Rounds</td>
-                      <td className="p-4 text-slate-600">1 oz</td>
-                      <td className="p-4 text-slate-600">6-10% over spot</td>
-                      <td className="p-4 text-slate-600">Collectors</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Eagle Design Rounds</td>
+                      <td className="p-4 text-[#D0CCC4]">1 oz</td>
+                      <td className="p-4 text-[#D0CCC4]">6-10% over spot</td>
+                      <td className="p-4 text-[#D0CCC4]">Collectors</td>
                     </tr>
                   </tbody>
                 </table>
@@ -339,45 +339,45 @@ export default function SunshineMintPage() {
               </p>
 
               <div className="not-prose overflow-x-auto my-8">
-                <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-                  <thead className="bg-slate-50">
+                <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+                  <thead className="bg-[#0C0D18]">
                     <tr>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Product Type</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Typical Premium</th>
-                      <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Security Features</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Product Type</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Typical Premium</th>
+                      <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Security Features</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 text-sm">
+                  <tbody className="divide-y divide-[#2A2D42] text-sm">
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Generic Rounds</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Generic Rounds</td>
                       <td className="p-4 text-green-400">3-6% over spot</td>
                       <td className="p-4 text-red-400">None</td>
                     </tr>
                     <tr className="bg-green-500/10">
-                      <td className="p-4 font-semibold text-slate-900">Sunshine Mint Rounds</td>
-                      <td className="p-4 text-slate-600">5-10% over spot</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Sunshine Mint Rounds</td>
+                      <td className="p-4 text-[#D0CCC4]">5-10% over spot</td>
                       <td className="p-4 text-green-400">MintMark SI</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">American Silver Eagle</td>
-                      <td className="p-4 text-[#B22234]">15-25% over spot</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">American Silver Eagle</td>
+                      <td className="p-4 text-[#D4A94E]">15-25% over spot</td>
                       <td className="p-4 text-green-400">MintMark SI + Government</td>
                     </tr>
                     <tr>
-                      <td className="p-4 font-semibold text-slate-900">Canadian Maple Leaf</td>
-                      <td className="p-4 text-slate-600">10-15% over spot</td>
+                      <td className="p-4 font-semibold text-[#F6F4EF]">Canadian Maple Leaf</td>
+                      <td className="p-4 text-[#D0CCC4]">10-15% over spot</td>
                       <td className="p-4 text-green-400">DNA Anti-Counterfeit</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
 
-              <div className="not-prose bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6 my-8">
+              <div className="not-prose bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6 my-8">
                 <div className="flex items-start gap-3">
-                  <Info className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <Info className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="text-lg font-bold text-[#B22234] mb-2">The Security Premium</h4>
-                    <p className="text-slate-600">
+                    <h4 className="text-lg font-bold text-[#D4A94E] mb-2">The Security Premium</h4>
+                    <p className="text-[#D0CCC4]">
                       Paying an extra 2-4% for MintMark SI security is worthwhile peace of mind. When
                       you sell, buyers will pay more for easily-verifiable authentic silver. The premium
                       pays for itself through higher resale confidence and faster transactions.
@@ -387,53 +387,53 @@ export default function SunshineMintPage() {
               </div>
 
               <h2 className="flex items-center gap-3">
-                <Award className="h-6 w-6 text-[#B22234]" />
+                <Award className="h-6 w-6 text-[#D4A94E]" />
                 Why Collectors Love Sunshine Mint
               </h2>
 
               <div className="not-prose grid md:grid-cols-2 gap-6 my-8">
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Advantages</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Advantages</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Instant authenticity verification</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>US Mint contractor quality</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Moderate premiums</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>Wide product range</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
                       <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                       <span>IRA eligible</span>
                     </li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-slate-900 mb-4">Considerations</h3>
+                <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">Considerations</h3>
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <XCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span>Higher premium than generics</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <XCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span>Need decoder lens for verification</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <XCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span>Not a sovereign mint (private)</span>
                     </li>
-                    <li className="flex items-start gap-3 text-slate-600">
-                      <XCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                    <li className="flex items-start gap-3 text-[#D0CCC4]">
+                      <XCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                       <span>Less liquid than government coins</span>
                     </li>
                   </ul>
@@ -465,25 +465,25 @@ export default function SunshineMintPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {(schema["@graph"][1] as { mainEntity: Array<{ name: string; acceptedAnswer: { text: string } }> }).mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -497,30 +497,30 @@ export default function SunshineMintPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Related Silver Products
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Link
                 href="/silver-products/generic-rounds"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">Generic Rounds</h3>
-                <p className="text-sm text-slate-600">Lowest premiums for pure stackers</p>
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#F6F4EF] mb-2">Generic Rounds</h3>
+                <p className="text-sm text-[#D0CCC4]">Lowest premiums for pure stackers</p>
               </Link>
               <Link
                 href="/silver-products/pamp-suisse"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">PAMP Suisse</h3>
-                <p className="text-sm text-slate-600">Premium Swiss refiner with assay cards</p>
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#F6F4EF] mb-2">PAMP Suisse</h3>
+                <p className="text-sm text-[#D0CCC4]">Premium Swiss refiner with assay cards</p>
               </Link>
               <Link
                 href="/silver-products/monster-box"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-slate-600 mb-2">Monster Box</h3>
-                <p className="text-sm text-slate-600">Bulk buying for serious stackers</p>
+                <h3 className="text-lg font-bold text-[#F6F4EF] group-hover:text-[#F6F4EF] mb-2">Monster Box</h3>
+                <p className="text-sm text-[#D0CCC4]">Bulk buying for serious stackers</p>
               </Link>
             </div>
           </div>
@@ -528,7 +528,7 @@ export default function SunshineMintPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="footer"

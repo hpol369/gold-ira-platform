@@ -94,7 +94,7 @@ export function ProductTypeStep({ onSelect }: ProductTypeStepProps) {
                          [text-shadow:_0_2px_20px_rgba(0,0,0,0.5)]">
             What type of retirement account interests you?
           </h2>
-          <p className="text-slate-400 text-base md:text-lg">
+          <p className="text-[#A8A39A] text-base md:text-lg">
             Select the investment vehicle that best fits your goals
           </p>
         </motion.div>
@@ -114,7 +114,7 @@ export function ProductTypeStep({ onSelect }: ProductTypeStepProps) {
                 onClick={() => onSelect(option.id)}
                 className="group relative flex items-start gap-4 p-6 text-left rounded-xl
                            bg-white/5 backdrop-blur-xl border border-white/10
-                           hover:bg-white/[0.1] hover:-translate-y-2 hover:scale-[1.02]
+                           hover:bg-[#1E2134]/[0.1] hover:-translate-y-2 hover:scale-[1.02]
                            hover:shadow-[0_20px_60px_rgba(0,0,0,0.4),0_0_40px_rgba(212,175,55,0.15)]
                            hover:border-amber-400/40 transition-all duration-300 cursor-pointer"
               >
@@ -130,7 +130,7 @@ export function ProductTypeStep({ onSelect }: ProductTypeStepProps) {
                                  transition-colors duration-300 mb-1">
                     {option.label}
                   </h3>
-                  <p className="text-sm text-slate-400 leading-relaxed">
+                  <p className="text-sm text-[#A8A39A] leading-relaxed">
                     {option.description}
                   </p>
                 </div>

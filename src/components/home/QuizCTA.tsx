@@ -7,7 +7,7 @@ import { FloatingOrbs } from "@/components/ui/FloatingOrbs";
 export function QuizCTA() {
     return (
         <section
-            className="relative overflow-hidden py-16 bg-[#000080] border-y border-slate-200 shadow-[0_8px_32px_rgba(0,0,0,0.1)]"
+            className="relative overflow-hidden py-16 bg-[rgba(197,149,46,0.1)] border-y border-[#2A2D42] shadow-[0_8px_32px_rgba(0,0,0,0.1)]"
             style={{ animation: 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}
         >
             <FloatingOrbs variant="section" />
@@ -22,9 +22,9 @@ export function QuizCTA() {
                 <Link
                     href="/audit"
                     className="group relative overflow-hidden inline-flex items-center justify-center gap-2 py-4 px-10 rounded-xl font-bold text-lg
-                               bg-[#B22234] text-white
+                               bg-[#DC2626] text-white
                                shadow-[0_4px_20px_rgba(178,34,52,0.3)]
-                               hover:bg-[#8b1c2a] hover:shadow-[0_4px_25px_rgba(178,34,52,0.4)]
+                               hover:bg-[#991B1B] hover:shadow-[0_4px_25px_rgba(178,34,52,0.4)]
                                hover:scale-105 transition-all duration-300"
                 >
                     {/* Shine effect overlay */}

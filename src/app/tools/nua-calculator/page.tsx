@@ -121,7 +121,7 @@ export default function NUACalculatorPage() {
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-slate-50" />
+        <div className="absolute inset-0 bg-[#0C0D18]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-green-900/20 via-transparent to-transparent" />
 
         <Container>
@@ -130,10 +130,10 @@ export default function NUACalculatorPage() {
               <TrendingUp className="h-4 w-4" />
               Tax Optimization Tool
             </span>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#000080] mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
               NUA Calculator
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
               Calculate potential tax savings using the Net Unrealized Appreciation
               strategy for employer stock in your 401(k). Compare NUA vs regular rollover.
             </p>
@@ -148,7 +148,7 @@ export default function NUACalculatorPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
               Understanding the NUA Strategy
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
@@ -157,17 +157,17 @@ export default function NUACalculatorPage() {
                 return (
                   <div
                     key={index}
-                    className="bg-white border border-slate-200 shadow-sm rounded-xl p-6"
+                    className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6"
                   >
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="h-6 w-6 text-green-600" />
                       </div>
                       <div>
-                        <h3 className="text-slate-900 font-semibold mb-2">
+                        <h3 className="text-[#F6F4EF] font-semibold mb-2">
                           {fact.title}
                         </h3>
-                        <p className="text-slate-600 text-sm">{fact.description}</p>
+                        <p className="text-[#D0CCC4] text-sm">{fact.description}</p>
                       </div>
                     </div>
                   </div>
@@ -179,29 +179,29 @@ export default function NUACalculatorPage() {
       </section>
 
       {/* How NUA Works */}
-      <section className="py-16 bg-slate-100/30">
+      <section className="py-16 bg-[#121423]/30">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
                 <Calculator className="h-6 w-6 text-green-600" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080]">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF]">
                 How NUA Works: Step by Step
               </h2>
             </div>
 
             <div className="space-y-6">
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 text-slate-900 font-bold">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 text-[#F6F4EF] font-bold">
                     1
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                    <h3 className="text-lg font-semibold text-[#F6F4EF] mb-2">
                       Triggering Event Occurs
                     </h3>
-                    <p className="text-slate-500">
+                    <p className="text-[#A8A39A]">
                       You separate from your employer, turn 59 1/2, become disabled, or the
                       account owner passes away. This is required to use NUA.
                     </p>
@@ -209,16 +209,16 @@ export default function NUACalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 text-slate-900 font-bold">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 text-[#F6F4EF] font-bold">
                     2
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                    <h3 className="text-lg font-semibold text-[#F6F4EF] mb-2">
                       Distribute Your Entire 401(k)
                     </h3>
-                    <p className="text-slate-500">
+                    <p className="text-[#A8A39A]">
                       Within one calendar year, you must distribute your entire 401(k)
                       balance. Employer stock goes to a taxable brokerage account. Other
                       assets can roll to an IRA.
@@ -227,16 +227,16 @@ export default function NUACalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-[#B22234] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">
+                  <div className="w-8 h-8 bg-[#DC2626] rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">
                     3
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                    <h3 className="text-lg font-semibold text-[#F6F4EF] mb-2">
                       Pay Tax on Cost Basis
                     </h3>
-                    <p className="text-slate-500">
+                    <p className="text-[#A8A39A]">
                       You immediately owe ordinary income tax on the{" "}
                       <strong>cost basis</strong> (what was contributed/paid for the stock).
                       This is usually a smaller amount than the current value.
@@ -245,16 +245,16 @@ export default function NUACalculatorPage() {
                 </div>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 text-slate-900 font-bold">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 text-[#F6F4EF] font-bold">
                     4
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                    <h3 className="text-lg font-semibold text-[#F6F4EF] mb-2">
                       Sell Stock: Pay LTCG on NUA
                     </h3>
-                    <p className="text-slate-500">
+                    <p className="text-[#A8A39A]">
                       When you eventually sell the stock, you pay{" "}
                       <strong>long-term capital gains</strong> rates on the NUA
                       (appreciation) - even if you sell immediately. Any additional gains
@@ -270,8 +270,8 @@ export default function NUACalculatorPage() {
               <h3 className="text-lg font-semibold text-green-600 mb-4">
                 Example: The Power of NUA
               </h3>
-              <div className="bg-slate-100 rounded-lg p-4 mb-4">
-                <p className="text-slate-600 font-mono text-sm">
+              <div className="bg-[#121423] rounded-lg p-4 mb-4">
+                <p className="text-[#D0CCC4] font-mono text-sm">
                   1,000 shares | Cost Basis: $25/share | Current Value: $100/share
                   <br />
                   Cost Basis Total: $25,000 | Current Value: $100,000 | NUA: $75,000
@@ -280,7 +280,7 @@ export default function NUACalculatorPage() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                   <p className="text-red-600 font-semibold mb-2">Regular Rollover</p>
-                  <p className="text-slate-600 text-sm">
+                  <p className="text-[#D0CCC4] text-sm">
                     Tax at 24%: <strong>$24,000</strong>
                     <br />
                     (Full $100,000 taxed as ordinary income)
@@ -288,7 +288,7 @@ export default function NUACalculatorPage() {
                 </div>
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                   <p className="text-green-600 font-semibold mb-2">NUA Strategy</p>
-                  <p className="text-slate-600 text-sm">
+                  <p className="text-[#D0CCC4] text-sm">
                     Cost Basis (24%): $6,000
                     <br />
                     NUA (15% LTCG): $11,250
@@ -309,7 +309,7 @@ export default function NUACalculatorPage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               When Does NUA Make Sense?
             </h2>
 
@@ -318,7 +318,7 @@ export default function NUACalculatorPage() {
                 <h3 className="text-lg font-semibold text-green-600 mb-4">
                   NUA Is Often Better When:
                 </h3>
-                <ul className="space-y-3 text-slate-600 text-sm">
+                <ul className="space-y-3 text-[#D0CCC4] text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 mt-1">+</span>
                     Large appreciation (high NUA vs cost basis)
@@ -346,33 +346,33 @@ export default function NUACalculatorPage() {
                 </ul>
               </div>
 
-              <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-[#B22234] mb-4">
+              <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
+                <h3 className="text-lg font-semibold text-[#D4A94E] mb-4">
                   Regular Rollover May Be Better When:
                 </h3>
-                <ul className="space-y-3 text-slate-600 text-sm">
+                <ul className="space-y-3 text-[#D0CCC4] text-sm">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#B22234] mt-1">-</span>
+                    <span className="text-[#D4A94E] mt-1">-</span>
                     Low appreciation (cost basis close to value)
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#B22234] mt-1">-</span>
+                    <span className="text-[#D4A94E] mt-1">-</span>
                     Low current income (expecting higher rates later)
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#B22234] mt-1">-</span>
+                    <span className="text-[#D4A94E] mt-1">-</span>
                     Want to continue tax-deferred growth
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#B22234] mt-1">-</span>
+                    <span className="text-[#D4A94E] mt-1">-</span>
                     Planning to hold for many more years
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#B22234] mt-1">-</span>
+                    <span className="text-[#D4A94E] mt-1">-</span>
                     Do not have cash to pay the upfront tax
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#B22234] mt-1">-</span>
+                    <span className="text-[#D4A94E] mt-1">-</span>
                     State taxes LTCG at ordinary income rates
                   </li>
                 </ul>
@@ -383,10 +383,10 @@ export default function NUACalculatorPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-100/30">
+      <section className="py-16 bg-[#121423]/30">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-12">
               NUA Frequently Asked Questions
             </h2>
 
@@ -415,16 +415,16 @@ export default function NUACalculatorPage() {
               ].map((faq, index) => (
                 <details
                   key={index}
-                  className="bg-white border border-slate-200 shadow-sm rounded-xl overflow-hidden group"
+                  className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl overflow-hidden group"
                 >
                   <summary className="p-5 cursor-pointer list-none flex items-center justify-between">
-                    <span className="text-slate-900 font-medium pr-4">{faq.q}</span>
-                    <span className="text-slate-500 group-open:rotate-180 transition-transform">
+                    <span className="text-[#F6F4EF] font-medium pr-4">{faq.q}</span>
+                    <span className="text-[#A8A39A] group-open:rotate-180 transition-transform">
                       ^
                     </span>
                   </summary>
-                  <div className="px-5 pb-5 border-t border-slate-200 pt-4">
-                    <p className="text-slate-500">{faq.a}</p>
+                  <div className="px-5 pb-5 border-t border-[#2A2D42] pt-4">
+                    <p className="text-[#A8A39A]">{faq.a}</p>
                   </div>
                 </details>
               ))}
@@ -437,14 +437,14 @@ export default function NUACalculatorPage() {
       <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-slate-900 font-semibold mb-2">
+                  <h3 className="text-[#F6F4EF] font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-600 text-sm">
+                  <p className="text-[#D0CCC4] text-sm">
                     This calculator provides estimates for educational purposes only. NUA
                     is a complex tax strategy with strict requirements and timing rules.
                     Mistakes can be costly and irreversible. We strongly recommend
@@ -459,7 +459,7 @@ export default function NUACalculatorPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-100/30">
+      <section className="py-16 bg-[#121423]/30">
         <Container>
           <AugustaCTA
             variant="footer"

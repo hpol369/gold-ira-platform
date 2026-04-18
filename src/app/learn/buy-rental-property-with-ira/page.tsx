@@ -34,30 +34,30 @@ export default function BuyRentalPropertyWithIraPage() {
         <main className="min-h-screen bg-white">
             {/* Hero Section */}
             <section className="relative py-12 lg:py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-slate-50" />
+                <div className="absolute inset-0 bg-[#0C0D18]" />
 
                 <Container className="relative z-10">
                     {/* Breadcrumb */}
-                    <nav className="flex items-center gap-2 text-sm text-slate-500 mb-6">
-                        <Link href="/" className="hover:text-[#000080] transition-colors">Home</Link>
+                    <nav className="flex items-center gap-2 text-sm text-[#A8A39A] mb-6">
+                        <Link href="/" className="hover:text-[#F6F4EF] transition-colors">Home</Link>
                         <span>/</span>
-                        <Link href="/real-estate-ira" className="hover:text-[#000080] transition-colors">Real Estate IRA</Link>
+                        <Link href="/real-estate-ira" className="hover:text-[#F6F4EF] transition-colors">Real Estate IRA</Link>
                         <span>/</span>
-                        <span className="text-[#000080]">Buy Rental Property</span>
+                        <span className="text-[#F6F4EF]">Buy Rental Property</span>
                     </nav>
 
                     <div className="max-w-4xl">
-                        <div className="inline-flex items-center gap-2 bg-[#B22234]/10 border border-[#B22234]/20 rounded-full px-4 py-2 mb-6">
-                            <Home className="w-4 h-4 text-[#B22234]" />
-                            <span className="text-[#B22234] text-sm font-medium">Step-by-Step Guide</span>
+                        <div className="inline-flex items-center gap-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/20 rounded-full px-4 py-2 mb-6">
+                            <Home className="w-4 h-4 text-[#D4A94E]" />
+                            <span className="text-[#D4A94E] text-sm font-medium">Step-by-Step Guide</span>
                         </div>
 
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#000080] mb-6 leading-tight">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F6F4EF] mb-6 leading-tight">
                             How to Buy Rental Property{" "}
-                            <span className="text-[#B22234]">with Your IRA</span>
+                            <span className="text-[#D4A94E]">with Your IRA</span>
                         </h1>
 
-                        <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl">
+                        <p className="text-xl text-[#D0CCC4] mb-8 leading-relaxed max-w-3xl">
                             After decades of hard work building your 401k, you might be looking at real estate as a way to protect and grow your savings. Many workers—from retired teachers to former union electricians—use their IRA to buy rental property that generates income without stock market risk. Here&apos;s exactly how it works.
                         </p>
 
@@ -76,9 +76,9 @@ export default function BuyRentalPropertyWithIraPage() {
             </section>
 
             {/* Step-by-Step Process */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
-                    <h2 className="text-3xl font-bold text-[#000080] mb-12 text-center">
+                    <h2 className="text-3xl font-bold text-[#F6F4EF] mb-12 text-center">
                         The Complete Process (7 Steps)
                     </h2>
 
@@ -171,25 +171,25 @@ export default function BuyRentalPropertyWithIraPage() {
                                 cta: null
                             }
                         ].map((item, index) => (
-                            <div key={index} className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+                            <div key={index} className="bg-[#161828] border border-[#2A2D42] rounded-2xl p-8 shadow-sm">
                                 <div className="flex items-start gap-6">
                                     <div className="flex-shrink-0">
-                                        <div className="w-14 h-14 bg-[#B22234] rounded-2xl flex items-center justify-center">
+                                        <div className="w-14 h-14 bg-[#DC2626] rounded-2xl flex items-center justify-center">
                                             <span className="text-2xl font-bold text-white">{item.step}</span>
                                         </div>
                                     </div>
                                     <div className="flex-1">
                                         <div className="flex items-center gap-3 mb-3">
-                                            <item.icon className="w-6 h-6 text-[#B22234]" />
-                                            <h3 className="text-xl font-bold text-[#000080]">{item.title}</h3>
+                                            <item.icon className="w-6 h-6 text-[#D4A94E]" />
+                                            <h3 className="text-xl font-bold text-[#F6F4EF]">{item.title}</h3>
                                         </div>
-                                        <p className="text-slate-600 mb-4">{item.description}</p>
+                                        <p className="text-[#D0CCC4] mb-4">{item.description}</p>
 
-                                        <div className="bg-slate-50 rounded-xl p-4 mb-4">
-                                            <h4 className="text-sm font-semibold text-[#B22234] mb-2">Key Tips:</h4>
+                                        <div className="bg-[#0C0D18] rounded-xl p-4 mb-4">
+                                            <h4 className="text-sm font-semibold text-[#D4A94E] mb-2">Key Tips:</h4>
                                             <ul className="space-y-1">
                                                 {item.tips.map((tip, i) => (
-                                                    <li key={i} className="flex items-start gap-2 text-slate-500 text-sm">
+                                                    <li key={i} className="flex items-start gap-2 text-[#A8A39A] text-sm">
                                                         <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                                                         {tip}
                                                     </li>
@@ -217,7 +217,7 @@ export default function BuyRentalPropertyWithIraPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Financing Options
                         </h2>
 
@@ -227,7 +227,7 @@ export default function BuyRentalPropertyWithIraPage() {
                                     <CheckCircle2 className="w-6 h-6" />
                                     All Cash (Recommended)
                                 </h3>
-                                <p className="text-slate-600 mb-4">
+                                <p className="text-[#D0CCC4] mb-4">
                                     Buying property outright with IRA funds is the simplest approach.
                                 </p>
                                 <ul className="space-y-2">
@@ -237,7 +237,7 @@ export default function BuyRentalPropertyWithIraPage() {
                                         "No debt payments reducing cash flow",
                                         "Easier to manage"
                                     ].map((item, index) => (
-                                        <li key={index} className="flex items-center gap-2 text-slate-500 text-sm">
+                                        <li key={index} className="flex items-center gap-2 text-[#A8A39A] text-sm">
                                             <CheckCircle2 className="w-4 h-4 text-green-600" />
                                             {item}
                                         </li>
@@ -250,7 +250,7 @@ export default function BuyRentalPropertyWithIraPage() {
                                     <AlertTriangle className="w-6 h-6" />
                                     Non-Recourse Loan
                                 </h3>
-                                <p className="text-slate-600 mb-4">
+                                <p className="text-[#D0CCC4] mb-4">
                                     If you need financing, only non-recourse loans are allowed (you can&apos;t personally guarantee).
                                 </p>
                                 <ul className="space-y-2">
@@ -260,7 +260,7 @@ export default function BuyRentalPropertyWithIraPage() {
                                         "Higher down payments (30-40% typical)",
                                         "Fewer lender options available"
                                     ].map((item, index) => (
-                                        <li key={index} className="flex items-center gap-2 text-slate-500 text-sm">
+                                        <li key={index} className="flex items-center gap-2 text-[#A8A39A] text-sm">
                                             <AlertTriangle className="w-4 h-4 text-amber-600" />
                                             {item}
                                         </li>
@@ -273,10 +273,10 @@ export default function BuyRentalPropertyWithIraPage() {
             </section>
 
             {/* Common Mistakes */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Common Mistakes to Avoid
                         </h2>
 
@@ -308,11 +308,11 @@ export default function BuyRentalPropertyWithIraPage() {
                                         fix: "Involve them before making offers—they need time to process"
                                     }
                                 ].map((item, index) => (
-                                    <div key={index} className="flex items-start gap-4 bg-white rounded-xl p-4 border border-slate-200">
+                                    <div key={index} className="flex items-start gap-4 bg-[#161828] rounded-xl p-4 border border-[#2A2D42]">
                                         <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
                                         <div>
                                             <div className="text-red-700 font-semibold">{item.mistake}</div>
-                                            <div className="text-slate-500 text-sm mt-1">
+                                            <div className="text-[#A8A39A] text-sm mt-1">
                                                 <span className="text-green-600">Fix:</span> {item.fix}
                                             </div>
                                         </div>
@@ -328,10 +328,10 @@ export default function BuyRentalPropertyWithIraPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-2xl font-bold text-[#000080] mb-6">
+                        <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6">
                             Ready to Put Your Savings to Work?
                         </h2>
-                        <p className="text-lg text-slate-600 mb-8">
+                        <p className="text-lg text-[#D0CCC4] mb-8">
                             You&apos;ve done the hard part—building your retirement savings through years of work. Now you can turn that money into rental income that isn&apos;t tied to Wall Street. Start with a self-directed IRA that allows real estate.
                         </p>
 
@@ -357,9 +357,9 @@ export default function BuyRentalPropertyWithIraPage() {
             </section>
 
             {/* Related Content */}
-            <section className="py-12 bg-slate-50">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
-                    <h2 className="text-xl font-bold text-[#000080] mb-6 text-center">Related Resources</h2>
+                    <h2 className="text-xl font-bold text-[#F6F4EF] mb-6 text-center">Related Resources</h2>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
                         {[
@@ -371,12 +371,12 @@ export default function BuyRentalPropertyWithIraPage() {
                             <Link
                                 key={index}
                                 href={link.href}
-                                className="bg-white border border-slate-200 rounded-xl p-4 hover:border-[#B22234]/50 transition-colors group shadow-sm"
+                                className="bg-[#161828] border border-[#2A2D42] rounded-xl p-4 hover:border-[#B22234]/50 transition-colors group shadow-sm"
                             >
-                                <h3 className="text-[#000080] font-semibold mb-1 group-hover:text-[#B22234] transition-colors text-sm">
+                                <h3 className="text-[#F6F4EF] font-semibold mb-1 group-hover:text-[#D4A94E] transition-colors text-sm">
                                     {link.title}
                                 </h3>
-                                <p className="text-slate-500 text-xs">{link.desc}</p>
+                                <p className="text-[#A8A39A] text-xs">{link.desc}</p>
                             </Link>
                         ))}
                     </div>

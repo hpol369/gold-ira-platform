@@ -97,16 +97,16 @@ export default function NobleVsBirchPage() {
             <SchemaScript schema={schema} />
             <Navbar />
             {/* Header */}
-            <header className="bg-slate-50 border-b border-slate-200 py-20 relative overflow-hidden">
-                <div className="absolute inset-0 bg-[#000080]-dark/50" />
+            <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-20 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[rgba(197,149,46,0.1)]-dark/50" />
                 <Container className="relative z-10 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-slate-100 border border-slate-200 text-sm font-semibold text-[#B22234] mb-6">
+                    <span className="inline-block py-1 px-3 rounded-full bg-[#121423] border border-[#2A2D42] text-sm font-semibold text-[#D4A94E] mb-6">
                         Best for Small Accounts
                     </span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
                         Noble Gold vs. Birch Gold Group
                     </h1>
-                    <p className="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto leading-relaxed">
                         Looking to start small? These two companies are the champions of the sub-$50k rollover. But which one offers better fees and service?
                     </p>
                 </Container>
@@ -120,7 +120,7 @@ export default function NobleVsBirchPage() {
                     </aside>
 
                     {/* Content */}
-                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                    <article className="flex-1 prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                         <p className="lead">
                             Not everyone has $100,000 to drop into a Gold IRA. If you have between $10,000 and $50,000, <strong>Noble Gold</strong> and <strong>Birch Gold Group</strong> are your best friends.
@@ -186,15 +186,15 @@ export default function NobleVsBirchPage() {
                                 Both companies are reasonably priced for the mid-tier market:
                             </p>
                             <div className="not-prose my-8 overflow-x-auto">
-                                <table className="w-full text-left border-collapse bg-white shadow-sm rounded-xl border border-slate-200">
+                                <table className="w-full text-left border-collapse bg-[#161828] shadow-sm rounded-xl border border-[#2A2D42]">
                                     <thead className="bg-white/5">
                                         <tr>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Fee Type</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Noble Gold</th>
-                                            <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">Birch Gold</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">Fee Type</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">Noble Gold</th>
+                                            <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">Birch Gold</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-white/10 text-sm text-slate-600">
+                                    <tbody className="divide-y divide-white/10 text-sm text-[#D0CCC4]">
                                         <tr><td className="p-4 font-medium">Minimum Investment</td><td className="p-4">$20,000</td><td className="p-4">$10,000</td></tr>
                                         <tr><td className="p-4 font-medium">Setup Fee</td><td className="p-4">$80 (one-time)</td><td className="p-4">$50</td></tr>
                                         <tr><td className="p-4 font-medium">Annual Storage</td><td className="p-4">$80 flat (Texas)</td><td className="p-4">$100+</td></tr>
@@ -208,11 +208,11 @@ export default function NobleVsBirchPage() {
                         </section>
 
                         {/* CTA */}
-                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-slate-900 text-center relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-[#F6F4EF] text-center relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.1)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
-                                <h3 className="text-2xl font-serif font-bold mb-4 text-slate-900">Get Your Free Gold Kit</h3>
-                                <p className="mb-6 text-slate-600">Both companies offer excellent free kits. Compare them yourself.</p>
+                                <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Get Your Free Gold Kit</h3>
+                                <p className="mb-6 text-[#D0CCC4]">Both companies offer excellent free kits. Compare them yourself.</p>
                                 <Button variant="gold" size="lg" asChild>
                                     <Link href="/quiz">Get Free Kits <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
@@ -226,7 +226,7 @@ export default function NobleVsBirchPage() {
             </Container>
 
             {/* Augusta CTA */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <AugustaCTA
                         variant="footer"

@@ -89,17 +89,17 @@ export default function Transfer401kToGoldPage() {
             <SchemaScript schema={schema} />
 
             {/* Header */}
-            <header className="bg-slate-50 py-16 border-b border-slate-200">
+            <header className="bg-[#0C0D18] py-16 border-b border-[#2A2D42]">
                 <Container>
                     <div className="max-w-3xl">
-                        <div className="inline-flex items-center gap-2 rounded-full bg-[#B22234]/10 px-4 py-1.5 text-sm font-semibold text-[#B22234] mb-6 border border-[#B22234]/20">
-                            <span className="w-2 h-2 rounded-full bg-[#B22234]"></span>
+                        <div className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.1)] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#B22234]/20">
+                            <span className="w-2 h-2 rounded-full bg-[#DC2626]"></span>
                             PLAIN ENGLISH GUIDE
                         </div>
-                        <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight mb-6 text-[#000080]">
+                        <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight mb-6 text-[#F6F4EF]">
                             How to Transfer Your 401k to Gold
                         </h1>
-                        <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
+                        <p className="text-lg text-[#D0CCC4] leading-relaxed max-w-2xl">
                             A simple, no-jargon guide to moving your retirement savings into physical gold.
                         </p>
                     </div>
@@ -116,18 +116,18 @@ export default function Transfer401kToGoldPage() {
                                 <CheckCircle2 className="w-6 h-6" />
                             </div>
                             <div>
-                                <h2 className="text-xl font-bold text-[#000080] mb-2">The Short Answer</h2>
-                                <p className="text-lg text-slate-600 leading-relaxed">
-                                    <strong className="text-[#000080]">Yes, you can transfer your 401k to gold.</strong> It&apos;s called a &quot;rollover&quot; and it&apos;s <span className="text-green-600 font-semibold">100% tax-free</span> when done right. You don&apos;t need special permission. You don&apos;t need to be a certain age. And no, it&apos;s not complicated.
+                                <h2 className="text-xl font-bold text-[#F6F4EF] mb-2">The Short Answer</h2>
+                                <p className="text-lg text-[#D0CCC4] leading-relaxed">
+                                    <strong className="text-[#F6F4EF]">Yes, you can transfer your 401k to gold.</strong> It&apos;s called a &quot;rollover&quot; and it&apos;s <span className="text-green-600 font-semibold">100% tax-free</span> when done right. You don&apos;t need special permission. You don&apos;t need to be a certain age. And no, it&apos;s not complicated.
                                 </p>
                             </div>
                         </div>
                     </div>
 
                     {/* Main Content */}
-                    <div className="prose prose-lg prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-a:text-[#B22234] max-w-none">
+                    <div className="prose prose-lg prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-a:text-[#D4A94E] max-w-none">
 
-                        <h2 className="text-[#000080]">What &quot;Transfer&quot; Actually Means</h2>
+                        <h2 className="text-[#F6F4EF]">What &quot;Transfer&quot; Actually Means</h2>
                         <p>
                             When people say &quot;transfer my 401k to gold,&quot; they mean moving their retirement money from a regular 401k into something called a <strong>Gold IRA</strong>&mdash;a special retirement account that holds physical gold instead of stocks and mutual funds.
                         </p>
@@ -139,29 +139,29 @@ export default function Transfer401kToGoldPage() {
                             &quot;Transfer&quot; and &quot;rollover&quot; mean the same thing. We&apos;ll use both words in this guide. Don&apos;t let the terminology confuse you&mdash;it&apos;s all the same process.
                         </Callout>
 
-                        <h2 className="text-[#000080]">3 Simple Steps to Transfer Your 401k to Gold</h2>
+                        <h2 className="text-[#F6F4EF]">3 Simple Steps to Transfer Your 401k to Gold</h2>
 
                         <div className="not-prose my-8">
                             <div className="space-y-6">
-                                <div className="flex gap-4 items-start p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-white flex items-center justify-center font-bold shrink-0">1</div>
+                                <div className="flex gap-4 items-start p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                    <div className="w-10 h-10 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-bold shrink-0">1</div>
                                     <div>
-                                        <h4 className="font-bold text-[#000080] text-lg">Pick a Gold IRA Company</h4>
-                                        <p className="text-slate-600 mt-2">These companies specialize in helping people move their retirement money into gold. They handle the paperwork, set up your new account, and guide you through the process. Most offer free consultations.</p>
+                                        <h4 className="font-bold text-[#F6F4EF] text-lg">Pick a Gold IRA Company</h4>
+                                        <p className="text-[#D0CCC4] mt-2">These companies specialize in helping people move their retirement money into gold. They handle the paperwork, set up your new account, and guide you through the process. Most offer free consultations.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 items-start p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-white flex items-center justify-center font-bold shrink-0">2</div>
+                                <div className="flex gap-4 items-start p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                    <div className="w-10 h-10 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-bold shrink-0">2</div>
                                     <div>
-                                        <h4 className="font-bold text-[#000080] text-lg">Open Your Gold IRA Account</h4>
-                                        <p className="text-slate-600 mt-2">Your gold IRA company sets this up for you. It takes about 24-48 hours. You&apos;ll fill out some forms and provide ID&mdash;just like opening a bank account.</p>
+                                        <h4 className="font-bold text-[#F6F4EF] text-lg">Open Your Gold IRA Account</h4>
+                                        <p className="text-[#D0CCC4] mt-2">Your gold IRA company sets this up for you. It takes about 24-48 hours. You&apos;ll fill out some forms and provide ID&mdash;just like opening a bank account.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-4 items-start p-6 rounded-xl bg-slate-50 border border-slate-200">
-                                    <div className="w-10 h-10 rounded-full bg-[#B22234] text-white flex items-center justify-center font-bold shrink-0">3</div>
+                                <div className="flex gap-4 items-start p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42]">
+                                    <div className="w-10 h-10 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-bold shrink-0">3</div>
                                     <div>
-                                        <h4 className="font-bold text-[#000080] text-lg">Request the Transfer</h4>
-                                        <p className="text-slate-600 mt-2">Your new company contacts your old 401k and requests the transfer. The money moves directly between accounts (this is called a &quot;direct rollover&quot;). You never touch the money, so there&apos;s no tax. Takes 2-4 weeks total.</p>
+                                        <h4 className="font-bold text-[#F6F4EF] text-lg">Request the Transfer</h4>
+                                        <p className="text-[#D0CCC4] mt-2">Your new company contacts your old 401k and requests the transfer. The money moves directly between accounts (this is called a &quot;direct rollover&quot;). You never touch the money, so there&apos;s no tax. Takes 2-4 weeks total.</p>
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +171,7 @@ export default function Transfer401kToGoldPage() {
                             That&apos;s it. Three steps. The gold IRA company does most of the work&mdash;that&apos;s literally their job.
                         </p>
 
-                        <h2 className="text-[#000080]">No Taxes, No Penalties</h2>
+                        <h2 className="text-[#F6F4EF]">No Taxes, No Penalties</h2>
                         <p>
                             Here&apos;s what many people worry about: <em>&quot;Won&apos;t I get hit with taxes if I move my 401k?&quot;</em>
                         </p>
@@ -180,127 +180,127 @@ export default function Transfer401kToGoldPage() {
                         </p>
 
                         <div className="bg-green-50 rounded-2xl p-6 border border-green-200 not-prose my-8">
-                            <h4 className="font-bold text-[#000080] text-lg mb-4 flex items-center gap-2">
+                            <h4 className="font-bold text-[#F6F4EF] text-lg mb-4 flex items-center gap-2">
                                 <ShieldCheck className="w-5 h-5 text-green-600" />
                                 Tax-Free Transfer Checklist
                             </h4>
                             <ul className="space-y-3">
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                                    <span className="text-slate-600">Use a <strong className="text-[#000080]">direct rollover</strong> (money goes custodian to custodian)</span>
+                                    <span className="text-[#D0CCC4]">Use a <strong className="text-[#F6F4EF]">direct rollover</strong> (money goes custodian to custodian)</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                                    <span className="text-slate-600">Don&apos;t take a check made out to you personally</span>
+                                    <span className="text-[#D0CCC4]">Don&apos;t take a check made out to you personally</span>
                                 </li>
                                 <li className="flex items-start gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                                    <span className="text-slate-600">Let your gold IRA company handle the paperwork</span>
+                                    <span className="text-[#D0CCC4]">Let your gold IRA company handle the paperwork</span>
                                 </li>
                             </ul>
-                            <p className="text-slate-600 mt-4 text-sm">Follow these rules and you pay zero tax on your transfer.</p>
+                            <p className="text-[#D0CCC4] mt-4 text-sm">Follow these rules and you pay zero tax on your transfer.</p>
                         </div>
 
-                        <h2 className="text-[#000080]">Want the Full Details?</h2>
+                        <h2 className="text-[#F6F4EF]">Want the Full Details?</h2>
                         <p>
                             This guide covers the basics. If you want to dive deeper&mdash;understand direct vs. indirect rollovers, learn about eligibility while still employed, or see the complete timeline&mdash;check out our comprehensive guide:
                         </p>
 
                         <div className="not-prose my-8">
-                            <Link href="/guide/401k-to-gold-rollover" className="flex items-center gap-4 p-6 rounded-xl bg-slate-50 border border-slate-200 hover:bg-slate-100 transition-colors group">
-                                <div className="w-12 h-12 rounded-full bg-[#B22234]/10 text-[#B22234] flex items-center justify-center flex-shrink-0">
+                            <Link href="/guide/401k-to-gold-rollover" className="flex items-center gap-4 p-6 rounded-xl bg-[#0C0D18] border border-[#2A2D42] hover:bg-[#1E2134] transition-colors group">
+                                <div className="w-12 h-12 rounded-full bg-[rgba(220,38,38,0.1)] text-[#D4A94E] flex items-center justify-center flex-shrink-0">
                                     <FileText className="w-6 h-6" />
                                 </div>
                                 <div className="flex-1">
-                                    <h4 className="font-bold text-[#000080] text-lg group-hover:text-[#B22234] transition-colors">Complete 401k to Gold IRA Rollover Guide</h4>
-                                    <p className="text-slate-600 mt-1">Everything you need to know: eligibility rules, tax implications, step-by-step instructions, and common mistakes to avoid.</p>
+                                    <h4 className="font-bold text-[#F6F4EF] text-lg group-hover:text-[#D4A94E] transition-colors">Complete 401k to Gold IRA Rollover Guide</h4>
+                                    <p className="text-[#D0CCC4] mt-1">Everything you need to know: eligibility rules, tax implications, step-by-step instructions, and common mistakes to avoid.</p>
                                 </div>
-                                <ArrowRight className="w-5 h-5 text-[#B22234]" />
+                                <ArrowRight className="w-5 h-5 text-[#D4A94E]" />
                             </Link>
                         </div>
 
                         {/* FAQ Section */}
-                        <h2 className="text-[#000080]">Frequently Asked Questions</h2>
+                        <h2 className="text-[#F6F4EF]">Frequently Asked Questions</h2>
 
                         <div className="space-y-4 not-prose">
-                            <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                            <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Can I transfer my 401k to gold?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
                                     </span>
                                 </summary>
-                                <p className="mt-4 leading-relaxed text-slate-600">
+                                <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                     Yes! The IRS calls this a &quot;rollover.&quot; When done as a direct rollover (money goes straight from your 401k to your new gold IRA), it&apos;s completely tax-free and penalty-free.
                                 </p>
                             </details>
 
-                            <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                            <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Is &quot;transfer&quot; the same as &quot;rollover&quot;?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
                                     </span>
                                 </summary>
-                                <p className="mt-4 leading-relaxed text-slate-600">
+                                <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                     Yes! &quot;Transfer&quot; and &quot;rollover&quot; mean the same thing when talking about moving your 401k to gold. The technical term is &quot;rollover,&quot; but many people call it a transfer. Both refer to moving your retirement money from a 401k to a Gold IRA.
                                 </p>
                             </details>
 
-                            <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                            <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Will I pay taxes on the transfer?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
                                     </span>
                                 </summary>
-                                <p className="mt-4 leading-relaxed text-slate-600">
+                                <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                     No taxes if you do a direct transfer. With a direct rollover, funds move straight from your 401k to your Gold IRA custodian. Since you never touch the money, there&apos;s no tax. It&apos;s treated as moving money from one retirement account to another.
                                 </p>
                             </details>
 
-                            <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                            <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">How long does the transfer take?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
                                     </span>
                                 </summary>
-                                <p className="mt-4 leading-relaxed text-slate-600">
+                                <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                     Most 401k to gold transfers take 2-4 weeks from start to finish. The longest wait is usually for your old 401k administrator to process the paperwork. Your gold IRA company handles most of the work for you.
                                 </p>
                             </details>
 
-                            <details className="group bg-slate-50 rounded-xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#000080]">
+                            <details className="group bg-[#0C0D18] rounded-xl border border-[#2A2D42] p-6 [&_summary::-webkit-details-marker]:hidden">
+                                <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-[#F6F4EF]">
                                     <h4 className="text-lg font-bold">Do I need to quit my job first?</h4>
-                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#B22234] sm:p-3">
+                                    <span className="shrink-0 rounded-full bg-slate-200 p-1.5 text-[#D4A94E] sm:p-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" className="size-5 shrink-0 transition duration-300 group-open:-rotate-180" viewBox="0 0 20 20" fill="currentColor">
                                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                                         </svg>
                                     </span>
                                 </summary>
-                                <p className="mt-4 leading-relaxed text-slate-600">
+                                <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                                     Not necessarily. If you&apos;re 59 1/2 or older, most plans allow transfers while still employed. If you&apos;re younger, check with your HR department. And you can always transfer 401ks from previous jobs at any time.
                                 </p>
                             </details>
                         </div>
 
                         {/* CTA */}
-                        <div className="my-12 bg-[#000080] rounded-2xl p-8 text-white relative overflow-hidden not-prose">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                        <div className="my-12 bg-[rgba(197,149,46,0.1)] rounded-2xl p-8 text-white relative overflow-hidden not-prose">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.18)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10 text-center">
                                 <h3 className="text-2xl font-serif font-bold mb-4 text-white">Ready to Transfer Your 401k to Gold?</h3>
                                 <p className="mb-6 text-blue-100 max-w-xl mx-auto">Take our 60-second quiz to find the best gold IRA company for your situation.</p>
-                                <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8B0000]">
+                                <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#8B0000]">
                                     <Link href="/quiz">Find My Best Match <ArrowRight className="ml-2 w-4 h-4" /></Link>
                                 </Button>
                             </div>
@@ -311,7 +311,7 @@ export default function Transfer401kToGoldPage() {
             </Container>
 
             {/* Augusta CTA Section */}
-            <section className="py-16 bg-slate-100">
+            <section className="py-16 bg-[#121423]">
                 <Container>
                     <AugustaCTA variant="footer" linkContext="default" trackSource="guide-transfer-401k-gold" />
                 </Container>

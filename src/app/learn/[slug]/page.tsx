@@ -176,7 +176,7 @@ const iconColorClasses: Record<IconColor, string> = {
   green: "text-green-700 bg-green-500/20",
   blue: "text-blue-700 bg-blue-500/20",
   purple: "text-purple-700 bg-purple-500/20",
-  slate: "text-slate-400 bg-slate-500/20",
+  slate: "text-[#A8A39A] bg-[#0C0D18]0/20",
 };
 
 interface PageProps {
@@ -238,7 +238,7 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
         </div>
 
         <div className="pl-0 md:pl-16">
-          <p className="text-slate-300 leading-relaxed mb-6">
+          <p className="text-[#3F4460] leading-relaxed mb-6">
             {section.content}
           </p>
 
@@ -249,7 +249,7 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
                   <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-amber-500/20 flex items-center justify-center mt-0.5 group-hover:bg-amber-500/30 transition-colors">
                     <ChevronRight className="h-4 w-4 text-amber-700" />
                   </span>
-                  <span className="text-slate-300 pt-0.5">{bullet}</span>
+                  <span className="text-[#3F4460] pt-0.5">{bullet}</span>
                 </li>
               ))}
             </ul>
@@ -264,7 +264,7 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
                                    shadow-lg ring-1 ring-amber-500/20 group-hover:from-amber-500/40 group-hover:to-amber-600/30 transition-all">
                     {i + 1}
                   </span>
-                  <span className="text-slate-300 pt-1">{item}</span>
+                  <span className="text-[#3F4460] pt-1">{item}</span>
                 </li>
               ))}
             </ol>
@@ -284,10 +284,10 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
                 </thead>
                 <tbody>
                   {section.table.rows.map((row, i) => (
-                    <tr key={i} className="border-b border-white/5 hover:bg-white/[0.03] transition-colors">
+                    <tr key={i} className="border-b border-white/5 hover:bg-[#1E2134]/[0.03] transition-colors">
                       {row.map((cell, j) => (
                         <td key={j} className={cn(
-                          "py-4 px-5 text-slate-300",
+                          "py-4 px-5 text-[#3F4460]",
                           j === 0 && "font-medium text-white"
                         )}>
                           {cell}
@@ -298,7 +298,7 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
                 </tbody>
               </table>
               {section.table.caption && (
-                <p className="text-xs text-slate-500 px-5 py-3 border-t border-white/5 italic">{section.table.caption}</p>
+                <p className="text-xs text-[#A8A39A] px-5 py-3 border-t border-white/5 italic">{section.table.caption}</p>
               )}
             </div>
           )}
@@ -308,10 +308,10 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
               "relative rounded-2xl p-5 mb-4 overflow-hidden",
               "bg-white/5 backdrop-blur-xl",
               "before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:-z-10",
-              section.callout.type === 'info' && "before:bg-gradient-to-r before:from-blue-500/50 before:via-blue-400/30 before:to-white/10",
-              section.callout.type === 'warning' && "before:bg-gradient-to-r before:from-amber-500/50 before:via-amber-400/30 before:to-white/10",
-              section.callout.type === 'tip' && "before:bg-gradient-to-r before:from-green-500/50 before:via-green-400/30 before:to-white/10",
-              section.callout.type === 'example' && "before:bg-gradient-to-r before:from-purple-500/50 before:via-purple-400/30 before:to-white/10"
+              section.callout.type === 'info' && "before:bg-gradient-to-r before:from-blue-500/50 before:via-blue-400/30 before:to-[#161828]/10",
+              section.callout.type === 'warning' && "before:bg-gradient-to-r before:from-amber-500/50 before:via-amber-400/30 before:to-[#161828]/10",
+              section.callout.type === 'tip' && "before:bg-gradient-to-r before:from-green-500/50 before:via-green-400/30 before:to-[#161828]/10",
+              section.callout.type === 'example' && "before:bg-gradient-to-r before:from-purple-500/50 before:via-purple-400/30 before:to-[#161828]/10"
             )}>
               <div className={cn(
                 "absolute inset-0 rounded-2xl border",
@@ -341,7 +341,7 @@ function ArticleSectionComponent({ section }: { section: ArticleSection }) {
                     section.callout.type === 'tip' && "text-green-700",
                     section.callout.type === 'example' && "text-purple-700"
                   )}>{section.callout.title}</h4>
-                  <p className="text-slate-300 text-sm leading-relaxed">{section.callout.content}</p>
+                  <p className="text-[#3F4460] text-sm leading-relaxed">{section.callout.content}</p>
                 </div>
               </div>
             </div>
@@ -429,7 +429,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
               <Link
                 href="/learn"
                 className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-full px-4 py-1.5
-                           text-amber-700 text-sm font-medium hover:bg-white/10 transition-colors"
+                           text-amber-700 text-sm font-medium hover:bg-[#1E2134]/10 transition-colors"
               >
                 {catMeta.label}
               </Link>
@@ -450,7 +450,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
               {article.title}
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
+            <p className="text-lg md:text-xl text-[#3F4460] leading-relaxed">
               {article.subtitle}
             </p>
           </div>
@@ -495,10 +495,10 @@ export default async function LearnArticlePage({ params }: PageProps) {
                   "relative rounded-2xl p-6 mb-12 overflow-hidden",
                   "bg-white/5 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.3)]",
                   "before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:-z-10",
-                  article.warningBox.type === 'red' && "before:bg-gradient-to-r before:from-red-500/60 before:via-red-400/30 before:to-white/10",
-                  article.warningBox.type === 'amber' && "before:bg-gradient-to-r before:from-amber-500/60 before:via-amber-400/30 before:to-white/10",
-                  article.warningBox.type === 'blue' && "before:bg-gradient-to-r before:from-blue-500/60 before:via-blue-400/30 before:to-white/10",
-                  article.warningBox.type === 'green' && "before:bg-gradient-to-r before:from-green-500/60 before:via-green-400/30 before:to-white/10"
+                  article.warningBox.type === 'red' && "before:bg-gradient-to-r before:from-red-500/60 before:via-red-400/30 before:to-[#161828]/10",
+                  article.warningBox.type === 'amber' && "before:bg-gradient-to-r before:from-amber-500/60 before:via-amber-400/30 before:to-[#161828]/10",
+                  article.warningBox.type === 'blue' && "before:bg-gradient-to-r before:from-blue-500/60 before:via-blue-400/30 before:to-[#161828]/10",
+                  article.warningBox.type === 'green' && "before:bg-gradient-to-r before:from-green-500/60 before:via-green-400/30 before:to-[#161828]/10"
                 )}>
                   <div className={cn(
                     "absolute inset-0 rounded-2xl border",
@@ -525,7 +525,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                     </div>
                     <div>
                       <h3 className="font-bold text-white text-lg mb-2">{article.warningBox.title}</h3>
-                      <p className="text-slate-300 leading-relaxed">{article.warningBox.content}</p>
+                      <p className="text-[#3F4460] leading-relaxed">{article.warningBox.content}</p>
                     </div>
                   </div>
                 </div>
@@ -546,7 +546,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                     </div>
                     {article.goldBridge.title}
                   </h2>
-                  <p className="text-slate-300 leading-relaxed mb-5">
+                  <p className="text-[#3F4460] leading-relaxed mb-5">
                     {article.goldBridge.content}
                   </p>
                   <ul className="space-y-3 mb-6">
@@ -556,7 +556,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                                          group-hover:bg-amber-500/30 transition-colors ring-1 ring-amber-500/20">
                           <CheckCircle2 className="h-4 w-4 text-amber-700" />
                         </span>
-                        <span className="text-slate-300 pt-0.5">{bullet}</span>
+                        <span className="text-[#3F4460] pt-0.5">{bullet}</span>
                       </li>
                     ))}
                   </ul>
@@ -583,7 +583,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                         key={i}
                         className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 p-6
                                    shadow-[0_4px_20px_rgba(0,0,0,0.2)]
-                                   hover:bg-white/[0.08] hover:border-amber-400/20
+                                   hover:bg-[#1E2134]/[0.08] hover:border-amber-400/20
                                    hover:shadow-[0_8px_30px_-10px_rgba(212,175,55,0.15)]
                                    transition-all duration-300 group"
                       >
@@ -595,7 +595,7 @@ export default async function LearnArticlePage({ params }: PageProps) {
                           </span>
                           <span className="pt-0.5">{faq.question}</span>
                         </h3>
-                        <p className="text-slate-300 leading-relaxed pl-10">{faq.answer}</p>
+                        <p className="text-[#3F4460] leading-relaxed pl-10">{faq.answer}</p>
                       </div>
                     ))}
                   </div>
@@ -619,18 +619,18 @@ export default async function LearnArticlePage({ params }: PageProps) {
                           key={related.slug}
                           href={`/learn/${related.slug}`}
                           className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl p-5
-                                     hover:bg-white/[0.08] hover:-translate-y-1
+                                     hover:bg-[#1E2134]/[0.08] hover:-translate-y-1
                                      hover:shadow-[0_8px_30px_-10px_rgba(212,175,55,0.2)]
                                      hover:border-amber-400/30 transition-all duration-300 group"
                         >
-                          <div className="text-xs font-medium uppercase tracking-wider mb-2 text-slate-400
+                          <div className="text-xs font-medium uppercase tracking-wider mb-2 text-[#A8A39A]
                                           group-hover:text-amber-700/80 transition-colors">
                             {relatedCat.label}
                           </div>
                           <h3 className="font-bold text-white group-hover:text-amber-700 transition-colors text-sm leading-snug">
                             {related.title}
                           </h3>
-                          <div className="mt-3 flex items-center gap-1 text-xs text-slate-500 group-hover:text-amber-700/60 transition-colors">
+                          <div className="mt-3 flex items-center gap-1 text-xs text-[#A8A39A] group-hover:text-amber-700/60 transition-colors">
                             <span>Read more</span>
                             <ArrowRight className="h-3 w-3 group-hover:translate-x-1 transition-transform" />
                           </div>
@@ -657,8 +657,8 @@ export default async function LearnArticlePage({ params }: PageProps) {
                         href={guide}
                         className="inline-flex items-center gap-2 px-4 py-2.5
                                    bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl
-                                   text-sm text-slate-300
-                                   hover:bg-white/[0.08] hover:border-amber-400/30 hover:text-white
+                                   text-sm text-[#3F4460]
+                                   hover:bg-[#1E2134]/[0.08] hover:border-amber-400/30 hover:text-white
                                    hover:-translate-y-0.5 hover:shadow-[0_4px_20px_-5px_rgba(212,175,55,0.2)]
                                    transition-all duration-300 group"
                       >

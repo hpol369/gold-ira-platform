@@ -33,17 +33,17 @@ export default function RealEstateIraRulesPage() {
         <main className="min-h-screen bg-white">
             {/* Hero Section */}
             <section className="relative py-12 lg:py-16 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-white" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#0C0D18] via-white to-[#161828]" />
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent" />
 
                 <Container className="relative z-10">
                     {/* Breadcrumb */}
-                    <nav className="flex items-center gap-2 text-sm text-slate-500 mb-6">
-                        <Link href="/" className="hover:text-[#000080] transition-colors">Home</Link>
+                    <nav className="flex items-center gap-2 text-sm text-[#A8A39A] mb-6">
+                        <Link href="/" className="hover:text-[#F6F4EF] transition-colors">Home</Link>
                         <span>/</span>
-                        <Link href="/real-estate-ira" className="hover:text-[#000080] transition-colors">Real Estate IRA</Link>
+                        <Link href="/real-estate-ira" className="hover:text-[#F6F4EF] transition-colors">Real Estate IRA</Link>
                         <span>/</span>
-                        <span className="text-[#000080]">Rules</span>
+                        <span className="text-[#F6F4EF]">Rules</span>
                     </nav>
 
                     <div className="max-w-4xl">
@@ -52,12 +52,12 @@ export default function RealEstateIraRulesPage() {
                             <span className="text-emerald-400 text-sm font-medium">IRS Compliance Guide</span>
                         </div>
 
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#000080] mb-6 leading-tight">
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#F6F4EF] mb-6 leading-tight">
                             Real Estate IRA Rules:{" "}
                             <span className="text-emerald-400">What You Can and Can't Do</span>
                         </h1>
 
-                        <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl">
+                        <p className="text-xl text-[#D0CCC4] mb-8 leading-relaxed max-w-3xl">
                             You've worked 30+ years to build your retirement savings. Using an IRA to buy rental property is completely legal—but the IRS has strict rules. Break them, and you could owe taxes and penalties on your entire IRA. Here's the straight talk on what's allowed and what's not.
                         </p>
                     </div>
@@ -65,13 +65,13 @@ export default function RealEstateIraRulesPage() {
             </section>
 
             {/* Prohibited Transactions */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-4 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-4 text-center">
                             Prohibited Transactions
                         </h2>
-                        <p className="text-slate-500 text-center mb-12 max-w-2xl mx-auto">
+                        <p className="text-[#A8A39A] text-center mb-12 max-w-2xl mx-auto">
                             Let me be direct: these are the rules that trip people up. Break any of these, and your entire IRA could be treated as a distribution—meaning you owe taxes on the full amount, plus penalties if you're under 59 1/2.
                         </p>
 
@@ -116,11 +116,11 @@ export default function RealEstateIraRulesPage() {
                                         description: "Any arrangement that provides you or family members indirect benefits from the property is prohibited."
                                     }
                                 ].map((item, index) => (
-                                    <div key={index} className="flex items-start gap-4 bg-slate-50 rounded-xl p-4">
+                                    <div key={index} className="flex items-start gap-4 bg-[#0C0D18] rounded-xl p-4">
                                         <XCircle className="w-6 h-6 text-red-700 flex-shrink-0 mt-0.5" />
                                         <div>
-                                            <h4 className="text-[#000080] font-semibold mb-1">{item.title}</h4>
-                                            <p className="text-slate-500 text-sm">{item.description}</p>
+                                            <h4 className="text-[#F6F4EF] font-semibold mb-1">{item.title}</h4>
+                                            <p className="text-[#A8A39A] text-sm">{item.description}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -134,12 +134,12 @@ export default function RealEstateIraRulesPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Who Are Disqualified Persons?
                         </h2>
 
-                        <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-2xl p-8">
-                            <p className="text-slate-600 mb-6">
+                        <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-2xl p-8">
+                            <p className="text-[#D0CCC4] mb-6">
                                 The IRS defines &quot;disqualified persons&quot; who cannot transact with your IRA. These include:
                             </p>
 
@@ -154,15 +154,15 @@ export default function RealEstateIraRulesPage() {
                                     "Companies you own 50%+ of",
                                     "Officers, directors, or 10%+ shareholders of such companies"
                                 ].map((person, index) => (
-                                    <div key={index} className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
+                                    <div key={index} className="flex items-center gap-3 bg-[#0C0D18] rounded-lg p-3">
                                         <Users className="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                                        <span className="text-slate-600">{person}</span>
+                                        <span className="text-[#D0CCC4]">{person}</span>
                                     </div>
                                 ))}
                             </div>
 
                             <div className="mt-6 p-4 bg-amber-500/10 border border-amber-500/20 rounded-lg">
-                                <p className="text-[#B22234] text-sm">
+                                <p className="text-[#D4A94E] text-sm">
                                     <strong>Note:</strong> Siblings, aunts, uncles, and cousins are NOT disqualified persons.
                                     Transactions with them are generally allowed (but consult a tax professional).
                                 </p>
@@ -173,10 +173,10 @@ export default function RealEstateIraRulesPage() {
             </section>
 
             {/* What You CAN Do */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
                             What You CAN Do
                         </h2>
 
@@ -199,9 +199,9 @@ export default function RealEstateIraRulesPage() {
                                     "Hire unrelated contractors for repairs",
                                     "Receive rental income into the IRA"
                                 ].map((item, index) => (
-                                    <div key={index} className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
+                                    <div key={index} className="flex items-center gap-3 bg-[#0C0D18] rounded-lg p-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
-                                        <span className="text-slate-600">{item}</span>
+                                        <span className="text-[#D0CCC4]">{item}</span>
                                     </div>
                                 ))}
                             </div>
@@ -214,30 +214,30 @@ export default function RealEstateIraRulesPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Understanding UBIT (Unrelated Business Income Tax)
                         </h2>
 
-                        <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-2xl p-8">
-                            <p className="text-slate-600 text-lg mb-6">
-                                <strong className="text-[#000080]">UBIT</strong> is a tax that applies when your IRA earns income from
+                        <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-2xl p-8">
+                            <p className="text-[#D0CCC4] text-lg mb-6">
+                                <strong className="text-[#F6F4EF]">UBIT</strong> is a tax that applies when your IRA earns income from
                                 debt-financed property or active business operations. This is one of the most misunderstood aspects
                                 of real estate IRAs.
                             </p>
 
                             <div className="space-y-6">
                                 <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
-                                    <h4 className="text-[#B22234] font-semibold mb-3 flex items-center gap-2">
+                                    <h4 className="text-[#D4A94E] font-semibold mb-3 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         When UBIT Applies
                                     </h4>
-                                    <ul className="space-y-2 text-slate-600">
+                                    <ul className="space-y-2 text-[#D0CCC4]">
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#B22234]">•</span>
+                                            <span className="text-[#D4A94E]">•</span>
                                             <span><strong>Leveraged Property:</strong> If your IRA uses a mortgage to buy property, the portion of income attributable to the borrowed funds is subject to UBIT.</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-[#B22234]">•</span>
+                                            <span className="text-[#D4A94E]">•</span>
                                             <span><strong>Active Business:</strong> If the property operates as an active business (like a hotel you operate), income may be subject to UBIT.</span>
                                         </li>
                                     </ul>
@@ -248,7 +248,7 @@ export default function RealEstateIraRulesPage() {
                                         <CheckCircle2 className="w-5 h-5" />
                                         When UBIT Does NOT Apply
                                     </h4>
-                                    <ul className="space-y-2 text-slate-600">
+                                    <ul className="space-y-2 text-[#D0CCC4]">
                                         <li className="flex items-start gap-2">
                                             <span className="text-green-700">•</span>
                                             <span><strong>All-Cash Purchases:</strong> If you buy property entirely with IRA funds (no mortgage), UBIT doesn&apos;t apply to rental income.</span>
@@ -260,8 +260,8 @@ export default function RealEstateIraRulesPage() {
                                     </ul>
                                 </div>
 
-                                <p className="text-slate-500 text-sm">
-                                    <strong className="text-[#000080]">UBIT Rate:</strong> Trust tax rates apply, which can be quite high (up to 37% for income over ~$14,000).
+                                <p className="text-[#A8A39A] text-sm">
+                                    <strong className="text-[#F6F4EF]">UBIT Rate:</strong> Trust tax rates apply, which can be quite high (up to 37% for income over ~$14,000).
                                     However, there&apos;s a $1,000 exemption, and many real estate investors find UBIT manageable compared to the tax benefits of the IRA structure.
                                 </p>
                             </div>
@@ -271,10 +271,10 @@ export default function RealEstateIraRulesPage() {
             </section>
 
             {/* Penalties */}
-            <section className="py-16 bg-slate-50">
+            <section className="py-16 bg-[#0C0D18]">
                 <Container>
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="text-3xl font-bold text-[#000080] mb-8 text-center">
+                        <h2 className="text-3xl font-bold text-[#F6F4EF] mb-8 text-center">
                             Penalties for Breaking the Rules
                         </h2>
 
@@ -301,7 +301,7 @@ export default function RealEstateIraRulesPage() {
                                     severity: "Critical"
                                 }
                             ].map((item, index) => (
-                                <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+                                <div key={index} className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
                                     <div className="flex items-center gap-2 mb-3">
                                         <span className={`text-xs font-bold px-2 py-1 rounded ${item.severity === 'Critical'
                                             ? 'bg-red-500/30 text-red-800'
@@ -310,8 +310,8 @@ export default function RealEstateIraRulesPage() {
                                             {item.severity}
                                         </span>
                                     </div>
-                                    <h3 className="text-lg font-bold text-[#000080] mb-2">{item.title}</h3>
-                                    <p className="text-slate-500 text-sm">{item.description}</p>
+                                    <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">{item.title}</h3>
+                                    <p className="text-[#A8A39A] text-sm">{item.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -323,10 +323,10 @@ export default function RealEstateIraRulesPage() {
             <section className="py-16 bg-white">
                 <Container>
                     <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="text-2xl font-bold text-[#000080] mb-6">
+                        <h2 className="text-2xl font-bold text-[#F6F4EF] mb-6">
                             Don't Risk 30 Years of Savings on a Compliance Mistake
                         </h2>
-                        <p className="text-lg text-slate-600 mb-8">
+                        <p className="text-lg text-[#D0CCC4] mb-8">
                             You've worked too hard to lose your retirement over a technicality. A good self-directed IRA custodian knows these rules inside and out—and helps you stay on the right side of the IRS.
                         </p>
 
@@ -352,9 +352,9 @@ export default function RealEstateIraRulesPage() {
             </section>
 
             {/* Related Content */}
-            <section className="py-12 bg-slate-50">
+            <section className="py-12 bg-[#0C0D18]">
                 <Container>
-                    <h2 className="text-xl font-bold text-[#000080] mb-6 text-center">Related Resources</h2>
+                    <h2 className="text-xl font-bold text-[#F6F4EF] mb-6 text-center">Related Resources</h2>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
                         {[
@@ -366,12 +366,12 @@ export default function RealEstateIraRulesPage() {
                             <Link
                                 key={index}
                                 href={link.href}
-                                className="bg-slate-50 border border-slate-200 rounded-xl p-4 hover:bg-white/10 transition-colors group"
+                                className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134]/10 transition-colors group"
                             >
-                                <h3 className="text-[#000080] font-semibold mb-1 group-hover:text-emerald-400 transition-colors text-sm">
+                                <h3 className="text-[#F6F4EF] font-semibold mb-1 group-hover:text-emerald-400 transition-colors text-sm">
                                     {link.title}
                                 </h3>
-                                <p className="text-slate-500 text-xs">{link.desc}</p>
+                                <p className="text-[#A8A39A] text-xs">{link.desc}</p>
                             </Link>
                         ))}
                     </div>

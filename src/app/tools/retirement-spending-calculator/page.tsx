@@ -38,7 +38,7 @@ const categories = [
   { id: "healthcare", label: "Healthcare", icon: Heart, color: "text-red-600" },
   { id: "food", label: "Food & Groceries", icon: Utensils, color: "text-green-600" },
   { id: "transportation", label: "Transportation", icon: Car, color: "text-purple-700" },
-  { id: "entertainment", label: "Entertainment", icon: ShoppingCart, color: "text-[#B22234]" },
+  { id: "entertainment", label: "Entertainment", icon: ShoppingCart, color: "text-[#D4A94E]" },
   { id: "travel", label: "Travel", icon: Plane, color: "text-teal-400" },
 ];
 
@@ -156,17 +156,17 @@ export default function RetirementSpendingCalculatorPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-12 md:py-16 bg-slate-50">
+      <section className="py-12 md:py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               FREE RETIREMENT SPENDING CALCULATOR
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
               Retirement Spending Calculator
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
               Plan your retirement budget and see how inflation impacts your
               spending needs over 30 years. Get a realistic picture of your
               lifetime expenses.
@@ -181,8 +181,8 @@ export default function RetirementSpendingCalculatorPage() {
           <div className="max-w-5xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-8">
               {/* Input Section */}
-              <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
-                <h2 className="text-xl font-bold text-[#000080] mb-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6 md:p-8">
+                <h2 className="text-xl font-bold text-[#F6F4EF] mb-6">
                   Monthly Budget
                 </h2>
 
@@ -190,11 +190,11 @@ export default function RetirementSpendingCalculatorPage() {
                   {/* Housing */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
+                      <label className="text-sm text-[#D0CCC4] font-medium flex items-center gap-2">
                         <Home className="h-4 w-4 text-blue-600" />
                         Housing (rent/mortgage, utilities)
                       </label>
-                      <span className="text-[#B22234] font-bold">
+                      <span className="text-[#D4A94E] font-bold">
                         {formatCurrency(housing)}
                       </span>
                     </div>
@@ -212,11 +212,11 @@ export default function RetirementSpendingCalculatorPage() {
                   {/* Healthcare */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
+                      <label className="text-sm text-[#D0CCC4] font-medium flex items-center gap-2">
                         <Heart className="h-4 w-4 text-red-600" />
                         Healthcare (insurance, medications)
                       </label>
-                      <span className="text-[#B22234] font-bold">
+                      <span className="text-[#D4A94E] font-bold">
                         {formatCurrency(healthcare)}
                       </span>
                     </div>
@@ -234,11 +234,11 @@ export default function RetirementSpendingCalculatorPage() {
                   {/* Food */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
+                      <label className="text-sm text-[#D0CCC4] font-medium flex items-center gap-2">
                         <Utensils className="h-4 w-4 text-green-600" />
                         Food & Groceries
                       </label>
-                      <span className="text-[#B22234] font-bold">
+                      <span className="text-[#D4A94E] font-bold">
                         {formatCurrency(food)}
                       </span>
                     </div>
@@ -256,11 +256,11 @@ export default function RetirementSpendingCalculatorPage() {
                   {/* Transportation */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
+                      <label className="text-sm text-[#D0CCC4] font-medium flex items-center gap-2">
                         <Car className="h-4 w-4 text-purple-700" />
                         Transportation (car, gas, maintenance)
                       </label>
-                      <span className="text-[#B22234] font-bold">
+                      <span className="text-[#D4A94E] font-bold">
                         {formatCurrency(transportation)}
                       </span>
                     </div>
@@ -280,11 +280,11 @@ export default function RetirementSpendingCalculatorPage() {
                   {/* Entertainment */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
-                        <ShoppingCart className="h-4 w-4 text-[#B22234]" />
+                      <label className="text-sm text-[#D0CCC4] font-medium flex items-center gap-2">
+                        <ShoppingCart className="h-4 w-4 text-[#D4A94E]" />
                         Entertainment & Hobbies
                       </label>
-                      <span className="text-[#B22234] font-bold">
+                      <span className="text-[#D4A94E] font-bold">
                         {formatCurrency(entertainment)}
                       </span>
                     </div>
@@ -302,11 +302,11 @@ export default function RetirementSpendingCalculatorPage() {
                   {/* Travel */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
+                      <label className="text-sm text-[#D0CCC4] font-medium flex items-center gap-2">
                         <Plane className="h-4 w-4 text-teal-400" />
                         Travel & Vacations
                       </label>
-                      <span className="text-[#B22234] font-bold">
+                      <span className="text-[#D4A94E] font-bold">
                         {formatCurrency(travel)}
                       </span>
                     </div>
@@ -322,16 +322,16 @@ export default function RetirementSpendingCalculatorPage() {
                   </div>
 
                   {/* Divider */}
-                  <div className="border-t border-slate-200 my-4" />
+                  <div className="border-t border-[#2A2D42] my-4" />
 
                   {/* Inflation Rate */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-600 font-medium flex items-center gap-2">
-                        <TrendingUp className="h-4 w-4 text-[#B22234]" />
+                      <label className="text-sm text-[#D0CCC4] font-medium flex items-center gap-2">
+                        <TrendingUp className="h-4 w-4 text-[#D4A94E]" />
                         Expected Inflation Rate
                       </label>
-                      <span className="text-[#B22234] font-bold">
+                      <span className="text-[#D4A94E] font-bold">
                         {inflationRate.toFixed(1)}%
                       </span>
                     </div>
@@ -344,7 +344,7 @@ export default function RetirementSpendingCalculatorPage() {
                       onChange={(e) => setInflationRate(Number(e.target.value))}
                       className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                     />
-                    <div className="text-xs text-slate-500 mt-1">
+                    <div className="text-xs text-[#A8A39A] mt-1">
                       Historical average: 3.0%
                     </div>
                   </div>
@@ -352,10 +352,10 @@ export default function RetirementSpendingCalculatorPage() {
                   {/* Years in Retirement */}
                   <div>
                     <div className="flex items-center justify-between mb-3">
-                      <label className="text-sm text-slate-600 font-medium">
+                      <label className="text-sm text-[#D0CCC4] font-medium">
                         Years in Retirement
                       </label>
-                      <span className="text-[#B22234] font-bold">
+                      <span className="text-[#D4A94E] font-bold">
                         {yearsInRetirement} years
                       </span>
                     </div>
@@ -373,15 +373,15 @@ export default function RetirementSpendingCalculatorPage() {
                   </div>
 
                   {/* Total Display */}
-                  <div className="bg-[#B22234]/5 border border-[#B22234]/30 rounded-xl p-5 mt-4">
+                  <div className="bg-[rgba(220,38,38,0.06)] border border-[#B22234]/30 rounded-xl p-5 mt-4">
                     <div className="text-center">
-                      <div className="text-slate-600 text-sm mb-2">
+                      <div className="text-[#D0CCC4] text-sm mb-2">
                         Current Monthly Total
                       </div>
-                      <div className="text-4xl font-bold text-slate-900">
+                      <div className="text-4xl font-bold text-[#F6F4EF]">
                         {formatCurrency(results.monthlyTotal)}
                       </div>
-                      <div className="text-slate-600 text-sm mt-1">
+                      <div className="text-[#D0CCC4] text-sm mt-1">
                         {formatCurrency(results.annualTotal)} per year
                       </div>
                     </div>
@@ -390,7 +390,7 @@ export default function RetirementSpendingCalculatorPage() {
                   {/* Calculate Button */}
                   <button
                     onClick={handleCalculate}
-                    className="w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 bg-[#B22234] text-slate-900 hover:bg-[#8b1c2a] shadow-lg shadow-amber-500/25"
+                    className="w-full py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2 bg-[#DC2626] text-[#F6F4EF] hover:bg-[#991B1B] shadow-lg shadow-amber-500/25"
                   >
                     Calculate Lifetime Spending
                     <ArrowRight className="h-5 w-5" />
@@ -409,31 +409,31 @@ export default function RetirementSpendingCalculatorPage() {
                       className="space-y-6"
                     >
                       {/* Lifetime Total */}
-                      <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
+                      <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6">
                         <div className="text-center mb-6">
-                          <div className="text-slate-600 text-sm mb-2">
+                          <div className="text-[#D0CCC4] text-sm mb-2">
                             TOTAL RETIREMENT SPENDING NEEDS
                           </div>
-                          <div className="text-5xl font-bold text-[#000080] mb-2">
+                          <div className="text-5xl font-bold text-[#F6F4EF] mb-2">
                             {formatCurrency(results.lifetimeSpending)}
                           </div>
-                          <div className="text-slate-500">
+                          <div className="text-[#A8A39A]">
                             Over {yearsInRetirement} years
                           </div>
                         </div>
 
                         {/* Inflation Impact Warning */}
-                        <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-4">
+                        <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4">
                           <div className="flex items-start gap-3">
-                            <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                            <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                             <div>
-                              <div className="text-slate-900 font-semibold mb-1">
+                              <div className="text-[#F6F4EF] font-semibold mb-1">
                                 Inflation Impact
                               </div>
-                              <p className="text-slate-600 text-sm">
+                              <p className="text-[#D0CCC4] text-sm">
                                 At {inflationRate}% inflation, your purchasing
                                 power will decrease by{" "}
-                                <strong className="text-[#B22234]">
+                                <strong className="text-[#D4A94E]">
                                   {results.purchasingPowerLoss.toFixed(0)}%
                                 </strong>{" "}
                                 over {yearsInRetirement} years.
@@ -444,39 +444,39 @@ export default function RetirementSpendingCalculatorPage() {
                       </div>
 
                       {/* Year-by-Year Milestones */}
-                      <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
-                        <h3 className="text-lg font-bold text-[#000080] mb-4">
+                      <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6">
+                        <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">
                           Spending at Key Milestones
                         </h3>
 
                         <div className="space-y-4">
                           {/* Year 1 */}
-                          <div className="flex justify-between items-center p-4 bg-slate-50 rounded-xl">
+                          <div className="flex justify-between items-center p-4 bg-[#0C0D18] rounded-xl">
                             <div>
-                              <div className="text-slate-600 text-sm">
+                              <div className="text-[#D0CCC4] text-sm">
                                 Year 1
                               </div>
-                              <div className="text-slate-900 font-bold">
+                              <div className="text-[#F6F4EF] font-bold">
                                 {formatCurrency(results.annualTotal)}
                               </div>
                             </div>
-                            <div className="text-slate-600 text-sm">
+                            <div className="text-[#D0CCC4] text-sm">
                               {formatCurrency(results.monthlyTotal)}/mo
                             </div>
                           </div>
 
                           {/* Year 10 */}
                           {results.year10 && (
-                            <div className="flex justify-between items-center p-4 bg-slate-50 rounded-xl">
+                            <div className="flex justify-between items-center p-4 bg-[#0C0D18] rounded-xl">
                               <div>
-                                <div className="text-slate-600 text-sm">
+                                <div className="text-[#D0CCC4] text-sm">
                                   Year 10
                                 </div>
-                                <div className="text-slate-900 font-bold">
+                                <div className="text-[#F6F4EF] font-bold">
                                   {formatCurrency(results.year10.spending)}
                                 </div>
                               </div>
-                              <div className="text-[#B22234] text-sm">
+                              <div className="text-[#D4A94E] text-sm">
                                 {formatCurrency(results.year10.monthly)}/mo
                               </div>
                             </div>
@@ -484,16 +484,16 @@ export default function RetirementSpendingCalculatorPage() {
 
                           {/* Year 20 */}
                           {results.year20 && (
-                            <div className="flex justify-between items-center p-4 bg-slate-50 rounded-xl">
+                            <div className="flex justify-between items-center p-4 bg-[#0C0D18] rounded-xl">
                               <div>
-                                <div className="text-slate-600 text-sm">
+                                <div className="text-[#D0CCC4] text-sm">
                                   Year 20
                                 </div>
-                                <div className="text-slate-900 font-bold">
+                                <div className="text-[#F6F4EF] font-bold">
                                   {formatCurrency(results.year20.spending)}
                                 </div>
                               </div>
-                              <div className="text-[#B22234] text-sm">
+                              <div className="text-[#D4A94E] text-sm">
                                 {formatCurrency(results.year20.monthly)}/mo
                               </div>
                             </div>
@@ -501,12 +501,12 @@ export default function RetirementSpendingCalculatorPage() {
 
                           {/* Year 30 */}
                           {results.year30 && (
-                            <div className="flex justify-between items-center p-4 bg-slate-50 rounded-xl">
+                            <div className="flex justify-between items-center p-4 bg-[#0C0D18] rounded-xl">
                               <div>
-                                <div className="text-slate-600 text-sm">
+                                <div className="text-[#D0CCC4] text-sm">
                                   Year 30
                                 </div>
-                                <div className="text-slate-900 font-bold">
+                                <div className="text-[#F6F4EF] font-bold">
                                   {formatCurrency(results.year30.spending)}
                                 </div>
                               </div>
@@ -519,8 +519,8 @@ export default function RetirementSpendingCalculatorPage() {
                       </div>
 
                       {/* Category Breakdown */}
-                      <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
-                        <h3 className="text-lg font-bold text-[#000080] mb-4">
+                      <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6">
+                        <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">
                           Lifetime Spending by Category
                         </h3>
 
@@ -532,18 +532,18 @@ export default function RetirementSpendingCalculatorPage() {
                                 <div className="flex items-center justify-between">
                                   <div className="flex items-center gap-2">
                                     <Icon className={`h-4 w-4 ${cat.color}`} />
-                                    <span className="text-slate-600 text-sm">
+                                    <span className="text-[#D0CCC4] text-sm">
                                       {cat.label}
                                     </span>
                                   </div>
-                                  <span className="text-slate-900 font-bold text-sm">
+                                  <span className="text-[#F6F4EF] font-bold text-sm">
                                     {formatCurrency(cat.lifetimeTotal)}
                                   </span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                  <div className="flex-1 h-2 bg-slate-100 rounded-full overflow-hidden">
+                                  <div className="flex-1 h-2 bg-[#121423] rounded-full overflow-hidden">
                                     <motion.div
-                                      className="h-full bg-[#B22234]"
+                                      className="h-full bg-[#DC2626]"
                                       initial={{ width: 0 }}
                                       animate={{
                                         width: `${cat.percentage}%`,
@@ -551,7 +551,7 @@ export default function RetirementSpendingCalculatorPage() {
                                       transition={{ duration: 0.8, delay: 0.2 }}
                                     />
                                   </div>
-                                  <span className="text-slate-500 text-xs w-10 text-right">
+                                  <span className="text-[#A8A39A] text-xs w-10 text-right">
                                     {cat.percentage.toFixed(0)}%
                                   </span>
                                 </div>
@@ -564,7 +564,7 @@ export default function RetirementSpendingCalculatorPage() {
                       {/* Reset Button */}
                       <button
                         onClick={resetCalculator}
-                        className="w-full py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-500 font-medium hover:bg-slate-200 hover:text-slate-900 transition-all"
+                        className="w-full py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#A8A39A] font-medium hover:bg-slate-200 hover:text-[#F6F4EF] transition-all"
                       >
                         Calculate Different Scenario
                       </button>
@@ -573,13 +573,13 @@ export default function RetirementSpendingCalculatorPage() {
                     <motion.div
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      className="bg-white border border-slate-200 shadow-sm rounded-2xl p-8 text-center h-full flex flex-col justify-center"
+                      className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-8 text-center h-full flex flex-col justify-center"
                     >
-                      <Calculator className="h-16 w-16 text-[#B22234] mx-auto mb-4" />
-                      <h3 className="text-xl font-bold text-[#000080] mb-2">
+                      <Calculator className="h-16 w-16 text-[#D4A94E] mx-auto mb-4" />
+                      <h3 className="text-xl font-bold text-[#F6F4EF] mb-2">
                         Ready to Calculate
                       </h3>
-                      <p className="text-slate-500">
+                      <p className="text-[#A8A39A]">
                         Enter your monthly budget on the left and click Calculate
                         to see your lifetime retirement spending projection.
                       </p>
@@ -593,24 +593,24 @@ export default function RetirementSpendingCalculatorPage() {
       </section>
 
       {/* Gold IRA Bridge Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[#B22234]/5 border border-[#B22234]/30 rounded-2xl p-8">
+            <div className="bg-[rgba(220,38,38,0.06)] border border-[#B22234]/30 rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-6">
-                <Shield className="h-8 w-8 text-[#B22234] flex-shrink-0" />
+                <Shield className="h-8 w-8 text-[#D4A94E] flex-shrink-0" />
                 <div>
-                  <h2 className="text-2xl font-bold text-[#000080] mb-3">
+                  <h2 className="text-2xl font-bold text-[#F6F4EF] mb-3">
                     Protect Your Retirement Spending Power from Inflation
                   </h2>
-                  <p className="text-slate-600 mb-4">
+                  <p className="text-[#D0CCC4] mb-4">
                     As you've seen, inflation significantly erodes your
                     purchasing power over time. Protect your retirement spending
                     needs with a strategic gold allocation. Financial experts
                     often recommend 10-15% of retirement assets in precious
                     metals to hedge against inflation.
                   </p>
-                  <ul className="space-y-2 text-slate-600 text-sm mb-6">
+                  <ul className="space-y-2 text-[#D0CCC4] text-sm mb-6">
                     <li className="flex items-center gap-2">
                       <CheckCircle2 className="h-4 w-4 text-green-600" />
                       Gold historically outpaces inflation
@@ -642,45 +642,45 @@ export default function RetirementSpendingCalculatorPage() {
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-4">
                 Average Retirement Spending by Category
               </h2>
-              <p className="text-slate-600 max-w-2xl mx-auto">
+              <p className="text-[#D0CCC4] max-w-2xl mx-auto">
                 How does your budget compare to typical retiree spending?
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
                   <Home className="h-6 w-6 text-blue-600" />
                 </div>
-                <h3 className="text-lg font-bold text-[#000080] mb-3">Housing</h3>
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-3">Housing</h3>
                 <p className="text-3xl font-bold text-blue-600 mb-2">35-40%</p>
-                <p className="text-sm text-slate-500">
+                <p className="text-sm text-[#A8A39A]">
                   Typically the largest expense, including property taxes and
                   utilities
                 </p>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center mb-4">
                   <Heart className="h-6 w-6 text-red-600" />
                 </div>
-                <h3 className="text-lg font-bold text-[#000080] mb-3">Healthcare</h3>
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-3">Healthcare</h3>
                 <p className="text-3xl font-bold text-red-600 mb-2">15-20%</p>
-                <p className="text-sm text-slate-500">
+                <p className="text-sm text-[#A8A39A]">
                   Increases with age; Medicare doesn't cover everything
                 </p>
               </div>
 
-              <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
                 <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4">
                   <Utensils className="h-6 w-6 text-green-600" />
                 </div>
-                <h3 className="text-lg font-bold text-[#000080] mb-3">Food</h3>
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-3">Food</h3>
                 <p className="text-3xl font-bold text-green-600 mb-2">12-15%</p>
-                <p className="text-sm text-slate-500">
+                <p className="text-sm text-[#A8A39A]">
                   Groceries and dining out; varies by lifestyle
                 </p>
               </div>
@@ -690,8 +690,8 @@ export default function RetirementSpendingCalculatorPage() {
               <div className="flex items-start gap-3">
                 <Info className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="text-slate-900 font-semibold mb-2">Planning Tip</h4>
-                  <p className="text-slate-600 text-sm">
+                  <h4 className="text-[#F6F4EF] font-semibold mb-2">Planning Tip</h4>
+                  <p className="text-[#D0CCC4] text-sm">
                     Most financial advisors recommend planning for 70-80% of your
                     pre-retirement income. However, the first decade of retirement
                     often sees higher spending due to travel and active lifestyle,
@@ -705,7 +705,7 @@ export default function RetirementSpendingCalculatorPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <AugustaCTA
@@ -723,14 +723,14 @@ export default function RetirementSpendingCalculatorPage() {
       <section className="py-8 bg-white">
         <Container>
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white border border-slate-200 shadow-sm rounded-xl p-6">
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-xl p-6">
               <div className="flex items-start gap-3">
-                <Shield className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                <Shield className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-slate-900 font-semibold mb-2">
+                  <h3 className="text-[#F6F4EF] font-semibold mb-2">
                     Important Disclaimer
                   </h3>
-                  <p className="text-slate-600 text-sm">
+                  <p className="text-[#D0CCC4] text-sm">
                     This calculator provides estimates for educational purposes
                     only and is not financial advice. Actual retirement expenses
                     vary widely based on location, health, lifestyle, and

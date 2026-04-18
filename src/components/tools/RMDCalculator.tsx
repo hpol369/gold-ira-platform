@@ -138,19 +138,19 @@ export function RMDCalculator() {
     }).format(amount);
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-[#0C0D18]">
       <Container>
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/10 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6">
               <Calculator className="h-4 w-4" />
               RMD CALCULATOR
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
               RMD Calculator 2026
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
               Plan your Gold IRA withdrawals and understand how RMDs affect your
               retirement income.
             </p>
@@ -158,12 +158,12 @@ export function RMDCalculator() {
 
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Input Panel */}
-            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-[#000080] mb-6">Your Information</h3>
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#F6F4EF] mb-6">Your Information</h3>
 
               {/* Birth Year */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   Birth Year
                 </label>
                 <input
@@ -172,36 +172,36 @@ export function RMDCalculator() {
                   onChange={(e) => setBirthYear(Number(e.target.value))}
                   min={1930}
                   max={currentYear - 72}
-                  className="w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-[#B22234]"
+                  className="w-full px-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] text-lg focus:outline-none focus:border-[#B22234]"
                 />
-                <p className="text-slate-500 text-sm mt-2">
+                <p className="text-[#A8A39A] text-sm mt-2">
                   You are currently {currentAge} years old
                 </p>
               </div>
 
               {/* Account Balance */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
+                <label className="block text-[#D0CCC4] text-sm mb-2">
                   Traditional IRA/Gold IRA Balance
                 </label>
                 <div className="relative">
-                  <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                  <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                   <input
                     type="number"
                     value={accountBalance}
                     onChange={(e) => setAccountBalance(Number(e.target.value))}
-                    className="w-full pl-12 pr-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 text-lg focus:outline-none focus:border-[#B22234]"
+                    className="w-full pl-12 pr-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] text-lg focus:outline-none focus:border-[#B22234]"
                   />
                 </div>
-                <p className="text-slate-500 text-sm mt-2">
+                <p className="text-[#A8A39A] text-sm mt-2">
                   Enter your total traditional IRA balance (as of Dec 31 prior year)
                 </p>
               </div>
 
               {/* Projected Growth */}
               <div className="mb-6">
-                <label className="block text-slate-600 text-sm mb-2">
-                  Projected Annual Growth Rate: <span className="text-[#B22234] font-bold">{growthRate}%</span>
+                <label className="block text-[#D0CCC4] text-sm mb-2">
+                  Projected Annual Growth Rate: <span className="text-[#D4A94E] font-bold">{growthRate}%</span>
                 </label>
                 <input
                   type="range"
@@ -212,7 +212,7 @@ export function RMDCalculator() {
                   onChange={(e) => setGrowthRate(Number(e.target.value))}
                   className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#B22234]"
                 />
-                <div className="flex justify-between text-xs text-slate-500 mt-1">
+                <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                   <span>0%</span>
                   <span>6%</span>
                   <span>12%</span>
@@ -220,14 +220,14 @@ export function RMDCalculator() {
               </div>
 
               {/* RMD Start Age Info */}
-              <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-4 mb-6">
+              <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <Info className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <Info className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-[#B22234] font-semibold text-sm">
+                    <p className="text-[#D4A94E] font-semibold text-sm">
                       Your RMD Start Age: {rmdStartAge}
                     </p>
-                    <p className="text-slate-600 text-sm mt-1">
+                    <p className="text-[#D0CCC4] text-sm mt-1">
                       Based on SECURE 2.0 Act rules for your birth year.
                     </p>
                   </div>
@@ -237,7 +237,7 @@ export function RMDCalculator() {
               {/* Calculate Button */}
               <button
                 onClick={calculateRMD}
-                className="w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-slate-900 font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
+                className="w-full py-4 bg-[#DC2626] hover:bg-[#991B1B] text-[#F6F4EF] font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2"
               >
                 <Calculator className="h-5 w-5" />
                 Calculate RMD
@@ -245,21 +245,21 @@ export function RMDCalculator() {
             </div>
 
             {/* Results Panel */}
-            <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-[#000080] mb-6">Your Results</h3>
+            <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#F6F4EF] mb-6">Your Results</h3>
 
               {result ? (
                 <div className="space-y-6">
                   {/* Current Year RMD */}
-                  <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-5">
-                    <div className="flex items-center gap-2 text-[#B22234] text-sm mb-2">
+                  <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-5">
+                    <div className="flex items-center gap-2 text-[#D4A94E] text-sm mb-2">
                       <Calendar className="h-4 w-4" />
                       {currentYear} REQUIRED MINIMUM DISTRIBUTION
                     </div>
-                    <div className="text-3xl font-bold text-[#000080] mb-2">
+                    <div className="text-3xl font-bold text-[#F6F4EF] mb-2">
                       {formatCurrency(result.rmdAmount)}
                     </div>
-                    <div className="flex gap-4 text-sm text-slate-500">
+                    <div className="flex gap-4 text-sm text-[#A8A39A]">
                       <span>
                         Distribution Period: {result.distributionPeriod.toFixed(1)} years
                       </span>
@@ -270,10 +270,10 @@ export function RMDCalculator() {
                   </div>
 
                   {/* Explanation */}
-                  <div className="bg-slate-50 rounded-xl p-4">
-                    <p className="text-slate-600 text-sm">
+                  <div className="bg-[#0C0D18] rounded-xl p-4">
+                    <p className="text-[#D0CCC4] text-sm">
                       At age {result.currentAge}, you must withdraw at least{" "}
-                      <span className="text-slate-900 font-semibold">
+                      <span className="text-[#F6F4EF] font-semibold">
                         {formatCurrency(result.rmdAmount)}
                       </span>{" "}
                       from your traditional IRA. This is calculated by dividing your
@@ -283,34 +283,34 @@ export function RMDCalculator() {
 
                   {/* 10-Year Projection */}
                   <div>
-                    <div className="flex items-center gap-2 text-slate-900 font-semibold mb-4">
-                      <TrendingDown className="h-5 w-5 text-[#B22234]" />
+                    <div className="flex items-center gap-2 text-[#F6F4EF] font-semibold mb-4">
+                      <TrendingDown className="h-5 w-5 text-[#D4A94E]" />
                       10-Year RMD Projection
                     </div>
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm">
                         <thead>
-                          <tr className="border-b border-slate-200">
-                            <th className="py-2 px-2 text-left text-slate-500">Age</th>
-                            <th className="py-2 px-2 text-right text-slate-500">Balance</th>
-                            <th className="py-2 px-2 text-right text-slate-500">RMD</th>
+                          <tr className="border-b border-[#2A2D42]">
+                            <th className="py-2 px-2 text-left text-[#A8A39A]">Age</th>
+                            <th className="py-2 px-2 text-right text-[#A8A39A]">Balance</th>
+                            <th className="py-2 px-2 text-right text-[#A8A39A]">RMD</th>
                           </tr>
                         </thead>
                         <tbody>
                           {result.projections.map((proj, idx) => (
                             <tr
                               key={proj.year}
-                              className={`border-b border-slate-200 ${
+                              className={`border-b border-[#2A2D42] ${
                                 idx === 0 ? "bg-amber-500/5" : ""
                               }`}
                             >
-                              <td className="py-2 px-2 text-slate-600">
+                              <td className="py-2 px-2 text-[#D0CCC4]">
                                 {proj.age} ({proj.year})
                               </td>
-                              <td className="py-2 px-2 text-right text-slate-500">
+                              <td className="py-2 px-2 text-right text-[#A8A39A]">
                                 {formatCurrency(proj.startingBalance)}
                               </td>
-                              <td className="py-2 px-2 text-right text-[#B22234] font-medium">
+                              <td className="py-2 px-2 text-right text-[#D4A94E] font-medium">
                                 {formatCurrency(proj.rmd)}
                               </td>
                             </tr>
@@ -318,7 +318,7 @@ export function RMDCalculator() {
                         </tbody>
                       </table>
                     </div>
-                    <p className="text-slate-500 text-xs mt-2">
+                    <p className="text-[#A8A39A] text-xs mt-2">
                       * Assumes {growthRate}% annual growth after RMD withdrawal
                     </p>
                   </div>
@@ -326,7 +326,7 @@ export function RMDCalculator() {
                   {/* CTA */}
                   <Link
                     href="/get-started"
-                    className="block w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-slate-900 font-bold text-center rounded-xl transition-all"
+                    className="block w-full py-4 bg-[#DC2626] hover:bg-[#991B1B] text-[#F6F4EF] font-bold text-center rounded-xl transition-all"
                   >
                     Plan Your Gold IRA Strategy
                     <ArrowRight className="inline ml-2 h-5 w-5" />
@@ -334,10 +334,10 @@ export function RMDCalculator() {
                 </div>
               ) : (
                 <div className="h-full flex flex-col items-center justify-center text-center py-12">
-                  <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mb-4">
-                    <Calculator className="h-8 w-8 text-slate-500" />
+                  <div className="w-16 h-16 bg-[#121423] rounded-2xl flex items-center justify-center mb-4">
+                    <Calculator className="h-8 w-8 text-[#A8A39A]" />
                   </div>
-                  <p className="text-slate-500">
+                  <p className="text-[#A8A39A]">
                     Enter your information and click &quot;Calculate RMD&quot; to see your
                     required minimum distribution.
                   </p>
@@ -353,10 +353,10 @@ export function RMDCalculator() {
                 <Info className="h-6 w-6 text-green-600" />
               </div>
               <div>
-                <h4 className="text-slate-900 font-semibold mb-2">
+                <h4 className="text-[#F6F4EF] font-semibold mb-2">
                   Want to Avoid RMDs? Consider a Roth Gold IRA
                 </h4>
-                <p className="text-slate-600 text-sm">
+                <p className="text-[#D0CCC4] text-sm">
                   Roth IRAs have no Required Minimum Distributions during your lifetime.
                   If you don&apos;t need the income and want to leave a tax-free inheritance,
                   a Roth Gold IRA might be a better choice.{" "}

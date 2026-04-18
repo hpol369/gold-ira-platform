@@ -108,11 +108,11 @@ export function RobsFlowSteps({ onAnswer, onBack }: FlowStepsProps) {
       <div className="flex items-center justify-between mb-6">
         <button
           onClick={handleBack}
-          className="flex items-center gap-1 text-sm text-slate-400 hover:text-white transition-colors"
+          className="flex items-center gap-1 text-sm text-[#A8A39A] hover:text-white transition-colors"
         >
           <ArrowLeft className="h-4 w-4" /> Back
         </button>
-        <span className="text-sm text-slate-400">
+        <span className="text-sm text-[#A8A39A]">
           Step {currentStepIndex + 1} of {steps.length}
         </span>
       </div>
@@ -141,14 +141,14 @@ export function RobsFlowSteps({ onAnswer, onBack }: FlowStepsProps) {
               <button
                 key={option.value}
                 onClick={() => handleOptionSelect(option.value)}
-                className="group relative flex items-center justify-between p-6 text-left rounded-xl border-2 border-white/10 hover:border-orange-500/50 hover:bg-white/10 transition-all duration-200 bg-white/5 backdrop-blur-sm"
+                className="group relative flex items-center justify-between p-6 text-left rounded-xl border-2 border-white/10 hover:border-orange-500/50 hover:bg-[#1E2134]/10 transition-all duration-200 bg-white/5 backdrop-blur-sm"
               >
                 <div className="flex-1">
                   <span className="block text-lg font-medium text-white group-hover:text-orange-400">
                     {option.label}
                   </span>
                   {option.description && (
-                    <span className="block text-sm text-slate-400 mt-1">
+                    <span className="block text-sm text-[#A8A39A] mt-1">
                       {option.description}
                     </span>
                   )}

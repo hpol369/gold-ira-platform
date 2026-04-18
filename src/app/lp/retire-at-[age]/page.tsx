@@ -122,9 +122,9 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
   const source = `lp-retire-at-${age}`;
 
   return (
-    <div className="min-h-screen bg-white text-slate-900 font-sans">
+    <div className="min-h-screen bg-white text-[#F6F4EF] font-sans">
       {/* Urgency Bar */}
-      <div className="bg-[#000080] text-white p-3 text-center font-semibold text-sm">
+      <div className="bg-[rgba(197,149,46,0.1)] text-white p-3 text-center font-semibold text-sm">
         <span className="flex items-center justify-center gap-2">
           <Clock className="h-4 w-4" />
           {data.urgencyText}
@@ -132,7 +132,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
       </div>
 
       {/* Hero Section - Above the fold conversion focus */}
-      <header className="relative py-12 md:py-16 bg-gradient-to-b from-slate-50 to-white">
+      <header className="relative py-12 md:py-16 bg-[#0C0D18]">
         <div className="max-w-4xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left: Copy */}
@@ -143,34 +143,34 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
                 #1 RATED BY MONEY MAGAZINE
               </div>
 
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#000080] mb-4 leading-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#F6F4EF] mb-4 leading-tight">
                 {data.headline}
               </h1>
 
-              <p className="text-lg text-slate-600 mb-6">{data.subheadline}</p>
+              <p className="text-lg text-[#D0CCC4] mb-6">{data.subheadline}</p>
 
               {/* Key Stat */}
               <div className="bg-red-50 border-l-4 border-[#B22234] p-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <AlertTriangle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-bold text-[#B22234]">Your Challenge at {data.age}:</p>
-                    <p className="text-slate-700">{data.painPoint}</p>
+                    <p className="font-bold text-[#D4A94E]">Your Challenge at {data.age}:</p>
+                    <p className="text-[#D0CCC4]">{data.painPoint}</p>
                   </div>
                 </div>
               </div>
 
               {/* Benefits */}
               <ul className="space-y-2 mb-6">
-                <li className="flex items-center gap-2 text-slate-700">
+                <li className="flex items-center gap-2 text-[#D0CCC4]">
                   <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0" />
                   Personalized retirement number calculation
                 </li>
-                <li className="flex items-center gap-2 text-slate-700">
+                <li className="flex items-center gap-2 text-[#D0CCC4]">
                   <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0" />
                   Inflation protection strategies for {data.timeHorizon} years
                 </li>
-                <li className="flex items-center gap-2 text-slate-700">
+                <li className="flex items-center gap-2 text-[#D0CCC4]">
                   <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0" />
                   Tax-free rollover options explained
                 </li>
@@ -180,23 +180,23 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
               <LeadCaptureButton
                 variant="retirement-number"
                 source={`${source}-hero`}
-                className="w-full md:w-auto bg-[#B22234] hover:bg-[#8b1c2a] text-white text-lg font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                className="w-full md:w-auto bg-[#DC2626] hover:bg-[#991B1B] text-white text-lg font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
               >
                 Get My Retirement Number
                 <ArrowRight className="h-5 w-5" />
               </LeadCaptureButton>
 
-              <p className="text-xs text-slate-500 mt-3 flex items-center gap-1">
+              <p className="text-xs text-[#A8A39A] mt-3 flex items-center gap-1">
                 <ShieldCheck className="h-3 w-3" />
                 Free • No obligation • Takes 60 seconds
               </p>
             </div>
 
             {/* Right: Social Proof Card */}
-            <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-6 md:p-8">
+            <div className="bg-[#161828] rounded-2xl shadow-xl border border-[#2A2D42] p-6 md:p-8">
               <div className="text-center mb-6">
-                <div className="text-5xl font-black text-[#000080] mb-1">23,000+</div>
-                <p className="text-slate-600">Americans Trust Augusta</p>
+                <div className="text-5xl font-black text-[#F6F4EF] mb-1">23,000+</div>
+                <p className="text-[#D0CCC4]">Americans Trust Augusta</p>
               </div>
 
               {/* Rating */}
@@ -206,37 +206,37 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
                     <Star key={i} className="h-6 w-6 text-amber-400 fill-current" />
                   ))}
                 </div>
-                <span className="text-lg font-bold text-slate-700">4.9/5</span>
+                <span className="text-lg font-bold text-[#D0CCC4]">4.9/5</span>
               </div>
 
               {/* Trust Signals */}
               <div className="grid grid-cols-2 gap-4 text-center">
-                <div className="bg-slate-50 rounded-lg p-3">
-                  <div className="text-2xl font-black text-[#000080]">A+</div>
-                  <div className="text-xs text-slate-500">BBB Rating</div>
+                <div className="bg-[#0C0D18] rounded-lg p-3">
+                  <div className="text-2xl font-black text-[#F6F4EF]">A+</div>
+                  <div className="text-xs text-[#A8A39A]">BBB Rating</div>
                 </div>
-                <div className="bg-slate-50 rounded-lg p-3">
-                  <div className="text-2xl font-black text-[#000080]">AAA</div>
-                  <div className="text-xs text-slate-500">BCA Rating</div>
+                <div className="bg-[#0C0D18] rounded-lg p-3">
+                  <div className="text-2xl font-black text-[#F6F4EF]">AAA</div>
+                  <div className="text-xs text-[#A8A39A]">BCA Rating</div>
                 </div>
-                <div className="bg-slate-50 rounded-lg p-3">
-                  <div className="text-2xl font-black text-[#000080]">0</div>
-                  <div className="text-xs text-slate-500">BBB Complaints</div>
+                <div className="bg-[#0C0D18] rounded-lg p-3">
+                  <div className="text-2xl font-black text-[#F6F4EF]">0</div>
+                  <div className="text-xs text-[#A8A39A]">BBB Complaints</div>
                 </div>
-                <div className="bg-slate-50 rounded-lg p-3">
-                  <div className="text-2xl font-black text-[#000080]">#1</div>
-                  <div className="text-xs text-slate-500">Money Mag 2024</div>
+                <div className="bg-[#0C0D18] rounded-lg p-3">
+                  <div className="text-2xl font-black text-[#F6F4EF]">#1</div>
+                  <div className="text-xs text-[#A8A39A]">Money Mag 2024</div>
                 </div>
               </div>
 
               {/* Joe Montana */}
-              <div className="mt-6 pt-6 border-t border-slate-200 flex items-center gap-3">
-                <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center text-[#000080] font-bold text-lg">
+              <div className="mt-6 pt-6 border-t border-[#2A2D42] flex items-center gap-3">
+                <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center text-[#F6F4EF] font-bold text-lg">
                   JM
                 </div>
                 <div>
-                  <p className="font-bold text-slate-800">Joe Montana</p>
-                  <p className="text-xs text-slate-500">NFL Legend & Augusta Customer</p>
+                  <p className="font-bold text-[#F6F4EF]">Joe Montana</p>
+                  <p className="text-xs text-[#A8A39A]">NFL Legend & Augusta Customer</p>
                 </div>
               </div>
             </div>
@@ -249,20 +249,20 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
         <div className="max-w-4xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Problem */}
-            <div className="bg-[#B22234]/20 rounded-xl p-6 border border-[#B22234]/30">
-              <div className="flex items-center gap-2 text-[#B22234] font-bold mb-4">
+            <div className="bg-[rgba(220,38,38,0.18)] rounded-xl p-6 border border-[#B22234]/30">
+              <div className="flex items-center gap-2 text-[#D4A94E] font-bold mb-4">
                 <TrendingDown className="h-5 w-5" />
                 THE HIDDEN THREAT
               </div>
               <h3 className="text-xl font-bold mb-3">
                 Inflation Could Wipe Out 40% of Your Savings
               </h3>
-              <p className="text-slate-300 mb-4">
+              <p className="text-[#3F4460] mb-4">
                 At 3.5% annual inflation, your ${data.age === 55 ? "500,000" : "500,000"} will only
                 buy ${data.age === 55 ? "295,000" : data.age === 60 ? "325,000" : "340,000"} worth
                 of goods in {data.timeHorizon} years.
               </p>
-              <p className="text-slate-400 text-sm">
+              <p className="text-[#A8A39A] text-sm">
                 Most retirement calculators ignore this. They assume your dollars will buy the same
                 groceries in 20 years. They won&apos;t.
               </p>
@@ -275,20 +275,20 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
                 THE GOLD HEDGE
               </div>
               <h3 className="text-xl font-bold mb-3">Gold Rises When Dollars Fall</h3>
-              <p className="text-slate-300 mb-4">
+              <p className="text-[#3F4460] mb-4">
                 Gold has protected purchasing power for 5,000 years. When the government prints
                 money, gold typically rises in value.
               </p>
               <ul className="space-y-2 text-sm">
-                <li className="flex items-center gap-2 text-slate-300">
+                <li className="flex items-center gap-2 text-[#3F4460]">
                   <CheckCircle2 className="h-4 w-4 text-green-400" />
                   Tax-free 401(k)/IRA rollover
                 </li>
-                <li className="flex items-center gap-2 text-slate-300">
+                <li className="flex items-center gap-2 text-[#3F4460]">
                   <CheckCircle2 className="h-4 w-4 text-green-400" />
                   Physical gold you own
                 </li>
-                <li className="flex items-center gap-2 text-slate-300">
+                <li className="flex items-center gap-2 text-[#3F4460]">
                   <CheckCircle2 className="h-4 w-4 text-green-400" />
                   Historically rises during crises
                 </li>
@@ -301,70 +301,70 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
       {/* 2008 Comparison - Quick Visual */}
       <section className="py-12 bg-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#000080] mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#F6F4EF] mb-8">
             What Happened in 2008?
           </h2>
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-red-50 rounded-xl p-6 border border-red-200">
-              <TrendingDown className="h-10 w-10 text-[#B22234] mx-auto mb-3" />
-              <div className="text-4xl font-black text-[#B22234] mb-1">-50%</div>
-              <div className="text-slate-600">S&P 500</div>
-              <p className="text-xs text-slate-500 mt-2">Stocks crashed</p>
+              <TrendingDown className="h-10 w-10 text-[#D4A94E] mx-auto mb-3" />
+              <div className="text-4xl font-black text-[#D4A94E] mb-1">-50%</div>
+              <div className="text-[#D0CCC4]">S&P 500</div>
+              <p className="text-xs text-[#A8A39A] mt-2">Stocks crashed</p>
             </div>
             <div className="bg-green-50 rounded-xl p-6 border border-green-200">
               <Shield className="h-10 w-10 text-green-600 mx-auto mb-3" />
               <div className="text-4xl font-black text-green-600 mb-1">+25%</div>
-              <div className="text-slate-600">Gold</div>
-              <p className="text-xs text-slate-500 mt-2">Gold protected</p>
+              <div className="text-[#D0CCC4]">Gold</div>
+              <p className="text-xs text-[#A8A39A] mt-2">Gold protected</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
             Real People. Real Protection.
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-slate-200">
+            <div className="bg-[#161828] rounded-xl p-5 shadow-sm border border-[#2A2D42]">
               <div className="flex gap-1 mb-3">
                 {[1, 2, 3, 4, 5].map((i) => (
                   <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
                 ))}
               </div>
-              <p className="text-slate-600 text-sm mb-3 italic">
+              <p className="text-[#D0CCC4] text-sm mb-3 italic">
                 &quot;I was planning to retire at 58 and worried my savings wouldn&apos;t last. Augusta
                 showed me how gold could protect my purchasing power.&quot;
               </p>
-              <p className="text-sm font-semibold text-slate-800">Robert M., TX</p>
+              <p className="text-sm font-semibold text-[#F6F4EF]">Robert M., TX</p>
             </div>
 
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-slate-200">
+            <div className="bg-[#161828] rounded-xl p-5 shadow-sm border border-[#2A2D42]">
               <div className="flex gap-1 mb-3">
                 {[1, 2, 3, 4, 5].map((i) => (
                   <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
                 ))}
               </div>
-              <p className="text-slate-600 text-sm mb-3 italic">
+              <p className="text-[#D0CCC4] text-sm mb-3 italic">
                 &quot;The rollover was seamless — no taxes, no hassle. Now I sleep better knowing
                 part of my retirement is in physical gold.&quot;
               </p>
-              <p className="text-sm font-semibold text-slate-800">Susan K., FL</p>
+              <p className="text-sm font-semibold text-[#F6F4EF]">Susan K., FL</p>
             </div>
 
-            <div className="bg-white rounded-xl p-5 shadow-sm border border-slate-200">
+            <div className="bg-[#161828] rounded-xl p-5 shadow-sm border border-[#2A2D42]">
               <div className="flex gap-1 mb-3">
                 {[1, 2, 3, 4, 5].map((i) => (
                   <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
                 ))}
               </div>
-              <p className="text-slate-600 text-sm mb-3 italic">
+              <p className="text-[#D0CCC4] text-sm mb-3 italic">
                 &quot;No pressure, just education. They helped me understand my options before I
                 made any decisions.&quot;
               </p>
-              <p className="text-sm font-semibold text-slate-800">Michael T., AZ</p>
+              <p className="text-sm font-semibold text-[#F6F4EF]">Michael T., AZ</p>
             </div>
           </div>
         </div>
@@ -373,17 +373,17 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
       {/* FAQ Section - Objection Handling */}
       <section className="py-12 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
             Common Questions
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-slate-50 rounded-lg p-5 border border-slate-200"
+                className="bg-[#0C0D18] rounded-lg p-5 border border-[#2A2D42]"
               >
-                <h3 className="font-bold text-[#000080] mb-2">{faq.question}</h3>
-                <p className="text-slate-600 text-sm">{faq.answer}</p>
+                <h3 className="font-bold text-[#F6F4EF] mb-2">{faq.question}</h3>
+                <p className="text-[#D0CCC4] text-sm">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -391,12 +391,12 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-[#000080]">
+      <section className="py-16 bg-[rgba(197,149,46,0.1)]">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Find Your Number?
           </h2>
-          <p className="text-slate-300 text-lg mb-8">
+          <p className="text-[#3F4460] text-lg mb-8">
             Get your personalized retirement calculation — and learn how to protect it for{" "}
             {data.timeHorizon} years.
           </p>
@@ -404,7 +404,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
           <LeadCaptureButton
             variant="retirement-number"
             source={`${source}-footer`}
-            className="bg-[#B22234] hover:bg-[#8b1c2a] text-white text-xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-all inline-flex items-center gap-3"
+            className="bg-[#DC2626] hover:bg-[#991B1B] text-white text-xl font-bold py-5 px-10 rounded-lg shadow-xl hover:scale-105 transition-all inline-flex items-center gap-3"
           >
             Get My Retirement Number
             <ArrowRight className="h-6 w-6" />
@@ -428,7 +428,7 @@ export default async function RetireAtAgeLandingPage({ params }: PageProps) {
       </section>
 
       {/* Minimal Footer */}
-      <footer className="bg-slate-900 text-slate-500 py-6 text-center text-xs">
+      <footer className="bg-slate-900 text-[#A8A39A] py-6 text-center text-xs">
         <div className="max-w-4xl mx-auto px-4">
           <p>&copy; 2026 Rich Dad Retirement. All Rights Reserved.</p>
           <p className="mt-2">

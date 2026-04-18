@@ -159,11 +159,11 @@ export function SocialProofTicker() {
             isExiting ? 'notification-exit' : 'notification-enter'
           }`}
         >
-          <div className="relative max-w-xs bg-white rounded-lg border border-slate-200 shadow-lg overflow-hidden">
+          <div className="relative max-w-xs bg-[#161828] rounded-lg border border-[#2A2D42] shadow-lg overflow-hidden">
             {/* Close button */}
             <button
               onClick={handleDismiss}
-              className="absolute top-2 right-2 p-1 text-slate-400 hover:text-slate-700 transition-colors rounded-full hover:bg-slate-100"
+              className="absolute top-2 right-2 p-1 text-[#A8A39A] hover:text-[#F6F4EF] transition-colors rounded-full hover:bg-[#1E2134]"
               aria-label="Dismiss notifications"
             >
               <X className="w-3.5 h-3.5" />
@@ -171,12 +171,12 @@ export function SocialProofTicker() {
 
             <div className="p-4 pr-8">
               {/* Main notification text */}
-              <p className="text-sm text-slate-700 leading-relaxed">
-                <span className="font-semibold text-[#B22234]">
+              <p className="text-sm text-[#D0CCC4] leading-relaxed">
+                <span className="font-semibold text-[#D4A94E]">
                   {currentNotification.name}
                 </span>{" "}
                 from{" "}
-                <span className="font-medium text-slate-900">
+                <span className="font-medium text-[#F6F4EF]">
                   {currentNotification.state}
                 </span>{" "}
                 {currentNotification.action}
@@ -184,8 +184,8 @@ export function SocialProofTicker() {
 
               {/* Time and location indicator */}
               <div className="flex items-center gap-2 mt-2">
-                <MapPin className="w-3 h-3 text-slate-400" />
-                <span className="text-xs text-slate-500">
+                <MapPin className="w-3 h-3 text-[#A8A39A]" />
+                <span className="text-xs text-[#A8A39A]">
                   {currentNotification.timeAgo}
                 </span>
               </div>

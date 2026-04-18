@@ -61,8 +61,8 @@ export function SpotPriceWidget({ metal = "gold", showTitle = true }: SpotPriceW
 
   if (loading) {
     return (
-      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-        {showTitle && <h3 className="text-lg font-bold text-[#000080] mb-4">{metalLabel} Price Today</h3>}
+      <div className="bg-[#161828] border border-[#2A2D42] rounded-xl p-6 shadow-sm">
+        {showTitle && <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">{metalLabel} Price Today</h3>}
         <div className="animate-pulse">
           <div className="h-8 bg-slate-200 rounded w-32 mb-2"></div>
           <div className="h-4 bg-slate-200 rounded w-24"></div>
@@ -73,23 +73,23 @@ export function SpotPriceWidget({ metal = "gold", showTitle = true }: SpotPriceW
 
   if (error || !price) {
     return (
-      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-        {showTitle && <h3 className="text-lg font-bold text-[#000080] mb-4">{metalLabel} Price Today</h3>}
-        <p className="text-slate-500 text-sm">Price data unavailable</p>
+      <div className="bg-[#161828] border border-[#2A2D42] rounded-xl p-6 shadow-sm">
+        {showTitle && <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">{metalLabel} Price Today</h3>}
+        <p className="text-[#A8A39A] text-sm">Price data unavailable</p>
       </div>
     );
   }
 
   return (
-    <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
-      {showTitle && <h3 className="text-lg font-bold text-[#000080] mb-4">{metalLabel} Price Today</h3>}
-      <div className="text-3xl font-black text-[#B22234] mb-2">
+    <div className="bg-[#161828] border border-[#2A2D42] rounded-xl p-6 shadow-sm">
+      {showTitle && <h3 className="text-lg font-bold text-[#F6F4EF] mb-4">{metalLabel} Price Today</h3>}
+      <div className="text-3xl font-black text-[#D4A94E] mb-2">
         {formatCurrency(price.price)}
       </div>
       <div className={`text-sm font-bold ${isPositive ? "text-green-600" : "text-red-600"}`}>
         {isPositive ? "+" : ""}{formatCurrency(price.change24h)} ({isPositive ? "+" : ""}{price.changePercent24h.toFixed(2)}%)
       </div>
-      <p className="text-xs text-slate-400 mt-3 font-medium">
+      <p className="text-xs text-[#A8A39A] mt-3 font-medium">
         Updated hourly. For informational purposes only.
       </p>
     </div>

@@ -16,24 +16,24 @@ export const metadata = {
 
 export default function AugustaReviewPage() {
     return (
-        <main className="min-h-screen flex flex-col bg-slate-50">
+        <main className="min-h-screen flex flex-col bg-[#0C0D18]">
             <Navbar />
 
             <div className="flex-grow">
-                <header className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-1/3 h-full bg-[#000080]/5 skew-x-12 transform translate-x-20 pointer-events-none"></div>
+                <header className="bg-[#0C0D18] border-b border-[#2A2D42] py-16 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-1/3 h-full bg-[rgba(197,149,46,0.06)] skew-x-12 transform translate-x-20 pointer-events-none"></div>
                     <Container className="relative z-10">
                         <div className="max-w-4xl">
-                            <div className="flex items-center gap-2 text-[#B22234] text-sm font-bold uppercase tracking-wider mb-4">
-                                <span className="bg-white px-2 py-1 rounded border border-slate-200">Gold IRA Company Reviews</span>
+                            <div className="flex items-center gap-2 text-[#D4A94E] text-sm font-bold uppercase tracking-wider mb-4">
+                                <span className="bg-[rgba(197,149,46,0.1)] px-2 py-1 rounded border border-[#2A2D42]">Gold IRA Company Reviews</span>
                                 <span>•</span>
                                 <span>Updated Jan 2026</span>
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#000080]">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight text-[#F6F4EF]">
                                 Augusta Precious Metals Review: <br />
-                                <span className="text-slate-500">Premium Service or Overpriced?</span>
+                                <span className="text-[#A8A39A]">Premium Service or Overpriced?</span>
                             </h1>
-                            <p className="text-xl text-slate-600 max-w-2xl leading-relaxed">
+                            <p className="text-xl text-[#D0CCC4] max-w-2xl leading-relaxed">
                                 Joe Montana endorses them. Money Magazine featured them. But with a $50,000 minimum, is Augusta actually worth it for your retirement savings?
                             </p>
                         </div>
@@ -55,7 +55,7 @@ export default function AugustaReviewPage() {
                                 ctaText="Get Free Gold IRA Guide"
                             />
 
-                            <div className="prose prose-lg max-w-none text-slate-600 prose-headings:text-[#000080] prose-strong:text-slate-900 prose-a:text-[#B22234]">
+                            <div className="prose prose-lg max-w-none text-[#D0CCC4] prose-headings:text-[#F6F4EF] prose-strong:text-[#F6F4EF] prose-a:text-[#D4A94E]">
                                 <h2>The Bottom Line</h2>
                                 <p>
                                     <strong>Look, we know you've heard promises before.</strong> Every financial company claims they're "different." After 30+ years of working and saving, you've earned the right to be skeptical. So let's cut through the BS.
@@ -99,10 +99,10 @@ export default function AugustaReviewPage() {
                                 </p>
 
                                 <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 not-prose my-8">
-                                    <h4 className="font-bold text-[#000080] flex items-center gap-2 mb-2">
+                                    <h4 className="font-bold text-[#F6F4EF] flex items-center gap-2 mb-2">
                                         <Info className="w-5 h-5 text-secondary" /> About Dealer Spreads
                                     </h4>
-                                    <p className="text-sm text-slate-600">
+                                    <p className="text-sm text-[#D0CCC4]">
                                         Like all precious metals dealers, Augusta makes money on the spread between buy and sell prices. This is typically 5-8% and is standard across the industry. The difference with Augusta is they don't layer additional commissions on top.
                                     </p>
                                 </div>
@@ -148,7 +148,7 @@ export default function AugustaReviewPage() {
                                     If you've got less than $50,000 to invest, don't worry—there are solid options. Check out <a href="/reviews/noble-gold">Noble Gold</a> (lower minimums, still reputable) or <a href="/reviews/orion-metal-exchange">Orion Metal Exchange</a>.
                                 </p>
 
-                                <hr className="my-12 border-slate-200" />
+                                <hr className="my-12 border-[#2A2D42]" />
 
                                 <h2>Final Verdict - Protection, Not Get-Rich-Quick</h2>
                                 <p>
@@ -161,10 +161,10 @@ export default function AugustaReviewPage() {
                                     <strong>Best for:</strong> Workers with $50,000+ saved who want to protect their nest egg—not gamble with it. If you spent decades building your retirement, Augusta helps you keep it safe.</p>
                             </div>
 
-                            <div className="bg-slate-50 border border-slate-200 p-8 rounded-2xl text-center mt-12 shadow-sm relative overflow-hidden">
+                            <div className="bg-[#0C0D18] border border-[#2A2D42] p-8 rounded-2xl text-center mt-12 shadow-sm relative overflow-hidden">
                                 <div className="relative z-10">
-                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#000080]">Get Augusta's Free Information Kit</h3>
-                                    <p className="mb-8 text-slate-600 max-w-lg mx-auto">
+                                    <h3 className="text-2xl font-serif font-bold mb-4 text-[#F6F4EF]">Get Augusta's Free Information Kit</h3>
+                                    <p className="mb-8 text-[#D0CCC4] max-w-lg mx-auto">
                                         Learn how Gold IRAs work and whether they fit your retirement strategy.
                                     </p>
                                     <LeadCaptureButton

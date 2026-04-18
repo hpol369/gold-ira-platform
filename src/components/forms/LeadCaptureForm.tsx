@@ -117,7 +117,7 @@ export function LeadCaptureForm() {
   const inputStyles = cn(
     "w-full px-4 py-3 rounded-lg",
     "bg-white/5 border border-white/10",
-    "text-white placeholder:text-slate-500",
+    "text-white placeholder:text-[#A8A39A]",
     "focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50",
     "transition-all"
   );
@@ -130,7 +130,7 @@ export function LeadCaptureForm() {
         <h2 className="text-2xl font-serif font-bold text-white mb-2">
           Request Your Free Kit
         </h2>
-        <p className="text-slate-400 text-sm">
+        <p className="text-[#A8A39A] text-sm">
           Fill out the form below and a specialist will contact you within 24 hours.
         </p>
       </div>
@@ -201,7 +201,7 @@ export function LeadCaptureForm() {
             onChange={handleChange}
             className={cn(
               inputStyles,
-              !formData.investmentAmount && "text-slate-500",
+              !formData.investmentAmount && "text-[#A8A39A]",
               errors.investmentAmount && "border-red-500/50"
             )}
           >
@@ -239,7 +239,7 @@ export function LeadCaptureForm() {
         </Button>
 
         {/* Privacy Note */}
-        <div className="flex items-start gap-2 text-xs text-slate-500">
+        <div className="flex items-start gap-2 text-xs text-[#A8A39A]">
           <Lock className="h-4 w-4 flex-shrink-0 mt-0.5" />
           <p>
             Your information is secure and will never be shared. By submitting, you agree to receive information about Gold IRAs via phone, email, and text. You can opt out anytime.

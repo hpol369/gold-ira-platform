@@ -53,7 +53,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
   }).format(data.defaultAmount);
 
   return (
-    <main className="min-h-screen flex flex-col bg-slate-50">
+    <main className="min-h-screen flex flex-col bg-[#0C0D18]">
       <Navbar />
 
       {/* Hero Section */}
@@ -63,29 +63,29 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
             <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-xs font-bold tracking-wider uppercase mb-4">
               Retirement Planning Calculator
             </span>
-            <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#000080] mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-serif font-bold text-[#F6F4EF] mb-6 leading-tight">
               {data.heroHeadline}
             </h1>
-            <p className="text-xl md:text-2xl text-slate-600 leading-relaxed">
+            <p className="text-xl md:text-2xl text-[#D0CCC4] leading-relaxed">
               {data.heroSubheadline}
             </p>
           </div>
 
           {/* Trust Bar */}
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 py-6 border-t border-b border-slate-200 mt-8">
-            <div className="flex items-center gap-2 text-slate-500">
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 py-6 border-t border-b border-[#2A2D42] mt-8">
+            <div className="flex items-center gap-2 text-[#A8A39A]">
               <Shield className="w-5 h-5 text-green-600" />
               <span className="text-sm font-semibold">A+ BBB Rating</span>
             </div>
-            <div className="flex items-center gap-2 text-slate-500">
+            <div className="flex items-center gap-2 text-[#A8A39A]">
               <Award className="w-5 h-5 text-amber-500" />
               <span className="text-sm font-semibold">Money Magazine #1</span>
             </div>
-            <div className="flex items-center gap-2 text-slate-500">
-              <Star className="w-5 h-5 text-[#B22234] fill-current" />
+            <div className="flex items-center gap-2 text-[#A8A39A]">
+              <Star className="w-5 h-5 text-[#D4A94E] fill-current" />
               <span className="text-sm font-semibold">4.9/5 (1,847 Reviews)</span>
             </div>
-            <div className="flex items-center gap-2 text-slate-500">
+            <div className="flex items-center gap-2 text-[#A8A39A]">
               <Users className="w-5 h-5 text-blue-600" />
               <span className="text-sm font-semibold">Trusted by Joe Montana</span>
             </div>
@@ -101,10 +101,10 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
                 Retiring at {data.age}: What You're Up Against
               </h2>
-              <p className="text-slate-600 max-w-2xl mx-auto">
+              <p className="text-[#D0CCC4] max-w-2xl mx-auto">
                 Planning to retire at {data.age} means preparing for {data.timeHorizon} years of
                 withdrawals. Here's what makes this timeline unique.
               </p>
@@ -123,7 +123,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
                       <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 border border-red-200">
                         <span className="text-red-600 text-xs font-bold">{index + 1}</span>
                       </div>
-                      <span className="text-slate-700">{point}</span>
+                      <span className="text-[#D0CCC4]">{point}</span>
                     </li>
                   ))}
                 </ul>
@@ -139,7 +139,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
                   {data.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-slate-700">{benefit}</span>
+                      <span className="text-[#D0CCC4]">{benefit}</span>
                     </li>
                   ))}
                 </ul>
@@ -157,7 +157,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
               <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4 text-white">
                 Now That You Know Your Number...
               </h2>
-              <p className="text-lg text-slate-300">
+              <p className="text-lg text-[#3F4460]">
                 The question isn't just "how much"—it's "how do I protect it for {data.timeHorizon}{" "}
                 years?"
               </p>
@@ -166,14 +166,14 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
                 <h3 className="text-2xl font-bold mb-6 text-white">The "Cash Trap"</h3>
-                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+                <p className="text-lg text-[#3F4460] mb-6 leading-relaxed">
                   Most retirement calculators assume your dollars will buy the same amount of
                   groceries in {data.timeHorizon} years as they do today.
                 </p>
-                <p className="text-lg text-slate-300 mb-6 leading-relaxed">
+                <p className="text-lg text-[#3F4460] mb-6 leading-relaxed">
                   <strong className="text-amber-400">They are dangerously wrong.</strong>
                 </p>
-                <p className="text-lg text-slate-300 mb-8 leading-relaxed">
+                <p className="text-lg text-[#3F4460] mb-8 leading-relaxed">
                   With {data.timeHorizon} years of retirement at {data.age}, inflation could cut
                   your purchasing power by <strong className="text-white">40% or more</strong>. Your{" "}
                   {formattedAmount} might only buy {formattedAmount.replace("$500,000", "$300,000")}{" "}
@@ -181,7 +181,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
                 </p>
               </div>
               <div className="bg-white/5 p-8 rounded-2xl border border-white/10 relative">
-                <div className="absolute -top-4 -left-4 bg-[#B22234] text-white px-4 py-2 font-bold rounded-lg shadow-lg">
+                <div className="absolute -top-4 -left-4 bg-[#DC2626] text-white px-4 py-2 font-bold rounded-lg shadow-lg">
                   The Solution
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-amber-400">The Gold IRA Hedge</h3>
@@ -190,13 +190,13 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
                     <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
                       <span className="text-green-500 font-bold">✓</span>
                     </div>
-                    <span className="text-slate-200">Zero Tax Consequences (Direct Rollover)</span>
+                    <span className="text-[#3F4460]">Zero Tax Consequences (Direct Rollover)</span>
                   </li>
                   <li className="flex gap-3">
                     <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
                       <span className="text-green-500 font-bold">✓</span>
                     </div>
-                    <span className="text-slate-200">
+                    <span className="text-[#3F4460]">
                       Moves Opposite to Dollar (Inflation Hedge)
                     </span>
                   </li>
@@ -204,13 +204,13 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
                     <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
                       <span className="text-green-500 font-bold">✓</span>
                     </div>
-                    <span className="text-slate-200">Physical Asset You Own & Control</span>
+                    <span className="text-[#3F4460]">Physical Asset You Own & Control</span>
                   </li>
                   <li className="flex gap-3">
                     <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center shrink-0">
                       <span className="text-green-500 font-bold">✓</span>
                     </div>
-                    <span className="text-slate-200">
+                    <span className="text-[#3F4460]">
                       Perfect for {data.timeHorizon}-Year Time Horizons
                     </span>
                   </li>
@@ -222,59 +222,59 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
       </section>
 
       {/* Social Proof Section */}
-      <section className="py-16 bg-white border-t border-slate-200">
+      <section className="py-16 bg-[#161828] border-t border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#000080] mb-4">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#F6F4EF] mb-4">
                 Why 23,000+ Americans Trust Augusta
               </h2>
-              <p className="text-slate-600">
+              <p className="text-[#D0CCC4]">
                 Real reviews from verified customers protecting their retirement
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
               {/* Testimonial 1 */}
-              <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+              <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
                 <div className="flex gap-1 mb-3">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-slate-600 text-sm mb-4 italic">
+                <p className="text-[#D0CCC4] text-sm mb-4 italic">
                   "I was worried my savings wouldn't last through retirement. Augusta showed me
                   exactly how gold could protect my purchasing power for the next 25 years."
                 </p>
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#000080] rounded-full flex items-center justify-center text-white text-sm font-bold">
+                  <div className="w-8 h-8 bg-[rgba(197,149,46,0.1)] rounded-full flex items-center justify-center text-white text-sm font-bold">
                     R
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-slate-800">Robert M.</p>
-                    <p className="text-xs text-slate-500">Retired at 58, Texas</p>
+                    <p className="text-sm font-semibold text-[#F6F4EF]">Robert M.</p>
+                    <p className="text-xs text-[#A8A39A]">Retired at 58, Texas</p>
                   </div>
                 </div>
               </div>
 
               {/* Testimonial 2 */}
-              <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+              <div className="bg-[#0C0D18] rounded-xl p-6 border border-[#2A2D42]">
                 <div className="flex gap-1 mb-3">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} className="w-4 h-4 text-amber-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-slate-600 text-sm mb-4 italic">
+                <p className="text-[#D0CCC4] text-sm mb-4 italic">
                   "Planning to retire at 62, I needed to know my number would hold up. The rollover
                   was seamless and I sleep better knowing I have gold backing my retirement."
                 </p>
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-[#B22234] rounded-full flex items-center justify-center text-white text-sm font-bold">
+                  <div className="w-8 h-8 bg-[#DC2626] rounded-full flex items-center justify-center text-white text-sm font-bold">
                     S
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-slate-800">Susan K.</p>
-                    <p className="text-xs text-slate-500">Retiring Soon, Florida</p>
+                    <p className="text-sm font-semibold text-[#F6F4EF]">Susan K.</p>
+                    <p className="text-xs text-[#A8A39A]">Retiring Soon, Florida</p>
                   </div>
                 </div>
               </div>
@@ -291,7 +291,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
                   my retirement."
                 </p>
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center text-[#000080] text-sm font-bold">
+                  <div className="w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center text-[#F6F4EF] text-sm font-bold">
                     JM
                   </div>
                   <div>
@@ -303,22 +303,22 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
             </div>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap justify-center items-center gap-8 mt-12 pt-8 border-t border-slate-200">
+            <div className="flex flex-wrap justify-center items-center gap-8 mt-12 pt-8 border-t border-[#2A2D42]">
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#000080]">A+</div>
-                <div className="text-xs text-slate-500">BBB Rating</div>
+                <div className="text-3xl font-bold text-[#F6F4EF]">A+</div>
+                <div className="text-xs text-[#A8A39A]">BBB Rating</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#000080]">AAA</div>
-                <div className="text-xs text-slate-500">BCA Rating</div>
+                <div className="text-3xl font-bold text-[#F6F4EF]">AAA</div>
+                <div className="text-xs text-[#A8A39A]">BCA Rating</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#000080]">4.9</div>
-                <div className="text-xs text-slate-500">Trustpilot</div>
+                <div className="text-3xl font-bold text-[#F6F4EF]">4.9</div>
+                <div className="text-xs text-[#A8A39A]">Trustpilot</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#000080]">#1</div>
-                <div className="text-xs text-slate-500">Money Magazine 2024</div>
+                <div className="text-3xl font-bold text-[#F6F4EF]">#1</div>
+                <div className="text-xs text-[#A8A39A]">Money Magazine 2024</div>
               </div>
             </div>
           </div>
@@ -326,7 +326,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-[#0C0D18]">
         <Container>
           <AugustaCTA
             variant="default"
@@ -338,10 +338,10 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
       </section>
 
       {/* Browse Other Ages */}
-      <section className="py-12 bg-white border-t border-slate-200">
+      <section className="py-12 bg-[#161828] border-t border-[#2A2D42]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-lg font-semibold text-slate-500 mb-6">
+            <h3 className="text-lg font-semibold text-[#A8A39A] mb-6">
               Calculate for Other Retirement Ages
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
@@ -353,7 +353,7 @@ export default async function HowMuchToRetirePage({ params }: PageProps) {
                     <a
                       key={slug}
                       href={`/calculator/how-much/${slug}`}
-                      className="px-6 py-3 bg-slate-50 border border-slate-200 rounded-full text-slate-600 font-semibold hover:bg-slate-100 hover:text-[#000080] hover:border-[#000080]/30 transition-all"
+                      className="px-6 py-3 bg-[#0C0D18] border border-[#2A2D42] rounded-full text-[#D0CCC4] font-semibold hover:bg-[#1E2134] hover:text-[#F6F4EF] hover:border-[rgba(197,149,46,0.55)]/30 transition-all"
                     >
                       Retire at {ageData.age}
                     </a>

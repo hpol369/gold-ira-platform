@@ -62,7 +62,7 @@ export function LPBenefits({ headline, benefits, className }: LPBenefitsProps) {
                 className={cn(
                   "relative p-6 rounded-xl",
                   "bg-white/5 backdrop-blur-sm border border-white/10",
-                  "hover:border-amber-400/30 hover:bg-white/[0.07]",
+                  "hover:border-amber-400/30 hover:bg-[#1E2134]/[0.07]",
                   "transition-all duration-300"
                 )}
               >
@@ -72,7 +72,7 @@ export function LPBenefits({ headline, benefits, className }: LPBenefitsProps) {
                 <h3 className="text-lg font-bold text-white mb-2">
                   {benefit.title}
                 </h3>
-                <p className="text-slate-200 text-base md:text-lg leading-relaxed">{benefit.description}</p>
+                <p className="text-[#3F4460] text-base md:text-lg leading-relaxed">{benefit.description}</p>
               </div>
             );
           })}

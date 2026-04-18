@@ -15,9 +15,9 @@ export default function DebtInfographic() {
     ];
 
     return (
-        <div className="bg-[#000080] rounded-xl shadow-2xl overflow-hidden border-4 border-[#B22234] max-w-3xl mx-auto ring-4 ring-white/10 ring-offset-4 ring-offset-slate-900">
+        <div className="bg-[rgba(197,149,46,0.1)] rounded-xl shadow-2xl overflow-hidden border-4 border-[#B22234] max-w-3xl mx-auto ring-4 ring-white/10 ring-offset-4 ring-offset-slate-900">
             {/* Header */}
-            <div className="bg-[#B22234] px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-2 border-b-2 border-white/20">
+            <div className="bg-[#DC2626] px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-2 border-b-2 border-white/20">
                 <div className="flex items-center gap-3 text-white font-bold uppercase tracking-wider">
                     <AlertTriangle className="h-6 w-6 text-yellow-400" />
                     <span className="text-lg">U.S. National Debt Explosion</span>
@@ -29,10 +29,10 @@ export default function DebtInfographic() {
             <div className="p-6 md:p-8 relative">
                 {/* Background Grid Lines */}
                 <div className="absolute inset-0 top-20 bottom-32 px-8 flex flex-col justify-between pointer-events-none opacity-20">
-                    <div className="w-full h-px bg-white border-t border-dashed"></div>
-                    <div className="w-full h-px bg-white border-t border-dashed"></div>
-                    <div className="w-full h-px bg-white border-t border-dashed"></div>
-                    <div className="w-full h-px bg-white border-t border-dashed"></div>
+                    <div className="w-full h-px bg-[#161828] border-t border-dashed"></div>
+                    <div className="w-full h-px bg-[#161828] border-t border-dashed"></div>
+                    <div className="w-full h-px bg-[#161828] border-t border-dashed"></div>
+                    <div className="w-full h-px bg-[#161828] border-t border-dashed"></div>
                 </div>
 
                 {/* Bar Chart */}
@@ -40,7 +40,7 @@ export default function DebtInfographic() {
                     {debtData.map((item, index) => (
                         <div key={item.year} className="flex flex-col items-center flex-1 group">
                             {/* Value Label */}
-                            <div className="mb-2 text-white font-bold text-[10px] md:text-sm bg-black/40 px-2 py-1 rounded transition-all group-hover:scale-110 group-hover:bg-[#B22234]">
+                            <div className="mb-2 text-white font-bold text-[10px] md:text-sm bg-black/40 px-2 py-1 rounded transition-all group-hover:scale-110 group-hover:bg-[#DC2626]">
                                 ${item.debt}T
                             </div>
 
@@ -48,7 +48,7 @@ export default function DebtInfographic() {
                             <div
                                 className={`w-full max-w-[40px] rounded-t shadow-[0_0_15px_rgba(255,0,0,0.3)] transition-all duration-700 ease-out hover:brightness-110 ${index === debtData.length - 1
                                         ? "bg-gradient-to-t from-[#B22234] to-red-500 animate-pulse border-t-2 border-white/50"
-                                        : "bg-gradient-to-t from-slate-700 to-slate-500 hover:from-[#B22234] hover:to-red-500"
+                                        : "bg-gradient-to-t from-slate-700 to-[#0C0D18]0 hover:from-[#B22234] hover:to-red-500"
                                     }`}
                                 style={{ height: `${item.height}%` }}
                             >
@@ -58,7 +58,7 @@ export default function DebtInfographic() {
                 </div>
 
                 {/* X-axis labels */}
-                <div className="flex justify-between text-slate-300 text-xs md:text-sm font-black font-mono border-t-2 border-white/20 pt-4">
+                <div className="flex justify-between text-[#3F4460] text-xs md:text-sm font-black font-mono border-t-2 border-white/20 pt-4">
                     {debtData.map((item) => (
                         <span key={item.year} className="flex-1 text-center">{item.year}</span>
                     ))}
@@ -66,43 +66,43 @@ export default function DebtInfographic() {
 
                 {/* Stats Row */}
                 <div className="grid grid-cols-3 gap-4 mt-8 pt-6 border-t border-white/10">
-                    <div className="text-center group hover:bg-white/5 p-2 rounded-lg transition-colors">
+                    <div className="text-center group hover:bg-[#1E2134]/5 p-2 rounded-lg transition-colors">
                         <div className="flex items-center justify-center gap-1 text-[#ff0000] mb-2">
                             <TrendingUp className="h-5 w-5" />
                         </div>
                         <div className="text-2xl md:text-4xl font-black text-white tracking-tighter shadow-black drop-shadow-lg">
-                            575<span className="text-lg align-top text-[#B22234]">%</span>
+                            575<span className="text-lg align-top text-[#D4A94E]">%</span>
                         </div>
-                        <div className="text-[10px] md:text-xs text-slate-400 font-bold uppercase tracking-wide mt-1">Debt Surge</div>
+                        <div className="text-[10px] md:text-xs text-[#A8A39A] font-bold uppercase tracking-wide mt-1">Debt Surge</div>
                     </div>
 
-                    <div className="text-center group hover:bg-white/5 p-2 rounded-lg transition-colors">
+                    <div className="text-center group hover:bg-[#1E2134]/5 p-2 rounded-lg transition-colors">
                         <div className="flex items-center justify-center gap-1 text-amber-500 mb-2">
                             <DollarSign className="h-5 w-5" />
                         </div>
                         <div className="text-2xl md:text-4xl font-black text-white tracking-tighter drop-shadow-lg">
                             $1,300
                         </div>
-                        <div className="text-[10px] md:text-xs text-slate-400 font-bold uppercase tracking-wide mt-1">Cost Per Family</div>
+                        <div className="text-[10px] md:text-xs text-[#A8A39A] font-bold uppercase tracking-wide mt-1">Cost Per Family</div>
                     </div>
 
-                    <div className="text-center group hover:bg-white/5 p-2 rounded-lg transition-colors">
+                    <div className="text-center group hover:bg-[#1E2134]/5 p-2 rounded-lg transition-colors">
                         <div className="flex items-center justify-center gap-1 text-[#FFD700] mb-2">
                             <Shield className="h-5 w-5" />
                         </div>
                         <div className="text-2xl md:text-4xl font-black text-[#FFD700] tracking-tighter drop-shadow-[0_0_10px_rgba(255,215,0,0.5)]">
                             GOLD
                         </div>
-                        <div className="text-[10px] md:text-xs text-slate-400 font-bold uppercase tracking-wide mt-1">Wealth Shield</div>
+                        <div className="text-[10px] md:text-xs text-[#A8A39A] font-bold uppercase tracking-wide mt-1">Wealth Shield</div>
                     </div>
                 </div>
 
                 {/* Bottom Message */}
                 <div className="mt-8 bg-black/40 border border-[#B22234]/30 rounded-lg p-4 text-center">
                     <p className="text-white/90 font-medium text-sm md:text-base italic">
-                        <span className="text-[#B22234] font-bold">"</span>
+                        <span className="text-[#D4A94E] font-bold">"</span>
                         When governments print money, gold preserves purchasing power.
-                        <span className="text-[#B22234] font-bold">"</span>
+                        <span className="text-[#D4A94E] font-bold">"</span>
                     </p>
                 </div>
             </div>

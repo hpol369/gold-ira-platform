@@ -163,17 +163,17 @@ export default function SilverCoinsVsBarsPage() {
 
             <div className="flex-grow">
                 {/* Hero */}
-                <header className="bg-slate-50 text-slate-900 py-16 md:py-20 relative overflow-hidden">
+                <header className="bg-[#0C0D18] text-[#F6F4EF] py-16 md:py-20 relative overflow-hidden">
                     <Container className="relative z-10">
                         <div className="max-w-3xl">
-                            <div className="flex items-center gap-2 text-[#B22234] font-bold tracking-widest uppercase text-xs mb-4">
+                            <div className="flex items-center gap-2 text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-4">
                                 <Scale className="h-4 w-4" />
                                 Silver Comparison
                             </div>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#000080]">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-[#F6F4EF]">
                                 Silver Coins vs Bars
                             </h1>
-                            <p className="text-xl text-slate-600 leading-relaxed">
+                            <p className="text-xl text-[#D0CCC4] leading-relaxed">
                                 You&apos;ve saved for decades. Now you want real assets you can hold—not just numbers on a screen. But should you buy coins or bars? Here&apos;s the straight answer from people who aren&apos;t trying to sell you something you don&apos;t need.
                             </p>
                         </div>
@@ -181,12 +181,12 @@ export default function SilverCoinsVsBarsPage() {
                 </header>
 
                 {/* Quick Answer */}
-                <section className="py-12 bg-[#B22234]/10 border-y border-[#B22234]/30">
+                <section className="py-12 bg-[rgba(220,38,38,0.1)] border-y border-[#B22234]/30">
                     <Container>
                         <div className="max-w-3xl mx-auto text-center">
-                            <h2 className="text-xl font-bold text-[#B22234] mb-4">Quick Answer</h2>
-                            <p className="text-slate-600">
-                                <strong className="text-slate-900">Silver coins</strong> are better for beginners and liquidity. <strong className="text-slate-900">Silver bars</strong> are better for lower premiums and serious stackers. <strong className="text-slate-900">Most investors should own both</strong>—coins for their foundation, bars for efficiency.
+                            <h2 className="text-xl font-bold text-[#D4A94E] mb-4">Quick Answer</h2>
+                            <p className="text-[#D0CCC4]">
+                                <strong className="text-[#F6F4EF]">Silver coins</strong> are better for beginners and liquidity. <strong className="text-[#F6F4EF]">Silver bars</strong> are better for lower premiums and serious stackers. <strong className="text-[#F6F4EF]">Most investors should own both</strong>—coins for their foundation, bars for efficiency.
                             </p>
                         </div>
                     </Container>
@@ -197,78 +197,78 @@ export default function SilverCoinsVsBarsPage() {
                     <Container>
                         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                             {/* Coins */}
-                            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-2xl p-8">
+                            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-2xl p-8">
                                 <div className="flex items-center gap-4 mb-6">
-                                    <div className="p-3 bg-[#B22234]/20 rounded-xl">
-                                        <Coins className="w-8 h-8 text-[#B22234]" />
+                                    <div className="p-3 bg-[rgba(220,38,38,0.18)] rounded-xl">
+                                        <Coins className="w-8 h-8 text-[#D4A94E]" />
                                     </div>
-                                    <h3 className="text-2xl font-bold text-slate-900">Silver Coins</h3>
+                                    <h3 className="text-2xl font-bold text-[#F6F4EF]">Silver Coins</h3>
                                 </div>
 
                                 <div className="space-y-4 mb-6">
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
-                                        <span className="text-slate-600">Higher liquidity</span>
+                                        <span className="text-[#D0CCC4]">Higher liquidity</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
-                                        <span className="text-slate-600">Universal recognition</span>
+                                        <span className="text-[#D0CCC4]">Universal recognition</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
-                                        <span className="text-slate-600">Harder to counterfeit</span>
+                                        <span className="text-[#D0CCC4]">Harder to counterfeit</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
-                                        <span className="text-slate-600">Best for beginners</span>
+                                        <span className="text-[#D0CCC4]">Best for beginners</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <AlertTriangle className="w-5 h-5 text-[#B22234] flex-shrink-0" />
-                                        <span className="text-slate-600">Higher premiums (15-40%)</span>
+                                        <AlertTriangle className="w-5 h-5 text-[#D4A94E] flex-shrink-0" />
+                                        <span className="text-[#D0CCC4]">Higher premiums (15-40%)</span>
                                     </div>
                                 </div>
 
-                                <div className="bg-slate-50 rounded-lg p-4 text-sm">
-                                    <span className="text-[#B22234] font-bold">Best For:</span>
-                                    <span className="text-slate-600"> Building your first 50-100 oz, maximum liquidity, easy selling</span>
+                                <div className="bg-[#0C0D18] rounded-lg p-4 text-sm">
+                                    <span className="text-[#D4A94E] font-bold">Best For:</span>
+                                    <span className="text-[#D0CCC4]"> Building your first 50-100 oz, maximum liquidity, easy selling</span>
                                 </div>
                             </div>
 
                             {/* Bars */}
-                            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-2xl p-8">
+                            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-2xl p-8">
                                 <div className="flex items-center gap-4 mb-6">
-                                    <div className="p-3 bg-[#B22234]/10 rounded-xl">
-                                        <SquareStack className="w-8 h-8 text-slate-600" />
+                                    <div className="p-3 bg-[rgba(220,38,38,0.1)] rounded-xl">
+                                        <SquareStack className="w-8 h-8 text-[#D0CCC4]" />
                                     </div>
-                                    <h3 className="text-2xl font-bold text-slate-900">Silver Bars</h3>
+                                    <h3 className="text-2xl font-bold text-[#F6F4EF]">Silver Bars</h3>
                                 </div>
 
                                 <div className="space-y-4 mb-6">
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
-                                        <span className="text-slate-600">Lower premiums (5-15%)</span>
+                                        <span className="text-[#D0CCC4]">Lower premiums (5-15%)</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
-                                        <span className="text-slate-600">More oz per dollar</span>
+                                        <span className="text-[#D0CCC4]">More oz per dollar</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
-                                        <span className="text-slate-600">Efficient storage</span>
+                                        <span className="text-[#D0CCC4]">Efficient storage</span>
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <CheckCircle2 className="w-5 h-5 text-green-700 flex-shrink-0" />
-                                        <span className="text-slate-600">Best for large positions</span>
+                                        <span className="text-[#D0CCC4]">Best for large positions</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <AlertTriangle className="w-5 h-5 text-[#B22234] flex-shrink-0" />
-                                        <span className="text-slate-600">Less liquid (sell whole bar)</span>
+                                        <AlertTriangle className="w-5 h-5 text-[#D4A94E] flex-shrink-0" />
+                                        <span className="text-[#D0CCC4]">Less liquid (sell whole bar)</span>
                                     </div>
                                 </div>
 
-                                <div className="bg-slate-50 rounded-lg p-4 text-sm">
-                                    <span className="text-[#B22234] font-bold">Best For:</span>
-                                    <span className="text-slate-600"> Experienced stackers, large purchases, minimizing premiums</span>
+                                <div className="bg-[#0C0D18] rounded-lg p-4 text-sm">
+                                    <span className="text-[#D4A94E] font-bold">Best For:</span>
+                                    <span className="text-[#D0CCC4]"> Experienced stackers, large purchases, minimizing premiums</span>
                                 </div>
                             </div>
                         </div>
@@ -276,31 +276,31 @@ export default function SilverCoinsVsBarsPage() {
                 </section>
 
                 {/* Detailed Comparison Table */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
-                        <h2 className="text-3xl font-serif font-bold text-slate-900 mb-8 text-center">Complete Comparison</h2>
+                        <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Complete Comparison</h2>
 
                         <div className="overflow-x-auto max-w-4xl mx-auto">
-                            <table className="w-full bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
+                            <table className="w-full bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
                                 <thead>
-                                    <tr className="border-b border-slate-200">
-                                        <th className="text-left p-4 font-bold text-[#B22234]">Factor</th>
-                                        <th className="text-left p-4 font-bold text-[#B22234]">Coins</th>
-                                        <th className="text-left p-4 font-bold text-[#B22234]">Bars</th>
-                                        <th className="text-left p-4 font-bold text-[#B22234]">Winner</th>
+                                    <tr className="border-b border-[#2A2D42]">
+                                        <th className="text-left p-4 font-bold text-[#D4A94E]">Factor</th>
+                                        <th className="text-left p-4 font-bold text-[#D4A94E]">Coins</th>
+                                        <th className="text-left p-4 font-bold text-[#D4A94E]">Bars</th>
+                                        <th className="text-left p-4 font-bold text-[#D4A94E]">Winner</th>
                                     </tr>
                                 </thead>
-                                <tbody className="divide-y divide-slate-200 text-sm">
+                                <tbody className="divide-y divide-[#2A2D42] text-sm">
                                     {comparisonFactors.map((item, index) => (
                                         <tr key={index}>
-                                            <td className="p-4 font-semibold text-slate-900">{item.factor}</td>
-                                            <td className="p-4 text-slate-600">{item.coins}</td>
-                                            <td className="p-4 text-slate-600">{item.bars}</td>
+                                            <td className="p-4 font-semibold text-[#F6F4EF]">{item.factor}</td>
+                                            <td className="p-4 text-[#D0CCC4]">{item.coins}</td>
+                                            <td className="p-4 text-[#D0CCC4]">{item.bars}</td>
                                             <td className="p-4">
                                                 <span className={`px-2 py-1 rounded text-xs font-bold ${
-                                                    item.winner === 'coins' ? 'bg-[#B22234]/20 text-[#B22234]' :
-                                                    item.winner === 'bars' ? 'bg-[#B22234]/10 text-slate-600' :
-                                                    'bg-slate-100 text-slate-600'
+                                                    item.winner === 'coins' ? 'bg-[rgba(220,38,38,0.18)] text-[#D4A94E]' :
+                                                    item.winner === 'bars' ? 'bg-[rgba(220,38,38,0.1)] text-[#D0CCC4]' :
+                                                    'bg-[#121423] text-[#D0CCC4]'
                                                 }`}>
                                                     {item.winner === 'coins' ? 'Coins' : item.winner === 'bars' ? 'Bars' : 'Tie'}
                                                 </span>
@@ -317,26 +317,26 @@ export default function SilverCoinsVsBarsPage() {
                 <section className="py-16">
                     <Container>
                         <div className="max-w-5xl mx-auto">
-                            <h2 className="text-3xl font-serif font-bold text-slate-900 mb-8 text-center">Popular Options</h2>
+                            <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Popular Options</h2>
 
                             <div className="grid md:grid-cols-2 gap-8">
                                 {/* Popular Coins */}
                                 <div>
-                                    <h3 className="text-xl font-bold text-[#B22234] mb-4 flex items-center gap-2">
+                                    <h3 className="text-xl font-bold text-[#D4A94E] mb-4 flex items-center gap-2">
                                         <Coins className="w-5 h-5" /> Top IRA-Approved Coins
                                     </h3>
                                     <div className="space-y-3">
                                         {popularCoins.map((coin, index) => (
-                                            <div key={index} className="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                                            <div key={index} className="bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4">
                                                 <div className="flex justify-between items-start mb-2">
-                                                    <span className="font-bold text-slate-900">{coin.name}</span>
-                                                    <span className="text-[#B22234] text-sm">{coin.premium}</span>
+                                                    <span className="font-bold text-[#F6F4EF]">{coin.name}</span>
+                                                    <span className="text-[#D4A94E] text-sm">{coin.premium}</span>
                                                 </div>
-                                                <div className="flex gap-4 text-xs text-slate-600">
+                                                <div className="flex gap-4 text-xs text-[#D0CCC4]">
                                                     <span>Purity: {coin.purity}</span>
                                                     <span>Weight: {coin.weight}</span>
                                                 </div>
-                                                <p className="text-xs text-slate-600 mt-2">{coin.note}</p>
+                                                <p className="text-xs text-[#D0CCC4] mt-2">{coin.note}</p>
                                             </div>
                                         ))}
                                     </div>
@@ -344,21 +344,21 @@ export default function SilverCoinsVsBarsPage() {
 
                                 {/* Popular Bars */}
                                 <div>
-                                    <h3 className="text-xl font-bold text-slate-600 mb-4 flex items-center gap-2">
+                                    <h3 className="text-xl font-bold text-[#D0CCC4] mb-4 flex items-center gap-2">
                                         <SquareStack className="w-5 h-5" /> Top IRA-Approved Bars
                                     </h3>
                                     <div className="space-y-3">
                                         {popularBars.map((bar, index) => (
-                                            <div key={index} className="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                                            <div key={index} className="bg-[#0C0D18] border border-[#2A2D42] rounded-lg p-4">
                                                 <div className="flex justify-between items-start mb-2">
-                                                    <span className="font-bold text-slate-900">{bar.name}</span>
+                                                    <span className="font-bold text-[#F6F4EF]">{bar.name}</span>
                                                     <span className="text-green-700 text-sm">{bar.premium}</span>
                                                 </div>
-                                                <p className="text-sm text-slate-600">{bar.use}</p>
+                                                <p className="text-sm text-[#D0CCC4]">{bar.use}</p>
                                             </div>
                                         ))}
                                     </div>
-                                    <p className="mt-4 text-xs text-slate-600">
+                                    <p className="mt-4 text-xs text-[#D0CCC4]">
                                         Top refiners: PAMP Suisse, Credit Suisse, Johnson Matthey, Sunshine Mint, Royal Canadian Mint
                                     </p>
                                 </div>
@@ -368,48 +368,48 @@ export default function SilverCoinsVsBarsPage() {
                 </section>
 
                 {/* Strategy Recommendation */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
                         <div className="max-w-3xl mx-auto">
-                            <h2 className="text-3xl font-serif font-bold text-slate-900 mb-6 text-center">Recommended Strategy</h2>
-                            <p className="text-slate-600 text-center mb-8">
+                            <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-6 text-center">Recommended Strategy</h2>
+                            <p className="text-[#D0CCC4] text-center mb-8">
                                 Most successful silver investors use a tiered approach, starting with coins and adding bars as their stack grows.
                             </p>
 
                             <div className="space-y-4">
                                 <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <span className="w-8 h-8 rounded-full bg-green-400 text-slate-900 flex items-center justify-center font-bold">1</span>
+                                        <span className="w-8 h-8 rounded-full bg-green-400 text-[#F6F4EF] flex items-center justify-center font-bold">1</span>
                                         <h4 className="font-bold text-green-700">Foundation (0-100 oz): 100% Coins</h4>
                                     </div>
-                                    <p className="text-slate-600 text-sm ml-11">
+                                    <p className="text-[#D0CCC4] text-sm ml-11">
                                         Start with sovereign mint coins like American Eagles or Canadian Maple Leafs. Maximum liquidity while you learn the market.
                                     </p>
                                 </div>
 
                                 <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <span className="w-8 h-8 rounded-full bg-blue-400 text-slate-900 flex items-center justify-center font-bold">2</span>
+                                        <span className="w-8 h-8 rounded-full bg-blue-400 text-[#F6F4EF] flex items-center justify-center font-bold">2</span>
                                         <h4 className="font-bold text-blue-700">Growth (100-500 oz): 70% Coins / 30% Bars</h4>
                                     </div>
-                                    <p className="text-slate-600 text-sm ml-11">
+                                    <p className="text-[#D0CCC4] text-sm ml-11">
                                         Add 10 oz bars to reduce premiums while maintaining coin liquidity. Consider generic rounds for even lower premiums.
                                     </p>
                                 </div>
 
-                                <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
+                                <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <span className="w-8 h-8 rounded-full bg-amber-400 text-slate-900 flex items-center justify-center font-bold">3</span>
-                                        <h4 className="font-bold text-[#B22234]">Advanced (500+ oz): 50% Coins / 50% Bars</h4>
+                                        <span className="w-8 h-8 rounded-full bg-amber-400 text-[#F6F4EF] flex items-center justify-center font-bold">3</span>
+                                        <h4 className="font-bold text-[#D4A94E]">Advanced (500+ oz): 50% Coins / 50% Bars</h4>
                                     </div>
-                                    <p className="text-slate-600 text-sm ml-11">
+                                    <p className="text-[#D0CCC4] text-sm ml-11">
                                         Add 100 oz bars and monster boxes (500 coins) for lowest premiums. Your coin foundation provides liquidity; bars maximize ounces.
                                     </p>
                                 </div>
                             </div>
 
-                            <p className="text-slate-600 text-sm text-center mt-6">
-                                Learn more in our <Link href="/guide/silver-stacking" className="text-[#B22234] hover:underline">Silver Stacking Guide</Link>.
+                            <p className="text-[#D0CCC4] text-sm text-center mt-6">
+                                Learn more in our <Link href="/guide/silver-stacking" className="text-[#D4A94E] hover:underline">Silver Stacking Guide</Link>.
                             </p>
                         </div>
                     </Container>
@@ -418,19 +418,19 @@ export default function SilverCoinsVsBarsPage() {
                 {/* FAQs */}
                 <section className="py-16">
                     <Container>
-                        <h2 className="text-3xl font-serif font-bold text-slate-900 mb-8 text-center">Frequently Asked Questions</h2>
+                        <h2 className="text-3xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Frequently Asked Questions</h2>
 
                         <div className="max-w-3xl mx-auto space-y-4">
                             {faqs.map((faq, index) => (
                                 <details
                                     key={index}
-                                    className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl"
+                                    className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl"
                                 >
-                                    <summary className="cursor-pointer p-6 font-semibold text-slate-900 flex justify-between items-center list-none">
+                                    <summary className="cursor-pointer p-6 font-semibold text-[#F6F4EF] flex justify-between items-center list-none">
                                         {faq.question}
-                                        <span className="text-[#B22234] group-open:rotate-180 transition-transform">▼</span>
+                                        <span className="text-[#D4A94E] group-open:rotate-180 transition-transform">▼</span>
                                     </summary>
-                                    <div className="px-6 pb-6 text-slate-600">
+                                    <div className="px-6 pb-6 text-[#D0CCC4]">
                                         {faq.answer}
                                     </div>
                                 </details>
@@ -440,21 +440,21 @@ export default function SilverCoinsVsBarsPage() {
                 </section>
 
                 {/* Related */}
-                <section className="py-16 bg-slate-50">
+                <section className="py-16 bg-[#0C0D18]">
                     <Container>
-                        <h2 className="text-2xl font-serif font-bold text-slate-900 mb-8 text-center">Related Resources</h2>
+                        <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-8 text-center">Related Resources</h2>
                         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                            <Link href="/guide/ira-approved-silver" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
-                                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">IRA-Approved Silver</h3>
-                                <p className="text-sm text-slate-600">Full list of coins & bars that qualify.</p>
+                            <Link href="/guide/ira-approved-silver" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E]">IRA-Approved Silver</h3>
+                                <p className="text-sm text-[#D0CCC4]">Full list of coins & bars that qualify.</p>
                             </Link>
-                            <Link href="/best-silver-ira-companies" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
-                                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Best Silver IRA Companies</h3>
-                                <p className="text-sm text-slate-600">Compare top providers for 2026.</p>
+                            <Link href="/best-silver-ira-companies" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E]">Best Silver IRA Companies</h3>
+                                <p className="text-sm text-[#D0CCC4]">Compare top providers for 2026.</p>
                             </Link>
-                            <Link href="/guide/silver-stacking" className="group bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6 hover:bg-slate-100 transition-colors">
-                                <h3 className="font-bold text-slate-900 mb-2 group-hover:text-[#B22234]">Silver Stacking Guide</h3>
-                                <p className="text-sm text-slate-600">Build your silver position over time.</p>
+                            <Link href="/guide/silver-stacking" className="group bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6 hover:bg-[#1E2134] transition-colors">
+                                <h3 className="font-bold text-[#F6F4EF] mb-2 group-hover:text-[#D4A94E]">Silver Stacking Guide</h3>
+                                <p className="text-sm text-[#D0CCC4]">Build your silver position over time.</p>
                             </Link>
                         </div>
                     </Container>

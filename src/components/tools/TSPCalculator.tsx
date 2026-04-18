@@ -159,7 +159,7 @@ export function TSPCalculator() {
   const formatPercent = (value: number) => `${value.toFixed(1)}%`;
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50">
+    <section className="py-16 md:py-24 bg-[#0C0D18]">
       <Container>
         <div className="max-w-6xl mx-auto">
           {/* Header */}
@@ -168,10 +168,10 @@ export function TSPCalculator() {
               <Calculator className="h-4 w-4" />
               TSP CALCULATOR
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold text-[#000080] mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-[#F6F4EF] mb-4">
               TSP Calculator 2026
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto">
               Project your TSP balance at retirement with fund allocation analysis and contribution optimization.
             </p>
           </div>
@@ -179,46 +179,46 @@ export function TSPCalculator() {
           <div className="grid lg:grid-cols-5 gap-8">
             {/* Input Panel - 2 columns */}
             <div className="lg:col-span-2 space-y-6">
-              <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
-                <h3 className="text-lg font-bold text-[#000080] mb-6">Your TSP Information</h3>
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6">
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-6">Your TSP Information</h3>
 
                 {/* Current Balance */}
                 <div className="mb-5">
-                  <label className="block text-slate-600 text-sm mb-2">
+                  <label className="block text-[#D0CCC4] text-sm mb-2">
                     Current TSP Balance
                   </label>
                   <div className="relative">
-                    <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                    <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                     <input
                       type="number"
                       value={currentBalance}
                       onChange={(e) => setCurrentBalance(Number(e.target.value))}
-                      className="w-full pl-12 pr-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-green-500"
+                      className="w-full pl-12 pr-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] focus:outline-none focus:border-green-500"
                     />
                   </div>
                 </div>
 
                 {/* Annual Salary */}
                 <div className="mb-5">
-                  <label className="block text-slate-600 text-sm mb-2">
+                  <label className="block text-[#D0CCC4] text-sm mb-2">
                     Annual Salary
                   </label>
                   <div className="relative">
-                    <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-500" />
+                    <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#A8A39A]" />
                     <input
                       type="number"
                       value={annualSalary}
                       onChange={(e) => setAnnualSalary(Number(e.target.value))}
-                      className="w-full pl-12 pr-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-green-500"
+                      className="w-full pl-12 pr-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] focus:outline-none focus:border-green-500"
                     />
                   </div>
                 </div>
 
                 {/* Contribution Percent */}
                 <div className="mb-5">
-                  <label className="block text-slate-600 text-sm mb-2">
+                  <label className="block text-[#D0CCC4] text-sm mb-2">
                     Contribution Rate: <span className="text-green-600 font-bold">{contributionPercent}%</span>
-                    <span className="text-slate-500 ml-2">
+                    <span className="text-[#A8A39A] ml-2">
                       ({formatCurrency((annualSalary * contributionPercent) / 100)}/year)
                     </span>
                   </label>
@@ -231,7 +231,7 @@ export function TSPCalculator() {
                     onChange={(e) => setContributionPercent(Number(e.target.value))}
                     className="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-green-500"
                   />
-                  <div className="flex justify-between text-xs text-slate-500 mt-1">
+                  <div className="flex justify-between text-xs text-[#A8A39A] mt-1">
                     <span>0%</span>
                     <span>5% (max match)</span>
                     <span>100%</span>
@@ -241,25 +241,25 @@ export function TSPCalculator() {
                 {/* Age Inputs */}
                 <div className="grid grid-cols-2 gap-4 mb-5">
                   <div>
-                    <label className="block text-slate-600 text-sm mb-2">Current Age</label>
+                    <label className="block text-[#D0CCC4] text-sm mb-2">Current Age</label>
                     <input
                       type="number"
                       value={currentAge}
                       onChange={(e) => setCurrentAge(Number(e.target.value))}
                       min={18}
                       max={70}
-                      className="w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-green-500"
+                      className="w-full px-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] focus:outline-none focus:border-green-500"
                     />
                   </div>
                   <div>
-                    <label className="block text-slate-600 text-sm mb-2">Retirement Age</label>
+                    <label className="block text-[#D0CCC4] text-sm mb-2">Retirement Age</label>
                     <input
                       type="number"
                       value={retirementAge}
                       onChange={(e) => setRetirementAge(Number(e.target.value))}
                       min={currentAge + 1}
                       max={75}
-                      className="w-full px-4 py-3 bg-slate-100 border border-slate-200 rounded-xl text-slate-900 focus:outline-none focus:border-green-500"
+                      className="w-full px-4 py-3 bg-[#121423] border border-[#2A2D42] rounded-xl text-[#F6F4EF] focus:outline-none focus:border-green-500"
                     />
                   </div>
                 </div>
@@ -271,20 +271,20 @@ export function TSPCalculator() {
                       type="checkbox"
                       checked={catchUpEligible}
                       onChange={(e) => setCatchUpEligible(e.target.checked)}
-                      className="w-5 h-5 bg-slate-100 border border-white/20 rounded accent-green-500"
+                      className="w-5 h-5 bg-[#121423] border border-white/20 rounded accent-green-500"
                     />
-                    <span className="text-slate-600">Age 50+ (catch-up contributions)</span>
+                    <span className="text-[#D0CCC4]">Age 50+ (catch-up contributions)</span>
                   </label>
-                  <p className="text-slate-500 text-xs mt-1 ml-8">
+                  <p className="text-[#A8A39A] text-xs mt-1 ml-8">
                     2025 limits: ${regularLimit.toLocaleString()} + ${catchUpLimit.toLocaleString()} catch-up = ${(regularLimit + catchUpLimit).toLocaleString()}
                   </p>
                 </div>
               </div>
 
               {/* Fund Allocation */}
-              <div className="bg-white border border-slate-200 shadow-sm rounded-2xl p-6">
+              <div className="bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-bold text-slate-900">Fund Allocation</h3>
+                  <h3 className="text-lg font-bold text-[#F6F4EF]">Fund Allocation</h3>
                   <span className={`text-sm font-semibold ${isValidAllocation ? 'text-green-600' : 'text-red-600'}`}>
                     {allocationTotal}% / 100%
                   </span>
@@ -294,10 +294,10 @@ export function TSPCalculator() {
                   {Object.entries(allocation).map(([fund, percent]) => (
                     <div key={fund}>
                       <div className="flex items-center justify-between mb-1">
-                        <span className="text-slate-600 text-sm">
-                          {fund} Fund <span className="text-slate-500">({formatPercent(fundReturns[fund])} avg return)</span>
+                        <span className="text-[#D0CCC4] text-sm">
+                          {fund} Fund <span className="text-[#A8A39A]">({formatPercent(fundReturns[fund])} avg return)</span>
                         </span>
-                        <span className="text-slate-900 font-semibold">{percent}%</span>
+                        <span className="text-[#F6F4EF] font-semibold">{percent}%</span>
                       </div>
                       <input
                         type="range"
@@ -325,9 +325,9 @@ export function TSPCalculator() {
                   ))}
                 </div>
 
-                <div className="mt-4 p-3 bg-slate-50 rounded-lg">
+                <div className="mt-4 p-3 bg-[#0C0D18] rounded-lg">
                   <div className="flex items-center justify-between">
-                    <span className="text-slate-600 text-sm">Weighted Average Return:</span>
+                    <span className="text-[#D0CCC4] text-sm">Weighted Average Return:</span>
                     <span className="text-green-600 font-bold">{formatPercent(weightedReturn)}</span>
                   </div>
                 </div>
@@ -347,8 +347,8 @@ export function TSPCalculator() {
                 disabled={!isValidAllocation}
                 className={`w-full py-4 font-bold text-lg rounded-xl transition-all flex items-center justify-center gap-2 ${
                   isValidAllocation
-                    ? 'bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-slate-900'
-                    : 'bg-slate-700 text-slate-500 cursor-not-allowed'
+                    ? 'bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-[#F6F4EF]'
+                    : 'bg-slate-700 text-[#A8A39A] cursor-not-allowed'
                 }`}
               >
                 <Calculator className="h-5 w-5" />
@@ -357,8 +357,8 @@ export function TSPCalculator() {
             </div>
 
             {/* Results Panel - 3 columns */}
-            <div className="lg:col-span-3 bg-white border border-slate-200 shadow-sm rounded-2xl p-6 md:p-8">
-              <h3 className="text-xl font-bold text-[#000080] mb-6">Your TSP Projection</h3>
+            <div className="lg:col-span-3 bg-[#161828] border border-[#2A2D42] shadow-sm rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl font-bold text-[#F6F4EF] mb-6">Your TSP Projection</h3>
 
               {result ? (
                 <div className="space-y-6">
@@ -368,27 +368,27 @@ export function TSPCalculator() {
                       <Target className="h-4 w-4" />
                       PROJECTED BALANCE AT RETIREMENT
                     </div>
-                    <div className="text-4xl md:text-5xl font-bold text-[#000080] mb-2">
+                    <div className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-2">
                       {formatCurrency(result.projectedBalance)}
                     </div>
-                    <p className="text-slate-600 text-sm">
+                    <p className="text-[#D0CCC4] text-sm">
                       at age {retirementAge} ({retirementAge - currentAge} years from now)
                     </p>
                   </div>
 
                   {/* Key Metrics */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div className="bg-slate-50 rounded-xl p-4">
-                      <div className="flex items-center gap-2 text-slate-500 text-xs mb-1">
+                    <div className="bg-[#0C0D18] rounded-xl p-4">
+                      <div className="flex items-center gap-2 text-[#A8A39A] text-xs mb-1">
                         <Wallet className="h-3 w-3" />
                         Your Contributions
                       </div>
-                      <div className="text-lg font-bold text-slate-900">
+                      <div className="text-lg font-bold text-[#F6F4EF]">
                         {formatCurrency(result.totalContributions)}
                       </div>
                     </div>
-                    <div className="bg-slate-50 rounded-xl p-4">
-                      <div className="flex items-center gap-2 text-slate-500 text-xs mb-1">
+                    <div className="bg-[#0C0D18] rounded-xl p-4">
+                      <div className="flex items-center gap-2 text-[#A8A39A] text-xs mb-1">
                         <DollarSign className="h-3 w-3" />
                         Employer Match
                       </div>
@@ -396,8 +396,8 @@ export function TSPCalculator() {
                         {formatCurrency(result.totalEmployerMatch)}
                       </div>
                     </div>
-                    <div className="bg-slate-50 rounded-xl p-4">
-                      <div className="flex items-center gap-2 text-slate-500 text-xs mb-1">
+                    <div className="bg-[#0C0D18] rounded-xl p-4">
+                      <div className="flex items-center gap-2 text-[#A8A39A] text-xs mb-1">
                         <TrendingUp className="h-3 w-3" />
                         Investment Growth
                       </div>
@@ -405,25 +405,25 @@ export function TSPCalculator() {
                         {formatCurrency(result.totalGrowth)}
                       </div>
                     </div>
-                    <div className="bg-slate-50 rounded-xl p-4">
-                      <div className="flex items-center gap-2 text-slate-500 text-xs mb-1">
+                    <div className="bg-[#0C0D18] rounded-xl p-4">
+                      <div className="flex items-center gap-2 text-[#A8A39A] text-xs mb-1">
                         <Clock className="h-3 w-3" />
                         Monthly Income (4%)
                       </div>
-                      <div className="text-lg font-bold text-[#B22234]">
+                      <div className="text-lg font-bold text-[#D4A94E]">
                         {formatCurrency(result.monthlyRetirementIncome)}
                       </div>
                     </div>
                   </div>
 
                   {/* Growth Breakdown */}
-                  <div className="bg-slate-50 rounded-xl p-4">
-                    <h4 className="text-slate-900 font-semibold mb-3">Balance Composition</h4>
+                  <div className="bg-[#0C0D18] rounded-xl p-4">
+                    <h4 className="text-[#F6F4EF] font-semibold mb-3">Balance Composition</h4>
                     <div className="space-y-2">
                       <div className="flex items-center gap-2">
                         <div className="flex-1 h-4 bg-slate-200 rounded-full overflow-hidden flex">
                           <div
-                            className="h-full bg-slate-500"
+                            className="h-full bg-[#0C0D18]0"
                             style={{ width: `${(currentBalance / result.projectedBalance) * 100}%` }}
                             title="Starting Balance"
                           />
@@ -446,20 +446,20 @@ export function TSPCalculator() {
                       </div>
                       <div className="flex flex-wrap gap-4 text-xs">
                         <div className="flex items-center gap-1">
-                          <div className="w-3 h-3 bg-slate-500 rounded" />
-                          <span className="text-slate-500">Starting ({formatCurrency(currentBalance)})</span>
+                          <div className="w-3 h-3 bg-[#0C0D18]0 rounded" />
+                          <span className="text-[#A8A39A]">Starting ({formatCurrency(currentBalance)})</span>
                         </div>
                         <div className="flex items-center gap-1">
                           <div className="w-3 h-3 bg-blue-500 rounded" />
-                          <span className="text-slate-500">Contributions</span>
+                          <span className="text-[#A8A39A]">Contributions</span>
                         </div>
                         <div className="flex items-center gap-1">
                           <div className="w-3 h-3 bg-purple-500 rounded" />
-                          <span className="text-slate-500">Match</span>
+                          <span className="text-[#A8A39A]">Match</span>
                         </div>
                         <div className="flex items-center gap-1">
                           <div className="w-3 h-3 bg-green-500 rounded" />
-                          <span className="text-slate-500">Growth</span>
+                          <span className="text-[#A8A39A]">Growth</span>
                         </div>
                       </div>
                     </div>
@@ -467,38 +467,38 @@ export function TSPCalculator() {
 
                   {/* Year-by-Year Projection */}
                   <div>
-                    <div className="flex items-center gap-2 text-slate-900 font-semibold mb-4">
+                    <div className="flex items-center gap-2 text-[#F6F4EF] font-semibold mb-4">
                       <PieChart className="h-5 w-5 text-green-600" />
                       Year-by-Year Projection
                     </div>
                     <div className="overflow-x-auto max-h-64 overflow-y-auto">
                       <table className="w-full text-sm">
-                        <thead className="sticky top-0 bg-slate-100">
-                          <tr className="border-b border-slate-200">
-                            <th className="py-2 px-2 text-left text-slate-500">Year</th>
-                            <th className="py-2 px-2 text-left text-slate-500">Age</th>
-                            <th className="py-2 px-2 text-right text-slate-500">Contribution</th>
-                            <th className="py-2 px-2 text-right text-slate-500">Match</th>
-                            <th className="py-2 px-2 text-right text-slate-500">Balance</th>
+                        <thead className="sticky top-0 bg-[#121423]">
+                          <tr className="border-b border-[#2A2D42]">
+                            <th className="py-2 px-2 text-left text-[#A8A39A]">Year</th>
+                            <th className="py-2 px-2 text-left text-[#A8A39A]">Age</th>
+                            <th className="py-2 px-2 text-right text-[#A8A39A]">Contribution</th>
+                            <th className="py-2 px-2 text-right text-[#A8A39A]">Match</th>
+                            <th className="py-2 px-2 text-right text-[#A8A39A]">Balance</th>
                           </tr>
                         </thead>
                         <tbody>
                           {result.yearByYearProjection.map((row, idx) => (
                             <tr
                               key={row.year}
-                              className={`border-b border-slate-200 ${
+                              className={`border-b border-[#2A2D42] ${
                                 idx === result.yearByYearProjection.length - 1 ? "bg-green-500/10" : ""
                               }`}
                             >
-                              <td className="py-2 px-2 text-slate-600">{row.year}</td>
-                              <td className="py-2 px-2 text-slate-600">{row.age}</td>
+                              <td className="py-2 px-2 text-[#D0CCC4]">{row.year}</td>
+                              <td className="py-2 px-2 text-[#D0CCC4]">{row.age}</td>
                               <td className="py-2 px-2 text-right text-blue-600">
                                 {formatCurrency(row.contribution)}
                               </td>
                               <td className="py-2 px-2 text-right text-purple-700">
                                 {formatCurrency(row.match)}
                               </td>
-                              <td className="py-2 px-2 text-right text-slate-900 font-medium">
+                              <td className="py-2 px-2 text-right text-[#F6F4EF] font-medium">
                                 {formatCurrency(row.balance)}
                               </td>
                             </tr>
@@ -511,7 +511,7 @@ export function TSPCalculator() {
                   {/* CTA */}
                   <Link
                     href="/get-started"
-                    className="block w-full py-4 bg-[#B22234] hover:bg-[#8b1c2a] text-slate-900 font-bold text-center rounded-xl transition-all"
+                    className="block w-full py-4 bg-[#DC2626] hover:bg-[#991B1B] text-[#F6F4EF] font-bold text-center rounded-xl transition-all"
                   >
                     Diversify with a Gold IRA
                     <ArrowRight className="inline ml-2 h-5 w-5" />
@@ -519,10 +519,10 @@ export function TSPCalculator() {
                 </div>
               ) : (
                 <div className="h-full flex flex-col items-center justify-center text-center py-16">
-                  <div className="w-20 h-20 bg-slate-100 rounded-2xl flex items-center justify-center mb-4">
-                    <Calculator className="h-10 w-10 text-slate-500" />
+                  <div className="w-20 h-20 bg-[#121423] rounded-2xl flex items-center justify-center mb-4">
+                    <Calculator className="h-10 w-10 text-[#A8A39A]" />
                   </div>
-                  <p className="text-slate-600 max-w-sm">
+                  <p className="text-[#D0CCC4] max-w-sm">
                     Enter your TSP information and fund allocation, then click &quot;Calculate&quot; to see your projected balance at retirement.
                   </p>
                 </div>
@@ -531,16 +531,16 @@ export function TSPCalculator() {
           </div>
 
           {/* Important Notes */}
-          <div className="mt-8 bg-[#B22234]/10 border border-[#B22234]/30 rounded-2xl p-6">
+          <div className="mt-8 bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-2xl p-6">
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-[#B22234]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                <Info className="h-6 w-6 text-[#B22234]" />
+              <div className="w-12 h-12 bg-[rgba(220,38,38,0.1)] rounded-xl flex items-center justify-center flex-shrink-0">
+                <Info className="h-6 w-6 text-[#D4A94E]" />
               </div>
               <div>
-                <h4 className="text-slate-900 font-semibold mb-2">
+                <h4 className="text-[#F6F4EF] font-semibold mb-2">
                   Federal Employee Gold Bridge Strategy
                 </h4>
-                <p className="text-slate-600 text-sm">
+                <p className="text-[#D0CCC4] text-sm">
                   While TSP offers excellent low-cost index funds, it lacks precious metals options.
                   Federal employees should consider diversifying beyond TSP and FERS with a Gold IRA for
                   inflation protection. After separation or at age 59 1/2 while employed, you can roll

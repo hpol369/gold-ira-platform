@@ -95,18 +95,18 @@ export default async function StatePage({ params }: Props) {
             <Navbar />
             <div className="flex-grow">
                 {/* Hero */}
-                <header className="bg-slate-50 py-16 relative overflow-hidden">
+                <header className="bg-[#0C0D18] py-16 relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(178,34,52,0.08),transparent_50%)]" />
                     <Container className="relative z-10">
                         <div className="max-w-3xl">
-                            <span className="inline-flex items-center gap-2 rounded-full bg-[#B22234]/10 px-4 py-1.5 text-sm font-semibold text-[#B22234] mb-6 border border-[#B22234]/20">
+                            <span className="inline-flex items-center gap-2 rounded-full bg-[rgba(220,38,38,0.1)] px-4 py-1.5 text-sm font-semibold text-[#D4A94E] mb-6 border border-[#B22234]/20">
                                 <MapPin className="w-4 h-4" />
                                 {stateName} Gold Guide
                             </span>
-                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-[#000080]">
+                            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-[#F6F4EF]">
                                 Gold IRA {stateName}: Local Dealers vs. Online
                             </h1>
-                            <p className="text-xl text-slate-600">
+                            <p className="text-xl text-[#D0CCC4]">
                                 Living in {stateName}? Here&apos;s what you need to know about local sales tax, home storage rules, and why smart investors are using tax-advantaged Gold IRAs.
                             </p>
                         </div>
@@ -121,7 +121,7 @@ export default async function StatePage({ params }: Props) {
                         </aside>
 
                         {/* Content */}
-                        <article className="flex-1 prose prose-lg prose-slate prose-headings:font-serif prose-headings:text-[#000080] prose-p:text-slate-600 prose-strong:text-slate-900 prose-li:text-slate-600 max-w-none">
+                        <article className="flex-1 prose prose-lg prose-slate prose-headings:font-serif prose-headings:text-[#F6F4EF] prose-p:text-[#D0CCC4] prose-strong:text-[#F6F4EF] prose-li:text-[#D0CCC4] max-w-none">
 
                             <p className="lead">
                                 If you live in <strong>{stateName}</strong>, you have two main options for buying gold: driving to a local coin shop or opening a tax-advantaged Gold IRA online. While it feels safer to &quot;hold it in your hand,&quot; {stateName} residents often pay a premium for that privilege—both in markups and potential taxes.
@@ -164,11 +164,11 @@ export default async function StatePage({ params }: Props) {
 
                                 {/* Depository Note if applicable */}
                                 {content?.hasDepository && (
-                                    <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 not-prose mt-6">
-                                        <h3 className="flex items-center gap-2 font-bold text-slate-900 text-lg mb-2">
+                                    <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] not-prose mt-6">
+                                        <h3 className="flex items-center gap-2 font-bold text-[#F6F4EF] text-lg mb-2">
                                             <Landmark className="w-5 h-5" /> {stateName} Depository Options
                                         </h3>
-                                        <p className="text-slate-700">
+                                        <p className="text-[#D0CCC4]">
                                             {content.depositoryNote}
                                         </p>
                                     </div>
@@ -221,43 +221,43 @@ export default async function StatePage({ params }: Props) {
                                 </p>
 
                                 <div className="not-prose overflow-x-auto my-6">
-                                    <table className="w-full text-left border-collapse bg-slate-50 rounded-xl border border-slate-200">
-                                        <thead className="bg-slate-100">
+                                    <table className="w-full text-left border-collapse bg-[#0C0D18] rounded-xl border border-[#2A2D42]">
+                                        <thead className="bg-[#121423]">
                                             <tr>
-                                                <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Feature</th>
-                                                <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Local Coin Shop</th>
-                                                <th className="p-4 border-b border-slate-200 font-bold text-[#B22234]">National Gold IRA</th>
+                                                <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Feature</th>
+                                                <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Local Coin Shop</th>
+                                                <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D4A94E]">National Gold IRA</th>
                                             </tr>
                                         </thead>
                                         <tbody className="text-sm">
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Pricing</td>
-                                                <td className="p-4 text-slate-600">Higher overhead = Higher premiums</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Pricing</td>
+                                                <td className="p-4 text-[#D0CCC4]">Higher overhead = Higher premiums</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">Volume pricing = Lower premiums</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Sales Tax</td>
-                                                <td className="p-4 text-slate-600">{stateData.taxFriendly ? 'Exempt in ' + stateName : 'Taxable in ' + stateName}</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Sales Tax</td>
+                                                <td className="p-4 text-[#D0CCC4]">{stateData.taxFriendly ? 'Exempt in ' + stateName : 'Taxable in ' + stateName}</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">No sales tax (IRA purchase)</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Tax Benefits</td>
-                                                <td className="p-4 text-slate-600">None (post-tax money)</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Tax Benefits</td>
+                                                <td className="p-4 text-[#D0CCC4]">None (post-tax money)</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">Tax-deferred or tax-free (Roth)</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Selection</td>
-                                                <td className="p-4 text-slate-600">Limited to current inventory</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Selection</td>
+                                                <td className="p-4 text-[#D0CCC4]">Limited to current inventory</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">All IRS-approved bullion</td>
                                             </tr>
-                                            <tr className="border-b border-slate-200">
-                                                <td className="p-4 font-medium text-slate-900">Storage</td>
-                                                <td className="p-4 text-slate-600">Your responsibility (risky)</td>
+                                            <tr className="border-b border-[#2A2D42]">
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Storage</td>
+                                                <td className="p-4 text-[#D0CCC4]">Your responsibility (risky)</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">Insured depository included</td>
                                             </tr>
                                             <tr>
-                                                <td className="p-4 font-medium text-slate-900">Insurance</td>
-                                                <td className="p-4 text-slate-600">Limited homeowner&apos;s coverage</td>
+                                                <td className="p-4 font-medium text-[#F6F4EF]">Insurance</td>
+                                                <td className="p-4 text-[#D0CCC4]">Limited homeowner&apos;s coverage</td>
                                                 <td className="p-4 bg-green-50 font-semibold text-green-700">Full Lloyd&apos;s of London coverage</td>
                                             </tr>
                                         </tbody>
@@ -270,48 +270,48 @@ export default async function StatePage({ params }: Props) {
                                 </p>
 
                                 <div className="not-prose grid gap-4 my-6">
-                                    <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                                    <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
                                         <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center shrink-0 border border-amber-200">
-                                            <ShieldCheck className="w-8 h-8 text-[#B22234]" />
+                                            <ShieldCheck className="w-8 h-8 text-[#D4A94E]" />
                                         </div>
                                         <div className="flex-grow">
-                                            <h4 className="font-bold text-lg text-slate-900">Augusta Precious Metals</h4>
-                                            <p className="text-sm text-slate-600 mb-2">Best for: High-net-worth investors ($50k+) who want education-first approach</p>
+                                            <h4 className="font-bold text-lg text-[#F6F4EF]">Augusta Precious Metals</h4>
+                                            <p className="text-sm text-[#D0CCC4] mb-2">Best for: High-net-worth investors ($50k+) who want education-first approach</p>
                                             <p className="text-xs text-green-600 font-semibold">A+ BBB Rating | Zero Complaints | Serves {stateName}</p>
                                         </div>
                                         <LeadCaptureButton
                                             variant="gold"
                                             source={`local-${state}-augusta`}
-                                            className="inline-flex items-center justify-center rounded-md font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-10 px-4 text-sm"
+                                            className="inline-flex items-center justify-center rounded-md font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-10 px-4 text-sm"
                                         >
                                             Get Free Kit
                                         </LeadCaptureButton>
                                     </div>
 
-                                    <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                                    <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
                                         <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center shrink-0 border border-blue-200">
                                             <ShieldCheck className="w-8 h-8 text-blue-600" />
                                         </div>
                                         <div className="flex-grow">
-                                            <h4 className="font-bold text-lg text-slate-900">Goldco</h4>
-                                            <p className="text-sm text-slate-600 mb-2">Best for: First-time investors ($25k minimum) with excellent hand-holding</p>
+                                            <h4 className="font-bold text-lg text-[#F6F4EF]">Goldco</h4>
+                                            <p className="text-sm text-[#D0CCC4] mb-2">Best for: First-time investors ($25k minimum) with excellent hand-holding</p>
                                             <p className="text-xs text-green-600 font-semibold">A+ BBB Rating | 5,000+ 5-Star Reviews | Serves {stateName}</p>
                                         </div>
-                                        <Button variant="outline" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
+                                        <Button variant="outline" asChild className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]">
                                             <a href={getTrackedLink(AFFILIATE_LINKS.goldco, `local-${state}`, "goldco")} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
                                         </Button>
                                     </div>
 
-                                    <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                                    <div className="bg-[#0C0D18] p-6 rounded-xl border border-[#2A2D42] flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
                                         <div className="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center shrink-0 border border-amber-200">
-                                            <ShieldCheck className="w-8 h-8 text-[#B22234]" />
+                                            <ShieldCheck className="w-8 h-8 text-[#D4A94E]" />
                                         </div>
                                         <div className="flex-grow">
-                                            <h4 className="font-bold text-lg text-slate-900">Noble Gold Investments</h4>
-                                            <p className="text-sm text-slate-600 mb-2">Best for: Smaller accounts ($20k) & Texas storage option</p>
+                                            <h4 className="font-bold text-lg text-[#F6F4EF]">Noble Gold Investments</h4>
+                                            <p className="text-sm text-[#D0CCC4] mb-2">Best for: Smaller accounts ($20k) & Texas storage option</p>
                                             <p className="text-xs text-green-600 font-semibold">A+ BBB Rating | Low-Pressure Sales | Serves {stateName}</p>
                                         </div>
-                                        <Button variant="outline" asChild className="border-slate-300 text-slate-700 hover:bg-slate-100">
+                                        <Button variant="outline" asChild className="border-[#3F4460] text-[#D0CCC4] hover:bg-[#1E2134]">
                                             <a href={getTrackedLink(AFFILIATE_LINKS.noble, `local-${state}`, "noble")} target="_blank" rel="noopener noreferrer">Get Free Kit</a>
                                         </Button>
                                     </div>
@@ -338,11 +338,11 @@ export default async function StatePage({ params }: Props) {
 
                             {/* CTA */}
                             <div className="my-12 bg-gradient-to-r from-[#000080] to-[#000060] rounded-2xl p-8 text-white text-center relative overflow-hidden not-prose">
-                                <div className="absolute top-0 right-0 w-64 h-64 bg-[#B22234]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(220,38,38,0.18)] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
                                 <div className="relative z-10">
                                     <h3 className="text-2xl font-serif font-bold mb-4 text-white">{stateName} Residents: Protect Your Retirement</h3>
                                     <p className="mb-6 text-gray-200">Compare the top Gold IRA companies serving {stateName}. Get free investor kits with no obligation.</p>
-                                    <Button variant="gold" size="lg" asChild className="bg-[#B22234] hover:bg-[#8b1c2a] text-white">
+                                    <Button variant="gold" size="lg" asChild className="bg-[#DC2626] hover:bg-[#991B1B] text-white">
                                         <Link href="/best-gold-ira-companies">
                                             Compare Top Companies
                                         </Link>
@@ -365,9 +365,9 @@ export default async function StatePage({ params }: Props) {
                                                 <Link
                                                     key={c.slug}
                                                     href={`/local/${state}/${c.slug}`}
-                                                    className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-3 text-sm text-slate-700 hover:text-[#000080] transition-colors flex items-center gap-2"
+                                                    className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-3 text-sm text-[#D0CCC4] hover:text-[#F6F4EF] transition-colors flex items-center gap-2"
                                                 >
-                                                    <MapPin className="w-3.5 h-3.5 text-slate-400" />
+                                                    <MapPin className="w-3.5 h-3.5 text-[#A8A39A]" />
                                                     {c.name}
                                                 </Link>
                                             ))}

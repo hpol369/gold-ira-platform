@@ -57,7 +57,7 @@ export function TableOfContents({ items, className }: TableOfContentsProps) {
                                 "hover:text-amber-400 hover:pl-5",
                                 activeId === item.id
                                     ? "border-l-2 border-amber-400 font-semibold text-white bg-amber-400/5 rounded-r-lg"
-                                    : "border-l-2 border-transparent text-slate-400"
+                                    : "border-l-2 border-transparent text-[#A8A39A]"
                             )}
                         >
                             {item.label}

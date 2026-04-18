@@ -95,45 +95,45 @@ export default function JunkSilverValuePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      <section className="py-16 md:py-24 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <Link
               href="/silver-coin-values"
-              className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 transition-colors"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] hover:text-[#F6F4EF] mb-6 transition-colors"
             >
               <ArrowLeft className="h-4 w-4" />
               Back to Silver Coin Values
             </Link>
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#B22234]/20 border border-[#B22234]/30 rounded-full text-[#B22234] font-semibold text-sm mb-6 ml-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-[rgba(220,38,38,0.18)] border border-[#B22234]/30 rounded-full text-[#D4A94E] font-semibold text-sm mb-6 ml-4">
               <Star className="h-4 w-4" />
               CONSTITUTIONAL SILVER
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#F6F4EF] mb-6">
               Junk Silver Value Guide
             </h1>
-            <p className="text-xl text-slate-600 max-w-2xl mb-8">
-              &quot;Junk&quot; silver isn&apos;t junk at all - it&apos;s <span className="text-[#B22234] font-semibold">real money</span>.
+            <p className="text-xl text-[#D0CCC4] max-w-2xl mb-8">
+              &quot;Junk&quot; silver isn&apos;t junk at all - it&apos;s <span className="text-[#D4A94E] font-semibold">real money</span>.
               Pre-1965 US coins containing 90% silver are the most affordable, recognizable way
               to own physical silver outside the banking system.
-              <span className="text-[#B22234] font-semibold"> What the banks don&apos;t want you to know:
+              <span className="text-[#D4A94E] font-semibold"> What the banks don&apos;t want you to know:
               this is the money they replaced with paper promises.</span>
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <Coins className="h-4 w-4 text-slate-600" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <Coins className="h-4 w-4 text-[#D0CCC4]" />
                 90% Silver
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <Scale className="h-4 w-4 text-slate-600" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <Scale className="h-4 w-4 text-[#D0CCC4]" />
                 ~$18/face value
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
                 <TrendingUp className="h-4 w-4 text-green-400" />
                 Lowest Premiums
               </span>
-              <span className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-lg text-slate-600">
-                <Shield className="h-4 w-4 text-[#B22234]" />
+              <span className="flex items-center gap-2 bg-[#0C0D18] px-4 py-2 rounded-lg text-[#D0CCC4]">
+                <Shield className="h-4 w-4 text-[#D4A94E]" />
                 Legal Tender
               </span>
             </div>
@@ -142,20 +142,20 @@ export default function JunkSilverValuePage() {
       </section>
 
       {/* What Is Junk Silver */}
-      <section className="py-12 bg-white border-y border-slate-200">
+      <section className="py-12 bg-[#161828] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-[#B22234]/10 via-amber-500/5 to-transparent border-l-4 border-amber-500 rounded-r-xl p-6">
-              <h2 className="text-lg font-bold text-slate-900 mb-2">
+              <h2 className="text-lg font-bold text-[#F6F4EF] mb-2">
                 Why &quot;Junk&quot; Silver?
               </h2>
-              <p className="text-slate-600 mb-3">
+              <p className="text-[#D0CCC4] mb-3">
                 The term &quot;junk&quot; refers to coins with no numismatic (collector) premium - they&apos;re valued
                 purely for silver content. But make no mistake: these coins represent
-                <span className="text-[#B22234] font-semibold"> real money that has preserved purchasing power
+                <span className="text-[#D4A94E] font-semibold"> real money that has preserved purchasing power
                 for over a century</span>, while the dollar has lost 95% of its value.
               </p>
-              <p className="text-slate-600 text-sm">
+              <p className="text-[#D0CCC4] text-sm">
                 Also called &quot;constitutional silver&quot; (because the Constitution defines money as gold and silver),
                 these pre-1965 coins are the most practical form of silver ownership for everyday Americans.
               </p>
@@ -165,41 +165,41 @@ export default function JunkSilverValuePage() {
       </section>
 
       {/* Silver Content Chart */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-4">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-4">
               Silver Content by Coin Type
             </h2>
-            <p className="text-slate-600 text-center mb-8 max-w-2xl mx-auto">
+            <p className="text-[#D0CCC4] text-center mb-8 max-w-2xl mx-auto">
               All 90% silver coins (except war nickels) contain 0.7234 oz of silver per $1 face value.
               This consistency makes calculating value straightforward.
             </p>
-            <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl overflow-hidden overflow-x-auto">
+            <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl overflow-hidden overflow-x-auto">
               <table className="w-full min-w-[700px] text-sm">
                 <thead className="bg-slate-800/80">
                   <tr>
-                    <th className="text-left p-4 text-slate-900 font-bold">Coin Type</th>
-                    <th className="text-center p-4 text-slate-900 font-bold">Face Value</th>
-                    <th className="text-center p-4 text-slate-900 font-bold">Silver per Coin</th>
-                    <th className="text-center p-4 text-slate-900 font-bold">Silver per $1 Face</th>
-                    <th className="text-center p-4 text-slate-900 font-bold">Coins in $1,000 Bag</th>
+                    <th className="text-left p-4 text-[#F6F4EF] font-bold">Coin Type</th>
+                    <th className="text-center p-4 text-[#F6F4EF] font-bold">Face Value</th>
+                    <th className="text-center p-4 text-[#F6F4EF] font-bold">Silver per Coin</th>
+                    <th className="text-center p-4 text-[#F6F4EF] font-bold">Silver per $1 Face</th>
+                    <th className="text-center p-4 text-[#F6F4EF] font-bold">Coins in $1,000 Bag</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200">
+                <tbody className="divide-y divide-[#2A2D42]">
                   {silverContent.map((row, index) => (
-                    <tr key={index} className={row.coin.includes("War") ? "bg-[#B22234]/10" : ""}>
-                      <td className="p-4 text-slate-900 font-medium">{row.coin}</td>
-                      <td className="p-4 text-center text-slate-600">${row.faceValue.toFixed(2)}</td>
-                      <td className="p-4 text-center text-slate-600">{row.silverOz} oz</td>
+                    <tr key={index} className={row.coin.includes("War") ? "bg-[rgba(220,38,38,0.1)]" : ""}>
+                      <td className="p-4 text-[#F6F4EF] font-medium">{row.coin}</td>
+                      <td className="p-4 text-center text-[#D0CCC4]">${row.faceValue.toFixed(2)}</td>
+                      <td className="p-4 text-center text-[#D0CCC4]">{row.silverOz} oz</td>
                       <td className="p-4 text-center text-green-400">{row.perDollar} oz</td>
-                      <td className="p-4 text-center text-slate-600">{row.coinsPer1000.toLocaleString()}</td>
+                      <td className="p-4 text-center text-[#D0CCC4]">{row.coinsPer1000.toLocaleString()}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-xs text-slate-600 mt-4 text-center">
+            <p className="text-xs text-[#D0CCC4] mt-4 text-center">
               War nickels (35% silver) are sometimes included in junk silver but have different silver content per dollar face value.
             </p>
           </div>
@@ -210,29 +210,29 @@ export default function JunkSilverValuePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               How to Calculate Junk Silver Value
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#F6F4EF] mb-4 flex items-center gap-2">
                   <DollarSign className="h-5 w-5 text-green-400" />
                   The Formula
                 </h3>
-                <div className="bg-slate-50 rounded-lg p-4 mb-4">
-                  <p className="text-slate-600 font-mono text-center">
+                <div className="bg-[#0C0D18] rounded-lg p-4 mb-4">
+                  <p className="text-[#D0CCC4] font-mono text-center">
                     Face Value x 0.7234 x Spot Price = Melt Value
                   </p>
                 </div>
-                <ul className="space-y-2 text-slate-600 text-sm">
-                  <li><span className="text-slate-900 font-semibold">0.7234</span> = oz of silver per $1 face (90% coins)</li>
-                  <li><span className="text-slate-900 font-semibold">Spot Price</span> = Current silver price per oz</li>
-                  <li><span className="text-slate-900 font-semibold">Face Value</span> = Total denomination ($1, $10, $1000, etc.)</li>
+                <ul className="space-y-2 text-[#D0CCC4] text-sm">
+                  <li><span className="text-[#F6F4EF] font-semibold">0.7234</span> = oz of silver per $1 face (90% coins)</li>
+                  <li><span className="text-[#F6F4EF] font-semibold">Spot Price</span> = Current silver price per oz</li>
+                  <li><span className="text-[#F6F4EF] font-semibold">Face Value</span> = Total denomination ($1, $10, $1000, etc.)</li>
                 </ul>
               </div>
               <div className="bg-gradient-to-br from-[#B22234]/10 via-amber-500/5 to-transparent border border-[#B22234]/30 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#B22234] mb-4">Example @ $25/oz Silver</h3>
-                <ul className="space-y-3 text-slate-600">
+                <h3 className="text-lg font-bold text-[#D4A94E] mb-4">Example @ $25/oz Silver</h3>
+                <ul className="space-y-3 text-[#D0CCC4]">
                   <li className="flex justify-between">
                     <span>$1 face value:</span>
                     <span className="text-green-400 font-semibold">${meltPerDollar.toFixed(2)} melt</span>
@@ -245,14 +245,14 @@ export default function JunkSilverValuePage() {
                     <span>$100 face value:</span>
                     <span className="text-green-400 font-semibold">${(meltPerDollar * 100).toFixed(2)} melt</span>
                   </li>
-                  <li className="flex justify-between border-t border-slate-200 pt-3">
+                  <li className="flex justify-between border-t border-[#2A2D42] pt-3">
                     <span>$1,000 bag:</span>
-                    <span className="text-[#B22234] font-bold">${(meltPerDollar * 1000).toFixed(2)} melt</span>
+                    <span className="text-[#D4A94E] font-bold">${(meltPerDollar * 1000).toFixed(2)} melt</span>
                   </li>
                 </ul>
                 <Link
                   href="/silver-coin-values/melt-value-calculator"
-                  className="inline-flex items-center gap-2 mt-4 text-[#B22234] hover:text-[#B22234] transition-colors"
+                  className="inline-flex items-center gap-2 mt-4 text-[#D4A94E] hover:text-[#D4A94E] transition-colors"
                 >
                   Use Interactive Calculator
                   <ArrowRight className="h-4 w-4" />
@@ -264,67 +264,67 @@ export default function JunkSilverValuePage() {
       </section>
 
       {/* Buying & Selling */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Buying & Selling Junk Silver
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
                 <h3 className="text-lg font-bold text-green-400 mb-4">Buying (What You&apos;ll Pay)</h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Typical Premium:</span> 3-10% over melt
+                      <span className="font-semibold text-[#F6F4EF]">Typical Premium:</span> 3-10% over melt
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Large Bags ($1,000 face):</span> Lowest premiums
+                      <span className="font-semibold text-[#F6F4EF]">Large Bags ($1,000 face):</span> Lowest premiums
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Small Lots:</span> Higher premiums, more convenience
+                      <span className="font-semibold text-[#F6F4EF]">Small Lots:</span> Higher premiums, more convenience
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
                     <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Crisis Periods:</span> Premiums can spike to 20%+
+                      <span className="font-semibold text-[#F6F4EF]">Crisis Periods:</span> Premiums can spike to 20%+
                     </div>
                   </li>
                 </ul>
               </div>
-              <div className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6">
-                <h3 className="text-lg font-bold text-[#B22234] mb-4">Selling (What You&apos;ll Get)</h3>
+              <div className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6">
+                <h3 className="text-lg font-bold text-[#D4A94E] mb-4">Selling (What You&apos;ll Get)</h3>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3 text-slate-600">
-                    <CheckCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
+                    <CheckCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Typical Buyback:</span> 95-100% of melt
+                      <span className="font-semibold text-[#F6F4EF]">Typical Buyback:</span> 95-100% of melt
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
-                    <CheckCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
+                    <CheckCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Coin Shops:</span> Usually best prices locally
+                      <span className="font-semibold text-[#F6F4EF]">Coin Shops:</span> Usually best prices locally
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
-                    <CheckCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
+                    <CheckCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Online Dealers:</span> Competitive but shipping costs
+                      <span className="font-semibold text-[#F6F4EF]">Online Dealers:</span> Competitive but shipping costs
                     </div>
                   </li>
-                  <li className="flex items-start gap-3 text-slate-600">
-                    <CheckCircle className="h-5 w-5 text-[#B22234] flex-shrink-0 mt-0.5" />
+                  <li className="flex items-start gap-3 text-[#D0CCC4]">
+                    <CheckCircle className="h-5 w-5 text-[#D4A94E] flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900">Pawn Shops:</span> Avoid - typically pay 60-70% of melt
+                      <span className="font-semibold text-[#F6F4EF]">Pawn Shops:</span> Avoid - typically pay 60-70% of melt
                     </div>
                   </li>
                 </ul>
@@ -338,7 +338,7 @@ export default function JunkSilverValuePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Why Choose Junk Silver?
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -376,10 +376,10 @@ export default function JunkSilverValuePage() {
               ].map((item, index) => {
                 const Icon = item.icon;
                 return (
-                  <div key={index} className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-5">
-                    <Icon className="h-8 w-8 text-[#B22234] mb-3" />
-                    <h3 className="text-slate-900 font-bold mb-2">{item.title}</h3>
-                    <p className="text-slate-600 text-sm">{item.description}</p>
+                  <div key={index} className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-5">
+                    <Icon className="h-8 w-8 text-[#D4A94E] mb-3" />
+                    <h3 className="text-[#F6F4EF] font-bold mb-2">{item.title}</h3>
+                    <p className="text-[#D0CCC4] text-sm">{item.description}</p>
                   </div>
                 );
               })}
@@ -389,22 +389,22 @@ export default function JunkSilverValuePage() {
       </section>
 
       {/* Limitations */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[#B22234]/10 border border-[#B22234]/30 rounded-xl p-6">
+            <div className="bg-[rgba(220,38,38,0.1)] border border-[#B22234]/30 rounded-xl p-6">
               <div className="flex items-start gap-4">
-                <AlertTriangle className="h-6 w-6 text-[#B22234] flex-shrink-0 mt-1" />
+                <AlertTriangle className="h-6 w-6 text-[#D4A94E] flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">
+                  <h3 className="text-lg font-bold text-[#F6F4EF] mb-2">
                     Important: Junk Silver is NOT IRA-Eligible
                   </h3>
-                  <p className="text-slate-600 mb-3">
+                  <p className="text-[#D0CCC4] mb-3">
                     The IRS requires precious metals in IRAs to be .999 fine (99.9% pure) or higher.
                     90% silver coins do not meet this requirement and cannot be held in a
                     self-directed precious metals IRA.
                   </p>
-                  <p className="text-slate-600 text-sm">
+                  <p className="text-[#D0CCC4] text-sm">
                     For tax-advantaged retirement accounts, consider American Silver Eagles,
                     Canadian Silver Maple Leafs, or .999 fine silver bars from approved refiners.
                     Augusta Precious Metals specializes in IRA-eligible precious metals.
@@ -420,22 +420,22 @@ export default function JunkSilverValuePage() {
       <section className="py-16 bg-white">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
+            <h2 className="text-2xl font-bold text-[#F6F4EF] text-center mb-8">
               Frequently Asked Questions
             </h2>
             <div className="space-y-4">
               {schema.mainEntity.map((faq, index) => (
                 <details
                   key={index}
-                  className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                  className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
                 >
-                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF]">
                     <h3 className="text-lg font-bold">{faq.name}</h3>
-                    <span className="shrink-0 rounded-full bg-slate-100 p-1.5 text-slate-600">
+                    <span className="shrink-0 rounded-full bg-[#121423] p-1.5 text-[#D0CCC4]">
                       <ArrowRight className="h-5 w-5 transition duration-300 group-open:rotate-90" />
                     </span>
                   </summary>
-                  <p className="mt-4 leading-relaxed text-slate-600">
+                  <p className="mt-4 leading-relaxed text-[#D0CCC4]">
                     {faq.acceptedAnswer.text}
                   </p>
                 </details>
@@ -446,33 +446,33 @@ export default function JunkSilverValuePage() {
       </section>
 
       {/* Related Pages */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12 bg-[#0C0D18]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
+            <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
               Related Silver Coin Guides
             </h2>
             <div className="grid sm:grid-cols-3 gap-4">
               <Link
                 href="/silver-coin-values/melt-value-calculator"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Melt Value Calculator</h3>
-                <p className="text-sm text-slate-600">Calculate silver value instantly</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Melt Value Calculator</h3>
+                <p className="text-sm text-[#D0CCC4]">Calculate silver value instantly</p>
               </Link>
               <Link
                 href="/silver-coin-values/silver-quarters"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">Silver Quarters</h3>
-                <p className="text-sm text-slate-600">Washington, Standing Liberty, Barber</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">Silver Quarters</h3>
+                <p className="text-sm text-[#D0CCC4]">Washington, Standing Liberty, Barber</p>
               </Link>
               <Link
                 href="/silver-coin-values/war-nickels"
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-4 hover:bg-slate-100 transition-colors group"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-4 hover:bg-[#1E2134] transition-colors group"
               >
-                <h3 className="font-bold text-slate-900 group-hover:text-[#B22234] transition-colors">War Nickels</h3>
-                <p className="text-sm text-slate-600">1942-1945 35% silver nickels</p>
+                <h3 className="font-bold text-[#F6F4EF] group-hover:text-[#D4A94E] transition-colors">War Nickels</h3>
+                <p className="text-sm text-[#D0CCC4]">1942-1945 35% silver nickels</p>
               </Link>
             </div>
           </div>

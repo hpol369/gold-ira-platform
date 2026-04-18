@@ -241,14 +241,14 @@ export default function SilverVsBondsPage() {
 
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-slate-50" />
+        <div className="absolute inset-0 bg-[#0C0D18]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(20,184,166,0.15),transparent_50%)]" />
 
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <Link
               href="/silver-retirement"
-              className="inline-flex items-center gap-2 text-slate-600 text-sm hover:text-slate-900 transition-colors mb-6"
+              className="inline-flex items-center gap-2 text-[#D0CCC4] text-sm hover:text-[#F6F4EF] transition-colors mb-6"
             >
               <ArrowRight className="h-4 w-4 rotate-180" />
               Back to Silver Retirement Hub
@@ -257,11 +257,11 @@ export default function SilverVsBondsPage() {
               <Scale className="h-4 w-4" />
               COMPARISON GUIDE
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#000080] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#F6F4EF] mb-6">
               Silver vs Bonds for{" "}
               <span className="text-teal-400">Retirees</span>
             </h1>
-            <p className="text-xl text-slate-600 mb-8">
+            <p className="text-xl text-[#D0CCC4] mb-8">
               Should you own silver, bonds, or both in retirement? A detailed
               comparison of inflation protection, income, risk, and more.
             </p>
@@ -269,7 +269,7 @@ export default function SilverVsBondsPage() {
             <LeadCaptureButton
               variant="silver"
               source="silver-retirement-bonds-hero"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-11 px-8"
             >
               Explore Silver IRAs <ArrowRight className="ml-2 h-4 w-4" />
             </LeadCaptureButton>
@@ -278,19 +278,19 @@ export default function SilverVsBondsPage() {
       </section>
 
       {/* Quick Summary */}
-      <section className="py-12 bg-slate-100 border-y border-slate-200">
+      <section className="py-12 bg-[#121423] border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
               The Bottom Line
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-slate-100/30 border border-slate-200 rounded-xl p-6">
+              <div className="bg-[#121423]/30 border border-[#2A2D42] rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <TrendingUp className="h-6 w-6 text-slate-600" />
-                  <h3 className="font-bold text-slate-900">Choose Silver When:</h3>
+                  <TrendingUp className="h-6 w-6 text-[#D0CCC4]" />
+                  <h3 className="font-bold text-[#F6F4EF]">Choose Silver When:</h3>
                 </div>
-                <ul className="space-y-2 text-sm text-slate-600">
+                <ul className="space-y-2 text-sm text-[#D0CCC4]">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-teal-400 mt-0.5" />
                     You're concerned about inflation eroding purchasing power
@@ -305,12 +305,12 @@ export default function SilverVsBondsPage() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-slate-100/30 border border-slate-200 rounded-xl p-6">
+              <div className="bg-[#121423]/30 border border-[#2A2D42] rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <DollarSign className="h-6 w-6 text-slate-600" />
-                  <h3 className="font-bold text-slate-900">Choose Bonds When:</h3>
+                  <DollarSign className="h-6 w-6 text-[#D0CCC4]" />
+                  <h3 className="font-bold text-[#F6F4EF]">Choose Bonds When:</h3>
                 </div>
-                <ul className="space-y-2 text-sm text-slate-600">
+                <ul className="space-y-2 text-sm text-[#D0CCC4]">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-teal-400 mt-0.5" />
                     You need regular income from your portfolio
@@ -333,43 +333,43 @@ export default function SilverVsBondsPage() {
       {/* Comparison Table */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
             Head-to-Head Comparison
           </h2>
           <div className="overflow-x-auto max-w-5xl mx-auto">
-            <table className="w-full text-left border-collapse bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200">
-              <thead className="bg-slate-50">
+            <table className="w-full text-left border-collapse bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42]">
+              <thead className="bg-[#0C0D18]">
                 <tr>
-                  <th className="p-4 border-b border-slate-200 font-bold text-slate-900">Factor</th>
-                  <th className="p-4 border-b border-slate-200 font-bold text-slate-600">Silver</th>
-                  <th className="p-4 border-b border-slate-200 font-bold text-teal-400">Bonds</th>
+                  <th className="p-4 border-b border-[#2A2D42] font-bold text-[#F6F4EF]">Factor</th>
+                  <th className="p-4 border-b border-[#2A2D42] font-bold text-[#D0CCC4]">Silver</th>
+                  <th className="p-4 border-b border-[#2A2D42] font-bold text-teal-400">Bonds</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-200 text-sm">
+              <tbody className="divide-y divide-[#2A2D42] text-sm">
                 {comparisonTable.map((row, index) => (
-                  <tr key={index} className={index % 2 === 0 ? "" : "bg-slate-100"}>
-                    <td className="p-4 font-semibold text-slate-900">{row.factor}</td>
-                    <td className="p-4 text-slate-600">
+                  <tr key={index} className={index % 2 === 0 ? "" : "bg-[#121423]"}>
+                    <td className="p-4 font-semibold text-[#F6F4EF]">{row.factor}</td>
+                    <td className="p-4 text-[#D0CCC4]">
                       <div className="mb-1">{row.silver}</div>
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
                           <div
                             key={i}
                             className={`w-3 h-3 rounded-full ${
-                              i < row.silverScore ? "bg-slate-400" : "bg-slate-100"
+                              i < row.silverScore ? "bg-slate-400" : "bg-[#121423]"
                             }`}
                           />
                         ))}
                       </div>
                     </td>
-                    <td className="p-4 text-slate-600">
+                    <td className="p-4 text-[#D0CCC4]">
                       <div className="mb-1">{row.bonds}</div>
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
                           <div
                             key={i}
                             className={`w-3 h-3 rounded-full ${
-                              i < row.bondsScore ? "bg-teal-400" : "bg-slate-100"
+                              i < row.bondsScore ? "bg-teal-400" : "bg-[#121423]"
                             }`}
                           />
                         ))}
@@ -384,13 +384,13 @@ export default function SilverVsBondsPage() {
       </section>
 
       {/* Pros and Cons */}
-      <section className="py-16 bg-slate-100">
+      <section className="py-16 bg-[#121423]">
         <Container>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Silver */}
             <div>
-              <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-                <TrendingUp className="h-5 w-5 text-slate-600" />
+              <h2 className="text-xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-2">
+                <TrendingUp className="h-5 w-5 text-[#D0CCC4]" />
                 Silver for Retirees
               </h2>
               <div className="space-y-4">
@@ -398,7 +398,7 @@ export default function SilverVsBondsPage() {
                   <h3 className="font-semibold text-green-400 mb-3">Pros</h3>
                   <ul className="space-y-2 text-sm">
                     {silverPros.map((pro, i) => (
-                      <li key={i} className="flex items-start gap-2 text-slate-600">
+                      <li key={i} className="flex items-start gap-2 text-[#D0CCC4]">
                         <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
                         {pro}
                       </li>
@@ -409,7 +409,7 @@ export default function SilverVsBondsPage() {
                   <h3 className="font-semibold text-red-400 mb-3">Cons</h3>
                   <ul className="space-y-2 text-sm">
                     {silverCons.map((con, i) => (
-                      <li key={i} className="flex items-start gap-2 text-slate-600">
+                      <li key={i} className="flex items-start gap-2 text-[#D0CCC4]">
                         <XCircle className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
                         {con}
                       </li>
@@ -421,7 +421,7 @@ export default function SilverVsBondsPage() {
 
             {/* Bonds */}
             <div>
-              <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+              <h2 className="text-xl font-bold text-[#F6F4EF] mb-6 flex items-center gap-2">
                 <DollarSign className="h-5 w-5 text-teal-400" />
                 Bonds for Retirees
               </h2>
@@ -430,7 +430,7 @@ export default function SilverVsBondsPage() {
                   <h3 className="font-semibold text-green-400 mb-3">Pros</h3>
                   <ul className="space-y-2 text-sm">
                     {bondsPros.map((pro, i) => (
-                      <li key={i} className="flex items-start gap-2 text-slate-600">
+                      <li key={i} className="flex items-start gap-2 text-[#D0CCC4]">
                         <CheckCircle2 className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
                         {pro}
                       </li>
@@ -441,7 +441,7 @@ export default function SilverVsBondsPage() {
                   <h3 className="font-semibold text-red-400 mb-3">Cons</h3>
                   <ul className="space-y-2 text-sm">
                     {bondsCons.map((con, i) => (
-                      <li key={i} className="flex items-start gap-2 text-slate-600">
+                      <li key={i} className="flex items-start gap-2 text-[#D0CCC4]">
                         <XCircle className="h-4 w-4 text-red-400 mt-0.5 flex-shrink-0" />
                         {con}
                       </li>
@@ -455,13 +455,13 @@ export default function SilverVsBondsPage() {
       </section>
 
       {/* Mid-Page CTA */}
-      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-slate-200">
+      <section className="py-12 bg-gradient-to-r from-slate-100 via-[#B22234]/10 to-slate-100 border-y border-[#2A2D42]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+            <h3 className="text-2xl font-bold text-[#F6F4EF] mb-4">
               Considering Adding Silver to Your Portfolio?
             </h3>
-            <p className="text-slate-600 mb-6">
+            <p className="text-[#D0CCC4] mb-6">
               Augusta Precious Metals can help you understand how silver fits with
               your existing bond holdings. Free educational consultation with no
               sales pressure.
@@ -469,7 +469,7 @@ export default function SilverVsBondsPage() {
             <LeadCaptureButton
               variant="silver"
               source="silver-retirement-bonds-mid"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#B22234] hover:bg-[#8b1c2a] text-white h-11 px-8"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-[#DC2626] hover:bg-[#991B1B] text-white h-11 px-8"
             >
               Learn About Silver IRAs <ArrowRight className="ml-2 h-4 w-4" />
             </LeadCaptureButton>
@@ -480,24 +480,24 @@ export default function SilverVsBondsPage() {
       {/* Scenario Analysis */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
             Which Wins in Different Scenarios?
           </h2>
           <div className="space-y-4 max-w-4xl mx-auto">
             {scenarios.map((item, index) => (
               <div
                 key={index}
-                className="bg-slate-50 backdrop-blur-sm border border-slate-200 rounded-xl p-6"
+                className="bg-[#0C0D18] backdrop-blur-sm border border-[#2A2D42] rounded-xl p-6"
               >
                 <div className="flex flex-col md:flex-row md:items-center gap-4">
                   <div className="flex-1">
-                    <h3 className="font-bold text-slate-900 mb-2">{item.scenario}</h3>
-                    <p className="text-sm text-slate-600">{item.explanation}</p>
+                    <h3 className="font-bold text-[#F6F4EF] mb-2">{item.scenario}</h3>
+                    <p className="text-sm text-[#D0CCC4]">{item.explanation}</p>
                   </div>
                   <div
                     className={`px-4 py-2 rounded-full font-bold text-sm ${
                       item.winner === "Silver"
-                        ? "bg-slate-200 text-slate-700"
+                        ? "bg-slate-200 text-[#D0CCC4]"
                         : "bg-teal-500/20 text-teal-600"
                     }`}
                   >
@@ -511,30 +511,30 @@ export default function SilverVsBondsPage() {
       </section>
 
       {/* Balanced Approach */}
-      <section className="py-16 bg-slate-100">
+      <section className="py-16 bg-[#121423]">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-serif font-bold text-[#000080] mb-4">
+            <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] mb-4">
               The Best Approach: Own Both
             </h2>
-            <p className="text-slate-600 mb-8">
+            <p className="text-[#D0CCC4] mb-8">
               Most financial experts recommend retirees hold both bonds (for income
               and stability) and precious metals like silver (for inflation protection).
               A common allocation:
             </p>
-            <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+            <div className="bg-[#0C0D18] border border-[#2A2D42] rounded-xl p-6">
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-slate-900 mb-1">50-60%</div>
-                  <div className="text-sm text-slate-600">Stocks & Equities</div>
+                  <div className="text-3xl font-bold text-[#F6F4EF] mb-1">50-60%</div>
+                  <div className="text-sm text-[#D0CCC4]">Stocks & Equities</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-teal-400 mb-1">25-35%</div>
-                  <div className="text-sm text-slate-600">Bonds & Fixed Income</div>
+                  <div className="text-sm text-[#D0CCC4]">Bonds & Fixed Income</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-slate-600 mb-1">5-15%</div>
-                  <div className="text-sm text-slate-600">Precious Metals (Gold/Silver)</div>
+                  <div className="text-3xl font-bold text-[#D0CCC4] mb-1">5-15%</div>
+                  <div className="text-sm text-[#D0CCC4]">Precious Metals (Gold/Silver)</div>
                 </div>
               </div>
             </div>
@@ -545,22 +545,22 @@ export default function SilverVsBondsPage() {
       {/* FAQs */}
       <section className="py-16">
         <Container>
-          <h2 className="text-2xl font-serif font-bold text-[#000080] text-center mb-8">
+          <h2 className="text-2xl font-serif font-bold text-[#F6F4EF] text-center mb-8">
             Silver vs Bonds FAQs
           </h2>
           <div className="max-w-3xl mx-auto space-y-4">
             {faqs.map((faq, index) => (
               <details
                 key={index}
-                className="group bg-slate-50 backdrop-blur-sm rounded-xl border border-slate-200 p-6"
+                className="group bg-[#0C0D18] backdrop-blur-sm rounded-xl border border-[#2A2D42] p-6"
               >
-                <summary className="flex cursor-pointer items-center justify-between gap-4 text-slate-900 font-semibold list-none">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 text-[#F6F4EF] font-semibold list-none">
                   {faq.question}
-                  <span className="text-[#B22234] group-open:rotate-180 transition-transform">
+                  <span className="text-[#D4A94E] group-open:rotate-180 transition-transform">
                     &#9660;
                   </span>
                 </summary>
-                <p className="mt-4 text-slate-600">{faq.answer}</p>
+                <p className="mt-4 text-[#D0CCC4]">{faq.answer}</p>
               </details>
             ))}
           </div>
@@ -568,39 +568,39 @@ export default function SilverVsBondsPage() {
       </section>
 
       {/* Related Pages */}
-      <section className="py-12 bg-slate-100">
+      <section className="py-12 bg-[#121423]">
         <Container>
-          <h2 className="text-xl font-bold text-slate-900 text-center mb-6">
+          <h2 className="text-xl font-bold text-[#F6F4EF] text-center mb-6">
             Continue Your Research
           </h2>
           <div className="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             <Link
               href="/silver-retirement/how-much-silver"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">How Much Silver?</h3>
-              <p className="text-sm text-slate-600">Portfolio allocation guide</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">How Much Silver?</h3>
+              <p className="text-sm text-[#D0CCC4]">Portfolio allocation guide</p>
             </Link>
             <Link
               href="/silver-retirement/transfer-ira-to-silver"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">Transfer IRA to Silver</h3>
-              <p className="text-sm text-slate-600">Step-by-step guide</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">Transfer IRA to Silver</h3>
+              <p className="text-sm text-[#D0CCC4]">Step-by-step guide</p>
             </Link>
             <Link
               href="/silver-retirement/rmd-rules"
-              className="bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg p-4 transition-colors"
+              className="bg-[#0C0D18] hover:bg-[#1E2134] border border-[#2A2D42] rounded-lg p-4 transition-colors"
             >
-              <h3 className="font-semibold text-slate-900 mb-1">Silver IRA RMD Rules</h3>
-              <p className="text-sm text-slate-600">Distribution planning</p>
+              <h3 className="font-semibold text-[#F6F4EF] mb-1">Silver IRA RMD Rules</h3>
+              <p className="text-sm text-[#D0CCC4]">Distribution planning</p>
             </Link>
           </div>
         </Container>
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 border-t border-slate-200">
+      <section className="py-16 border-t border-[#2A2D42]">
         <Container>
           <AugustaCTA
             variant="footer"

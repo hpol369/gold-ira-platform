@@ -75,30 +75,30 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
     };
 
     return (
-        <section id="wealth-calculator" className="py-24 bg-white border-y border-slate-200 scroll-mt-20">
+        <section id="wealth-calculator" className="py-24 bg-[#161828] border-y border-[#2A2D42] scroll-mt-20">
             <Container>
                 <div className="text-center mb-12">
-                    <span className="text-[#B22234] font-bold tracking-widest uppercase text-xs mb-3 block">
+                    <span className="text-[#D4A94E] font-bold tracking-widest uppercase text-xs mb-3 block">
                         The Cost of Inaction
                     </span>
-                    <h2 className="text-3xl md:text-5xl font-serif font-black text-[#000080] mb-6">
+                    <h2 className="text-3xl md:text-5xl font-serif font-black text-[#F6F4EF] mb-6">
                         See Your Financial Future
                     </h2>
-                    <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
+                    <p className="text-xl text-[#D0CCC4] max-w-2xl mx-auto font-medium">
                         Don't guess. See exactly what happens to your savings if you leave it in the bank versus moving it to gold.
                     </p>
                 </div>
 
-                <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden max-w-5xl mx-auto">
+                <div className="bg-[#161828] rounded-3xl border border-[#2A2D42] shadow-xl overflow-hidden max-w-5xl mx-auto">
                     {/* Input Section */}
-                    <div className="p-8 md:p-12 border-b border-slate-200 bg-slate-50/50">
+                    <div className="p-8 md:p-12 border-b border-[#2A2D42] bg-[#0C0D18]/50">
                         <div className="grid md:grid-cols-2 gap-12">
                             {/* Inputs */}
                             <div className="space-y-10">
                                 <div>
                                     <div className="flex justify-between items-center mb-4">
-                                        <label className="text-sm font-bold text-slate-500 uppercase tracking-wider">Investable Savings</label>
-                                        <div className="text-3xl font-serif font-bold text-[#000080]">
+                                        <label className="text-sm font-bold text-[#A8A39A] uppercase tracking-wider">Investable Savings</label>
+                                        <div className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                             {formatCurrency(amount)}
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
                                         onValueChange={handleAmountChange}
                                         className="py-4 cursor-pointer"
                                     />
-                                    <div className="flex justify-between text-xs text-slate-400 font-bold">
+                                    <div className="flex justify-between text-xs text-[#A8A39A] font-bold">
                                         <span>$50k</span>
                                         <span>$3M+</span>
                                     </div>
@@ -118,8 +118,8 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
 
                                 <div>
                                     <div className="flex justify-between items-center mb-4">
-                                        <label className="text-sm font-bold text-slate-500 uppercase tracking-wider">Time Horizon</label>
-                                        <div className="text-3xl font-serif font-bold text-[#000080]">
+                                        <label className="text-sm font-bold text-[#A8A39A] uppercase tracking-wider">Time Horizon</label>
+                                        <div className="text-3xl font-serif font-bold text-[#F6F4EF]">
                                             {years} Years
                                         </div>
                                     </div>
@@ -131,7 +131,7 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
                                         onValueChange={handleYearsChange}
                                         className="py-4 cursor-pointer"
                                     />
-                                    <div className="flex justify-between text-xs text-slate-400 font-bold">
+                                    <div className="flex justify-between text-xs text-[#A8A39A] font-bold">
                                         <span>5 Years</span>
                                         <span>30 Years</span>
                                     </div>
@@ -139,14 +139,14 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
                             </div>
 
                             {/* Narrative */}
-                            <div className="flex flex-col justify-center md:border-l border-slate-200 md:pl-12 pt-8 md:pt-0">
-                                <h4 className="text-xl font-bold text-[#000080] mb-3">Two Paths Diverge</h4>
-                                <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                                    In <span className="text-[#000080] font-bold">{years} years</span>, the difference between holding cash and holding gold could cost you <span className="text-[#B22234] font-black underline decoration-2 underline-offset-4">{formatCurrency(goldValue - cashValue)}</span>.
+                            <div className="flex flex-col justify-center md:border-l border-[#2A2D42] md:pl-12 pt-8 md:pt-0">
+                                <h4 className="text-xl font-bold text-[#F6F4EF] mb-3">Two Paths Diverge</h4>
+                                <p className="text-[#D0CCC4] text-lg leading-relaxed font-medium">
+                                    In <span className="text-[#F6F4EF] font-bold">{years} years</span>, the difference between holding cash and holding gold could cost you <span className="text-[#D4A94E] font-black underline decoration-2 underline-offset-4">{formatCurrency(goldValue - cashValue)}</span>.
                                 </p>
                                 <div className="mt-8 p-4 bg-amber-50 rounded-xl border border-amber-100 flex items-start gap-3">
                                     <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
-                                    <p className="text-sm text-slate-700 font-medium">
+                                    <p className="text-sm text-[#D0CCC4] font-medium">
                                         <strong className="text-amber-700">Inflation Alert:</strong> Cash guarantees a loss of purchasing power. The stats below show historic trends.
                                     </p>
                                 </div>
@@ -157,7 +157,7 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
                     {/* Results Split */}
                     <div className="grid md:grid-cols-2 text-white">
                         {/* The Crash (Cash) */}
-                        <div className="p-10 bg-[#B22234] text-white flex flex-col justify-center relative overflow-hidden group">
+                        <div className="p-10 bg-[#DC2626] text-white flex flex-col justify-center relative overflow-hidden group">
                             {/* Texture overlay */}
                             <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 pointer-events-none"></div>
                             <div className="relative z-10">
@@ -173,7 +173,7 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
                                 </p>
                                 <div className="h-2.5 w-full bg-black/20 rounded-full overflow-hidden">
                                     <div
-                                        className="h-full bg-white rounded-full transition-all duration-1000 ease-out opacity-80"
+                                        className="h-full bg-[rgba(197,149,46,0.12)] rounded-full transition-all duration-1000 ease-out opacity-80"
                                         style={{ width: `${(cashValue / amount) * 100}%` }}
                                     />
                                 </div>
@@ -184,7 +184,7 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
                         </div>
 
                         {/* The Gold Standard */}
-                        <div className="p-10 bg-[#000080] text-white flex flex-col justify-center relative overflow-hidden group">
+                        <div className="p-10 bg-[rgba(197,149,46,0.1)] text-white flex flex-col justify-center relative overflow-hidden group">
                             {/* Texture overlay */}
                             <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 pointer-events-none"></div>
                             <div className="relative z-10">
@@ -212,13 +212,13 @@ export function WealthCalculator({ initialAmount = 100000, initialYears = 10 }: 
                     </div>
 
                     {/* Footer CTA */}
-                    <div className="p-8 bg-slate-50 border-t border-slate-200 text-center">
-                        <Button className="bg-[#B22234] text-white font-bold text-lg px-8 py-6 h-auto shadow-lg hover:bg-[#8b1c2a] hover:-translate-y-0.5 transition-all" asChild>
+                    <div className="p-8 bg-[#0C0D18] border-t border-[#2A2D42] text-center">
+                        <Button className="bg-[#DC2626] text-white font-bold text-lg px-8 py-6 h-auto shadow-lg hover:bg-[#991B1B] hover:-translate-y-0.5 transition-all" asChild>
                             <Link href="/quiz">
                                 Lock In These {formatCurrency(goldValue)} Gains <ArrowRight className="w-5 h-5 ml-2" />
                             </Link>
                         </Button>
-                        <p className="text-[11px] text-slate-400 mt-4 text-center max-w-lg mx-auto leading-normal">
+                        <p className="text-[11px] text-[#A8A39A] mt-4 text-center max-w-lg mx-auto leading-normal">
                             *Projections based on historic 8% gold growth and 3.5% inflation. Past performance does not guarantee future results.
                         </p>
                     </div>

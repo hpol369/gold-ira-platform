@@ -78,19 +78,19 @@ export function LPComparisonTable({
           <table className="w-full">
             <thead>
               <tr className="border-b border-white/10 bg-white/5">
-                <th className="text-left px-6 py-4 text-sm font-semibold text-slate-300">
+                <th className="text-left px-6 py-4 text-sm font-semibold text-[#3F4460]">
                   Company
                 </th>
-                <th className="text-center px-4 py-4 text-sm font-semibold text-slate-300">
+                <th className="text-center px-4 py-4 text-sm font-semibold text-[#3F4460]">
                   Rating
                 </th>
-                <th className="text-center px-4 py-4 text-sm font-semibold text-slate-300">
+                <th className="text-center px-4 py-4 text-sm font-semibold text-[#3F4460]">
                   Minimum
                 </th>
-                <th className="text-center px-4 py-4 text-sm font-semibold text-slate-300">
+                <th className="text-center px-4 py-4 text-sm font-semibold text-[#3F4460]">
                   Annual Fees
                 </th>
-                <th className="text-center px-4 py-4 text-sm font-semibold text-slate-300">
+                <th className="text-center px-4 py-4 text-sm font-semibold text-[#3F4460]">
                   Highlight
                 </th>
               </tr>
@@ -103,7 +103,7 @@ export function LPComparisonTable({
                     "border-b border-white/5 transition-colors",
                     company.isWinner
                       ? "bg-amber-500/10 hover:bg-amber-500/15"
-                      : "hover:bg-white/5"
+                      : "hover:bg-[#1E2134]/5"
                   )}
                 >
                   <td className="px-6 py-4">
@@ -143,10 +143,10 @@ export function LPComparisonTable({
                       </span>
                     </div>
                   </td>
-                  <td className="text-center px-4 py-4 text-slate-300">
+                  <td className="text-center px-4 py-4 text-[#3F4460]">
                     {company.minimum}
                   </td>
-                  <td className="text-center px-4 py-4 text-slate-300">
+                  <td className="text-center px-4 py-4 text-[#3F4460]">
                     {company.fees}
                   </td>
                   <td className="text-center px-4 py-4">
@@ -156,7 +156,7 @@ export function LPComparisonTable({
                         {company.highlight}
                       </span>
                     ) : (
-                      <span className="text-slate-400 text-sm">
+                      <span className="text-[#A8A39A] text-sm">
                         {company.highlight}
                       </span>
                     )}
@@ -215,21 +215,21 @@ export function LPComparisonTable({
 
               <div className="grid grid-cols-2 gap-3 text-sm">
                 <div>
-                  <span className="text-slate-400 text-xs block">Minimum</span>
+                  <span className="text-[#A8A39A] text-xs block">Minimum</span>
                   <span className="text-white font-medium">{company.minimum}</span>
                 </div>
                 <div>
-                  <span className="text-slate-400 text-xs block">Annual Fees</span>
+                  <span className="text-[#A8A39A] text-xs block">Annual Fees</span>
                   <span className="text-white font-medium">{company.fees}</span>
                 </div>
                 <div className="col-span-2 pt-2 border-t border-white/10">
-                  <span className="text-slate-400 text-xs">Highlight: </span>
+                  <span className="text-[#A8A39A] text-xs">Highlight: </span>
                   {company.isWinner ? (
                     <span className="text-amber-400 font-medium">
                       {company.highlight}
                     </span>
                   ) : (
-                    <span className="text-slate-300">{company.highlight}</span>
+                    <span className="text-[#3F4460]">{company.highlight}</span>
                   )}
                 </div>
               </div>
@@ -252,7 +252,7 @@ export function LPComparisonTable({
               "Free silver IRA educational web conference",
               "A+ BBB rating with 4.9/5 customer reviews",
             ].map((reason, i) => (
-              <li key={i} className="flex items-start gap-2 text-slate-300 text-sm">
+              <li key={i} className="flex items-start gap-2 text-[#3F4460] text-sm">
                 <CheckCircle className="h-4 w-4 text-green-400 mt-0.5 flex-shrink-0" />
                 {reason}
               </li>
